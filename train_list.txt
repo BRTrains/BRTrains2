@@ -1,0 +1,113 @@
+08 'Gronk'				D
+13 'Shunter'			D
+33 'Crompton'			D
+	/0				
+	/1				
+37 'Tractor'			D
+43 'HST'				D
+55 'Deltic'				D
+60 'Tug'				D
+66 'Shed'				D
+67 'Skip'				D
+68 'Warskip'			D
+70 'Powerhaul'			D
+91 'Intercity 225'		E
+150'Sprinter'			DMU
+	/0
+	/1
+	/2
+151'Sprinter'			DMU
+153'Super Sprinter'		DMU
+155
+156
+158'Express Sprinter'	DMU	(2car,3car)
+159'South Western Turbo'DMU
+165'Chiltern Turbo'		DMU
+	/0						(2car,3car)
+	/1						(2car,3car)
+166'Thames Turbo'		DMU
+170'Turbostar'			DMU	(2car,3car)
+175'Coradia'			DMU
+	/0						(2car)
+	/1						(3car)
+180'Adelante'			DMU
+185'Desiro'				DMU
+220'Voyager'			EMU
+221'Super Voyager'		EMU	(4car,5car)
+222'Meridian'			DMU	(5car,7car)
+	/1'Pioneer'				(4car)
+302'AM-2'				EMU
+305'AM-5'				EMU (3car,4car)
+315						EMU
+319						EMU
+323						EMU
+350'Desiro'				EMU
+370'APT'				EMU
+373/1'Three Capital'	EMU
+373/2'North of London'	EMU
+374'Velaro'				EMU
+.
+.
+.
+390'Pendelino'			EMU
+	/0
+	/1
+395'Javelin'			EMU
+.
+.
+.
+
+*INCOMPLETE*
+
+
+
+TO ADD
+======
+MARK 5A (class68)		D						TPEXPRESS
+195'Civity'				DMU						NORTHERN
+	/0 						(2car)
+	/1						(3car)
+397'Civity'				EMU						TPEXRPRESS
+769'Flex'				DMU/EMU					THAMESLINK,GREAT WESTER?,NORTHERN
+707'Desiro City'		EMU						SOUTHWESTERN
+717'Desiro City'		EMU						SOUTHWESTERN
+745'FLIRT'				EMU						GREATER ANGLIA
+755'Flirt'				EMU/DMU					GREATER ANGLIA
+777'Metro'				EMU						MERSEYRAIL
+800
+	/0					EMU/DMU					GREAT WESTERN,LNER
+	/1					EMU						LNER
+	/2					EMU/DMU					GREAT WESTERN,TPEXREPSS,HULLTRAINS
+	/3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
