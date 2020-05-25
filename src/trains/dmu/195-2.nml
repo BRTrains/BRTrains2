@@ -1,0 +1,158 @@
+/*
+ * This file is aimed to provide an example on how to code vehicles in NML
+ * In the first case a train is coded, other vehicle types work in a similar fashion.
+ * The second case provides examples for using the sprite stack
+ * https://newgrf-specs.tt-wiki.net/wiki/NML:Vehicles#Composing_vehicles_from_multiple_sprites
+ *
+ * To keep the code readable, not every property or variable is documented in
+ * detail, refer to the vehicle-specific reference in the documentation.
+ * The coded vehicles are quite complex, in order to show the various possibilities.
+ * For a more simple example, refer to the example road vehicle.
+ *
+ * The first vehicle coded here is a Dutch EMU, the ICM 'Koploper'
+ * Graphics are by Purno, the original NFO code is written by DJNekkid
+ * As in real life, you can choose between a 3- and 4-part variant,
+ * to be selected via refitting. This adds some complexity, which
+ * provided the needed excuse to implement a lot of callbacks :)
+ *
+ * The second vehicle coded shows how to use the sprite stack to draw a vehicle
+ * using multiple layers of sprites.
+ *
+ * Apart from this file, you will also need the following
+ * - Graphics, found in 195-2.png and cargo_wagon.png (in the same folder)
+ * - Language files, to be placed in the 'lang' folder.
+ *      Currently english.lng and dutch.lng are supplied.
+ */
+
+/*
+ * First, define a grf block. This defines some basic properties of the grf,
+ * which are required for the grf to be valid and loadable. Additionally,
+ * user-configurable parameters are defined here also.
+ */
+grf {
+    /* This grf is part of NML, therefore "NML" is chosen as the first three
+     * characters of the GRFID. It is the first real grf defined as part of
+     * NML, therefore the last character is set to 0. Successive grfs will
+     * have 1, 2, etc. there, to make sure each example grf has a unique GRFID.
+     */
+    grfid: "MUK\00";
+    /* GRF name and description strings are defined in the lang files */
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    /* This is the first version, start numbering at 0. */
+    version: 0;
+    min_compatible_version: 0;
+}
+
+/* Define a rail type table,
+ * this allows referring to railtypes
+ * irrespective of the grfs loaded.
+ */
+railtypetable {
+    "RAIL", "3RDR", "ELRL", "3RDC", "MONO", "MGLV",
+}
+
+/* Next: a series of templates for the graphics
+ * Templates allow you to avoid repetitive coding of sprite offsets,
+ * as long as you consistently use the same alignment
+ * Note that layout in png differs slightly from the orignal graphics in the 2cc set */
+
+template tmpl_vehicle(x, y) {
+    [x, y, 8, 23, -4, -11]
+    [x + 10, y, 22, 16, -11, -8]
+    [x + 34, y, 32, 12, -16, -6]
+    [x + 68, y, 22, 16, -11, -8]
+}
+
+/* ------------------ ICM EMU Train Example ------------------ */
+
+/* Define the spritesets, these allow referring to these sprites later on */
+spriteset (set_br_195_2, "195-2.png") { tmpl_vehicle(1, 1) }
+
+/* --- Start/stop callback  --- */
+switch(FEAT_TRAINS, SELF, sw_br_195_2_start_stop, num_vehs_in_consist) {
+    return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+/* --- Articulated part callback  --- */
+switch(FEAT_TRAINS, SELF, sw_br_195_2_articulated_part, extra_callback_info1) {
+    /* Add three articulated parts, for a total of four */
+    // 1: return item_br_195_2;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+/* Adjust depot view of trains */
+traininfo_y_offset = 2;
+train_width_32_px = 1;
+
+/* Increase base cost to provide a greater range for running costs */
+basecost {
+    PR_RUNNING_TRAIN_ELECTRIC: 2;
+}
+
+/* Define the actual train */
+item(FEAT_TRAINS, item_br_195_2) {
+    /* Define properties first, make sure to set all of them */
+    property {
+        name: string(STR_BR_195_2CAR);
+        climates_available: ALL_CLIMATES; // not available in toyland
+        introduction_date: date(2019, 7, 1);
+        model_life: VEHICLE_NEVER_EXPIRES;
+        vehicle_life: 30;
+        reliability_decay: 20;
+        refittable_cargo_classes: bitmask(CC_PASSENGERS);
+        non_refittable_cargo_classes: bitmask();
+        cargo_allow_refit: []; // refitting is done via cargo classes only, no cargoes need explicit enabling/disabling
+        cargo_disallow_refit: []; // refitting is done via cargo classes only, no cargoes need explicit enabling/disabling
+        loading_speed: 20; // It's an intercity train, loading is relatively slow
+        cost_factor: 45;
+        running_cost_factor: 100; // Changed by callback
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+        speed: 160 km/h; // actually 140, but there are rounding errors
+        misc_flags: bitmask(TRAIN_FLAG_MU); 
+        refit_cost: 0;
+        // callback flags are not set manually
+        track_type: RAIL; // from rail type table
+        ai_special_flag: AI_FLAG_PASSENGER;
+        power: 1036 hp; // Changed by CB
+        running_cost_base: RUNNING_COST_ELECTRIC;
+        dual_headed: 1;
+        cargo_capacity: 62; // lower than in real world, for gameplay
+        weight: 10.4 ton; // Total weight, changed by callback
+        ai_engine_rank: 0; // not intended to be used by the ai
+        engine_class: ENGINE_CLASS_DIESEL;
+        extra_power_per_wagon: 0 kW;
+        tractive_effort_coefficient: 0.3; // Changed by callback
+        air_drag_coefficient: 0.06;
+        length: 8;
+        visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon: 0 ton;
+        bitmask_vehicle_info: 0;
+    }
+    /* Define graphics and callbacks
+     * Setting all callbacks is not needed, only define what is used */
+    graphics {
+        default: set_br_195_2;
+        purchase: set_br_195_2;
+        start_stop: sw_br_195_2_start_stop;
+        articulated_part: sw_br_195_2_articulated_part;
+        running_cost_factor: 100;
+        purchase_running_cost_factor: 100;
+        cargo_capacity: return 62;
+        purchase_cargo_capacity: return 62;
+        visual_effect_and_powered: return (position_in_consist == 0) ?
+                                        visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER) :
+                                        visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+    }
+}
+
+/* Define properties valid only in OpenTTD r22713 or later only for those versions.
+ * Earlier versions will choke on those and otherwise disable the NewGRF.
+ */
+if (version_openttd(1,2,0,22713) < openttd_version) {
+	item(FEAT_TRAINS, icm) {
+		property {
+			cargo_age_period: 185; // default value
+		}
+	}
+}
