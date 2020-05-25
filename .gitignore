@@ -2,3 +2,5 @@
 \master-gfx*
 *test*
 *.grf
+*.cache
+*.cacheindex
