@@ -60,9 +60,9 @@ item(FEAT_TRAINS, item_br_195_2) {
 		cargo_allow_refit: [];
 		cargo_disallow_refit: [];
 		
-		speed: 161 km/h; // 100mph
+		speed: 160 km/h; // 100mph
 		power: 1036 hp;
-		cargo_capacity: (124/3); // passenger capacity is 4x this number
+		cargo_capacity: (124/2);
 		weight: 87.4 ton; 
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
@@ -90,7 +90,7 @@ item(FEAT_TRAINS, item_br_195_2) {
 		start_stop: switch_br_195_2_start_stop;	
 		can_attach_wagon: switch_br_195_2_can_attach_wagon;
 				
-		purchase_cargo_capacity: return (124/3);
+		purchase_cargo_capacity: return (124/2);
 		//purchase_cargo_capacity: spriteset_br_195_2_purchase; // will fail, and revert to capacity in properties block
 		
 		
