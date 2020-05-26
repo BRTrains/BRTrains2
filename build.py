@@ -6,36 +6,40 @@ from importlib import util
 
 def check_project_structure(src_directory: Path, gfx_directory: Path,
                             lang_directory: Path):
+
+    has_lang_dir = True
+
     # Check that the project is properly structured
     if not src_directory.exists():
         print("\"src\" directory not found.  Aborting")
-        return -1
+        return (False, -1)
     if not gfx_directory.exists():
         print("\"gfx\" directory not found.  Aborting")
-        return -1
+        return (False, -1)
     if not lang_directory.exists():
         print(
             "\"lang\" directory not found.  Assuming hard-coded strings (this is not best practice)"
         )
+        has_lang_dir = False
 
     # Find the grf, railtypes, and templates files
     if not src_directory.joinpath("grf.pnml").exists():
         print(
             "\"grf.pnml\" not found.  It should be in \"src\" and contain the grf block"
         )
-        return -1
+        return (False, -1)
     if not src_directory.joinpath("railtypes.pnml").exists():
         print(
             "\"railtypes.pnml\" not found.  It should be in \"src\" and contain the railtypetable block"
         )
-        return -1
+        return (False, -1)
     if not src_directory.joinpath("templates.pnml").exists():
         print(
             "\"templates.pnml\" not found.  Assuming no templates are required"
         )
 
     print("Project structure is correct")
-    return 0
+    return (has_lang_dir, 0)
 
 
 def copy_file(filepath: Path, nml_file: str):
@@ -81,9 +85,11 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, compile_grf):
     gfx_directory = Path("gfx")
 
     nml_file = ""
+    has_lang_dir = False
 
-    if check_project_structure(src_directory, gfx_directory,
-                               lang_directory) != 0:
+    (has_lang_dir, error_code) = check_project_structure(src_directory, gfx_directory,
+                               lang_directory)
+    if  error_code != 0:
         return -1
 
     nml_file = copy_file(src_directory.joinpath("grf.pnml"), nml_file)
@@ -104,10 +110,13 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, compile_grf):
         if found_nml is not None:
             from PIL import Image
             import nml.main
-            nml.main.main(["--lang", str(lang_dir), grf_name + ".nml"])
+            if has_lang_dir:
+                nml.main.main(["--lang", str(lang_dir), grf_name + ".nml"])
+            else:
+                nml.main.main([grf_name + ".nml"])
             return 1
         else:
-            print("NML is not installed")
+            print("nml is not installed.  You can get it using 'pip install nml'")
             return -2
     return 0
 
