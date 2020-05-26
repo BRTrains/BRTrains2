@@ -1,0 +1,8 @@
+// GRF definition block
+grf {
+	grfid: "MUKT"; // Modern UK Trains
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESC);
+	version: 0;
+	min_compatible_version: 0; //bump up this number to version when breaking compatibility
+}
