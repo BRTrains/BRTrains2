@@ -5,7 +5,7 @@ A Modern UK Train Set for OpenTTD, designed to be played alongside BRTrains.
 |Completed|Planned|
 |:-:|:-:|
 |Class 195 (2-Car)|Class 68|
-|Class 195 (3-Car)|CLass 397|
+|Class 195 (3-Car)|Class 397|
 ||Class 769|
 ||Class 707|
 ||Class 717|
