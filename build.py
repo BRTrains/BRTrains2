@@ -79,7 +79,27 @@ def write_file(filename: str, nml_file: str):
     return 0
 
 
-def main(grf_name, src_dir, lang_dir, gfx_dir, compile_grf):
+def compile_grf(has_lang_dir, grf_name, lang_dir):
+    found_nml = util.find_spec("nml")
+    if found_nml is not None:
+        import nml.main
+        parameters = []
+        if has_lang_dir:
+            parameters = ["--lang", str(lang_dir), grf_name + ".nml"]
+        else:
+            parameters = [grf_name + ".nml"]
+        try:
+            nml.main.main(parameters)
+        except SystemExit:
+            print("nml tried to exit but was stopped")
+        print("Finished compiling grf file")
+        return 1
+    else:
+        print("nml is not installed.  You can get it using 'pip install nml'")
+        return -2
+
+
+def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     src_directory = Path("src")
     lang_directory = Path("lang")
     gfx_directory = Path("gfx")
@@ -87,9 +107,10 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, compile_grf):
     nml_file = ""
     has_lang_dir = False
 
-    (has_lang_dir, error_code) = check_project_structure(src_directory, gfx_directory,
-                               lang_directory)
-    if  error_code != 0:
+    (has_lang_dir,
+     error_code) = check_project_structure(src_directory, gfx_directory,
+                                           lang_directory)
+    if error_code != 0:
         return -1
 
     nml_file = copy_file(src_directory.joinpath("grf.pnml"), nml_file)
@@ -105,19 +126,9 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, compile_grf):
         print("The nml file failed to compile")
         return -1
 
-    if compile_grf:
-        found_nml = util.find_spec("nml")
-        if found_nml is not None:
-            from PIL import Image
-            import nml.main
-            if has_lang_dir:
-                nml.main.main(["--lang", str(lang_dir), grf_name + ".nml"])
-            else:
-                nml.main.main([grf_name + ".nml"])
-            return 1
-        else:
-            print("nml is not installed.  You can get it using 'pip install nml'")
-            return -2
+    if b_compile_grf:
+        return compile_grf(has_lang_dir, grf_name, lang_dir)
+
     return 0
 
 
@@ -125,17 +136,24 @@ if __name__ == "__main__":
     parser = ArgumentParser(description="Compile pnml files into one nml file")
     parser.add_argument("grf_name")
     parser.add_argument("--src", default="src", help="Source files directory")
-    parser.add_argument("--lang", default="lang", help="Language files directory")
-    parser.add_argument("--gfx", default="gfx", help="Graphics files directory")
-    parser.add_argument("--compile", action="store_true", help="Compile the nml file with nmlc")
+    parser.add_argument("--lang",
+                        default="lang",
+                        help="Language files directory")
+    parser.add_argument("--gfx",
+                        default="gfx",
+                        help="Graphics files directory")
+    parser.add_argument("--compile",
+                        action="store_true",
+                        help="Compile the nml file with nmlc")
     args = parser.parse_args()
 
-    error_code = main(args.grf_name, args.src, args.lang, args.gfx, args.compile)
+    error_code = main(args.grf_name, args.src, args.lang, args.gfx,
+                      args.compile, args.run)
     if error_code == -1:
         print(
             "The nml file failed to compile properly.  Please consult the log")
     elif error_code == -2:
-        print("The nml file comipled correctly, but nml failed to compile it")
+        print("The nml file compiled correctly, but nml failed to compile it")
     elif error_code == 1:
         print("The grf file was compiled successfully")
     else:
