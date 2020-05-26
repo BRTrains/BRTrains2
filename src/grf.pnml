@@ -1,6 +1,6 @@
 // GRF definition block
 grf {
-	grfid: "KA\01\01"; //must be 4 bytes; \xx\xx where \xx is a hex number, allowing for 256 versions
+	grfid: "MUKT"; // Modern UK Trains
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
 	version: 0;

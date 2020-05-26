@@ -2,7 +2,7 @@
 
 # GRF name and description
 STR_GRF_NAME							:Modern UK Train Set
-STR_GRF_DESC							:A collection of modern UK trains to recently be released; designed to be played along with BRTrains.{}{}{WHITE}{COPYRIGHT}2020 {LTBLUE}kubap & AlmostCathulhu{}{WHITE}License: {LTBLUE}GPL v2
+STR_GRF_DESC							:A collection of recently-released modern UK trains; designed to be played with alongside BRTrains.{}{}{WHITE}{COPYRIGHT}2020 {LTBLUE}KubaP & AlmostCthulhu{}{WHITE}License: {LTBLUE}GPL v2
 
 # Vehicle names
 STR_BR_195_2CAR							:British Rail Class 195/0 'Civity' (2-Car)
