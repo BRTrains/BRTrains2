@@ -49,7 +49,7 @@ def copy_file(filepath: Path, nml_file: str):
         return -1
 
     # Read the pnml file into the internal nml
-    with open(str(filepath), "w") as file:
+    with open(str(filepath), "r") as file:
         nml_file += "// " + filepath.stem + filepath.suffix + "\n"
         for line in file:
             nml_file += line
