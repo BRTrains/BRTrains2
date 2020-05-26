@@ -110,33 +110,43 @@ def run_game(grf_name):
         newgrf_dir = Path.home().joinpath("Documents", "OpenTTD", "newgrf")
         executable_path = "C:/Program Files/OpenTTD/openttd.exe"
 
-    json_read_ok = True
+    json_read_ok = False
     if Path("build.json").exists():
-        from json import load
+        from json import load, decoder
         with open("build.json") as json_data:
-            data = load(json_data)
             try:
-                newgrf_dir = data["newgrf_dir"]
-                executable_path = data["executable"]
-            except KeyError:
-                print("The config json file is invalid")
+                data = load(json_data)
+            except decoder.JSONDecodeError:
+                print("The config file is invalid")
                 json_read_ok = False
+            else:
+                try:
+                    newgrf_dir = data["newgrf_dir"]
+                    executable_path = data["executable"]
+                except KeyError:
+                    print("The config json file is invalid")
+                    json_read_ok = False
+                else:
+                    json_read_ok = True
 
     if not json_read_ok:
         from json import dump
         from os import access, X_OK
         while not Path(newgrf_dir).exists():
             newgrf_dir = input("Enter the newgrf directory: ")
+            if len(newgrf_dir) > 6:
+                newgrf_dir = "~/.openttd/newgrf"
+                continue
             if newgrf_dir[-6:] != "newgrf":
                 newgrf_dir = "~/.openttd/newgrf"
 
         while not Path(executable_path).exists():
             executable_path = input("Enter the OpenTTD executable path: ")
-            if not (access(executable_path[-6], X_OK)):
+            if not (access(executable_path, X_OK)):
                 executable_path = "/usr/bin/openttd"
 
         with open("build.json", "w") as json_data:
-            data = {"newgrf_dir": newgrf_dir, "executable": executable_path}
+            data = {"newgrf_dir": str(newgrf_dir), "executable": str(executable_path)}
             dump(data, json_data)
 
     from shutil import copy
