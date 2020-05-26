@@ -63,23 +63,58 @@
 
 TO ADD
 ======
-MARK 5A (class68)		D						TPEXPRESS
-195'Civity'				DMU						NORTHERN
-	/0 						(2car)
-	/1						(3car)
-397'Civity'				EMU						TPEXRPRESS
-769'Flex'				DMU/EMU					THAMESLINK,GREAT WESTER?,NORTHERN
-707'Desiro City'		EMU						SOUTHWESTERN
-717'Desiro City'		EMU						SOUTHWESTERN
-745'FLIRT'				EMU						GREATER ANGLIA
-755'Flirt'				EMU/DMU					GREATER ANGLIA
-777'Metro'				EMU						MERSEYRAIL
-800
-	/0					EMU/DMU					GREAT WESTERN,LNER
-	/1					EMU						LNER
-	/2					EMU/DMU					GREAT WESTERN,TPEXREPSS,HULLTRAINS
-	/3
+MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
 
+195'Civity'				DMU						NORTHERN	100mph
+	/0 				(2car)		124
+	/1				(3car)		204
+	
+331'Civity'				EMU						NORTHERN	100mph		(2nd car pantograph)
+	/0				(3car)		204
+	/1				(4car)		284
+	
+397'Civity'				EMU						TPEXRPRESS	125mph		(4th car pantograph)
+	/0				(5car)		286
+	
+707'Desiro City'		EMU						SOUTHWESTR	100mph		(3rd rail)
+	/0				(5car)		275+320stand
+	
+717'Desiro City'		EMU						THAMESLINK	85mph		(3rd rail + pantograph)
+	/0				(6car)		362+581stand
+	
+745'FLIRT'				EMU						GRTR ANGLIA	100mph		(2nd/11th car pantograph)
+	/0				(12car)		757
+	
+755'Flirt'				DMU/EMU					GRTR ANGLIA	100mph		(2nd car pantograph)
+	/3				(3car)		144
+	/4				(4car)		202
+	(extra generator? car)
+	
+769'Flex'				DMU/EMU								100mph
+	/0				(4car)						TfL			(2nd car pantograph)
+	/3				(4car)						Rail Op	Grp	(2nd car pantograph)
+	/4				(4car)						NORTHERN	(2nd car pantograph)
+	/9				(4car)						GWR			(3rd rail + 2nd car pantograph)
+	(conversion of 391)
+	
+777'Metro'				EMU						MERSEYRAIL	75mph	(3rd rail)
+	/0				(4car)		182+302stand
+	
+800						DMU/EMU	(1st car pantograph)		125mph
+	/0'Intercity Express Train'		(5car)	290			GREAT WESTERN
+	/1'Azuma'						(9car)	510			LNER
+	/2'Azuma'						(5car)	254			LNER
+	/3'Intercity Express Train'		(9car)	580			GREAT WESTERN
+
+801'Azuma'				EMU						LNER	125mph	(1st car pantograph)
+	/1				(5car)		254
+	/2				(9car)		510
+
+802						DMU/EMU								125mph
+	/0'Intercity Express Train'		(5car)	290			GREAT WESTERN
+	/1'Intercity Express Train'		(9car)	576			GREAT WESTERN
+	/2'Nova 1'						(5car)	318			TPEXPRESS
+	/3'Paragon'						(5car)	318			HULL TRAINS
 
 
 
