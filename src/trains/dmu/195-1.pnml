@@ -3,7 +3,7 @@ spriteset (spriteset_br_195_3_front, "gfx/dmu/br195.png") { tmpl_train_8(0, 0) }
 spriteset (spriteset_br_195_3_middle, "gfx/dmu/br195.png") { tmpl_train_4(0, 29) }
 spriteset (spriteset_br_195_3_rear, "gfx/dmu/br195.png") { tmpl_train_8(0, 58) }
 spriteset (spriteset_br_195_3_purchase, "gfx/dmu/br195.png") {
-	[2, 89, 50, 12, -25, -6]	
+	[2, 89, 91, 12, -25, -6]	
 }
 
 // Choose sprites depending on car position
@@ -24,6 +24,14 @@ switch(FEAT_TRAINS, SELF, switch_br_195_3_articulated, extra_callback_info1) {
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_195_3_particles, position_in_consist % 3) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	2: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
 // Start/stop switch, used to limit maximum length
 switch(FEAT_TRAINS, SELF, switch_br_195_3_start_stop, num_vehs_in_consist) {	
 	return CB_RESULT_NO_TEXT;   // Allow any length
@@ -35,16 +43,6 @@ switch(FEAT_TRAINS, SELF, switch_br_195_3_can_attach_wagon, vehicle_type_id) {
 	return string(STR_CANNOT_ATTACH);
 }
 
-// ???
-///* Adjust depot view of trains */
-//traininfo_y_offset = 2;
-//train_width_32_px = 1;
-
-///* Increase base cost to provide a greater range for running costs */
-//basecost {
-//	PR_RUNNING_TRAIN_ELECTRIC: 2;
-//}
-
 // Class 195/1 (3car)
 item(FEAT_TRAINS, item_br_195_3) {
 	property {
@@ -53,7 +51,7 @@ item(FEAT_TRAINS, item_br_195_3) {
 		introduction_date: date(2019, 07, 01);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
 		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
-		reliability_decay: 20;
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
 		refittable_cargo_classes: bitmask(CC_PASSENGERS);
 		non_refittable_cargo_classes: bitmask();
 		cost_factor: 45;
@@ -62,7 +60,7 @@ item(FEAT_TRAINS, item_br_195_3) {
 		cargo_allow_refit: [];
 		cargo_disallow_refit: [];
 		
-		speed: 160 km/h; // 100mph
+		speed: 100 mph;
 		power: 1569 hp;	// nice
 		cargo_capacity: (204/3);
 		weight: 128.36 ton; 
@@ -74,7 +72,7 @@ item(FEAT_TRAINS, item_br_195_3) {
 		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
 		running_cost_base: RUNNING_COST_DIESEL;
 		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
-		engine_class: ENGINE_CLASS_DIESEL; // even though its 3rd rail, ELECTRIC would give overhead wire effects
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
 		extra_power_per_wagon: 0 kW;
 		tractive_effort_coefficient: 0.3;
 		air_drag_coefficient: 0.06;
@@ -91,18 +89,9 @@ item(FEAT_TRAINS, item_br_195_3) {
 		articulated_part: switch_br_195_3_articulated;
 		start_stop: switch_br_195_3_start_stop;	
 		can_attach_wagon: switch_br_195_3_can_attach_wagon;
+		visual_effect_and_powered: switch_br_195_3_particles;
 				
 		purchase_cargo_capacity: return (204/3);
-		//purchase_cargo_capacity: spriteset_br_195_3_purchase; // will fail, and revert to capacity in properties block
-		
-		
-		// ???
-		// running_cost_factor: 100;
-		// purchase_running_cost_factor: 100;
-		// cargo_capacity: return 62;
-		
-		// visual_effect_and_powered: return (position_in_consist == 0) ?
-		//								visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER) :
-		//								visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+				
 	}
 }

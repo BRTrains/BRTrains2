@@ -5,3 +5,5 @@
 *.cache
 *.cacheindex
 build.json
+mukts.nml
+build.ps1
