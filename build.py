@@ -146,7 +146,10 @@ def run_game(grf_name):
                 executable_path = "/usr/bin/openttd"
 
         with open("build.json", "w") as json_data:
-            data = {"newgrf_dir": str(newgrf_dir), "executable": str(executable_path)}
+            data = {
+                "newgrf_dir": str(newgrf_dir),
+                "executable": str(executable_path)
+            }
             dump(data, json_data)
 
     from shutil import copy
