@@ -4,3 +4,4 @@
 *.grf
 *.cache
 *.cacheindex
+build.json
