@@ -7,6 +7,8 @@ STR_GRF_DESC							:A collection of recently-released modern UK trains; designed
 # Vehicle names
 STR_BR_195_2CAR							:British Rail Class 195/0 'Civity' (2-Car)
 STR_BR_195_3CAR							:British Rail Class 195/1 'Civity' (3-Car)
+STR_BR_331_3CAR                         :British Rail Class 331/0 'Civity' (3-Car)
+STR_BR_331_4CAR                         :British Rail Class 331/1 'Civity' (4-Car)
 
 
 STR_CANNOT_ATTACH						:Cannot attach a different class of train

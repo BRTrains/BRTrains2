@@ -1,40 +1,40 @@
 // Spriteset car definitions
-spriteset (spriteset_br_195_2_front, "gfx/dmu/br195.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_195_2_rear, "gfx/dmu/br195.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_195_2_purchase, "gfx/dmu/br195.png") {
+spriteset (spriteset_br_195_0_front, "gfx/dmu/br_195_331.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_195_0_rear, "gfx/dmu/br_195_331.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_195_0_purchase, "gfx/dmu/br_195_331.png") {
 	[2, 89, 91, 12, -25, -6]	
 }
 
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_195_2_spriteset, position_in_consist % 2) {
+switch(FEAT_TRAINS, SELF, switch_br_195_0_spriteset, position_in_consist % 2) {
 	// 0 is first car, 1 is second car, so on...
 	// % 2 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,end);(front,end)...
-	0: spriteset_br_195_2_front;
-	spriteset_br_195_2_rear;
+	0: spriteset_br_195_0_front;
+	spriteset_br_195_0_rear;
 }
 
 // Define articulations
-switch(FEAT_TRAINS, SELF, switch_br_195_2_articulated, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, switch_br_195_0_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1: return item_br_195_2;
+	1: return item_br_195_0;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
 // Start/stop switch, used to limit maximum length
-switch(FEAT_TRAINS, SELF, switch_br_195_2_start_stop, num_vehs_in_consist) {	
+switch(FEAT_TRAINS, SELF, switch_br_195_0_start_stop, num_vehs_in_consist) {	
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
 // Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_br_195_2_can_attach_wagon, vehicle_type_id) {
-	item_br_195_2: return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, switch_br_195_0_can_attach_wagon, vehicle_type_id) {
+	item_br_195_0: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
 // Class 195/0 (2car)
-item(FEAT_TRAINS, item_br_195_2) {
+item(FEAT_TRAINS, item_br_195_0) {
 	property {
 		name: string(STR_BR_195_2CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
@@ -73,12 +73,12 @@ item(FEAT_TRAINS, item_br_195_2) {
 	}
 	
 	graphics {
-		default: switch_br_195_2_spriteset;
-		purchase: spriteset_br_195_2_purchase;
+		default: switch_br_195_0_spriteset;
+		purchase: spriteset_br_195_0_purchase;
 		
-		articulated_part: switch_br_195_2_articulated;
-		start_stop: switch_br_195_2_start_stop;	
-		can_attach_wagon: switch_br_195_2_can_attach_wagon;
+		articulated_part: switch_br_195_0_articulated;
+		start_stop: switch_br_195_0_start_stop;	
+		can_attach_wagon: switch_br_195_0_can_attach_wagon;
 		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 				
 		purchase_cargo_capacity: return (124/2);
