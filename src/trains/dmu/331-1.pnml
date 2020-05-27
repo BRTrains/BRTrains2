@@ -51,7 +51,7 @@ item(FEAT_TRAINS, item_br_331_1) {
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2019, 07, 01);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
-		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
 		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
 		refittable_cargo_classes: bitmask(CC_PASSENGERS);
 		non_refittable_cargo_classes: bitmask();
@@ -62,9 +62,9 @@ item(FEAT_TRAINS, item_br_331_1) {
 		cargo_disallow_refit: [];
 		
 		speed: 100 mph;
-		power: 1569 hp;	// nice
-		cargo_capacity: (284/3);
-		weight: 128.36 ton; 
+		power: 2360 hp;
+		cargo_capacity: (284/4);
+		weight: 169.0 ton; 
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
@@ -92,7 +92,7 @@ item(FEAT_TRAINS, item_br_331_1) {
 		can_attach_wagon: switch_br_331_1_can_attach_wagon;
 		visual_effect_and_powered: switch_br_331_1_particles;
 				
-		purchase_cargo_capacity: return (284/3);
+		purchase_cargo_capacity: return (284/4);
 				
 	}
 }

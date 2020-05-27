@@ -66,6 +66,9 @@ def find_pnml_files(src_directory: Path):
             continue
         file_list.append(path)
 
+    # Sort the nml list for nice ordering
+    file_list = sorted(file_list)
+
     # List found files
     print("Found the following files: %s" %
           [str(file.stem + file.suffix) for file in file_list])
@@ -210,7 +213,7 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     # Get a list of all the pnml files in src
     file_list = find_pnml_files(src_directory)
     # Read all the files into the internal nml
-    for file in reversed(file_list):
+    for file in file_list:
         print("Reading '%s'" % (file.stem + file.suffix))
         nml_file = copy_file(file, nml_file)
 
