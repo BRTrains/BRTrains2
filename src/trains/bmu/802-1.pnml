@@ -89,8 +89,7 @@ item(FEAT_TRAINS, item_br_802_9car) {
 	
 	graphics {
 		default: switch_br_802_9car_spriteset;
-		purchase: spriteset_br_802_purchase_lner;
-		cargo_subtype_text: switch_br_802_9car_subtype_text;
+		purchase: spriteset_br_800_purchase_gwr;
 		
 		power: switch_br_802_9car_power;
 

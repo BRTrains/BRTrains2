@@ -24,7 +24,7 @@ switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset, cargo_subtype) {
 	// so that we get: (front,middle,end);(front,middle,end)...
 	0: switch_br_802_5car_spriteset_tpx;
 	1: switch_br_802_5car_spriteset_gwr;
-	2: switch_br_802_5car_spriteset_hull
+	2: switch_br_802_5car_spriteset_hull;
 }
 
 // Define articulations
@@ -70,13 +70,13 @@ switch(FEAT_TRAINS, SELF, switch_br_802_5car_can_attach_wagon, vehicle_type_id) 
 switch(FEAT_TRAINS, SELF, switch_br_802_5car_capacity, cargo_subtype) {
 	0: return (342/5);
 	1: return (326/5);
-	2: return (342/5)
+	2: return (342/5);
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_802_5car_subtype_text, cargo_subtype) {
 	0: return string(STR_LIVERY_BR_800_TPX);
 	1: return string(STR_LIVERY_BR_800_GWR);
-	2: return string(STR_LIVERY_BR_800_HULL)
+	2: return string(STR_LIVERY_BR_800_HULL);
 	return CB_RESULT_NO_TEXT;
 }
 
@@ -126,7 +126,7 @@ item(FEAT_TRAINS, item_br_802_5car) {
 	
 	graphics {
 		default: switch_br_802_5car_spriteset;
-		purchase: spriteset_br_802_purchase_lner;
+		purchase: spriteset_br_800_purchase_tpx;
 		cargo_subtype_text: switch_br_802_5car_subtype_text;
 		
 		power: switch_br_802_5car_power;
