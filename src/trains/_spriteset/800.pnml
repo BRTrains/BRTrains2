@@ -1,0 +1,14 @@
+// Spriteset car definitions
+spriteset (spriteset_br_800_front_lner, "gfx/bmu/br_800_lner.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_middle_lner, "gfx/bmu/br_800_lner.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_800_rear_lner, "gfx/bmu/br_800_lner.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_800_purchase_lner, "gfx/bmu/br_800_lner.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_800_front_gwr, "gfx/bmu/br_800_gwr.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_middle_gwr, "gfx/bmu/br_800_gwr.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_800_rear_gwr, "gfx/bmu/br_800_gwr.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_800_purchase_gwr, "gfx/bmu/br_800_gwr.png") {
+	[2, 89, 91, 12, -25, -6]	
+}

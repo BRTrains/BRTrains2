@@ -10,5 +10,14 @@ STR_BR_195_3CAR							:British Rail Class 195/1 'Civity' (3-Car)
 STR_BR_331_3CAR                         :British Rail Class 331/0 'Civity' (3-Car)
 STR_BR_331_4CAR                         :British Rail Class 331/1 'Civity' (4-Car)
 
+STR_BR_800_5CAR                         :British Rail Class 800/0/2 (5-Car)
+STR_BR_800_9CAR                         :British Rail Class 800/1/3 (9-Car)
+
+# Livery Names
+STR_LIVERY_BR_800_LNER                  : LNER 'Azuma'
+STR_LIVERY_BR_800_GWR                   : Great Western Railway 'Intercity Express Train'
+STR_LIVERY_BR_800_TPX                   : Transpennine Express 'Nova 1'
+STR_LIVERY_BR_800_HULL                  : Hull Trains 'Paragon'
+
 
 STR_CANNOT_ATTACH						:Cannot attach a different class of train

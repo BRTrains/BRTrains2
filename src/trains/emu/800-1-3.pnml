@@ -1,0 +1,132 @@
+// Livery callbacks
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset_lner, position_in_consist % 9) {
+	0: spriteset_br_800_front_lner;
+	8: spriteset_br_800_rear_lner;
+	spriteset_br_800_middle_lner;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset_gwr, position_in_consist % 9) {
+	0: spriteset_br_800_front_gwr;
+	8: spriteset_br_800_rear_gwr;
+	spriteset_br_800_middle_gwr;
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset, cargo_subtype) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: switch_br_800_9car_spriteset_lner;
+	1: switch_br_800_9car_spriteset_gwr;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..8: return item_br_800_9car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles_electric, position_in_consist % 9) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	8: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles_diesel, position_in_consist % 9) {
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	8: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles, current_railtype) {
+	ELRL: switch_br_800_9car_particles_electric;
+	switch_br_800_9car_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_can_attach_wagon, vehicle_type_id) {
+	item_br_800_9car: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// LNER trains hold fewer passengers than GWR trains
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_capacity, cargo_subtype) {
+	0: return (611/9);
+	1: return (650/9);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR_800_LNER);
+	1: return string(STR_LIVERY_BR_800_GWR);
+	return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_power, current_railtype) {
+	ELRL: return 5760;
+	return 3750;
+
+}
+
+// Class 800/1/3 (9car)
+item(FEAT_TRAINS, item_br_800_9car) {
+	property {
+		name: string(STR_BR_800_9CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2017, 09, 06);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 45;
+		loading_speed: 5;
+		running_cost_factor: 100;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 5760 hp;
+		cargo_capacity: (611/9);
+		weight: 438 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_800_9car_spriteset;
+		purchase: spriteset_br_800_purchase_lner;
+		cargo_subtype_text: switch_br_800_9car_subtype_text;
+		
+		articulated_part: switch_br_800_9car_articulated;
+		start_stop: switch_br_800_9car_start_stop;	
+		can_attach_wagon: switch_br_800_9car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_800_9car_particles;
+				
+		cargo_capacity: switch_br_800_9car_capacity;
+		power: switch_br_800_9car_power;
+				
+	}
+}
