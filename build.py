@@ -79,8 +79,13 @@ def find_pnml_files(src_directory: Path):
 
 
 def write_file(filename: str, nml_file: str):
+    from os import makedirs
     # Generate the filepath and check if it exists
-    filepath = Path(filename + ".nml")
+    filepath = Path("build/" + filename + ".nml")
+    build_dir = Path("build/")
+    if not build_dir.exists():
+        makedirs("build")
+
     if filepath.exists():
         print("'%s.nml' already exists.  Overwriting" % filename)
 
@@ -102,10 +107,10 @@ def compile_grf(has_lang_dir, grf_name, lang_dir):
         parameters = []
         if has_lang_dir:
             # If we have a lang directory, add it to the parameters
-            parameters = ["--lang", str(lang_dir), grf_name + ".nml"]
+            parameters = ["--lang", str(lang_dir), "build/" + grf_name + ".nml"]
         else:
             # If not, just the nml name
-            parameters = [grf_name + ".nml"]
+            parameters = ["build/" + grf_name + ".nml"]
         try:
             # Try to compile the nml file
             nml.main.main(parameters)
@@ -129,10 +134,12 @@ def run_game(grf_name):
     if platform.startswith("linux"):
         newgrf_dir = Path.home().joinpath(".openttd", "newgrf")
         executable_path = "/usr/bin/openttd"
+        kill_cmd = ["killall","openttd"]
         print("Detected as Linux")
     elif platform.startswith("win32"):
         newgrf_dir = Path.home().joinpath("Documents", "OpenTTD", "newgrf")
         executable_path = "C:/Program Files/OpenTTD/openttd.exe"
+        kill_cmd = ["taskkill.exe" "/IM" "OpenTTD.exe"]
         print("Detected as Windows")
     else:
         print("Detected as Other.  Cannot run game.")
@@ -141,9 +148,9 @@ def run_game(grf_name):
     print("Attempting to read config")
     json_read_ok = False
     # Check that the config file exists
-    if Path("build.json").exists():
+    if Path("build/build.json").exists():
         from json import load, decoder
-        with open("build.json") as json_data:
+        with open("build/build.json") as json_data:
             # Try to read the config file
             try:
                 data = load(json_data)
@@ -189,23 +196,32 @@ def run_game(grf_name):
                 executable_path = "/usr/bin/openttd"
 
         # Dump the two paths to a json file for next time
-        with open("build.json", "w") as json_data:
+        with open("build/build.json", "w") as json_data:
             data = {
                 "newgrf_dir": str(newgrf_dir),
                 "executable": str(executable_path)
             }
             dump(data, json_data)
 
-    # Copy the file to the newgrf directory
     from shutil import copy
+    from subprocess import Popen
+    from os import devnull
+
+    # Kill existing processes
+    print("Killing existing processes")
+    kill_process = Popen(kill_cmd)
+    kill_process.wait()
+
+    # Copy grf
     print("Copying grf")
-    copy(grf_name + ".grf", Path(newgrf_dir))
+    copy("build/" + grf_name + ".grf", Path(newgrf_dir))
+
     # Run the game in it's root directory
     print("Running game\n")
-    from subprocess import Popen
-    null = open("NUL", "w")
+    # Redirect stdout and stderr
+    null = open(devnull, "w")
     Popen([executable_path, "-t", "2050", "-g"], cwd=Path(executable_path).parent, stdout=null, stderr=null)
-    null.close()
+    null
     return 2
 
 
@@ -287,7 +303,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--run",
         action="store_true",
-        help="Run the game after compilation (will also compile the file)")
+        help="Run the game after compilation (will also compile the file.  Also kills existing instances)")
     args = parser.parse_args()
 
     # Reports any errors in the nml file compilation process
