@@ -74,7 +74,7 @@ item(FEAT_TRAINS, item_br_801_5car) {
 	
 	graphics {
 		default: switch_br_801_5car_spriteset;
-		purchase: spriteset_br_800_purchase_lner;
+		purchase: spriteset_br_801_purchase_lner;
 		
 		articulated_part: switch_br_801_5car_articulated;
 		start_stop: switch_br_801_5car_start_stop;	
