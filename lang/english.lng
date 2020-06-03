@@ -17,6 +17,8 @@ STR_BR_801_9CAR                         :British Rail Class 801/2 (9-Car)
 STR_BR_802_5CAR                         :British Rail Class 802/0/2/3 (5-Car)
 STR_BR_802_9CAR                         :British Rail Class 802/1 (9-Car)
 
+STR_BR_68_5A                            :British Rail Class 68 (Mark 5A)
+
 # Livery Names
 STR_LIVERY_BR_800_LNER                  : LNER 'Azuma'
 STR_LIVERY_BR_800_GWR                   : Great Western Railway 'Intercity Express Train'
