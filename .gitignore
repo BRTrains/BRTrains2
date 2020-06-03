@@ -1,11 +1,9 @@
-.nmlcache
-\master-gfx*
+.nmlcache/
+master-gfx/
+build/
 *test*
 *.grf
 *.cache
 *.cacheindex
 build.json
-mukts.nml
 build.ps1
-
-build/

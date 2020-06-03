@@ -1,8 +1,8 @@
 // Spriteset car definitions
-spriteset (spriteset_br_195_1_front, "gfx/dmu/br_195_331.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_195_1_middle, "gfx/dmu/br_195_331.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_195_1_rear, "gfx/dmu/br_195_331.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_195_1_purchase, "gfx/dmu/br_195_331.png") {
+spriteset (spriteset_br_195_1_front, "gfx/br_195_331.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_195_1_middle, "gfx/br_195_331.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_195_1_rear, "gfx/br_195_331.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_195_1_purchase, "gfx/br_195_331.png") {
 	[2, 89, 91, 12, -25, -6]	
 }
 
