@@ -1,17 +1,10 @@
-// Spriteset car definitions
-spriteset (spriteset_br_195_0_front, "gfx/br_195_331.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_195_0_rear, "gfx/br_195_331.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_195_0_purchase, "gfx/br_195_331.png") {
-	[2, 89, 91, 12, -25, -6]	
-}
-
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_195_0_spriteset, position_in_consist % 2) {
 	// 0 is first car, 1 is second car, so on...
 	// % 2 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,end);(front,end)...
-	0: spriteset_br_195_0_front;
-	spriteset_br_195_0_rear;
+	0: spriteset_br_195_331_front;
+	spriteset_br_195_331_rear;
 }
 
 // Define articulations
