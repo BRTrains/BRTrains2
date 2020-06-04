@@ -1,5 +1,6 @@
 // Spriteset car definitions
 spriteset (spriteset_br_800_front_lner, "gfx/br_800_hitachi.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_front_panto_lner, "gfx/br_800_hitachi.png") { tmpl_train_8(0, 0) }
 spriteset (spriteset_br_800_middle_lner, "gfx/br_800_hitachi.png") { tmpl_train_4(0, 29) }
 spriteset (spriteset_br_800_rear_lner, "gfx/br_800_hitachi.png") { tmpl_train_8(0, 58) }
 spriteset (spriteset_br_800_purchase_lner, "gfx/br_800_hitachi.png") {
@@ -9,7 +10,9 @@ spriteset (spriteset_br_801_purchase_lner, "gfx/br_800_hitachi.png") {
 	[2, 136, 91, 12, -25, -6]
 }
 
+
 spriteset (spriteset_br_800_front_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_front_panto_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 0) }
 spriteset (spriteset_br_800_middle_gwr, "gfx/br_800_gwr.png") { tmpl_train_4(0, 29) }
 spriteset (spriteset_br_800_rear_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 58) }
 spriteset (spriteset_br_800_purchase_gwr, "gfx/br_800_gwr.png") {
@@ -17,6 +20,7 @@ spriteset (spriteset_br_800_purchase_gwr, "gfx/br_800_gwr.png") {
 }
 
 spriteset (spriteset_br_800_front_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_front_panto_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 0) }
 spriteset (spriteset_br_800_middle_tpx, "gfx/br_800_tpx.png") { tmpl_train_4(0, 29) }
 spriteset (spriteset_br_800_rear_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 58) }
 spriteset (spriteset_br_800_purchase_tpx, "gfx/br_800_tpx.png") {
@@ -24,8 +28,30 @@ spriteset (spriteset_br_800_purchase_tpx, "gfx/br_800_tpx.png") {
 }
 
 spriteset (spriteset_br_800_front_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_front_panto_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 0) }
 spriteset (spriteset_br_800_middle_hull, "gfx/br_800_hull.png") { tmpl_train_4(0, 29) }
 spriteset (spriteset_br_800_rear_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 58) }
 spriteset (spriteset_br_800_purchase_hull, "gfx/br_800_hull.png") {
 	[2, 89, 91, 12, -25, -6]	
+}
+
+// Front car pantograph switches
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_lner_front, current_railtype) {
+	ELRL: spriteset_br_800_front_panto_lner;
+	spriteset_br_800_front_lner;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_gwr_front, current_railtype) {
+	ELRL: spriteset_br_800_front_panto_gwr;
+	spriteset_br_800_front_gwr;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_tpx_front, current_railtype) {
+	ELRL: spriteset_br_800_front_panto_tpx;
+	spriteset_br_800_front_tpx;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_hull_front, current_railtype) {
+	ELRL: spriteset_br_800_front_panto_hull;
+	spriteset_br_800_front_hull;
 }

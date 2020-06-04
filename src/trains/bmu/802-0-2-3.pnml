@@ -1,18 +1,18 @@
 // Livery callbacks
 switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_tpx, position_in_consist % 5) {
-	0: spriteset_br_800_front_tpx;
+	0: switch_br_800_spriteset_tpx_front;
 	4: spriteset_br_800_rear_tpx;
 	spriteset_br_800_middle_tpx;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_gwr, position_in_consist % 5) {
-	0: spriteset_br_800_front_gwr;
+	0: switch_br_800_spriteset_gwr_front;
 	4: spriteset_br_800_rear_gwr;
 	spriteset_br_800_middle_gwr;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_hull, position_in_consist % 5) {
-	0: spriteset_br_800_front_hull;
+	0: switch_br_800_spriteset_hull_front;
 	4: spriteset_br_800_rear_hull;
 	spriteset_br_800_middle_hull;
 }

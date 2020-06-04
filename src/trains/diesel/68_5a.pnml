@@ -1,8 +1,8 @@
 // Spriteset car definitions
-spriteset (spriteset_br_68_5a_front, "gfx/diesel/br_68_5a.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_68_5a_middle, "gfx/diesel/br_68_5a.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_68_5a_rear, "gfx/diesel/br_68_5a.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_68_5a_purchase, "gfx/diesel/br_68_5a.png") {
+spriteset (spriteset_br_68_5a_front, "gfx/br_68_5a.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_68_5a_middle, "gfx/br_68_5a.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_68_5a_rear, "gfx/br_68_5a.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_68_5a_purchase, "gfx/br_68_5a.png") {
 	[2, 89, 91, 12, -25, -6]	
 }
 
