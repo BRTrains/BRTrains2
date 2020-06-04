@@ -7,7 +7,7 @@ switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset_lner, position_in_consist
 
 switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset_gwr, position_in_consist % 9) {
 	0: spriteset_br_800_front_gwr;
-	8: switch_br_800_spriteset_rear_lner;
+	8: switch_br_800_spriteset_rear_gwr;
 	spriteset_br_800_middle_gwr;
 }
 
