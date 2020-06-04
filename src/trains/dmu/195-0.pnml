@@ -67,7 +67,7 @@ item(FEAT_TRAINS, item_br_195_0) {
 	
 	graphics {
 		default: switch_br_195_0_spriteset;
-		purchase: spriteset_br_195_0_purchase;
+		purchase: spriteset_br_195_purchase;
 		
 		articulated_part: switch_br_195_0_articulated;
 		start_stop: switch_br_195_0_start_stop;	

@@ -4,13 +4,11 @@ A UK Train Set for OpenTTD including all the latest British Rail classes to be i
 ### Train List
 |Completed|In Progress|Planned|
 |:-:|:-:|:-:|
-|Class 195/0/1|Class 800/0/1/2/3|Class 68|
-|Class 331/0/1|Class 801/1/2|Class 397|
-||Class 802/0/1/2/3|Class 769|
-|||Class 707|
-|||Class 717|
-|||Class 745|
-|||Class 755|
+|Class 195/0/1|Class 745|Class 68|
+|Class 331/0/1|Class 755|Class 397|
+|Class 800/0/1/2/3||Class 769|
+|Class 801/1/2||Class 707|
+|Class 802/0/1/2/3||Class 717|
 |||Class 777|
 
 ### Installation

@@ -17,6 +17,10 @@ STR_BR_801_9CAR                         :British Rail Class 801/2 (9-Car)
 STR_BR_802_5CAR                         :British Rail Class 802/0/2/3 (5-Car)
 STR_BR_802_9CAR                         :British Rail Class 802/1 (9-Car)
 
+STR_BR_745                              :British Rail Class 745/0/1 (12-Car)
+STR_BR_755_3CAR                         :British Rail Class 755/3 (4-Car)
+STR_BR_755_4CAR                         :British Rail Class 755/4 (4-Car)
+
 STR_BR_68_5A                            :British Rail Class 68 (Mark 5A)
 
 # Livery Names
@@ -25,5 +29,8 @@ STR_LIVERY_BR_800_GWR                   : Great Western Railway 'Intercity Expre
 STR_LIVERY_BR_800_TPX                   : Transpennine Express 'Nova 1'
 STR_LIVERY_BR_800_HULL                  : Hull Trains 'Paragon'
 
+STR_LIVERY_BR_745_REGULAR               : Greater Anglia 'Intercity'
+STR_LIVERY_BR_745_STANSTED              : Greater Anglia 'Stansted Express'
 
+# Messages
 STR_CANNOT_ATTACH						:Cannot attach a different class of train

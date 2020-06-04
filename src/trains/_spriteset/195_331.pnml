@@ -1,7 +1,7 @@
 spriteset (spriteset_br_195_331_front, "gfx/br_195_331.png") { tmpl_train_8(0, 0) }
 spriteset (spriteset_br_195_331_middle, "gfx/br_195_331.png") { tmpl_train_4(0, 29) }
 spriteset (spriteset_br_195_331_rear, "gfx/br_195_331.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_195_0_purchase, "gfx/br_195_331.png") {
+spriteset (spriteset_br_195_purchase, "gfx/br_195_331.png") {
 	[2, 89, 91, 12, -25, -6]	
 }
 
