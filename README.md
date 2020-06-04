@@ -1,21 +1,17 @@
 # ModernUKTrainset
-A UK Train Set for OpenTTD including all the latest British Rail classes to be introduced within the last 5 years. This set is designed to be played with BRTRains (brtrains lacks classes from the last 5 years, so this grf completes the gap) rather than on its own. Graphics are designed to work best with the Finescale UK Track Set, but will work with any track combination.
+A UK Train Set for OpenTTD including all the latest British Rail classes to be introduced between 2015 and 2020. This set is designed to be played with BRTrains (BRTrains lacks classes from between 2015 and 2020, so this newGRF completes the gap) rather than on its own. Graphics are designed to work best with the Finescale UK Track Set, but will work with any track combination.
 
 ### Train List
-|Completed|Planned|
-|:-:|:-:|
-|Class 195/0/1|Class 68|
-|Class 331/0/1|Class 397|
-||Class 769|
-||Class 707|
-||Class 717|
-||Class 745|
-||Class 755|
-||Class 777|
-||Class 800/0|
-||Class 800/1|
-||Class 800/2|
-||Class 800/3|
+|Completed|In Progress|Planned|
+|:-:|:-:|:-:|
+|Class 195/0/1|Class 800/0/1/2/3|Class 68|
+|Class 331/0/1|Class 801/1/2|Class 397|
+||Class 802/0/1/2/3|Class 769|
+|||Class 707|
+|||Class 717|
+|||Class 745|
+|||Class 755|
+|||Class 777|
 
 ### Installation
 Grab the latest release from the releases page, put in your OpenTTD/newGRF folder, then add to the game using newGRF settings.
@@ -32,7 +28,7 @@ python3 build.py --compile mukts
 This should first compile the `.nml` file, then compile that through to a `.grf` file using `nml`.  Install in the same manner
 as previously described, copying the generated `.grf` file into `OpenTTD/newGRF`.
 
-To copy the the grf and start the game, run the following command in your terminal:
+To copy the the grf and start the game, closing all existing instances, run the following command in your terminal:
 ```bash
 python3 build.py --run mukts
 ```
