@@ -19,14 +19,14 @@ Building from the source should be mostly automated using the `build.py` script,
   - Python3.8 (may work on earlier versions but untested)
   - `nml` Python package (available through `pip`)
   
-To build the the grf completely, just run the following command in your terminal:
+To build the grf completely, just run the following command in your terminal:
 ```bash
 python3 build.py --compile mukts
 ```
 This should first compile the `.nml` file, then compile that through to a `.grf` file using `nml`.  Install in the same manner
 as previously described, copying the generated `.grf` file into `OpenTTD/newGRF`.
 
-To copy the the grf and start the game, closing all existing instances, run the following command in your terminal:
+To copy the grf and start the game, closing all existing instances, run the following command in your terminal:
 ```bash
 python3 build.py --run mukts
 ```
