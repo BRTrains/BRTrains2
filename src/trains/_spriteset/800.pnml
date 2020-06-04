@@ -3,10 +3,10 @@ spriteset (spriteset_br_800_front_lner, "gfx/br_800_lner.png") { tmpl_train_8(0,
 spriteset (spriteset_br_800_rear_panto_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 105) }
 spriteset (spriteset_br_800_middle_lner, "gfx/br_800_lner.png") { tmpl_train_4(0, 29) }
 spriteset (spriteset_br_800_rear_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_800_purchase_lner, "gfx/br_800_hitachi.png") {
+spriteset (spriteset_br_800_purchase_lner, "gfx/br_800_lner.png") {
 	[2, 89, 91, 12, -25, -6]	
 }
-spriteset (spriteset_br_801_purchase_lner, "gfx/br_800_hitachi.png") {
+spriteset (spriteset_br_801_purchase_lner, "gfx/br_800_lner.png") {
 	[2, 136, 91, 12, -25, -6]
 }
 
