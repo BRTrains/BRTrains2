@@ -73,6 +73,23 @@ MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
 	/0				(3car)		204
 	/1				(4car)		284
 
+800						DMU/EMU	(1st,last car pantograph)		125mph
+	/0'Intercity Express Train'		(5car)	290			GREAT WESTERN
+	/1'Azuma'						(9car)	510			LNER
+	/2'Azuma'						(5car)	254			LNER
+	/3'Intercity Express Train'		(9car)	580			GREAT WESTERN
+
+801'Azuma'				EMU						LNER	125mph	(1st,last car pantograph)
+	/1				(5car)		254
+	/2				(9car)		510
+
+802						DMU/EMU								125mph
+	/0'Intercity Express Train'		(5car)	290			GREAT WESTERN
+	/1'Intercity Express Train'		(9car)	576			GREAT WESTERN
+	/2'Nova 1'						(5car)	318			TPEXPRESS
+	/3'Paragon'						(5car)	318			HULL TRAINS
+
+
 
 TODO
 ======
@@ -104,22 +121,6 @@ TODO
 777'Metro'				EMU						MERSEYRAIL	75mph	(3rd rail)
 	/0				(4car)		182+302stand
 	
-800						DMU/EMU	(1st,last car pantograph)		125mph
-	/0'Intercity Express Train'		(5car)	290			GREAT WESTERN
-	/1'Azuma'						(9car)	510			LNER
-	/2'Azuma'						(5car)	254			LNER
-	/3'Intercity Express Train'		(9car)	580			GREAT WESTERN
-
-801'Azuma'				EMU						LNER	125mph	(1st,last car pantograph)
-	/1				(5car)		254
-	/2				(9car)		510
-
-802						DMU/EMU								125mph
-	/0'Intercity Express Train'		(5car)	290			GREAT WESTERN
-	/1'Intercity Express Train'		(9car)	576			GREAT WESTERN
-	/2'Nova 1'						(5car)	318			TPEXPRESS
-	/3'Paragon'						(5car)	318			HULL TRAINS
-
 
 
 
