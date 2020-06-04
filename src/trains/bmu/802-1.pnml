@@ -1,4 +1,4 @@
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_spriteset_front, position_in_consist % 9) {
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_spriteset, position_in_consist % 9) {
 	0: switch_br_800_spriteset_gwr_front;
 	8: spriteset_br_800_rear_gwr;
 	spriteset_br_800_middle_gwr;
