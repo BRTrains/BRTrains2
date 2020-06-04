@@ -1,7 +1,7 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_801_9car_spriteset, position_in_consist % 9) {
 	0: spriteset_br_800_front_lner;
-	8: spriteset_br_800_rear_lner;
+	8: spriteset_br_800_rear_panto_lner;
 	spriteset_br_800_middle_lner;
 }
 
