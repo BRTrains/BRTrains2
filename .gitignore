@@ -6,4 +6,4 @@ build/
 *.cache
 *.cacheindex
 build.json
-build.ps1
+conf.ps1
