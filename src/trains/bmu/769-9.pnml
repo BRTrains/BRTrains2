@@ -53,7 +53,7 @@ item(FEAT_TRAINS, item_br_769_9) {
 	property {
 		name: string(STR_BR_769_9);
 		climates_available: ALL_CLIMATES; // available in all climates
-		introduction_date: date(2019, 07, 01);
+		introduction_date: date(2020, 08, 01);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
 		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
 		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
@@ -68,7 +68,7 @@ item(FEAT_TRAINS, item_br_769_9) {
 		speed: 100 mph;
 		power: 2092 hp;
 		cargo_capacity: (300/4);
-		weight: 147.8 ton; 
+		weight: 155.2 ton; 
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
