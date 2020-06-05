@@ -32,6 +32,16 @@ python3 build.py --run mukts
 ```
 This will also perform the --compile function before starting the game.
 
+#### Building with powreshell
+Alternatively, you can build the project through powershell.
+To find out how to use the powershell build script, simply run:
+```powershell
+Get-Help .\build.ps1 -Full
+```
+The most commonly used command invocation is:
+```powershell
+.\build.ps1 -StartGame -Verbose
+```
 ### Adding Content to the Pack
 If you want to add to the pack, just pull request it and it might make it in.  
 Alternatively, if you just want to steal the build script then go wild.
