@@ -21,7 +21,8 @@ STR_BR_745                              :British Rail Class 745/0/1 (12-Car)
 STR_BR_755_3CAR                         :British Rail Class 755/3 (4-Car)
 STR_BR_755_4CAR                         :British Rail Class 755/4 (4-Car)
 
-STR_BR_769_9                            :British Rail Class 769/9 (4-Car)
+STR_BR_769                              :British Rail Class 769/0/3/4 'Flex' (4-Car)
+STR_BR_769_9                            :British Rail Class 769/9 'Flex' (4-Car)
 
 STR_BR_68_5A                            :British Rail Class 68 (Mark 5A)
 
@@ -33,6 +34,10 @@ STR_LIVERY_BR_800_HULL                  : Hull Trains 'Paragon'
 
 STR_LIVERY_BR_745_REGULAR               : Greater Anglia 'Intercity'
 STR_LIVERY_BR_745_STANSTED              : Greater Anglia 'Stansted Express'
+
+STR_LIVERY_BR_769_TFW                   : Transport for Wales
+STR_LIVERY_BR_769_ROG                   : Rail Operations Group
+STR_LIVERY_BR_769_NORTHERN              : Northern Trains
 
 # Messages
 STR_CANNOT_ATTACH						:Cannot attach a different class of train
