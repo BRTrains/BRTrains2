@@ -209,8 +209,11 @@ def run_game(grf_name):
 
     # Kill existing processes
     print("Killing existing processes")
-    #kill_process = Popen(kill_cmd)
-    #kill_process.wait()
+    try:
+        kill_process = Popen(kill_cmd)
+        kill_process.wait()
+    except:
+        print("Something went wrong when trying to kill processes")
 
     # Copy grf
     print("Copying grf")
