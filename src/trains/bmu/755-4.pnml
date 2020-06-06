@@ -25,9 +25,9 @@ switch(FEAT_TRAINS, SELF, switch_br_755_4_particles_diesel, position_in_consist 
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_755_4_particles, current_railtype) {
-	ELRL: switch_br_755_3_particles_electric;
-	railtype("3RDC"): switch_br_755_3_particles_electric;
-	switch_br_755_3_particles_diesel;
+	ELRL: switch_br_755_4_particles_electric;
+	railtype("3RDC"): switch_br_755_4_particles_electric;
+	switch_br_755_4_particles_diesel;
 }
 
 // Start/stop switch, used to limit maximum length
