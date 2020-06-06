@@ -73,6 +73,9 @@ MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
 	/0				(3car)		204
 	/1				(4car)		284
 
+745'FLIRT'				EMU						GRTR ANGLIA	100mph		(2nd/11th car pantograph)
+	/0				(12car)		757
+
 769'Flex'				DMU/EMU								100mph
 	/0				(4car)						TfL			(2nd car pantograph)
 	/3				(4car)						Rail Op	Grp	(2nd car pantograph)
@@ -108,9 +111,6 @@ TODO
 	
 717'Desiro City'		EMU						THAMESLINK	85mph		(3rd rail + pantograph)
 	/0				(6car)		362+581stand
-	
-745'FLIRT'				EMU						GRTR ANGLIA	100mph		(2nd/11th car pantograph)
-	/0				(12car)		757
 	
 755'Flirt'				DMU/EMU					GRTR ANGLIA	100mph		(2nd car pantograph)
 	/3				(3car)		144
