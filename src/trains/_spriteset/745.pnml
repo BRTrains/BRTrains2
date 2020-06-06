@@ -4,7 +4,7 @@ spriteset (spriteset_br_745_0_rear, "gfx/br_745_ga.png") { tmpl_train_8(0, 58) }
 spriteset (spriteset_br_745_0_rear_panto, "gfx/br_745_ga.png") { tmpl_train_8(0, 105) }
 
 spriteset (spriteset_br_745_purchase, "gfx/br_745_ga.png") {
-	[2, 136, 91, 12, -25, -6]	
+	[2, 89, 91, 12, -25, -6]	
 }
 
 spriteset (spriteset_br_745_1_rear, "gfx/br_745_ga.png") { tmpl_train_8(0, 58) }
