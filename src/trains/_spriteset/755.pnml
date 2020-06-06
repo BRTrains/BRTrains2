@@ -1,0 +1,16 @@
+spriteset (spriteset_br_755_front, "gfx/br_755_ga.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_755_middle, "gfx/br_755_ga.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_755_middle_panto, "gfx/br_755_ga.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_755_rear, "gfx/br_755_ga.png") { tmpl_train_8(0, 58) }
+
+// We don't have a template for 4-sprite sets without an offset
+spriteset (spriteset_br_755_pp, "gfx/br_755_ga.png") {
+    [115, 31, 8,		23,		-3,		-11] //n
+	[115, 31, 21,		18,		-11,	-10] //ne
+	[115, 31, 32,		12,		-16,	-7] //e
+	[115, 31, 21,		18,		-12,	-11] //se
+}
+
+spriteset (spriteset_br_755_purchase, "gfx/br_755_ga.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
