@@ -1,17 +1,15 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_745_0_spriteset, position_in_consist % 12) {
-	0: spriteset_br_745_0_front;
-	1: spriteset_br_745_0_front_panto;
-	10: spriteset_br_745_rear_panto;
-	11: spriteset_br_745_rear;
+	0: spriteset_br_745_front;
+	10: spriteset_br_745_0_rear_panto;
+	11: spriteset_br_745_0_rear;
 	spriteset_br_745_middle;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_745_1_spriteset, position_in_consist % 12) {
-	0: spriteset_br_745_1_front;
-	1: spriteset_br_745_1_front_panto;
-	10: spriteset_br_745_rear_panto;
-	11: spriteset_br_745_rear;
+	0: spriteset_br_745_front;
+	10: spriteset_br_745_1_rear_panto;
+	11: spriteset_br_745_1_rear;
 	spriteset_br_745_middle;
 }
 
@@ -63,7 +61,7 @@ item(FEAT_TRAINS, item_br_745) {
 	property {
 		name: string(STR_BR_745);
 		climates_available: ALL_CLIMATES; // available in all climates
-		introduction_date: date(2020, 08, 01);
+		introduction_date: date(2020, 01, 08);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
 		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
 		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
