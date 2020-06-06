@@ -182,6 +182,7 @@ if ($SkipChecks -eq $false) {
 # Get list of all .pnml files aside from the special ones
 $pnmlFiles = Get-ChildItem -Path $PSScriptRoot -Recurse -Include "*.pnml" -Exclude "grf.pnml","railtypes.pnml","templates.pnml"
 Write-Verbose "Found $($pnmlFiles.Count) .pnml files."
+$pnmlFiles | Write-Verbose
 
 # First take the contents of special .pnml files and put them into the master file
 Write-Verbose "Merging together special .pnml files."
