@@ -23,6 +23,9 @@ STR_BR_745                              :British Rail Class 745/0/1 (12-Car)
 STR_BR_755_3CAR                         :British Rail Class 755/3 (3-Car with PP)
 STR_BR_755_4CAR                         :British Rail Class 755/4 (4-Car with PP)
 
+STR_BR_756_3CAR                         :British Rail Class 756/3 (3-Car with PP)
+STR_BR_756_4CAR                         :British Rail Class 756/4 (4-Car with PP)
+
 STR_BR_769                              :British Rail Class 769/0/3/4 'Flex' (4-Car)
 STR_BR_769_9                            :British Rail Class 769/9 'Flex' (4-Car)
 
