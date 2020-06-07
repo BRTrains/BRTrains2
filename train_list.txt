@@ -75,9 +75,13 @@ THIS PROJECT
 745'FLIRT'				EMU						GRTR ANGLIA	100mph		(2nd/11th car pantograph)
 	/0				(12car)		757
 
-755'Flirt'				DMU/EMU					GRTR ANGLIA	100mph		(2nd car pantograph)
-	/3				(3car)		144
-	/4				(4car)		202
+755'Flirt'				DMU/EMU					GRTR ANGLIA	100mph
+	/3				(3car)		144				?
+	/4				(4car)		202				(3rd car pantograph)
+	
+756'Flirt'				DMU/EMU					TFWALES		100mph
+	/0				(3car)		144				?
+	/1				(4car)		202				(3rd car pantograph)
 	
 769'Flex'				DMU/EMU								100mph
 	/0				(4car)						TfL			(2nd car pantograph)
@@ -127,10 +131,6 @@ MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
 720'Flirt'				EMU						GRTR ANGLIA	100mph
 	/1				(10car)		1100+290stand	(2nd car pantograph)
 	/5				(5car)		540+145stand	(7th car pantograph)
-	
-756'Flirt'				DMU/EMU					TFWALES		100mph
-	/0				(3car)		?				?
-	/1				(4car)						(3rd car pantograph)
 	
 777'Metro'				EMU						MERSEYRAIL	75mph	(3rd rail)
 	/0				(4car)		182+302stand
