@@ -56,7 +56,7 @@ item(FEAT_TRAINS, item_br_756_3) {
 	property {
 		name: string(STR_BR_756_3CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
-		introduction_date: date(2019, 07, 29);
+		introduction_date: date(2023, 07, 01);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
 		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
 		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)

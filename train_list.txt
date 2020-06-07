@@ -72,6 +72,9 @@ THIS PROJECT
 	/0				(3car)		204
 	/1				(4car)		284
 
+397'Civity'				EMU						TPEXRPRESS	125mph		(4th car pantograph)
+	/0				(5car)		286
+	
 745'FLIRT'				EMU						GRTR ANGLIA	100mph		(2nd/11th car pantograph)
 	/0				(12car)		757
 
@@ -111,9 +114,9 @@ TODO
 ======
 MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
 
-397'Civity'				EMU						TPEXRPRESS	125mph		(4th car pantograph)
-	/0				(5car)		286
-	
+345'Aventra'			EMU						TfL			90mph
+	/0				(9car)		1500			(8th car pantograph)
+
 701'Aventra'			EMU						SOUTHWESTR	100mph		(3rd rail)
 	/0				(10car)		556+740stand
 	/5				(5car)		269+330stand
