@@ -35,6 +35,14 @@ spriteset (spriteset_br_800_purchase_hull, "gfx/br_800_hull.png") {
 	[2, 89, 91, 12, -25, -6]	
 }
 
+spriteset (spriteset_br_800_front_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_rear_panto_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_800_middle_avanti, "gfx/br_800_avanti.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_800_rear_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_800_purchase_avanti, "gfx/br_800_avanti.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
 // Front car pantograph switches
 switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_lner, current_railtype) {
 	ELRL: spriteset_br_800_rear_panto_lner;
@@ -54,4 +62,9 @@ switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_tpx, current_railtype) {
 switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_hull, current_railtype) {
 	ELRL: spriteset_br_800_rear_panto_hull;
 	spriteset_br_800_rear_hull;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_avanti, current_railtype) {
+	ELRL: spriteset_br_800_rear_panto_avanti;
+	spriteset_br_800_rear_avanti;
 }

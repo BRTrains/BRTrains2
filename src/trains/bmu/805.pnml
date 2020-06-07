@@ -1,0 +1,102 @@
+// Livery callbacks
+switch(FEAT_TRAINS, SELF, switch_br_805_spriteset, position_in_consist % 5) {
+	0: spriteset_br_800_front_avanti;
+	4: switch_br_800_spriteset_rear_avanti;
+	spriteset_br_800_middle_avanti;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_805_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_805;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_805_particles_diesel, position_in_consist % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_805_particles_electric, position_in_consist % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_805_particles, current_railtype) {
+	ELRL: switch_br_805_particles_electric;
+	switch_br_805_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_805_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_805_can_attach_wagon, vehicle_type_id) {
+	item_br_805: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_805_power, current_railtype) {
+	ELRL: return 3200;
+	return 2250;
+}
+
+// Class 800/0/2 (5car)
+item(FEAT_TRAINS, item_br_805) {
+	property {
+		name: string(STR_BR_805);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2017, 10, 06);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 45;
+		loading_speed: 5;
+		running_cost_factor: 100;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 3200 hp;
+		cargo_capacity: (301/5);
+		weight: 243 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_805_spriteset;
+		purchase: spriteset_br_800_purchase_avanti;
+		
+		power: switch_br_805_power;
+
+		articulated_part: switch_br_805_articulated;
+		start_stop: switch_br_805_start_stop;	
+		can_attach_wagon: switch_br_805_can_attach_wagon;
+		visual_effect_and_powered: switch_br_805_particles;				
+	}
+}
