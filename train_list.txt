@@ -108,6 +108,12 @@ THIS PROJECT
 	/1'Intercity Express Train'		(9car)	576			GREAT WESTERN
 	/2'Nova 1'						(5car)	318			TPEXPRESS
 	/3'Paragon'						(5car)	318			HULL TRAINS
+	
+805'AT300'				DMU/EMU					AVANTI		125mph
+	/0				(5car)		301				(5car pantograph)
+
+807'AT300'				EMU					AVANTI		125mph
+	/0				(7car)		453				(7car pantograph)
 
 
 TODO
@@ -137,11 +143,5 @@ MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
 	
 777'Metro'				EMU						MERSEYRAIL	75mph	(3rd rail)
 	/0				(4car)		182+302stand
-	
-805'AT300'				DMU/EMU					AVANTI		125mph
-	/0				(5car)		301				(5car pantograph)
-
-807'AT300'				EMU					AVANTI		125mph
-	/0				(7car)		453				(7car pantograph)
 
 
