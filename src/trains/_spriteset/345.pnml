@@ -1,0 +1,7 @@
+spriteset (spriteset_br_345_front, "gfx/br_345.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_345_middle, "gfx/br_345.png") { tmpl_train_8(0, 29) }
+spriteset (spriteset_br_345_rear, "gfx/br_345.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_345_purchase, "gfx/br_345.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
