@@ -93,6 +93,9 @@ THIS PROJECT
 	/9				(4car)						GWR			(3rd rail + 2nd car pantograph)
 	(conversion of 391)
 
+777'Metro'				EMU						MERSEYRAIL	75mph	(3rd rail)
+	/0				(4car)		182+302stand
+
 800						DMU/EMU	(1st,last car pantograph)		125mph
 	/0'Intercity Express Train'		(5car)	290			GREAT WESTERN
 	/1'Azuma'						(9car)	510			LNER
@@ -141,7 +144,4 @@ MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
 	/1				(10car)		1100+290stand	(2nd car pantograph)
 	/5				(5car)		540+145stand	(7th car pantograph)
 	
-777'Metro'				EMU						MERSEYRAIL	75mph	(3rd rail)
-	/0				(4car)		182+302stand
-
 

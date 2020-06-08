@@ -1,5 +1,5 @@
 spriteset (spriteset_br_777_front, "gfx/br_777.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_777_middle, "gfx/br_777.png") { tmpl_train_8(0, 29) }
+spriteset (spriteset_br_777_middle, "gfx/br_777.png") { tmpl_train_4(0, 29) }
 spriteset (spriteset_br_777_rear, "gfx/br_777.png") { tmpl_train_8(0, 58) }
 
 spriteset (spriteset_br_777_purchase, "gfx/br_777.png") {
