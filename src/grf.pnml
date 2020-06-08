@@ -16,7 +16,7 @@ grf {
 			names: {
 				0: string(STR_PARAM_MAX_SPEED_REAL);
 				1: string(STR_PARAM_MAX_SPEED_DESIGN);
-			}
+			};
 		}
 	}
 }
