@@ -76,6 +76,8 @@ item(FEAT_TRAINS, item_br_801_9car) {
 		default: switch_br_801_9car_spriteset;
 		purchase: spriteset_br_801_purchase_lner;
 		
+		speed: switch_br_800_speed;
+
 		articulated_part: switch_br_801_9car_articulated;
 		start_stop: switch_br_801_9car_start_stop;	
 		can_attach_wagon: switch_br_801_9car_can_attach_wagon;

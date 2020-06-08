@@ -32,7 +32,6 @@ switch(FEAT_TRAINS, SELF, switch_br_801_5car_can_attach_wagon, vehicle_type_id) 
 	return string(STR_CANNOT_ATTACH);
 }
 
-
 // Class 801/1 (5car)
 item(FEAT_TRAINS, item_br_801_5car) {
 	property {
@@ -76,6 +75,8 @@ item(FEAT_TRAINS, item_br_801_5car) {
 		default: switch_br_801_5car_spriteset;
 		purchase: spriteset_br_801_purchase_lner;
 		
+		speed: switch_br_800_speed;
+
 		articulated_part: switch_br_801_5car_articulated;
 		start_stop: switch_br_801_5car_start_stop;	
 		can_attach_wagon: switch_br_801_5car_can_attach_wagon;

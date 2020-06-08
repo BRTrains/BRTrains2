@@ -121,6 +121,7 @@ item(FEAT_TRAINS, item_br_800_5car) {
 		cargo_subtype_text: switch_br_800_5car_subtype_text;
 		
 		power: switch_br_800_5car_power;
+		speed: switch_br_800_speed;
 
 		articulated_part: switch_br_800_5car_articulated;
 		start_stop: switch_br_800_5car_start_stop;	

@@ -4,6 +4,14 @@
 STR_GRF_NAME							:Modern UK Train Set
 STR_GRF_DESC							:A collection of recently-released modern UK trains; designed to be played with alongside BRTrains.{}{}{WHITE}{COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{}{WHITE}License: {LTBLUE}GPL v2
 
+
+# Parameters 
+STR_PARAM_MAX_SPEED                     :Max Speed
+STR_PARAM_MAX_SPEED_DESC                :Use actual speed or design speed on trains
+STR_PARAM_MAX_SPEED_REAL                :Actual Speed
+STR_PARAM_MAX_SPEED_DESIGN              :Design Speed
+
+
 # Vehicle names
 STR_BR_68_5A                            :British Rail Class 68 (Mark 5A)
 

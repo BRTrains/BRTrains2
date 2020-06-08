@@ -93,6 +93,7 @@ item(FEAT_TRAINS, item_br_805) {
 		purchase: spriteset_br_800_purchase_avanti;
 		
 		power: switch_br_805_power;
+		speed: switch_br_800_speed;		
 
 		articulated_part: switch_br_805_articulated;
 		start_stop: switch_br_805_start_stop;	

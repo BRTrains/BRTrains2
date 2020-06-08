@@ -68,3 +68,10 @@ switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_avanti, current_railtype)
 	ELRL: spriteset_br_800_rear_panto_avanti;
 	spriteset_br_800_rear_avanti;
 }
+
+
+// Speed switch
+switch(FEAT_TRAINS, SELF, switch_br_800_speed, param_max_speed) {
+	0: 125;
+	1: 140;
+}

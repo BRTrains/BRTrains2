@@ -92,6 +92,7 @@ item(FEAT_TRAINS, item_br_802_9car) {
 		purchase: spriteset_br_800_purchase_gwr;
 		
 		power: switch_br_802_9car_power;
+		speed: switch_br_800_speed;
 
 		articulated_part: switch_br_802_9car_articulated;
 		start_stop: switch_br_802_9car_start_stop;	
