@@ -1,0 +1,8 @@
+spriteset (spriteset_br_710_front, "gfx/br_710.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_710_middle, "gfx/br_710.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_710_middle_panto, "gfx/br_710.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_710_rear, "gfx/br_710.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_710_purchase, "gfx/br_710.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
