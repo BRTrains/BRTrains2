@@ -24,6 +24,9 @@ STR_BR_345                              :British Rail Class 345 'Aventra' (9-Car
 
 STR_BR_397                              :British Rail Class 397 'Civity'
 
+STR_BR_701_0                            :British Rail Class 701/0 'Aventra' (10-Car)
+STR_BR_701_5                            :British Rail Class 701/5 'Aventra' (5-Car)
+
 STR_BR_745                              :British Rail Class 745/0/1 (12-Car)
 STR_BR_755_3CAR                         :British Rail Class 755/3 (3-Car with PP)
 STR_BR_755_4CAR                         :British Rail Class 755/4 (4-Car with PP)
