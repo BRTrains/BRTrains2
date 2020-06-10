@@ -72,8 +72,23 @@ THIS PROJECT
 	/0				(3car)		204
 	/1				(4car)		284
 
+345'Aventra'			EMU						TfL			90mph
+	/0				(9car)		1500			(8th car pantograph)
+	
 397'Civity'				EMU						TPEXRPRESS	125mph		(4th car pantograph)
 	/0				(5car)		286
+
+701'Aventra'			EMU						SOUTHWESTR	100mph		(3rd rail)
+	/0				(10car)		556+740stand
+	/5				(5car)		269+330stand
+	
+710'Aventra'			EMU						LND OVRGRND	75mph		
+	/1				(4car)		189+489stand	(2nd car pantograph)
+	/2				(5car)		241+641stand	(3rd rail)
+	
+720'Flirt'				EMU						GRTR ANGLIA	100mph
+	/1				(10car)		1100+290stand	(2nd car pantograph)
+	/5				(5car)		540+145stand	(7th car pantograph)
 	
 745'FLIRT'				EMU						GRTR ANGLIA	100mph		(2nd/11th car pantograph)
 	/0				(12car)		757
@@ -123,25 +138,11 @@ TODO
 ======
 MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
 
-345'Aventra'			EMU						TfL			90mph
-	/0				(9car)		1500			(8th car pantograph)
-
-701'Aventra'			EMU						SOUTHWESTR	100mph		(3rd rail)
-	/0				(10car)		556+740stand
-	/5				(5car)		269+330stand
-	
 707'Desiro City'		EMU						SOUTHWESTR	100mph		(3rd rail)
 	/0				(5car)		275+320stand
-	
-710'Aventra'			EMU						LND OVRGRND	75mph		
-	/1				(4car)		189+489stand	(2nd car pantograph)
-	/2				(5car)		241+641stand	(3rd rail)
-	
+
 717'Desiro City'		EMU						THAMESLINK	85mph		(3rd rail + pantograph)
 	/0				(6car)		362+581stand
 	
-720'Flirt'				EMU						GRTR ANGLIA	100mph
-	/1				(10car)		1100+290stand	(2nd car pantograph)
-	/5				(5car)		540+145stand	(7th car pantograph)
-	
+
 
