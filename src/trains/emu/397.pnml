@@ -53,9 +53,9 @@ item(FEAT_TRAINS, item_br_397) {
 		cargo_disallow_refit: [];
 		
 		speed: 125 mph;
-		power: 3000 hp;
+		power: 3400 hp; // Educated guess
 		cargo_capacity: (286/5);
-		weight: 140 ton;	// This is a total guess based on the acceleration of the 800
+		weight: 192.5 ton;	// Thanks TPX's Twitter people
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
