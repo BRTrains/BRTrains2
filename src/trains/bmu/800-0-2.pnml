@@ -129,6 +129,6 @@ item(FEAT_TRAINS, item_br_800_5car) {
 		visual_effect_and_powered: switch_br_800_5car_particles;
 				
 		cargo_capacity: switch_br_800_5car_capacity;
-				
+		additional_text: string(STR_DSC_BR_800);
 	}
 }

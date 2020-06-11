@@ -98,6 +98,8 @@ item(FEAT_TRAINS, item_br_805) {
 		articulated_part: switch_br_805_articulated;
 		start_stop: switch_br_805_start_stop;	
 		can_attach_wagon: switch_br_805_can_attach_wagon;
-		visual_effect_and_powered: switch_br_805_particles;				
+		visual_effect_and_powered: switch_br_805_particles;		
+		additional_text: string(STR_DSC_BR_805);
+				
 	}
 }

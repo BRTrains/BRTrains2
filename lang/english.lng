@@ -72,3 +72,32 @@ STR_LIVERY_BR_769_NORTHERN              : Northern Trains
 
 # Messages
 STR_CANNOT_ATTACH						:Cannot attach a different class of train
+
+# Vehicle Descriptions
+STR_DSC_BR_MK5A                        :Type: {RED}Diesel Locomotive{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
+
+STR_DSC_BR_195                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
+
+STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
+STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
+STR_DSC_BR_397                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
+
+STR_DSC_BR_701                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Southwestern
+STR_DSC_BR_710                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London Overground
+STR_DSC_BR_720                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Greater Anglia
+STR_DSC_BR_745                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Greater Anglia
+STR_DSC_BR_755                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Greater Anglia
+STR_DSC_BR_756                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
+STR_DSC_BR_769                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London, Northen, Rail Operations Group
+STR_DSC_BR_769_9                       :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
+STR_DSC_BR_777                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Merseyrail
+
+STR_DSC_BR_800                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway, Great Western Railway
+STR_DSC_BR_801                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway
+STR_DSC_BR_802_5CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway, Transpennine Express, Hull Trains
+STR_DSC_BR_802_9CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
+STR_DSC_BR_805                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast
+STR_DSC_BR_807                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast
+
+
+

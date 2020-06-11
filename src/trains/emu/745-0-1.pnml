@@ -106,6 +106,6 @@ item(FEAT_TRAINS, item_br_745) {
 		visual_effect_and_powered: switch_br_745_particles;
 				
 		cargo_capacity: switch_br_745_capacity;
-				
+		additional_text: string(STR_DSC_BR_745);
 	}
 }

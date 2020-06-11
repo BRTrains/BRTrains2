@@ -137,6 +137,7 @@ item(FEAT_TRAINS, item_br_802_5car) {
 		can_attach_wagon: switch_br_802_5car_can_attach_wagon;
 		visual_effect_and_powered: switch_br_802_5car_particles;
 				
-		cargo_capacity: switch_br_802_5car_capacity;		
+		cargo_capacity: switch_br_802_5car_capacity;
+		additional_text: string(STR_DSC_BR_802_5CAR);		
 	}
 }

@@ -101,5 +101,6 @@ item(FEAT_TRAINS, item_br_756_3) {
 				
 		power: switch_br_756_3_power;
 		length: switch_br_756_3_length;
+		additional_text: string(STR_DSC_BR_756);
 	}
 }

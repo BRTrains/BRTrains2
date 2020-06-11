@@ -64,6 +64,8 @@
 THIS PROJECT
 ======
 
+MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
+
 195'Civity'				DMU						NORTHERN	100mph
 	/0 				(2car)		124
 	/1				(3car)		204
@@ -136,13 +138,10 @@ THIS PROJECT
 
 TODO
 ======
-MARK 5A (class68)(4car)	D		291				TPEXPRESS	125mph
+
 
 707'Desiro City'		EMU						SOUTHWESTR	100mph		(3rd rail)
 	/0				(5car)		275+320stand
 
-717'Desiro City'		EMU						THAMESLINK	85mph		(3rd rail + pantograph)
-	/0				(6car)		362+581stand
-	
 
 

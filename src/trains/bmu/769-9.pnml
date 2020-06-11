@@ -97,6 +97,7 @@ item(FEAT_TRAINS, item_br_769_9) {
 		visual_effect_and_powered: switch_br_769_9_particles;
 				
 		purchase_cargo_capacity: return (300/4);
+		additional_text: string(STR_DSC_BR_769_9);	
 				
 	}
 }

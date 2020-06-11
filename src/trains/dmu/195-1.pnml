@@ -84,6 +84,7 @@ item(FEAT_TRAINS, item_br_195_1) {
 		visual_effect_and_powered: switch_br_195_1_particles;
 				
 		purchase_cargo_capacity: return (204/3);
+		additional_text: string(STR_DSC_BR_195);	
 				
 	}
 }

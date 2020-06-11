@@ -78,5 +78,6 @@ item(FEAT_TRAINS, item_br_701_5) {
 		start_stop: switch_br_701_5_start_stop;	
 		can_attach_wagon: switch_br_701_5_can_attach_wagon;
 		visual_effect_and_powered: switch_br_701_5_particles;			
+		additional_text: string(STR_DSC_BR_701);	
 	}
 }

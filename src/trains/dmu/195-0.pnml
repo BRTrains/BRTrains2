@@ -75,6 +75,7 @@ item(FEAT_TRAINS, item_br_195_0) {
 		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 				
 		purchase_cargo_capacity: return (124/2);
+		additional_text: string(STR_DSC_BR_195);	
 		
 	}
 }

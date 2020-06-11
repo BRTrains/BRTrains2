@@ -128,5 +128,6 @@ item(FEAT_TRAINS, item_br_800_9car) {
 		cargo_capacity: switch_br_800_9car_capacity;
 		power: switch_br_800_9car_power;
 		speed: switch_br_800_speed;
+		additional_text: string(STR_DSC_BR_800);
 	}
 }
