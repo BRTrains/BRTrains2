@@ -1,6 +1,9 @@
 # Modern UK Trainset
 A UK Train Set for OpenTTD including all the latest British Rail classes to be introduced between 2015 and 2025. This set is designed to be played with BRTrains (BRTrains lacks classes from after 2015, so this newGRF completes the gap) rather than on its own. Graphics are designed to work best with the Finescale UK Track Set, but will work with any track combination which provides 3rd rail tracks.
 
+![Banner](./banner.png)
+
+
 ### Train List
 | DMU | EMU | | Bi-Mode | Locomotive |
 |---|---|---|---|---|
