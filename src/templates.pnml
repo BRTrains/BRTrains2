@@ -1,0 +1,42 @@
+// Train sprite template
+template tmpl_train_4(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11] //n
+	[x + 35, y + 2, 21,		18,		-11,	-10] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7] //e
+	[x + 92, y + 2, 21,		18,		-12,	-11] //se
+}
+
+template tmpl_train_4_nowarn(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11,	WHITE] //n
+	[x + 35, y + 2, 21,		18,		-11,	-10,	WHITE] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7,		WHITE] //e
+	[x + 92, y + 2, 21,		18,		-12,	-11,	WHITE] //se
+}
+
+// Train sprite template
+template tmpl_train_8(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11] //n
+	[x + 35, y + 2, 21,		18,		-11,	-10] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7] //e
+	[x + 92, y + 2, 21,		18,		-12,	-11] //se
+	[x + 115, y + 2, 8,		23,		-3,		-11] //s
+	[x + 125, y + 2, 21,	18,		-11,	-10] //sw
+	[x + 148, y + 2, 32,	12,		-16,	-7] //w
+	[x + 182, y + 2, 21,	18,		-12,	-11] //nw
+}
+
+// Train sprite template
+template tmpl_train_8_nowarn(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11,	WHITE] //n
+	[x + 35, y + 2, 21,		18,		-11,	-10,	WHITE] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7,		WHITE] //e
+	[x + 92, y + 2, 21,		18,		-12,	-11,	WHITE] //se
+	[x + 115, y + 2, 8,		23,		-3,		-11,	WHITE] //s
+	[x + 125, y + 2, 21,	18,		-11,	-10,	WHITE] //sw
+	[x + 148, y + 2, 32,	12,		-16,	-7,		WHITE] //w
+	[x + 182, y + 2, 21,	18,		-12,	-11,	WHITE] //nw
+}

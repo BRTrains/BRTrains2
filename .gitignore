@@ -1,0 +1,9 @@
+.nmlcache/
+master-gfx/
+build/
+*test*
+*.grf
+*.cache
+*.cacheindex
+build.json
+conf.ps1

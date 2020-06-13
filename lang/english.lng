@@ -1,0 +1,106 @@
+﻿﻿##grflangid 0x01
+
+# GRF name and description
+STR_GRF_NAME							:Modern UK Train Set
+STR_GRF_DESC							:A collection of recently-released modern UK trains; designed to be played with alongside BRTrains.{}{}{WHITE}{COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{}{WHITE}License: {LTBLUE}GPL v3
+
+
+# Parameters 
+STR_PARAM_MAX_SPEED                     :Max Speed
+STR_PARAM_MAX_SPEED_DESC                :Use actual speed or design speed on trains
+STR_PARAM_MAX_SPEED_REAL                :Actual Speed
+STR_PARAM_MAX_SPEED_DESIGN              :Design Speed
+
+
+# Vehicle names
+STR_BR_68_5A                            :British Rail Class 68 (Mark 5A) (4-Car)
+
+STR_BR_195_2CAR							:British Rail Class 195/0 'Civity' (2-Car)
+STR_BR_195_3CAR							:British Rail Class 195/1 'Civity' (3-Car)
+STR_BR_331_3CAR                         :British Rail Class 331/0 'Civity' (3-Car)
+STR_BR_331_4CAR                         :British Rail Class 331/1 'Civity' (4-Car)
+
+STR_BR_345                              :British Rail Class 345 'Aventra' (9-Car)
+
+STR_BR_397                              :British Rail Class 397 'Civity' (5-Car)
+
+STR_BR_701_0                            :British Rail Class 701/0 'Aventra' (10-Car)
+STR_BR_701_5                            :British Rail Class 701/5 'Aventra' (5-Car)
+
+STR_BR_707                              :British Rail Class 707 'Desiro City' (5-Car)
+
+STR_BR_710_1                            :British Rail Class 710/1 'Aventra' (4-Car)
+STR_BR_710_2_4CAR                       :British Rail Class 710/2 'Aventra' (4-Car)
+STR_BR_710_2_5CAR                       :British Rail Class 710/2 'Aventra' (5-Car)
+
+STR_BR_720_1                            :British Rail Class 720/1 'Aventra' (10-Car)
+STR_BR_720_5                            :British Rail Class 720/5 'Aventra' (5-Car)
+
+STR_BR_745                              :British Rail Class 745/0/1 (12-Car)
+STR_BR_755_3CAR                         :British Rail Class 755/3 (3-Car with PP)
+STR_BR_755_4CAR                         :British Rail Class 755/4 (4-Car with PP)
+
+STR_BR_756_3CAR                         :British Rail Class 756/3 (3-Car with PP)
+STR_BR_756_4CAR                         :British Rail Class 756/4 (4-Car with PP)
+
+STR_BR_769                              :British Rail Class 769/0/3/4 'Flex' (4-Car)
+STR_BR_769_9                            :British Rail Class 769/9 'Flex' (4-Car)
+
+STR_BR_777                              :British Rail Class 777 'METRO' (4-Car)
+
+STR_BR_800_5CAR                         :British Rail Class 800/0/2 (5-Car)
+STR_BR_800_9CAR                         :British Rail Class 800/1/3 (9-Car)
+STR_BR_801_5CAR                         :British Rail Class 801/1 (5-Car)
+STR_BR_801_9CAR                         :British Rail Class 801/2 (9-Car)
+STR_BR_802_5CAR                         :British Rail Class 802/0/2/3 (5-Car)
+STR_BR_802_9CAR                         :British Rail Class 802/1 (9-Car)
+STR_BR_805                              :British Rail Class 805 (5-car)
+STR_BR_807                              :British Rail Class 807 (7-car)
+
+
+# Livery Names
+STR_LIVERY_BR_800_LNER                  : LNER 'Azuma'
+STR_LIVERY_BR_800_GWR                   : Great Western Railway 'Intercity Express Train'
+STR_LIVERY_BR_800_TPX                   : Transpennine Express 'Nova 1'
+STR_LIVERY_BR_800_HULL                  : Hull Trains 'Paragon'
+STR_LIVERY_BR_800_AVANTI                : Avanti West Coast 'AT300'
+
+STR_LIVERY_BR_745_REGULAR               : Greater Anglia 'Intercity'
+STR_LIVERY_BR_745_STANSTED              : Greater Anglia 'Stansted Express'
+
+STR_LIVERY_BR_769_TFW                   : Transport for Wales
+STR_LIVERY_BR_769_ROG                   : Rail Operations Group
+STR_LIVERY_BR_769_NORTHERN              : Northern Trains
+
+# Messages
+STR_CANNOT_ATTACH						:Cannot attach a different class of train
+
+# Vehicle Descriptions
+STR_DSC_BR_MK5A                        :Type: {RED}Diesel Locomotive{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
+
+STR_DSC_BR_195                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
+
+STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
+STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
+STR_DSC_BR_397                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
+
+STR_DSC_BR_701                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}South Western Railway
+STR_DSC_BR_707                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}South Western Railway
+STR_DSC_BR_710                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London Overground
+STR_DSC_BR_720                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Greater Anglia
+STR_DSC_BR_745                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Greater Anglia
+STR_DSC_BR_755                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Greater Anglia
+STR_DSC_BR_756                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
+STR_DSC_BR_769                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London, Northen, Rail Operations Group
+STR_DSC_BR_769_9                       :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
+STR_DSC_BR_777                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Merseyrail
+
+STR_DSC_BR_800                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway, Great Western Railway
+STR_DSC_BR_801                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway
+STR_DSC_BR_802_5CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway, Transpennine Express, Hull Trains
+STR_DSC_BR_802_9CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
+STR_DSC_BR_805                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast
+STR_DSC_BR_807                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast
+
+
+
