@@ -1,0 +1,36 @@
+Modern UK Trainset Changelog
+============================
+
+v1.0.0 (2020/06/13)
+======
+Added the following locomotives:
+    - Mark 5A (rolling stock) in 'Transpennine Express' livery.
+
+Added the following DMUs:
+    - Class 195/0/1 in 'Northern' livery.
+    
+Added the following EMUs:
+    - Class 331/0/1 in 'Northen' livery.
+    - Class 345 in 'Transport for London' livery.
+    - Class 397 in 'Transpennine Express' livery.
+    - Class 701/0/5 in 'South Western Railway' livery.
+    - Class 707 in 'South Western Railway' livery.
+    - Class 710/1/2 in 'London Overground' livery.
+    - Class 720/1/5 in 'Greater Anglia' livery.
+    - Class 745/0/1 in 'Greater Anglia' livery.
+    - Class 777 in 'Merseyrail' livery.
+    - Class 801/1/2 in 'London North Eastern Railway' livery.
+    - Class 807 in 'Avanti West Coast' livery.
+    
+Added the following Bi-Mode Units:
+    - Class 755/3/4 in 'Greater Anglia' livery.
+    - Class 756/3/4 in 'Transport for Wales' livery.
+    - Class 769/0/3/4/9 in 'Transport for London', 'Northen', 'Great Western Railway', and 'Rail Operation Group' liveries.
+    - Class 800/0/1/2/3 in 'London North Eastern Railway' and 'Great Western Railway' liveries.
+    - Class 802/0/1/2/3 in 'Great Western Railway', 'Transpennine Express', and 'Hull Trains' liveries.
+    - Class 805 in 'Avanti West Coast' livery.
+    
+Added the following features:
+    - Choose between 'design' and 'actual running' speeds.
+    - Select different liveries on select trains by using the 'Refit' option in the depo.
+    - Dynamically raise/lower the pantograph on Bi-mode units depending on the railtype.
