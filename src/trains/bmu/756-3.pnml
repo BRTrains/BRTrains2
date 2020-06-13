@@ -62,7 +62,7 @@ item(FEAT_TRAINS, item_br_756_3) {
 		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
 		refittable_cargo_classes: bitmask(CC_PASSENGERS);
 		non_refittable_cargo_classes: bitmask();
-		cost_factor: 45;
+		cost_factor: 62;
 		loading_speed: 5;
 		running_cost_factor: 100;
 		cargo_allow_refit: [];
@@ -70,7 +70,7 @@ item(FEAT_TRAINS, item_br_756_3) {
 		
 		speed: 100 mph;
 		power: 3500 hp;
-		cargo_capacity: (167/5);
+		cargo_capacity: (167/3);
 		weight: 94.8 ton; 
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required

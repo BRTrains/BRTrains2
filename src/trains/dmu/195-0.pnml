@@ -37,7 +37,7 @@ item(FEAT_TRAINS, item_br_195_0) {
 		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
 		refittable_cargo_classes: bitmask(CC_PASSENGERS);
 		non_refittable_cargo_classes: bitmask();
-		cost_factor: 45;
+		cost_factor: 42;
 		loading_speed: 5;
 		running_cost_factor: 100;
 		cargo_allow_refit: [];
