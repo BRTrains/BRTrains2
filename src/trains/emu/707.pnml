@@ -43,8 +43,8 @@ item(FEAT_TRAINS, item_br_707) {
 		refittable_cargo_classes: bitmask(CC_PASSENGERS);
 		non_refittable_cargo_classes: bitmask();
 		cost_factor: 65;
-		loading_speed: 5;
-		running_cost_factor: 100;
+		loading_speed: 25;
+		running_cost_factor: 44;
 		cargo_allow_refit: [];
 		cargo_disallow_refit: [];
 		
