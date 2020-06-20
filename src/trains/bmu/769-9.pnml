@@ -1,5 +1,5 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_769_9_spriteset, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_9_spriteset, position_in_articulated_veh % 4) {
 	0: spriteset_br_769_front_gwr;
     1: spriteset_br_769_middle_panto_gwr;
 	3: spriteset_br_769_rear_gwr;
@@ -12,17 +12,17 @@ switch(FEAT_TRAINS, SELF, switch_br_769_9_articulated, extra_callback_info1) {
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_ohle, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_ohle, position_in_articulated_veh % 4) {
     1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
     visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_3rdr, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_3rdr, position_in_articulated_veh % 4) {
     // No effects on 3RDR (for now...)
     visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_diesel, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_diesel, position_in_articulated_veh % 4) {
     0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
     3: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
     visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
@@ -45,6 +45,7 @@ switch(FEAT_TRAINS, SELF, switch_br_769_9_start_stop, num_vehs_in_consist) {
 // Only allow the same train type to be added to itself
 switch(FEAT_TRAINS, SELF, switch_br_769_9_can_attach_wagon, vehicle_type_id) {
 	item_br_769_9: return CB_RESULT_ATTACH_ALLOW;
+	item_br_769: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 

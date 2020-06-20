@@ -7,7 +7,7 @@ spriteset (spriteset_br_68_5a_purchase, "gfx/br_68_5a.png") {
 }
 
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_consist % 6) {
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_articulated_veh % 6) {
 	// 0 is first car, 1 is second car, so on...
 	// % 2 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,end);(front,end)...
@@ -36,7 +36,7 @@ switch(FEAT_TRAINS, SELF, switch_br_68_5a_can_attach_wagon, vehicle_type_id) {
 }
 
 // Only the driving engine has particles
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_particles, position_in_consist % 6) {
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_particles, position_in_articulated_veh % 6) {
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

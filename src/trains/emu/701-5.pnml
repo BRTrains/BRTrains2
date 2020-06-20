@@ -1,5 +1,5 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_701_5_spriteset, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_701_5_spriteset, position_in_articulated_veh % 5) {
 	0: spriteset_br_701_front;
 	4: spriteset_br_701_rear;
 	spriteset_br_701_middle;
@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_br_701_5_articulated, extra_callback_info1) {
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_701_5_particles, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_701_5_particles, position_in_articulated_veh % 5) {
 	// No effects - 3RDR
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

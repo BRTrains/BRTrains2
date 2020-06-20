@@ -1,5 +1,5 @@
 // Livery callbacks
-switch(FEAT_TRAINS, SELF, switch_br_805_spriteset, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_805_spriteset, position_in_articulated_veh % 5) {
 	0: spriteset_br_800_front_avanti;
 	4: switch_br_800_spriteset_rear_avanti;
 	spriteset_br_800_middle_avanti;
@@ -13,14 +13,14 @@ switch(FEAT_TRAINS, SELF, switch_br_805_articulated, extra_callback_info1) {
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_805_particles_diesel, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_805_particles_diesel, position_in_articulated_veh % 5) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	4: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_805_particles_electric, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_805_particles_electric, position_in_articulated_veh % 5) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	4: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);

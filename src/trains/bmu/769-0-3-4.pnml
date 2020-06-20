@@ -1,18 +1,18 @@
-switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_rog, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_rog, position_in_articulated_veh % 4) {
 	0: spriteset_br_769_front_rog;
     1: spriteset_br_769_middle_panto_rog;
 	3: spriteset_br_769_rear_rog;
 	spriteset_br_769_middle_rog;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_northern, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_northern, position_in_articulated_veh % 4) {
 	0: spriteset_br_769_front_northern;
     1: spriteset_br_769_middle_panto_northern;
 	3: spriteset_br_769_rear_northern;
 	spriteset_br_769_middle_northern;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_tfw, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_tfw, position_in_articulated_veh % 4) {
 	0: spriteset_br_769_front_tfw;
     1: spriteset_br_769_middle_panto_tfw;
 	3: spriteset_br_769_rear_tfw;
@@ -31,17 +31,17 @@ switch(FEAT_TRAINS, SELF, switch_br_769_articulated, extra_callback_info1) {
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_769_particles_ohle, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_particles_ohle, position_in_articulated_veh % 4) {
     1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
     visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_769_particles_3rdr, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_particles_3rdr, position_in_articulated_veh % 4) {
     // No effects on 3RDR (for now...)
     visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_769_particles_diesel, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_769_particles_diesel, position_in_articulated_veh % 4) {
     0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
     3: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
     visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
@@ -52,7 +52,7 @@ switch(FEAT_TRAINS, SELF, switch_br_769_particles, current_railtype) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	ELRL: switch_br_769_particles_ohle;
     railtype("3RDC"): switch_br_769_particles_ohle;
-    railtype("3RDR"): switch_br_769_particles_3rdr;
+    railtype("3RDR"): switch_br_769_particles_diesel;
 	switch_br_769_particles_diesel;
 }
 
@@ -64,6 +64,7 @@ switch(FEAT_TRAINS, SELF, switch_br_769_start_stop, num_vehs_in_consist) {
 // Only allow the same train type to be added to itself
 switch(FEAT_TRAINS, SELF, switch_br_769_can_attach_wagon, vehicle_type_id) {
 	item_br_769: return CB_RESULT_ATTACH_ALLOW;
+	item_br_769_9: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 

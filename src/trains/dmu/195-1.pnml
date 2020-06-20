@@ -1,5 +1,5 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_195_1_spriteset, position_in_consist % 3) {
+switch(FEAT_TRAINS, SELF, switch_br_195_1_spriteset, position_in_articulated_veh % 3) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	// % 3 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,middle,end);(front,middle,end)...
@@ -17,7 +17,7 @@ switch(FEAT_TRAINS, SELF, switch_br_195_1_articulated, extra_callback_info1) {
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_195_1_particles, position_in_consist % 3) {
+switch(FEAT_TRAINS, SELF, switch_br_195_1_particles, position_in_articulated_veh % 3) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	2: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
@@ -32,6 +32,7 @@ switch(FEAT_TRAINS, SELF, switch_br_195_1_start_stop, num_vehs_in_consist) {
 // Only allow the same train type to be added to itself
 switch(FEAT_TRAINS, SELF, switch_br_195_1_can_attach_wagon, vehicle_type_id) {
 	item_br_195_1: return CB_RESULT_ATTACH_ALLOW;
+	item_br_195_0: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 

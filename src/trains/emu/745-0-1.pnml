@@ -1,12 +1,12 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_745_0_spriteset, position_in_consist % 12) {
+switch(FEAT_TRAINS, SELF, switch_br_745_0_spriteset, position_in_articulated_veh % 12) {
 	0: spriteset_br_745_front;
 	10: spriteset_br_745_0_rear_panto;
 	11: spriteset_br_745_0_rear;
 	spriteset_br_745_middle;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_745_1_spriteset, position_in_consist % 12) {
+switch(FEAT_TRAINS, SELF, switch_br_745_1_spriteset, position_in_articulated_veh % 12) {
 	0: spriteset_br_745_front;
 	10: spriteset_br_745_1_rear_panto;
 	11: spriteset_br_745_1_rear;
@@ -27,7 +27,7 @@ switch(FEAT_TRAINS, SELF, switch_br_745_articulated, extra_callback_info1) {
 }
 
 // Only give particle effects to pantograph car
-switch(FEAT_TRAINS, SELF, switch_br_745_particles, position_in_consist % 12) {
+switch(FEAT_TRAINS, SELF, switch_br_745_particles, position_in_articulated_veh % 12) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	10: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);

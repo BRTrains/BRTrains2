@@ -1,5 +1,5 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_777_spriteset, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_777_spriteset, position_in_articulated_veh % 4) {
 	0: spriteset_br_777_front;
 	3: spriteset_br_777_rear;
 	spriteset_br_777_middle;
@@ -14,7 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_br_777_articulated, extra_callback_info1) {
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_777_particles, position_in_consist % 4) {
+switch(FEAT_TRAINS, SELF, switch_br_777_particles, position_in_articulated_veh % 4) {
 	// No effects; third rail
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }

@@ -1,5 +1,5 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_720_1_spriteset, position_in_consist % 10) {
+switch(FEAT_TRAINS, SELF, switch_br_720_1_spriteset, position_in_articulated_veh % 10) {
 	0: spriteset_br_720_front;
 	6: spriteset_br_720_middle_panto;
 	9: spriteset_br_720_rear;
@@ -15,7 +15,7 @@ switch(FEAT_TRAINS, SELF, switch_br_720_1_articulated, extra_callback_info1) {
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_720_1_particles, position_in_consist % 10) {
+switch(FEAT_TRAINS, SELF, switch_br_720_1_particles, position_in_articulated_veh % 10) {
 	6: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC	, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
@@ -28,6 +28,7 @@ switch(FEAT_TRAINS, SELF, switch_br_720_1_start_stop, num_vehs_in_consist) {
 // Only allow the same train type to be added to itself
 switch(FEAT_TRAINS, SELF, switch_br_720_1_can_attach_wagon, vehicle_type_id) {
 	item_br_720_1: return CB_RESULT_ATTACH_ALLOW;
+	item_br_720_5: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 

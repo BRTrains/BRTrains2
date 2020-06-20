@@ -1,11 +1,11 @@
 // Livery callbacks
-switch(FEAT_TRAINS, SELF, switch_br_800_5car_spriteset_lner, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_spriteset_lner, position_in_articulated_veh % 5) {
 	0: spriteset_br_800_front_lner;
 	4: switch_br_800_spriteset_rear_lner;
 	spriteset_br_800_middle_lner;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_800_5car_spriteset_gwr, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_spriteset_gwr, position_in_articulated_veh % 5) {
 	0: spriteset_br_800_front_gwr;
 	4: switch_br_800_spriteset_rear_gwr;
 	spriteset_br_800_middle_gwr;
@@ -28,14 +28,14 @@ switch(FEAT_TRAINS, SELF, switch_br_800_5car_articulated, extra_callback_info1) 
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_800_5car_particles_diesel, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_particles_diesel, position_in_articulated_veh % 5) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	4: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_800_5car_particles_electric, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_particles_electric, position_in_articulated_veh % 5) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	4: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
@@ -56,6 +56,10 @@ switch(FEAT_TRAINS, SELF, switch_br_800_5car_start_stop, num_vehs_in_consist) {
 // Only allow the same train type to be added to itself
 switch(FEAT_TRAINS, SELF, switch_br_800_5car_can_attach_wagon, vehicle_type_id) {
 	item_br_800_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_800_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_805: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 

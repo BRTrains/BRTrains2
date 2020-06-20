@@ -1,5 +1,5 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_755_4_spriteset, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_755_4_spriteset, position_in_articulated_veh % 5) {
 	0: spriteset_br_755_front;
     1: spriteset_br_755_middle;
 	2: spriteset_br_755_pp;
@@ -14,12 +14,12 @@ switch(FEAT_TRAINS, SELF, switch_br_755_4_articulated, extra_callback_info1) {
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_755_4_particles_electric, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_755_4_particles_electric, position_in_articulated_veh % 5) {
 	3: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_755_4_particles_diesel, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_755_4_particles_diesel, position_in_articulated_veh % 5) {
 	2: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
@@ -38,6 +38,7 @@ switch(FEAT_TRAINS, SELF, switch_br_755_4_start_stop, num_vehs_in_consist) {
 // Only allow the same train type to be added to itself
 switch(FEAT_TRAINS, SELF, switch_br_755_4_can_attach_wagon, vehicle_type_id) {
 	item_br_755_4: return CB_RESULT_ATTACH_ALLOW;
+	item_br_755_3: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
@@ -47,7 +48,7 @@ switch(FEAT_TRAINS, SELF, switch_br_755_4_power, current_railtype) {
 	return 2570;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_755_4_length, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_755_4_length, position_in_articulated_veh % 5) {
 	2: return 4;
 	return 8;
 }

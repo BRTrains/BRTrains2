@@ -1,5 +1,5 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_397_spriteset, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_397_spriteset, position_in_articulated_veh % 5) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	// % 3 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,middle,end);(front,middle,end)...
@@ -18,7 +18,7 @@ switch(FEAT_TRAINS, SELF, switch_br_397_articulated, extra_callback_info1) {
 }
 
 // Only give particle effects to middle/pantograph car
-switch(FEAT_TRAINS, SELF, switch_br_397_particles, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_397_particles, position_in_articulated_veh % 5) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	3: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
