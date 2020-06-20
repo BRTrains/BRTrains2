@@ -7,12 +7,12 @@ spriteset (spriteset_br_68_5a_purchase, "gfx/br_68_5a.png") {
 }
 
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_consist % 6) {
 	// 0 is first car, 1 is second car, so on...
 	// % 2 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,end);(front,end)...
 	0: spriteset_br_68_5a_front;
-	4: spriteset_br_68_5a_rear;
+	5: spriteset_br_68_5a_rear;
 	spriteset_br_68_5a_middle;
 }
 
@@ -20,7 +20,7 @@ switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_consist % 5) {
 switch(FEAT_TRAINS, SELF, switch_br_68_5a_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..4: return item_br_68_5a;
+	1..5: return item_br_68_5a;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
@@ -36,7 +36,7 @@ switch(FEAT_TRAINS, SELF, switch_br_68_5a_can_attach_wagon, vehicle_type_id) {
 }
 
 // Only the driving engine has particles
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_particles, position_in_consist % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_particles, position_in_consist % 6) {
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
@@ -53,15 +53,15 @@ item(FEAT_TRAINS, item_br_68_5a) {
 		refittable_cargo_classes: bitmask(CC_PASSENGERS);
 		non_refittable_cargo_classes: bitmask();
 		cost_factor: 65;
-		loading_speed: 15;
-		running_cost_factor: 35;
+		loading_speed: 5;
+		running_cost_factor: 100;
 		cargo_allow_refit: [];
 		cargo_disallow_refit: [];
 		
 		speed: 100 mph;
 		power: 3800 hp;
-		cargo_capacity: (291/5);
-		weight: 257 ton; 
+		cargo_capacity: (291/6);
+		weight: 299 ton; 
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_br_68_5a) {
 		can_attach_wagon: switch_br_68_5a_can_attach_wagon;
 		visual_effect_and_powered: switch_br_68_5a_particles;
 				
-		purchase_cargo_capacity: return (291/5);
+		purchase_cargo_capacity: return (291/6);
 		additional_text: string(STR_DSC_BR_MK5A);	
 		
 	}
