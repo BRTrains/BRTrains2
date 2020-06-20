@@ -30,6 +30,7 @@ switch(FEAT_TRAINS, SELF, switch_br_801_5car_start_stop, num_vehs_in_consist) {
 switch(FEAT_TRAINS, SELF, switch_br_801_5car_can_attach_wagon, vehicle_type_id) {
 	item_br_801_5car: return CB_RESULT_ATTACH_ALLOW;
 	item_br_801_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_807: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
