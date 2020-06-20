@@ -1,9 +1,17 @@
-.nmlcache/
-master-gfx/
+# Build files
 build/
-*test*
-*.grf
-*.cache
-*.cacheindex
 build.json
 conf.ps1
+*.grf
+*.tar
+
+# NML cache
+.nmlcache/
+*.cache
+*.cacheindex
+
+# Test files
+*test*
+
+# No clue
+master-gfx/
