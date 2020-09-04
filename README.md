@@ -94,4 +94,5 @@ If you want to add to the pack, just pull request it and it might make it in.
 Alternatively, if you just want to steal the build script(s) then go wild.
 
 ### License
-This project is licensed under the GPLv3 license - see [License.md](./LICENSE) for details.
+This project is licensed under either the GPLv3 or GPLv2 license
+See [LICENSE](./LICENSE) regarding GPLv3 or [LICENSE-v2](./LICENSE-V2) regarding GPLv2
