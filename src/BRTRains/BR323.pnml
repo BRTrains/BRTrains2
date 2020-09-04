@@ -1,0 +1,254 @@
+spriteset(spriteset_BR323_Purchase, "gfx/BR323.png") {
+	template_purchase(172, 112)
+}
+
+spriteset(spriteset_BR323a_RR, "gfx/BR323.png") {
+	template_train32px(172, 125)
+}
+
+spriteset(spriteset_BR323b_RR, "gfx/BR323.png") {
+	template_train32px(172, 225)
+}
+
+spriteset(spriteset_BR323c_RR, "gfx/BR323.png") {
+	template_train32px_reversed(172, 150)
+}
+
+spriteset(spriteset_BR323a_Centro, "gfx/BR323.png") {
+	template_train32px(172, 250)
+}
+
+spriteset(spriteset_BR323b_Centro, "gfx/BR323.png") {
+	template_train32px(172, 350)
+}
+
+spriteset(spriteset_BR323c_Centro, "gfx/BR323.png") {
+	template_train32px_reversed(172, 275)
+}
+
+spriteset(spriteset_BR323a_FNW, "gfx/BR323.png") {
+	template_train32px(172, 375)
+}
+
+spriteset(spriteset_BR323b_FNW, "gfx/BR323.png") {
+	template_train32px(172, 475)
+}
+
+spriteset(spriteset_BR323c_FNW, "gfx/BR323.png") {
+	template_train32px_reversed(172, 400)
+}
+
+spriteset(spriteset_BR323a_FNW_Barbie, "gfx/BR323.png") {
+	template_train32px(172, 500)
+}
+
+spriteset(spriteset_BR323b_FNW_Barbie, "gfx/BR323.png") {
+	template_train32px(172, 600)
+}
+
+spriteset(spriteset_BR323c_FNW_Barbie, "gfx/BR323.png") {
+	template_train32px_reversed(172, 525)
+}
+
+spriteset(spriteset_BR323a_Northern, "gfx/BR323.png") {
+	template_train32px(172, 625)
+}
+
+spriteset(spriteset_BR323b_Northern, "gfx/BR323.png") {
+	template_train32px(172, 725)
+}
+
+spriteset(spriteset_BR323c_Northern, "gfx/BR323.png") {
+	template_train32px_reversed(172, 650)
+}
+
+spriteset(spriteset_BR323a_LM, "gfx/BR323.png") {
+	template_train32px(172, 750)
+}
+
+spriteset(spriteset_BR323b_LM, "gfx/BR323.png") {
+	template_train32px(172, 850)
+}
+
+spriteset(spriteset_BR323c_LM, "gfx/BR323.png") {
+	template_train32px_reversed(172, 775)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR323a,cargo_subtype){
+    0:	spriteset_BR323a_RR;
+	1:	spriteset_BR323a_Centro;
+	2:	spriteset_BR323a_FNW;
+	3:	spriteset_BR323a_FNW_Barbie;
+	4:	spriteset_BR323a_Northern;
+	5:	spriteset_BR323a_LM;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR323b,cargo_subtype){
+    0:	spriteset_BR323b_RR;
+	1:	spriteset_BR323b_Centro;
+	2:	spriteset_BR323b_FNW;
+	3:	spriteset_BR323b_FNW_Barbie;
+	4:	spriteset_BR323b_Northern;
+	5:	spriteset_BR323b_LM;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR323c,cargo_subtype){
+    0:	spriteset_BR323c_RR;
+	1:	spriteset_BR323c_Centro;
+	2:	spriteset_BR323c_FNW;
+	3:	spriteset_BR323c_FNW_Barbie;
+	4:	spriteset_BR323c_Northern;
+	5:	spriteset_BR323c_LM;
+}
+
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR323, extra_callback_info1) {
+	1: return item_BR323b;
+	2: return item_BR323c;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR323_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Regional);
+	1:  return string(str_Centro);
+	2:  return string(str_FNW);
+	3:  return string(str_FNWBarbie);
+	4:  return string(str_NorthernRail);
+	5:  return string(str_LondonMidland);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR323, 395) {
+	property {
+		name: 							string(STR_NAME_BR323);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1992,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					30;
+		cost_factor:					56;
+		running_cost_factor:			32;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1566 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					98;
+		weight:							121 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.06;
+		air_drag_coefficient:			0.06;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR323_usage),string(str_BR323_eos),string(str_BR323_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR323_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR323;
+	default: 							sw_BR323a;
+	purchase:							spriteset_BR323_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR323b, 396) {
+	property {
+		name: 							string(STR_NAME_BR323);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1992,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					93;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.06;
+		air_drag_coefficient:			0.06;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR323b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+	create_effect:						electric_create_visual_effect;
+}
+}
+
+item (FEAT_TRAINS, item_BR323c, 397) {
+	property {
+		name: 							string(STR_NAME_BR323);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1992,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					98;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.06;
+		air_drag_coefficient:			0.06;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR323c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+
+}
+}

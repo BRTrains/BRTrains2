@@ -1,0 +1,25 @@
+ if (param[3] == 1) {
+ 	disable_item(FEAT_TRAINS, 270);
+	disable_item(FEAT_TRAINS, 268);
+	disable_item(FEAT_TRAINS, 256);
+	disable_item(FEAT_TRAINS, 234);
+	disable_item(FEAT_TRAINS, 231, 232); 
+	disable_item(FEAT_TRAINS, 225);
+	disable_item(FEAT_TRAINS, 218, 224);
+	disable_item(FEAT_TRAINS, 203, 213);
+	disable_item(FEAT_TRAINS, 197); 
+	disable_item(FEAT_TRAINS, 192);
+	disable_item(FEAT_TRAINS, 181);
+	disable_item(FEAT_TRAINS, 176);
+	disable_item(FEAT_TRAINS, 138, 150);
+	disable_item(FEAT_TRAINS, 124); 
+	disable_item(FEAT_TRAINS, 97);
+	disable_item(FEAT_TRAINS, 62);
+	disable_item(FEAT_TRAINS, 9, 11); 
+	disable_item(FEAT_TRAINS, 39); 
+	disable_item(FEAT_TRAINS, 51);
+	disable_item(FEAT_TRAINS, 44);
+	disable_item(FEAT_TRAINS, 44);
+	disable_item(FEAT_TRAINS, 402);
+	disable_item(FEAT_TRAINS, 399);
+ }

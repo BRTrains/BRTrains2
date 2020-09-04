@@ -1,0 +1,336 @@
+spriteset (BR315_a_BR,  "gfx/BR315.png")           { template_train32px(0, 13) }
+spriteset (BR315_b_BR,  "gfx/BR315.png")             { template_train32px(0, 38) }
+spriteset (BR315_c_BR,  "gfx/BR315.png")             { template_train32px(0, 63) }
+spriteset (BR315_d_BR,  "gfx/BR315.png")            { template_train32px(0, 88) }
+spriteset (BR315_a_NSE,  "gfx/BR315.png")          { template_train32px(0, 113) }
+spriteset (BR315_b_NSE,  "gfx/BR315.png")            { template_train32px(0, 138) }
+spriteset (BR315_c_NSE,  "gfx/BR315.png")            { template_train32px(0, 163) }
+spriteset (BR315_d_NSE,  "gfx/BR315.png")           { template_train32px(0, 188) }
+spriteset (BR315_a_NS2,  "gfx/BR315.png")          { template_train32px(0, 213) }
+spriteset (BR315_b_NS2,  "gfx/BR315.png")            { template_train32px(0, 238) }
+spriteset (BR315_c_NS2,  "gfx/BR315.png")            { template_train32px(0, 263) }
+spriteset (BR315_d_NS2,  "gfx/BR315.png")           { template_train32px(0, 288) }
+spriteset (BR315_a_WYG,  "gfx/BR315.png")          { template_train32px(0, 313) }
+spriteset (BR315_b_WYG,  "gfx/BR315.png")            { template_train32px(0, 338) }
+spriteset (BR315_c_WYG,  "gfx/BR315.png")            { template_train32px(0, 363) }
+spriteset (BR315_d_WYG,  "gfx/BR315.png")           { template_train32px(0, 388) }
+spriteset (BR315_a_WPR,  "gfx/BR315.png")          { template_train32px(0, 413) }
+spriteset (BR315_b_WPR,  "gfx/BR315.png")            { template_train32px(0, 438) }
+spriteset (BR315_c_WPR,  "gfx/BR315.png")            { template_train32px(0, 463) }
+spriteset (BR315_d_WPR,  "gfx/BR315.png")           { template_train32px(0, 488) }
+spriteset (BR315_a_WWH,  "gfx/BR315.png")          { template_train32px(0, 513) }
+spriteset (BR315_b_WWH,  "gfx/BR315.png")            { template_train32px(0, 538) }
+spriteset (BR315_c_WWH,  "gfx/BR315.png")            { template_train32px(0, 563) }
+spriteset (BR315_d_WWH,  "gfx/BR315.png")           { template_train32px(0, 588) }
+spriteset (BR315_a_WPU,  "gfx/BR315.png")          { template_train32px(0, 613) }
+spriteset (BR315_b_WPU,  "gfx/BR315.png")            { template_train32px(0, 638) }
+spriteset (BR315_c_WPU,  "gfx/BR315.png")            { template_train32px(0, 663) }
+spriteset (BR315_d_WPU,  "gfx/BR315.png")           { template_train32px(0, 688) }
+spriteset (BR315_a_FGE,  "gfx/BR315.png")          { template_train32px(0, 713) }
+spriteset (BR315_b_FGE,  "gfx/BR315.png")            { template_train32px(0, 738) }
+spriteset (BR315_c_FGE,  "gfx/BR315.png")            { template_train32px(0, 763) }
+spriteset (BR315_d_FGE,  "gfx/BR315.png")           { template_train32px(0, 788) }
+spriteset (BR315_a_ONE,  "gfx/BR315.png")          { template_train32px(0, 813) }
+spriteset (BR315_b_ONE,  "gfx/BR315.png")            { template_train32px(0, 838) }
+spriteset (BR315_c_ONE,  "gfx/BR315.png")            { template_train32px(0, 863) }
+spriteset (BR315_d_ONE,  "gfx/BR315.png")           { template_train32px(0, 888) }
+spriteset (BR315_a_NXO,  "gfx/BR315.png")          { template_train32px(0, 913) }
+spriteset (BR315_b_NXO,  "gfx/BR315.png")            { template_train32px(0, 938) }
+spriteset (BR315_c_NXO,  "gfx/BR315.png")            { template_train32px(0, 963) }
+spriteset (BR315_d_NXO,  "gfx/BR315.png")           { template_train32px(0, 988) }
+spriteset (BR315_a_NXN,  "gfx/BR315.png")          { template_train32px(0, 1013) }
+spriteset (BR315_b_NXN,  "gfx/BR315.png")            { template_train32px(0, 1038) }
+spriteset (BR315_c_NXN,  "gfx/BR315.png")            { template_train32px(0, 1063) }
+spriteset (BR315_d_NXN,  "gfx/BR315.png")           { template_train32px(0, 1088) }
+spriteset (BR315_a_AGA,  "gfx/BR315.png")          { template_train32px(0, 1113) }
+spriteset (BR315_b_AGA,  "gfx/BR315.png")            { template_train32px(0, 1138) }
+spriteset (BR315_c_AGA,  "gfx/BR315.png")            { template_train32px(0, 1163) }
+spriteset (BR315_d_AGA,  "gfx/BR315.png")           { template_train32px(0, 1188) }
+spriteset (BR315_a_AGN,  "gfx/BR315.png")          { template_train32px(0, 1213) }
+spriteset (BR315_b_AGN,  "gfx/BR315.png")            { template_train32px(0, 1238) }
+spriteset (BR315_c_AGN,  "gfx/BR315.png")            { template_train32px(0, 1263) }
+spriteset (BR315_d_AGN,  "gfx/BR315.png")           { template_train32px(0, 1288) }
+spriteset (BR315_a_TFL,  "gfx/BR315.png")          { template_train32px(0, 1313) }
+spriteset (BR315_b_TFL,  "gfx/BR315.png")            { template_train32px(0, 1338) }
+spriteset (BR315_c_TFL,  "gfx/BR315.png")            { template_train32px(0, 1363) }
+spriteset (BR315_d_TFL,  "gfx/BR315.png")           { template_train32px(0, 1388) }
+spriteset (BR315_a_LO,  "gfx/BR315.png")           { template_train32px(0, 1413) }
+spriteset (BR315_b_LO,  "gfx/BR315.png")             { template_train32px(0, 1438) }
+spriteset (BR315_c_LO,  "gfx/BR315.png")             { template_train32px(0, 1463) }
+spriteset (BR315_d_LO,  "gfx/BR315.png")            { template_train32px(0, 1488) }
+spriteset (spriteset_BR315_Purchase,"gfx/BR315.png"){ template_purchase(0,0) }
+
+switch(FEAT_TRAINS, SELF, sw_BR315_a, cargo_subtype){
+	0:	BR315_a_BR;
+	1:	BR315_a_NSE;
+	2:	BR315_a_NS2;
+	3:	BR315_a_WYG;
+	4:	BR315_a_WPR;
+	5:	BR315_a_WWH;
+	6:	BR315_a_WPU;
+	7:	BR315_a_FGE;
+	8:	BR315_a_ONE;
+	9:	BR315_a_NXO;
+	10:	BR315_a_NXN;
+	11:	BR315_a_AGA;
+	12:	BR315_a_AGN;
+	13:	BR315_a_TFL;
+	14:	BR315_a_LO;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR315_b, cargo_subtype){
+	0:	BR315_b_BR;
+	1:	BR315_b_NSE;
+	2:	BR315_b_NS2;
+	3:	BR315_b_WYG;
+	4:	BR315_b_WPR;
+	5:	BR315_b_WWH;
+	6:	BR315_b_WPU;
+	7:	BR315_b_FGE;
+	8:	BR315_b_ONE;
+	9:	BR315_b_NXO;
+	10:	BR315_b_NXN;
+	11:	BR315_b_AGA;
+	12:	BR315_b_AGN;
+	13:	BR315_b_TFL;
+	14:	BR315_b_LO;
+}
+	
+switch(FEAT_TRAINS, SELF, sw_BR315_c, cargo_subtype){
+	0:	BR315_c_BR;
+	1:	BR315_c_NSE;
+	2:	BR315_c_NS2;
+	3:	BR315_c_WYG;
+	4:	BR315_c_WPR;
+	5:	BR315_c_WWH;
+	6:	BR315_c_WPU;
+	7:	BR315_c_FGE;
+	8:	BR315_c_ONE;
+	9:	BR315_c_NXO;
+	10:	BR315_c_NXN;
+	11:	BR315_c_AGA;
+	12:	BR315_c_AGN;
+	13:	BR315_c_TFL;
+	14:	BR315_c_LO;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR315_d, cargo_subtype){
+	0:	BR315_d_BR;
+	1:	BR315_d_NSE;
+	2:	BR315_d_NS2;
+	3:	BR315_d_WYG;
+	4:	BR315_d_WPR;
+	5:	BR315_d_WWH;
+	6:	BR315_d_WPU;
+	7:	BR315_d_FGE;
+	8:	BR315_d_ONE;
+	9:	BR315_d_NXO;
+	10:	BR315_d_NXN;
+	11:	BR315_d_AGA;
+	12:	BR315_d_AGN;
+	13:	BR315_d_TFL;
+	14:	BR315_d_LO;
+}
+
+switch(FEAT_TRAINS, SELF, sw_315_cargo_subtype_text, cargo_subtype) {
+    0: return string(str_BRBlueGrey);
+    1: return string(str_NSE);
+    2: return string(str_NSEAlt);
+    3: return string(str_WAGNYg);
+    4: return string(str_WAGNPro);
+    5: return string(str_WAGNWh);
+    6: return string(str_WAGNPu);
+    7: return string(str_FGE);
+    8: return string(str_One);
+    9: return string(str_NXEA);
+    10: return string(str_NXEAAltLights);
+    11: return string(str_AGA);
+    12: return string(str_AGAAltLights);
+    13: return string(str_TfL);
+    14: return string(str_overground);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_articulated_BR315, extra_callback_info1) {
+	1: return item_BR315_b;
+	2: return item_BR315_c;
+	3: return item_BR315_d;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+item (FEAT_TRAINS, item_BR315, 27) {
+	property {
+		name: 							string(STR_NAME_BR315);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1980,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					52;
+		running_cost_factor:			26;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							880 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							127 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.05;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR315_usage),string(str_BR315_eos),string(str_BR315_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_315_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR315;
+	default: 							sw_BR315_a;
+	purchase:							spriteset_BR315_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_classic_emu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR315_b, 28) {
+	property {
+		name: 							string(STR_NAME_BR315);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1980,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					86;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.05;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR315_b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_classic_emu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR315_c, 29) {
+	property {
+		name: 							string(STR_NAME_BR315);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1980,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					84;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.05;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR315_c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_classic_emu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR315_d, 30) {
+	property {
+		name: 							string(STR_NAME_BR315);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1980,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.05;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR315_d;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_classic_emu_sound;
+}
+}

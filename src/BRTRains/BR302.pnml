@@ -1,0 +1,286 @@
+spriteset(spriteset_BR302_Purchase, "gfx/BR302.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR302_a_brg, "gfx/BR302.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR302_b_brg, "gfx/BR302.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR302_c_brg, "gfx/BR302.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR302_d_brg, "gfx/BR302.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR302_a_brb, "gfx/BR302.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR302_b_brb, "gfx/BR302.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR302_c_brb, "gfx/BR302.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BR302_d_brb, "gfx/BR302.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR302_a_brbg, "gfx/BR302.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR302_b_brbg, "gfx/BR302.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR302_c_brbg, "gfx/BR302.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BR302_d_brbg, "gfx/BR302.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BR302_a_nse, "gfx/BR302.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BR302_b_nse, "gfx/BR302.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BR302_c_nse, "gfx/BR302.png") {
+	template_train32px(0, 363)
+}
+
+spriteset(spriteset_BR302_d_nse, "gfx/BR302.png") {
+	template_train32px(0, 388)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR302_a,cargo_subtype){
+    0:	spriteset_BR302_a_brg;
+    1:	spriteset_BR302_a_brb;
+	2:  spriteset_BR302_a_brbg;
+	3:	spriteset_BR302_a_nse;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR302_b,cargo_subtype){
+    0:	spriteset_BR302_b_brg;
+    1:	spriteset_BR302_b_brb;
+	2:  spriteset_BR302_b_brbg;
+	3:	spriteset_BR302_b_nse;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR302_c,cargo_subtype){
+    0:	spriteset_BR302_c_brg;
+    1:	spriteset_BR302_c_brb;
+	2:  spriteset_BR302_c_brbg;
+	3:	spriteset_BR302_c_nse;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR302_d,cargo_subtype){
+    0:	spriteset_BR302_d_brg;
+    1:	spriteset_BR302_d_brb;
+	2:  spriteset_BR302_d_brbg;
+	3:	spriteset_BR302_d_nse;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR302_, extra_callback_info1) {
+	1: return item_BR302_b;
+	2: return item_BR302_c;
+	3: return item_BR302_d;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR302_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRGreen);
+    1:	return string(str_BRBlue);
+    2:	return string(str_BRBlueGrey);
+	3:	return string(str_NSE);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR302, 280) {
+	property {
+		name: 							string(STR_NAME_BR302);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1958,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					45;
+		running_cost_factor:			27;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							736 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					80;
+		weight:							155 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.07;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR302_usage),string(str_BR302_eos),string(str_BR302_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR302_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR302_;
+	default: 							sw_BR302_a;
+	purchase:							spriteset_BR302_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR302_b, 281) {
+	property {
+		name: 							string(STR_NAME_BR302);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1958,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					96;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				200;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR302_b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR302_c, 282) {
+	property {
+		name: 							string(STR_NAME_BR302);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1958,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					79;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR302_c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR302_d, 283) {
+	property {
+		name: 							string(STR_NAME_BR302);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1958,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					108;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR302_d;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electric_sound;
+}
+}

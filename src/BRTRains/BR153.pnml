@@ -1,0 +1,166 @@
+spriteset(spriteset_BR153_Purchase, "gfx/BR153.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR153_Regional, "gfx/BR153.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR153_Central, "gfx/BR153.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR153_EastAnglia, "gfx/BR153.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR153_AngliaFestival, "gfx/BR153.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR153_FNW, "gfx/BR153.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR153_FNWArriva, "gfx/BR153.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR153_ArrivaBlue, "gfx/BR153.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BR153_ArrivaCream, "gfx/BR153.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR153_ArrivaHeart, "gfx/BR153.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR153_ArrivaTimes, "gfx/BR153.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR153_WessexHeart, "gfx/BR153.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BR153_WessexCornwall, "gfx/BR153.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BR153_WessexLooe, "gfx/BR153.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BR153_One, "gfx/BR153.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BR153_EMT, "gfx/BR153.png") {
+	template_train32px(0, 363)
+}
+
+spriteset(spriteset_BR153_NorthernRail, "gfx/BR153.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BR153_FGW, "gfx/BR153.png") {
+	template_train32px(0, 413)
+}
+
+spriteset(spriteset_BR153_LondonMidland, "gfx/BR153.png") {
+	template_train32px(0, 438)
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_BR153,cargo_subtype){
+    0:	spriteset_BR153_Regional;
+	1:	spriteset_BR153_Central;
+	2:	spriteset_BR153_EastAnglia;
+	3:	spriteset_BR153_AngliaFestival;
+	4:	spriteset_BR153_FNW;
+	5:	spriteset_BR153_FNWArriva;
+	6:	spriteset_BR153_ArrivaBlue;
+	7:	spriteset_BR153_ArrivaCream;
+	8:	spriteset_BR153_ArrivaHeart;
+	9:	spriteset_BR153_ArrivaTimes;
+	10:	spriteset_BR153_WessexHeart;
+	11:	spriteset_BR153_WessexCornwall;
+	12:	spriteset_BR153_WessexLooe;
+	13:	spriteset_BR153_One;
+	14:	spriteset_BR153_EMT;
+	15:	spriteset_BR153_NorthernRail;
+	16:	spriteset_BR153_FGW;
+	17:	spriteset_BR153_LondonMidland;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR153_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Regional);
+	1:	return string(str_Central);
+	2:	return string(str_EastAnglia);
+	3:	return string(str_AngliaFestival);
+	4:	return string(str_FNW);
+	5:	return string(str_FNWArriva);
+	6:	return string(str_ArrivaBlue);
+	7:	return string(str_ArrivaCream);
+	8:	return string(str_ArrivaHeart);
+	9:	return string(str_ArrivaTimes);
+	10:	return string(str_WessexHeart);
+	11:	return string(str_WessexCornwall);
+	12:	return string(str_WessexLooe);
+	13:	return string(str_One);
+	14:	return string(str_EMT);
+	15:	return string(str_NorthernRail);
+	16:	return string(str_FGW);
+	17:	return string(str_LondonMidland);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR153, 54) {
+	property {
+		name: 							string(STR_NAME_BR153);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1991,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					20;
+		cost_factor:					23;
+		running_cost_factor:			11;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							285 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					72;
+		weight:							41 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR153_usage),string(str_BR153_eos),string(str_BR153_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR153_cargo_subtype_text;
+	default: 							sw_BR153;
+	purchase:							spriteset_BR153_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}

@@ -1,0 +1,302 @@
+spriteset(spriteset_BR73GatEx_Purchase, "gfx/BR73GatEx.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR73GatEx_GatEx, "gfx/BR73GatEx.png") {
+	template_train28px(0, 13)
+}
+
+spriteset(spriteset_BR488s_GatEx, "gfx/BR73GatEx.png") {
+	template_train32px(0, 36)
+}
+
+spriteset(spriteset_BR488f_GatEx, "gfx/BR73GatEx.png") {
+	template_train32px(0, 61)
+}
+
+spriteset(spriteset_BRGLVf_GatEx, "gfx/BR73GatEx.png") {
+	template_train32px(0, 86)
+}
+
+spriteset(spriteset_BRGLVr_GatEx, "gfx/BR73GatEx.png") {
+	template_train32px(0, 111)
+}
+
+switch(FEAT_TRAINS, PARENT, sw_front_GatEx, vehicle_is_reversed){
+	0: spriteset_BR73GatEx_GatEx;
+	1: spriteset_BRGLVf_GatEx;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_rear_GatEx, vehicle_is_reversed){
+	0: spriteset_BRGLVr_GatEx;
+	1: spriteset_BR73GatEx_GatEx;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_front_GatExl, vehicle_is_reversed){
+	0: 7;
+	1: 8;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_rear_GatExl, vehicle_is_reversed){
+	0: 8;
+	1: 7;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_488_sf, vehicle_is_reversed){
+	0: spriteset_BR488s_GatEx;
+	1: spriteset_BR488f_GatEx;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_488_fs, vehicle_is_reversed){
+	0: spriteset_BR488f_GatEx;
+	1: spriteset_BR488s_GatEx;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR73GatEx,cargo_subtype){
+    0:	sw_front_GatEx;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR488sfGatEx,cargo_subtype){
+    0:	sw_488_sf;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR488fsGatEx,cargo_subtype){
+    0:	sw_488_fs;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR488sGatEx,cargo_subtype){
+    0:	spriteset_BR488s_GatEx;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR488fGatEx,cargo_subtype){
+    0:	spriteset_BR488f_GatEx;
+}
+
+switch(FEAT_TRAINS,SELF, sw_GLVGatEx,cargo_subtype){
+    0:	sw_rear_GatEx;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR73GatEx, extra_callback_info1) {
+	1: return item_488_sf;
+	2..7: return item_488_s;
+	8: return item_488_fs;
+	9: return item_GLV;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR73GatEx_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_GatEx);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR73GatEx, 261) {
+	property {
+		name: 							string(STR_NAME_BR73GatEx);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1984,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					88;
+		running_cost_factor:			69;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1420 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					192;
+		weight:							507 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.03;
+		air_drag_coefficient:			0.06;
+		length:							7;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_6),string(str_BR73GatEx_usage),string(str_BR73GatEx_eos),string(str_BR73GatEx_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR73GatEx_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR73GatEx;
+	default: 							sw_BR73GatEx;
+	purchase:							spriteset_BR73GatEx_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_488_sf, 262) {
+ property {
+  name: string(BR488);
+  climates_available: NO_CLIMATE;
+  introduction_date: date(1984,4,21);
+  model_life: 12;
+  retire_early: 1;
+  vehicle_life: 50;
+  reliability_decay: 7;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 18;
+  cost_factor: 1;
+  running_cost_factor: 1;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  speed: 125 mph;
+  misc_flags: TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+  refit_cost: 0;
+  track_type: BR_3RDR;
+  ai_special_flag: AI_FLAG_CARGO;
+  power: 0;
+  running_cost_base: RUNNING_COST_ELECTRIC;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 192;
+  weight: 0;
+  engine_class: ENGINE_CLASS_ELECTRIC;
+  tractive_effort_coefficient:	0.03;
+air_drag_coefficient:			0.06;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_ELECTRIC;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+ default: sw_488_sf;
+ colour_mapping: return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_488_fs, 263) {
+ property {
+  name: string(BR488);
+  climates_available: NO_CLIMATE;
+  introduction_date: date(1984,4,21);
+  model_life: 12;
+  retire_early: 1;
+  vehicle_life: 50;
+  reliability_decay: 7;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 18;
+  cost_factor: 1;
+  running_cost_factor: 1;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  speed: 125 mph;
+  misc_flags: TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+  refit_cost: 0;
+  track_type: BR_3RDR;
+  ai_special_flag: AI_FLAG_CARGO;
+  power: 0;
+  running_cost_base: RUNNING_COST_ELECTRIC;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 1;
+  weight: 0;
+  engine_class: ENGINE_CLASS_ELECTRIC;
+  tractive_effort_coefficient:	0.03;
+air_drag_coefficient:			0.06;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_ELECTRIC;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+ cargo_capacity: return 0;
+ default: sw_488_fs;
+ colour_mapping: return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_488_s, 264) {
+ property {
+  name: string(BR488);
+  climates_available: NO_CLIMATE;
+  introduction_date: date(1984,4,21);
+  model_life: 12;
+  retire_early: 1;
+  vehicle_life: 50;
+  reliability_decay: 7;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 18;
+  cost_factor: 1;
+  running_cost_factor: 1;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  speed: 125 mph;
+  misc_flags: TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+  refit_cost: 0;
+  track_type: BR_3RDR;
+  ai_special_flag: AI_FLAG_CARGO;
+  power: 0;
+  running_cost_base: RUNNING_COST_ELECTRIC;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 1;
+  weight: 0;
+  engine_class: ENGINE_CLASS_ELECTRIC;
+  tractive_effort_coefficient:	0.03;
+air_drag_coefficient:			0.06;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_ELECTRIC;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+ cargo_capacity: return 0;
+ default: sw_BR488sGatEx;
+ colour_mapping: return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_GLV, 265) {
+ property {
+  name: string(BR488);
+  climates_available: NO_CLIMATE;
+  introduction_date: date(1984,4,21);
+  model_life: 12;
+  retire_early: 1;
+  vehicle_life: 50;
+  reliability_decay: 7;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 18;
+  cost_factor: 1;
+  running_cost_factor: 1;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  speed: 125 mph;
+  misc_flags: TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+  refit_cost: 0;
+  track_type: BR_3RDR;
+  ai_special_flag: AI_FLAG_CARGO;
+  power: 0;
+  running_cost_base: RUNNING_COST_ELECTRIC;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 1;
+  weight: 0;
+  engine_class: ENGINE_CLASS_ELECTRIC;
+  tractive_effort_coefficient:	0.03;
+air_drag_coefficient:			0.06;
+  length: 7;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_ELECTRIC;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+ cargo_capacity: return 0;
+ default: sw_rear_GatEx;
+ colour_mapping: return PALETTE_CC_FIRST;
+}
+}

@@ -1,0 +1,257 @@
+spriteset(spriteset_LULS_Purchase, "gfx/LULDS9295.png") {
+	template_purchase(88, 220)
+}
+//DM(A)
+spriteset(spriteset_LULSa_LUL, "gfx/LULDS9295.png") {
+	template_electrostar(0, 235)
+}
+//NDM
+spriteset(spriteset_LULSb_LUL, "gfx/LULDS9295.png") {
+	template_electrostar(0, 261)
+}
+//DM(D)
+spriteset(spriteset_LULSc_LUL, "gfx/LULDS9295.png") {
+	template_electrostar(0, 287)
+}
+
+//DM(A)
+spriteset(spriteset_LULSa_Poppy, "gfx/LULDS9295.png") {
+	template_electrostar(0, 313)
+}
+//NDM
+spriteset(spriteset_LULSb_Poppy, "gfx/LULDS9295.png") {
+	template_electrostar(0, 339)
+}
+//DM(D)
+spriteset(spriteset_LULSc_Poppy, "gfx/LULDS9295.png") {
+	template_electrostar(0, 365)
+}
+
+//DM(A)
+spriteset(spriteset_LULSa_Unwrapped, "gfx/LULDS9295.png") {
+	template_electrostar(0, 418)
+}
+//NDM
+spriteset(spriteset_LULSb_Unwrapped, "gfx/LULDS9295.png") {
+	template_electrostar(0, 444)
+}
+//DM(D)
+spriteset(spriteset_LULSc_Unwrapped, "gfx/LULDS9295.png") {
+	template_electrostar(0, 470)
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_LULSa,cargo_subtype){
+    0:	spriteset_LULSa_LUL;
+	1:	spriteset_LULSa_Unwrapped;
+	2:	spriteset_LULSa_Poppy;
+}
+
+switch(FEAT_TRAINS,SELF, sw_LULSb,cargo_subtype){
+    0:	spriteset_LULSb_LUL;
+	1:	spriteset_LULSb_Unwrapped;
+	2:	spriteset_LULSb_Poppy;
+}
+
+switch(FEAT_TRAINS,SELF, sw_LULSc,cargo_subtype){
+    0:	spriteset_LULSc_LUL;
+	1:	spriteset_LULSc_Unwrapped;
+	2:	spriteset_LULSc_Poppy;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_LULS7, extra_callback_info1) {
+	1..5: return item_LULSb;
+	6: return item_LULSc;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_LULS8, extra_callback_info1) {
+	1..6: return item_LULSb;
+	7: return item_LULSc;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_LULS_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_LUL);
+	1:	return string(str_LULUnwrapped);
+	2:	return string(str_LULPoppies);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_LULS7, 292) {
+	property {
+		name: 							string(STR_NAME_LULS7);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2012,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					40;
+		cost_factor:					113;
+		running_cost_factor:			45;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_4RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							4160 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					205;
+		weight:							213 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.08;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_LULS_usage),string(str_LULS_eos),string(str_LULS_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_LULS_cargo_subtype_text;
+	articulated_part:        			switch_articulated_LULS7;
+	default: 							sw_LULSa;
+	purchase:							spriteset_LULS_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_LULS8, 293) {
+	property {
+		name: 							string(STR_NAME_LULS8);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2010,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					40;
+		cost_factor:					125;
+		running_cost_factor:			50;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_4RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							4992 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					205;
+		weight:							242 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.08;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_LULS_usage),string(str_LULS_eos),string(str_LULS_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_LULS_cargo_subtype_text;
+	articulated_part:        			switch_articulated_LULS8;
+	default: 							sw_LULSa;
+	purchase:							spriteset_LULS_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_LULSb, 294) {
+	property {
+		name: 							string(STR_NAME_LULS7);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2002,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					40;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_4RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					125;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.08;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_LULSb;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_LULSc, 295) {
+	property {
+		name: 							string(STR_NAME_LULS7);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2002,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					40;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		refit_cost:						0;
+		track_type:						BR_4RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					204;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.08;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_LULS_usage),string(str_LULS_eos),string(str_LULS_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_LULS_cargo_subtype_text;
+	default: 							sw_LULSc;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electric_sound;
+}
+}

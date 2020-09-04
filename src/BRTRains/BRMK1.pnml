@@ -1,0 +1,900 @@
+spriteset(spriteset_BRMK1SO_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 13)
+}
+
+spriteset(spriteset_BRMK1TSO_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 13)
+}
+
+spriteset(spriteset_BRMK1SK_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 13)
+}
+
+spriteset(spriteset_BRMK1FO_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 26)
+}
+
+spriteset(spriteset_BRMK1FK_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 39)
+}
+
+spriteset(spriteset_BRMK1CK_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 52)
+}
+
+spriteset(spriteset_BRMK1BSK_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 65)
+}
+
+spriteset(spriteset_BRMK1BSO_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 65)
+}
+
+spriteset(spriteset_BRMK1BSOT_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 65)
+}
+
+spriteset(spriteset_BRMK1BCK_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 78)
+}
+
+spriteset(spriteset_BRMK1BFK_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 91)
+}
+
+spriteset(spriteset_BRMK1BG_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 104)
+}
+
+spriteset(spriteset_BRMK1RK_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 117)
+}
+
+spriteset(spriteset_BRMK1RMB_Purchase, "gfx/BRMK1Purchase.png") {
+	template_purchase(0, 130)
+}
+
+spriteset(spriteset_BRMK1SO_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1TSO_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1SK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1FO_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 36)
+}
+
+spriteset(spriteset_BRMK1FK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 59)
+}
+
+spriteset(spriteset_BRMK1CK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 82)
+}
+
+spriteset(spriteset_BRMK1BSK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSO_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSOT_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BCK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 128)
+}
+
+spriteset(spriteset_BRMK1BFK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 151)
+}
+
+spriteset(spriteset_BRMK1BG_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 174)
+}
+
+spriteset(spriteset_BRMK1RK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 197)
+}
+
+spriteset(spriteset_BRMK1RMB_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+	template_train28px2(0, 220)
+}
+
+spriteset(spriteset_BRMK1SO_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1TSO_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1SK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1FO_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 36)
+}
+
+spriteset(spriteset_BRMK1FK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 59)
+}
+
+spriteset(spriteset_BRMK1CK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 82)
+}
+
+spriteset(spriteset_BRMK1BSK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSO_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSOT_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BCK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 128)
+}
+
+spriteset(spriteset_BRMK1BFK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 151)
+}
+
+spriteset(spriteset_BRMK1BG_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 174)
+}
+
+spriteset(spriteset_BRMK1RK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 197)
+}
+
+spriteset(spriteset_BRMK1RMB_BRChocCream, "gfx/BRMK1ChocCream.png") {
+	template_train28px2(0, 220)
+}
+
+spriteset(spriteset_BRMK1SO_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1TSO_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1SK_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1FO_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 36)
+}
+
+spriteset(spriteset_BRMK1FK_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 59)
+}
+
+spriteset(spriteset_BRMK1CK_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 82)
+}
+
+spriteset(spriteset_BRMK1BSK_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSO_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSOT_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BCK_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 128)
+}
+
+spriteset(spriteset_BRMK1BFK_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 151)
+}
+
+spriteset(spriteset_BRMK1BG_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 174)
+}
+
+spriteset(spriteset_BRMK1RK_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 197)
+}
+
+spriteset(spriteset_BRMK1RMB_BRMalachite, "gfx/BRMK1Malachite.png") {
+	template_train28px2(0, 220)
+}
+
+spriteset(spriteset_BRMK1SO_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1TSO_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1SK_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1FO_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 36)
+}
+
+spriteset(spriteset_BRMK1FK_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 59)
+}
+
+spriteset(spriteset_BRMK1CK_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 82)
+}
+
+spriteset(spriteset_BRMK1BSK_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSO_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSOT_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BCK_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 128)
+}
+
+spriteset(spriteset_BRMK1BFK_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 151)
+}
+
+spriteset(spriteset_BRMK1BG_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 174)
+}
+
+spriteset(spriteset_BRMK1RK_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 197)
+}
+
+spriteset(spriteset_BRMK1RMB_BRMaroon, "gfx/BRMK1Maroon.png") {
+	template_train28px2(0, 220)
+}
+
+spriteset(spriteset_BRMK1SO_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1TSO_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1SK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 13)
+}
+
+spriteset(spriteset_BRMK1FO_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 36)
+}
+
+spriteset(spriteset_BRMK1FK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 59)
+}
+
+spriteset(spriteset_BRMK1CK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 82)
+}
+
+spriteset(spriteset_BRMK1BSK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSO_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BSOT_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 105)
+}
+
+spriteset(spriteset_BRMK1BCK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 128)
+}
+
+spriteset(spriteset_BRMK1BFK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 151)
+}
+
+spriteset(spriteset_BRMK1BG_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 174)
+}
+
+spriteset(spriteset_BRMK1RK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 197)
+}
+
+spriteset(spriteset_BRMK1RMB_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+	template_train28px2(0, 220)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1SO,cargo_subtype){
+    0:	spriteset_BRMK1SO_BRCarmCream;
+	1:	spriteset_BRMK1SO_BRChocCream;
+	2:	spriteset_BRMK1SO_BRMalachite;
+	3:	spriteset_BRMK1SO_BRMaroon;
+	4:  spriteset_BRMK1SO_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1FO,cargo_subtype){
+    0:	spriteset_BRMK1FO_BRCarmCream;
+	1:	spriteset_BRMK1FO_BRChocCream;
+	2:	spriteset_BRMK1FO_BRMalachite;
+	3:	spriteset_BRMK1FO_BRMaroon;
+	4:	spriteset_BRMK1FO_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1FK,cargo_subtype){
+    0:	spriteset_BRMK1FK_BRCarmCream;
+	1:	spriteset_BRMK1FK_BRChocCream;
+	2:	spriteset_BRMK1FK_BRMalachite;
+	3:	spriteset_BRMK1FK_BRMaroon;
+	4:	spriteset_BRMK1FK_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1CK,cargo_subtype){
+    0:	spriteset_BRMK1CK_BRCarmCream;
+	1:	spriteset_BRMK1CK_BRChocCream;
+	2:	spriteset_BRMK1CK_BRMalachite;
+	3:	spriteset_BRMK1CK_BRMaroon;
+	4:	spriteset_BRMK1CK_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1BSK,cargo_subtype){
+    0:	spriteset_BRMK1BSK_BRCarmCream;
+	1:	spriteset_BRMK1BSK_BRChocCream;
+	2:	spriteset_BRMK1BSK_BRMalachite;
+	3:	spriteset_BRMK1BSK_BRMaroon;
+	4:	spriteset_BRMK1BSK_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1BCK,cargo_subtype){
+    0:	spriteset_BRMK1BCK_BRCarmCream;
+	1:	spriteset_BRMK1BCK_BRChocCream;
+	2:	spriteset_BRMK1BCK_BRMalachite;
+	3:	spriteset_BRMK1BCK_BRMaroon;
+	4:	spriteset_BRMK1BCK_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1BFK,cargo_subtype){
+    0:	spriteset_BRMK1BFK_BRCarmCream;
+	1:	spriteset_BRMK1BFK_BRChocCream;
+	2:	spriteset_BRMK1BFK_BRMalachite;
+	3:	spriteset_BRMK1BFK_BRMaroon;
+	4:	spriteset_BRMK1BFK_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1BG,cargo_subtype){
+    0:	spriteset_BRMK1BG_BRCarmCream;
+	1:	spriteset_BRMK1BG_BRChocCream;
+	2:	spriteset_BRMK1BG_BRMalachite;
+	3:	spriteset_BRMK1BG_BRMaroon;
+	4:	spriteset_BRMK1BG_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1RK,cargo_subtype){
+    0:	spriteset_BRMK1RK_BRCarmCream;
+	1:	spriteset_BRMK1RK_BRChocCream;
+	2:	spriteset_BRMK1RK_BRMalachite;
+	3:	spriteset_BRMK1RK_BRMaroon;
+	4:	spriteset_BRMK1RK_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1RMB,cargo_subtype){
+    0:	spriteset_BRMK1RMB_BRCarmCream;
+	1:	spriteset_BRMK1RMB_BRChocCream;
+	2:	spriteset_BRMK1RMB_BRMalachite;
+	3:	spriteset_BRMK1RMB_BRMaroon;
+	4:	spriteset_BRMK1RMB_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1SK,cargo_subtype){
+    0:	spriteset_BRMK1SK_BRCarmCream;
+	1:	spriteset_BRMK1SK_BRChocCream;
+	2:	spriteset_BRMK1SK_BRMalachite;
+	3:	spriteset_BRMK1SK_BRMaroon;
+	4:	spriteset_BRMK1SK_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1BSO,cargo_subtype){
+    0:	spriteset_BRMK1BSO_BRCarmCream;
+	1:	spriteset_BRMK1BSO_BRChocCream;
+	2:	spriteset_BRMK1BSO_BRMalachite;
+	3:	spriteset_BRMK1BSO_BRMaroon;
+	4:	spriteset_BRMK1BSO_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1BSOT,cargo_subtype){
+    0:	spriteset_BRMK1BSOT_BRCarmCream;
+	1:	spriteset_BRMK1BSOT_BRChocCream;
+	2:	spriteset_BRMK1BSOT_BRMalachite;
+	3:	spriteset_BRMK1BSOT_BRMaroon;
+	4:	spriteset_BRMK1BSOT_BRBlueGrey;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK1TSO,cargo_subtype){
+    0:	spriteset_BRMK1TSO_BRCarmCream;
+	1:	spriteset_BRMK1TSO_BRChocCream;
+	2:	spriteset_BRMK1TSO_BRMalachite;
+	3:	spriteset_BRMK1TSO_BRMaroon;
+	4:	spriteset_BRMK1TSO_BRBlueGrey;
+}
+	
+switch(FEAT_TRAINS,SELF,sw_BRMK1_cargo_subtype_text,cargo_subtype){
+    0: return string(str_BRCarmCream);
+    1: return string(str_BRChocCream);
+	2: return string(str_BRMalachite);
+	3: return string(str_BRMaroon);
+	4: return string(str_BRBlue);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BRMK1SO, 137) {
+	property {
+		name: 							string(STR_NAME_BRMK1SO);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1963,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					48;
+		weight:							32 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1SO_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1SO;
+	purchase:							spriteset_BRMK1SO_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1FO, 138) {
+	property {
+		name: 							string(STR_NAME_BRMK1FO);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1951,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					42;
+		weight:							33 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1FO_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1FO;
+	purchase:							spriteset_BRMK1FO_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1FK, 139) {
+	property {
+		name: 							string(STR_NAME_BRMK1FK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1951,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					42;
+		weight:							32 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1FK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1FK;
+	purchase:							spriteset_BRMK1FK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1CK, 140) {
+	property {
+		name: 							string(STR_NAME_BRMK1CK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1952,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					48;
+		weight:							32 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				200;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1CK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1CK;
+	purchase:							spriteset_BRMK1CK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1BSK, 141) {
+	property {
+		name: 							string(STR_NAME_BRMK1BSK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1951,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					32;
+		weight:							36 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BSK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1BSK;
+	purchase:							spriteset_BRMK1BSK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1BCK, 142) {
+	property {
+		name: 							string(STR_NAME_BRMK1BCK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1952,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					24;
+		weight:							36 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				200;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BCK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1BCK;
+	purchase:							spriteset_BRMK1BCK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1BFK, 143) {
+	property {
+		name: 							string(STR_NAME_BRMK1BFK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1951,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					24;
+		weight:							36 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BFK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1BFK;
+	purchase:							spriteset_BRMK1BFK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1BG, 144) {
+	property {
+		name: 							string(STR_NAME_BRMK1BG);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1951,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[MAIL];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				MAIL;
+		cargo_capacity:					10;
+		weight:							32 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BG_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1BG;
+	purchase:							spriteset_BRMK1BG_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1RK, 145) {
+	property {
+		name: 							string(STR_NAME_BRMK1RK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1951,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							36 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1RK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1RK;
+	cargo_capacity:						return 0;
+	purchase:							spriteset_BRMK1RK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1RMB, 146) {
+	property {
+		name: 							string(STR_NAME_BRMK1RMB);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1957,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					50;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					44;
+		weight:							35 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1RMB_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1RMB;
+	purchase:							spriteset_BRMK1RMB_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1SK, 147) {
+	property {
+		name: 							string(STR_NAME_BRMK1SK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1951,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					64;
+		weight:							32 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1SK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1SK;
+	purchase:							spriteset_BRMK1SK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1BSO, 148) {
+	property {
+		name: 							string(STR_NAME_BRMK1BSO);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1955,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					39;
+		weight:							34 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BSO_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1BSO;
+	purchase:							spriteset_BRMK1BSO_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1BSOT, 149) {
+	property {
+		name: 							string(STR_NAME_BRMK1BSOT);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1952,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					31;
+		weight:							35 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BSOT_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1BSOT;
+	purchase:							spriteset_BRMK1BSOT_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BRMK1TSO, 150) {
+	property {
+		name: 							string(STR_NAME_BRMK1TSO);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1952,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					64;
+		weight:							41 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMK1TSO_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
+	default: 							sw_BRMK1TSO;
+	purchase:							spriteset_BRMK1TSO_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}

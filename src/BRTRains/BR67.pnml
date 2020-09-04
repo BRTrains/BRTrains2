@@ -1,0 +1,752 @@
+spriteset(spriteset_BR67_Purchase, "gfx/BR67.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR67Royal_Purchase, "gfx/BR67.png") {
+	template_purchase(88, 0)
+}
+
+spriteset(spriteset_BR67EWS_Purchase, "gfx/BR67.png") {
+	template_purchase(176, 0)
+}
+
+spriteset(spriteset_BR67_EWS, "gfx/BR67.png") {
+	template_train29px(0, 13)
+}
+
+spriteset(spriteset_BR67_ATW, "gfx/BR67.png") {
+	template_train29px(0, 37)
+}
+
+spriteset(spriteset_BR67_DBSchenker, "gfx/BR67.png") {
+	template_train29px(0, 61)
+}
+
+spriteset(spriteset_BR67_RoyalClaret, "gfx/BR67.png") {
+	template_train29px(0, 85)
+}
+
+spriteset(spriteset_BR67_Wrexham, "gfx/BR67.png") {
+	template_train29px(0, 109)
+}
+
+spriteset(spriteset_BR67_Caledonian, "gfx/BR67.png") {
+	template_train29px(0, 133)
+}
+
+spriteset(spriteset_BR67_DBSCompany, "gfx/BR67.png") {
+	template_train29px(0, 157)
+}
+
+spriteset(spriteset_BR67_EWSCompany, "gfx/BR67.png") {
+	template_train29px(0, 181)
+}
+
+spriteset(spriteset_RoyalBFK, "gfx/BR67.png") {
+	template_train32px(166, 85)
+}
+
+spriteset(spriteset_RoyalSLE, "gfx/BR67.png") {
+	template_train32px(338, 85)
+}
+
+spriteset(spriteset_RoyalTRUK, "gfx/BR67.png") {
+	template_train32px(510, 85)
+}
+
+spriteset(spriteset_RoyalTSO, "gfx/BR67.png") {
+	template_train32px(682, 85)
+}
+
+spriteset(spriteset_RoyalFO, "gfx/BR67.png") {
+	template_train32px(682, 85)
+}
+
+spriteset(spriteset_RoyalBFKa, "gfx/BR67.png") {
+	template_train32px(854, 85)
+}
+
+spriteset(spriteset_EWSFO, "gfx/BR67.png") {
+	template_train32px(166, 157)
+}
+
+spriteset(spriteset_EWSRFM, "gfx/BR67.png") {
+	template_train32px(338, 157)
+}
+
+spriteset(spriteset_EWSSLEP, "gfx/BR67.png") {
+	template_train32px(510, 157)
+}
+
+spriteset(spriteset_DBSDVT, "gfx/BR67.png") {
+	template_train32px(682, 157)
+}
+
+spriteset(spriteset_EWSDVT, "gfx/BR67.png") {
+	template_train32px(682, 182)
+}
+
+spriteset(spriteset_BR67_Colas, "gfx/BR67.png") {
+	template_train29px(0, 205)
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_BR67,cargo_subtype){
+    0:	spriteset_BR67_EWS;
+	1: 	spriteset_BR67_ATW;
+	2:	spriteset_BR67_DBSchenker;
+	3:	spriteset_BR67_Caledonian;
+	4:	spriteset_BR67_Wrexham;
+	5:  spriteset_BR67_Colas;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR67Royal,cargo_subtype){
+    0:	spriteset_BR67_RoyalClaret;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR67EWS,cargo_subtype){
+    0:	spriteset_BR67_EWSCompany;
+	1:	spriteset_BR67_DBSCompany;
+}
+
+switch(FEAT_TRAINS,SELF, sw_EWSDVT,cargo_subtype){
+    0:	spriteset_EWSDVT;
+	1:	spriteset_DBSDVT;
+}
+
+switch (FEAT_TRAINS, SELF, sw_BR67_RoyalClaret, extra_callback_info1) {
+	1: return item_RoyalBFK;
+	2: return item_RoyalSLE;
+	3..4: return item_RoyalTRUK;
+	5: return item_RoyalTSO;
+	6: return item_RoyalFO;
+	7..8: return item_RoyalTSO;
+	9: return item_RoyalBFKa;
+	10: return item_BR67Royalb;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch (FEAT_TRAINS, SELF, sw_BR67_EWSCompany, extra_callback_info1) {
+	1: return item_EWSFO;
+	2: return item_EWSRFM;
+	3: return item_EWSSLEP;
+	4: return item_EWSDVT;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR67_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_EWSRed);
+	1: 	return string(str_ATW);
+	2:	return string(str_DBSchenker);
+	3:	return string(str_Caledonian);
+	4:	return string(str_Wrexham);
+	5:	return string(str_ColasRail);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR67Royal_cargo_subtype_text,cargo_subtype){
+	0:	return string(str_RoyalClaret);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR67EWS_cargo_subtype_text,cargo_subtype){
+	0:	return string(str_EWSCompany);
+	1:	return string(str_DBSCompany);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR67, 151) {
+	property {
+		name: 							string(STR_NAME_BR67);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1999,4,21);
+		model_life:						10;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					42;
+		running_cost_factor:			39;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							3200 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							90 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.31;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_8),string(str_BR67_usage),string(str_BR67_eos),string(str_BR67_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR67_cargo_subtype_text;
+	default: 							sw_BR67;
+	purchase:							spriteset_BR67_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_66_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR67Royal, 162) {
+	property {
+		name: 							string(STR_NAME_BR67Royal);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1999,4,21);
+		model_life:						10;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					148;
+		running_cost_factor:			114;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							6400 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							545 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.31;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_8),string(str_BR67Royal_usage),string(str_BR67Royal_eos),string(str_BR67Royal_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR67Royal_cargo_subtype_text;
+	articulated_part:        			sw_BR67_RoyalClaret;
+	default: 							sw_BR67Royal;
+	purchase:							spriteset_BR67Royal_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_66_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR67EWS, 163) {
+	property {
+		name: 							string(STR_NAME_BR67EWS);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1999,4,21);
+		model_life:						10;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					87;
+		running_cost_factor:			65;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							3200 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							254 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.31;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_8),string(str_BR67EWS_usage),string(str_BR67EWS_eos),string(str_BR67EWS_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR67EWS_cargo_subtype_text;
+	articulated_part:        			sw_BR67_EWSCompany;
+	default: 							sw_BR67EWS;
+	purchase:							spriteset_BR67EWS_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_RoyalBFK, 152) {
+	property {
+		name: 							string(STR_NAME_RoyalBFK);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					2;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_RoyalBFK;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_RoyalSLE, 153) {
+	property {
+		name: 							string(STR_NAME_RoyalSLE);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					5;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_RoyalSLE;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_RoyalTRUK, 154) {
+	property {
+		name: 							string(STR_NAME_RoyalTRUK);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_RoyalTRUK;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_RoyalTSO, 155) {
+	property {
+		name: 							string(STR_NAME_RoyalTSO);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					3;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_RoyalTSO;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_RoyalBFKa, 157) {
+	property {
+		name: 							string(STR_NAME_RoyalBFKa);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					2;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_RoyalBFKa;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_EWSFO, 158) {
+	property {
+		name: 							string(STR_NAME_EWSFO);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					10;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_EWSFO;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_EWSRFM, 159) {
+	property {
+		name: 							string(STR_NAME_EWSRFM);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					2;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_EWSRFM;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_EWSSLEP, 160) {
+	property {
+		name: 							string(STR_NAME_EWSSLEP);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					5;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_EWSSLEP;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_EWSDVT, 161) {
+	property {
+		name: 							string(STR_NAME_EWSDVT);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR67EWS_cargo_subtype_text;
+	default: 							sw_EWSDVT;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_RoyalFO, 156) {
+	property {
+		name: 							string(STR_NAME_RoyalFO);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					3;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_RoyalFO;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BR67Royalb, 164) {
+	property {
+		name: 							string(STR_NAME_RoyalFO);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					3;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							spriteset_BR67_RoyalClaret;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_66_sound;
+}
+}

@@ -1,0 +1,267 @@
+spriteset(spriteset_BR377_4_dv_Purchase, "gfx/BR377_2.png") {
+	template_purchase(172, 0)
+}
+
+spriteset(spriteset_BR377_4_dva_southern, "gfx/BR377_2.png") {
+	template_train32px(0, 50)
+}
+
+spriteset(spriteset_BR377_4_dvb_southern, "gfx/BR377_2.png") {
+	template_train32px(0, 25)
+}
+
+spriteset(spriteset_BR377_4_dvc_southern, "gfx/BR377_2.png") {
+	template_train32px(0, 0)
+}
+
+spriteset(spriteset_BR377_4_dvd_southern, "gfx/BR377_2.png") {
+	template_train32px(0, 75)
+}
+
+spriteset(spriteset_BR377_4_dva_fcc, "gfx/BR377_2.png") {
+	template_train32px(172, 150)
+}
+
+spriteset(spriteset_BR377_4_dvb_fcc, "gfx/BR377_2.png") {
+	template_train32px(172, 125)
+}
+
+spriteset(spriteset_BR377_4_dvc_fcc, "gfx/BR377_2.png") {
+	template_train32px(172, 100)
+}
+
+spriteset(spriteset_BR377_4_dvd_fcc, "gfx/BR377_2.png") {
+	template_train32px(172, 175)
+}
+
+spriteset(spriteset_BR377_4_dva_xfcc, "gfx/BR377_2.png") {
+	template_train32px(0, 250)
+}
+
+spriteset(spriteset_BR377_4_dvb_xfcc, "gfx/BR377_2.png") {
+	template_train32px(0, 200)
+}
+
+spriteset(spriteset_BR377_4_dvc_xfcc, "gfx/BR377_2.png") {
+	template_train32px(0, 225)
+}
+
+spriteset(spriteset_BR377_4_dvd_xfcc, "gfx/BR377_2.png") {
+	template_train32px(0, 275)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR377_4_dva,cargo_subtype){
+    0:	spriteset_BR377_4_dva_southern;
+    1:	spriteset_BR377_4_dva_fcc;
+	2:  spriteset_BR377_4_dva_xfcc;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR377_4_dvb,cargo_subtype){
+    0:	spriteset_BR377_4_dvb_southern;
+    1:	spriteset_BR377_4_dvb_fcc;
+	2:  spriteset_BR377_4_dvb_xfcc;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR377_4_dvc,cargo_subtype){
+    0:	spriteset_BR377_4_dvc_southern;
+    1:	spriteset_BR377_4_dvc_fcc;
+	2:  spriteset_BR377_4_dvc_xfcc;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR377_4_dvd,cargo_subtype){
+    0:	spriteset_BR377_4_dvd_southern;
+    1:	spriteset_BR377_4_dvd_fcc;
+	2:  spriteset_BR377_4_dvd_xfcc;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR377_4_dv, extra_callback_info1) {
+	1: return item_BR377_4_dvb;
+	2: return item_BR377_4_dvc;
+	3: return item_BR377_4_dvd;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR377_4_dv_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_southern);
+    1:	return string(str_fcc);
+    2:	return string(str_xfcc);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR377_4_dv, 214) {
+	property {
+		name: 							string(STR_NAME_BR377_4_dv);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2002,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					42;
+		running_cost_factor:			38;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDC;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							2012 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					60;
+		weight:							168 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				198;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR377_4_dv_usage),string(str_BR377_4_dv_eos),string(str_BR377_4_dv_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR377_4_dv_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR377_4_dv;
+	default: 							sw_BR377_4_dva;
+	purchase:							spriteset_BR377_4_dv_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electrostar_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR377_4_dvb, 215) {
+	property {
+		name: 							string(STR_NAME_BR377_4_dv);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2002,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDC;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					69;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR377_4_dvb;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electrostar_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR377_4_dvc, 216) {
+	property {
+		name: 							string(STR_NAME_BR377_4_dv);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2002,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDC;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					57;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR377_4_dvc;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electrostar_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR377_4_dvd, 217) {
+	property {
+		name: 							string(STR_NAME_BR377_4_dv);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2002,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		refit_cost:						0;
+		track_type:						BR_3RDC;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					60;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				198;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR377_4_dv_usage),string(str_BR377_4_dv_eos),string(str_BR377_4_dv_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR377_4_dv_cargo_subtype_text;
+	default: 							sw_BR377_4_dvd;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_electrostar_sound;
+}
+}

@@ -1,0 +1,410 @@
+spriteset(spriteset_BR442_Purchase, "gfx/BR442.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR442a_NSE, "gfx/BR442.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR442b_NSE, "gfx/BR442.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR442c_NSE, "gfx/BR442.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR442d_NSE, "gfx/BR442.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR442e_NSE, "gfx/BR442.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR442a_SWTOld, "gfx/BR442.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR442b_SWTOld, "gfx/BR442.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BR442c_SWTOld, "gfx/BR442.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR442d_SWTOld, "gfx/BR442.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR442e_SWTOld, "gfx/BR442.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR442a_SWT, "gfx/BR442.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BR442b_SWT, "gfx/BR442.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BR442c_SWT, "gfx/BR442.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BR442d_SWT, "gfx/BR442.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BR442e_SWT, "gfx/BR442.png") {
+	template_train32px(0, 363)
+}
+
+spriteset(spriteset_BR442a_SWTNew, "gfx/BR442.png") {
+	template_train32px(0, 638)
+}
+
+spriteset(spriteset_BR442b_SWTNew, "gfx/BR442.png") {
+	template_train32px(0, 663)
+}
+
+spriteset(spriteset_BR442c_SWTNew, "gfx/BR442.png") {
+	template_train32px(0, 688)
+}
+
+spriteset(spriteset_BR442d_SWTNew, "gfx/BR442.png") {
+	template_train32px(0, 713)
+}
+
+spriteset(spriteset_BR442e_SWTNew, "gfx/BR442.png") {
+	template_train32px(0, 738)
+}
+
+spriteset(spriteset_BR442a_GatEx, "gfx/BR442.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BR442b_GatEx, "gfx/BR442.png") {
+	template_train32px(0, 413)
+}
+
+spriteset(spriteset_BR442c_GatEx, "gfx/BR442.png") {
+	template_train32px(0, 438)
+}
+
+spriteset(spriteset_BR442d_GatEx, "gfx/BR442.png") {
+	template_train32px(0, 463)
+}
+
+spriteset(spriteset_BR442e_GatEx, "gfx/BR442.png") {
+	template_train32px(0, 488)
+}
+
+spriteset(spriteset_BR442a_ROSCO, "gfx/BR442.png") {
+	template_train32px(0, 513)
+}
+
+spriteset(spriteset_BR442b_ROSCO, "gfx/BR442.png") {
+	template_train32px(0, 538)
+}
+
+spriteset(spriteset_BR442c_ROSCO, "gfx/BR442.png") {
+	template_train32px(0, 563)
+}
+
+spriteset(spriteset_BR442d_ROSCO, "gfx/BR442.png") {
+	template_train32px(0, 588)
+}
+
+spriteset(spriteset_BR442e_ROSCO, "gfx/BR442.png") {
+	template_train32px(0, 613)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR442a,cargo_subtype){
+    0:	spriteset_BR442a_NSE;
+    1:	spriteset_BR442a_SWTOld;
+    2:	spriteset_BR442a_SWT;
+    3:	spriteset_BR442a_SWTNew;
+    4:	spriteset_BR442a_ROSCO;
+    5:	spriteset_BR442a_GatEx;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR442b,cargo_subtype){
+    0:	spriteset_BR442b_NSE;
+    1:	spriteset_BR442b_SWTOld;
+    2:	spriteset_BR442b_SWT;
+    3:	spriteset_BR442b_SWTNew;
+    4:	spriteset_BR442b_ROSCO;
+    5:	spriteset_BR442b_GatEx;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR442c,cargo_subtype){
+    0:	spriteset_BR442c_NSE;
+    1:	spriteset_BR442c_SWTOld;
+    2:	spriteset_BR442c_SWT;
+    3:	spriteset_BR442c_SWTNew;
+    4:	spriteset_BR442c_ROSCO;
+    5:	spriteset_BR442c_GatEx;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR442d,cargo_subtype){
+    0:	spriteset_BR442d_NSE;
+    1:	spriteset_BR442d_SWTOld;
+    2:	spriteset_BR442d_SWT;
+    3:	spriteset_BR442d_SWTNew;
+    4:	spriteset_BR442d_ROSCO;
+    5:	spriteset_BR442d_GatEx;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR442e,cargo_subtype){
+    0:	spriteset_BR442e_NSE;
+    1:	spriteset_BR442e_SWTOld;
+    2:	spriteset_BR442e_SWT;
+    3:	spriteset_BR442e_SWTNew;
+    4:	spriteset_BR442e_ROSCO;
+    5:	spriteset_BR442e_GatEx;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR442, extra_callback_info1) {
+	1: return item_442b;
+	2: return item_442c;
+	3: return item_442d;
+	4: return item_442e;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR442_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_NSE);
+    1:	return string(str_SWT_stagecoach);
+    2:	return string(str_SWT);
+    3:	return string(str_SWT_refurb);
+    4:	return string(str_ROSCO);
+    5:	return string(str_GatEx);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR442, 166) {
+	property {
+		name: 							string(STR_NAME_BR442);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1988,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					70;
+		running_cost_factor:			46;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1610 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					50;
+		weight:							224 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR442_usage),string(str_BR442_eos),string(str_BR442_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR442_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR442;
+	default: 							sw_BR442a;
+	purchase:							spriteset_BR442_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect_SAA3;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_442b, 167) {
+	property {
+		name: 							string(STR_NAME_BR442);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1988,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					75;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR442b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect_SAA3;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_442c, 167) {
+	property {
+		name: 							string(STR_NAME_BR442);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1988,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					75;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR442c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect_SAA3;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_442d, 167) {
+	property {
+		name: 							string(STR_NAME_BR442);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1988,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					66;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR442d;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect_SAA3;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_442e, 170) {
+	property {
+		name: 							string(STR_NAME_BR442);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1988,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					50;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR442e;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect_SAA3;
+	sound_effect:						sw_electric_sound;
+}
+}

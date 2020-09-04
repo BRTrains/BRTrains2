@@ -1,0 +1,76 @@
+spriteset(spriteset_LNERBCK_Purchase, "gfx/LNERTeakBCK.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_LNERBCK_Teak, "gfx/LNERTeakTK.png") {
+	template_train28px(0, 36)
+}
+
+spriteset(spriteset_LNERBCK_BRMaroon, "gfx/LNERBRMaroon.png") {
+	template_train28px(0, 36)
+}
+
+spriteset(spriteset_LNERBCK_BRCarmCream, "gfx/LNERBRCarmCream.png") {
+	template_train28px(0, 36)
+}
+
+spriteset(spriteset_LNERBCK_TeakR, "gfx/LNERTeakTK.png") {
+	template_train28px(0, 59)
+}
+
+spriteset(spriteset_LNERBCK_BRMaroonR, "gfx/LNERTeakTK.png") {
+	template_train28px(0, 59)
+}
+
+spriteset(spriteset_LNERBCK_BRCarmCreamR, "gfx/LNERTeakTK.png") {
+	template_train28px(0, 59)
+}
+
+switch (FEAT_TRAINS,SELF, sw_LNERBCK_Teak,position_in_consist_from_end ) {
+    0:	spriteset_LNERBCK_TeakR;
+	spriteset_LNERBCK_Teak;
+}
+
+switch(FEAT_TRAINS,SELF, sw_LNERBCK,cargo_subtype){
+    0:	sw_LNERBCK_Teak;
+	1:	spriteset_LNERBCK_BRMaroon;
+	2:	spriteset_LNERBCK_BRCarmCream;
+}
+	
+switch(FEAT_TRAINS,SELF,sw_LNERBCK_cargo_subtype_text,cargo_subtype){
+    0: return string(str_Teak);
+    1: return string(str_BRMaroon);
+	2: return string(str_BRCarmCream);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_LNERBCK, 11) {
+	property {
+		name: 							string(STR_NAME_LNERBCK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1846,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					10;
+		cost_factor:					19;
+		running_cost_factor:			10;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					40;
+		weight:							35 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_LNERBCK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_LNERBCK_cargo_subtype_text;
+	default: 							sw_LNERBCK;
+	purchase:							spriteset_LNERBCK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}

@@ -1,0 +1,284 @@
+spriteset(spriteset_BR222_5_Purchase, "gfx/BR222.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR222_5a_EMT, "gfx/BR222.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR222_5c_EMT, "gfx/BR222.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR222_5b_EMT, "gfx/BR222.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR222_5a_MMLBlue, "gfx/BR222.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR222_5c_MMLBlue, "gfx/BR222.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR222_5b_MMLBlue, "gfx/BR222.png") {
+	template_train32px(0, 138)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR222_5a,cargo_subtype){
+    0:	spriteset_BR222_5a_EMT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR222_5b,cargo_subtype){
+    0:	spriteset_BR222_5c_EMT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR222_5c,cargo_subtype){
+    0:	spriteset_BR222_5c_EMT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR222_5d,cargo_subtype){
+    0:	spriteset_BR222_5c_EMT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR222_5e,cargo_subtype){
+    0:	spriteset_BR222_5b_EMT;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR222_5, extra_callback_info1) {
+	1: return item_222_5b;
+	2: return item_222_5c;
+	3: return item_222_5d;
+	4: return item_222_5e;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR222_5_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_EMT);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR222_5, 176) {
+	property {
+		name: 							string(STR_NAME_BR222_5);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2004,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					92;
+		running_cost_factor:			72;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							3750 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					44;
+		weight:							283 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_demu),string(str_route_2),string(str_BR222_5_usage),string(str_BR222_5_eos),string(str_BR222_5_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR222_5_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR222_5;
+	default: 							sw_BR222_5a;
+	purchase:							spriteset_BR222_5_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_voyager_sound;
+}
+}
+
+item (FEAT_TRAINS, item_222_5b, 177) {
+	property {
+		name: 							string(STR_NAME_BR222_5);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2004,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					72;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				221;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR222_5b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_voyager_sound;
+}
+}
+
+item (FEAT_TRAINS, item_222_5c, 178) {
+	property {
+		name: 							string(STR_NAME_BR222_5);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2004,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					64;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR222_5c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_voyager_sound;
+}
+}
+
+item (FEAT_TRAINS, item_222_5d, 179) {
+	property {
+		name: 							string(STR_NAME_BR222_5);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2004,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					64;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR222_5d;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_voyager_sound;
+}
+}
+
+item (FEAT_TRAINS, item_222_5e, 180) {
+	property {
+		name: 							string(STR_NAME_BR222_5);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2004,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					32;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR222_5e;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_voyager_sound;
+}
+}

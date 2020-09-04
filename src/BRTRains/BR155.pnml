@@ -1,0 +1,144 @@
+spriteset(spriteset_BR155_Purchase, "gfx/BR155a.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR155a_Regional, "gfx/BR155a.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR155a_WYPTEMetro, "gfx/BR155a.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR155a_NorthernRail, "gfx/BR155a.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR155b_Regional, "gfx/BR155b.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR155b_WYPTEMetro, "gfx/BR155b.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR155b_NorthernRail, "gfx/BR155b.png") {
+	template_train32px(0, 63)
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_BR155a,cargo_subtype){
+    0:	spriteset_BR155a_Regional;
+	1:	spriteset_BR155a_WYPTEMetro;
+	2:	spriteset_BR155a_NorthernRail;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR155b,cargo_subtype){
+    0:	spriteset_BR155b_Regional;
+	1:	spriteset_BR155b_WYPTEMetro;
+	2:	spriteset_BR155b_NorthernRail;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR155, extra_callback_info1) {
+	1: return item_155b;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR155_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Regional);
+	1:	return string(str_WYPTEMetro);
+	2:	return string(str_NorthernRail);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR155, 55) {
+	property {
+		name: 							string(STR_NAME_BR155);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1987,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					20;
+		cost_factor:					36;
+		running_cost_factor:			18;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							570 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					80;
+		weight:							78 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR155_usage),string(str_BR155_eos),string(str_BR155_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR155_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR155;
+	default: 							sw_BR155a;
+	purchase:							spriteset_BR155_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_155b, 56) {
+	property {
+		name: 							string(STR_NAME_BR155);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1987,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					20;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					80;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR155b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}
