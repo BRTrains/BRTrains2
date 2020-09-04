@@ -1,8 +1,8 @@
 ﻿﻿##grflangid 0x01
 
 # GRF name and description
-STR_GRF_NAME							:Modern UK Train Set
-STR_GRF_DESC							:A collection of recently-released modern UK trains; designed to be played with alongside BRTrains.{}{}{WHITE}{COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{}{WHITE}License: {LTBLUE}GPL v3
+STR_GRF_NAME							:zz BR Trains v2
+STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern UK Train Set (MUTS).{}{}{WHITE}UKTrains v2 {COPYRIGHT}2020 {LTBLUE}Audigex{WHITE}{}MUTS {COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{WHITE}{}UKTrains (v1) {COPYRIGHT}2015 {LTBLUE}Leander {WHITE}& {GREEN}BROS Artists{}{}{WHITE}License: {LTBLUE}GPL v3
 
 
 # Parameters 

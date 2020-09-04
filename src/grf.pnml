@@ -1,6 +1,6 @@
 // GRF definition block
 grf {
-	grfid: "MUKT"; // Modern UK Trains
+	grfid: "brv2"; // BRTrains v2, based on BRTrains, BROS, and the Modern UK Trains set (addon to BRTrains)
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
 	version: 0;
