@@ -1,0 +1,3464 @@
+// grf.pnml
+// GRF definition block
+grf {
+	grfid: "brv2"; // BRTrains v2, based on BRTrains, BROS, and the Modern UK Trains set (addon to BRTrains)
+	name: string(STR_GRF_NAME);
+	desc: string(STR_GRF_DESC);
+	version: 0;
+	min_compatible_version: 0; //bump up this number to version when breaking compatibility
+	param 0 {
+		param_max_speed {
+			type: int;
+			name: string(STR_PARAM_MAX_SPEED);
+			desc: string(STR_PARAM_MAX_SPEED_DESC);
+			min_value: 0;
+			max_value: 1;
+			def_value: 0;
+			names: {
+				0: string(STR_PARAM_MAX_SPEED_REAL);
+				1: string(STR_PARAM_MAX_SPEED_DESIGN);
+			};
+		}
+	}
+}
+
+// railtypes.pnml
+// Railtype definitions
+railtypetable {
+	//3RDR is 3rd rail; 3RDC is dual-voltage; 3ORC is 3rd rail OR ohle
+	"RAIL", "3RDR", "ELRL", "3RDC", "3ORC", "MONO", "MGLV",
+}
+
+// templates.pnml
+// Train sprite template
+template tmpl_train_4(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11] //n
+	[x + 35, y + 2, 21,		18,		-11,	-10] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7] //e
+	[x + 92, y + 2, 21,		18,		-12,	-11] //se
+}
+
+template tmpl_train_4_nowarn(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11,	WHITE] //n
+	[x + 35, y + 2, 21,		18,		-11,	-10,	WHITE] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7,		WHITE] //e
+	[x + 92, y + 2, 21,		18,		-12,	-11,	WHITE] //se
+}
+
+// Train sprite template
+template tmpl_train_8(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11] //n
+	[x + 35, y + 2, 21,		18,		-11,	-10] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7] //e
+	[x + 92, y + 2, 21,		18,		-12,	-11] //se
+	[x + 115, y + 2, 8,		23,		-3,		-11] //s
+	[x + 125, y + 2, 21,	18,		-11,	-10] //sw
+	[x + 148, y + 2, 32,	12,		-16,	-7] //w
+	[x + 182, y + 2, 21,	18,		-12,	-11] //nw
+}
+
+// Train sprite template
+template tmpl_train_8_nowarn(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11,	WHITE] //n
+	[x + 35, y + 2, 21,		18,		-11,	-10,	WHITE] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7,		WHITE] //e
+	[x + 92, y + 2, 21,		18,		-12,	-11,	WHITE] //se
+	[x + 115, y + 2, 8,		23,		-3,		-11,	WHITE] //s
+	[x + 125, y + 2, 21,	18,		-11,	-10,	WHITE] //sw
+	[x + 148, y + 2, 32,	12,		-16,	-7,		WHITE] //w
+	[x + 182, y + 2, 21,	18,		-12,	-11,	WHITE] //nw
+}
+
+// 195_331.pnml
+spriteset (spriteset_br_195_331_front, "gfx/br_195_331.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_195_331_middle, "gfx/br_195_331.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_195_331_rear, "gfx/br_195_331.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_195_purchase, "gfx/br_195_331.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_331_middle_panto, "gfx/br_195_331.png") { tmpl_train_8(0, 105) } // electric car
+spriteset (spriteset_br_331_purchase, "gfx/br_195_331.png") {
+	[2, 136, 91, 12, -25, -6]	
+}
+
+// 345.pnml
+spriteset (spriteset_br_345_front, "gfx/br_345.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_345_middle, "gfx/br_345.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_345_rear, "gfx/br_345.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_345_rear_panto, "gfx/br_345.png") { tmpl_train_8(0, 105) }
+
+spriteset (spriteset_br_345_purchase, "gfx/br_345.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+
+// 397.pnml
+spriteset (spriteset_br_397_front, "gfx/br_397_tpx.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_397_middle, "gfx/br_397_tpx.png") { tmpl_train_8(0, 29) }
+spriteset (spriteset_br_397_middle_panto, "gfx/br_397_tpx.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_397_rear, "gfx/br_397_tpx.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_397_purchase, "gfx/br_397_tpx.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+// 701.pnml
+spriteset (spriteset_br_701_front, "gfx/br_701.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_701_middle, "gfx/br_701.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_701_rear, "gfx/br_701.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_701_purchase, "gfx/br_701.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+
+// 707.pnml
+spriteset (spriteset_br_707_front, "gfx/br_707.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_707_middle, "gfx/br_707.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_707_rear, "gfx/br_707.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_707_purchase, "gfx/br_707.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+
+// 710.pnml
+spriteset (spriteset_br_710_front, "gfx/br_710.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_710_middle, "gfx/br_710.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_710_middle_panto, "gfx/br_710.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_710_rear, "gfx/br_710.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_710_purchase, "gfx/br_710.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+
+// 720.pnml
+spriteset (spriteset_br_720_front, "gfx/br_720.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_720_middle, "gfx/br_720.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_720_middle_panto, "gfx/br_720.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_720_rear, "gfx/br_720.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_720_purchase, "gfx/br_720.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+
+// 745.pnml
+spriteset (spriteset_br_745_front, "gfx/br_745_ga.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_745_middle, "gfx/br_745_ga.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_745_0_rear, "gfx/br_745_ga.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_745_0_rear_panto, "gfx/br_745_ga.png") { tmpl_train_8(0, 105) }
+
+spriteset (spriteset_br_745_purchase, "gfx/br_745_ga.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_745_1_rear, "gfx/br_745_st.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_745_1_rear_panto, "gfx/br_745_st.png") { tmpl_train_8(0, 105) }
+
+// 755.pnml
+spriteset (spriteset_br_755_front, "gfx/br_755_ga.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_755_middle, "gfx/br_755_ga.png") { tmpl_train_8(0, 29) }
+spriteset (spriteset_br_755_middle_panto, "gfx/br_755_ga.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_755_rear, "gfx/br_755_ga.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_755_pp, "gfx/br_755_ga.png") { 
+	//leftx, topy, width, height, offsetx, offsety
+	[25, 136, 8,		23,		-3,		-19] //n
+	[35, 136, 21,		18,		-3,		-14] //ne
+	[58, 136, 32,		12,		0,		-7] //e
+	[92, 136, 21,		18,		-4,		-7] //se
+	[115, 136, 8,		23,		-3,		-3] //s
+	[125, 136, 21,		18,		-19,	-6] //sw
+	[148, 136, 32,		12,		-32,	-7] //w
+	[182, 136, 21,		18,		-20,	-15] //nw
+ }
+
+spriteset (spriteset_br_755_purchase, "gfx/br_755_ga.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+
+// 756.pnml
+spriteset (spriteset_br_756_front, "gfx/br_756_tfw.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_756_middle, "gfx/br_756_tfw.png") { tmpl_train_8(0, 29) }
+spriteset (spriteset_br_756_middle_panto, "gfx/br_756_tfw.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_756_rear, "gfx/br_756_tfw.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_756_pp, "gfx/br_756_tfw.png") { 
+	//leftx, topy, width, height, offsetx, offsety
+	[25, 136, 8,		23,		-3,		-19] //n
+	[35, 136, 21,		18,		-3,		-14] //ne
+	[58, 136, 32,		12,		0,		-7] //e
+	[92, 136, 21,		18,		-4,		-7] //se
+	[115, 136, 8,		23,		-3,		-3] //s
+	[125, 136, 21,		18,		-19,	-6] //sw
+	[148, 136, 32,		12,		-32,	-7] //w
+	[182, 136, 21,		18,		-20,	-15] //nw
+ }
+
+spriteset (spriteset_br_756_purchase, "gfx/br_756_tfw.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+
+// 769.pnml
+spriteset (spriteset_br_769_front_gwr, "gfx/br_769_gwr.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_769_middle_gwr, "gfx/br_769_gwr.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_769_middle_panto_gwr, "gfx/br_769_gwr.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_769_rear_gwr, "gfx/br_769_gwr.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_769_purchase_gwr, "gfx/br_769_gwr.png") {
+	[2, 136, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_769_front_rog, "gfx/br_769_rog.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_769_middle_rog, "gfx/br_769_rog.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_769_middle_panto_rog, "gfx/br_769_rog.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_769_rear_rog, "gfx/br_769_rog.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_769_purchase_rog, "gfx/br_769_rog.png") {
+	[2, 136, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_769_front_tfw, "gfx/br_769_tfw.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_769_middle_tfw, "gfx/br_769_tfw.png") { tmpl_train_8_nowarn(0, 29) }
+spriteset (spriteset_br_769_middle_panto_tfw, "gfx/br_769_tfw.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_769_rear_tfw, "gfx/br_769_tfw.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_769_purchase_tfw, "gfx/br_769_tfw.png") {
+	[2, 136, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_769_front_northern, "gfx/br_769_northern.png") { tmpl_train_8_nowarn(0, 0) }
+spriteset (spriteset_br_769_middle_northern, "gfx/br_769_northern.png") { tmpl_train_4_nowarn(0, 29) }
+spriteset (spriteset_br_769_middle_panto_northern, "gfx/br_769_northern.png") { tmpl_train_8_nowarn(0, 105) }
+spriteset (spriteset_br_769_rear_northern, "gfx/br_769_northern.png") { tmpl_train_8_nowarn(0, 58) }
+spriteset (spriteset_br_769_purchase_northern, "gfx/br_769_northern.png") {
+	[2, 136, 91, 12, -25, -6]	
+}
+
+// 777.pnml
+spriteset (spriteset_br_777_front, "gfx/br_777.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_777_middle, "gfx/br_777.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_777_rear, "gfx/br_777.png") { tmpl_train_8(0, 58) }
+
+spriteset (spriteset_br_777_purchase, "gfx/br_777.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+
+// 800.pnml
+// Spriteset car definitions
+spriteset (spriteset_br_800_front_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_rear_panto_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_800_middle_lner, "gfx/br_800_lner.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_800_rear_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_800_purchase_lner, "gfx/br_800_lner.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+spriteset (spriteset_br_801_purchase_lner, "gfx/br_800_lner.png") {
+	[2, 136, 91, 12, -25, -6]
+}
+
+
+spriteset (spriteset_br_800_front_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_rear_panto_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_800_middle_gwr, "gfx/br_800_gwr.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_800_rear_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_800_purchase_gwr, "gfx/br_800_gwr.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_800_front_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_rear_panto_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_800_middle_tpx, "gfx/br_800_tpx.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_800_rear_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_800_purchase_tpx, "gfx/br_800_tpx.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_800_front_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_rear_panto_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_800_middle_hull, "gfx/br_800_hull.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_800_rear_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_800_purchase_hull, "gfx/br_800_hull.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+spriteset (spriteset_br_800_front_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_800_rear_panto_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br_800_middle_avanti, "gfx/br_800_avanti.png") { tmpl_train_4(0, 29) }
+spriteset (spriteset_br_800_rear_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_800_purchase_avanti, "gfx/br_800_avanti.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+// Front car pantograph switches
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_lner, current_railtype) {
+	ELRL: spriteset_br_800_rear_panto_lner;
+	spriteset_br_800_rear_lner;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_gwr, current_railtype) {
+	ELRL: spriteset_br_800_rear_panto_gwr;
+	spriteset_br_800_rear_gwr;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_tpx, current_railtype) {
+	ELRL: spriteset_br_800_rear_panto_tpx;
+	spriteset_br_800_rear_tpx;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_hull, current_railtype) {
+	ELRL: spriteset_br_800_rear_panto_hull;
+	spriteset_br_800_rear_hull;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_avanti, current_railtype) {
+	ELRL: spriteset_br_800_rear_panto_avanti;
+	spriteset_br_800_rear_avanti;
+}
+
+
+// Speed switch
+switch(FEAT_TRAINS, SELF, switch_br_800_speed, param_max_speed) {
+	0: 201;
+	1: 225;
+}
+
+// 755-3.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_755_3_spriteset, position_in_articulated_veh % 4) {
+	0: spriteset_br_755_front;
+    1: spriteset_br_755_pp;
+	2: spriteset_br_755_middle_panto;
+    3: spriteset_br_755_rear;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_755_3_articulated, extra_callback_info1) {
+	1..3: return item_br_755_3;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_br_755_3_particles_electric, position_in_articulated_veh % 4) {
+	2: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_3_particles_diesel, position_in_articulated_veh % 4) {
+	1: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_3_particles, current_railtype) {
+	ELRL: switch_br_755_3_particles_electric;
+	railtype("3RDC"): switch_br_755_3_particles_electric;
+	switch_br_755_3_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_755_3_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_755_3_can_attach_wagon, vehicle_type_id) {
+	item_br_755_3: return CB_RESULT_ATTACH_ALLOW;
+	item_br_755_4: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_3_power, current_railtype) {
+	ELRL: return 3500;
+	railtype("3RDC"): return 3500;
+	return 1290;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_3_length, position_in_articulated_veh % 4) {
+	1: return 4;
+	return 8;
+}
+
+//switch(FEAT_TRAINS, SELF, switch_br_755_3_desc, )
+
+// Class 755/3 (3.5car)
+item(FEAT_TRAINS, item_br_755_3) {
+	property {
+		name: string(STR_BR_755_3CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 07, 29);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 62;
+		loading_speed: 15;
+		running_cost_factor: 21;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 3500 hp;
+		cargo_capacity: (167/3);
+		weight: 94.8 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_755_3_spriteset;
+		purchase: spriteset_br_755_purchase;
+
+		articulated_part: switch_br_755_3_articulated;
+		start_stop: switch_br_755_3_start_stop;	
+		can_attach_wagon: switch_br_755_3_can_attach_wagon;
+		visual_effect_and_powered: switch_br_755_3_particles;
+				
+		power: switch_br_755_3_power;
+		length: switch_br_755_3_length;
+		additional_text: string(STR_DSC_BR_755);
+	}
+}
+
+// 755-4.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_755_4_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_br_755_front;
+    1: spriteset_br_755_middle;
+	2: spriteset_br_755_pp;
+    3: spriteset_br_755_middle_panto;
+	4: spriteset_br_755_rear;
+	spriteset_br_755_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_755_4_articulated, extra_callback_info1) {
+	1..4: return item_br_755_4;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_4_particles_electric, position_in_articulated_veh % 5) {
+	3: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_4_particles_diesel, position_in_articulated_veh % 5) {
+	2: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_4_particles, current_railtype) {
+	ELRL: switch_br_755_4_particles_electric;
+	railtype("3RDC"): switch_br_755_4_particles_electric;
+	switch_br_755_4_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_755_4_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_755_4_can_attach_wagon, vehicle_type_id) {
+	item_br_755_4: return CB_RESULT_ATTACH_ALLOW;
+	item_br_755_3: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_4_power, current_railtype) {
+	ELRL: return 3500;
+	railtype("3RDC"): return 3500;
+	return 2570;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_755_4_length, position_in_articulated_veh % 5) {
+	2: return 4;
+	return 8;
+}
+
+// Class 755/4 (4.5car)
+item(FEAT_TRAINS, item_br_755_4) {
+	property {
+		name: string(STR_BR_755_4CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 07, 29);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 76;
+		loading_speed: 15;
+		running_cost_factor: 25;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 3500 hp;
+		cargo_capacity: (229/4);
+		weight: 114.3 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_755_4_spriteset;
+		purchase: spriteset_br_755_purchase;
+
+		articulated_part: switch_br_755_4_articulated;
+		start_stop: switch_br_755_4_start_stop;	
+		can_attach_wagon: switch_br_755_4_can_attach_wagon;
+		visual_effect_and_powered: switch_br_755_4_particles;
+				
+		power: switch_br_755_4_power;
+		length: switch_br_755_4_length;
+		additional_text: string(STR_DSC_BR_755);
+	}
+}
+
+// 756-3.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_756_3_spriteset, position_in_articulated_veh % 4) {
+	0: spriteset_br_756_front;
+    1: spriteset_br_756_pp;
+	2: spriteset_br_756_middle_panto;
+    3: spriteset_br_756_rear;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_756_3_articulated, extra_callback_info1) {
+	1..3: return item_br_756_3;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_br_756_3_particles_electric, position_in_articulated_veh % 4) {
+	2: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_3_particles_diesel, position_in_articulated_veh % 4) {
+	1: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_3_particles, current_railtype) {
+	ELRL: switch_br_756_3_particles_electric;
+	railtype("3RDC"): switch_br_756_3_particles_electric;
+	switch_br_756_3_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_756_3_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_756_3_can_attach_wagon, vehicle_type_id) {
+	item_br_756_3: return CB_RESULT_ATTACH_ALLOW;
+	item_br_756_4: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_3_power, current_railtype) {
+	ELRL: return 3500;
+	railtype("3RDC"): return 3500;
+	return 1290;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_3_length, position_in_articulated_veh % 4) {
+	1: return 4;
+	return 8;
+}
+
+// Class 755/3 (3.5car)
+item(FEAT_TRAINS, item_br_756_3) {
+	property {
+		name: string(STR_BR_756_3CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2023, 07, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 62;
+		loading_speed: 15;
+		running_cost_factor: 21;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 3500 hp;
+		cargo_capacity: (167/3);
+		weight: 94.8 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_756_3_spriteset;
+		purchase: spriteset_br_756_purchase;
+
+		articulated_part: switch_br_756_3_articulated;
+		start_stop: switch_br_756_3_start_stop;	
+		can_attach_wagon: switch_br_756_3_can_attach_wagon;
+		visual_effect_and_powered: switch_br_756_3_particles;
+				
+		power: switch_br_756_3_power;
+		length: switch_br_756_3_length;
+		additional_text: string(STR_DSC_BR_756);
+	}
+}
+
+// 756-4.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_756_4_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_br_756_front;
+    1: spriteset_br_756_middle;
+	2: spriteset_br_756_pp;
+    3: spriteset_br_756_middle_panto;
+	4: spriteset_br_756_rear;
+	spriteset_br_756_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_756_4_articulated, extra_callback_info1) {
+	1..4: return item_br_756_4;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_4_particles_electric, position_in_articulated_veh % 5) {
+	3: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_4_particles_diesel, position_in_articulated_veh % 5) {
+	2: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_4_particles, current_railtype) {
+	ELRL: switch_br_756_4_particles_electric;
+	railtype("3RDC"): switch_br_756_4_particles_electric;
+	switch_br_756_4_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_756_4_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_756_4_can_attach_wagon, vehicle_type_id) {
+	item_br_756_4: return CB_RESULT_ATTACH_ALLOW;
+	item_br_756_3: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_4_power, current_railtype) {
+	ELRL: return 3500;
+	railtype("3RDC"): return 3500;
+	return 2570;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_756_4_length, position_in_articulated_veh % 5) {
+	2: return 4;
+	return 8;
+}
+
+// Class 755/4 (4.5car)
+item(FEAT_TRAINS, item_br_756_4) {
+	property {
+		name: string(STR_BR_756_4CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2023, 07, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 76;
+		loading_speed: 15;
+		running_cost_factor: 25;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 3500 hp;
+		cargo_capacity: (229/4);
+		weight: 114.3 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_756_4_spriteset;
+		purchase: spriteset_br_756_purchase;
+
+		articulated_part: switch_br_756_4_articulated;
+		start_stop: switch_br_756_4_start_stop;	
+		can_attach_wagon: switch_br_756_4_can_attach_wagon;
+		visual_effect_and_powered: switch_br_756_4_particles;
+				
+		power: switch_br_756_4_power;
+		length: switch_br_756_4_length;
+		additional_text: string(STR_DSC_BR_756);
+	}
+}
+
+// 769-0-3-4.pnml
+switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_rog, position_in_articulated_veh % 4) {
+	0: spriteset_br_769_front_rog;
+    1: spriteset_br_769_middle_panto_rog;
+	3: spriteset_br_769_rear_rog;
+	spriteset_br_769_middle_rog;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_northern, position_in_articulated_veh % 4) {
+	0: spriteset_br_769_front_northern;
+    1: spriteset_br_769_middle_panto_northern;
+	3: spriteset_br_769_rear_northern;
+	spriteset_br_769_middle_northern;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_tfw, position_in_articulated_veh % 4) {
+	0: spriteset_br_769_front_tfw;
+    1: spriteset_br_769_middle_panto_tfw;
+	3: spriteset_br_769_rear_tfw;
+	spriteset_br_769_middle_tfw;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_spriteset, cargo_subtype) {
+	0: switch_br_769_spriteset_tfw;
+	1: switch_br_769_spriteset_rog;
+	2: switch_br_769_spriteset_northern;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_769_articulated, extra_callback_info1) {
+	1..3: return item_br_769;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_particles_ohle, position_in_articulated_veh % 4) {
+    1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_particles_3rdr, position_in_articulated_veh % 4) {
+    // No effects on 3RDR (for now...)
+    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_particles_diesel, position_in_articulated_veh % 4) {
+    0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+    3: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+}
+
+// Only give particle effects to middle/pantograph car
+switch(FEAT_TRAINS, SELF, switch_br_769_particles, current_railtype) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	ELRL: switch_br_769_particles_ohle;
+    railtype("3RDC"): switch_br_769_particles_ohle;
+    railtype("3RDR"): switch_br_769_particles_diesel;
+	switch_br_769_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_769_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_769_can_attach_wagon, vehicle_type_id) {
+	item_br_769: return CB_RESULT_ATTACH_ALLOW;
+	item_br_769_9: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR_769_TFW);
+	1: return string(STR_LIVERY_BR_769_ROG);
+	2: return string(STR_LIVERY_BR_769_NORTHERN);
+	return CB_RESULT_NO_TEXT;
+}
+
+// Class 331/0 (3car)
+item(FEAT_TRAINS, item_br_769) {
+	property {
+		name: string(STR_BR_769);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 08, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 41;
+		loading_speed: 25;
+		running_cost_factor: 40;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 2092 hp;
+		cargo_capacity: (304/4);
+		weight: 147.8 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_769_spriteset;
+		purchase: spriteset_br_769_purchase_tfw;
+		cargo_subtype_text: switch_br_769_subtype_text;
+		
+		articulated_part: switch_br_769_articulated;
+		start_stop: switch_br_769_start_stop;	
+		can_attach_wagon: switch_br_769_can_attach_wagon;
+		visual_effect_and_powered: switch_br_769_particles;
+				
+		purchase_cargo_capacity: return (300/4);	
+		additional_text: string(STR_DSC_BR_769);	
+	}
+}
+
+// 769-9.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_769_9_spriteset, position_in_articulated_veh % 4) {
+	0: spriteset_br_769_front_gwr;
+    1: spriteset_br_769_middle_panto_gwr;
+	3: spriteset_br_769_rear_gwr;
+	spriteset_br_769_middle_gwr;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_769_9_articulated, extra_callback_info1) {
+	1..3: return item_br_769_9;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_ohle, position_in_articulated_veh % 4) {
+    1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_3rdr, position_in_articulated_veh % 4) {
+    // No effects on 3RDR (for now...)
+    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_diesel, position_in_articulated_veh % 4) {
+    0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+    3: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+}
+
+// Only give particle effects to middle/pantograph car
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles, current_railtype) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	ELRL: switch_br_769_9_particles_ohle;
+    railtype("3RDC"): switch_br_769_9_particles_ohle;
+    railtype("3RDR"): switch_br_769_9_particles_3rdr;
+	switch_br_769_9_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_769_9_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_769_9_can_attach_wagon, vehicle_type_id) {
+	item_br_769_9: return CB_RESULT_ATTACH_ALLOW;
+	item_br_769: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Class 331/0 (3car)
+item(FEAT_TRAINS, item_br_769_9) {
+	property {
+		name: string(STR_BR_769_9);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 08, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 43;
+		loading_speed: 25;
+		running_cost_factor: 42;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 2092 hp;
+		cargo_capacity: (300/4);
+		weight: 155.2 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_769_9_spriteset;
+		purchase: spriteset_br_769_purchase_gwr;
+		
+		articulated_part: switch_br_769_9_articulated;
+		start_stop: switch_br_769_9_start_stop;	
+		can_attach_wagon: switch_br_769_9_can_attach_wagon;
+		visual_effect_and_powered: switch_br_769_9_particles;
+				
+		purchase_cargo_capacity: return (300/4);
+		additional_text: string(STR_DSC_BR_769_9);	
+				
+	}
+}
+
+// 800-0-2.pnml
+// Livery callbacks
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_spriteset_lner, position_in_articulated_veh % 5) {
+	0: spriteset_br_800_front_lner;
+	4: switch_br_800_spriteset_rear_lner;
+	spriteset_br_800_middle_lner;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_spriteset_gwr, position_in_articulated_veh % 5) {
+	0: spriteset_br_800_front_gwr;
+	4: switch_br_800_spriteset_rear_gwr;
+	spriteset_br_800_middle_gwr;
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_spriteset, cargo_subtype) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: switch_br_800_5car_spriteset_lner;
+	1: switch_br_800_5car_spriteset_gwr;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_800_5car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_particles_diesel, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_particles_electric, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_particles, current_railtype) {
+	ELRL: switch_br_800_5car_particles_electric;
+	switch_br_800_5car_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_can_attach_wagon, vehicle_type_id) {
+	item_br_800_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_800_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_805: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// LNER trains hold fewer passengers than GWR trains
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_capacity, cargo_subtype) {
+	0: return (302/5);
+	1: return (326/5);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR_800_LNER);
+	1: return string(STR_LIVERY_BR_800_GWR);
+	return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_5car_power, current_railtype) {
+	ELRL: return 3200;
+	return 2250;
+}
+
+// Class 800/0/2 (5car)
+item(FEAT_TRAINS, item_br_800_5car) {
+	property {
+		name: string(STR_BR_800_5CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2017, 10, 06);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 87;
+		loading_speed: 12;
+		running_cost_factor: 60;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 3200 hp;
+		cargo_capacity: (302/5);
+		weight: 243 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_800_5car_spriteset;
+		purchase: spriteset_br_800_purchase_lner;
+		cargo_subtype_text: switch_br_800_5car_subtype_text;
+		
+		power: switch_br_800_5car_power;
+		speed: switch_br_800_speed;
+
+		articulated_part: switch_br_800_5car_articulated;
+		start_stop: switch_br_800_5car_start_stop;	
+		can_attach_wagon: switch_br_800_5car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_800_5car_particles;
+				
+		cargo_capacity: switch_br_800_5car_capacity;
+		additional_text: string(STR_DSC_BR_800);
+	}
+}
+
+// 800-1-3.pnml
+// Livery callbacks
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset_lner, position_in_articulated_veh % 9) {
+	0: spriteset_br_800_front_lner;
+	8: switch_br_800_spriteset_rear_lner;
+	spriteset_br_800_middle_lner;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset_gwr, position_in_articulated_veh % 9) {
+	0: spriteset_br_800_front_gwr;
+	8: switch_br_800_spriteset_rear_gwr;
+	spriteset_br_800_middle_gwr;
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset, cargo_subtype) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: switch_br_800_9car_spriteset_lner;
+	1: switch_br_800_9car_spriteset_gwr;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..8: return item_br_800_9car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles_electric, position_in_articulated_veh % 9) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	8: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles_diesel, position_in_articulated_veh % 9) {
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	8: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles, current_railtype) {
+	ELRL: switch_br_800_9car_particles_electric;
+	switch_br_800_9car_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_can_attach_wagon, vehicle_type_id) {
+	item_br_800_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_800_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_805: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// LNER trains hold fewer passengers than GWR trains
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_capacity, cargo_subtype) {
+	0: return (611/9);
+	1: return (650/9);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR_800_LNER);
+	1: return string(STR_LIVERY_BR_800_GWR);
+	return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_800_9car_power, current_railtype) {
+	ELRL: return 5760;
+	return 3750;
+
+}
+
+// Class 800/1/3 (9car)
+item(FEAT_TRAINS, item_br_800_9car) {
+	property {
+		name: string(STR_BR_800_9CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2017, 10, 06);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 147;
+		loading_speed: 10;
+		running_cost_factor: 90;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 5760 hp;
+		cargo_capacity: (611/9);
+		weight: 438 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_800_9car_spriteset;
+		purchase: spriteset_br_800_purchase_lner;
+		cargo_subtype_text: switch_br_800_9car_subtype_text;
+		
+		articulated_part: switch_br_800_9car_articulated;
+		start_stop: switch_br_800_9car_start_stop;	
+		can_attach_wagon: switch_br_800_9car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_800_9car_particles;
+				
+		cargo_capacity: switch_br_800_9car_capacity;
+		power: switch_br_800_9car_power;
+		speed: switch_br_800_speed;
+		additional_text: string(STR_DSC_BR_800);
+	}
+}
+
+// 802-0-2-3.pnml
+// Livery callbacks
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_tpx, position_in_articulated_veh % 5) {
+	0: spriteset_br_800_front_tpx;
+	4: switch_br_800_spriteset_rear_tpx;
+	spriteset_br_800_middle_tpx;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_gwr, position_in_articulated_veh % 5) {
+	0: spriteset_br_800_front_gwr;
+	4: switch_br_800_spriteset_rear_gwr;
+	spriteset_br_800_middle_gwr;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_hull, position_in_articulated_veh % 5) {
+	0: spriteset_br_800_front_hull;
+	4: switch_br_800_spriteset_rear_hull;
+	spriteset_br_800_middle_hull;
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset, cargo_subtype) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: switch_br_802_5car_spriteset_tpx;
+	1: switch_br_802_5car_spriteset_gwr;
+	2: switch_br_802_5car_spriteset_hull;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_802_5car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_particles_diesel, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_particles_electric, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_particles, current_railtype) {
+	ELRL: switch_br_802_5car_particles_electric;
+	switch_br_802_5car_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_can_attach_wagon, vehicle_type_id) {
+	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_800_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_800_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_805: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// TPX and Hull are both First, so assumed they're the same
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_capacity, cargo_subtype) {
+	0: return (342/5);
+	1: return (326/5);
+	2: return (342/5);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR_800_TPX);
+	1: return string(STR_LIVERY_BR_800_GWR);
+	2: return string(STR_LIVERY_BR_800_HULL);
+	return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_5car_power, current_railtype) {
+	ELRL: return 3200;
+	return 2820;
+}
+
+// Class 802/0/2/3 (5car)
+item(FEAT_TRAINS, item_br_802_5car) {
+	property {
+		name: string(STR_BR_802_5CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2018, 08, 18);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 92;
+		loading_speed: 12;
+		running_cost_factor: 60;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 3200 hp;
+		cargo_capacity: (342/5);
+		weight: 261 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_802_5car_spriteset;
+		purchase: spriteset_br_800_purchase_tpx;
+		cargo_subtype_text: switch_br_802_5car_subtype_text;
+		
+		power: switch_br_802_5car_power;
+		speed: switch_br_800_speed;
+
+		articulated_part: switch_br_802_5car_articulated;
+		start_stop: switch_br_802_5car_start_stop;	
+		can_attach_wagon: switch_br_802_5car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_802_5car_particles;
+				
+		cargo_capacity: switch_br_802_5car_capacity;
+		additional_text: string(STR_DSC_BR_802_5CAR);		
+	}
+}
+
+// 802-1.pnml
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_spriteset, position_in_articulated_veh % 9) {
+	0: spriteset_br_800_front_gwr;
+	8: switch_br_800_spriteset_rear_gwr;
+	spriteset_br_800_middle_gwr;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..8: return item_br_802_9car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_particles_diesel, position_in_articulated_veh % 9) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	8: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_particles_electric, position_in_articulated_veh % 9) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	8: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_particles, current_railtype) {
+	ELRL: switch_br_802_9car_particles_electric;
+	switch_br_802_9car_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_can_attach_wagon, vehicle_type_id) {
+	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_800_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_800_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_805: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_802_9car_power, current_railtype) {
+	ELRL: return 5760;
+	return 4700;
+}
+
+// Class 802/1 (9car)
+item(FEAT_TRAINS, item_br_802_9car) {
+	property {
+		name: string(STR_BR_802_9CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2018, 08, 18);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 147;
+		loading_speed: 10;
+		running_cost_factor: 90;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 5760 hp;
+		cargo_capacity: (647/9);
+		weight: 457 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_802_9car_spriteset;
+		purchase: spriteset_br_800_purchase_gwr;
+		
+		power: switch_br_802_9car_power;
+		speed: switch_br_800_speed;
+
+		articulated_part: switch_br_802_9car_articulated;
+		start_stop: switch_br_802_9car_start_stop;	
+		can_attach_wagon: switch_br_802_9car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_802_9car_particles;	
+		additional_text: string(STR_DSC_BR_802_9CAR);	
+	}
+}
+
+// 805.pnml
+// Livery callbacks
+switch(FEAT_TRAINS, SELF, switch_br_805_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_br_800_front_avanti;
+	4: switch_br_800_spriteset_rear_avanti;
+	spriteset_br_800_middle_avanti;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_805_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_805;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_805_particles_diesel, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_805_particles_electric, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_805_particles, current_railtype) {
+	ELRL: switch_br_805_particles_electric;
+	switch_br_805_particles_diesel;
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_805_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_805_can_attach_wagon, vehicle_type_id) {
+	item_br_805: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_805_power, current_railtype) {
+	ELRL: return 3200;
+	return 2250;
+}
+
+// Class 800/0/2 (5car)
+item(FEAT_TRAINS, item_br_805) {
+	property {
+		name: string(STR_BR_805);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2022, 1, 1);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 92;
+		loading_speed: 12;
+		running_cost_factor: 60;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 3200 hp;
+		cargo_capacity: (301/5);
+		weight: 243 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_805_spriteset;
+		purchase: spriteset_br_800_purchase_avanti;
+		
+		power: switch_br_805_power;
+		speed: switch_br_800_speed;		
+
+		articulated_part: switch_br_805_articulated;
+		start_stop: switch_br_805_start_stop;	
+		can_attach_wagon: switch_br_805_can_attach_wagon;
+		visual_effect_and_powered: switch_br_805_particles;		
+		additional_text: string(STR_DSC_BR_805);
+				
+	}
+}
+
+// 68_5a.pnml
+// Spriteset car definitions
+spriteset (spriteset_br_68_5a_front, "gfx/br_68_5a.png") { tmpl_train_8(0, 0) }
+spriteset (spriteset_br_68_5a_middle, "gfx/br_68_5a.png") { tmpl_train_8(0, 29) }
+spriteset (spriteset_br_68_5a_rear, "gfx/br_68_5a.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_68_5a_purchase, "gfx/br_68_5a.png") {
+	[2, 89, 91, 12, -25, -6]	
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_articulated_veh % 6) {
+	// 0 is first car, 1 is second car, so on...
+	// % 2 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,end);(front,end)...
+	0: spriteset_br_68_5a_front;
+	5: spriteset_br_68_5a_rear;
+	spriteset_br_68_5a_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..5: return item_br_68_5a;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_can_attach_wagon, vehicle_type_id) {
+	item_br_68_5a: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Only the driving engine has particles
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_particles, position_in_articulated_veh % 6) {
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Class 195/0 (2car)
+item(FEAT_TRAINS, item_br_68_5a) {
+	property {
+		name: string(STR_BR_68_5A);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 08, 04);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 65;
+		loading_speed: 5;
+		running_cost_factor: 100;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 3800 hp;
+		cargo_capacity: (291/6);
+		weight: 299 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_DIESEL;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if ts 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.37;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_68_5a_spriteset;
+		purchase: spriteset_br_68_5a_purchase;
+		
+		articulated_part: switch_br_68_5a_articulated;
+		start_stop: switch_br_68_5a_start_stop;	
+		can_attach_wagon: switch_br_68_5a_can_attach_wagon;
+		visual_effect_and_powered: switch_br_68_5a_particles;
+				
+		purchase_cargo_capacity: return (291/6);
+		additional_text: string(STR_DSC_BR_MK5A);	
+		
+	}
+}
+
+// 195-0.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_195_0_spriteset, position_in_articulated_veh % 2) {
+	// 0 is first car, 1 is second car, so on...
+	// % 2 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,end);(front,end)...
+	0: spriteset_br_195_331_front;
+	spriteset_br_195_331_rear;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_195_0_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1: return item_br_195_0;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_195_0_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_195_0_can_attach_wagon, vehicle_type_id) {
+	item_br_195_0: return CB_RESULT_ATTACH_ALLOW;
+	item_br_195_1: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Class 195/0 (2car)
+item(FEAT_TRAINS, item_br_195_0) {
+	property {
+		name: string(STR_BR_195_2CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 07, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 42;
+		loading_speed: 25;
+		running_cost_factor: 25;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 1036 hp;
+		cargo_capacity: (124/2);
+		weight: 87.4 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_DIESEL;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if ts 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_195_0_spriteset;
+		purchase: spriteset_br_195_purchase;
+		
+		articulated_part: switch_br_195_0_articulated;
+		start_stop: switch_br_195_0_start_stop;	
+		can_attach_wagon: switch_br_195_0_can_attach_wagon;
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+				
+		purchase_cargo_capacity: return (124/2);
+		additional_text: string(STR_DSC_BR_195);	
+		
+	}
+}
+
+// 195-1.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_195_1_spriteset, position_in_articulated_veh % 3) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: spriteset_br_195_331_front;
+	2: spriteset_br_195_331_rear;
+	spriteset_br_195_331_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_195_1_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..2: return item_br_195_1;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_195_1_particles, position_in_articulated_veh % 3) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	2: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_195_1_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_195_1_can_attach_wagon, vehicle_type_id) {
+	item_br_195_1: return CB_RESULT_ATTACH_ALLOW;
+	item_br_195_0: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Class 195/1 (3car)
+item(FEAT_TRAINS, item_br_195_1) {
+	property {
+		name: string(STR_BR_195_3CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 07, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 60;
+		loading_speed: 25;
+		running_cost_factor: 33;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 1569 hp;	// nice
+		cargo_capacity: (204/3);
+		weight: 128.36 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_DIESEL;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_195_1_spriteset;
+		purchase: spriteset_br_195_purchase;
+		
+		articulated_part: switch_br_195_1_articulated;
+		start_stop: switch_br_195_1_start_stop;	
+		can_attach_wagon: switch_br_195_1_can_attach_wagon;
+		visual_effect_and_powered: switch_br_195_1_particles;
+				
+		purchase_cargo_capacity: return (204/3);
+		additional_text: string(STR_DSC_BR_195);	
+				
+	}
+}
+
+// 331-0.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_331_0_spriteset, position_in_articulated_veh % 3) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: spriteset_br_195_331_front;
+	2: spriteset_br_195_331_rear;
+	spriteset_br_331_middle_panto;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_331_0_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..2: return item_br_331_0;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to middle/pantograph car
+switch(FEAT_TRAINS, SELF, switch_br_331_0_particles, position_in_articulated_veh % 3) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_331_0_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_331_0_can_attach_wagon, vehicle_type_id) {
+	item_br_331_0: return CB_RESULT_ATTACH_ALLOW;
+	item_br_331_1: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Class 331/0 (3car)
+item(FEAT_TRAINS, item_br_331_0) {
+	property {
+		name: string(STR_BR_331_3CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 07, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 62;
+		loading_speed: 25;
+		running_cost_factor: 33;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 2360 hp;
+		cargo_capacity: (204/3);
+		weight: 128.0 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_331_0_spriteset;
+		purchase: spriteset_br_331_purchase;
+		
+		articulated_part: switch_br_331_0_articulated;
+		start_stop: switch_br_331_0_start_stop;	
+		can_attach_wagon: switch_br_331_0_can_attach_wagon;
+		visual_effect_and_powered: switch_br_331_0_particles;
+				
+		purchase_cargo_capacity: return (204/3);
+		additional_text: string(STR_DSC_BR_331);	
+				
+	}
+}
+
+// 331-1.pnml
+// Spriteset car definitions
+
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_331_1_spriteset, position_in_articulated_veh % 4) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 4 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,panto,middle,end);(front,panto,middle,end)...
+	0: spriteset_br_195_331_front;
+	1:	spriteset_br_331_middle_panto;
+	3: spriteset_br_195_331_rear;
+	spriteset_br_195_331_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_331_1_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..3: return item_br_331_1;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to second/pantograph car
+switch(FEAT_TRAINS, SELF, switch_br_331_1_particles, position_in_articulated_veh % 3) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_331_1_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_331_1_can_attach_wagon, vehicle_type_id) {
+	item_br_331_1: return CB_RESULT_ATTACH_ALLOW;
+	item_br_331_0: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Class 331/0 (3car)
+item(FEAT_TRAINS, item_br_331_1) {
+	property {
+		name: string(STR_BR_331_4CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 07, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 80;
+		loading_speed: 25;
+		running_cost_factor: 42;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 2360 hp;
+		cargo_capacity: (284/4);
+		weight: 169.0 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_331_1_spriteset;
+		purchase: spriteset_br_331_purchase;
+		
+		articulated_part: switch_br_331_1_articulated;
+		start_stop: switch_br_331_1_start_stop;	
+		can_attach_wagon: switch_br_331_1_can_attach_wagon;
+		visual_effect_and_powered: switch_br_331_1_particles;
+				
+		purchase_cargo_capacity: return (284/4);
+		additional_text: string(STR_DSC_BR_331);	
+				
+	}
+}
+
+// 345.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_345_spriteset, position_in_articulated_veh % 9) {
+	0: spriteset_br_345_front;
+	7: spriteset_br_345_rear_panto;
+	8: spriteset_br_345_rear;
+	spriteset_br_345_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_345_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..8: return item_br_345;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_345_particles, position_in_articulated_veh % 9) {
+	7: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_345_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_345_can_attach_wagon, vehicle_type_id) {
+	item_br_345: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 345
+item(FEAT_TRAINS, item_br_345) {
+	property {
+		name: string(STR_BR_345);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2017, 06, 02);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 110;
+		loading_speed: 25;
+		running_cost_factor: 85;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 90 mph;
+		power: 4000 hp;
+		cargo_capacity: (1500/9);
+		weight: 264.21 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("ELRL");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_345_spriteset;
+		purchase: spriteset_br_345_purchase;
+		
+		articulated_part: switch_br_345_articulated;
+		start_stop: switch_br_345_start_stop;	
+		can_attach_wagon: switch_br_345_can_attach_wagon;
+		visual_effect_and_powered: switch_br_345_particles;			
+		additional_text: string(STR_DSC_BR_345);	
+	}
+}
+
+// 397.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_397_spriteset, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: spriteset_br_397_front;
+	3: spriteset_br_397_middle_panto;
+	4: spriteset_br_397_rear;
+	spriteset_br_397_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_397_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_397;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to middle/pantograph car
+switch(FEAT_TRAINS, SELF, switch_br_397_particles, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	3: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_397_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_397_can_attach_wagon, vehicle_type_id) {
+	item_br_397: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Class 397 (5 car)
+item(FEAT_TRAINS, item_br_397) {
+	property {
+		name: string(STR_BR_397);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 11, 30);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 76;
+		loading_speed: 15;
+		running_cost_factor: 40;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 3400 hp; // Educated guess
+		cargo_capacity: (286/5);
+		weight: 192.5 ton;	// Thanks TPX's Twitter people
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_397_spriteset;
+		purchase: spriteset_br_397_purchase;
+		
+		articulated_part: switch_br_397_articulated;
+		start_stop: switch_br_397_start_stop;	
+		can_attach_wagon: switch_br_397_can_attach_wagon;
+		visual_effect_and_powered: switch_br_397_particles;
+				
+		purchase_cargo_capacity: return (286/5);
+		additional_text: string(STR_DSC_BR_397);	
+	}
+}
+
+// 701-0.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_701_0_spriteset, position_in_articulated_veh % 10) {
+	0: spriteset_br_701_front;
+	9: spriteset_br_701_rear;
+	spriteset_br_701_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_701_0_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..9: return item_br_701_0;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_701_0_particles, position_in_articulated_veh % 9) {
+	// No effects - 3RDR
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_701_0_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_701_0_can_attach_wagon, vehicle_type_id) {
+	item_br_701_0: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 701
+item(FEAT_TRAINS, item_br_701_0) {
+	property {
+		name: string(STR_BR_701_0);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 11, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 170;
+		loading_speed: 25;
+		running_cost_factor: 100;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 4200 hp;
+		cargo_capacity: (1296/10);
+		weight: 330 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("3RDR");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_701_0_spriteset;
+		purchase: spriteset_br_701_purchase;
+		
+		articulated_part: switch_br_701_0_articulated;
+		start_stop: switch_br_701_0_start_stop;	
+		can_attach_wagon: switch_br_701_0_can_attach_wagon;
+		visual_effect_and_powered: switch_br_701_0_particles;			
+		additional_text: string(STR_DSC_BR_701);	
+	}
+}
+
+// 701-5.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_701_5_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_br_701_front;
+	4: spriteset_br_701_rear;
+	spriteset_br_701_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_701_5_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_701_5;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_701_5_particles, position_in_articulated_veh % 5) {
+	// No effects - 3RDR
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_701_5_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_701_5_can_attach_wagon, vehicle_type_id) {
+	item_br_701_5: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 701
+item(FEAT_TRAINS, item_br_701_5) {
+	property {
+		name: string(STR_BR_701_5);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 11, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 95;
+		loading_speed: 25;
+		running_cost_factor: 55;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 2100 hp;
+		cargo_capacity: (599/5);
+		weight: 120 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("3RDR");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_701_5_spriteset;
+		purchase: spriteset_br_701_purchase;
+		
+		articulated_part: switch_br_701_5_articulated;
+		start_stop: switch_br_701_5_start_stop;	
+		can_attach_wagon: switch_br_701_5_can_attach_wagon;
+		visual_effect_and_powered: switch_br_701_5_particles;			
+		additional_text: string(STR_DSC_BR_701);	
+	}
+}
+
+// 707.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_707_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_br_707_front;
+	4: spriteset_br_707_rear;
+	spriteset_br_707_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_707_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_707;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_707_particles, position_in_articulated_veh % 5) {
+	// No effects - 3RDR
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_707_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_707_can_attach_wagon, vehicle_type_id) {
+	item_br_707: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 701
+item(FEAT_TRAINS, item_br_707) {
+	property {
+		name: string(STR_BR_707);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2017, 08, 17);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 65;
+		loading_speed: 25;
+		running_cost_factor: 44;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 1600 hp;
+		cargo_capacity: (595/5);
+		weight: 120 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("3RDR");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_707_spriteset;
+		purchase: spriteset_br_707_purchase;
+		
+		articulated_part: switch_br_707_articulated;
+		start_stop: switch_br_707_start_stop;	
+		can_attach_wagon: switch_br_707_can_attach_wagon;
+		visual_effect_and_powered: switch_br_707_particles;			
+		additional_text: string(STR_DSC_BR_707);	
+	}
+}
+
+// 710-1.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_710_1_spriteset, position_in_articulated_veh % 4) {
+	0: spriteset_br_710_front;
+	1: spriteset_br_710_middle_panto;
+	3: spriteset_br_710_rear;
+	spriteset_br_710_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_710_1_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..3: return item_br_710_1;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_710_1_particles, position_in_articulated_veh % 5) {
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_710_1_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_710_1_can_attach_wagon, vehicle_type_id) {
+	item_br_710_1: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 720
+item(FEAT_TRAINS, item_br_710_1) {
+	property {
+		name: string(STR_BR_710_1);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 03, 03);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 72;
+		loading_speed: 25;
+		running_cost_factor: 45;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 75 mph;
+		power: 2400 hp;
+		cargo_capacity: (678/4);
+		weight: 144 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("ELRL");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_710_1_spriteset;
+		purchase: spriteset_br_710_purchase;
+		
+		articulated_part: switch_br_710_1_articulated;
+		start_stop: switch_br_710_1_start_stop;	
+		can_attach_wagon: switch_br_710_1_can_attach_wagon;
+		visual_effect_and_powered: switch_br_710_1_particles;			
+		additional_text: string(STR_DSC_BR_710);	
+	}
+}
+
+// 710-2_4car.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_spriteset, position_in_articulated_veh % 4) {
+	0: spriteset_br_710_front;
+	1: spriteset_br_710_middle_panto;
+	3: spriteset_br_710_rear;
+	spriteset_br_710_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..3: return item_br_710_2_4car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_particles_elrl, position_in_articulated_veh % 4) {
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_particles, current_railtype) {
+	railtype("ELRL"): switch_br_710_2_4car_particles_elrl;
+	railtype("3RDC"): switch_br_710_2_4car_particles_elrl;
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_can_attach_wagon, vehicle_type_id) {
+	item_br_710_2_4car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_710_2_5car: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 720
+item(FEAT_TRAINS, item_br_710_2_4car) {
+	property {
+		name: string(STR_BR_710_2_4CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 03, 03);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 76;
+		loading_speed: 25;
+		running_cost_factor: 48;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 75 mph;
+		power: 2400 hp;
+		cargo_capacity: (678/4);
+		weight: 151 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("3RDC");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_710_2_4car_spriteset;
+		purchase: spriteset_br_710_purchase;
+		
+		articulated_part: switch_br_710_2_4car_articulated;
+		start_stop: switch_br_710_2_4car_start_stop;	
+		can_attach_wagon: switch_br_710_2_4car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_710_2_4car_particles;			
+		additional_text: string(STR_DSC_BR_710);	
+	}
+}
+
+// 710-2_5car.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_710_2_5car_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_br_710_front;
+	1: spriteset_br_710_middle_panto;
+	4: spriteset_br_710_rear;
+	spriteset_br_710_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_710_2_5car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_710_2_5car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_710_2_5car_particles_elrl, position_in_articulated_veh % 5) {
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_710_2_5car_particles, current_railtype) {
+	railtype("ELRL"): switch_br_710_2_5car_particles_elrl;
+	railtype("3RDC"): switch_br_710_2_5car_particles_elrl;
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_710_2_5car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_710_2_5car_can_attach_wagon, vehicle_type_id) {
+	item_br_710_2_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_710_2_4car: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 720
+item(FEAT_TRAINS, item_br_710_2_5car) {
+	property {
+		name: string(STR_BR_710_2_5CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 03, 03);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 90;
+		loading_speed: 25;
+		running_cost_factor: 55;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 75 mph;
+		power: 3000 hp;
+		cargo_capacity: (882/5);
+		weight: 182 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("3RDC");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_710_2_5car_spriteset;
+		purchase: spriteset_br_710_purchase;
+		
+		articulated_part: switch_br_710_2_5car_articulated;
+		start_stop: switch_br_710_2_5car_start_stop;	
+		can_attach_wagon: switch_br_710_2_5car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_710_2_5car_particles;			
+		additional_text: string(STR_DSC_BR_710);	
+	}
+}
+
+// 720-1.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_720_1_spriteset, position_in_articulated_veh % 10) {
+	0: spriteset_br_720_front;
+	6: spriteset_br_720_middle_panto;
+	9: spriteset_br_720_rear;
+	spriteset_br_720_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_720_1_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..9: return item_br_720_1;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_720_1_particles, position_in_articulated_veh % 10) {
+	6: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC	, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_720_1_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_720_1_can_attach_wagon, vehicle_type_id) {
+	item_br_720_1: return CB_RESULT_ATTACH_ALLOW;
+	item_br_720_5: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+item(FEAT_TRAINS, item_br_720_1) {
+	property {
+		name: string(STR_BR_720_1);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 03, 17);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 170;
+		loading_speed: 25;
+		running_cost_factor: 100;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 4200 hp;
+		cargo_capacity: (1390/10);
+		weight: 330 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("ELRL");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_720_1_spriteset;
+		purchase: spriteset_br_720_purchase;
+		
+		articulated_part: switch_br_720_1_articulated;
+		start_stop: switch_br_720_1_start_stop;	
+		can_attach_wagon: switch_br_720_1_can_attach_wagon;
+		visual_effect_and_powered: switch_br_720_1_particles;			
+		additional_text: string(STR_DSC_BR_720);	
+	}
+}
+
+// 720-5.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_720_5_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_br_720_front;
+	1: spriteset_br_720_middle_panto;
+	4: spriteset_br_720_rear;
+	spriteset_br_720_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_720_5_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_720_5;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_720_5_particles, position_in_articulated_veh % 5) {
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_720_5_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_720_5_can_attach_wagon, vehicle_type_id) {
+	item_br_720_5: return CB_RESULT_ATTACH_ALLOW;
+	item_br_720_1: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 720
+item(FEAT_TRAINS, item_br_720_5) {
+	property {
+		name: string(STR_BR_720_5);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 03, 17);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 95;
+		loading_speed: 25;
+		running_cost_factor: 55;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 2100 hp;
+		cargo_capacity: (685/5);
+		weight: 120 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("ELRL");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_720_5_spriteset;
+		purchase: spriteset_br_720_purchase;
+		
+		articulated_part: switch_br_720_5_articulated;
+		start_stop: switch_br_720_5_start_stop;	
+		can_attach_wagon: switch_br_720_5_can_attach_wagon;
+		visual_effect_and_powered: switch_br_720_5_particles;			
+		additional_text: string(STR_DSC_BR_720);	
+	}
+}
+
+// 745-0-1.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_745_0_spriteset, position_in_articulated_veh % 12) {
+	0: spriteset_br_745_front;
+	10: spriteset_br_745_0_rear_panto;
+	11: spriteset_br_745_0_rear;
+	spriteset_br_745_middle;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_745_1_spriteset, position_in_articulated_veh % 12) {
+	0: spriteset_br_745_front;
+	10: spriteset_br_745_1_rear_panto;
+	11: spriteset_br_745_1_rear;
+	spriteset_br_745_middle;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_745_spriteset, cargo_subtype) {
+	0: switch_br_745_0_spriteset;
+	1: switch_br_745_1_spriteset;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_745_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..11: return item_br_745;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to pantograph car
+switch(FEAT_TRAINS, SELF, switch_br_745_particles, position_in_articulated_veh % 12) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	10: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_745_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_745_can_attach_wagon, vehicle_type_id) {
+	item_br_745: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Stansted Express holds slightly more
+switch(FEAT_TRAINS, SELF, switch_br_745_capacity, cargo_subtype) {
+	0: return (757/12);
+	1: return (767/12);
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_745_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR_745_REGULAR);
+	1: return string(STR_LIVERY_BR_745_STANSTED);
+	return CB_RESULT_NO_TEXT;
+}
+
+// Class 331/0 (3car)
+item(FEAT_TRAINS, item_br_745) {
+	property {
+		name: string(STR_BR_745);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 01, 08);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 125;
+		loading_speed: 15;
+		running_cost_factor: 100;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 100 mph;
+		power: 5200 kW;
+		cargo_capacity: (757/12);
+		weight: 440 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_745_spriteset;
+		purchase: spriteset_br_745_purchase;
+		cargo_subtype_text: switch_br_745_subtype_text;
+		
+		articulated_part: switch_br_745_articulated;
+		start_stop: switch_br_745_start_stop;	
+		can_attach_wagon: switch_br_745_can_attach_wagon;
+		visual_effect_and_powered: switch_br_745_particles;
+				
+		cargo_capacity: switch_br_745_capacity;
+		additional_text: string(STR_DSC_BR_745);
+	}
+}
+
+// 777.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_777_spriteset, position_in_articulated_veh % 4) {
+	0: spriteset_br_777_front;
+	3: spriteset_br_777_rear;
+	spriteset_br_777_middle;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_777_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..3: return item_br_777;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_777_particles, position_in_articulated_veh % 4) {
+	// No effects; third rail
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_777_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_777_can_attach_wagon, vehicle_type_id) {
+	item_br_777: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 777
+item(FEAT_TRAINS, item_br_777) {
+	property {
+		name: string(STR_BR_777);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2020, 09, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 50;
+		loading_speed: 25;
+		running_cost_factor: 40;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 75 mph;
+		power: 2800 hp;
+		cargo_capacity: (484/4);
+		weight: 99 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: railtype("3RDR");
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_777_spriteset;
+		purchase: spriteset_br_777_purchase;
+		
+		articulated_part: switch_br_777_articulated;
+		start_stop: switch_br_777_start_stop;	
+		can_attach_wagon: switch_br_777_can_attach_wagon;
+		visual_effect_and_powered: switch_br_777_particles;			
+		additional_text: string(STR_DSC_BR_777);	
+	}
+}
+
+// 801-1.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_801_5car_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_br_800_front_lner;
+	4: spriteset_br_800_rear_panto_lner;
+	spriteset_br_800_middle_lner;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_801_5car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_br_801_5car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_801_5car_particles, position_in_articulated_veh % 5) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	4: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_801_5car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_801_5car_can_attach_wagon, vehicle_type_id) {
+	item_br_801_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_801_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_807: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+// Class 801/1 (5car)
+item(FEAT_TRAINS, item_br_801_5car) {
+	property {
+		name: string(STR_BR_801_5CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 09, 16);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 84;
+		loading_speed: 12;
+		running_cost_factor: 60;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 3200 hp;
+		cargo_capacity: (302/5);
+		weight: 205 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_801_5car_spriteset;
+		purchase: spriteset_br_801_purchase_lner;
+		
+		speed: switch_br_800_speed;
+
+		articulated_part: switch_br_801_5car_articulated;
+		start_stop: switch_br_801_5car_start_stop;	
+		can_attach_wagon: switch_br_801_5car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_801_5car_particles;
+		additional_text: string(STR_DSC_BR_801);			
+	}
+}
+
+// 801-2.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_801_9car_spriteset, position_in_articulated_veh % 9) {
+	0: spriteset_br_800_front_lner;
+	8: spriteset_br_800_rear_panto_lner;
+	spriteset_br_800_middle_lner;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_801_9car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..8: return item_br_801_9car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_801_9car_particles, position_in_articulated_veh % 9) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	8: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_801_9car_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_801_9car_can_attach_wagon, vehicle_type_id) {
+	item_br_801_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_801_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_807: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 801/2 (9car)
+item(FEAT_TRAINS, item_br_801_9car) {
+	property {
+		name: string(STR_BR_801_9CAR);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2019, 09, 16);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 134;
+		loading_speed: 10;
+		running_cost_factor: 90;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 5760 hp;
+		cargo_capacity: (611/9);
+		weight: 369 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_801_9car_spriteset;
+		purchase: spriteset_br_801_purchase_lner;
+		
+		speed: switch_br_800_speed;
+
+		articulated_part: switch_br_801_9car_articulated;
+		start_stop: switch_br_801_9car_start_stop;	
+		can_attach_wagon: switch_br_801_9car_can_attach_wagon;
+		visual_effect_and_powered: switch_br_801_9car_particles;	
+		additional_text: string(STR_DSC_BR_801);		
+	}
+}
+
+// 807.pnml
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_807_spriteset, position_in_articulated_veh % 7) {
+	0: spriteset_br_800_front_avanti;
+	6: spriteset_br_800_rear_panto_avanti;
+	spriteset_br_800_middle_avanti;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_br_807_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..6: return item_br_807;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_br_807_particles, position_in_articulated_veh % 7) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	6	: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_807_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_807_can_attach_wagon, vehicle_type_id) {
+	item_br_807: return CB_RESULT_ATTACH_ALLOW;
+	item_br_801_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_801_9car: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 807
+item(FEAT_TRAINS, item_br_807) {
+	property {
+		name: string(STR_BR_807);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2022, 01, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 27.5; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 113;
+		loading_speed: 11;
+		running_cost_factor: 75;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 125 mph;
+		power: 4480 hp;
+		cargo_capacity: (453/7);
+		weight: 287 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_br_807_spriteset;
+		purchase: spriteset_br_800_purchase_avanti;
+		
+		speed: switch_br_800_speed;
+
+		articulated_part: switch_br_807_articulated;
+		start_stop: switch_br_807_start_stop;	
+		can_attach_wagon: switch_br_807_can_attach_wagon;
+		visual_effect_and_powered: switch_br_807_particles;			
+		additional_text: string(STR_DSC_BR_807);	
+	}
+}
+
