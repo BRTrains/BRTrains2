@@ -1,0 +1,51 @@
+//GRF Header
+
+grf {
+    grfid: "BRT\16";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESC);
+    version: 554;
+	//All versions must be written in the form of w.x.y.z -> wxyz
+    min_compatible_version: 500;
+ param 1 {
+  param_sounds{
+   name: string(STR_PARAM_NAME_SOUNDS);
+   desc: string(STR_PARAM_DESC_SOUNDS);
+   min_value: 0;
+   max_value: 1;
+   def_value: 1;
+   names: {
+    0: string(STR_PARAM_SOUNDS_OFF);
+    1: string(STR_PARAM_SOUNDS_ON);
+   };
+  }
+ }
+ param 2 {
+  param_speed{
+   name: string(STR_PARAM_NAME_SPEED);
+   desc: string(STR_PARAM_DESC_SPEED);
+   min_value: 0;
+   max_value: 1;
+   def_value: 0;
+   names: {
+    0: string(STR_PARAM_SERVICE_SPEED);
+    1: string(STR_PARAM_DESIGN_SPEED);
+   };
+  }
+ }
+ param 3 {
+  param_simple_mode{
+   name: string(STR_PARAM_NAME_SIMPLE);
+   desc: string(STR_PARAM_DESC_SIMPLE);
+   min_value: 0;
+   max_value: 1;
+   def_value: 0;
+   names: {
+    0: string(STR_PARAM_COMPLEX);
+    1: string(STR_PARAM_SIMPLE);
+   };
+  }
+ }
+
+}
+disable_item(FEAT_TRAINS);

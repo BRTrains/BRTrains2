@@ -1,0 +1,111 @@
+spriteset(spriteset_BR60_Purchase, "gfx/BR60.png") {
+	template_purchase(79, 14)
+}
+
+spriteset(spriteset_BR60_Colas, "gfx/BR60.png") {
+	template_train60(0, 126)
+}
+
+spriteset(spriteset_BR60_Corus, "gfx/BR60.png") {
+	template_train60(0, 151)
+}
+
+spriteset(spriteset_BR60_GWR, "gfx/BR60.png") {
+	template_train60(0, 201)
+}
+
+spriteset(spriteset_BR60_RFG, "gfx/BR60.png") {
+	template_train60(0, 251)
+}
+
+spriteset(spriteset_BR60_Loadhaul, "gfx/BR60.png") {
+	template_train60(0, 301)
+}
+
+spriteset(spriteset_BR60_Mainline, "gfx/BR60.png") {
+	template_train60(0, 351)
+}
+
+spriteset(spriteset_BR60_EWS, "gfx/BR60.png") {
+	template_train60(0, 401)
+}
+
+spriteset(spriteset_BR60_BSS, "gfx/BR60.png") {
+	template_train60(0, 451)
+}
+
+spriteset(spriteset_BR60_LoadhaulGrey, "gfx/BR60.png") {
+	template_train60(0, 476)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR60,cargo_subtype){
+    0:	spriteset_BR60_RFG;
+	1: 	spriteset_BR60_Mainline;
+	2: 	spriteset_BR60_LoadhaulGrey;
+	3: 	spriteset_BR60_Loadhaul;
+	4: 	spriteset_BR60_BSS;
+	5:	spriteset_BR60_Corus;
+	6:	spriteset_BR60_EWS;
+	7:	spriteset_BR60_GWR;
+	8:	spriteset_BR60_Colas;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR60_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_RailfreightGrey);
+	1: 	return string(str_MainlineFreight);
+	2: 	return string(str_LoadhaulGrey);
+	3: 	return string(str_Loadhaul);
+	4: 	return string(str_BSS);
+	5:	return string(str_Corus);
+	6:	return string(str_EWSRed);
+	7:	return string(str_GWRGreen);
+	8:	return string(str_ColasRail);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR60, 267) {
+	property {
+		name: 							string(STR_NAME_BR60);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1989,4,21);
+		model_life:						19;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					41;
+		running_cost_factor:			32;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							3100 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							129 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.37;
+		air_drag_coefficient:			0.08;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_7),string(str_BR60_usage),string(str_BR60_eos),string(str_BR60_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR60_cargo_subtype_text;
+	default: 							sw_BR60;
+	purchase:							spriteset_BR60_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_66_sound;
+}
+}

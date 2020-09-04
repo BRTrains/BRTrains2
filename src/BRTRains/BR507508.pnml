@@ -1,0 +1,516 @@
+spriteset(spriteset_BR508_Purchase, "gfx/BR508.png") {
+	template_purchase(240, 0)
+}
+
+spriteset(spriteset_BR508a_BRBlue, "gfx/BR508.png") {
+	template_450(0, 0)
+}
+
+spriteset(spriteset_BR508b_BRBlue, "gfx/BR508.png") {
+	template_450(0, 27)
+}
+
+spriteset(spriteset_BR508c_BRBlue, "gfx/BR508.png") {
+	template_450(0, 54)
+}
+
+spriteset(spriteset_BR508a_MerseyRailOld, "gfx/BR508.png") {
+	template_450(0, 81)
+}
+
+spriteset(spriteset_BR508b_MerseyRailOld, "gfx/BR508.png") {
+	template_450(0, 108)
+}
+
+spriteset(spriteset_BR508c_MerseyRailOld, "gfx/BR508.png") {
+	template_450(0, 135)
+}
+
+spriteset(spriteset_BR508a_Silverlink, "gfx/BR508.png") {
+	template_450(0, 162)
+}
+
+spriteset(spriteset_BR508b_Silverlink, "gfx/BR508.png") {
+	template_450(0, 189)
+}
+
+spriteset(spriteset_BR508c_Silverlink, "gfx/BR508.png") {
+	template_450(0, 216)
+}
+
+spriteset(spriteset_BR508a_CSE, "gfx/BR508.png") {
+	template_450(0, 243)
+}
+
+spriteset(spriteset_BR508b_CSE, "gfx/BR508.png") {
+	template_450(0, 270)
+}
+
+spriteset(spriteset_BR508c_CSE, "gfx/BR508.png") {
+	template_450(0, 297)
+}
+
+spriteset(spriteset_BR508a_SE_Yellow, "gfx/BR508.png") {
+	template_450(0, 324)
+}
+
+spriteset(spriteset_BR508b_SE_Yellow, "gfx/BR508.png") {
+	template_450(0, 351)
+}
+
+spriteset(spriteset_BR508c_SE_Yellow, "gfx/BR508.png") {
+	template_450(0, 378)
+}
+
+spriteset(spriteset_BR508a_SE_Blue, "gfx/BR508.png") {
+	template_450(0, 405)
+}
+
+spriteset(spriteset_BR508b_SE_Blue, "gfx/BR508.png") {
+	template_450(0, 432)
+}
+
+spriteset(spriteset_BR508c_SE_Blue, "gfx/BR508.png") {
+	template_450(0, 459)
+}
+
+spriteset(spriteset_BR508a_MerseyRail, "gfx/BR508.png") {
+	template_450(0, 486)
+}
+
+spriteset(spriteset_BR508b_MerseyRail, "gfx/BR508.png") {
+	template_450(0, 513)
+}
+
+spriteset(spriteset_BR508c_MerseyRail, "gfx/BR508.png") {
+	template_450(0, 540)
+}
+
+spriteset(spriteset_BR508a_GoodComs, "gfx/BR508.png") {
+	template_450(0, 567)
+}
+
+spriteset(spriteset_BR508b_GoodComs, "gfx/BR508.png") {
+	template_450(0, 594)
+}
+
+spriteset(spriteset_BR508c_GoodComs, "gfx/BR508.png") {
+	template_450(0, 621)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR508a,cargo_subtype){
+    0:	spriteset_BR508a_BRBlue;
+	1:  spriteset_BR508a_MerseyRailOld;
+	2:  spriteset_BR508a_Silverlink;
+	3:  spriteset_BR508a_CSE;
+	4:  spriteset_BR508a_SE_Yellow;
+	5:  spriteset_BR508a_SE_Blue;
+	6:  spriteset_BR508a_MerseyRail;
+	7:  spriteset_BR508a_GoodComs;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR508b,cargo_subtype){
+    0:	spriteset_BR508b_BRBlue;
+	1:  spriteset_BR508b_MerseyRailOld;
+	2:  spriteset_BR508b_Silverlink;
+	3:  spriteset_BR508b_CSE;
+	4:  spriteset_BR508b_SE_Yellow;
+	5:  spriteset_BR508b_SE_Blue;
+	6:  spriteset_BR508b_MerseyRail;
+	7:  spriteset_BR508b_GoodComs;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR508c,cargo_subtype){
+    0:	spriteset_BR508c_BRBlue;
+	1:  spriteset_BR508c_MerseyRailOld;
+	2:  spriteset_BR508c_Silverlink;
+	3:  spriteset_BR508c_CSE;
+	4:  spriteset_BR508c_SE_Yellow;
+	5:  spriteset_BR508c_SE_Blue;
+	6:  spriteset_BR508c_MerseyRail;
+	7:  spriteset_BR508c_GoodComs;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR507a,cargo_subtype){
+    0:	spriteset_BR508a_BRBlue;
+	1:  spriteset_BR508a_MerseyRailOld;
+	2:  spriteset_BR508a_MerseyRail;
+	3:  spriteset_BR508a_GoodComs;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR507b,cargo_subtype){
+    0:	spriteset_BR508b_BRBlue;
+	1:  spriteset_BR508b_MerseyRailOld;
+	2:  spriteset_BR508b_MerseyRail;
+	3:  spriteset_BR508b_GoodComs;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR507c,cargo_subtype){
+    0:	spriteset_BR508c_BRBlue;
+	1:  spriteset_BR508c_MerseyRailOld;
+	2:  spriteset_BR508c_MerseyRail;
+	3:  spriteset_BR508c_GoodComs;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR508_1, extra_callback_info1) {
+	1: return item_BR508b;
+	2: return item_BR508b;
+	3: return item_BR508c;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR508_2, extra_callback_info1) {
+	1: return item_BR508b;
+	2: return item_BR508c;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR507, extra_callback_info1) {
+	1: return item_BR507b;
+	2: return item_BR507c;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR508_1_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRBlue);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR508_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRBlue);
+	1:  return string(str_MerseyRailOld);
+	2:  return string(str_SilverLink);
+	3:  return string(str_Connex);
+	4:  return string(str_Southeastern_yellow);
+	5:  return string(str_Southeastern_blue);
+	6:  return string(str_MerseyRail);
+	7:  return string(str_MerseyRailGoodComs);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR507_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRBlue);
+	1:  return string(str_MerseyRailOld);
+	2:  return string(str_MerseyRail);
+	3:  return string(str_MerseyRailGoodComs);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR508_1, 325) {
+	property {
+		name: 							string(STR_NAME_BR508_1);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1978,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					78;
+		running_cost_factor:			38;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							880 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							125 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.07;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR508_usage),string(str_BR508_eos),string(str_BR508_1_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR508_1_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR508_1;
+	default: 							sw_BR508a;
+	purchase:							spriteset_BR508_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_classic_emu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR508_2, 328) {
+	property {
+		name: 							string(STR_NAME_BR508_2);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1978,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					76;
+		running_cost_factor:			38;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							880 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							98 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.07;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR508_usage),string(str_BR508_eos),string(str_BR508_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR508_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR508_2;
+	default: 							sw_BR508a;
+	purchase:							spriteset_BR508_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_classic_emu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR508b, 326) {
+	property {
+		name: 							string(STR_NAME_BR508_1);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1978,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					82;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR508b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BR508c, 327) {
+	property {
+		name: 							string(STR_NAME_BR508_1);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1978,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							161 km/h;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR508_usage),string(str_BR508_eos),string(str_BR508_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR508_cargo_subtype_text;
+	default: 							sw_BR508c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_classic_emu_sound;
+}
+}
+
+
+//Class 507 start
+
+item (FEAT_TRAINS, item_BR507, 329) {
+	property {
+		name: 							string(STR_NAME_BR507);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1978,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					76;
+		running_cost_factor:			38;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							880 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							98 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.07;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR508_usage),string(str_BR508_eos),string(str_BR508_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR507_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR507;
+	default: 							sw_BR507a;
+	purchase:							spriteset_BR508_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_classic_emu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR507b, 330) {
+	property {
+		name: 							string(STR_NAME_BR507);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1978,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					82;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR507b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_BR507c, 331) {
+	property {
+		name: 							string(STR_NAME_BR507);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1978,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							161 km/h;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR508_usage),string(str_BR508_eos),string(str_BR508_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR507_cargo_subtype_text;
+	default: 							sw_BR507c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_classic_emu_sound;
+}
+}

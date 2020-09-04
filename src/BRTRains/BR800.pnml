@@ -1,0 +1,252 @@
+spriteset(spriteset_BR800_Purchase, "gfx/BR800.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR800_Hatachi, "gfx/BR800.png") {
+ template_800a(0, 13)
+}
+
+spriteset(spriteset_BR800b_Hatachi, "gfx/BR800.png") {
+ template_800b(173, 13)
+}
+
+spriteset(spriteset_BR800c_Hatachi, "gfx/BR800.png") {
+ template_800c(345, 13)
+}
+
+spriteset(spriteset_BR800_GWR, "gfx/BR800.png") {
+ template_800a(0, 38)
+}
+
+spriteset(spriteset_BR800b_GWR, "gfx/BR800.png") {
+ template_800b(173, 38)
+}
+
+spriteset(spriteset_BR800c_GWR, "gfx/BR800.png") {
+ template_800c(345, 38)
+}
+
+spriteset(spriteset_BR800_VTEC, "gfx/BR800.png") {
+ template_800a(0, 63)
+}
+
+spriteset(spriteset_BR800b_VTEC, "gfx/BR800.png") {
+ template_800b(173, 63)
+}
+
+spriteset(spriteset_BR800c_VTEC, "gfx/BR800.png") {
+ template_800c(345, 63)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR800,cargo_subtype){
+    0:	spriteset_BR800_Hatachi;
+	1:	spriteset_BR800_GWR;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR800b,cargo_subtype){
+    0:	spriteset_BR800b_Hatachi;
+	1:	spriteset_BR800b_GWR;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR800c,cargo_subtype){
+    0:	spriteset_BR800c_Hatachi;
+	1:	spriteset_BR800c_GWR;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR8001,cargo_subtype){
+    0:	spriteset_BR800_Hatachi;
+	1:	spriteset_BR800_VTEC;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR8001b,cargo_subtype){
+    0:	spriteset_BR800b_Hatachi;
+	1:	spriteset_BR800b_VTEC;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR8001c,cargo_subtype){
+    0:	spriteset_BR800c_Hatachi;
+	1:	spriteset_BR800c_VTEC;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR800, extra_callback_info1) {
+	1 .. 3: return item_BR800_b;
+	4: return item_BR800_c;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR800_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Hatachi);
+	1:	return string(str_GWRGreen);
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR8001_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Hatachi);
+	1:	return string(str_VTEC);
+}
+
+switch(FEAT_TRAINS,SELF,sw_800_maxspeed,current_railtype){
+    ELRL:	return 200;
+	return 200;
+}
+
+switch(FEAT_TRAINS,SELF,sw_800_effect,current_railtype){
+    ELRL:	VISUAL_EFFECT_ELECTRIC;
+	return VISUAL_EFFECT_DISABLE;
+}
+
+switch(FEAT_TRAINS,SELF,sw_800_i_effect,current_railtype){
+    ELRL:	VISUAL_EFFECT_DISABLE;
+	return VISUAL_EFFECT_DIESEL;
+}
+
+switch(FEAT_TRAINS,SELF,sw_800_railtype,current_railtype){
+    ELRL:	return ELRL;
+	return RAIL;
+}
+
+switch(FEAT_TRAINS,SELF,sw_800_sound,current_railtype){
+    ELRL:	return sw_electric_sound;
+	return sw_dmu_sound;
+}
+
+switch(FEAT_TRAINS,SELF,sw_800_runningcost,current_railtype){
+    ELRL:	return 59;
+	return 50;
+}
+
+item (FEAT_TRAINS, item_BR800, 392) {
+	property {
+		name: 							string(STR_NAME_BR800);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2017,4,21);
+		model_life:						8;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					20;
+		cost_factor:					84;
+		running_cost_factor:			50;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							2250 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					56;
+		weight:							221 ton;
+		tractive_effort_coefficient:	0.09;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR800_usage),string(str_BR800_eos),string(str_BR800_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR800_cargo_subtype_text;
+	default: 							sw_BR800;
+	purchase:							spriteset_BR800_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	articulated_part:					switch_articulated_BR800;
+	speed:								sw_800_maxspeed;
+	visual_effect_and_powered:			sw_800_effect;
+	sound_effect:						sw_800_sound;
+	running_cost_factor:				sw_800_runningcost;
+}
+}
+
+item (FEAT_TRAINS, item_BR800_b, 393) {
+	property {
+		name: 							string(STR_NAME_BR800);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2017,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					20;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					81;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR800b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	speed:								sw_800_maxspeed;
+	visual_effect_and_powered:			sw_800_i_effect;
+	sound_effect:						sw_800_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR800_c, 394) {
+	property {
+		name: 							string(STR_NAME_BR800);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2017,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					20;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					15;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR800c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	speed:								sw_800_maxspeed;
+	visual_effect_and_powered:			sw_800_effect;
+	sound_effect:						sw_800_sound;
+}
+}

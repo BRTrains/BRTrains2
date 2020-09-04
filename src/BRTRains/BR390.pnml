@@ -1,0 +1,495 @@
+spriteset(spriteset_BR390_Purchase, "gfx/BR390.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR390_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR390,cargo_subtype){
+    0:	spriteset_BR390_Virgin;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR390, extra_callback_info1) {
+	1: return item_390_MFD;
+	2: return item_390_PTF;
+	3: return item_390_MS;
+	4: return item_390_TS;
+	5: return item_390_MSD;
+	6: return item_390_PTSRMB;
+	7: return item_390_MSD;
+	8: return item_390_DMSO;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR390_11, extra_callback_info1) {
+	1: return item_390_MFD;
+	2: return item_390_PTF;
+	3: return item_390_MF;
+	4: return item_390_TS;
+	5: return item_390_MS;
+	6: return item_390_TS;
+	7: return item_390_MSD;
+	8: return item_390_PTSRMB;
+	9: return item_390_MSD;
+	10: return item_390_DMSO;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+
+switch(FEAT_TRAINS,SELF,sw_BR390_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Virgin);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR390_speed,param_speed){
+	0:	return 201;
+	1:	return 225;
+}
+
+item (FEAT_TRAINS, item_BR390, 115) {
+	property {
+		name: 							string(STR_NAME_BR390);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					3;
+		cost_factor:					140;
+		running_cost_factor:			113;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_TILT;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							6840 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					18;
+		weight:							466 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_7),string(str_BR390_usage),string(str_BR390_eos),string(str_BR390_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR390_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR390;
+	default: 							sw_BR390;
+	purchase:							spriteset_BR390_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+	speed:								sw_BR390_speed;
+}
+}
+
+item (FEAT_TRAINS, item_BR390_11, 124) {
+	property {
+		name: 							string(STR_NAME_BR390_11);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					3;
+		cost_factor:					159;
+		running_cost_factor:			130;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_TILT;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							7980 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					18;
+		weight:							567 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_7),string(str_BR390_usage),string(str_BR390_eos),string(str_BR390_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR390_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR390_11;
+	default: 							sw_BR390;
+	purchase:							spriteset_BR390_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+	speed:								sw_BR390_speed;
+}
+}
+
+spriteset(spriteset_MF_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_PTF_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_TS_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_PTSRMB_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_MS_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_MSD_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_MFD_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_DMSO_Virgin, "gfx/BR390.png") {
+	template_train32px(0, 113)
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_MF,cargo_subtype){
+    0:	spriteset_MF_Virgin;
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_PTF,cargo_subtype){
+    0:	spriteset_PTF_Virgin;
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_TS,cargo_subtype){
+    0:	spriteset_TS_Virgin;
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_PTSRMB,cargo_subtype){
+    0:	spriteset_PTSRMB_Virgin;
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_MS,cargo_subtype){
+    0:	spriteset_MS_Virgin;
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_DMSO,cargo_subtype){
+    0:	spriteset_DMSO_Virgin;
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_MSD,cargo_subtype){
+    0:	spriteset_MSD_Virgin;
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_MFD,cargo_subtype){
+    0:	spriteset_MFD_Virgin;
+}
+
+item (FEAT_TRAINS, item_390_DMSO, 121) {
+	property {
+		name: 							string(STR_NAME_390_DMSO);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2001,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					46;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_390_DMSO;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_390_MF, 116) {
+	property {
+		name: 							string(STR_NAME_390_MF);
+		climates_available: 			NO_CLIMATE;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						ELRL;
+		power:							0;
+		running_cost_base:				RUNNING_COST_NONE;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					46;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_390_MF;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+
+item (FEAT_TRAINS, item_390_PTF, 117) {
+	property {
+		name: 							string(STR_NAME_390_PTF);
+		climates_available: 			NO_CLIMATE;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						ELRL;
+		power:							0;
+		running_cost_base:				RUNNING_COST_NONE;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					44;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_390_PTF;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_390_TS, 119) {
+	property {
+		name: 							string(STR_NAME_390_TS);
+		climates_available: 			NO_CLIMATE;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						ELRL;
+		power:							0;
+		running_cost_base:				RUNNING_COST_NONE;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_390_TS;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_390_PTSRMB, 120) {
+	property {
+		name: 							string(STR_NAME_390_PTSRMB);
+		climates_available: 			NO_CLIMATE;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						ELRL;
+		power:							0;
+		running_cost_base:				RUNNING_COST_NONE;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					48;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_390_PTSRMB;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_390_MS, 118) {
+	property {
+		name: 							string(STR_NAME_390_MS);
+		climates_available: 			NO_CLIMATE;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						ELRL;
+		power:							0;
+		running_cost_base:				RUNNING_COST_NONE;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					76;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_390_MS;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_390_MSD, 123) {
+	property {
+		name: 							string(STR_NAME_390_MSD);
+		climates_available: 			NO_CLIMATE;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						ELRL;
+		power:							0;
+		running_cost_base:				RUNNING_COST_NONE;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					62;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_390_MSD;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_390_MFD, 122) {
+	property {
+		name: 							string(STR_NAME_390_MFD);
+		climates_available: 			NO_CLIMATE;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						ELRL;
+		power:							0;
+		running_cost_base:				RUNNING_COST_NONE;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					37;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_390_MFD;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+}
+}
+

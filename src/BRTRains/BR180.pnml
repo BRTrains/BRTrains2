@@ -1,0 +1,284 @@
+spriteset(spriteset_BR180_Purchase, "gfx/BR180a.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR180a_FGW, "gfx/BR180a.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR180a_GC, "gfx/BR180a.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR180a_GCLined, "gfx/BR180a.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR180a_NorthernRail, "gfx/BR180a.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR180b_FGW, "gfx/BR180b.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR180b_GC, "gfx/BR180b.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR180b_GCLined, "gfx/BR180b.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR180b_NorthernRail, "gfx/BR180b.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR180c_FGW, "gfx/BR180c.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR180c_GC, "gfx/BR180c.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR180c_GCLined, "gfx/BR180c.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR180c_NorthernRail, "gfx/BR180c.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR180a_FGWDL, "gfx/BR180a.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR180b_FGWDL, "gfx/BR180b.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR180c_FGWDL, "gfx/BR180c.png") {
+	template_train32px(0, 113)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR180a,cargo_subtype){
+    0:	spriteset_BR180a_FGW;
+	1:  spriteset_BR180a_FGWDL;
+	2:	spriteset_BR180a_GC;
+	3:	spriteset_BR180a_GCLined;
+	4:	spriteset_BR180a_NorthernRail;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR180b,cargo_subtype){
+    0:	spriteset_BR180b_FGW;
+	1:	spriteset_BR180b_FGWDL;
+	2:	spriteset_BR180b_GC;
+	3:	spriteset_BR180b_GCLined;
+	4:	spriteset_BR180b_NorthernRail;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR180c,cargo_subtype){
+    0:	spriteset_BR180c_FGW;
+	1:	spriteset_BR180c_FGWDL;
+	2:	spriteset_BR180c_GC;
+	3:	spriteset_BR180c_GCLined;
+	4:	spriteset_BR180c_NorthernRail;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR180, extra_callback_info1) {
+	1: return item_180b;
+	2: return item_180_MFL;
+	3: return item_180b;
+	4: return item_180c;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR180_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_FGW);
+	1:  return string(str_FGWDL);
+	2:	return string(str_GC);
+	3:	return string(str_GCLined);
+	4:	return string(str_NorthernRail);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR180, 67) {
+	property {
+		name: 							string(STR_NAME_BR180);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2002,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					92;
+		running_cost_factor:			68;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							3750 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					55;
+		weight:							253 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR180_usage),string(str_BR180_eos),string(str_BR180_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR180_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR180;
+	default: 							sw_BR180a;
+	purchase:							spriteset_BR180_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_180b, 68) {
+	property {
+		name: 							string(STR_NAME_BR180);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2002,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					59;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR180b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_180_MFL, 230) {
+	property {
+		name: 							string(STR_NAME_BR180);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2002,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					59;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR180b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_180c, 69) {
+	property {
+		name: 							string(STR_NAME_BR180);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2002,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					55;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR180c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}

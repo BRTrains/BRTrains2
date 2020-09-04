@@ -1,0 +1,94 @@
+spriteset(spriteset_BR255_Purchase, "gfx/BRMK3DMB.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR255_XC, "gfx/BR253.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR255_GC, "gfx/BR253.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR255_GCLined, "gfx/BR253.png") {
+	template_train32px(0, 313)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR255,cargo_subtype){
+    0:	spriteset_BR255_XC;
+	1:	spriteset_BR255_GC;
+	2:	spriteset_BR255_GCLined;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR255, extra_callback_info1) {
+	1: return item_255_BRMK3TF;
+	2: return item_255_BRMK3TRSB;
+	3: return item_255_BRMK3TS;
+	4: return item_255_BRMK3TGS;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR255_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_XC);
+	1:	return string(str_GC);
+	2:	return string(str_GCLined);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_255_BRMK3DMB,cargo_subtype){
+    0:	spriteset_BRMK3DMB_XC;
+	1:	spriteset_BRMK3DMB_GC;
+	2:	spriteset_BRMK3DMB_GCLined;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR255_v0_5, position_in_vehid_chain){
+    0:	sw_BR255;
+	1 .. 255:  sw_255_BRMK3DMB;
+}
+
+item (FEAT_TRAINS, item_BR255, 28) {
+	property {
+		name: 							string(STR_NAME_BR255);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2002,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					3;
+		cost_factor:					102;
+		running_cost_factor:			83;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							4500 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					1;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							346 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_5),string(str_BR255_usage),string(str_BR255_eos),string(str_BR255_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR255_cargo_subtype_text;
+	default: 							sw_BR255;
+	purchase:							spriteset_BR255_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_mtu_sound;
+}
+}

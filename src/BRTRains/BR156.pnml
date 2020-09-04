@@ -1,0 +1,332 @@
+spriteset(spriteset_BR156_Purchase, "gfx/BR156a.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR156a_Regional, "gfx/BR156a.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR156a_RegionalGreen, "gfx/BR156a.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR156a_RegionalExpress, "gfx/BR156a.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR156a_StrathclydeOrange, "gfx/BR156a.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR156a_StrathclydePTE, "gfx/BR156a.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR156a_ScotRail, "gfx/BR156a.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR156a_FirstScotRail, "gfx/BR156a.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BR156a_Central, "gfx/BR156a.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR156a_EMT, "gfx/BR156a.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR156a_NorthernSpirit, "gfx/BR156a.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR156a_NorthernPorterbrook, "gfx/BR156a.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BR156a_NorthernExp1, "gfx/BR156a.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BR156a_NorthernExp2, "gfx/BR156a.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BR156a_NorthernRail, "gfx/BR156a.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BR156a_OneGhost, "gfx/BR156a.png") {
+	template_train32px(0, 363)
+}
+
+spriteset(spriteset_BR156a_OneChapelf, "gfx/BR156a.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BR156a_One, "gfx/BR156a.png") {
+	template_train32px(0, 413)
+}
+
+spriteset(spriteset_BR156a_OneTrans, "gfx/BR156a.png") {
+	template_train32px(0, 438)
+}
+
+spriteset(spriteset_BR156a_NatEx, "gfx/BR156a.png") {
+	template_train32px(0, 463)
+}
+
+spriteset(spriteset_BR156a_SWT, "gfx/BR156a.png") {
+	template_train32px(0, 463)
+}
+
+spriteset(spriteset_BR156a_NSE, "gfx/BR156a.png") {
+	template_train32px(0, 488)
+}
+
+spriteset(spriteset_BR156a_FGW, "gfx/BR156a.png") {
+	template_train32px(0, 513)
+}
+
+spriteset(spriteset_BR156b_Regional, "gfx/BR156b.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR156b_RegionalGreen, "gfx/BR156b.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR156b_RegionalExpress, "gfx/BR156b.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR156b_StrathclydeOrange, "gfx/BR156b.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR156b_StrathclydePTE, "gfx/BR156b.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR156b_ScotRail, "gfx/BR156b.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR156b_FirstScotRail, "gfx/BR156b.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BR156b_Central, "gfx/BR156b.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR156b_EMT, "gfx/BR156b.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR156b_NorthernSpirit, "gfx/BR156b.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR156b_NorthernPorterbrook, "gfx/BR156b.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BR156b_NorthernExp1, "gfx/BR156b.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BR156b_NorthernExp2, "gfx/BR156b.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BR156b_NorthernRail, "gfx/BR156b.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BR156b_OneGhost, "gfx/BR156b.png") {
+	template_train32px(0, 363)
+}
+
+spriteset(spriteset_BR156b_OneChapelf, "gfx/BR156b.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BR156b_One, "gfx/BR156b.png") {
+	template_train32px(0, 413)
+}
+
+spriteset(spriteset_BR156b_OneTrans, "gfx/BR156b.png") {
+	template_train32px(0, 438)
+}
+
+spriteset(spriteset_BR156b_NatEx, "gfx/BR156b.png") {
+	template_train32px(0, 463)
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_BR156a,cargo_subtype){
+    0:	spriteset_BR156a_Regional;
+	1:	spriteset_BR156a_RegionalGreen;
+	2:	spriteset_BR156a_RegionalExpress;
+	3:	spriteset_BR156a_StrathclydeOrange;
+	4:	spriteset_BR156a_StrathclydePTE;
+	5:	spriteset_BR156a_ScotRail;
+	6:	spriteset_BR156a_FirstScotRail;
+	7:	spriteset_BR156a_Central;
+	8:	spriteset_BR156a_NorthernSpirit;
+	9:	spriteset_BR156a_NorthernPorterbrook;
+	10:	spriteset_BR156a_NorthernExp1;
+	11:	spriteset_BR156a_NorthernExp2;
+	12:	spriteset_BR156a_NorthernRail;
+	13:	spriteset_BR156a_OneGhost;
+	14:	spriteset_BR156a_OneChapelf;
+	15:	spriteset_BR156a_One;
+	16:	spriteset_BR156a_OneTrans;
+	17:	spriteset_BR156a_NatEx;
+	18:	spriteset_BR156a_EMT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR156b,cargo_subtype){
+    0:	spriteset_BR156b_Regional;
+	1:	spriteset_BR156b_RegionalGreen;
+	2:	spriteset_BR156b_RegionalExpress;
+	3:	spriteset_BR156b_StrathclydeOrange;
+	4:	spriteset_BR156b_StrathclydePTE;
+	5:	spriteset_BR156b_ScotRail;
+	6:	spriteset_BR156b_FirstScotRail;
+	7:	spriteset_BR156b_Central;
+	8:	spriteset_BR156b_NorthernSpirit;
+	9:	spriteset_BR156b_NorthernPorterbrook;
+	10:	spriteset_BR156b_NorthernExp1;
+	11:	spriteset_BR156b_NorthernExp2;
+	12:	spriteset_BR156b_NorthernRail;
+	13:	spriteset_BR156b_OneGhost;
+	14:	spriteset_BR156b_OneChapelf;
+	15:	spriteset_BR156b_One;
+	16:	spriteset_BR156b_OneTrans;
+	17:	spriteset_BR156b_NatEx;
+	18:	spriteset_BR156b_EMT;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR156, extra_callback_info1) {
+	1: return item_156b;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR156_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Regional);
+	1:	return string(str_RegionalGreen);
+	2:	return string(str_RegionalExpress);
+	3:	return string(str_StrathclydeOrange);
+	4:	return string(str_StrathclydePTE);
+	5:	return string(str_ScotRail);
+	6:	return string(str_FirstScotRail);
+	7:	return string(str_Central);
+	8:	return string(str_NorthernSpirit);
+	9:	return string(str_NorthernPorterbrook);
+	10:	return string(str_NorthernExp1);
+	11:	return string(str_NorthernExp2);
+	12:	return string(str_NorthernRail);
+	13:	return string(str_OneGhost);
+	14:	return string(str_OneChapelf);
+	15:	return string(str_One);
+	16:	return string(str_OneTrans);
+	17:	return string(str_NatEx);
+	18:	return string(str_EMT);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR156, 57) {
+	property {
+		name: 							string(STR_NAME_BR156);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1987,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					20;
+		cost_factor:					36;
+		running_cost_factor:			18;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							570 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					79;
+		weight:							76 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR156_usage),string(str_BR156_eos),string(str_BR156_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR156_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR156;
+	default: 							sw_BR156a;
+	purchase:							spriteset_BR156_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}
+
+item (FEAT_TRAINS, item_156b, 58) {
+	property {
+		name: 							string(STR_NAME_BR156);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1987,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					20;
+		cost_factor:					36;
+		running_cost_factor:			75;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					84;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR156b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}

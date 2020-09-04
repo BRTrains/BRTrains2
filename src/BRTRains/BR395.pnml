@@ -1,0 +1,179 @@
+spriteset(spriteset_BR395_Purchase, "gfx/BR395.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR395a_Southeastern, "gfx/BR395.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR395b_Southeastern, "gfx/BR395.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR395c_Southeastern, "gfx/BR395.png") {
+	template_train32px(0, 63)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR395a,cargo_subtype){
+    0:	spriteset_BR395a_Southeastern;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR395b,cargo_subtype){
+    0:	spriteset_BR395b_Southeastern;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR395c,cargo_subtype){
+    0:	spriteset_BR395c_Southeastern;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR395, extra_callback_info1) {
+	1..4: return item_395b;
+	5: return item_395c;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR395_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Southeastern);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_TRAINS, SELF,sw_BR395_speed, current_railtype) {                    
+            ELRL: return 225;            
+            BR_3RDR: return 160;                
+        return 225;
+    }
+
+item (FEAT_TRAINS, item_BR395, 77) {
+	property {
+		name: 							string(STR_NAME_BR395);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2009,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					107;
+		running_cost_factor:			77;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							225 km/h;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDC;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							4480 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					50;
+		weight:							265 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR395_usage),string(str_BR395_eos),string(str_BR395_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR395_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR395;
+	default: 							sw_BR395a;
+	purchase:							spriteset_BR395_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	speed:								sw_BR395_speed;
+}
+}
+
+item (FEAT_TRAINS, item_395b, 78) {
+	property {
+		name: 							string(STR_NAME_BR395);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2009,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							225 km/h;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDC;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					60;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR395b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	speed:								sw_BR395_speed;
+	create_effect:						electric_create_visual_effect_SAA3;
+	sound_effect:						sw_electric_sound;
+}
+}
+
+item (FEAT_TRAINS, item_395c, 79) {
+	property {
+		name: 							string(STR_NAME_BR395);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(2009,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							225 km/h;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						BR_3RDC;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					50;
+		weight:							0;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR395c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	speed:								sw_BR395_speed;
+}
+}

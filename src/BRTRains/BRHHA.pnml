@@ -1,0 +1,196 @@
+spriteset(spriteset_BRHHA, "gfx/BRHHA.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BRHHA_empty, "gfx/BRHHA.png") {
+	template_train32px4v(0, 13)
+}
+
+spriteset(spriteset_BRHHA_coal_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 38)
+}
+
+spriteset(spriteset_BRHHA_coal_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 63)
+}
+
+spriteset(spriteset_BRHHA_ironore_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 113)
+}
+
+spriteset(spriteset_BRHHA_ironore_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 138)
+}
+
+spriteset(spriteset_BRHHA_lime_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 188)
+}
+
+spriteset(spriteset_BRHHA_lime_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 213)
+}
+
+spriteset(spriteset_BRHHA_copperore_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 263)
+}
+
+spriteset(spriteset_BRHHA_copperore_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 288)
+}
+
+spriteset(spriteset_BRHHA_bauxite_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 338)
+}
+
+spriteset(spriteset_BRHHA_bauxite_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 363)
+}
+
+spriteset(spriteset_BRHHA_clay_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 413)
+}
+
+spriteset(spriteset_BRHHA_clay_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 438)
+}
+
+spriteset(spriteset_BRHHA_phosphate_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 488)
+}
+
+spriteset(spriteset_BRHHA_phosphate_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 513)
+}
+
+spriteset(spriteset_BRHHA_pyriteore_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 563)
+}
+
+spriteset(spriteset_BRHHA_pyriteore_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 588)
+}
+
+spriteset(spriteset_BRHHA_sand_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 638)
+}
+
+spriteset(spriteset_BRHHA_sand_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 663)
+}
+
+spriteset(spriteset_BRHHA_cocaine_half, "gfx/BRHHA.png") {
+	template_train32px4v(0, 713)
+}
+
+spriteset(spriteset_BRHHA_cocaine_full, "gfx/BRHHA.png") {
+	template_train32px4v(0, 738)
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAcoal,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_coal_half;
+	37 .. 75: spriteset_BRHHA_coal_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAironore,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_ironore_half;
+	37 .. 75: spriteset_BRHHA_ironore_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAlime,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_lime_half;
+	37 .. 75: spriteset_BRHHA_lime_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAcopperore,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_copperore_half;
+	37 .. 75: spriteset_BRHHA_copperore_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAbauxite,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_bauxite_half;
+	37 .. 75: spriteset_BRHHA_bauxite_full;
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_HHAclay,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_clay_half;
+	37 .. 75: spriteset_BRHHA_clay_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAphosphate,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_phosphate_half;
+	37 .. 75: spriteset_BRHHA_phosphate_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHApyriteore,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_pyriteore_half;
+	37 .. 75: spriteset_BRHHA_pyriteore_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAsand,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_sand_half;
+	37 .. 75: spriteset_BRHHA_sand_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAcocaine,cargo_count){
+	0: spriteset_BRHHA_empty;
+	1 .. 37: spriteset_BRHHA_cocaine_half;
+	37 .. 75: spriteset_BRHHA_cocaine_full;
+}
+
+switch(FEAT_TRAINS,SELF, sw_HHAcargo, cargo_type_in_veh){
+	COAL: sw_HHAcoal;
+	IORE: sw_HHAironore;
+	LIME: sw_HHAlime;
+	CORE: sw_HHAcopperore;
+	AORE: sw_HHAbauxite;
+	CLAY: sw_HHAclay;
+	PHOS: sw_HHAphosphate;
+	PORE: sw_HHApyriteore;
+	SAND: sw_HHAsand;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BRHHA_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Freightliner);
+}
+
+item (FEAT_TRAINS, item_BRHHA, 324) {
+	property {
+		name: 							string(STR_NAME_BRHHA);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2000,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[COAL, IORE, LIME, CORE, AORE, CLAY, PHOS, PORE, SAND];
+		loading_speed:					20;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				COAL;
+		cargo_capacity:					72;
+		weight:							28 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRHHA_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_HHAcargo;
+	purchase:							spriteset_BRHHA;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BRHHA_cargo_subtype_text;
+}
+}
