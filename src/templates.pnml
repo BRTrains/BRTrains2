@@ -1,7 +1,5 @@
 // Train sprite templates
 
-// MUTS
-
 template tmpl_train_4(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
 	[x + 25, y + 2, 8,		23,		-3,		-11] //n
@@ -135,34 +133,34 @@ template template_train30px(x,y){
 
 template template_train32px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12]
-    [ x+9, y, 21, 17, -12, -10]
-    [ x+31, y, 32, 12, -16, -8]
-    [ x+64, y, 21, 17, -5, -10]
-    [ x+86, y, 8, 24, -3, -12]
-    [ x+95, y, 21, 17, -12, -10]
-    [ x+117, y, 32, 12, -16, -8]
-    [ x+150, y, 21, 17, -5, -10]
+    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
+    [ x+86, y, 8, 24, -3, -12,		NOANIM|NOWHITE]
+    [ x+95, y, 21, 17, -12, -10,	NOANIM|NOWHITE]
+    [ x+117, y, 32, 12, -16, -8,	NOANIM|NOWHITE]
+    [ x+150, y, 21, 17, -5, -10,	NOANIM|NOWHITE]
 }
 
 template template_train32px4v(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12]
-    [ x+9, y, 21, 17, -12, -10]
-    [ x+31, y, 32, 12, -16, -8]
-    [ x+64, y, 21, 17, -5, -10]
+    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
 }
 
 template template_train32px_reversed(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x+86, y, 8, 24, -3, -12]
-    [ x+95, y, 21, 17, -12, -10]
-    [ x+117, y, 32, 12, -16, -8]
-    [ x+150, y, 21, 17, -5, -10]
-	[ x, y, 8, 24, -3, -12]
-    [ x+9, y, 21, 17, -12, -10]
-    [ x+31, y, 32, 12, -16, -8]
-    [ x+64, y, 21, 17, -5, -10]
+    [ x+86,	y, 8, 24, -3, -12,		NOANIM|NOWHITE]
+    [ x+95, y, 21, 17, -12, -10,	NOANIM|NOWHITE]
+    [ x+117, y, 32, 12, -16, -8,	NOANIM|NOWHITE]
+    [ x+150, y, 21, 17, -5, -10,	NOANIM|NOWHITE]
+	[ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
 }
 
 template template_train55(x,y){
@@ -243,26 +241,26 @@ template template_450(x,y){
 
 template template_train170pt(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 26, -3, -9]
-    [ x+9, y, 22, 21, -16, -12]
-    [ x+32, y, 32, 12, -15, -7]
-    [ x+65, y, 22, 21, -4, -11]
-    [ x+88, y, 8, 26, -3, -11]
-    [ x+97, y, 22, 21, -15, -12]
-    [ x+120, y, 32, 12, -13, -7]
-    [ x+153, y, 22, 21, -4, -11]
+    [ x, y, 8, 26, -3, -9,			NOANIM|NOWHITE]
+    [ x+9, y, 22, 21, -16, -12,		NOANIM|NOWHITE]
+    [ x+32, y, 32, 12, -15, -7,		NOANIM|NOWHITE]
+    [ x+65, y, 22, 21, -4, -11,		NOANIM|NOWHITE]
+    [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
+    [ x+97, y, 22, 21, -15, -12,	NOANIM|NOWHITE]
+    [ x+120, y, 32, 12, -13, -7,	NOANIM|NOWHITE]
+    [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
 
 template template_train170ptF(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 26, -3, -9]
-    [ x+9, y, 22, 21, -16, -12]
-    [ x+32, y, 32, 12, -13, -7]
-    [ x+65, y, 22, 21, -4, -11]
-    [ x+88, y, 8, 26, -3, -11]
-    [ x+97, y, 22, 21, -15, -12]
-    [ x+120, y, 32, 12, -15, -7]
-    [ x+153, y, 22, 21, -4, -11]
+    [ x, y, 8, 26, -3, -9,			NOANIM|NOWHITE]
+    [ x+9, y, 22, 21, -16, -12,		NOANIM|NOWHITE]
+    [ x+32, y, 32, 12, -13, -7,		NOANIM|NOWHITE]
+    [ x+65, y, 22, 21, -4, -11,		NOANIM|NOWHITE]
+    [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
+    [ x+97, y, 22, 21, -15, -12,	NOANIM|NOWHITE]
+    [ x+120, y, 32, 12, -15, -7,	NOANIM|NOWHITE]
+    [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
 
 template template_train70pt(x,y){
@@ -328,9 +326,10 @@ template template_purchaseptdual(x,y){
 }
 
 template template_purchase(x,y){
-    //xpos, ypos, width, height, xoffset, yoffset
-    [x,y,87,12,-25,-6]
+    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
+    [x,     y,      87,     12,     -25,-   6,          NOWHITE]
 }
+
 
 switch (FEAT_TRAINS, SELF, diesel_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_DIESEL, 0, 0, 10), 0x100)]) {
     return 1;
