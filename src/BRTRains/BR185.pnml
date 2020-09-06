@@ -2,43 +2,62 @@ spriteset(spriteset_BR185_Purchase, "gfx/BR185a.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR185a_FirstGroup, "gfx/BR185a.png") {
+spriteset(spriteset_BR185a_FirstDynamic, "gfx/BR185a.png") {
 	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BR185a_FirstTP, "gfx/BR185a.png") {
+spriteset(spriteset_BR185a_FirstGroup, "gfx/BR185a.png") {
 	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR185a_FirstTPEGeometric, "gfx/BR185a.png") {
+	template_train32px(0, 63)
+}
+
+
+
+spriteset(spriteset_BR185b_FirstDynamic, "gfx/BR185b.png") {
+	template_train32px(0, 13)
 }
 
 spriteset(spriteset_BR185b_FirstGroup, "gfx/BR185b.png") {
-	template_train32px(0, 13)
+	template_train32px(0, 38)
 }
 
-spriteset(spriteset_BR185b_FirstTP, "gfx/BR185b.png") {
-	template_train32px(0, 38)
+spriteset(spriteset_BR185b_FirstTPEGeometric, "gfx/BR185b.png") {
+	template_train32px(0, 63)
+}
+
+
+spriteset(spriteset_BR185c_FirstDynamic, "gfx/BR185c.png") {
+	template_train32px(0, 13)
 }
 
 spriteset(spriteset_BR185c_FirstGroup, "gfx/BR185c.png") {
-	template_train32px(0, 13)
-}
-
-spriteset(spriteset_BR185c_FirstTP, "gfx/BR185c.png") {
 	template_train32px(0, 38)
 }
 
+
+spriteset(spriteset_BR185c_FirstTPEGeometric, "gfx/BR185c.png") {
+	template_train32px(0, 63)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR185a,cargo_subtype){
-    0:	spriteset_BR185a_FirstGroup;
-	1:	spriteset_BR185a_FirstTP;
+    0:	spriteset_BR185a_FirstDynamic;
+	1:	spriteset_BR185a_FirstGroup;
+	2:	spriteset_BR185a_FirstTPEGeometric;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR185b,cargo_subtype){
-    0:	spriteset_BR185b_FirstGroup;
-	1:	spriteset_BR185b_FirstTP;
+    0:	spriteset_BR185b_FirstDynamic;
+	1:	spriteset_BR185b_FirstGroup;
+	2:	spriteset_BR185b_FirstTPEGeometric;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR185c,cargo_subtype){
-    0:	spriteset_BR185c_FirstGroup;
-	1:	spriteset_BR185c_FirstTP;
+    0:	spriteset_BR185c_FirstDynamic;
+	1:	spriteset_BR185c_FirstGroup;
+	2:	spriteset_BR185c_FirstTPEGeometric;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR185, extra_callback_info1) {
@@ -48,8 +67,9 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR185, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR185_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_FirstGroup);
-	1:	return string(str_FirstTP);
+    0:	return string(str_FirstDynamic);
+	1:	return string(str_FirstGroup);
+	2:	return string(str_FirstTPEGeometric);
        return CB_RESULT_NO_TEXT;
 }
 
