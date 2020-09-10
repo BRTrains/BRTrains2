@@ -107,6 +107,19 @@ template template_train28px2(x,y){
     [ x+136, y, 19, 17, -7, -9]
 }
 
+
+template template_train28px3(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 22, -3, -9]
+    [ x+11, y, 19, 17, -11, -9]
+    [ x+33, y, 28, 12, -7, -7]
+    [ x+64, y, 19, 17, -6, -8]
+    [ x+86, y, 8, 22, -3, -9]
+    [ x+97, y, 19, 17, -15, -6]
+    [ x+119, y, 28, 12, -11, -6]
+    [ x+150, y, 19, 17, -8, -9]
+}
+
 template template_train29px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 23, -3, -10]
@@ -161,6 +174,18 @@ template template_train32px_reversed(x,y){
     [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
     [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
     [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
+}
+
+template template_trainBRMk2(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -11, -10,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -11, -7,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -9, -9,		NOANIM|NOWHITE]    
+    [ x+86, y, 8, 24, -3, -12,		NOANIM|NOWHITE]
+    [ x+95, y, 21, 17, -15, -6,	NOANIM|NOWHITE]
+    [ x+117, y, 32, 12, -11, -6,	NOANIM|NOWHITE]
+    [ x+150, y, 21, 17, -9, -9,	NOANIM|NOWHITE]
 }
 
 template template_train55(x,y){
