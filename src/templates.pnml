@@ -1,4 +1,5 @@
-// Train sprite template
+// Train sprite templates
+
 template tmpl_train_4(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
 	[x + 25, y + 2, 8,		23,		-3,		-11] //n
@@ -39,4 +40,592 @@ template tmpl_train_8_nowarn(x, y) {
 	[x + 125, y + 2, 21,	18,		-11,	-10,	WHITE] //sw
 	[x + 148, y + 2, 32,	12,		-16,	-7,		WHITE] //w
 	[x + 182, y + 2, 21,	18,		-12,	-11,	WHITE] //nw
+}
+
+
+
+// BRTRAINS
+
+
+template template_train20px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 17, -3, -9]
+    [ x+10, y, 15, 15, -7, -9]
+    [ x+27, y, 20, 12, -6, -6]
+    [ x+49, y, 15, 15, -1, -5]
+    [ x+66, y, 8, 17, -3, -3]
+    [ x+76, y, 15, 15, -13, -5]
+    [ x+93, y, 20, 12, -13, -7]
+    [ x+115, y, 15, 15, -7, -9]
+}
+
+template template_train21px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 18, -3, -9]
+    [ x+10, y, 17, 15, -6, -11]
+    [ x+29, y, 21, 12, -3, -7]
+    [ x+52, y, 17, 15, 0, -6]
+    [ x+71, y, 8, 18, -3, -6]
+    [ x+81, y, 17, 15, -13, -5]
+    [ x+100, y, 21, 12, -13, -7]
+    [ x+123, y, 17, 15, -6, -9]
+}
+
+template template_train24px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 20, -3, -7]
+    [ x+11, y, 17, 16, -9, -9]
+    [ x+33, y, 24, 12, -3, -7]
+    [ x+64, y, 17, 16, -3, -7]
+    [ x+86, y, 8, 20, -3, -7]
+    [ x+97, y, 17, 16, -15, -5]
+    [ x+119, y, 24, 12, -17, -6]
+    [ x+150, y, 17, 16, -7, -9]
+}
+
+template template_train28px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 22, -3, -9]
+    [ x+11, y, 19, 17, -11, -9]
+    [ x+33, y, 28, 12, -7, -7]
+    [ x+64, y, 19, 17, -6, -8]
+    [ x+86, y, 8, 22, -3, -9]
+    [ x+97, y, 19, 17, -15, -6]
+    [ x+119, y, 28, 12, -17, -6]
+    [ x+150, y, 19, 17, -8, -9]
+}
+
+template template_train28px2(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 22, -3, -9]
+    [ x+9, y, 19, 17, -12, -9]
+    [ x+29, y, 28, 12, -11, -7]
+    [ x+58, y, 19, 17, -6, -8]
+    [ x+78, y, 8, 22, -3, -9]
+    [ x+87, y, 19, 17, -12, -8]
+    [ x+107, y, 28, 12, -14, -7]
+    [ x+136, y, 19, 17, -7, -9]
+}
+
+
+template template_train28px3(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 22, -3, -9]
+    [ x+11, y, 19, 17, -11, -9]
+    [ x+33, y, 28, 12, -7, -7]
+    [ x+64, y, 19, 17, -6, -8]
+    [ x+86, y, 8, 22, -3, -9]
+    [ x+97, y, 19, 17, -15, -6]
+    [ x+119, y, 28, 12, -11, -6]
+    [ x+150, y, 19, 17, -8, -9]
+}
+
+template template_train29px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 23, -3, -10]
+    [ x+9, y, 21, 18, -14, -9]
+    [ x+31, y, 29, 12, -14, -7]
+    [ x+61, y, 21, 18, -7, -9]
+    [ x+83, y, 8, 23, -3, -10]
+    [ x+92, y, 21, 18, -14, -9]
+    [ x+114, y, 29, 12, -15, -7]
+    [ x+144, y, 21, 18, -8, -9]
+}
+
+template template_train30px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -10]
+    [ x+9, y, 21, 17, -7, -7]
+    [ x+31, y, 32, 12, -16, -7]
+    [ x+63, y, 21, 17, -9, -8]
+    [ x+85, y, 8, 24, -3, -10]
+    [ x+94, y, 21, 17, -11, -7]
+    [ x+116, y, 32, 12, -12, -7]
+    [ x+149, y, 21, 17, -13, -9]
+}
+
+template template_train32px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
+    [ x+86, y, 8, 24, -3, -12,		NOANIM|NOWHITE]
+    [ x+95, y, 21, 17, -12, -10,	NOANIM|NOWHITE]
+    [ x+117, y, 32, 12, -16, -8,	NOANIM|NOWHITE]
+    [ x+150, y, 21, 17, -5, -10,	NOANIM|NOWHITE]
+}
+
+template template_train32px4v(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
+}
+
+template template_train32px_reversed(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x+86,	y, 8, 24, -3, -12,		NOANIM|NOWHITE]
+    [ x+95, y, 21, 17, -12, -10,	NOANIM|NOWHITE]
+    [ x+117, y, 32, 12, -16, -8,	NOANIM|NOWHITE]
+    [ x+150, y, 21, 17, -5, -10,	NOANIM|NOWHITE]
+	[ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
+}
+
+template template_trainBRMk2(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -11, -10,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -11, -7,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -9, -9,		NOANIM|NOWHITE]    
+    [ x+86, y, 8, 24, -3, -12,		NOANIM|NOWHITE]
+    [ x+95, y, 21, 17, -15, -6,	NOANIM|NOWHITE]
+    [ x+117, y, 32, 12, -11, -6,	NOANIM|NOWHITE]
+    [ x+150, y, 21, 17, -9, -9,	NOANIM|NOWHITE]
+}
+
+template template_train55(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -8]
+    [ x+9, y, 21, 17, -14, -9]
+    [ x+31, y, 32, 12, -16, -8]
+    [ x+64, y, 21, 17, -8, -10]
+    [ x+86, y, 8, 24, -3, -8]
+    [ x+95, y, 21, 17, -13, -9]
+    [ x+117, y, 32, 12, -16, -7]
+    [ x+150, y, 21, 17, -8, -10]
+}
+
+template template_train60(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -8]
+    [ x+9, y, 22, 17, -14, -8]
+    [ x+32, y, 32, 12, -16, -7]
+    [ x+65, y, 22, 17, -8, -8]
+    [ x+88, y, 8, 24, -3, -8]
+    [ x+97, y, 22, 17, -14, -8]
+    [ x+120, y, 32, 12, -16, -7]
+    [ x+153, y, 22, 17, -8, -8]
+}
+
+template template_electrostar(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 25, -3, -8]
+    [ x+9, y, 22, 20, -14, -8]
+    [ x+32, y, 32, 12, -16, -7]
+    [ x+65, y, 22, 20, -7, -8]
+    [ x+88, y, 8, 25, -3, -8]
+    [ x+97, y, 22, 20, -14, -8]
+    [ x+120, y, 32, 12, -16, -7]
+    [ x+153, y, 22, 20, -7, -8]
+}
+
+template template_train80xdtf(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -8]
+    [ x+9, y, 21, 17, -15, -8]
+    [ x+31, y, 32, 12, -16, -7]
+    [ x+64, y, 21, 17, -8, -10]
+    [ x+86, y, 8, 24, -3, -8]
+    [ x+95, y, 21, 17, -13, -9]
+    [ x+117, y, 32, 12, -16, -7]
+    [ x+150, y, 21, 17, -8, -10]
+}
+
+template template_train80xdtr(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -8]
+    [ x+9, y, 21, 17, -14, -9]
+    [ x+31, y, 32, 12, -16, -7]
+    [ x+64, y, 21, 17, -8, -10]
+    [ x+86, y, 8, 24, -3, -8]
+    [ x+95, y, 21, 17, -14, -8]
+    [ x+117, y, 32, 12, -16, -7]
+    [ x+150, y, 21, 17, -8, -10]
+}
+
+//Because the electrostar didn't fit properly
+
+template template_450(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 26, -3, -9]
+    [ x+9, y, 22, 21, -16, -10]
+    [ x+32, y, 32, 13, -15, -7]
+    [ x+65, y, 22, 21, -1, -10]
+    [ x+88, y, 8, 26, -3, -11]
+    [ x+97, y, 22, 21, -16, -10]
+    [ x+120, y, 32, 13, -13, -7]
+    [ x+153, y, 22, 21, -3, -10]
+}
+
+//Nor did the desiro
+
+template template_train170pt(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 26, -3, -9,			NOANIM|NOWHITE]
+    [ x+9, y, 22, 21, -16, -12,		NOANIM|NOWHITE]
+    [ x+32, y, 32, 12, -15, -7,		NOANIM|NOWHITE]
+    [ x+65, y, 22, 21, -4, -11,		NOANIM|NOWHITE]
+    [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
+    [ x+97, y, 22, 21, -15, -12,	NOANIM|NOWHITE]
+    [ x+120, y, 32, 12, -13, -7,	NOANIM|NOWHITE]
+    [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
+}
+
+template template_train170ptF(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 26, -3, -9,			NOANIM|NOWHITE]
+    [ x+9, y, 22, 21, -16, -12,		NOANIM|NOWHITE]
+    [ x+32, y, 32, 12, -13, -7,		NOANIM|NOWHITE]
+    [ x+65, y, 22, 21, -4, -11,		NOANIM|NOWHITE]
+    [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
+    [ x+97, y, 22, 21, -15, -12,	NOANIM|NOWHITE]
+    [ x+120, y, 32, 12, -15, -7,	NOANIM|NOWHITE]
+    [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
+}
+
+template template_train70pt(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 25, -3, -9]
+    [ x+9, y, 22, 20, -16, -12]
+    [ x+32, y, 32, 12, -15, -7]
+    [ x+65, y, 22, 20, -4, -11]
+    [ x+88, y, 8, 25, -3, -11]
+    [ x+97, y, 22, 20, -15, -12]
+    [ x+120, y, 32, 12, -13, -7]
+    [ x+153, y, 22, 20, -4, -11]
+}
+
+//OH GOD WHY (Alignment on 800 sprites)
+
+template template_800a(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12]
+    [ x+9, y, 21, 17, -12, -10]
+    [ x+31, y, 32, 12, -16, -8]
+    [ x+64, y, 21, 17, -5, -10]
+    [ x+86, y, 8, 24, -3, -12]
+    [ x+95, y, 21, 17, -12, -10]
+    [ x+117, y, 32, 12, -16, -8]
+    [ x+150, y, 21, 17, -5, -9]
+}
+
+template template_800b(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12]
+    [ x+9, y, 21, 17, -12, -9]
+    [ x+31, y, 32, 12, -16, -8]
+    [ x+64, y, 21, 17, -5, -9]
+    [ x+86, y, 8, 24, -3, -12]
+    [ x+95, y, 21, 17, -12, -9]
+    [ x+117, y, 32, 12, -16, -8]
+    [ x+150, y, 21, 17, -5, -9]
+}
+
+template template_800c(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12]
+    [ x+9, y, 21, 17, -12, -10]
+    [ x+31, y, 32, 12, -16, -8]
+    [ x+64, y, 21, 17, -5, -9]
+    [ x+86, y, 8, 24, -3, -12]
+    [ x+95, y, 21, 17, -12, -10]
+    [ x+117, y, 32, 12, -16, -8]
+    [ x+150, y, 21, 17, -5, -10]
+}
+
+template template_purchaseptdual(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ ]
+    [ ]
+    [ x+32, y, 32, 12, -13, -7]
+    [ ]
+    [ ]
+    [ ]
+    [ x+120, y, 32, 12, -11, -7]
+    [ ]
+}
+
+template template_purchase(x,y){
+    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
+    [x,     y,      87,     12,     -25,-   6,          NOWHITE]
+}
+
+
+switch (FEAT_TRAINS, SELF, diesel_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_DIESEL, 0, 0, 10), 0x100)]) {
+    return 1;
+}
+
+switch (FEAT_TRAINS, SELF, electric_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_ELECTRIC, 0, 0, 10), 0x100)]) {
+    return 1;
+}
+
+switch (FEAT_TRAINS, SELF, electric_create_visual_effect_SAA3, [STORE_TEMP(create_effect(EFFECT_SPRITE_ELECTRIC, 0, 0, -6), 0x100)]) {
+    return 1;
+}
+
+switch (FEAT_TRAINS, SELF, steam_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_STEAM, 0, 0, 10), 0x100)]) {
+    return 1;
+}
+
+switch(FEAT_TRAINS,SELF,sw_default_sound,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			SOUND_TRAIN_HORN;
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_defaultsteam_sound,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_TUNNEL:			SOUND_TRAIN_THROUGH_TUNNEL;
+	SOUND_EVENT_START: 			SOUND_TRAIN;
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_dmu_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn47.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/dmu_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/dmu_run_d2.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/dmu_run_d1.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_dmu_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_dmu_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_deltic_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn1.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/deltic_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/deltic_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/deltic_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_deltic_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_deltic_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_20_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn1.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/20_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/20_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/20_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_20_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_20_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_47_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn47.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/47_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/deltic_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/47_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_47_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_47_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_66_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn66.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/66_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/66_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/66_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_66_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_66_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_gas_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn1.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/turbot_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/turbot_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/turbot_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_gas_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_gas_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_steam_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_TUNNEL:			sound("sfx/qr_whistle.wav");
+	SOUND_EVENT_START: 			sound("sfx/qr_whistle.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/qr_chuff_1.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/steam_idle.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/steam_run.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_steam_sound,param_sounds){
+	0:	sw_defaultsteam_sound;
+	1:	sw_steam_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_LMS_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_TUNNEL:			sound("sfx/lms_hooter.wav");
+	SOUND_EVENT_START: 			sound("sfx/lms_hooter.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/qr_chuff_2.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/steam_idle.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/steam_run.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_LMS_sound,param_sounds){
+	0:	sw_defaultsteam_sound;
+	1:	sw_LMS_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_A4_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_TUNNEL:			sound("sfx/a4_whistle.wav");
+	SOUND_EVENT_START: 			sound("sfx/a4_whistle_short.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/qr_chuff_3.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/steam_idle.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/steam_run.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_A4_sound,param_sounds){
+	0:	sw_defaultsteam_sound;
+	1:	sw_A4_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_jinty_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_TUNNEL:			sound("sfx/jin_whistle.wav");
+	SOUND_EVENT_START: 			sound("sfx/jin_whistle.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/qr_chuff_4.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/steam_idle.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/steam_run.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_jinty_sound,param_sounds){
+	0:	sw_defaultsteam_sound;
+	1:	sw_jinty_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_ee_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn1.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/ee_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/ee_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/ee_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_ee_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_ee_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_electric_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn1.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/elen_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/elen_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_electric_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_electric_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_gronk_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/gronk_whistle.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/ee_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/ee_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/ee_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_gronk_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_gronk_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_hst_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/br_horn47.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/hst_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/dmu_run_d2.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/hst_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_hst_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_hst_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_electrostar_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/electrostar_depart.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/electrostar_moving.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/electrostar_wait.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_electrostar_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_electrostar_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_networker_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/networker_depart.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/networker_wait.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/networker_moving.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_networker_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_networker_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_voyager_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/voyager_depart.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/voyager_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/voyager_idle.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/voyager_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_voyager_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_voyager_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_mtu_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/mtu_depart.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/mtu_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/mtu_idle.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/mtu_coast.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_mtu_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_mtu_sound_on;
+}
+
+switch(FEAT_TRAINS,SELF,sw_classic_emu_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/slammer_depart.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/slammer_idle.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/slammer_run.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_TRAINS,SELF,sw_classic_emu_sound,param_sounds){
+	0:	sw_default_sound;
+	1:	sw_classic_emu_sound_on;
 }

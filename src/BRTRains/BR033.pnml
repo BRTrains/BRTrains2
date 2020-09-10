@@ -1,0 +1,224 @@
+spriteset(spriteset_BR33_0_Purchase, "gfx/BR33.png") {
+	template_purchase(88, 0)
+}
+
+spriteset(spriteset_BR33_1_Purchase, "gfx/BR33.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR33_0_BRGreen, "gfx/BR33.png") {
+	template_train28px3(175, 13)
+}
+
+spriteset(spriteset_BR33_0_BRGreenYellow, "gfx/BR33.png") {
+	template_train28px3(175, 36)
+}
+
+spriteset(spriteset_BR33_0_BRBlue, "gfx/BR33.png") {
+	template_train28px3(175, 59)
+}
+
+spriteset(spriteset_BR33_0_BRBlueHeadlight, "gfx/BR33.png") {
+	template_train28px3(175, 82)
+}
+
+spriteset(spriteset_BR33_0_NSE, "gfx/BR33.png") {
+	template_train28px3(175, 105)
+}
+
+spriteset(spriteset_BR33_0_Distribution, "gfx/BR33.png") {
+	template_train28px3(175, 151)
+}
+
+spriteset(spriteset_BR33_0_Construction, "gfx/BR33.png") {
+	template_train28px3(175, 174)
+}
+
+spriteset(spriteset_BR33_0_Engineers, "gfx/BR33.png") {
+	template_train28px3(175, 197)
+}
+
+spriteset(spriteset_BR33_0_Fragonset, "gfx/BR33.png") {
+	template_train28px3(175, 220)
+}
+
+spriteset(spriteset_BR33_0_EWS, "gfx/BR33.png") {
+	template_train28px3(175, 243)
+}
+
+spriteset(spriteset_BR33_0_DRS, "gfx/BR33.png") {
+	template_train28px3(175, 266)
+}
+
+spriteset(spriteset_BR33_0_WCRC, "gfx/BR33.png") {
+	template_train28px3(175, 289)
+}
+
+spriteset(spriteset_BR33_1_BRGreen, "gfx/BR33.png") {
+	template_train28px3(0, 13)
+}
+
+spriteset(spriteset_BR33_1_BRGreenYellow, "gfx/BR33.png") {
+	template_train28px3(0, 36)
+}
+
+spriteset(spriteset_BR33_1_BRBlue, "gfx/BR33.png") {
+	template_train28px3(0, 59)
+}
+
+spriteset(spriteset_BR33_1_BRBlueHeadlight, "gfx/BR33.png") {
+	template_train28px3(0, 82)
+}
+
+spriteset(spriteset_BR33_1_NSE, "gfx/BR33.png") {
+	template_train28px3(0, 105)
+}
+
+spriteset(spriteset_BR33_1_Fragonset, "gfx/BR33.png") {
+	template_train28px3(0, 220)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR33_0,cargo_subtype){
+    0:	spriteset_BR33_0_BRGreen;
+	1: 	spriteset_BR33_0_BRGreenYellow;
+	2: 	spriteset_BR33_0_BRBlue;
+	3: 	spriteset_BR33_0_BRBlueHeadlight;
+	4: 	spriteset_BR33_0_NSE;
+	5:	spriteset_BR33_0_Distribution;
+	6:	spriteset_BR33_0_Construction;
+	7:	spriteset_BR33_0_Engineers;
+	8:	spriteset_BR33_0_Fragonset;
+	9:	spriteset_BR33_0_EWS;
+	10:	spriteset_BR33_0_DRS;
+	11:	spriteset_BR33_0_WCRC;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR33_0_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRGreen);
+	1: 	return string(str_BRGreenYellow);
+	2: 	return string(str_BRBlue);
+	3: 	return string(str_BRBlueHeadlight);
+	4: 	return string(str_NSE);
+	5: 	return string(str_RFDistribution);
+	6: 	return string(str_RFConstruction);
+	7:	return string(str_CivilDutch);
+	8:	return string(str_Fragonset);
+	9:	return string(str_EWSRed);
+	10:	return string(str_DRSCompass);
+	11:	return string(str_WCRC);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR33_1,cargo_subtype){
+    0:	spriteset_BR33_1_BRGreen;
+	1: 	spriteset_BR33_1_BRGreenYellow;
+	2: 	spriteset_BR33_1_BRBlue;
+	3: 	spriteset_BR33_1_BRBlueHeadlight;
+	4: 	spriteset_BR33_1_NSE;
+	5:	spriteset_BR33_1_Fragonset;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR33_1_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRGreen);
+	1: 	return string(str_BRGreenYellow);
+	2: 	return string(str_BRBlue);
+	3: 	return string(str_BRBlueHeadlight);
+	4: 	return string(str_NSE);
+	5:	return string(str_Fragonset);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR33_0, 252) {
+	property {
+		name: 							string(STR_NAME_BR33_0);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1960,4,21);
+		model_life:						19;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					31;
+		running_cost_factor:			25;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							85 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1550 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							78 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.24;
+		air_drag_coefficient:			0.06;
+		length:							7;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_6),string(str_BR33_0_usage),string(str_BR33_0_eos),string(str_BR33_0_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR33_0_cargo_subtype_text;
+	default: 							sw_BR33_0;
+	purchase:							spriteset_BR33_0_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_20_sound;
+}
+}
+
+
+item (FEAT_TRAINS, item_BR33_1, 253) {
+	property {
+		name: 							string(STR_NAME_BR33_1);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1965,4,21);
+		model_life:						19;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					31;
+		running_cost_factor:			25;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							85 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1550 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							79 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.24;
+		air_drag_coefficient:			0.06;
+		length:							7;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_6),string(str_BR33_1_usage),string(str_BR33_1_eos),string(str_BR33_1_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR33_1_cargo_subtype_text;
+	default: 							sw_BR33_1;
+	purchase:							spriteset_BR33_1_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_20_sound;
+}
+}

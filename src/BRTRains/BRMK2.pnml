@@ -27,63 +27,63 @@ spriteset(spriteset_BRMK2DDBSO_Purchase, "gfx/BRMK2Purchase.png") {
 }
 
 spriteset(spriteset_BRMK2ATSOBRBlue, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 13)
+	template_trainBRMk2(0, 13)
 }
 
 spriteset(spriteset_BRMK2ATSONSE, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 163)
+	template_trainBRMk2(0, 163)
 }
 
 spriteset(spriteset_BRMK2ATSORegionalRailways, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 238)
+	template_trainBRMk2(0, 238)
 }
 
 spriteset(spriteset_BRMK2ATSOScotRail, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 313)
+	template_trainBRMk2(0, 313)
 }
 
 spriteset(spriteset_BRMK2ATSOWCRC, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 388)
+	template_trainBRMk2(0, 388)
 }
 
 spriteset(spriteset_BRMK2AFOBRBlue, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 38)
+	template_trainBRMk2(0, 38)
 }
 
 spriteset(spriteset_BRMK2AFONSE, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 188)
+	template_trainBRMk2(0, 188)
 }
 
 spriteset(spriteset_BRMK2AFORegionalRailways, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 263)
+	template_trainBRMk2(0, 263)
 }
 
 spriteset(spriteset_BRMK2AFOScotRail, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 338)
+	template_trainBRMk2(0, 338)
 }
 
 spriteset(spriteset_BRMK2AFOWCRC, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 413)
+	template_trainBRMk2(0, 413)
 }
 
 spriteset(spriteset_BRMK2ABSOBRBlue, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 63)
+	template_trainBRMk2(0, 63)
 }
 
 spriteset(spriteset_BRMK2ABSONSE, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 213)
+	template_trainBRMk2(0, 213)
 }
 
 spriteset(spriteset_BRMK2ABSORegionalRailways, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 288)
+	template_trainBRMk2(0, 288)
 }
 
 spriteset(spriteset_BRMK2ABSOScotRail, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 363)
+	template_trainBRMk2(0, 363)
 }
 
 spriteset(spriteset_BRMK2ABSOWCRC, "gfx/BRMK2A-C.png") {
-	template_train32px(0, 438)
+	template_trainBRMk2(0, 438)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BRMK2ATSO,cargo_subtype){
@@ -215,145 +215,145 @@ item (FEAT_TRAINS, item_BRMK2ABSO, 319) {
 //Mk2 D-F
 
 spriteset(spriteset_BRMK2DTSOBRBlue, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 13)
+	template_trainBRMk2(0, 13)
 }
 
 spriteset(spriteset_BRMK2DTSOIntercity, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 263)
+	template_trainBRMk2(0, 263)
 }
 
 spriteset(spriteset_BRMK2DTSOScotrail, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 388)
+	template_trainBRMk2(0, 388)
 }
 
 spriteset(spriteset_BRMK2DTSOAnglia, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 513)
+	template_trainBRMk2(0, 513)
 }
 
 spriteset(spriteset_BRMK2DTSOArriva, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 638)
+	template_trainBRMk2(0, 638)
 }
 
 spriteset(spriteset_BRMK2DTSOArrivaNew, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 713)
+	template_trainBRMk2(0, 713)
 }
 
 spriteset(spriteset_BRMK2DTSODRS, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 788)
+	template_trainBRMk2(0, 788)
 }
 
 spriteset(spriteset_BRMK2DTSOVirgin, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 913)
+	template_trainBRMk2(0, 913)
 }
 
 spriteset(spriteset_BRMK2DTSOGW, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 988)
+	template_trainBRMk2(0, 988)
 }
 
 
 spriteset(spriteset_BRMK2DTSOWCRC, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 1063)
+	template_trainBRMk2(0, 1063)
 }
 
 spriteset(spriteset_BRMK2DFOBRBlue, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 38)
+	template_trainBRMk2(0, 38)
 }
 
 spriteset(spriteset_BRMK2DFOIntercity, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 288)
+	template_trainBRMk2(0, 288)
 }
 
 spriteset(spriteset_BRMK2DFOScotrail, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 413)
+	template_trainBRMk2(0, 413)
 }
 
 spriteset(spriteset_BRMK2DFOAnglia, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 538)
+	template_trainBRMk2(0, 538)
 }
 
 spriteset(spriteset_BRMK2DFOArriva, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 663)
+	template_trainBRMk2(0, 663)
 }
 
 spriteset(spriteset_BRMK2DFOArrivaNew, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 738)
+	template_trainBRMk2(0, 738)
 }
 
 spriteset(spriteset_BRMK2DFODRS, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 813)
+	template_trainBRMk2(0, 813)
 }
 
 spriteset(spriteset_BRMK2DFOVirgin, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 938)
+	template_trainBRMk2(0, 938)
 }
 
 spriteset(spriteset_BRMK2DFOGW, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 1013)
+	template_trainBRMk2(0, 1013)
 }
 
 spriteset(spriteset_BRMK2DFOWCRC, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 1088)
+	template_trainBRMk2(0, 1088)
 }
 
 spriteset(spriteset_BRMK2DBSOBRBlue, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 63)
+	template_trainBRMk2(0, 63)
 }
 
 spriteset(spriteset_BRMK2DBSOIntercity, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 313)
+	template_trainBRMk2(0, 313)
 }
 
 spriteset(spriteset_BRMK2DBSOScotrail, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 438)
+	template_trainBRMk2(0, 438)
 }
 
 spriteset(spriteset_BRMK2DBSOAnglia, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 563)
+	template_trainBRMk2(0, 563)
 }
 
 spriteset(spriteset_BRMK2DBSOArriva, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 688)
+	template_trainBRMk2(0, 688)
 }
 
 spriteset(spriteset_BRMK2DBSOArrivaNew, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 763)
+	template_trainBRMk2(0, 763)
 }
 
 spriteset(spriteset_BRMK2DBSODRS, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 838)
+	template_trainBRMk2(0, 838)
 }
 
 spriteset(spriteset_BRMK2DBSOVirgin, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 963)
+	template_trainBRMk2(0, 963)
 }
 
 spriteset(spriteset_BRMK2DBSOGW, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 1038)
+	template_trainBRMk2(0, 1038)
 }
 
 
 spriteset(spriteset_BRMK2DBSOWCRC, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 1113)
+	template_trainBRMk2(0, 1113)
 }
 
 spriteset(spriteset_BRMK2DRDBSOBRBlue, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 113)
+	template_trainBRMk2(0, 113)
 }
 
 spriteset(spriteset_BRMK2DRDBSOIntercity, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 363)
+	template_trainBRMk2(0, 363)
 }
 
 spriteset(spriteset_BRMK2DRDBSOScotrail, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 488)
+	template_trainBRMk2(0, 488)
 }
 
 spriteset(spriteset_BRMK2DRDBSOAnglia, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 613)
+	template_trainBRMk2(0, 613)
 }
 
 spriteset(spriteset_BRMK2DRDBSODRS, "gfx/BRMK2D-F.png") {
-	template_train32px(0, 888)
+	template_trainBRMk2(0, 888)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BRMK2DTSO,cargo_subtype){

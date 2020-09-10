@@ -1,5 +1,5 @@
 # BR Trains v2
-A UK Train Set for OpenTTD, based on the original BRTrains set (itself based on unfinished BROS, the British Rail OpenTTD Set) and Modern UK Train Set (MUTS), an independent add-on for BRTrains including trains released after 2015 (the last date available in BRTrains v1)
+A UK Train Set for OpenTTD, based on the original BRTrains set (itself based on the unfinished BRSet and BROS, previous attempts at a UK set) and Modern UK Train Set (MUTS), an independent add-on for BRTrains including trains released after 2015 (the last date available in BRTrains v1)
 
 This set aims to combine the BRTrains and MUTS sets, and add modern liveries to trains originally included in BRTrains, and fix colouring/scaling and other graphical inconsistencies in the BRTrains set, since that set was developed by many users over many years and is not known for excessive consistency...
 
@@ -58,31 +58,38 @@ The most commonly used command invocation is:
 ```
 Note, this method still requires the `nml` python package to be installed.
 
-### Credits
-### Developers
-Leander - UKTrains
-KubaP - MUTS
-AlmostCthulhu - MUTS
-Audigex - UKTrains v2 (This project)
+### Credits (in no particular order)
 
-Artists:
+#### Developers
+- Leander UKTrains
+- KubaP - MUTS
+- AlmostCthulhu - MUTS
+- Audigex - UKTrains v2 (This project)
 
-Leander
-KubaP
-AlmostCthuluhu
-Audigex
-Gwyd
-Ronstar
-Doorslammer
-le_harv
-Helmar
-Pilot
-Growl
-Red Dragon
-TheAmir259
-GamingBloke
-SquireJames
-Erato
+#### Artists
+
+- Leander
+- Ameecher
+- Voyager One
+- Class93
+- RailwayMan
+- KubaP
+- AlmostCthuluhu
+- Audigex
+- Gwyd
+- Ronstar
+- Purno
+- le_harv
+- Helmar
+- Pilot
+- Growl
+- Red Dragon
+- Beardie
+- TheAmir259
+- GamingBloke
+- SquireJames
+- Erato
+- DJ Nekkid
 
 ... And other BROS artists who's names have been lost along the way
 
@@ -94,5 +101,5 @@ If you want to add to the pack, just pull request it and it might make it in.
 Alternatively, if you just want to steal the build script(s) then go wild.
 
 ### License
-This project is licensed under either the GPLv3 or GPLv2 license
-See [LICENSE](./LICENSE) regarding GPLv3 or [LICENSE-v2](./LICENSE-V2) regarding GPLv2
+This project is licensed under either the GPLv2 license
+See [LICENSE](./LICENSE) for license details

@@ -1,7 +1,0 @@
-railtypetable {
-    RAIL, 
-	ELRL,
-	BR_3RDR: [SAA3, ELRL],
-	BR_3RDC: [SAAZ, ELRL],
-	BR_4RDR: [SAA4, SAA3, ELRL],
-}

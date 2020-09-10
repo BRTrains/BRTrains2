@@ -245,7 +245,7 @@ switch(FEAT_TRAINS,SELF,sw_BR158_cargo_subtype_text,cargo_subtype){
 	8:	return string(str_ATWMail);
 	9:	return string(str_FNW);
 	10:	return string(str_FirstScotRail);
-	11:	return string(str_FirstTP);
+	11:	return string(str_FirstTPE);
 	12:	return string(str_FGW);
 	13:	return string(str_NatExScotRail);
 	14:	return string(str_WYPTEMetro);

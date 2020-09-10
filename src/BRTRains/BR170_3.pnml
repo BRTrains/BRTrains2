@@ -6,16 +6,79 @@ spriteset(spriteset_BR170c_Central, "gfx/BR170.png") {
 	template_train32px(0, 38)
 }
 
+spriteset(spriteset_BR170c_LondonMidland, "gfx/BR170c.png") {
+	template_train170pt(0, 14)
+}
+
+spriteset(spriteset_BR170c_One, "gfx/BR170c.png") {
+	template_train170pt(0, 41)
+}
+
+spriteset(spriteset_BR170c_ScotRailSaltire, "gfx/BR170c.png") {
+	template_train170pt(0, 68)
+}
+
+spriteset(spriteset_BR170c_SWT, "gfx/BR170c.png") {
+	template_train170pt(0, 95)
+}
+
+spriteset(spriteset_BR170c_FNWBarbie, "gfx/BR170c.png") {
+	template_train170pt(0, 122)
+}
+
+spriteset(spriteset_BR170c_ScotRail, "gfx/BR170c.png") {
+	template_train170pt(0, 149)
+}
+
+spriteset(spriteset_BR170c_MMLTealTang, "gfx/BR170c.png") {
+	template_train170pt(0, 176)
+}
+
+spriteset(spriteset_BR170c_StrathclydePTE, "gfx/BR170c.png") {
+	template_train170pt(0, 203)
+}
+
+spriteset(spriteset_BR170c_GA_White, "gfx/BR170c.png") {
+	template_train170pt(0, 230)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR170_3,cargo_subtype){
-    0:	spriteset_BR170a_Central;
+    0:	spriteset_BR170a_Central; // Central Trains
+	1:	spriteset_BR170a_LondonMidland; // London Midland
+	2:	spriteset_BR170a_One; // ONE
+	3:	spriteset_BR170a_ScotRailSaltire; // Scotrail (Saltire)
+	4:	spriteset_BR170a_SWT; // South West Trains
+	5:	spriteset_BR170a_FNWBarbie; // First Barbie
+	6:	spriteset_BR170a_ScotRail; // National Express Scotrail
+	7:	spriteset_BR170a_MMLTealTang; // Midland Mainline
+	8:	spriteset_BR170a_StrathclydePTE; // Strathclyde Passenger Transport
+	9:	spriteset_BR170a_GA_White; // Greater Anglia White
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR170b_3,cargo_subtype){
     0:	spriteset_BR170b_Central;
+	1:	spriteset_BR170b_LondonMidland;
+	2:	spriteset_BR170b_One; // ONE
+	3:	spriteset_BR170b_ScotRailSaltire; // Scotrail (Saltire)
+	4:	spriteset_BR170b_SWT; // South West Trains
+	5:	spriteset_BR170b_FNWBarbie; // First Barbie
+	6:	spriteset_BR170b_ScotRail; // National Express Scotrail
+	7:	spriteset_BR170b_MMLTealTang; // Midland Mainline
+	8:	spriteset_BR170b_StrathclydePTE; // Strathclyde Passenger Transport
+	9:	spriteset_BR170b_GA_White; // Greater Anglia White
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR170c,cargo_subtype){
     0:	spriteset_BR170c_Central;
+	1:	spriteset_BR170c_LondonMidland;
+	2:	spriteset_BR170c_One; // ONE
+	3:	spriteset_BR170c_ScotRailSaltire; // Scotrail (Saltire)
+	4:	spriteset_BR170c_SWT; // South West Trains
+	5:	spriteset_BR170c_FNWBarbie; // First Barbie
+	6:	spriteset_BR170c_ScotRail; // National Express Scotrail
+	7:	spriteset_BR170c_MMLTealTang; // Midland Mainline
+	8:	spriteset_BR170c_StrathclydePTE; // Strathclyde Passenger Transport
+	9:	spriteset_BR170c_GA_White; // Greater Anglia White
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR170_3, extra_callback_info1) {
@@ -26,6 +89,15 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR170_3, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR170_3_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Central);
+	1:	return string(str_LondonMidland);
+	2:	return string(str_One);
+	3:	return string(str_ScotRailSaltire);
+	4:	return string(str_SWT);
+	5:	return string(str_FNWBarbie);
+	6:	return string(str_ScotRail);
+	7:	return string(str_MMLTealTang);
+	8:	return string(str_StrathclydePTE);
+	9:	return string(str_GA_White);
        return CB_RESULT_NO_TEXT;
 }
 

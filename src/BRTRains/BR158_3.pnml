@@ -83,7 +83,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR158_3, extra_callback_info1) {
 switch(FEAT_TRAINS,SELF,sw_BR158_3_cargo_subtype_text,cargo_subtype){
     0:	return string(str_RegionalExpress);
 	1:	return string(str_ArrivaTPNS);
-	2:	return string(str_FirstTP);
+	2:	return string(str_FirstTPE);
 	3:	return string(str_FGW);
 	4:	return string(str_WYPTEMetro);
 	5:	return string(str_NorthernRail);

@@ -6,18 +6,28 @@ spriteset(spriteset_BR390_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 13)
 }
 
+spriteset(spriteset_BR390_AvantiWestCoast, "gfx/BR390.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR390_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 362)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR390,cargo_subtype){
     0:	spriteset_BR390_Virgin;
+	1:	spriteset_BR390_AvantiWestCoast;
+	2:	spriteset_BR390_VirginSilk;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR390, extra_callback_info1) {
 	1: return item_390_MFD;
 	2: return item_390_PTF;
-	3: return item_390_MS;
+	3: return item_390_MF; // Changed from MS to make Avanti livery work, to keep things simpler. Virgin livery doesn't use First class visuals anyway
 	4: return item_390_TS;
 	5: return item_390_MSD;
 	6: return item_390_PTSRMB;
-	7: return item_390_MSD;
+	7: return item_390_MS; // Changed from MSD to make Avanti livery work
 	8: return item_390_DMSO;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
@@ -27,11 +37,11 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR390_11, extra_callback_info1) {
 	2: return item_390_PTF;
 	3: return item_390_MF;
 	4: return item_390_TS;
-	5: return item_390_MS;
-	6: return item_390_TS;
-	7: return item_390_MSD;
+	5: return item_390_MSD; // Changed from MS to make Avanti livery work
+	6: return item_390_TS2; // Changed from TS to make Avanti livery work
+	7: return item_390_MS; // Changed from MSD to make Avanti livery work...
 	8: return item_390_PTSRMB;
-	9: return item_390_MSD;
+	9: return item_390_MS; // Changed from MSD to make Avanti livery work
 	10: return item_390_DMSO;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
@@ -39,6 +49,8 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR390_11, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR390_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Virgin);
+	1:	return string(str_AvantiWestCoast);
+	2:	return string(str_VirginSilk);
        return CB_RESULT_NO_TEXT;
 }
 
@@ -148,65 +160,134 @@ item (FEAT_TRAINS, item_BR390_11, 124) {
 spriteset(spriteset_MF_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 38)
 }
-
 spriteset(spriteset_PTF_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 63)
 }
-
 spriteset(spriteset_TS_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 38)
 }
-
 spriteset(spriteset_PTSRMB_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 88)
 }
-
 spriteset(spriteset_MS_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 38)
 }
-
 spriteset(spriteset_MSD_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 38)
 }
-
 spriteset(spriteset_MFD_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 38)
 }
-
 spriteset(spriteset_DMSO_Virgin, "gfx/BR390.png") {
 	template_train32px(0, 113)
 }
 
+spriteset(spriteset_MF_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 387)
+}
+spriteset(spriteset_PTF_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 412)
+}
+spriteset(spriteset_TS_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 387)
+}
+spriteset(spriteset_PTSRMB_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 437)
+}
+spriteset(spriteset_MS_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 387)
+}
+spriteset(spriteset_MSD_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 387)
+}
+spriteset(spriteset_MFD_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 387)
+}
+spriteset(spriteset_DMSO_VirginSilk, "gfx/BR390.png") {
+	template_train32px(0, 462)
+}
+
+spriteset(spriteset_MF_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 263)
+}
+spriteset(spriteset_PTF_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 213)
+}
+spriteset(spriteset_TS_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 338)
+}
+spriteset(spriteset_TS2_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 313)
+}
+spriteset(spriteset_PTSRMB_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 188)
+}
+spriteset(spriteset_MS_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 288)
+}
+spriteset(spriteset_MSD_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 163)
+}
+spriteset(spriteset_MFD_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 263)
+}
+spriteset(spriteset_DMSO_Avanti, "gfx/BR390.png") {
+	template_train32px(0, 238)
+}
+
+
 switch(FEAT_TRAINS,SELF, sw_390_MF,cargo_subtype){
     0:	spriteset_MF_Virgin;
+	1:	spriteset_MF_Avanti;
+	2:	spriteset_MF_VirginSilk;
 }
 
 switch(FEAT_TRAINS,SELF, sw_390_PTF,cargo_subtype){
     0:	spriteset_PTF_Virgin;
+	1:	spriteset_PTF_Avanti;
+	2:	spriteset_PTF_VirginSilk;
 }
 
 switch(FEAT_TRAINS,SELF, sw_390_TS,cargo_subtype){
     0:	spriteset_TS_Virgin;
+	1:	spriteset_TS_Avanti;
+	2:	spriteset_TS_VirginSilk;
+}
+
+switch(FEAT_TRAINS,SELF, sw_390_TS2,cargo_subtype){
+    0:	spriteset_TS_Virgin;
+	1:	spriteset_TS2_Avanti;
+	2:	spriteset_TS_VirginSilk;
 }
 
 switch(FEAT_TRAINS,SELF, sw_390_PTSRMB,cargo_subtype){
     0:	spriteset_PTSRMB_Virgin;
+	1:	spriteset_PTSRMB_Avanti;
+	2:	spriteset_PTSRMB_VirginSilk;
 }
 
 switch(FEAT_TRAINS,SELF, sw_390_MS,cargo_subtype){
     0:	spriteset_MS_Virgin;
+	1:	spriteset_MS_Avanti;
+	2:	spriteset_MS_VirginSilk;
 }
 
 switch(FEAT_TRAINS,SELF, sw_390_DMSO,cargo_subtype){
     0:	spriteset_DMSO_Virgin;
+	1:	spriteset_DMSO_Avanti;
+	2:	spriteset_DMSO_VirginSilk;
 }
 
 switch(FEAT_TRAINS,SELF, sw_390_MSD,cargo_subtype){
     0:	spriteset_MSD_Virgin;
+	1:	spriteset_MSD_Avanti;
+	2:	spriteset_MSD_VirginSilk;
 }
 
 switch(FEAT_TRAINS,SELF, sw_390_MFD,cargo_subtype){
     0:	spriteset_MFD_Virgin;
+	1:	spriteset_MFD_Avanti;
+	2:	spriteset_MFD_VirginSilk;
 }
 
 item (FEAT_TRAINS, item_390_DMSO, 121) {
@@ -351,6 +432,39 @@ item (FEAT_TRAINS, item_390_TS, 119) {
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_390_TS;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}
+
+item (FEAT_TRAINS, item_390_TS2, 1199) {
+	property {
+		name: 							string(STR_NAME_390_TS);
+		climates_available: 			NO_CLIMATE;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					0;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						ELRL;
+		power:							0;
+		running_cost_base:				RUNNING_COST_NONE;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					74;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_390_TS2;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 }
 }
