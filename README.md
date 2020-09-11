@@ -6,6 +6,8 @@ This set aims to combine the BRTrains and MUTS sets, and add modern liveries to 
 Graphics are designed to work best with the Finescale UK Track Set, but will work with any track combination which provides 3rd rail tracks.
 (Note that BRTracks doesn't work perfectly and 3rd rail trains won't be useable)
 
+
+
 ![Banner](./banner.png)
 
 
@@ -61,35 +63,36 @@ Note, this method still requires the `nml` python package to be installed.
 ### Credits (in no particular order)
 
 #### Developers
-- Leander UKTrains
-- KubaP - MUTS
-- AlmostCthulhu - MUTS
-- Audigex - UKTrains v2 (This project)
+
+- Leander UKTrains  
+- KubaP - MUTS  
+- AlmostCthulhu - MUTS  
+- Audigex - UKTrains v2 (This project)  
 
 #### Artists
 
-- Leander
-- Ameecher
-- Voyager One
-- Class93
-- RailwayMan
-- KubaP
-- AlmostCthuluhu
-- Audigex
-- Gwyd
-- Ronstar
-- Purno
-- le_harv
-- Helmar
-- Pilot
-- Growl
-- Red Dragon
-- Beardie
-- TheAmir259
-- GamingBloke
-- SquireJames
-- Erato
-- DJ Nekkid
+- Leander  
+- Ameecher  
+- Voyager One  
+- Class93  
+- RailwayMan  
+- KubaP  
+- AlmostCthuluhu  
+- Audigex  
+- Gwyd  
+- Ronstar  
+- Purno  
+- le_harv  
+- Helmar  
+- Pilot  
+- Growl  
+- Red Dragon  
+- Beardie  
+- TheAmir259  
+- GamingBloke  
+- SquireJames  
+- Erato  
+- DJ Nekkid  
 
 ... And other BROS artists who's names have been lost along the way
 
@@ -101,5 +104,5 @@ If you want to add to the pack, just pull request it and it might make it in.
 Alternatively, if you just want to steal the build script(s) then go wild.
 
 ### License
-This project is licensed under either the GPLv2 license
+This project is licensed under the GPLv2 license
 See [LICENSE](./LICENSE) for license details
