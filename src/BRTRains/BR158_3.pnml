@@ -38,6 +38,10 @@ spriteset(spriteset_BR158c_FGW, "gfx/BR158c.png") {
 	template_train32px(0, 513)
 }
 
+spriteset(spriteset_BR158c_Northern, "gfx/BR158c.png") {
+	template_train32px(0, 538)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR158_3,cargo_subtype){
     0:	spriteset_BR158a_RegionalExpress;
 	1:	spriteset_BR158a_ArrivaTPNS;
@@ -48,6 +52,7 @@ switch(FEAT_TRAINS,SELF, sw_BR158_3,cargo_subtype){
 	6:	spriteset_BR158a_EMT;
 	7:	spriteset_BR158a_NSE;
 	8:	spriteset_BR158a_SWT;
+	9:	spriteset_BR158a_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR158b_3,cargo_subtype){
@@ -60,6 +65,7 @@ switch(FEAT_TRAINS,SELF, sw_BR158b_3,cargo_subtype){
 	6:	spriteset_BR158b_EMT;
 	7:	spriteset_BR158b_NSE;
 	8:	spriteset_BR158b_SWT;
+	9:	spriteset_BR158b_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR158c,cargo_subtype){
@@ -72,6 +78,7 @@ switch(FEAT_TRAINS,SELF, sw_BR158c,cargo_subtype){
 	6:	spriteset_BR158c_EMT;
 	7:	spriteset_BR158c_NSE;
 	8:	spriteset_BR158c_SWT;
+	9:	spriteset_BR158c_Northern;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR158_3, extra_callback_info1) {
@@ -90,6 +97,7 @@ switch(FEAT_TRAINS,SELF,sw_BR158_3_cargo_subtype_text,cargo_subtype){
 	6:	return string(str_EMT);
 	7:	return string(str_NSE);
 	8:	return string(str_SWT);
+	9:	return string(str_Northern);
        return CB_RESULT_NO_TEXT;
 }
 
