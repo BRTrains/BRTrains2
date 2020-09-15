@@ -1,0 +1,227 @@
+spriteset(spriteset_BR333_Purchase, "gfx/BR333.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR333a_NorthernMetro, "gfx/BR333.png") {
+	template_train32px(0, 14)
+}
+
+spriteset(spriteset_BR333b_NorthernMetro, "gfx/BR333.png") {
+	template_train32px(0, 40)
+}
+
+spriteset(spriteset_BR333d_NorthernMetro, "gfx/BR333.png") {
+	template_train32px(0, 66)
+}
+
+spriteset(spriteset_BR333c_NorthernMetro, "gfx/BR333.png") {
+	template_train32px(0, 91)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR333a,cargo_subtype){
+    0:	spriteset_BR333a_NorthernMetro;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR333b,cargo_subtype){
+    0:	spriteset_BR333b_NorthernMetro;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR333c,cargo_subtype){
+    0:	spriteset_BR333c_NorthernMetro;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR333d,cargo_subtype){
+    0:	spriteset_BR333d_NorthernMetro;
+}
+
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR333, extra_callback_info1) {
+	1: return item_BR333b;
+	1: return item_BR333d;
+	2: return item_BR333c;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR333_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_NorthernRailMetro);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR333, 395) {
+	property {
+		name: 							string(STR_NAME_BR333);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1992,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					30;
+		cost_factor:					56;
+		running_cost_factor:			32;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1566 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					98;
+		weight:							121 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.06;
+		air_drag_coefficient:			0.06;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR333_usage),string(str_BR333_eos),string(str_BR333_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR333_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR333;
+	default: 							sw_BR333a;
+	purchase:							spriteset_BR333_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+}
+}
+
+item (FEAT_TRAINS, item_BR333b, 396) {
+	property {
+		name: 							string(STR_NAME_BR333);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1992,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					93;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.06;
+		air_drag_coefficient:			0.06;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR333b;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+	create_effect:						electric_create_visual_effect;
+}
+}
+
+item (FEAT_TRAINS, item_BR333c, 397) {
+	property {
+		name: 							string(STR_NAME_BR333);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1992,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					98;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.06;
+		air_drag_coefficient:			0.06;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR333c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+
+}
+}
+
+item (FEAT_TRAINS, item_BR333d, 398) {
+	property {
+		name: 							string(STR_NAME_BR333);
+		climates_available: 			NO_CLIMATE;
+		introduction_date:				date(1992,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							0 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					98;
+		weight:							0 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.06;
+		air_drag_coefficient:			0.06;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BR333c;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+
+}
+}

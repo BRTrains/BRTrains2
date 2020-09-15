@@ -395,6 +395,11 @@ str_BR323_usage					:Suburban Passenger
 str_BR323_eos					:---
 str_BR323_liveries				:Regional Railways, Centro, First North Western, First North Western - Barbie, Northern, London Midland
 
+STR_NAME_BR333					:British Rail Class 333
+str_BR333_usage					:Suburban Passenger
+str_BR333_eos					:---
+str_BR333_liveries				:Northern Trains, Northern (WYPTE), Northern Spirit
+
 STR_NAME_BR350					:British Rail Class 350 'Desiro'
 str_BR350_usage					:Passenger
 str_BR350_eos					:---
