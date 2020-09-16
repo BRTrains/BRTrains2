@@ -3,19 +3,19 @@ spriteset(spriteset_BR333_Purchase, "gfx/BR333.png") {
 }
 
 spriteset(spriteset_BR333a_NorthernMetro, "gfx/BR333.png") {
-	template_train32px(0, 14)
+	template_train32px(0, 89)
 }
 
 spriteset(spriteset_BR333b_NorthernMetro, "gfx/BR333.png") {
-	template_train32px(0, 40)
+	template_train32px(0, 39)
 }
 
 spriteset(spriteset_BR333d_NorthernMetro, "gfx/BR333.png") {
-	template_train32px(0, 66)
+	template_train32px(0, 64)
 }
 
 spriteset(spriteset_BR333c_NorthernMetro, "gfx/BR333.png") {
-	template_train32px(0, 91)
+	template_train32px(0, 14)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR333a,cargo_subtype){
@@ -37,8 +37,8 @@ switch(FEAT_TRAINS,SELF, sw_BR333d,cargo_subtype){
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR333, extra_callback_info1) {
 	1: return item_BR333b;
-	1: return item_BR333d;
-	2: return item_BR333c;
+	2: return item_BR333d;
+	3: return item_BR333c;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
@@ -47,7 +47,7 @@ switch(FEAT_TRAINS,SELF,sw_BR333_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR333, 395) {
+item (FEAT_TRAINS, item_BR333, 3331) {
 	property {
 		name: 							string(STR_NAME_BR333);
 		climates_available: 			ALL_CLIMATES;
@@ -94,7 +94,7 @@ item (FEAT_TRAINS, item_BR333, 395) {
 }
 }
 
-item (FEAT_TRAINS, item_BR333b, 396) {
+item (FEAT_TRAINS, item_BR333b, 3332) {
 	property {
 		name: 							string(STR_NAME_BR333);
 		climates_available: 			NO_CLIMATE;
@@ -138,7 +138,7 @@ item (FEAT_TRAINS, item_BR333b, 396) {
 }
 }
 
-item (FEAT_TRAINS, item_BR333c, 397) {
+item (FEAT_TRAINS, item_BR333c, 3333) {
 	property {
 		name: 							string(STR_NAME_BR333);
 		climates_available: 			NO_CLIMATE;
@@ -182,7 +182,7 @@ item (FEAT_TRAINS, item_BR333c, 397) {
 }
 }
 
-item (FEAT_TRAINS, item_BR333d, 398) {
+item (FEAT_TRAINS, item_BR333d, 3334) {
 	property {
 		name: 							string(STR_NAME_BR333);
 		climates_available: 			NO_CLIMATE;
@@ -219,7 +219,7 @@ item (FEAT_TRAINS, item_BR333d, 398) {
 	graphics {
 
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR333c;
+	default: 							sw_BR333d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
 
