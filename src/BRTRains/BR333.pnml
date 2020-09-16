@@ -18,20 +18,40 @@ spriteset(spriteset_BR333c_NorthernMetro, "gfx/BR333.png") {
 	template_train32px(0, 14)
 }
 
+spriteset(spriteset_BR333a_Northern, "gfx/BR333.png") {
+	template_train32px(0, 189)
+}
+
+spriteset(spriteset_BR333b_Northern, "gfx/BR333.png") {
+	template_train32px(0, 139)
+}
+
+spriteset(spriteset_BR333d_Northern, "gfx/BR333.png") {
+	template_train32px(0, 164)
+}
+
+spriteset(spriteset_BR333c_Northern, "gfx/BR333.png") {
+	template_train32px(0, 114)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR333a,cargo_subtype){
     0:	spriteset_BR333a_NorthernMetro;
+	1:	spriteset_BR333a_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR333b,cargo_subtype){
     0:	spriteset_BR333b_NorthernMetro;
+	1:	spriteset_BR333b_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR333c,cargo_subtype){
     0:	spriteset_BR333c_NorthernMetro;
+	1:	spriteset_BR333c_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR333d,cargo_subtype){
     0:	spriteset_BR333d_NorthernMetro;
+	1:	spriteset_BR333d_Northern;
 }
 
 
@@ -44,6 +64,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR333, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR333_cargo_subtype_text,cargo_subtype){
     0:	return string(str_NorthernRailMetro);
+	1:	return string(str_Northern);
        return CB_RESULT_NO_TEXT;
 }
 
