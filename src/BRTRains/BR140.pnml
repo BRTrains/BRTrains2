@@ -1,59 +1,37 @@
-spriteset(spriteset_BR141_Purchase, "gfx/BR140-143.png") {
-	template_purchase(88, 0)
+spriteset(spriteset_BR140_Purchase, "gfx/BR140-143.png") {
+	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR141a_Blue, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 133)
+spriteset(spriteset_BR140a_Blue, "gfx/BR140-143.png") {
+	template_train28px_pacer(0, 13)
 }
 
-spriteset(spriteset_BR141b_Blue, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 153)
-}
-
-spriteset(spriteset_BR141a_WYPTEMetro, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 53)
-}
-
-spriteset(spriteset_BR141b_WYPTEMetro, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 73)
-}
-
-spriteset(spriteset_BR141a_WYPTEVerona, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 93)
-}
-
-spriteset(spriteset_BR141b_WYPTEVerona, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 113)
+spriteset(spriteset_BR140b_Blue, "gfx/BR140-143.png") {
+	template_train28px_pacer(0, 33)
 }
 
 
-switch(FEAT_TRAINS,SELF, sw_BR141a,cargo_subtype){
-    0:	spriteset_BR141a_Blue;
-	1:	spriteset_BR141a_WYPTEMetro;
-	2:	spriteset_BR141a_WYPTEVerona;
+switch(FEAT_TRAINS,SELF, sw_BR140a,cargo_subtype){
+    0:	spriteset_BR140a_Blue;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR141b,cargo_subtype){
-    0:	spriteset_BR141b_Blue;
-	1:	spriteset_BR141b_WYPTEMetro;
-	2:	spriteset_BR141b_WYPTEVerona;
+switch(FEAT_TRAINS,SELF, sw_BR140b,cargo_subtype){
+    0:	spriteset_BR140b_Blue;
 }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_BR141, extra_callback_info1) {
-	1: return item_141b;
+switch (FEAT_TRAINS, SELF, switch_articulated_BR140, extra_callback_info1) {
+	1: return item_140b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR141_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BR140_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRPrototype);
-	1:	return string(str_WYPTEMetro);
-	2:	return string(str_WYPTEVerona);
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR141, 1411) {
+item (FEAT_TRAINS, item_BR140, 1401) {
 	property {
-		name: 							string(STR_NAME_BR141);
+		name: 							string(STR_NAME_BR140);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1984,4,21);
 		model_life:						8;
@@ -75,8 +53,8 @@ item (FEAT_TRAINS, item_BR141, 1411) {
 		running_cost_base:				RUNNING_COST_DIESEL;
 		dual_headed:					0;
 		default_cargo_type:				PASS;
-		cargo_capacity:					50;
-		weight:							26 ton;
+		cargo_capacity:					52;
+		weight:							23 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.3;
 		air_drag_coefficient:			0.1;
@@ -87,21 +65,21 @@ item (FEAT_TRAINS, item_BR141, 1411) {
 		cargo_age_period:				185;
 		}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR141_usage),string(str_BR141_eos),string(str_BR141_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR140_usage),string(str_BR140_eos),string(str_BR140_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR141_cargo_subtype_text;
-	articulated_part:        			switch_articulated_BR141;
-	default: 							sw_BR141a;
-	purchase:							spriteset_BR141_Purchase;
+	cargo_subtype_text:					sw_BR140_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR140;
+	default: 							sw_BR140a;
+	purchase:							spriteset_BR140_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_dmu_sound;
 }
 }
 
-item (FEAT_TRAINS, item_141b, 1412) {
+item (FEAT_TRAINS, item_140b, 1402) {
 	property {
-		name: 							string(STR_NAME_BR141);
+		name: 							string(STR_NAME_BR140);
 		climates_available: 			NO_CLIMATE;
 		introduction_date:				date(1984,4,21);
 		model_life:						8;
@@ -123,8 +101,8 @@ item (FEAT_TRAINS, item_141b, 1412) {
 		running_cost_base:				RUNNING_COST_DIESEL;
 		dual_headed:					0;
 		default_cargo_type:				PASS;
-		cargo_capacity:					44;
-		weight:							26;
+		cargo_capacity:					50;
+		weight:							23 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.3;
 		air_drag_coefficient:			0.1;
@@ -136,7 +114,7 @@ item (FEAT_TRAINS, item_141b, 1412) {
 		}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR141b;
+	default: 							sw_BR140b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_dmu_sound;
