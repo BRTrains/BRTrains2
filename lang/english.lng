@@ -229,6 +229,26 @@ str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
 str_BR91_liveries				:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
+STR_NAME_BR140					:British Rail Class 140 'Pacer' Prototype
+str_BR140_usage					:Passenger
+str_BR140_eos					:---
+str_BR140_liveries				:BR Blue
+
+STR_NAME_BR141					:British Rail Class 141 'Pacer'
+str_BR141_usage					:Passenger
+str_BR141_eos					:---
+str_BR141_liveries				:BR Blue, WYTPE Metro, WYTPE Verona Green
+
+STR_NAME_BR142					:British Rail Class 142 'Pacer'
+str_BR142_usage					:Passenger
+str_BR142_eos					:---
+str_BR142_liveries				:
+
+STR_NAME_BR143					:British Rail Class 143 'Pacer'
+str_BR143_usage					:Passenger
+str_BR143_eos					:---
+str_BR143_liveries				:Regional Rail, Valley Lines, WYTPE Metro, Wessex Trains, Northern Rail, Great Western Railway
+
 STR_NAME_BR150					:British Rail Class 150/0 'Sprinter'
 str_BR150_usage					:Passenger
 str_BR150_eos					:---
@@ -1032,6 +1052,7 @@ str_TfL							: (TfL Rail)
 str_thameslink					: (BR Thameslink)
 str_ThamesTrains				: (Thames Trains)
 str_ROSCO						: (Transitional Livery)
+str_ValleyLines                 : (Valley Lines)
 str_Virgin						: (Virgin Trains)
 str_VirginEC					: (Virgin East Coast)
 str_VirginSilk                  : (Virgin "Flowing Silk")
@@ -1046,8 +1067,10 @@ str_WessexCornwall				: (Wessex Trains - Cornwall and Devon Ad.)
 str_WessexGinster				: (Wessex Trains - Ginsters)
 str_WessexHeart					: (Wessex Trains - Heart of Wessex)
 str_WessexLooe					: (Wessex Trains - Looe Valley Ad.)
+str_WessexYork                  : (Wessex Trains - York)
 str_WCRC						: (West Coast Railway Company)
 str_Wrexham						: (Wrexham & Shropshire)
 str_WYPTEMetro					: (WYPTE Metro)
+str_WYPTEVerona                 : (WYPTE Verona Green and Cream)
 str_XC							: (Cross Country)
 str_xfcc						: (Thameslink Ex-First Capital Connect)
