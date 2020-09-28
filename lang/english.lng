@@ -184,10 +184,20 @@ str_BR37_usage					:Mixed Traffic
 str_BR37_eos					:---
 str_BR37_liveries				:BR Blue, BR Green, BR Large Logo, Civil Engineers 'Dutch', Colas Rail, DB Schenker, Departmental Grey, DRS, EWS, Harry Needle Railroad, Intercity, Loadhaul, Mainline Freight, Railfreight Coal, Railfreight Construction, Railfreight Distribution, Railfreight Large Logo, Railfreight Petroleum, Regional Railways, Royal Scotsman
 
+STR_NAME_BR47					:British Rail Class 47
+str_BR47_usage					:Mixed Traffic
+str_BR47_eos					:---
+str_BR47_liveries				:BR Green, BR Blue, BR Large Logo, BR Large Logo (Alternate), Porterbrook, EWS, Anglia, InterCity, West Coast, GWR Green, Virgin, Colas Rail, ONE, Freightliner
+
 STR_NAME_BR55					:British Rail Class 55 'Deltic'
 str_BR55_usage					:Express Passenger
 str_BR55_eos					:1982
 str_BR55_liveries				:BR Green, BR Green with Yellow Front, BR Blue
+
+STR_NAME_BR57					:British Rail Class 57
+str_BR57_usage					:Mixed Traffic
+str_BR57_eos					:---
+str_BR57_liveries				:
 
 STR_NAME_BR60					:British Rail Class 60 'Tug'
 str_BR60_usage					:Mixed Freight
@@ -882,6 +892,8 @@ str_BRGreenCentre				: (BR Green - Centre Headcode)
 str_BRGreenSplit				: (BR Green - Split Box)
 str_BRGreenYellow				: (BR Green - Yellow Front)
 str_BRGrey						: (BR General Grey)
+str_BRLLogo				: (BR Large Logo)
+str_BRLLogoAlt  				: (BR Large Logo - Alternate)
 str_BRLLogoCentre				: (BR Large Logo - Centre Headcode)
 str_BRLLogoSplit				: (BR Large Logo - Split Box)
 str_BRMalachite					: (BR Malachite Green)
@@ -985,6 +997,7 @@ str_MMLBlue						: (Midland Mainline Blue)
 str_MMLTealTang					: (Midland Mainline Teal & Tangerine)
 str_NatEx						: (National Express)
 str_NatExScotRail				: (ScotRail - National Express)
+str_NetworkRail                 : (Network Rail)
 str_Northern                    : (Northern)
 str_NorthernExp1				: (Northern Rail - Experimental 1)
 str_NorthernExp2				: (Northern Rail - Experimental 2)
@@ -1055,9 +1068,10 @@ str_thameslink					: (BR Thameslink)
 str_ThamesTrains				: (Thames Trains)
 str_ROSCO						: (Transitional Livery)
 str_ValleyLines                 : (Valley Lines)
-str_Virgin						: (Virgin Trains)
+str_Virgin      				: (Virgin Trains)
 str_VirginEC					: (Virgin East Coast)
 str_VirginSilk                  : (Virgin "Flowing Silk")
+str_VirginPretendolino          : (Virgin "Pretendolino")
 str_WAGNPu						: (WAGN Purple)
 str_WAGNPro						: (WAGN Promotional Livery)
 str_WAGNWh						: (WAGN White)
