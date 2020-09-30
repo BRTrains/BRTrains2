@@ -73,7 +73,7 @@ item (FEAT_TRAINS, item_BR57, 571) {
 		cost_factor:					38;
 		running_cost_factor:			37;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							75 mph;
+		speed:							95 mph;
 		misc_flags:						TRAIN_FLAG_FLIP;
 		refit_cost:						0;
 		track_type:						RAIL;
@@ -83,7 +83,7 @@ item (FEAT_TRAINS, item_BR57, 571) {
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							112 ton;
+		weight:							117 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.275;
 		air_drag_coefficient:			0.05;
