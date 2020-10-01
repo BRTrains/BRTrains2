@@ -9,115 +9,42 @@ spriteset(spriteset_BR170b_Central, "gfx/BR170.png") {
 	template_train32px(0, 63)
 }
 
-spriteset(spriteset_BR170a_Central2, "gfx/BR170.png") {
-	template_train32px(0, 163)
-}
-
-spriteset(spriteset_BR170b_Central2, "gfx/BR170.png") {
-	template_train32px(0, 213)
-}
-
-spriteset(spriteset_BR170a_LondonMidland2, "gfx/BR170.png") {
+spriteset(spriteset_BR170a_LondonMidland, "gfx/BR170.png") {
 	template_train32px(0, 88)
 }
-spriteset(spriteset_BR170b_LondonMidland2, "gfx/BR170.png") {
+spriteset(spriteset_BR170b_LondonMidland, "gfx/BR170.png") {
 	template_train32px(0, 138)
 }
 
-spriteset(spriteset_BR170a_LondonMidland, "gfx/BR170a.png") {
-	template_train170pt(0, 14)
+spriteset(spriteset_BR170a_SWT, "gfx/BR170.png") {
+	template_train32px(0, 163)
 }
-spriteset(spriteset_BR170b_LondonMidland, "gfx/BR170b.png") {
-	template_train170pt(0, 14)
-}
-
-spriteset(spriteset_BR170a_One, "gfx/BR170a.png") {
-	template_train170pt(0, 41)
-}
-spriteset(spriteset_BR170b_One, "gfx/BR170b.png") {
-	template_train170pt(0, 41)
+spriteset(spriteset_BR170b_SWT, "gfx/BR170.png") {
+	template_train32px(0, 213)
 }
 
-spriteset(spriteset_BR170a_ScotRailSaltire, "gfx/BR170a.png") {
-	template_train170pt(0, 68)
+spriteset(spriteset_BR170a_GreaterAnglia, "gfx/BR170.png") {
+	template_train32px(0, 238)
 }
-spriteset(spriteset_BR170b_ScotRailSaltire, "gfx/BR170b.png") {
-	template_train170pt(0, 68)
-}
-
-spriteset(spriteset_BR170a_SWT, "gfx/BR170a.png") {
-	template_train170pt(0, 95)
-}
-spriteset(spriteset_BR170b_SWT, "gfx/BR170b.png") {
-	template_train170pt(0, 95)
-}
-
-spriteset(spriteset_BR170a_FNWBarbie, "gfx/BR170a.png") {
-	template_train170pt(0, 122)
-}
-spriteset(spriteset_BR170b_FNWBarbie, "gfx/BR170b.png") {
-	template_train170pt(0, 122)
-}
-
-spriteset(spriteset_BR170a_ScotRail, "gfx/BR170a.png") {
-	template_train170pt(0, 149)
-}
-spriteset(spriteset_BR170b_ScotRail, "gfx/BR170b.png") {
-	template_train170pt(0, 149)
-}
-
-spriteset(spriteset_BR170a_MMLTealTang, "gfx/BR170a.png") {
-	template_train170pt(0, 176)
-}
-spriteset(spriteset_BR170b_MMLTealTang, "gfx/BR170b.png") {
-	template_train170pt(0, 176)
-}
-
-spriteset(spriteset_BR170a_StrathclydePTE, "gfx/BR170a.png") {
-	template_train170pt(0, 203)
-}
-spriteset(spriteset_BR170b_StrathclydePTE, "gfx/BR170b.png") {
-	template_train170pt(0, 203)
-}
-
-spriteset(spriteset_BR170a_GA_White, "gfx/BR170a.png") {
-	template_train170pt(0, 230)
-}
-spriteset(spriteset_BR170b_GA_White, "gfx/BR170b.png") {
-	template_train170pt(0, 230)
+spriteset(spriteset_BR170b_GreaterAnglia, "gfx/BR170.png") {
+	template_train32px(0, 288)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR170a,cargo_subtype){
-    0:	spriteset_BR170a_Central; // Central Trains
-	1:	spriteset_BR170a_LondonMidland; // London Midland
-	2:	spriteset_BR170a_One; // ONE
-	3:	spriteset_BR170a_ScotRailSaltire; // Scotrail (Saltire)
-	4:	spriteset_BR170a_SWT; // South West Trains
-	5:	spriteset_BR170a_FNWBarbie; // First Barbie
-	6:	spriteset_BR170a_ScotRail; // National Express Scotrail
-	7:	spriteset_BR170a_MMLTealTang; // Midland Mainline
-	8:	spriteset_BR170a_StrathclydePTE; // Strathclyde Passenger Transport
-	9:	spriteset_BR170a_GA_White; // Greater Anglia White
-	10:	spriteset_BR170a_Central2; // Central Trains
-	11:	spriteset_BR170a_LondonMidland2; // London Midland
+	0:	spriteset_BR170a_Central;
+	1:	spriteset_BR170a_LondonMidland;
+	2:	spriteset_BR170a_SWT; // South West Trains
+	3:	spriteset_BR170a_GreaterAnglia;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR170b,cargo_subtype){
-    0:	spriteset_BR170b_Central;
+	0:	spriteset_BR170b_Central;
 	1:	spriteset_BR170b_LondonMidland;
-	2:	spriteset_BR170b_One; // ONE
-	3:	spriteset_BR170b_ScotRailSaltire; // Scotrail (Saltire)
-	4:	spriteset_BR170b_SWT; // South West Trains
-	5:	spriteset_BR170b_FNWBarbie; // First Barbie
-	6:	spriteset_BR170b_ScotRail; // National Express Scotrail
-	7:	spriteset_BR170b_MMLTealTang; // Midland Mainline
-	8:	spriteset_BR170b_StrathclydePTE; // Strathclyde Passenger Transport
-	9:	spriteset_BR170b_GA_White; // Greater Anglia White
-	10:	spriteset_BR170b_Central2; // Central Trains
-	11:	spriteset_BR170b_LondonMidland2; // London Midland
+	2:	spriteset_BR170b_SWT; // South West Trains
+	3:	spriteset_BR170b_GreaterAnglia;
 }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_BR170, extra_callback_info1) {	
+switch (FEAT_TRAINS, SELF, switch_articulated_BR170_2car, extra_callback_info1) {	
 	1: return item_170b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
@@ -125,16 +52,8 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR170, extra_callback_info1) {
 switch(FEAT_TRAINS,SELF,sw_BR170_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Central);
 	1:	return string(str_LondonMidland);
-	2:	return string(str_One);
-	3:	return string(str_ScotRailSaltire);
-	4:	return string(str_SWT);
-	5:	return string(str_FNWBarbie);
-	6:	return string(str_ScotRail);
-	7:	return string(str_MMLTealTang);
-	8:	return string(str_StrathclydePTE);
-	9:	return string(str_GA_White);
-	10:	return string(str_GRFTest1);
-	11:	return string(str_GRFTest2);
+	2:	return string(str_SWT);
+	3:	return string(str_GA_White);       
        return CB_RESULT_NO_TEXT;
 }
 
@@ -177,7 +96,7 @@ item (FEAT_TRAINS, item_BR170, 62) {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR170_usage),string(str_BR170_eos),string(str_BR170_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR170_cargo_subtype_text;
-	articulated_part:        			switch_articulated_BR170;
+	articulated_part:        			switch_articulated_BR170_2car;
 	default: 							sw_BR170a;
 	purchase:							spriteset_BR170_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
