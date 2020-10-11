@@ -98,6 +98,22 @@ spriteset(spriteset_BR387_d_c2c, "gfx/Electrostar.png") {
 	template_electrostar(1734, 52)
 }
 
+spriteset(spriteset_BR387_a_hexpress, "gfx/Electrostar.png") {
+	template_electrostar(1734, 666)
+}
+
+spriteset(spriteset_BR387_b_hexpress, "gfx/Electrostar.png") {
+	template_electrostar(1734, 692)
+}
+
+spriteset(spriteset_BR387_c_hexpress, "gfx/Electrostar.png") {
+	template_electrostar(1734, 744)
+}
+
+spriteset(spriteset_BR387_d_hexpress, "gfx/Electrostar.png") {
+	template_electrostar(1734, 718)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR387_a,cargo_subtype){
     0:	spriteset_BR387_a_gtr;
     1:	spriteset_BR387_a_gatexun;
@@ -105,6 +121,7 @@ switch(FEAT_TRAINS,SELF, sw_BR387_a,cargo_subtype){
 	3:	spriteset_BR387_a_gwrun;
 	4:  spriteset_BR387_a_gwr;
 	5:	spriteset_BR387_a_c2c;
+	6:	spriteset_BR387_a_hexpress;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR387_b,cargo_subtype){
@@ -114,6 +131,7 @@ switch(FEAT_TRAINS,SELF, sw_BR387_b,cargo_subtype){
 	3:	spriteset_BR387_b_gwrun;
 	4:  spriteset_BR387_b_gwr;
 	5:	spriteset_BR387_b_c2c;
+	6:	spriteset_BR387_b_hexpress;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR387_c,cargo_subtype){
@@ -123,6 +141,7 @@ switch(FEAT_TRAINS,SELF, sw_BR387_c,cargo_subtype){
 	3:	spriteset_BR387_c_gwrun;
 	4:  spriteset_BR387_c_gwr;
 	5:	spriteset_BR387_c_c2c;
+	6:	spriteset_BR387_c_hexpress;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR387_d,cargo_subtype){
@@ -132,6 +151,7 @@ switch(FEAT_TRAINS,SELF, sw_BR387_d,cargo_subtype){
 	3:	spriteset_BR387_d_gwrun;
 	4:  spriteset_BR387_d_gwr;
 	5:	spriteset_BR387_d_c2c;
+	6:	spriteset_BR387_d_hexpress;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR387_, extra_callback_info1) {
@@ -148,6 +168,7 @@ switch(FEAT_TRAINS,SELF,sw_BR387__cargo_subtype_text,cargo_subtype){
 	3:	return string(str_GWRGreenUn);
     4:	return string(str_GWRGreen);
 	5:	return string(str_C2C);
+	6:	return string(str_HeathrowExpressPurple);
        return CB_RESULT_NO_TEXT;
 }
 
