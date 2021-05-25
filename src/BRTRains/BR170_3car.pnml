@@ -30,6 +30,10 @@ spriteset(spriteset_BR170c_WMR, "gfx/BR170.png") {
 	template_train32px(0, 488)
 }
 
+spriteset(spriteset_BR170c_EMRMaroon, "gfx/BR170.png") {
+	template_train32px(0, 563)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR170c,cargo_subtype){
     0:	spriteset_BR170c_Central;
 	1:	spriteset_BR170c_LondonMidland;
@@ -38,6 +42,7 @@ switch(FEAT_TRAINS,SELF, sw_BR170c,cargo_subtype){
 	4:	spriteset_BR170c_ScotRail;
 	5:	spriteset_BR170c_ScotRailSaltire;
 	6:	spriteset_BR170c_WMR;
+	7:	spriteset_BR170c_EMRMaroon;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR170_3car, extra_callback_info1) {
@@ -54,6 +59,7 @@ switch(FEAT_TRAINS,SELF,sw_BR170_3_cargo_subtype_text,cargo_subtype){
 	4:	return string(str_ScotRail);
 	5:	return string(str_ScotRailSaltire);
 	6:	return string(str_WMR);
+	7:	return string(str_EMRMaroon);
        return CB_RESULT_NO_TEXT;
 }
 
