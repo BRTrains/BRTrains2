@@ -59,6 +59,18 @@ template template_train20px(x,y){
     [ x+115, y, 15, 15, -7, -9]
 }
 
+template template_train20px_anim(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 17, -3, -9, ANIM|WHITE]
+    [ x+10, y, 15, 15, -7, -9, ANIM|WHITE]
+    [ x+27, y, 20, 12, -6, -6, ANIM|WHITE]
+    [ x+49, y, 15, 15, -1, -5, ANIM|WHITE]
+    [ x+66, y, 8, 17, -3, -3, ANIM|WHITE]
+    [ x+76, y, 15, 15, -13, -5, ANIM|WHITE]
+    [ x+93, y, 20, 12, -13, -7, ANIM|WHITE]
+    [ x+115, y, 15, 15, -7, -9, ANIM|WHITE]
+}
+
 template template_train21px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 18, -3, -9]
@@ -97,14 +109,14 @@ template template_train28px(x,y){
 
 template template_train28px_pacer(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 19, -3, -9]
-    [ x+9, y, 19, 15, -11, -9]
-    [ x+29, y, 28, 12, -7, -7]
-    [ x+58, y, 19, 15, -5, -8]
-    [ x+78, y, 8, 19, -3, -9]
-    [ x+87, y, 19, 15, -15, -6]
-    [ x+107, y, 28, 12, -17, -6]
-    [ x+136, y, 19, 15, -8, -9]
+    [ x, y, 8, 19, -3, -9, NOANIM|NOWHITE]
+    [ x+9, y, 19, 15, -11, -9, NOANIM|NOWHITE]
+    [ x+29, y, 28, 12, -7, -7, NOANIM|NOWHITE]
+    [ x+58, y, 19, 15, -5, -8, NOANIM|NOWHITE]
+    [ x+78, y, 8, 19, -3, -9, NOANIM|NOWHITE]
+    [ x+87, y, 19, 15, -15, -6, NOANIM|NOWHITE]
+    [ x+107, y, 28, 12, -17, -6, NOANIM|NOWHITE]
+    [ x+136, y, 19, 15, -8, -9, NOANIM|NOWHITE]
 }
 
 template template_train28px2(x,y){
@@ -158,14 +170,26 @@ template template_train30px(x,y){
 
 template template_train32px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
-    [ x+9, y, 21, 18, -12, -10,		NOANIM|NOWHITE]
-    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
-    [ x+64, y, 21, 18, -5, -10,		NOANIM|NOWHITE]
-    [ x+86, y, 8, 24, -3, -12,		NOANIM|NOWHITE]
-    [ x+95, y, 21, 18, -12, -10,	NOANIM|NOWHITE]
-    [ x+117, y, 32, 12, -16, -8,	NOANIM|NOWHITE]
-    [ x+150, y, 21, 18, -5, -10,	NOANIM|NOWHITE]
+    [ x, y, 8, 24, -3, -12,			NOANIM|WHITE]
+    [ x+9, y, 21, 18, -12, -10,		NOANIM|WHITE]
+    [ x+31, y, 32, 12, -16, -8,		NOANIM|WHITE]
+    [ x+64, y, 21, 18, -5, -10,		NOANIM|WHITE]
+    [ x+86, y, 8, 24, -3, -12,		NOANIM|WHITE]
+    [ x+95, y, 21, 18, -12, -10,	NOANIM|WHITE]
+    [ x+117, y, 32, 12, -16, -8,	NOANIM|WHITE]
+    [ x+150, y, 21, 18, -5, -10,	NOANIM|WHITE]
+}
+
+template template_train32px_anim(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12,			ANIM|NOWHITE]
+    [ x+9, y, 21, 18, -12, -10,		ANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -8,		ANIM|NOWHITE]
+    [ x+64, y, 21, 18, -5, -10,		ANIM|NOWHITE]
+    [ x+86, y, 8, 24, -3, -12,		ANIM|NOWHITE]
+    [ x+95, y, 21, 18, -12, -10,	ANIM|NOWHITE]
+    [ x+117, y, 32, 12, -16, -8,	ANIM|NOWHITE]
+    [ x+150, y, 21, 18, -5, -10,	ANIM|NOWHITE]
 }
 
 template template_train32px4v(x,y){
@@ -364,7 +388,12 @@ template template_purchaseptdual(x,y){
 
 template template_purchase(x,y){
     //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
-    [x,     y,      87,     12,     -25,-   6,          NOWHITE]
+    [x,     y,      87,     12,     -25,-   6,          NOANIM|NOWHITE]
+}
+
+template template_purchase_anim(x,y){
+    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
+    [x,     y,      87,     12,     -25,-   6,          ANIM|NOWHITE]
 }
 
 
@@ -442,11 +471,6 @@ switch(FEAT_TRAINS,SELF,sw_47_sound_on,getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
 }
 
-switch(FEAT_TRAINS,SELF,sw_47_sound,param_sounds){
-	0:	sw_default_sound;
-	1:	sw_47_sound_on;
-}
-
 switch(FEAT_TRAINS,SELF,sw_66_sound_on,getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_START: 			sound("sfx/br_horn66.wav");
 	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/66_run.wav");
@@ -466,11 +490,6 @@ switch(FEAT_TRAINS,SELF,sw_gas_sound_on,getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_STOPPED:		sound("sfx/turbot_stop.wav");
 	SOUND_EVENT_RUNNING_16:		sound("sfx/turbot_idle.wav");
 	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
-}
-
-switch(FEAT_TRAINS,SELF,sw_gas_sound,param_sounds){
-	0:	sw_default_sound;
-	1:	sw_gas_sound_on;
 }
 
 switch(FEAT_TRAINS,SELF,sw_steam_sound_on,getbits(extra_callback_info1, 0, 8)){
@@ -494,11 +513,6 @@ switch(FEAT_TRAINS,SELF,sw_LMS_sound_on,getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_STOPPED:		sound("sfx/steam_idle.wav");
 	SOUND_EVENT_RUNNING_16:		sound("sfx/steam_run.wav");
 	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
-}
-
-switch(FEAT_TRAINS,SELF,sw_LMS_sound,param_sounds){
-	0:	sw_defaultsteam_sound;
-	1:	sw_LMS_sound_on;
 }
 
 switch(FEAT_TRAINS,SELF,sw_A4_sound_on,getbits(extra_callback_info1, 0, 8)){
