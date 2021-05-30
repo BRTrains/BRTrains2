@@ -26,25 +26,43 @@ spriteset(spriteset_BR222_5b_MMLBlue, "gfx/BR222.png") {
 	template_train32px(0, 138)
 }
 
+spriteset(spriteset_BR222_5a_EMRMaroon, "gfx/BR222.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR222_5c_EMRMaroon, "gfx/BR222.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BR222_5b_EMRMaroon, "gfx/BR222.png") {
+	template_train32px(0, 288)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR222_5a,cargo_subtype){
     0:	spriteset_BR222_5a_EMT;
+	1:	spriteset_BR222_5a_EMRMaroon;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR222_5b,cargo_subtype){
     0:	spriteset_BR222_5c_EMT;
+	1:	spriteset_BR222_5c_EMRMaroon;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR222_5c,cargo_subtype){
     0:	spriteset_BR222_5c_EMT;
+	1:	spriteset_BR222_5c_EMRMaroon;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR222_5d,cargo_subtype){
     0:	spriteset_BR222_5c_EMT;
+	1:	spriteset_BR222_5c_EMRMaroon;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR222_5e,cargo_subtype){
     0:	spriteset_BR222_5b_EMT;
+	1:	spriteset_BR222_5b_EMRMaroon;
 }
+
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR222_5, extra_callback_info1) {
 	1: return item_222_5b;
@@ -56,6 +74,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR222_5, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR222_5_cargo_subtype_text,cargo_subtype){
     0:	return string(str_EMT);
+	1:	return string(str_EMRMaroon);
        return CB_RESULT_NO_TEXT;
 }
 

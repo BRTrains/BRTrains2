@@ -163,20 +163,37 @@ spriteset(spriteset_BR319d_lm, "gfx/BR319.png") {
 	template_electrostar(0, 286)
 }
 
-spriteset(spriteset_BR319a_northern, "gfx/BR319.png") {
+spriteset(spriteset_BR319a_northernPurple, "gfx/BR319.png") {
 	template_electrostar(0, 390)
 }
 
-spriteset(spriteset_BR319b_northern, "gfx/BR319.png") {
+spriteset(spriteset_BR319b_northernPurple, "gfx/BR319.png") {
 	template_electrostar(0, 416)
 }
 
-spriteset(spriteset_BR319c_northern, "gfx/BR319.png") {
+spriteset(spriteset_BR319c_northernPurple, "gfx/BR319.png") {
 	template_electrostar(176, 442)
 }
 
-spriteset(spriteset_BR319d_northern, "gfx/BR319.png") {
+spriteset(spriteset_BR319d_northernPurple, "gfx/BR319.png") {
 	template_electrostar(0, 442)
+}
+
+
+spriteset(spriteset_BR319a_Northern, "gfx/BR319.png") {
+	template_electrostar(0, 858)
+}
+
+spriteset(spriteset_BR319b_Northern, "gfx/BR319.png") {
+	template_electrostar(0, 884)
+}
+
+spriteset(spriteset_BR319c_Northern, "gfx/BR319.png") {
+	template_electrostar(176, 910)
+}
+
+spriteset(spriteset_BR319d_Northern, "gfx/BR319.png") {
+	template_electrostar(0, 910)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR319a,cargo_subtype){
@@ -190,7 +207,8 @@ switch(FEAT_TRAINS,SELF, sw_BR319a,cargo_subtype){
 	7:spriteset_BR319a_gtrp;
 	8:spriteset_BR319a_lmt;
 	9:spriteset_BR319a_lm;
-	10:spriteset_BR319a_northern;
+	10:spriteset_BR319a_northernPurple;
+	11:spriteset_BR319a_Northern;
 	}
 
 switch(FEAT_TRAINS,SELF, sw_BR319b,cargo_subtype){
@@ -204,7 +222,8 @@ switch(FEAT_TRAINS,SELF, sw_BR319b,cargo_subtype){
 	7:spriteset_BR319b_gtrp;
 	8:spriteset_BR319b_lmt;
 	9:spriteset_BR319b_lm;
-	10:spriteset_BR319b_northern;
+	10:spriteset_BR319b_northernPurple;
+	11:spriteset_BR319b_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR319c,cargo_subtype){
@@ -218,7 +237,8 @@ switch(FEAT_TRAINS,SELF, sw_BR319c,cargo_subtype){
 	7:spriteset_BR319c_gtrp;
 	8:spriteset_BR319c_lmt;
 	9:spriteset_BR319c_lm;
-	10:spriteset_BR319c_northern;
+	10:spriteset_BR319c_northernPurple;
+	11:spriteset_BR319c_Northern;
 }
 
 
@@ -233,7 +253,8 @@ switch(FEAT_TRAINS,SELF, sw_BR319d,cargo_subtype){
 	7:spriteset_BR319d_gtrp;
 	8:spriteset_BR319d_lmt;
 	9:spriteset_BR319d_lm;
-	10:spriteset_BR319d_northern;
+	10:spriteset_BR319d_northernPurple;
+	11:spriteset_BR319d_Northern;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR319, extra_callback_info1) {
@@ -255,6 +276,7 @@ switch(FEAT_TRAINS,SELF,sw_BR319_cargo_subtype_text,cargo_subtype){
     8:	return string(str_ROSCO);
     9:	return string(str_LondonMidland);
     10:	return string(str_NorthernRail);
+	11: return string(str_Northern);
        return CB_RESULT_NO_TEXT;
 }
 

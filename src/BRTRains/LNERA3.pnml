@@ -1,53 +1,53 @@
 spriteset(spriteset_LNERA3_Purchase, "gfx/LNERA3.png") {
-	template_purchase(0, 0)
+	template_purchase_anim(0, 0)
 }
 
 spriteset(spriteset_LNERA3_LNER, "gfx/GNRA1.png") {
-	template_train32px(0, 13)
+	template_train32px_anim(0, 13)
 }
 
 spriteset(spriteset_LNERA3_LNERC, "gfx/GNRA1.png") {
-	template_train32px(0, 13)
+	template_train32px_anim(0, 13)
 }
 
 spriteset(spriteset_LNERA3_WARTIME, "gfx/LNERA3.png") {
-	template_train32px(0, 13)
+	template_train32px_anim(0, 13)
 }
 
 spriteset(spriteset_LNERA3_APPLE, "gfx/LNERA3.png") {
-	template_train32px(0, 38)
+	template_train32px_anim(0, 38)
 }
 
 spriteset(spriteset_LNERA3_BRBLUE, "gfx/LNERA3.png") {
-	template_train32px(0, 63)
+	template_train32px_anim(0, 63)
 }
 
 spriteset(spriteset_LNERA3_BRUNSWICK, "gfx/LNERA3.png") {
-	template_train32px(0, 88)
+	template_train32px_anim(0, 88)
 }
 
 spriteset(spriteset_LNERA3T_LNER, "gfx/LNERA3T.png") {
-	template_train20px(0, 13)
+	template_train20px_anim(0, 13)
 }
 
 spriteset(spriteset_LNERA3T_LNERC, "gfx/LNERA3T.png") {
-	template_train20px(0, 31)
+	template_train20px_anim(0, 31)
 }
 
 spriteset(spriteset_LNERA3T_WARTIME, "gfx/LNERA3T.png") {
-	template_train20px(0, 49)
+	template_train20px_anim(0, 49)
 }
 
 spriteset(spriteset_LNERA3T_APPLE, "gfx/LNERA3T.png") {
-	template_train20px(0, 67)
+	template_train20px_anim(0, 67)
 }
 
 spriteset(spriteset_LNERA3T_BRBLUE, "gfx/LNERA3T.png") {
-	template_train20px(0, 85)
+	template_train20px_anim(0, 85)
 }
 
 spriteset(spriteset_LNERA3T_BRUNSWICK, "gfx/LNERA3T.png") {
-	template_train20px(0, 103)
+	template_train20px_anim(0, 103)
 }
 
 switch(FEAT_TRAINS,SELF, sw_LNERA3T,cargo_subtype){

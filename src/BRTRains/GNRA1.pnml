@@ -1,17 +1,17 @@
 spriteset(spriteset_GNRA1_Purchase, "gfx/GNRA1.png") {
-	template_purchase(0, 0)
+	template_purchase_anim(0, 0)
 }
 
 spriteset(spriteset_GNRA1, "gfx/GNRA1.png") {
-	template_train32px(0, 13)
+	template_train32px_anim(0, 13)
 }
 
 spriteset(spriteset_GNRA1T_GNR, "gfx/GNRA1T.png") {
-	template_train20px(0, 13)
+	template_train20px_anim(0, 13)
 }
 
 spriteset(spriteset_GNRA1T_LNER, "gfx/GNRA1T.png") {
-	template_train20px(0, 31)
+	template_train20px_anim(0, 31)
 }
 
 switch(FEAT_TRAINS,SELF, sw_GNRA1T,cargo_subtype){

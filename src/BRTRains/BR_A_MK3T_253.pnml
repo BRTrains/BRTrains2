@@ -1,0 +1,739 @@
+spriteset(spriteset_BRMK3TF_purchase, "gfx/BRMK3TF.png") {
+	template_purchase(10, 0)
+}
+
+spriteset(spriteset_BRMK3TS_purchase, "gfx/BRMK3TS.png") {
+	template_purchase(10, 0)
+}
+
+spriteset(spriteset_BRMK3TGS_purchase, "gfx/BRMK3TGS.png") {
+	template_purchase(11, 0)
+}
+
+spriteset(spriteset_BRMK3TRSB_purchase, "gfx/BRMK3TRSB.png") {
+	template_purchase(10, 0)
+}
+
+spriteset(spriteset_BRMK3TRUB_purchase, "gfx/BRMK3TRUB.png") {
+	template_purchase(10, 0)
+}
+
+spriteset(spriteset_BRMK3TRUK_purchase, "gfx/BRMK3TRUK.png") {
+	template_purchase(10, 0)
+}
+
+spriteset(spriteset_BRMK3TF_BRBlue, "gfx/BRMK3TF.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BRMK3TS_BRBlue, "gfx/BRMK3TS.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BRMK3TGS_BRBlue, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BRMK3TRSB_BRBlue, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BRMK3TRUB_BRBlue, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BRMK3TRUK_BRBlue, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 13)
+}
+
+//spriteset(spriteset_BRMK3DMB_BRBlue, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 13)
+//}
+
+spriteset(spriteset_BRMK3TF_IntercityExecutive, "gfx/BRMK3TF.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BRMK3TS_IntercityExecutive, "gfx/BRMK3TS.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BRMK3TGS_IntercityExecutive, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BRMK3TRSB_IntercityExecutive, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BRMK3TRUB_IntercityExecutive, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BRMK3TRUK_IntercityExecutive, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 38)
+}
+
+//spriteset(spriteset_BRMK3DMB_IntercityExecutive, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 38)
+//}
+
+spriteset(spriteset_BRMK3TF_IntercitySwallow, "gfx/BRMK3TF.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BRMK3TS_IntercitySwallow, "gfx/BRMK3TS.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BRMK3TGS_IntercitySwallow, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BRMK3TRSB_IntercitySwallow, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BRMK3TRUB_IntercitySwallow, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BRMK3TRUK_IntercitySwallow, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 63)
+}
+
+//spriteset(spriteset_BRMK3DMB_IntercitySwallow, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 63)
+//}
+
+spriteset(spriteset_BRMK3TF_MMLTealTang, "gfx/BRMK3TF.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BRMK3TS_MMLTealTang, "gfx/BRMK3TS.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BRMK3TGS_MMLTealTang, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BRMK3TRSB_MMLTealTang, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BRMK3TRUB_MMLTealTang, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BRMK3TRUK_MMLTealTang, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 88)
+}
+
+//spriteset(spriteset_BRMK3DMB_MMLTealTang, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 88)
+//}
+
+spriteset(spriteset_BRMK3TF_MMLBlue, "gfx/BRMK3TF.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BRMK3TS_MMLBlue, "gfx/BRMK3TS.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BRMK3TGS_MMLBlue, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BRMK3TRSB_MMLBlue, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BRMK3TRUB_MMLBlue, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BRMK3TRUK_MMLBlue, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 113)
+}
+
+//spriteset(spriteset_BRMK3DMB_MMLBlue, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 113)
+//}
+
+spriteset(spriteset_BRMK3TF_EMT, "gfx/BRMK3TF.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BRMK3TS_EMT, "gfx/BRMK3TS.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BRMK3TGS_EMT, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BRMK3TRSB_EMT, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BRMK3TRUB_EMT, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BRMK3TRUK_EMT, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 138)
+}
+
+//spriteset(spriteset_BRMK3DMB_EMT, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 138)
+//}
+
+spriteset(spriteset_BRMK3TF_Virgin, "gfx/BRMK3TF.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BRMK3TS_Virgin, "gfx/BRMK3TS.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BRMK3TGS_Virgin, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BRMK3TRSB_Virgin, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BRMK3TRUB_Virgin, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BRMK3TRUK_Virgin, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 163)
+}
+
+//spriteset(spriteset_BRMK3DMB_Virgin, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 163)
+//}
+
+spriteset(spriteset_BRMK3TF_XC, "gfx/BRMK3TF.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BRMK3TS_XC, "gfx/BRMK3TS.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BRMK3TGS_XC, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BRMK3TRSB_XC, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BRMK3TRUB_XC, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BRMK3TRUK_XC, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 188)
+}
+
+//spriteset(spriteset_BRMK3DMB_XC, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 188)
+//}
+
+spriteset(spriteset_BRMK3TF_GC, "gfx/BRMK3TF.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BRMK3TS_GC, "gfx/BRMK3TS.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BRMK3TGS_GC, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BRMK3TRSB_GC, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BRMK3TRUB_GC, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BRMK3TRUK_GC, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 213)
+}
+
+//spriteset(spriteset_BRMK3DMB_GC, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 213)
+//}
+
+spriteset(spriteset_BRMK3TF_NatEx, "gfx/BRMK3TF.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BRMK3TS_NatEx, "gfx/BRMK3TS.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BRMK3TGS_NatEx, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BRMK3TRSB_NatEx, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BRMK3TRUB_NatEx, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BRMK3TRUK_NatEx, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 238)
+}
+
+//spriteset(spriteset_BRMK3DMB_NatEx, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 238)
+//}
+
+spriteset(spriteset_BRMK3TF_FGW, "gfx/BRMK3TF.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BRMK3TS_FGW, "gfx/BRMK3TS.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BRMK3TGS_FGW, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BRMK3TRSB_FGW, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BRMK3TRUB_FGW, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BRMK3TRUK_FGW, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 263)
+}
+
+//spriteset(spriteset_BRMK3DMB_FGW, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 263)
+//}
+
+spriteset(spriteset_BRMK3TF_GNER, "gfx/BRMK3TF.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BRMK3TS_GNER, "gfx/BRMK3TS.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BRMK3TGS_GNER, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BRMK3TRSB_GNER, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BRMK3TRUB_GNER, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BRMK3TRUK_GNER, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 288)
+}
+
+//spriteset(spriteset_BRMK3DMB_GNER, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 288)
+//}
+
+spriteset(spriteset_BRMK3TF_GCLined, "gfx/BRMK3TF.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BRMK3TS_GCLined, "gfx/BRMK3TS.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BRMK3TGS_GCLined, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BRMK3TRSB_GCLined, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BRMK3TRUB_GCLined, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BRMK3TRUK_GCLined, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 313)
+}
+
+//{spriteset(spriteset_BRMK3DMB_GCLined, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 313)
+//}
+
+spriteset(spriteset_BRMK3TF_GWRGreen, "gfx/BRMK3TF.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BRMK3TS_GWRGreen, "gfx/BRMK3TS.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BRMK3TGS_GWRGreen, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BRMK3TRSB_GWRGreen, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BRMK3TRUB_GWRGreen, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BRMK3TRUK_GWRGreen, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 338)
+}
+
+//spriteset(spriteset_BRMK3DMB_GWRGreen, "gfx/BRMK3DMB.png") {
+//	template_train32px(0, 338)
+//}
+
+switch(FEAT_TRAINS,SELF, sw_253_BRMK3TF,cargo_subtype){
+    0:	spriteset_BRMK3TF_BRBlue;
+    1:	spriteset_BRMK3TF_IntercityExecutive;
+	2:	spriteset_BRMK3TF_IntercitySwallow;
+	3:	spriteset_BRMK3TF_MMLTealTang;
+	4:	spriteset_BRMK3TF_MMLBlue;
+	5:	spriteset_BRMK3TF_EMT;
+	6:	spriteset_BRMK3TF_Virgin;
+	7:	spriteset_BRMK3TF_FGW;
+	8:	spriteset_BRMK3TF_GWRGreen;
+	9:	spriteset_BRMK3TF_XC;
+	10:	spriteset_BRMK3TF_GNER;
+	11:	spriteset_BRMK3TF_NatEx;
+	12:	spriteset_BRMK3TF_GC;
+	13:	spriteset_BRMK3TF_GCLined;
+}
+
+switch(FEAT_TRAINS,SELF, sw_253_BRMK3TS,cargo_subtype){
+    0:	spriteset_BRMK3TS_BRBlue;
+	1:	spriteset_BRMK3TS_IntercityExecutive;
+	2:	spriteset_BRMK3TS_IntercitySwallow;
+	3:	spriteset_BRMK3TS_MMLTealTang;
+	4:	spriteset_BRMK3TS_MMLBlue;
+	5:	spriteset_BRMK3TS_EMT;
+	6:	spriteset_BRMK3TS_Virgin;
+	7:	spriteset_BRMK3TS_FGW;
+	8:	spriteset_BRMK3TS_GWRGreen;
+	9:	spriteset_BRMK3TS_XC;
+	10:	spriteset_BRMK3TS_GNER;
+	11:	spriteset_BRMK3TS_NatEx;
+	12:	spriteset_BRMK3TS_GC;
+	13:	spriteset_BRMK3TS_GCLined;
+}
+
+switch(FEAT_TRAINS,SELF, sw_253_BRMK3TGS,cargo_subtype){
+    0:	spriteset_BRMK3TGS_BRBlue;
+	1:	spriteset_BRMK3TGS_IntercityExecutive;
+	2:	spriteset_BRMK3TGS_IntercitySwallow;
+	3:	spriteset_BRMK3TGS_MMLTealTang;
+	4:	spriteset_BRMK3TGS_MMLBlue;
+	5:	spriteset_BRMK3TGS_EMT;
+	6:	spriteset_BRMK3TGS_Virgin;
+	7:	spriteset_BRMK3TGS_FGW;
+	8:	spriteset_BRMK3TGS_GWRGreen;
+	9:	spriteset_BRMK3TGS_XC;
+	10:	spriteset_BRMK3TGS_GNER;
+	11:	spriteset_BRMK3TGS_NatEx;
+	12:	spriteset_BRMK3TGS_GC;
+	13:	spriteset_BRMK3TGS_GCLined;
+}
+
+switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRSB,cargo_subtype){
+    0:	spriteset_BRMK3TRSB_BRBlue;
+	1:	spriteset_BRMK3TRSB_IntercityExecutive;
+	2:	spriteset_BRMK3TRSB_IntercitySwallow;
+	3:	spriteset_BRMK3TRSB_MMLTealTang;
+	4:	spriteset_BRMK3TRSB_MMLBlue;
+	5:	spriteset_BRMK3TRSB_EMT;
+	6:	spriteset_BRMK3TRSB_Virgin;
+	7:	spriteset_BRMK3TRSB_FGW;
+	8:	spriteset_BRMK3TRSB_GWRGreen;
+	9:	spriteset_BRMK3TRSB_XC;
+	10:	spriteset_BRMK3TRSB_GNER;
+	11:	spriteset_BRMK3TRSB_NatEx;
+	12:	spriteset_BRMK3TRSB_GC;
+	13:	spriteset_BRMK3TRSB_GCLined;
+}
+
+switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRUB,cargo_subtype){
+    0:	spriteset_BRMK3TRUB_BRBlue;
+	1:	spriteset_BRMK3TRUB_IntercityExecutive;
+	2:	spriteset_BRMK3TRUB_IntercitySwallow;
+	3:	spriteset_BRMK3TRUB_MMLTealTang;
+	4:	spriteset_BRMK3TRUB_MMLBlue;
+	5:	spriteset_BRMK3TRUB_EMT;
+	6:	spriteset_BRMK3TRUB_Virgin;
+	7:	spriteset_BRMK3TRUB_FGW;
+	8:	spriteset_BRMK3TRUB_GWRGreen;
+	9:	spriteset_BRMK3TRUB_XC;
+	10:	spriteset_BRMK3TRUB_GNER;
+	11:	spriteset_BRMK3TRUB_NatEx;
+	12:	spriteset_BRMK3TRUB_GC;
+	13:	spriteset_BRMK3TRUB_GCLined;
+}
+
+switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRUK,cargo_subtype){
+    0:	spriteset_BRMK3TRUK_BRBlue;
+	1:	spriteset_BRMK3TRUK_IntercityExecutive;
+	2:	spriteset_BRMK3TRUK_IntercitySwallow;
+	3:	spriteset_BRMK3TRUK_MMLTealTang;
+	4:	spriteset_BRMK3TRUK_MMLBlue;
+	5:	spriteset_BRMK3TRUK_EMT;
+	6:	spriteset_BRMK3TRUK_Virgin;
+	7:	spriteset_BRMK3TRUK_FGW;
+	8:	spriteset_BRMK3TRUK_GWRGreen;
+	9:	spriteset_BRMK3TRUK_XC;
+	10:	spriteset_BRMK3TRUK_GNER;
+	11:	spriteset_BRMK3TRUK_NatEx;
+	12:	spriteset_BRMK3TRUK_GC;
+	13:	spriteset_BRMK3TRUK_GCLined;
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TF, 13) {
+	property {
+		name: 							string(STR_NAME_BRMK3TF);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		power:							0;
+		speed:							125 mph;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					48;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TF;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TF_purchase;
+	speed:								200;
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TS, 14) {
+	property {
+		name: 							string(STR_NAME_BRMK3TS);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		power:							0;
+		speed:							125 mph;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					72;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TS;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TS_purchase;
+	speed:								200;
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TGS, 15) {
+	property {
+		name: 							string(STR_NAME_BRMK3TGS);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		power:							0;
+		speed:							125 mph;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					59;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TGS;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TGS_purchase;
+	speed:								200;
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TRSB, 16) {
+	property {
+		name: 							string(STR_NAME_BRMK3TRSB);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		speed:							125 mph;
+		power:							0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					34;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TRSB;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TRSB_purchase;
+	speed:								200;
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TRUB, 17) {
+	property {
+		name: 							string(STR_NAME_BRMK3TRUB);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		speed:							125 mph;
+		power:							0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					34;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TRUB;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TRUB_purchase;
+	speed:								200;
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TRUK, 18) {
+	property {
+		name: 							string(STR_NAME_BRMK3TRUK);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		speed:							125 mph;
+		power:							0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					34;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TRUK;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TRUK_purchase;
+	speed:								200;
+}
+}

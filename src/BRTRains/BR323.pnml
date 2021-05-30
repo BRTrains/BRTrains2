@@ -50,16 +50,28 @@ spriteset(spriteset_BR323c_FNW_Barbie, "gfx/BR323.png") {
 	template_train32px_reversed(172, 525)
 }
 
-spriteset(spriteset_BR323a_Northern, "gfx/BR323.png") {
+spriteset(spriteset_BR323a_NorthernRail, "gfx/BR323.png") {
 	template_train32px(172, 625)
 }
 
-spriteset(spriteset_BR323b_Northern, "gfx/BR323.png") {
+spriteset(spriteset_BR323b_NorthernRail, "gfx/BR323.png") {
 	template_train32px(172, 725)
 }
 
-spriteset(spriteset_BR323c_Northern, "gfx/BR323.png") {
+spriteset(spriteset_BR323c_NorthernRail, "gfx/BR323.png") {
 	template_train32px_reversed(172, 650)
+}
+
+spriteset(spriteset_BR323a_Northern, "gfx/BR323.png") {
+	template_train32px(0, 875)
+}
+
+spriteset(spriteset_BR323b_Northern, "gfx/BR323.png") {
+	template_train32px(0, 900)
+}
+
+spriteset(spriteset_BR323c_Northern, "gfx/BR323.png") {
+	template_train32px_reversed(0, 925)
 }
 
 spriteset(spriteset_BR323a_LM, "gfx/BR323.png") {
@@ -79,8 +91,9 @@ switch(FEAT_TRAINS,SELF, sw_BR323a,cargo_subtype){
 	1:	spriteset_BR323a_Centro;
 	2:	spriteset_BR323a_FNW;
 	3:	spriteset_BR323a_FNW_Barbie;
-	4:	spriteset_BR323a_Northern;
+	4:	spriteset_BR323a_NorthernRail;
 	5:	spriteset_BR323a_LM;
+	6:	spriteset_BR323a_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR323b,cargo_subtype){
@@ -88,8 +101,9 @@ switch(FEAT_TRAINS,SELF, sw_BR323b,cargo_subtype){
 	1:	spriteset_BR323b_Centro;
 	2:	spriteset_BR323b_FNW;
 	3:	spriteset_BR323b_FNW_Barbie;
-	4:	spriteset_BR323b_Northern;
+	4:	spriteset_BR323b_NorthernRail;
 	5:	spriteset_BR323b_LM;
+	6:	spriteset_BR323b_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR323c,cargo_subtype){
@@ -97,8 +111,9 @@ switch(FEAT_TRAINS,SELF, sw_BR323c,cargo_subtype){
 	1:	spriteset_BR323c_Centro;
 	2:	spriteset_BR323c_FNW;
 	3:	spriteset_BR323c_FNW_Barbie;
-	4:	spriteset_BR323c_Northern;
+	4:	spriteset_BR323c_NorthernRail;
 	5:	spriteset_BR323c_LM;
+	6:	spriteset_BR323c_Northern;
 }
 
 
@@ -115,6 +130,7 @@ switch(FEAT_TRAINS,SELF,sw_BR323_cargo_subtype_text,cargo_subtype){
 	3:  return string(str_FNWBarbie);
 	4:  return string(str_NorthernRail);
 	5:  return string(str_LondonMidland);
+	6:	return string(str_Northern);
        return CB_RESULT_NO_TEXT;
 }
 

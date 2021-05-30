@@ -78,14 +78,6 @@ spriteset(spriteset_BRHHA_sand_full, "gfx/BRHHA.png") {
 	template_train32px4v(0, 663)
 }
 
-spriteset(spriteset_BRHHA_cocaine_half, "gfx/BRHHA.png") {
-	template_train32px4v(0, 713)
-}
-
-spriteset(spriteset_BRHHA_cocaine_full, "gfx/BRHHA.png") {
-	template_train32px4v(0, 738)
-}
-
 switch(FEAT_TRAINS,SELF, sw_HHAcoal,cargo_count){
 	0: spriteset_BRHHA_empty;
 	1 .. 37: spriteset_BRHHA_coal_half;
@@ -139,12 +131,6 @@ switch(FEAT_TRAINS,SELF, sw_HHAsand,cargo_count){
 	0: spriteset_BRHHA_empty;
 	1 .. 37: spriteset_BRHHA_sand_half;
 	37 .. 75: spriteset_BRHHA_sand_full;
-}
-
-switch(FEAT_TRAINS,SELF, sw_HHAcocaine,cargo_count){
-	0: spriteset_BRHHA_empty;
-	1 .. 37: spriteset_BRHHA_cocaine_half;
-	37 .. 75: spriteset_BRHHA_cocaine_full;
 }
 
 switch(FEAT_TRAINS,SELF, sw_HHAcargo, cargo_type_in_veh){

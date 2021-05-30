@@ -34,3 +34,10 @@ Added the following features:
     - Choose between 'design' and 'actual running' speeds.
     - Select different liveries on select trains by using the 'Refit' option in the depo.
     - Dynamically raise/lower the pantograph on Bi-mode units depending on the railtype.
+
+Added BRTrains repository
+    - Too many trains to list...
+
+Fixed non-pure-white and flashing (eg fire effects) on some BRtrains units
+
+Fixed BR033 + MK 2 Coach Alignment
