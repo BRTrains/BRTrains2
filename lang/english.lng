@@ -332,18 +332,18 @@ str_BR166_liveries				:Network SouthEast, Thames Trains, First Great Western 'Li
 STR_NAME_BR170					:British Rail Class 170 'Turbostar' (2-Car)
 str_BR170_usage					:Passenger
 str_BR170_eos					:---
-str_BR170_liveries				:Central Trains, London Midland, One, ScotRail Saltire, Sout West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE
+str_BR170_liveries				:Central Trains, London Midland, One, ScotRail Saltire, South West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE, West Midland Railway, East Midlands Railway, Transport For Wales
 
 STR_NAME_BR170_3				:British Rail Class 170 'Turbostar' (3-Car)
 str_BR170_3_usage				:Passenger
 str_BR170_3_eos					:---
-str_BR170_3_liveries			:Central Trains, London Midland, One, ScotRail Saltire, Sout West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE, West Midland Railway
+str_BR170_3_liveries			:Central Trains, London Midland, One, ScotRail Saltire, South West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE, West Midland Railway, East Midlands Railway, Transport For Wales
 
 STR_NAME_BR1750					:British Rail Class 175/0 'Coradia' (2-Car)
 STR_NAME_BR1751					:British Rail Class 175/1 'Coradia' (3-Car)
 str_BR175_usage					:Passenger
 str_BR175_eos					:---
-str_BR175_liveries				:Arriva 'Ghost', First North Western, Arriva Trains 
+str_BR175_liveries				:Arriva 'Ghost', First North Western, Arriva Trains, Transport for Wales
 
 STR_NAME_BR180					:British Rail Class 180 'Adelante'
 str_BR180_usage					:Express Passenger
@@ -434,7 +434,7 @@ str_BR323_liveries				:Regional Railways, Centro, First North Western, First Nor
 STR_NAME_BR333					:British Rail Class 333
 str_BR333_usage					:Suburban Passenger
 str_BR333_eos					:---
-str_BR333_liveries				:Northern Trains, Northern (WYPTE), Northern Spirit
+str_BR333_liveries				:Northern, Northern Rail (WYPTE), Northern Spirit
 
 STR_NAME_BR350					:British Rail Class 350 'Desiro'
 str_BR350_usage					:Passenger
@@ -1073,6 +1073,7 @@ str_GRFTest1				    : (GRF Test Livery)
 str_GRFTest2					: (GRF Test Livery)
 str_Teak						: (GNR/LNER Teak)
 str_TfL							: (TfL Rail)
+str_TfW         			    : (Transport For Wales)
 str_thameslink					: (BR Thameslink)
 str_ThamesTrains				: (Thames Trains)
 str_ROSCO						: (Transitional Livery)
