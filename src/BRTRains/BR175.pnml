@@ -38,22 +38,37 @@ spriteset(spriteset_BR175c_ATW, "gfx/BR175.png") {
 	template_450(352, 54)
 }
 
+spriteset(spriteset_BR175_TfW, "gfx/BR175.png") {
+	template_450(0, 96)
+}
+
+spriteset(spriteset_BR175b_TfW, "gfx/BR175.png") {
+	template_450(0, 123)
+}
+
+spriteset(spriteset_BR175c_TfW, "gfx/BR175.png") {
+	template_450(0, 150)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR175,cargo_subtype){
     0:	spriteset_BR175_ATWGhost;
 	1:  spriteset_BR175_FNW;
 	2:  spriteset_BR175_ATW;
+	3:  spriteset_BR175_TfW;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR175b,cargo_subtype){
     0:	spriteset_BR175b_ATWGhost;
 	1:  spriteset_BR175b_FNW;
 	2:  spriteset_BR175b_ATW;
+	3:  spriteset_BR175b_TfW;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR175c,cargo_subtype){
     0:	spriteset_BR175c_ATWGhost;
 	1:  spriteset_BR175c_FNW;
 	2:  spriteset_BR175c_ATW;
+	3:  spriteset_BR175c_TfW;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR1751, extra_callback_info1) {
@@ -71,6 +86,7 @@ switch(FEAT_TRAINS,SELF,sw_BR175_cargo_subtype_text,cargo_subtype){
     0:	return string(str_ArrivaGhost);
 	1:  return string(str_FNW);
 	2:  return string(str_ATW);
+	3:  return string(str_TfW);
        return CB_RESULT_NO_TEXT;
 }
 
