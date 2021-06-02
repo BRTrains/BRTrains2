@@ -240,6 +240,11 @@ str_BR70_usage					:Heavy Freight
 str_BR70_eos					:---
 str_BR70_liveries				:Freightliner, Colas Rail
 
+STR_NAME_BR89					:British Rail Class 89 'Badger'
+str_BR89_usage					:Express Passenger
+str_BR89_eos					:---
+str_BR89_liveries				:Intercity Swallow, GNER, Intercity
+
 STR_NAME_BR91					:British Rail Class 91 'Intercity 225'
 str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
