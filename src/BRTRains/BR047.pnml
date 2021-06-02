@@ -72,7 +72,7 @@ switch(FEAT_TRAINS,SELF, sw_BR47,cargo_subtype){
     10: spriteset_BR47_Virgin;
     11: spriteset_BR47_Colas;
     12: spriteset_BR47_One;
-	12: spriteset_BR47_Freightliner;
+	13: spriteset_BR47_Freightliner;
        return CB_RESULT_NO_TEXT;
 }
 
