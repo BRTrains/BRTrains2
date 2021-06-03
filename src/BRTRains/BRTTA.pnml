@@ -123,7 +123,7 @@ item (FEAT_TRAINS, item_BRTTA, 419) {
 		weight:							28 ton;
 		tractive_effort_coefficient:	0.08;
 		air_drag_coefficient:			0.07;
-		length:							8;
+		length:							6;
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
