@@ -1,0 +1,137 @@
+spriteset(spriteset_BRTTA, "gfx/freight/BRTTA.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BRTTA_Mobil, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 13)
+}
+
+spriteset(spriteset_BRTTA_Esso, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 32)
+}
+
+spriteset(spriteset_BRTTA_BP1, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 51)
+}
+
+spriteset(spriteset_BRTTA_Suko, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 70)
+}
+
+spriteset(spriteset_BRTTA_Gulf, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 89)
+}
+
+spriteset(spriteset_BRTTA_Shell1, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 108)
+}
+
+spriteset(spriteset_BRTTA_BP2, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 127)
+}
+
+spriteset(spriteset_BRTTA_BP3, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 146)
+}
+
+spriteset(spriteset_BRTTA_Murco, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 165)
+}
+
+spriteset(spriteset_BRTTA_Shell2, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 184)
+}
+
+spriteset(spriteset_BRTTA_Total, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 203)
+}
+
+spriteset(spriteset_BRTTA_VTG, "gfx/freight/BRTTA.png") {
+	template_train20px_tanker(0, 222)
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_BRTTA_BP)
+{
+	1: spriteset_BRTTA_BP1;
+	1: spriteset_BRTTA_BP2;
+	1: spriteset_BRTTA_BP3;
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_BRTTA_Shell)
+{
+	1: spriteset_BRTTA_Shell1;
+	1: spriteset_BRTTA_Shell2;
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_BRTTA_Random)
+{
+	1:	spriteset_BRTTA_Mobil;
+	1:	spriteset_BRTTA_Esso;
+	1:	sw_BRTTA_BP;
+	1:	spriteset_BRTTA_Suko;
+	1:	spriteset_BRTTA_Gulf;
+	1:	sw_BRTTA_Shell;
+	1:	spriteset_BRTTA_Murco;
+	1:	spriteset_BRTTA_Total;
+	1:	spriteset_BRTTA_VTG;
+}
+
+switch(FEAT_TRAINS, SELF, sw_TTAcargo, cargo_subtype){
+    0:	sw_BRTTA_Random;
+	1:	spriteset_BRTTA_Mobil;
+	2:	spriteset_BRTTA_Esso;
+	3:	sw_BRTTA_BP;
+	4:	spriteset_BRTTA_Suko;
+	5:	spriteset_BRTTA_Gulf;
+	6:	sw_BRTTA_Shell;
+	7:	spriteset_BRTTA_Murco;
+	8:	spriteset_BRTTA_Total;
+	9:	spriteset_BRTTA_VTG;
+}
+
+// Random Mobil Esso BP Suko Gulf Shell BP BP Murco Shell Total VTG
+
+switch(FEAT_TRAINS,SELF,sw_BRTTA_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Random);
+	1:	return string(str_Mobil);
+	2:	return string(str_Esso);
+	3:	return string(str_BP);
+	4:	return string(str_Suko);
+	5:	return string(str_Gulf);
+	6:	return string(str_Shell);
+	7:	return string(str_Murco);
+	8:	return string(str_Total);
+	9:	return string(str_VTG);
+}
+
+item (FEAT_TRAINS, item_BRTTA, 419) {
+	property {
+		name: 							string(STR_NAME_BRTTA);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1966,1,1);
+		model_life:						100;
+		cargo_allow_refit:				[WATR, RUBR, OIL_];
+		loading_speed:					20;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				COAL;
+		cargo_capacity:					72;
+		weight:							28 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRTTA_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_TTAcargo;
+	purchase:							spriteset_BRTTA;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BRTTA_cargo_subtype_text;
+}
+}
