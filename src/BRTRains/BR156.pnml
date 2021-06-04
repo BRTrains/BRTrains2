@@ -94,6 +94,14 @@ spriteset(spriteset_BR156a_Northern, "gfx/BR156a.png") {
 	template_train32px(0, 488)
 }
 
+spriteset(spriteset_BR156a_EMRTransition, "gfx/BR156a.png") {
+	template_train32px(0, 513)
+}
+
+spriteset(spriteset_BR156a_EMRMaroonWhite, "gfx/BR156a.png") {
+	template_train32px(0, 538)
+}
+
 spriteset(spriteset_BR156b_Regional, "gfx/BR156b.png") {
 	template_train32px(0, 13)
 }
@@ -174,6 +182,14 @@ spriteset(spriteset_BR156b_Northern, "gfx/BR156b.png") {
 	template_train32px(0, 488)
 }
 
+spriteset(spriteset_BR156b_EMRTransition, "gfx/BR156b.png") {
+	template_train32px(0, 513)
+}
+
+spriteset(spriteset_BR156b_EMRMaroonWhite, "gfx/BR156b.png") {
+	template_train32px(0, 538)
+}
+
 
 switch(FEAT_TRAINS,SELF, sw_BR156a,cargo_subtype){
     0:	spriteset_BR156a_Regional;
@@ -196,6 +212,8 @@ switch(FEAT_TRAINS,SELF, sw_BR156a,cargo_subtype){
 	17:	spriteset_BR156a_NatEx;
 	18:	spriteset_BR156a_EMT;
 	19:	spriteset_BR156a_Northern;
+	20:	spriteset_BR156a_EMRTransition;
+	21:	spriteset_BR156a_EMRMaroonWhite;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR156b,cargo_subtype){
@@ -219,6 +237,8 @@ switch(FEAT_TRAINS,SELF, sw_BR156b,cargo_subtype){
 	17:	spriteset_BR156b_NatEx;
 	18:	spriteset_BR156b_EMT;
 	19:	spriteset_BR156b_Northern;
+	20:	spriteset_BR156b_EMRTransition;
+	21:	spriteset_BR156b_EMRMaroonWhite;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR156, extra_callback_info1) {
@@ -247,6 +267,8 @@ switch(FEAT_TRAINS,SELF,sw_BR156_cargo_subtype_text,cargo_subtype){
 	17:	return string(str_NatEx);
 	18:	return string(str_EMT);
 	19: return string(str_Northern);
+	20:	return string(str_EMRTransition);
+	21:	return string(str_EMRMaroonWhite);
        return CB_RESULT_NO_TEXT;
 }
 
