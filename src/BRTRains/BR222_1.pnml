@@ -38,28 +38,44 @@ spriteset(spriteset_BR222_1b_EMRMaroon, "gfx/BR222.png") {
 	template_train32px(0, 288)
 }
 
+spriteset(spriteset_BR222_1a_EMRMaroonWhite, "gfx/BR222.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BR222_1c_EMRMaroonWhite, "gfx/BR222.png") {
+	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BR222_1b_EMRMaroonWhite, "gfx/BR222.png") {
+	template_train32px(0, 363)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR222_1a,cargo_subtype){
     0:	spriteset_BR222_1a_HT;
 	1:	spriteset_BR222_1a_EMT;
 	2:	spriteset_BR222_1a_EMRMaroon;
+	3:	spriteset_BR222_1a_EMRMaroonWhite;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR222_1b,cargo_subtype){
     0:	spriteset_BR222_1b_HT;
 	1:	spriteset_BR222_1b_EMT;
 	2:	spriteset_BR222_1b_EMRMaroon;
+	3:	spriteset_BR222_1b_EMRMaroonWhite;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR222_1c,cargo_subtype){
     0:	spriteset_BR222_1c_HT;
 	1:	spriteset_BR222_1c_EMT;
 	2:	spriteset_BR222_1c_EMRMaroon;
+	3:	spriteset_BR222_1c_EMRMaroonWhite;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR222_1d,cargo_subtype){
     0:	spriteset_BR222_1c_HT;
 	1:	spriteset_BR222_1c_EMT;
 	2:	spriteset_BR222_1c_EMRMaroon;
+	3:	spriteset_BR222_1c_EMRMaroonWhite;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR222_1, extra_callback_info1) {
@@ -73,6 +89,7 @@ switch(FEAT_TRAINS,SELF,sw_BR222_1_cargo_subtype_text,cargo_subtype){
     0:	return string(str_HT);
 	1:	return string(str_EMT);
 	2:	return string(str_EMRMaroon);
+	3:	return string(str_EMRMaroonWhite);
        return CB_RESULT_NO_TEXT;
 }
 
