@@ -1,6 +1,15 @@
-spriteset (spriteset_br_197_front, "gfx/br_195_331.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_197_middle, "gfx/br_195_331.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_197_rear, "gfx/br_195_331.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_197_purchase, "gfx/br_195_331.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset(spriteset_BR197_Purchase, "gfx/BR197.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR197a_TFW, "gfx/BR197.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR197b_TFW, "gfx/BR197.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR197c_TFW, "gfx/BR197.png") {
+	template_train32px(0, 63)
 }

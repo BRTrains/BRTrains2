@@ -3,9 +3,9 @@ switch(FEAT_TRAINS, SELF, switch_br_196_1_spriteset, position_in_articulated_veh
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	// % 3 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,middle,end);(front,middle,end)...
-	0: spriteset_br_196_front;
-	3: spriteset_br_196_rear;
-	spriteset_br_196_middle;
+	0: spriteset_BR196a_WestMidlands;
+	3: spriteset_BR196b_WestMidlands;
+	spriteset_BR196c_WestMidlands;
 }
 
 // Define articulations
@@ -20,7 +20,7 @@ switch(FEAT_TRAINS, SELF, switch_br_196_1_articulated, extra_callback_info1) {
 switch(FEAT_TRAINS, SELF, switch_br_196_1_particles, position_in_articulated_veh % 3) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
-	2: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
+	3: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
@@ -77,14 +77,14 @@ item(FEAT_TRAINS, item_br_196_1) {
 	
 	graphics {
 		default: switch_br_196_1_spriteset;
-		purchase: spriteset_br_196_purchase;
+		purchase: spriteset_BR196_Purchase;
 		
 		articulated_part: switch_br_196_1_articulated;
 		start_stop: switch_br_196_1_start_stop;	
 		can_attach_wagon: switch_br_196_1_can_attach_wagon;
 		visual_effect_and_powered: switch_br_196_1_particles;
 				
-		purchase_cargo_capacity: return (204/3);
+		purchase_cargo_capacity: return (284/3);
 		additional_text: string(STR_DSC_BR_196);	
 				
 	}

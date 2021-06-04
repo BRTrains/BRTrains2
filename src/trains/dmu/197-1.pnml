@@ -3,9 +3,9 @@ switch(FEAT_TRAINS, SELF, switch_br_197_1_spriteset, position_in_articulated_veh
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	// % 3 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,middle,end);(front,middle,end)...
-	0: spriteset_br_197_front;
-	2: spriteset_br_197_rear;
-	spriteset_br_197_middle;
+	0: spriteset_BR197a_TFW;
+	2: spriteset_BR197b_TFW;
+	spriteset_BR197c_TFW;
 }
 
 // Define articulations
@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_br_197_1) {
 	
 	graphics {
 		default: switch_br_197_1_spriteset;
-		purchase: spriteset_br_197_purchase;
+		purchase: spriteset_BR197_Purchase;
 		
 		articulated_part: switch_br_197_1_articulated;
 		start_stop: switch_br_197_1_start_stop;	
