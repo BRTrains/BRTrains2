@@ -62,12 +62,25 @@ spriteset(spriteset_BR180c_FGWDL, "gfx/BR180c.png") {
 	template_train32px(0, 113)
 }
 
+spriteset(spriteset_BR180a_EMRMaroonWhite, "gfx/BR180a.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR180b_EMRMaroonWhite, "gfx/BR180b.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR180c_EMRMaroonWhite, "gfx/BR180c.png") {
+	template_train32px(0, 138)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR180a,cargo_subtype){
     0:	spriteset_BR180a_FGW;
 	1:  spriteset_BR180a_FGWDL;
 	2:	spriteset_BR180a_GC;
 	3:	spriteset_BR180a_GCLined;
 	4:	spriteset_BR180a_NorthernRail;
+	5:	spriteset_BR180a_EMRMaroonWhite;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR180b,cargo_subtype){
@@ -76,6 +89,7 @@ switch(FEAT_TRAINS,SELF, sw_BR180b,cargo_subtype){
 	2:	spriteset_BR180b_GC;
 	3:	spriteset_BR180b_GCLined;
 	4:	spriteset_BR180b_NorthernRail;
+	5:	spriteset_BR180b_EMRMaroonWhite;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR180c,cargo_subtype){
@@ -84,6 +98,7 @@ switch(FEAT_TRAINS,SELF, sw_BR180c,cargo_subtype){
 	2:	spriteset_BR180c_GC;
 	3:	spriteset_BR180c_GCLined;
 	4:	spriteset_BR180c_NorthernRail;
+	5:	spriteset_BR180c_EMRMaroonWhite;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR180, extra_callback_info1) {
@@ -100,6 +115,7 @@ switch(FEAT_TRAINS,SELF,sw_BR180_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_GC);
 	3:	return string(str_GCLined);
 	4:	return string(str_NorthernRail);
+	5:	return string(str_EMRMaroonWhite);
        return CB_RESULT_NO_TEXT;
 }
 
