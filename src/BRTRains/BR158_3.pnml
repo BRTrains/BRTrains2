@@ -42,6 +42,10 @@ spriteset(spriteset_BR158c_Northern, "gfx/BR158c.png") {
 	template_train32px(0, 538)
 }
 
+spriteset(spriteset_BR158c_SWR, "gfx/BR158c.png") {
+	template_train32px(0, 613)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR158_3,cargo_subtype){
     0:	spriteset_BR158a_RegionalExpress;
 	1:	spriteset_BR158a_ArrivaTPNS;

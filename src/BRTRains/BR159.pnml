@@ -2,19 +2,24 @@ spriteset(spriteset_BR159_Purchase, "gfx/BR158b.png") {
 	template_purchase(0, 0)
 }
 
+// Spritesets are in 158 files
+
 switch(FEAT_TRAINS,SELF, sw_BR159,cargo_subtype){
 	0:	spriteset_BR158a_NSE;
 	1:	spriteset_BR158a_SWT;
+	2:	spriteset_BR158a_SWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR159b,cargo_subtype){
 	0:	spriteset_BR158b_NSE;
 	1:	spriteset_BR158b_SWT;
+	2:	spriteset_BR158b_SWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR159c,cargo_subtype){
 	0:	spriteset_BR158c_NSE;
 	1:	spriteset_BR158c_SWT;
+	2:	spriteset_BR158c_SWR;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR159, extra_callback_info1) {
@@ -26,6 +31,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR159, extra_callback_info1) {
 switch(FEAT_TRAINS,SELF,sw_BR159_cargo_subtype_text,cargo_subtype){
 	0:	return string(str_NSE);
 	1:	return string(str_SWT);
+	2:	return string(str_SWR);
        return CB_RESULT_NO_TEXT;
 }
 
