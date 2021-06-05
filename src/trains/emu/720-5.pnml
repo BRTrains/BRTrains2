@@ -58,7 +58,7 @@ item(FEAT_TRAINS, item_br_720_5) {
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
 		refit_cost: 0;
-		track_type: railtype("ELRL");
+		track_type: ELRL;
 		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
 		running_cost_base: RUNNING_COST_ELECTRIC;
 		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
