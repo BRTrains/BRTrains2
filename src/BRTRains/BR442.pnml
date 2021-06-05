@@ -122,6 +122,26 @@ spriteset(spriteset_BR442e_ROSCO, "gfx/BR442.png") {
 	template_train32px(0, 613)
 }
 
+spriteset(spriteset_BR442a_SWR, "gfx/BR442.png") {
+	template_train32px(0, 763)
+}
+
+spriteset(spriteset_BR442b_SWR, "gfx/BR442.png") {
+	template_train32px(0, 788)
+}
+
+spriteset(spriteset_BR442c_SWR, "gfx/BR442.png") {
+	template_train32px(0, 813)
+}
+
+spriteset(spriteset_BR442d_SWR, "gfx/BR442.png") {
+	template_train32px(0, 838)
+}
+
+spriteset(spriteset_BR442e_SWR, "gfx/BR442.png") {
+	template_train32px(0, 863)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR442a,cargo_subtype){
     0:	spriteset_BR442a_NSE;
     1:	spriteset_BR442a_SWTOld;
@@ -129,6 +149,7 @@ switch(FEAT_TRAINS,SELF, sw_BR442a,cargo_subtype){
     3:	spriteset_BR442a_SWTNew;
     4:	spriteset_BR442a_ROSCO;
     5:	spriteset_BR442a_GatEx;
+	6:	spriteset_BR442a_SWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR442b,cargo_subtype){
@@ -138,6 +159,7 @@ switch(FEAT_TRAINS,SELF, sw_BR442b,cargo_subtype){
     3:	spriteset_BR442b_SWTNew;
     4:	spriteset_BR442b_ROSCO;
     5:	spriteset_BR442b_GatEx;
+	6:	spriteset_BR442b_SWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR442c,cargo_subtype){
@@ -147,6 +169,7 @@ switch(FEAT_TRAINS,SELF, sw_BR442c,cargo_subtype){
     3:	spriteset_BR442c_SWTNew;
     4:	spriteset_BR442c_ROSCO;
     5:	spriteset_BR442c_GatEx;
+	6:	spriteset_BR442c_SWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR442d,cargo_subtype){
@@ -156,6 +179,7 @@ switch(FEAT_TRAINS,SELF, sw_BR442d,cargo_subtype){
     3:	spriteset_BR442d_SWTNew;
     4:	spriteset_BR442d_ROSCO;
     5:	spriteset_BR442d_GatEx;
+	6:	spriteset_BR442d_SWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR442e,cargo_subtype){
@@ -165,6 +189,7 @@ switch(FEAT_TRAINS,SELF, sw_BR442e,cargo_subtype){
     3:	spriteset_BR442e_SWTNew;
     4:	spriteset_BR442e_ROSCO;
     5:	spriteset_BR442e_GatEx;
+	6:	spriteset_BR442e_SWR;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR442, extra_callback_info1) {
@@ -182,6 +207,7 @@ switch(FEAT_TRAINS,SELF,sw_BR442_cargo_subtype_text,cargo_subtype){
     3:	return string(str_SWT_refurb);
     4:	return string(str_ROSCO);
     5:	return string(str_GatEx);
+	6:	return string(str_SWR);
        return CB_RESULT_NO_TEXT;
 }
 
