@@ -86,6 +86,18 @@ spriteset(spriteset_BR323c_LM, "gfx/BR323.png") {
 	template_train32px_reversed(172, 775)
 }
 
+spriteset(spriteset_BR323a_WMR, "gfx/BR323.png") {
+	template_train32px(0, 950)
+}
+
+spriteset(spriteset_BR323b_WMR, "gfx/BR323.png") {
+	template_train32px(0, 975)
+}
+
+spriteset(spriteset_BR323c_WMR, "gfx/BR323.png") {
+	template_train32px_reversed(0, 1000)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR323a,cargo_subtype){
     0:	spriteset_BR323a_RR;
 	1:	spriteset_BR323a_Centro;
@@ -94,6 +106,7 @@ switch(FEAT_TRAINS,SELF, sw_BR323a,cargo_subtype){
 	4:	spriteset_BR323a_NorthernRail;
 	5:	spriteset_BR323a_LM;
 	6:	spriteset_BR323a_Northern;
+	7:	spriteset_BR323a_WMR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR323b,cargo_subtype){
@@ -104,6 +117,7 @@ switch(FEAT_TRAINS,SELF, sw_BR323b,cargo_subtype){
 	4:	spriteset_BR323b_NorthernRail;
 	5:	spriteset_BR323b_LM;
 	6:	spriteset_BR323b_Northern;
+	7:	spriteset_BR323b_WMR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR323c,cargo_subtype){
@@ -114,6 +128,7 @@ switch(FEAT_TRAINS,SELF, sw_BR323c,cargo_subtype){
 	4:	spriteset_BR323c_NorthernRail;
 	5:	spriteset_BR323c_LM;
 	6:	spriteset_BR323c_Northern;
+	7:	spriteset_BR323c_WMR;
 }
 
 
@@ -131,6 +146,7 @@ switch(FEAT_TRAINS,SELF,sw_BR323_cargo_subtype_text,cargo_subtype){
 	4:  return string(str_NorthernRail);
 	5:  return string(str_LondonMidland);
 	6:	return string(str_Northern);
+	7:	return string(str_WMR);
        return CB_RESULT_NO_TEXT;
 }
 
