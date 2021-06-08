@@ -70,6 +70,10 @@ spriteset(spriteset_BR255_GCLined, "gfx/BR253.png") {
 	template_train32px(0, 313)
 }
 
+spriteset(spriteset_BR255_Inter7City, "gfx/BR253.png") {
+	template_train32px(0, 363)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR253,cargo_subtype){
     0:	spriteset_BR253_BRBlue;
 	1:	spriteset_BR253_IntercityExecutive;
@@ -85,6 +89,7 @@ switch(FEAT_TRAINS,SELF, sw_BR253,cargo_subtype){
 	11:	spriteset_BR254_NatEx;
 	12:	spriteset_BR255_GC;
 	13:	spriteset_BR255_GCLined;
+	14: spriteset_BR255_Inter7City;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR253_cargo_subtype_text,cargo_subtype){
@@ -102,6 +107,7 @@ switch(FEAT_TRAINS,SELF,sw_BR253_cargo_subtype_text,cargo_subtype){
 	11:	return string(str_NatEx);
 	12:	return string(str_GC);
 	13:	return string(str_GCLined);
+	14:	return string(str_Inter7City);
        return CB_RESULT_NO_TEXT;
 }
 
