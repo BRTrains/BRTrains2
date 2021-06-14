@@ -90,7 +90,7 @@ switch(FEAT_TRAINS, SELF, switch_br_802_5car_power, current_railtype) {
 }
 
 // Class 802/0/2/3 (5car)
-item(FEAT_TRAINS, item_br_802_5car) {
+item(FEAT_TRAINS, item_br_802_5car, 461) {
 	property {
 		name: string(STR_BR_802_5CAR);
 		climates_available: ALL_CLIMATES; // available in all climates

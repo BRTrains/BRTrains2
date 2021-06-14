@@ -40,7 +40,7 @@ switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_can_attach_wagon, vehicle_type_id
 
 
 // Class 720
-item(FEAT_TRAINS, item_br_710_2_4car) {
+item(FEAT_TRAINS, item_br_710_2_4car, 445) {
 	property {
 		name: string(STR_BR_710_2_4CAR);
 		climates_available: ALL_CLIMATES; // available in all climates

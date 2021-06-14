@@ -58,7 +58,7 @@ switch(FEAT_TRAINS,SELF,sw_BR57_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR57, 571) {
+item (FEAT_TRAINS, item_BR57, 441) {
 	property {
 		name: 							string(STR_NAME_BR57);
 		climates_available: 			ALL_CLIMATES;

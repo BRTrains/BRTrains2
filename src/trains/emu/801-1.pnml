@@ -35,7 +35,7 @@ switch(FEAT_TRAINS, SELF, switch_br_801_5car_can_attach_wagon, vehicle_type_id) 
 }
 
 // Class 801/1 (5car)
-item(FEAT_TRAINS, item_br_801_5car) {
+item(FEAT_TRAINS, item_br_801_5car, 451) {
 	property {
 		name: string(STR_BR_801_5CAR);
 		climates_available: ALL_CLIMATES; // available in all climates

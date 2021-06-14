@@ -36,7 +36,7 @@ switch(FEAT_TRAINS, SELF, switch_br_807_can_attach_wagon, vehicle_type_id) {
 
 
 // Class 807
-item(FEAT_TRAINS, item_br_807) {
+item(FEAT_TRAINS, item_br_807, 453) {
 	property {
 		name: string(STR_BR_807);
 		climates_available: ALL_CLIMATES; // available in all climates

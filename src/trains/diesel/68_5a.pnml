@@ -42,7 +42,7 @@ switch(FEAT_TRAINS, SELF, switch_br_68_5a_particles, position_in_articulated_veh
 }
 
 // Class 195/0 (2car)
-item(FEAT_TRAINS, item_br_68_5a) {
+item(FEAT_TRAINS, item_br_68_5a, 442) {
 	property {
 		name: string(STR_BR_68_5A);
 		climates_available: ALL_CLIMATES; // available in all climates

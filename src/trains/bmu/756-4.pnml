@@ -54,7 +54,7 @@ switch(FEAT_TRAINS, SELF, switch_br_756_4_length, position_in_articulated_veh % 
 }
 
 // Class 755/4 (4.5car)
-item(FEAT_TRAINS, item_br_756_4) {
+item(FEAT_TRAINS, item_br_756_4, 456) {
 	property {
 		name: string(STR_BR_756_4CAR);
 		climates_available: ALL_CLIMATES; // available in all climates

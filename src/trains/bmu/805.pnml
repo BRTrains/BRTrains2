@@ -50,7 +50,7 @@ switch(FEAT_TRAINS, SELF, switch_br_805_power, current_railtype) {
 }
 
 // Class 800/0/2 (5car)
-item(FEAT_TRAINS, item_br_805) {
+item(FEAT_TRAINS, item_br_805, 463) {
 	property {
 		name: string(STR_BR_805);
 		climates_available: ALL_CLIMATES; // available in all climates
