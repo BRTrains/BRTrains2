@@ -436,6 +436,11 @@ str_BR323_usage					:Suburban Passenger
 str_BR323_eos					:---
 str_BR323_liveries				:Regional Railways, Centro, First North Western, First North Western - Barbie, Northern, London Midland
 
+STR_NAME_BR325					:British Rail Class 325
+str_BR325_usage					:Express Mail
+str_BR325_eos					:---
+str_BR325_liveries				:Royal Mail
+
 STR_NAME_BR333					:British Rail Class 333
 str_BR333_usage					:Suburban Passenger
 str_BR333_eos					:---
@@ -1066,6 +1071,7 @@ str_RFLLSplit					: (Railfreight Large Logo - Split Box)
 str_RFPetrol					: (Railfreight Petroleum)
 str_Royal						: (Royal Scotsman)
 str_RoyalClaret					: (British Royal Train)
+str_RoyalMail					: (Royal Mail)
 str_ScotRail					: (ScotRail)
 str_ScotRailSaltire				: (ScotRail Saltire)
 str_Shell                       : (Shell)
