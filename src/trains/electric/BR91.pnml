@@ -82,7 +82,7 @@ switch(FEAT_TRAINS,PARENT,sw_91_front,vehicle_is_reversed){
 	1:	sw_BR91_reversed;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR91_speed,param_speed){
+switch(FEAT_TRAINS,SELF,sw_BR91_speed,param_max_speed){
 	0:	return 201;
 	1:	return 225;
 }

@@ -33,7 +33,7 @@ grf {
 		}
 	}
 	param 3 {
-		param_speed{
+		param_max_speed{
 			name: string(STR_PARAM_NAME_SPEED);
 			desc: string(STR_PARAM_DESC_SPEED);
 			min_value: 0;
