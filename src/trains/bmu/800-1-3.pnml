@@ -64,8 +64,8 @@ switch(FEAT_TRAINS, SELF, switch_br_800_9car_can_attach_wagon, vehicle_type_id) 
 
 // LNER trains hold fewer passengers than GWR trains
 switch(FEAT_TRAINS, SELF, switch_br_800_9car_capacity, cargo_subtype) {
-	0: return (611/9);
-	1: return (650/9);
+	0: return (611/9 * param_pax);
+	1: return (650/9 * param_pax);
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_800_9car_subtype_text, cargo_subtype) {

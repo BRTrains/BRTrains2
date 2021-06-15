@@ -46,7 +46,7 @@ item(FEAT_TRAINS, item_br_195_0, 430) {
 		
 		speed: 100 mph;
 		power: 1036 hp;
-		cargo_capacity: (124/2);
+		cargo_capacity: (62); // Overridden in callbacks
 		weight: 87.4 ton; 
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
@@ -74,8 +74,7 @@ item(FEAT_TRAINS, item_br_195_0, 430) {
 		start_stop: switch_br_195_0_start_stop;	
 		can_attach_wagon: switch_br_195_0_can_attach_wagon;
 		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
-				
-		purchase_cargo_capacity: return (124/2);
+		cargo_capacity: return(124/2 * param_pax);
 		additional_text: string(STR_DSC_BR_195);	
 		
 	}

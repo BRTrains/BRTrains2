@@ -47,8 +47,9 @@ switch(FEAT_TRAINS,SELF, sw_BR221c,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221_capacity,cargo_subtype){
-    0:	54;
-	1:	70;
+    0:	54 * param_pax;
+	1:	70 * param_pax;
+	70 * param_pax;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR221, extra_callback_info1) {
@@ -109,6 +110,7 @@ item (FEAT_TRAINS, item_BR221, 188) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
+	cargo_capacity:						return(42 * param_pax);
 }
 }
 
@@ -153,6 +155,7 @@ item (FEAT_TRAINS, item_221b, 189) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
+	cargo_capacity:						return(70 * param_pax);
 }
 }
 
@@ -197,6 +200,7 @@ item (FEAT_TRAINS, item_221c, 190) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
+	cargo_capacity:						return(26 * param_pax);
 }
 }
 
@@ -241,6 +245,6 @@ item (FEAT_TRAINS, item_221d, 191) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
-	cargo_capacity:							sw_BR221_capacity;
+	cargo_capacity:						sw_BR221_capacity;
 }
 }

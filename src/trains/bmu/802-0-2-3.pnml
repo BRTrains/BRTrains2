@@ -72,9 +72,9 @@ switch(FEAT_TRAINS, SELF, switch_br_802_5car_can_attach_wagon, vehicle_type_id) 
 
 // TPX and Hull are both First, so assumed they're the same
 switch(FEAT_TRAINS, SELF, switch_br_802_5car_capacity, cargo_subtype) {
-	0: return (342/5);
-	1: return (326/5);
-	2: return (342/5);
+	0: return (342/5 * param_pax);
+	1: return (326/5 * param_pax);
+	2: return (342/5 * param_pax);
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_802_5car_subtype_text, cargo_subtype) {

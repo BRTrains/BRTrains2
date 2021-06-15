@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_br_68_5a, 442) {
 		can_attach_wagon: switch_br_68_5a_can_attach_wagon;
 		visual_effect_and_powered: switch_br_68_5a_particles;
 				
-		purchase_cargo_capacity: return (291/6);
+		cargo_capacity: return (291/6 * param_pax);
 		additional_text: string(STR_DSC_BR_MK5A);	
 		
 	}

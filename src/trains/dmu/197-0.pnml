@@ -74,8 +74,7 @@ item(FEAT_TRAINS, item_br_197_0, 434) {
 		start_stop: switch_br_197_0_start_stop;	
 		can_attach_wagon: switch_br_197_0_can_attach_wagon;
 		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
-				
-		purchase_cargo_capacity: return (124/2);
+		cargo_capacity: return (124/2 * param_pax);
 		additional_text: string(STR_DSC_BR_197);	
 		
 	}

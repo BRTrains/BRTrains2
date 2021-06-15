@@ -234,6 +234,7 @@ item (FEAT_TRAINS, item_BR150, 41) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_dmu_sound;
+	cargo_capacity:						return(67 * param_pax);
 }
 }
 
@@ -277,6 +278,7 @@ item (FEAT_TRAINS, item_150b, 42) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_dmu_sound;
+	cargo_capacity:						return(80 * param_pax);
 }
 }
 
@@ -320,5 +322,6 @@ item (FEAT_TRAINS, item_150c, 43) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_dmu_sound;
+	cargo_capacity:						return(84 * param_pax);
 }
 }

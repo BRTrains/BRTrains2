@@ -141,6 +141,7 @@ item (FEAT_TRAINS, item_BR222_5, 176) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
+	cargo_capacity:						return(44 * param_pax);
 }
 }
 
@@ -185,6 +186,7 @@ item (FEAT_TRAINS, item_222_5b, 177) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
+	cargo_capacity:						return(72 * param_pax);
 }
 }
 
@@ -229,6 +231,7 @@ item (FEAT_TRAINS, item_222_5c, 178) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
+	cargo_capacity:						return(64 * param_pax);
 }
 }
 
@@ -273,6 +276,7 @@ item (FEAT_TRAINS, item_222_5d, 179) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
+	cargo_capacity:						return(64 * param_pax);
 }
 }
 
@@ -317,5 +321,6 @@ item (FEAT_TRAINS, item_222_5e, 180) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
+	cargo_capacity:						return(32 * param_pax);
 }
 }

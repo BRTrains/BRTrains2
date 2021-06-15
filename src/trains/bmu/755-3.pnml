@@ -105,5 +105,6 @@ item(FEAT_TRAINS, item_br_755_3, 453) {
 		power: switch_br_755_3_power;
 		length: switch_br_755_3_length;
 		additional_text: string(STR_DSC_BR_755);
+		cargo_capacity:						return(167/3 * param_pax);
 	}
 }
