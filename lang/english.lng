@@ -6,11 +6,27 @@ STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern
 
 
 # Parameters 
-STR_PARAM_MAX_SPEED                     :Max Speed
-STR_PARAM_MAX_SPEED_DESC                :Use actual speed or design speed on trains
-STR_PARAM_MAX_SPEED_REAL                :Actual Speed
-STR_PARAM_MAX_SPEED_DESIGN              :Design Speed
+STR_PARAM_MAX_SPEED             :Max Speed
+STR_PARAM_MAX_SPEED_DESC        :Toggle Between Service Speed and Design Speed
+STR_PARAM_MAX_SPEED_SERVICE     :Service Speed
+STR_PARAM_MAX_SPEED_DESIGN      :Design Speed
 
+STR_PARAM_NAME_SOUNDS			:Running Sounds
+STR_PARAM_DESC_SOUNDS			:Enable or Disable Running Sounds
+STR_PARAM_SOUNDS_OFF			:Disabled
+STR_PARAM_SOUNDS_ON				:Enabled
+
+STR_PARAM_NAME_SIMPLE			:Complexity
+STR_PARAM_DESC_SIMPLE			:Optionally remove some similar trains for a simpler purchase list
+STR_PARAM_COMPLEX				:All Trains
+STR_PARAM_SIMPLE				:Representitive Selection
+
+STR_PARAM_NAME_PAX_MULTIPLIER  :Passenger Capacity Multiplier
+STR_PARAM_DESC_PAX_MULTIPLIER  :Increase passenger capacity to allow use of real-world train sizes with higher capacity routes
+STR_PARAM_1X                    :1x (Default)
+STR_PARAM_2X                    :2x
+STR_PARAM_3X                    :3x
+STR_PARAM_4X                    :4x
 
 # Vehicle names
 STR_BR_68_5A                            :British Rail Class 68 (Mark 5A) (4-Car)
@@ -107,25 +123,6 @@ STR_DSC_BR_802_5CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric 
 STR_DSC_BR_802_9CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
 STR_DSC_BR_805                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast
 STR_DSC_BR_807                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast
-
-
-# BRTrains
-
-
-STR_PARAM_NAME_SOUNDS			:Running Sounds
-STR_PARAM_DESC_SOUNDS			:Enable or Disable Running Sounds for BRTrains
-STR_PARAM_SOUNDS_OFF			:Disabled
-STR_PARAM_SOUNDS_ON				:Enabled
-
-STR_PARAM_NAME_SPEED			:Max Speed
-STR_PARAM_DESC_SPEED			:Toggle Between Service Speed and Design Speed for BRTrains
-STR_PARAM_SERVICE_SPEED			:Service Speed
-STR_PARAM_DESIGN_SPEED			:Design Speed
-
-STR_PARAM_NAME_SIMPLE			:Complexity
-STR_PARAM_DESC_SIMPLE			:Decide on what range of trains you get from BRTrains
-STR_PARAM_COMPLEX				:All Trains
-STR_PARAM_SIMPLE				:Representitive Selection
 
 str_purchase_loco_with_liveries	:{BLACK}Type: {STRING}{}{BLACK}Route Availability: {GOLD}{STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
 str_purchase_loco				:{BLACK}Type: {STRING}{}{BLACK}Route Availability: {GOLD}{STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}

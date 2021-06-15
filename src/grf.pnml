@@ -3,8 +3,8 @@ grf {
 	grfid: "brv2"; // BRTrains v2, based on BRTrains, BROS, and the Modern UK Trains set (addon to BRTrains)
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	version: 0;
-	min_compatible_version: 0; //bump up this number to version when breaking compatibility
+	version: 1;
+	min_compatible_version: 1; //bump up this number to version when breaking compatibility
 	param 0 {
 		param_max_speed {
 			type: int;
@@ -14,7 +14,7 @@ grf {
 			max_value: 1;
 			def_value: 0;
 			names: {
-				0: string(STR_PARAM_MAX_SPEED_REAL);
+				0: string(STR_PARAM_MAX_SPEED_SERVICE);
 				1: string(STR_PARAM_MAX_SPEED_DESIGN);
 			};
 		}
@@ -33,19 +33,6 @@ grf {
 		}
 	}
 	param 3 {
-		param_max_speed{
-			name: string(STR_PARAM_NAME_SPEED);
-			desc: string(STR_PARAM_DESC_SPEED);
-			min_value: 0;
-			max_value: 1;
-			def_value: 0;
-			names: {
-				0: string(STR_PARAM_SERVICE_SPEED);
-				1: string(STR_PARAM_DESIGN_SPEED);
-			};
-		}
-	}
-	param 4 {
 		param_simple_mode{
 			name: string(STR_PARAM_NAME_SIMPLE);
 			desc: string(STR_PARAM_DESC_SIMPLE);
@@ -55,6 +42,21 @@ grf {
 			names: {
 				0: string(STR_PARAM_COMPLEX);
 				1: string(STR_PARAM_SIMPLE);
+			};
+		}
+	}
+	param 4 {
+		param_pax{
+			name: string(STR_PARAM_NAME_PAX_MULTIPLIER);
+			desc: string(STR_PARAM_DESC_PAX_MULTIPLIER);
+			min_value: 0;
+			max_value: 4;
+			def_value: 1;
+			names: {
+				1: string(STR_PARAM_1X);
+				2: string(STR_PARAM_2X);
+				3: string(STR_PARAM_3X);
+				4: string(STR_PARAM_4X);
 			};
 		}
 	}
