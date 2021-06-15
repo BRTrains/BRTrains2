@@ -109,6 +109,7 @@ item (FEAT_TRAINS, item_BR4580, 332) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect_SAA3;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(75 * param_pax);
 }
 }
 
@@ -152,6 +153,7 @@ item (FEAT_TRAINS, item_BR458b, 333) {
 	default: 							sw_BR458b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(75 * param_pax);
 }
 }
 
@@ -196,6 +198,7 @@ item (FEAT_TRAINS, item_BR458c, 334) {
 	default: 							sw_BR458c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(60 * param_pax);
 }
 }
 
@@ -240,5 +243,6 @@ item (FEAT_TRAINS, item_BR458d, 335) {
 	default: 							sw_BR458d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(75 * param_pax);
 }
 }

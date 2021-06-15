@@ -167,6 +167,6 @@ item (FEAT_TRAINS, item_BR253, 12) {
 	purchase:							spriteset_BR253_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_BR253_sound_type;
+	sound_effect:						sw_BR253_sound_type;	
 }
 }

@@ -81,6 +81,7 @@ item (FEAT_TRAINS, item_BR370, 125) {
 	purchase:							spriteset_BR370_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	speed:								sw_BR370_speed;
+	cargo_capacity: return(52 * param_pax);
 }
 }
 
@@ -203,6 +204,7 @@ item (FEAT_TRAINS, item_370_DTS, 132) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_370_DTS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(52 * param_pax);
 }
 }
 
@@ -236,6 +238,7 @@ item (FEAT_TRAINS, item_370_TF, 129) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_370_TF;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(47 * param_pax);
 }
 }
 
@@ -269,6 +272,7 @@ item (FEAT_TRAINS, item_370_TU, 128) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_370_TU;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(43 * param_pax);
 }
 }
 
@@ -302,6 +306,7 @@ item (FEAT_TRAINS, item_370_TS, 126) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_370_TS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(72 * param_pax);
 }
 }
 
@@ -335,6 +340,7 @@ item (FEAT_TRAINS, item_370_TRSB, 127) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_370_TRSB;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(28 * param_pax);
 }
 }
 
@@ -368,6 +374,7 @@ item (FEAT_TRAINS, item_370_TBF, 130) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_370_TBF;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(25 * param_pax);
 }
 }
 
@@ -436,6 +443,7 @@ item (FEAT_TRAINS, item_370_TRSBR, 135) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_370_TRSBR;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(28 * param_pax);
 }
 }
 
@@ -469,6 +477,7 @@ item (FEAT_TRAINS, item_370_TBFR, 133) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_370_TBFR;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(25 * param_pax);
 }
 }
 

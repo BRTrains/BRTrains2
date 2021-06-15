@@ -83,6 +83,7 @@ item(FEAT_TRAINS, item_br_801_5car, 451) {
 		start_stop: switch_br_801_5car_start_stop;	
 		can_attach_wagon: switch_br_801_5car_can_attach_wagon;
 		visual_effect_and_powered: switch_br_801_5car_particles;
-		additional_text: string(STR_DSC_BR_801);			
+		additional_text: string(STR_DSC_BR_801);	
+		cargo_capacity:						return(302/5 * param_pax);		
 	}
 }

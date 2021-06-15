@@ -121,6 +121,7 @@ item (FEAT_TRAINS, item_LULS7, 292) {
 	purchase:							spriteset_LULS_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(205 * param_pax);
 }
 }
 
@@ -168,6 +169,7 @@ item (FEAT_TRAINS, item_LULS8, 293) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(205 * param_pax);
 }
 }
 
@@ -210,6 +212,7 @@ item (FEAT_TRAINS, item_LULSb, 294) {
 	default: 							sw_LULSb;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(125 * param_pax);
 }
 }
 
@@ -253,5 +256,6 @@ item (FEAT_TRAINS, item_LULSc, 295) {
 	default: 							sw_LULSc;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(204 * param_pax);
 }
 }

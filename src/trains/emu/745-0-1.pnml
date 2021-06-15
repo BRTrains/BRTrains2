@@ -46,8 +46,8 @@ switch(FEAT_TRAINS, SELF, switch_br_745_can_attach_wagon, vehicle_type_id) {
 
 // Stansted Express holds slightly more
 switch(FEAT_TRAINS, SELF, switch_br_745_capacity, cargo_subtype) {
-	0: return (757/12);
-	1: return (767/12);
+	0: return (757/12 * param_pax);
+	1: return (767/12 * param_pax);
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_745_subtype_text, cargo_subtype) {

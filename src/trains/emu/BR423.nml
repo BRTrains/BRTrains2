@@ -323,6 +323,7 @@ item (FEAT_TRAINS, item_BR423, 347) {
 	purchase:							spriteset_BR423_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(62 * param_pax);
 }
 }
 
@@ -367,6 +368,7 @@ item (FEAT_TRAINS, item_BR423_b, 348) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(58 * param_pax);
 }
 }
 
@@ -410,6 +412,7 @@ item (FEAT_TRAINS, item_BR423_c, 349) {
 	default: 							sw_BR423_c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(98 * param_pax);
 }
 }
 
@@ -453,6 +456,7 @@ item (FEAT_TRAINS, item_BR423_d, 350) {
 	default: 							sw_BR423_d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(62 * param_pax);
 }
 }
 
@@ -500,6 +504,7 @@ item (FEAT_TRAINS, item_BR423_9, 351) {
 	purchase:							spriteset_BR423_9_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(70 * param_pax);
 }
 }
 
@@ -544,6 +549,7 @@ item (FEAT_TRAINS, item_BR423_9_b, 352) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(76 * param_pax);
 }
 }
 
@@ -587,6 +593,7 @@ item (FEAT_TRAINS, item_BR423_9_c, 353) {
 	default: 							sw_BR423_9_c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(98 * param_pax);
 }
 }
 
@@ -630,6 +637,7 @@ item (FEAT_TRAINS, item_BR423_9_d, 354) {
 	default: 							sw_BR423_9_d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(70 * param_pax);
 }
 }
 
@@ -679,6 +687,7 @@ item (FEAT_TRAINS, item_BR480, 355) {
 	purchase:							spriteset_BR480_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(62 * param_pax);
 }
 }
 
@@ -722,6 +731,7 @@ item (FEAT_TRAINS, item_BR480_dtclf, 356) {
 	default: 							sw_BR480_dtclf;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(62 * param_pax);
 }
 }
 
@@ -765,6 +775,7 @@ item (FEAT_TRAINS, item_BR480_dtclr, 357) {
 	default: 							sw_BR480_dtclr;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(62 * param_pax);
 }
 }
 
@@ -808,6 +819,7 @@ item (FEAT_TRAINS, item_BR480_mbso, 358) {
 	default: 							sw_BR480_mbso;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(58 * param_pax);
 }
 }
 
@@ -851,5 +863,6 @@ item (FEAT_TRAINS, item_BR480_buf, 359) {
 	default: 							sw_BR480_buf;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(23 * param_pax);
 }
 }

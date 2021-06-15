@@ -237,6 +237,7 @@ item (FEAT_TRAINS, item_BR373, 80) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(50 * param_pax);
 }
 }
 
@@ -285,6 +286,7 @@ item (FEAT_TRAINS, item_BR373_2, 97) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(50 * param_pax);
 }
 }
 
@@ -329,6 +331,7 @@ item (FEAT_TRAINS, item_BR373MS, 81) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(48 * param_pax);
 }
 }
 
@@ -371,6 +374,7 @@ item (FEAT_TRAINS, item_BR373TS, 82) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR373TS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(56 * param_pax);
 }
 }
 
@@ -455,6 +459,7 @@ item (FEAT_TRAINS, item_BR373TF, 84) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR373TF;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(39 * param_pax);
 }
 }
 
@@ -497,6 +502,7 @@ item (FEAT_TRAINS, item_BR373TBF, 85) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR373TBF;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(25 * param_pax);
 }
 }
 
@@ -541,6 +547,7 @@ item (FEAT_TRAINS, item_BR373MSb, 86) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(48 * param_pax);
 }
 }
 

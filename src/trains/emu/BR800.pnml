@@ -160,6 +160,7 @@ item (FEAT_TRAINS, item_BR800, 392) {
 	visual_effect_and_powered:			sw_800_effect;
 	sound_effect:						sw_800_sound;
 	running_cost_factor:				sw_800_runningcost;
+	cargo_capacity: return(56 * param_pax);
 }
 }
 
@@ -204,6 +205,7 @@ item (FEAT_TRAINS, item_BR800_b, 393) {
 	speed:								sw_800_maxspeed;
 	visual_effect_and_powered:			sw_800_i_effect;
 	sound_effect:						sw_800_sound;
+	cargo_capacity: return(81 * param_pax);
 }
 }
 
@@ -248,5 +250,6 @@ item (FEAT_TRAINS, item_BR800_c, 394) {
 	speed:								sw_800_maxspeed;
 	visual_effect_and_powered:			sw_800_effect;
 	sound_effect:						sw_800_sound;
+	cargo_capacity: return(15 * param_pax);
 }
 }

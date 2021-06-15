@@ -483,6 +483,7 @@ item (FEAT_TRAINS, item_BRMK1SO, 137) {
 	default: 							sw_BRMK1SO;
 	purchase:							spriteset_BRMK1SO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(48 * param_pax);
 }
 }
 
@@ -515,6 +516,7 @@ item (FEAT_TRAINS, item_BRMK1FO, 138) {
 	default: 							sw_BRMK1FO;
 	purchase:							spriteset_BRMK1FO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(42 * param_pax);
 }
 }
 
@@ -547,6 +549,7 @@ item (FEAT_TRAINS, item_BRMK1FK, 139) {
 	default: 							sw_BRMK1FK;
 	purchase:							spriteset_BRMK1FK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(42 * param_pax);
 }
 }
 
@@ -579,6 +582,7 @@ item (FEAT_TRAINS, item_BRMK1CK, 140) {
 	default: 							sw_BRMK1CK;
 	purchase:							spriteset_BRMK1CK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(48 * param_pax);
 }
 }
 
@@ -611,6 +615,7 @@ item (FEAT_TRAINS, item_BRMK1BSK, 141) {
 	default: 							sw_BRMK1BSK;
 	purchase:							spriteset_BRMK1BSK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(32 * param_pax);
 }
 }
 
@@ -643,6 +648,7 @@ item (FEAT_TRAINS, item_BRMK1BCK, 142) {
 	default: 							sw_BRMK1BCK;
 	purchase:							spriteset_BRMK1BCK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(24 * param_pax);
 }
 }
 
@@ -675,6 +681,7 @@ item (FEAT_TRAINS, item_BRMK1BFK, 143) {
 	default: 							sw_BRMK1BFK;
 	purchase:							spriteset_BRMK1BFK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(24 * param_pax);
 }
 }
 
@@ -707,6 +714,7 @@ item (FEAT_TRAINS, item_BRMK1BG, 144) {
 	default: 							sw_BRMK1BG;
 	purchase:							spriteset_BRMK1BG_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(10 * param_pax);
 }
 }
 
@@ -739,7 +747,7 @@ item (FEAT_TRAINS, item_BRMK1RK, 145) {
 	default: 							sw_BRMK1RK;
 	cargo_capacity:						return 0;
 	purchase:							spriteset_BRMK1RK_Purchase;
-	colour_mapping: 					return PALETTE_CC_FIRST;
+	colour_mapping: 					return PALETTE_CC_FIRST;	
 }
 }
 
@@ -772,6 +780,7 @@ item (FEAT_TRAINS, item_BRMK1RMB, 146) {
 	default: 							sw_BRMK1RMB;
 	purchase:							spriteset_BRMK1RMB_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(44 * param_pax);
 }
 }
 
@@ -803,6 +812,7 @@ item (FEAT_TRAINS, item_BRMK1SK, 147) {
 	default: 							sw_BRMK1SK;
 	purchase:							spriteset_BRMK1SK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(64 * param_pax);
 }
 }
 
@@ -834,6 +844,7 @@ item (FEAT_TRAINS, item_BRMK1BSO, 148) {
 	default: 							sw_BRMK1BSO;
 	purchase:							spriteset_BRMK1BSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(39 * param_pax);
 }
 }
 
@@ -865,6 +876,7 @@ item (FEAT_TRAINS, item_BRMK1BSOT, 149) {
 	default: 							sw_BRMK1BSOT;
 	purchase:							spriteset_BRMK1BSOT_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(31 * param_pax);
 }
 }
 
@@ -896,5 +908,6 @@ item (FEAT_TRAINS, item_BRMK1TSO, 150) {
 	default: 							sw_BRMK1TSO;
 	purchase:							spriteset_BRMK1TSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(64 * param_pax);
 }
 }

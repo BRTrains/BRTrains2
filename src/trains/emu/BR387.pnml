@@ -217,6 +217,7 @@ item (FEAT_TRAINS, item_BR387, 240) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(60 * param_pax);
 }
 }
 
@@ -260,6 +261,7 @@ item (FEAT_TRAINS, item_BR387_b, 241) {
 	default: 							sw_BR387_b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(69 * param_pax);
 }
 }
 
@@ -303,6 +305,7 @@ item (FEAT_TRAINS, item_BR387_c, 242) {
 	default: 							sw_BR387_c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(57 * param_pax);
 }
 }
 
@@ -347,5 +350,6 @@ item (FEAT_TRAINS, item_BR387_d, 243) {
 	default: 							sw_BR387_d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(60 * param_pax);
 }
 }

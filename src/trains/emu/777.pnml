@@ -79,5 +79,6 @@ item(FEAT_TRAINS, item_br_777, 450) {
 		can_attach_wagon: switch_br_777_can_attach_wagon;
 		visual_effect_and_powered: switch_br_777_particles;			
 		additional_text: string(STR_DSC_BR_777);	
+		cargo_capacity:						return(484/4 * param_pax);
 	}
 }

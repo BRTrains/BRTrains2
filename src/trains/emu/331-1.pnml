@@ -87,7 +87,7 @@ item(FEAT_TRAINS, item_br_331_1, 425) {
 		can_attach_wagon: switch_br_331_1_can_attach_wagon;
 		visual_effect_and_powered: switch_br_331_1_particles;
 				
-		purchase_cargo_capacity: return (284/4);
+		cargo_capacity: return (284/4);
 		additional_text: string(STR_DSC_BR_331);	
 				
 	}

@@ -130,7 +130,7 @@ item (FEAT_TRAINS, item_BR91, 108) {
 	default: 							sw_91_front;
 	purchase:							spriteset_BR91_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	speed:								sw_BR91_speed;
+	speed:								sw_BR91_speed;    
 }
 }
 
@@ -375,7 +375,7 @@ item (FEAT_TRAINS, item_91_BRMK4DVT, 113) {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
  cargo_capacity: return 0;
  default: sw_91_rear;
- colour_mapping: return PALETTE_CC_FIRST;
+ colour_mapping: return PALETTE_CC_FIRST; 
 }
 }
 
@@ -408,6 +408,7 @@ item (FEAT_TRAINS, item_91_BRMK4FO, 112) {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
   default: sw_91_BRMK4FO;
  colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(43 * param_pax);
 }
 }
 
@@ -440,6 +441,7 @@ item (FEAT_TRAINS, item_91_BRMK4TSOE, 109) {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
   default: sw_91_BRMK4TSOE;
  colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(76 * param_pax);
 }
 }
 
@@ -472,6 +474,7 @@ item (FEAT_TRAINS, item_91_BRMK4TSO, 110) {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
   default: sw_91_BRMK4TSO;
  colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(76 * param_pax);
 }
 }
 
@@ -504,6 +507,7 @@ item (FEAT_TRAINS, item_91_BRMK4RFM, 111) {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
   default: sw_91_BRMK4RFM;
  colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(30 * param_pax);
 }
 }
 
@@ -536,5 +540,6 @@ item (FEAT_TRAINS, item_91_BRMK4TSOD, 114) {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
   default: sw_91_BRMK4TSOD;
  colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(72 * param_pax);
 }
 }

@@ -160,6 +160,7 @@ item (FEAT_TRAINS, item_BR378_3, 225) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -208,6 +209,7 @@ item (FEAT_TRAINS, item_BR378_4, 231) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -257,6 +259,7 @@ item (FEAT_TRAINS, item_BR378_5, 232) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -305,6 +308,7 @@ item (FEAT_TRAINS, item_BR378_4dc, 233) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -354,6 +358,7 @@ item (FEAT_TRAINS, item_BR378_5dc, 234) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -397,6 +402,7 @@ item (FEAT_TRAINS, item_BR378ptso, 226) {
 	default: 							sw_BR378ptso;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -440,6 +446,7 @@ item (FEAT_TRAINS, item_BR378mso, 227) {
 	default: 							sw_BR378mso;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -483,6 +490,7 @@ item (FEAT_TRAINS, item_BR378mso5, 228) {
 	default: 							sw_BR378mso5;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -527,6 +535,7 @@ item (FEAT_TRAINS, item_BR378dmsob, 229) {
 	default: 							sw_BR378dmsob;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }
 
@@ -572,5 +581,6 @@ item (FEAT_TRAINS, item_BR378dmsob5, 235) {
 	default: 							sw_BR378dmsob5;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electrostar_sound;
+	cargo_capacity: return(210 * param_pax);
 }
 }

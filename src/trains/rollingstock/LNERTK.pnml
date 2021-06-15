@@ -55,5 +55,6 @@ item (FEAT_TRAINS, item_LNERTK, 8) {
 	default: 							sw_LNERTK;
 	purchase:							spriteset_LNERTK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(56 * param_pax);
 }
 }

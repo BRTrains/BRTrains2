@@ -74,7 +74,7 @@ item(FEAT_TRAINS, item_br_345, 426) {
 	graphics {
 		default: switch_br_345_spriteset;
 		purchase: spriteset_br_345_purchase;
-		
+		cargo_capacity:						return(1500/9 * param_pax);
 		articulated_part: switch_br_345_articulated;
 		start_stop: switch_br_345_start_stop;	
 		can_attach_wagon: switch_br_345_can_attach_wagon;

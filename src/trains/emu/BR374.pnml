@@ -139,6 +139,7 @@ item (FEAT_TRAINS, item_BR374, 88) {
 	purchase:							spriteset_BR374_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(40 * param_pax);
 }
 }
 
@@ -183,6 +184,7 @@ item (FEAT_TRAINS, item_374MF, 89) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(40 * param_pax);
 }
 }
 
@@ -225,6 +227,7 @@ item (FEAT_TRAINS, item_374TF, 90) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR374TF;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(35 * param_pax);
 }
 }
 
@@ -269,6 +272,7 @@ item (FEAT_TRAINS, item_374MS, 91) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(76 * param_pax);
 }
 }
 
@@ -311,6 +315,7 @@ item (FEAT_TRAINS, item_374TS, 92) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR374TS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(76 * param_pax);
 }
 }
 
@@ -353,6 +358,7 @@ item (FEAT_TRAINS, item_374TBS, 93) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR374TBS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(32 * param_pax);
 }
 }
 
@@ -397,6 +403,7 @@ item (FEAT_TRAINS, item_374MSb, 94) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(76 * param_pax);
 }
 }
 
@@ -441,6 +448,7 @@ item (FEAT_TRAINS, item_374MFb, 95) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(36 * param_pax);
 }
 }
 
@@ -483,5 +491,6 @@ item (FEAT_TRAINS, item_374DFb, 96) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR374DFb;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(40 * param_pax);
 }
 }

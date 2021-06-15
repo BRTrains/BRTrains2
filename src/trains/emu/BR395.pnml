@@ -87,6 +87,7 @@ item (FEAT_TRAINS, item_BR395, 77) {
 	purchase:							spriteset_BR395_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	speed:								sw_BR395_speed;
+	cargo_capacity: return(50 * param_pax);
 }
 }
 
@@ -132,6 +133,7 @@ item (FEAT_TRAINS, item_395b, 78) {
 	speed:								sw_BR395_speed;
 	create_effect:						electric_create_visual_effect_SAA3;
 	sound_effect:						sw_electric_sound;
+	cargo_capacity: return(60 * param_pax);
 }
 }
 
@@ -175,5 +177,6 @@ item (FEAT_TRAINS, item_395c, 79) {
 	default: 							sw_BR395c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	speed:								sw_BR395_speed;
+	cargo_capacity: return(50 * param_pax);
 }
 }

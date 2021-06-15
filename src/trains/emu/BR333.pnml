@@ -112,6 +112,7 @@ item (FEAT_TRAINS, item_BR333, 436) {
 	purchase:							spriteset_BR333_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
+	cargo_capacity: return(98 * param_pax);
 }
 }
 
@@ -156,6 +157,7 @@ item (FEAT_TRAINS, item_BR333b, 437) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
 	create_effect:						electric_create_visual_effect;
+	cargo_capacity: return(93 * param_pax);
 }
 }
 
@@ -199,7 +201,7 @@ item (FEAT_TRAINS, item_BR333c, 438) {
 	default: 							sw_BR333c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
-
+	cargo_capacity: return(98 * param_pax);
 }
 }
 
@@ -243,6 +245,7 @@ item (FEAT_TRAINS, item_BR333d, 439) {
 	default: 							sw_BR333d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
+	cargo_capacity: return(98 * param_pax);
 
 }
 }

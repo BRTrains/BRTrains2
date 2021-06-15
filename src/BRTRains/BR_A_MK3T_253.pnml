@@ -579,6 +579,7 @@ item (FEAT_TRAINS, item_253_BRMK3TF, 13) {
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
 	purchase:							spriteset_BRMK3TF_purchase;
 	speed:								200;
+	cargo_capacity: return(48 * param_pax);
 }
 }
 
@@ -616,6 +617,7 @@ item (FEAT_TRAINS, item_253_BRMK3TS, 14) {
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
 	purchase:							spriteset_BRMK3TS_purchase;
 	speed:								200;
+	cargo_capacity: return(72 * param_pax);
 }
 }
 
@@ -653,6 +655,7 @@ item (FEAT_TRAINS, item_253_BRMK3TGS, 15) {
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
 	purchase:							spriteset_BRMK3TGS_purchase;
 	speed:								200;
+	cargo_capacity: return(59 * param_pax);
 }
 }
 
@@ -690,6 +693,7 @@ item (FEAT_TRAINS, item_253_BRMK3TRSB, 16) {
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
 	purchase:							spriteset_BRMK3TRSB_purchase;
 	speed:								200;
+	cargo_capacity: return(34 * param_pax);
 }
 }
 
@@ -727,6 +731,7 @@ item (FEAT_TRAINS, item_253_BRMK3TRUB, 17) {
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
 	purchase:							spriteset_BRMK3TRUB_purchase;
 	speed:								200;
+	cargo_capacity: return(34 * param_pax);
 }
 }
 
@@ -764,5 +769,6 @@ item (FEAT_TRAINS, item_253_BRMK3TRUK, 18) {
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
 	purchase:							spriteset_BRMK3TRUK_purchase;
 	speed:								200;
+	cargo_capacity: return(34 * param_pax);
 }
 }

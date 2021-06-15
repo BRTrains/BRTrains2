@@ -194,6 +194,7 @@ item (FEAT_TRAINS, item_BR323, 395) {
 	purchase:							spriteset_BR323_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
+	cargo_capacity: return(98 * param_pax);
 }
 }
 
@@ -238,6 +239,7 @@ item (FEAT_TRAINS, item_BR323b, 396) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
 	create_effect:						electric_create_visual_effect;
+	cargo_capacity: return(93 * param_pax);
 }
 }
 
@@ -281,6 +283,7 @@ item (FEAT_TRAINS, item_BR323c, 397) {
 	default: 							sw_BR323c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
+	cargo_capacity: return(98 * param_pax);
 
 }
 }

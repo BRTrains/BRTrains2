@@ -131,6 +131,7 @@ item (FEAT_TRAINS, item_BR73GatEx, 261) {
 	default: 							sw_BR73GatEx;
 	purchase:							spriteset_BR73GatEx_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+  cargo_capacity: return(192 * param_pax);
 }
 }
 
@@ -172,6 +173,7 @@ air_drag_coefficient:			0.06;
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
  default: sw_488_sf;
  colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(192 * param_pax);
 }
 }
 

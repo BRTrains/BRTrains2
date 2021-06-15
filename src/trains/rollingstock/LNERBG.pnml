@@ -72,6 +72,6 @@ item (FEAT_TRAINS, item_LNERBG, 10) {
 	default: 							sw_LNERBG;
 	cargo_capacity:						return 0;
 	purchase:							spriteset_LNERBG_Purchase;
-	colour_mapping: 					return PALETTE_CC_FIRST;
+	colour_mapping: 					return PALETTE_CC_FIRST;	
 }
 }
