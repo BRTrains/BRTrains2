@@ -437,6 +437,33 @@ spriteset(spriteset_BRMK3DMB_Inter7City, "gfx/BRMK3DMB.png") {
 	template_train32px(0, 363)
 }
 
+spriteset(spriteset_BRMK3TF_LNER, "gfx/BRMK3TF.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BRMK3TS_LNER, "gfx/BRMK3TS.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BRMK3TGS_LNER, "gfx/BRMK3TGS.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BRMK3TRSB_LNER, "gfx/BRMK3TRSB.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BRMK3TRUB_LNER, "gfx/BRMK3TRUB.png") {
+	template_train32px(0, 388)
+}
+
+spriteset(spriteset_BRMK3TRUK_LNER, "gfx/BRMK3TRUK.png") {
+	template_train32px(0, 388)
+}
+spriteset(spriteset_BRMK3DMB_LNERy, "gfx/BRMK3DMB.png") {
+	template_train32px(0, 388)
+}
+
 switch(FEAT_TRAINS,SELF, sw_253_BRMK3TF,cargo_subtype){
     0:	spriteset_BRMK3TF_BRBlue;
     1:	spriteset_BRMK3TF_IntercityExecutive;
@@ -453,6 +480,7 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMK3TF,cargo_subtype){
 	12:	spriteset_BRMK3TF_GC;
 	13:	spriteset_BRMK3TF_GCLined;
 	14:	spriteset_BRMK3TF_Inter7City;
+	15:	spriteset_BRMK3TF_LNER;
 }
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMK3TS,cargo_subtype){
@@ -471,6 +499,7 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMK3TS,cargo_subtype){
 	12:	spriteset_BRMK3TS_GC;
 	13:	spriteset_BRMK3TS_GCLined;
 	14:	spriteset_BRMK3TS_Inter7City;
+	15:	spriteset_BRMK3TS_LNER;
 }
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMK3TGS,cargo_subtype){
@@ -489,6 +518,7 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMK3TGS,cargo_subtype){
 	12:	spriteset_BRMK3TGS_GC;
 	13:	spriteset_BRMK3TGS_GCLined;
 	14:	spriteset_BRMK3TGS_Inter7City;
+	15:	spriteset_BRMK3TGS_LNER;
 }
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRSB,cargo_subtype){
@@ -507,6 +537,7 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRSB,cargo_subtype){
 	12:	spriteset_BRMK3TRSB_GC;
 	13:	spriteset_BRMK3TRSB_GCLined;
 	14:	spriteset_BRMK3TRSB_Inter7City;
+	15:	spriteset_BRMK3TRSB_LNER;
 }
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRUB,cargo_subtype){
@@ -525,6 +556,7 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRUB,cargo_subtype){
 	12:	spriteset_BRMK3TRUB_GC;
 	13:	spriteset_BRMK3TRUB_GCLined;
 	14:	spriteset_BRMK3TRUB_Inter7City;
+	15:	spriteset_BRMK3TRUB_LNER;
 }
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRUK,cargo_subtype){
@@ -543,6 +575,7 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMK3TRUK,cargo_subtype){
 	12:	spriteset_BRMK3TRUK_GC;
 	13:	spriteset_BRMK3TRUK_GCLined;
 	14:	spriteset_BRMK3TRUK_Inter7City;
+	15:	spriteset_BRMK3TRUK_LNER;
 }
 
 item (FEAT_TRAINS, item_253_BRMK3TF, 13) {
