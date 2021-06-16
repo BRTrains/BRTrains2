@@ -73,7 +73,7 @@ switch(FEAT_TRAINS,SELF,sw_BR91_cargo_subtype_text,cargo_subtype){
 	1:	return string(str_NatEx);
 	2:	return string(str_GNER);
 	3:	return string(str_EastCoast);
-	4:	return string(str_VirginEC);
+	4:	return string(str_VirginECLNER);
        return CB_RESULT_NO_TEXT;
 }
 

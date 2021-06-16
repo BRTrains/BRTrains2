@@ -94,7 +94,7 @@ switch(FEAT_TRAINS,SELF, sw_BR253,cargo_subtype){
 	12:	spriteset_BR255_GC;
 	13:	spriteset_BR255_GCLined;
 	14: spriteset_BR255_Inter7City;
-	15: spriteset_BR253_LNER;
+	15: spriteset_BR253_VirginECLNER;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR253_cargo_subtype_text,cargo_subtype){
