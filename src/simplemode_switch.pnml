@@ -1,25 +1,27 @@
  if (param[3] == 1) {
- 	disable_item(FEAT_TRAINS, 270);
-	disable_item(FEAT_TRAINS, 268);
-	disable_item(FEAT_TRAINS, 256);
-	disable_item(FEAT_TRAINS, 234);
-	disable_item(FEAT_TRAINS, 231, 232); 
-	disable_item(FEAT_TRAINS, 225);
-	disable_item(FEAT_TRAINS, 218, 224);
-	disable_item(FEAT_TRAINS, 203, 213);
-	disable_item(FEAT_TRAINS, 197); 
-	disable_item(FEAT_TRAINS, 192);
-	disable_item(FEAT_TRAINS, 181);
-	disable_item(FEAT_TRAINS, 176);
-	disable_item(FEAT_TRAINS, 138, 150);
-	disable_item(FEAT_TRAINS, 124); 
-	disable_item(FEAT_TRAINS, 97);
-	disable_item(FEAT_TRAINS, 62);
-	disable_item(FEAT_TRAINS, 9, 11); 
-	disable_item(FEAT_TRAINS, 39); 
-	disable_item(FEAT_TRAINS, 51);
-	disable_item(FEAT_TRAINS, 44);
-	disable_item(FEAT_TRAINS, 44);
-	disable_item(FEAT_TRAINS, 402);
-	disable_item(FEAT_TRAINS, 399);
+ 	disable_item(FEAT_TRAINS, 270); // 455
+	disable_item(FEAT_TRAINS, 268); // 455
+	disable_item(FEAT_TRAINS, 256); // 700
+	disable_item(FEAT_TRAINS, 234); // 378
+	disable_item(FEAT_TRAINS, 231, 232);  //378
+	disable_item(FEAT_TRAINS, 225); // 378
+	disable_item(FEAT_TRAINS, 218, 224); // 377
+	disable_item(FEAT_TRAINS, 203, 213); // 375/376/377
+	disable_item(FEAT_TRAINS, 197); // 375 (3-car)
+	disable_item(FEAT_TRAINS, 192); // 221
+	disable_item(FEAT_TRAINS, 181); // 222
+	disable_item(FEAT_TRAINS, 176); // 222
+	disable_item(FEAT_TRAINS, 124); // 390 (11-car)
+	disable_item(FEAT_TRAINS, 97); // 373 
+	disable_item(FEAT_TRAINS, 62); // 170 	
+	disable_item(FEAT_TRAINS, 39); // 158 (3-car)
+	disable_item(FEAT_TRAINS, 51); // 150
+	disable_item(FEAT_TRAINS, 44); // 150
+	disable_item(FEAT_TRAINS, 402); // 165
+	disable_item(FEAT_TRAINS, 399);	// 165
+	disable_item(FEAT_TRAINS, 9, 11); // LNER coaches apart from "Tourist Corridor"
+	disable_item(FEAT_TRAINS, 139, 150); // Mk 1 coaches apart from FO/SO (Fist Open/Standard Open)
+	disable_item(FEAT_TRAINS, 322, 323); // Mk2 coaches apart from FO/SO
+	disable_item(FEAT_TRAINS, 15, 18); // Mk3 coaches apart from TF/TS (Trailer First/Trailer Standard)
+
  }
