@@ -238,7 +238,7 @@ switch(FEAT_TRAINS,SELF, sw_BR158a,cargo_subtype){
 	22:	spriteset_BR158a_Northern;
 	23:	spriteset_BR158a_EMRMaroonWhite;
 	24:	spriteset_BR158a_EMRTransition;
-	25: spriteset_BR158b_SWR;
+	25: spriteset_BR158a_SWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR158b,cargo_subtype){
