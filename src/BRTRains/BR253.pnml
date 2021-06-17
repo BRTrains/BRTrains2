@@ -78,6 +78,10 @@ spriteset(spriteset_BR253_LNER, "gfx/BR253.png") {
 	template_train32px(0, 388)
 }
 
+spriteset(spriteset_BR253_Pullman, "gfx/BR253.png") {
+	template_train32px(0, 413)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR253,cargo_subtype){
     0:	spriteset_BR253_BRBlue;
 	1:	spriteset_BR253_IntercityExecutive;
@@ -95,6 +99,7 @@ switch(FEAT_TRAINS,SELF, sw_BR253,cargo_subtype){
 	13:	spriteset_BR255_GCLined;
 	14: spriteset_BR255_Inter7City;
 	15: spriteset_BR253_LNER;
+	16: spriteset_BR253_Pullman;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR253_cargo_subtype_text,cargo_subtype){
@@ -114,6 +119,7 @@ switch(FEAT_TRAINS,SELF,sw_BR253_cargo_subtype_text,cargo_subtype){
 	13:	return string(str_GCLined);
 	14:	return string(str_Inter7City);
 	15:	return string(str_VirginECLNER);
+	16:	return string(str_Pullman);
        return CB_RESULT_NO_TEXT;
 }
 
