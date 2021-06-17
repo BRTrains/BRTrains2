@@ -247,6 +247,11 @@ str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
 str_BR91_liveries				:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
+STR_NAME_BR139					:British Rail Class 139 'Parry People Mover'
+str_BR139_usage					:Passenger
+str_BR139_eos					:---
+str_BR139_liveries				:London Midland, West Midlands Railway
+
 STR_NAME_BR140					:British Rail Class 140 'Pacer' Prototype
 str_BR140_usage					:Passenger
 str_BR140_eos					:---
@@ -1052,6 +1057,7 @@ str_OneTrans					: (One - Transitional)
 str_overground					: (London Overground)
 str_overground5					: (London Overground 5-Car Celebration)
 str_Purple						: (Potterbrook Purple)
+str_Pullman                     : (Blue Pullman)
 str_Random                      : (Random)
 str_Railtrack					: (Railtrack)
 str_RailfreightGrey				: (Rail Freight Grey)

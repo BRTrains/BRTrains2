@@ -1,0 +1,70 @@
+spriteset(spriteset_BR139_Purchase, "gfx/BR139.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR139_LM, "gfx/BR139.png") {
+	template_train20pxTallDiag(0, 13)
+}
+
+spriteset(spriteset_BR139_WMR, "gfx/BR139.png") {
+	template_train20pxTallDiag(0, 31)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR139,cargo_subtype){
+    0:	spriteset_BR139_LM;
+	1:	spriteset_BR139_WMR;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR139_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_LondonMidland);
+	1:	return string(str_WMR);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR139, 464) {
+	property {
+		name: 							string(STR_NAME_BR139);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2009,6,1);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					10;
+		running_cost_factor:			5;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							86 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					50;
+		weight:							12 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR139_usage),string(str_BR139_eos),string(str_BR139_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR139_cargo_subtype_text;
+	default: 							sw_BR139;
+	purchase:							spriteset_BR139_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_dmu_sound;
+	cargo_capacity:						return(50 * param_pax);
+}
+}
