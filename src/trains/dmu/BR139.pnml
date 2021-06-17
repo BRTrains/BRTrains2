@@ -50,7 +50,7 @@ item (FEAT_TRAINS, item_BR139, 464) {
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.3;
 		air_drag_coefficient:			0.1;
-		length:							8;
+		length:							5;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
