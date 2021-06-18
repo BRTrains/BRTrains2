@@ -158,6 +158,7 @@ sort(FEAT_TRAINS, [
  item_LULS8,
  item_BRHHA,
  item_BRTTA,
+ item_BRContainer,
  item_LNERTK,
  item_LNERBCK,
  item_LNERPV,

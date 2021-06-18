@@ -717,6 +717,11 @@ str_BRTTA_usage					:Liquid Cargo
 str_BRTTA_eos					:---
 str_BRTTA_liveries				:Mobil, Esso, BP (x3), SUKO, Gulf, Shell (x2), Murco, Total, VTG
 
+STR_NAME_BRContainer			:British Rail Container Flatbed Wagon
+str_BRContainer_usage			:Food, Goods, Paper, Fruit
+str_BRContainer_eos				:---
+str_BRContainer_liveries		:Maersk, Random
+
 STR_NAME_BRMK1FO				:BR Mark 1 Coach (First Open)
 str_BRMK1FO_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachite Green, BR Maroon, BR Blue & Grey
 
@@ -1024,6 +1029,7 @@ str_MainlineFreight				: (Mainline Freight)
 str_MerseyRail					: (MerseyRail)
 str_MerseyRailGoodComs			: (MerseyRail - Good Communications)
 str_MerseyRailOld				: (MerseyRail - Old)
+str_Maersk      				: (Maersk)
 str_MMLBlue						: (Midland Mainline Blue)
 str_MMLTealTang					: (Midland Mainline Teal & Tangerine)
 str_Mobil                       : (Mobil)

@@ -1,0 +1,113 @@
+spriteset(spriteset_BRContainer, "gfx/freight/Containers.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BRContainer_Empty, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 13)
+}
+
+spriteset(spriteset_BRContainer_Maersk, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 38)
+}
+
+spriteset(spriteset_BRContainer_Blue, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 63)
+}
+
+spriteset(spriteset_BRContainer_Orange, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 88)
+}
+
+spriteset(spriteset_BRContainer_Green, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 113)
+}
+
+spriteset(spriteset_BRContainer_Purple, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 138)
+}
+
+spriteset(spriteset_BRContainer_Blue2, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 163)
+}
+
+spriteset(spriteset_BRContainer_Red, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 188)
+}
+
+spriteset(spriteset_BRContainer_Yellow, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 213)
+}
+
+spriteset(spriteset_BRContainer_Grey, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 238)
+}
+
+spriteset(spriteset_BRContainer_Black, "gfx/freight/Containers.png") {
+	template_train32px_reversed(0, 263)
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_BRContainer_Random)
+{
+	1:	spriteset_BRContainer_Maersk;
+	1:	spriteset_BRContainer_Blue;
+	1:	spriteset_BRContainer_Orange;
+	1:	spriteset_BRContainer_Green;
+	1:	spriteset_BRContainer_Purple;
+	1:	spriteset_BRContainer_Blue2;
+	1:	spriteset_BRContainer_Red;
+	1:	spriteset_BRContainer_Yellow;
+	1:	spriteset_BRContainer_Grey;
+	1:	spriteset_BRContainer_Black;
+}
+
+// Defined livery, or just random?
+switch(FEAT_TRAINS, SELF, sw_BRContainer_Livery, cargo_subtype){
+    0:	sw_BRContainer_Random;
+	1:	spriteset_BRContainer_Maersk;
+}
+
+// Called first, display an empty container if near empty, otherwise move to the livery switch
+switch(FEAT_TRAINS,SELF, sw_BRContainer_Cargo, cargo_count){
+	0: sw_BRContainer_Livery; // Only here for testing
+	0 .. 19: spriteset_BRContainer_Empty;
+	20 .. 75: sw_BRContainer_Livery;
+}
+
+// Random Mobil Esso BP Suko Gulf Shell BP BP Murco Shell Total VTG
+
+switch(FEAT_TRAINS,SELF,sw_BRContainer_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Random);
+	1:	return string(str_Maersk);
+}
+
+item (FEAT_TRAINS, item_BRContainer, 465) {
+	property {
+		name: 							string(STR_NAME_BRContainer);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1966,1,1);
+		model_life:						100;
+		cargo_allow_refit:				[FOOD, GOOD, PAPR, FRUT];
+		loading_speed:					20;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					72;
+		weight:							28 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRContainer_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BRContainer_Cargo;
+	purchase:							spriteset_BRContainer;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BRContainer_cargo_subtype_text;
+}
+}
