@@ -3,43 +3,43 @@
 template tmpl_train_4(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
 	[x + 25, y + 2, 8,		23,		-3,		-11] //n
-	[x + 35, y + 2, 21,		18,		-11,	-10] //ne
+	[x + 35, y + 2, 21,		18,		-11,	-11] //ne
 	[x + 58, y + 2, 32,		12,		-16,	-7] //e
-	[x + 92, y + 2, 21,		18,		-12,	-11] //se
+	[x + 92, y + 2, 21,		18,		-12,	-12] //se
 }
 
 template tmpl_train_4_nowarn(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
 	[x + 25, y + 2, 8,		23,		-3,		-11,	WHITE] //n
-	[x + 35, y + 2, 21,		18,		-11,	-10,	WHITE] //ne
+	[x + 35, y + 2, 21,		18,		-11,	-11,	WHITE] //ne
 	[x + 58, y + 2, 32,		12,		-16,	-7,		WHITE] //e
-	[x + 92, y + 2, 21,		18,		-12,	-11,	WHITE] //se
+	[x + 92, y + 2, 21,		18,		-12,	-12,	WHITE] //se
 }
 
 // Train sprite template
 template tmpl_train_8(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
 	[x + 25, y + 2, 8,		23,		-3,		-11] //n
-	[x + 35, y + 2, 21,		18,		-11,	-10] //ne
+	[x + 35, y + 2, 21,		18,		-11,	-11] //ne
 	[x + 58, y + 2, 32,		12,		-16,	-7] //e
-	[x + 92, y + 2, 21,		18,		-12,	-11] //se
+	[x + 92, y + 2, 21,		18,		-12,	-12] //se
 	[x + 115, y + 2, 8,		23,		-3,		-11] //s
-	[x + 125, y + 2, 21,	18,		-11,	-10] //sw
+	[x + 125, y + 2, 21,	18,		-11,	-11] //sw
 	[x + 148, y + 2, 32,	12,		-16,	-7] //w
-	[x + 182, y + 2, 21,	18,		-12,	-11] //nw
+	[x + 182, y + 2, 21,	18,		-12,	-12] //nw
 }
 
 // Train sprite template
 template tmpl_train_8_nowarn(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
 	[x + 25, y + 2, 8,		23,		-3,		-11,	WHITE] //n
-	[x + 35, y + 2, 21,		18,		-11,	-10,	WHITE] //ne
+	[x + 35, y + 2, 21,		18,		-11,	-11,	WHITE] //ne
 	[x + 58, y + 2, 32,		12,		-16,	-7,		WHITE] //e
-	[x + 92, y + 2, 21,		18,		-12,	-11,	WHITE] //se
+	[x + 92, y + 2, 21,		18,		-12,	-12,	WHITE] //se
 	[x + 115, y + 2, 8,		23,		-3,		-11,	WHITE] //s
-	[x + 125, y + 2, 21,	18,		-11,	-10,	WHITE] //sw
+	[x + 125, y + 2, 21,	18,		-11,	-11,	WHITE] //sw
 	[x + 148, y + 2, 32,	12,		-16,	-7,		WHITE] //w
-	[x + 182, y + 2, 21,	18,		-12,	-11,	WHITE] //nw
+	[x + 182, y + 2, 21,	18,		-12,	-12,	WHITE] //nw
 }
 
 
@@ -271,13 +271,13 @@ template template_train60(x,y){
 template template_electrostar(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 25, -3, -8]
-    [ x+9, y, 22, 20, -14, -8]
-    [ x+32, y, 32, 12, -16, -7]
-    [ x+65, y, 22, 20, -7, -8]
+    [ x+9, y, 22, 20, -14, -11]
+    [ x+32, y, 32, 12, -16, -8]
+    [ x+65, y, 22, 20, -7, -11]
     [ x+88, y, 8, 25, -3, -8]
-    [ x+97, y, 22, 20, -14, -8]
-    [ x+120, y, 32, 12, -16, -7]
-    [ x+153, y, 22, 20, -7, -8]
+    [ x+97, y, 22, 20, -14, -11]
+    [ x+120, y, 32, 12, -16, -8]
+    [ x+153, y, 22, 20, -7, -11]
 }
 
 template template_train80xdtf(x,y){
