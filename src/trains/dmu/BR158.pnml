@@ -293,7 +293,7 @@ switch(FEAT_TRAINS,SELF,sw_BR158_cargo_subtype_text,cargo_subtype){
 	14:	return string(str_WYPTEMetro);
 	15:	return string(str_NorthernRail);
 	16:	return string(str_NorthernRailMetro);
-	17:	return string(str_ScotRailSaltire);
+	17:	return string(str_ScotrailSaltire);
 	18:	return string(str_Central);
 	19:	return string(str_EMT);
 	20:	return string(str_NSE);
