@@ -3,79 +3,79 @@ spriteset(spriteset_BRHHA, "gfx/freight/BRHHA.png") {
 }
 
 spriteset(spriteset_BRHHA_empty, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 13)
+	template_train32px4viewLowered(0, 13)
 }
 
 spriteset(spriteset_BRHHA_coal_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 38)
+	template_train32px4viewLowered(0, 38)
 }
 
 spriteset(spriteset_BRHHA_coal_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 63)
+	template_train32px4viewLowered(0, 63)
 }
 
 spriteset(spriteset_BRHHA_ironore_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 113)
+	template_train32px4viewLowered(0, 113)
 }
 
 spriteset(spriteset_BRHHA_ironore_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 138)
+	template_train32px4viewLowered(0, 138)
 }
 
 spriteset(spriteset_BRHHA_lime_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 188)
+	template_train32px4viewLowered(0, 188)
 }
 
 spriteset(spriteset_BRHHA_lime_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 213)
+	template_train32px4viewLowered(0, 213)
 }
 
 spriteset(spriteset_BRHHA_copperore_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 263)
+	template_train32px4viewLowered(0, 263)
 }
 
 spriteset(spriteset_BRHHA_copperore_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 288)
+	template_train32px4viewLowered(0, 288)
 }
 
 spriteset(spriteset_BRHHA_bauxite_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 338)
+	template_train32px4viewLowered(0, 338)
 }
 
 spriteset(spriteset_BRHHA_bauxite_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 363)
+	template_train32px4viewLowered(0, 363)
 }
 
 spriteset(spriteset_BRHHA_clay_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 413)
+	template_train32px4viewLowered(0, 413)
 }
 
 spriteset(spriteset_BRHHA_clay_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 438)
+	template_train32px4viewLowered(0, 438)
 }
 
 spriteset(spriteset_BRHHA_phosphate_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 488)
+	template_train32px4viewLowered(0, 488)
 }
 
 spriteset(spriteset_BRHHA_phosphate_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 513)
+	template_train32px4viewLowered(0, 513)
 }
 
 spriteset(spriteset_BRHHA_pyriteore_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 563)
+	template_train32px4viewLowered(0, 563)
 }
 
 spriteset(spriteset_BRHHA_pyriteore_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 588)
+	template_train32px4viewLowered(0, 588)
 }
 
 spriteset(spriteset_BRHHA_sand_half, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 638)
+	template_train32px4viewLowered(0, 638)
 }
 
 spriteset(spriteset_BRHHA_sand_full, "gfx/freight/BRHHA.png") {
-	template_train32px4v(0, 663)
+	template_train32px4viewLowered(0, 663)
 }
 
 switch(FEAT_TRAINS,SELF, sw_HHAcoal,cargo_count){

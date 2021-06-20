@@ -220,6 +220,14 @@ template template_train32px4v(x,y){
     [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
 }
 
+template template_train32px4viewLowered(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
+    [ x+9, y, 21, 17, -12, -8,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -7,		NOANIM|NOWHITE]
+    [ x+64, y, 21, 17, -5, -8,		NOANIM|NOWHITE]
+}
+
 template template_train32px_reversed(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x+86,	y, 8, 24, -3, -12,		NOANIM|NOWHITE]
