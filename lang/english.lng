@@ -448,6 +448,11 @@ str_BR333_usage					:Suburban Passenger
 str_BR333_eos					:---
 str_BR333_liveries				:Northern, Northern Rail (WYPTE), Northern Spirit
 
+STR_NAME_BR334					:British Rail Class 334
+str_BR334_usage					:Suburban Passenger
+str_BR334_eos					:---
+str_BR334_liveries				:"Carmine and Cream", Scotrail Saltire
+
 STR_NAME_BR350					:British Rail Class 350 'Desiro'
 str_BR350_usage					:Passenger
 str_BR350_eos					:---
