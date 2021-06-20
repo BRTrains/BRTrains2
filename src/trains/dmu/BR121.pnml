@@ -10,14 +10,20 @@ spriteset(spriteset_BR121_Blue, "gfx/BR121.png") {
 	template_train32px(0, 38)
 }
 
+spriteset(spriteset_BR121_Railtrack, "gfx/BR121.png") {
+	template_train32px(0, 63)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR121,cargo_subtype){
     0:	spriteset_BR121_Green;
 	1:	spriteset_BR121_Blue;
+	2:	spriteset_BR121_Railtrack;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR121_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRGreen);
 	1:	return string(str_BRBlue);
+	2:	return string(str_Railtrack);
        return CB_RESULT_NO_TEXT;
 }
 
