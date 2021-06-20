@@ -247,6 +247,11 @@ str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
 str_BR91_liveries				:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
+STR_NAME_BR121					:British Rail Class 121 'Bubble Car'
+str_BR121_usage					:Passenger
+str_BR121_eos					:---
+str_BR121_liveries				:BR Green, BR Blue
+
 STR_NAME_BR139					:British Rail Class 139 'Parry People Mover'
 str_BR139_usage					:Passenger
 str_BR139_eos					:---
