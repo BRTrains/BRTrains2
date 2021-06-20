@@ -119,7 +119,7 @@ switch(FEAT_TRAINS,SELF,sw_BR153_cargo_subtype_text,cargo_subtype){
 	15:	return string(str_NorthernRail);
 	16:	return string(str_FGW);
 	17:	return string(str_LondonMidland);
-	18:	return string(str_ScotRailSaltire);
+	18:	return string(str_ScotrailSaltire);
        return CB_RESULT_NO_TEXT;
 }
 
