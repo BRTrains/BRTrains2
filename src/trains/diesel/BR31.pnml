@@ -1,0 +1,125 @@
+spriteset(spriteset_BR31_Purchase, "gfx/BR31.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR31_BRGreen, "gfx/BR31.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR31_BRBlue, "gfx/BR31.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR31_BRBlueAlt, "gfx/BR31.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR31_NetworkRail, "gfx/BR31.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR31_Freightliner, "gfx/BR31.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR31_Intercity, "gfx/BR31.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR31_EWS, "gfx/BR31.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BR31_Regional, "gfx/BR31.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR31_Wessex, "gfx/BR31.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR31_TopGear, "gfx/BR31.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR31_NetworkRailAlt, "gfx/BR31.png") {
+	template_train32px(0, 263)
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_BR31,cargo_subtype){    
+    0:	spriteset_BR31_BRGreen;
+	1:	spriteset_BR31_BRBlue;
+	2:	spriteset_BR31_BRBlueAlt;
+	3:	spriteset_BR31_NetworkRail;
+	4:	spriteset_BR31_NetworkRailAlt;
+	5:	spriteset_BR31_TopGear;
+	6:	spriteset_BR31_Intercity;
+	7:	spriteset_BR31_EWS;
+	8:	spriteset_BR31_Regional;
+	9:	spriteset_BR31_Wessex;
+	10:	spriteset_BR31_Freightliner;
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR31_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRGreen);
+	1:	return string(str_BRBlueYellow);
+	2:	return string(str_BRBlue);
+	3:	return string(str_NetworkRail);
+	4:	return string(str_NetworkRailInfrastructure);
+	5:	return string(str_NetworkRailTopGear);
+	6:	return string(str_Intercity);
+	7:	return string(str_EWSRed);
+	8:	return string(str_Regional);
+	9:	return string(str_Wessex);
+	10:	return string(str_Freightliner);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR31, 470) {
+	property {
+		name: 							string(STR_NAME_BR31);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1957,4,21);
+		model_life:						19;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					38;
+		running_cost_factor:			37;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1470 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							106 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.275;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_7),string(str_BR31_usage),string(str_BR31_eos),string(str_BR31_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR31_cargo_subtype_text;
+	default: 							sw_BR31;
+	purchase:							spriteset_BR31_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_deltic_sound;
+}
+}

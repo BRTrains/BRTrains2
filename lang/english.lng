@@ -172,6 +172,11 @@ str_BR13_usage					:Shunting
 str_BR13_eos					:1983-1986
 str_BR13_liveries				:BR Blue
 
+STR_NAME_BR31					:British Rail Class 31
+str_BR31_usage					:Express Passenger
+str_BR31_eos					:---
+str_BR31_liveries				:
+
 STR_NAME_BR33_0					:British Rail Class 33/0 'Crompton'
 str_BR33_0_usage				:Mixed Traffic
 str_BR33_0_eos					:---
@@ -1047,6 +1052,8 @@ str_Murco                       : (Murco)
 str_NatEx						: (National Express)
 str_NatExScotRail				: (ScotRail - National Express)
 str_NetworkRail                 : (Network Rail)
+str_NetworkRailInfrastructure   : (Network Rail - Infrastructure)
+str_NetworkRailTopGear          : (Network Rail - Top Gear)
 str_Northern                    : (Northern)
 str_NorthernExp1				: (Northern Rail - Experimental 1)
 str_NorthernExp2				: (Northern Rail - Experimental 2)
