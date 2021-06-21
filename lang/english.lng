@@ -434,11 +434,11 @@ str_BR305_2_eos					:2000
 str_BR305_2_liveries			:BR Green, BR Blue, BR Blue Grey, Network SouthEast, Regional Railways - Ex-NSE, Regional Railways, GMPTE
 
 STR_NAME_BR310				    :British Rail Class 310
-STR_NAME_BR310_0				:British Rail Class 310/0 (4-Car)
+STR_NAME_BR310_0				:British Rail Class 310/0 "AM-10" (4-Car)
 STR_NAME_BR310_1				:British Rail Class 310/1 (3-Car)
 str_BR310_usage				    :Commuter Passenger
 str_BR310_eos					:---
-str_BR310_liveries			    :BR Blue/Grey
+str_BR310_liveries			    :BR Blue/Grey, Network South East, Regional Rail
 
 STR_NAME_BR315					:British Rail Class 315
 str_BR315_usage					:Commuter Passenger
