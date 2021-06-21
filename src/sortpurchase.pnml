@@ -3,6 +3,7 @@ sort(FEAT_TRAINS, [
  item_LNERA3,
  item_BR08,
  item_BR13,
+ item_BR31,
  item_BR33_0,
  item_BR33_1,
  item_BR37,
