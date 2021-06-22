@@ -240,6 +240,18 @@ template template_train32px_reversed(x,y){
     [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
 }
 
+template template_train32px_reversed_anim(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x+86,	y, 8, 24, -3, -12,		ANIM|NOWHITE]
+    [ x+95, y, 21, 17, -12, -10,	ANIM|NOWHITE]
+    [ x+117, y, 32, 12, -16, -8,	ANIM|NOWHITE]
+    [ x+150, y, 21, 17, -5, -10,	ANIM|NOWHITE]
+	[ x, y, 8, 24, -3, -12,			ANIM|NOWHITE]
+    [ x+9, y, 21, 17, -12, -10,		ANIM|NOWHITE]
+    [ x+31, y, 32, 12, -16, -8,		ANIM|NOWHITE]
+    [ x+64, y, 21, 17, -5, -10,		ANIM|NOWHITE]
+}
+
 template template_trainBRMk2(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
