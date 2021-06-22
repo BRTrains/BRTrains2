@@ -91,7 +91,7 @@ item (FEAT_TRAINS, item_BR310_0, 471) {
 	property {
 		name: 							string(STR_NAME_BR310_0);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1988,4,21);
+		introduction_date:				date(1965,4,21);
 		model_life:						8;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -140,7 +140,7 @@ item (FEAT_TRAINS, item_BR310_1, 472) {
 	property {
 		name: 							string(STR_NAME_BR310_1);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1988,4,21);
+		introduction_date:				date(1965,4,21);
 		model_life:						8;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -189,7 +189,7 @@ item (FEAT_TRAINS, item_310b, 473) {
 	property {
 		name: 							string(STR_NAME_BR310);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1988,4,21);
+		introduction_date:				date(1965,4,21);
 		model_life:						8;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -234,7 +234,7 @@ item (FEAT_TRAINS, item_310c, 474) {
 	property {
 		name: 							string(STR_NAME_BR310);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1988,4,21);
+		introduction_date:				date(1965,4,21);
 		model_life:						8;
 		retire_early:					1;
 		vehicle_life:					50;
