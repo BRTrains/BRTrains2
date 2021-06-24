@@ -14,16 +14,43 @@ spriteset(spriteset_BR121_Railtrack, "gfx/BR121.png") {
 	template_train32px(0, 63)
 }
 
+spriteset(spriteset_BR121_BRGreen2, "gfx/BR121.png") {
+	template_train32px(0, 88)
+}
+spriteset(spriteset_BR121_BRBlue2, "gfx/BR121.png") {
+	template_train32px(0, 113)
+}
+spriteset(spriteset_BR121_BRRefurb, "gfx/BR121.png") {
+	template_train32px(0, 138)
+}
+spriteset(spriteset_BR121_BRBlueGrey, "gfx/BR121.png") {
+	template_train32px(0, 163)
+}
+spriteset(spriteset_BR121_Silverlink, "gfx/BR121.png") {
+	template_train32px(0, 188)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR121,cargo_subtype){
     0:	spriteset_BR121_Green;
 	1:	spriteset_BR121_Blue;
 	2:	spriteset_BR121_Railtrack;
+	3:	spriteset_BR121_BRGreen2;
+	4:	spriteset_BR121_BRBlue2;
+	5:	spriteset_BR121_BRRefurb;
+	6:	spriteset_BR121_BRBlueGrey;
+	7:	spriteset_BR121_Silverlink;
+
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR121_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRGreen);
 	1:	return string(str_BRBlue);
 	2:	return string(str_Railtrack);
+	3:	return string(str_BRGreenCentre);
+	4:	return string(str_BRBlueCentre);
+	5:	return string(str_GRFTest1);
+	6:	return string(str_BRBlueGrey);
+	7:	return string(str_GRFTest2);
        return CB_RESULT_NO_TEXT;
 }
 
