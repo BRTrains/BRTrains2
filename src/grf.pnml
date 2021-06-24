@@ -49,7 +49,7 @@ grf {
 		param_pax{
 			name: string(STR_PARAM_NAME_PAX_MULTIPLIER);
 			desc: string(STR_PARAM_DESC_PAX_MULTIPLIER);
-			min_value: 0;
+			min_value: 1;
 			max_value: 4;
 			def_value: 1;
 			names: {
