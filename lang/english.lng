@@ -237,6 +237,11 @@ str_BR67EWS_usage				:Mixed Traffic
 str_BR67EWS_eos					:---
 str_BR67EWS_liveries			:EWS Company Train, DB Schenker Company Train
 
+STR_NAME_BR70OG					:British Rail (1940s Southern Region) Class 70
+str_BR70OG_usage			    :Mixed Traffic
+str_BR70OG_eos					:---
+str_BR70OG_liveries				:BR Green
+
 STR_NAME_BR70					:British Rail Class 70 'Powerhaul'
 str_BR70_usage					:Heavy Freight
 str_BR70_eos					:---
