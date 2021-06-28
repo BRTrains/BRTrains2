@@ -21,6 +21,11 @@ STR_PARAM_DESC_SIMPLE			:Optionally remove some similar trains for a simpler pur
 STR_PARAM_COMPLEX				:All Trains
 STR_PARAM_SIMPLE				:Representitive Selection
 
+STR_PARAM_NAME_DEV  			:Complexity
+STR_PARAM_DESC_DEV			    :Optionally remove some similar trains for a simpler purchase list
+STR_PARAM_DEV_ON				:Development mode (includes in-progress or unfinished trains etc)
+STR_PARAM_DEV_OFF				:Default mode
+
 STR_PARAM_NAME_PAX_MULTIPLIER  :Passenger Capacity Multiplier
 STR_PARAM_DESC_PAX_MULTIPLIER  :Increase passenger capacity to allow use of real-world train sizes with higher capacity routes
 STR_PARAM_1X                    :1x (Default)

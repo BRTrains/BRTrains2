@@ -19,6 +19,19 @@ grf {
 			};
 		}
 	}
+	param 1 {		
+		param_dev_mode{
+			name: string(STR_PARAM_NAME_DEV);
+			desc: string(STR_PARAM_DESC_DEV);
+			min_value: 0;
+			max_value: 1;
+			def_value: 0;
+			names: {
+				0: string(STR_PARAM_DEV_OFF);
+				1: string(STR_PARAM_DEV_ON);
+			};
+		}
+	}
 	param 2 {
 		param_sounds{
 			name: string(STR_PARAM_NAME_SOUNDS);
@@ -32,7 +45,7 @@ grf {
 			};
 		}
 	}
-	param 3 {
+	param 3 {		
 		param_simple_mode{
 			name: string(STR_PARAM_NAME_SIMPLE);
 			desc: string(STR_PARAM_DESC_SIMPLE);

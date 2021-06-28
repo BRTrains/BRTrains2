@@ -92,7 +92,9 @@ Note, this method still requires the `nml` python package to be installed.
 - GamingBloke  
 - SquireJames  
 - Erato  
-- DJ Nekkid  
+- DJ Nekkid 
+- Welshdragon
+- Doorslammer
 
 ... And other BROS artists who's names have been lost along the way
 
