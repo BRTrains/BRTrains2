@@ -247,6 +247,11 @@ str_BR70_usage					:Heavy Freight
 str_BR70_eos					:---
 str_BR70_liveries				:Freightliner, Colas Rail
 
+STR_NAME_BR71					:British Rail Class 71
+str_BR71_usage					:Mixed Traffic
+str_BR71_eos					:---
+str_BR71_liveries				:BR Green
+
 STR_NAME_BR89					:British Rail Class 89 'Badger'
 str_BR89_usage					:Express Passenger
 str_BR89_eos					:---
