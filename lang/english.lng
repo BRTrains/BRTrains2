@@ -371,6 +371,16 @@ str_BR170_3_usage				:Passenger
 str_BR170_3_eos					:---
 str_BR170_3_liveries			:Central Trains, London Midland, One, ScotRail Saltire, South West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE, West Midland Railway, East Midlands Railway, Transport For Wales
 
+STR_NAME_BR171					:British Rail Class 171 'Turbostar' (2-Car)
+str_BR171_usage					:Passenger
+str_BR171_eos					:---
+str_BR171_liveries				:Southern
+
+STR_NAME_BR171_4				:British Rail Class 171 'Turbostar' (4-Car)
+str_BR171_4_usage				:Passenger
+str_BR171_4_eos					:---
+str_BR171_4_liveries			:Southern
+
 STR_NAME_BR1750					:British Rail Class 175/0 'Coradia' (2-Car)
 STR_NAME_BR1751					:British Rail Class 175/1 'Coradia' (3-Car)
 str_BR175_usage					:Passenger
