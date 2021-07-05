@@ -1,21 +1,5 @@
-spriteset(spriteset_BR450_Purchase, "gfx/Class 450.png") {
-	template_purchase(109, 126)
-}
-
-spriteset(spriteset_BR450a_SWT, "gfx/Class 450.png") {
-	template_450(0, 0)
-}
-
-spriteset(spriteset_BR450b_SWT, "gfx/Class 450.png") {
-	template_450(0, 31)
-}
-
-spriteset(spriteset_BR450c_SWT, "gfx/Class 450.png") {
-	template_450(0, 61)
-}
-
-spriteset(spriteset_BR450d_SWT, "gfx/Class 450.png") {
-	template_450(0, 92)
+spriteset(spriteset_BR450_Purchase, "gfx/BR450.png") {
+	template_purchase(0, 0)
 }
 
 spriteset(spriteset_BR450a_SWR, "gfx/BR450.png") {
@@ -34,44 +18,40 @@ spriteset(spriteset_BR450d_SWR, "gfx/BR450.png") {
 	template_train32px(0, 194)
 }
 
-spriteset(spriteset_BR450a_SWT2, "gfx/BR450.png") {
+spriteset(spriteset_BR450a_SWT, "gfx/BR450.png") {
 	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BR450b_SWT2, "gfx/BR450.png") {
+spriteset(spriteset_BR450b_SWT, "gfx/BR450.png") {
 	template_train32px(0, 39)
 }
 
-spriteset(spriteset_BR450c_SWT2, "gfx/BR450.png") {
+spriteset(spriteset_BR450c_SWT, "gfx/BR450.png") {
 	template_train32px(0, 65)
 }
 
-spriteset(spriteset_BR450d_SWT2, "gfx/BR450.png") {
+spriteset(spriteset_BR450d_SWT, "gfx/BR450.png") {
 	template_train32px(0, 91)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR450a,cargo_subtype){
     0:	spriteset_BR450a_SWT;
-	1:	spriteset_BR450a_SWR;
-	2:	spriteset_BR450a_SWT2;
+	1:	spriteset_BR450a_SWR;	
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR450b,cargo_subtype){
     0:	spriteset_BR450b_SWT;
-	1:	spriteset_BR450b_SWR;
-	2:	spriteset_BR450b_SWT2;
+	1:	spriteset_BR450b_SWR;	
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR450c,cargo_subtype){
     0:	spriteset_BR450c_SWT;
-	1:	spriteset_BR450c_SWR;
-	2:	spriteset_BR450c_SWT2;
+	1:	spriteset_BR450c_SWR;	
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR450d,cargo_subtype){
     0:	spriteset_BR450d_SWT;
-	1:	spriteset_BR450d_SWR;
-	2:	spriteset_BR450d_SWT2;
+	1:	spriteset_BR450d_SWR;	
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR450, extra_callback_info1) {
@@ -83,8 +63,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR450, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR450_cargo_subtype_text,cargo_subtype){
     0:	return string(str_SWT);
-	1:	return string(str_SWR);
-	2:	return string(str_GRFTest1);
+	1:	return string(str_SWR);	
        return CB_RESULT_NO_TEXT;
 }
 
