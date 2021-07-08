@@ -1,6 +1,21 @@
+spriteset(spriteset_BR319_Purchase, "gfx/BR319_v2.png") {
+	template_purchase(0, 0)
+}
 
-spriteset(spriteset_BR319_Purchase, "gfx/BR319.png") {
-	template_purchase(237, 488)
+spriteset(spriteset_BR319a_Northern2, "gfx/BR319_v2.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR319b_Northern2, "gfx/BR319_v2.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR319c_Northern2, "gfx/BR319_v2.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR319d_Northern2, "gfx/BR319_v2.png") {
+	template_train32px(0, 88)
 }
 
 spriteset(spriteset_BR319a_nse, "gfx/BR319.png") {
@@ -179,7 +194,6 @@ spriteset(spriteset_BR319d_northernPurple, "gfx/BR319.png") {
 	template_electrostar(0, 442)
 }
 
-
 spriteset(spriteset_BR319a_Northern, "gfx/BR319.png") {
 	template_electrostar(0, 858)
 }
@@ -209,7 +223,8 @@ switch(FEAT_TRAINS,SELF, sw_BR319a,cargo_subtype){
 	9:spriteset_BR319a_lm;
 	10:spriteset_BR319a_northernPurple;
 	11:spriteset_BR319a_Northern;
-	}
+	12:spriteset_BR319a_Northern2;
+}
 
 switch(FEAT_TRAINS,SELF, sw_BR319b,cargo_subtype){
 	0:spriteset_BR319b_nseg;
@@ -224,6 +239,7 @@ switch(FEAT_TRAINS,SELF, sw_BR319b,cargo_subtype){
 	9:spriteset_BR319b_lm;
 	10:spriteset_BR319b_northernPurple;
 	11:spriteset_BR319b_Northern;
+	12:spriteset_BR319b_Northern2;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR319c,cargo_subtype){
@@ -239,6 +255,7 @@ switch(FEAT_TRAINS,SELF, sw_BR319c,cargo_subtype){
 	9:spriteset_BR319c_lm;
 	10:spriteset_BR319c_northernPurple;
 	11:spriteset_BR319c_Northern;
+	12:spriteset_BR319c_Northern2;
 }
 
 
@@ -255,6 +272,7 @@ switch(FEAT_TRAINS,SELF, sw_BR319d,cargo_subtype){
 	9:spriteset_BR319d_lm;
 	10:spriteset_BR319d_northernPurple;
 	11:spriteset_BR319d_Northern;
+	12:spriteset_BR319d_Northern2;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR319, extra_callback_info1) {
@@ -277,6 +295,7 @@ switch(FEAT_TRAINS,SELF,sw_BR319_cargo_subtype_text,cargo_subtype){
     9:	return string(str_LondonMidland);
     10:	return string(str_NorthernRail);
 	11: return string(str_Northern);
+	12: return string(str_GRFTest1);
        return CB_RESULT_NO_TEXT;
 }
 
