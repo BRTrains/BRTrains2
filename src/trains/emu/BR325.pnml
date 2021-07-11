@@ -56,8 +56,7 @@ item (FEAT_TRAINS, item_BR325, 420) {
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
-		refittable_cargo_classes:		CC_MAIL;
-		cargo_allow_refit:				[MAIL];
+		refittable_cargo_classes:		bitmask(CC_MAIL,CC_ARMOURED);
 		loading_speed:					30;
 		cost_factor:					56;
 		running_cost_factor:			32;

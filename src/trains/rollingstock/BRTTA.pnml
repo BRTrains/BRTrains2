@@ -110,7 +110,7 @@ item (FEAT_TRAINS, item_BRTTA, 419) {
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1966,1,1);
 		model_life:						100;
-		cargo_allow_refit:				[WATR, RUBR, OIL_];
+		refittable_cargo_classes: 		bitmask(CC_LIQUID);
 		loading_speed:					20;
 		cost_factor:					49;
 		running_cost_factor:			17;
