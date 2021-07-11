@@ -41,7 +41,7 @@ item (FEAT_TRAINS, item_BR71, 477) {
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							1470 hp;
+		power:							2252 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;

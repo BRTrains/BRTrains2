@@ -1,278 +1,158 @@
 spriteset(spriteset_BR319_Purchase, "gfx/BR319_v2.png") {
-	template_purchase(0, 0)
+	template_purchase(200, 0)
 }
 
-spriteset(spriteset_BR319a_Northern2, "gfx/BR319_v2.png") {
-	template_train32px(0, 13)
+spriteset(spriteset_BR319a_Northern, "gfx/BR319_v2.png") {
+	template_train32px(0, 0)
+}
+spriteset(spriteset_BR319b_Northern, "gfx/BR319_v2.png") {
+	template_train32px(0, 25)
+}
+spriteset(spriteset_BR319c_Northern, "gfx/BR319_v2.png") {
+	template_train32px(0, 50)
+}
+spriteset(spriteset_BR319d_Northern, "gfx/BR319_v2.png") {
+	template_train32px(0, 75)
 }
 
-spriteset(spriteset_BR319b_Northern2, "gfx/BR319_v2.png") {
-	template_train32px(0, 38)
+spriteset(spriteset_BR319a_BRTL, "gfx/BR319_v2.png") {
+	template_train32px(0, 100)
+}
+spriteset(spriteset_BR319b_BRTL, "gfx/BR319_v2.png") {
+	template_train32px(0, 125)
+}
+spriteset(spriteset_BR319c_BRTL, "gfx/BR319_v2.png") {
+	template_train32px(0, 150)
+}
+spriteset(spriteset_BR319d_BRTL, "gfx/BR319_v2.png") {
+	template_train32px(0, 175)
 }
 
-spriteset(spriteset_BR319c_Northern2, "gfx/BR319_v2.png") {
-	template_train32px(0, 63)
+spriteset(spriteset_BR319a_Connex, "gfx/BR319_v2.png") {
+	template_train32px(0, 200)
+}
+spriteset(spriteset_BR319b_Connex, "gfx/BR319_v2.png") {
+	template_train32px(0, 225)
+}
+spriteset(spriteset_BR319c_Connex, "gfx/BR319_v2.png") {
+	template_train32px(0, 250)
+}
+spriteset(spriteset_BR319d_Connex, "gfx/BR319_v2.png") {
+	template_train32px(0, 275)
 }
 
-spriteset(spriteset_BR319d_Northern2, "gfx/BR319_v2.png") {
-	template_train32px(0, 88)
+spriteset(spriteset_BR319a_FCC, "gfx/BR319_v2.png") {
+	template_train32px(0, 300)
+}
+spriteset(spriteset_BR319b_FCC, "gfx/BR319_v2.png") {
+	template_train32px(0, 325)
+}
+spriteset(spriteset_BR319c_FCC, "gfx/BR319_v2.png") {
+	template_train32px(0, 350)
+}
+spriteset(spriteset_BR319d_FCC, "gfx/BR319_v2.png") {
+	template_train32px(0, 375)
 }
 
-spriteset(spriteset_BR319a_nse, "gfx/BR319.png") {
-	template_electrostar(0, 468)
+spriteset(spriteset_BR319a_GTRP, "gfx/BR319_v2.png") {
+	template_train32px(0, 400)
+}
+spriteset(spriteset_BR319b_GTRP, "gfx/BR319_v2.png") {
+	template_train32px(0, 425)
+}
+spriteset(spriteset_BR319c_GTRP, "gfx/BR319_v2.png") {
+	template_train32px(0, 450)
+}
+spriteset(spriteset_BR319d_GTRP, "gfx/BR319_v2.png") {
+	template_train32px(0, 475)
 }
 
-spriteset(spriteset_BR319c_nse, "gfx/BR319.png") {
-	template_electrostar(176, 520)
+spriteset(spriteset_BR319a_GTRB, "gfx/BR319_v2.png") {
+	template_train32px(0, 500)
+}
+spriteset(spriteset_BR319b_GTRB, "gfx/BR319_v2.png") {
+	template_train32px(0, 525)
+}
+spriteset(spriteset_BR319c_GTRB, "gfx/BR319_v2.png") {
+	template_train32px(0, 550)
+}
+spriteset(spriteset_BR319d_GTRB, "gfx/BR319_v2.png") {
+	template_train32px(0, 575)
 }
 
-spriteset(spriteset_BR319b_nse, "gfx/BR319.png") {
-	template_electrostar(0, 494)
+spriteset(spriteset_BR319a_Southern, "gfx/BR319_v2.png") {
+	template_train32px(0, 600)
+}
+spriteset(spriteset_BR319b_Southern, "gfx/BR319_v2.png") {
+	template_train32px(0, 625)
+}
+spriteset(spriteset_BR319c_Southern, "gfx/BR319_v2.png") {
+	template_train32px(0, 650)
+}
+spriteset(spriteset_BR319d_Southern, "gfx/BR319_v2.png") {
+	template_train32px(0, 675)
 }
 
-spriteset(spriteset_BR319d_nse, "gfx/BR319.png") {
-	template_electrostar(0, 520)
+spriteset(spriteset_BR319a_NSE, "gfx/BR319_v2.png") {
+	template_train32px(0, 700)
+}
+spriteset(spriteset_BR319b_NSE, "gfx/BR319_v2.png") {
+	template_train32px(0, 725)
+}
+spriteset(spriteset_BR319c_NSE, "gfx/BR319_v2.png") {
+	template_train32px(0, 750)
+}
+spriteset(spriteset_BR319d_NSE, "gfx/BR319_v2.png") {
+	template_train32px(0, 775)
 }
 
-spriteset(spriteset_BR319a_nseg, "gfx/BR319.png") {
-	template_electrostar(0, 546)
-}
-
-spriteset(spriteset_BR319b_nseg, "gfx/BR319.png") {
-	template_electrostar(0, 572)
-}
-
-spriteset(spriteset_BR319c_nseg, "gfx/BR319.png") {
-	template_electrostar(176, 598)
-}
-
-spriteset(spriteset_BR319d_nseg, "gfx/BR319.png") {
-	template_electrostar(0, 598)
-}
-
-spriteset(spriteset_BR319a_thameslink, "gfx/BR319.png") {
-	template_electrostar(0, 0)
-}
-
-spriteset(spriteset_BR319b_thameslink, "gfx/BR319.png") {
-	template_electrostar(0, 26)
-}
-
-spriteset(spriteset_BR319c_thameslink, "gfx/BR319.png") {
-	template_electrostar(176, 52)
-}
-
-spriteset(spriteset_BR319d_thameslink, "gfx/BR319.png") {
-	template_electrostar(0, 52)
-}
-
-spriteset(spriteset_BR319a_connex, "gfx/BR319.png") {
-	template_electrostar(0, 78)
-}
-
-spriteset(spriteset_BR319b_connex, "gfx/BR319.png") {
-	template_electrostar(0, 104)
-}
-
-spriteset(spriteset_BR319c_connex, "gfx/BR319.png") {
-	template_electrostar(176, 130)
-}
-
-spriteset(spriteset_BR319d_connex, "gfx/BR319.png") {
-	template_electrostar(0, 130)
-}
-
-spriteset(spriteset_BR319a_fcc, "gfx/BR319.png") {
-	template_electrostar(0, 156)
-}
-
-spriteset(spriteset_BR319b_fcc, "gfx/BR319.png") {
-	template_electrostar(0, 182)
-}
-
-spriteset(spriteset_BR319c_fcc, "gfx/BR319.png") {
-	template_electrostar(176, 208)
-}
-
-spriteset(spriteset_BR319d_fcc, "gfx/BR319.png") {
-	template_electrostar(0, 208)
-}
-
-spriteset(spriteset_BR319a_southern, "gfx/BR319.png") {
-	template_electrostar(0, 624)
-}
-
-spriteset(spriteset_BR319b_southern, "gfx/BR319.png") {
-	template_electrostar(0, 650)
-}
-
-spriteset(spriteset_BR319c_southern, "gfx/BR319.png") {
-	template_electrostar(176, 676)
-}
-
-spriteset(spriteset_BR319d_southern, "gfx/BR319.png") {
-	template_electrostar(0, 676)
-}
-
-spriteset(spriteset_BR319a_gtrb, "gfx/BR319.png") {
-	template_electrostar(0, 702)
-}
-
-spriteset(spriteset_BR319b_gtrb, "gfx/BR319.png") {
-	template_electrostar(0, 728)
-}
-
-spriteset(spriteset_BR319c_gtrb, "gfx/BR319.png") {
-	template_electrostar(176, 754)
-}
-
-spriteset(spriteset_BR319d_gtrb, "gfx/BR319.png") {
-	template_electrostar(0, 754)
-}
-
-spriteset(spriteset_BR319a_gtrp, "gfx/BR319.png") {
-	template_electrostar(0, 780)
-}
-
-spriteset(spriteset_BR319b_gtrp, "gfx/BR319.png") {
-	template_electrostar(0, 806)
-}
-
-spriteset(spriteset_BR319c_gtrp, "gfx/BR319.png") {
-	template_electrostar(176, 832)
-}
-
-spriteset(spriteset_BR319d_gtrp, "gfx/BR319.png") {
-	template_electrostar(0, 832)
-}
-
-spriteset(spriteset_BR319a_lmt, "gfx/BR319.png") {
-	template_electrostar(0, 312)
-}
-
-spriteset(spriteset_BR319b_lmt, "gfx/BR319.png") {
-	template_electrostar(0, 338)
-}
-
-spriteset(spriteset_BR319c_lmt, "gfx/BR319.png") {
-	template_electrostar(176, 364)
-}
-
-spriteset(spriteset_BR319d_lmt, "gfx/BR319.png") {
-	template_electrostar(0, 364)
-}
-
-spriteset(spriteset_BR319a_lm, "gfx/BR319.png") {
-	template_electrostar(0, 234)
-}
-
-spriteset(spriteset_BR319b_lm, "gfx/BR319.png") {
-	template_electrostar(0, 260)
-}
-
-spriteset(spriteset_BR319c_lm, "gfx/BR319.png") {
-	template_electrostar(176, 286)
-}
-
-spriteset(spriteset_BR319d_lm, "gfx/BR319.png") {
-	template_electrostar(0, 286)
-}
-
-spriteset(spriteset_BR319a_northernPurple, "gfx/BR319.png") {
-	template_electrostar(0, 390)
-}
-
-spriteset(spriteset_BR319b_northernPurple, "gfx/BR319.png") {
-	template_electrostar(0, 416)
-}
-
-spriteset(spriteset_BR319c_northernPurple, "gfx/BR319.png") {
-	template_electrostar(176, 442)
-}
-
-spriteset(spriteset_BR319d_northernPurple, "gfx/BR319.png") {
-	template_electrostar(0, 442)
-}
-
-spriteset(spriteset_BR319a_Northern, "gfx/BR319.png") {
-	template_electrostar(0, 858)
-}
-
-spriteset(spriteset_BR319b_Northern, "gfx/BR319.png") {
-	template_electrostar(0, 884)
-}
-
-spriteset(spriteset_BR319c_Northern, "gfx/BR319.png") {
-	template_electrostar(176, 910)
-}
-
-spriteset(spriteset_BR319d_Northern, "gfx/BR319.png") {
-	template_electrostar(0, 910)
-}
 
 switch(FEAT_TRAINS,SELF, sw_BR319a,cargo_subtype){
-	0:spriteset_BR319a_nseg;
-	1:spriteset_BR319a_nse;
-	2:spriteset_BR319a_thameslink;
-	3:spriteset_BR319a_connex;
-	4:spriteset_BR319a_fcc;
-	5:spriteset_BR319a_southern;
-	6:spriteset_BR319a_gtrb;
-	7:spriteset_BR319a_gtrp;
-	8:spriteset_BR319a_lmt;
-	9:spriteset_BR319a_lm;
-	10:spriteset_BR319a_northernPurple;
-	11:spriteset_BR319a_Northern;
-	12:spriteset_BR319a_Northern2;
+	0:spriteset_BR319a_NSE;	
+	1:spriteset_BR319a_BRTL;
+	2:spriteset_BR319a_Connex;
+	3:spriteset_BR319a_FCC;
+	4:spriteset_BR319a_GTRP;
+	5:spriteset_BR319a_GTRB;
+	6:spriteset_BR319a_Southern;
+	7:spriteset_BR319a_Northern;
+	spriteset_BR319a_NSE;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR319b,cargo_subtype){
-	0:spriteset_BR319b_nseg;
-	1:spriteset_BR319b_nse;
-	2:spriteset_BR319b_thameslink;
-	3:spriteset_BR319b_connex;
-	4:spriteset_BR319b_fcc;
-	5:spriteset_BR319b_southern;
-	6:spriteset_BR319b_gtrb;
-	7:spriteset_BR319b_gtrp;
-	8:spriteset_BR319b_lmt;
-	9:spriteset_BR319b_lm;
-	10:spriteset_BR319b_northernPurple;
-	11:spriteset_BR319b_Northern;
-	12:spriteset_BR319b_Northern2;
+	0:spriteset_BR319b_NSE;	
+	1:spriteset_BR319b_BRTL;
+	2:spriteset_BR319b_Connex;
+	3:spriteset_BR319b_FCC;
+	4:spriteset_BR319b_GTRP;
+	5:spriteset_BR319b_GTRB;
+	6:spriteset_BR319b_Southern;
+	7:spriteset_BR319b_Northern;
+	spriteset_BR319b_NSE;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR319c,cargo_subtype){
-	0:spriteset_BR319c_nseg;
-	1:spriteset_BR319c_nse;
-	2:spriteset_BR319c_thameslink;
-	3:spriteset_BR319c_connex;
-	4:spriteset_BR319c_fcc;
-	5:spriteset_BR319c_southern;
-	6:spriteset_BR319c_gtrb;
-	7:spriteset_BR319c_gtrp;
-	8:spriteset_BR319c_lmt;
-	9:spriteset_BR319c_lm;
-	10:spriteset_BR319c_northernPurple;
-	11:spriteset_BR319c_Northern;
-	12:spriteset_BR319c_Northern2;
+	0:spriteset_BR319c_NSE;	
+	1:spriteset_BR319c_BRTL;
+	2:spriteset_BR319c_Connex;
+	3:spriteset_BR319c_FCC;
+	4:spriteset_BR319c_GTRP;
+	5:spriteset_BR319c_GTRB;
+	6:spriteset_BR319c_Southern;
+	7:spriteset_BR319c_Northern;
+	spriteset_BR319c_NSE;
 }
 
-
 switch(FEAT_TRAINS,SELF, sw_BR319d,cargo_subtype){
-	0:spriteset_BR319d_nseg;
-	1:spriteset_BR319d_nse;
-	2:spriteset_BR319d_thameslink;
-	3:spriteset_BR319d_connex;
-	4:spriteset_BR319d_fcc;
-	5:spriteset_BR319d_southern;
-	6:spriteset_BR319d_gtrb;
-	7:spriteset_BR319d_gtrp;
-	8:spriteset_BR319d_lmt;
-	9:spriteset_BR319d_lm;
-	10:spriteset_BR319d_northernPurple;
-	11:spriteset_BR319d_Northern;
-	12:spriteset_BR319d_Northern2;
+	0:spriteset_BR319d_NSE;	
+	1:spriteset_BR319d_BRTL;
+	2:spriteset_BR319d_Connex;
+	3:spriteset_BR319d_FCC;
+	4:spriteset_BR319d_GTRP;
+	5:spriteset_BR319d_GTRB;
+	6:spriteset_BR319d_Southern;
+	7:spriteset_BR319d_Northern;
+	spriteset_BR319d_NSE;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR319, extra_callback_info1) {
@@ -283,19 +163,14 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR319, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR319_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_NSE);
-    1:	return string(str_NSEG);
-    2:	return string(str_thameslink);
-	3:	return string(str_Connex);
-    4:	return string(str_fcc);
-    5:	return string(str_southern);
-    6:	return string(str_gtrb);
-    7:	return string(str_gtrp);
-    8:	return string(str_ROSCO);
-    9:	return string(str_LondonMidland);
-    10:	return string(str_NorthernRail);
-	11: return string(str_Northern);
-	12: return string(str_GRFTest1);
+    0:	return string(str_NSE);    
+    1:	return string(str_thameslink);
+	2:	return string(str_Connex);
+    3:	return string(str_fcc);    
+    4:	return string(str_gtrp);
+    5:	return string(str_gtrb);    
+	6:	return string(str_southern);    
+	7: return string(str_Northern);
        return CB_RESULT_NO_TEXT;
 }
 

@@ -1,9 +1,21 @@
+spriteset(spriteset_BR769a_GWR, "gfx/BR319_v2.png") {
+	template_train32px(0, 800)
+}
+spriteset(spriteset_BR769b_GWR, "gfx/BR319_v2.png") {
+	template_train32px(0, 825)
+}
+spriteset(spriteset_BR769c_GWR, "gfx/BR319_v2.png") {
+	template_train32px(0, 850)
+}
+spriteset(spriteset_BR769d_GWR, "gfx/BR319_v2.png") {
+	template_train32px(0, 875)
+}
+
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_769_9_spriteset, position_in_articulated_veh % 4) {
-	0: spriteset_br_769_front_gwr;
-    1: spriteset_br_769_middle_panto_gwr;
-	3: spriteset_br_769_rear_gwr;
-	spriteset_br_769_middle_gwr;
+	0: spriteset_BR769a_GWR;
+	3: spriteset_BR769d_GWR;
+	spriteset_BR769b_GWR;
 }
 
 // Define articulations

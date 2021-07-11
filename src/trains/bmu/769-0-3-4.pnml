@@ -1,22 +1,60 @@
+
+spriteset(spriteset_BR769a_Northern, "gfx/BR319_v2.png") {
+	template_train32px(0, 0)
+}
+spriteset(spriteset_BR769b_Northern, "gfx/BR319_v2.png") {
+	template_train32px(0, 25)
+}
+spriteset(spriteset_BR769c_Northern, "gfx/BR319_v2.png") {
+	template_train32px(0, 50)
+}
+spriteset(spriteset_BR769d_Northern, "gfx/BR319_v2.png") {
+	template_train32px(0, 75)
+}
+
+spriteset(spriteset_BR769a_TfW, "gfx/BR319_v2.png") {
+	template_train32px(0, 900)
+}
+spriteset(spriteset_BR769b_TfW, "gfx/BR319_v2.png") {
+	template_train32px(0, 925)
+}
+spriteset(spriteset_BR769c_TfW, "gfx/BR319_v2.png") {
+	template_train32px(0, 950)
+}
+spriteset(spriteset_BR769d_TfW, "gfx/BR319_v2.png") {
+	template_train32px(0, 975)
+}
+
+spriteset(spriteset_BR769a_Orion, "gfx/BR319_v2.png") {
+	template_train32px(0, 1000)
+}
+spriteset(spriteset_BR769b_Orion, "gfx/BR319_v2.png") {
+	template_train32px(0, 1025)
+}
+spriteset(spriteset_BR769c_Orion, "gfx/BR319_v2.png") {
+	template_train32px(0, 1050)
+}
+spriteset(spriteset_BR769d_Orion, "gfx/BR319_v2.png") {
+	template_train32px(0, 1075)
+}
+
+
 switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_rog, position_in_articulated_veh % 4) {
-	0: spriteset_br_769_front_rog;
-    1: spriteset_br_769_middle_panto_rog;
-	3: spriteset_br_769_rear_rog;
-	spriteset_br_769_middle_rog;
+	0: spriteset_BR769a_Orion;
+	3: spriteset_BR769d_Orion;
+	spriteset_BR769b_Orion;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_northern, position_in_articulated_veh % 4) {
-	0: spriteset_br_769_front_northern;
-    1: spriteset_br_769_middle_panto_northern;
-	3: spriteset_br_769_rear_northern;
-	spriteset_br_769_middle_northern;
+	0: spriteset_BR769a_Northern;
+	3: spriteset_BR769d_Northern;
+	spriteset_BR769b_Northern;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_tfw, position_in_articulated_veh % 4) {
-	0: spriteset_br_769_front_tfw;
-    1: spriteset_br_769_middle_panto_tfw;
-	3: spriteset_br_769_rear_tfw;
-	spriteset_br_769_middle_tfw;
+	0: spriteset_BR769a_TfW;
+	3: spriteset_BR769d_TfW;
+	spriteset_BR769b_TfW;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_769_spriteset, cargo_subtype) {
