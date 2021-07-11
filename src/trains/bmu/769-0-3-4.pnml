@@ -1,44 +1,4 @@
 
-spriteset(spriteset_BR769a_Northern, "gfx/BR319_v2.png") {
-	template_train32px(0, 0)
-}
-spriteset(spriteset_BR769b_Northern, "gfx/BR319_v2.png") {
-	template_train32px(0, 25)
-}
-spriteset(spriteset_BR769c_Northern, "gfx/BR319_v2.png") {
-	template_train32px(0, 50)
-}
-spriteset(spriteset_BR769d_Northern, "gfx/BR319_v2.png") {
-	template_train32px(0, 75)
-}
-
-spriteset(spriteset_BR769a_TfW, "gfx/BR319_v2.png") {
-	template_train32px(0, 900)
-}
-spriteset(spriteset_BR769b_TfW, "gfx/BR319_v2.png") {
-	template_train32px(0, 925)
-}
-spriteset(spriteset_BR769c_TfW, "gfx/BR319_v2.png") {
-	template_train32px(0, 950)
-}
-spriteset(spriteset_BR769d_TfW, "gfx/BR319_v2.png") {
-	template_train32px(0, 975)
-}
-
-spriteset(spriteset_BR769a_Orion, "gfx/BR319_v2.png") {
-	template_train32px(0, 1000)
-}
-spriteset(spriteset_BR769b_Orion, "gfx/BR319_v2.png") {
-	template_train32px(0, 1025)
-}
-spriteset(spriteset_BR769c_Orion, "gfx/BR319_v2.png") {
-	template_train32px(0, 1050)
-}
-spriteset(spriteset_BR769d_Orion, "gfx/BR319_v2.png") {
-	template_train32px(0, 1075)
-}
-
-
 switch(FEAT_TRAINS, SELF, switch_br_769_spriteset_rog, position_in_articulated_veh % 4) {
 	0: spriteset_BR769a_Orion;
 	3: spriteset_BR769d_Orion;
@@ -153,7 +113,7 @@ item(FEAT_TRAINS, item_br_769, 457) {
 	
 	graphics {
 		default: switch_br_769_spriteset;
-		purchase: spriteset_br_769_purchase_tfw;
+		purchase: spriteset_BR769_Purchase;
 		cargo_subtype_text: switch_br_769_subtype_text;
 		
 		articulated_part: switch_br_769_articulated;
