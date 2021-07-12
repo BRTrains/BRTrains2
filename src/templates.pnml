@@ -73,13 +73,13 @@ template template_train20px_anim(x,y){
 
 template template_train20pxTallDiag(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 17, -3, -9]
-    [ x+9, y, 16, 14, -7, -9]
-    [ x+26, y, 20, 12, -6, -6]
+    [ x, y, 8, 17, -3, -3]
+    [ x+9, y, 16, 14, -11, -8]
+    [ x+26, y, 20, 12, -13, -8]
     [ x+47, y, 16, 14, -1, -5]
     [ x+64, y, 8, 17, -3, -3]
-    [ x+73, y, 16, 14, -13, -5]
-    [ x+90, y, 20, 12, -13, -7]
+    [ x+73, y, 16, 14, -11, -8]
+    [ x+90, y, 20, 12, -13, -8]
     [ x+111, y, 16, 14, -7, -9]
 }
 
