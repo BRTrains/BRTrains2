@@ -12,12 +12,23 @@ spriteset(spriteset_RMTPO_3Door, "gfx/freight/RM_TPO.png") {
 	template_train28px2(0, 59)
 }
 
-random_switch(FEAT_TRAINS, SELF, sw_RMTPO)
+spriteset(spriteset_RMTPO_PCV, "gfx/freight/RM_TPO.png") {
+	template_train28px2(0, 82)
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_RMTPO_Random)
 {
 	1:	spriteset_RMTPO_NoDoors;
 	1:	spriteset_RMTPO_2Door;
 	1:	spriteset_RMTPO_3Door;
 }
+
+switch(FEAT_TRAINS, SELF, sw_RMTPO, position_in_consist_from_end)
+{
+	0: spriteset_RMTPO_PCV;
+	sw_RMTPO_Random;
+}
+
 
 item (FEAT_TRAINS, item_RMTPO, 483) {
 	property {
