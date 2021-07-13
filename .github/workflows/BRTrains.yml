@@ -1,0 +1,37 @@
+name: brtrainsv2
+
+on: [push, pull_request]
+
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Dependencies
+        run: python3 --version && pip3 install setuptools pip && pip3 install nml
+      - name: Build
+        run: python3 build.py --compile brtrainsv2
+      - name: Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: brtrainsv2
+          path: build/brtrainsv2.*
+          if-no-files-found: error
+      - name: Release Create
+        id: release_create
+        uses: actions/create-release@v1
+        with:
+          tag_name: master.${{ github.run_id }}
+          release_name: PreRelease.${{ github.run_id }}
+          prerelease: true
+      - name: Release Upload
+        id: release_upload
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.release_create.outputs.upload_url }}
+          asset_path: build/brtrainsv2.grf
+          asset_name: brtrainsv2.grf
+          asset_content_type: application/grf
