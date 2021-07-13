@@ -31,7 +31,7 @@ switch(FEAT_TRAINS,SELF, sw_BR325c,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR325d,cargo_subtype){
-    0:	spriteset_BR325c_RM;
+    0:	spriteset_BR325d_RM;
 }
 
 
@@ -219,7 +219,7 @@ item (FEAT_TRAINS, item_BR325d, 423) {
 	graphics {
 
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR325c;
+	default: 							sw_BR325d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
 
