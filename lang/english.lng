@@ -862,6 +862,11 @@ str_BRMK4RFM_liveries			:Intercity Swallow, National Express, GNER, East Coast, 
 STR_NAME_BRMK4DVT				:BR Mark 4 Driving Van Trailer
 str_BRMK4DVT_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
+STR_NAME_RMTPO					:Royal Mail Travelling Post Office
+str_RMTPO_usage					:Express Mail
+str_RMTPO_eos					:---
+str_RMTPO_liveries				:Freightliner
+
 STR_NAME_390_MF					:BR Class 390 Motor First
 str_390_MF_liveries				:Virgin Trains
 

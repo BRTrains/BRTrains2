@@ -1,0 +1,51 @@
+spriteset(spriteset_RMTPO_Purchase, "gfx/freight/RM_TPO.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_RMTPO_NoDoors, "gfx/freight/RM_TPO.png") {
+	template_train28px2(0, 13)
+}
+spriteset(spriteset_RMTPO_2Door, "gfx/freight/RM_TPO.png") {
+	template_train28px2(0, 36)
+}
+spriteset(spriteset_RMTPO_3Door, "gfx/freight/RM_TPO.png") {
+	template_train28px2(0, 59)
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_RMTPO)
+{
+	1:	spriteset_RMTPO_NoDoors;
+	1:	spriteset_RMTPO_2Door;
+	1:	spriteset_RMTPO_3Door;
+}
+
+item (FEAT_TRAINS, item_RMTPO, 483) {
+	property {
+		name: 							string(STR_NAME_RMTPO);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1963,4,21);
+		model_life:						100;
+		refittable_cargo_classes: 		bitmask(CC_MAIL);
+		loading_speed:					10;
+		cost_factor:					49;
+		running_cost_factor:			17;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		default_cargo_type:				MAIL;
+		cargo_capacity:					50;
+		weight:							30 ton;
+		length:							7;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_RMTPO_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_RMTPO;
+	purchase:							spriteset_RMTPO_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(50);
+}
+}
