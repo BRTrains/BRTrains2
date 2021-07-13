@@ -89,8 +89,6 @@ switch(FEAT_TRAINS, SELF, sw_TTAcargo, cargo_subtype){
 	9:	spriteset_BRTTA_VTG;
 }
 
-// Random Mobil Esso BP Suko Gulf Shell BP BP Murco Shell Total VTG
-
 switch(FEAT_TRAINS,SELF,sw_BRTTA_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Random);
 	1:	return string(str_Mobil);
@@ -118,7 +116,7 @@ item (FEAT_TRAINS, item_BRTTA, 419) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		refit_cost:						0;
 		running_cost_base:				RUNNING_COST_STEAM;
-		default_cargo_type:				COAL;
+		default_cargo_type:				OIL_;
 		cargo_capacity:					72;
 		weight:							28 ton;
 		tractive_effort_coefficient:	0.08;
