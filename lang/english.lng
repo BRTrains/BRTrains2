@@ -157,10 +157,16 @@ str_DR98_9_usage				:Deparmental Railway
 str_DR98_9_eos					:---
 str_DR98_9_liveries				:Network Rail, Railtrack, South West Trains
 
+STR_NAME_GreatBear					:GWR 4-6-2 "Great Bear"
+str_GreatBear_usage					:Express Passenger
+str_GreatBear_eos					:1908
+str_GreatBear_liveries				:GWR Green
+
 STR_NAME_GNRA1					:GNR Gresley A1
 str_GNRA1_usage					:Express Passenger
 str_GNRA1_eos					:1928-1935
 str_GNRA1_liveries				:GNR Green, LNER Green
+
 
 STR_NAME_LNERA3					:LNER Gresley A3
 str_LNERA3_usage				:Express Passenger
