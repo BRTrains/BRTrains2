@@ -3,17 +3,17 @@ spriteset(spriteset_RMTPO_Purchase, "gfx/freight/RM_TPO.png") {
 }
 
 spriteset(spriteset_RMTPO_NoDoors, "gfx/freight/RM_TPO.png") {
-	template_train28px2(0, 13)
+	template_train28px(0, 13)
 }
 spriteset(spriteset_RMTPO_2Door, "gfx/freight/RM_TPO.png") {
-	template_train28px2(0, 36)
+	template_train28px(0, 36)
 }
 spriteset(spriteset_RMTPO_3Door, "gfx/freight/RM_TPO.png") {
-	template_train28px2(0, 59)
+	template_train28px(0, 59)
 }
 
 spriteset(spriteset_RMTPO_PCV, "gfx/freight/RM_TPO.png") {
-	template_train28px2(0, 82)
+	template_train28px(0, 82)
 }
 
 random_switch(FEAT_TRAINS, SELF, sw_RMTPO_Random)

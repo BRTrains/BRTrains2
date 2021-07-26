@@ -115,18 +115,6 @@ template template_train24px(x,y){
     [ x+150, y, 17, 16, -7, -9]
 }
 
-template template_train28px(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 22, -3, -9]
-    [ x+11, y, 19, 17, -11, -9]
-    [ x+33, y, 28, 12, -7, -7]
-    [ x+64, y, 19, 17, -6, -8]
-    [ x+86, y, 8, 22, -3, -9]
-    [ x+97, y, 19, 17, -15, -6]
-    [ x+119, y, 28, 12, -17, -6]
-    [ x+150, y, 19, 17, -8, -9]
-}
-
 template template_train28px_pacer(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 19, -3, -9, NOANIM|NOWHITE]
@@ -139,16 +127,16 @@ template template_train28px_pacer(x,y){
     [ x+136, y, 19, 15, -8, -9, NOANIM|NOWHITE]
 }
 
-template template_train28px2(x,y){
+template template_train28px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 22, -3, -9]
-    [ x+9, y, 19, 17, -10, -10]
+    [ x, y, 8, 22, -4, -11]
+    [ x+9, y, 19, 17, -11, -9]
     [ x+29, y, 28, 12, -11, -8]
-    [ x+58, y, 19, 17, -6, -8]
-    [ x+78, y, 8, 22, -3, -9]
-    [ x+87, y, 19, 17, -12, -9]
-    [ x+107, y, 28, 12, -15, -8]
-    [ x+136, y, 19, 17, -7, -9]
+    [ x+58, y, 19, 17, -5, -9]
+    [ x+78, y, 8, 22, -4, -9]
+    [ x+87, y, 19, 17, -14, -8]
+    [ x+107, y, 28, 12, -17, -8]
+    [ x+136, y, 19, 17, -7, -11]
 }
 
 
