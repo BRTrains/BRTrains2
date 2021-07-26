@@ -106,13 +106,13 @@ template template_train21px(x,y){
 template template_train24px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 20, -3, -7]
-    [ x+11, y, 17, 16, -9, -9]
-    [ x+33, y, 24, 12, -3, -7]
-    [ x+64, y, 17, 16, -3, -7]
+    [ x+11, y, 17, 16, -9, -10]
+    [ x+33, y, 24, 12, -7, -8]
+    [ x+64, y, 17, 16, -3, -8]
     [ x+86, y, 8, 20, -3, -7]
-    [ x+97, y, 17, 16, -15, -5]
-    [ x+119, y, 24, 12, -17, -6]
-    [ x+150, y, 17, 16, -7, -9]
+    [ x+97, y, 17, 16, -15, -7]
+    [ x+119, y, 24, 12, -17, -8]
+    [ x+150, y, 17, 16, -7, -11]
 }
 
 template template_train28px_pacer(x,y){
