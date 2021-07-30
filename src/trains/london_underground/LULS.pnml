@@ -1,42 +1,42 @@
-spriteset(spriteset_LULS_Purchase, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULS_Purchase, "gfx/LondonUnderground/LULDS9295.png") {
 	template_purchase(88, 220)
 }
 //DM(A)
-spriteset(spriteset_LULSa_LUL, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSa_LUL, "gfx/LondonUnderground/LULDS9295.png") {
 	template_electrostar(0, 235)
 }
 //NDM
-spriteset(spriteset_LULSb_LUL, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSb_LUL, "gfx/LondonUnderground/LULDS9295.png") {
 	template_electrostar(0, 261)
 }
 //DM(D)
-spriteset(spriteset_LULSc_LUL, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSc_LUL, "gfx/LondonUnderground//LULDS9295.png") {
 	template_electrostar(0, 287)
 }
 
 //DM(A)
-spriteset(spriteset_LULSa_Poppy, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSa_Poppy, "gfx/LondonUnderground/LULDS9295.png") {
 	template_electrostar(0, 313)
 }
 //NDM
-spriteset(spriteset_LULSb_Poppy, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSb_Poppy, "gfx/LondonUnderground/LULDS9295.png") {
 	template_electrostar(0, 339)
 }
 //DM(D)
-spriteset(spriteset_LULSc_Poppy, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSc_Poppy, "gfx/LondonUnderground/LULDS9295.png") {
 	template_electrostar(0, 365)
 }
 
 //DM(A)
-spriteset(spriteset_LULSa_Unwrapped, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSa_Unwrapped, "gfx/LondonUnderground/LULDS9295.png") {
 	template_electrostar(0, 418)
 }
 //NDM
-spriteset(spriteset_LULSb_Unwrapped, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSb_Unwrapped, "gfx/LondonUnderground/LULDS9295.png") {
 	template_electrostar(0, 444)
 }
 //DM(D)
-spriteset(spriteset_LULSc_Unwrapped, "gfx/LULDS9295.png") {
+spriteset(spriteset_LULSc_Unwrapped, "gfx/LondonUnderground/LULDS9295.png") {
 	template_electrostar(0, 470)
 }
 
@@ -72,7 +72,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_LULS8, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_LULS_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_LUL);
+    0:	return string(str_LU_TfL);
 	1:	return string(str_LULUnwrapped);
 	2:	return string(str_LULPoppies);
        return CB_RESULT_NO_TEXT;

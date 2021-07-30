@@ -933,6 +933,11 @@ str_LULS_usage					:Metro
 str_LULS_eos					:---
 str_LULS_liveries				:London Underground, London Underground - Unwrapped, London Underground - Poppies
 
+STR_NAME_LU2009					:London Underground 2009 Stock
+str_LU2009_usage				:Metro
+str_LU2009_eos					:---
+str_LU2009_liveries				:London Underground
+
 STR_NAME_LNERBCK				:LNER Gresley Coach (Brake Composite Corridor)
 str_LNERBCK_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream	
 STR_NAME_RoyalBFK				:British Royal Train (Brake First Corridor)
@@ -1080,7 +1085,7 @@ str_Loadhaul					: (Loadhaul)
 str_LoadhaulGrey				: (Loadhaul Grey)
 str_LondonMidland				: (London Midland)
 str_LSE							: (London and South East - Jaffa Cake)
-str_LUL							: (London Underground)
+str_LU_TfL						: (London Underground)
 str_LULPoppies					: (London Underground - Poppies)
 str_LULUnwrapped				: (London Underground - Unwrapped)
 str_MainlineFreight				: (Mainline Freight)
