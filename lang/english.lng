@@ -730,6 +730,11 @@ str_BR480_usage					:Passenger
 str_BR480_eos					:1974
 str_BR480_liveries				:BR Blue, BR Blue Grey
 
+STR_NAME_BR483					:British Rail Class 483 (LU 1938 Stock)
+str_BR483_usage					:Passenger
+str_BR483_eos					:2021
+str_BR483_liveries				:Island Line, Network Southeast
+
 STR_NAME_BR73GatEx				:British Rail Class 73 Gatwick Express set
 str_BR73GatEx_usage				:Express Passenger
 str_BR73GatEx_eos				:1999
@@ -927,6 +932,17 @@ str_LNERPV_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 STR_NAME_LNERBG					:LNER Gresley Full Brake Van
 str_LNERBG_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 
+
+STR_NAME_LU1938					:London Underground 1938 Stock
+str_LU1938_usage				:Metro
+str_LU1938_eos					:---
+str_LU1938_liveries				:London Underground (Red Roof), London Undeground (Grey Roof)
+
+STR_NAME_LU1967					:London Underground 1967 Stock
+str_LU1967_usage				:Metro
+str_LU1967_eos					:---
+str_LU1967_liveries				:London Underground
+
 STR_NAME_LULS8					:London Underground S8 Stock
 STR_NAME_LULS7					:London Underground S7 Stock
 str_LULS_usage					:Metro
@@ -1088,6 +1104,7 @@ str_LSE							: (London and South East - Jaffa Cake)
 str_LU_TfL						: (London Underground)
 str_LULPoppies					: (London Underground - Poppies)
 str_LULUnwrapped				: (London Underground - Unwrapped)
+str_LU_Alt                      : (London Underground - Alternate Livery)
 str_MainlineFreight				: (Mainline Freight)
 str_MerseyRail					: (MerseyRail)
 str_MerseyRailGoodComs			: (MerseyRail - Good Communications)
