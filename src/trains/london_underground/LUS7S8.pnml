@@ -1,62 +1,28 @@
-spriteset(spriteset_LULS_Purchase, "gfx/LondonUnderground/LULDS9295.png") {
-	template_purchase(88, 220)
-}
-//DM(A)
-spriteset(spriteset_LULSa_LUL, "gfx/LondonUnderground/LULDS9295.png") {
-	template_electrostar(0, 235)
-}
-//NDM
-spriteset(spriteset_LULSb_LUL, "gfx/LondonUnderground/LULDS9295.png") {
-	template_electrostar(0, 261)
-}
-//DM(D)
-spriteset(spriteset_LULSc_LUL, "gfx/LondonUnderground//LULDS9295.png") {
-	template_electrostar(0, 287)
+spriteset(spriteset_LUS7S8_Purchase, "gfx/LondonUnderground/LU_S7S8.png") {
+	template_purchase(200, 0)
 }
 
-//DM(A)
-spriteset(spriteset_LULSa_Poppy, "gfx/LondonUnderground/LULDS9295.png") {
-	template_electrostar(0, 313)
+spriteset(spriteset_LUS7S8a_TfL, "gfx/LondonUnderground/LU_S7S8.png") {
+	template_train32px(0, 0)
 }
-//NDM
-spriteset(spriteset_LULSb_Poppy, "gfx/LondonUnderground/LULDS9295.png") {
-	template_electrostar(0, 339)
+spriteset(spriteset_LUS7S8b_TfL, "gfx/LondonUnderground/LU_S7S8.png") {
+	template_train32px(0, 25)
 }
-//DM(D)
-spriteset(spriteset_LULSc_Poppy, "gfx/LondonUnderground/LULDS9295.png") {
-	template_electrostar(0, 365)
-}
-
-//DM(A)
-spriteset(spriteset_LULSa_Unwrapped, "gfx/LondonUnderground/LULDS9295.png") {
-	template_electrostar(0, 418)
-}
-//NDM
-spriteset(spriteset_LULSb_Unwrapped, "gfx/LondonUnderground/LULDS9295.png") {
-	template_electrostar(0, 444)
-}
-//DM(D)
-spriteset(spriteset_LULSc_Unwrapped, "gfx/LondonUnderground/LULDS9295.png") {
-	template_electrostar(0, 470)
+spriteset(spriteset_LUS7S8c_TfL, "gfx/LondonUnderground/LU_S7S8.png") {
+	template_train32px(0, 50)
 }
 
 
 switch(FEAT_TRAINS,SELF, sw_LULSa,cargo_subtype){
-    0:	spriteset_LULSa_LUL;
-	1:	spriteset_LULSa_Unwrapped;
-	2:	spriteset_LULSa_Poppy;
+    0:	spriteset_LUS7S8a_TfL;
 }
 
 switch(FEAT_TRAINS,SELF, sw_LULSb,cargo_subtype){
-    0:	spriteset_LULSb_LUL;
-	1:	spriteset_LULSb_Unwrapped;
-	2:	spriteset_LULSb_Poppy;
+    0:	spriteset_LUS7S8b_TfL;
 }
 
 switch(FEAT_TRAINS,SELF, sw_LULSc,cargo_subtype){
-    0:	spriteset_LULSc_LUL;
-	1:	spriteset_LULSc_Unwrapped;
-	2:	spriteset_LULSc_Poppy;
+    0:	spriteset_LUS7S8c_TfL;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_LULS7, extra_callback_info1) {
@@ -73,8 +39,6 @@ switch (FEAT_TRAINS, SELF, switch_articulated_LULS8, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_LULS_cargo_subtype_text,cargo_subtype){
     0:	return string(str_LU_TfL);
-	1:	return string(str_LULUnwrapped);
-	2:	return string(str_LULPoppies);
        return CB_RESULT_NO_TEXT;
 }
 
@@ -118,7 +82,7 @@ item (FEAT_TRAINS, item_LULS7, 292) {
 	cargo_subtype_text:					sw_LULS_cargo_subtype_text;
 	articulated_part:        			switch_articulated_LULS7;
 	default: 							sw_LULSa;
-	purchase:							spriteset_LULS_Purchase;
+	purchase:							spriteset_LUS7S8_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(205 * param_pax);
@@ -165,7 +129,7 @@ item (FEAT_TRAINS, item_LULS8, 293) {
 	cargo_subtype_text:					sw_LULS_cargo_subtype_text;
 	articulated_part:        			switch_articulated_LULS8;
 	default: 							sw_LULSa;
-	purchase:							spriteset_LULS_Purchase;
+	purchase:							spriteset_LUS7S8_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
