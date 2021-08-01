@@ -433,6 +433,14 @@ str_BR222_1_usage				:Express Passenger
 str_BR222_1_eos					:---
 str_BR222_1_liveries			:Hull Trains, East Midlands Trains
 
+STR_NAME_BR230				    :British Rail Class 230 "D-Train"
+STR_NAME_BR230_2CAR				:British Rail Class 230 (2-Car)
+STR_NAME_BR230_3CAR				:British Rail Class 230 (3-Car)
+str_BR230_usage				    :Local Passenger
+str_BR230_eos					:---
+str_BR230_2CAR_liveries			:London North Western Railway
+str_BR230_3CAR_liveries			:Transport for Wales
+
 
 STR_NAME_BR253					:British Rail Class 43 'HST'
 str_BR253_usage					:Express Passenger
@@ -1107,6 +1115,7 @@ str_IntercitySwallow			: (Intercity Swallow)
 str_LNER                        : (LNER Red/White)
 str_LNERCorridorTender			: (LNER Green Corridor Tender)
 str_LNERGreen					: (LNER Green)
+str_LNWR					    : (London Northwestern Railway)
 str_Loadhaul					: (Loadhaul)
 str_LoadhaulGrey				: (Loadhaul Grey)
 str_LondonMidland				: (London Midland)

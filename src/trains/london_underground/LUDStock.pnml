@@ -40,7 +40,7 @@ item (FEAT_TRAINS, item_LUDStock, 496) {
 	property {
 		name: 							string(STR_NAME_LUDStock);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(2012,4,21);
+		introduction_date:				date(1978,4,21);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -51,17 +51,17 @@ item (FEAT_TRAINS, item_LUDStock, 496) {
 		cost_factor:					113;
 		running_cost_factor:			45;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							60 mph;
+		speed:							45 mph;
 		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						BR_4RDR;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							4160 hp;
+		power:							3000 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
 		dual_headed:					0;
 		default_cargo_type:				PASS;
 		cargo_capacity:					205;
-		weight:							213 ton;
+		weight:							150 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;
 		tractive_effort_coefficient:	0.08;
 		air_drag_coefficient:			0.08;

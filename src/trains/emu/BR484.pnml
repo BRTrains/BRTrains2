@@ -27,6 +27,11 @@ switch(FEAT_TRAINS,SELF,sw_BR484_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
+switch(FEAT_TRAINS,SELF,sw_BR484_speed,param_max_speed){
+	0:	return 72;
+	1:	return 97;
+}
+
 item (FEAT_TRAINS, item_BR484, 499) {
 	property {
 		name: 							string(STR_NAME_BR484);
@@ -47,12 +52,12 @@ item (FEAT_TRAINS, item_BR484, 499) {
 		refit_cost:						0;
 		track_type:						BR_4RDR;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							2500 hp;
+		power:							1500 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
 		dual_headed:					0;
 		default_cargo_type:				PASS;
 		cargo_capacity:					141;
-		weight:							197 ton;
+		weight:							50 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;
 		tractive_effort_coefficient:	0.08;
 		air_drag_coefficient:			0.05;
@@ -73,6 +78,7 @@ item (FEAT_TRAINS, item_BR484, 499) {
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(141 * param_pax);
+	speed:								sw_BR484_speed;
 }
 }
 
@@ -116,6 +122,7 @@ item (FEAT_TRAINS, item_BR484b, 500) {
 	default: 							sw_BR484b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
+	speed:								sw_BR484_speed;
 	cargo_capacity: return(141 * param_pax);
 }
 }
