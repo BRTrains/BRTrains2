@@ -1,52 +1,52 @@
-spriteset(spriteset_LNERA3_Purchase, "gfx/LNERA3.png") {
+spriteset(spriteset_LNERA3_Purchase, "gfx/Steam/LNERA3.png") {
 	template_purchase_anim(0, 0)
 }
 
-spriteset(spriteset_LNERA3_LNER, "gfx/GNRA1.png") {
+spriteset(spriteset_LNERA3_LNER, "gfx/Steam/GNRA1.png") {
 	template_train32px_anim(0, 13)
 }
 
-spriteset(spriteset_LNERA3_LNERC, "gfx/GNRA1.png") {
+spriteset(spriteset_LNERA3_LNERC, "gfx/Steam/GNRA1.png") {
 	template_train32px_anim(0, 13)
 }
 
-spriteset(spriteset_LNERA3_WARTIME, "gfx/LNERA3.png") {
+spriteset(spriteset_LNERA3_WARTIME, "gfx/Steam/LNERA3.png") {
 	template_train32px_anim(0, 13)
 }
 
-spriteset(spriteset_LNERA3_APPLE, "gfx/LNERA3.png") {
+spriteset(spriteset_LNERA3_APPLE, "gfx/Steam/LNERA3.png") {
 	template_train32px_anim(0, 38)
 }
 
-spriteset(spriteset_LNERA3_BRBLUE, "gfx/LNERA3.png") {
+spriteset(spriteset_LNERA3_BRBLUE, "gfx/Steam/LNERA3.png") {
 	template_train32px_anim(0, 63)
 }
 
-spriteset(spriteset_LNERA3_BRUNSWICK, "gfx/LNERA3.png") {
+spriteset(spriteset_LNERA3_BRUNSWICK, "gfx/Steam/LNERA3.png") {
 	template_train32px_anim(0, 88)
 }
 
-spriteset(spriteset_LNERA3T_LNER, "gfx/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_LNER, "gfx/Steam/LNERA3T.png") {
 	template_train20px_anim(0, 13)
 }
 
-spriteset(spriteset_LNERA3T_LNERC, "gfx/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_LNERC, "gfx/Steam/LNERA3T.png") {
 	template_train20px_anim(0, 31)
 }
 
-spriteset(spriteset_LNERA3T_WARTIME, "gfx/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_WARTIME, "gfx/Steam/LNERA3T.png") {
 	template_train20px_anim(0, 49)
 }
 
-spriteset(spriteset_LNERA3T_APPLE, "gfx/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_APPLE, "gfx/Steam/LNERA3T.png") {
 	template_train20px_anim(0, 67)
 }
 
-spriteset(spriteset_LNERA3T_BRBLUE, "gfx/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_BRBLUE, "gfx/Steam/LNERA3T.png") {
 	template_train20px_anim(0, 85)
 }
 
-spriteset(spriteset_LNERA3T_BRUNSWICK, "gfx/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_BRUNSWICK, "gfx/Steam/LNERA3T.png") {
 	template_train20px_anim(0, 103)
 }
 
