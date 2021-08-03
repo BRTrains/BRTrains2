@@ -23,18 +23,18 @@ spriteset(spriteset_LU1938c_LUGreyRoof, "gfx/LondonUnderground/LU_1938.png") {
 }
 
 switch(FEAT_TRAINS,SELF, sw_LU1938a,cargo_subtype){
-	0:spriteset_LU1938a_LURedRoof;
-	1:spriteset_LU1938a_LUGreyRoof;
+	0:spriteset_LU1938a_LUGreyRoof;
+	1:spriteset_LU1938a_LURedRoof;	
 }
 
 switch(FEAT_TRAINS,SELF, sw_LU1938b,cargo_subtype){
-	0:spriteset_LU1938b_LURedRoof;
-	1:spriteset_LU1938b_LUGreyRoof;	
+	0:spriteset_LU1938b_LUGreyRoof;	
+	1:spriteset_LU1938b_LURedRoof;	
 }
 
 switch(FEAT_TRAINS,SELF, sw_LU1938c,cargo_subtype){
-	0:spriteset_LU1938c_LURedRoof;
-	1:spriteset_LU1938c_LUGreyRoof;	
+	0:spriteset_LU1938c_LUGreyRoof;	
+	1:spriteset_LU1938c_LURedRoof;	
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_LU1938, extra_callback_info1) {
