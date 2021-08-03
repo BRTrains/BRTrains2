@@ -26,8 +26,8 @@ switch(FEAT_TRAINS,SELF, sw_LUDStockc,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_LUDStock, extra_callback_info1) {
-	1..4: return item_LUDStockb;
-	5: return item_LUDStockc;
+	1: return item_LUDStockb;
+	2: return item_LUDStockc;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
