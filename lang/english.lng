@@ -956,6 +956,11 @@ str_LU1967_usage				:Metro
 str_LU1967_eos					:---
 str_LU1967_liveries				:London Underground
 
+STR_NAME_LU1986					:London Underground Experimental (1986) Stock
+str_LU1986_usage				:Metro
+str_LU1986_eos					:---
+str_LU1986_liveries				:London Underground
+
 STR_NAME_LUAStock				:London Underground A60/A62 Stock
 str_LUAStock_usage				:Metro
 str_LUAStock_eos				:---
@@ -1130,6 +1135,9 @@ str_LULPoppies					: (London Underground - Poppies)
 str_LULUnwrapped				: (London Underground - Unwrapped)
 str_LU_Alt                      : (London Underground - Alternate Livery)
 str_LU_Unpainted                : (London Underground - Unpainted)
+str_LU_86Green                  : (London Underground - Green (Experimental))
+str_LU_86Blue                   : (London Underground - Blue (Experimental))
+str_LU_86Red                    : (London Underground - Red (Experimental))
 str_MainlineFreight				: (Mainline Freight)
 str_MerseyRail					: (MerseyRail)
 str_MerseyRailGoodComs			: (MerseyRail - Good Communications)
