@@ -12,17 +12,30 @@ spriteset(spriteset_LUDStockc_TfL, "gfx/LondonUnderground/LU_DStock.png") {
 	template_train32px(0, 50)
 }
 
+spriteset(spriteset_LUDStocka_TfLPrefurb, "gfx/LondonUnderground/LU_DStock.png") {
+	template_train32px(0, 375)
+}
+spriteset(spriteset_LUDStockb_TfLPrefurb, "gfx/LondonUnderground/LU_DStock.png") {
+	template_train32px(0, 400)
+}
+spriteset(spriteset_LUDStockc_TfLPrefurb, "gfx/LondonUnderground/LU_DStock.png") {
+	template_train32px(0, 425)
+}
+
 
 switch(FEAT_TRAINS,SELF, sw_LUDStocka,cargo_subtype){
     0:	spriteset_LUDStocka_TfL;
+	1:	spriteset_LUDStocka_TfLPrefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_LUDStockb,cargo_subtype){
     0:	spriteset_LUDStockb_TfL;
+	1:	spriteset_LUDStockb_TfLPrefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_LUDStockc,cargo_subtype){
     0:	spriteset_LUDStockc_TfL;
+	1:	spriteset_LUDStockc_TfLPrefurb;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_LUDStock, extra_callback_info1) {
@@ -33,6 +46,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_LUDStock, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_LUDStock_cargo_subtype_text,cargo_subtype){
     0:	return string(str_LU_TfL);
+	1:	return string(str_LU_Prefurb);
        return CB_RESULT_NO_TEXT;
 }
 

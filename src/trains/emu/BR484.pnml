@@ -1,7 +1,6 @@
 spriteset(spriteset_BR484_Purchase, "gfx/LondonUnderground/LU_DStock.png") {
 	template_purchase(200, 26)
 }
-
 spriteset(spriteset_BR484a_Island, "gfx/LondonUnderground/LU_DStock.png") {
 	template_train32px(0, 75)
 }
@@ -9,12 +8,24 @@ spriteset(spriteset_BR484b_Island, "gfx/LondonUnderground/LU_DStock.png") {
 	template_train32px(0, 125)
 }
 
+spriteset(spriteset_BR484a_VivaRail, "gfx/LondonUnderground/LU_DStock.png") {
+	template_train32px(0, 450)
+}
+spriteset(spriteset_BR484b_VivaRail, "gfx/LondonUnderground/LU_DStock.png") {
+	template_train32px(0, 475)
+}
+spriteset(spriteset_BR484c_VivaRail, "gfx/LondonUnderground/LU_DStock.png") {
+	template_train32px(0, 500)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR484a,cargo_subtype){
 	0:spriteset_BR484a_Island;
+	1:spriteset_BR484a_VivaRail;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR484b,cargo_subtype){
-	0:spriteset_BR484b_Island;	
+	0:spriteset_BR484b_Island;
+	1:spriteset_BR484b_VivaRail;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR484, extra_callback_info1) {
@@ -24,6 +35,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR484, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR484_cargo_subtype_text,cargo_subtype){
     0:	return string(str_SWR);	
+	1:	return string(str_VivaRail);	
        return CB_RESULT_NO_TEXT;
 }
 
