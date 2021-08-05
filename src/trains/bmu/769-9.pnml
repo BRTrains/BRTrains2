@@ -31,8 +31,8 @@ switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_diesel, position_in_articula
 switch(FEAT_TRAINS, SELF, switch_br_769_9_particles, current_railtype) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	ELRL: switch_br_769_9_particles_ohle;
-    railtype("3RDC"): switch_br_769_9_particles_ohle;
-    railtype("3RDR"): switch_br_769_9_particles_3rdr;
+    railtype("BR_3RDC"): switch_br_769_9_particles_ohle;
+    railtype("BR_3RDR"): switch_br_769_9_particles_3rdr;
 	switch_br_769_9_particles_diesel;
 }
 

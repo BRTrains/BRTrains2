@@ -1,19 +1,7 @@
-// Railtype definitions
-railtypetable {
-	//3RDR is 3rd rail; 3RDC is dual-voltage; 3ORC is 3rd rail OR ohle
-	"RAIL", "3RDR", "ELRL", "3RDC", "3ORC", "MONO", "MGLV", BR_3RDR: [SAA3, ELRL], 	BR_3RDC: [SAAZ, ELRL], BR_4RDR: [SAA4, SAA3, ELRL],
-}
-
-
-/*
-// BRTrains table
-
 railtypetable {
     RAIL, 
 	ELRL,
-	BR_3RDR: [SAA3, ELRL],
-	BR_3RDC: [SAAZ, ELRL],
-	BR_4RDR: [SAA4, SAA3, ELRL],
+	BR_3RDR: [SAA3, ELRL], // 3rd Rail
+	BR_3RDC: [SAAZ, ELRL], // 3rd Rail or Catenary
+	BR_4RDR: [SAA4, SAA3, ELRL], // 3rd or 4th rail
 }
-
-*/

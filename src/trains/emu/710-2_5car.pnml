@@ -22,7 +22,7 @@ switch(FEAT_TRAINS, SELF, switch_br_710_2_5car_particles_elrl, position_in_artic
 
 switch(FEAT_TRAINS, SELF, switch_br_710_2_5car_particles, current_railtype) {
 	railtype("ELRL"): switch_br_710_2_5car_particles_elrl;
-	railtype("3RDC"): switch_br_710_2_5car_particles_elrl;
+	railtype("BR_3RDC"): switch_br_710_2_5car_particles_elrl;
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 

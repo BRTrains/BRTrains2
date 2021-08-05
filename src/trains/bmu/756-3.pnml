@@ -25,7 +25,7 @@ switch(FEAT_TRAINS, SELF, switch_br_756_3_particles_diesel, position_in_articula
 
 switch(FEAT_TRAINS, SELF, switch_br_756_3_particles, current_railtype) {
 	ELRL: switch_br_756_3_particles_electric;
-	railtype("3RDC"): switch_br_756_3_particles_electric;
+	railtype("BR_3RDC"): switch_br_756_3_particles_electric;
 	switch_br_756_3_particles_diesel;
 }
 
@@ -43,7 +43,7 @@ switch(FEAT_TRAINS, SELF, switch_br_756_3_can_attach_wagon, vehicle_type_id) {
 
 switch(FEAT_TRAINS, SELF, switch_br_756_3_power, current_railtype) {
 	ELRL: return 3500;
-	railtype("3RDC"): return 3500;
+	railtype("BR_3RDC"): return 3500;
 	return 1290;
 }
 
