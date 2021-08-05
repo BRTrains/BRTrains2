@@ -21,5 +21,6 @@ docs/BRTrains Tracking Table.xlsx
 .vscode/snippets.code-snippets
 *.cache
 gfx/ideas/*
+gfx/InTray/*
 docs/Container_Brands.txt
 gfx/Template/possible_target_template.png
