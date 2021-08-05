@@ -4,4 +4,5 @@
 	disable_item(FEAT_TRAINS, 477); // BR71
 	disable_item(FEAT_TRAINS, 483); // RM_TPO
 	disable_item(FEAT_TRAINS, 484); // GWR Great Bear (Unfinished)
+	disable_item(FEAT_TRAINS, 512); // GWR Castle
  }
