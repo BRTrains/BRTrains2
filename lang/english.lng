@@ -162,11 +162,15 @@ str_GreatBear_usage					:Express Passenger
 str_GreatBear_eos					:1908
 str_GreatBear_liveries				:GWR Green
 
+STR_NAME_GWRCastle					:GWR 4-6-0 "Castle"
+str_GWRCastle_usage					:Express Passenger
+str_GWRCastle_eos					:1923
+str_GWRCastle_liveries				:GWR Green, Hogwarts Express
+
 STR_NAME_GNRA1					:GNR Gresley A1
 str_GNRA1_usage					:Express Passenger
 str_GNRA1_eos					:1928-1935
 str_GNRA1_liveries				:GNR Green, LNER Green
-
 
 STR_NAME_LNERA3					:LNER Gresley A3
 str_LNERA3_usage				:Express Passenger
@@ -1117,6 +1121,7 @@ str_GWRGreenUn					: (GWR Green Unbranded)
 str_HarryNeedle					: (Harry Needle Railroad)
 str_Hatachi						: (Hatachi)
 str_HeathrowExpressPurple       : (Heathrow Express - Grey and Purple)
+str_HogwartsExpress             : (Hogwarts Express)
 str_HT							: (Hull Trains)
 str_Inter7City                  : (Inter7City - Scotrail)
 str_Intercity					: (Intercity)
