@@ -777,6 +777,16 @@ str_BR700_liveries				:Siemens Demonstrator, Govia Thameslink
 
 STR_NAME_BR700_2				:British Rail Class 700/1 'Desiro City'
 
+STR_NAME_BR707					:British Rail Class 707 'Desiro City'
+str_BR707_usage					:Regional Passenger
+str_BR707_eos					:---
+str_BR707_liveries				:South Western Trains, Southeastern
+
+STR_NAME_BR717					:British Rail Class 717 'Desiro City'
+str_BR717_usage					:Regional Passenger
+str_BR717_eos					:---
+str_BR717_liveries				:Govia Great Northern
+
 STR_NAME_BR800					:British Rail Class 800/1 'IET'
 str_BR800_usage					:Regional Passenger
 str_BR800_eos					:---
@@ -1109,6 +1119,7 @@ str_GMPTE						: (GMPTE)
 str_GC							: (Grand Central)
 str_GCLined						: (Grand Central Lined)
 str_GNER						: (Great North Eastern Railway)
+str_GreatNorthern               : (Govia Great Northern)
 str_GA_White					: (Greater Anglia White)
 str_GTR							: (Govia Thameslink)
 str_GTR_TBW						: (Govia Tunbridge Wells)
