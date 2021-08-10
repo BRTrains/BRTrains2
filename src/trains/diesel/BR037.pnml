@@ -114,66 +114,78 @@ spriteset(spriteset_BR37_Colas, "gfx/BR37.png") {
 	template_train32px(0, 688)
 }
 
+spriteset(spriteset_BR37_BangerBlue, "gfx/BR37.png") {
+	template_train32px(0, 713)
+}
+
+spriteset(spriteset_BR37_BRGreen, "gfx/BR37.png") {
+	template_train32px(0, 738)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR37,cargo_subtype){
-    0:	spriteset_BR37_BRGreenCentre;
-	1: 	spriteset_BR37_BRGreenSplit;
-	2:	spriteset_BR37_BRLLogoSplit;
-	3:	spriteset_BR37_RFLLSplit;
-	4:	spriteset_BR37_RFLLCentre;
-	5:	spriteset_BR37_Intercity;
-	6:	spriteset_BR37_DeptGrey;
-	7:	spriteset_BR37_CivilDutch;
-	8:	spriteset_BR37_BRGrey;
-	9:	spriteset_BR37_Regional;
-	10:	spriteset_BR37_BRBlueCentre;
-	11: spriteset_BR37_BRLLogoCentre;
-	12: spriteset_BR37_BRBlueSplit;
-	13:	spriteset_BR37_EWSCentre;
-	14: spriteset_BR37_EWSSplit;
-	15:	spriteset_BR37_DRSCentre;
-	16: spriteset_BR37_DRSRefurb;
-	17: spriteset_BR37_Royal;
-	18: spriteset_BR37_Loadhaul;
-	19:	spriteset_BR37_RFPetrol;
-	20:	spriteset_BR37_RFDistribution;
-	21:	spriteset_BR37_RFConstruction;
-	22:	spriteset_BR37_HarryNeedle;
-	23: spriteset_BR37_RFCoal;
-	24:	spriteset_BR37_DRSCompass;
-	25:	spriteset_BR37_MainlineFreight;
-	26: spriteset_BR37_DBSchenker;
-	27: spriteset_BR37_Colas;
+	0:	spriteset_BR37_BRGreen;
+    1:	spriteset_BR37_BRGreenCentre;
+	2: 	spriteset_BR37_BRGreenSplit;
+	3:	spriteset_BR37_BRLLogoSplit;
+	4:	spriteset_BR37_RFLLSplit;
+	5:	spriteset_BR37_RFLLCentre;
+	6:	spriteset_BR37_Intercity;
+	7:	spriteset_BR37_DeptGrey;
+	8:	spriteset_BR37_CivilDutch;
+	9:	spriteset_BR37_BRGrey;
+	10:	spriteset_BR37_Regional;
+	11:	spriteset_BR37_BRBlueCentre;
+	12: spriteset_BR37_BRLLogoCentre;
+	13: spriteset_BR37_BRBlueSplit;
+	14:	spriteset_BR37_EWSCentre;
+	15: spriteset_BR37_EWSSplit;
+	16:	spriteset_BR37_DRSCentre;
+	17: spriteset_BR37_DRSRefurb;
+	18: spriteset_BR37_Royal;
+	19: spriteset_BR37_Loadhaul;
+	20:	spriteset_BR37_RFPetrol;
+	21:	spriteset_BR37_RFDistribution;
+	22:	spriteset_BR37_RFConstruction;
+	23:	spriteset_BR37_HarryNeedle;
+	24: spriteset_BR37_RFCoal;
+	25:	spriteset_BR37_DRSCompass;
+	26:	spriteset_BR37_MainlineFreight;
+	27: spriteset_BR37_DBSchenker;
+	28: spriteset_BR37_Colas;
+	29: spriteset_BR37_BangerBlue;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR37_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_BRGreenCentre);
-	1: 	return string(str_BRGreenSplit);
-	2:	return string(str_BRLLogoSplit);
-	3:	return string(str_RFLLSplit);
-	4:	return string(str_RFLLCentre);
-	5:	return string(str_Intercity);
-	6:	return string(str_DeptGrey);
-	7:	return string(str_CivilDutch);
-	8:	return string(str_BRGrey);
-	9:	return string(str_Regional);
-	10:	return string(str_BRBlueCentre);
-	11: return string(str_BRLLogoCentre);
-	12: return string(str_BRBlueSplit);
-	13:	return string(str_EWSCentre);
-	14: return string(str_EWSSplit);
-	15:	return string(str_DRSCentre);
-	16: return string(str_DRSRefurb);
-	17: return string(str_Royal);
-	18: return string(str_Loadhaul);
-	19:	return string(str_RFPetrol);
-	20:	return string(str_RFDistribution);
-	21:	return string(str_RFConstruction);
-	22:	return string(str_HarryNeedle);
-	23: return string(str_RFCoal);
-	24:	return string(str_DRSCompass);
-	25:	return string(str_MainlineFreight);
-	26: return string(str_DBSchenker);
-	27: return string(str_ColasRail);
+	0:	return string(str_BRGreen);
+	1:	return string(str_BRGreenCentre);
+	2: 	return string(str_BRGreenSplit);
+	3:	return string(str_BRLLogoSplit);
+	4:	return string(str_RFLLSplit);
+	5:	return string(str_RFLLCentre);
+	6:	return string(str_Intercity);
+	7:	return string(str_DeptGrey);
+	8:	return string(str_CivilDutch);
+	9:	return string(str_BRGrey);
+	10:	return string(str_Regional);
+	11:	return string(str_BRBlueCentre);
+	12: return string(str_BRLLogoCentre);
+	13: return string(str_BRBlueSplit);
+	14:	return string(str_EWSCentre);
+	15: return string(str_EWSSplit);
+	16:	return string(str_DRSCentre);
+	17: return string(str_DRSRefurb);
+	18: return string(str_Royal);
+	19: return string(str_Loadhaul);
+	20:	return string(str_RFPetrol);
+	21:	return string(str_RFDistribution);
+	22:	return string(str_RFConstruction);
+	23:	return string(str_HarryNeedle);
+	24: return string(str_RFCoal);
+	25:	return string(str_DRSCompass);
+	26:	return string(str_MainlineFreight);
+	27: return string(str_DBSchenker);
+	28: return string(str_ColasRail);
+	29: return string(str_BangerBlue_Stripe);
        return CB_RESULT_NO_TEXT;
 }
 
