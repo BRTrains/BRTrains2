@@ -162,10 +162,15 @@ str_GreatBear_usage					:Express Passenger
 str_GreatBear_eos					:1908
 str_GreatBear_liveries				:GWR Green
 
-STR_NAME_GWRCastle					:GWR 4-6-0 "Castle"
-str_GWRCastle_usage					:Express Passenger
+STR_NAME_GWRCastle					:GWR 4-6-0 "Castle" Class
+str_GWRCastle_usage			   		:Express Passenger
 str_GWRCastle_eos					:1923
-str_GWRCastle_liveries				:GWR Green, Hogwarts Express
+str_GWRCastle_liveries				:GWR Green
+
+STR_NAME_GWRHall					:GWR 4-6-0 "Hall" Class
+str_GWRHall_usage			   		:Express Passenger
+str_GWRHall_eos					    :1946
+str_GWRHall_liveries				:GWR Green, Hogwarts Express
 
 STR_NAME_GNRA1					:GNR Gresley A1
 str_GNRA1_usage					:Express Passenger

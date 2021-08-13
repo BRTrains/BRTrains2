@@ -1,41 +1,41 @@
-spriteset(spriteset_GWRCastle_Purchase, "gfx/Steam/GWRCastle.png") {
+spriteset(spriteset_GWRHall_Purchase, "gfx/Steam/GWRHall.png") {
 	template_purchase_anim(0, 0)
 }
 
-spriteset(spriteset_GWRCastle_Hogwarts, "gfx/Steam/GWRCastle.png") {
+spriteset(spriteset_GWRHall_Hogwarts, "gfx/Steam/GWRHall.png") {
 	template_train32px_anim(0, 13)
 }
 
-spriteset(spriteset_GWRCastleT_Hogwarts, "gfx/Steam/GWRCastleTender.png") {
+spriteset(spriteset_GWRHallT_Hogwarts, "gfx/Steam/GWRHallTender.png") {
 	template_train20px_anim(0, 13)
 }
 
-switch(FEAT_TRAINS,SELF, sw_GWRCastle,cargo_subtype){
-    0:	spriteset_GWRCastle_Hogwarts;
+switch(FEAT_TRAINS,SELF, sw_GWRHall,cargo_subtype){
+    0:	spriteset_GWRHall_Hogwarts;
 }
 
-switch(FEAT_TRAINS,SELF, sw_GWRCastleT,cargo_subtype){
-    0:	spriteset_GWRCastleT_Hogwarts;
+switch(FEAT_TRAINS,SELF, sw_GWRHallT,cargo_subtype){
+    0:	spriteset_GWRHallT_Hogwarts;
 }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_GWRCastle, extra_callback_info1) {
-	1: return item_GWRCastleT;
+switch (FEAT_TRAINS, SELF, switch_articulated_GWRHall, extra_callback_info1) {
+	1: return item_GWRHallT;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_GWRCastle_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_GWRHall_cargo_subtype_text,cargo_subtype){
     0: return string(str_GWRGreen);
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_GWRCastle, 512) {
+item (FEAT_TRAINS, item_GWRHall, 512) {
 	property {
-		name: 							string(STR_NAME_GWRCastle);
+		name: 							string(STR_NAME_GWRHall);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1923,2,10);
-		model_life:						20;
+		introduction_date:				date(1946,2,10);
+		model_life:						25;
 		retire_early:					1;
-		vehicle_life:					20;
+		vehicle_life:					25;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
 		cargo_allow_refit:				[GOOD];
@@ -43,17 +43,17 @@ item (FEAT_TRAINS, item_GWRCastle, 512) {
 		cost_factor:					26;
 		running_cost_factor:			30;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							100 mph;
+		speed:							90 mph;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							800 hp;
+		power:							1000 hp;
 		running_cost_base:				RUNNING_COST_STEAM;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							127 ton;
+		weight:							124 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
 		tractive_effort_coefficient:	0.3;
 		air_drag_coefficient:			0.1;
@@ -63,24 +63,24 @@ item (FEAT_TRAINS, item_GWRCastle, 512) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_GWRCastle_usage),string(str_GWRCastle_eos),string(str_GWRCastle_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_GWRHall_usage),string(str_GWRHall_eos),string(str_GWRHall_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_GWRCastle_cargo_subtype_text;
-	articulated_part:        			switch_articulated_GWRCastle;
-	default: 							sw_GWRCastle;
-	purchase:							spriteset_GWRCastle_Purchase;
+	cargo_subtype_text:					sw_GWRHall_cargo_subtype_text;
+	articulated_part:        			switch_articulated_GWRHall;
+	default: 							sw_GWRHall;
+	purchase:							spriteset_GWRHall_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
 	sound_effect:						sw_steam_sound;
 }
 }
 
-item (FEAT_TRAINS, item_GWRCastleT, 513) {
+item (FEAT_TRAINS, item_GWRHallT, 513) {
 	property {
-		name: 							string(STR_NAME_GWRCastle);
+		name: 							string(STR_NAME_GWRHall);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1908,2,10);
+		introduction_date:				date(1946,2,10);
 		model_life:						20;
 		retire_early:					1;
 		vehicle_life:					20;
@@ -108,7 +108,7 @@ item (FEAT_TRAINS, item_GWRCastleT, 513) {
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	default: 							sw_GWRCastleT;
+	default: 							sw_GWRHallT;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 }
 }
