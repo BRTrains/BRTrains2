@@ -990,8 +990,18 @@ str_LUDStock_usage				:Metro
 str_LUDStock_eos				:---
 str_LUDStock_liveries			:London Underground
 
-STR_NAME_LULS8					:London Underground S8 Stock
-STR_NAME_LULS7					:London Underground S7 Stock
+STR_NAME_LU1995					:London Underground 1995 Stock (6-car)
+str_LU1995_usage				:Metro
+str_LU1995_eos					:---
+str_LU1995_liveries				:London Underground
+
+STR_NAME_LU1996					:London Underground 1996 Stock (7-car)
+str_LU1996_usage				:Metro
+str_LU1996_eos					:---
+str_LU1996_liveries				:London Underground
+
+STR_NAME_LULS8					:London Underground S8 Stock (8-car)
+STR_NAME_LULS7					:London Underground S7 Stock (7-car)
 str_LULS_usage					:Metro
 str_LULS_eos					:---
 str_LULS_liveries				:London Underground, London Underground - Unwrapped, London Underground - Poppies

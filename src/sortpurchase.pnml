@@ -175,6 +175,8 @@ sort(FEAT_TRAINS, [
  item_LU1967,
  item_LUDStock,
  item_LU1986,
+ item_LU1995,
+ item_LU1996,
  item_LULS7,
  item_LULS8,
  item_LU2009,
