@@ -990,6 +990,11 @@ str_LUDStock_usage				:Metro
 str_LUDStock_eos				:---
 str_LUDStock_liveries			:London Underground
 
+STR_NAME_LU1992					:London Underground 1992 Stock (8-car)
+str_LU1992_usage				:Metro
+str_LU1992_eos					:---
+str_LU1992_liveries				:London Underground, Network SouthEast
+
 STR_NAME_LU1995					:London Underground 1995 Stock (6-car)
 str_LU1995_usage				:Metro
 str_LU1995_eos					:---
