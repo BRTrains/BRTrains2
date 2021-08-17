@@ -523,6 +523,11 @@ str_BR350_usage					:Passenger
 str_BR350_eos					:---
 str_BR350_liveries				:London Midland
 
+STR_NAME_BR357					:British Rail Class 357 'Electrostar'
+str_BR357_usage					:Surburban Passenger
+str_BR357_eos					:---
+str_BR357_liveries				:C2C, C2C Blue, C2C Eco
+
 STR_NAME_BR370					:British Rail Class 370 'APT'
 str_BR370_usage					:Express Passenger
 str_BR370_eos					:1986
@@ -1075,6 +1080,7 @@ str_BRTest						: (BR Track Test Train)
 str_Brunswick					: (BR Brunswick Green)
 str_BSS							: (British Steel)
 str_C2C							: (C2C)
+str_C2CBlue							: (C2C Blue)
 str_Caledonian					: (Caledonian Sleeper)
 str_Central						: (Central Trains)
 str_CentralAnglia				: (Central/Anglia Hybrid)
