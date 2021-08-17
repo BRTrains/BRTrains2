@@ -30,7 +30,7 @@ spriteset(spriteset_BR357d_C2C2, "gfx/BR357.png") {
 
 switch(FEAT_TRAINS,SELF, sw_BR357a,cargo_subtype){
     0:	spriteset_BR357a_C2C;
-	0:	spriteset_BR357a_C2C2;
+	1:	spriteset_BR357a_C2C2;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR357b,cargo_subtype){
