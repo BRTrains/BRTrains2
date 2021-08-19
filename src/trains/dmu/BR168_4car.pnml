@@ -9,8 +9,10 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR168_4car, extra_callback_info1) 
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR168_4_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_ChilternBlue);
-	1:	return string(str_Chiltern);
+	0:	return string(str_ChilternTurboBlue);
+	1:	return string(str_ChilternNetworkBlue);
+	2:	return string(str_ChilternTurboGrey);
+	3:	return string(str_ChilternNetworkGrey);
        return CB_RESULT_NO_TEXT;       
 }
 

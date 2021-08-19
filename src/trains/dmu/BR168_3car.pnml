@@ -2,16 +2,25 @@ spriteset(spriteset_BR168_3_Purchase, "gfx/BR168.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR168c_ChilternBlue, "gfx/BR168.png") {
+spriteset(spriteset_BR168c_ChilternTurboBlue, "gfx/BR168.png") {
 	template_train32px(0, 38)
 }
-spriteset(spriteset_BR168c_ChilternGrey, "gfx/BR168.png") {
+spriteset(spriteset_BR168c_ChilternNetworkBlue, "gfx/BR168.png") {
 	template_train32px(0, 113)
 }
 
+spriteset(spriteset_BR168c_ChilternTurboGrey, "gfx/BR168.png") {
+	template_train32px(0, 188)
+}
+spriteset(spriteset_BR168c_ChilternNetworkGrey, "gfx/BR168.png") {
+	template_train32px(0, 263)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR168c,cargo_subtype){
-    0:	spriteset_BR168c_ChilternBlue;
-	1:	spriteset_BR168c_ChilternGrey;
+    0:	spriteset_BR168c_ChilternTurboBlue;
+	1:	spriteset_BR168c_ChilternNetworkBlue;
+	2:	spriteset_BR168c_ChilternTurboGrey;
+	3:	spriteset_BR168c_ChilternNetworkGrey;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR168_3car, extra_callback_info1) {
@@ -21,8 +30,10 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR168_3car, extra_callback_info1) 
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR168_3_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_ChilternBlue);
-	1:	return string(str_Chiltern);
+    0:	return string(str_ChilternTurboBlue);
+	1:	return string(str_ChilternNetworkBlue);
+	2:	return string(str_ChilternTurboGrey);
+	3:	return string(str_ChilternNetworkGrey);
        return CB_RESULT_NO_TEXT;
 }
 

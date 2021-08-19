@@ -2,29 +2,47 @@ spriteset(spriteset_BR168_Purchase, "gfx/BR168.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR168a_ChilternBlue, "gfx/BR168.png") {
+spriteset(spriteset_BR168a_ChilternTurboBlue, "gfx/BR168.png") {
 	template_train32px(0, 13)
 }
-spriteset(spriteset_BR168b_ChilternBlue, "gfx/BR168.png") {
+spriteset(spriteset_BR168b_ChilternTurboBlue, "gfx/BR168.png") {
 	template_train32px(0, 63)
 }
 
-spriteset(spriteset_BR168a_ChilternGrey, "gfx/BR168.png") {
+spriteset(spriteset_BR168a_ChilternNetworkBlue, "gfx/BR168.png") {
 	template_train32px(0, 88)
 }
-spriteset(spriteset_BR168b_ChilternGrey, "gfx/BR168.png") {
+spriteset(spriteset_BR168b_ChilternNetworkBlue, "gfx/BR168.png") {
 	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR168a_ChilternTurboGrey, "gfx/BR168.png") {
+	template_train32px(0, 163)
+}
+spriteset(spriteset_BR168b_ChilternTurboGrey, "gfx/BR168.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR168a_ChilternNetworkGrey, "gfx/BR168.png") {
+	template_train32px(0, 238)
+}
+spriteset(spriteset_BR168b_ChilternNetworkGrey, "gfx/BR168.png") {
+	template_train32px(0, 288)
 }
 
 
 switch(FEAT_TRAINS,SELF, sw_BR168a,cargo_subtype){
-	0:	spriteset_BR168a_ChilternBlue;
-	1:	spriteset_BR168a_ChilternGrey;
+    0:	spriteset_BR168a_ChilternTurboBlue;
+	1:	spriteset_BR168a_ChilternNetworkBlue;
+	2:	spriteset_BR168a_ChilternTurboGrey;
+	3:	spriteset_BR168a_ChilternNetworkGrey;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR168b,cargo_subtype){
-	0:	spriteset_BR168b_ChilternBlue;
-	1:	spriteset_BR168b_ChilternGrey;
+    0:	spriteset_BR168b_ChilternTurboBlue;
+	1:	spriteset_BR168b_ChilternNetworkBlue;
+	2:	spriteset_BR168b_ChilternTurboGrey;
+	3:	spriteset_BR168b_ChilternNetworkGrey;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR168_2car, extra_callback_info1) {	
@@ -33,8 +51,10 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR168_2car, extra_callback_info1) 
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR168_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_ChilternBlue);
-	1:	return string(str_Chiltern);
+	0:	return string(str_ChilternTurboBlue);
+	1:	return string(str_ChilternNetworkBlue);
+	2:	return string(str_ChilternTurboGrey);
+	3:	return string(str_ChilternNetworkGrey);
        return CB_RESULT_NO_TEXT;
 }
 
