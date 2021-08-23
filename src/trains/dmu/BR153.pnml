@@ -78,6 +78,10 @@ spriteset(spriteset_BR153_ScotrailSaltire, "gfx/BR153.png") {
 	template_train32px(0, 463)
 }
 
+spriteset(spriteset_BR153_TfW, "gfx/BR153.png") {
+	template_train32px(0, 488)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR153,cargo_subtype){
     0:	spriteset_BR153_Regional;
 	1:	spriteset_BR153_Central;
@@ -98,6 +102,7 @@ switch(FEAT_TRAINS,SELF, sw_BR153,cargo_subtype){
 	16:	spriteset_BR153_FGW;
 	17:	spriteset_BR153_LondonMidland;
 	18:	spriteset_BR153_ScotrailSaltire;
+	19:	spriteset_BR153_TfW;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR153_cargo_subtype_text,cargo_subtype){
@@ -120,6 +125,7 @@ switch(FEAT_TRAINS,SELF,sw_BR153_cargo_subtype_text,cargo_subtype){
 	16:	return string(str_FGW);
 	17:	return string(str_LondonMidland);
 	18:	return string(str_ScotrailSaltire);
+	19:	return string(str_TfW);
        return CB_RESULT_NO_TEXT;
 }
 
