@@ -1,20 +1,20 @@
-spriteset(spriteset_BR484_Purchase, "gfx/LondonUnderground/LU_DStock.png") {
+spriteset(spriteset_BR484_Purchase, "gfx/LondonUnderground/LU_D78.png") {
 	template_purchase(200, 26)
 }
-spriteset(spriteset_BR484a_Island, "gfx/LondonUnderground/LU_DStock.png") {
+spriteset(spriteset_BR484a_Island, "gfx/LondonUnderground/LU_D78.png") {
 	template_train32px(0, 75)
 }
-spriteset(spriteset_BR484b_Island, "gfx/LondonUnderground/LU_DStock.png") {
+spriteset(spriteset_BR484b_Island, "gfx/LondonUnderground/LU_D78.png") {
 	template_train32px(0, 125)
 }
 
-spriteset(spriteset_BR484a_VivaRail, "gfx/LondonUnderground/LU_DStock.png") {
+spriteset(spriteset_BR484a_VivaRail, "gfx/LondonUnderground/LU_D78.png") {
 	template_train32px(0, 450)
 }
-spriteset(spriteset_BR484b_VivaRail, "gfx/LondonUnderground/LU_DStock.png") {
+spriteset(spriteset_BR484b_VivaRail, "gfx/LondonUnderground/LU_D78.png") {
 	template_train32px(0, 475)
 }
-spriteset(spriteset_BR484c_VivaRail, "gfx/LondonUnderground/LU_DStock.png") {
+spriteset(spriteset_BR484c_VivaRail, "gfx/LondonUnderground/LU_D78.png") {
 	template_train32px(0, 500)
 }
 
