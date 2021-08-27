@@ -997,6 +997,11 @@ str_LUAStock_usage				:Metro
 str_LUAStock_eos				:---
 str_LUAStock_liveries			:London Underground
 
+STR_NAME_LUCStock				:London Underground C69/C77 Stock
+str_LUCStock_usage				:Metro
+str_LUCStock_eos				:---
+str_LUCStock_liveries			:London Underground
+
 STR_NAME_LUDStock				:London Underground D78 Stock
 str_LUDStock_usage				:Metro
 str_LUDStock_eos				:---
