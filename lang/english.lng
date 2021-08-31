@@ -530,6 +530,11 @@ str_BR350_usage					:Passenger
 str_BR350_eos					:---
 str_BR350_liveries				:London Midland
 
+STR_NAME_ElectroTest			:TEST UNIT
+str_ElectroTest_usage			:
+str_ElectroTest_eos				:---
+str_ElectroTest_liveries		:
+
 STR_NAME_BR357					:British Rail Class 357 'Electrostar'
 str_BR357_usage					:Surburban Passenger
 str_BR357_eos					:---
