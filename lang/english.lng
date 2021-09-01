@@ -585,6 +585,7 @@ str_BR377_5dv_usage				:Regional Passenger
 str_BR377_5dv_eos				:---
 str_BR377_5dv_liveries			:Southern
 
+STR_NAME_BR378				:British Rail Class 378
 STR_NAME_BR378_3				:British Rail Class 378/0 (3-Car, Dual Voltage)
 str_BR378_3_usage				:Urban Passenger
 str_BR378_3_eos					:---
