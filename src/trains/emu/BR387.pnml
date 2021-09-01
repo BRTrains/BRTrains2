@@ -1,163 +1,142 @@
-spriteset(spriteset_BR387__Purchase, "gfx/Electrostar.png") {
-	template_purchase(1923, 11)
+spriteset(spriteset_BR387__Purchase, "gfx/Electrostar_v2.png") {
+	template_purchase(200, 65)
+}
+spriteset(spriteset_BR387a_GWR, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 00)
+}
+spriteset(spriteset_BR387b_GWR, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 25)
+}
+spriteset(spriteset_BR387c_GWR, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 50)
+}
+spriteset(spriteset_BR387d_GWR, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 75)
 }
 
-spriteset(spriteset_BR387_a_gtr, "gfx/Electrostar.png") {
-	template_electrostar(1734, 387)
+spriteset(spriteset_BR387a_GWRun, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 00)
+}
+spriteset(spriteset_BR387b_GWRun, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 25)
+}
+spriteset(spriteset_BR387c_GWRun, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 50)
+}
+spriteset(spriteset_BR387d_GWRun, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 75)
 }
 
-spriteset(spriteset_BR387_b_gtr, "gfx/Electrostar.png") {
-	template_electrostar(1734, 413)
+spriteset(spriteset_BR387a_C2C, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1000)
+}
+spriteset(spriteset_BR387b_C2C, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1025)
+}
+spriteset(spriteset_BR387c_C2C, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1050)
+}
+spriteset(spriteset_BR387d_C2C, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1075)
 }
 
-spriteset(spriteset_BR387_c_gtr, "gfx/Electrostar.png") {
-	template_electrostar(534, 495)
+spriteset(spriteset_BR387a_GTR, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 800)
+}
+spriteset(spriteset_BR387b_GTR, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 825)
+}
+spriteset(spriteset_BR387c_GTR, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 850)
+}
+spriteset(spriteset_BR387d_GTR, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 875)
 }
 
-spriteset(spriteset_BR387_d_gtr, "gfx/Electrostar.png") {
-	template_electrostar(1734, 439)
+spriteset(spriteset_BR387a_GatEX, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 400)
+}
+spriteset(spriteset_BR387b_GatEX, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 425)
+}
+spriteset(spriteset_BR387c_GatEX, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 450)
+}
+spriteset(spriteset_BR387d_GatEX, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 475)
 }
 
-spriteset(spriteset_BR387_a_gatexun, "gfx/Electrostar.png") {
-	template_electrostar(1734, 155)
+spriteset(spriteset_BR387a_GatEXun, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1100)
+}
+spriteset(spriteset_BR387b_GatEXun, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1125)
+}
+spriteset(spriteset_BR387c_GatEXun, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1150)
+}
+spriteset(spriteset_BR387d_GatEXun, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1175)
 }
 
-spriteset(spriteset_BR387_b_gatexun, "gfx/Electrostar.png") {
-	template_electrostar(1734, 181)
-}
 
-spriteset(spriteset_BR387_c_gatexun, "gfx/Electrostar.png") {
-	template_electrostar(534, 417)
+spriteset(spriteset_BR387a_HExpress, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 200)
 }
-
-spriteset(spriteset_BR387_d_gatexun, "gfx/Electrostar.png") {
-	template_electrostar(1734, 207)
+spriteset(spriteset_BR387b_HExpress, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 225)
 }
-
-spriteset(spriteset_BR387_a_gatex, "gfx/Electrostar.png") {
-	template_electrostar(1734, 77)
+spriteset(spriteset_BR387c_HExpress, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 250)
 }
-
-spriteset(spriteset_BR387_b_gatex, "gfx/Electrostar.png") {
-	template_electrostar(1734, 103)
-}
-
-spriteset(spriteset_BR387_c_gatex, "gfx/Electrostar.png") {
-	template_electrostar(534, 391)
-}
-
-spriteset(spriteset_BR387_d_gatex, "gfx/Electrostar.png") {
-	template_electrostar(1734, 129)
-}
-
-spriteset(spriteset_BR387_a_gwrun, "gfx/Electrostar.png") {
-	template_electrostar(1734, 310)
-}
-
-spriteset(spriteset_BR387_b_gwrun, "gfx/Electrostar.png") {
-	template_electrostar(1734, 336)
-}
-
-spriteset(spriteset_BR387_c_gwrun, "gfx/Electrostar.png") {
-	template_electrostar(534, 469)
-}
-
-spriteset(spriteset_BR387_d_gwrun, "gfx/Electrostar.png") {
-	template_electrostar(1734, 362)
-}
-
-spriteset(spriteset_BR387_a_gwr, "gfx/Electrostar.png") {
-	template_electrostar(1734, 232)
-}
-
-spriteset(spriteset_BR387_b_gwr, "gfx/Electrostar.png") {
-	template_electrostar(1734, 258)
-}
-
-spriteset(spriteset_BR387_c_gwr, "gfx/Electrostar.png") {
-	template_electrostar(534, 443)
-}
-
-spriteset(spriteset_BR387_d_gwr, "gfx/Electrostar.png") {
-	template_electrostar(1734, 284)
-}
-
-spriteset(spriteset_BR387_a_c2c, "gfx/Electrostar.png") {
-	template_electrostar(1734, 0)
-}
-
-spriteset(spriteset_BR387_b_c2c, "gfx/Electrostar.png") {
-	template_electrostar(1734, 26)
-}
-
-spriteset(spriteset_BR387_c_c2c, "gfx/Electrostar.png") {
-	template_electrostar(534, 365)
-}
-
-spriteset(spriteset_BR387_d_c2c, "gfx/Electrostar.png") {
-	template_electrostar(1734, 52)
-}
-
-spriteset(spriteset_BR387_a_hexpress, "gfx/Electrostar.png") {
-	template_electrostar(1734, 666)
-}
-
-spriteset(spriteset_BR387_b_hexpress, "gfx/Electrostar.png") {
-	template_electrostar(1734, 692)
-}
-
-spriteset(spriteset_BR387_c_hexpress, "gfx/Electrostar.png") {
-	template_electrostar(1734, 744)
-}
-
-spriteset(spriteset_BR387_d_hexpress, "gfx/Electrostar.png") {
-	template_electrostar(1734, 718)
+spriteset(spriteset_BR387d_HExpress, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 275)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR387_a,cargo_subtype){
-    0:	spriteset_BR387_a_gtr;
-    1:	spriteset_BR387_a_gatexun;
-	2:  spriteset_BR387_a_gatex;
-	3:	spriteset_BR387_a_gwrun;
-	4:  spriteset_BR387_a_gwr;
-	5:	spriteset_BR387_a_c2c;
-	6:	spriteset_BR387_a_hexpress;
+    0:	spriteset_BR387a_GTR;
+    1:	spriteset_BR387a_GatEXun;
+	2:  spriteset_BR387a_GatEX;
+	3:	spriteset_BR387a_GWRun;
+	4:  spriteset_BR387a_GWR;
+	5:	spriteset_BR387a_C2C;
+	6:	spriteset_BR387a_HExpress;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR387_b,cargo_subtype){
-    0:	spriteset_BR387_b_gtr;
-    1:	spriteset_BR387_b_gatexun;
-	2:  spriteset_BR387_b_gatex;
-	3:	spriteset_BR387_b_gwrun;
-	4:  spriteset_BR387_b_gwr;
-	5:	spriteset_BR387_b_c2c;
-	6:	spriteset_BR387_b_hexpress;
+	0:	spriteset_BR387b_GTR;
+    1:	spriteset_BR387b_GatEXun;
+	2:  spriteset_BR387b_GatEX;
+	3:	spriteset_BR387b_GWRun;
+	4:  spriteset_BR387b_GWR;
+	5:	spriteset_BR387b_C2C;
+	6:	spriteset_BR387b_HExpress;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR387_c,cargo_subtype){
-    0:	spriteset_BR387_c_gtr;
-    1:	spriteset_BR387_c_gatexun;
-	2:  spriteset_BR387_c_gatex;
-	3:	spriteset_BR387_c_gwrun;
-	4:  spriteset_BR387_c_gwr;
-	5:	spriteset_BR387_c_c2c;
-	6:	spriteset_BR387_c_hexpress;
+	0:	spriteset_BR387c_GTR;
+    1:	spriteset_BR387c_GatEXun;
+	2:  spriteset_BR387c_GatEX;
+	3:	spriteset_BR387c_GWRun;
+	4:  spriteset_BR387c_GWR;
+	5:	spriteset_BR387c_C2C;
+	6:	spriteset_BR387c_HExpress;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR387_d,cargo_subtype){
-    0:	spriteset_BR387_d_gtr;
-    1:	spriteset_BR387_d_gatexun;
-	2:  spriteset_BR387_d_gatex;
-	3:	spriteset_BR387_d_gwrun;
-	4:  spriteset_BR387_d_gwr;
-	5:	spriteset_BR387_d_c2c;
-	6:	spriteset_BR387_d_hexpress;
+	0:	spriteset_BR387d_GTR;
+    1:	spriteset_BR387d_GatEXun;
+	2:  spriteset_BR387d_GatEX;
+	3:	spriteset_BR387d_GWRun;
+	4:  spriteset_BR387d_GWR;
+	5:	spriteset_BR387d_C2C;
+	6:	spriteset_BR387d_HExpress;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR387_, extra_callback_info1) {
-	1: return item_BR387_b;
-	2: return item_BR387_c;
-	3: return item_BR387_d;
+	1: return item_BR387_c;
+	2: return item_BR387_d;
+	3: return item_BR387_b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 

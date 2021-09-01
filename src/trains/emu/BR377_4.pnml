@@ -1,17 +1,18 @@
-spriteset(spriteset_BR377_4_Purchase, "gfx/BR377_2.png") {
-	template_purchase(172, 0)
+spriteset(spriteset_BR377_4_Purchase, "gfx/Electrostar_v2.png") {
+	template_purchase(200, 26)
 }
 
-spriteset(spriteset_BR377_4a_southern, "gfx/BR377_2.png") {
-	template_train32px(0, 50)
+spriteset(spriteset_BR377_4a_southern, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 500)
 }
-
-spriteset(spriteset_BR377_4b_southern, "gfx/BR377_2.png") {
-	template_train32px(0, 0)
+spriteset(spriteset_BR377_4b_southern, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 525)
 }
-
-spriteset(spriteset_BR377_4c_southern, "gfx/BR377_2.png") {
-	template_train32px(0, 75)
+spriteset(spriteset_BR377_4c_southern, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 550)
+}
+spriteset(spriteset_BR377_4d_southern, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 575)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR377_4a,cargo_subtype){
@@ -26,10 +27,14 @@ switch(FEAT_TRAINS,SELF, sw_BR377_4c,cargo_subtype){
     0:	spriteset_BR377_4c_southern;
 }
 
+switch(FEAT_TRAINS,SELF, sw_BR377_4d,cargo_subtype){
+    0:	spriteset_BR377_4d_southern;
+}
+
 switch (FEAT_TRAINS, SELF, switch_articulated_BR377_4, extra_callback_info1) {
-	1: return item_BR377_4b;
-	2: return item_BR377_4b;
-	3: return item_BR377_4c;
+	1: return item_BR377_4c;
+	2: return item_BR377_4c;
+	3: return item_BR377_4b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 

@@ -1,5 +1,5 @@
-spriteset(spriteset_BR377_5_Purchase, "gfx/BR377_2.png") {
-	template_purchase(260, 0)
+spriteset(spriteset_BR377_5_Purchase, "gfx/Electrostar_v2.png") {
+	template_purchase(200, 26)
 }
 
 spriteset(spriteset_BR377_5a_southern, "gfx/BR377_2.png") {
@@ -27,10 +27,10 @@ switch(FEAT_TRAINS,SELF, sw_BR377_5c,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR377_5, extra_callback_info1) {
-	1: return item_BR377_5b;
-	2: return item_BR377_5b;
-	3: return item_BR377_5b;
-	4: return item_BR377_5c;
+	1: return item_BR377_5c;
+	2: return item_BR377_5c;
+	3: return item_BR377_5c;
+	4: return item_BR377_5b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 

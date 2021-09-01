@@ -1,18 +1,20 @@
-spriteset(spriteset_BR376_Purchase, "gfx/Electrostar.png") {
-	template_purchase(375, 9)
+spriteset(spriteset_BR376_Purchase, "gfx/Electrostar_v2.png") {
+	template_purchase(200, 13)
 }
 
-spriteset(spriteset_BR376a_SE_Yellow, "gfx/Electrostar.png") {
-	template_electrostar(468, 0)
+spriteset(spriteset_BR376a_SE_Yellow, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 700)
+}
+spriteset(spriteset_BR376b_SE_Yellow, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 725)
+}
+spriteset(spriteset_BR376bc_SE_Yellow, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 750)
+}
+spriteset(spriteset_BR376d_SE_Yellow, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 775)
 }
 
-spriteset(spriteset_BR376bc_SE_Yellow, "gfx/Electrostar.png") {
-	template_electrostar(468, 26)
-}
-
-spriteset(spriteset_BR376d_SE_Yellow, "gfx/Electrostar.png") {
-	template_electrostar(468, 52)
-}
 
 switch(FEAT_TRAINS,SELF, sw_BR376a,cargo_subtype){
     0:	spriteset_BR376a_SE_Yellow;
@@ -31,10 +33,10 @@ switch(FEAT_TRAINS,SELF, sw_BR376d,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR376, extra_callback_info1) {
-	1: return item_BR376_b;
-	2: return item_BR376_c;
-	3: return item_BR376_c;
-	4: return item_BR376_d;
+	1: return item_BR376_c;
+	2: return item_BR376_d;
+	3: return item_BR376_d;
+	4: return item_BR376_b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 

@@ -1,53 +1,44 @@
-spriteset(spriteset_BR377_4_dv_Purchase, "gfx/BR377_2.png") {
-	template_purchase(172, 0)
+spriteset(spriteset_BR377_4_dv_Purchase,"gfx/Electrostar_v2.png") {
+	template_purchase(200, 26)
 }
 
-spriteset(spriteset_BR377_4_dva_southern, "gfx/BR377_2.png") {
-	template_train32px(0, 50)
+spriteset(spriteset_BR377_4_dva_southern, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 500)
+}
+spriteset(spriteset_BR377_4_dvb_southern, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 525)
+}
+spriteset(spriteset_BR377_4_dvc_southern, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 550)
+}
+spriteset(spriteset_BR377_4_dvd_southern, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 575)
 }
 
-spriteset(spriteset_BR377_4_dvb_southern, "gfx/BR377_2.png") {
-	template_train32px(0, 25)
+spriteset(spriteset_BR377_4_dva_fcc, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1200)
+}
+spriteset(spriteset_BR377_4_dvb_fcc, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1225)
+}
+spriteset(spriteset_BR377_4_dvc_fcc, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1250)
+}
+spriteset(spriteset_BR377_4_dvd_fcc, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1275)
 }
 
-spriteset(spriteset_BR377_4_dvc_southern, "gfx/BR377_2.png") {
-	template_train32px(0, 0)
+spriteset(spriteset_BR377_4_dva_xfcc, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 100)
 }
-
-spriteset(spriteset_BR377_4_dvd_southern, "gfx/BR377_2.png") {
-	template_train32px(0, 75)
+spriteset(spriteset_BR377_4_dvb_xfcc, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 125)
 }
-
-spriteset(spriteset_BR377_4_dva_fcc, "gfx/BR377_2.png") {
-	template_train32px(172, 150)
+spriteset(spriteset_BR377_4_dvc_xfcc, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 150)
 }
-
-spriteset(spriteset_BR377_4_dvb_fcc, "gfx/BR377_2.png") {
-	template_train32px(172, 125)
-}
-
-spriteset(spriteset_BR377_4_dvc_fcc, "gfx/BR377_2.png") {
-	template_train32px(172, 100)
-}
-
-spriteset(spriteset_BR377_4_dvd_fcc, "gfx/BR377_2.png") {
-	template_train32px(172, 175)
-}
-
-spriteset(spriteset_BR377_4_dva_xfcc, "gfx/BR377_2.png") {
-	template_train32px(0, 250)
-}
-
-spriteset(spriteset_BR377_4_dvb_xfcc, "gfx/BR377_2.png") {
-	template_train32px(0, 200)
-}
-
-spriteset(spriteset_BR377_4_dvc_xfcc, "gfx/BR377_2.png") {
-	template_train32px(0, 225)
-}
-
-spriteset(spriteset_BR377_4_dvd_xfcc, "gfx/BR377_2.png") {
-	template_train32px(0, 275)
+spriteset(spriteset_BR377_4_dvd_xfcc, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 175)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR377_4_dva,cargo_subtype){
@@ -75,9 +66,9 @@ switch(FEAT_TRAINS,SELF, sw_BR377_4_dvd,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR377_4_dv, extra_callback_info1) {
-	1: return item_BR377_4_dvb;
-	2: return item_BR377_4_dvc;
-	3: return item_BR377_4_dvd;
+	1: return item_BR377_4_dvc;
+	2: return item_BR377_4_dvd;
+	3: return item_BR377_4_dvb;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 

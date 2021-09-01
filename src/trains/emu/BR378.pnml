@@ -1,5 +1,5 @@
-spriteset(spriteset_BR378_3_Purchase, "gfx/Electrostar.png") {
-	template_purchase(1324, 4)
+spriteset(spriteset_BR378_3_Purchase, "gfx/Electrostar_v2.png") {
+	template_purchase(200, 39)
 }
 
 spriteset(spriteset_BR378_dmsoa_overground, "gfx/Electrostar.png") {
