@@ -1,0 +1,134 @@
+spriteset(spriteset_BR90_Purchase, "gfx/BR90.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR90_EWS, "gfx/BR90.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR90_DB, "gfx/BR90.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR90_FLGreen, "gfx/BR90.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR90_IntercitySwallow, "gfx/BR90.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR90_GreaterAnglia, "gfx/BR90.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR90_FLPowerhaul, "gfx/BR90.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR90_ONE, "gfx/BR90.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BR90_GreaterAnglia2, "gfx/BR90.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR90_Virgin, "gfx/BR90.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR90_REX, "gfx/BR90.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR90_FirstScotrail, "gfx/BR90.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BR90_FLGrey, "gfx/BR90.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BR90_GNER, "gfx/BR90.png") {
+	template_train32px(0, 313)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR90, cargo_subtype){
+    0:	spriteset_BR90_IntercitySwallow;
+	1:	spriteset_BR90_FLGrey;
+	2:	spriteset_BR90_EWS;
+    3:	spriteset_BR90_DB;
+	4:	spriteset_BR90_FLGreen;
+	5:	spriteset_BR90_FLPowerhaul;
+	6:	spriteset_BR90_ONE;
+	7:	spriteset_BR90_GreaterAnglia;
+	8:	spriteset_BR90_GreaterAnglia2;	
+	9:	spriteset_BR90_Virgin;
+	10:	spriteset_BR90_REX;
+	11:	spriteset_BR90_FirstScotrail;
+	12:	spriteset_BR90_GNER;
+        return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR90_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_IntercitySwallow);	
+    1:	return string(str_FreightlinerGrey);
+	2:	return string(str_EWSRed);
+	3:	return string(str_DBSchenker);
+	4:	return string(str_FreightlinerGreen);
+	5:	return string(str_FreightlinerPH);
+	6:	return string(str_One);
+	7:	return string(str_GA_White);
+	8:	return string(str_GA_Blue);
+	9:	return string(str_Virgin);
+	10:	return string(str_REX);
+	11:	return string(str_FirstScotRail);
+	12:	return string(str_GNER);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR90, 543) {
+	property {
+		name: 							string(STR_NAME_BR90);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1987,10,2);
+		model_life:						19;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					38;
+		running_cost_factor:			37;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							5000 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							84.5 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_route_7),string(str_BR90_usage),string(str_BR90_eos),string(str_BR90_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR90_cargo_subtype_text;
+	default: 							sw_BR90;
+	purchase:							spriteset_BR90_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+}
+}

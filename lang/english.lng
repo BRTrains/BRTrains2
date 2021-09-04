@@ -277,6 +277,11 @@ str_BR89_usage					:Express Passenger
 str_BR89_eos					:---
 str_BR89_liveries				:Intercity Swallow, GNER, Intercity
 
+STR_NAME_BR90					:British Rail Class 90
+str_BR90_usage					:Mixed Traffic
+str_BR90_eos					:---
+str_BR90_liveries				:Intercity Swallow, Freightliner Grey, EWS, DB, Freightliner Green, Freightliner Powerhaul, ONE, Greater Anglie Blue, Greater Anglia White, Virgin, REX, First Scotrail, GNER
+
 STR_NAME_BR91					:British Rail Class 91 'Intercity 225'
 str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
@@ -1153,9 +1158,13 @@ str_FNWBarbie					: (First North Western - Barbie)
 str_FNWArriva					: (FNW/Arriva Hybrid)
 str_Fragonset					: (Fragonset)
 str_Freightliner				: (Freightliner)
+str_FreightlinerGrey            : (Freightliner Grey)
+str_FreightlinerGreen           : (Freightliner Green)
 str_Freightliner2				: (Freightliner - 2nd Version Lights)
 str_FreightlinerSH				: (Freightliner/Shanks)
 str_FreightlinerPH				: (Freightliner Powerhaul)
+str_GA_White					: (Greater Anglia White)
+str_GA_Blue                     : (Greater Anglia Blue)
 str_GatEx						: (Gatwick Express)
 str_GatExUn						: (Gatwick Express Unbranded)
 str_GBRf						: (GBRf)
@@ -1169,7 +1178,8 @@ str_GC							: (Grand Central)
 str_GCLined						: (Grand Central Lined)
 str_GNER						: (Great North Eastern Railway)
 str_GreatNorthern               : (Govia Great Northern)
-str_GA_White					: (Greater Anglia White)
+str_GRFTest1				    : (GRF Test Livery)
+str_GRFTest2					: (GRF Test Livery)
 str_GTR							: (Govia Thameslink)
 str_GTR_TBW						: (Govia Tunbridge Wells)
 str_gtrb						: (Govia Thameslink Blue)
@@ -1255,6 +1265,7 @@ str_RegionalGreen				: (Regional Railways - Green)
 str_RegionalGrey				: (Regional Railways Grey)
 str_RegionalMersey				: (Regional Railways - Merseyrail)
 str_RegionalNSE					: (Regional Railways - Ex-NSE)
+str_REX                         : (Rail Express Systems)
 str_RFCoal						: (Railfreight Coal)
 str_RFConstruction				: (Railfreight Construction)
 str_RFDistribution				: (Railfreight Distribution)
@@ -1289,8 +1300,6 @@ str_SWTPink						: (South West Trains Pink)
 str_SWT_refurb					: (South West Trains Refurbished)
 str_SWT_stagecoach				: (Stagecoach South West Trains)
 str_SWR				            : (South Western Railway)
-str_GRFTest1				    : (GRF Test Livery)
-str_GRFTest2					: (GRF Test Livery)
 str_Teak						: (GNR/LNER Teak)
 str_TfL							: (TfL Rail)
 str_TfW         			    : (Transport For Wales)
