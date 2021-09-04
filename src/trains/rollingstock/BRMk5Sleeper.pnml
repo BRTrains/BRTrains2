@@ -1,0 +1,54 @@
+spriteset(spriteset_BRMk5Sleeper_purchase, "gfx/BRMK3Sleeper.png") {
+	template_purchase(98, 0)
+}
+
+spriteset(spriteset_BRMk5Sleeper_CaledonianSleeper, "gfx/BRMK3Sleeper.png") {
+	template_train32px(0, 188)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMk5Sleeper,cargo_subtype){
+    0:	spriteset_BRMk5Sleeper_CaledonianSleeper;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BRMk5Sleeper_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Caledonian);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BRMk5Sleeper, 545) {
+	property {
+		name: 							string(STR_NAME_BRMk5Sleeper);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		speed:							100 mph;
+		power:							0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					9;
+		weight:							43 ton;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_BRMk5Sleeper;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BRMk5Sleeper_cargo_subtype_text;
+	purchase:							spriteset_BRMk5Sleeper_purchase;
+	speed:								160;
+	cargo_capacity: return(9 * param_pax);
+}
+}

@@ -910,6 +910,9 @@ str_BRMK3TRUK_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midla
 STR_NAME_BRMK3DMB				:BR Mark 3 Driving Motor Brake
 str_BRMK3DMB_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
+STR_NAME_BRMk3Sleeper			:BR Mark 3 Sleeper Coach
+str_BRMk3Sleeper_liveries			:BR Blue, Intercity, First Scotrail, Scotrail, Caledonian Sleaper, Great Western, GWR
+
 STR_NAME_BRMK4FO				:BR Mark 4 Coach (First Open)
 str_BRMK4FO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
@@ -927,6 +930,9 @@ str_BRMK4RFM_liveries			:Intercity Swallow, National Express, GNER, East Coast, 
 
 STR_NAME_BRMK4DVT				:BR Mark 4 Driving Van Trailer
 str_BRMK4DVT_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+
+STR_NAME_BRMk5Sleeper			:BR Mark 5 Sleeper Coach
+str_BRMk5Sleeper_liveries		:Caledonian Sleaper
 
 STR_NAME_RMTPO					:Royal Mail Travelling Post Office
 str_RMTPO_usage					:Express Mail
@@ -1178,6 +1184,7 @@ str_GC							: (Grand Central)
 str_GCLined						: (Grand Central Lined)
 str_GNER						: (Great North Eastern Railway)
 str_GreatNorthern               : (Govia Great Northern)
+str_GreatWestern                : (Great Western)
 str_GRFTest1				    : (GRF Test Livery)
 str_GRFTest2					: (GRF Test Livery)
 str_GTR							: (Govia Thameslink)
@@ -1286,7 +1293,7 @@ str_Southeastern_blue_refurbished	: (Southeastern Refurbished Blue)
 str_Southeastern_blue_stripe	: (Southeastern Blue with Stripe)
 str_Southeastern_TBW			: (Southeastern Tunbridge Wells)
 str_Southeastern_yellow			: (Southeastern Yellow)
-str_Southeastern_yellow_stripe		: (Southeastern Yellow with Stripe)
+str_Southeastern_yellow_stripe	: (Southeastern Yellow with Stripe)
 str_southern					: (Southern)
 str_Southern					: (Southern)
 str_StrathclydeOrange			: (Strathclyde Orange)
