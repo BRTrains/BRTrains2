@@ -1,29 +1,35 @@
-spriteset(spriteset_BR68_Purchase, "gfx/BR68.png") {
+spriteset(spriteset_BR68_Purchase, "gfx/BR68_v2.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR68_DRS, "gfx/BR68.png") {
-	template_train70pt(0, 13)
+spriteset(spriteset_BR68_DRS, "gfx/BR68_v2.png") {
+	template_train32px(0, 13)
 }
 	
-spriteset(spriteset_BR68_ScotRail, "gfx/BR68.png") {
-	template_train70pt(0, 40)
+spriteset(spriteset_BR68_ScotRail, "gfx/BR68_v2.png") {
+	template_train32px(0, 88)
 }
 
-spriteset(spriteset_BR68_Chiltern, "gfx/BR68.png") {
-	template_train70pt(0, 67)
+spriteset(spriteset_BR68_Chiltern, "gfx/BR68_v2.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR68_TPE, "gfx/BR68_v2.png") {
+	template_train32px(0, 38)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR68,cargo_subtype){
     0:	spriteset_BR68_DRS;
 	1: 	spriteset_BR68_ScotRail;
 	2:	spriteset_BR68_Chiltern;
+	3:	spriteset_BR68_TPE;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR68_cargo_subtype_text,cargo_subtype){
     0:	return string(str_DRSCompass);
 	1: 	return string(str_ScotRail);
 	2:	return string(str_Chiltern);
+	3:	return string(str_TPE);
        return CB_RESULT_NO_TEXT;
 }
 
