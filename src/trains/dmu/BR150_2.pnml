@@ -50,6 +50,10 @@ spriteset(spriteset_BR150a_2_ScotRail, "gfx/BR150_2a.png") {
 	template_train32px(0, 288)
 }
 
+spriteset(spriteset_BR150a_2_TfW, "gfx/BR150_2a.png") {
+	template_train32px(0, 313)
+}
+
 spriteset(spriteset_BR150b_2_Regional, "gfx/BR150_2b.png") {
 	template_train32px(0, 13)
 }
@@ -98,6 +102,10 @@ spriteset(spriteset_BR150b_2_ScotRail, "gfx/BR150_2b.png") {
 	template_train32px(0, 288)
 }
 
+spriteset(spriteset_BR150b_2_TfW, "gfx/BR150_2b.png") {
+	template_train32px(0, 313)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR150_2,cargo_subtype){
     0:	spriteset_BR150a_2_Regional;
 	1:	spriteset_BR150a_2_RegionalMersey;
@@ -111,6 +119,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150_2,cargo_subtype){
 	9:	spriteset_BR150a_2_ArrivaWales;
 	10:	spriteset_BR150a_2_Wessex;
 	11: spriteset_BR150a_2_ScotRail;
+	12: spriteset_BR150a_2_TfW;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR150_2b,cargo_subtype){
@@ -126,6 +135,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150_2b,cargo_subtype){
 	9:	spriteset_BR150b_2_ArrivaWales;
 	10:	spriteset_BR150b_2_Wessex;
 	11: spriteset_BR150b_2_ScotRail;
+	12: spriteset_BR150b_2_TfW;
 }
 
 
@@ -147,6 +157,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_2_cargo_subtype_text,cargo_subtype){
 	9:	return string(str_ArrivaWales);
 	10:	return string(str_Wessex);
 	11: return string(str_ScotRail);
+	12: return string(str_TfW);
 }
 
 item (FEAT_TRAINS, item_BR150_2, 46) {
