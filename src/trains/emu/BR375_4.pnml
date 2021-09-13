@@ -2,151 +2,118 @@ spriteset(spriteset_BR375_4_Purchase, "gfx/Electrostar_v2.png") {
 	template_purchase(200, 0)
 }
 
-spriteset(spriteset_BR375_4a_Connex, "gfx/Electrostar.png") {
-	template_electrostar(0, 156)
+spriteset(spriteset_BR375_4a_SE_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1500)
 }
 
-spriteset(spriteset_BR375_4bc_Connex, "gfx/Electrostar.png") {
-	template_electrostar(0, 182)
+spriteset(spriteset_BR375_4b_SE_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1525)
 }
 
-spriteset(spriteset_BR375_4d_Connex, "gfx/Electrostar.png") {
-	template_electrostar(0, 208)
+spriteset(spriteset_BR375_4c_SE_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1550)
 }
 
-spriteset(spriteset_BR375_4a_SE_Blue, "gfx/Electrostar.png") {
-	template_electrostar(0, 234)
+spriteset(spriteset_BR375_4d_SE_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1575)
 }
 
-spriteset(spriteset_BR375_4bc_SE_Blue, "gfx/Electrostar.png") {
-	template_electrostar(0, 260)
+spriteset(spriteset_BR375_4a_SE_Blue_Stripe, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1300)
 }
 
-spriteset(spriteset_BR375_4d_SE_Blue, "gfx/Electrostar.png") {
-	template_electrostar(0, 286)
+spriteset(spriteset_BR375_4b_SE_Blue_Stripe, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1325)
 }
 
-spriteset(spriteset_BR375_4a_SE_Blue_Stripe, "gfx/Electrostar.png") {
-	template_electrostar(0, 312)
+spriteset(spriteset_BR375_4c_SE_Blue_Stripe, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1350)
 }
 
-spriteset(spriteset_BR375_4bc_SE_Blue_Stripe, "gfx/Electrostar.png") {
-	template_electrostar(0, 338)
+spriteset(spriteset_BR375_4d_SE_Blue_Stripe, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1375)
 }
 
-spriteset(spriteset_BR375_4d_SE_Blue_Stripe, "gfx/Electrostar.png") {
-	template_electrostar(0, 364)
+spriteset(spriteset_BR375_4a_SE_Yellow_Stripe, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1400)
 }
 
-spriteset(spriteset_BR375_4a_SE_Yellow_Stripe, "gfx/Electrostar.png") {
-	template_electrostar(0, 390)
+spriteset(spriteset_BR375_4b_SE_Yellow_Stripe, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1425)
 }
 
-spriteset(spriteset_BR375_4bc_SE_Yellow_Stripe, "gfx/Electrostar.png") {
-	template_electrostar(0, 416)
+spriteset(spriteset_BR375_4c_SE_Yellow_Stripe, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1450)
 }
 
-spriteset(spriteset_BR375_4d_SE_Yellow_Stripe, "gfx/Electrostar.png") {
-	template_electrostar(0, 442)
+spriteset(spriteset_BR375_4d_SE_Yellow_Stripe, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1475)
 }
 
-spriteset(spriteset_BR375_4a_SE_Yellow, "gfx/Electrostar.png") {
-	template_electrostar(0, 468)
+spriteset(spriteset_BR375_4a_SE_Yellow, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1600)
 }
 
-spriteset(spriteset_BR375_4bc_SE_Yellow, "gfx/Electrostar.png") {
-	template_electrostar(0, 494)
+spriteset(spriteset_BR375_4b_SE_Yellow, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1625)
 }
 
-spriteset(spriteset_BR375_4d_SE_Yellow, "gfx/Electrostar.png") {
-	template_electrostar(0, 520)
+spriteset(spriteset_BR375_4c_SE_Yellow, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1650)
 }
 
-spriteset(spriteset_BR375_4a_SE_Refurb_Blue, "gfx/Electrostar.png") {
-	template_electrostar(0, 546)
+spriteset(spriteset_BR375_4d_SE_Yellow, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 1675)
 }
 
-spriteset(spriteset_BR375_4b_SE_Refurb_Blue, "gfx/Electrostar.png") {
-	template_electrostar(0, 597)
+spriteset(spriteset_BR375_4a_SE_Refurb_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 600)
 }
 
-
-spriteset(spriteset_BR375_4c_SE_Refurb_Blue, "gfx/Electrostar.png") {
-	template_electrostar(0, 572)
+spriteset(spriteset_BR375_4b_SE_Refurb_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 625)
 }
 
-spriteset(spriteset_BR375_4d_SE_Refurb_Blue, "gfx/Electrostar.png") {
-	template_electrostar(0, 623)
+spriteset(spriteset_BR375_4c_SE_Refurb_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 650)
 }
 
-spriteset(spriteset_BR375_4a_SE_RTW, "gfx/Electrostar.png") {
-	template_electrostar(0, 78)
-}
-
-spriteset(spriteset_BR375_4bc_SE_RTW, "gfx/Electrostar.png") {
-	template_electrostar(0, 104)
-}
-
-spriteset(spriteset_BR375_4d_SE_RTW, "gfx/Electrostar.png") {
-	template_electrostar(0, 130)
-}
-
-spriteset(spriteset_BR375_4a_GTR_RTW, "gfx/Electrostar.png") {
-	template_electrostar(0, 0)
-}
-
-spriteset(spriteset_BR375_4bc_GTR_RTW, "gfx/Electrostar.png") {
-	template_electrostar(0, 26)
-}
-
-spriteset(spriteset_BR375_4d_GTR_RTW, "gfx/Electrostar.png") {
-	template_electrostar(0, 52)
+spriteset(spriteset_BR375_4d_SE_Refurb_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px(0, 675)
 }
 
 
 
 switch(FEAT_TRAINS,SELF, sw_BR375_4a,cargo_subtype){
-    0:	spriteset_BR375_4a_Connex;
-    1:	spriteset_BR375_4a_SE_Blue;
-    2:	spriteset_BR375_4a_SE_Blue_Stripe;
-    3:	spriteset_BR375_4a_SE_Yellow;
-    4:	spriteset_BR375_4a_SE_Yellow_Stripe;
-    5:	spriteset_BR375_4a_SE_Refurb_Blue;
-    6:	spriteset_BR375_4a_SE_RTW;
-    7:	spriteset_BR375_4a_GTR_RTW;
+    0:	spriteset_BR375_4a_SE_Blue;
+    1:	spriteset_BR375_4a_SE_Blue_Stripe;
+    2:	spriteset_BR375_4a_SE_Yellow;
+    3:	spriteset_BR375_4a_SE_Yellow_Stripe;
+    4:	spriteset_BR375_4a_SE_Refurb_Blue;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR375_4b,cargo_subtype){
-    0:	spriteset_BR375_4bc_Connex;
-    1:	spriteset_BR375_4bc_SE_Blue;
-    2:	spriteset_BR375_4bc_SE_Blue_Stripe;
-    3:	spriteset_BR375_4bc_SE_Yellow;
-    4:	spriteset_BR375_4bc_SE_Yellow_Stripe;
-    5:	spriteset_BR375_4b_SE_Refurb_Blue;
-    6:	spriteset_BR375_4bc_SE_RTW;
-    7:	spriteset_BR375_4bc_GTR_RTW;
+switch(FEAT_TRAINS,SELF, sw_BR375_4b,cargo_subtype){    
+    0:	spriteset_BR375_4b_SE_Blue;
+    1:	spriteset_BR375_4b_SE_Blue_Stripe;
+    2:	spriteset_BR375_4b_SE_Yellow;
+    3:	spriteset_BR375_4b_SE_Yellow_Stripe;
+    4:	spriteset_BR375_4b_SE_Refurb_Blue;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR375_4c,cargo_subtype){
-    0:	spriteset_BR375_4bc_Connex;
-    1:	spriteset_BR375_4bc_SE_Blue;
-    2:	spriteset_BR375_4bc_SE_Blue_Stripe;
-    3:	spriteset_BR375_4bc_SE_Yellow;
-    4:	spriteset_BR375_4bc_SE_Yellow_Stripe;
-    5:	spriteset_BR375_4c_SE_Refurb_Blue;
-    6:	spriteset_BR375_4bc_SE_RTW;
-    7:	spriteset_BR375_4bc_GTR_RTW;
+switch(FEAT_TRAINS,SELF, sw_BR375_4c,cargo_subtype){    
+    0:	spriteset_BR375_4c_SE_Blue;
+    1:	spriteset_BR375_4c_SE_Blue_Stripe;
+    2:	spriteset_BR375_4c_SE_Yellow;
+    3:	spriteset_BR375_4c_SE_Yellow_Stripe;
+    4:	spriteset_BR375_4c_SE_Refurb_Blue;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR375_4d,cargo_subtype){
-    0:	spriteset_BR375_4d_Connex;
-    1:	spriteset_BR375_4d_SE_Blue;
-    2:	spriteset_BR375_4d_SE_Blue_Stripe;
-    3:	spriteset_BR375_4d_SE_Yellow;
-    4:	spriteset_BR375_4d_SE_Yellow_Stripe;
-    5:	spriteset_BR375_4d_SE_Refurb_Blue;
-    6:	spriteset_BR375_4d_SE_RTW;
-    7:	spriteset_BR375_4d_GTR_RTW;
+switch(FEAT_TRAINS,SELF, sw_BR375_4d,cargo_subtype){    
+    0:	spriteset_BR375_4d_SE_Blue;
+    1:	spriteset_BR375_4d_SE_Blue_Stripe;
+    2:	spriteset_BR375_4d_SE_Yellow;
+    3:	spriteset_BR375_4d_SE_Yellow_Stripe;
+    4:	spriteset_BR375_4d_SE_Refurb_Blue;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR375_4, extra_callback_info1) {
@@ -156,15 +123,12 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR375_4, extra_callback_info1) {
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR375_4_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_Connex);
-    1:	return string(str_Southeastern_blue);
-    2:	return string(str_Southeastern_blue_stripe);
-    3:	return string(str_Southeastern_yellow);
-    4:	return string(str_Southeastern_yellow_stripe);
-    5:	return string(str_Southeastern_blue_refurbished);
-    6:	return string(str_Southeastern_TBW);
-    7:	return string(str_GTR_TBW);
+switch(FEAT_TRAINS,SELF,sw_BR375_4_cargo_subtype_text,cargo_subtype){    
+    0:	return string(str_Southeastern_blue);
+    1:	return string(str_Southeastern_blue_stripe);
+    2:	return string(str_Southeastern_yellow);
+    3:	return string(str_Southeastern_yellow_stripe);
+    4:	return string(str_Southeastern_blue_refurbished);
        return CB_RESULT_NO_TEXT;
 }
 
