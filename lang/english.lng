@@ -292,12 +292,12 @@ str_BR121_usage					:Passenger
 str_BR121_eos					:---
 str_BR121_liveries				:BR Green, BR Blue, Railtrack
 
-STR_NAME_BR139					:British Rail Class 139 'Parry People Mover'
+STR_NAME_BR139					:British Rail Class 139 'Parry People Mover' (1-car)
 str_BR139_usage					:Passenger
 str_BR139_eos					:---
 str_BR139_liveries				:London Midland, West Midlands Railway
 
-STR_NAME_BR140					:British Rail Class 140 'Pacer' Prototype
+STR_NAME_BR140					:British Rail Class 140 'Pacer' Prototype (2-car)
 str_BR140_usage					:Passenger
 str_BR140_eos					:---
 str_BR140_liveries				:BR Blue
@@ -337,17 +337,17 @@ str_BR151_usage					:Passenger
 str_BR151_eos					:1989
 str_BR151_liveries				:BR Prototype, Regional Railways
 
-STR_NAME_BR153					:British Rail Class 153 'Super Sprinter'
+STR_NAME_BR153					:British Rail Class 153 'Super Sprinter' (1-car)
 str_BR153_usage					:Passenger
 str_BR153_eos					:---
 str_BR153_liveries				:Regional Railways, Central Trains, East Anglia, Anglia Norwich & Norfolk, First North Western, FNW Arriva, Arriva Blue, Arriva Cream, Arriva Heart of Wales, Arriva Times, Wessex Heart, Wessex Cornwall Dorset, Weesex Looe Valley, One, East Midlands Trains, Northern Rail, First Great Western, London Midland
 
-STR_NAME_BR155					:British Rail Class 155 'Super Sprinter'
+STR_NAME_BR155					:British Rail Class 155 'Super Sprinter' (2-car)
 str_BR155_usage					:Passenger
 str_BR155_eos					:---
 str_BR155_liveries				:Regional Railways, WYPTE Metro, Northern Rail
 
-STR_NAME_BR156					:British Rail Class 156 'Super Sprinter'
+STR_NAME_BR156					:British Rail Class 156 'Super Sprinter' (2-car)
 str_BR156_usage					:Passenger
 str_BR156_eos					:---
 str_BR156_liveries				:Regional Railways, Strathclyde Orange, Strathclyde PTE, ScotRail, First ScotRail, Central Trains, East Midlands Trains, Northern Spirit, Northern Rail (Porterbrook), Northern Rail Experimental, Northern Rail, One (Various), National Express
@@ -362,7 +362,7 @@ str_BR158_3_usage				:Express Passenger
 str_BR158_3_eos					:---
 str_BR158_3_liveries			:Regional Express, Arriva TP Northern Spirit, First TransPennine, First Great Western, Northern Rail, East Midland Trains, WYPTE Metro, South West Trains, Network South East
 
-STR_NAME_BR159					:British Rail Class 159 'South Western Turbo'
+STR_NAME_BR159					:British Rail Class 159 'South Western Turbo' (3-car)
 str_BR159_usage					:Express Passenger
 str_BR159_eos					:---
 str_BR159_liveries				:Network South East, South West Trains
@@ -414,17 +414,17 @@ str_BR175_usage					:Passenger
 str_BR175_eos					:---
 str_BR175_liveries				:Arriva 'Ghost', First North Western, Arriva Trains, Transport for Wales
 
-STR_NAME_BR180					:British Rail Class 180 'Adelante'
+STR_NAME_BR180					:British Rail Class 180 'Adelante' (5-car)
 str_BR180_usage					:Express Passenger
 str_BR180_eos					:---
 str_BR180_liveries				:First Great Western, First Great Western - Dynamic Lines, Grand Central, Northern Rail
 
-STR_NAME_BR185					:British Rail Class 185 'Desiro'
+STR_NAME_BR185					:British Rail Class 185 'Desiro' (3-car)
 str_BR185_usage					:Express Passenger
 str_BR185_eos					:---
 str_BR185_liveries				:First Group, First TransPennine
 
-STR_NAME_BR220					:British Rail Class 220 'Voyager'
+STR_NAME_BR220					:British Rail Class 220 'Voyager' (4-car)
 str_BR220_usage					:Express Passenger
 str_BR220_eos					:---
 str_BR220_liveries				:Virgin Trains, CrossCountry
@@ -505,22 +505,22 @@ str_BR315_usage					:Commuter Passenger
 str_BR315_eos					:---
 str_BR315_liveries				:BR Blue/Grey, Network SouthEast, Network SouthEast Alternative Scheme, WAGN, One, First Great Eastern, National Express East Anglia, Abellio Greater Anglia, TfL Rail, London Overground
 
-STR_NAME_BR319					:British Rail Class 319
+STR_NAME_BR319					:British Rail Class 319 (4-car)
 str_BR319_usage					:Regional Passenger
 str_BR319_eos					:---
 str_BR319_liveries				:Network SouthEast, Network SouthEast Grey, BR Thameslink, Connex, First Capital Connect, Southern, Govia Thameslink Blue, Govia Thameslink Pink, Transitional, London Midland, Northern
 
-STR_NAME_BR323					:British Rail Class 323
+STR_NAME_BR323					:British Rail Class 323 (3-car)
 str_BR323_usage					:Suburban Passenger
 str_BR323_eos					:---
 str_BR323_liveries				:Regional Railways, Centro, First North Western, First North Western - Barbie, Northern, London Midland
 
-STR_NAME_BR325					:British Rail Class 325
+STR_NAME_BR325					:British Rail Class 325 (4-car)
 str_BR325_usage					:Express Mail
 str_BR325_eos					:---
 str_BR325_liveries				:Royal Mail
 
-STR_NAME_BR333					:British Rail Class 333
+STR_NAME_BR333					:British Rail Class 333 (4-car)
 str_BR333_usage					:Suburban Passenger
 str_BR333_eos					:---
 str_BR333_liveries				:Northern, Northern Rail (WYPTE), Northern Spirit
@@ -626,7 +626,7 @@ str_BR390_usage					:Express Passenger
 str_BR390_eos					:---
 str_BR390_liveries				:Virgin Trains
 
-STR_NAME_BR395					:British Rail Class 395 'Javelin'
+STR_NAME_BR395					:British Rail Class 395 'Javelin' (5-car)
 str_BR395_usage					:Passenger
 str_BR395_eos					:---
 str_BR395_liveries				:Southeastern
@@ -994,37 +994,38 @@ STR_NAME_LNERBG					:LNER Gresley Full Brake Van
 str_LNERBG_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 
 
-STR_NAME_LU1938					:London Underground 1938 Stock
+STR_NAME_LU1938					:London Underground 1938 Stock (8-car)
 str_LU1938_usage				:Metro
 str_LU1938_eos					:---
 str_LU1938_liveries				:London Underground (Red Roof), London Undeground (Grey Roof)
 
-STR_NAME_LU1967					:London Underground 1967 Stock
+STR_NAME_LU1967					:London Underground 1967 Stock (8-car)
 str_LU1967_usage				:Metro
 str_LU1967_eos					:---
 str_LU1967_liveries				:London Underground
 
-STR_NAME_LU1986					:London Underground Experimental (1986) Stock
+STR_NAME_LU1986					:London Underground Experimental (1986) Stock (2-car)
 str_LU1986_usage				:Metro
 str_LU1986_eos					:---
 str_LU1986_liveries				:London Underground
 
-STR_NAME_LUAStock				:London Underground A60/A62 Stock
+STR_NAME_LUAStock				:London Underground A60/A62 Stock (4-car)
 str_LUAStock_usage				:Metro
 str_LUAStock_eos				:---
 str_LUAStock_liveries			:London Underground
 
-STR_NAME_LUCStock				:London Underground C69/C77 Stock
+STR_NAME_LUCStock				:London Underground C69/C77 Stock (3-car)
 str_LUCStock_usage				:Metro
 str_LUCStock_eos				:---
 str_LUCStock_liveries			:London Underground
 
-STR_NAME_LUDStock				:London Underground D78 Stock
+STR_NAME_LUDStock				:London Underground D78 Stock (6-car)
 str_LUDStock_usage				:Metro
 str_LUDStock_eos				:---
 str_LUDStock_liveries			:London Underground
 
 STR_NAME_LU1992					:London Underground 1992 Stock (8-car)
+STR_NAME_LU1992_4				:London Underground 1992 Stock (4-car)
 str_LU1992_usage				:Metro
 str_LU1992_eos					:---
 str_LU1992_liveries				:London Underground, Network SouthEast
@@ -1045,7 +1046,7 @@ str_LULS_usage					:Metro
 str_LULS_eos					:---
 str_LULS_liveries				:London Underground, London Underground - Unwrapped, London Underground - Poppies
 
-STR_NAME_LU2009					:London Underground 2009 Stock
+STR_NAME_LU2009					:London Underground 2009 Stock (8-car)
 str_LU2009_usage				:Metro
 str_LU2009_eos					:---
 str_LU2009_liveries				:London Underground

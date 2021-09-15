@@ -179,6 +179,7 @@ sort(FEAT_TRAINS, [
  item_LUCStock,
  item_LUDStock,
  item_LU1986,
+ item_LU1992_4,
  item_LU1992,
  item_LU1995,
  item_LU1996,
@@ -215,4 +216,12 @@ sort(FEAT_TRAINS, [
  item_BRMK2DFO,
  item_BRMK2DBSO,
  item_BRMK2DDBSO,
+ item_253_BRMK3TF,
+ item_253_BRMK3TS,
+ item_253_BRMK3TGS,
+ item_253_BRMK3TRSB,
+ item_253_BRMK3TRUB,
+ item_253_BRMK3TRUK,
+ item_BRMk3Sleeper,
+ item_BRMk5Sleeper
  ]);
