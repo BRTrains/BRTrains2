@@ -1,5 +1,5 @@
 spriteset(spriteset_BR456_Purchase, "gfx/BR456_v2.png") {
-	template_purchase(178, 42)
+	template_purchase(200, 0)
 }
 
 spriteset(spriteset_BR456a_NSE, "gfx/BR456_v2.png") {
