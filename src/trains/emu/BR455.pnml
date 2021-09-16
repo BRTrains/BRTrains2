@@ -108,32 +108,32 @@ spriteset(spriteset_BR4558d_Connex, "gfx/BR455-2.png") {
 	template_train32px(0, 613)
 }
 
-spriteset(spriteset_BR4557a_SWT, "gfx/BR455-2.png") {
-	template_train32px(0, 638)
+spriteset(spriteset_BR4557a_SWT, "gfx/BR455_v2.png") {
+	template_train32px(0, 75)
 }
 
-spriteset(spriteset_BR4558a_SWT, "gfx/BR455-2.png") {
-	template_train32px(0, 663)
+spriteset(spriteset_BR4558a_SWT, "gfx/BR455_v2.png") {
+	template_train32px(0, 75)
 }
 
-spriteset(spriteset_BR455tso_SWT, "gfx/BR455-2.png") {
-	template_train32px(0, 688)
+spriteset(spriteset_BR455tso_SWT, "gfx/BR455_v2.png") {
+	template_train32px(0, 125)
 }
 
-spriteset(spriteset_BR455mso_SWT, "gfx/BR455-2.png") {
-	template_train32px(0, 713)
+spriteset(spriteset_BR455mso_SWT, "gfx/BR455_v2.png") {
+	template_train32px(0, 125)
 }
 
-spriteset(spriteset_BR4557tso_SWT, "gfx/BR455-2.png") {
-	template_train32px(0, 738)
+spriteset(spriteset_BR4557tso_SWT, "gfx/BR455_v2.png") {
+	template_train32px(0, 125)
 }
 
-spriteset(spriteset_BR4557d_SWT, "gfx/BR455-2.png") {
-	template_train32px(0, 763)
+spriteset(spriteset_BR4557d_SWT, "gfx/BR455_v2.png") {
+	template_train32px(0, 100)
 }
 
-spriteset(spriteset_BR4558d_SWT, "gfx/BR455-2.png") {
-	template_train32px(0, 788)
+spriteset(spriteset_BR4558d_SWT, "gfx/BR455_v2.png") {
+	template_train32px(0, 100)
 }
 
 spriteset(spriteset_BR4558a_Southern, "gfx/BR455-2.png") {
