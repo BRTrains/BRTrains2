@@ -9,3 +9,11 @@ spriteset (spriteset_br_745_purchase, "gfx/br_745_ga.png") {
 
 spriteset (spriteset_br_745_1_rear, "gfx/br_745_st.png") { tmpl_train_8(0, 58) }
 spriteset (spriteset_br_745_1_rear_panto, "gfx/br_745_st.png") { tmpl_train_8(0, 105) }
+
+spriteset (spriteset_br745a, "gfx/br745_755.png") { template_train28px(0, 13) }
+spriteset (spriteset_br745b, "gfx/br745_755.png") { template_train28px(0, 36) }
+spriteset (spriteset_br745c, "gfx/br745_755.png") { template_train28px(0, 59) }
+
+spriteset (spriteset_br745test_purchase, "gfx/br745_755.png") {
+	template_purchase(0,0)
+}
