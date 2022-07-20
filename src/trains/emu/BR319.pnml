@@ -106,6 +106,19 @@ spriteset(spriteset_BR319d_NSE, "gfx/BR319_v2.png") {
 	template_train32px(0, 775)
 }
 
+spriteset(spriteset_BR319a_LondonMidland, "gfx/BR319_v2.png") {
+	template_train32px(0, 1100)
+}
+spriteset(spriteset_BR319b_LondonMidland, "gfx/BR319_v2.png") {
+	template_train32px(0, 1125)
+}
+spriteset(spriteset_BR319c_LondonMidland, "gfx/BR319_v2.png") {
+	template_train32px(0, 1150)
+}
+spriteset(spriteset_BR319d_LondonMidland, "gfx/BR319_v2.png") {
+	template_train32px(0, 1175)
+}
+
 
 switch(FEAT_TRAINS,SELF, sw_BR319a,cargo_subtype){
 	0:spriteset_BR319a_NSE;	
@@ -116,6 +129,7 @@ switch(FEAT_TRAINS,SELF, sw_BR319a,cargo_subtype){
 	5:spriteset_BR319a_GTRB;
 	6:spriteset_BR319a_Southern;
 	7:spriteset_BR319a_Northern;
+	8:spriteset_BR319a_LondonMidland;
 	spriteset_BR319a_NSE;
 }
 
@@ -128,6 +142,7 @@ switch(FEAT_TRAINS,SELF, sw_BR319b,cargo_subtype){
 	5:spriteset_BR319b_GTRB;
 	6:spriteset_BR319b_Southern;
 	7:spriteset_BR319b_Northern;
+	8:spriteset_BR319b_LondonMidland;
 	spriteset_BR319b_NSE;
 }
 
@@ -140,6 +155,7 @@ switch(FEAT_TRAINS,SELF, sw_BR319c,cargo_subtype){
 	5:spriteset_BR319c_GTRB;
 	6:spriteset_BR319c_Southern;
 	7:spriteset_BR319c_Northern;
+	8:spriteset_BR319c_LondonMidland;
 	spriteset_BR319c_NSE;
 }
 
@@ -152,6 +168,7 @@ switch(FEAT_TRAINS,SELF, sw_BR319d,cargo_subtype){
 	5:spriteset_BR319d_GTRB;
 	6:spriteset_BR319d_Southern;
 	7:spriteset_BR319d_Northern;
+	8:spriteset_BR319d_LondonMidland;
 	spriteset_BR319d_NSE;
 }
 
@@ -171,6 +188,7 @@ switch(FEAT_TRAINS,SELF,sw_BR319_cargo_subtype_text,cargo_subtype){
     5:	return string(str_gtrb);    
 	6:	return string(str_southern);    
 	7: return string(str_Northern);
+	8: return string(str_LondonMidland);
        return CB_RESULT_NO_TEXT;
 }
 

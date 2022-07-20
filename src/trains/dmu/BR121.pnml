@@ -48,9 +48,9 @@ switch(FEAT_TRAINS,SELF,sw_BR121_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_Railtrack);
 	3:	return string(str_BRGreenCentre);
 	4:	return string(str_BRBlueCentre);
-	5:	return string(str_GRFTest1);
+	5:	return string(str_BRRefurb);
 	6:	return string(str_BRBlueGrey);
-	7:	return string(str_GRFTest2);
+	7:	return string(str_SilverLink);
        return CB_RESULT_NO_TEXT;
 }
 
