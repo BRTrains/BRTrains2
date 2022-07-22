@@ -1,111 +1,111 @@
-spriteset(spriteset_BR4557_Purchase, "gfx/BR455-2.png") {
-	template_purchase(174, 0)
+spriteset(spriteset_BR4557_Purchase, "gfx/BR455_v2.png") {
+	template_purchase(200, 0)
 }
 
-spriteset(spriteset_BR4558_Purchase, "gfx/BR455-2.png") {
-	template_purchase(87, 0)
+spriteset(spriteset_BR4558_Purchase, "gfx/BR455_v2.png") {
+	template_purchase(200, 0)
 }
 
-spriteset(spriteset_BR4559_Purchase, "gfx/BR455-2.png") {
-	template_purchase(0, 0)
+spriteset(spriteset_BR4559_Purchase, "gfx/BR455_v2.png") {
+	template_purchase(200, 0)
 }
 
-spriteset(spriteset_BR4557a_BRB, "gfx/BR455-2.png") {
-	template_train32px(0, 13)
+spriteset(spriteset_BR4557a_BRB, "gfx/BR455_v2.png") {
+	template_train32px(0, 150)
 }
-spriteset(spriteset_BR4558a_BRB, "gfx/BR455-2.png") {
-	template_train32px(0, 38)
-}
-
-spriteset(spriteset_BR455tso_BRB, "gfx/BR455-2.png") {
-	template_train32px(0, 63)
+spriteset(spriteset_BR4558a_BRB, "gfx/BR455_v2.png") {
+	template_train32px(0, 150)
 }
 
-spriteset(spriteset_BR455mso_BRB, "gfx/BR455-2.png") {
-	template_train32px(0, 88)
+spriteset(spriteset_BR455tso_BRB, "gfx/BR455_v2.png") {
+	template_train32px(0, 200)
 }
 
-spriteset(spriteset_BR4557tso_BRB, "gfx/BR455-2.png") {
-	template_train32px(0, 113)
+spriteset(spriteset_BR455mso_BRB, "gfx/BR455_v2.png") {
+	template_train32px(0, 200)
 }
 
-spriteset(spriteset_BR4557d_BRB, "gfx/BR455-2.png") {
-	template_train32px(0, 138)
+spriteset(spriteset_BR4557tso_BRB, "gfx/BR455_v2.png") {
+	template_train32px(0, 200)
 }
 
-spriteset(spriteset_BR4558d_BRB, "gfx/BR455-2.png") {
-	template_train32px(0, 163)
+spriteset(spriteset_BR4557d_BRB, "gfx/BR455_v2.png") {
+	template_train32px(0, 175)
 }
 
-spriteset(spriteset_BR4557a_NSE, "gfx/BR455-2.png") {
-	template_train32px(0, 188)
-}
-spriteset(spriteset_BR4558a_NSE, "gfx/BR455-2.png") {
-	template_train32px(0, 213)
+spriteset(spriteset_BR4558d_BRB, "gfx/BR455_v2.png") {
+	template_train32px(0, 175)
 }
 
-spriteset(spriteset_BR455tso_NSE, "gfx/BR455-2.png") {
-	template_train32px(0, 238)
+spriteset(spriteset_BR4557a_NSE, "gfx/BR455_v2.png") {
+	template_train32px(0, 225)
+}
+spriteset(spriteset_BR4558a_NSE, "gfx/BR455_v2.png") {
+	template_train32px(0, 225)
 }
 
-spriteset(spriteset_BR455mso_NSE, "gfx/BR455-2.png") {
-	template_train32px(0, 263)
+spriteset(spriteset_BR455tso_NSE, "gfx/BR455_v2.png") {
+	template_train32px(0, 275)
 }
 
-spriteset(spriteset_BR4557tso_NSE, "gfx/BR455-2.png") {
-	template_train32px(0, 288)
+spriteset(spriteset_BR455mso_NSE, "gfx/BR455_v2.png") {
+	template_train32px(0, 275)
 }
 
-spriteset(spriteset_BR4557d_NSE, "gfx/BR455-2.png") {
-	template_train32px(0, 313)
+spriteset(spriteset_BR4557tso_NSE, "gfx/BR455_v2.png") {
+	template_train32px(0, 275)
 }
 
-spriteset(spriteset_BR4558d_NSE, "gfx/BR455-2.png") {
-	template_train32px(0, 338)
+spriteset(spriteset_BR4557d_NSE, "gfx/BR455_v2.png") {
+	template_train32px(0, 250)
 }
 
-spriteset(spriteset_BR4557a_SWT_Old, "gfx/BR455-2.png") {
-	template_train32px(0, 363)
+spriteset(spriteset_BR4558d_NSE, "gfx/BR455_v2.png") {
+	template_train32px(0, 250)
 }
 
-spriteset(spriteset_BR4558a_SWT_Old, "gfx/BR455-2.png") {
-	template_train32px(0, 388)
+spriteset(spriteset_BR4557a_SWT_Old, "gfx/BR455_v2.png") {
+	template_train32px(0, 450)
 }
 
-spriteset(spriteset_BR455tso_SWT_Old, "gfx/BR455-2.png") {
-	template_train32px(0, 413)
+spriteset(spriteset_BR4558a_SWT_Old, "gfx/BR455_v2.png") {
+	template_train32px(0, 450)
 }
 
-spriteset(spriteset_BR455mso_SWT_Old, "gfx/BR455-2.png") {
-	template_train32px(0, 438)
+spriteset(spriteset_BR455tso_SWT_Old, "gfx/BR455_v2.png") {
+	template_train32px(0, 500)
 }
 
-spriteset(spriteset_BR4557tso_SWT_Old, "gfx/BR455-2.png") {
-	template_train32px(0, 463)
+spriteset(spriteset_BR455mso_SWT_Old, "gfx/BR455_v2.png") {
+	template_train32px(0, 500)
 }
 
-spriteset(spriteset_BR4557d_SWT_Old, "gfx/BR455-2.png") {
-	template_train32px(0, 488)
+spriteset(spriteset_BR4557tso_SWT_Old, "gfx/BR455_v2.png") {
+	template_train32px(0, 500)
 }
 
-spriteset(spriteset_BR4558d_SWT_Old, "gfx/BR455-2.png") {
-	template_train32px(0, 513)
+spriteset(spriteset_BR4557d_SWT_Old, "gfx/BR455_v2.png") {
+	template_train32px(0, 475)
 }
 
-spriteset(spriteset_BR4558a_Connex, "gfx/BR455-2.png") {
-	template_train32px(0, 538)
+spriteset(spriteset_BR4558d_SWT_Old, "gfx/BR455_v2.png") {
+	template_train32px(0, 475)
 }
 
-spriteset(spriteset_BR455tso_Connex, "gfx/BR455-2.png") {
-	template_train32px(0, 563)
+spriteset(spriteset_BR4558a_Connex, "gfx/BR455_v2.png") {
+	template_train32px(0, 375)
 }
 
-spriteset(spriteset_BR455mso_Connex, "gfx/BR455-2.png") {
-	template_train32px(0, 588)
+spriteset(spriteset_BR455tso_Connex, "gfx/BR455_v2.png") {
+	template_train32px(0, 425)
 }
 
-spriteset(spriteset_BR4558d_Connex, "gfx/BR455-2.png") {
-	template_train32px(0, 613)
+spriteset(spriteset_BR455mso_Connex, "gfx/BR455_v2.png") {
+	template_train32px(0, 425)
+}
+
+spriteset(spriteset_BR4558d_Connex, "gfx/BR455_v2.png") {
+	template_train32px(0, 400)
 }
 
 spriteset(spriteset_BR4557a_SWT, "gfx/BR455_v2.png") {
@@ -136,20 +136,20 @@ spriteset(spriteset_BR4558d_SWT, "gfx/BR455_v2.png") {
 	template_train32px(0, 100)
 }
 
-spriteset(spriteset_BR4558a_Southern, "gfx/BR455-2.png") {
-	template_train32px(0, 813)
+spriteset(spriteset_BR4558a_Southern, "gfx/BR455_v2.png") {
+	template_train32px(0, 300)
 }
 
-spriteset(spriteset_BR455tso_Southern, "gfx/BR455-2.png") {
-	template_train32px(0, 838)
+spriteset(spriteset_BR455tso_Southern, "gfx/BR455_v2.png") {
+	template_train32px(0, 350)
 }
 
-spriteset(spriteset_BR455mso_Southern, "gfx/BR455-2.png") {
-	template_train32px(0, 863)
+spriteset(spriteset_BR455mso_Southern, "gfx/BR455_v2.png") {
+	template_train32px(0, 350)
 }
 
-spriteset(spriteset_BR4558d_Southern, "gfx/BR455-2.png") {
-	template_train32px(0, 888)
+spriteset(spriteset_BR4558d_Southern, "gfx/BR455_v2.png") {
+	template_train32px(0, 325)
 }
 
 
