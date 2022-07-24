@@ -1,43 +1,360 @@
-Modern UK Trainset Changelog
-============================
+Anything labelled as "Re-drawn (new model)" or "New Unit"
+should have most/all modern liveries, but I'm too lazy
+to add them all individually
 
-v1.0.0 (2020/06/13)
-======
-Added the following locomotives:
-    - Mark 5A (rolling stock) in 'Transpennine Express' livery.
 
-Added the following DMUs:
-    - Class 195/0/1 in 'Northern' livery.
-    
-Added the following EMUs:
-    - Class 331/0/1 in 'Northen' livery.
-    - Class 345 in 'Transport for London' livery.
-    - Class 397 in 'Transpennine Express' livery.
-    - Class 701/0/5 in 'South Western Railway' livery.
-    - Class 707 in 'South Western Railway' livery.
-    - Class 710/1/2 in 'London Overground' livery.
-    - Class 720/1/5 in 'Greater Anglia' livery.
-    - Class 745/0/1 in 'Greater Anglia' livery.
-    - Class 777 in 'Merseyrail' livery.
-    - Class 801/1/2 in 'London North Eastern Railway' livery.
-    - Class 807 in 'Avanti West Coast' livery.
-    
-Added the following Bi-Mode Units:
-    - Class 755/3/4 in 'Greater Anglia' livery.
-    - Class 756/3/4 in 'Transport for Wales' livery.
-    - Class 769/0/3/4/9 in 'Transport for London', 'Northen', 'Great Western Railway', and 'Rail Operation Group' liveries.
-    - Class 800/0/1/2/3 in 'London North Eastern Railway' and 'Great Western Railway' liveries.
-    - Class 802/0/1/2/3 in 'Great Western Railway', 'Transpennine Express', and 'Hull Trains' liveries.
-    - Class 805 in 'Avanti West Coast' livery.
-    
-Added the following features:
-    - Choose between 'design' and 'actual running' speeds.
-    - Select different liveries on select trains by using the 'Refit' option in the depo.
-    - Dynamically raise/lower the pantograph on Bi-mode units depending on the railtype.
+New build process based on MUTS
 
-Added BRTrains repository
-    - Too many trains to list...
+Added a passenger capacity multiplier parameter
+.. So you can have huge games with a realistic number of trains
+.. I got bored of needing 8 car Sprinters
 
-Fixed non-pure-white and flashing (eg fire effects) on some BRtrains units
+Fixed various animation errors
+Fixed various alignment errors
+Fixed some introductory dates
 
-Fixed BR033 + MK 2 Coach Alignment
+- Re-drawn (new model)
+
+LONDON UNDERGROUND
+- Added A stock (A60/A62)
+- Added C stock (C69/C77)
+- Added D stock (D78)
+- Reworked S stock (S7/S8)
+- Added 1938 Stock
+- Added 1967 Stock
+- Added 1986 Stock
+- Added 1992 Stock
+- Added 1995 Stock
+- Added 1996 Stock
+- Added 2009 Stock
+
+31
+- New unit
+
+37
+- Re-drawn (new model)
+- Added Police livery
+
+43 (/Intercity 125)
+- Fixed sprite alignment
+- Fixed height of some diagonals
+- Various graphical fixes
+- Fixed weight
+- Consolidated Grand Central livery with 180
+- Added Inter7City livery
+- Added LNER livery
+- Added Blue Pullman livery
+
+47
+- New unit
+
+57
+- New unit
+
+67
+- Re-drawn (new model)
+
+68
+- Re-drawn (new model)
+
+68 + Mk5a coach rake
+- Added unit from MUTS
+- Added TPE (modern) livery
+
+70 (The Southern Rail OG version...)
+- New unit
+
+70 (The modern one)
+- Re-drawn (new model)
+
+71 (The Southern Rail OG)
+- New unit
+
+89
+- New unit
+
+90
+- Added Intercity livery
+- Added Greater Anglia livery
+- Added Freightliner liveries
+- Added ONE livery
+- Added Virgin livery
+- Added Rail Express livery
+- Added First Scotrail livery
+- Added GNER livery
+
+91
+- Fixed alignment
+
+121
+- New unit
+
+139
+- New unit
+
+140
+- New unit modified from existing art
+
+141
+- New unit modified from existing art
+
+142
+- New unit modified from existing art
+
+143
+- New unit modified from existing art
+
+150
+- Added TfW livery
+
+153
+- Added Scotrail Saltire livery
+- Added TfW livery
+
+155
+- Added Northern (modern) livery
+
+156
+- Added Northern (modern) livery
+- Improved GWR livery for consistency
+- Added EMR (Maroon and white) livery
+- Added Scotrail (Saltire) livery
+
+158
+- Added Northern (modern) livery
+- Added EMR (Maroon and white) livery
+- Added SWR livery
+- Added Scotrail (Saltire) livery
+- Added TfW livery
+
+168
+- New unit
+- Includes both Networker and Turbostar cab variants
+
+170
+- Re-drawn (new model)
+- Included some liveries that were drawn but not coded (London Midland, ONE, Scotrail Saltire, South West Trains, First Barbie, NatEx Scotrail, Midland Mainline, SPT, Greater Anglia)
+- Added some additional liveries (TfW, AtW, Scotrail, Scotrail Saltire, West Midlandds Railway, EMR Regional)
+
+171
+- New unit based on 170 rework
+
+175
+- Re-drawn (new model)
+- Added TfW livery
+
+180
+- Consolidated Grand Central livery with class 43
+- Added EMR (Maroon and white) livery
+
+185
+- Added TPE (modern) livery
+- Improved frontend design
+- Fixed scaling inconsistency with the rest of the set
+
+195
+- Added unit from MUTS
+
+196
+- New unit
+
+197
+- New unit
+
+220
+- Minor fixes
+
+221
+- Added Avanti West Coast livery
+
+222
+- Added EMR Intercity (Maroon) livery
+- Added EMR (Maroon and white) livery
+- Fixed a bug where the rear cars were smaller than the rest
+
+230
+- New unit
+
+310
+- New unit
+
+317
+- New unit
+
+318
+- New unit
+
+319
+- Re-drawn (new model)
+- Added Northern (mdoern) livery
+
+323
+- Shape improvements
+- Added Northern livery
+- Added WMR livery
+
+325
+- New unit (reworked from graphics in the repository)
+
+326
+- New unit
+
+331
+- Added unit from MUTS
+
+333
+- New unit
+
+334
+- New unit
+
+345
+- Added unit from MUTS
+
+350
+- Re-drawn (new model)
+
+357
+- Re-drawn (new model)
+
+375
+- New unit
+
+376
+- New unit
+
+377
+- Re-drawn (new model)
+
+378
+- Re-drawn (new model)
+- Improved GWR livery for consistency
+
+379
+- Reworked
+
+387
+- Re-drawn (new model)
+- Added Heathrow Express livery
+- Reworked GWR livery
+
+390
+- Added Avanti West Coast livery
+- Added Virgin "Flowing Silk" livery
+
+397
+- Added unit from MUTS
+- Added TPE (modern) livery
+- Darkened roof
+
+442
+- Added SWR livery
+- Rework pending
+
+444
+- Re-drawn (new model)
+- Added SWR livery
+
+450
+- Re-drawn (new model)
+- Added SWR livery
+
+455
+- Re-drawn (new model)
+
+456
+- Re-drawn (new model)
+
+483
+- New unit
+
+484
+- New unit
+
+504
+- New unit
+
+700
+- Added unit from MUTS
+- Re-drawn (new model)
+
+701
+- Added unit from MUTS
+
+707
+- New unit
+
+717
+- New unit
+
+720
+- Added unit from MUTS
+
+745
+- Added unit from MUTS
+
+755
+- Added unit from MUTS
+
+756
+- Added unit from MUTS
+
+768
+- New unit
+
+769
+- Re-drawn (new model based on 319 re-work)
+- Improved GWR livery for consistency
+
+777
+- Added unit from MUTS
+
+800
+- Added TPE (modern) livery
+
+801
+- Added unit from MUTS
+
+802
+- Added unit from MUTS
+- Improved GWR livery for consistency
+
+805
+- Added unit from MUTS
+
+807
+- Added unit from MUTS
+
+LNER A1, LNER A3
+- Fixed some animation errors
+
+GWR Great Bear
+- New Unit
+
+GWR Hall Class
+- New Unit
+
+Mk2 Coach
+- Improved alignment
+
+Mk3 DVT
+- New unit
+
+Mk3 Sleeper
+- New unit
+
+Mk5 Sleeper
+- New unit
+
+Hopper wagon BRHHA
+- Modernized cargo refit choices
+
+Tanker wagon BRTTA
+- New unit
+
+Container Flatbed wagon
+- New unit
+
+Travelling Post Office wagon
+- New unit
+- Includes DVT/PCV (graphical only)
