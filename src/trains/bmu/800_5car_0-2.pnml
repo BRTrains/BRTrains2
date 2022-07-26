@@ -1,20 +1,27 @@
 // Livery callbacks
-switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_lner, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_VTEC, position_in_articulated_veh % 5) {
 	0: spriteset_BR80X_front_VTEC;
 	4: spriteset_BR80X_rear_VTEC;
-	spriteset_BR800_middle_VTEC;
+	spriteset_BR80X_middle_VTEC;
 }
 
-switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_lner, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_LNER, position_in_articulated_veh % 5) {
 	0: spriteset_BR80X_front_LNER;
 	4: spriteset_BR80X_rear_LNER;
-	spriteset_BR800_middle_LNER;
+	spriteset_BR80X_middle_LNER;
 }
 
-switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_gwr, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_GWR, position_in_articulated_veh % 5) {
 	0: spriteset_BR80X_front_GWR;
 	4: spriteset_BR80X_rear_GWR;
-	spriteset_BR800_middle_GWR;
+	spriteset_BR80X_middle_GWR;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR800_5car_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR800_LNER);
+	1: return string(STR_LIVERY_BR800_GWR);
+	2: return string(STR_LIVERY_BR800_VTEC);
+	return CB_RESULT_NO_TEXT;
 }
 
 // Choose sprites depending on car position
@@ -74,12 +81,6 @@ switch(FEAT_TRAINS, SELF, switch_BR800_5car_can_attach_wagon, vehicle_type_id) {
 switch(FEAT_TRAINS, SELF, switch_BR800_5car_capacity, cargo_subtype) {
 	0: return (302/5 * param_pax);
 	1: return (326/5 * param_pax);
-}
-
-switch(FEAT_TRAINS, SELF, switch_BR800_5car_subtype_text, cargo_subtype) {
-	0: return string(STR_LIVERY_BR800_LNER);
-	1: return string(STR_LIVERY_BR800_GWR);
-	return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR800_5car_power, current_railtype) {

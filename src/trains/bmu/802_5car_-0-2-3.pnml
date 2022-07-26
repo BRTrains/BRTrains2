@@ -1,48 +1,55 @@
 // Livery callbacks
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_tpx, position_in_articulated_veh % 5) {
-	0: spriteset_br_800_front_tpx;
-	4: switch_br_800_spriteset_rear_tpx;
-	spriteset_br_800_middle_tpx;
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_TPE, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_TPE;
+	4: spriteset_BR80X_rear_TPE;
+	spriteset_BR80X_middle_TPE;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_gwr, position_in_articulated_veh % 5) {
-	0: spriteset_br_800_front_gwr;
-	4: switch_br_800_spriteset_rear_gwr;
-	spriteset_br_800_middle_gwr;
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_GWR, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_GWR;
+	4: spriteset_BR80X_rear_GWR;
+	spriteset_BR80X_middle_GWR;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset_hull, position_in_articulated_veh % 5) {
-	0: spriteset_br_800_front_hull;
-	4: switch_br_800_spriteset_rear_hull;
-	spriteset_br_800_middle_hull;
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_HullTrains, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_HullTrains;
+	4: spriteset_BR80X_rear_HullTrains;
+	spriteset_BR80X_middle_HullTrains;
 }
 
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_spriteset, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset, cargo_subtype) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	// % 3 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,middle,end);(front,middle,end)...
-	0: switch_br_802_5car_spriteset_tpx;
-	1: switch_br_802_5car_spriteset_gwr;
-	2: switch_br_802_5car_spriteset_hull;
+	0: switch_BR802_5car_spriteset_GWR;
+	1: switch_BR802_5car_spriteset_TPE;
+	2: switch_BR802_5car_spriteset_HullTrains;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR800_GWR);
+	1: return string(STR_LIVERY_BR800_TPE);	
+	2: return string(STR_LIVERY_BR800_HullTrains);
+	return CB_RESULT_NO_TEXT;
 }
 
 // Define articulations
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_articulated, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..4: return item_br_802_5car;
+	1..4: return item_BR802_5car;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_particles_diesel, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_particles_diesel, position_in_articulated_veh % 5) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	4: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_particles_electric, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_particles_electric, position_in_articulated_veh % 5) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	4: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
@@ -50,49 +57,42 @@ switch(FEAT_TRAINS, SELF, switch_br_802_5car_particles_electric, position_in_art
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_particles, current_railtype) {
-	ELRL: switch_br_802_5car_particles_electric;
-	switch_br_802_5car_particles_diesel;
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_particles, current_railtype) {
+	ELRL: switch_BR802_5car_particles_electric;
+	switch_BR802_5car_particles_diesel;
 }
 
 // Start/stop switch, used to limit maximum length
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_start_stop, num_vehs_in_consist) {	
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_start_stop, num_vehs_in_consist) {	
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
 // Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_can_attach_wagon, vehicle_type_id) {
-	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_800_5car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_800_9car: return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_can_attach_wagon, vehicle_type_id) {
+	item_BR802_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR802_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR800_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR800_9car: return CB_RESULT_ATTACH_ALLOW;
 	item_br_805: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
-// TPX and Hull are both First, so assumed they're the same
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_capacity, cargo_subtype) {
+// TPE and HullTrains are both First, so assumed they're the same
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_capacity, cargo_subtype) {
 	0: return (342/5 * param_pax);
 	1: return (326/5 * param_pax);
 	2: return (342/5 * param_pax);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_subtype_text, cargo_subtype) {
-	0: return string(STR_LIVERY_BR_800_TPX);
-	1: return string(STR_LIVERY_BR_800_GWR);
-	2: return string(STR_LIVERY_BR_800_HULL);
-	return CB_RESULT_NO_TEXT;
-}
-
-switch(FEAT_TRAINS, SELF, switch_br_802_5car_power, current_railtype) {
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_power, current_railtype) {
 	ELRL: return 3200;
 	return 2820;
 }
 
 // Class 802/0/2/3 (5car)
-item(FEAT_TRAINS, item_br_802_5car, 461) {
+item(FEAT_TRAINS, item_BR802_5car, 461) {
 	property {
-		name: string(STR_BR_802_5CAR);
+		name: string(STR_BR802_5CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2018, 08, 18);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
@@ -129,19 +129,19 @@ item(FEAT_TRAINS, item_br_802_5car, 461) {
 	}
 	
 	graphics {
-		default: switch_br_802_5car_spriteset;
-		purchase: spriteset_br_800_purchase_tpx;
-		cargo_subtype_text: switch_br_802_5car_subtype_text;
+		default: switch_BR802_5car_spriteset;
+		purchase: spriteset_BR800_purchase_TPE;
+		cargo_subtype_text: switch_BR802_5car_subtype_text;
 		
-		power: switch_br_802_5car_power;
-		speed: switch_br_800_speed;
+		power: switch_BR802_5car_power;
+		speed: switch_BR800_speed;
 
-		articulated_part: switch_br_802_5car_articulated;
-		start_stop: switch_br_802_5car_start_stop;	
-		can_attach_wagon: switch_br_802_5car_can_attach_wagon;
-		visual_effect_and_powered: switch_br_802_5car_particles;
+		articulated_part: switch_BR802_5car_articulated;
+		start_stop: switch_BR802_5car_start_stop;	
+		can_attach_wagon: switch_BR802_5car_can_attach_wagon;
+		visual_effect_and_powered: switch_BR802_5car_particles;
 				
-		cargo_capacity: switch_br_802_5car_capacity;
-		additional_text: string(STR_DSC_BR_802_5CAR);		
+		cargo_capacity: switch_BR802_5car_capacity;
+		additional_text: string(STR_DSC_BR802_5CAR);		
 	}
 }

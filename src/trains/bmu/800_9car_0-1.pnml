@@ -1,14 +1,20 @@
 // Livery callbacks
-switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_lner, position_in_articulated_veh % 9) {
-	0: spriteset_BR800_front_lner;
-	8: switch_BR800_spriteset_rear_lner;
-	spriteset_BR800_middle_lner;
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_LNER, position_in_articulated_veh % 9) {
+	0: spriteset_BR80X_front_LNER;
+	8: spriteset_BR80X_rear_LNER;
+	spriteset_BR80X_middle_LNER;
 }
 
-switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_gwr, position_in_articulated_veh % 9) {
-	0: spriteset_BR800_front_gwr;
-	8: switch_BR800_spriteset_rear_gwr;
-	spriteset_BR800_middle_gwr;
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_GWR, position_in_articulated_veh % 9) {
+	0: spriteset_BR80X_front_GWR;
+	8: spriteset_BR80X_rear_GWR;
+	spriteset_BR80X_middle_GWR;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_VTEC, position_in_articulated_veh % 9) {
+	0: spriteset_BR80X_front_VTEC;
+	8: spriteset_BR80X_rear_VTEC;
+	spriteset_BR80X_middle_VTEC;
 }
 
 // Choose sprites depending on car position
@@ -16,8 +22,16 @@ switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset, cargo_subtype) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	// % 3 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,middle,end);(front,middle,end)...
-	0: switch_BR800_9car_spriteset_lner;
-	1: switch_BR800_9car_spriteset_gwr;
+	0: switch_BR800_9car_spriteset_LNER;
+	1: switch_BR800_9car_spriteset_GWR;
+	1: switch_BR800_9car_spriteset_VTEC;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR800_LNER);
+	1: return string(STR_LIVERY_BR800_GWR);
+	2: return string(STR_LIVERY_BR800_VTEC);
+	return CB_RESULT_NO_TEXT;
 }
 
 // Define articulations
@@ -66,12 +80,6 @@ switch(FEAT_TRAINS, SELF, switch_BR800_9car_can_attach_wagon, vehicle_type_id) {
 switch(FEAT_TRAINS, SELF, switch_BR800_9car_capacity, cargo_subtype) {
 	0: return (611/9 * param_pax);
 	1: return (650/9 * param_pax);
-}
-
-switch(FEAT_TRAINS, SELF, switch_BR800_9car_subtype_text, cargo_subtype) {
-	0: return string(STR_LIVERY_BR800_LNER);
-	1: return string(STR_LIVERY_BR800_GWR);
-	return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR800_9car_power, current_railtype) {
