@@ -1,13 +1,13 @@
-spriteset(spriteset_BR800_Purchase, "gfx/BR80X.png") {
+spriteset(spriteset_BR800_purchase, "gfx/BR80X.png") {
 	template_purchase(200, 39)
 }
-spriteset(spriteset_BR801_Purchase, "gfx/BR80X.png") {
+spriteset(spriteset_BR801_purchase, "gfx/BR80X.png") {
 	template_purchase(200, 0)
 }
-spriteset(spriteset_BR802_Purchase, "gfx/BR80X.png") {
+spriteset(spriteset_BR802_purchase, "gfx/BR80X.png") {
 	template_purchase(200, 13)
 }
-spriteset(spriteset_BR803_Purchase, "gfx/BR80X.png") {
+spriteset(spriteset_BR803_purchase, "gfx/BR80X.png") {
 	template_purchase(200, 26)
 }
 
@@ -16,7 +16,7 @@ spriteset(spriteset_BR803_Purchase, "gfx/BR80X.png") {
 spriteset(spriteset_BR80X_front_LNER, "gfx/BR80X.png") {
 	template_train32px(0, 0)
 }
-spriteset(spriteset_BR80X_mid_LNER, "gfx/BR80X.png") {
+spriteset(spriteset_BR80X_middle_LNER, "gfx/BR80X.png") {
 	template_train32px(0, 25)
 }
 spriteset(spriteset_BR80X_rear_LNER, "gfx/BR80X.png") {
@@ -26,7 +26,7 @@ spriteset(spriteset_BR80X_rear_LNER, "gfx/BR80X.png") {
 spriteset(spriteset_BR80X_front_GWR, "gfx/BR80X.png") {
 	template_train32px(0, 75)
 }
-spriteset(spriteset_BR80X_mid_GWR, "gfx/BR80X.png") {
+spriteset(spriteset_BR80X_middle_GWR, "gfx/BR80X.png") {
 	template_train32px(0, 100)
 }
 spriteset(spriteset_BR80X_rear_GWR, "gfx/BR80X.png") {
@@ -36,7 +36,7 @@ spriteset(spriteset_BR80X_rear_GWR, "gfx/BR80X.png") {
 spriteset(spriteset_BR80X_front_Lumo, "gfx/BR80X.png") {
 	template_train32px(0, 150)
 }
-spriteset(spriteset_BR80X_mid_Lumo, "gfx/BR80X.png") {
+spriteset(spriteset_BR80X_middle_Lumo, "gfx/BR80X.png") {
 	template_train32px(0, 175)
 }
 spriteset(spriteset_BR80X_rear_Lumo, "gfx/BR80X.png") {
@@ -46,7 +46,7 @@ spriteset(spriteset_BR80X_rear_Lumo, "gfx/BR80X.png") {
 spriteset(spriteset_BR80X_front_EMR, "gfx/BR80X.png") {
 	template_train32px(0, 225)
 }
-spriteset(spriteset_BR80X_mid_EMR, "gfx/BR80X.png") {
+spriteset(spriteset_BR80X_middle_EMR, "gfx/BR80X.png") {
 	template_train32px(0, 250)
 }
 spriteset(spriteset_BR80X_rear_EMR, "gfx/BR80X.png") {
@@ -56,7 +56,7 @@ spriteset(spriteset_BR80X_rear_EMR, "gfx/BR80X.png") {
 spriteset(spriteset_BR80X_front_TPE, "gfx/BR80X.png") {
 	template_train32px(0, 300)
 }
-spriteset(spriteset_BR80X_mid_TPE, "gfx/BR80X.png") {
+spriteset(spriteset_BR80X_middle_TPE, "gfx/BR80X.png") {
 	template_train32px(0, 325)
 }
 spriteset(spriteset_BR80X_rear_TPE, "gfx/BR80X.png") {
@@ -66,10 +66,10 @@ spriteset(spriteset_BR80X_rear_TPE, "gfx/BR80X.png") {
 spriteset(spriteset_BR80X_front_HullTrains, "gfx/BR80X.png") {
 	template_train32px(0, 375)
 }
-spriteset(spriteset_BR80X_mid_HullTrains, "gfx/BR80X.png") {
+spriteset(spriteset_BR80X_middle_HullTrains, "gfx/BR80X.png") {
 	template_train32px(0, 400)
 }
-spriteset(spriteset_BR80X_mid_special_HullTrains, "gfx/BR80X.png") {
+spriteset(spriteset_BR80X_middle_special_HullTrains, "gfx/BR80X.png") {
 	template_train32px(172, 400)
 }
 spriteset(spriteset_BR80X_rear_HullTrains, "gfx/BR80X.png") {
@@ -79,7 +79,7 @@ spriteset(spriteset_BR80X_rear_HullTrains, "gfx/BR80X.png") {
 spriteset(spriteset_BR80X_front_VTEC, "gfx/BR80X.png") {
 	template_train32px(0, 450)
 }
-spriteset(spriteset_BR80X_mid_VTEC, "gfx/BR80X.png") {
+spriteset(spriteset_BR80X_middle_VTEC, "gfx/BR80X.png") {
 	template_train32px(0, 475)
 }
 spriteset(spriteset_BR80X_rear_VTEC, "gfx/BR80X.png") {
@@ -87,7 +87,7 @@ spriteset(spriteset_BR80X_rear_VTEC, "gfx/BR80X.png") {
 }
 
 // Speed switch
-switch(FEAT_TRAINS, SELF, switch_br_800_speed, param_max_speed) {
+switch(FEAT_TRAINS, SELF, switch_BR800_speed, param_max_speed) {
 	0: 201;
 	1: 225;
 }

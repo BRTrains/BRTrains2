@@ -1,25 +1,25 @@
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_spriteset, position_in_articulated_veh % 9) {
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_spriteset, position_in_articulated_veh % 9) {
 	0: spriteset_BR80X_front_GWR;
 	8: spriteset_BR80X_rear_GWR;
 	spriteset_BR80X_middle_GWR;
 }
 
 // Define articulations
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_articulated, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..8: return item_br_802_9car;
+	1..8: return item_BR802_9car;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_particles_diesel, position_in_articulated_veh % 9) {
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_particles_diesel, position_in_articulated_veh % 9) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	8: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_particles_electric, position_in_articulated_veh % 9) {
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_particles_electric, position_in_articulated_veh % 9) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	8: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
@@ -27,35 +27,34 @@ switch(FEAT_TRAINS, SELF, switch_br_802_9car_particles_electric, position_in_art
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_particles, current_railtype) {
-	ELRL: switch_br_802_9car_particles_electric;
-	switch_br_802_9car_particles_diesel;
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_particles, current_railtype) {
+	ELRL: switch_BR802_9car_particles_electric;
+	switch_BR802_9car_particles_diesel;
 }
 
 // Start/stop switch, used to limit maximum length
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_start_stop, num_vehs_in_consist) {	
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_start_stop, num_vehs_in_consist) {	
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
 // Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_can_attach_wagon, vehicle_type_id) {
-	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_can_attach_wagon, vehicle_type_id) {
+	item_BR802_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR802_5car: return CB_RESULT_ATTACH_ALLOW;
 	item_BR800_5car: return CB_RESULT_ATTACH_ALLOW;
 	item_BR800_9car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_805: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_802_9car_power, current_railtype) {
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_power, current_railtype) {
 	ELRL: return 5760;
 	return 4700;
 }
 
 // Class 802/1 (9car)
-item(FEAT_TRAINS, item_br_802_9car, 462) {
+item(FEAT_TRAINS, item_BR802_9car, 462) {
 	property {
-		name: string(STR_BR_802_9CAR);
+		name: string(STR_BR802_9CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2018, 08, 18);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
@@ -92,17 +91,17 @@ item(FEAT_TRAINS, item_br_802_9car, 462) {
 	}
 	
 	graphics {
-		default: switch_br_802_9car_spriteset;
-		purchase: spriteset_BR800_purchase_GWR;
+		default: switch_BR802_9car_spriteset;
+		purchase: spriteset_BR802_purchase;
 		
-		power: switch_br_802_9car_power;
+		power: switch_BR802_9car_power;
 		speed: switch_BR800_speed;
 
-		articulated_part: switch_br_802_9car_articulated;
-		start_stop: switch_br_802_9car_start_stop;	
-		can_attach_wagon: switch_br_802_9car_can_attach_wagon;
-		visual_effect_and_powered: switch_br_802_9car_particles;	
-		additional_text: string(STR_DSC_BR_802_9CAR);	
+		articulated_part: switch_BR802_9car_articulated;
+		start_stop: switch_BR802_9car_start_stop;	
+		can_attach_wagon: switch_BR802_9car_can_attach_wagon;
+		visual_effect_and_powered: switch_BR802_9car_particles;	
+		additional_text: string(STR_DSC_BR802_9CAR);	
 		cargo_capacity:						return(647/9 * param_pax);
 	}
 }

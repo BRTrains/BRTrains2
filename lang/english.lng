@@ -80,6 +80,7 @@ STR_BR801_5CAR                         :British Rail Class 801/1 (5-Car)
 STR_BR801_9CAR                         :British Rail Class 801/2 (9-Car)
 STR_BR802_5CAR                         :British Rail Class 802/0/2/3 (5-Car)
 STR_BR802_9CAR                         :British Rail Class 802/1 (9-Car)
+STR_BR803_5CAR                         :British Rail Class 803 (5-car)
 STR_BR805                              :British Rail Class 805 (5-car)
 STR_BR807                              :British Rail Class 807 (7-car)
 
@@ -87,9 +88,11 @@ STR_BR807                              :British Rail Class 807 (7-car)
 # Livery Names
 STR_LIVERY_BR800_LNER                  : LNER 'Azuma'
 STR_LIVERY_BR800_GWR                   : Great Western Railway 'Intercity Express Train'
-STR_LIVERY_BR800_TPX                   : Transpennine Express 'Nova 1'
-STR_LIVERY_BR800_HULL                  : Hull Trains 'Paragon'
+STR_LIVERY_BR800_TPE                   : Transpennine Express 'Nova 1'
+STR_LIVERY_BR800_HullTrains            : Hull Trains 'Paragon'
 STR_LIVERY_BR800_AVANTI                : Avanti West Coast 'AT300'
+STR_LIVERY_BR800_VTEC                  : Virgin Trains East Coast
+STR_LIVERY_BR800_Lumo                  : Lumo
 
 STR_LIVERY_BR_745_REGULAR               : Greater Anglia 'Intercity'
 STR_LIVERY_BR_745_STANSTED              : Greater Anglia 'Stansted Express'
@@ -123,10 +126,11 @@ STR_DSC_BR_769                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric 
 STR_DSC_BR_769_9                       :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
 STR_DSC_BR_777                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Merseyrail
 
-STR_DSC_BR800                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway, Great Western Railway
+STR_DSC_BR800                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway, Great Western Railway, Virgin Trains East Coast
 STR_DSC_BR801                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway
 STR_DSC_BR802_5CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway, Transpennine Express, Hull Trains
 STR_DSC_BR802_9CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
+STR_DSC_BR803                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Lumo
 STR_DSC_BR805                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast
 STR_DSC_BR807                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast
 

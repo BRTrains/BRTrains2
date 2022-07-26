@@ -24,7 +24,7 @@ switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset, cargo_subtype) {
 	// so that we get: (front,middle,end);(front,middle,end)...
 	0: switch_BR800_9car_spriteset_LNER;
 	1: switch_BR800_9car_spriteset_GWR;
-	1: switch_BR800_9car_spriteset_VTEC;
+	2: switch_BR800_9car_spriteset_VTEC;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR800_9car_subtype_text, cargo_subtype) {
@@ -70,9 +70,8 @@ switch(FEAT_TRAINS, SELF, switch_BR800_9car_start_stop, num_vehs_in_consist) {
 switch(FEAT_TRAINS, SELF, switch_BR800_9car_can_attach_wagon, vehicle_type_id) {
 	item_BR800_9car: return CB_RESULT_ATTACH_ALLOW;
 	item_BR800_5car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_805: return CB_RESULT_ATTACH_ALLOW;
+	item_BR802_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR802_9car: return CB_RESULT_ATTACH_ALLOW;	
 	return string(STR_CANNOT_ATTACH);
 }
 
@@ -129,7 +128,7 @@ item(FEAT_TRAINS, item_BR800_9car, 460) {
 	
 	graphics {
 		default: switch_BR800_9car_spriteset;
-		purchase: spriteset_BR800_Purchase;
+		purchase: spriteset_BR800_purchase;
 		cargo_subtype_text: switch_BR800_9car_subtype_text;
 		
 		articulated_part: switch_BR800_9car_articulated;
