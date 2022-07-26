@@ -128,7 +128,7 @@ item(FEAT_TRAINS, item_BR800_5car, 459) {
 	
 	graphics {
 		default: switch_BR800_5car_spriteset;
-		purchase: spriteset_BR800_purchase_lner;
+		purchase: spriteset_BR800_Purchase;
 		cargo_subtype_text: switch_BR800_5car_subtype_text;
 		
 		power: switch_BR800_5car_power;

@@ -1,61 +1,61 @@
 // Livery callbacks
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset_lner, position_in_articulated_veh % 9) {
-	0: spriteset_br_800_front_lner;
-	8: switch_br_800_spriteset_rear_lner;
-	spriteset_br_800_middle_lner;
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_lner, position_in_articulated_veh % 9) {
+	0: spriteset_BR800_front_lner;
+	8: switch_BR800_spriteset_rear_lner;
+	spriteset_BR800_middle_lner;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset_gwr, position_in_articulated_veh % 9) {
-	0: spriteset_br_800_front_gwr;
-	8: switch_br_800_spriteset_rear_gwr;
-	spriteset_br_800_middle_gwr;
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_gwr, position_in_articulated_veh % 9) {
+	0: spriteset_BR800_front_gwr;
+	8: switch_BR800_spriteset_rear_gwr;
+	spriteset_BR800_middle_gwr;
 }
 
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_spriteset, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset, cargo_subtype) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	// % 3 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,middle,end);(front,middle,end)...
-	0: switch_br_800_9car_spriteset_lner;
-	1: switch_br_800_9car_spriteset_gwr;
+	0: switch_BR800_9car_spriteset_lner;
+	1: switch_BR800_9car_spriteset_gwr;
 }
 
 // Define articulations
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_articulated, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..8: return item_br_800_9car;
+	1..8: return item_BR800_9car;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles_electric, position_in_articulated_veh % 9) {
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_particles_electric, position_in_articulated_veh % 9) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	8: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles_diesel, position_in_articulated_veh % 9) {
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_particles_diesel, position_in_articulated_veh % 9) {
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	8: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_particles, current_railtype) {
-	ELRL: switch_br_800_9car_particles_electric;
-	switch_br_800_9car_particles_diesel;
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_particles, current_railtype) {
+	ELRL: switch_BR800_9car_particles_electric;
+	switch_BR800_9car_particles_diesel;
 }
 
 // Start/stop switch, used to limit maximum length
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_start_stop, num_vehs_in_consist) {	
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_start_stop, num_vehs_in_consist) {	
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
 // Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_can_attach_wagon, vehicle_type_id) {
-	item_br_800_9car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_800_5car: return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_can_attach_wagon, vehicle_type_id) {
+	item_BR800_9car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR800_5car: return CB_RESULT_ATTACH_ALLOW;
 	item_br_802_5car: return CB_RESULT_ATTACH_ALLOW;
 	item_br_802_9car: return CB_RESULT_ATTACH_ALLOW;
 	item_br_805: return CB_RESULT_ATTACH_ALLOW;
@@ -63,27 +63,27 @@ switch(FEAT_TRAINS, SELF, switch_br_800_9car_can_attach_wagon, vehicle_type_id) 
 }
 
 // LNER trains hold fewer passengers than GWR trains
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_capacity, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_capacity, cargo_subtype) {
 	0: return (611/9 * param_pax);
 	1: return (650/9 * param_pax);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_subtype_text, cargo_subtype) {
-	0: return string(STR_LIVERY_BR_800_LNER);
-	1: return string(STR_LIVERY_BR_800_GWR);
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_subtype_text, cargo_subtype) {
+	0: return string(STR_LIVERY_BR800_LNER);
+	1: return string(STR_LIVERY_BR800_GWR);
 	return CB_RESULT_NO_TEXT;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_800_9car_power, current_railtype) {
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_power, current_railtype) {
 	ELRL: return 5760;
 	return 3750;
 
 }
 
 // Class 800/1/3 (9car)
-item(FEAT_TRAINS, item_br_800_9car, 460) {
+item(FEAT_TRAINS, item_BR800_9car, 460) {
 	property {
-		name: string(STR_BR_800_9CAR);
+		name: string(STR_BR800_9CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2017, 10, 06);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
@@ -120,18 +120,18 @@ item(FEAT_TRAINS, item_br_800_9car, 460) {
 	}
 	
 	graphics {
-		default: switch_br_800_9car_spriteset;
-		purchase: spriteset_br_800_purchase_lner;
-		cargo_subtype_text: switch_br_800_9car_subtype_text;
+		default: switch_BR800_9car_spriteset;
+		purchase: spriteset_BR800_Purchase;
+		cargo_subtype_text: switch_BR800_9car_subtype_text;
 		
-		articulated_part: switch_br_800_9car_articulated;
-		start_stop: switch_br_800_9car_start_stop;	
-		can_attach_wagon: switch_br_800_9car_can_attach_wagon;
-		visual_effect_and_powered: switch_br_800_9car_particles;
+		articulated_part: switch_BR800_9car_articulated;
+		start_stop: switch_BR800_9car_start_stop;	
+		can_attach_wagon: switch_BR800_9car_can_attach_wagon;
+		visual_effect_and_powered: switch_BR800_9car_particles;
 				
-		cargo_capacity: switch_br_800_9car_capacity;
-		power: switch_br_800_9car_power;
-		speed: switch_br_800_speed;
-		additional_text: string(STR_DSC_BR_800);
+		cargo_capacity: switch_BR800_9car_capacity;
+		power: switch_BR800_9car_power;
+		speed: switch_BR800_speed;
+		additional_text: string(STR_DSC_BR800);
 	}
 }
