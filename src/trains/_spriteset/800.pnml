@@ -1,4 +1,28 @@
-// Spriteset car definitions
+spriteset(spriteset_BR800_Purchase, "gfx/BR80X.png") {
+	template_purchase(200, 0)
+}
+spriteset(spriteset_BR801_Purchase, "gfx/BR80X.png") {
+	template_purchase(200, 0)
+}
+spriteset(spriteset_BR802_Purchase, "gfx/BR80X.png") {
+	template_purchase(200, 13)
+}
+spriteset(spriteset_BR803_Purchase, "gfx/BR80X.png") {
+	template_purchase(200, 26)
+}
+
+spriteset(spriteset_BR80X_front_LNER, "gfx/BR80X.png") {
+	template_train32px(0, 0)
+}
+spriteset(spriteset_BR80X_mid_LNER, "gfx/BR80X.png") {
+	template_train32px(0, 25)
+}
+spriteset(spriteset_BR80X_rear_LNER, "gfx/BR80X.png") {
+	template_train32px(0, 50)
+}
+
+
+
 spriteset (spriteset_br_800_front_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 0) }
 spriteset (spriteset_br_800_rear_panto_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 105) }
 spriteset (spriteset_br_800_middle_lner, "gfx/br_800_lner.png") { tmpl_train_4(0, 29) }
