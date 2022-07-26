@@ -1,5 +1,5 @@
 spriteset(spriteset_BR800_Purchase, "gfx/BR80X.png") {
-	template_purchase(200, 0)
+	template_purchase(200, 39)
 }
 spriteset(spriteset_BR801_Purchase, "gfx/BR80X.png") {
 	template_purchase(200, 0)
@@ -11,6 +11,8 @@ spriteset(spriteset_BR803_Purchase, "gfx/BR80X.png") {
 	template_purchase(200, 26)
 }
 
+
+
 spriteset(spriteset_BR80X_front_LNER, "gfx/BR80X.png") {
 	template_train32px(0, 0)
 }
@@ -21,78 +23,68 @@ spriteset(spriteset_BR80X_rear_LNER, "gfx/BR80X.png") {
 	template_train32px(0, 50)
 }
 
-
-
-spriteset (spriteset_br_800_front_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_800_rear_panto_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 105) }
-spriteset (spriteset_br_800_middle_lner, "gfx/br_800_lner.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_800_rear_lner, "gfx/br_800_lner.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_800_purchase_lner, "gfx/br_800_lner.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset(spriteset_BR80X_front_GWR, "gfx/BR80X.png") {
+	template_train32px(0, 75)
 }
-spriteset (spriteset_br_801_purchase_lner, "gfx/br_800_lner.png") {
-	[2, 136, 91, 12, -25, -6]
+spriteset(spriteset_BR80X_mid_GWR, "gfx/BR80X.png") {
+	template_train32px(0, 100)
+}
+spriteset(spriteset_BR80X_rear_GWR, "gfx/BR80X.png") {
+	template_train32px(0, 125)
 }
 
-
-spriteset (spriteset_br_800_front_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_800_rear_panto_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 105) }
-spriteset (spriteset_br_800_middle_gwr, "gfx/br_800_gwr.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_800_rear_gwr, "gfx/br_800_gwr.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_800_purchase_gwr, "gfx/br_800_gwr.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset(spriteset_BR80X_front_Lumo, "gfx/BR80X.png") {
+	template_train32px(0, 150)
+}
+spriteset(spriteset_BR80X_mid_Lumo, "gfx/BR80X.png") {
+	template_train32px(0, 175)
+}
+spriteset(spriteset_BR80X_rear_Lumo, "gfx/BR80X.png") {
+	template_train32px(0, 200)
 }
 
-spriteset (spriteset_br_800_front_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_800_rear_panto_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 105) }
-spriteset (spriteset_br_800_middle_tpx, "gfx/br_800_tpx.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_800_rear_tpx, "gfx/br_800_tpx.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_800_purchase_tpx, "gfx/br_800_tpx.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset(spriteset_BR80X_front_EMR, "gfx/BR80X.png") {
+	template_train32px(0, 225)
+}
+spriteset(spriteset_BR80X_mid_EMR, "gfx/BR80X.png") {
+	template_train32px(0, 250)
+}
+spriteset(spriteset_BR80X_rear_EMR, "gfx/BR80X.png") {
+	template_train32px(0, 275)
 }
 
-spriteset (spriteset_br_800_front_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_800_rear_panto_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 105) }
-spriteset (spriteset_br_800_middle_hull, "gfx/br_800_hull.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_800_rear_hull, "gfx/br_800_hull.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_800_purchase_hull, "gfx/br_800_hull.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset(spriteset_BR80X_front_TPE, "gfx/BR80X.png") {
+	template_train32px(0, 300)
+}
+spriteset(spriteset_BR80X_mid_TPE, "gfx/BR80X.png") {
+	template_train32px(0, 325)
+}
+spriteset(spriteset_BR80X_rear_TPE, "gfx/BR80X.png") {
+	template_train32px(0, 350)
 }
 
-spriteset (spriteset_br_800_front_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_800_rear_panto_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 105) }
-spriteset (spriteset_br_800_middle_avanti, "gfx/br_800_avanti.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_800_rear_avanti, "gfx/br_800_avanti.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_800_purchase_avanti, "gfx/br_800_avanti.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset(spriteset_BR80X_front_HullTrains, "gfx/BR80X.png") {
+	template_train32px(0, 375)
+}
+spriteset(spriteset_BR80X_mid_HullTrains, "gfx/BR80X.png") {
+	template_train32px(0, 400)
+}
+spriteset(spriteset_BR80X_mid_special_HullTrains, "gfx/BR80X.png") {
+	template_train32px(172, 400)
+}
+spriteset(spriteset_BR80X_rear_HullTrains, "gfx/BR80X.png") {
+	template_train32px(0, 425)
 }
 
-// Front car pantograph switches
-switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_lner, current_railtype) {
-	ELRL: spriteset_br_800_rear_panto_lner;
-	spriteset_br_800_rear_lner;
+spriteset(spriteset_BR80X_front_VTEC, "gfx/BR80X.png") {
+	template_train32px(0, 450)
 }
-
-switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_gwr, current_railtype) {
-	ELRL: spriteset_br_800_rear_panto_gwr;
-	spriteset_br_800_rear_gwr;
+spriteset(spriteset_BR80X_mid_VTEC, "gfx/BR80X.png") {
+	template_train32px(0, 475)
 }
-
-switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_tpx, current_railtype) {
-	ELRL: spriteset_br_800_rear_panto_tpx;
-	spriteset_br_800_rear_tpx;
+spriteset(spriteset_BR80X_rear_VTEC, "gfx/BR80X.png") {
+	template_train32px(0, 500)
 }
-
-switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_hull, current_railtype) {
-	ELRL: spriteset_br_800_rear_panto_hull;
-	spriteset_br_800_rear_hull;
-}
-
-switch(FEAT_TRAINS, SELF, switch_br_800_spriteset_rear_avanti, current_railtype) {
-	ELRL: spriteset_br_800_rear_panto_avanti;
-	spriteset_br_800_rear_avanti;
-}
-
 
 // Speed switch
 switch(FEAT_TRAINS, SELF, switch_br_800_speed, param_max_speed) {
