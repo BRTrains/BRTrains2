@@ -1,16 +1,16 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_745_0_spriteset, position_in_articulated_veh % 12) {
-	0: spriteset_br_745_front;
-	10: spriteset_br_745_0_rear_panto;
-	11: spriteset_br_745_0_rear;
-	spriteset_br_745_middle;
+	0: spriteset_br745a;
+	10: spriteset_br745d;
+	11: spriteset_br745b;
+	spriteset_br745c;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_745_1_spriteset, position_in_articulated_veh % 12) {
-	0: spriteset_br_745_front;
-	10: spriteset_br_745_1_rear_panto;
-	11: spriteset_br_745_1_rear;
-	spriteset_br_745_middle;
+	0: spriteset_br745a;
+	10: spriteset_br745d;
+	11: spriteset_br745b;
+	spriteset_br745c;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_745_spriteset, cargo_subtype) {
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_br_745, 449) {
 		extra_power_per_wagon: 0 kW;
 		tractive_effort_coefficient: 0.3;
 		air_drag_coefficient: 0.06;
-		length: 8; // full tile length vehicle
+		length: 7; // full tile length vehicle
 		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
 		extra_weight_per_wagon: 0 ton;
 		bitmask_vehicle_info: 0;
@@ -97,7 +97,7 @@ item(FEAT_TRAINS, item_br_745, 449) {
 	
 	graphics {
 		default: switch_br_745_spriteset;
-		purchase: spriteset_br_745_purchase;
+		purchase: spriteset_br745_purchase;
 		cargo_subtype_text: switch_br_745_subtype_text;
 		
 		articulated_part: switch_br_745_articulated;

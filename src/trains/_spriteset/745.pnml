@@ -1,19 +1,8 @@
-spriteset (spriteset_br_745_front, "gfx/br_745_ga.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_745_middle, "gfx/br_745_ga.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_745_0_rear, "gfx/br_745_ga.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_745_0_rear_panto, "gfx/br_745_ga.png") { tmpl_train_8(0, 105) }
+spriteset (spriteset_br745a, "gfx/br745.png") { template_train28px(0, 0) }
+spriteset (spriteset_br745b, "gfx/br745.png") { template_train28px(0, 23) }
+spriteset (spriteset_br745c, "gfx/br745.png") { template_train28px(0, 46) }
+spriteset (spriteset_br745d, "gfx/br745.png") { template_train28px(0, 69) }
 
-spriteset (spriteset_br_745_purchase, "gfx/br_745_ga.png") {
-	[2, 89, 91, 12, -25, -6]	
-}
-
-spriteset (spriteset_br_745_1_rear, "gfx/br_745_st.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_745_1_rear_panto, "gfx/br_745_st.png") { tmpl_train_8(0, 105) }
-
-spriteset (spriteset_br745a, "gfx/br745.png") { template_train28px(0, 13) }
-spriteset (spriteset_br745b, "gfx/br745.png") { template_train28px(0, 36) }
-spriteset (spriteset_br745c, "gfx/br745.png") { template_train28px(0, 59) }
-
-spriteset (spriteset_br745test_purchase, "gfx/br745.png") {
-	template_purchase(0,0)
+spriteset (spriteset_br745_purchase, "gfx/br745.png") {
+	template_purchase(160,0)
 }
