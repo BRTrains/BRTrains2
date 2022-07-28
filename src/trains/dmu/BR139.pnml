@@ -3,11 +3,11 @@ spriteset(spriteset_BR139_Purchase, "gfx/BR139.png") {
 }
 
 spriteset(spriteset_BR139_LM, "gfx/BR139.png") {
-	template_train20pxTallDiag(0, 13)
+	template_train20px(0, 13)
 }
 
 spriteset(spriteset_BR139_WMR, "gfx/BR139.png") {
-	template_train20pxTallDiag(0, 31)
+	template_train20px(0, 32)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR139,cargo_subtype){
