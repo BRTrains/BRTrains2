@@ -1,11 +1,11 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_755_4_spriteset, position_in_articulated_veh % 5) {
-	0: spriteset_br_755_front;
-    1: spriteset_br_755_middle;
-	2: spriteset_br_755_pp;
-    3: spriteset_br_755_middle_panto;
-	4: spriteset_br_755_rear;
-	spriteset_br_755_middle;
+	0: spriteset_br755a;
+    1: spriteset_br755c;
+	2: spriteset_br755pp;
+    3: spriteset_br755d;
+	4: spriteset_br755b;
+	spriteset_br755c;
 }
 
 // Define articulations
@@ -49,8 +49,10 @@ switch(FEAT_TRAINS, SELF, switch_br_755_4_power, current_railtype) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_755_4_length, position_in_articulated_veh % 5) {
-	2: return 4;
-	return 8;
+	1: return 6;
+	2: return 5;
+	3: return 6;
+	return 7;
 }
 
 // Class 755/4 (4.5car)
@@ -86,7 +88,7 @@ item(FEAT_TRAINS, item_br_755_4, 454) {
 		extra_power_per_wagon: 0 kW;
 		tractive_effort_coefficient: 0.3;
 		air_drag_coefficient: 0.06;
-		length: 8; // full tile length vehicle
+		length: 7; // full tile length vehicle
 		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
 		extra_weight_per_wagon: 0 ton;
 		bitmask_vehicle_info: 0;
@@ -94,7 +96,7 @@ item(FEAT_TRAINS, item_br_755_4, 454) {
 	
 	graphics {
 		default: switch_br_755_4_spriteset;
-		purchase: spriteset_br_755_purchase;
+		purchase: spriteset_br755_purchase;
 
 		articulated_part: switch_br_755_4_articulated;
 		start_stop: switch_br_755_4_start_stop;	
