@@ -3,51 +3,51 @@ spriteset(spriteset_BRTTA, "gfx/freight/BRTTA.png") {
 }
 
 spriteset(spriteset_BRTTA_Mobil, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 13)
+	template_train20px(0, 13)
 }
 
 spriteset(spriteset_BRTTA_Esso, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 32)
+	template_train20px(0, 32)
 }
 
 spriteset(spriteset_BRTTA_BP1, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 51)
+	template_train20px(0, 51)
 }
 
 spriteset(spriteset_BRTTA_Suko, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 70)
+	template_train20px(0, 70)
 }
 
 spriteset(spriteset_BRTTA_Gulf, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 89)
+	template_train20px(0, 89)
 }
 
 spriteset(spriteset_BRTTA_Shell1, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 108)
+	template_train20px(0, 108)
 }
 
 spriteset(spriteset_BRTTA_BP2, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 127)
+	template_train20px(0, 127)
 }
 
 spriteset(spriteset_BRTTA_BP3, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 146)
+	template_train20px(0, 146)
 }
 
 spriteset(spriteset_BRTTA_Murco, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 165)
+	template_train20px(0, 165)
 }
 
 spriteset(spriteset_BRTTA_Shell2, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 184)
+	template_train20px(0, 184)
 }
 
 spriteset(spriteset_BRTTA_Total, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 203)
+	template_train20px(0, 203)
 }
 
 spriteset(spriteset_BRTTA_VTG, "gfx/freight/BRTTA.png") {
-	template_train20px_tanker(0, 222)
+	template_train20px(0, 222)
 }
 
 random_switch(FEAT_TRAINS, SELF, sw_BRTTA_BP)
@@ -121,7 +121,7 @@ item (FEAT_TRAINS, item_BRTTA, 419) {
 		weight:							28 ton;
 		tractive_effort_coefficient:	0.08;
 		air_drag_coefficient:			0.07;
-		length:							6;
+		length:							5;
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
