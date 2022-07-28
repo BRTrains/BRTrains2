@@ -1,7 +1,0 @@
-spriteset (spriteset_br_707_front, "gfx/br_707.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_707_middle, "gfx/br_707.png") { tmpl_train_4(0, 29) }
-spriteset (spriteset_br_707_rear, "gfx/br_707.png") { tmpl_train_8(0, 58) }
-
-spriteset (spriteset_br_707_purchase, "gfx/br_707.png") {
-	[2, 89, 91, 12, -25, -6]	
-}
