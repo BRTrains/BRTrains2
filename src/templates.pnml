@@ -8,14 +8,6 @@ template tmpl_train_4(x, y) {
 	[x + 92, y + 2, 21,		18,		-12,	-12] //se
 }
 
-template tmpl_train_4_nowarn(x, y) {	
-	//leftx, topy, width, height, offsetx, offsety
-	[x + 25, y + 2, 8,		23,		-3,		-11,	WHITE] //n
-	[x + 35, y + 2, 21,		18,		-11,	-11,	WHITE] //ne
-	[x + 58, y + 2, 32,		12,		-16,	-7,		WHITE] //e
-	[x + 92, y + 2, 21,		18,		-12,	-12,	WHITE] //se
-}
-
 // Train sprite template
 template tmpl_train_8(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
@@ -27,19 +19,6 @@ template tmpl_train_8(x, y) {
 	[x + 125, y + 2, 21,	18,		-11,	-11] //sw
 	[x + 148, y + 2, 32,	12,		-16,	-7] //w
 	[x + 182, y + 2, 21,	18,		-12,	-12] //nw
-}
-
-// Train sprite template
-template tmpl_train_8_nowarn(x, y) {	
-	//leftx, topy, width, height, offsetx, offsety
-	[x + 25, y + 2, 8,		23,		-3,		-11,	WHITE] //n
-	[x + 35, y + 2, 21,		18,		-11,	-11,	WHITE] //ne
-	[x + 58, y + 2, 32,		12,		-16,	-7,		WHITE] //e
-	[x + 92, y + 2, 21,		18,		-12,	-12,	WHITE] //se
-	[x + 115, y + 2, 8,		23,		-3,		-11,	WHITE] //s
-	[x + 125, y + 2, 21,	18,		-11,	-11,	WHITE] //sw
-	[x + 148, y + 2, 32,	12,		-16,	-7,		WHITE] //w
-	[x + 182, y + 2, 21,	18,		-12,	-12,	WHITE] //nw
 }
 
 
@@ -144,30 +123,6 @@ template template_train28px3(x,y){
     [ x+150, y, 19, 17, -8, -9]
 }
 
-template template_train29px(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 23, -3, -10]
-    [ x+9, y, 21, 18, -14, -9]
-    [ x+31, y, 29, 12, -14, -7]
-    [ x+61, y, 21, 18, -7, -9]
-    [ x+83, y, 8, 23, -3, -10]
-    [ x+92, y, 21, 18, -14, -9]
-    [ x+114, y, 29, 12, -15, -7]
-    [ x+144, y, 21, 18, -8, -9]
-}
-
-template template_train30px(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -10]
-    [ x+9, y, 21, 17, -7, -7]
-    [ x+31, y, 32, 12, -16, -7]
-    [ x+63, y, 21, 17, -9, -8]
-    [ x+85, y, 8, 24, -3, -10]
-    [ x+94, y, 21, 17, -11, -7]
-    [ x+116, y, 32, 12, -12, -7]
-    [ x+149, y, 21, 17, -13, -9]
-}
-
 template template_train32px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 24, -3, -12,			NOANIM|WHITE]
@@ -220,18 +175,6 @@ template template_train32px_reversed(x,y){
     [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
 }
 
-template template_train32px_reversed_anim(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x+86,	y, 8, 24, -3, -12,		ANIM|NOWHITE]
-    [ x+95, y, 21, 17, -12, -10,	ANIM|NOWHITE]
-    [ x+117, y, 32, 12, -16, -8,	ANIM|NOWHITE]
-    [ x+150, y, 21, 17, -5, -10,	ANIM|NOWHITE]
-	[ x, y, 8, 24, -3, -12,			ANIM|NOWHITE]
-    [ x+9, y, 21, 17, -12, -10,		ANIM|NOWHITE]
-    [ x+31, y, 32, 12, -16, -8,		ANIM|NOWHITE]
-    [ x+64, y, 21, 17, -5, -10,		ANIM|NOWHITE]
-}
-
 template template_trainBRMk2(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
@@ -255,44 +198,6 @@ template template_train55(x,y){
     [ x+117, y, 32, 12, -16, -7]
     [ x+150, y, 21, 17, -8, -10]
 }
-
-template template_electrostar(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 25, -3, -8]
-    [ x+9, y, 22, 20, -14, -11]
-    [ x+32, y, 32, 12, -16, -8]
-    [ x+65, y, 22, 20, -7, -11]
-    [ x+88, y, 8, 25, -3, -8]
-    [ x+97, y, 22, 20, -14, -11]
-    [ x+120, y, 32, 12, -16, -8]
-    [ x+153, y, 22, 20, -7, -11]
-}
-
-template template_train80xdtf(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -8]
-    [ x+9, y, 21, 17, -15, -8]
-    [ x+31, y, 32, 12, -16, -7]
-    [ x+64, y, 21, 17, -8, -10]
-    [ x+86, y, 8, 24, -3, -8]
-    [ x+95, y, 21, 17, -13, -9]
-    [ x+117, y, 32, 12, -16, -7]
-    [ x+150, y, 21, 17, -8, -10]
-}
-
-template template_train80xdtr(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -8]
-    [ x+9, y, 21, 17, -14, -9]
-    [ x+31, y, 32, 12, -16, -7]
-    [ x+64, y, 21, 17, -8, -10]
-    [ x+86, y, 8, 24, -3, -8]
-    [ x+95, y, 21, 17, -14, -8]
-    [ x+117, y, 32, 12, -16, -7]
-    [ x+150, y, 21, 17, -8, -10]
-}
-
-//Because the electrostar didn't fit properly
 
 template template_450(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
@@ -320,6 +225,7 @@ template template_train170pt(x,y){
     [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
 
+// Now only used by MPV
 template template_train170ptF(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 26, -3, -9,			NOANIM|NOWHITE]
@@ -344,44 +250,8 @@ template template_train70pt(x,y){
     [ x+153, y, 22, 20, -4, -11]
 }
 
-//OH GOD WHY (Alignment on 800 sprites)
 
-template template_800a(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12]
-    [ x+9, y, 21, 17, -12, -10]
-    [ x+31, y, 32, 12, -16, -8]
-    [ x+64, y, 21, 17, -5, -10]
-    [ x+86, y, 8, 24, -3, -12]
-    [ x+95, y, 21, 17, -12, -10]
-    [ x+117, y, 32, 12, -16, -8]
-    [ x+150, y, 21, 17, -5, -9]
-}
-
-template template_800b(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12]
-    [ x+9, y, 21, 17, -12, -9]
-    [ x+31, y, 32, 12, -16, -8]
-    [ x+64, y, 21, 17, -5, -9]
-    [ x+86, y, 8, 24, -3, -12]
-    [ x+95, y, 21, 17, -12, -9]
-    [ x+117, y, 32, 12, -16, -8]
-    [ x+150, y, 21, 17, -5, -9]
-}
-
-template template_800c(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12]
-    [ x+9, y, 21, 17, -12, -10]
-    [ x+31, y, 32, 12, -16, -8]
-    [ x+64, y, 21, 17, -5, -9]
-    [ x+86, y, 8, 24, -3, -12]
-    [ x+95, y, 21, 17, -12, -10]
-    [ x+117, y, 32, 12, -16, -8]
-    [ x+150, y, 21, 17, -5, -10]
-}
-
+// Only used by MPV
 template template_purchaseptdual(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ ]
