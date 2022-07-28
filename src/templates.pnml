@@ -29,11 +29,11 @@ template tmpl_train_8(x, y) {
 template template_train20px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 18, -3, -11]
-    [ x+9, y, 15, 15, -6, -10]
+    [ x+9, y, 15, 15, -7, -10]
     [ x+25, y, 20, 12, -4, -8]
     [ x+46, y, 15, 15, 1, -7]
     [ x+62, y, 8, 17, -3, -5]
-    [ x+71, y, 15, 15, -12, -7]
+    [ x+71, y, 15, 15, -13, -7]
     [ x+87, y, 20, 12, -16, -8]
     [ x+108, y, 15, 15, -5, -10]
 }
@@ -45,7 +45,7 @@ template template_train20px_anim(x,y){
     [ x+27, y, 20, 12, -4, -8, ANIM|WHITE]
     [ x+49, y, 15, 15, -1, -8, ANIM|WHITE]
     [ x+66, y, 8, 17, -4, -3, ANIM|WHITE]
-    [ x+76, y, 15, 15, -13, -7, ANIM|WHITE]
+    [ x+76, y, 15, 15, -14, -7, ANIM|WHITE]
     [ x+93, y, 20, 12, -16, -8, ANIM|WHITE]
     [ x+115, y, 15, 15, -7, -11, ANIM|WHITE]
 }
@@ -65,11 +65,11 @@ template template_train21px(x,y){
 template template_train24px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 20, -3, -11]
-    [ x+9, y, 17, 16, -8, -10]
+    [ x+9, y, 17, 16, -9, -10]
     [ x+27, y, 24, 12, -8, -8]
     [ x+52, y, 17, 16, -1, -8]
     [ x+70, y, 8, 20, -3, -7]
-    [ x+79, y, 17, 16, -12, -8]
+    [ x+79, y, 17, 16, -13, -8]
     [ x+97, y, 24, 12, -16, -8]
     [ x+122, y, 17, 16, -5, -10]
 }
@@ -89,11 +89,11 @@ template template_train28px_pacer(x,y){
 template template_train28px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 22, -3, -11]
-    [ x+9, y, 19, 17, -10, -10]
+    [ x+9, y, 19, 17, -11, -10]
     [ x+29, y, 28, 12, -12, -8]
     [ x+58, y, 19, 17, -3, -9]
     [ x+78, y, 8, 22, -3, -9]
-    [ x+87, y, 19, 17, -12, -9]
+    [ x+87, y, 19, 17, -13, -9]
     [ x+107, y, 28, 12, -16, -8]
     [ x+136, y, 19, 17, -5, -10]
 }
@@ -114,11 +114,11 @@ template template_train28px3(x,y){
 template template_train32px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 24, -3, -12,			NOANIM|WHITE]
-    [ x+9, y, 21, 18, -12, -10,		NOANIM|WHITE]
+    [ x+9, y, 21, 18, -13, -10,		NOANIM|WHITE]
     [ x+31, y, 32, 12, -16, -8,		NOANIM|WHITE]
     [ x+64, y, 21, 18, -5, -10,		NOANIM|WHITE]
     [ x+86, y, 8, 24, -3, -12,		NOANIM|WHITE]
-    [ x+95, y, 21, 18, -12, -10,	NOANIM|WHITE]
+    [ x+95, y, 21, 18, -13, -10,	NOANIM|WHITE]
     [ x+117, y, 32, 12, -16, -8,	NOANIM|WHITE]
     [ x+150, y, 21, 18, -5, -10,	NOANIM|WHITE]
 }
