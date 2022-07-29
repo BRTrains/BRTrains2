@@ -1,13 +1,5 @@
 // Train sprite templates
 
-template tmpl_train_4(x, y) {	
-	//leftx, topy, width, height, offsetx, offsety
-	[x + 25, y + 2, 8,		23,		-3,		-11] //n
-	[x + 35, y + 2, 21,		18,		-11,	-11] //ne
-	[x + 58, y + 2, 32,		12,		-16,	-7] //e
-	[x + 92, y + 2, 21,		18,		-12,	-12] //se
-}
-
 // Train sprite template
 template tmpl_train_8(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
@@ -109,14 +101,6 @@ template template_train32px_anim(x,y){
     [ x+150, y, 21, 18, -7, -11,	ANIM|NOWHITE]
 }
 
-template template_train32px4v(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
-    [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
-    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
-    [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
-}
-
 template template_train32px4viewLowered(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
@@ -172,8 +156,6 @@ template template_450(x,y){
     [ x+120, y, 32, 13, -13, -7]
     [ x+153, y, 22, 21, -3, -10]
 }
-
-//Nor did the desiro
 
 template template_train170pt(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
