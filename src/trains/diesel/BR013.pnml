@@ -3,11 +3,11 @@ spriteset(spriteset_BR13_Purchase, "gfx/BR13.png") {
 }
 
 spriteset(spriteset_BR13, "gfx/BR13.png") {
-	template_train21px(0, 32)
+	template_train20px(0, 32)
 }
 
 spriteset(spriteset_BR13_1, "gfx/BR13.png") {
-	template_train21px(0, 13)
+	template_train20px(0, 13)
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR13, extra_callback_info1) {

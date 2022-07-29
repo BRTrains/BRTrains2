@@ -3,35 +3,35 @@ spriteset(spriteset_BR08_Purchase, "gfx/BR08.png") {
 }
 
 spriteset(spriteset_BR08_BRBlack, "gfx/BR08.png") {
-	template_train21px(0, 127)
+	template_train20px(0, 127)
 }
 
 spriteset(spriteset_BR08_BRGreen, "gfx/BR08.png") {
-	template_train21px(0, 13)
+	template_train20px(0, 13)
 }
 
 spriteset(spriteset_BR08_BRBlue, "gfx/BR08.png") {
-	template_train21px(0, 32)
+	template_train20px(0, 32)
 }
 
 spriteset(spriteset_BR08_BRGrey, "gfx/BR08.png") {
-	template_train21px(0, 146)
+	template_train20px(0, 146)
 }
 
 spriteset(spriteset_BR08_EWSRed, "gfx/BR08.png") {
-	template_train21px(0, 51)
+	template_train20px(0, 51)
 }
 
 spriteset(spriteset_BR08_NRYellow, "gfx/BR08.png") {
-	template_train21px(0, 70)
+	template_train20px(0, 70)
 }
 
 spriteset(spriteset_BR08_Purple, "gfx/BR08.png") {
-	template_train21px(0, 89)
+	template_train20px(0, 89)
 }
 
 spriteset(spriteset_BR08_IntercitySwallow, "gfx/BR08.png") {
-	template_train21px(0, 108)
+	template_train20px(0, 108)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR08,cargo_subtype){
