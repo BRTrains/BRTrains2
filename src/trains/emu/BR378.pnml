@@ -19,6 +19,7 @@ spriteset(spriteset_BR378_LOunwrapped, "gfx/Electrostar_v2.png") {
 	template_train32px(200, 350)
 }
 
+// Not an aventra, just a London Overground livery that looks like one...
 spriteset(spriteset_BR378a_Aventra, "gfx/Electrostar_v2.png") {
 	template_train32px(0, 1700)
 }
