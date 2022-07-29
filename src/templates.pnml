@@ -40,14 +40,14 @@ template template_train20px(x,y){
 
 template template_train20px_anim(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 17, -4, -11, ANIM|WHITE]
-    [ x+10, y, 15, 15, -7, -10, ANIM|WHITE]
-    [ x+27, y, 20, 12, -4, -8, ANIM|WHITE]
-    [ x+49, y, 15, 15, -1, -8, ANIM|WHITE]
-    [ x+66, y, 8, 17, -4, -3, ANIM|WHITE]
-    [ x+76, y, 15, 15, -14, -7, ANIM|WHITE]
-    [ x+93, y, 20, 12, -16, -8, ANIM|WHITE]
-    [ x+115, y, 15, 15, -7, -11, ANIM|WHITE]
+    [ x, y, 8, 17, -4, -11, ANIM]
+    [ x+10, y, 15, 15, -7, -10, ANIM]
+    [ x+27, y, 20, 12, -4, -8, ANIM]
+    [ x+49, y, 15, 15, -1, -8, ANIM]
+    [ x+66, y, 8, 17, -4, -3, ANIM]
+    [ x+76, y, 15, 15, -14, -7, ANIM]
+    [ x+93, y, 20, 12, -16, -8, ANIM]
+    [ x+115, y, 15, 15, -7, -11, ANIM]
 }
 template template_train24px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
@@ -63,14 +63,14 @@ template template_train24px(x,y){
 
 template template_train28px_pacer(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 19, -3, -9, NOANIM|NOWHITE]
-    [ x+9, y, 19, 15, -11, -9, NOANIM|NOWHITE]
-    [ x+29, y, 28, 12, -7, -7, NOANIM|NOWHITE]
-    [ x+58, y, 19, 15, -5, -8, NOANIM|NOWHITE]
-    [ x+78, y, 8, 19, -3, -9, NOANIM|NOWHITE]
-    [ x+87, y, 19, 15, -15, -6, NOANIM|NOWHITE]
-    [ x+107, y, 28, 12, -17, -6, NOANIM|NOWHITE]
-    [ x+136, y, 19, 15, -8, -9, NOANIM|NOWHITE]
+    [ x, y, 8, 19, -3, -9, NOANIM]
+    [ x+9, y, 19, 15, -11, -9, NOANIM]
+    [ x+29, y, 28, 12, -7, -7, NOANIM]
+    [ x+58, y, 19, 15, -5, -8, NOANIM]
+    [ x+78, y, 8, 19, -3, -9, NOANIM]
+    [ x+87, y, 19, 15, -15, -6, NOANIM]
+    [ x+107, y, 28, 12, -17, -6, NOANIM]
+    [ x+136, y, 19, 15, -8, -9, NOANIM]
 }
 
 template template_train28px(x,y){
@@ -83,19 +83,6 @@ template template_train28px(x,y){
     [ x+87, y, 19, 17, -13, -9]
     [ x+107, y, 28, 12, -16, -8]
     [ x+136, y, 19, 17, -5, -10]
-}
-
-
-template template_train28px3(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 22, -3, -9]
-    [ x+11, y, 19, 17, -11, -9]
-    [ x+33, y, 28, 12, -7, -7]
-    [ x+64, y, 19, 17, -6, -8]
-    [ x+86, y, 8, 22, -3, -8]
-    [ x+97, y, 19, 17, -15, -6]
-    [ x+119, y, 28, 12, -11, -6]
-    [ x+150, y, 19, 17, -8, -9]
 }
 
 template template_train32px(x,y){

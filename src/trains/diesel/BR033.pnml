@@ -7,75 +7,75 @@ spriteset(spriteset_BR33_1_Purchase, "gfx/BR33.png") {
 }
 
 spriteset(spriteset_BR33_0_BRGreen, "gfx/BR33.png") {
-	template_train28px3(175, 13)
+	template_train28px(175, 13)
 }
 
 spriteset(spriteset_BR33_0_BRGreenYellow, "gfx/BR33.png") {
-	template_train28px3(175, 36)
+	template_train28px(175, 36)
 }
 
 spriteset(spriteset_BR33_0_BRBlue, "gfx/BR33.png") {
-	template_train28px3(175, 59)
+	template_train28px(175, 59)
 }
 
 spriteset(spriteset_BR33_0_BRBlueHeadlight, "gfx/BR33.png") {
-	template_train28px3(175, 82)
+	template_train28px(175, 82)
 }
 
 spriteset(spriteset_BR33_0_NSE, "gfx/BR33.png") {
-	template_train28px3(175, 105)
+	template_train28px(175, 105)
 }
 
 spriteset(spriteset_BR33_0_Distribution, "gfx/BR33.png") {
-	template_train28px3(175, 151)
+	template_train28px(175, 151)
 }
 
 spriteset(spriteset_BR33_0_Construction, "gfx/BR33.png") {
-	template_train28px3(175, 174)
+	template_train28px(175, 174)
 }
 
 spriteset(spriteset_BR33_0_Engineers, "gfx/BR33.png") {
-	template_train28px3(175, 197)
+	template_train28px(175, 197)
 }
 
 spriteset(spriteset_BR33_0_Fragonset, "gfx/BR33.png") {
-	template_train28px3(175, 220)
+	template_train28px(175, 220)
 }
 
 spriteset(spriteset_BR33_0_EWS, "gfx/BR33.png") {
-	template_train28px3(175, 243)
+	template_train28px(175, 243)
 }
 
 spriteset(spriteset_BR33_0_DRS, "gfx/BR33.png") {
-	template_train28px3(175, 266)
+	template_train28px(175, 266)
 }
 
 spriteset(spriteset_BR33_0_WCRC, "gfx/BR33.png") {
-	template_train28px3(175, 289)
+	template_train28px(175, 289)
 }
 
 spriteset(spriteset_BR33_1_BRGreen, "gfx/BR33.png") {
-	template_train28px3(0, 13)
+	template_train28px(0, 13)
 }
 
 spriteset(spriteset_BR33_1_BRGreenYellow, "gfx/BR33.png") {
-	template_train28px3(0, 36)
+	template_train28px(0, 36)
 }
 
 spriteset(spriteset_BR33_1_BRBlue, "gfx/BR33.png") {
-	template_train28px3(0, 59)
+	template_train28px(0, 59)
 }
 
 spriteset(spriteset_BR33_1_BRBlueHeadlight, "gfx/BR33.png") {
-	template_train28px3(0, 82)
+	template_train28px(0, 82)
 }
 
 spriteset(spriteset_BR33_1_NSE, "gfx/BR33.png") {
-	template_train28px3(0, 105)
+	template_train28px(0, 105)
 }
 
 spriteset(spriteset_BR33_1_Fragonset, "gfx/BR33.png") {
-	template_train28px3(0, 220)
+	template_train28px(0, 220)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR33_0,cargo_subtype){
