@@ -365,15 +365,6 @@ switch(FEAT_TRAINS,SELF, sw_BR422_d,cargo_subtype){
 	2:	spriteset_BR421_d_NSE;
 }
 
-switch(FEAT_TRAINS,SELF, sw_mbs_xlse,cargo_subtype){
-    0:	spriteset_BR421_c_brg;
-    1:	spriteset_BR421_c_brbg;
-	2:	spriteset_BR421_c_NSE;
-	3:	spriteset_BR421_c_swt;
-	4:	spriteset_BR421_c_cnx;
-	5:	spriteset_BR421_c_stn;
-}
-
 switch(FEAT_TRAINS,SELF, sw_buf,cargo_subtype){
     0:	spriteset_Mk1_buf_brg;
     1:	spriteset_Mk1_buf_brbg;
@@ -490,12 +481,6 @@ switch(FEAT_TRAINS,SELF, sw_BR438_a,cargo_subtype){
     0:	spriteset_BR421_a_brbg;
 	1:	spriteset_BR421_a_NSE;
 }
-
-switch(FEAT_TRAINS,SELF, sw_BR438_d,cargo_subtype){
-    0:	spriteset_BR421_d_brbg;
-	1:	spriteset_BR421_d_NSE;
-}
-
 //Articulated switches
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR421, extra_callback_info1) {

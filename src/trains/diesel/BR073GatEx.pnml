@@ -32,16 +32,6 @@ switch(FEAT_TRAINS, PARENT, sw_rear_GatEx, vehicle_is_reversed){
 	1: spriteset_BR73GatEx_GatEx;
 }
 
-switch(FEAT_TRAINS, PARENT, sw_front_GatExl, vehicle_is_reversed){
-	0: 7;
-	1: 8;
-}
-
-switch(FEAT_TRAINS, PARENT, sw_rear_GatExl, vehicle_is_reversed){
-	0: 8;
-	1: 7;
-}
-
 switch(FEAT_TRAINS, PARENT, sw_488_sf, vehicle_is_reversed){
 	0: spriteset_BR488s_GatEx;
 	1: spriteset_BR488f_GatEx;
@@ -56,24 +46,8 @@ switch(FEAT_TRAINS,SELF, sw_BR73GatEx,cargo_subtype){
     0:	sw_front_GatEx;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR488sfGatEx,cargo_subtype){
-    0:	sw_488_sf;
-}
-
-switch(FEAT_TRAINS,SELF, sw_BR488fsGatEx,cargo_subtype){
-    0:	sw_488_fs;
-}
-
 switch(FEAT_TRAINS,SELF, sw_BR488sGatEx,cargo_subtype){
     0:	spriteset_BR488s_GatEx;
-}
-
-switch(FEAT_TRAINS,SELF, sw_BR488fGatEx,cargo_subtype){
-    0:	spriteset_BR488f_GatEx;
-}
-
-switch(FEAT_TRAINS,SELF, sw_GLVGatEx,cargo_subtype){
-    0:	sw_rear_GatEx;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR73GatEx, extra_callback_info1) {

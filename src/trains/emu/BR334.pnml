@@ -47,11 +47,6 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR341, extra_callback_info1) {
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_BR334, extra_callback_info1) {
-	1: return item_334c;
-    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
-}
-
 switch(FEAT_TRAINS,SELF,sw_BR334_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRCarmCream);
 	1:  return string(str_ScotrailSaltire);

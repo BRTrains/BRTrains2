@@ -1,20 +1,20 @@
 
-spriteset (spriteset_br755a, "gfx/br755.png") { 
+spriteset (spriteset_br755a, "gfx/BR755.png") { 
 	template_train28px(0,0)
  }
- spriteset (spriteset_br755b, "gfx/br755.png") { 
+ spriteset (spriteset_br755b, "gfx/BR755.png") { 
 	template_train28px(0,23)
  }
- spriteset (spriteset_br755c, "gfx/br755.png") { 
+ spriteset (spriteset_br755c, "gfx/BR755.png") { 
 	template_train24px(0,46)
  }
- spriteset (spriteset_br755d, "gfx/br755.png") { 
+ spriteset (spriteset_br755d, "gfx/BR755.png") { 
 	template_train24px(0,67)
  } 
-spriteset (spriteset_br755pp, "gfx/br755.png") { 
+spriteset (spriteset_br755pp, "gfx/BR755.png") { 
 	template_train20px(0,88)
  }
 
-spriteset (spriteset_br755_purchase, "gfx/br755.png") {
+spriteset (spriteset_br755_purchase, "gfx/BR755.png") {
 	template_purchase(160,0)
 }

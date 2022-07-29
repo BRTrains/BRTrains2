@@ -100,14 +100,14 @@ template template_train28px3(x,y){
 
 template template_train32px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12,			NOANIM|WHITE]
-    [ x+9, y, 21, 18, -13, -10,		NOANIM|WHITE]
-    [ x+31, y, 32, 12, -16, -8,		NOANIM|WHITE]
-    [ x+64, y, 21, 18, -5, -10,		NOANIM|WHITE]
-    [ x+86, y, 8, 24, -3, -12,		NOANIM|WHITE]
-    [ x+95, y, 21, 18, -13, -10,	NOANIM|WHITE]
-    [ x+117, y, 32, 12, -16, -8,	NOANIM|WHITE]
-    [ x+150, y, 21, 18, -5, -10,	NOANIM|WHITE]
+    [ x, y, 8, 24, -3, -12,			NOANIM]
+    [ x+9, y, 21, 18, -13, -10,		NOANIM]
+    [ x+31, y, 32, 12, -16, -8,		NOANIM]
+    [ x+64, y, 21, 18, -5, -10,		NOANIM]
+    [ x+86, y, 8, 24, -3, -12,		NOANIM]
+    [ x+95, y, 21, 18, -13, -10,	NOANIM]
+    [ x+117, y, 32, 12, -16, -8,	NOANIM]
+    [ x+150, y, 21, 18, -5, -10,	NOANIM]
 }
 
 template template_train32px_anim(x,y){
@@ -316,14 +316,6 @@ switch(FEAT_TRAINS,SELF,sw_20_sound,param_sounds){
 	1:	sw_20_sound_on;
 }
 
-switch(FEAT_TRAINS,SELF,sw_47_sound_on,getbits(extra_callback_info1, 0, 8)){
-	SOUND_EVENT_START: 			sound("sfx/br_horn47.wav");
-	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/47_run.wav");
-	SOUND_EVENT_STOPPED:		sound("sfx/deltic_stop.wav");
-	SOUND_EVENT_RUNNING_16:		sound("sfx/47_idle.wav");
-	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
-}
-
 switch(FEAT_TRAINS,SELF,sw_66_sound_on,getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_START: 			sound("sfx/br_horn66.wav");
 	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/66_run.wav");
@@ -335,14 +327,6 @@ switch(FEAT_TRAINS,SELF,sw_66_sound_on,getbits(extra_callback_info1, 0, 8)){
 switch(FEAT_TRAINS,SELF,sw_66_sound,param_sounds){
 	0:	sw_default_sound;
 	1:	sw_66_sound_on;
-}
-
-switch(FEAT_TRAINS,SELF,sw_gas_sound_on,getbits(extra_callback_info1, 0, 8)){
-	SOUND_EVENT_START: 			sound("sfx/br_horn1.wav");
-	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/turbot_run.wav");
-	SOUND_EVENT_STOPPED:		sound("sfx/turbot_stop.wav");
-	SOUND_EVENT_RUNNING_16:		sound("sfx/turbot_idle.wav");
-	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
 }
 
 switch(FEAT_TRAINS,SELF,sw_steam_sound_on,getbits(extra_callback_info1, 0, 8)){
@@ -357,43 +341,6 @@ switch(FEAT_TRAINS,SELF,sw_steam_sound_on,getbits(extra_callback_info1, 0, 8)){
 switch(FEAT_TRAINS,SELF,sw_steam_sound,param_sounds){
 	0:	sw_defaultsteam_sound;
 	1:	sw_steam_sound_on;
-}
-
-switch(FEAT_TRAINS,SELF,sw_LMS_sound_on,getbits(extra_callback_info1, 0, 8)){
-	SOUND_EVENT_TUNNEL:			sound("sfx/lms_hooter.wav");
-	SOUND_EVENT_START: 			sound("sfx/lms_hooter.wav");
-	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/qr_chuff_2.wav");
-	SOUND_EVENT_STOPPED:		sound("sfx/steam_idle.wav");
-	SOUND_EVENT_RUNNING_16:		sound("sfx/steam_run.wav");
-	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
-}
-
-switch(FEAT_TRAINS,SELF,sw_A4_sound_on,getbits(extra_callback_info1, 0, 8)){
-	SOUND_EVENT_TUNNEL:			sound("sfx/a4_whistle.wav");
-	SOUND_EVENT_START: 			sound("sfx/a4_whistle_short.wav");
-	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/qr_chuff_3.wav");
-	SOUND_EVENT_STOPPED:		sound("sfx/steam_idle.wav");
-	SOUND_EVENT_RUNNING_16:		sound("sfx/steam_run.wav");
-	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
-}
-
-switch(FEAT_TRAINS,SELF,sw_A4_sound,param_sounds){
-	0:	sw_defaultsteam_sound;
-	1:	sw_A4_sound_on;
-}
-
-switch(FEAT_TRAINS,SELF,sw_jinty_sound_on,getbits(extra_callback_info1, 0, 8)){
-	SOUND_EVENT_TUNNEL:			sound("sfx/jin_whistle.wav");
-	SOUND_EVENT_START: 			sound("sfx/jin_whistle.wav");
-	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/qr_chuff_4.wav");
-	SOUND_EVENT_STOPPED:		sound("sfx/steam_idle.wav");
-	SOUND_EVENT_RUNNING_16:		sound("sfx/steam_run.wav");
-	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
-}
-
-switch(FEAT_TRAINS,SELF,sw_jinty_sound,param_sounds){
-	0:	sw_defaultsteam_sound;
-	1:	sw_jinty_sound_on;
 }
 
 switch(FEAT_TRAINS,SELF,sw_ee_sound_on,getbits(extra_callback_info1, 0, 8)){

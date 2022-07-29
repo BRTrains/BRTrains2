@@ -27,10 +27,6 @@ switch(FEAT_TRAINS,SELF, sw_BR377_4c,cargo_subtype){
     0:	spriteset_BR377_4c_southern;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR377_4d,cargo_subtype){
-    0:	spriteset_BR377_4d_southern;
-}
-
 switch (FEAT_TRAINS, SELF, switch_articulated_BR377_4, extra_callback_info1) {
 	1: return item_BR377_4c;
 	2: return item_BR377_4c;

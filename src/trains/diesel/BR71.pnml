@@ -6,18 +6,12 @@ spriteset(spriteset_BR71_BRGreen, "gfx/BR71.png") {
 	template_train28px3(0, 13)
 }
 
-spriteset(spriteset_BR71_BRBlue, "gfx/BR71.png") {
-	template_train28px3(0, 36)
-}
-
 switch(FEAT_TRAINS,SELF, sw_BR71,cargo_subtype){
-    0:	spriteset_BR71_BRGreen;
-	1:	spriteset_BR71_BRBlue;
+    0:	spriteset_BR71_BRGreen;	
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR71_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_BRGreen);
-	1:	return string(str_BRBlue);
+    0:	return string(str_BRGreen);	
        return CB_RESULT_NO_TEXT;
 }
 
