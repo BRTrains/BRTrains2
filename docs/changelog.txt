@@ -210,6 +210,7 @@ LONDON UNDERGROUND
 
 345
 - Added unit from MUTS
+- Re-drawn (new model)
 
 350
 - Re-drawn (new model)
@@ -280,21 +281,29 @@ LONDON UNDERGROUND
 
 701
 - Added unit from MUTS
+- Re-drawn (new model)
 
 707
 - New unit
+
+710
+- Added unit from MUTS
+- Re-drawn (new model)
 
 717
 - New unit
 
 720
 - Added unit from MUTS
+- Re-drawn (new model)
 
 745
 - Added unit from MUTS
+- Re-drawn (new model)
 
 755
 - Added unit from MUTS
+- Re-drawn (new model)
 
 756
 - Added unit from MUTS
@@ -314,16 +323,20 @@ LONDON UNDERGROUND
 
 801
 - Added unit from MUTS
+- Re-drawn (new model)
 
 802
 - Added unit from MUTS
 - Improved GWR livery for consistency
+- Re-drawn (new model)
 
 805
 - Added unit from MUTS
+- Re-drawn (new model)
 
 807
 - Added unit from MUTS
+- Re-drawn (new model)
 
 LNER A1, LNER A3
 - Fixed some animation errors
