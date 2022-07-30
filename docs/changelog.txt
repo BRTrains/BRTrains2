@@ -2,12 +2,13 @@ Anything labelled as "Re-drawn (new model)" or "New Unit"
 should have most/all modern liveries, but I'm too lazy
 to add them all individually
 
-
 New build process based on MUTS
 
 Added a passenger capacity multiplier parameter
 .. So you can have huge games with a realistic number of trains
 .. I got bored of needing 8 car Sprinters
+
+Added a cost multiplier parameter, similar to the above. Allows for decreasing (1/2, 1/4) or increasing (2x, 4x) purchase cost and running cost
 
 Fixed various animation errors
 Fixed various alignment errors
