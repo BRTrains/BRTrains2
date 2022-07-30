@@ -54,7 +54,7 @@ grf {
 			def_value: 0;
 			names: {
 				0: string(STR_PARAM_COMPLEX);
-				1: string(STR_PARAM_SIMPLE);
+				1: string(STR_PARAM_SIMPLE);				
 			};
 		}
 	}
