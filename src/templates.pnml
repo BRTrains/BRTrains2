@@ -218,6 +218,13 @@ template template_purchase_anim(x,y){
     [x,     y,      87,     12,     -25,-   6,          ANIM|NOWHITE]
 }
 
+switch(FEAT_TRAINS, SELF, GetAdjustedCost, base, param_cost_factor) {
+  1: return base / 4;
+  2: return base / 2;
+  3: return base;
+  4: return base * 2;
+  5: return base * 4;
+}
 
 switch (FEAT_TRAINS, SELF, diesel_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_DIESEL, 0, 0, 10), 0x100)]) {
     return 1;

@@ -73,5 +73,35 @@ grf {
 			};
 		}
 	}
+	param 5 {
+			param_cost_factor{
+				name: string(STR_PARAM_NAME_COST_MULTIPLIER);
+				desc: string(STR_PARAM_DESC_COST_MULTIPLIER);
+				min_value: 1;
+				max_value: 5;
+				def_value: 3;
+				names: {
+					1: string(STR_PARAM_QUARTER);
+					2: string(STR_PARAM_HALF);
+					3: string(STR_PARAM_1X);
+					4: string(STR_PARAM_2X);										
+					5: string(STR_PARAM_4X);
+				};
+			}
+		}
+	param 6 {
+			param_2cc{
+				name: string(STR_PARAM_NAME_2CC);
+				desc: string(STR_PARAM_DESC_2CC);
+				min_value: 0;
+				max_value: 2;
+				def_value: 1;
+				names: {
+					0: string(STR_NO_2CC);
+					1: string(STR_USE_2CC);
+					2: string(STR_ONLY_2CC);
+				};
+			}
+	}
 }
 disable_item(FEAT_TRAINS);

@@ -1,8 +1,8 @@
 ﻿﻿##grflangid 0x01
 
 # GRF name and description
-STR_GRF_NAME							:zz BR Trains v2
-STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern UK Train Set (MUTS).{}{}{WHITE}UKTrains v2 {COPYRIGHT}2020 {LTBLUE}Audigex{WHITE}{}MUTS {COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{WHITE}{}UKTrains (v1) {COPYRIGHT}2015 {LTBLUE}Leander {WHITE}& {GREEN}BROS Artists{}{}{WHITE}License: {LTBLUE}GPL v2
+STR_GRF_NAME							:The British Rail Set (BRTrains)
+STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern UK Train Set (MUTS).{}{}{WHITE}The British Rail Set (BRTrains v2){COPYRIGHT}2020 {LTBLUE}Audigex{WHITE}{}MUTS {COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{WHITE}{}UKTrains (v1) {COPYRIGHT}2015 {LTBLUE}Leander {WHITE}& {GREEN}BROS Artists{}{}{WHITE}License: {LTBLUE}GPL v2
 
 
 # Parameters 
@@ -28,10 +28,23 @@ STR_PARAM_DEV_OFF				:Default mode
 
 STR_PARAM_NAME_PAX_MULTIPLIER  :Passenger Capacity Multiplier
 STR_PARAM_DESC_PAX_MULTIPLIER  :Increase passenger capacity to allow use of real-world train sizes with higher capacity routes
+
+STR_PARAM_NAME_COST_MULTIPLIER  :Purchase/Running Cost Multiplier
+STR_PARAM_DESC_COST_MULTIPLIER  :Increase or decrease purchase price and running costs, if you find they aren't balanced to your taste
+
+STR_PARAM_NAME_2CC              :Parameter not in use (yet)
+STR_PARAM_DESC_2CC              :Parameter reserved for future feature
+STR_NO_2CC                      :No
+STR_USE_2CC                     :Yes
+STR_ONLY_2CC                    :Only
+
+# Warning: these are used for multiple parameters, if you need to modify them, maybe add different strings?
 STR_PARAM_1X                    :1x (Default)
 STR_PARAM_2X                    :2x
 STR_PARAM_3X                    :3x
 STR_PARAM_4X                    :4x
+STR_PARAM_QUARTER              :1/4
+STR_PARAM_HALF                 :1/2
 
 # Vehicle names
 STR_BR_68_5A                            :British Rail Class 68 (Mark 5A) (4-Car)
