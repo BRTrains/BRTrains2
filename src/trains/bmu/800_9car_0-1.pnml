@@ -140,5 +140,7 @@ item(FEAT_TRAINS, item_BR800_9car, 460) {
 		power: switch_BR800_9car_power;
 		speed: switch_BR800_speed;
 		additional_text: string(STR_DSC_BR800);
+		cost_factor:	return(GetAdjustedCost(147));
+		running_cost_factor: return(GetAdjustedCost(90));	
 	}
 }

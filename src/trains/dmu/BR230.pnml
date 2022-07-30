@@ -125,6 +125,8 @@ item (FEAT_TRAINS, item_BR230_2CAR, 501) {
 	colour_mapping: 					return PALETTE_CC_FIRST;	
 	sound_effect:						sw_dmu_sound;
 	cargo_capacity: return(86 * param_pax);
+	cost_factor:	return(GetAdjustedCost(61));
+	running_cost_factor: return(GetAdjustedCost(37));
 }
 }
 
@@ -173,6 +175,8 @@ item (FEAT_TRAINS, item_BR230_3CAR, 502) {
 	colour_mapping: 					return PALETTE_CC_FIRST;	
 	sound_effect:						sw_dmu_sound;
 	cargo_capacity: return(86 * param_pax);
+	cost_factor:	return(GetAdjustedCost(22));
+	running_cost_factor: return(GetAdjustedCost(18));
 }
 }
 

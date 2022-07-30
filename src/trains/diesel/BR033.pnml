@@ -172,6 +172,8 @@ item (FEAT_TRAINS, item_BR33_0, 252) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_20_sound;
+	cost_factor:	return(GetAdjustedCost(31));
+	running_cost_factor: return(GetAdjustedCost(25));
 }
 }
 
@@ -220,5 +222,7 @@ item (FEAT_TRAINS, item_BR33_1, 253) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_20_sound;
+	cost_factor:	return(GetAdjustedCost(31));
+	running_cost_factor: return(GetAdjustedCost(25));
 }
 }

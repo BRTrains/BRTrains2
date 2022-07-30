@@ -103,5 +103,7 @@ item(FEAT_TRAINS, item_BR802_9car, 462) {
 		visual_effect_and_powered: switch_BR802_9car_particles;	
 		additional_text: string(STR_DSC_BR802_9CAR);	
 		cargo_capacity:						return(647/9 * param_pax);
+		cost_factor:	return(GetAdjustedCost(147));
+		running_cost_factor: return(GetAdjustedCost(90));	
 	}
 }

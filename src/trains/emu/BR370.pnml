@@ -82,6 +82,8 @@ item (FEAT_TRAINS, item_BR370, 125) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	speed:								sw_BR370_speed;
 	cargo_capacity: return(52 * param_pax);
+		 cost_factor:	return(GetAdjustedCost(133));
+	running_cost_factor: return(GetAdjustedCost(101));
 }
 }
 

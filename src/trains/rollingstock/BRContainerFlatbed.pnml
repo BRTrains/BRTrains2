@@ -109,5 +109,7 @@ item (FEAT_TRAINS, item_BRContainer, 465) {
 	purchase:							spriteset_BRContainer;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BRContainer_cargo_subtype_text;
+		cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }

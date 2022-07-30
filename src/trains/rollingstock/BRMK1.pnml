@@ -484,6 +484,9 @@ item (FEAT_TRAINS, item_BRMK1SO, 137) {
 	purchase:							spriteset_BRMK1SO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(48 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
+
 }
 }
 
@@ -517,6 +520,8 @@ item (FEAT_TRAINS, item_BRMK1FO, 138) {
 	purchase:							spriteset_BRMK1FO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(42 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -550,6 +555,8 @@ item (FEAT_TRAINS, item_BRMK1FK, 139) {
 	purchase:							spriteset_BRMK1FK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(42 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -583,6 +590,8 @@ item (FEAT_TRAINS, item_BRMK1CK, 140) {
 	purchase:							spriteset_BRMK1CK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(48 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -616,6 +625,8 @@ item (FEAT_TRAINS, item_BRMK1BSK, 141) {
 	purchase:							spriteset_BRMK1BSK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(32 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -649,6 +660,8 @@ item (FEAT_TRAINS, item_BRMK1BCK, 142) {
 	purchase:							spriteset_BRMK1BCK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(24 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -682,6 +695,8 @@ item (FEAT_TRAINS, item_BRMK1BFK, 143) {
 	purchase:							spriteset_BRMK1BFK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(24 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -715,6 +730,8 @@ item (FEAT_TRAINS, item_BRMK1BG, 144) {
 	purchase:							spriteset_BRMK1BG_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(10 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -747,7 +764,9 @@ item (FEAT_TRAINS, item_BRMK1RK, 145) {
 	default: 							sw_BRMK1RK;
 	cargo_capacity:						return 0;
 	purchase:							spriteset_BRMK1RK_Purchase;
-	colour_mapping: 					return PALETTE_CC_FIRST;	
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));	
 }
 }
 
@@ -781,6 +800,8 @@ item (FEAT_TRAINS, item_BRMK1RMB, 146) {
 	purchase:							spriteset_BRMK1RMB_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(44 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -813,6 +834,8 @@ item (FEAT_TRAINS, item_BRMK1SK, 147) {
 	purchase:							spriteset_BRMK1SK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(64 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -845,6 +868,8 @@ item (FEAT_TRAINS, item_BRMK1BSO, 148) {
 	purchase:							spriteset_BRMK1BSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(39 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -877,6 +902,8 @@ item (FEAT_TRAINS, item_BRMK1BSOT, 149) {
 	purchase:							spriteset_BRMK1BSOT_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(31 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
 
@@ -909,5 +936,7 @@ item (FEAT_TRAINS, item_BRMK1TSO, 150) {
 	purchase:							spriteset_BRMK1TSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(64 * param_pax);
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }

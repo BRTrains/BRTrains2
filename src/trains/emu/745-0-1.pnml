@@ -107,5 +107,7 @@ item(FEAT_TRAINS, item_br_745, 449) {
 				
 		cargo_capacity: switch_br_745_capacity;
 		additional_text: string(STR_DSC_BR_745);
+		cost_factor:	return(GetAdjustedCost(125));
+		running_cost_factor: return(GetAdjustedCost(100));
 	}
 }

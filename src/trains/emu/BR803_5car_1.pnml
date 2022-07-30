@@ -82,6 +82,9 @@ item(FEAT_TRAINS, item_BR803_5car, 547) {
 		can_attach_wagon: switch_BR803_5car_can_attach_wagon;
 		visual_effect_and_powered: switch_BR803_5car_particles;
 		additional_text: string(STR_DSC_BR803);	
-		cargo_capacity:						return(302/5 * param_pax);		
+		cargo_capacity:						return(302/5 * param_pax);	
+		cost_factor:	return(GetAdjustedCost(84));
+	running_cost_factor: return(GetAdjustedCost(60));
+	
 	}
 }

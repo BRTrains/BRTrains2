@@ -131,5 +131,7 @@ item (FEAT_TRAINS, item_BRTTA, 419) {
 	purchase:							spriteset_BRTTA;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BRTTA_cargo_subtype_text;
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }

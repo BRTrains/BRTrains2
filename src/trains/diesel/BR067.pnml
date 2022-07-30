@@ -108,5 +108,7 @@ item (FEAT_TRAINS, item_BR67, 151) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_66_sound;
+	cost_factor:	return(GetAdjustedCost(42));
+	running_cost_factor: return(GetAdjustedCost(39));
 }
 }

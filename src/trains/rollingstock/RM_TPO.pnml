@@ -58,5 +58,7 @@ item (FEAT_TRAINS, item_RMTPO, 483) {
 	purchase:							spriteset_RMTPO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(50);
+		cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }

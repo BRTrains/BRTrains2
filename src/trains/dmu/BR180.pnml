@@ -165,6 +165,8 @@ item (FEAT_TRAINS, item_BR180, 67) {
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_dmu_sound;
 	cargo_capacity:						return(55 * param_pax);
+	cost_factor:	return(GetAdjustedCost(92));
+	running_cost_factor: return(GetAdjustedCost(68));
 }
 }
 

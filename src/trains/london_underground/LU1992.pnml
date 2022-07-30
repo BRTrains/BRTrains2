@@ -101,6 +101,8 @@ item (FEAT_TRAINS, item_LU1992, 528) {
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(34 * param_pax);
+		cost_factor:	return(GetAdjustedCost(61));
+	running_cost_factor: return(GetAdjustedCost(37));
 }
 }
 
@@ -150,6 +152,8 @@ item (FEAT_TRAINS, item_LU1992_4, 546) {
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(34 * param_pax);
+		cost_factor:	return(GetAdjustedCost(61));
+	running_cost_factor: return(GetAdjustedCost(37));
 }
 }
 

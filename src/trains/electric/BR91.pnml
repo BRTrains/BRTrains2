@@ -131,6 +131,8 @@ item (FEAT_TRAINS, item_BR91, 108) {
 	purchase:							spriteset_BR91_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	speed:								sw_BR91_speed;    
+    cost_factor:	return(GetAdjustedCost(38));
+	running_cost_factor: return(GetAdjustedCost(37));
 }
 }
 

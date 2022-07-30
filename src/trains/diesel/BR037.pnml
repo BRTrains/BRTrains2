@@ -239,5 +239,7 @@ item (FEAT_TRAINS, item_BR37, 73) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_ee_sound;
+	cost_factor:	return(GetAdjustedCost(32));
+	running_cost_factor: return(GetAdjustedCost(30));
 }
 }

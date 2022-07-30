@@ -309,6 +309,9 @@ item (FEAT_TRAINS, item_BR4557, 268) {
 	create_effect:						electric_create_visual_effect_SAA3;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(74 * param_pax);
+	cost_factor:	return(GetAdjustedCost(54));
+	running_cost_factor: return(GetAdjustedCost(28));
+
 }
 }
 
@@ -358,6 +361,9 @@ item (FEAT_TRAINS, item_BR4558, 269) {
 	create_effect:						electric_create_visual_effect_SAA3;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(74 * param_pax);
+	cost_factor:	return(GetAdjustedCost(54));
+	running_cost_factor: return(GetAdjustedCost(29));
+
 }
 }
 
@@ -407,6 +413,9 @@ item (FEAT_TRAINS, item_BR4559, 270) {
 	create_effect:						electric_create_visual_effect_SAA3;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(74 * param_pax);
+	cost_factor:	return(GetAdjustedCost(54));
+	running_cost_factor: return(GetAdjustedCost(29));
+
 }
 }
 

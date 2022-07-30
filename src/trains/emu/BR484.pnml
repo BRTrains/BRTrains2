@@ -91,6 +91,9 @@ item (FEAT_TRAINS, item_BR484, 499) {
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(141 * param_pax);
 	speed:								sw_BR484_speed;
+	cost_factor:	return(GetAdjustedCost(61));
+	running_cost_factor: return(GetAdjustedCost(37));
+
 }
 }
 

@@ -80,5 +80,7 @@ item(FEAT_TRAINS, item_br_701_0, 428) {
 		can_attach_wagon: switch_br_701_0_can_attach_wagon;
 		visual_effect_and_powered: switch_br_701_0_particles;			
 		additional_text: string(STR_DSC_BR_701);	
+		cost_factor:	return(GetAdjustedCost(170));
+		running_cost_factor: return(GetAdjustedCost(100));
 	}
 }

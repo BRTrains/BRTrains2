@@ -110,6 +110,9 @@ item (FEAT_TRAINS, item_BR4580, 332) {
 	create_effect:						electric_create_visual_effect_SAA3;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(75 * param_pax);
+	cost_factor:	return(GetAdjustedCost(71));
+	running_cost_factor: return(GetAdjustedCost(43));
+
 }
 }
 

@@ -64,5 +64,7 @@ item (FEAT_TRAINS, item_BR70OG, 476) {
 	purchase:							spriteset_BR70OG_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
+	cost_factor:	return(GetAdjustedCost(45));
+	running_cost_factor: return(GetAdjustedCost(37));
 }
 }

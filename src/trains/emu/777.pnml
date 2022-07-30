@@ -80,5 +80,7 @@ item(FEAT_TRAINS, item_br_777, 450) {
 		visual_effect_and_powered: switch_br_777_particles;			
 		additional_text: string(STR_DSC_BR_777);	
 		cargo_capacity:						return(484/4 * param_pax);
+		cost_factor:	return(GetAdjustedCost(50));
+		running_cost_factor: return(GetAdjustedCost(40));
 	}
 }

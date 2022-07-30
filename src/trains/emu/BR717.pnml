@@ -88,6 +88,9 @@ item (FEAT_TRAINS, item_BR717, 518) {
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(56 * param_pax);
+	cost_factor:	return(GetAdjustedCost(123));
+	running_cost_factor: return(GetAdjustedCost(70));
+
 }
 }
 

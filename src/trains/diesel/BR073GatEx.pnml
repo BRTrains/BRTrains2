@@ -106,6 +106,8 @@ item (FEAT_TRAINS, item_BR73GatEx, 261) {
 	purchase:							spriteset_BR73GatEx_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
   cargo_capacity: return(192 * param_pax);
+  cost_factor:	return(GetAdjustedCost(88));
+	running_cost_factor: return(GetAdjustedCost(69));
 }
 }
 

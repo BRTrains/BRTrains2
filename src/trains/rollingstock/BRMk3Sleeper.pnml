@@ -73,7 +73,7 @@ item (FEAT_TRAINS, item_BRMk3Sleeper, 544) {
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					14;
 		cost_factor:					52;
-		running_cost_factor:			0;
+		running_cost_factor:			17;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		refit_cost:						0;
 		track_type:						RAIL;
@@ -100,5 +100,7 @@ item (FEAT_TRAINS, item_BRMk3Sleeper, 544) {
 	purchase:							spriteset_BRMk3Sleeper_purchase;
 	speed:								200;
 	cargo_capacity: return(26 * param_pax);
+	cost_factor:	return(GetAdjustedCost(52));
+	running_cost_factor: return(GetAdjustedCost(17));
 }
 }

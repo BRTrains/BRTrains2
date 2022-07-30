@@ -85,5 +85,7 @@ item(FEAT_TRAINS, item_br_397, 427) {
 				
 		cargo_capacity: return (286/5);
 		additional_text: string(STR_DSC_BR_397);
+		cost_factor:	return(GetAdjustedCost(76));
+		running_cost_factor: return(GetAdjustedCost(40));
 	}
 }

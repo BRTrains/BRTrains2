@@ -73,5 +73,7 @@ item (FEAT_TRAINS, item_LNERBG, 10) {
 	cargo_capacity:						return 0;
 	purchase:							spriteset_LNERBG_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;	
+		cost_factor:	return(GetAdjustedCost(19));
+	running_cost_factor: return(GetAdjustedCost(10));
 }
 }

@@ -140,6 +140,8 @@ item (FEAT_TRAINS, item_BR374, 88) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(40 * param_pax);
+		 cost_factor:	return(GetAdjustedCost(255));
+	running_cost_factor: return(GetAdjustedCost(255));
 }
 }
 

@@ -71,5 +71,7 @@ item (FEAT_TRAINS, item_BR89, 418) {
 	default: 							sw_BR89;
 	purchase:							spriteset_BR89_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
+	cost_factor:	return(GetAdjustedCost(38));
+	running_cost_factor: return(GetAdjustedCost(37));
 }
 }

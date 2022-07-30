@@ -141,5 +141,7 @@ item(FEAT_TRAINS, item_BR800_5car, 459) {
 				
 		cargo_capacity: switch_BR800_5car_capacity;
 		additional_text: string(STR_DSC_BR800);
+		cost_factor:	return(GetAdjustedCost(87));
+		running_cost_factor: return(GetAdjustedCost(60));	
 	}
 }

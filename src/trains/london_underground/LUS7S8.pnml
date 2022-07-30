@@ -86,6 +86,8 @@ item (FEAT_TRAINS, item_LULS7, 292) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(205 * param_pax);
+		cost_factor:	return(GetAdjustedCost(113));
+	running_cost_factor: return(GetAdjustedCost(45));
 }
 }
 
@@ -134,6 +136,8 @@ item (FEAT_TRAINS, item_LULS8, 293) {
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(205 * param_pax);
+		cost_factor:	return(GetAdjustedCost(125));
+	running_cost_factor: return(GetAdjustedCost(50));
 }
 }
 

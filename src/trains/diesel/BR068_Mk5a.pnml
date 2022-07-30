@@ -91,6 +91,8 @@ item(FEAT_TRAINS, item_br_68_5a, 442) {
 				
 		cargo_capacity: return (291/6 * param_pax);
 		additional_text: string(STR_DSC_BR_MK5A);	
+		cost_factor:	return(GetAdjustedCost(65));
+	running_cost_factor: return(GetAdjustedCost(100));
 		
 	}
 }

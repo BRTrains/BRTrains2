@@ -128,6 +128,8 @@ item (FEAT_TRAINS, item_LNERA3, 6) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
 	sound_effect:						sw_steam_sound;
+	cost_factor:	return(GetAdjustedCost(26));
+	running_cost_factor: return(GetAdjustedCost(30));
 }
 }
 

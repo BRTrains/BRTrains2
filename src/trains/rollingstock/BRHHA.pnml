@@ -178,5 +178,8 @@ item (FEAT_TRAINS, item_BRHHA, 324) {
 	purchase:							spriteset_BRHHA;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BRHHA_cargo_subtype_text;
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));
+
 }
 }

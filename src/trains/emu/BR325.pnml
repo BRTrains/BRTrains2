@@ -90,6 +90,8 @@ item (FEAT_TRAINS, item_BR325, 420) {
 	purchase:							spriteset_BR325_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_networker_sound;
+		 cost_factor:	return(GetAdjustedCost(56));
+	running_cost_factor: return(GetAdjustedCost(32));
 }
 }
 

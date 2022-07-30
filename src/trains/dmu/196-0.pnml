@@ -76,6 +76,7 @@ item(FEAT_TRAINS, item_br_196_0, 432) {
 		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 		cargo_capacity: return(124 / 2 * param_pax);		
 		additional_text: string(STR_DSC_BR_196);	
-		
+		cost_factor:	return(GetAdjustedCost(42));
+		running_cost_factor: return(GetAdjustedCost(25));
 	}
 }

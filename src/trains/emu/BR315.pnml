@@ -203,6 +203,8 @@ item (FEAT_TRAINS, item_BR315, 27) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_classic_emu_sound;
 	cargo_capacity:						return(74 * param_pax);
+		 cost_factor:	return(GetAdjustedCost(52));
+	running_cost_factor: return(GetAdjustedCost(26));
 }
 }
 
