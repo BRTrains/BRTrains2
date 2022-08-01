@@ -20,6 +20,7 @@ item (FEAT_TRAINS, item_BRMk5Sleeper, 545) {
 		name: 							string(STR_NAME_BRMk5Sleeper);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
+		introduction_date:				date(2016,1,1);
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					14;
 		cost_factor:					52;

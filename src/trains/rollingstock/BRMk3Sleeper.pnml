@@ -70,6 +70,7 @@ item (FEAT_TRAINS, item_BRMk3Sleeper, 544) {
 		name: 							string(STR_NAME_BRMk3Sleeper);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
+		introduction_date:				date(1982,1,1);
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					14;
 		cost_factor:					52;
