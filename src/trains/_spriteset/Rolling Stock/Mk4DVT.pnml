@@ -1,0 +1,41 @@
+spriteset(spriteset_BRMK4DVT_IntercitySwallow, "gfx/BR91.png") {
+	template_train32px(0, 113)
+}
+spriteset(spriteset_BRMK4DVT_IntercitySwallowr, "gfx/BR91.png") {
+	template_train32px(172, 113)
+}
+
+spriteset(spriteset_BRMK4DVT_NatEx, "gfx/BR91.png") {
+ template_train32px(0, 238)
+}
+spriteset(spriteset_BRMK4DVT_NatExr, "gfx/BR91.png") {
+ template_train32px(172, 238)
+}
+
+spriteset(spriteset_BRMK4DVT_GNER, "gfx/BR91.png") {
+ template_train32px(0, 363)
+}
+spriteset(spriteset_BRMK4DVT_GNERr, "gfx/BR91.png") {
+ template_train32px(172, 363)
+}
+
+spriteset(spriteset_BRMK4DVT_EastCoast, "gfx/BR91.png") {
+ template_train32px(0, 488)
+}
+spriteset(spriteset_BRMK4DVT_EastCoastr, "gfx/BR91.png") {
+ template_train32px(172, 488)
+}
+
+spriteset(spriteset_BRMK4DVT_VirginEC, "gfx/BR91.png") {
+ template_train32px(0, 613)
+}
+spriteset(spriteset_BRMK4DVT_VirginECr, "gfx/BR91.png") {
+ template_train32px(172, 613)
+}
+
+spriteset(spriteset_BRMK4DVT_LNER, "gfx/BR91.png") {
+ template_train32px(0, 738)
+}
+spriteset(spriteset_BRMK4DVT_LNERr, "gfx/BR91.png") {
+ template_train32px(172, 738)
+}
