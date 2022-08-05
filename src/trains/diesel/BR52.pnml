@@ -1,0 +1,73 @@
+spriteset(spriteset_BR52_Purchase, "gfx/BR52.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR52_BRBlue, "gfx/BR52.png") {
+	template_train28px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR52,cargo_subtype){    
+    // 0 Desert Sands, 1 Maroon, 2 Blue, 3 Green
+	0:	spriteset_BR52_BRBlue;
+	1:	spriteset_BR52_BRBlue;
+	2:	spriteset_BR52_BRBlue;
+	3:	spriteset_BR52_BRBlue;
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR52_cargo_subtype_text,cargo_subtype){
+	0:	return string(str_BRBlue);
+	1:	return string(str_BRBlue);
+    2:	return string(str_BRBlue);
+	3:	return string(str_BRBlue);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR52, 548) {
+	property {
+		name: 							string(STR_NAME_BR52);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1961,1,1);
+		model_life:						19;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				6;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					41;
+		running_cost_factor:			43;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1350 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							108 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.355;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_7),string(str_BR52_usage),string(str_BR52_eos),string(str_BR52_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR52_cargo_subtype_text;
+	default: 							sw_BR52;
+	purchase:							spriteset_BR52_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_deltic_sound;
+	cost_factor:	return(GetAdjustedCost(38));
+	running_cost_factor: return(GetAdjustedCost(37));
+}
+}

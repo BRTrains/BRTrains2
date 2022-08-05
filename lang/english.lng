@@ -38,6 +38,9 @@ STR_NO_2CC                      :No
 STR_USE_2CC                     :Yes
 STR_ONLY_2CC                    :Only
 
+STR_Error_MUTSBRTrains          :You have BRTrains (v1) or the Modern UK Trainset loaded, they have been deactivated by the British Rail Set (BRSet), which is a development of these sets
+STR_Error_RUKTS                 :You appear to have both the 'British Rail Set (BRSet)' and 'Representative UK Trainset (RUKTS)'  activated. This won't break anything, but it will probably be confusing. Consider disabling one of these sets for an optimal experience
+
 # Warning: these are used for multiple parameters, if you need to modify them, maybe add different strings?
 STR_PARAM_1X                    :1x (Default)
 STR_PARAM_2X                    :2x
@@ -234,6 +237,11 @@ STR_NAME_BR47					:British Rail Class 47
 str_BR47_usage					:Mixed Traffic
 str_BR47_eos					:---
 str_BR47_liveries				:BR Green, BR Blue, BR Large Logo, BR Large Logo (Alternate), Porterbrook, EWS, Anglia, InterCity, West Coast, GWR Green, Virgin, Colas Rail, ONE, Freightliner
+
+STR_NAME_BR52					:British Rail Class 52
+str_BR52_usage					:Mixed Traffic
+str_BR52_eos					:---
+str_BR52_liveries				:BR Desert Sand, BR Maroon, BR Green, BR Blue
 
 STR_NAME_BR55					:British Rail Class 55 'Deltic'
 str_BR55_usage					:Express Passenger
