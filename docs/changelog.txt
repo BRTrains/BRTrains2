@@ -1,10 +1,14 @@
+# v2.3
+- Added Class 52
+- Added Class 41/252 (HST Prototype)
+
 # v2.2
 
 - BR350/444/450 - Tidied up cab a little, improved diagonal view cab windows
 - BR91/Mk4/IC225 sets - Added LNER Modified Intercity Swallow livery, tidied up spritesets
 - Mk3/Mk5 - Fixed sleeper coaches being available from year 0
 - Mk3 DVT - improved graphics (unit not yet in game)
-- Moved some old graphis to archive
+- Moved some old graphics to archive
 
 ## v2.1
 
