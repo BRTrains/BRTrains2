@@ -488,6 +488,10 @@ str_BR230_eos					:---
 str_BR230_2CAR_liveries			:London North Western Railway
 str_BR230_3CAR_liveries			:Transport for Wales
 
+STR_NAME_BR252					:British Rail Class 41 'HST Prototype'
+str_BR252_usage					:Express Passenger
+str_BR252_eos					:---
+str_BR252_liveries				:BR Blue
 
 STR_NAME_BR253					:British Rail Class 43 'HST'
 str_BR253_usage					:Express Passenger
