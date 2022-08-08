@@ -40,7 +40,7 @@ item (FEAT_TRAINS, item_LUCStock, 540) {
 	property {
 		name: 							string(STR_NAME_LUCStock);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1978,4,21);
+		introduction_date:				date(1970,4,21);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;

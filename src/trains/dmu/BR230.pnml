@@ -184,7 +184,7 @@ item (FEAT_TRAINS, item_BR230_2b, 503) {
 	property {
 		name: 							string(STR_NAME_BR230);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1989,1,1);
+		introduction_date:				date(2019,1,1);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -228,7 +228,7 @@ item (FEAT_TRAINS, item_BR230_3b, 504) {
 	property {
 		name: 							string(STR_NAME_BR230);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1989,1,1);
+		introduction_date:				date(2019,1,1);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;

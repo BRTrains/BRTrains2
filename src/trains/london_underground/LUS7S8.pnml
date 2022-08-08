@@ -145,7 +145,7 @@ item (FEAT_TRAINS, item_LULSb, 294) {
 	property {
 		name: 							string(STR_NAME_LULS7);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(2002,4,21);
+		introduction_date:				date(2010,4,21);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -188,7 +188,7 @@ item (FEAT_TRAINS, item_LULSc, 295) {
 	property {
 		name: 							string(STR_NAME_LULS7);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(2002,4,21);
+		introduction_date:				date(2010,4,21);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;

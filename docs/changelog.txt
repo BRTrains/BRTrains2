@@ -5,6 +5,7 @@
 - Fixed Class 70 (OG Southern Region) and 71 purchase sprites
 - Fixed LNER coach Maroon and Carmine/Cream livery spritesheets
 - Added Blue Pullman
+- Fixed some introductory dates
 
 # v2.2
 

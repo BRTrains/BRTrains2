@@ -58,7 +58,7 @@ item (FEAT_TRAINS, item_BR121, 469) {
 	property {
 		name: 							string(STR_NAME_BR121);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1991,4,21);
+		introduction_date:				date(1960,4,21);
 		model_life:						8;
 		retire_early:					1;
 		vehicle_life:					50;
