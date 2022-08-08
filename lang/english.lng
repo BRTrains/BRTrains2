@@ -178,6 +178,11 @@ str_DR98_9_usage				:Deparmental Railway
 str_DR98_9_eos					:---
 str_DR98_9_liveries				:Network Rail, Railtrack, South West Trains
 
+STR_NAME_LNWRWebb				:LNWR 0-6-2 Webb Coal Tank
+str_LNWRWebb_usage				:Low speed freight
+str_LNWRWebb_eos				:1988
+str_LNWRWebb_liveries			:LNWR Black, BR Black
+
 STR_NAME_GreatBear					:GWR 4-6-2 "Great Bear"
 str_GreatBear_usage					:Express Passenger
 str_GreatBear_eos					:1908
@@ -1249,6 +1254,7 @@ str_LNER                        : (LNER Red/White)
 str_LNERCorridorTender			: (LNER Green Corridor Tender)
 str_LNERGreen					: (LNER Green)
 str_LNWR					    : (London Northwestern Railway)
+str_LNWRBlack					    : (LNWR - Black)
 str_LNWRSimple				    : (London Northwestern Railway - Transitional)
 str_Loadhaul					: (Loadhaul)
 str_LoadhaulGrey				: (Loadhaul Grey)
