@@ -1,0 +1,68 @@
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_BluePullman_6Car_spriteset, position_in_articulated_veh % 6) {
+	0: switch_BluePullmana;
+	2: switch_BluePullmanb;
+	switch_BluePullmanc;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_BluePullman_6Car_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..5: return item_BluePullman_6Car;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Class 197/1 (3car)
+item(FEAT_TRAINS, item_BluePullman_6Car, 552) {
+	property {
+		name: string(STR_NAME_BluePullman_6Car);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(1960, 09, 12);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 25; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 60;
+		loading_speed: 25;
+		running_cost_factor: 33;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 90 mph;
+		power: 2000 hp;
+		cargo_capacity: (132/6);
+		weight: 299 ton; 
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: RAIL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_DIESEL;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 8; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_BluePullman_6Car_spriteset;
+		purchase: spriteset_BluePullman_Purchase;
+		cargo_subtype_text:					sw_BluePullman_cargo_subtype_text;
+		articulated_part: switch_BluePullman_6Car_articulated;
+		start_stop: switch_BluePullman_start_stop;	
+		can_attach_wagon: switch_BluePullman_can_attach_wagon;
+		visual_effect_and_powered: switch_BluePullman_particles;
+		cargo_capacity: return (204/3 * param_pax);				
+		cost_factor:	return(GetAdjustedCost(60));
+		running_cost_factor: return(GetAdjustedCost(33));
+				
+	}
+}

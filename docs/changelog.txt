@@ -4,6 +4,7 @@
 - Fixed Class 70 (OG Southern Region) and 71 descriptions saying diesel despite being electric
 - Fixed Class 70 (OG Southern Region) and 71 purchase sprites
 - Fixed LNER coach Maroon and Carmine/Cream livery spritesheets
+- Added Blue Pullman
 
 # v2.2
 

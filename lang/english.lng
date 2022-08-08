@@ -203,6 +203,12 @@ str_LNERA3_usage				:Express Passenger
 str_LNERA3_eos					:1959-1966
 str_LNERA3_liveries				:LNER Green, BR Wartime Black, BR Apple Green, BR Brunswick Green
 
+STR_NAME_BluePullman_6Car		:British Rail 'Blue Pullman' (6 car)
+STR_NAME_BluePullman_8Car		:British Rail 'Blue Pullman' (8 car)
+str_BluePullman_usage			:Express Passenger
+str_BluePullman_eos		    	:---
+str_BluePullman_liveries		:Blue Pullman, Blue Pullman (Warning Panels), BR Grey and Blue
+
 STR_NAME_BR08					:British Rail Class 08 'Gronk'
 str_BR08_usage					:Shunting
 str_BR08_eos					:---
@@ -1129,6 +1135,7 @@ str_BRGreenCentre				: (BR Green - Centre Headcode)
 str_BRGreenSplit				: (BR Green - Split Box)
 str_BRGreenYellow				: (BR Green - Yellow Front)
 str_BRGrey						: (BR General Grey)
+str_BRGreyBlue					: (BR Grey and Blue)
 str_BRLLogo				        : (BR Large Logo)
 str_BRLLogoAlt  				: (BR Large Logo - Alternate)
 str_BRLLogoCentre				: (BR Large Logo - Centre Headcode)
@@ -1300,6 +1307,7 @@ str_overground5					: (LO - 5-Car Celebration)
 str_Police						: (Police (Advert))
 str_Purple						: (Potterbrook Purple)
 str_Pullman                     : (Blue Pullman)
+str_PullmanPanels               : (Blue Pullman - Warning Panels)
 str_PullmanBrown                : (Brown Pullman)
 str_Random                      : (Random)
 str_Railtrack					: (Railtrack)
