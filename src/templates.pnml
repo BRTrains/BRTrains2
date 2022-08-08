@@ -1,5 +1,3 @@
-// Train sprite templates
-
 // Train sprite template
 template tmpl_train_8(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
@@ -13,12 +11,7 @@ template tmpl_train_8(x, y) {
 	[x + 182, y + 2, 21,	18,		-12,	-12] //nw
 }
 
-
-
-// BRTRAINS
-
-
-template template_train20px(x,y){
+template template_train20px(x,y){ // Clone to 4view when changed
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 18, -3, -11]
     [ x+9, y, 15, 15, -7, -10]
@@ -28,6 +21,18 @@ template template_train20px(x,y){
     [ x+71, y, 15, 15, -13, -7]
     [ x+87, y, 20, 12, -16, -8]
     [ x+108, y, 15, 15, -5, -10]
+}
+// THIS VIEW IS 8 FROM 4, IT REPEATS THE SECOND SET FOR OFFSET PURPOSES
+template template_train20px_4view(x,y){ // Clone to 8view when changed
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 18, -3, -11]
+    [ x+9, y, 15, 15, -7, -10]
+    [ x+25, y, 20, 12, -4, -8]
+    [ x+46, y, 15, 15, 1, -7]
+    [ x, y, 8, 17, -3, -5]
+    [ x+9, y, 15, 15, -13, -7]
+    [ x+25, y, 20, 12, -16, -8]
+    [ x+46, y, 15, 15, -5, -10]
 }
 
 template template_train20px_anim(x,y){

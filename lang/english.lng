@@ -861,6 +861,11 @@ str_BR800_usage					:Regional Passenger
 str_BR800_eos					:---
 str_BR800_liveries				:Hatachi, GWR
 
+STR_NAME_RS_SWB_Hopper			:Standard Medium Hopper
+str_RS_SWB_Hopper_usage			:Bulk Cargos
+str_RS_SWB_Hopper_eos			:---
+str_RS_SWB_Hopper_liveries		:Grey, Brown
+
 STR_NAME_BRHHA					:British Rail HHA Wagon
 str_BRHHA_usage					:Bulk Cargos
 str_BRHHA_eos					:---
@@ -1151,6 +1156,7 @@ str_BRPrototype					: (BR Prototype)
 str_BRProvincial                : (BR Provincial)
 str_BRRefurb                    : (BR Refurbished)
 str_BRTest						: (BR Track Test Train)
+str_Brown                : (Brown)
 str_Brunswick					: (BR Brunswick Green)
 str_BSS							: (British Steel)
 str_C2C							: (C2C)
@@ -1231,6 +1237,7 @@ str_GNER						: (Great North Eastern Railway)
 str_GreaterAnglia               : (Greater Anglia)
 str_GreatNorthern               : (Govia Great Northern)
 str_GreatWestern                : (Great Western)
+str_Grey                        : (Grey)
 str_GRFTest1				    : (GRF Test Livery)
 str_GRFTest2					: (GRF Test Livery)
 str_GTR							: (Govia Thameslink)
