@@ -1,7 +1,7 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_BluePullman_8Car_spriteset, position_in_articulated_veh % 6) {
+switch(FEAT_TRAINS, SELF, switch_BluePullman_8Car_spriteset, position_in_articulated_veh % 8) {
 	0: switch_BluePullmana;
-	2: switch_BluePullmanb;
+	7: switch_BluePullmanb;
 	switch_BluePullmanc;
 }
 
@@ -9,7 +9,7 @@ switch(FEAT_TRAINS, SELF, switch_BluePullman_8Car_spriteset, position_in_articul
 switch(FEAT_TRAINS, SELF, switch_BluePullman_8Car_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..5: return item_BluePullman_8Car;
+	1..7: return item_BluePullman_8Car;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 

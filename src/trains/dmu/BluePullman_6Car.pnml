@@ -1,7 +1,7 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BluePullman_6Car_spriteset, position_in_articulated_veh % 6) {
 	0: switch_BluePullmana;
-	2: switch_BluePullmanb;
+	5: switch_BluePullmanb;
 	switch_BluePullmanc;
 }
 
