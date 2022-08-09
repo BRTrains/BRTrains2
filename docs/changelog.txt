@@ -1,7 +1,9 @@
 # v2.3
+- Added LNWR 0-6-2 "Webb Coal Tank"
 - Added Blue Pullman
 - Added Class 52
 - Added Class 41/252 (HST Prototype)
+- Added a small-medium hopper wagon
 - Fixed Class 70 (OG Southern Region) and 71 descriptions saying diesel despite being electric
 - Fixed Class 70 (OG Southern Region) and 71 purchase sprites
 - Fixed LNER coach Maroon and Carmine/Cream livery spritesheets
