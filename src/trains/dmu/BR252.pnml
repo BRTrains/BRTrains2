@@ -39,7 +39,7 @@ item (FEAT_TRAINS, item_BR252, 549) {
 	property {
 		name: 							string(STR_NAME_BR252);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1972,1,1);
+		introduction_date:				date(1971,1,1);
 		model_life:						8;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -47,8 +47,8 @@ item (FEAT_TRAINS, item_BR252, 549) {
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					14;
-		cost_factor:					117;
-		running_cost_factor:			92;
+		cost_factor:					45;
+		running_cost_factor:			55;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							125 mph;
 		misc_flags:						TRAIN_FLAG_MU;
