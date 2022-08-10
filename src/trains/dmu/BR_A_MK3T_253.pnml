@@ -1,0 +1,227 @@
+item (FEAT_TRAINS, item_253_BRMK3TF, 13) {
+	property {
+		name: 							string(STR_NAME_BRMK3TF);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		power:							0;
+		speed:							125 mph;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					48;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TF;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TF_purchase;
+	speed:								200;
+	cargo_capacity: return(48 * param_pax);
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TS, 14) {
+	property {
+		name: 							string(STR_NAME_BRMK3TS);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		power:							0;
+		speed:							125 mph;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					72;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TS;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TS_purchase;
+	speed:								200;
+	cargo_capacity: return(72 * param_pax);
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TGS, 15) {
+	property {
+		name: 							string(STR_NAME_BRMK3TGS);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		power:							0;
+		speed:							125 mph;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					59;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TGS;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TGS_purchase;
+	speed:								200;
+	cargo_capacity: return(59 * param_pax);
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TRSB, 16) {
+	property {
+		name: 							string(STR_NAME_BRMK3TRSB);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		speed:							125 mph;
+		power:							0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					34;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TRSB;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TRSB_purchase;
+	speed:								200;
+	cargo_capacity: return(34 * param_pax);
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TRUB, 17) {
+	property {
+		name: 							string(STR_NAME_BRMK3TRUB);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		speed:							125 mph;
+		power:							0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					34;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TRUB;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TRUB_purchase;
+	speed:								200;
+	cargo_capacity: return(34 * param_pax);
+}
+}
+
+item (FEAT_TRAINS, item_253_BRMK3TRUK, 18) {
+	property {
+		name: 							string(STR_NAME_BRMK3TRUK);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					52;
+		running_cost_factor:			0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		speed:							125 mph;
+		power:							0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					34;
+		weight:							0;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_253_BRMK3TRUK;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	purchase:							spriteset_BRMK3TRUK_purchase;
+	speed:								200;
+	cargo_capacity: return(34 * param_pax);
+}
+}
