@@ -33,7 +33,7 @@ item (FEAT_TRAINS, item_BR71, 477) {
 		speed:							75 mph;
 		misc_flags:						TRAIN_FLAG_FLIP;
 		refit_cost:						0;
-		track_type:						RAIL;
+		track_type:						ELRL;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							2252 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
