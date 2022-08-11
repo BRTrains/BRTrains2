@@ -100,7 +100,7 @@ item (FEAT_TRAINS, item_LU1992, 528) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
-	cargo_capacity: return(34 * param_pax);
+	cargo_capacity: return(141 * param_pax);
 		cost_factor:	return(GetAdjustedCost(61));
 	running_cost_factor: return(GetAdjustedCost(37));
 }
@@ -151,7 +151,7 @@ item (FEAT_TRAINS, item_LU1992_4, 546) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
-	cargo_capacity: return(34 * param_pax);
+	cargo_capacity: return(141 * param_pax);
 		cost_factor:	return(GetAdjustedCost(61));
 	running_cost_factor: return(GetAdjustedCost(37));
 }
@@ -197,7 +197,7 @@ item (FEAT_TRAINS, item_LU1992b, 529) {
 	default: 							sw_LU1992b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
-	cargo_capacity: return(34 * param_pax);
+	cargo_capacity: return(141 * param_pax);
 }
 }
 
@@ -241,6 +241,6 @@ item (FEAT_TRAINS, item_LU1992c, 530) {
 	default: 							sw_LU1992c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
-	cargo_capacity: return(34 * param_pax);
+	cargo_capacity: return(141 * param_pax);
 }
 }
