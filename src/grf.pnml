@@ -3,7 +3,7 @@ grf {
 	grfid: "brv2"; // BRTrains v2, based on BRTrains, BROS, and the Modern UK Trains set (addon to BRTrains)
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	version: 2;
+	version: 3;
 	min_compatible_version: 1; //bump up this number to version when breaking compatibility
 	param 0 {
 		param_max_speed {

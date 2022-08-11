@@ -5,7 +5,8 @@
 - Added Class 41/252 (HST Prototype)
 - Added a small-medium hopper wagon
 - Fixed Class 70 (OG Southern Region) and 71 descriptions saying diesel despite being electric
-- Fixed Class 70 (OG Southern Region) and 71 purchase sprites
+- Fixed Class 70OG, 71, and 90 being purchaseable from Diesel depots despite being electric
+- Fixed Class 70OG and 71 purchase sprites
 - Fixed LNER coach Maroon and Carmine/Cream livery spritesheets
 - Fixed some introductory dates
 
