@@ -249,6 +249,11 @@ str_BR47_usage					:Mixed Traffic
 str_BR47_eos					:---
 str_BR47_liveries				:BR Green, BR Blue, BR Large Logo, BR Large Logo (Alternate), Porterbrook, EWS, Anglia, InterCity, West Coast, GWR Green, Virgin, Colas Rail, ONE, Freightliner
 
+STR_NAME_Kestrel				:HS4000 'Kestrel' (Type 5 Prototype)
+str_Kestrel_usage				:Mixed Traffic
+str_Kestrel_eos					:---
+str_Kestrel_liveries			:Kestrel Black and Yellow
+
 STR_NAME_BR52					:British Rail Class 52
 str_BR52_usage					:Mixed Traffic
 str_BR52_eos					:---
@@ -1257,6 +1262,7 @@ str_Inter7City                  : (Inter7City - Scotrail)
 str_Intercity					: (Intercity)
 str_IntercityExecutive			: (Intercity Executive)
 str_IntercitySwallow			: (Intercity Swallow)
+str_Kestrel                     : (Kestrel Prototype - Yellow and Black)
 str_LNER                        : (LNER Red/White)
 str_LNERCorridorTender			: (LNER Green Corridor Tender)
 str_LNERGreen					: (LNER Green)
