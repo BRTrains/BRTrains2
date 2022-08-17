@@ -1,3 +1,12 @@
+# v2.4
+- Added Kestrel Type 5 Prototype
+- Modified BR68 + Mk5 rake to use the new BR68 model
+- Reworked BR33 (wrong scale)
+- Fixed BR230 description to DEMU instead of EMU
+- Minor graphical fix for BR455 (BR Blue livery)
+BREAKING CHANGES INCLUDED
+- Changed BR33 length
+
 # v2.3
 - Added LNWR 0-6-2 "Webb Coal Tank"
 - Added Blue Pullman
