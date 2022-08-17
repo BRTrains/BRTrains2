@@ -4,10 +4,11 @@
 - Reworked BR33 (wrong scale)
 - Fixed BR230 description to DEMU instead of EMU
 - Minor graphical fix for BR455 (BR Blue livery)
+- Added missing BR89 pantographs
 BREAKING CHANGES INCLUDED
 - Changed BR33 length
 
-# v2.3
+# v2.3 (11/07/22)
 - Added LNWR 0-6-2 "Webb Coal Tank"
 - Added Blue Pullman
 - Added Class 52
@@ -19,7 +20,7 @@ BREAKING CHANGES INCLUDED
 - Fixed LNER coach Maroon and Carmine/Cream livery spritesheets
 - Fixed some introductory dates
 
-# v2.2
+# v2.2 (02/08/22)
 
 - BR350/444/450 - Tidied up cab a little, improved diagonal view cab windows
 - BR91/Mk4/IC225 sets - Added LNER Modified Intercity Swallow livery, tidied up spritesets
@@ -27,12 +28,12 @@ BREAKING CHANGES INCLUDED
 - Mk3 DVT - improved graphics (unit not yet in game)
 - Moved some old graphics to archive
 
-## v2.1
+## v2.1 (30/07/22)
 
 - BR720 - Added C2C livery
 - Fixed GRF name for BaNaNaS and GRF List
 
-# v2 - First full release under the British Rail Set (BRSet) name
+# v2 - First full release under the British Rail Set (BRSet) name (30/07/22)
 
 
 Anything labelled as "Re-drawn (new model)" or "New Unit"
