@@ -116,7 +116,7 @@ item (FEAT_TRAINS, item_BR230_2CAR, 501) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR230_usage),string(str_BR230_eos),string(str_BR230_2CAR_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_demu),string(str_route_2),string(str_BR230_usage),string(str_BR230_eos),string(str_BR230_2CAR_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR230_2car_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR230_2car;
@@ -166,7 +166,7 @@ item (FEAT_TRAINS, item_BR230_3CAR, 502) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR230_usage),string(str_BR230_eos),string(str_BR230_3CAR_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_demu),string(str_route_2),string(str_BR230_usage),string(str_BR230_eos),string(str_BR230_3CAR_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR230_3car_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR230_3car;
