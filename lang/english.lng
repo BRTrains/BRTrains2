@@ -319,6 +319,52 @@ str_BR89_usage					:Express Passenger
 str_BR89_eos					:---
 str_BR89_liveries				:Intercity Swallow, GNER, Intercity
 
+
+STR_NAME_18100					:18100 (Gas Turbine Prototype)
+str_18100_usage					:Mixed Traffic
+str_18100_eos		    		:---
+str_18100_liveries				:BR Black
+
+STR_NAME_BR80					:British Rail Class 80 (25kV Prototype)
+str_BR80_usage					:Mixed Traffic
+str_BR80_eos		    		:---
+str_BR80_liveries				:BR Black
+
+STR_NAME_BR81					:British Rail Class 81 'AL1'
+str_BR81_usage					:Mixed Traffic
+str_BR81_eos	    			:---
+str_BR81_liveries				:BR Blue
+
+STR_NAME_BR82					:British Rail Class 82 'AL2'
+str_BR82_usage					:Mixed Traffic
+str_BR82_eos	    			:---
+str_BR82_liveries				:BR Blue, Intercity Executive
+
+STR_NAME_BR83					:British Rail Class 83 'AL3'
+str_BR83_usage					:Mixed Traffic
+str_BR83_eos		    		:---
+str_BR83_liveries				:BR Blue
+
+STR_NAME_BR84					:British Rail Class 84 'AL4'
+str_BR84_usage					:Mixed Traffic
+str_BR84_eos		    		:---
+str_BR84_liveries				:BR Blue
+
+STR_NAME_BR85					:British Rail Class 85 'AL5'
+str_BR85_usage					:Mixed Traffic
+str_BR85_eos		    			:---
+str_BR85_liveries				:BR Blue
+
+STR_NAME_BR86					:British Rail Class 86 'AL6'
+str_BR86_usage					:Mixed Traffic
+str_BR86_eos					:---
+str_BR86_liveries				:BR Blue, Intercity Executive, Rail Express, EWS, Railfraight Distribution, Rail Express Systems
+
+STR_NAME_BR87					:British Rail Class 87
+str_BR87_usage					:Mixed Traffic
+str_BR87_eos					:---
+str_BR87_liveries				:BR Blue, Intercity Swallow, Virgin
+
 STR_NAME_BR90					:British Rail Class 90
 str_BR90_usage					:Mixed Traffic
 str_BR90_eos					:---

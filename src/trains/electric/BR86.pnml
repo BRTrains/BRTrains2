@@ -1,0 +1,94 @@
+spriteset(spriteset_BR86_Purchase, "gfx/electric/BR8X.png") {
+	template_purchase(176, 39)
+}
+
+spriteset(spriteset_BR86_BRBlue, "gfx/electric/BR8X.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR86_IntercityExecutive, "gfx/electric/BR8X.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR86_IntercitySwallow, "gfx/electric/BR8X.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR86_RailfreightDistribution, "gfx/electric/BR8X.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR86_RailExpress, "gfx/electric/BR8X.png") {
+	template_train32px(0, 188)
+}
+
+spriteset(spriteset_BR86_EWS, "gfx/electric/BR8X.png") {
+	template_train32px(0, 163)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR86, cargo_subtype){
+    0:	spriteset_BR86_BRBlue;
+	1:	spriteset_BR86_IntercityExecutive;
+	2:	spriteset_BR86_IntercitySwallow;
+	3: 	spriteset_BR86_RailfreightDistribution;
+	4: 	spriteset_BR86_RailExpress;
+	5: 	spriteset_BR86_EWS;
+        return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR86_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRBlue);	
+	1:	return string(str_IntercityExecutive);
+    2:	return string(str_IntercitySwallow);
+	3:	return string(str_RFDistribution);
+	4:	return string(str_REX);	
+	5:	return string(str_EWSRed);	
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR86, 566) {
+	property {
+		name: 							string(STR_NAME_BR86);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1973,1,1);
+		model_life:						30;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					40;
+		running_cost_factor:			40;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						0;
+		track_type:						ELRL;	
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							4000 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							81 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_route_7),string(str_BR86_usage),string(str_BR86_eos),string(str_BR86_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR86_cargo_subtype_text;
+	default: 							sw_BR86;
+	purchase:							spriteset_BR86_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cost_factor:	return(GetAdjustedCost(40));
+	running_cost_factor: return(GetAdjustedCost(40));
+}
+}
