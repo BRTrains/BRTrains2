@@ -1,12 +1,16 @@
 # v2.4
 - Added Kestrel Type 5 Prototype
 - Modified BR68 + Mk5 rake to use the new BR68 model
-- Reworked BR33 (wrong scale)
+?- Reworked BR33 (wrong scale)
 - Fixed BR230 description to DEMU instead of EMU
 - Minor graphical fix for BR455 (BR Blue livery)
-- Added missing BR89 pantographs
+- Added missing Class 89 pantographs
+- Added 18100 (Class 80 gas turbine variant)
+- Added Class 80 (Prototype 25kV electric)
+- Added Class 81-86 (AL1-AL6)
+- Added Class 87
 BREAKING CHANGES INCLUDED
-- Changed BR33 length
+?- Changed BR33 length
 
 # v2.3 (11/07/22)
 - Added LNWR 0-6-2 "Webb Coal Tank"
