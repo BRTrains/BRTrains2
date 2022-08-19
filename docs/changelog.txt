@@ -9,6 +9,9 @@
 - Added Class 80 (Prototype 25kV electric)
 - Added Class 81-86 (AL1-AL6)
 - Added Class 87
+- Fixed 170 Greater Anglia livery middle car using end car Graphics
+- Added 170 Northern Livery (3 car only)
+
 BREAKING CHANGES INCLUDED
 ?- Changed BR33 length
 
