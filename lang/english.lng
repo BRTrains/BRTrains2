@@ -718,7 +718,7 @@ str_BR390_usage					:Express Passenger
 str_BR390_eos					:---
 str_BR390_liveries				:Virgin Trains
 
-STR_NAME_BR395					:British Rail Class 395 'Javelin' (5-car)
+STR_NAME_BR395					:British Rail Class 395 'Javelin' (6-car, Dual Voltage)
 str_BR395_usage					:Passenger
 str_BR395_eos					:---
 str_BR395_liveries				:Southeastern
