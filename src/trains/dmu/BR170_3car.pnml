@@ -48,7 +48,7 @@ switch(FEAT_TRAINS,SELF, sw_BR170c,cargo_subtype){
 	6:	spriteset_BR170c_WMR;
 	7:	spriteset_BR170c_EMRMaroon;
 	8:	spriteset_BR170c_GreaterAnglia; // TfW, the livery is identical at this scale
-	8:	spriteset_BR170c_Northern; // 3 car only
+	9:	spriteset_BR170c_Northern; // 3 car only
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR170_3car, extra_callback_info1) {
