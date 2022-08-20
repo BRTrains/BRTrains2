@@ -9,6 +9,7 @@ BREAKING CHANGES INCLUDED
 - Minor graphical fix for BR455 (BR Blue livery)
 - Added missing Class 89 pantographs
 - Added 18100 (Class 80 gas turbine variant)
+- Improved Class 55 shading
 - Added Class 80 (Prototype 25kV electric)
 - Added Class 81-86 (AL1-AL6)
 - Added Class 87
