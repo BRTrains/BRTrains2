@@ -724,6 +724,7 @@ str_BR395_eos					:---
 str_BR395_liveries				:Southeastern
 
 STR_NAME_BR373					:British Rail Class 373/1 'Three Capitals'
+STR_NAME_BR373Dual              :British Rail Class 373 'Three Capitals' (Dual Voltage)
 str_BR373_usage					:International Passenger
 str_BR373_eos					:---
 str_BR373_liveries				:Eurostar

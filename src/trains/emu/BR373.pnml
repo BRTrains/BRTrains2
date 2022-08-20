@@ -192,11 +192,76 @@ switch(FEAT_TRAINS,SELF,sw_BR373_2_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR373DV_power, current_railtype) {	
+	ELRL: return 100;
+	railtype("BR_3RDR"): return 4600;	
+	return 16410;
+}
+
+switch(FEAT_TRAINS,SELF,switch_BR373DV_speed, current_railtype){
+	railtype("BR_3RDR"): return 160;	
+	return 300;	
+}
+
+
 item (FEAT_TRAINS, item_BR373, 80) {
+	property {
+		name: 							string(STR_NAME_BR373Dual);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1993,4,21);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					243;
+		running_cost_factor:			207;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							300 km/h;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDC;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							16400 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					50;
+		weight:							752 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.05;
+		air_drag_coefficient:			0.03;
+		length:							7;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR373_usage),string(str_BR373_eos),string(str_BR373_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR373_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR373;
+	default: 							sw_BR373;
+	purchase:							spriteset_BR373_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_electric_sound;
+	cargo_capacity:						return(50 * param_pax);
+	cost_factor:						return(GetAdjustedCost(243));
+	running_cost_factor: 				return(GetAdjustedCost(207));
+	speed:								switch_BR373DV_speed;
+	power: 								switch_BR373DV_power;
+}
+}
+
+item (FEAT_TRAINS, item_BR373_25kv, 557) {
 	property {
 		name: 							string(STR_NAME_BR373);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1993,4,21);
+		introduction_date:				date(2007,4,21);
 		model_life:						8;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -238,7 +303,7 @@ item (FEAT_TRAINS, item_BR373, 80) {
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(50 * param_pax);
-		 cost_factor:	return(GetAdjustedCost(243));
+	cost_factor:	return(GetAdjustedCost(243));
 	running_cost_factor: return(GetAdjustedCost(207));
 }
 }
