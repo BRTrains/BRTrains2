@@ -192,15 +192,14 @@ switch(FEAT_TRAINS,SELF,sw_BR373_2_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-switch(FEAT_TRAINS, SELF, switch_BR373DV_power, current_railtype) {	
-	ELRL: return 100;
-	railtype("BR_3RDR"): return 4600;	
-	return 16410;
+switch(FEAT_TRAINS, SELF, switch_BR373DV_power, tile_powers_railtype("ELRL")) {	
+	1: return 16410;
+	return 4600;
 }
 
-switch(FEAT_TRAINS,SELF,switch_BR373DV_speed, current_railtype){
-	railtype("BR_3RDR"): return 160;	
-	return 300;	
+switch(FEAT_TRAINS,SELF,switch_BR373DV_speed, tile_powers_railtype("ELRL")){
+	1: return 300;
+	return 160;	
 }
 
 
