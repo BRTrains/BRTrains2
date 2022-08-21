@@ -13,8 +13,8 @@ sort(FEAT_TRAINS, [
  item_BR252,  //Actually Class 41, which is why it's here
  item_BR253,  //Actually Class 43, which is why it's here
  item_BR47,
- item_Kestrel,
  item_BR52,
+ item_Kestrel,
  item_BR55,
  item_BR57,
  item_BR60,
@@ -25,6 +25,7 @@ sort(FEAT_TRAINS, [
  item_BR70OG,
  item_BR70,
  item_BR71,
+ item_BR73GatEx,
  item_18100,
  item_BR80,
  item_BR81,
@@ -182,8 +183,7 @@ sort(FEAT_TRAINS, [
  item_BR801_9car,
  item_BR802_5car,
  item_BR802_9car,
- item_BR803_5car,
- item_BR73GatEx,
+ item_BR803_5car, 
  item_DR98_9,   
  item_LU1938,
  item_LUAStock,

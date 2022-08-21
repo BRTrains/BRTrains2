@@ -79,11 +79,11 @@ STR_BR_720_5                            :British Rail Class 720/5 'Aventra' (5-C
 
 STR_BR_745                              :British Rail Class 745/0/1 (12-Car)
 STR_BR_745test                          :GRF TEST UNIT
-STR_BR_755_3CAR                         :British Rail Class 755/3 (3-Car with PP)
-STR_BR_755_4CAR                         :British Rail Class 755/4 (4-Car with PP)
+STR_BR_755_3CAR                         :British Rail Class 755/3 (3-Car with Power Pack)
+STR_BR_755_4CAR                         :British Rail Class 755/4 (4-Car with Power Pack)
 
-STR_BR_756_3CAR                         :British Rail Class 756/3 (3-Car with PP)
-STR_BR_756_4CAR                         :British Rail Class 756/4 (4-Car with PP)
+STR_BR_756_3CAR                         :British Rail Class 756/3 (3-Car with Power Pack)
+STR_BR_756_4CAR                         :British Rail Class 756/4 (4-Car with Power Pack)
 
 STR_BR_769                              :British Rail Class 769/0/3/4 'Flex' (4-Car)
 STR_BR_769_9                            :British Rail Class 769/9 'Flex' (4-Car)
@@ -642,72 +642,72 @@ str_BR370_usage					:Express Passenger
 str_BR370_eos					:1986
 str_BR370_liveries				:Intercity
 
-STR_NAME_BR375_3				:British Rail Class 375 (3-Car)
+STR_NAME_BR375_3				:British Rail Class 375 'Electrostar' (3-Car)
 str_BR375_3_usage				:Suburban Passenger
 str_BR375_3_eos					:---
 str_BR375_3_liveries				:Southeastern Blue, Southeastern Blue Stripe, Southeastern Yellow, Southeastern Yellow Stripe, Southeastern Blue Refurbished
 
-STR_NAME_BR375_4				:British Rail Class 375 (4-Car)
+STR_NAME_BR375_4				:British Rail Class 375 'Electrostar' (4-Car)
 str_BR375_4_usage				:Suburban Passenger
 str_BR375_4_eos					:---
 str_BR375_4_liveries			:Connex, Southeastern Blue, Southeastern Blue Stripe, Southeastern Yellow, Southeastern Yellow Stripe, Southeastern Blue Refurbished, Southeastern Tunbridge Wells, Govia Tunbridge Wells
 
-STR_NAME_BR376					:British Rail Class 376
+STR_NAME_BR376					:British Rail Class 376 'Electrostar'
 str_BR376_usage					:Urban Passenger
 str_BR376_eos					:---
 str_BR376_liveries				:Southeastern Yellow
 
-STR_NAME_BR377_3				:British Rail Class 377/3 (3-Car)
+STR_NAME_BR377_3				:British Rail Class 377/3 'Electrostar' (3-Car)
 str_BR377_3_usage				:Urban Passenger
 str_BR377_3_eos					:---
 str_BR377_3_liveries			:Southern
 
-STR_NAME_BR377_4				:British Rail Class 377/1/4 (4-Car)
+STR_NAME_BR377_4				:British Rail Class 377/1/4 'Electrostar' (4-Car)
 str_BR377_4_usage				:Regional Passenger
 str_BR377_4_eos					:---
 str_BR377_4_liveries			:Southern
 
-STR_NAME_BR377_4_dv				:British Rail Class 377/2/5 (4-Car, Dual Voltage)
+STR_NAME_BR377_4_dv				:British Rail Class 377/2/5 'Electrostar' (4-Car, Dual Voltage)
 str_BR377_4_dv_usage				:Regional Passenger
 str_BR377_4_dv_eos				:---
 str_BR377_4_dv_liveries			:Southern, First Capital Connect, Thameslink (Ex-First Capital Connect)
 
-STR_NAME_BR377_5				:British Rail Class 377/6 (5-Car)
+STR_NAME_BR377_5				:British Rail Class 377/6 'Electrostar' (5-Car)
 str_BR377_5_usage				:Regional Passenger
 str_BR377_5_eos					:---
 str_BR377_5_liveries			:Southern
 
-STR_NAME_BR377_5dv				:British Rail Class 377/7 (5-Car, Dual Voltage)
+STR_NAME_BR377_5dv				:British Rail Class 377/7 'Electrostar' (5-Car, Dual Voltage)
 str_BR377_5dv_usage				:Regional Passenger
 str_BR377_5dv_eos				:---
 str_BR377_5dv_liveries			:Southern
 
-STR_NAME_BR378				:British Rail Class 378
-STR_NAME_BR378_3				:British Rail Class 378/0 (3-Car, Dual Voltage)
+STR_NAME_BR378				:British Rail Class 378 'Electrostar' (4-car)
+STR_NAME_BR378_3				:British Rail Class 378/0 'Electrostar' (5-Car, Dual Voltage)
 str_BR378_3_usage				:Urban Passenger
 str_BR378_3_eos					:---
 str_BR378_3_liveries			:London Overground
 
-STR_NAME_BR378_4				:British Rail Class 378/2 (4-Car, Dual Voltage)
+STR_NAME_BR378_4				:British Rail Class 378/2 'Electrostar' (4-Car, Dual Voltage)
 str_BR378_4_usage				:Urban Passenger
 str_BR378_4_eos					:---
 str_BR378_4_liveries			:London Overground
 
-STR_NAME_BR378_5				:British Rail Class 378/2 (5-Car, Dual Voltage)
+STR_NAME_BR378_5				:British Rail Class 378/2 'Electrostar' (5-Car, Dual Voltage)
 str_BR378_5_usage				:Urban Passenger
 str_BR378_5_eos					:---
 str_BR378_5_liveries			:London Overground, London Overground 5 Car Celebration
 
-STR_NAME_BR378_4dc				:British Rail Class 378/1 (4-Car)
+STR_NAME_BR378_4dc				:British Rail Class 378/1 'Electrostar' (4-Car)
 
-STR_NAME_BR378_5dc				:British Rail Class 378/1 (5-Car)
+STR_NAME_BR378_5dc				:British Rail Class 378/1 'Electrostar' (5-Car)
 
-STR_NAME_BR379					:British Rail Class 379
+STR_NAME_BR379					:British Rail Class 379 'Electrostar'
 str_BR379_usage					:Long Distance Passenger
 str_BR379_eos					:---
 str_BR379_liveries				:Greater Anglia White
 
-STR_NAME_BR387_					:British Rail Class 387 (4-Car, Dual Voltage)
+STR_NAME_BR387_					:British Rail Class 387 'Electrostar' (4-Car, Dual Voltage)
 str_BR387__usage					:Regional Passenger
 str_BR387__eos					:---
 str_BR387__liveries				:Govia Thameslink, Gatwick Express (Branded & Unbranded), GWR Green (Brended & Unbranded), c2c
@@ -813,7 +813,7 @@ str_BR438_4_usage				:Push-Pull Haulage
 str_BR438_4_eos					:1990
 str_BR438_4_liveries			:BR Blue Grey, Network SouthEast
 
-STR_NAME_BR442					:British Rail Class 442 'Wessex Electrics'
+STR_NAME_BR442					:British Rail Class 442 'Wessex Electric'
 str_BR442_usage					:Fast Passenger
 str_BR442_eos					:---
 str_BR442_liveries				:Network South East, Stagecoach South West Trains, South West Trains, South West Trains (Refurbished), Gatwick Express, Trasnsitional 
