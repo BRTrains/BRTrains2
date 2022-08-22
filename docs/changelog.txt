@@ -5,6 +5,8 @@ BREAKING CHANGES INCLUDED
 # v2.5
 - Added Dual Voltage Class 373
 - Disambiguated 745/755 (FLIRT) from 720 (Aventra) on diagonal views
+- Added Greater Anglia liveries to Class 153 + 156
+- Added BR Black livery for Class 37
 - Added Aventra cab windows on side view
 - Fixed BR170 Northern livery missing middle car sprite
 - Fixed some names, added some nicknames to units
