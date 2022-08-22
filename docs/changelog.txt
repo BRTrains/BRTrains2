@@ -4,7 +4,10 @@ BREAKING CHANGES INCLUDED
 
 # v2.5
 - Added Dual Voltage Class 373
+- Disambiguated 745/755 (FLIRT) from 720 (Aventra) on diagonal views
+- Added Aventra cab windows on side view
 - Fixed BR170 Northern livery missing middle car sprite
+- Fixed some names, added some nicknames to units
 
 # v2.4 (20/08/22)
 - Added Kestrel Type 5 Prototype
