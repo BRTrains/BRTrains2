@@ -126,6 +126,10 @@ spriteset(spriteset_BR37_Police, "gfx/BR37.png") {
 	template_train32px(0, 763)
 }
 
+spriteset(spriteset_BR37_BRBlack, "gfx/BR37.png") {
+	template_train32px(0, 788)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR37,cargo_subtype){
 	0:	spriteset_BR37_BRGreen;
     1:	spriteset_BR37_BRGreenCentre;
@@ -158,6 +162,7 @@ switch(FEAT_TRAINS,SELF, sw_BR37,cargo_subtype){
 	28: spriteset_BR37_Colas;
 	29: spriteset_BR37_BangerBlue;
 	30: spriteset_BR37_Police;
+	31: spriteset_BR37_BRBlack;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR37_cargo_subtype_text,cargo_subtype){
@@ -192,6 +197,7 @@ switch(FEAT_TRAINS,SELF,sw_BR37_cargo_subtype_text,cargo_subtype){
 	28: return string(str_ColasRail);
 	29: return string(str_BangerBlue_Stripe);
 	30: return string(str_Police);
+	31: return string(str_BRBlack);
        return CB_RESULT_NO_TEXT;
 }
 
