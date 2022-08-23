@@ -2,8 +2,8 @@ spriteset(spriteset_BR373_Purchase, "gfx/BR373.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR373_2_Purchase, "gfx/BR373_GNER.png") {
-	template_purchase(0, 0)
+spriteset(spriteset_BR373_2_Purchase, "gfx/BR373.png") {
+	template_purchase(88, 0)
 }
 
 spriteset(spriteset_BR373_Eurostar, "gfx/BR373.png") {
