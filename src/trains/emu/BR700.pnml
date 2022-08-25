@@ -15,20 +15,37 @@ spriteset(spriteset_BR700d_GTR, "gfx/BR700_v2.png") {
 	template_train32px(0, 125)
 }
 
+spriteset(spriteset_BR700a_GTRPride, "gfx/BR700_v2.png") {
+	template_train32px(0, 400)
+}
+spriteset(spriteset_BR700b_GTRPride, "gfx/BR700_v2.png") {
+	template_train32px(0, 475)
+}
+spriteset(spriteset_BR700c_GTRPride, "gfx/BR700_v2.png") {
+	template_train32px(0, 450)
+}
+spriteset(spriteset_BR700d_GTRPride, "gfx/BR700_v2.png") {
+	template_train32px(0, 425)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR700a,cargo_subtype){    
-	0:	spriteset_BR700a_GTR;	
+	0:	spriteset_BR700a_GTR;
+	1:	spriteset_BR700a_GTRPride;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR700b,cargo_subtype){
 	0:	spriteset_BR700b_GTR;
+	1:	spriteset_BR700b_GTRPride;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR700c,cargo_subtype){
-	0:	spriteset_BR700c_GTR;	
+	0:	spriteset_BR700c_GTR;
+	1:	spriteset_BR700c_GTRPride;	
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR700d,cargo_subtype){
-	0:	spriteset_BR700d_GTR;	
+	0:	spriteset_BR700d_GTR;
+	1:	spriteset_BR700d_GTRPride;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR700, extra_callback_info1) {	
@@ -47,6 +64,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR700_2, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR700_cargo_subtype_text,cargo_subtype){
     0:	return string(str_GTR);
+	1:	return string(str_GTRPride);
        return CB_RESULT_NO_TEXT;
 }
 
