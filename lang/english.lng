@@ -1117,7 +1117,7 @@ str_LUCStock_usage				:Metro
 str_LUCStock_eos				:---
 str_LUCStock_liveries			:London Underground
 
-STR_NAME_LUDStock				:London Underground D78 Stock (6-car)
+STR_NAME_LUDStock				:London Underground D78 Stock (3-car)
 str_LUDStock_usage				:Metro
 str_LUDStock_eos				:---
 str_LUDStock_liveries			:London Underground
