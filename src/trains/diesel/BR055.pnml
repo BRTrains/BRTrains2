@@ -3,15 +3,15 @@ spriteset(spriteset_BR55_Purchase, "gfx/BR55.png") {
 }
 
 spriteset(spriteset_BR55_BRGreen, "gfx/BR55.png") {
-	template_train55(0, 13)
+	template_train32px(0, 13)
 }
 
 spriteset(spriteset_BR55_BRGreenYellow, "gfx/BR55.png") {
-	template_train55(0, 63)
+	template_train32px(0, 63)
 }
 
 spriteset(spriteset_BR55_BRBlue, "gfx/BR55.png") {
-	template_train55(0, 88)
+	template_train32px(0, 88)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR55,cargo_subtype){
