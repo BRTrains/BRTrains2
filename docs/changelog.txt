@@ -11,6 +11,7 @@ BREAKING CHANGES INCLUDED
 - Added Aventra cab windows on side view
 - Fixed BR170 Northern livery missing middle car sprite
 - Fixed some names, added some nicknames to units
+- Fixed Deltic alignment
 
 # v2.4 (20/08/22)
 - Added Kestrel Type 5 Prototype
