@@ -3,6 +3,7 @@ BREAKING CHANGES INCLUDED
 ?- Changed BR33 length
 
 # v2.5
+- Added APT-E
 - Added Dual Voltage Class 373
 - Disambiguated 745/755 (FLIRT) from 720 (Aventra) on diagonal views
 - Added Pride livery for Class 390 and 700
