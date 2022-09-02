@@ -637,7 +637,13 @@ str_BR357_usage					:Surburban Passenger
 str_BR357_eos					:---
 str_BR357_liveries				:C2C, C2C Blue, C2C Eco
 
-STR_NAME_BR370					:British Rail Class 370 'APT'
+
+STR_NAME_APTE					:British Rail 'APT-E' Prototype
+str_APTE_usage			        :Express Passenger
+str_APTE_eos					:1972
+str_APTE_liveries				:Intercity
+
+STR_NAME_BR370					:British Rail Class 370 'APT-P' Prototype
 str_BR370_usage					:Express Passenger
 str_BR370_eos					:1986
 str_BR370_liveries				:Intercity
