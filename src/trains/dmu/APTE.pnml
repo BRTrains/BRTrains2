@@ -52,7 +52,7 @@ item (FEAT_TRAINS, item_APTE, 568) {
 		cost_factor:					90;
 		running_cost_factor:			85;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							143 mph;
+		speed:							152 mph;
 		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
@@ -103,7 +103,7 @@ item (FEAT_TRAINS, APTEb, 569) {
 		cost_factor:					1;
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							143 mph;
+		speed:							152 mph;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						RAIL;
@@ -148,7 +148,7 @@ item (FEAT_TRAINS, APTEc, 570) {
 		cost_factor:					1;
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							143 mph;
+		speed:							152 mph;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						RAIL;
