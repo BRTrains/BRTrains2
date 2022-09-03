@@ -161,6 +161,7 @@ str_purchase_type_dmu			:{RED}Diesel Multiple Unit
 str_purchase_type_demu			:{RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit
 str_purchase_type_emu			:{BLUE}Electric Multiple Unit
 str_purchase_type_electric		:{BLUE}Electric Locomotive
+str_purchase_type_gtu  		:{ORANGE}Gas Turbine Experimental Unit
 
 str_route_1						:RA1 (<13 tonne Axle Load)
 str_route_2						:RA2 (<15.5 tonne Axle Load)
