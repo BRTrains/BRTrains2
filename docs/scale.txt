@@ -1,0 +1,9 @@
+Size            MU car length       Locomotive car length
+32px 8/8        24m+                 ~21m+ (Class 55/66/68)
+28px 7/8        ~20-21m              ~18-20m (Class 37/86)
+24px 6/8        ~18m                 ~16-17m (Class 23)
+20px 5/8        ~15m                 ~15m (Class 08)
+16px 4/8        ~12m                 ~12m
+12px 3/8        ~9m                  ~9m
+8px  2/8        ~6m                  ~6m
+4px  1/8        ~3m                  ~3m
