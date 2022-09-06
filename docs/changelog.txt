@@ -1,18 +1,18 @@
-?- Reworked BR33 (wrong scale)
-BREAKING CHANGES INCLUDED
-?- Changed BR33 length
+TO INCLUDE FOR v2.5
+Re-work Mk2 coach
 
 # v2.5
 - Added APT-E
-- Added Dual Voltage Class 373
+- Added Dual Voltage version of Class 373
 - Disambiguated 745/755 (FLIRT) from 720 (Aventra) on diagonal views
 - Added Pride livery for Class 390 and 700
 - Added Greater Anglia liveries to Class 153 + 156
 - Added BR Black livery for Class 37
+- Added Northern "Tour of Yorkshire" livery for Class 158
 - Added Aventra cab windows on side view
 - Fixed BR170 Northern livery missing middle car sprite
 - Fixed some names, added some nicknames to units
-- Fixed Deltic alignment
+- Fixed Class 55 (Deltic) alignment
 
 # v2.4 (20/08/22)
 - Added Kestrel Type 5 Prototype
