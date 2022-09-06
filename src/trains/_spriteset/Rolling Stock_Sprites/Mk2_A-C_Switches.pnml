@@ -1,0 +1,33 @@
+
+switch(FEAT_TRAINS,SELF, sw_BRMK2ATSO,cargo_subtype){
+    0:	spriteset_BRMK2ATSOBRBlue;
+	1:	spriteset_BRMK2ATSONSE;
+	2:	spriteset_BRMK2ATSORegionalRailways;
+	3:	spriteset_BRMK2ATSOScotRail;
+	4:  spriteset_BRMK2ATSOWCRC;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK2AFO,cargo_subtype){
+    0:	spriteset_BRMK2AFOBRBlue;
+	1:	spriteset_BRMK2AFONSE;
+	2:	spriteset_BRMK2AFORegionalRailways;
+	3:	spriteset_BRMK2AFOScotRail;
+	4:  spriteset_BRMK2AFOWCRC;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMK2ABSO,cargo_subtype){
+    0:	spriteset_BRMK2ABSOBRBlue;
+	1:	spriteset_BRMK2ABSONSE;
+	2:	spriteset_BRMK2ABSORegionalRailways;
+	3:	spriteset_BRMK2ABSOScotRail;
+	4:  spriteset_BRMK2ABSOWCRC;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BRMK2A_cargo_subtype_text,cargo_subtype){
+    0: return string(str_BRBlue);
+    1: return string(str_NSE);
+	2: return string(str_Regional);
+	3: return string(str_ScotRail);
+	4: return string(str_WCRC);
+       return CB_RESULT_NO_TEXT;
+}

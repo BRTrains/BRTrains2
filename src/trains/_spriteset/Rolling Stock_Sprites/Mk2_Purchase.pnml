@@ -1,0 +1,27 @@
+spriteset(spriteset_BRMK2ATSO_Purchase, "gfx/BRMK2Purchase.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BRMK2AFO_Purchase, "gfx/BRMK2Purchase.png") {
+	template_purchase(0, 13)
+}
+
+spriteset(spriteset_BRMK2ABSO_Purchase, "gfx/BRMK2Purchase.png") {
+	template_purchase(0, 26)
+}
+
+spriteset(spriteset_BRMK2DTSO_Purchase, "gfx/BRMK2Purchase.png") {
+	template_purchase(0, 39)
+}
+
+spriteset(spriteset_BRMK2DFO_Purchase, "gfx/BRMK2Purchase.png") {
+	template_purchase(0, 52)
+}
+
+spriteset(spriteset_BRMK2DBSO_Purchase, "gfx/BRMK2Purchase.png") {
+	template_purchase(0, 65)
+}
+
+spriteset(spriteset_BRMK2DDBSO_Purchase, "gfx/BRMK2Purchase.png") {
+	template_purchase(0, 78)
+}
