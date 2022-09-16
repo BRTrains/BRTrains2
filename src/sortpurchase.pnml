@@ -86,6 +86,7 @@ sort(FEAT_TRAINS, [
  item_BR222_1,
  item_BR230_2CAR,
  item_BR230_3CAR,
+ item_IE2800,
  item_BR302,
  item_BR305_1,
  item_BR305_2,

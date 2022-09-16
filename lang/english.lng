@@ -1156,6 +1156,9 @@ str_LU2009_usage				:Metro
 str_LU2009_eos					:---
 str_LU2009_liveries				:London Underground
 
+STR_IE2800_2CAR                 :Irish Railways 2800 Class
+STR_DSC_IE2800                  :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Commuter Green, Commuter Gold, Intercity
+
 STR_NAME_LNERBCK				:LNER Gresley Coach (Brake Composite Corridor)
 str_LNERBCK_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream	
 STR_NAME_RoyalBFK				:British Royal Train (Brake First Corridor)
