@@ -74,7 +74,7 @@ item (FEAT_TRAINS, item_GreatBear, 484) {
 }
 }
 
-item (FEAT_TRAINS, item_GreatBearT, 5) {
+item (FEAT_TRAINS, item_GreatBearT, 558) {
 	property {
 		name: 							string(STR_NAME_GreatBear);
 		climates_available: 			NO_CLIMATE;
