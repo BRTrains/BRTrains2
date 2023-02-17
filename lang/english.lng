@@ -5,6 +5,9 @@ STR_GRF_NAME							:British Rail Set (BRTrains v2)
 STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern UK Train Set (MUTS).{}{}{WHITE}The British Rail Set (BRTrains v2){COPYRIGHT}2020 {LTBLUE}Audigex{WHITE}{}MUTS {COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{WHITE}{}UKTrains (v1) {COPYRIGHT}2015 {LTBLUE}Leander {WHITE}& {GREEN}BROS Artists{}{}{WHITE}License: {LTBLUE}GPL v2
 
 
+STR_Electrostar                 :Bombardier Electrostar
+
+
 # Parameters 
 STR_PARAM_MAX_SPEED             :Max Speed
 STR_PARAM_MAX_SPEED_DESC        :Toggle Between Service Speed and Design Speed
@@ -58,6 +61,7 @@ STR_BR_196_2CAR							:British Rail Class 196/0 'Civity' (2-Car)
 STR_BR_196_4CAR							:British Rail Class 196/1 'Civity' (4-Car)
 STR_BR_197_2CAR							:British Rail Class 197/0 'Civity' (2-Car)
 STR_BR_197_3CAR							:British Rail Class 197/1 'Civity' (3-Car)
+STR_BR_231_4CAR							:British Rail Class 231/0 'FLIRT' (4-Car)
 STR_BR_331_3CAR                         :British Rail Class 331/0 'Civity' (3-Car)
 STR_BR_331_4CAR                         :British Rail Class 331/1 'Civity' (4-Car)
 
@@ -77,10 +81,10 @@ STR_BR_710_2_5CAR                       :British Rail Class 710/2 'Aventra' (5-C
 STR_BR_720_1                            :British Rail Class 720/1 'Aventra' (10-Car)
 STR_BR_720_5                            :British Rail Class 720/5 'Aventra' (5-Car)
 
-STR_BR_745                              :British Rail Class 745/0/1 (12-Car)
+STR_BR_745                              :British Rail Class 745/0/1 'FLIRT' (12-Car)
 STR_BR_745test                          :GRF TEST UNIT
-STR_BR_755_3CAR                         :British Rail Class 755/3 (3-Car with Power Pack)
-STR_BR_755_4CAR                         :British Rail Class 755/4 (4-Car with Power Pack)
+STR_BR_755_3CAR                         :British Rail Class 755/3  'FLIRT' (3-Car with Power Pack)
+STR_BR_755_4CAR                         :British Rail Class 755/4  'FLIRT' (4-Car with Power Pack)
 
 STR_BR_756_3CAR                         :British Rail Class 756/3 (3-Car with Power Pack)
 STR_BR_756_4CAR                         :British Rail Class 756/4 (4-Car with Power Pack)
@@ -126,6 +130,7 @@ STR_DSC_BR_MK5A                        :Type: {RED}Diesel Locomotive{}{BLACK}Usa
 STR_DSC_BR_195                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_196                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}TfW Rail
 STR_DSC_BR_197                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}TfW Rail
+STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
 
 STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
