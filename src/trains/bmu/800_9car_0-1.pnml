@@ -17,20 +17,28 @@ switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_VTEC, position_in_articula
 	spriteset_BR80X_middle_VTEC;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset_GWRPride, position_in_articulated_veh % 9) {
+	0: spriteset_BR80X_front_GWRPride;
+	8: spriteset_BR80X_rear_GWRPride;
+	spriteset_BR80X_middle_GWRPride;
+}
+
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BR800_9car_spriteset, cargo_subtype) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	// % 3 means that the graphics will repeat properly if another train is added to the end
 	// so that we get: (front,middle,end);(front,middle,end)...
 	0: switch_BR800_9car_spriteset_LNER;
-	1: switch_BR800_9car_spriteset_GWR;
+	1: switch_BR800_9car_spriteset_GWR;	
 	2: switch_BR800_9car_spriteset_VTEC;
+	3: switch_BR800_9car_spriteset_GWRPride;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR800_9car_subtype_text, cargo_subtype) {
 	0: return string(STR_LIVERY_BR800_LNER);
-	1: return string(STR_LIVERY_BR800_GWR);
+	1: return string(str_GWRGreen);
 	2: return string(STR_LIVERY_BR800_VTEC);
+	3: return string(str_GWRPride);
 	return CB_RESULT_NO_TEXT;
 }
 

@@ -12,15 +12,22 @@ switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_LNER, position_in_articula
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_GWR, position_in_articulated_veh % 5) {
-	0: spriteset_BR80X_front_GWR;
+	0: spriteset_BR80X_front_GWR;	
 	4: spriteset_BR80X_rear_GWR;
 	spriteset_BR80X_middle_GWR;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset_GWRPride, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_GWRPride;	
+	4: spriteset_BR80X_rear_GWRPride;
+	spriteset_BR80X_middle_GWRPride;
+}
+
 switch(FEAT_TRAINS, SELF, switch_BR800_5car_subtype_text, cargo_subtype) {
 	0: return string(STR_LIVERY_BR800_LNER);
-	1: return string(STR_LIVERY_BR800_GWR);
+	1: return string(str_GWRGreen);
 	2: return string(STR_LIVERY_BR800_VTEC);
+	3: return string(str_GWRPride);
 	return CB_RESULT_NO_TEXT;
 }
 
@@ -32,6 +39,7 @@ switch(FEAT_TRAINS, SELF, switch_BR800_5car_spriteset, cargo_subtype) {
 	0: switch_BR800_5car_spriteset_LNER;
 	1: switch_BR800_5car_spriteset_GWR;
 	2: switch_BR800_5car_spriteset_VTEC;
+	3: switch_BR800_5car_spriteset_GWRPride;
 }
 
 // Define articulations

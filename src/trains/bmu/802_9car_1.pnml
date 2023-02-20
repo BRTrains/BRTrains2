@@ -1,7 +1,28 @@
-switch(FEAT_TRAINS, SELF, switch_BR802_9car_spriteset, position_in_articulated_veh % 9) {
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_spriteset_GWR, position_in_articulated_veh % 9) {
 	0: spriteset_BR80X_front_GWR;
 	8: spriteset_BR80X_rear_GWR;
 	spriteset_BR80X_middle_GWR;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_spriteset_GWRPride, position_in_articulated_veh % 9) {
+	0: spriteset_BR80X_front_GWRPride;
+	8: spriteset_BR80X_rear_GWRPride;
+	spriteset_BR80X_middle_GWRPride;
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_spriteset, cargo_subtype) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: switch_BR802_9car_spriteset_GWR;
+	1: switch_BR802_9car_spriteset_GWRPride;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_subtype_text, cargo_subtype) {
+	0: return string(str_GWRGreen);
+	1: return string(str_GWRPride);
+	return CB_RESULT_NO_TEXT;
 }
 
 // Define articulations
@@ -97,6 +118,7 @@ item(FEAT_TRAINS, item_BR802_9car, 462) {
 		power: switch_BR802_9car_power;
 		speed: switch_BR800_speed;
 
+		cargo_subtype_text: switch_BR802_9car_subtype_text;
 		articulated_part: switch_BR802_9car_articulated;
 		start_stop: switch_BR802_9car_start_stop;	
 		can_attach_wagon: switch_BR802_9car_can_attach_wagon;

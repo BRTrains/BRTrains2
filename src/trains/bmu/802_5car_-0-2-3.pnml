@@ -18,6 +18,13 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_HullTrains, position_in_ar
 	spriteset_BR80X_middle_HullTrains;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_GWRPride, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_GWRPride;
+	4: spriteset_BR80X_rear_GWRPride;
+	spriteset_BR80X_middle_GWRPride;
+}
+
+
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset, cargo_subtype) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
@@ -26,12 +33,14 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset, cargo_subtype) {
 	0: switch_BR802_5car_spriteset_GWR;
 	1: switch_BR802_5car_spriteset_TPE;
 	2: switch_BR802_5car_spriteset_HullTrains;
+	3: switch_BR802_5car_spriteset_GWRPride;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR802_5car_subtype_text, cargo_subtype) {
-	0: return string(STR_LIVERY_BR800_GWR);
+	0: return string(str_GWRGreen);
 	1: return string(STR_LIVERY_BR800_TPE);	
 	2: return string(STR_LIVERY_BR800_HullTrains);
+	3: return string(str_GWRPride);
 	return CB_RESULT_NO_TEXT;
 }
 

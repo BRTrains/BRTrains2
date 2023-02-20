@@ -86,6 +86,16 @@ spriteset(spriteset_BR80X_rear_VTEC, "gfx/BR80X.png") {
 	template_train32px(0, 500)
 }
 
+spriteset(spriteset_BR80X_front_GWRPride, "gfx/BR80X.png") {
+	template_train32px(0, 525)
+}
+spriteset(spriteset_BR80X_middle_GWRPride, "gfx/BR80X.png") {
+	template_train32px(0, 550)
+}
+spriteset(spriteset_BR80X_rear_GWRPride, "gfx/BR80X.png") {
+	template_train32px(0, 575)
+}
+
 // Speed switch
 switch(FEAT_TRAINS, SELF, switch_BR800_speed, param_max_speed) {
 	0: 201;

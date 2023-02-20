@@ -107,7 +107,6 @@ STR_BR807                              :British Rail Class 807 (7-car)
 
 # Livery Names
 STR_LIVERY_BR800_LNER                  : LNER 'Azuma'
-STR_LIVERY_BR800_GWR                   : Great Western Railway 'Intercity Express Train'
 STR_LIVERY_BR800_TPE                   : Transpennine Express 'Nova 1'
 STR_LIVERY_BR800_HullTrains            : Hull Trains 'Paragon'
 STR_LIVERY_BR800_AVANTI                : Avanti West Coast 'AT300'
@@ -1313,9 +1312,10 @@ str_gtrb						: (Govia Thameslink "Blue")
 str_gtrp						: (Govia Thameslink "Pink")
 str_GTRPride					: (Govia Thameslink "Pride")
 str_Gulf                        : (Gulf)
-str_GNRGreen					: (GNR Green)
-str_GWRGreen					: (GWR Green)
-str_GWRGreenUn					: (GWR Green Unbranded)
+str_GNRGreen					: (GNR "Green")
+str_GWRGreen					: (GWR "Green")
+str_GWRPride                    : (GWR "Pride")
+str_GWRGreenUn					: (GWR "Green" Unbranded)
 str_HarryNeedle					: (Harry Needle Railroad)
 str_Hatachi						: (Hatachi)
 str_HeathrowExpressPurple       : (Heathrow Express - Grey and Purple)
@@ -1438,6 +1438,7 @@ str_SWTPink						: (South West Trains Pink)
 str_SWT_refurb					: (South West Trains Refurbished)
 str_SWT_stagecoach				: (Stagecoach South West Trains)
 str_SWR				            : (South Western Railway)
+str_SWRPride		            : (South Western Railway "Pride")
 str_Teak						: (GNR/LNER Teak)
 str_TfL							: (TfL Rail)
 str_TfW         			    : (Transport For Wales)
