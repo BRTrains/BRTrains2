@@ -26,20 +26,36 @@ spriteset(spriteset_BR444c_SWR, "gfx/BR444.png") {
 	template_train32px(0, 175)
 }
 
+spriteset(spriteset_BR444a_SWRPride, "gfx/BR444.png") {
+	template_train32px(0, 200)
+}
+
+spriteset(spriteset_BR444b_SWRPride, "gfx/BR444.png") {
+	template_train32px(0, 225)
+}
+
+spriteset(spriteset_BR444c_SWRPride, "gfx/BR444.png") {
+	template_train32px(0, 275)
+}
+
+
 
 switch(FEAT_TRAINS,SELF, sw_BR444a,cargo_subtype){
     0:	spriteset_BR444a_SWT;
 	1:	spriteset_BR444a_SWR;
+	2:	spriteset_BR444a_SWRPride;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR444b,cargo_subtype){
     0:	spriteset_BR444b_SWT;
 	1:	spriteset_BR444b_SWR;
+	2:	spriteset_BR444b_SWRPride;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR444c,cargo_subtype){
     0:	spriteset_BR444c_SWT;
 	1:	spriteset_BR444c_SWR;
+	2:	spriteset_BR444c_SWRPride;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR444, extra_callback_info1) {
@@ -51,6 +67,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR444, extra_callback_info1) {
 switch(FEAT_TRAINS,SELF,sw_BR444_cargo_subtype_text,cargo_subtype){
     0:	return string(str_SWT);
 	1:	return string(str_SWR);
+	2:	return string(str_SWRPride);
        return CB_RESULT_NO_TEXT;
 }
 
