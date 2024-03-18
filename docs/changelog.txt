@@ -3,8 +3,10 @@
 - Added Class 756
 - Added GWR "Pride" livery for Class 800/802
 - Added SWR "Pride" livery for Class 444
-- Added IE Class 2800 (Irish Railways)
 - Improved Class 755 graphics
+- Improved Desiro shading (350, 444, 450)
+- Improved BR80X shape
+- Minor fixes for BR390 shape
 - Fixed GWR Great Bear Tender bug
 
 # v2.5
