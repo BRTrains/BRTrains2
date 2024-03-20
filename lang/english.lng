@@ -895,6 +895,11 @@ str_BR73GatEx_eos				:1999
 str_BR73GatEx_liveries			:Gatwick Express
 BR488							:Class 488 Coach
 
+STR_NAME_BR504					:British Rail Class 504
+str_BR504_usage					:Urban Passenger
+str_BR504_eos					:---
+str_BR504_liveries				:BR Blue, BR Green, GMPTE, BR Blue (Wlternate), BR Blue (Wraparound)
+
 STR_NAME_BR507					:British Rail Class 507
 str_BR507_usage					:Urban Passenger
 str_BR507_eos					:---
@@ -1203,6 +1208,8 @@ str_BangerBlue_Stripe           : (Banger Blue with White Stripe)
 str_BP                          : (BP)
 str_BRBlack						: (BR Black)
 str_BRBlue						: (BR Blue)
+str_BRBlueAlt					: (BR Blue - Alternate)
+str_BRBlueWrap					: (BR Blue - Wraparound)
 str_BRBlueHeadlight				: (BR Blue with Headlight)
 str_BRBlueGrey					: (BR Blue Grey)
 str_BRBlueCentre				: (BR Blue - Centre Headcode)

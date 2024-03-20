@@ -1,0 +1,77 @@
+spriteset(spriteset_BR504_Purchase, "gfx/BR504.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR504a_BRBlue, "gfx/BR504.png") {
+	template_train32px(0, 13)
+}
+spriteset(spriteset_BR504b_BRBlue, "gfx/BR504.png") {
+	template_train32px(0, 38)
+}
+spriteset(spriteset_BR504c_BRBlue, "gfx/BR504.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR504a_GMPTE, "gfx/BR504.png") {
+	template_train32px(0, 88)
+}
+spriteset(spriteset_BR504b_GMPTE, "gfx/BR504.png") {
+	template_train32px(0, 113)
+}
+spriteset(spriteset_BR504c_GMPTE, "gfx/BR504.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR504a_BRGreen, "gfx/BR504.png") {
+	template_train32px(0, 163)
+}
+spriteset(spriteset_BR504b_BRGreen, "gfx/BR504.png") {
+	template_train32px(0, 188)
+}
+spriteset(spriteset_BR504c_BRGreen, "gfx/BR504.png") {
+	template_train32px(0, 213)
+}
+
+spriteset(spriteset_BR504a_BRBlueAlt, "gfx/BR504.png") {
+	template_train32px(0, 238)
+}
+spriteset(spriteset_BR504b_BRBlueAlt, "gfx/BR504.png") {
+	template_train32px(0, 263)
+}
+spriteset(spriteset_BR504c_BRBlueAlt, "gfx/BR504.png") {
+	template_train32px(0, 288)
+}
+
+spriteset(spriteset_BR504a_BRBlueWrap, "gfx/BR504.png") {
+	template_train32px(0, 313)
+}
+spriteset(spriteset_BR504b_BRBlueWrap, "gfx/BR504.png") {
+	template_train32px(0, 338)
+}
+spriteset(spriteset_BR504c_BRBlueWrap, "gfx/BR504.png") {
+	template_train32px(0, 363)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR504a,cargo_subtype){
+    0:	spriteset_BR504a_BRBlue;
+	1:  spriteset_BR504a_GMPTE;
+	2:  spriteset_BR504a_BRGreen;
+	3:  spriteset_BR504a_BRBlueAlt;
+	4:  spriteset_BR504a_BRBlueWrap;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR504b,cargo_subtype){
+    0:	spriteset_BR504b_BRBlue;
+	1:  spriteset_BR504b_GMPTE;
+	2:  spriteset_BR504b_BRGreen;
+	3:  spriteset_BR504b_BRBlueAlt;
+	4:  spriteset_BR504b_BRBlueWrap;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR504c,cargo_subtype){
+    0:	spriteset_BR504c_BRBlue;
+	1:  spriteset_BR504c_GMPTE;
+	2:  spriteset_BR504c_BRGreen;
+	3:  spriteset_BR504c_BRBlueAlt;
+	4:  spriteset_BR504c_BRBlueWrap;
+}

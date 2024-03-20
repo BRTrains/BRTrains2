@@ -1,0 +1,67 @@
+switch(FEAT_TRAINS, SELF, switch_br504_spriteset, position_in_articulated_veh % 2) {
+	0: sw_BR504a;
+	sw_BR504b;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR504, extra_callback_info1) {
+	1: return item_BR504;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR504_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRBlue);
+	1:  return string(str_GMPTE);
+	2:  return string(str_BRGreen);
+	3:  return string(str_BRBlueAlt);
+	4:  return string(str_BRBlueWrap);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR504, 577) {
+	property {
+		name: 							string(STR_NAME_BR504);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1959,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					65;
+		running_cost_factor:			38;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							65 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						BR_3RDR;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							561 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					90;
+		weight:							41 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.07;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR504_usage),string(str_BR504_eos),string(str_BR504_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR504_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR504;
+	default: 							switch_br504_spriteset;
+	purchase:							spriteset_BR504_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_classic_emu_sound;
+	cargo_capacity: return(90 * param_pax);
+}
+}
