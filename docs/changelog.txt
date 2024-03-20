@@ -1,4 +1,7 @@
-# v2.6
+# v2.7
+- Added Class 504
+
+# v2.6 (18/03/24)
 - Added Class 231
 - Added Class 756
 - Added GWR "Pride" livery for Class 800/802
@@ -9,7 +12,7 @@
 - Minor fixes for BR390 shape
 - Fixed GWR Great Bear Tender bug
 
-# v2.5
+# v2.5 (??)
 - Added APT-E
 - Added Dual Voltage version of Class 373
 - Disambiguated 745/755 (FLIRT) from 720 (Aventra) on diagonal views
