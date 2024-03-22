@@ -4,6 +4,7 @@
 # v2.6 (18/03/24)
 - Added Class 231
 - Added Class 756
+- Added Class 730
 - Added GWR "Pride" livery for Class 800/802
 - Added SWR "Pride" livery for Class 444
 - Improved Class 755 graphics
