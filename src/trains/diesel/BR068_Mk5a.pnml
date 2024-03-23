@@ -1,19 +1,33 @@
 // Spriteset car definitions
 spriteset (spriteset_br_68_5a_front, "gfx/br_68_5a.png") { tmpl_train_8(0, 0) }
 spriteset (spriteset_br_68_5a_middle, "gfx/br_68_5a.png") { tmpl_train_8(0, 29) }
+spriteset (spriteset_br_68_5a_middle_reversed, "gfx/br_68_5a.png") { tmpl_train_8_reversed(0, 29) }
 spriteset (spriteset_br_68_5a_rear, "gfx/br_68_5a.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_68_5a_rear_reversed, "gfx/br_68_5a.png") { tmpl_train_8_reversed(0, 106) }
 spriteset (spriteset_br_68_5a_purchase, "gfx/br_68_5a.png") {
 	[2, 89, 91, 12, -25, -6]	
 }
 
-// Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_articulated_veh % 6) {
-	// 0 is first car, 1 is second car, so on...
-	// % 2 means that the graphics will repeat properly if another train is added to the end
-	// so that we get: (front,end);(front,end)...
+switch(FEAT_TRAINS, PARENT, sw_br_68_5a_rear, vehicle_is_reversed) {
+	0: spriteset_br_68_5a_rear;
+	1: spriteset_br_68_5a_front;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_br_68_5a_front, vehicle_is_reversed) {
 	0: spriteset_br_68_5a_front;
-	5: spriteset_br_68_5a_rear;
-	spriteset_br_68_5a_middle;
+	1: spriteset_br_68_5a_rear_reversed;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_br_68_5a_middle, vehicle_is_reversed) {
+	0: spriteset_br_68_5a_middle;
+	1: spriteset_br_68_5a_middle_reversed;
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_articulated_veh % 6) {	
+	0: sw_br_68_5a_front;
+	5: sw_br_68_5a_rear;
+	sw_br_68_5a_middle;
 }
 
 // Define articulations

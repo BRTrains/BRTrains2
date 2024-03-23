@@ -1,4 +1,6 @@
 // Train sprite template
+
+// Wtf are these offsets?
 template tmpl_train_8(x, y) {	
 	//leftx, topy, width, height, offsetx, offsety
 	[x + 25, y + 2, 8,		23,		-3,		-11] //n
@@ -9,6 +11,18 @@ template tmpl_train_8(x, y) {
 	[x + 125, y + 2, 21,	18,		-11,	-11] //sw
 	[x + 148, y + 2, 32,	12,		-16,	-7] //w
 	[x + 182, y + 2, 21,	18,		-12,	-12] //nw
+}
+// Reverse of the above
+template tmpl_train_8_reversed(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+    [x + 115, y + 2, 8,		23,		-3,		-11] //n 
+	[x + 125, y + 2, 21,	18,		-11,	-11] //ne
+	[x + 148, y + 2, 32,	12,		-16,	-7] //e
+	[x + 182, y + 2, 21,	18,		-12,	-12] // se	
+	[x + 25, y + 2, 8,		23,		-3,		-11] // s
+	[x + 35, y + 2, 21,		18,		-11,	-11] // sw
+	[x + 58, y + 2, 32,		12,		-16,	-7] //w
+	[x + 92, y + 2, 21,		18,		-12,	-12] // nw
 }
 
 template template_train20px(x,y){ // Clone to 4view when changed

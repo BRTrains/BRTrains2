@@ -58,7 +58,7 @@ STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)
 STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive without an attached unit
 
-STR_BR_68_5A                            :British Rail Class 68 (Mark 5A) (4-Car)
+STR_BR_68_5A                            :British Rail Class 68 (Mark 5A) (5-Car + locomotive)
 
 STR_BR_195_2CAR							:British Rail Class 195/0 'Civity' (2-Car)
 STR_BR_195_3CAR							:British Rail Class 195/1 'Civity' (3-Car)
