@@ -1,5 +1,8 @@
 # v2.7
+- Added an eye candy locomotive (for rolling stock in sidings etc)
 - Added Class 504
+- Improved Class 730 liveries (replaced placeholder with real world)
+- Fixed some internal templates
 
 # v2.6 (18/03/24)
 - Added Class 231
