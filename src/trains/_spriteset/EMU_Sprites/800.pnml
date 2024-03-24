@@ -10,6 +10,12 @@ spriteset(spriteset_BR802_purchase, "gfx/BR80X.png") {
 spriteset(spriteset_BR803_purchase, "gfx/BR80X.png") {
 	template_purchase(200, 26)
 }
+spriteset(spriteset_BR805_807_purchase, "gfx/BR80X.png") {
+	template_purchase(200, 52)
+}
+spriteset(spriteset_BR810_purchase, "gfx/BR80X.png") {
+	template_purchase(200, 65)
+}
 
 
 
@@ -95,6 +101,34 @@ spriteset(spriteset_BR80X_middle_GWRPride, "gfx/BR80X.png") {
 spriteset(spriteset_BR80X_rear_GWRPride, "gfx/BR80X.png") {
 	template_train32px(0, 575)
 }
+
+spriteset(spriteset_BR80X_front_Hitachi, "gfx/BR80X.png") {
+	template_train32px(0, 600)
+}
+spriteset(spriteset_BR80X_middle_Hitachi, "gfx/BR80X.png") {
+	template_train32px(0, 625)
+}
+spriteset(spriteset_BR80X_rear_Hitachi, "gfx/BR80X.png") {
+	template_train32px(0, 650)
+}
+
+spriteset(spriteset_BR80X_front_Avanti, "gfx/BR80X.png") {
+	template_train32px(0, 675)
+}
+spriteset(spriteset_BR80X_middle_Avanti, "gfx/BR80X.png") {
+	template_train32px(0, 700)
+}
+spriteset(spriteset_BR80X_rear_Avanti, "gfx/BR80X.png") {
+	template_train32px(0, 725)
+}
+spriteset(spriteset_BR80X_middle2_Avanti, "gfx/BR80X.png") {
+	template_train32px(0, 750)
+}
+spriteset(spriteset_BR80X_middle3_Avanti, "gfx/BR80X.png") {
+	template_train32px(0, 775)
+}
+
+
 
 // Speed switch
 switch(FEAT_TRAINS, SELF, switch_BR800_speed, param_max_speed) {
