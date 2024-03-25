@@ -170,6 +170,7 @@ str_purchase_loco				:{BLACK}Type: {STRING}{}{BLACK}Route Availability: {GOLD}{S
 str_purchase_steam_liveries		:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
 str_purchase_coach				:{BLACK}Liveries: {GOLD}{STRING}{BLACK}
 
+
 str_purchase_type_diesel		:{RED}Diesel locomotive
 str_purchase_type_steam			:{GREEN}Steam Locomotive
 str_purchase_type_dmu			:{RED}Diesel Multiple Unit
@@ -959,6 +960,11 @@ STR_NAME_BRContainer			:British Rail Container Flatbed Wagon
 str_BRContainer_usage			:Food, Goods, Paper, Fruit
 str_BRContainer_eos				:---
 str_BRContainer_liveries		:Maersk, Random
+
+STR_NAME_SmallLumberWagon		:Small Lumber Wagon
+str_SmallLumberWagon_usage		:Wood, Crates, Livestock etc
+str_SmallLumberWagon_eos		:---
+str_SmallLumberWagon_liveries	:Green
 
 STR_NAME_BRMK1FO				:BR Mark 1 Coach (First Open)
 str_BRMK1FO_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachite Green, BR Maroon, BR Blue & Grey
