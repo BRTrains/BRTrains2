@@ -9,7 +9,7 @@ template tmpl_train_8(x, y) {
 	[x + 92, y + 2, 21,		18,		-12,	-12] //se
 	[x + 115, y + 2, 8,		23,		-3,		-11] //s
 	[x + 125, y + 2, 21,	18,		-11,	-11] //sw
-	[x + 148, y + 2, 32,	12,		-16,	-7] //w
+	[x + 148, y + 2, 32,	12,		-15,	-7] //w
 	[x + 182, y + 2, 21,	18,		-12,	-12] //nw
 }
 // Reverse of the above
@@ -21,7 +21,7 @@ template tmpl_train_8_reversed(x, y) {
 	[x + 182, y + 2, 21,	18,		-12,	-12] // se	
 	[x + 25, y + 2, 8,		23,		-3,		-11] // s
 	[x + 35, y + 2, 21,		18,		-11,	-11] // sw
-	[x + 58, y + 2, 32,		12,		-16,	-7] //w
+	[x + 58, y + 2, 32,		12,		-15,	-7] //w
 	[x + 92, y + 2, 21,		18,		-12,	-12] // nw
 }
 
@@ -33,7 +33,7 @@ template template_train20px(x,y){ // Clone to 4view when changed
     [ x+46, y, 15, 15, 1, -7]
     [ x+62, y, 8, 17, -3, -5]
     [ x+71, y, 15, 15, -13, -7]
-    [ x+87, y, 20, 12, -16, -8]
+    [ x+87, y, 20, 12, -15, -8]
     [ x+108, y, 15, 15, -5, -10]
 }
 // THIS VIEW IS 8 FROM 4, IT REPEATS THE SECOND SET FOR OFFSET PURPOSES
@@ -45,7 +45,7 @@ template template_train20px_4view(x,y){ // Clone to 8view when changed
     [ x+46, y, 15, 15, 1, -7]
     [ x, y, 8, 17, -3, -5]
     [ x+9, y, 15, 15, -13, -7]
-    [ x+25, y, 20, 12, -16, -8]
+    [ x+25, y, 20, 12, -15, -8]
     [ x+46, y, 15, 15, -5, -10]
 }
 
@@ -57,7 +57,7 @@ template template_train20px_anim(x,y){
     [ x+49, y, 15, 15, -1, -8, ANIM]
     [ x+66, y, 8, 17, -4, -3, ANIM]
     [ x+76, y, 15, 15, -14, -7, ANIM]
-    [ x+93, y, 20, 12, -16, -8, ANIM]
+    [ x+93, y, 20, 12, -15, -8, ANIM]
     [ x+115, y, 15, 15, -7, -11, ANIM]
 }
 template template_train24px(x,y){
@@ -68,7 +68,7 @@ template template_train24px(x,y){
     [ x+52, y, 17, 16, -1, -8]
     [ x+70, y, 8, 20, -3, -7]
     [ x+79, y, 17, 16, -13, -8]
-    [ x+97, y, 24, 12, -16, -8]
+    [ x+97, y, 24, 12, -15, -8]
     [ x+122, y, 17, 16, -5, -10]
 }
 
@@ -92,7 +92,7 @@ template template_train28px(x,y){
     [ x+58, y, 19, 17, -3, -9]
     [ x+78, y, 8, 22, -3, -9]
     [ x+87, y, 19, 17, -13, -9]
-    [ x+107, y, 28, 12, -16, -8]
+    [ x+107, y, 28, 12, -15, -8]
     [ x+136, y, 19, 17, -5, -10]
 }
 
@@ -104,7 +104,7 @@ template template_train32px(x,y){
     [ x+64, y, 21, 18, -5, -10,		NOANIM]
     [ x+86, y, 8, 24, -3, -12,		NOANIM]
     [ x+95, y, 21, 18, -13, -10,	NOANIM]
-    [ x+117, y, 32, 12, -16, -8,	NOANIM]
+    [ x+117, y, 32, 12, -15, -8,	NOANIM]
     [ x+150, y, 21, 18, -5, -10,	NOANIM]
 }
 
@@ -116,7 +116,7 @@ template template_train32px_anim(x,y){
     [ x+64, y, 21, 18, -7, -11,		ANIM|NOWHITE]
     [ x+86, y, 8, 24, -4, -10,		ANIM|NOWHITE]
     [ x+95, y, 21, 18, -13, -10,	ANIM|NOWHITE]
-    [ x+117, y, 32, 12, -16, -8,	ANIM|NOWHITE]
+    [ x+117, y, 32, 12, -15, -8,	ANIM|NOWHITE]
     [ x+150, y, 21, 18, -7, -11,	ANIM|NOWHITE]
 }
 
@@ -124,7 +124,7 @@ template template_train32px4viewLowered(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
     [ x+9, y, 21, 17, -12, -8,		NOANIM|NOWHITE]
-    [ x+31, y, 32, 12, -16, -7,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -15, -7,		NOANIM|NOWHITE]
     [ x+64, y, 21, 17, -5, -8,		NOANIM|NOWHITE]
 }
 
@@ -136,7 +136,7 @@ template template_train32px_reversed(x,y){
     [ x+150, y, 21, 17, -5, -10,	NOANIM|NOWHITE]
 	[ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
     [ x+9, y, 21, 17, -12, -10,		NOANIM|NOWHITE]
-    [ x+31, y, 32, 12, -16, -8,		NOANIM|NOWHITE]
+    [ x+31, y, 32, 12, -15, -8,		NOANIM|NOWHITE]
     [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
 }
 
@@ -148,7 +148,7 @@ template template_trainBRMk2(x,y){
     [ x+64, y, 21, 17, -9, -9,		NOANIM|NOWHITE]    
     [ x+86, y, 8, 24, -3, -12,		NOANIM|NOWHITE]
     [ x+95, y, 21, 17, -15, -6,	NOANIM|NOWHITE]
-    [ x+117, y, 32, 12, -11, -6,	NOANIM|NOWHITE]
+    [ x+117, y, 32, 12, -10, -6,	NOANIM|NOWHITE]
     [ x+150, y, 21, 17, -9, -9,	NOANIM|NOWHITE]
 }
 
@@ -160,7 +160,7 @@ template template_450(x,y){
     [ x+65, y, 22, 21, -1, -10]
     [ x+88, y, 8, 26, -3, -11]
     [ x+97, y, 22, 21, -16, -10]
-    [ x+120, y, 32, 13, -13, -7]
+    [ x+120, y, 32, 13, -12, -7]
     [ x+153, y, 22, 21, -3, -10]
 }
 
@@ -172,7 +172,7 @@ template template_train170pt(x,y){
     [ x+65, y, 22, 21, -4, -11,		NOANIM|NOWHITE]
     [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
     [ x+97, y, 22, 21, -15, -12,	NOANIM|NOWHITE]
-    [ x+120, y, 32, 12, -13, -7,	NOANIM|NOWHITE]
+    [ x+120, y, 32, 12, -12, -7,	NOANIM|NOWHITE]
     [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
 
@@ -185,7 +185,7 @@ template template_train170ptF(x,y){
     [ x+65, y, 22, 21, -4, -11,		NOANIM|NOWHITE]
     [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
     [ x+97, y, 22, 21, -15, -12,	NOANIM|NOWHITE]
-    [ x+120, y, 32, 12, -15, -7,	NOANIM|NOWHITE]
+    [ x+120, y, 32, 12, -14, -7,	NOANIM|NOWHITE]
     [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
 
@@ -197,7 +197,7 @@ template template_train70pt(x,y){
     [ x+65, y, 22, 20, -4, -11]
     [ x+88, y, 8, 25, -3, -11]
     [ x+97, y, 22, 20, -15, -12]
-    [ x+120, y, 32, 12, -13, -7]
+    [ x+120, y, 32, 12, -12, -7]
     [ x+153, y, 22, 20, -4, -11]
 }
 
