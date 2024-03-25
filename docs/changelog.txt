@@ -1,4 +1,8 @@
 # v2.7
+- Added Class 805
+- Added Class 810
+- Added Class 807
+- Added Hitachi White livery for all 80X series units
 - Made Class 68 + Mk5a sets function as proper push-pull units
 - Added an eye candy locomotive (for rolling stock in sidings etc)
 - Added Class 504
