@@ -10,18 +10,23 @@ switch(FEAT_TRAINS, SELF, switch_BR802_9car_spriteset_GWRPride, position_in_arti
 	spriteset_BR80X_middle_GWRPride;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR802_9car_spriteset_Hitachi, position_in_articulated_veh % 9) {
+	0: spriteset_BR80X_front_Hitachi;
+	8: spriteset_BR80X_rear_Hitachi;
+	spriteset_BR80X_middle_Hitachi;
+}
+
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BR802_9car_spriteset, cargo_subtype) {
-	// 0 is first car, 1 is second car, 2 is third car, so on...
-	// % 3 means that the graphics will repeat properly if another train is added to the end
-	// so that we get: (front,middle,end);(front,middle,end)...
 	0: switch_BR802_9car_spriteset_GWR;
 	1: switch_BR802_9car_spriteset_GWRPride;
+	2: switch_BR802_9car_spriteset_Hitachi;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR802_9car_subtype_text, cargo_subtype) {
 	0: return string(str_GWRGreen);
 	1: return string(str_GWRPride);
+	2: return string(str_HitachiWhite);
 	return CB_RESULT_NO_TEXT;
 }
 

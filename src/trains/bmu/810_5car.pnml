@@ -5,14 +5,22 @@ switch(FEAT_TRAINS, SELF, switch_BR810_5car_spriteset_EMR, position_in_articulat
 	spriteset_BR80X_middle_EMR;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR810_5car_spriteset_Hitachi, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_Hitachi;
+	4: spriteset_BR80X_rear_Hitachi;
+	spriteset_BR80X_middle_Hitachi;
+}
+
 
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BR810_5car_spriteset, cargo_subtype) {
 	0: switch_BR810_5car_spriteset_EMR;
+	1: switch_BR810_5car_spriteset_Hitachi;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR810_5car_subtype_text, cargo_subtype) {
 	0: return string(str_EMRMaroon);
+	1: return string(str_HitachiWhite);
 	return CB_RESULT_NO_TEXT;
 }
 
@@ -61,7 +69,7 @@ switch(FEAT_TRAINS, SELF, switch_BR810_5car_power, current_railtype) {
 }
 
 // Class 810/0/2/3 (5car)
-item(FEAT_TRAINS, item_BR810_5car, 461) {
+item(FEAT_TRAINS, item_BR810_5car, 579) {
 	property {
 		name: string(STR_BR810_5CAR);
 		climates_available: ALL_CLIMATES; // available in all climates

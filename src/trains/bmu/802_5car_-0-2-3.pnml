@@ -24,6 +24,12 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_GWRPride, position_in_arti
 	spriteset_BR80X_middle_GWRPride;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_Hitachi, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_Hitachi;
+	4: spriteset_BR80X_rear_Hitachi;
+	spriteset_BR80X_middle_Hitachi;
+}
+
 
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset, cargo_subtype) {
@@ -34,6 +40,7 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset, cargo_subtype) {
 	1: switch_BR802_5car_spriteset_TPE;
 	2: switch_BR802_5car_spriteset_HullTrains;
 	3: switch_BR802_5car_spriteset_GWRPride;
+	4: switch_BR802_5car_spriteset_Hitachi;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR802_5car_subtype_text, cargo_subtype) {
@@ -41,6 +48,7 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_subtype_text, cargo_subtype) {
 	1: return string(STR_LIVERY_BR800_TPE);	
 	2: return string(STR_LIVERY_BR800_HullTrains);
 	3: return string(str_GWRPride);
+	4: return string(str_HitachiWhite);
 	return CB_RESULT_NO_TEXT;
 }
 
