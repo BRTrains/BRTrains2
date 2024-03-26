@@ -35,7 +35,7 @@ item (FEAT_TRAINS, item_SmallLumberWagon, 582) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		refit_cost:						0;
 		running_cost_base:				RUNNING_COST_STEAM;
-		default_cargo_type:				GOOD;
+		default_cargo_type:				WOOD;
 		cargo_capacity:					20;
 		weight:							9 ton;
 		tractive_effort_coefficient:	0.08;
