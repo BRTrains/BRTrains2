@@ -1,5 +1,5 @@
 spriteset(spriteset_DR98_9_Purchase, "gfx/DR98_9.png") {
-	template_purchaseptdual(0, 14)
+	template_mu_purchase(0, 0)
 }
 
 spriteset(spriteset_DR98_9_NRWhite, "gfx/DR98_9.png") {

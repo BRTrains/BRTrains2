@@ -1,5 +1,5 @@
 spriteset(spriteset_BR253_Purchase, "gfx/BR253.png") {
-	template_train32px(0, 13)
+	template_mu_purchase(0, 0)
 }
 
 spriteset(spriteset_BR253_BRBlue, "gfx/BR253.png") {

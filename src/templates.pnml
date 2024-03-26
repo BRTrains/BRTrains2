@@ -201,19 +201,20 @@ template template_train70pt(x,y){
     [ x+153, y, 22, 20, -4, -11]
 }
 
-
-// Only used by MPV
-template template_purchaseptdual(x,y){
+// Used by units with the Multiple Unit flag - eg IC125 and MPV
+template template_mu_purchase(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ ]
     [ ]
-    [ x+32, y, 32, 12, -13, -7]
+    [x,     y,      1,     1,     -10,-   6,          NOANIM|NOWHITE]
     [ ]
     [ ]
     [ ]
-    [ x+120, y, 32, 12, -11, -7]
+    [x,     y,      87,     12,     -10,-   6,          NOANIM|NOWHITE]
     [ ]
 }
+
+
 
 template template_purchase(x,y){
     //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
