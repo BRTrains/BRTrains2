@@ -32,29 +32,42 @@ spriteset(spriteset_BR221c_Avanti, "gfx/BR220c.png") {
 	template_train32px(0, 63)
 }
 
+spriteset(spriteset_BR221a_GrandCentral, "gfx/BR220a.png") {
+	template_train32px(0, 88)
+}
+spriteset(spriteset_BR221b_GrandCentral, "gfx/BR220b.png") {
+	template_train32px(0, 88)
+}
+spriteset(spriteset_BR221c_GrandCentral, "gfx/BR220c.png") {
+	template_train32px(0, 88)
+}
 
 switch(FEAT_TRAINS,SELF, sw_BR221a,cargo_subtype){
     0:	spriteset_BR221a_Virgin;
 	1:	spriteset_BR221a_XC;
 	2:	spriteset_BR221a_Avanti;
+	3:	spriteset_BR221a_GrandCentral;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221b,cargo_subtype){
     0:	spriteset_BR221b_Virgin;
 	1:	spriteset_BR221b_XC;
 	2:	spriteset_BR221b_Avanti;
+	3:	spriteset_BR221b_GrandCentral;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221d,cargo_subtype){
     0:	spriteset_BR221b_Virgin;
 	1:	spriteset_BR221b_XC;
 	2:	spriteset_BR221b_Avanti;
+	3:	spriteset_BR221b_GrandCentral;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221c,cargo_subtype){
     0:	spriteset_BR221c_Virgin;
 	1:	spriteset_BR221c_XC;
 	2:	spriteset_BR221c_Avanti;
+	3:	spriteset_BR221c_GrandCentral;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221_capacity,cargo_subtype){
@@ -74,6 +87,7 @@ switch(FEAT_TRAINS,SELF,sw_BR221_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Virgin);
 	1:	return string(str_XC);
 	2:	return string(str_AvantiWestCoast);
+	3:	return string(str_GC);
        return CB_RESULT_NO_TEXT;
 }
 
