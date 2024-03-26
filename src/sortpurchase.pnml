@@ -14,6 +14,7 @@ sort(FEAT_TRAINS, [
  item_BR252,  //Actually Class 41, which is why it's here
  item_BR253,  //Actually Class 43, which is why it's here
  item_BR47,
+ item_BR50,
  item_BR52,
  item_Kestrel,
  item_BR55,

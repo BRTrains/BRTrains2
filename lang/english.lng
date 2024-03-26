@@ -271,6 +271,11 @@ str_Kestrel_usage				:Mixed Traffic
 str_Kestrel_eos					:---
 str_Kestrel_liveries			:Kestrel Black and Yellow
 
+STR_NAME_BR50					:British Rail Class 50
+str_BR50_usage					:Express Passenger
+str_BR50_eos					:---
+str_BR50_liveries				:BR Blue, BR Large Logo, BR Green, Network SouthEast, Network SouthEast (Alternate) GBRf, Hanson & Hall
+
 STR_NAME_BR52					:British Rail Class 52
 str_BR52_usage					:Mixed Traffic
 str_BR52_eos					:---
@@ -1340,6 +1345,7 @@ str_GNRGreen					: (GNR "Green")
 str_GWRGreen					: (GWR "Green")
 str_GWRPride                    : (GWR "Pride")
 str_GWRGreenUn					: (GWR "Green" Unbranded)
+str_HansonHall                  : (Hanson & Hall)
 str_HarryNeedle					: (Harry Needle Railroad)
 str_Hitachi						: (Hitachi)
 str_HitachiWhite				: (Hitachi)
