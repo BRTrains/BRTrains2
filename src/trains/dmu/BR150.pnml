@@ -62,6 +62,9 @@ spriteset(spriteset_BR150a_NRTest, "gfx/BR150_1a.png") {
 	template_train32px(0, 338)
 }
 
+spriteset(spriteset_BR150a_LNWR, "gfx/BR150_1b.png") {
+	template_train32px(0, 363)
+}
 
 spriteset(spriteset_BR150b_BRPrototype, "gfx/BR150_1b.png") {
 	template_train32px(0, 13)
@@ -121,6 +124,10 @@ spriteset(spriteset_BR150b_Railtrack, "gfx/BR150_1b.png") {
 
 spriteset(spriteset_BR150b_NRTest, "gfx/BR150_1b.png") {
 	template_train32px(0, 338)
+}
+
+spriteset(spriteset_BR150b_LNWR, "gfx/BR150_1b.png") {
+	template_train32px(0, 363)
 }
 
 spriteset(spriteset_BR150c_BRPrototype, "gfx/BR150_1c.png") {
@@ -186,7 +193,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_Centro);
 	3:	return string(str_LondonMidland);
 	4:	return string(str_FGW);
-	5:	return string(str_Central);
+	5:	return string(str_Central);	
        return CB_RESULT_NO_TEXT;
 }
 
