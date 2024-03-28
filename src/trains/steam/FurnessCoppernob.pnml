@@ -3,24 +3,29 @@ spriteset(spriteset_Coppernob_Purchase, "gfx/Steam/FurnessCoppernob.png") {
 }
 
 spriteset(spriteset_Coppernob_FurnessRed, "gfx/Steam/FurnessCoppernob.png") {
-	template_train20px_anim(0, 13)
+	template_train20px(0, 13)
 }
 
 spriteset(spriteset_CoppernobT_FurnessRed, "gfx/Steam/FurnessCoppernob.png") {
-	template_train16px(0, 31)
+	template_train12px(0, 31)
 }
 
-switch(FEAT_TRAINS,SELF, sw_CoppernobT,cargo_subtype){
-    0:	spriteset_CoppernobT_FurnessRed;
-}
-
-switch(FEAT_TRAINS,SELF, sw_Coppernob,cargo_subtype){
+switch(FEAT_TRAINS,SELF, sw_CoppernobLoco,cargo_subtype){
     0:	spriteset_Coppernob_FurnessRed;
 }
 
-switch(FEAT_TRAINS, SELF, switch_coppernob_length, position_in_articulated_veh % 2) {	
-	1: return 5;
-	2: return 4;
+switch(FEAT_TRAINS,SELF, sw_CoppernobTender,cargo_subtype){
+    0:	spriteset_CoppernobT_FurnessRed;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Coppernob, position_in_articulated_veh){
+	0: sw_CoppernobLoco;
+	1: sw_CoppernobTender;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coppernob_length, position_in_articulated_veh) {	
+	0: return 5;
+	1: return 4;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_Coppernob, extra_callback_info1) {
