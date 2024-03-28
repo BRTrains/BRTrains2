@@ -4,6 +4,13 @@
 - Added Class 810
 - Added Class 807
 - Added Class 504
+- Added* Class 121
+- Added* Class 70 (Southern Region)
+- Added* Class 71 (Southern Region)
+- Added* Royal Mail Travelling Post Office
+- Added* Class 121 Bubble Car
+- Added* GWR Great Bear Class
+- Added* GWR Hall Class
 - Made Class 68 + Mk5a sets function as proper push-pull units
 - Added an eye candy locomotive (for rolling stock in sidings etc)
 - Added a small early lumber wagon
@@ -13,12 +20,7 @@
 - Improved Class 730 liveries (replaced placeholder with real world)
 - Fixed some internal templates
 - Fixed IC125 and MPV purchase sprites
-- Enabled Class 121
-- Enabled Class 70 and 71 (Southern Region)
-- Enabled Royal Mail Travelling Post Office
-- Enabled Class 121 Bubble Car
-- Enabled GWR Great Bear Class
-- Enabled GWR Hall Class
+(* indicates units previously in development mode)
 
 # v2.6 (18/03/24)
 - Added Class 231
