@@ -9,9 +9,16 @@
 - Added a small early lumber wagon
 - Added Hitachi White livery for all 80X series units
 - Added Grand Central livery for Class 221
+- Added LNWR livery for Class 150/2
 - Improved Class 730 liveries (replaced placeholder with real world)
 - Fixed some internal templates
 - Fixed IC125 and MPV purchase sprites
+- Enabled Class 121
+- Enabled Class 70 and 71 (Southern Region)
+- Enabled Royal Mail Travelling Post Office
+- Enabled Class 121 Bubble Car
+- Enabled GWR Great Bear Class
+- Enabled GWR Hall Class
 
 # v2.6 (18/03/24)
 - Added Class 231
