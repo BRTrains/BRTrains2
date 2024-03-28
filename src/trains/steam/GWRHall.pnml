@@ -12,19 +12,23 @@ spriteset(spriteset_GWRHallT_Hogwarts, "gfx/Steam/GWRHallTender.png") {
 
 switch(FEAT_TRAINS,SELF, sw_GWRHall,cargo_subtype){
     0:	spriteset_GWRHall_Hogwarts;
+	1:	spriteset_GWRHall_Hogwarts;
 }
 
 switch(FEAT_TRAINS,SELF, sw_GWRHallT,cargo_subtype){
     0:	spriteset_GWRHallT_Hogwarts;
+	1:	spriteset_GWRHallT_Hogwarts;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_GWRHall, extra_callback_info1) {
+	1: return item_GWRHallT;
 	1: return item_GWRHallT;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
 switch(FEAT_TRAINS,SELF,sw_GWRHall_cargo_subtype_text,cargo_subtype){
     0: return string(str_GWRGreen);
+	1: return string(str_HogwartsExpress);
        return CB_RESULT_NO_TEXT;
 }
 

@@ -1,0 +1,85 @@
+spriteset(spriteset_Coppernob_Purchase, "gfx/Steam/FurnessCoppernob.png") {
+	template_purchase_anim(0, 0)
+}
+
+spriteset(spriteset_Coppernob_FurnessRed, "gfx/Steam/FurnessCoppernob.png") {
+	template_train20px_anim(0, 13)
+}
+
+spriteset(spriteset_CoppernobT_FurnessRed, "gfx/Steam/FurnessCoppernob.png") {
+	template_train16px(0, 31)
+}
+
+switch(FEAT_TRAINS,SELF, sw_CoppernobT,cargo_subtype){
+    0:	spriteset_CoppernobT_FurnessRed;
+}
+
+switch(FEAT_TRAINS,SELF, sw_Coppernob,cargo_subtype){
+    0:	spriteset_Coppernob_FurnessRed;
+}
+
+switch(FEAT_TRAINS, SELF, switch_coppernob_length, position_in_articulated_veh % 2) {	
+	1: return 5;
+	2: return 4;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_Coppernob, extra_callback_info1) {
+	1: return item_Coppernob;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_Coppernob_cargo_subtype_text,cargo_subtype){
+    0: return string(str_FurnessRed);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_Coppernob, 584) {
+	property {
+		name: 							string(STR_NAME_Coppernob);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1948,4,21);
+		model_life:						70;
+		retire_early:					1;
+		vehicle_life:					55;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD];
+		loading_speed:					3;
+		cost_factor:					12;
+		running_cost_factor:			14;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							40 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							300 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							15 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							5;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	length: switch_coppernob_length;	
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_Coppernob_usage),string(str_Coppernob_eos),string(str_Coppernob_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_Coppernob_cargo_subtype_text;
+	articulated_part:        			switch_articulated_Coppernob;
+	default: 							sw_Coppernob;
+	purchase:							spriteset_Coppernob_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						steam_create_visual_effect;
+	sound_effect:						sw_steam_sound;
+	cost_factor:	return(GetAdjustedCost(12));
+	running_cost_factor: return(GetAdjustedCost(14));
+}
+}

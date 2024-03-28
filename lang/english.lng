@@ -24,8 +24,8 @@ STR_PARAM_DESC_SIMPLE			:Optionally remove some similar trains for a simpler pur
 STR_PARAM_COMPLEX				:All Trains
 STR_PARAM_SIMPLE				:Representitive Selection
 
-STR_PARAM_NAME_DEV  			:Complexity
-STR_PARAM_DESC_DEV			    :Optionally remove some similar trains for a simpler purchase list
+STR_PARAM_NAME_DEV  			:Developer mode
+STR_PARAM_DESC_DEV			    :Optionally enable in-development trains (unfinished/in progress)
 STR_PARAM_DEV_ON				:Development mode (includes in-progress or unfinished trains etc)
 STR_PARAM_DEV_OFF				:Default mode
 
@@ -194,6 +194,12 @@ STR_NAME_DR98_9					:Departmental Railways 98/9 'MPV'
 str_DR98_9_usage				:Deparmental Railway
 str_DR98_9_eos					:---
 str_DR98_9_liveries				:Network Rail, Railtrack, South West Trains
+
+
+STR_NAME_Coppernob					:Furness Railway 0-4-0 "Coppernob"
+str_Coppernob_usage					:Mixed Traffic
+str_Coppernob_eos					:1848
+str_Coppernob_liveries				:Furness Railway Red
 
 STR_NAME_LNWRWebb				:LNWR 0-6-2 Webb Coal Tank
 str_LNWRWebb_usage				:Low speed freight
@@ -1315,6 +1321,7 @@ str_FreightlinerGreen           : (Freightliner Green)
 str_Freightliner2				: (Freightliner - 2nd Version Lights)
 str_FreightlinerSH				: (Freightliner/Shanks)
 str_FreightlinerPH				: (Freightliner Powerhaul)
+str_FurnessRed                  : (Furness Railway Red)
 str_GA_White					: (Greater Anglia White)
 str_GA_Blue                     : (Greater Anglia Blue)
 str_GatEx						: (Gatwick Express)

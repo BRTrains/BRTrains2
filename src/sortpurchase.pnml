@@ -1,5 +1,6 @@
 sort(FEAT_TRAINS, [
  item_EyeCandy,
+ item_Coppernob,
  item_LNWRWebb,
  item_GreatBear,
  item_GWRHall,

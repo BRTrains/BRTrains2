@@ -1,8 +1,3 @@
  if (param[1] == 0) {
-	disable_item(FEAT_TRAINS, 469); // BR121 - Uses livery test strings
-	disable_item(FEAT_TRAINS, 476); // BR70OG (Southern region Class 70) (Unfinished)
-	disable_item(FEAT_TRAINS, 477); // BR71
-	disable_item(FEAT_TRAINS, 483); // RM_TPO
-	disable_item(FEAT_TRAINS, 484); // GWR Great Bear (Unfinished)
-	disable_item(FEAT_TRAINS, 512); // GWR Castle
+	disable_item(FEAT_TRAINS, 584); // Coppernob
  }
