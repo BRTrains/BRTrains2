@@ -1070,8 +1070,8 @@ str_BRMK4TSOD_liveries			:Intercity Swallow, National Express, GNER, East Coast,
 STR_NAME_BRMK4RFM				:BR Mark 4 Coach (Trailer Restaurant First)
 str_BRMK4RFM_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
-STR_NAME_BRMK4DVT				:BR Mark 4 Driving Van Trailer
-str_BRMK4DVT_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+STR_NAME_BRMk4DVT				:BR Mark 4 Driving Van Trailer
+str_BRMk4DVT_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BRMk5Sleeper			:BR Mark 5 Sleeper Coach
 str_BRMk5Sleeper_liveries		:Caledonian Sleaper

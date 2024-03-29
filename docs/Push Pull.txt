@@ -1,0 +1,16 @@
+Push-pull combinations in the format
+Trailer: Power units
+
+? indicates assumed combinations. 33 is 7 length, everything else is 8 length
+
+TPO PCV: 47, 57?
+
+Mk2 DBSO: 47, 57?, 37
+
+Mk3 DVT: 86, 87, 90, 67, 68, 47, 57?, 69?
+
+Mk4 DVT: 67, 89, 90, 91
+
+Mk5 DVT: 68
+
+438 TC: 33, 73, 71 (& 74 converted from 71), 4-REP (432). Maybe 47 (unconfirmed if push-pull or just hauled for a railtour)

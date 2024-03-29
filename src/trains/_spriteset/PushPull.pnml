@@ -1,0 +1,44 @@
+/*
+
+Switches in this file are mirrors of their respective DVT or locomotive for pushpull operations
+Changes to the locomotive should be mirrored here or strange things might happen
+It is recommended to always include a default...
+
+*/
+
+// Mirror of Mk4DVT
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+    0:	spriteset_BR91_IntercitySwallow;
+	1:	spriteset_BR91_NatEx;
+	2:	spriteset_BR91_GNER;
+	3:	spriteset_BR91_EastCoast;
+	4:	spriteset_BR91_VirginEC;
+    5:	spriteset_BR91_LNER;
+    spriteset_BR91_IntercitySwallow;
+}
+
+// Mirror of BR89
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR89, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+    0:	spriteset_BR89_IntercitySwallow;
+	1:	spriteset_BR89_GNER;
+    2:	spriteset_BR89_Intercity;
+    spriteset_BR89_IntercitySwallow;
+}
+
+// Mirror of BR90
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR90, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+    0:	spriteset_BR90_IntercitySwallow;
+	1:	spriteset_BR90_FLGrey;
+	2:	spriteset_BR90_EWS;
+    3:	spriteset_BR90_DB;
+	4:	spriteset_BR90_FLGreen;
+	5:	spriteset_BR90_FLPowerhaul;
+	6:	spriteset_BR90_ONE;
+	7:	spriteset_BR90_GreaterAnglia;
+	8:	spriteset_BR90_GreaterAnglia2;	
+	9:	spriteset_BR90_Virgin;
+	10:	spriteset_BR90_REX;
+	11:	spriteset_BR90_FirstScotrail;
+	12:	spriteset_BR90_GNER;
+        return CB_RESULT_NO_TEXT;
+}

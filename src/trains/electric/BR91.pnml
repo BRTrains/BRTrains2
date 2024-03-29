@@ -8,12 +8,12 @@ switch(FEAT_TRAINS,SELF, sw_BR91,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR91_reversed,cargo_subtype){
-    0:	spriteset_BRMK4DVT_IntercitySwallowr;
-	1:	spriteset_BRMK4DVT_NatExr;
-	2:	spriteset_BRMK4DVT_GNERr;
-	3:	spriteset_BRMK4DVT_EastCoastr;
-	4:	spriteset_BRMK4DVT_VirginECr;
-    5:	spriteset_BRMK4DVT_LNERr;
+    0:	spriteset_BRMk4DVT_IntercitySwallowr;
+	1:	spriteset_BRMk4DVT_NatExr;
+	2:	spriteset_BRMk4DVT_GNERr;
+	3:	spriteset_BRMk4DVT_EastCoastr;
+	4:	spriteset_BRMk4DVT_VirginECr;
+    5:	spriteset_BRMk4DVT_LNERr;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR91, extra_callback_info1) {
@@ -22,7 +22,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR91, extra_callback_info1) {
 	5: return item_91_BRMK4TSOD;
 	6: return item_91_BRMK4RFM;
 	7..9: return item_91_BRMK4FO;
-	10: return item_91_BRMK4DVT;
+	10: return item_91_BRMk4DVT;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
@@ -141,16 +141,16 @@ switch(FEAT_TRAINS,SELF, sw_91_BRMK4TSOD,cargo_subtype){
     5: spriteset_BRMK4TSOD_LNER;
 }
 
-switch(FEAT_TRAINS,SELF, sw_91_BRMK4DVT,cargo_subtype){
-    0: spriteset_BRMK4DVT_IntercitySwallow;
-    1: spriteset_BRMK4DVT_NatEx;
-    2: spriteset_BRMK4DVT_GNER;
-    3: spriteset_BRMK4DVT_EastCoast;
-    4: spriteset_BRMK4DVT_VirginEC;
-    5: spriteset_BRMK4DVT_LNER;
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4DVT,cargo_subtype){
+    0: spriteset_BRMk4DVT_IntercitySwallow;
+    1: spriteset_BRMk4DVT_NatEx;
+    2: spriteset_BRMk4DVT_GNER;
+    3: spriteset_BRMk4DVT_EastCoast;
+    4: spriteset_BRMk4DVT_VirginEC;
+    5: spriteset_BRMk4DVT_LNER;
 }
 
-switch(FEAT_TRAINS,SELF, sw_91_BRMK4DVT_reversed,cargo_subtype){
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4DVT_reversed,cargo_subtype){
     0:	spriteset_BR91_IntercitySwallowr;
 	1:	spriteset_BR91_NatExr;
 	2:	spriteset_BR91_GNERr;
@@ -160,13 +160,13 @@ switch(FEAT_TRAINS,SELF, sw_91_BRMK4DVT_reversed,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,PARENT,sw_91_rear,vehicle_is_reversed){
-    0:	sw_91_BRMK4DVT;
-	1:	sw_91_BRMK4DVT_reversed;
+    0:	sw_91_BRMk4DVT;
+	1:	sw_91_BRMk4DVT_reversed;
 }
 
-item (FEAT_TRAINS, item_91_BRMK4DVT, 113) {
+item (FEAT_TRAINS, item_91_BRMk4DVT, 113) {
  property {
-  name: string(STR_NAME_BRMK4DVT);
+  name: string(STR_NAME_BRMk4DVT);
   climates_available: NO_CLIMATE;
   introduction_date: date(1989,4,21);
   model_life: 12;

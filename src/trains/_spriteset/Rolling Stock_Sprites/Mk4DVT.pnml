@@ -1,41 +1,83 @@
-spriteset(spriteset_BRMK4DVT_IntercitySwallow, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_purchase, "gfx/BR91.png") {
+	template_purchase(256, 0)
+}
+
+spriteset(spriteset_BRMk4DVT_IntercitySwallow, "gfx/BR91.png") {
 	template_train32px(0, 113)
 }
-spriteset(spriteset_BRMK4DVT_IntercitySwallowr, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_IntercitySwallowr, "gfx/BR91.png") {
 	template_train32px(172, 113)
 }
 
-spriteset(spriteset_BRMK4DVT_NatEx, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_NatEx, "gfx/BR91.png") {
  template_train32px(0, 238)
 }
-spriteset(spriteset_BRMK4DVT_NatExr, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_NatExr, "gfx/BR91.png") {
  template_train32px(172, 238)
 }
 
-spriteset(spriteset_BRMK4DVT_GNER, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_GNER, "gfx/BR91.png") {
  template_train32px(0, 363)
 }
-spriteset(spriteset_BRMK4DVT_GNERr, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_GNERr, "gfx/BR91.png") {
  template_train32px(172, 363)
 }
 
-spriteset(spriteset_BRMK4DVT_EastCoast, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_EastCoast, "gfx/BR91.png") {
  template_train32px(0, 488)
 }
-spriteset(spriteset_BRMK4DVT_EastCoastr, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_EastCoastr, "gfx/BR91.png") {
  template_train32px(172, 488)
 }
 
-spriteset(spriteset_BRMK4DVT_VirginEC, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_VirginEC, "gfx/BR91.png") {
  template_train32px(0, 613)
 }
-spriteset(spriteset_BRMK4DVT_VirginECr, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_VirginECr, "gfx/BR91.png") {
  template_train32px(172, 613)
 }
 
-spriteset(spriteset_BRMK4DVT_LNER, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_LNER, "gfx/BR91.png") {
  template_train32px(0, 738)
 }
-spriteset(spriteset_BRMK4DVT_LNERr, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_LNERr, "gfx/BR91.png") {
  template_train32px(172, 738)
+}
+
+switch(FEAT_TRAINS,SELF,sw_BRMk4DVT_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_IntercitySwallow);
+	1:	return string(str_NatEx);
+	2:	return string(str_GNER);
+	3:	return string(str_EastCoast);
+	4:	return string(str_VirginECLNER);
+    5:	return string(str_LNER);
+       return CB_RESULT_NO_TEXT;
+}
+
+// Show own graphics when facing forward
+// WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
+switch(FEAT_TRAINS,SELF, sw_BRMk4DVT,cargo_subtype){
+    0: spriteset_BRMk4DVT_IntercitySwallow;
+    1: spriteset_BRMk4DVT_NatEx;
+    2: spriteset_BRMk4DVT_GNER;
+    3: spriteset_BRMk4DVT_EastCoast;
+    4: spriteset_BRMk4DVT_VirginEC;
+    5: spriteset_BRMk4DVT_LNER;
+}
+
+// If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_BRMk4DVT_PushPUll, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	418: sw_PUSHPULL_DVTasBR89; // Class 89
+	543: sw_PUSHPULL_DVTasBR90; // Class 90
+	sw_BRMk4DVT; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_Mk4DVT_CheckPosition, position_in_articulated_veh_from_end){
+    0: sw_BRMk4DVT_PushPUll; // Attempt push pull
+	sw_BRMk4DVT; // We aren't at the back of theconsist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BRMk4DVT_Sprites ,vehicle_is_reversed){
+    0:	sw_BRMk4DVT; // We're heading foward, show normal sprites
+	1:	sw_Mk4DVT_CheckPosition; // Attempt push pull (skipping check position for now for testing)
 }

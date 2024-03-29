@@ -14,8 +14,9 @@ spriteset(spriteset_BR89_Intercity, "gfx/BR89.png") {
 	template_train32px(0, 63)
 }
 
-
-switch(FEAT_TRAINS,SELF, sw_BR89, cargo_subtype){
+// This switch called when displaying as this locomotive
+// WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
+switch(FEAT_TRAINS, SELF, sw_BR89, cargo_subtype){
     0:	spriteset_BR89_IntercitySwallow;
 	1:	spriteset_BR89_GNER;
     2:	spriteset_BR89_Intercity;
@@ -27,6 +28,22 @@ switch(FEAT_TRAINS,SELF,sw_BR89_cargo_subtype_text,cargo_subtype){
 	1:	return string(str_GNER);
     2:	return string(str_Intercity);
        return CB_RESULT_NO_TEXT;
+}
+
+// If the rear of this consist is a compatible Driving Trailer, call that vehicles's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_BR89_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	585: sw_PUSHPULL_LocomotiveAsMk4DVT; // Mk4 DVT
+	sw_BR89; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR89_CheckPosition, position_in_consist){
+    0: sw_BR89_PushPUll; // Attempt push pull
+	sw_BR89; // We aren't at the front of the consist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR89_Sprites ,vehicle_is_reversed){
+    0:	sw_BR89; // We're heading foward, show normal sprites
+	1:	sw_BR89_CheckPosition; // Attempt push pull
 }
 
 item (FEAT_TRAINS, item_BR89, 418) {
@@ -68,7 +85,7 @@ item (FEAT_TRAINS, item_BR89, 418) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_BR89_cargo_subtype_text;
-	default: 							sw_BR89;
+	default: 							sw_BR89_Sprites;
 	purchase:							spriteset_BR89_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cost_factor:	return(GetAdjustedCost(38));
