@@ -6,6 +6,19 @@ It is recommended to always include a default...
 
 */
 
+// Mirror of Mk3DVT
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk3DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+    0: spriteset_BRMk3DVT_IntercitySwallow;
+    1: spriteset_BRMk3DVT_Virgin;
+    2: spriteset_BRMk3DVT_ONE;
+    3: spriteset_BRMk3DVT_Chiltern;
+    4: spriteset_BRMk3DVT_GA;
+    5: spriteset_BRMk3DVT_TfW;
+    6: spriteset_BRMk3DVT_VirginPretendolino;
+    7: spriteset_BRMk3DVT_ArrivaWales;
+    8: spriteset_BRMk3DVT_NetworkRail;
+}
+
 // Mirror of Mk4DVT
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
     0:	spriteset_BR91_IntercitySwallow;

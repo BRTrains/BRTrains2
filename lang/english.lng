@@ -1055,6 +1055,9 @@ str_BRMK3DMB_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midlan
 STR_NAME_BRMk3Sleeper			:BR Mark 3 Sleeper Coach
 str_BRMk3Sleeper_liveries			:BR Blue, Intercity, First Scotrail, Scotrail, Caledonian Sleaper, Great Western, GWR
 
+STR_NAME_BRMk3DVT				:BR Mark 3 Driving Van Trailer
+str_BRMk3DVT_liveries			:Intercity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin "Pretendolino", Arriva Wales, Network Rail
+
 STR_NAME_BRMK4FO				:BR Mark 4 Coach (First Open)
 str_BRMK4FO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 

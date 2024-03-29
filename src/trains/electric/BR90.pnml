@@ -90,6 +90,7 @@ switch(FEAT_TRAINS,SELF,sw_BR90_cargo_subtype_text,cargo_subtype){
 
 // If the rear of this consist is a compatible Driving Trailer, call that vehicles's remote sprite call switch
 switch(FEAT_TRAINS, PARENT, sw_BR90_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	586: sw_PUSHPULL_LocomotiveAsMk3DVT; // Mk3 DVT
 	585: sw_PUSHPULL_LocomotiveAsMk4DVT; // Mk4 DVT
 	sw_BR90; // No compatible locomotive found, show normal sprites
 }

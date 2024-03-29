@@ -44,16 +44,6 @@ spriteset(spriteset_BRMk4DVT_LNERr, "gfx/BR91.png") {
  template_train32px(172, 738)
 }
 
-switch(FEAT_TRAINS,SELF,sw_BRMk4DVT_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_IntercitySwallow);
-	1:	return string(str_NatEx);
-	2:	return string(str_GNER);
-	3:	return string(str_EastCoast);
-	4:	return string(str_VirginECLNER);
-    5:	return string(str_LNER);
-       return CB_RESULT_NO_TEXT;
-}
-
 // Show own graphics when facing forward
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BRMk4DVT,cargo_subtype){

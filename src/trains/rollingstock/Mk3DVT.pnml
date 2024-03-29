@@ -1,0 +1,40 @@
+item (FEAT_TRAINS, item_BRMk3DVT, 586) {
+	property {
+		name: 							string(STR_NAME_BRMk3DVT);
+		climates_available: 			ALL_CLIMATES;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		introduction_date:				date(1989,1,1);
+		cargo_allow_refit:				[MAIL];
+		loading_speed:					14;
+		cost_factor:					30;
+		running_cost_factor:			12;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		track_type:						RAIL;
+		speed:							140 mph;
+		power:							0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				MAIL;
+		cargo_capacity:					1;
+		weight:							43 ton;
+		tractive_effort_coefficient:	0;
+		air_drag_coefficient:			0;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+ 	default: 							sw_BRMk3DVT_Sprites;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BRMk3DVT_cargo_subtype_text;
+	purchase:							spriteset_BRMk3DVT_purchase;
+	speed:								160;
+	cargo_capacity: return(0);
+	cost_factor:	return(GetAdjustedCost(52));
+	running_cost_factor: return(GetAdjustedCost(17));
+}
+}
