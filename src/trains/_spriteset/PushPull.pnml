@@ -21,13 +21,13 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk3DVT, [STORE_TEMP(num_vehs
 
 // Mirror of Mk4DVT
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0:	spriteset_BR91_IntercitySwallow;
-	1:	spriteset_BR91_NatEx;
-	2:	spriteset_BR91_GNER;
-	3:	spriteset_BR91_EastCoast;
-	4:	spriteset_BR91_VirginEC;
-    5:	spriteset_BR91_LNER;
-    spriteset_BR91_IntercitySwallow;
+    0:	spriteset_BRMk4DVT_IntercitySwallowr;
+	1:	spriteset_BRMk4DVT_NatExr;
+	2:	spriteset_BRMk4DVT_GNERr;
+	3:	spriteset_BRMk4DVT_EastCoastr;
+	4:	spriteset_BRMk4DVT_VirginECr;
+    5:	spriteset_BRMk4DVT_LNERr;
+    spriteset_BR91_IntercitySwallowr;
 }
 
 // Mirror of BR89

@@ -249,7 +249,9 @@ sort(FEAT_TRAINS, [
  item_253_BRMK3TRSB,
  item_253_BRMK3TRUB,
  item_253_BRMK3TRUK,
+ item_BRMk3DVT,
  item_BRMk3Sleeper,
+ item_BRMk4DVT,
  item_BRMk5Sleeper,
  item_IE2800
  ]);
