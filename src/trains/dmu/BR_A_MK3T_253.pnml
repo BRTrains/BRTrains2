@@ -1,6 +1,6 @@
-item (FEAT_TRAINS, item_253_BRMK3TF, 13) {
+item (FEAT_TRAINS, item_253_BRMk3TF, 13) {
 	property {
-		name: 							string(STR_NAME_BRMK3TF);
+		name: 							string(STR_NAME_BRMk3TF);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
@@ -27,18 +27,18 @@ item (FEAT_TRAINS, item_253_BRMK3TF, 13) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_253_BRMK3TF;
+ 	default: 							sw_253_BRMk3TF;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
-	purchase:							spriteset_BRMK3TF_purchase;
+	purchase:							spriteset_BRMk3TF_purchase;
 	speed:								200;
 	cargo_capacity: return(48 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_253_BRMK3TS, 14) {
+item (FEAT_TRAINS, item_253_BRMk3TS, 14) {
 	property {
-		name: 							string(STR_NAME_BRMK3TS);
+		name: 							string(STR_NAME_BRMk3TS);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
@@ -65,18 +65,18 @@ item (FEAT_TRAINS, item_253_BRMK3TS, 14) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_253_BRMK3TS;
+ 	default: 							sw_253_BRMk3TS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
-	purchase:							spriteset_BRMK3TS_purchase;
+	purchase:							spriteset_BRMk3TS_purchase;
 	speed:								200;
 	cargo_capacity: return(72 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_253_BRMK3TGS, 15) {
+item (FEAT_TRAINS, item_253_BRMk3TGS, 15) {
 	property {
-		name: 							string(STR_NAME_BRMK3TGS);
+		name: 							string(STR_NAME_BRMk3TGS);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
@@ -103,18 +103,18 @@ item (FEAT_TRAINS, item_253_BRMK3TGS, 15) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_253_BRMK3TGS;
+ 	default: 							sw_253_BRMk3TGS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
-	purchase:							spriteset_BRMK3TGS_purchase;
+	purchase:							spriteset_BRMk3TGS_purchase;
 	speed:								200;
 	cargo_capacity: return(59 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_253_BRMK3TRSB, 16) {
+item (FEAT_TRAINS, item_253_BRMk3TRSB, 16) {
 	property {
-		name: 							string(STR_NAME_BRMK3TRSB);
+		name: 							string(STR_NAME_BRMk3TRSB);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
@@ -141,18 +141,18 @@ item (FEAT_TRAINS, item_253_BRMK3TRSB, 16) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_253_BRMK3TRSB;
+ 	default: 							sw_253_BRMk3TRSB;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
-	purchase:							spriteset_BRMK3TRSB_purchase;
+	purchase:							spriteset_BRMk3TRSB_purchase;
 	speed:								200;
 	cargo_capacity: return(34 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_253_BRMK3TRUB, 17) {
+item (FEAT_TRAINS, item_253_BRMk3TRUB, 17) {
 	property {
-		name: 							string(STR_NAME_BRMK3TRUB);
+		name: 							string(STR_NAME_BRMk3TRUB);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
@@ -179,18 +179,18 @@ item (FEAT_TRAINS, item_253_BRMK3TRUB, 17) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_253_BRMK3TRUB;
+ 	default: 							sw_253_BRMk3TRUB;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
-	purchase:							spriteset_BRMK3TRUB_purchase;
+	purchase:							spriteset_BRMk3TRUB_purchase;
 	speed:								200;
 	cargo_capacity: return(34 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_253_BRMK3TRUK, 18) {
+item (FEAT_TRAINS, item_253_BRMk3TRUK, 18) {
 	property {
-		name: 							string(STR_NAME_BRMK3TRUK);
+		name: 							string(STR_NAME_BRMk3TRUK);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
@@ -217,10 +217,10 @@ item (FEAT_TRAINS, item_253_BRMK3TRUK, 18) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_253_BRMK3TRUK;
+ 	default: 							sw_253_BRMk3TRUK;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
-	purchase:							spriteset_BRMK3TRUK_purchase;
+	purchase:							spriteset_BRMk3TRUK_purchase;
 	speed:								200;
 	cargo_capacity: return(34 * param_pax);
 }

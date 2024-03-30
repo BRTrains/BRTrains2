@@ -1,452 +1,452 @@
-spriteset(spriteset_BRMK1SO_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1SO_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 13)
 }
 
-spriteset(spriteset_BRMK1TSO_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1TSO_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 13)
 }
 
-spriteset(spriteset_BRMK1SK_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1SK_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 13)
 }
 
-spriteset(spriteset_BRMK1FO_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1FO_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 26)
 }
 
-spriteset(spriteset_BRMK1FK_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1FK_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 39)
 }
 
-spriteset(spriteset_BRMK1CK_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1CK_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 52)
 }
 
-spriteset(spriteset_BRMK1BSK_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1BSK_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 65)
 }
 
-spriteset(spriteset_BRMK1BSO_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1BSO_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 65)
 }
 
-spriteset(spriteset_BRMK1BSOT_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1BSOT_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 65)
 }
 
-spriteset(spriteset_BRMK1BCK_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1BCK_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 78)
 }
 
-spriteset(spriteset_BRMK1BFK_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1BFK_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 91)
 }
 
-spriteset(spriteset_BRMK1BG_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1BG_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 104)
 }
 
-spriteset(spriteset_BRMK1RK_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1RK_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 117)
 }
 
-spriteset(spriteset_BRMK1RMB_Purchase, "gfx/BRMK1Purchase.png") {
+spriteset(spriteset_BRMk1RMB_Purchase, "gfx/BRMk1Purchase.png") {
 	template_purchase(0, 130)
 }
 
-spriteset(spriteset_BRMK1SO_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1SO_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1TSO_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1TSO_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1SK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1SK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1FO_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1FO_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 36)
 }
 
-spriteset(spriteset_BRMK1FK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1FK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 59)
 }
 
-spriteset(spriteset_BRMK1CK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1CK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 82)
 }
 
-spriteset(spriteset_BRMK1BSK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1BSK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSO_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1BSO_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSOT_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1BSOT_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BCK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1BCK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 128)
 }
 
-spriteset(spriteset_BRMK1BFK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1BFK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 151)
 }
 
-spriteset(spriteset_BRMK1BG_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1BG_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 174)
 }
 
-spriteset(spriteset_BRMK1RK_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1RK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 197)
 }
 
-spriteset(spriteset_BRMK1RMB_BRCarmCream, "gfx/BRMK1CarmCream.png") {
+spriteset(spriteset_BRMk1RMB_BRCarmCream, "gfx/BRMk1CarmCream.png") {
 	template_train28px(0, 220)
 }
 
-spriteset(spriteset_BRMK1SO_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1SO_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1TSO_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1TSO_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1SK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1SK_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1FO_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1FO_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 36)
 }
 
-spriteset(spriteset_BRMK1FK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1FK_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 59)
 }
 
-spriteset(spriteset_BRMK1CK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1CK_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 82)
 }
 
-spriteset(spriteset_BRMK1BSK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1BSK_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSO_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1BSO_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSOT_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1BSOT_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BCK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1BCK_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 128)
 }
 
-spriteset(spriteset_BRMK1BFK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1BFK_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 151)
 }
 
-spriteset(spriteset_BRMK1BG_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1BG_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 174)
 }
 
-spriteset(spriteset_BRMK1RK_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1RK_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 197)
 }
 
-spriteset(spriteset_BRMK1RMB_BRChocCream, "gfx/BRMK1ChocCream.png") {
+spriteset(spriteset_BRMk1RMB_BRChocCream, "gfx/BRMk1ChocCream.png") {
 	template_train28px(0, 220)
 }
 
-spriteset(spriteset_BRMK1SO_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1SO_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1TSO_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1TSO_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1SK_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1SK_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1FO_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1FO_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 36)
 }
 
-spriteset(spriteset_BRMK1FK_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1FK_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 59)
 }
 
-spriteset(spriteset_BRMK1CK_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1CK_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 82)
 }
 
-spriteset(spriteset_BRMK1BSK_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1BSK_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSO_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1BSO_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSOT_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1BSOT_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BCK_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1BCK_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 128)
 }
 
-spriteset(spriteset_BRMK1BFK_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1BFK_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 151)
 }
 
-spriteset(spriteset_BRMK1BG_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1BG_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 174)
 }
 
-spriteset(spriteset_BRMK1RK_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1RK_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 197)
 }
 
-spriteset(spriteset_BRMK1RMB_BRMalachite, "gfx/BRMK1Malachite.png") {
+spriteset(spriteset_BRMk1RMB_BRMalachite, "gfx/BRMk1Malachite.png") {
 	template_train28px(0, 220)
 }
 
-spriteset(spriteset_BRMK1SO_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1SO_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1TSO_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1TSO_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1SK_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1SK_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1FO_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1FO_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 36)
 }
 
-spriteset(spriteset_BRMK1FK_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1FK_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 59)
 }
 
-spriteset(spriteset_BRMK1CK_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1CK_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 82)
 }
 
-spriteset(spriteset_BRMK1BSK_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1BSK_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSO_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1BSO_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSOT_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1BSOT_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BCK_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1BCK_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 128)
 }
 
-spriteset(spriteset_BRMK1BFK_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1BFK_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 151)
 }
 
-spriteset(spriteset_BRMK1BG_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1BG_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 174)
 }
 
-spriteset(spriteset_BRMK1RK_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1RK_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 197)
 }
 
-spriteset(spriteset_BRMK1RMB_BRMaroon, "gfx/BRMK1Maroon.png") {
+spriteset(spriteset_BRMk1RMB_BRMaroon, "gfx/BRMk1Maroon.png") {
 	template_train28px(0, 220)
 }
 
-spriteset(spriteset_BRMK1SO_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1SO_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1TSO_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1TSO_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1SK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1SK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BRMK1FO_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1FO_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 36)
 }
 
-spriteset(spriteset_BRMK1FK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1FK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 59)
 }
 
-spriteset(spriteset_BRMK1CK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1CK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 82)
 }
 
-spriteset(spriteset_BRMK1BSK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1BSK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSO_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1BSO_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BSOT_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1BSOT_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 105)
 }
 
-spriteset(spriteset_BRMK1BCK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1BCK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 128)
 }
 
-spriteset(spriteset_BRMK1BFK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1BFK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 151)
 }
 
-spriteset(spriteset_BRMK1BG_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1BG_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 174)
 }
 
-spriteset(spriteset_BRMK1RK_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1RK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 197)
 }
 
-spriteset(spriteset_BRMK1RMB_BRBlueGrey, "gfx/BRMK1BlueGrey.png") {
+spriteset(spriteset_BRMk1RMB_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
 	template_train28px(0, 220)
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1SO,cargo_subtype){
-    0:	spriteset_BRMK1SO_BRCarmCream;
-	1:	spriteset_BRMK1SO_BRChocCream;
-	2:	spriteset_BRMK1SO_BRMalachite;
-	3:	spriteset_BRMK1SO_BRMaroon;
-	4:  spriteset_BRMK1SO_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1SO,cargo_subtype){
+    0:	spriteset_BRMk1SO_BRCarmCream;
+	1:	spriteset_BRMk1SO_BRChocCream;
+	2:	spriteset_BRMk1SO_BRMalachite;
+	3:	spriteset_BRMk1SO_BRMaroon;
+	4:  spriteset_BRMk1SO_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1FO,cargo_subtype){
-    0:	spriteset_BRMK1FO_BRCarmCream;
-	1:	spriteset_BRMK1FO_BRChocCream;
-	2:	spriteset_BRMK1FO_BRMalachite;
-	3:	spriteset_BRMK1FO_BRMaroon;
-	4:	spriteset_BRMK1FO_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1FO,cargo_subtype){
+    0:	spriteset_BRMk1FO_BRCarmCream;
+	1:	spriteset_BRMk1FO_BRChocCream;
+	2:	spriteset_BRMk1FO_BRMalachite;
+	3:	spriteset_BRMk1FO_BRMaroon;
+	4:	spriteset_BRMk1FO_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1FK,cargo_subtype){
-    0:	spriteset_BRMK1FK_BRCarmCream;
-	1:	spriteset_BRMK1FK_BRChocCream;
-	2:	spriteset_BRMK1FK_BRMalachite;
-	3:	spriteset_BRMK1FK_BRMaroon;
-	4:	spriteset_BRMK1FK_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1FK,cargo_subtype){
+    0:	spriteset_BRMk1FK_BRCarmCream;
+	1:	spriteset_BRMk1FK_BRChocCream;
+	2:	spriteset_BRMk1FK_BRMalachite;
+	3:	spriteset_BRMk1FK_BRMaroon;
+	4:	spriteset_BRMk1FK_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1CK,cargo_subtype){
-    0:	spriteset_BRMK1CK_BRCarmCream;
-	1:	spriteset_BRMK1CK_BRChocCream;
-	2:	spriteset_BRMK1CK_BRMalachite;
-	3:	spriteset_BRMK1CK_BRMaroon;
-	4:	spriteset_BRMK1CK_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1CK,cargo_subtype){
+    0:	spriteset_BRMk1CK_BRCarmCream;
+	1:	spriteset_BRMk1CK_BRChocCream;
+	2:	spriteset_BRMk1CK_BRMalachite;
+	3:	spriteset_BRMk1CK_BRMaroon;
+	4:	spriteset_BRMk1CK_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1BSK,cargo_subtype){
-    0:	spriteset_BRMK1BSK_BRCarmCream;
-	1:	spriteset_BRMK1BSK_BRChocCream;
-	2:	spriteset_BRMK1BSK_BRMalachite;
-	3:	spriteset_BRMK1BSK_BRMaroon;
-	4:	spriteset_BRMK1BSK_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1BSK,cargo_subtype){
+    0:	spriteset_BRMk1BSK_BRCarmCream;
+	1:	spriteset_BRMk1BSK_BRChocCream;
+	2:	spriteset_BRMk1BSK_BRMalachite;
+	3:	spriteset_BRMk1BSK_BRMaroon;
+	4:	spriteset_BRMk1BSK_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1BCK,cargo_subtype){
-    0:	spriteset_BRMK1BCK_BRCarmCream;
-	1:	spriteset_BRMK1BCK_BRChocCream;
-	2:	spriteset_BRMK1BCK_BRMalachite;
-	3:	spriteset_BRMK1BCK_BRMaroon;
-	4:	spriteset_BRMK1BCK_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1BCK,cargo_subtype){
+    0:	spriteset_BRMk1BCK_BRCarmCream;
+	1:	spriteset_BRMk1BCK_BRChocCream;
+	2:	spriteset_BRMk1BCK_BRMalachite;
+	3:	spriteset_BRMk1BCK_BRMaroon;
+	4:	spriteset_BRMk1BCK_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1BFK,cargo_subtype){
-    0:	spriteset_BRMK1BFK_BRCarmCream;
-	1:	spriteset_BRMK1BFK_BRChocCream;
-	2:	spriteset_BRMK1BFK_BRMalachite;
-	3:	spriteset_BRMK1BFK_BRMaroon;
-	4:	spriteset_BRMK1BFK_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1BFK,cargo_subtype){
+    0:	spriteset_BRMk1BFK_BRCarmCream;
+	1:	spriteset_BRMk1BFK_BRChocCream;
+	2:	spriteset_BRMk1BFK_BRMalachite;
+	3:	spriteset_BRMk1BFK_BRMaroon;
+	4:	spriteset_BRMk1BFK_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1BG,cargo_subtype){
-    0:	spriteset_BRMK1BG_BRCarmCream;
-	1:	spriteset_BRMK1BG_BRChocCream;
-	2:	spriteset_BRMK1BG_BRMalachite;
-	3:	spriteset_BRMK1BG_BRMaroon;
-	4:	spriteset_BRMK1BG_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1BG,cargo_subtype){
+    0:	spriteset_BRMk1BG_BRCarmCream;
+	1:	spriteset_BRMk1BG_BRChocCream;
+	2:	spriteset_BRMk1BG_BRMalachite;
+	3:	spriteset_BRMk1BG_BRMaroon;
+	4:	spriteset_BRMk1BG_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1RK,cargo_subtype){
-    0:	spriteset_BRMK1RK_BRCarmCream;
-	1:	spriteset_BRMK1RK_BRChocCream;
-	2:	spriteset_BRMK1RK_BRMalachite;
-	3:	spriteset_BRMK1RK_BRMaroon;
-	4:	spriteset_BRMK1RK_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1RK,cargo_subtype){
+    0:	spriteset_BRMk1RK_BRCarmCream;
+	1:	spriteset_BRMk1RK_BRChocCream;
+	2:	spriteset_BRMk1RK_BRMalachite;
+	3:	spriteset_BRMk1RK_BRMaroon;
+	4:	spriteset_BRMk1RK_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1RMB,cargo_subtype){
-    0:	spriteset_BRMK1RMB_BRCarmCream;
-	1:	spriteset_BRMK1RMB_BRChocCream;
-	2:	spriteset_BRMK1RMB_BRMalachite;
-	3:	spriteset_BRMK1RMB_BRMaroon;
-	4:	spriteset_BRMK1RMB_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1RMB,cargo_subtype){
+    0:	spriteset_BRMk1RMB_BRCarmCream;
+	1:	spriteset_BRMk1RMB_BRChocCream;
+	2:	spriteset_BRMk1RMB_BRMalachite;
+	3:	spriteset_BRMk1RMB_BRMaroon;
+	4:	spriteset_BRMk1RMB_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1SK,cargo_subtype){
-    0:	spriteset_BRMK1SK_BRCarmCream;
-	1:	spriteset_BRMK1SK_BRChocCream;
-	2:	spriteset_BRMK1SK_BRMalachite;
-	3:	spriteset_BRMK1SK_BRMaroon;
-	4:	spriteset_BRMK1SK_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1SK,cargo_subtype){
+    0:	spriteset_BRMk1SK_BRCarmCream;
+	1:	spriteset_BRMk1SK_BRChocCream;
+	2:	spriteset_BRMk1SK_BRMalachite;
+	3:	spriteset_BRMk1SK_BRMaroon;
+	4:	spriteset_BRMk1SK_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1BSO,cargo_subtype){
-    0:	spriteset_BRMK1BSO_BRCarmCream;
-	1:	spriteset_BRMK1BSO_BRChocCream;
-	2:	spriteset_BRMK1BSO_BRMalachite;
-	3:	spriteset_BRMK1BSO_BRMaroon;
-	4:	spriteset_BRMK1BSO_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1BSO,cargo_subtype){
+    0:	spriteset_BRMk1BSO_BRCarmCream;
+	1:	spriteset_BRMk1BSO_BRChocCream;
+	2:	spriteset_BRMk1BSO_BRMalachite;
+	3:	spriteset_BRMk1BSO_BRMaroon;
+	4:	spriteset_BRMk1BSO_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1BSOT,cargo_subtype){
-    0:	spriteset_BRMK1BSOT_BRCarmCream;
-	1:	spriteset_BRMK1BSOT_BRChocCream;
-	2:	spriteset_BRMK1BSOT_BRMalachite;
-	3:	spriteset_BRMK1BSOT_BRMaroon;
-	4:	spriteset_BRMK1BSOT_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1BSOT,cargo_subtype){
+    0:	spriteset_BRMk1BSOT_BRCarmCream;
+	1:	spriteset_BRMk1BSOT_BRChocCream;
+	2:	spriteset_BRMk1BSOT_BRMalachite;
+	3:	spriteset_BRMk1BSOT_BRMaroon;
+	4:	spriteset_BRMk1BSOT_BRBlueGrey;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK1TSO,cargo_subtype){
-    0:	spriteset_BRMK1TSO_BRCarmCream;
-	1:	spriteset_BRMK1TSO_BRChocCream;
-	2:	spriteset_BRMK1TSO_BRMalachite;
-	3:	spriteset_BRMK1TSO_BRMaroon;
-	4:	spriteset_BRMK1TSO_BRBlueGrey;
+switch(FEAT_TRAINS,SELF, sw_BRMk1TSO,cargo_subtype){
+    0:	spriteset_BRMk1TSO_BRCarmCream;
+	1:	spriteset_BRMk1TSO_BRChocCream;
+	2:	spriteset_BRMk1TSO_BRMalachite;
+	3:	spriteset_BRMk1TSO_BRMaroon;
+	4:	spriteset_BRMk1TSO_BRBlueGrey;
 }
 	
-switch(FEAT_TRAINS,SELF,sw_BRMK1_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BRMk1_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRCarmCream);
     1: return string(str_BRChocCream);
 	2: return string(str_BRMalachite);
@@ -455,9 +455,9 @@ switch(FEAT_TRAINS,SELF,sw_BRMK1_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BRMK1SO, 137) {
+item (FEAT_TRAINS, item_BRMk1SO, 137) {
 	property {
-		name: 							string(STR_NAME_BRMK1SO);
+		name: 							string(STR_NAME_BRMk1SO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1963,4,21);
 		model_life:						100;
@@ -477,11 +477,11 @@ item (FEAT_TRAINS, item_BRMK1SO, 137) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1SO_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1SO_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1SO;
-	purchase:							spriteset_BRMK1SO_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1SO;
+	purchase:							spriteset_BRMk1SO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(48 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -490,9 +490,9 @@ item (FEAT_TRAINS, item_BRMK1SO, 137) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1FO, 138) {
+item (FEAT_TRAINS, item_BRMk1FO, 138) {
 	property {
-		name: 							string(STR_NAME_BRMK1FO);
+		name: 							string(STR_NAME_BRMk1FO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
 		model_life:						100;
@@ -513,11 +513,11 @@ item (FEAT_TRAINS, item_BRMK1FO, 138) {
 		cargo_age_period:				250;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1FO_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1FO_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1FO;
-	purchase:							spriteset_BRMK1FO_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1FO;
+	purchase:							spriteset_BRMk1FO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(42 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -525,9 +525,9 @@ item (FEAT_TRAINS, item_BRMK1FO, 138) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1FK, 139) {
+item (FEAT_TRAINS, item_BRMk1FK, 139) {
 	property {
-		name: 							string(STR_NAME_BRMK1FK);
+		name: 							string(STR_NAME_BRMk1FK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
 		model_life:						100;
@@ -548,11 +548,11 @@ item (FEAT_TRAINS, item_BRMK1FK, 139) {
 		cargo_age_period:				250;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1FK_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1FK_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1FK;
-	purchase:							spriteset_BRMK1FK_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1FK;
+	purchase:							spriteset_BRMk1FK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(42 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -560,9 +560,9 @@ item (FEAT_TRAINS, item_BRMK1FK, 139) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1CK, 140) {
+item (FEAT_TRAINS, item_BRMk1CK, 140) {
 	property {
-		name: 							string(STR_NAME_BRMK1CK);
+		name: 							string(STR_NAME_BRMk1CK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);
 		model_life:						100;
@@ -583,11 +583,11 @@ item (FEAT_TRAINS, item_BRMK1CK, 140) {
 		cargo_age_period:				200;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1CK_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1CK_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1CK;
-	purchase:							spriteset_BRMK1CK_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1CK;
+	purchase:							spriteset_BRMk1CK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(48 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -595,9 +595,9 @@ item (FEAT_TRAINS, item_BRMK1CK, 140) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1BSK, 141) {
+item (FEAT_TRAINS, item_BRMk1BSK, 141) {
 	property {
-		name: 							string(STR_NAME_BRMK1BSK);
+		name: 							string(STR_NAME_BRMk1BSK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
 		model_life:						100;
@@ -618,11 +618,11 @@ item (FEAT_TRAINS, item_BRMK1BSK, 141) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BSK_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1BSK_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1BSK;
-	purchase:							spriteset_BRMK1BSK_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1BSK;
+	purchase:							spriteset_BRMk1BSK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(32 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -630,9 +630,9 @@ item (FEAT_TRAINS, item_BRMK1BSK, 141) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1BCK, 142) {
+item (FEAT_TRAINS, item_BRMk1BCK, 142) {
 	property {
-		name: 							string(STR_NAME_BRMK1BCK);
+		name: 							string(STR_NAME_BRMk1BCK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);
 		model_life:						100;
@@ -653,11 +653,11 @@ item (FEAT_TRAINS, item_BRMK1BCK, 142) {
 		cargo_age_period:				200;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BCK_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1BCK_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1BCK;
-	purchase:							spriteset_BRMK1BCK_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1BCK;
+	purchase:							spriteset_BRMk1BCK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(24 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -665,9 +665,9 @@ item (FEAT_TRAINS, item_BRMK1BCK, 142) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1BFK, 143) {
+item (FEAT_TRAINS, item_BRMk1BFK, 143) {
 	property {
-		name: 							string(STR_NAME_BRMK1BFK);
+		name: 							string(STR_NAME_BRMk1BFK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
 		model_life:						100;
@@ -688,11 +688,11 @@ item (FEAT_TRAINS, item_BRMK1BFK, 143) {
 		cargo_age_period:				250;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BFK_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1BFK_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1BFK;
-	purchase:							spriteset_BRMK1BFK_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1BFK;
+	purchase:							spriteset_BRMk1BFK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(24 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -700,9 +700,9 @@ item (FEAT_TRAINS, item_BRMK1BFK, 143) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1BG, 144) {
+item (FEAT_TRAINS, item_BRMk1BG, 144) {
 	property {
-		name: 							string(STR_NAME_BRMK1BG);
+		name: 							string(STR_NAME_BRMk1BG);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
 		model_life:						100;
@@ -723,11 +723,11 @@ item (FEAT_TRAINS, item_BRMK1BG, 144) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BG_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1BG_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1BG;
-	purchase:							spriteset_BRMK1BG_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1BG;
+	purchase:							spriteset_BRMk1BG_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(10 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -735,9 +735,9 @@ item (FEAT_TRAINS, item_BRMK1BG, 144) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1RK, 145) {
+item (FEAT_TRAINS, item_BRMk1RK, 145) {
 	property {
-		name: 							string(STR_NAME_BRMK1RK);
+		name: 							string(STR_NAME_BRMk1RK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
 		model_life:						100;
@@ -758,21 +758,21 @@ item (FEAT_TRAINS, item_BRMK1RK, 145) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1RK_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1RK_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1RK;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1RK;
 	cargo_capacity:						return 0;
-	purchase:							spriteset_BRMK1RK_Purchase;
+	purchase:							spriteset_BRMk1RK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cost_factor:	return(GetAdjustedCost(49));
 	running_cost_factor: return(GetAdjustedCost(17));	
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1RMB, 146) {
+item (FEAT_TRAINS, item_BRMk1RMB, 146) {
 	property {
-		name: 							string(STR_NAME_BRMK1RMB);
+		name: 							string(STR_NAME_BRMk1RMB);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1957,4,21);
 		model_life:						100;
@@ -793,11 +793,11 @@ item (FEAT_TRAINS, item_BRMK1RMB, 146) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1RMB_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1RMB_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1RMB;
-	purchase:							spriteset_BRMK1RMB_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1RMB;
+	purchase:							spriteset_BRMk1RMB_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(44 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -805,9 +805,9 @@ item (FEAT_TRAINS, item_BRMK1RMB, 146) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1SK, 147) {
+item (FEAT_TRAINS, item_BRMk1SK, 147) {
 	property {
-		name: 							string(STR_NAME_BRMK1SK);
+		name: 							string(STR_NAME_BRMk1SK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
 		model_life:						100;
@@ -827,11 +827,11 @@ item (FEAT_TRAINS, item_BRMK1SK, 147) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1SK_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1SK_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1SK;
-	purchase:							spriteset_BRMK1SK_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1SK;
+	purchase:							spriteset_BRMk1SK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(64 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -839,9 +839,9 @@ item (FEAT_TRAINS, item_BRMK1SK, 147) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1BSO, 148) {
+item (FEAT_TRAINS, item_BRMk1BSO, 148) {
 	property {
-		name: 							string(STR_NAME_BRMK1BSO);
+		name: 							string(STR_NAME_BRMk1BSO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1955,4,21);
 		model_life:						100;
@@ -861,11 +861,11 @@ item (FEAT_TRAINS, item_BRMK1BSO, 148) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BSO_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1BSO_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1BSO;
-	purchase:							spriteset_BRMK1BSO_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1BSO;
+	purchase:							spriteset_BRMk1BSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(39 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -873,9 +873,9 @@ item (FEAT_TRAINS, item_BRMK1BSO, 148) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1BSOT, 149) {
+item (FEAT_TRAINS, item_BRMk1BSOT, 149) {
 	property {
-		name: 							string(STR_NAME_BRMK1BSOT);
+		name: 							string(STR_NAME_BRMk1BSOT);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);
 		model_life:						100;
@@ -895,11 +895,11 @@ item (FEAT_TRAINS, item_BRMK1BSOT, 149) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1BSOT_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1BSOT_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1BSOT;
-	purchase:							spriteset_BRMK1BSOT_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1BSOT;
+	purchase:							spriteset_BRMk1BSOT_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(31 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));
@@ -907,9 +907,9 @@ item (FEAT_TRAINS, item_BRMK1BSOT, 149) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMK1TSO, 150) {
+item (FEAT_TRAINS, item_BRMk1TSO, 150) {
 	property {
-		name: 							string(STR_NAME_BRMK1TSO);
+		name: 							string(STR_NAME_BRMk1TSO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);
 		model_life:						100;
@@ -929,11 +929,11 @@ item (FEAT_TRAINS, item_BRMK1TSO, 150) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMK1TSO_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1TSO_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMK1_cargo_subtype_text;
-	default: 							sw_BRMK1TSO;
-	purchase:							spriteset_BRMK1TSO_Purchase;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1TSO;
+	purchase:							spriteset_BRMk1TSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(64 * param_pax);
 	cost_factor:	return(GetAdjustedCost(49));

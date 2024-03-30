@@ -1,143 +1,143 @@
 //Mk2 D-F
 
-spriteset(spriteset_BRMK2DTSOBRBlue, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOBRBlue, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 13)
 }
 
-spriteset(spriteset_BRMK2DTSOIntercity, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOIntercity, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 263)
 }
 
-spriteset(spriteset_BRMK2DTSOScotrail, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOScotrail, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 388)
 }
 
-spriteset(spriteset_BRMK2DTSOAnglia, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOAnglia, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 513)
 }
 
-spriteset(spriteset_BRMK2DTSOArriva, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOArriva, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 638)
 }
 
-spriteset(spriteset_BRMK2DTSOArrivaNew, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOArrivaNew, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 713)
 }
 
-spriteset(spriteset_BRMK2DTSODRS, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSODRS, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 788)
 }
 
-spriteset(spriteset_BRMK2DTSOVirgin, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOVirgin, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 913)
 }
 
-spriteset(spriteset_BRMK2DTSOGW, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOGW, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 988)
 }
 
 
-spriteset(spriteset_BRMK2DTSOWCRC, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DTSOWCRC, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 1063)
 }
 
-spriteset(spriteset_BRMK2DFOBRBlue, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOBRBlue, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 38)
 }
 
-spriteset(spriteset_BRMK2DFOIntercity, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOIntercity, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 288)
 }
 
-spriteset(spriteset_BRMK2DFOScotrail, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOScotrail, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 413)
 }
 
-spriteset(spriteset_BRMK2DFOAnglia, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOAnglia, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 538)
 }
 
-spriteset(spriteset_BRMK2DFOArriva, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOArriva, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 663)
 }
 
-spriteset(spriteset_BRMK2DFOArrivaNew, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOArrivaNew, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 738)
 }
 
-spriteset(spriteset_BRMK2DFODRS, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFODRS, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 813)
 }
 
-spriteset(spriteset_BRMK2DFOVirgin, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOVirgin, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 938)
 }
 
-spriteset(spriteset_BRMK2DFOGW, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOGW, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 1013)
 }
 
-spriteset(spriteset_BRMK2DFOWCRC, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DFOWCRC, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 1088)
 }
 
-spriteset(spriteset_BRMK2DBSOBRBlue, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOBRBlue, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 63)
 }
 
-spriteset(spriteset_BRMK2DBSOIntercity, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOIntercity, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 313)
 }
 
-spriteset(spriteset_BRMK2DBSOScotrail, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOScotrail, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 438)
 }
 
-spriteset(spriteset_BRMK2DBSOAnglia, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOAnglia, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 563)
 }
 
-spriteset(spriteset_BRMK2DBSOArriva, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOArriva, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 688)
 }
 
-spriteset(spriteset_BRMK2DBSOArrivaNew, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOArrivaNew, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 763)
 }
 
-spriteset(spriteset_BRMK2DBSODRS, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSODRS, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 838)
 }
 
-spriteset(spriteset_BRMK2DBSOVirgin, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOVirgin, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 963)
 }
 
-spriteset(spriteset_BRMK2DBSOGW, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOGW, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 1038)
 }
 
 
-spriteset(spriteset_BRMK2DBSOWCRC, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DBSOWCRC, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 1113)
 }
 
-spriteset(spriteset_BRMK2DRDBSOBRBlue, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DRDBSOBRBlue, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 113)
 }
 
-spriteset(spriteset_BRMK2DRDBSOIntercity, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DRDBSOIntercity, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 363)
 }
 
-spriteset(spriteset_BRMK2DRDBSOScotrail, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DRDBSOScotrail, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 488)
 }
 
-spriteset(spriteset_BRMK2DRDBSOAnglia, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DRDBSOAnglia, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 613)
 }
 
-spriteset(spriteset_BRMK2DRDBSODRS, "gfx/BRMK2D-F.png") {
+spriteset(spriteset_BRMk2DRDBSODRS, "gfx/BRMk2D-F.png") {
 	template_trainBRMk2(0, 888)
 }

@@ -1,29 +1,29 @@
 
-switch(FEAT_TRAINS,SELF, sw_BRMK2ATSO,cargo_subtype){
-    0:	spriteset_BRMK2ATSOBRBlue;
-	1:	spriteset_BRMK2ATSONSE;
-	2:	spriteset_BRMK2ATSORegionalRailways;
-	3:	spriteset_BRMK2ATSOScotRail;
-	4:  spriteset_BRMK2ATSOWCRC;
+switch(FEAT_TRAINS,SELF, sw_BRMk2ATSO,cargo_subtype){
+    0:	spriteset_BRMk2ATSOBRBlue;
+	1:	spriteset_BRMk2ATSONSE;
+	2:	spriteset_BRMk2ATSORegionalRailways;
+	3:	spriteset_BRMk2ATSOScotRail;
+	4:  spriteset_BRMk2ATSOWCRC;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK2AFO,cargo_subtype){
-    0:	spriteset_BRMK2AFOBRBlue;
-	1:	spriteset_BRMK2AFONSE;
-	2:	spriteset_BRMK2AFORegionalRailways;
-	3:	spriteset_BRMK2AFOScotRail;
-	4:  spriteset_BRMK2AFOWCRC;
+switch(FEAT_TRAINS,SELF, sw_BRMk2AFO,cargo_subtype){
+    0:	spriteset_BRMk2AFOBRBlue;
+	1:	spriteset_BRMk2AFONSE;
+	2:	spriteset_BRMk2AFORegionalRailways;
+	3:	spriteset_BRMk2AFOScotRail;
+	4:  spriteset_BRMk2AFOWCRC;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK2ABSO,cargo_subtype){
-    0:	spriteset_BRMK2ABSOBRBlue;
-	1:	spriteset_BRMK2ABSONSE;
-	2:	spriteset_BRMK2ABSORegionalRailways;
-	3:	spriteset_BRMK2ABSOScotRail;
-	4:  spriteset_BRMK2ABSOWCRC;
+switch(FEAT_TRAINS,SELF, sw_BRMk2ABSO,cargo_subtype){
+    0:	spriteset_BRMk2ABSOBRBlue;
+	1:	spriteset_BRMk2ABSONSE;
+	2:	spriteset_BRMk2ABSORegionalRailways;
+	3:	spriteset_BRMk2ABSOScotRail;
+	4:  spriteset_BRMk2ABSOWCRC;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BRMK2A_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BRMk2A_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRBlue);
     1: return string(str_NSE);
 	2: return string(str_Regional);

@@ -1,8 +1,8 @@
-spriteset(spriteset_BRMk5Sleeper_purchase, "gfx/BRMK3Sleeper.png") {
+spriteset(spriteset_BRMk5Sleeper_purchase, "gfx/BRSleeper.png") {
 	template_purchase(98, 0)
 }
 
-spriteset(spriteset_BRMk5Sleeper_CaledonianSleeper, "gfx/BRMK3Sleeper.png") {
+spriteset(spriteset_BRMk5Sleeper_CaledonianSleeper, "gfx/BRSleeper.png") {
 	template_train32px(0, 188)
 }
 

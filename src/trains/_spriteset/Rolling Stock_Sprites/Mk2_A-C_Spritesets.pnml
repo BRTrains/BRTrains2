@@ -1,59 +1,59 @@
-spriteset(spriteset_BRMK2ATSOBRBlue, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ATSOBRBlue, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 13)
 }
 
-spriteset(spriteset_BRMK2ATSONSE, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ATSONSE, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 163)
 }
 
-spriteset(spriteset_BRMK2ATSORegionalRailways, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ATSORegionalRailways, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 238)
 }
 
-spriteset(spriteset_BRMK2ATSOScotRail, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ATSOScotRail, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 313)
 }
 
-spriteset(spriteset_BRMK2ATSOWCRC, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ATSOWCRC, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 388)
 }
 
-spriteset(spriteset_BRMK2AFOBRBlue, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2AFOBRBlue, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 38)
 }
 
-spriteset(spriteset_BRMK2AFONSE, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2AFONSE, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 188)
 }
 
-spriteset(spriteset_BRMK2AFORegionalRailways, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2AFORegionalRailways, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 263)
 }
 
-spriteset(spriteset_BRMK2AFOScotRail, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2AFOScotRail, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 338)
 }
 
-spriteset(spriteset_BRMK2AFOWCRC, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2AFOWCRC, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 413)
 }
 
-spriteset(spriteset_BRMK2ABSOBRBlue, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ABSOBRBlue, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 63)
 }
 
-spriteset(spriteset_BRMK2ABSONSE, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ABSONSE, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 213)
 }
 
-spriteset(spriteset_BRMK2ABSORegionalRailways, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ABSORegionalRailways, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 288)
 }
 
-spriteset(spriteset_BRMK2ABSOScotRail, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ABSOScotRail, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 363)
 }
 
-spriteset(spriteset_BRMK2ABSOWCRC, "gfx/BRMK2A-C.png") {
+spriteset(spriteset_BRMk2ABSOWCRC, "gfx/BRMk2A-C.png") {
 	template_trainBRMk2(0, 438)
 }

@@ -1,53 +1,53 @@
 
 
-switch(FEAT_TRAINS,SELF, sw_BRMK2DTSO,cargo_subtype){
-    0:	spriteset_BRMK2DTSOBRBlue;
-	1:	spriteset_BRMK2DTSOIntercity;
-	2:	spriteset_BRMK2DTSOScotrail;
-	3:	spriteset_BRMK2DTSOAnglia;
-	4:  spriteset_BRMK2DTSOArriva;
-	5:  spriteset_BRMK2DTSOArrivaNew;
-	6:  spriteset_BRMK2DTSODRS;
-	7:  spriteset_BRMK2DTSOVirgin;
-	8:  spriteset_BRMK2DTSOGW;
-	9:  spriteset_BRMK2DTSOWCRC;
+switch(FEAT_TRAINS,SELF, sw_BRMk2DTSO,cargo_subtype){
+    0:	spriteset_BRMk2DTSOBRBlue;
+	1:	spriteset_BRMk2DTSOIntercity;
+	2:	spriteset_BRMk2DTSOScotrail;
+	3:	spriteset_BRMk2DTSOAnglia;
+	4:  spriteset_BRMk2DTSOArriva;
+	5:  spriteset_BRMk2DTSOArrivaNew;
+	6:  spriteset_BRMk2DTSODRS;
+	7:  spriteset_BRMk2DTSOVirgin;
+	8:  spriteset_BRMk2DTSOGW;
+	9:  spriteset_BRMk2DTSOWCRC;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK2DFO,cargo_subtype){
-    0:	spriteset_BRMK2DFOBRBlue;
-	1:	spriteset_BRMK2DFOIntercity;
-	2:	spriteset_BRMK2DFOScotrail;
-	3:	spriteset_BRMK2DFOAnglia;
-	4:  spriteset_BRMK2DFOArriva;
-	5:  spriteset_BRMK2DFOArrivaNew;
-	6:  spriteset_BRMK2DFODRS;
-	7:  spriteset_BRMK2DFOVirgin;
-	8:  spriteset_BRMK2DFOGW;
-	9:  spriteset_BRMK2DFOWCRC;
+switch(FEAT_TRAINS,SELF, sw_BRMk2DFO,cargo_subtype){
+    0:	spriteset_BRMk2DFOBRBlue;
+	1:	spriteset_BRMk2DFOIntercity;
+	2:	spriteset_BRMk2DFOScotrail;
+	3:	spriteset_BRMk2DFOAnglia;
+	4:  spriteset_BRMk2DFOArriva;
+	5:  spriteset_BRMk2DFOArrivaNew;
+	6:  spriteset_BRMk2DFODRS;
+	7:  spriteset_BRMk2DFOVirgin;
+	8:  spriteset_BRMk2DFOGW;
+	9:  spriteset_BRMk2DFOWCRC;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK2DBSO,cargo_subtype){
-    0:	spriteset_BRMK2DBSOBRBlue;
-	1:	spriteset_BRMK2DBSOIntercity;
-	2:	spriteset_BRMK2DBSOScotrail;
-	3:	spriteset_BRMK2DBSOAnglia;
-	4:  spriteset_BRMK2DBSOArriva;
-	5:  spriteset_BRMK2DBSOArrivaNew;
-	6:  spriteset_BRMK2DBSODRS;
-	7:  spriteset_BRMK2DBSOVirgin;
-	8:  spriteset_BRMK2DBSOGW;
-	9:  spriteset_BRMK2DBSOWCRC;
+switch(FEAT_TRAINS,SELF, sw_BRMk2DBSO,cargo_subtype){
+    0:	spriteset_BRMk2DBSOBRBlue;
+	1:	spriteset_BRMk2DBSOIntercity;
+	2:	spriteset_BRMk2DBSOScotrail;
+	3:	spriteset_BRMk2DBSOAnglia;
+	4:  spriteset_BRMk2DBSOArriva;
+	5:  spriteset_BRMk2DBSOArrivaNew;
+	6:  spriteset_BRMk2DBSODRS;
+	7:  spriteset_BRMk2DBSOVirgin;
+	8:  spriteset_BRMk2DBSOGW;
+	9:  spriteset_BRMk2DBSOWCRC;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMK2DDBSO,cargo_subtype){
-    0:	spriteset_BRMK2DRDBSOBRBlue;
-	1:	spriteset_BRMK2DRDBSOIntercity;
-	2:	spriteset_BRMK2DRDBSOScotrail;
-	3:	spriteset_BRMK2DRDBSOAnglia;
-	4:  spriteset_BRMK2DRDBSODRS;
+switch(FEAT_TRAINS,SELF, sw_BRMk2DDBSO,cargo_subtype){
+    0:	spriteset_BRMk2DRDBSOBRBlue;
+	1:	spriteset_BRMk2DRDBSOIntercity;
+	2:	spriteset_BRMk2DRDBSOScotrail;
+	3:	spriteset_BRMk2DRDBSOAnglia;
+	4:  spriteset_BRMk2DRDBSODRS;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BRMK2D_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BRMk2D_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRBlue);
     1: return string(str_Intercity);
 	2: return string(str_ScotRail);
@@ -61,7 +61,7 @@ switch(FEAT_TRAINS,SELF,sw_BRMK2D_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BRMK2DDBSO_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BRMk2DDBSO_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRBlue);
     1: return string(str_Intercity);
 	2: return string(str_ScotRail);
