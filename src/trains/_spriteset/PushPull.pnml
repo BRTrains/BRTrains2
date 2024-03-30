@@ -36,7 +36,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsRMTPO, [STORE_TEMP(num_vehs_
 }
 
 // Mirror of BR47
-switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DMSOasBR47,cargo_subtype){    
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR47,cargo_subtype){    
     0:	spriteset_BR47_BRGreen;
 	1: 	spriteset_BR47_BRBlue;
 	2: 	spriteset_BR47_Porterbrook;
@@ -54,6 +54,14 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DMSOasBR47,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
+// Mirror of BR68
+switch(FEAT_TRAINS, SELF, sw_PUSHPULL_DVTasBR68,cargo_subtype){
+    0:	spriteset_BR68_DRS;
+	1: 	spriteset_BR68_ScotRail;
+	2:	spriteset_BR68_Chiltern;
+	3:	spriteset_BR68_TPE;
+}
+
 // Mirror of BR67
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,cargo_subtype){
     0:	spriteset_BR67_EWS;
@@ -65,6 +73,25 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,cargo_subtype){
 	6:	spriteset_BR67_BrownPullman;
 	7:	spriteset_BR67_Wrexham;
 	8:  spriteset_BR67_DBCompany;
+}
+
+// Mirror of 86
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR86, cargo_subtype){
+    0:	spriteset_BR86_BRBlue;
+	1:	spriteset_BR86_IntercityExecutive;
+	2:	spriteset_BR86_IntercitySwallow;
+	3: 	spriteset_BR86_RailfreightDistribution;
+	4: 	spriteset_BR86_RailExpress;
+	5: 	spriteset_BR86_EWS;
+        return CB_RESULT_NO_TEXT;
+}
+
+// Mirror of 87
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR87, cargo_subtype){
+    0:	spriteset_BR87_BRBlue;
+	1:	spriteset_BR87_IntercitySwallow;
+	2:	spriteset_BR87_Virgin;
+        return CB_RESULT_NO_TEXT;
 }
 
 // Mirror of BR89

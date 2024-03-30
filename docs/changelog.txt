@@ -1,8 +1,13 @@
 # v2.7
 - Added Mk3 DVT
 - Added Mk4 DVT as standalone (non-IC225) unit
+- Added push-pull for Class 47 / Mk3 DVT
 - Added push-pull for Class 67 / Mk3 DVT
 - Added push-pull for Class 67 / Mk4 DVT
+- Added push-pull for Class 68 / Mk4 DVT
+- Added push-pull for Class 68 / Mk3 DVT
+- Added push-pull for Class 86 / Mk3 DVT
+- Added push-pull for Class 87 / Mk3 DVT
 - Added push-pull for Class 90 / Mk3 DVT
 - Added push-pull for Class 90 / Mk4 DVT
 - Added push-pull for Class 89 / Mk4 DVT

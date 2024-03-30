@@ -18,6 +18,8 @@ spriteset(spriteset_BR68_TPE, "gfx/BR68_v2.png") {
 	template_train32px(0, 38)
 }
 
+// This switch called when displaying as this locomotive
+// WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BR68,cargo_subtype){
     0:	spriteset_BR68_DRS;
 	1: 	spriteset_BR68_ScotRail;
@@ -31,6 +33,23 @@ switch(FEAT_TRAINS,SELF,sw_BR68_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_Chiltern);
 	3:	return string(str_TPE);
        return CB_RESULT_NO_TEXT;
+}
+
+// If the rear of this consist is a compatible Driving Trailer, call that vehicles's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_BR68_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	586: sw_PUSHPULL_LocomotiveAsMk3DVT; // Mk3 DVT
+	585: sw_PUSHPULL_LocomotiveAsMk4DVT; // Mk4 DVT
+	sw_BR68; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR68_CheckPosition, position_in_consist){
+    0: sw_BR68_PushPUll; // Attempt push pull
+	sw_BR68; // We aren't at the front of the consist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR68_Sprites ,vehicle_is_reversed){
+    0:	sw_BR68; // We're heading foward, show normal sprites
+	1:	sw_BR68_CheckPosition; // Attempt push pull
 }
 
 item (FEAT_TRAINS, item_BR68, 196) {
@@ -72,7 +91,7 @@ item (FEAT_TRAINS, item_BR68, 196) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_BR68_cargo_subtype_text;
-	default: 							sw_BR68;
+	default: 							sw_BR68_Sprites;
 	purchase:							spriteset_BR68_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;

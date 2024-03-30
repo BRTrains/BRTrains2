@@ -26,6 +26,8 @@ spriteset(spriteset_BR86_EWS, "gfx/electric/BR8X.png") {
 	template_train32px(0, 163)
 }
 
+// This switch called when displaying as this locomotive
+// WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BR86, cargo_subtype){
     0:	spriteset_BR86_BRBlue;
 	1:	spriteset_BR86_IntercityExecutive;
@@ -44,6 +46,22 @@ switch(FEAT_TRAINS,SELF,sw_BR86_cargo_subtype_text,cargo_subtype){
 	4:	return string(str_REX);	
 	5:	return string(str_EWSRed);	
        return CB_RESULT_NO_TEXT;
+}
+
+// If the rear of this consist is a compatible Driving Trailer, call that vehicles's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_BR86_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	586: sw_PUSHPULL_LocomotiveAsMk3DVT; // Mk3 DVT
+	sw_BR86; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR86_CheckPosition, position_in_consist){
+    0: sw_BR86_PushPUll; // Attempt push pull
+	sw_BR86; // We aren't at the front of the consist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR86_Sprites ,vehicle_is_reversed){
+    0:	sw_BR86; // We're heading foward, show normal sprites
+	1:	sw_BR86_CheckPosition; // Attempt push pull
 }
 
 item (FEAT_TRAINS, item_BR86, 566) {
@@ -85,7 +103,7 @@ item (FEAT_TRAINS, item_BR86, 566) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_BR86_cargo_subtype_text;
-	default: 							sw_BR86;
+	default: 							sw_BR86_Sprites;
 	purchase:							spriteset_BR86_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cost_factor:	return(GetAdjustedCost(40));

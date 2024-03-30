@@ -1,6 +1,6 @@
 // If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch
 switch(FEAT_TRAINS, PARENT, sw_RMTPO_PushPUll, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	440: sw_PUSHPULL_DMSOasBR47; // Class 47
+	440: sw_PUSHPULL_DVTasBR47; // Class 47
 	sw_RMTPO; // No compatible locomotive found, show normal sprites
 }
 

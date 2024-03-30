@@ -1,6 +1,7 @@
 // If the rear of this consist is a compatible Driving Trailer, call that vehicles's remote sprite call switch
 switch(FEAT_TRAINS, PARENT, sw_BR47_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
 	//483: sw_PUSHPULL_LocomotiveAsRMTPO; // Royal Mail TPO, uncommen this line when RMTPO has been changed to length 8	
+	586: sw_PUSHPULL_LocomotiveAsMk3DVT; // Mk3 DVT
 	sw_BR47; // No compatible locomotive found, show normal sprites
 }
 

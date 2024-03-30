@@ -96,12 +96,16 @@ switch(FEAT_TRAINS,SELF, sw_BRMk3DVT,cargo_subtype){
 
 // If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch
 switch(FEAT_TRAINS, PARENT, sw_BRMk3DVT_PushPUll, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	151: sw_PUSHPULL_DVTasBR67; // Class 67
+	440: sw_PUSHPULL_DVTasBR47; // Class 47
+    151: sw_PUSHPULL_DVTasBR67; // Class 67
+    196: sw_PUSHPULL_DVTasBR68; // Class 68
+    566: sw_PUSHPULL_DVTasBR86; // Class 86
+    567: sw_PUSHPULL_DVTasBR87; // Class 87
     543: sw_PUSHPULL_DVTasBR90; // Class 90
 	sw_BRMk3DVT; // No compatible locomotive found, show normal sprites
 }
 
-switch(FEAT_TRAINS,PARENT,sw_Mk3DVT_CheckPosition, position_in_articulated_veh_from_end){
+switch(FEAT_TRAINS, SELF,sw_Mk3DVT_CheckPosition, position_in_articulated_veh_from_end){
     0: sw_BRMk3DVT_PushPUll; // Attempt push pull
 	sw_BRMk3DVT; // We aren't at the back of theconsist, show normal sprites
 }
