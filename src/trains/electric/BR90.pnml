@@ -54,6 +54,8 @@ spriteset(spriteset_BR90_GNER, "gfx/BR90.png") {
 	template_train32px(0, 313)
 }
 
+// This switch called when displaying as this locomotive
+// WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BR90, cargo_subtype){
     0:	spriteset_BR90_IntercitySwallow;
 	1:	spriteset_BR90_FLGrey;

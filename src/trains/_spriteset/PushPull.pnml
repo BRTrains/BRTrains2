@@ -30,6 +30,19 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs
     spriteset_BR91_IntercitySwallowr;
 }
 
+// Mirror of BR67
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,cargo_subtype){
+    0:	spriteset_BR67_EWS;
+	1:	spriteset_BR67_Colas;
+	2: 	spriteset_BR67_ATW;
+	3:	spriteset_BR67_DBSchenker;
+	4:	spriteset_BR67_Caledonian;
+	5:	spriteset_BR67_RoyalClaret;
+	6:	spriteset_BR67_BrownPullman;
+	7:	spriteset_BR67_Wrexham;
+	8:  spriteset_BR67_DBCompany;
+}
+
 // Mirror of BR89
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR89, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
     0:	spriteset_BR89_IntercitySwallow;

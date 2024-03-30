@@ -96,7 +96,8 @@ switch(FEAT_TRAINS,SELF, sw_BRMk3DVT,cargo_subtype){
 
 // If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch
 switch(FEAT_TRAINS, PARENT, sw_BRMk3DVT_PushPUll, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	543: sw_PUSHPULL_DVTasBR90; // Class 90
+	151: sw_PUSHPULL_DVTasBR67; // Class 67
+    543: sw_PUSHPULL_DVTasBR90; // Class 90
 	sw_BRMk3DVT; // No compatible locomotive found, show normal sprites
 }
 
