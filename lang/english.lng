@@ -1058,20 +1058,20 @@ str_BRMk3Sleeper_liveries			:BR Blue, Intercity, First Scotrail, Scotrail, Caled
 STR_NAME_BRMk3DVT				:BR Mark 3 Driving Van Trailer
 str_BRMk3DVT_liveries			:Intercity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin "Pretendolino", Arriva Wales, Network Rail
 
-STR_NAME_BRMK4FO				:BR Mark 4 Coach (First Open)
-str_BRMK4FO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+STR_NAME_BRMk4FO				:BR Mark 4 Coach (First Open)
+str_BRMk4FO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
-STR_NAME_BRMK4TSO				:BR Mark 4 Coach (Trailer Standard Open)
-str_BRMK4TSO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+STR_NAME_BRMk4TSO				:BR Mark 4 Coach (Trailer Standard Open)
+str_BRMk4TSO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
-STR_NAME_BRMK4TSOE				:BR Mark 4 Coach (Trailer Standard Open End)
-str_BRMK4TSOE_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+STR_NAME_BRMk4TSOE				:BR Mark 4 Coach (Trailer Standard Open End)
+str_BRMk4TSOE_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
-STR_NAME_BRMK4TSOD				:BR Mark 4 Coach (Trailer Standard Open Disabled)
-str_BRMK4TSOD_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+STR_NAME_BRMk4TSOD				:BR Mark 4 Coach (Trailer Standard Open Disabled)
+str_BRMk4TSOD_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
-STR_NAME_BRMK4RFM				:BR Mark 4 Coach (Trailer Restaurant First)
-str_BRMK4RFM_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+STR_NAME_BRMk4RFM				:BR Mark 4 Coach (Trailer Restaurant First)
+str_BRMk4RFM_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BRMk4DVT				:BR Mark 4 Driving Van Trailer
 str_BRMk4DVT_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast

@@ -17,11 +17,11 @@ switch(FEAT_TRAINS,SELF, sw_BR91_reversed,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR91, extra_callback_info1) {
-	1: return item_91_BRMK4TSOE;
-	2..4: return item_91_BRMK4TSO;
-	5: return item_91_BRMK4TSOD;
-	6: return item_91_BRMK4RFM;
-	7..9: return item_91_BRMK4FO;
+	1: return item_91_BRMk4TSOE;
+	2..4: return item_91_BRMk4TSO;
+	5: return item_91_BRMk4TSOD;
+	6: return item_91_BRMk4RFM;
+	7..9: return item_91_BRMk4FO;
 	10: return item_91_BRMk4DVT;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
@@ -95,50 +95,49 @@ item (FEAT_TRAINS, item_BR91, 108) {
 }
 }
 
-
-switch(FEAT_TRAINS,SELF, sw_91_BRMK4FO,cargo_subtype){
-    0: spriteset_BRMK4FO_IntercitySwallow;
-    1: spriteset_BRMK4FO_NatEx;
-    2: spriteset_BRMK4FO_GNER;
-    3: spriteset_BRMK4FO_EastCoast;
-    4: spriteset_BRMK4FO_VirginEC;
-    5: spriteset_BRMK4FO_LNER;
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4FO,cargo_subtype){
+    0: spriteset_BRMk4FO_IntercitySwallow;
+    1: spriteset_BRMk4FO_NatEx;
+    2: spriteset_BRMk4FO_GNER;
+    3: spriteset_BRMk4FO_EastCoast;
+    4: spriteset_BRMk4FO_VirginEC;
+    5: spriteset_BRMk4FO_LNER;
 }
 
-switch(FEAT_TRAINS,SELF, sw_91_BRMK4TSOE,cargo_subtype){
-    0: spriteset_BRMK4TSOE_IntercitySwallow;
-    1: spriteset_BRMK4TSOE_NatEx;
-    2: spriteset_BRMK4TSOE_GNER;
-    3: spriteset_BRMK4TSOE_EastCoast;
-    4: spriteset_BRMK4TSOE_VirginEC;
-    5: spriteset_BRMK4TSOE_LNER;
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSOE,cargo_subtype){
+    0: spriteset_BRMk4TSOE_IntercitySwallow;
+    1: spriteset_BRMk4TSOE_NatEx;
+    2: spriteset_BRMk4TSOE_GNER;
+    3: spriteset_BRMk4TSOE_EastCoast;
+    4: spriteset_BRMk4TSOE_VirginEC;
+    5: spriteset_BRMk4TSOE_LNER;
 }
 
-switch(FEAT_TRAINS,SELF, sw_91_BRMK4TSO,cargo_subtype){
-    0: spriteset_BRMK4TSO_IntercitySwallow;
-    1: spriteset_BRMK4TSO_NatEx;
-    2: spriteset_BRMK4TSO_GNER;
-    3: spriteset_BRMK4TSO_EastCoast;
-    4: spriteset_BRMK4TSO_VirginEC;
-    5: spriteset_BRMK4TSO_LNER;
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSO,cargo_subtype){
+    0: spriteset_BRMk4TSO_IntercitySwallow;
+    1: spriteset_BRMk4TSO_NatEx;
+    2: spriteset_BRMk4TSO_GNER;
+    3: spriteset_BRMk4TSO_EastCoast;
+    4: spriteset_BRMk4TSO_VirginEC;
+    5: spriteset_BRMk4TSO_LNER;
 }
 
-switch(FEAT_TRAINS,SELF, sw_91_BRMK4RFM,cargo_subtype){
-    0: spriteset_BRMK4RFM_IntercitySwallow;
-    1: spriteset_BRMK4RFM_NatEx;
-    2: spriteset_BRMK4RFM_GNER;
-    3: spriteset_BRMK4RFM_EastCoast;
-    4: spriteset_BRMK4RFM_VirginEC;
-    5: spriteset_BRMK4RFM_LNER;
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4RFM,cargo_subtype){
+    0: spriteset_BRMk4RFM_IntercitySwallow;
+    1: spriteset_BRMk4RFM_NatEx;
+    2: spriteset_BRMk4RFM_GNER;
+    3: spriteset_BRMk4RFM_EastCoast;
+    4: spriteset_BRMk4RFM_VirginEC;
+    5: spriteset_BRMk4RFM_LNER;
 }
 
-switch(FEAT_TRAINS,SELF, sw_91_BRMK4TSOD,cargo_subtype){
-    0: spriteset_BRMK4TSOD_IntercitySwallow;
-    1: spriteset_BRMK4TSOD_NatEx;
-    2: spriteset_BRMK4TSOD_GNER;
-    3: spriteset_BRMK4TSOD_EastCoast;
-    4: spriteset_BRMK4TSOD_VirginEC;
-    5: spriteset_BRMK4TSOD_LNER;
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSOD,cargo_subtype){
+    0: spriteset_BRMk4TSOD_IntercitySwallow;
+    1: spriteset_BRMk4TSOD_NatEx;
+    2: spriteset_BRMk4TSOD_GNER;
+    3: spriteset_BRMk4TSOD_EastCoast;
+    4: spriteset_BRMk4TSOD_VirginEC;
+    5: spriteset_BRMk4TSOD_LNER;
 }
 
 switch(FEAT_TRAINS,SELF, sw_91_BRMk4DVT,cargo_subtype){
@@ -164,6 +163,7 @@ switch(FEAT_TRAINS,PARENT,sw_91_rear,vehicle_is_reversed){
 	1:	sw_91_BRMk4DVT_reversed;
 }
 
+// The independent DVT is a separate item, item_BRMk4DVT
 item (FEAT_TRAINS, item_91_BRMk4DVT, 113) {
  property {
   name: string(STR_NAME_BRMk4DVT);
@@ -206,10 +206,10 @@ item (FEAT_TRAINS, item_91_BRMk4DVT, 113) {
 }
 }
 
-item (FEAT_TRAINS, item_91_BRMK4FO, 112) {
+item (FEAT_TRAINS, item_91_BRMk4FO, 112) {
  property {
-  name: string(STR_NAME_BRMK4FO);
-  climates_available: NO_CLIMATE;
+  name: string(STR_NAME_BRMk4FO);
+  climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
   loading_speed: 14;
@@ -233,16 +233,18 @@ item (FEAT_TRAINS, item_91_BRMK4FO, 112) {
  }
  graphics {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
-  default: sw_91_BRMK4FO;
+  default: sw_91_BRMk4FO;
  colour_mapping: return PALETTE_CC_FIRST;
  cargo_capacity: return(43 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4FO_purchase;
 }
 }
 
-item (FEAT_TRAINS, item_91_BRMK4TSOE, 109) {
+item (FEAT_TRAINS, item_91_BRMk4TSOE, 109) {
  property {
-  name: string(STR_NAME_BRMK4TSOE);
-  climates_available: NO_CLIMATE;
+  name: string(STR_NAME_BRMk4TSOE);
+  climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
   loading_speed: 14;
@@ -266,16 +268,18 @@ item (FEAT_TRAINS, item_91_BRMK4TSOE, 109) {
  }
  graphics {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
-  default: sw_91_BRMK4TSOE;
+  default: sw_91_BRMk4TSOE;
  colour_mapping: return PALETTE_CC_FIRST;
  cargo_capacity: return(76 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4TS_purchase;
 }
 }
 
-item (FEAT_TRAINS, item_91_BRMK4TSO, 110) {
+item (FEAT_TRAINS, item_91_BRMk4TSO, 110) {
  property {
-  name: string(STR_NAME_BRMK4TSO);
-  climates_available: NO_CLIMATE;
+  name: string(STR_NAME_BRMk4TSO);
+  climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
   loading_speed: 14;
@@ -299,16 +303,18 @@ item (FEAT_TRAINS, item_91_BRMK4TSO, 110) {
  }
  graphics {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
-  default: sw_91_BRMK4TSO;
+  default: sw_91_BRMk4TSO;
  colour_mapping: return PALETTE_CC_FIRST;
  cargo_capacity: return(76 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4TS_purchase;
 }
 }
 
-item (FEAT_TRAINS, item_91_BRMK4RFM, 111) {
+item (FEAT_TRAINS, item_91_BRMk4RFM, 111) {
  property {
-  name: string(STR_NAME_BRMK4RFM);
-  climates_available: NO_CLIMATE;
+  name: string(STR_NAME_BRMk4RFM);
+  climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
   loading_speed: 14;
@@ -332,16 +338,18 @@ item (FEAT_TRAINS, item_91_BRMK4RFM, 111) {
  }
  graphics {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
-  default: sw_91_BRMK4RFM;
+  default: sw_91_BRMk4RFM;
  colour_mapping: return PALETTE_CC_FIRST;
  cargo_capacity: return(30 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4RFM_purchase;
 }
 }
 
-item (FEAT_TRAINS, item_91_BRMK4TSOD, 114) {
+item (FEAT_TRAINS, item_91_BRMk4TSOD, 114) {
  property {
-  name: string(STR_NAME_BRMK4TSOD);
-  climates_available: NO_CLIMATE;
+  name: string(STR_NAME_BRMk4TSOD);
+  climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
   loading_speed: 14;
@@ -365,8 +373,10 @@ item (FEAT_TRAINS, item_91_BRMK4TSOD, 114) {
  }
  graphics {
  can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
-  default: sw_91_BRMK4TSOD;
+  default: sw_91_BRMk4TSOD;
  colour_mapping: return PALETTE_CC_FIRST;
  cargo_capacity: return(72 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4TS_purchase;
 }
 }
