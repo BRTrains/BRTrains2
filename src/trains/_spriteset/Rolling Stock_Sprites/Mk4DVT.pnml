@@ -63,7 +63,7 @@ switch(FEAT_TRAINS, PARENT, sw_BRMk4DVT_PushPUll, [STORE_TEMP(0 - position_in_ar
 	sw_BRMk4DVT; // No compatible locomotive found, show normal sprites
 }
 
-switch(FEAT_TRAINS,PARENT,sw_BRMk4DVT_CheckPosition, position_in_articulated_veh_from_end){
+switch(FEAT_TRAINS, SELF,sw_BRMk4DVT_CheckPosition, position_in_articulated_veh_from_end){
     0: sw_BRMk4DVT_PushPUll; // Attempt push pull
 	sw_BRMk4DVT; // We aren't at the back of theconsist, show normal sprites
 }

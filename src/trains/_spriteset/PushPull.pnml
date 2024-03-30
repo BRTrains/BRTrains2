@@ -30,6 +30,30 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs
     spriteset_BR91_IntercitySwallowr;
 }
 
+// Not a mirror for once, as RMTPO PCV only has one livery
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsRMTPO, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+    spriteset_RMTPO_PCVr;
+}
+
+// Mirror of BR47
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DMSOasBR47,cargo_subtype){    
+    0:	spriteset_BR47_BRGreen;
+	1: 	spriteset_BR47_BRBlue;
+	2: 	spriteset_BR47_Porterbrook;
+    3: 	spriteset_BR47_EWS;
+    4: 	spriteset_BR47_BRLLogo;
+    5: 	spriteset_BR47_BRLLogoAlt;
+    6: 	spriteset_BR47_Anglia;
+    7: 	spriteset_BR47_Intercity;
+    8: 	spriteset_BR47_WCRC;
+    9: 	spriteset_BR47_GWR;
+    10: spriteset_BR47_Virgin;
+    11: spriteset_BR47_Colas;
+    12: spriteset_BR47_One;
+	13: spriteset_BR47_Freightliner;
+       return CB_RESULT_NO_TEXT;
+}
+
 // Mirror of BR67
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,cargo_subtype){
     0:	spriteset_BR67_EWS;

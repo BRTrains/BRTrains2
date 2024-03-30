@@ -1,34 +1,18 @@
-spriteset(spriteset_RMTPO_Purchase, "gfx/freight/RM_TPO.png") {
-	template_purchase(0, 0)
+// If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_RMTPO_PushPUll, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	440: sw_PUSHPULL_DMSOasBR47; // Class 47
+	sw_RMTPO; // No compatible locomotive found, show normal sprites
 }
 
-spriteset(spriteset_RMTPO_NoDoors, "gfx/freight/RM_TPO.png") {
-	template_train28px(0, 13)
-}
-spriteset(spriteset_RMTPO_2Door, "gfx/freight/RM_TPO.png") {
-	template_train28px(0, 36)
-}
-spriteset(spriteset_RMTPO_3Door, "gfx/freight/RM_TPO.png") {
-	template_train28px(0, 59)
+switch(FEAT_TRAINS, PARENT, sw_RMTPO_CheckDirection,vehicle_is_reversed){
+    0:	sw_RMTPO; // We're heading foward, show normal sprites
+	1:	sw_RMTPO_PushPUll; // Attempt push pull (skipping check position for now for testing)
 }
 
-spriteset(spriteset_RMTPO_PCV, "gfx/freight/RM_TPO.png") {
-	template_train28px(0, 82)
+switch(FEAT_TRAINS, SELF, sw_RMTPO_Sprites, position_in_consist_from_end){
+    0: sw_RMTPO_CheckDirection; // Attempt push pull
+	sw_RMTPO_Random; // We aren't at the back of theconsist, show normal sprites
 }
-
-random_switch(FEAT_TRAINS, SELF, sw_RMTPO_Random)
-{
-	1:	spriteset_RMTPO_NoDoors;
-	1:	spriteset_RMTPO_2Door;
-	1:	spriteset_RMTPO_3Door;
-}
-
-switch(FEAT_TRAINS, SELF, sw_RMTPO, position_in_consist_from_end)
-{
-	0: spriteset_RMTPO_PCV;
-	sw_RMTPO_Random;
-}
-
 
 item (FEAT_TRAINS, item_RMTPO, 483) {
 	property {
@@ -54,7 +38,7 @@ item (FEAT_TRAINS, item_RMTPO, 483) {
 	graphics {
 	additional_text:					return(string(str_purchase_coach,string(str_RMTPO_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_RMTPO;
+	default: 							sw_RMTPO; // Switch to sw_RMTPO_Sprites when length changed to 8 for push pull
 	purchase:							spriteset_RMTPO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(50);

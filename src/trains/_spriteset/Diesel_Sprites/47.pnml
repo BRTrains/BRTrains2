@@ -1,0 +1,97 @@
+spriteset(spriteset_BR47_Purchase, "gfx/BR47_BR57.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR47_BRGreen, "gfx/BR47_BR57.png") {
+	template_train32px(0, 463)
+}
+
+spriteset(spriteset_BR47_BRBlue, "gfx/BR47_BR57.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR47_Porterbrook, "gfx/BR47_BR57.png") {
+	template_train32px(0, 38)
+}
+
+spriteset(spriteset_BR47_EWS, "gfx/BR47_BR57.png") {
+	template_train32px(0, 63)
+}
+
+spriteset(spriteset_BR47_BRLLogo, "gfx/BR47_BR57.png") {
+	template_train32px(0, 113)
+}
+
+spriteset(spriteset_BR47_BRLLogoAlt, "gfx/BR47_BR57.png") {
+	template_train32px(0, 88)
+}
+
+spriteset(spriteset_BR47_Anglia, "gfx/BR47_BR57.png") {
+	template_train32px(0, 138)
+}
+
+spriteset(spriteset_BR47_Intercity, "gfx/BR47_BR57.png") {
+	template_train32px(0, 163)
+}
+
+spriteset(spriteset_BR47_WCRC, "gfx/BR47_BR57.png") {
+	template_train32px(0, 238)
+}
+
+spriteset(spriteset_BR47_GWR, "gfx/BR47_BR57.png") {
+	template_train32px(0, 313)
+}
+
+spriteset(spriteset_BR47_Virgin, "gfx/BR47_BR57.png") {
+	template_train32px(0, 513)
+}
+
+spriteset(spriteset_BR47_Colas, "gfx/BR47_BR57.png") {
+	template_train32px(0, 538)
+}
+
+spriteset(spriteset_BR47_One, "gfx/BR47_BR57.png") {
+	template_train32px(0, 263)
+}
+
+spriteset(spriteset_BR47_Freightliner, "gfx/BR47_BR57.png") {
+	template_train32px(0, 213)
+}
+
+// This switch called when displaying as this locomotive
+// WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
+switch(FEAT_TRAINS,SELF, sw_BR47,cargo_subtype){    
+    0:	spriteset_BR47_BRGreen;
+	1: 	spriteset_BR47_BRBlue;
+	2: 	spriteset_BR47_Porterbrook;
+    3: 	spriteset_BR47_EWS;
+    4: 	spriteset_BR47_BRLLogo;
+    5: 	spriteset_BR47_BRLLogoAlt;
+    6: 	spriteset_BR47_Anglia;
+    7: 	spriteset_BR47_Intercity;
+    8: 	spriteset_BR47_WCRC;
+    9: 	spriteset_BR47_GWR;
+    10: spriteset_BR47_Virgin;
+    11: spriteset_BR47_Colas;
+    12: spriteset_BR47_One;
+	13: spriteset_BR47_Freightliner;
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR47_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRGreen);
+	1: 	return string(str_BRBlue);
+	2: 	return string(str_Purple);
+    3: 	return string(str_EWSCentre);
+    4: 	return string(str_BRLLogo);
+    5: 	return string(str_BRLLogoAlt);
+    6: 	return string(str_Anglia);
+    7: 	return string(str_Intercity);
+    8: 	return string(str_WCRC);
+    9: 	return string(str_GWRGreen);
+    10: return string(str_Virgin);
+    11: return string(str_ColasRail);
+    12: return string(str_One);
+	13: return string(str_Freightliner);
+       return CB_RESULT_NO_TEXT;
+}
