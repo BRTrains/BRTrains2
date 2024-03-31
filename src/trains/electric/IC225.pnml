@@ -1,0 +1,382 @@
+switch(FEAT_TRAINS,SELF, sw_BR91,cargo_subtype){
+    0:	spriteset_BR91_IntercitySwallow;
+	1:	spriteset_BR91_NatEx;
+	2:	spriteset_BR91_GNER;
+	3:	spriteset_BR91_EastCoast;
+	4:	spriteset_BR91_VirginEC;
+    5:	spriteset_BR91_LNER;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR91_reversed,cargo_subtype){
+    0:	spriteset_BRMk4DVT_IntercitySwallowr;
+	1:	spriteset_BRMk4DVT_NatExr;
+	2:	spriteset_BRMk4DVT_GNERr;
+	3:	spriteset_BRMk4DVT_EastCoastr;
+	4:	spriteset_BRMk4DVT_VirginECr;
+    5:	spriteset_BRMk4DVT_LNERr;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR91, extra_callback_info1) {
+	1: return item_91_BRMk4TSOE;
+	2..4: return item_91_BRMk4TSO;
+	5: return item_91_BRMk4TSOD;
+	6: return item_91_BRMk4RFM;
+	7..9: return item_91_BRMk4FO;
+	10: return item_91_BRMk4DVT;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR91_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_IntercitySwallow);
+	1:	return string(str_NatEx);
+	2:	return string(str_GNER);
+	3:	return string(str_EastCoast);
+	4:	return string(str_VirginECLNER);
+    5:	return string(str_LNER);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,PARENT,sw_91_front,vehicle_is_reversed){
+    0:	sw_BR91;
+	1:	sw_BR91_reversed;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR91_speed,param_max_speed){
+	0:	return 201;
+	1:	return 225;
+}
+
+item (FEAT_TRAINS, item_BR91, 108) {
+	property {
+		name: 							string(STR_NAME_BR91);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1989,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					3;
+		cost_factor:					131;
+		running_cost_factor:			114;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							6480 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							486 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_7),string(str_BR91_usage),string(str_BR91_eos),string(str_BR91_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR91;
+	default: 							sw_91_front;
+	purchase:							spriteset_BR91_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	speed:								sw_BR91_speed;    
+    cost_factor:	return(GetAdjustedCost(38));
+	running_cost_factor: return(GetAdjustedCost(37));
+}
+}
+
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4FO,cargo_subtype){
+    0: spriteset_BRMk4FO_IntercitySwallow;
+    1: spriteset_BRMk4FO_NatEx;
+    2: spriteset_BRMk4FO_GNER;
+    3: spriteset_BRMk4FO_EastCoast;
+    4: spriteset_BRMk4FO_VirginEC;
+    5: spriteset_BRMk4FO_LNER;
+}
+
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSOE,cargo_subtype){
+    0: spriteset_BRMk4TSOE_IntercitySwallow;
+    1: spriteset_BRMk4TSOE_NatEx;
+    2: spriteset_BRMk4TSOE_GNER;
+    3: spriteset_BRMk4TSOE_EastCoast;
+    4: spriteset_BRMk4TSOE_VirginEC;
+    5: spriteset_BRMk4TSOE_LNER;
+}
+
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSO,cargo_subtype){
+    0: spriteset_BRMk4TSO_IntercitySwallow;
+    1: spriteset_BRMk4TSO_NatEx;
+    2: spriteset_BRMk4TSO_GNER;
+    3: spriteset_BRMk4TSO_EastCoast;
+    4: spriteset_BRMk4TSO_VirginEC;
+    5: spriteset_BRMk4TSO_LNER;
+}
+
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4RFM,cargo_subtype){
+    0: spriteset_BRMk4RFM_IntercitySwallow;
+    1: spriteset_BRMk4RFM_NatEx;
+    2: spriteset_BRMk4RFM_GNER;
+    3: spriteset_BRMk4RFM_EastCoast;
+    4: spriteset_BRMk4RFM_VirginEC;
+    5: spriteset_BRMk4RFM_LNER;
+}
+
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSOD,cargo_subtype){
+    0: spriteset_BRMk4TSOD_IntercitySwallow;
+    1: spriteset_BRMk4TSOD_NatEx;
+    2: spriteset_BRMk4TSOD_GNER;
+    3: spriteset_BRMk4TSOD_EastCoast;
+    4: spriteset_BRMk4TSOD_VirginEC;
+    5: spriteset_BRMk4TSOD_LNER;
+}
+
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4DVT,cargo_subtype){
+    0: spriteset_BRMk4DVT_IntercitySwallow;
+    1: spriteset_BRMk4DVT_NatEx;
+    2: spriteset_BRMk4DVT_GNER;
+    3: spriteset_BRMk4DVT_EastCoast;
+    4: spriteset_BRMk4DVT_VirginEC;
+    5: spriteset_BRMk4DVT_LNER;
+}
+
+switch(FEAT_TRAINS,SELF, sw_91_BRMk4DVT_reversed,cargo_subtype){
+    0:	spriteset_BR91_IntercitySwallowr;
+	1:	spriteset_BR91_NatExr;
+	2:	spriteset_BR91_GNERr;
+	3:	spriteset_BR91_EastCoastr;
+	4:	spriteset_BR91_VirginECr;
+    5:	spriteset_BR91_LNERr;
+}
+
+switch(FEAT_TRAINS,PARENT,sw_91_rear,vehicle_is_reversed){
+    0:	sw_91_BRMk4DVT;
+	1:	sw_91_BRMk4DVT_reversed;
+}
+
+// The independent DVT is a separate item, item_BRMk4DVT
+item (FEAT_TRAINS, item_91_BRMk4DVT, 113) {
+ property {
+  name: string(STR_NAME_BRMk4DVT);
+  climates_available: NO_CLIMATE;
+  introduction_date: date(1989,4,21);
+  model_life: 12;
+  retire_early: 1;
+  vehicle_life: 50;
+  reliability_decay: 7;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 14;
+  cost_factor: 1;
+  running_cost_factor: 1;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  speed: 125 mph;
+  misc_flags: TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+  refit_cost: 0;
+  track_type: ELRL;
+  ai_special_flag: AI_FLAG_CARGO;
+  power: 0;
+  running_cost_base: RUNNING_COST_ELECTRIC;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 1;
+  weight: 0;
+  engine_class: ENGINE_CLASS_ELECTRIC;
+  tractive_effort_coefficient: 0.3;
+  air_drag_coefficient: 0.1;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_ELECTRIC;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+ cargo_capacity: return 0;
+ default: sw_91_rear;
+ colour_mapping: return PALETTE_CC_FIRST; 
+}
+}
+
+item (FEAT_TRAINS, item_91_BRMk4FO, 112) {
+ property {
+  name: string(STR_NAME_BRMk4FO);
+  climates_available: ALL_CLIMATES;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 14;
+  cost_factor: 0;
+  running_cost_factor: 0;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  refit_cost: 0;
+  track_type: ELRL;
+  power: 0;
+  running_cost_base: RUNNING_COST_NONE;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 43;
+  weight: 0;
+  tractive_effort_coefficient: 0;
+  air_drag_coefficient: 0;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_NONE;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+  default: sw_91_BRMk4FO;
+ colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(43 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4FO_purchase;
+}
+}
+
+item (FEAT_TRAINS, item_91_BRMk4TSOE, 109) {
+ property {
+  name: string(STR_NAME_BRMk4TSOE);
+  climates_available: ALL_CLIMATES;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 14;
+  cost_factor: 0;
+  running_cost_factor: 0;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  refit_cost: 0;
+  track_type: ELRL;
+  power: 0;
+  running_cost_base: RUNNING_COST_NONE;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 76;
+  weight: 0;
+  tractive_effort_coefficient: 0;
+  air_drag_coefficient: 0;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_NONE;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+  default: sw_91_BRMk4TSOE;
+ colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(76 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4TS_purchase;
+}
+}
+
+item (FEAT_TRAINS, item_91_BRMk4TSO, 110) {
+ property {
+  name: string(STR_NAME_BRMk4TSO);
+  climates_available: ALL_CLIMATES;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 14;
+  cost_factor: 0;
+  running_cost_factor: 0;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  refit_cost: 0;
+  track_type: ELRL;
+  power: 0;
+  running_cost_base: RUNNING_COST_NONE;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 76;
+  weight: 0;
+  tractive_effort_coefficient: 0;
+  air_drag_coefficient: 0;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_NONE;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+  default: sw_91_BRMk4TSO;
+ colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(76 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4TS_purchase;
+}
+}
+
+item (FEAT_TRAINS, item_91_BRMk4RFM, 111) {
+ property {
+  name: string(STR_NAME_BRMk4RFM);
+  climates_available: ALL_CLIMATES;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 14;
+  cost_factor: 0;
+  running_cost_factor: 0;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  refit_cost: 0;
+  track_type: ELRL;
+  power: 0;
+  running_cost_base: RUNNING_COST_NONE;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 30;
+  weight: 0;
+  tractive_effort_coefficient: 0;
+  air_drag_coefficient: 0;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_NONE;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+  default: sw_91_BRMk4RFM;
+ colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(30 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4RFM_purchase;
+}
+}
+
+item (FEAT_TRAINS, item_91_BRMk4TSOD, 114) {
+ property {
+  name: string(STR_NAME_BRMk4TSOD);
+  climates_available: ALL_CLIMATES;
+  refittable_cargo_classes: 0;
+  cargo_allow_refit: [PASS];
+  loading_speed: 14;
+  cost_factor: 0;
+  running_cost_factor: 0;
+  sprite_id: SPRITE_ID_NEW_TRAIN;
+  refit_cost: 0;
+  track_type: ELRL;
+  power: 0;
+  running_cost_base: RUNNING_COST_NONE;
+  dual_headed: 0;
+  default_cargo_type: PASS;
+  cargo_capacity: 72;
+  weight: 0;
+  tractive_effort_coefficient: 0;
+  air_drag_coefficient: 0;
+  length: 8;
+  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_NONE;
+  extra_weight_per_wagon: 0;
+  bitmask_vehicle_info: 0;
+ }
+ graphics {
+ can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
+  default: sw_91_BRMk4TSOD;
+ colour_mapping: return PALETTE_CC_FIRST;
+ cargo_capacity: return(72 * param_pax);
+ cargo_subtype_text:					sw_BR91_cargo_subtype_text;
+ purchase:							spriteset_BRMk4TS_purchase;
+}
+}
