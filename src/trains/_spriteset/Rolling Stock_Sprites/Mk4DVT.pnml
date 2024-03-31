@@ -61,6 +61,7 @@ switch(FEAT_TRAINS, PARENT, sw_BRMk4DVT_PushPUll, [STORE_TEMP(0 - position_in_ar
     196: sw_PUSHPULL_DVTasBR68; // Class 68
     418: sw_PUSHPULL_DVTasBR89; // Class 89
 	543: sw_PUSHPULL_DVTasBR90; // Class 90
+    588: sw_PUSHPULL_DVTasBR91; // Class 91
 	sw_BRMk4DVT; // No compatible locomotive found, show normal sprites
 }
 

@@ -38,17 +38,3 @@ item (FEAT_TRAINS, item_BRMk4DVT, 585) {
 	running_cost_factor: return(GetAdjustedCost(17));
 }
 }
-
-
-/* switch(FEAT_TRAINS, SELF, test, [STORE_TEMP(0 - pos_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
-	1: do something if other train's ID is 1
-}
-
-0xC6 vehicle ID
-0xF2 cargo_subtype
-
-[STORE_TEMP(position_in_consist_from_end , 0x10F),
-
-TEMP[0x10F] var(0x61, param=0xF2, shift=0, and=0xFF)
-
-*/

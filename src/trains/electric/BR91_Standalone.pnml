@@ -1,0 +1,64 @@
+// If the rear of this consist is a compatible Driving Trailer, call that vehicles's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_BR91_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {		
+	585: sw_PUSHPULL_LocomotiveAsMk4DVT; // Mk4 DVT
+	sw_BR91; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR91_CheckPosition, position_in_consist){
+    0: sw_BR91_PushPUll; // Attempt push pull
+	sw_BR91; // We aren't at the front of the consist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR91_Sprites ,vehicle_is_reversed){
+    0:	sw_BR91; // We're heading foward, show normal sprites
+	1:	sw_BR91_CheckPosition; // Attempt push pull
+}
+
+
+item (FEAT_TRAINS, item_BR91Standalone, 588) {
+	property {
+		name: 							string(STR_NAME_BR91_Standalone);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1989,4,21);
+		model_life:						12;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					3;
+		cost_factor:					131;
+		running_cost_factor:			114;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							6480 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							486 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_7),string(str_BR91_usage),string(str_BR91_eos),string(str_BR91_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR91_cargo_subtype_text;	
+	default: 							sw_BR91_Sprites;
+	purchase:							spriteset_BR91Standalone_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	speed:								sw_BR91_speed;    
+    cost_factor:	return(GetAdjustedCost(38));
+	running_cost_factor: return(GetAdjustedCost(37));
+}
+}

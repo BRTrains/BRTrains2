@@ -404,6 +404,7 @@ str_BR90_eos					:---
 str_BR90_liveries				:Intercity Swallow, Freightliner Grey, EWS, DB, Freightliner Green, Freightliner Powerhaul, ONE, Greater Anglie Blue, Greater Anglia White, Virgin, REX, First Scotrail, GNER
 
 STR_NAME_BR91					:British Rail Class 91 'Intercity 225'
+STR_NAME_BR91_Standalone		:British Rail Class 91 (Standalone)
 str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
 str_BR91_liveries				:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast

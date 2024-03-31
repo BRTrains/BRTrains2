@@ -119,3 +119,13 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR90, [STORE_TEMP(0 - position_in_a
 	12:	spriteset_BR90_GNER;
         return CB_RESULT_NO_TEXT;
 }
+
+// Mirror of BR91 (IC225.pnml)
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR91, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+    0:	spriteset_BR91_IntercitySwallowr;
+	1:	spriteset_BR91_NatExr;
+	2:	spriteset_BR91_GNERr;
+	3:	spriteset_BR91_EastCoastr;
+	4:	spriteset_BR91_VirginECr;
+    5:	spriteset_BR91_LNERr;
+}

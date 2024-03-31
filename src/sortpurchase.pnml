@@ -42,6 +42,7 @@ sort(FEAT_TRAINS, [
  item_BR89,
  item_BR90,
  item_BR91,
+ item_BR91Standalone,
  item_BluePullman_6Car, // Don't really belong anywhere but after the IC225 and before the DMUs seems to fit
  item_BluePullman_8Car, // Don't really belong anywhere but after the IC225 and before the DMUs seems to fit
  item_BR121,
