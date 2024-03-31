@@ -6,6 +6,7 @@ sort(FEAT_TRAINS, [
  item_GWRHall,
  item_GNRA1,
  item_LNERA3,
+ item_Standard9F,
  item_BR08,
  item_BR13,
  item_BR31,

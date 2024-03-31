@@ -37,6 +37,18 @@ template template_train12px(x,y){
     [ x+83, y, 12, 12, -5, -7]
 }
 
+template template_train16px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 17, -3, -11]
+    [ x+9, y, 14, 13, -6, -9]
+    [ x+24, y, 16, 12, 0, -7]
+    [ x+41, y, 14, 13, 1, -5]
+    [ x+56, y, 8, 17, -3, -5]
+    [ x+65, y, 14, 13, -14, -5]
+    [ x+80, y, 16, 12, -15, -8]
+    [ x+97, y, 14, 13, -7, -10]
+}
+
 template template_train20px(x,y){ // Clone to 4view when changed
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 18, -3, -11]
@@ -122,11 +134,11 @@ template template_train32px(x,y){
 
 template template_train32px_anim(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -4, -10,			ANIM|NOWHITE]
+    [ x, y, 8, 24, -3, -12,			ANIM|NOWHITE]
     [ x+9, y, 21, 18, -13, -10,		ANIM|NOWHITE]
     [ x+31, y, 32, 12, -16, -8,		ANIM|NOWHITE]
     [ x+64, y, 21, 18, -7, -11,		ANIM|NOWHITE]
-    [ x+86, y, 8, 24, -4, -10,		ANIM|NOWHITE]
+    [ x+86, y, 8, 24, -3, -12,		ANIM|NOWHITE]
     [ x+95, y, 21, 18, -13, -10,	ANIM|NOWHITE]
     [ x+117, y, 32, 12, -15, -8,	ANIM|NOWHITE]
     [ x+150, y, 21, 18, -7, -11,	ANIM|NOWHITE]

@@ -216,10 +216,10 @@ str_GWRCastle_usage			   		:Express Passenger
 str_GWRCastle_eos					:1923
 str_GWRCastle_liveries				:GWR Green
 
-STR_NAME_GWRHall					:GWR 4-6-0 "Hall" Class
-str_GWRHall_usage			   		:Express Passenger
-str_GWRHall_eos					    :1946
-str_GWRHall_liveries				:GWR Green, Hogwarts Express
+STR_NAME_GWRHall				:GWR 4-6-0 "Hall" Class
+str_GWRHall_usage		   		:Express Passenger
+str_GWRHall_eos				    :1946
+str_GWRHall_liveries			:GWR Green, Hogwarts Express
 
 STR_NAME_GNRA1					:GNR Gresley A1
 str_GNRA1_usage					:Express Passenger
@@ -230,6 +230,11 @@ STR_NAME_LNERA3					:LNER Gresley A3
 str_LNERA3_usage				:Express Passenger
 str_LNERA3_eos					:1959-1966
 str_LNERA3_liveries				:LNER Green, BR Wartime Black, BR Apple Green, BR Brunswick Green
+
+STR_NAME_Standard9F				:BR Standard Class 9F
+str_Standard9F_usage			:Freight/Mixed Traffic
+str_Standard9F_eos				:1935
+str_Standard9F_liveries			:BR Black, BR Green
 
 STR_NAME_BluePullman_6Car		:British Rail 'Blue Pullman' (6 car)
 STR_NAME_BluePullman_8Car		:British Rail 'Blue Pullman' (8 car)
