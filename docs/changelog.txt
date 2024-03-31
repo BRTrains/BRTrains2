@@ -2,6 +2,7 @@
 - Added BR Standard Class 9F
 - Added Mk4 coaches as a separate purchase item (previously only available as part of IC225 "MU")
 - Added Mk3 DVT
+- Added Class 91 as a standalone (non-IC225) unit
 - Added Mk4 DVT as standalone (non-IC225) unit
 - Added push-pull for Class 47 / Mk3 DVT
 - Added push-pull for Class 67 / Mk3 DVT

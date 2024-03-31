@@ -42,7 +42,7 @@ item (FEAT_TRAINS, item_Coppernob, 584) {
 	property {
 		name: 							string(STR_NAME_Coppernob);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1948,4,21);
+		introduction_date:				date(1848,4,21);
 		model_life:						70;
 		retire_early:					1;
 		vehicle_life:					55;
