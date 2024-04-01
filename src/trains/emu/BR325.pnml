@@ -56,7 +56,9 @@ item (FEAT_TRAINS, item_BR325, 420) {
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
-		refittable_cargo_classes:		bitmask(CC_MAIL,CC_ARMOURED);
+		default_cargo_type:				MAIL;
+		refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+		cargo_allow_refit:				[MAIL];
 		loading_speed:					30;
 		cost_factor:					56;
 		running_cost_factor:			32;
@@ -68,8 +70,7 @@ item (FEAT_TRAINS, item_BR325, 420) {
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							2000 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
-		dual_headed:					0;
-		default_cargo_type:				MAIL;
+		dual_headed:					0;		
 		cargo_capacity:					98;
 		weight:							140 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;
@@ -84,7 +85,7 @@ item (FEAT_TRAINS, item_BR325, 420) {
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR325_usage),string(str_BR325_eos),string(str_BR325_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR325_cargo_subtype_text;
+	//cargo_subtype_text:					sw_BR325_cargo_subtype_text; // Uncomment if adding more liveries later
 	articulated_part:        			switch_articulated_BR325;
 	default: 							sw_BR325a;
 	purchase:							spriteset_BR325_Purchase;
@@ -104,8 +105,9 @@ item (FEAT_TRAINS, item_BR325b, 421) {
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
-		refittable_cargo_classes:		CC_MAIL;
-		cargo_allow_refit:				[MAIL];
+		default_cargo_type:				MAIL;
+		refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+		cargo_allow_refit:				[MAIL];		
 		loading_speed:					25;
 		cost_factor:					1;
 		running_cost_factor:			1;
@@ -117,8 +119,7 @@ item (FEAT_TRAINS, item_BR325b, 421) {
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
-		dual_headed:					0;
-		default_cargo_type:				MAIL;
+		dual_headed:					0;		
 		cargo_capacity:					93;
 		weight:							0 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;
@@ -148,8 +149,9 @@ item (FEAT_TRAINS, item_BR325c, 422) {
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
-		refittable_cargo_classes:		CC_MAIL;
-		cargo_allow_refit:				[MAIL];
+		default_cargo_type:				MAIL;
+		refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+		cargo_allow_refit:				[MAIL];		
 		loading_speed:					25;
 		cost_factor:					1;
 		running_cost_factor:			1;
@@ -160,8 +162,7 @@ item (FEAT_TRAINS, item_BR325c, 422) {
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
-		dual_headed:					0;
-		default_cargo_type:				MAIL;
+		dual_headed:					0;			
 		cargo_capacity:					98;
 		weight:							0 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;
@@ -193,8 +194,9 @@ item (FEAT_TRAINS, item_BR325d, 423) {
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
-		refittable_cargo_classes:		CC_MAIL;
-		cargo_allow_refit:				[MAIL];
+		default_cargo_type:				MAIL;
+		refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+		cargo_allow_refit:				[MAIL];		
 		loading_speed:					25;
 		cost_factor:					1;
 		running_cost_factor:			1;
@@ -205,8 +207,7 @@ item (FEAT_TRAINS, item_BR325d, 423) {
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
-		dual_headed:					0;
-		default_cargo_type:				MAIL;
+		dual_headed:					0;		
 		cargo_capacity:					98;
 		weight:							0 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;

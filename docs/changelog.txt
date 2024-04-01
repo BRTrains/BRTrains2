@@ -1,5 +1,6 @@
 # v2.7
 - Added BR Standard Class 9F
+- Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Added Mk4 coaches as a separate purchase item (previously only available as part of IC225 "MU")
 - Added Mk3 DVT
 - Added Class 91 as a standalone (non-IC225) unit
@@ -15,6 +16,9 @@
 - Added push-pull for Class 90 / Mk4 DVT
 - Added push-pull for Class 89 / Mk4 DVT
 - Fixed some purchase sprites
+- Fixed 32px_reversed template
+- Minor graphical fixes BR325 and RM_TPO
+- Added some cargo classes for BR325
 
 
 # v2.7 (28/03/24)
