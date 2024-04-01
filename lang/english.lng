@@ -113,6 +113,8 @@ STR_BR805_5CAR                         :British Rail Class 805 (5-car)
 STR_BR807_7CAR                         :British Rail Class 807 (7-car)
 STR_BR810_5CAR                         :British Rail Class 810 (5-car)
 
+STR_TGV					:SNCF TGV 'La Poste'
+
 
 # Livery Names
 STR_LIVERY_BR800_LNER                  : LNER 'Azuma'
@@ -142,6 +144,9 @@ STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multipl
 STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
 STR_DSC_BR_397                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
+
+STR_DSC_TGV                            :Type: {BLUE}High Speed Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Mail/Goods{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}La Poste, Royal Mail (fictional)
+
 
 STR_DSC_BR_701                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}South Western Railway
 STR_DSC_BR_707                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}South Western Railway
@@ -1373,6 +1378,7 @@ str_Intercity					: (Intercity)
 str_IntercityExecutive			: (Intercity Executive)
 str_IntercitySwallow			: (Intercity Swallow)
 str_Kestrel                     : (Kestrel Prototype - Yellow and Black)
+str_LaPoste					    : (La Poste)
 str_LNER                        : (LNER Red/White)
 str_LNERCorridorTender			: (LNER Green Corridor Tender)
 str_LNERGreen					: (LNER Green)
@@ -1458,6 +1464,7 @@ str_RFPetrol					: (Railfreight Petroleum)
 str_Royal						: (Royal Scotsman)
 str_RoyalClaret					: (British Royal Train)
 str_RoyalMail					: (Royal Mail)
+str_RoyalMailFictional					: (Royal Mail - Fictional Livery)
 str_ScotRail					: (ScotRail)
 str_ScotrailSaltire				: (ScotRail Saltire)
 str_Shell                       : (Shell)

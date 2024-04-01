@@ -1,0 +1,103 @@
+spriteset(spriteset_TGV_purchase, "gfx/EMU/TGV.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_TGV_Front_RoyalMail, "gfx/EMU/TGV.png") {
+	template_train32px(0, 138)
+}
+spriteset(spriteset_TGV_EndCoach_RoyalMail, "gfx/EMU/TGV.png") {
+	template_train32px(0, 163)
+}
+spriteset(spriteset_TGV_EndCoachReversed_RoyalMail, "gfx/EMU/TGV.png") {
+	template_train32px_reversed(0, 163)
+}
+spriteset(spriteset_TGV_MiddleCoach_RoyalMail, "gfx/EMU/TGV.png") {
+	template_train32px(0, 188)
+}
+spriteset(spriteset_TGV_Rear_RoyalMail, "gfx/EMU/TGV.png") {
+	template_train32px(0, 213)
+}
+
+
+spriteset(spriteset_TGV_Front_LaPoste, "gfx/EMU/TGV.png") {
+	template_train32px(0, 13)
+}
+spriteset(spriteset_TGV_EndCoach_LaPoste, "gfx/EMU/TGV.png") {
+	template_train32px(0, 38)
+}
+spriteset(spriteset_TGV_EndCoachReversed_LaPoste, "gfx/EMU/TGV.png") {
+	template_train32px_reversed(0, 38)
+}
+spriteset(spriteset_TGV_LiveriedCoach_LaPoste, "gfx/EMU/TGV.png") {
+	template_train32px(0, 63)
+}
+spriteset(spriteset_TGV_PlainCoach_LaPoste, "gfx/EMU/TGV.png") {
+	template_train32px(0, 88)
+}
+spriteset(spriteset_TGV_Rear_LaPoste, "gfx/EMU/TGV.png") {
+	template_train32px(0, 113)
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_TGV_spriteset_RoyalMail, position_in_articulated_veh % 10) {
+	0: spriteset_TGV_Front_RoyalMail;
+	1: spriteset_TGV_EndCoach_RoyalMail;
+	8: spriteset_TGV_EndCoachReversed_RoyalMail;
+	9: spriteset_TGV_Rear_RoyalMail;
+	spriteset_TGV_MiddleCoach_RoyalMail;
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_TGV_spriteset_LaPoste, position_in_articulated_veh % 10) {
+	0: spriteset_TGV_Front_LaPoste;
+	1: spriteset_TGV_EndCoach_LaPoste;
+	3: spriteset_TGV_LiveriedCoach_LaPoste;
+	6: spriteset_TGV_LiveriedCoach_LaPoste;
+	8: spriteset_TGV_EndCoachReversed_LaPoste;
+	9: spriteset_TGV_Rear_LaPoste;
+	spriteset_TGV_PlainCoach_LaPoste;
+}
+
+switch(FEAT_TRAINS, SELF, switch_TGV_cargo_subtype_text, cargo_subtype) {
+	0: return string(str_LaPoste);
+	1: return string(str_RoyalMailFictional);	
+	return CB_RESULT_NO_TEXT;
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_TGV_spriteset, cargo_subtype) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	// % 3 means that the graphics will repeat properly if another train is added to the end
+	// so that we get: (front,middle,end);(front,middle,end)...
+	0: switch_TGV_spriteset_LaPoste;
+	1: switch_TGV_spriteset_RoyalMail;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_TGV_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..9: return item_TGV;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_TGV_particles, position_in_articulated_veh % 9) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	0: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	8: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, sw_TGV_cargo_capacity, position_in_articulated_veh) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	1: return(0);
+	9: return(0);
+	return(800/8);
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_TGV_can_attach_wagon, vehicle_type_id) {
+	item_TGV: return CB_RESULT_ATTACH_ALLOW;	
+	return string(STR_CANNOT_ATTACH);
+}
