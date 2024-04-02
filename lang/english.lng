@@ -201,7 +201,7 @@ str_DR98_9_eos					:---
 str_DR98_9_liveries				:Network Rail, Railtrack, South West Trains
 
 
-STR_NAME_Coppernob					:Furness Railway 0-4-0 "Coppernob"
+STR_NAME_Coppernob					:Furness Railway 0-4-0 'Coppernob'
 str_Coppernob_usage					:Mixed Traffic
 str_Coppernob_eos					:1848
 str_Coppernob_liveries				:Furness Railway Red

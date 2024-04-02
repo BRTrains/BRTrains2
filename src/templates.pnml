@@ -28,13 +28,13 @@ template tmpl_train_8_reversed(x, y) {
 template template_train12px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 14, -3, -11]
-    [ x+9, y, 12, 12, -7, -7]
-    [ x+23, y, 12, 12, -4, -8]
-    [ x+35, y, 12, 12, 1, -7]
+    [ x+9, y, 12, 12, -5, -8]
+    [ x+22, y, 12, 12, 4, -6]
+    [ x+35, y, 12, 12, 4, -4]
     [ x+48, y, 8, 14, -3, -5]
-    [ x+57, y, 12, 12, -13, -7]
-    [ x+70, y, 12, 12, -15, -8]
-    [ x+83, y, 12, 12, -5, -7]
+    [ x+57, y, 12, 12, -13, -3]
+    [ x+70, y, 12, 12, -15, -6]
+    [ x+83, y, 12, 12, -4, -8]
 }
 
 template template_train16px(x,y){
@@ -53,11 +53,11 @@ template template_train20px(x,y){ // Clone to 4view when changed
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 18, -3, -11]
     [ x+9, y, 15, 15, -7, -10]
-    [ x+25, y, 20, 12, -4, -8]
+    [ x+25, y, 20, 12, -4, -7]
     [ x+46, y, 15, 15, 1, -7]
-    [ x+62, y, 8, 17, -3, -5]
+    [ x+62, y, 8, 18, -3, -5]
     [ x+71, y, 15, 15, -13, -7]
-    [ x+87, y, 20, 12, -15, -8]
+    [ x+87, y, 20, 12, -15, -7]
     [ x+108, y, 15, 15, -5, -10]
 }
 // THIS VIEW IS 8 FROM 4, IT REPEATS THE SECOND SET FOR OFFSET PURPOSES
@@ -65,11 +65,11 @@ template template_train20px_4view(x,y){ // Clone to 8view when changed
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 18, -3, -11]
     [ x+9, y, 15, 15, -7, -10]
-    [ x+25, y, 20, 12, -4, -8]
+    [ x+25, y, 20, 12, -4, -7]
     [ x+46, y, 15, 15, 1, -7]
-    [ x, y, 8, 17, -3, -5]
+    [ x, y, 8, 18, -3, -5]
     [ x+9, y, 15, 15, -13, -7]
-    [ x+25, y, 20, 12, -15, -8]
+    [ x+25, y, 20, 12, -15, -7]
     [ x+46, y, 15, 15, -5, -10]
 }
 

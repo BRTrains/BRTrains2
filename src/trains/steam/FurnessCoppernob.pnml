@@ -7,7 +7,7 @@ spriteset(spriteset_Coppernob_FurnessRed, "gfx/Steam/FurnessCoppernob.png") {
 }
 
 spriteset(spriteset_CoppernobT_FurnessRed, "gfx/Steam/FurnessCoppernob.png") {
-	template_train12px(0, 31)
+	template_train12px(0, 32)
 }
 
 switch(FEAT_TRAINS,SELF, sw_CoppernobLoco,cargo_subtype){
