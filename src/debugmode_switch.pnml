@@ -1,4 +1,3 @@
- if (param[1] == 0) {
-	disable_item(FEAT_TRAINS, 584); // Coppernob
+ if (param[1] == 0) {	
 	disable_item(FEAT_TRAINS, 589); // TGV
  }
