@@ -88,7 +88,7 @@ item (FEAT_TRAINS, item_LNERA3, 6) {
 		name: 							string(STR_NAME_LNERA3);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1928,4,21);
-		model_life:						10;
+		model_life:						35;
 		retire_early:					1;
 		vehicle_life:					35;
 		reliability_decay:				7;
