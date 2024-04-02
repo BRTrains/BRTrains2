@@ -52,9 +52,9 @@ item (FEAT_TRAINS, item_Standard9F, 587) {
 		name: 							string(STR_NAME_Standard9F);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1954,2,4);
-		model_life:						2;
+		model_life:						20;
 		retire_early:					1;
-		vehicle_life:					10;
+		vehicle_life:					20;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
 		cargo_allow_refit:				[GOOD, FOOD];
