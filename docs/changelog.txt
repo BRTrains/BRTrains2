@@ -1,3 +1,7 @@
+# v2.8
+- Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
+
+
 # v2.7 (2024-4-2)
 - Added BR Standard Class 9F
 - Added Mk4 coaches as a separate purchase item (previously only available as part of IC225 "MU")
