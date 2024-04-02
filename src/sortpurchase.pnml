@@ -113,6 +113,7 @@ sort(FEAT_TRAINS, [
  item_BR373_25kv,
  item_BR373_2,
  item_BR374,
+ item_TGV,
  item_BR375_3,
  item_BR375_4,
  item_BR376,
