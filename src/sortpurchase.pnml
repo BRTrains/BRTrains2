@@ -1,4 +1,10 @@
 sort(FEAT_TRAINS, [
+ item_UtilityTrain12px,
+ item_UtilityTrain16px,
+ item_UtilityTrain20px,
+ item_UtilityTrain24px,
+ item_UtilityTrain28px,
+ item_UtilityTrain32px,
  item_EyeCandy,
  item_Coppernob,
  item_FurnessK2,

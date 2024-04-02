@@ -1,3 +1,12 @@
- if (param[1] == 0) {	
+ if (param[1] == 0) {
 	disable_item(FEAT_TRAINS, 589); // TGV
+
+
+	// Ignore below here, utility/template trains for alignment
+	disable_item(FEAT_TRAINS, 601); // 12px
+	disable_item(FEAT_TRAINS, 602); // 16px
+	disable_item(FEAT_TRAINS, 603); // 20px
+	disable_item(FEAT_TRAINS, 604); // 24p
+	disable_item(FEAT_TRAINS, 605); // 28px
+	disable_item(FEAT_TRAINS, 606); // 32px
  }

@@ -54,6 +54,13 @@ STR_PARAM_HALF                 :1/2
 
 # Vehicle names
 
+STR_NAME_Utility12px                    :12px alignment/test unit
+STR_NAME_Utility16px                    :16px alignment/test unit
+STR_NAME_Utility20px                    :20px alignment/test unit
+STR_NAME_Utility24px                    :24px alignment/test unit
+STR_NAME_Utility28px                    :28px alignment/test unit
+STR_NAME_Utility32px                    :32px alignment/test unit
+
 STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)
 STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive without an attached unit
