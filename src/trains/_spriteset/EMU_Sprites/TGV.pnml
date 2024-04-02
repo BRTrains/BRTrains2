@@ -89,13 +89,6 @@ switch(FEAT_TRAINS, SELF, switch_TGV_particles, position_in_articulated_veh % 9)
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, sw_TGV_cargo_capacity, position_in_articulated_veh) {
-	// 0 is first car, 1 is second car, 2 is third car, so on...
-	1: return(0);
-	9: return(0);
-	return(800/8);
-}
-
 // Only allow the same train type to be added to itself
 switch(FEAT_TRAINS, SELF, switch_TGV_can_attach_wagon, vehicle_type_id) {
 	item_TGV: return CB_RESULT_ATTACH_ALLOW;	

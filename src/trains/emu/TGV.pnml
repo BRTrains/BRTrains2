@@ -9,18 +9,13 @@ item(FEAT_TRAINS, item_TGV, 589) {
 		default_cargo_type:				MAIL;
 		refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
 		cargo_allow_refit:				[MAIL];
-
-		non_refittable_cargo_classes: bitmask();
 		cost_factor: 200;
 		loading_speed: 10;
-		running_cost_factor: 90;
-		cargo_allow_refit: [];
-		cargo_disallow_refit: [];		
+		running_cost_factor: 90;	
 		speed: 168 mph;
 		power: 9119 hp;
 		cargo_capacity: (800/8);
 		weight: 345 ton;
-		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
 		refit_cost: 0;
@@ -46,7 +41,7 @@ item(FEAT_TRAINS, item_TGV, 589) {
 		can_attach_wagon: switch_TGV_can_attach_wagon;
 		visual_effect_and_powered: switch_TGV_particles;	
 		additional_text: string(STR_DSC_TGV);		
-		cargo_capacity:	sw_TGV_cargo_capacity;
+		cargo_capacity:	800/8;
 		cost_factor:	return(GetAdjustedCost(134));
 		running_cost_factor: return(GetAdjustedCost(90));
 
