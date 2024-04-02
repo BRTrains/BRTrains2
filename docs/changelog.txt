@@ -1,6 +1,5 @@
-# v2.7
+# v2.7 (2024-4-2)
 - Added BR Standard Class 9F
-- Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Added Mk4 coaches as a separate purchase item (previously only available as part of IC225 "MU")
 - Added Mk3 DVT
 - Added Class 91 as a standalone (non-IC225) unit
@@ -19,9 +18,12 @@
 - Fixed 32px_reversed template
 - Minor graphical fixes BR325 and RM_TPO
 - Added some cargo classes for BR325
+- Added FOOD as a refit option for locomotives (enables FIRS compatibility)
+- Extended some steam train purchase lifespans to avoid gaps where nothing is available
 
 
-# v2.7 (28/03/24)
+
+# v2.7 (2024-3-28)
 - Added Class 50
 - Added Class 805
 - Added Class 810
@@ -45,7 +47,7 @@
 - Fixed IC125 and MPV purchase sprites
 (* indicates units previously in development mode)
 
-# v2.6 (18/03/24)
+# v2.6 (2024-3-18)
 - Added Class 231
 - Added Class 756
 - Added Class 730
@@ -70,7 +72,7 @@
 - Fixed some names, added some nicknames to units
 - Fixed Class 55 (Deltic) alignment
 
-# v2.4 (20/08/22)
+# v2.4 (2022-08-20)
 - Added Kestrel Type 5 Prototype
 - Modified BR68 + Mk5 rake to use the new BR68 model
 - Fixed Class 230 description to DEMU instead of EMU
@@ -86,7 +88,7 @@
 - Fixed Class 220/221 purchase sprites
 - Fixed Class 395 name/description
 
-# v2.3 (11/07/22)
+# v2.3 (2022-7-11)
 - Added LNWR 0-6-2 "Webb Coal Tank"
 - Added Blue Pullman
 - Added Class 52
@@ -98,7 +100,7 @@
 - Fixed LNER coach Maroon and Carmine/Cream livery spritesheets
 - Fixed some introductory dates
 
-# v2.2 (02/08/22)
+# v2.2 (2022-8-2)
 
 - BR350/444/450 - Tidied up cab a little, improved diagonal view cab windows
 - BR91/Mk4/IC225 sets - Added LNER Modified Intercity Swallow livery, tidied up spritesets
@@ -106,12 +108,12 @@
 - Mk3 DVT - improved graphics (unit not yet in game)
 - Moved some old graphics to archive
 
-## v2.1 (30/07/22)
+## v2.1 (2022-7-3)
 
 - BR720 - Added C2C livery
 - Fixed GRF name for BaNaNaS and GRF List
 
-# v2 - First full release under the British Rail Set (BRSet) name (30/07/22)
+# v2 - First full release under the British Rail Set (BRSet) name (22-7-30)
 
 
 Anything labelled as "Re-drawn (new model)" or "New Unit"
