@@ -8,7 +8,7 @@ item (FEAT_TRAINS, item_LNWRWebb, 554) {
 		vehicle_life:					15;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					7;
 		running_cost_factor:			7;

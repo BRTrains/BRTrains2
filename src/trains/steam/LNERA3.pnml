@@ -93,7 +93,7 @@ item (FEAT_TRAINS, item_LNERA3, 6) {
 		vehicle_life:					35;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					27;
 		running_cost_factor:			32;
@@ -138,7 +138,7 @@ item (FEAT_TRAINS, item_LNERA3T, 7) {
 		name: 							string(STR_NAME_LNERA3);
 		climates_available: 			NO_CLIMATE;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					0;
 		running_cost_factor:			0;

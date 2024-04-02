@@ -25,7 +25,7 @@ item (FEAT_TRAINS, item_BR13, 2) {
 		vehicle_life:					21;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					35;
 		running_cost_factor:			12;
@@ -69,7 +69,7 @@ item (FEAT_TRAINS, item_BR13_1, 3) {
 		name: 							string(STR_NAME_GNRA1);
 		climates_available: 			NO_CLIMATE;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					1;
 		running_cost_factor:			1;

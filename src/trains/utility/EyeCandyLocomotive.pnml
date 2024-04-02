@@ -31,7 +31,7 @@ item (FEAT_TRAINS, item_EyeCandy, 578) {
 		vehicle_life:					200;
 		reliability_decay:				10;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					1;
 		running_cost_factor:			1;

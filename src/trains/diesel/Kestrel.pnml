@@ -26,7 +26,7 @@ item (FEAT_TRAINS, item_Kestrel, 556) {
 		vehicle_life:					50;
 		reliability_decay:				9;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					44;
 		running_cost_factor:			40;

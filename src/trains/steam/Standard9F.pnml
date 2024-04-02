@@ -57,7 +57,7 @@ item (FEAT_TRAINS, item_Standard9F, 587) {
 		vehicle_life:					10;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					26;
 		running_cost_factor:			30;

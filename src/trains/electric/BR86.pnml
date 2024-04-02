@@ -74,7 +74,7 @@ item (FEAT_TRAINS, item_BR86, 566) {
 		vehicle_life:					70;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					40;
 		running_cost_factor:			40;

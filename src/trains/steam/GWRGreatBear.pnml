@@ -34,7 +34,7 @@ item (FEAT_TRAINS, item_GreatBear, 484) {
 		vehicle_life:					20;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					26;
 		running_cost_factor:			30;
@@ -83,7 +83,7 @@ item (FEAT_TRAINS, item_GreatBearT, 558) {
 		retire_early:					1;
 		vehicle_life:					20;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD];
+		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
 		cost_factor:					0;
 		running_cost_factor:			0;
