@@ -1,0 +1,90 @@
+spriteset(spriteset_FurnessK2_Purchase, "gfx/Steam/FurnessK1K2.png") {
+	template_purchase_anim(0, 0)
+}
+
+spriteset(spriteset_FurnessK2_FurnessRed, "gfx/Steam/FurnessK1K2.png") {
+	template_train20px(0, 13)
+}
+
+spriteset(spriteset_FurnessK2T_FurnessRed, "gfx/Steam/FurnessK1K2.png") {
+	template_train12px(0, 32)
+}
+
+switch(FEAT_TRAINS,SELF, sw_FurnessK2Loco,cargo_subtype){
+    0:	spriteset_FurnessK2_FurnessRed;
+}
+
+switch(FEAT_TRAINS,SELF, sw_FurnessK2Tender,cargo_subtype){
+    0:	spriteset_FurnessK2T_FurnessRed;
+}
+
+switch(FEAT_TRAINS, SELF, sw_FurnessK2, position_in_articulated_veh){
+	0: sw_FurnessK2Loco;
+	1: sw_FurnessK2Tender;
+}
+
+switch(FEAT_TRAINS, SELF, switch_FurnessK2_length, position_in_articulated_veh) {	
+	0: return 5;
+	1: return 4;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_FurnessK2, extra_callback_info1) {
+	1: return item_FurnessK2;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_FurnessK2_cargo_subtype_text,cargo_subtype){
+    0: return string(str_FurnessRed);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_FurnessK2, 590) {
+	property {
+		name: 							string(STR_NAME_FurnessK2);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1896,2,1);
+		model_life:						50;
+		retire_early:					1;
+		vehicle_life:					55;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					10;
+		running_cost_factor:			10;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							85 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1300 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							70 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	0.4;
+		air_drag_coefficient:			0.1;
+		length:							5;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	length: switch_FurnessK2_length;	
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_FurnessK2_usage),string(str_FurnessK2_eos),string(str_FurnessK2_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_FurnessK2_cargo_subtype_text;
+	articulated_part:        			switch_articulated_FurnessK2;
+	default: 							sw_FurnessK2;
+	purchase:							spriteset_FurnessK2_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						steam_create_visual_effect;
+	sound_effect:						sw_steam_sound;
+	cost_factor:	return(GetAdjustedCost(10));
+	running_cost_factor: return(GetAdjustedCost(10));
+}
+}
