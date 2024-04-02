@@ -1,8 +1,8 @@
 ﻿﻿##grflangid 0x01
 
 # GRF name and description
-STR_GRF_NAME							:British Rail Set (BRTrains v2)
-STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern UK Train Set (MUTS).{}{}{WHITE}The British Rail Set (BRTrains v2){COPYRIGHT}2020 {LTBLUE}Audigex{WHITE}{}MUTS {COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{WHITE}{}UKTrains (v1) {COPYRIGHT}2015 {LTBLUE}Leander {WHITE}& {GREEN}BROS Artists{}{}{WHITE}License: {LTBLUE}GPL v2
+STR_GRF_NAME							:BR Set (BRTrains v2)
+STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern UK Train Set (MUTS).{}{}{WHITE}The BR Set (BRTrains v2){COPYRIGHT}2020 {LTBLUE}Audigex{WHITE}{}MUTS {COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{WHITE}{}UKTrains (v1) {COPYRIGHT}2015 {LTBLUE}Leander {WHITE}& {GREEN}BROS Artists{}{}{WHITE}License: {LTBLUE}GPL v2
 
 
 STR_Electrostar                 :Bombardier Electrostar
@@ -41,8 +41,8 @@ STR_NO_2CC                      :No
 STR_USE_2CC                     :Yes
 STR_ONLY_2CC                    :Only
 
-STR_Error_MUTSBRTrains          :You have BRTrains (v1) or the Modern UK Trainset loaded, they have been deactivated by the British Rail Set (BRSet), which is a development of these sets
-STR_Error_RUKTS                 :You appear to have both the 'British Rail Set (BRSet)' and 'Representative UK Trainset (RUKTS)'  activated. This won't break anything, but it will probably be confusing. Consider disabling one of these sets for an optimal experience
+STR_Error_MUTSBRTrains          :You have BRTrains (v1) or the Modern UK Trainset loaded, they have been deactivated by the BR Set (BRSet), which is a development of these sets
+STR_Error_RUKTS                 :You appear to have both the 'BR Set (BRSet)' and 'Representative UK Trainset (RUKTS)'  activated. This won't break anything, but it will probably be confusing. Consider disabling one of these sets for an optimal experience
 
 # Warning: these are used for multiple parameters, if you need to modify them, maybe add different strings?
 STR_PARAM_1X                    :1x (Default)
@@ -58,62 +58,61 @@ STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)
 STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive without an attached unit
 
-STR_BR_68_5A                            :British Rail Class 68 (Mark 5A) (5-Car + locomotive)
+STR_BR_68_5A                            :BR Class 68 (Mark 5A) (5-Car + locomotive)
 
-STR_BR_195_2CAR							:British Rail Class 195/0 'Civity' (2-Car)
-STR_BR_195_3CAR							:British Rail Class 195/1 'Civity' (3-Car)
-STR_BR_196_2CAR							:British Rail Class 196/0 'Civity' (2-Car)
-STR_BR_196_4CAR							:British Rail Class 196/1 'Civity' (4-Car)
-STR_BR_197_2CAR							:British Rail Class 197/0 'Civity' (2-Car)
-STR_BR_197_3CAR							:British Rail Class 197/1 'Civity' (3-Car)
-STR_BR_231_4CAR							:British Rail Class 231/0 'FLIRT' (4-Car)
-STR_BR_331_3CAR                         :British Rail Class 331/0 'Civity' (3-Car)
-STR_BR_331_4CAR                         :British Rail Class 331/1 'Civity' (4-Car)
+STR_BR_195_2CAR							:BR Class 195/0 'Civity' (2-Car)
+STR_BR_195_3CAR							:BR Class 195/1 'Civity' (3-Car)
+STR_BR_196_2CAR							:BR Class 196/0 'Civity' (2-Car)
+STR_BR_196_4CAR							:BR Class 196/1 'Civity' (4-Car)
+STR_BR_197_2CAR							:BR Class 197/0 'Civity' (2-Car)
+STR_BR_197_3CAR							:BR Class 197/1 'Civity' (3-Car)
+STR_BR_231_4CAR							:BR Class 231/0 'FLIRT' (4-Car)
+STR_BR_331_3CAR                         :BR Class 331/0 'Civity' (3-Car)
+STR_BR_331_4CAR                         :BR Class 331/1 'Civity' (4-Car)
 
-STR_BR_345                              :British Rail Class 345 'Aventra' (9-Car)
+STR_BR_345                              :BR Class 345 'Aventra' (9-Car)
 
-STR_BR_397                              :British Rail Class 397 'Civity' (5-Car)
+STR_BR_397                              :BR Class 397 'Civity' (5-Car)
 
-STR_BR_701_0                            :British Rail Class 701/0 'Aventra' (10-Car)
-STR_BR_701_5                            :British Rail Class 701/5 'Aventra' (5-Car)
+STR_BR_701_0                            :BR Class 701/0 'Aventra' (10-Car)
+STR_BR_701_5                            :BR Class 701/5 'Aventra' (5-Car)
 
-STR_BR_707                              :British Rail Class 707 'Desiro City' (5-Car)
+STR_BR_707                              :BR Class 707 'Desiro City' (5-Car)
 
-STR_BR_710_1                            :British Rail Class 710/1 'Aventra' (4-Car)
-STR_BR_710_2_4CAR                       :British Rail Class 710/2 'Aventra' (4-Car)
-STR_BR_710_2_5CAR                       :British Rail Class 710/2 'Aventra' (5-Car)
+STR_BR_710_1                            :BR Class 710/1 'Aventra' (4-Car)
+STR_BR_710_2_4CAR                       :BR Class 710/2 'Aventra' (4-Car)
+STR_BR_710_2_5CAR                       :BR Class 710/2 'Aventra' (5-Car)
 
-STR_BR_720_1                            :British Rail Class 720/1 'Aventra' (10-Car)
-STR_BR_720_5                            :British Rail Class 720/5 'Aventra' (5-Car)
+STR_BR_720_1                            :BR Class 720/1 'Aventra' (10-Car)
+STR_BR_720_5                            :BR Class 720/5 'Aventra' (5-Car)
 
-STR_BR730_0                            :British Rail Class 730/0 'Aventra' (3-Car)
-STR_BR730_2                            :British Rail Class 730/2 'Aventra' (5-Car)
+STR_BR730_0                            :BR Class 730/0 'Aventra' (3-Car)
+STR_BR730_2                            :BR Class 730/2 'Aventra' (5-Car)
 
-STR_BR_745                              :British Rail Class 745/0/1 'FLIRT' (12-Car)
-STR_BR_745test                          :GRF TEST UNIT
-STR_BR_755_3CAR                         :British Rail Class 755/3  'FLIRT' (3-Car with Power Pack)
-STR_BR_755_4CAR                         :British Rail Class 755/4  'FLIRT' (4-Car with Power Pack)
+STR_BR_745                              :BR Class 745/0/1 'FLIRT' (12-Car)
+STR_BR_755_3CAR                         :BR Class 755/3  'FLIRT' (3-Car with Power Pack)
+STR_BR_755_4CAR                         :BR Class 755/4  'FLIRT' (4-Car with Power Pack)
 
-STR_BR_756_3CAR                         :British Rail Class 756/3 (3-Car with Power Pack)
-STR_BR_756_4CAR                         :British Rail Class 756/4 (4-Car with Power Pack)
+STR_BR_756_3CAR                         :BR Class 756/3 (3-Car with Power Pack)
+STR_BR_756_4CAR                         :BR Class 756/4 (4-Car with Power Pack)
 
-STR_BR_769                              :British Rail Class 769/0/3/4 'Flex' (4-Car)
-STR_BR_769_9                            :British Rail Class 769/9 'Flex' (4-Car)
+STR_BR_769                              :BR Class 769/0/3/4 'Flex' (4-Car)
+STR_BR_769_9                            :BR Class 769/9 'Flex' (4-Car)
 
-STR_BR_777                              :British Rail Class 777 'METRO' (4-Car)
+STR_BR_777                              :BR Class 777 'METRO' (4-Car)
 
-STR_BR800_5CAR                         :British Rail Class 800/0/2 (5-Car)
-STR_BR800_9CAR                         :British Rail Class 800/1/3 (9-Car)
-STR_BR801_5CAR                         :British Rail Class 801/1 (5-Car)
-STR_BR801_9CAR                         :British Rail Class 801/2 (9-Car)
-STR_BR802_5CAR                         :British Rail Class 802/0/2/3 (5-Car)
-STR_BR802_9CAR                         :British Rail Class 802/1 (9-Car)
-STR_BR803_5CAR                         :British Rail Class 803 (5-car)
-STR_BR805_5CAR                         :British Rail Class 805 (5-car)
-STR_BR807_7CAR                         :British Rail Class 807 (7-car)
-STR_BR810_5CAR                         :British Rail Class 810 (5-car)
+STR_BR800_5CAR                         :BR Class 800/0/2 (5-Car)
+STR_BR800_9CAR                         :BR Class 800/1/3 (9-Car)
+STR_BR801_5CAR                         :BR Class 801/1 (5-Car)
+STR_BR801_9CAR                         :BR Class 801/2 (9-Car)
+STR_BR802_5CAR                         :BR Class 802/0/2/3 (5-Car)
+STR_BR802_9CAR                         :BR Class 802/1 (9-Car)
+STR_BR803_5CAR                         :BR Class 803 (5-car)
+STR_BR805_5CAR                         :BR Class 805 (5-car)
+STR_BR807_7CAR                         :BR Class 807 (7-car)
+STR_BR810_5CAR                         :BR Class 810 (5-car)
 
-STR_TGV					:SNCF TGV 'La Poste'
+STR_TGV					:SNCF TGV 'La Poste' (10-car)
 
 
 # Livery Names
@@ -195,7 +194,7 @@ str_route_8						:RA8 (<22.8 tonne Axle Load)
 str_route_9						:RA9 (<24.1 tonne Axle Load)
 str_route_10					:RA10 (<25.4 tonne Axle Load)
 
-STR_NAME_DR98_9					:Departmental Railways 98/9 'MPV'
+STR_NAME_DR98_9					:Departmental Railways 98/9 'MPV' (2-car)
 str_DR98_9_usage				:Deparmental Railway
 str_DR98_9_eos					:---
 str_DR98_9_liveries				:Network Rail, Railtrack, South West Trains
@@ -206,7 +205,7 @@ str_Coppernob_usage					:Mixed Traffic
 str_Coppernob_eos					:1848
 str_Coppernob_liveries				:Furness Railway Red
 
-STR_NAME_FurnessK2					:Furness Railway 4-4-0 'K2/Large Seagull'
+STR_NAME_FurnessK2					:Furness Railway 4-4-0 K2 'Large Seagull'
 str_FurnessK2_usage					:Mixed Traffic
 str_FurnessK2_eos					:1892
 str_FurnessK2_liveries				:Furness Railway Red
@@ -246,43 +245,43 @@ str_Standard9F_usage			:Freight/Mixed Traffic
 str_Standard9F_eos				:1935
 str_Standard9F_liveries			:BR Black, BR Green
 
-STR_NAME_BluePullman_6Car		:British Rail 'Blue Pullman' (6 car)
-STR_NAME_BluePullman_8Car		:British Rail 'Blue Pullman' (8 car)
+STR_NAME_BluePullman_6Car		:BR 'Blue Pullman' (6 car)
+STR_NAME_BluePullman_8Car		:BR 'Blue Pullman' (8 car)
 str_BluePullman_usage			:Express Passenger
 str_BluePullman_eos		    	:---
 str_BluePullman_liveries		:Blue Pullman, Blue Pullman (Warning Panels), BR Grey and Blue
 
-STR_NAME_BR08					:British Rail Class 08 'Gronk'
+STR_NAME_BR08					:BR Class 08 'Gronk'
 str_BR08_usage					:Shunting
 str_BR08_eos					:---
 str_BR08_liveries				:BR Black, BR Green, BR Blue, EWS Red and Gold, Network Rail Yellow, Unusual Purple, Intercity Swallow, BR General Grey
 
-STR_NAME_BR13					:British Rail Class 13 'Shunter'
+STR_NAME_BR13					:BR Class 13 'Shunter'
 str_BR13_usage					:Shunting
 str_BR13_eos					:1983-1986
 str_BR13_liveries				:BR Blue
 
-STR_NAME_BR31					:British Rail Class 31 'Type 2'
+STR_NAME_BR31					:BR Class 31 'Type 2'
 str_BR31_usage					:Express Passenger
 str_BR31_eos					:---
 str_BR31_liveries				:
 
-STR_NAME_BR33_0					:British Rail Class 33/0 'Crompton'
+STR_NAME_BR33_0					:BR Class 33/0 'Crompton'
 str_BR33_0_usage				:Mixed Traffic
 str_BR33_0_eos					:---
 str_BR33_0_liveries				:BR Green, BR Green (Yellow Front), BR Blue, Network SouthEast, Civil Engineers 'Dutch', Colas Rail, DRS, EWS, Railfreight Construction, Railfreight Distribution, Fragonset, West Coast Railway Company
 
-STR_NAME_BR33_1					:British Rail Class 33/1 'Crompton'
+STR_NAME_BR33_1					:BR Class 33/1 'Crompton'
 str_BR33_1_usage				:Push-Pull Haulage
 str_BR33_1_eos					:---
 str_BR33_1_liveries				:BR Green, BR Green (Yellow Front), BR Blue, Network SouthEast, Fragonset
 
-STR_NAME_BR37					:British Rail Class 37/0 'Tractor'
+STR_NAME_BR37					:BR Class 37/0 'Tractor'
 str_BR37_usage					:Mixed Traffic
 str_BR37_eos					:---
 str_BR37_liveries				:BR Blue, BR Green, BR Large Logo, Civil Engineers 'Dutch', Colas Rail, DB Schenker, Departmental Grey, DRS, EWS, Harry Needle Railroad, Intercity, Loadhaul, Mainline Freight, Railfreight Coal, Railfreight Construction, Railfreight Distribution, Railfreight Large Logo, Railfreight Petroleum, Regional Railways, Royal Scotsman
 
-STR_NAME_BR47					:British Rail Class 47 'Type 4'
+STR_NAME_BR47					:BR Class 47 'Type 4'
 str_BR47_usage					:Mixed Traffic
 str_BR47_eos					:---
 str_BR47_liveries				:BR Green, BR Blue, BR Large Logo, BR Large Logo (Alternate), Porterbrook, EWS, Anglia, InterCity, West Coast, GWR Green, Virgin, Colas Rail, ONE, Freightliner
@@ -292,72 +291,72 @@ str_Kestrel_usage				:Mixed Traffic
 str_Kestrel_eos					:---
 str_Kestrel_liveries			:Kestrel Black and Yellow
 
-STR_NAME_BR50					:British Rail Class 50 'Hoover'
+STR_NAME_BR50					:BR Class 50 'Hoover'
 str_BR50_usage					:Express Passenger
 str_BR50_eos					:---
 str_BR50_liveries				:BR Blue, BR Large Logo, BR Green, Network SouthEast, Network SouthEast (Alternate) GBRf, Hanson & Hall
 
-STR_NAME_BR52					:British Rail Class 52 'Western'
+STR_NAME_BR52					:BR Class 52 'Western'
 str_BR52_usage					:Mixed Traffic
 str_BR52_eos					:---
 str_BR52_liveries				:BR Desert Sand, BR Maroon, BR Green, BR Blue
 
-STR_NAME_BR55					:British Rail Class 55 'Deltic'
+STR_NAME_BR55					:BR Class 55 'Deltic'
 str_BR55_usage					:Express Passenger
 str_BR55_eos					:1982
 str_BR55_liveries				:BR Green, BR Green with Yellow Front, BR Blue
 
-STR_NAME_BR57					:British Rail Class 57 'Thunderbird'
+STR_NAME_BR57					:BR Class 57 'Thunderbird'
 str_BR57_usage					:Mixed Traffic
 str_BR57_eos					:---
 str_BR57_liveries				:
 
-STR_NAME_BR60					:British Rail Class 60 'Tug'
+STR_NAME_BR60					:BR Class 60 'Tug'
 str_BR60_usage					:Mixed Freight
 str_BR60_eos					:---
 str_BR60_liveries				:Railfreight Grey, Mainline, Loadhaul Grey, Loadhaul, British Steel, Corus, EWS, GWR, Colas Rail
 
-STR_NAME_BR66					:British Rail Class 66 'Shed'
+STR_NAME_BR66					:BR Class 66 'Shed'
 str_BR66_usage					:Mixed Freight
 str_BR66_eos					:---
 str_BR66_liveries				:EWS, Freightliner, DB Schenker, GBRf, GBRf Tfl, GBRf Harry Beck, Colas Rail, Fastline, DRS
 
-STR_NAME_BR67					:British Rail Class 67 'Skip'
+STR_NAME_BR67					:BR Class 67 'Skip'
 str_BR67_usage					:Mixed Traffic
 str_BR67_eos					:---
 str_BR67_liveries				:Arriva Trains Wales, DB Schenker, EWS, Caledonian Sleeper, Wrexham & Shropshire, Royal Claret, Colas Rail
 
-STR_NAME_BR68					:British Rail Class 68 'Warskip'
+STR_NAME_BR68					:BR Class 68 'Warskip'
 str_BR68_usage					:Mixed Traffic
 str_BR68_eos					:---
 str_BR68_liveries				:DRS, ScotRail, Chiltern Railways
 
-STR_NAME_BR67Royal				:British Rail Class 67 'British Royal Train'
+STR_NAME_BR67Royal				:BR Class 67 'British Royal Train'
 str_BR67Royal_usage				:Mixed Traffic
 str_BR67Royal_eos				:---
 str_BR67Royal_liveries			:British Royal Train
 
-STR_NAME_BR67EWS				:British Rail Class 67 'Company Train'
+STR_NAME_BR67EWS				:BR Class 67 'Company Train'
 str_BR67EWS_usage				:Mixed Traffic
 str_BR67EWS_eos					:---
 str_BR67EWS_liveries			:EWS Company Train, DB Schenker Company Train
 
-STR_NAME_BR70OG					:British Rail (1940s Southern Region) Class 70
+STR_NAME_BR70OG					:BR (1940s Southern Region) Class 70
 str_BR70OG_usage			    :Mixed Traffic
 str_BR70OG_eos					:---
 str_BR70OG_liveries				:BR Green, BR Blue
 
-STR_NAME_BR70					:British Rail Class 70 'Powerhaul'
+STR_NAME_BR70					:BR Class 70 'Powerhaul'
 str_BR70_usage					:Heavy Freight
 str_BR70_eos					:---
 str_BR70_liveries				:Freightliner, Colas Rail
 
-STR_NAME_BR71					:British Rail Class 71
+STR_NAME_BR71					:BR Class 71
 str_BR71_usage					:Mixed Traffic
 str_BR71_eos					:---
 str_BR71_liveries				:BR Green
 
-STR_NAME_BR89					:British Rail Class 89 'Badger'
+STR_NAME_BR89					:BR Class 89 'Badger'
 str_BR89_usage					:Express Passenger
 str_BR89_eos					:---
 str_BR89_liveries				:Intercity Swallow, GNER, Intercity
@@ -368,305 +367,305 @@ str_18100_usage					:Mixed Traffic
 str_18100_eos		    		:---
 str_18100_liveries				:BR Black
 
-STR_NAME_BR80					:British Rail Class 80 (25kV Prototype)
+STR_NAME_BR80					:BR Class 80 (25kV Prototype)
 str_BR80_usage					:Mixed Traffic
 str_BR80_eos		    		:---
 str_BR80_liveries				:BR Black
 
-STR_NAME_BR81					:British Rail Class 81 'AL1'
+STR_NAME_BR81					:BR Class 81 'AL1'
 str_BR81_usage					:Mixed Traffic
 str_BR81_eos	    			:---
 str_BR81_liveries				:BR Blue
 
-STR_NAME_BR82					:British Rail Class 82 'AL2'
+STR_NAME_BR82					:BR Class 82 'AL2'
 str_BR82_usage					:Mixed Traffic
 str_BR82_eos	    			:---
 str_BR82_liveries				:BR Blue, Intercity Executive
 
-STR_NAME_BR83					:British Rail Class 83 'AL3'
+STR_NAME_BR83					:BR Class 83 'AL3'
 str_BR83_usage					:Mixed Traffic
 str_BR83_eos		    		:---
 str_BR83_liveries				:BR Blue
 
-STR_NAME_BR84					:British Rail Class 84 'AL4'
+STR_NAME_BR84					:BR Class 84 'AL4'
 str_BR84_usage					:Mixed Traffic
 str_BR84_eos		    		:---
 str_BR84_liveries				:BR Blue
 
-STR_NAME_BR85					:British Rail Class 85 'AL5'
+STR_NAME_BR85					:BR Class 85 'AL5'
 str_BR85_usage					:Mixed Traffic
 str_BR85_eos		    			:---
 str_BR85_liveries				:BR Blue
 
-STR_NAME_BR86					:British Rail Class 86 'AL6'
+STR_NAME_BR86					:BR Class 86 'AL6'
 str_BR86_usage					:Mixed Traffic
 str_BR86_eos					:---
 str_BR86_liveries				:BR Blue, Intercity Executive, Rail Express, EWS, Railfraight Distribution, Rail Express Systems
 
-STR_NAME_BR87					:British Rail Class 87
+STR_NAME_BR87					:BR Class 87
 str_BR87_usage					:Mixed Traffic
 str_BR87_eos					:---
 str_BR87_liveries				:BR Blue, Intercity Swallow, Virgin
 
-STR_NAME_BR90					:British Rail Class 90
+STR_NAME_BR90					:BR Class 90
 str_BR90_usage					:Mixed Traffic
 str_BR90_eos					:---
 str_BR90_liveries				:Intercity Swallow, Freightliner Grey, EWS, DB, Freightliner Green, Freightliner Powerhaul, ONE, Greater Anglie Blue, Greater Anglia White, Virgin, REX, First Scotrail, GNER
 
-STR_NAME_BR91					:British Rail Class 91 'Intercity 225'
-STR_NAME_BR91_Standalone		:British Rail Class 91 (Standalone)
+STR_NAME_BR91					:BR Class 91 'Intercity 225'
+STR_NAME_BR91_Standalone		:BR Class 91 (Standalone)
 str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
 str_BR91_liveries				:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
-STR_NAME_BR121					:British Rail Class 121 'Bubble Car'
+STR_NAME_BR121					:BR Class 121 'Bubble Car'
 str_BR121_usage					:Passenger
 str_BR121_eos					:---
 str_BR121_liveries				:BR Green, BR Blue, Railtrack
 
-STR_NAME_BR139					:British Rail Class 139 'Parry People Mover' (1-car)
+STR_NAME_BR139					:BR Class 139 'Parry People Mover' (1-car)
 str_BR139_usage					:Passenger
 str_BR139_eos					:---
 str_BR139_liveries				:London Midland, West Midlands Railway
 
-STR_NAME_BR140					:British Rail Class 140 'Pacer' Prototype (2-car)
+STR_NAME_BR140					:BR Class 140 'Pacer' Prototype (2-car)
 str_BR140_usage					:Passenger
 str_BR140_eos					:---
 str_BR140_liveries				:BR Blue
 
-STR_NAME_BR141					:British Rail Class 141 'Pacer' (2-car)
+STR_NAME_BR141					:BR Class 141 'Pacer' (2-car)
 str_BR141_usage					:Passenger
 str_BR141_eos					:---
 str_BR141_liveries				:BR Blue, WYTPE Metro, WYTPE Verona Green
 
-STR_NAME_BR142					:British Rail Class 142 'Pacer' (2-car)
+STR_NAME_BR142					:BR Class 142 'Pacer' (2-car)
 str_BR142_usage					:Passenger
 str_BR142_eos					:---
 str_BR142_liveries				:
 
-STR_NAME_BR143					:British Rail Class 143 'Pacer' (2-car)
+STR_NAME_BR143					:BR Class 143 'Pacer' (2-car)
 str_BR143_usage					:Passenger
 str_BR143_eos					:---
 str_BR143_liveries				:Regional Rail, Valley Lines, WYTPE Metro, Wessex Trains, Northern Rail, Great Western Railway
 
-STR_NAME_BR150					:British Rail Class 150/0 'Sprinter' (3-car)
+STR_NAME_BR150					:BR Class 150/0 'Sprinter' (3-car)
 str_BR150_usage					:Passenger
 str_BR150_eos					:---
 str_BR150_liveries				:BR Prototype, Regional Railways, Centro, Central Trains, London Midland, First Great Western
 
-STR_NAME_BR150_1				:British Rail Class 150/1 'Sprinter' (2-car)
+STR_NAME_BR150_1				:BR Class 150/1 'Sprinter' (2-car)
 str_BR150_1_usage				:Passenger
 str_BR150_1_eos					:---
 str_BR150_1_liveries			:Regional Railways, Regional Railways (Grey), Centro, Central Trains, Network West Midlands, First North Western, Super Sprinter, SilverLink, Northern Rail, First Great Western, BR Track Test, Railtrack, Network Rail
 
-STR_NAME_BR150_2				:British Rail Class 150/2 'Sprinter' (2-car)
+STR_NAME_BR150_2				:BR Class 150/2 'Sprinter' (2-car)
 str_BR150_2_usage				:Passenger
 str_BR150_2_eos					:---
 str_BR150_2_liveries			:Regional Railways, Regional Railways (Merseyrail), Central Trains, Central/Anglia, East Anglia, Network West Midlands, First North Western, Northern Rail, First Great Western, Arriva Wales, Wessex Trains, ScotRail
 
-STR_NAME_BR151					:British Rail Class 151 'Sprinter' (3-car)
+STR_NAME_BR151					:BR Class 151 'Sprinter' (3-car)
 str_BR151_usage					:Passenger
 str_BR151_eos					:1989
 str_BR151_liveries				:BR Prototype, Regional Railways
 
-STR_NAME_BR153					:British Rail Class 153 'Super Sprinter' (1-car)
+STR_NAME_BR153					:BR Class 153 'Super Sprinter' (1-car)
 str_BR153_usage					:Passenger
 str_BR153_eos					:---
 str_BR153_liveries				:Regional Railways, Central Trains, East Anglia, Anglia Norwich & Norfolk, First North Western, FNW Arriva, Arriva Blue, Arriva Cream, Arriva Heart of Wales, Arriva Times, Wessex Heart, Wessex Cornwall Dorset, Weesex Looe Valley, One, East Midlands Trains, Northern Rail, First Great Western, London Midland
 
-STR_NAME_BR155					:British Rail Class 155 'Super Sprinter' (2-car)
+STR_NAME_BR155					:BR Class 155 'Super Sprinter' (2-car)
 str_BR155_usage					:Passenger
 str_BR155_eos					:---
 str_BR155_liveries				:Regional Railways, WYPTE Metro, Northern Rail
 
-STR_NAME_BR156					:British Rail Class 156 'Super Sprinter' (2-car)
+STR_NAME_BR156					:BR Class 156 'Super Sprinter' (2-car)
 str_BR156_usage					:Passenger
 str_BR156_eos					:---
 str_BR156_liveries				:Regional Railways, Strathclyde Orange, Strathclyde PTE, ScotRail, First ScotRail, Central Trains, East Midlands Trains, Northern Spirit, Northern Rail (Porterbrook), Northern Rail Experimental, Northern Rail, One (Various), National Express
 
-STR_NAME_BR158					:British Rail Class 158 'Express Sprinter' (2-Car)
+STR_NAME_BR158					:BR Class 158 'Express Sprinter' (2-Car)
 str_BR158_usage					:Express Passenger
 str_BR158_eos					:---
 str_BR158_liveries				:Regional Express, Arriva Trains Wales, ATW Western Mail, Arriva Silver, Arriva TP Northern Spirit, First North Western, First Scot Rail, First TransPennine, First Great Western, First ScotRail, Alphaline Wales and Borders, Alphaline Wessex, Northern Rail, Northern Rail metro, Central Trains, East Midland Trains, WYPTE Metro, Wales and West, ScotRail (Nat Ex), ScotRail Saltire, South West Trains, Network South East
 
-STR_NAME_BR158_3				:British Rail Class 158 'Express Sprinter' (3-Car)
+STR_NAME_BR158_3				:BR Class 158 'Express Sprinter' (3-Car)
 str_BR158_3_usage				:Express Passenger
 str_BR158_3_eos					:---
 str_BR158_3_liveries			:Regional Express, Arriva TP Northern Spirit, First TransPennine, First Great Western, Northern Rail, East Midland Trains, WYPTE Metro, South West Trains, Network South East
 
-STR_NAME_BR159					:British Rail Class 159 'South Western Turbo' (3-car)
+STR_NAME_BR159					:BR Class 159 'South Western Turbo' (3-car)
 str_BR159_usage					:Express Passenger
 str_BR159_eos					:---
 str_BR159_liveries				:Network South East, South West Trains
 
-STR_NAME_BR165_0_2				:British Rail Class 165/0 'Chiltern Turbo' (2-Car)
-STR_NAME_BR165_0_3				:British Rail Class 165/0 'Chiltern Turbo' (3-Car)
-STR_NAME_BR165_1_2				:British Rail Class 165/1 'Thames Turbo' (2-Car)
-STR_NAME_BR165_1_3				:British Rail Class 165/1 'Thames Turbo' (3-Car)
+STR_NAME_BR165_0_2				:BR Class 165/0 'Chiltern Turbo' (2-Car)
+STR_NAME_BR165_0_3				:BR Class 165/0 'Chiltern Turbo' (3-Car)
+STR_NAME_BR165_1_2				:BR Class 165/1 'Thames Turbo' (2-Car)
+STR_NAME_BR165_1_3				:BR Class 165/1 'Thames Turbo' (3-Car)
 str_BR165_usage					:Passenger
 str_BR165_eos					:---
 str_BR1650_liveries				:Network SouthEast, Chiltern Railways
 str_BR1651_liveries				:Network SouthEast, Thames Trains, First Great Western 'Link', First Great Western 'Dynamic Lines', Great Western Railway
 
-STR_NAME_BR166					:British Rail Class 166 'Thames Turbo' (3-car)
+STR_NAME_BR166					:BR Class 166 'Thames Turbo' (3-car)
 str_BR166_usage					:Passenger
 str_BR166_eos					:---
 str_BR166_liveries				:Network SouthEast, Thames Trains, First Great Western 'Link', First Great Western 'Dynamic Lines', Great Western Railway
 
-STR_NAME_BR168					:British Rail Class 168 'Clubman' (2-Car)
+STR_NAME_BR168					:BR Class 168 'Clubman' (2-Car)
 str_BR168_usage					:Passenger
 str_BR168_eos					:---
 str_BR168_liveries				:Chiltern Blue, Chiltern Grey
-STR_NAME_BR168_3				:British Rail Class 168 'Clubman' (3-Car)
-STR_NAME_BR168_4				:British Rail Class 168 'Clubman' (4-Car)
+STR_NAME_BR168_3				:BR Class 168 'Clubman' (3-Car)
+STR_NAME_BR168_4				:BR Class 168 'Clubman' (4-Car)
 
-STR_NAME_BR170					:British Rail Class 170 'Turbostar' (2-Car)
+STR_NAME_BR170					:BR Class 170 'Turbostar' (2-Car)
 str_BR170_usage					:Passenger
 str_BR170_eos					:---
 str_BR170_liveries				:Central Trains, London Midland, One, ScotRail Saltire, South West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE, West Midland Railway, East Midlands Railway, Transport For Wales
 
-STR_NAME_BR170_3				:British Rail Class 170 'Turbostar' (3-Car)
+STR_NAME_BR170_3				:BR Class 170 'Turbostar' (3-Car)
 str_BR170_3_usage				:Passenger
 str_BR170_3_eos					:---
 str_BR170_3_liveries			:Central Trains, London Midland, One, ScotRail Saltire, South West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE, West Midland Railway, East Midlands Railway, Transport For Wales
 
-STR_NAME_BR171					:British Rail Class 171 'Turbostar' (2-Car)
+STR_NAME_BR171					:BR Class 171 'Turbostar' (2-Car)
 str_BR171_usage					:Passenger
 str_BR171_eos					:---
 str_BR171_liveries				:Southern
 
-STR_NAME_BR171_4				:British Rail Class 171 'Turbostar' (4-Car)
+STR_NAME_BR171_4				:BR Class 171 'Turbostar' (4-Car)
 str_BR171_4_usage				:Passenger
 str_BR171_4_eos					:---
 str_BR171_4_liveries			:Southern
 
-STR_NAME_BR1750					:British Rail Class 175/0 'Coradia' (2-Car)
-STR_NAME_BR1751					:British Rail Class 175/1 'Coradia' (3-Car)
+STR_NAME_BR1750					:BR Class 175/0 'Coradia' (2-Car)
+STR_NAME_BR1751					:BR Class 175/1 'Coradia' (3-Car)
 str_BR175_usage					:Passenger
 str_BR175_eos					:---
 str_BR175_liveries				:Arriva 'Ghost', First North Western, Arriva Trains, Transport for Wales
 
-STR_NAME_BR180					:British Rail Class 180 'Adelante' (5-car)
+STR_NAME_BR180					:BR Class 180 'Adelante' (5-car)
 str_BR180_usage					:Express Passenger
 str_BR180_eos					:---
 str_BR180_liveries				:First Great Western, First Great Western - Dynamic Lines, Grand Central, Northern Rail
 
-STR_NAME_BR185					:British Rail Class 185 'Desiro' (3-car)
+STR_NAME_BR185					:BR Class 185 'Desiro' (3-car)
 str_BR185_usage					:Express Passenger
 str_BR185_eos					:---
 str_BR185_liveries				:First Group, First TransPennine
 
-STR_NAME_BR220					:British Rail Class 220 'Voyager' (4-car)
+STR_NAME_BR220					:BR Class 220 'Voyager' (4-car)
 str_BR220_usage					:Express Passenger
 str_BR220_eos					:---
 str_BR220_liveries				:Virgin Trains, CrossCountry
 
-STR_NAME_BR221					:British Rail Class 221 'Super Voyager' (5-Car)
+STR_NAME_BR221					:BR Class 221 'Super Voyager' (5-Car)
 str_BR221_usage					:Express Passenger
 str_BR221_eos					:---
 str_BR221_liveries				:Virgin Trains, CrossCountry
 
-STR_NAME_BR221_4				:British Rail Class 221 'Super Voyager' (4-Car)
+STR_NAME_BR221_4				:BR Class 221 'Super Voyager' (4-Car)
 str_BR221_4_usage				:Express Passenger
 str_BR221_4_eos					:---
 str_BR221_4_liveries			:Cross Country, Virgin Trains
 
-STR_NAME_BR222					:British Rail Class 222 'Meridian' (7-Car)
+STR_NAME_BR222					:BR Class 222 'Meridian' (7-Car)
 str_BR222_usage					:Express Passenger
 str_BR222_eos					:---
 str_BR222_liveries				:Midland Mainline, East Midlands Trains
 
-STR_NAME_BR222_5				:British Rail Class 222 'Meridian' (5-Car)
+STR_NAME_BR222_5				:BR Class 222 'Meridian' (5-Car)
 str_BR222_5_usage				:Express Passenger
 str_BR222_5_eos					:---
 str_BR222_5_liveries			:Midland Mainline, East Midlands Trains
 
-STR_NAME_BR222_1				:British Rail Class 222/1 'Pioneer' (4-Car)
+STR_NAME_BR222_1				:BR Class 222/1 'Pioneer' (4-Car)
 str_BR222_1_usage				:Express Passenger
 str_BR222_1_eos					:---
 str_BR222_1_liveries			:Hull Trains, East Midlands Trains
 
-STR_NAME_BR230				    :British Rail Class 230 "D-Train"
-STR_NAME_BR230_2CAR				:British Rail Class 230 (2-Car)
-STR_NAME_BR230_3CAR				:British Rail Class 230 (3-Car)
+STR_NAME_BR230				    :BR Class 230 "D-Train"
+STR_NAME_BR230_2CAR				:BR Class 230 (2-Car)
+STR_NAME_BR230_3CAR				:BR Class 230 (3-Car)
 str_BR230_usage				    :Local Passenger
 str_BR230_eos					:---
 str_BR230_2CAR_liveries			:London North Western Railway
 str_BR230_3CAR_liveries			:Transport for Wales
 
-STR_NAME_BR252					:British Rail Class 41 'HST Prototype'
+STR_NAME_BR252					:BR Class 41 'HST Prototype'
 str_BR252_usage					:Express Passenger
 str_BR252_eos					:---
 str_BR252_liveries				:BR Blue
 
-STR_NAME_BR253					:British Rail Class 43 'HST'
+STR_NAME_BR253					:BR Class 43 'HST'
 str_BR253_usage					:Express Passenger
 str_BR253_eos					:---
 str_BR253_liveries				:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, First Great Western
 
-STR_NAME_BR254					:British Rail Class 254 'Eastern'
+STR_NAME_BR254					:BR Class 254 'Eastern'
 str_BR254_usage					:Express Passenger
 str_BR254_eos					:---
 str_BR254_liveries				:BR Blue, Intercity Executive, Intercity Swallow, Cross Country, Great North Eastern Railway, National Express
 
-STR_NAME_BR255					:British Rail Class 255 'Challenger'
+STR_NAME_BR255					:BR Class 255 'Challenger'
 str_BR255_usage					:Express Passenger
 str_BR255_eos					:---
 str_BR255_liveries				:Cross Country, Grand Central, Grand Central Lined
 
-STR_NAME_BR302					:British Rail Class 302 'AM-2' (4-car)
+STR_NAME_BR302					:BR Class 302 'AM-2' (4-car)
 str_BR302_usage					:Commuter Passenger
 str_BR302_eos					:1999
 str_BR302_liveries				:BR Green, BR Blue, BR Blue Grey, Network SouthEast
 
-STR_NAME_BR305_1				:British Rail Class 305/1 'AM-5' (3-car)
+STR_NAME_BR305_1				:BR Class 305/1 'AM-5' (3-car)
 str_BR305_1_usage				:Commuter Passenger
 str_BR305_1_eos					:2000
 str_BR305_1_liveries			:BR Green, BR Blue, BR Blue Grey, Network SouthEast, Regional Railways - Ex-NSE, Regional Railways, GMPTE
 
-STR_NAME_BR305_2				:British Rail Class 305/2 'AM-5' (4-car)
+STR_NAME_BR305_2				:BR Class 305/2 'AM-5' (4-car)
 str_BR305_2_usage				:Commuter Passenger
 str_BR305_2_eos					:2000
 str_BR305_2_liveries			:BR Green, BR Blue, BR Blue Grey, Network SouthEast, Regional Railways - Ex-NSE, Regional Railways, GMPTE
 
-STR_NAME_BR310				    :British Rail Class 310
-STR_NAME_BR310_0				:British Rail Class 310/0 "AM-10" (4-Car)
-STR_NAME_BR310_1				:British Rail Class 310/1 (3-Car)
+STR_NAME_BR310				    :BR Class 310
+STR_NAME_BR310_0				:BR Class 310/0 "AM-10" (4-Car)
+STR_NAME_BR310_1				:BR Class 310/1 (3-Car)
 str_BR310_usage				    :Commuter Passenger
 str_BR310_eos					:---
 str_BR310_liveries			    :BR Blue/Grey, Network South East, Regional Rail
 
-STR_NAME_BR315					:British Rail Class 315 (4-car)
+STR_NAME_BR315					:BR Class 315 (4-car)
 str_BR315_usage					:Commuter Passenger
 str_BR315_eos					:---
 str_BR315_liveries				:BR Blue/Grey, Network SouthEast, Network SouthEast Alternative Scheme, WAGN, One, First Great Eastern, National Express East Anglia, Abellio Greater Anglia, TfL Rail, London Overground
 
-STR_NAME_BR319					:British Rail Class 319 (4-car)
+STR_NAME_BR319					:BR Class 319 (4-car)
 str_BR319_usage					:Regional Passenger
 str_BR319_eos					:---
 str_BR319_liveries				:Network SouthEast, Network SouthEast Grey, BR Thameslink, Connex, First Capital Connect, Southern, Govia Thameslink Blue, Govia Thameslink Pink, Transitional, London Midland, Northern
 
-STR_NAME_BR323					:British Rail Class 323 (3-car)
+STR_NAME_BR323					:BR Class 323 (3-car)
 str_BR323_usage					:Suburban Passenger
 str_BR323_eos					:---
 str_BR323_liveries				:Regional Railways, Centro, First North Western, First North Western - Barbie, Northern, London Midland
 
-STR_NAME_BR325					:British Rail Class 325 (4-car)
+STR_NAME_BR325					:BR Class 325 (4-car)
 str_BR325_usage					:Express Mail
 str_BR325_eos					:---
 str_BR325_liveries				:Royal Mail
 
-STR_NAME_BR333					:British Rail Class 333 (4-car)
+STR_NAME_BR333					:BR Class 333 (4-car)
 str_BR333_usage					:Suburban Passenger
 str_BR333_eos					:---
 str_BR333_liveries				:Northern, Northern Rail (WYPTE), Northern Spirit
 
-STR_NAME_BR334					:British Rail Class 334 (3-car)
+STR_NAME_BR334					:BR Class 334 (3-car)
 str_BR334_usage					:Suburban Passenger
 str_BR334_eos					:---
 str_BR334_liveries				:"Carmine and Cream", Scotrail Saltire
 
-STR_NAME_BR350					:British Rail Class 350 'Desiro' (4-car)
+STR_NAME_BR350					:BR Class 350 'Desiro' (4-car)
 str_BR350_usage					:Passenger
 str_BR350_eos					:---
 str_BR350_liveries				:London Midland
@@ -676,142 +675,142 @@ str_ElectroTest_usage			:
 str_ElectroTest_eos				:---
 str_ElectroTest_liveries		:
 
-STR_NAME_BR357					:British Rail Class 357 'Electrostar' (4-car)
+STR_NAME_BR357					:BR Class 357 'Electrostar' (4-car)
 str_BR357_usage					:Surburban Passenger
 str_BR357_eos					:---
 str_BR357_liveries				:C2C, C2C Blue, C2C Eco
 
 
-STR_NAME_APTE					:British Rail 'APT-E' Prototype (4-car)
+STR_NAME_APTE					:BR 'APT-E' Prototype (4-car)
 str_APTE_usage			        :Express Passenger
 str_APTE_eos					:1972
 str_APTE_liveries				:Intercity
 
-STR_NAME_BR370					:British Rail Class 370 'APT-P' Prototype (14-car)
+STR_NAME_BR370					:BR Class 370 'APT-P' Prototype (14-car)
 str_BR370_usage					:Express Passenger
 str_BR370_eos					:1986
 str_BR370_liveries				:Intercity
 
-STR_NAME_BR375_3				:British Rail Class 375 'Electrostar' (3-Car)
+STR_NAME_BR375_3				:BR Class 375 'Electrostar' (3-Car)
 str_BR375_3_usage				:Suburban Passenger
 str_BR375_3_eos					:---
 str_BR375_3_liveries				:Southeastern Blue, Southeastern Blue Stripe, Southeastern Yellow, Southeastern Yellow Stripe, Southeastern Blue Refurbished
 
-STR_NAME_BR375_4				:British Rail Class 375 'Electrostar' (4-Car)
+STR_NAME_BR375_4				:BR Class 375 'Electrostar' (4-Car)
 str_BR375_4_usage				:Suburban Passenger
 str_BR375_4_eos					:---
 str_BR375_4_liveries			:Connex, Southeastern Blue, Southeastern Blue Stripe, Southeastern Yellow, Southeastern Yellow Stripe, Southeastern Blue Refurbished, Southeastern Tunbridge Wells, Govia Tunbridge Wells
 
-STR_NAME_BR376					:British Rail Class 376 'Electrostar'
+STR_NAME_BR376					:BR Class 376 'Electrostar' (5-car)
 str_BR376_usage					:Urban Passenger
 str_BR376_eos					:---
 str_BR376_liveries				:Southeastern Yellow
 
-STR_NAME_BR377_3				:British Rail Class 377/3 'Electrostar' (3-Car)
+STR_NAME_BR377_3				:BR Class 377/3 'Electrostar' (3-Car)
 str_BR377_3_usage				:Urban Passenger
 str_BR377_3_eos					:---
 str_BR377_3_liveries			:Southern
 
-STR_NAME_BR377_4				:British Rail Class 377/1/4 'Electrostar' (4-Car)
+STR_NAME_BR377_4				:BR Class 377/1/4 'Electrostar' (4-Car)
 str_BR377_4_usage				:Regional Passenger
 str_BR377_4_eos					:---
 str_BR377_4_liveries			:Southern
 
-STR_NAME_BR377_4_dv				:British Rail Class 377/2/5 'Electrostar' (4-Car, Dual Voltage)
+STR_NAME_BR377_4_dv				:BR Class 377/2/5 'Electrostar' (4-Car, Dual Voltage)
 str_BR377_4_dv_usage				:Regional Passenger
 str_BR377_4_dv_eos				:---
 str_BR377_4_dv_liveries			:Southern, First Capital Connect, Thameslink (Ex-First Capital Connect)
 
-STR_NAME_BR377_5				:British Rail Class 377/6 'Electrostar' (5-Car)
+STR_NAME_BR377_5				:BR Class 377/6 'Electrostar' (5-Car)
 str_BR377_5_usage				:Regional Passenger
 str_BR377_5_eos					:---
 str_BR377_5_liveries			:Southern
 
-STR_NAME_BR377_5dv				:British Rail Class 377/7 'Electrostar' (5-Car, Dual Voltage)
+STR_NAME_BR377_5dv				:BR Class 377/7 'Electrostar' (5-Car, Dual Voltage)
 str_BR377_5dv_usage				:Regional Passenger
 str_BR377_5dv_eos				:---
 str_BR377_5dv_liveries			:Southern
 
-STR_NAME_BR378				:British Rail Class 378 'Electrostar' (4-car)
-STR_NAME_BR378_3				:British Rail Class 378/0 'Electrostar' (5-Car, Dual Voltage)
+STR_NAME_BR378				:BR Class 378 'Electrostar' (4-car)
+STR_NAME_BR378_3				:BR Class 378/0 'Electrostar' (5-Car, Dual Voltage)
 str_BR378_3_usage				:Urban Passenger
 str_BR378_3_eos					:---
 str_BR378_3_liveries			:London Overground
 
-STR_NAME_BR378_4				:British Rail Class 378/2 'Electrostar' (4-Car, Dual Voltage)
+STR_NAME_BR378_4				:BR Class 378/2 'Electrostar' (4-Car, Dual Voltage)
 str_BR378_4_usage				:Urban Passenger
 str_BR378_4_eos					:---
 str_BR378_4_liveries			:London Overground
 
-STR_NAME_BR378_5				:British Rail Class 378/2 'Electrostar' (5-Car, Dual Voltage)
+STR_NAME_BR378_5				:BR Class 378/2 'Electrostar' (5-Car, Dual Voltage)
 str_BR378_5_usage				:Urban Passenger
 str_BR378_5_eos					:---
 str_BR378_5_liveries			:London Overground, London Overground 5 Car Celebration
 
-STR_NAME_BR378_4dc				:British Rail Class 378/1 'Electrostar' (4-Car)
+STR_NAME_BR378_4dc				:BR Class 378/1 'Electrostar' (4-Car)
 
-STR_NAME_BR378_5dc				:British Rail Class 378/1 'Electrostar' (5-Car)
+STR_NAME_BR378_5dc				:BR Class 378/1 'Electrostar' (5-Car)
 
-STR_NAME_BR379					:British Rail Class 379 'Electrostar'
+STR_NAME_BR379					:BR Class 379 'Electrostar' (4-car)
 str_BR379_usage					:Long Distance Passenger
 str_BR379_eos					:---
 str_BR379_liveries				:Greater Anglia White
 
-STR_NAME_BR387_					:British Rail Class 387 'Electrostar' (4-Car, Dual Voltage)
+STR_NAME_BR387_					:BR Class 387 'Electrostar' (4-Car, Dual Voltage)
 str_BR387__usage					:Regional Passenger
 str_BR387__eos					:---
 str_BR387__liveries				:Govia Thameslink, Gatwick Express (Branded & Unbranded), GWR Green (Brended & Unbranded), c2c
 
-STR_NAME_BR390					:British Rail Class 390/0 'Pendolino' (9-car)
-STR_NAME_BR390_11				:British Rail Class 390/1 'Pendolino' (11-car)
+STR_NAME_BR390					:BR Class 390/0 'Pendolino' (9-car)
+STR_NAME_BR390_11				:BR Class 390/1 'Pendolino' (11-car)
 str_BR390_usage					:Express Passenger
 str_BR390_eos					:---
 str_BR390_liveries				:Virgin Trains
 
-STR_NAME_BR395					:British Rail Class 395 'Javelin' (6-car, Dual Voltage)
+STR_NAME_BR395					:BR Class 395 'Javelin' (6-car, Dual Voltage)
 str_BR395_usage					:Passenger
 str_BR395_eos					:---
 str_BR395_liveries				:Southeastern
 
-STR_NAME_BR373					:British Rail Class 373/1 'Three Capitals' (20-car)
-STR_NAME_BR373Dual              :British Rail Class 373 'Three Capitals' (Dual Voltage) (20-car)
+STR_NAME_BR373					:BR Class 373/1 'Three Capitals' (20-car)
+STR_NAME_BR373Dual              :BR Class 373 'Three Capitals' (Dual Voltage) (20-car)
 str_BR373_usage					:International Passenger
 str_BR373_eos					:---
 str_BR373_liveries				:Eurostar
 
-STR_NAME_BR373_2				:British Rail Class 373/2 'North of London' (16-car)
+STR_NAME_BR373_2				:BR Class 373/2 'North of London' (16-car)
 str_BR373_2_usage				:Express Passenger
 str_BR373_2_eos					:---
 str_BR373_2_liveries			:Eurostar Debranded, GNER
 
-STR_NAME_BR374					:British Rail Class 374 'Velaro' (16-car)
+STR_NAME_BR374					:BR Class 374 'Velaro' (16-car)
 str_BR374_usage					:International Passenger
 str_BR374_eos					:---
 str_BR374_liveries				:Eurostar
 
-STR_NAME_BR411					:British Rail Class 411 '4-CEP'
+STR_NAME_BR411					:BR Class 411 '4-CEP'
 str_BR411_usage					:Passenger
 str_BR411_eos					:2005
 str_BR411_liveries				:BR Green, BR Blue Grey, London & South Eastern "Jaffa Cake", Network SouthEast, South West Trains, Connex, Ex-South West Trains
 
-STR_NAME_BR411_9				:British Rail Class 411/9 '3-CEP'
+STR_NAME_BR411_9				:BR Class 411/9 '3-CEP'
 str_BR411_9_usage				:Passenger
 str_BR411_9_eos					:2005
 str_BR411_9_liveries			:Network SouthEast, Connex
 
-STR_NAME_BR412					:British Rail Class 412 '4-BEP'
+STR_NAME_BR412					:BR Class 412 '4-BEP'
 str_BR412_usage					:Passenger
 str_BR412_eos					:2005
 str_BR412_liveries				:BR Green, BR Blue Grey, Network SouthEast, South West Trains
 
-STR_NAME_BR415_1				:British Rail Class 415/1 '4-EPB'
-STR_NAME_BR416_1				:British Rail Class 416/1 '2-EPB'
-STR_NAME_BR414_1				:British Rail Class 414/1 '2-HAP'
-STR_NAME_BR418_1				:British Rail Class 418 '2-SAP'
-STR_NAME_BR413_1				:British Rail Class 413 '4-CAP'
-STR_NAME_BR415_2				:British Rail Class 415/2 '4-EPB'
-STR_NAME_BR416_2				:British Rail Class 416/2 '2-EPB'
-STR_NAME_BR414_2				:British Rail Class 414/2 '2-HAP'
+STR_NAME_BR415_1				:BR Class 415/1 '4-EPB'
+STR_NAME_BR416_1				:BR Class 416/1 '2-EPB'
+STR_NAME_BR414_1				:BR Class 414/1 '2-HAP'
+STR_NAME_BR418_1				:BR Class 418 '2-SAP'
+STR_NAME_BR413_1				:BR Class 413 '4-CAP'
+STR_NAME_BR415_2				:BR Class 415/2 '4-EPB'
+STR_NAME_BR416_2				:BR Class 416/2 '2-EPB'
+STR_NAME_BR414_2				:BR Class 414/2 '2-HAP'
 str_BR415_usage					:Suburban Passenger
 str_BR416_usage					:Suburban Passenger
 str_BR414_usage					:Semi-Fast Passenger
@@ -819,176 +818,176 @@ str_BR41x_eos					:1995
 str_BR41x_liveries				:BR Green, BR Green - Yellow Front, BR Blue, BR Blue Grey, Network SouthEast
 str_BR413_liveries				:BR Blue Grey, Network SouthEast
 
-STR_NAME_BR421					:British Rail Class 421 '4-CIG'
+STR_NAME_BR421					:BR Class 421 '4-CIG'
 str_BR421_usage					:Passenger
 str_BR421_eos					:2005
 str_BR421_liveries				:BR Green, BR Blue Grey, London & South Eastern "Jaffa Cake", Network SouthEast, South West Trains, Connex, Southern
 
-STR_NAME_BR421_5				:British Rail Class 421/5 'Greyhound'
+STR_NAME_BR421_5				:BR Class 421/5 'Greyhound'
 str_BR421_5_usage				:Passenger
 str_BR421_5_eos					:2005
 str_BR421_5_liveries			:BR Blue Grey, Network SouthEast, South West Trains
 
-STR_NAME_BR421_7				:British Rail Class 421/7 '3-CIG'
+STR_NAME_BR421_7				:BR Class 421/7 '3-CIG'
 str_BR421_7_usage				:Passenger
 str_BR421_7_eos					:2005
 str_BR421_7_liveries			:Connex, South West Trains
 
-STR_NAME_BR422					:British Rail Class 422 '4-BIG'
+STR_NAME_BR422					:BR Class 422 '4-BIG'
 str_BR422_usage					:Passenger
 str_BR422_eos					:1995
 str_BR422_liveries				:BR Green, BR Blue Grey, Network SouthEast
 
-STR_NAME_BR423					:British Rail Class 423 '4-VEP'
+STR_NAME_BR423					:BR Class 423 '4-VEP'
 str_BR423_usage					:Passenger
 str_BR423_eos					:2005
 str_BR423_liveries				:BR Blue, BR Blue - Yellow Front, BR Blue Grey, NSE, SWT, Connex, Southern
 
-STR_NAME_BR423_9				:British Rail Class 423/9 '4-VOP'
+STR_NAME_BR423_9				:BR Class 423/9 '4-VOP'
 str_BR423_9_usage				:Passenger
 str_BR423_9_liveries			:Connex
 
-STR_NAME_BR432					:British Rail Class 432 '4-REP'
+STR_NAME_BR432					:BR Class 432 '4-REP'
 str_BR432_usage					:Push-Pull Haulage
 str_BR432_eos					:1990
 str_BR432_liveries				:BR Blue Grey, Network SouthEast
 
-STR_NAME_BR438_3				:British Rail Class 438 '3-TC'
+STR_NAME_BR438_3				:BR Class 438 '3-TC'
 str_BR438_3_usage				:Push-Pull Haulage
 str_BR438_3_eos					:?
 str_BR438_3_liveries			:BR Blue Grey, Network SouthEast
 
-STR_NAME_BR438_4				:British Rail Class 438 '4-TC'
+STR_NAME_BR438_4				:BR Class 438 '4-TC'
 str_BR438_4_usage				:Push-Pull Haulage
 str_BR438_4_eos					:1990
 str_BR438_4_liveries			:BR Blue Grey, Network SouthEast
 
-STR_NAME_BR442					:British Rail Class 442 'Wessex Electric'
+STR_NAME_BR442					:BR Class 442 'Wessex Electric'
 str_BR442_usage					:Fast Passenger
 str_BR442_eos					:---
 str_BR442_liveries				:Network South East, Stagecoach South West Trains, South West Trains, South West Trains (Refurbished), Gatwick Express, Trasnsitional 
 
-STR_NAME_BR444					:British Rail Class 444 'Desiro'
+STR_NAME_BR444					:BR Class 444 'Desiro'
 str_BR444_usage					:Passenger
 str_BR444_eos					:---
 str_BR444_liveries				:South West Trains
 
-STR_NAME_BR450					:British Rail Class 450 'Desiro'
+STR_NAME_BR450					:BR Class 450 'Desiro'
 str_BR450_usage					:Passenger
 str_BR450_eos					:---
 str_BR450_liveries				:South West Trains
 
-STR_NAME_BR455					:British Rail Class 455
-STR_NAME_BR4557					:British Rail Class 455/7
-STR_NAME_BR4558					:British Rail Class 455/8
-STR_NAME_BR4559					:British Rail Class 455/9
+STR_NAME_BR455					:BR Class 455
+STR_NAME_BR4557					:BR Class 455/7
+STR_NAME_BR4558					:BR Class 455/8
+STR_NAME_BR4559					:BR Class 455/9
 str_BR455_usage					:Passenger
 str_BR455_eos					:---
 str_BR4558_liveries				:BR Blue/Grey, Network SouthEast, South West Trains (Stagecoach), Connex, South West Trains, Southern
 str_BR455_liveries				:BR Blue/Grey, Network SouthEast, South West Trains (Stagecoach), South West Trains
 
-STR_NAME_BR456					:British Rail Class 456
+STR_NAME_BR456					:BR Class 456
 str_BR456_usage					:Passenger
 str_BR456_eos					:---
 str_BR456_liveries				:Network SouthEast, Connex, Southern, Transitional, South West Trains
 
-STR_NAME_BR458					:British Rail Class 458/0 'Juniper'
+STR_NAME_BR458					:BR Class 458/0 'Juniper'
 str_BR458_usage					:Fast Passenger
 str_BR458_eos					:2014
 str_BR458_liveries				:South West Trains
 
-STR_NAME_BR460					:British Rail Class 460 '8-GAT'
+STR_NAME_BR460					:BR Class 460 '8-GAT'
 str_BR460_usage					:Express Passenger
 str_BR460_eos					:2012
 str_BR460_liveries				:Gatwick Express
 
-STR_NAME_BR465					:British Rail Class 465 'Networker'
-STR_NAME_BR466					:British Rail Class 466 'Networker'
+STR_NAME_BR465					:BR Class 465 'Networker'
+STR_NAME_BR466					:BR Class 466 'Networker'
 str_BR465_usage					:Passenger
 str_BR465_eos					:---
 str_BR465_liveries				:Network SouthEast, Connex, Southeastern Blue, Southeastern Blue Stripe, Southeastern Yellow, Southeastern Yellow Stripe, Continental Airlines
 
-STR_NAME_BR480					:British Rail Class 480 '8-VAB'
+STR_NAME_BR480					:BR Class 480 '8-VAB'
 str_BR480_usage					:Passenger
 str_BR480_eos					:1974
 str_BR480_liveries				:BR Blue, BR Blue Grey
 
-STR_NAME_BR483					:British Rail Class 483 (LU 1938 Stock)
+STR_NAME_BR483					:BR Class 483 (LU 1938 Stock)
 str_BR483_usage					:Passenger
 str_BR483_eos					:2021
 str_BR483_liveries				:Island Line, Network Southeast
 
-STR_NAME_BR484					:British Rail Class 484 (LU D Stock)
+STR_NAME_BR484					:BR Class 484 (LU D Stock)
 str_BR484_usage					:Passenger
 str_BR484_eos					:-
 str_BR484_liveries				:South Western Railway
 
-STR_NAME_BR73GatEx				:British Rail Class 73 Gatwick Express set
+STR_NAME_BR73GatEx				:BR Class 73 Gatwick Express set
 str_BR73GatEx_usage				:Express Passenger
 str_BR73GatEx_eos				:1999
 str_BR73GatEx_liveries			:Gatwick Express
 BR488							:Class 488 Coach
 
-STR_NAME_BR504					:British Rail Class 504
+STR_NAME_BR504					:BR Class 504
 str_BR504_usage					:Urban Passenger
 str_BR504_eos					:---
 str_BR504_liveries				:BR Blue, BR Green, GMPTE, BR Blue (Wlternate), BR Blue (Wraparound)
 
-STR_NAME_BR507					:British Rail Class 507
+STR_NAME_BR507					:BR Class 507 
 str_BR507_usage					:Urban Passenger
 str_BR507_eos					:---
 str_BR507_liveries				:BR Blue/Grey, MerseyRail (Classic), MerseyRail, MerseyRail (Good Communications)
 
-STR_NAME_BR508_1				:British Rail Class 508/0 (4-Car)
-STR_NAME_BR508_2				:British Rail Class 508/1 (3-Car)
+STR_NAME_BR508_1				:BR Class 508/0 (4-Car)
+STR_NAME_BR508_2				:BR Class 508/1 (3-Car)
 str_BR508_usage					:Urban Passenger
 str_BR508_eos					:---
 str_BR508_1_liveries			:BR Blue/Grey
 str_BR508_liveries				:BR Blue/Grey, MerseyRail (Classic), Southeastern Yellow, Southeastern Yellow Stripe, Southeastern Blue, Southeastern Blue Stripe, MerseyRail, MerseyRail (Good Communications)
 
-STR_NAME_BR700					:British Rail Class 700/0 'Desiro City'
+STR_NAME_BR700					:BR Class 700/0 'Desiro City' (8-car)
 str_BR700_usage					:Regional Passenger
 str_BR700_eos					:---
 str_BR700_liveries				:Siemens Demonstrator, Govia Thameslink
 
-STR_NAME_BR700_2				:British Rail Class 700/1 'Desiro City'
+STR_NAME_BR700_2				:BR Class 700/1 'Desiro City' (10-car)
 
-STR_NAME_BR707					:British Rail Class 707 'Desiro City'
+STR_NAME_BR707					:BR Class 707 'Desiro City'
 str_BR707_usage					:Regional Passenger
 str_BR707_eos					:---
 str_BR707_liveries				:South Western Trains, Southeastern
 
-STR_NAME_BR717					:British Rail Class 717 'Desiro City'
+STR_NAME_BR717					:BR Class 717 'Desiro City'
 str_BR717_usage					:Regional Passenger
 str_BR717_eos					:---
 str_BR717_liveries				:Govia Great Northern
 
-STR_NAME_BR800					:British Rail Class 800/1 'IET'
+STR_NAME_BR800					:BR Class 800/1 'IET'
 str_BR800_usage					:Regional Passenger
 str_BR800_eos					:---
 str_BR800_liveries				:Hitachi, GWR
 
-STR_NAME_RS_SWB_Hopper			:Standard Medium Hopper
+STR_NAME_RS_SWB_Hopper			:LNER Standard Medium Hopper
 str_RS_SWB_Hopper_usage			:Bulk Cargos
 str_RS_SWB_Hopper_eos			:---
 str_RS_SWB_Hopper_liveries		:Grey, Brown
 
-STR_NAME_BRHHA					:British Rail HHA Wagon
+STR_NAME_BRHHA					:BR HHA Wagon
 str_BRHHA_usage					:Bulk Cargos
 str_BRHHA_eos					:---
 str_BRHHA_liveries				:Freightliner
 
-STR_NAME_BRTTA					:British Rail Tanker Wagon
+STR_NAME_BRTTA					:BR Tanker Wagon
 str_BRTTA_usage					:Liquid Cargo
 str_BRTTA_eos					:---
 str_BRTTA_liveries				:Mobil, Esso, BP (x3), SUKO, Gulf, Shell (x2), Murco, Total, VTG
 
-STR_NAME_BRContainer			:British Rail Container Flatbed Wagon
+STR_NAME_BRContainer			:BR Container Flatbed Wagon
 str_BRContainer_usage			:Food, Goods, Paper, Fruit
 str_BRContainer_eos				:---
 str_BRContainer_liveries		:Maersk, Random
 
-STR_NAME_SmallLumberWagon		:Small Lumber Wagon
+STR_NAME_SmallLumberWagon		:Midland Railway Small Lumber Wagon
 str_SmallLumberWagon_usage		:Wood, Crates, Livestock etc
 str_SmallLumberWagon_eos		:---
 str_SmallLumberWagon_liveries	:Green
