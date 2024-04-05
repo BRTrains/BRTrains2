@@ -7,7 +7,7 @@ spriteset(spriteset_FurnessK2_FurnessRed, "gfx/Steam/FurnessK1K2.png") {
 }
 
 spriteset(spriteset_FurnessK2T_FurnessRed, "gfx/Steam/FurnessK1K2.png") {
-	template_train12px(0, 32)
+	template_train12px(0, 33)
 }
 
 switch(FEAT_TRAINS,SELF, sw_FurnessK2Loco,cargo_subtype){

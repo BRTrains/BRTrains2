@@ -1,146 +1,113 @@
-// Train sprite template
-
-// Wtf are these offsets?
-template tmpl_train_8(x, y) {	
-	//leftx, topy, width, height, offsetx, offsety
-	[x + 25, y + 2, 8,		23,		-3,		-11] //n
-	[x + 35, y + 2, 21,		18,		-11,	-11] //ne
-	[x + 58, y + 2, 32,		12,		-16,	-7] //e
-	[x + 92, y + 2, 21,		18,		-12,	-12] //se
-	[x + 115, y + 2, 8,		23,		-3,		-11] //s
-	[x + 125, y + 2, 21,	18,		-11,	-11] //sw
-	[x + 148, y + 2, 32,	12,		-15,	-7] //w
-	[x + 182, y + 2, 21,	18,		-12,	-12] //nw
-}
-// Reverse of the above
-template tmpl_train_8_reversed(x, y) {	
-	//leftx, topy, width, height, offsetx, offsety
-    [x + 115, y + 2, 8,		23,		-3,		-11] //n 
-	[x + 125, y + 2, 21,	18,		-11,	-11] //ne
-	[x + 148, y + 2, 32,	12,		-16,	-7] //e
-	[x + 182, y + 2, 21,	18,		-12,	-12] // se	
-	[x + 25, y + 2, 8,		23,		-3,		-11] // s
-	[x + 35, y + 2, 21,		18,		-11,	-11] // sw
-	[x + 58, y + 2, 32,		12,		-15,	-7] //w
-	[x + 92, y + 2, 21,		18,		-12,	-12] // nw
-}
-
 template template_train12px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 14, -3, -11]
-    [ x+9, y, 12, 12, -4, -9]
-    [ x+22, y, 12, 12, 4, -8]
-    [ x+35, y, 12, 12, 4, -4]
-    [ x+48, y, 8, 14, -3, -5]
-    [ x+57, y, 12, 12, -13, -5]
-    [ x+70, y, 12, 12, -15, -8]
-    [ x+83, y, 12, 12, -5, -9]
+    [ x, y, 8, 15, -3, -12] //n
+    [ x+9, y, 12, 14, -3, -12] //ne
+    [ x+22, y, 12, 13, -8, -9] //e 
+    [ x+35, y, 12, 14, 5, -6] //ser
+    [ x+48, y, 8, 15, -3, -4] //s
+    [ x+57, y, 12, 14, -13, -7] //swr
+    [ x+70, y, 12, 13, -15, -9] //w
+    [ x+83, y, 12, 14, -6, -11] //nw
 }
 
 template template_train16px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 17, -3, -11]
-    [ x+9, y, 14, 15, -6, -9]
-    [ x+24, y, 16, 12, 0, -7]
-    [ x+41, y, 14, 15, 1, -5]
-    [ x+56, y, 8, 17, -3, -5]
-    [ x+65, y, 14, 15, -14, -5]
-    [ x+80, y, 16, 12, -15, -8]
-    [ x+97, y, 14, 15, -7, -10]
+    [ x, y, 8, 17, -3, -13] //n 
+    [ x+9, y, 14, 15, -5, -12] //ne
+    [ x+24, y, 16, 13, -12, -9] //e
+    [ x+41, y, 14, 15, 3, -7] //se
+    [ x+56, y, 8, 17, -3, -4] //s 
+    [ x+65, y, 14, 15, -13, -8] //sw
+    [ x+80, y, 16, 13, -15, -9] //w 
+    [ x+97, y, 14, 15, -6, -11] //nw
 }
 
 template template_train20px(x,y){ // Clone to 4view when changed
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 18, -3, -11]
-    [ x+9, y, 15, 15, -7, -10]
-    [ x+25, y, 20, 12, -4, -8]
-    [ x+46, y, 15, 15, 1, -7]
-    [ x+62, y, 8, 18, -3, -5]
-    [ x+71, y, 15, 15, -13, -7]
-    [ x+87, y, 20, 12, -15, -8]
-    [ x+108, y, 15, 15, -5, -10]
+    [ x, y, 8, 19, -3, -13] // n
+    [ x+9, y, 16, 16, -7, -12] //ne
+    [ x+26, y, 20, 13, -16, -9] //e
+    [ x+47, y, 16, 16, 1, -8] //se
+    [ x+64, y, 8, 19, -3, -4] //s
+    [ x+73, y, 16, 16, -13, -9] //sw
+    [ x+90, y, 20, 13, -15, -9] //w
+    [ x+111, y, 16, 16, -6, -11] //nw
 }
+
+template template_train24px(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 21, -3, -12] //n
+    [ x+9, y, 18, 17, -9, -12] //ne*
+    [ x+28, y, 24, 13, -20, -9] //e
+    [ x+53, y, 18, 17, -1, -9] //se
+    [ x+72, y, 8, 21, -3, -16] //s
+    [ x+81, y, 18, 17, -13, -10] //sw
+    [ x+100, y, 24, 13, -15, -9] //w
+    [ x+125, y, 18, 17, -6, -11] //nw
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// TEMPLATES BELOW HERE DO NOT HAVE THE ADDITIONAL VERTICAL PIXEL ABOVE YET
+// BECAUSE IT'S A TON OF WORK TO CHANGE A ZILLION SPRITESHEETS
+//////////////////////////////////////////////////////////////////////////////
+
 // THIS VIEW IS 8 FROM 4, IT REPEATS THE SECOND SET FOR OFFSET PURPOSES
 template template_train20px_4view(x,y){ // Clone to 8view when changed
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 18, -3, -11]
-    [ x+9, y, 15, 15, -7, -10]
-    [ x+25, y, 20, 12, -4, -7]
-    [ x+46, y, 15, 15, 1, -7]
-    [ x, y, 8, 18, -3, -5]
-    [ x+9, y, 15, 15, -13, -7]
-    [ x+25, y, 20, 12, -15, -7]
-    [ x+46, y, 15, 15, -5, -10]
+    [ x, y, 8, 18, -3, -11] // n
+    [ x+9, y, 15, 15, -8, -10] // ne
+    [ x+25, y, 20, 12, -4, -8] // e
+    [ x+46, y, 15, 15, 1, -7] // se
+    [ x, y, 8, 18, -3, -11] //s
+    [ x+9, y, 15, 15, -8, -9] //sw
+    [ x+25, y, 20, 12, -4, -8] //w
+    [ x+46, y, 15, 15, 1, -7] //nw
 }
-
 template template_train20px_anim(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 17, -4, -11, ANIM]
-    [ x+10, y, 15, 15, -7, -10, ANIM]
+    [ x+10, y, 15, 15, -8, -10, ANIM]
     [ x+27, y, 20, 12, -4, -8, ANIM]
     [ x+49, y, 15, 15, -1, -8, ANIM]
     [ x+66, y, 8, 17, -4, -3, ANIM]
-    [ x+76, y, 15, 15, -14, -7, ANIM]
+    [ x+76, y, 15, 15, -14, -6, ANIM]
     [ x+93, y, 20, 12, -15, -8, ANIM]
     [ x+115, y, 15, 15, -7, -11, ANIM]
-}
-template template_train24px(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 20, -3, -11]
-    [ x+9, y, 17, 16, -9, -10]
-    [ x+27, y, 24, 12, -8, -8]
-    [ x+52, y, 17, 16, -1, -8]
-    [ x+70, y, 8, 20, -3, -7]
-    [ x+79, y, 17, 16, -13, -8]
-    [ x+97, y, 24, 12, -15, -8]
-    [ x+122, y, 17, 16, -5, -10]
-}
-
-template template_train28px_pacer(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 19, -3, -9, NOANIM]
-    [ x+9, y, 19, 15, -11, -9, NOANIM]
-    [ x+29, y, 28, 12, -7, -7, NOANIM]
-    [ x+58, y, 19, 15, -5, -8, NOANIM]
-    [ x+78, y, 8, 19, -3, -9, NOANIM]
-    [ x+87, y, 19, 15, -15, -6, NOANIM]
-    [ x+107, y, 28, 12, -17, -6, NOANIM]
-    [ x+136, y, 19, 15, -8, -9, NOANIM]
 }
 
 template template_train28px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 22, -3, -11]
-    [ x+9, y, 19, 17, -11, -10]
-    [ x+29, y, 28, 12, -12, -8]
-    [ x+58, y, 19, 17, -3, -9]
-    [ x+78, y, 8, 22, -3, -9]
-    [ x+87, y, 19, 17, -13, -9]
-    [ x+107, y, 28, 12, -15, -8]
-    [ x+136, y, 19, 17, -5, -10]
+    [ x, y, 8, 22, -3, -11]     //n
+    [ x+9, y, 19, 17, -11, -11] //ne *
+    [ x+29, y, 28, 12, -24, -8] //e
+    [ x+58, y, 19, 17, -3, -9]  //se
+    [ x+78, y, 8, 22, -3, -17]   //s
+    [ x+87, y, 19, 17, -13, -10] //sw
+    [ x+107, y, 28, 12, -15, -8] //w
+    [ x+136, y, 19, 17, -5, -10] //nw
 }
 
 template template_train32px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12,			NOANIM]
-    [ x+9, y, 21, 18, -13, -10,		NOANIM]
-    [ x+31, y, 32, 12, -16, -8,		NOANIM]
-    [ x+64, y, 21, 18, -5, -10,		NOANIM]
-    [ x+86, y, 8, 24, -3, -12,		NOANIM]
-    [ x+95, y, 21, 18, -13, -10,	NOANIM]
-    [ x+117, y, 32, 12, -15, -8,	NOANIM]
-    [ x+150, y, 21, 18, -5, -10,	NOANIM]
+    [ x, y, 8, 24, -3, -11,			NOANIM] //n
+    [ x+9, y, 21, 18, -13, -11,		NOANIM] //ne *
+    [ x+31, y, 32, 12, -28, -8,		NOANIM] //e
+    [ x+64, y, 21, 18, -5, -10,		NOANIM] //se
+    [ x+86, y, 8, 24, -3, -19,		NOANIM] //s
+    [ x+95, y, 21, 18, -13, -11,	NOANIM] //sw
+    [ x+117, y, 32, 12, -15, -8,	NOANIM] //w
+    [ x+150, y, 21, 18, -5, -10,	NOANIM] //nw
 }
 
 template template_train32px_anim(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 24, -3, -12,			ANIM|NOWHITE]
     [ x+9, y, 21, 18, -13, -10,		ANIM|NOWHITE]
-    [ x+31, y, 32, 12, -16, -8,		ANIM|NOWHITE]
+    [ x+31, y, 32, 12, -15, -8,		ANIM|NOWHITE]
     [ x+64, y, 21, 18, -7, -11,		ANIM|NOWHITE]
     [ x+86, y, 8, 24, -3, -12,		ANIM|NOWHITE]
     [ x+95, y, 21, 18, -13, -10,	ANIM|NOWHITE]
-    [ x+117, y, 32, 12, -15, -8,	ANIM|NOWHITE]
+    [ x+117, y, 32, 12, -14, -8,	ANIM|NOWHITE]
     [ x+150, y, 21, 18, -7, -11,	ANIM|NOWHITE]
 }
 
@@ -162,6 +129,18 @@ template template_train32px4viewLowered(x,y){
     [ x+9, y, 21, 17, -12, -8,		NOANIM|NOWHITE]
     [ x+31, y, 32, 12, -15, -7,		NOANIM|NOWHITE]
     [ x+64, y, 21, 17, -5, -8,		NOANIM|NOWHITE]
+}
+
+template template_train28px_pacer(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 19, -3, -9, NOANIM]    //n
+    [ x+9, y, 19, 15, -11, -9, NOANIM] //ne
+    [ x+29, y, 28, 12, -7, -7, NOANIM] //e
+    [ x+58, y, 19, 15, -5, -8, NOANIM] //se
+    [ x+78, y, 8, 19, -3, -9, NOANIM] //s
+    [ x+87, y, 19, 15, -15, -6, NOANIM] //sw
+    [ x+107, y, 28, 12, -17, -6, NOANIM] //w
+    [ x+136, y, 19, 15, -8, -9, NOANIM] //nw
 }
 
 template template_trainBRMk2(x,y){
@@ -248,6 +227,33 @@ template template_purchase(x,y){
 template template_purchase_anim(x,y){
     //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
     [x,     y,      87,     12,     -25,-   6,          ANIM|NOWHITE]
+}
+
+// Train sprite template
+
+// Wtf are these offsets?
+template tmpl_train_8(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+	[x + 25, y + 2, 8,		23,		-3,		-11] //n
+	[x + 35, y + 2, 21,		18,		-11,	-11] //ne
+	[x + 58, y + 2, 32,		12,		-16,	-7] //e
+	[x + 92, y + 2, 21,		18,		-12,	-12] //se
+	[x + 115, y + 2, 8,		23,		-3,		-11] //s
+	[x + 125, y + 2, 21,	18,		-11,	-11] //sw
+	[x + 148, y + 2, 32,	12,		-15,	-7] //w
+	[x + 182, y + 2, 21,	18,		-12,	-12] //nw
+}
+// Reverse of the above
+template tmpl_train_8_reversed(x, y) {	
+	//leftx, topy, width, height, offsetx, offsety
+    [x + 115, y + 2, 8,		23,		-3,		-11] //n 
+	[x + 125, y + 2, 21,	18,		-11,	-11] //ne
+	[x + 148, y + 2, 32,	12,		-16,	-7] //e
+	[x + 182, y + 2, 21,	18,		-12,	-12] // se	
+	[x + 25, y + 2, 8,		23,		-3,		-11] // s
+	[x + 35, y + 2, 21,		18,		-11,	-11] // sw
+	[x + 58, y + 2, 32,		12,		-15,	-7] //w
+	[x + 92, y + 2, 21,		18,		-12,	-12] // nw
 }
 
 switch(FEAT_TRAINS, SELF, GetAdjustedCost, base, param_cost_factor) {
