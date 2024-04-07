@@ -40,6 +40,10 @@ spriteset(spriteset_Utility32, "gfx/template/32px.png") {
 	template_train32px(0, 13)
 }
 
+switch(FEAT_TRAINS,SELF,sw_UtilityTrains_cargo_subtype_text,cargo_subtype){
+       return CB_RESULT_NO_TEXT;
+}
+
 item (FEAT_TRAINS, item_UtilityTrain12px, 601) {
 	property {
 		name: 							string(STR_NAME_Utility12px);
