@@ -3,67 +3,67 @@ spriteset(spriteset_BR142_Purchase, "gfx/BR140-143.png") {
 }
 
 spriteset(spriteset_BR142a_BRProvincial, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 293)
+	template_train28px_old_pacer(0, 293)
 }
 
 spriteset(spriteset_BR142b_BRProvincial, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 313)
+	template_train28px_old_pacer(0, 313)
 }
 
 spriteset(spriteset_BR142a_Regional, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 173)
+	template_train28px_old_pacer(0, 173)
 }
 
 spriteset(spriteset_BR142b_Regional, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 193)
+	template_train28px_old_pacer(0, 193)
 }
 
 spriteset(spriteset_BR142a_NorthernRail, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 213)
+	template_train28px_old_pacer(0, 213)
 }
 
 spriteset(spriteset_BR142b_NorthernRail, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 233)
+	template_train28px_old_pacer(0, 233)
 }
 
 spriteset(spriteset_BR142a_NorthernSpirit, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 253)
+	template_train28px_old_pacer(0, 253)
 }
 
 spriteset(spriteset_BR142b_NorthernSpirit, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 273)
+	template_train28px_old_pacer(0, 273)
 }
 
 spriteset(spriteset_BR142a_ArrivaWales, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 333)
+	template_train28px_old_pacer(0, 333)
 }
 
 spriteset(spriteset_BR142b_ArrivaWales, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 353)
+	template_train28px_old_pacer(0, 353)
 }
 
 spriteset(spriteset_BR142a_NorthWesternTrains, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 413)
+	template_train28px_old_pacer(0, 413)
 }
 
 spriteset(spriteset_BR142b_NorthWesternTrains, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 433)
+	template_train28px_old_pacer(0, 433)
 }
 
 spriteset(spriteset_BR142a_MerseyRail, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 453)
+	template_train28px_old_pacer(0, 453)
 }
 
 spriteset(spriteset_BR142b_MerseyRail, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 473)
+	template_train28px_old_pacer(0, 473)
 }
 
 spriteset(spriteset_BR142a_WYTPEMetro, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 493)
+	template_train28px_old_pacer(0, 493)
 }
 
 spriteset(spriteset_BR142b_WYTPEMetro, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 513)
+	template_train28px_old_pacer(0, 513)
 }
 
 

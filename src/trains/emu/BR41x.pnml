@@ -28,345 +28,345 @@ spriteset(spriteset_BR413_Purchase, "gfx/BR41x.png") {
 
 //Class 415/1 first car
 spriteset(spriteset_SR_DMBS_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 94)
+	template_train32px_old(0, 94)
 }
 spriteset(spriteset_SR_DMBS_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 544)
+	template_train32px_old(0, 544)
 }
 spriteset(spriteset_SR_DMBS_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 125)
+	template_train32px_old(346, 125)
 }
 spriteset(spriteset_SR_DMBS_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 577)
+	template_train32px_old(346, 577)
 }
 spriteset(spriteset_SR_DMBS_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 996)
+	template_train32px_old(0, 996)
 }
 
 //Class 415/2 first car
 spriteset(spriteset_BR_DMBS_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 69)
+	template_train32px_old(0, 69)
 }
 spriteset(spriteset_BR_DMBS_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 519)
+	template_train32px_old(0, 519)
 }
 spriteset(spriteset_BR_DMBS_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 100)
+	template_train32px_old(346, 100)
 }
 spriteset(spriteset_BR_DMBS_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 552)
+	template_train32px_old(346, 552)
 }
 spriteset(spriteset_BR_DMBS_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 971)
+	template_train32px_old(0, 971)
 }
 
 //Class 415/1 trailer car
 spriteset(spriteset_SR_TS_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 144)
+	template_train32px_old(0, 144)
 }
 spriteset(spriteset_SR_TS_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 594)
+	template_train32px_old(0, 594)
 }
 spriteset(spriteset_SR_TS_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 175)
+	template_train32px_old(346, 175)
 }
 spriteset(spriteset_SR_TS_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 627)
+	template_train32px_old(346, 627)
 }
 spriteset(spriteset_SR_TS_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1046)
+	template_train32px_old(0, 1046)
 }
 
 //Class 415/2 trailer car
 spriteset(spriteset_BR_TS_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 119)
+	template_train32px_old(0, 119)
 }
 spriteset(spriteset_BR_TS_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 569)
+	template_train32px_old(0, 569)
 }
 spriteset(spriteset_BR_TS_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 150)
+	template_train32px_old(346, 150)
 }
 spriteset(spriteset_BR_TS_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 602)
+	template_train32px_old(346, 602)
 }
 spriteset(spriteset_BR_TS_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1021)
+	template_train32px_old(0, 1021)
 }
 
 //Class 415/1 Rear car
 spriteset(spriteset_SR_DMBS_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 244)
+	template_train32px_old(0, 244)
 }
 spriteset(spriteset_SR_DMBS_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 694)
+	template_train32px_old(0, 694)
 }
 spriteset(spriteset_SR_DMBS_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 275)
+	template_train32px_old(346, 275)
 }
 spriteset(spriteset_SR_DMBS_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 727)
+	template_train32px_old(346, 727)
 }
 spriteset(spriteset_SR_DMBS_r_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1146)
+	template_train32px_old(0, 1146)
 }
 
 //Class 415/2 Rear car
 spriteset(spriteset_BR_DMBS_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 219)
+	template_train32px_old(0, 219)
 }
 spriteset(spriteset_BR_DMBS_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 669)
+	template_train32px_old(0, 669)
 }
 spriteset(spriteset_BR_DMBS_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 250)
+	template_train32px_old(346, 250)
 }
 spriteset(spriteset_BR_DMBS_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 702)
+	template_train32px_old(346, 702)
 }
 spriteset(spriteset_BR_DMBS_r_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1121)
+	template_train32px_old(0, 1121)
 }
 
 //That's the 415's graphics defined
 
 //Class 416/1 first car (head & tail lights)
 spriteset(spriteset_SR_DTS_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 44)
+	template_train32px_old(0, 44)
 }
 spriteset(spriteset_SR_DTS_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 194)
+	template_train32px_old(0, 194)
 }
 spriteset(spriteset_SR_DTS_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 494)
+	template_train32px_old(0, 494)
 }
 spriteset(spriteset_SR_DTS_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 644)
+	template_train32px_old(0, 644)
 }
 spriteset(spriteset_SR_DTS_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 75)
+	template_train32px_old(346, 75)
 }
 spriteset(spriteset_SR_DTS_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 225)
+	template_train32px_old(346, 225)
 }
 spriteset(spriteset_SR_DTS_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 527)
+	template_train32px_old(346, 527)
 }
 spriteset(spriteset_SR_DTS_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 677)
+	template_train32px_old(346, 677)
 }
 spriteset(spriteset_SR_DTS_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 946)
+	template_train32px_old(0, 946)
 }
 spriteset(spriteset_SR_DTS_r_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1096)
+	template_train32px_old(0, 1096)
 }
 
 //Class 416/2 first car (head & tail lights)
 spriteset(spriteset_BR_DTS_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 19)
+	template_train32px_old(0, 19)
 }
 spriteset(spriteset_BR_DTS_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 169)
+	template_train32px_old(0, 169)
 }
 spriteset(spriteset_BR_DTS_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 469)
+	template_train32px_old(0, 469)
 }
 spriteset(spriteset_BR_DTS_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 619)
+	template_train32px_old(0, 619)
 }
 spriteset(spriteset_BR_DTS_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 50)
+	template_train32px_old(346, 50)
 }
 spriteset(spriteset_BR_DTS_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 200)
+	template_train32px_old(346, 200)
 }
 spriteset(spriteset_BR_DTS_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 502)
+	template_train32px_old(346, 502)
 }
 spriteset(spriteset_BR_DTS_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 652)
+	template_train32px_old(346, 652)
 }
 spriteset(spriteset_BR_DTS_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 921)
+	template_train32px_old(0, 921)
 }
 spriteset(spriteset_BR_DTS_r_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1071)
+	template_train32px_old(0, 1071)
 }
 
 //Class 416 done... onto the 414
 
 //Class 414/1 first car (head and tail lights)
 spriteset(spriteset_SR_DTCL_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 369)
+	template_train32px_old(0, 369)
 }
 spriteset(spriteset_SR_DTCL_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 419)
+	template_train32px_old(0, 419)
 }
 spriteset(spriteset_SR_DTCL_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 819)
+	template_train32px_old(0, 819)
 }
 spriteset(spriteset_SR_DTCL_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 869)
+	template_train32px_old(0, 869)
 }
 spriteset(spriteset_SR_DTCL_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 425)
+	template_train32px_old(346, 425)
 }
 spriteset(spriteset_SR_DTCL_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 475)
+	template_train32px_old(346, 475)
 }
 spriteset(spriteset_SR_DTCL_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 877)
+	template_train32px_old(346, 877)
 }
 spriteset(spriteset_SR_DTCL_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 927)
+	template_train32px_old(346, 927)
 }
 spriteset(spriteset_SR_DTCL_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1296)
+	template_train32px_old(0, 1296)
 }
 spriteset(spriteset_SR_DTCL_r_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1346)
+	template_train32px_old(0, 1346)
 }
 //Class 414/2 first car (head and tail lights)
 spriteset(spriteset_BR_DTCL_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 269)
+	template_train32px_old(0, 269)
 }
 spriteset(spriteset_BR_DTCL_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 319)
+	template_train32px_old(0, 319)
 }
 spriteset(spriteset_BR_DTCL_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 719)
+	template_train32px_old(0, 719)
 }
 spriteset(spriteset_BR_DTCL_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 769)
+	template_train32px_old(0, 769)
 }
 spriteset(spriteset_BR_DTCL_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 325)
+	template_train32px_old(346, 325)
 }
 spriteset(spriteset_BR_DTCL_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 375)
+	template_train32px_old(346, 375)
 }
 spriteset(spriteset_BR_DTCL_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 777)
+	template_train32px_old(346, 777)
 }
 spriteset(spriteset_BR_DTCL_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 827)
+	template_train32px_old(346, 827)
 }
 spriteset(spriteset_BR_DTCL_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1196)
+	template_train32px_old(0, 1196)
 }
 spriteset(spriteset_BR_DTCL_r_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1246)
+	template_train32px_old(0, 1246)
 }
 
 //That's all for the 414. Now the 418 (a smaller set of graphics)
 
 //418/1 first car (head and tail lights)
 spriteset(spriteset_BR_DTSL_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 294)
+	template_train32px_old(0, 294)
 }
 spriteset(spriteset_BR_DTSL_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(0, 344)
+	template_train32px_old(0, 344)
 }
 spriteset(spriteset_BR_DTSL_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 744)
+	template_train32px_old(0, 744)
 }
 spriteset(spriteset_BR_DTSL_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(0, 794)
+	template_train32px_old(0, 794)
 }
 spriteset(spriteset_BR_DTSL_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 300)
+	template_train32px_old(346, 300)
 }
 spriteset(spriteset_BR_DTSL_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(346, 350)
+	template_train32px_old(346, 350)
 }
 spriteset(spriteset_BR_DTSL_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 752)
+	template_train32px_old(346, 752)
 }
 spriteset(spriteset_BR_DTSL_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(346, 802)
+	template_train32px_old(346, 802)
 }
 spriteset(spriteset_BR_DTSL_f_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1171)
+	template_train32px_old(0, 1171)
 }
 spriteset(spriteset_BR_DTSL_r_NSE, "gfx/BR41x.png") {
-	template_train32px(0, 1221)
+	template_train32px_old(0, 1221)
 }
 
 //Now for the 2 car DMBS
 
 //Class 414, 416 and 418 DMBS (SR Design) (head and tail lights)
 spriteset(spriteset_SR_DMBS_2c_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(172, 94)
+	template_train32px_old(172, 94)
 }
 spriteset(spriteset_SR_DMBS_2c_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(172, 244)
+	template_train32px_old(172, 244)
 }
 spriteset(spriteset_SR_DMBS_2c_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(172, 544)
+	template_train32px_old(172, 544)
 }
 spriteset(spriteset_SR_DMBS_2c_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(172, 694)
+	template_train32px_old(172, 694)
 }
 spriteset(spriteset_SR_DMBS_2c_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(518, 125)
+	template_train32px_old(518, 125)
 }
 spriteset(spriteset_SR_DMBS_2c_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(518, 275)
+	template_train32px_old(518, 275)
 }
 spriteset(spriteset_SR_DMBS_2c_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(518, 577)
+	template_train32px_old(518, 577)
 }
 spriteset(spriteset_SR_DMBS_2c_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(518, 727)
+	template_train32px_old(518, 727)
 }
 spriteset(spriteset_SR_DMBS_2c_f_NSE, "gfx/BR41x.png") {
-	template_train32px(172, 996)
+	template_train32px_old(172, 996)
 }
 spriteset(spriteset_SR_DMBS_2c_r_NSE, "gfx/BR41x.png") {
-	template_train32px(172, 1146)
+	template_train32px_old(172, 1146)
 }
 
 //Class 414, 416 and 418 DMBS (BR Design) (head and tail lights)
 spriteset(spriteset_BR_DMBS_2c_f_SRGreen, "gfx/BR41x.png") {
-	template_train32px(172, 69)
+	template_train32px_old(172, 69)
 }
 spriteset(spriteset_BR_DMBS_2c_r_SRGreen, "gfx/BR41x.png") {
-	template_train32px(172, 219)
+	template_train32px_old(172, 219)
 }
 spriteset(spriteset_BR_DMBS_2c_f_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(172, 519)
+	template_train32px_old(172, 519)
 }
 spriteset(spriteset_BR_DMBS_2c_r_SRGreenyellow, "gfx/BR41x.png") {
-	template_train32px(172, 669)
+	template_train32px_old(172, 669)
 }
 spriteset(spriteset_BR_DMBS_2c_f_BRBlue, "gfx/BR41x.png") {
-	template_train32px(518, 100)
+	template_train32px_old(518, 100)
 }
 spriteset(spriteset_BR_DMBS_2c_r_BRBlue, "gfx/BR41x.png") {
-	template_train32px(518, 250)
+	template_train32px_old(518, 250)
 }
 spriteset(spriteset_BR_DMBS_2c_f_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(518, 552)
+	template_train32px_old(518, 552)
 }
 spriteset(spriteset_BR_DMBS_2c_r_BRBlueGrey, "gfx/BR41x.png") {
-	template_train32px(518, 702)
+	template_train32px_old(518, 702)
 }
 spriteset(spriteset_BR_DMBS_2c_f_NSE, "gfx/BR41x.png") {
-	template_train32px(172, 971)
+	template_train32px_old(172, 971)
 }
 spriteset(spriteset_BR_DMBS_2c_r_NSE, "gfx/BR41x.png") {
-	template_train32px(172, 1121)
+	template_train32px_old(172, 1121)
 }
 
 //and now the extra bits and pieces
 
 //Class 414 NSE Centre cars
 spriteset(spriteset_BR_DMBS_fc_NSE, "gfx/BR41x.png") {
-	template_train32px(172, 1321)
+	template_train32px_old(172, 1321)
 }
 spriteset(spriteset_BR_DMBS_rc_NSE, "gfx/BR41x.png") {
-	template_train32px(172, 1371)
+	template_train32px_old(172, 1371)
 }
 
 //Now onto the switches

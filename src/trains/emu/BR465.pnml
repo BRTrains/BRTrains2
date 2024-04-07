@@ -3,87 +3,87 @@ spriteset(spriteset_BR465_Purchase, "gfx/BR465-Gwyd.png") {
 }
 
 spriteset(spriteset_BR465a_NSE, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 0)
+	template_train32px_old(1, 0)
 }
 
 spriteset(spriteset_BR465b_NSE, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 26)
+	template_train32px_old(1, 26)
 }
 
 spriteset(spriteset_BR465c_NSE, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 52)
+	template_train32px_old(1, 52)
 }
 
 spriteset(spriteset_BR465a_Connex, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 222)
+	template_train32px_old(179, 222)
 }
 
 spriteset(spriteset_BR465b_Connex, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 248)
+	template_train32px_old(179, 248)
 }
 
 spriteset(spriteset_BR465c_Connex, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 274)
+	template_train32px_old(179, 274)
 }
 
 spriteset(spriteset_BR465a_SE_Yellow, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 0)
+	template_train32px_old(179, 0)
 }
 
 spriteset(spriteset_BR465b_SE_Yellow, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 26)
+	template_train32px_old(179, 26)
 }
 
 spriteset(spriteset_BR465c_SE_Yellow, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 52)
+	template_train32px_old(179, 52)
 }
 
 spriteset(spriteset_BR465a_SE_Grey, "gfx/BR465-Gwyd.png") {
-	template_train32px(0, 296)
+	template_train32px_old(0, 296)
 }
 
 spriteset(spriteset_BR465b_SE_Grey, "gfx/BR465-Gwyd.png") {
-	template_train32px(0, 322)
+	template_train32px_old(0, 322)
 }
 
 spriteset(spriteset_BR465c_SE_Grey, "gfx/BR465-Gwyd.png") {
-	template_train32px(0, 348)
+	template_train32px_old(0, 348)
 }
 
 spriteset(spriteset_BR465a_SE_Blue, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 99)
+	template_train32px_old(1, 99)
 }
 
 spriteset(spriteset_BR465b_SE_Blue, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 125)
+	template_train32px_old(1, 125)
 }
 
 spriteset(spriteset_BR465c_SE_Blue, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 151)
+	template_train32px_old(1, 151)
 }
 
 spriteset(spriteset_BR465a_SE_Blue_Stripe, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 196)
+	template_train32px_old(1, 196)
 }
 
 spriteset(spriteset_BR465b_SE_Blue_Stripe, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 222)
+	template_train32px_old(1, 222)
 }
 
 spriteset(spriteset_BR465c_SE_Blue_Stripe, "gfx/BR465-Gwyd.png") {
-	template_train32px(1, 248)
+	template_train32px_old(1, 248)
 }
 
 spriteset(spriteset_BR465a_Continental_Airlines, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 99)
+	template_train32px_old(179, 99)
 }
 
 spriteset(spriteset_BR465b_Continental_Airlines, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 125)
+	template_train32px_old(179, 125)
 }
 
 spriteset(spriteset_BR465c_Continental_Airlines, "gfx/BR465-Gwyd.png") {
-	template_train32px(179, 151)
+	template_train32px_old(179, 151)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR465a,cargo_subtype){

@@ -3,43 +3,43 @@ spriteset(spriteset_BR185_Purchase, "gfx/BR185a.png") {
 }
 
 spriteset(spriteset_BR185a_FirstDynamic, "gfx/BR185a.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR185a_FirstGroup, "gfx/BR185a.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR185a_FirstTPEGeometric, "gfx/BR185a.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 
 
 spriteset(spriteset_BR185b_FirstDynamic, "gfx/BR185b.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR185b_FirstGroup, "gfx/BR185b.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR185b_FirstTPEGeometric, "gfx/BR185b.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 
 spriteset(spriteset_BR185c_FirstDynamic, "gfx/BR185c.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR185c_FirstGroup, "gfx/BR185c.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 
 spriteset(spriteset_BR185c_FirstTPEGeometric, "gfx/BR185c.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR185a,cargo_subtype){

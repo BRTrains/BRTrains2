@@ -29,239 +29,239 @@ spriteset(spriteset_BR411_9_Purchase, "gfx/BR42x411.png") {
 //Actual Trains
 
 spriteset(spriteset_BR421_a_brg, "gfx/BR42x411.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR421_b_brg, "gfx/BR42x411.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR421_c_brg, "gfx/BR42x411.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR421_d_brg, "gfx/BR42x411.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR421_a_brbg, "gfx/BR42x411.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR421_b_brbg, "gfx/BR42x411.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR421_c_brbg, "gfx/BR42x411.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR421_d_brbg, "gfx/BR42x411.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BR421_a_lse, "gfx/BR42x411.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_BR421_b_lse, "gfx/BR42x411.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BR421_c_lse, "gfx/BR42x411.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 spriteset(spriteset_BR421_d_lse, "gfx/BR42x411.png") {
-	template_train32px(0, 288)
+	template_train32px_old(0, 288)
 }
 
 spriteset(spriteset_BR421_a_NSE, "gfx/BR42x411.png") {
-	template_train32px(0, 313)
+	template_train32px_old(0, 313)
 }
 
 spriteset(spriteset_BR421_b_NSE, "gfx/BR42x411.png") {
-	template_train32px(0, 338)
+	template_train32px_old(0, 338)
 }
 
 spriteset(spriteset_BR421_c_NSE, "gfx/BR42x411.png") {
-	template_train32px(0, 363)
+	template_train32px_old(0, 363)
 }
 
 spriteset(spriteset_BR421_d_NSE, "gfx/BR42x411.png") {
-	template_train32px(0, 388)
+	template_train32px_old(0, 388)
 }
 
 spriteset(spriteset_BR421_a_swt, "gfx/BR42x411.png") {
-	template_train32px(0, 413)
+	template_train32px_old(0, 413)
 }
 
 spriteset(spriteset_BR421_b_swt, "gfx/BR42x411.png") {
-	template_train32px(0, 438)
+	template_train32px_old(0, 438)
 }
 
 spriteset(spriteset_BR421_c_swt, "gfx/BR42x411.png") {
-	template_train32px(0, 463)
+	template_train32px_old(0, 463)
 }
 
 spriteset(spriteset_BR421_d_swt, "gfx/BR42x411.png") {
-	template_train32px(0, 488)
+	template_train32px_old(0, 488)
 }
 
 spriteset(spriteset_BR421_a_cnx, "gfx/BR42x411.png") {
-	template_train32px(0, 513)
+	template_train32px_old(0, 513)
 }
 
 spriteset(spriteset_BR421_b_cnx, "gfx/BR42x411.png") {
-	template_train32px(0, 538)
+	template_train32px_old(0, 538)
 }
 
 spriteset(spriteset_BR421_c_cnx, "gfx/BR42x411.png") {
-	template_train32px(0, 563)
+	template_train32px_old(0, 563)
 }
 
 spriteset(spriteset_BR421_d_cnx, "gfx/BR42x411.png") {
-	template_train32px(0, 588)
+	template_train32px_old(0, 588)
 }
 
 spriteset(spriteset_BR421_a_stn, "gfx/BR42x411.png") {
-	template_train32px(0, 613)
+	template_train32px_old(0, 613)
 }
 
 spriteset(spriteset_BR421_b_stn, "gfx/BR42x411.png") {
-	template_train32px(0, 638)
+	template_train32px_old(0, 638)
 }
 
 spriteset(spriteset_BR421_c_stn, "gfx/BR42x411.png") {
-	template_train32px(0, 663)
+	template_train32px_old(0, 663)
 }
 
 spriteset(spriteset_BR421_d_stn, "gfx/BR42x411.png") {
-	template_train32px(0, 688)
+	template_train32px_old(0, 688)
 }
 
 spriteset(spriteset_BR411_a_brg, "gfx/BR42x411.png") {
-	template_train32px(172, 13)
+	template_train32px_old(172, 13)
 }
 
 spriteset(spriteset_BR411_d_brg, "gfx/BR42x411.png") {
-	template_train32px(172, 88)
+	template_train32px_old(172, 88)
 }
 
 spriteset(spriteset_BR411_a_brbg, "gfx/BR42x411.png") {
-	template_train32px(172, 113)
+	template_train32px_old(172, 113)
 }
 
 spriteset(spriteset_BR411_d_brbg, "gfx/BR42x411.png") {
-	template_train32px(172, 188)
+	template_train32px_old(172, 188)
 }
 
 spriteset(spriteset_BR411_a_lse, "gfx/BR42x411.png") {
-	template_train32px(172, 213)
+	template_train32px_old(172, 213)
 }
 
 spriteset(spriteset_BR411_d_lse, "gfx/BR42x411.png") {
-	template_train32px(172, 288)
+	template_train32px_old(172, 288)
 }
 
 spriteset(spriteset_BR411_a_NSE, "gfx/BR42x411.png") {
-	template_train32px(172, 313)
+	template_train32px_old(172, 313)
 }
 
 spriteset(spriteset_BR411_d_NSE, "gfx/BR42x411.png") {
-	template_train32px(172, 388)
+	template_train32px_old(172, 388)
 }
 
 spriteset(spriteset_BR411_a_swt, "gfx/BR42x411.png") {
-	template_train32px(172, 413)
+	template_train32px_old(172, 413)
 }
 
 spriteset(spriteset_BR411_d_swt, "gfx/BR42x411.png") {
-	template_train32px(172, 488)
+	template_train32px_old(172, 488)
 }
 
 spriteset(spriteset_BR411_a_exswt, "gfx/BR42x411.png") {
-	template_train32px(344, 413)
+	template_train32px_old(344, 413)
 }
 
 spriteset(spriteset_BR411_b_exswt, "gfx/BR42x411.png") {
-	template_train32px(344, 438)
+	template_train32px_old(344, 438)
 }
 
 spriteset(spriteset_BR411_c_exswt, "gfx/BR42x411.png") {
-	template_train32px(344, 463)
+	template_train32px_old(344, 463)
 }
 
 spriteset(spriteset_BR411_d_exswt, "gfx/BR42x411.png") {
-	template_train32px(344, 488)
+	template_train32px_old(344, 488)
 }
 
 spriteset(spriteset_BR411_a_cnx, "gfx/BR42x411.png") {
-	template_train32px(172, 513)
+	template_train32px_old(172, 513)
 }
 
 spriteset(spriteset_BR411_d_cnx, "gfx/BR42x411.png") {
-	template_train32px(172, 588)
+	template_train32px_old(172, 588)
 }
 
 spriteset(spriteset_Mk1_buf_brg, "gfx/BR42x411.png") {
-	template_train32px(172, 38)
+	template_train32px_old(172, 38)
 }
 
 spriteset(spriteset_Mk1_buf_brbg, "gfx/BR42x411.png") {
-	template_train32px(172, 138)
+	template_train32px_old(172, 138)
 }
 
 spriteset(spriteset_Mk1_buf_lse, "gfx/BR42x411.png") {
-	template_train32px(172, 238)
+	template_train32px_old(172, 238)
 }
 
 spriteset(spriteset_Mk1_buf_NSE, "gfx/BR42x411.png") {
-	template_train32px(172, 338)
+	template_train32px_old(172, 338)
 }
 
 spriteset(spriteset_Mk1_buf_swt, "gfx/BR42x411.png") {
-	template_train32px(172, 438)
+	template_train32px_old(172, 438)
 }
 
 spriteset(spriteset_BR438_a_brb, "gfx/BR42x411.png") {
-	template_train32px(344, 13)
+	template_train32px_old(344, 13)
 }
 
 spriteset(spriteset_BR438_b_brb, "gfx/BR42x411.png") {
-	template_train32px(344, 38)
+	template_train32px_old(344, 38)
 }
 
 spriteset(spriteset_BR438_c_brb, "gfx/BR42x411.png") {
-	template_train32px(344, 63)
+	template_train32px_old(344, 63)
 }
 
 spriteset(spriteset_BR438_d_brb, "gfx/BR42x411.png") {
-	template_train32px(344, 88)
+	template_train32px_old(344, 88)
 }
 
 spriteset(spriteset_BR432_a_brbg, "gfx/BR42x411.png") {
-	template_train32px(344, 113)
+	template_train32px_old(344, 113)
 }
 
 spriteset(spriteset_Mk1_tbc_brbg, "gfx/BR42x411.png") {
-	template_train32px(344, 163)
+	template_train32px_old(344, 163)
 }
 
 spriteset(spriteset_BR432_d_brbg, "gfx/BR42x411.png") {
-	template_train32px(344, 188)
+	template_train32px_old(344, 188)
 }
 
 spriteset(spriteset_BR432_a_NSE, "gfx/BR42x411.png") {
-	template_train32px(344, 313)
+	template_train32px_old(344, 313)
 }
 
 spriteset(spriteset_Mk1_tbc_NSE, "gfx/BR42x411.png") {
-	template_train32px(344, 363)
+	template_train32px_old(344, 363)
 }
 
 spriteset(spriteset_BR432_d_NSE, "gfx/BR42x411.png") {
-	template_train32px(344, 388)
+	template_train32px_old(344, 388)
 }
 
 //421_3_5_7

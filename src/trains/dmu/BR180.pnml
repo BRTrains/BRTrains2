@@ -3,75 +3,75 @@ spriteset(spriteset_BR180_Purchase, "gfx/BR180a.png") {
 }
 
 spriteset(spriteset_BR180a_FGW, "gfx/BR180a.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR180a_GC, "gfx/BR180a.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR180a_GCLined, "gfx/BR180a.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR180a_NorthernRail, "gfx/BR180a.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR180b_FGW, "gfx/BR180b.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR180b_GC, "gfx/BR180b.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR180b_GCLined, "gfx/BR180b.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR180b_NorthernRail, "gfx/BR180b.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR180c_FGW, "gfx/BR180c.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR180c_GC, "gfx/BR180c.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR180c_GCLined, "gfx/BR180c.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR180c_NorthernRail, "gfx/BR180c.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR180a_FGWDL, "gfx/BR180a.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR180b_FGWDL, "gfx/BR180b.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR180c_FGWDL, "gfx/BR180c.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR180a_EMRMaroonWhite, "gfx/BR180a.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR180b_EMRMaroonWhite, "gfx/BR180b.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR180c_EMRMaroonWhite, "gfx/BR180c.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR180a,cargo_subtype){

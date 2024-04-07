@@ -3,39 +3,39 @@ spriteset(spriteset_BR67_Purchase, "gfx/BR67_v2.png") {
 }
 
 spriteset(spriteset_BR67_EWS, "gfx/BR67_v2.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR67_Colas, "gfx/BR67_v2.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR67_ATW, "gfx/BR67_v2.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR67_DBSchenker, "gfx/BR67_v2.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR67_Caledonian, "gfx/BR67_v2.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR67_RoyalClaret, "gfx/BR67_v2.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR67_BrownPullman, "gfx/BR67_v2.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR67_Wrexham, "gfx/BR67_v2.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BR67_DBCompany, "gfx/BR67_v2.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 // This switch called when displaying as this locomotive

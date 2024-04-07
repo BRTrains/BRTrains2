@@ -3,7 +3,7 @@ spriteset(spriteset_BRMk5Sleeper_purchase, "gfx/BRSleeper.png") {
 }
 
 spriteset(spriteset_BRMk5Sleeper_CaledonianSleeper, "gfx/BRSleeper.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BRMk5Sleeper,cargo_subtype){

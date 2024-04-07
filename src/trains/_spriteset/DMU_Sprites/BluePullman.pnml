@@ -3,33 +3,33 @@ spriteset(spriteset_BluePullman_Purchase, "gfx/BluePullman.png") {
 }
 
 spriteset(spriteset_BluePullmana_Pullman, "gfx/BluePullman.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 spriteset(spriteset_BluePullmanb_Pullman, "gfx/BluePullman.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_BluePullmanc_Pullman, "gfx/BluePullman.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BluePullmana_PullmanPanels, "gfx/BluePullman.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 spriteset(spriteset_BluePullmanb_PullmanPanels, "gfx/BluePullman.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 spriteset(spriteset_BluePullmanc_PullmanPanels, "gfx/BluePullman.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BluePullmana_GreyBlue, "gfx/BluePullman.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 spriteset(spriteset_BluePullmanb_GreyBlue, "gfx/BluePullman.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 spriteset(spriteset_BluePullmanc_GreyBlue, "gfx/BluePullman.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 // Coose sprites based on liveries

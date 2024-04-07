@@ -3,83 +3,83 @@ spriteset(spriteset_BR253_Purchase, "gfx/BR253.png") {
 }
 
 spriteset(spriteset_BR253_BRBlue, "gfx/BR253.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR253_IntercityExecutive, "gfx/BR253.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR253_IntercitySwallow, "gfx/BR253.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR253_MMLTealTang, "gfx/BR253.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR253_MMLBlue, "gfx/BR253.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR253_EMT, "gfx/BR253.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR253_Virgin, "gfx/BR253.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR253_FGW, "gfx/BR253.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 spriteset(spriteset_BR253_GWRGreen, "gfx/BR253.png") {
-	template_train32px(0, 338)
+	template_train32px_old(0, 338)
 }
 
 spriteset(spriteset_BR254_BRBlue, "gfx/BR253.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR254_IntercityExecutive, "gfx/BR253.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR254_IntercitySwallow, "gfx/BR253.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR254_XC, "gfx/BR253.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BR254_GNER, "gfx/BR253.png") {
-	template_train32px(0, 288)
+	template_train32px_old(0, 288)
 }
 
 spriteset(spriteset_BR254_NatEx, "gfx/BR253.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BR255_GC, "gfx/BR253.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_BR255_GCLined, "gfx/BR253.png") {
-	template_train32px(0, 313)
+	template_train32px_old(0, 313)
 }
 
 spriteset(spriteset_BR255_Inter7City, "gfx/BR253.png") {
-	template_train32px(0, 363)
+	template_train32px_old(0, 363)
 }
 
 spriteset(spriteset_BR253_LNER, "gfx/BR253.png") {
-	template_train32px(0, 388)
+	template_train32px_old(0, 388)
 }
 
 spriteset(spriteset_BR253_Pullman, "gfx/BR253.png") {
-	template_train32px(0, 413)
+	template_train32px_old(0, 413)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR253,cargo_subtype){

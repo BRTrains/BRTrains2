@@ -3,23 +3,23 @@ spriteset(spriteset_BR73GatEx_Purchase, "gfx/BR73GatEx.png") {
 }
 
 spriteset(spriteset_BR73GatEx_GatEx, "gfx/BR73GatEx.png") {
-	template_train28px(0, 13)
+	template_train28px_old(0, 13)
 }
 
 spriteset(spriteset_BR488s_GatEx, "gfx/BR73GatEx.png") {
-	template_train32px(0, 36)
+	template_train32px_old(0, 36)
 }
 
 spriteset(spriteset_BR488f_GatEx, "gfx/BR73GatEx.png") {
-	template_train32px(0, 61)
+	template_train32px_old(0, 61)
 }
 
 spriteset(spriteset_BRGLVf_GatEx, "gfx/BR73GatEx.png") {
-	template_train32px(0, 86)
+	template_train32px_old(0, 86)
 }
 
 spriteset(spriteset_BRGLVr_GatEx, "gfx/BR73GatEx.png") {
-	template_train32px(0, 111)
+	template_train32px_old(0, 111)
 }
 
 switch(FEAT_TRAINS, PARENT, sw_front_GatEx, vehicle_is_reversed){

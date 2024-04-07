@@ -3,11 +3,11 @@ spriteset(spriteset_BR70OG_Purchase, "gfx/BR70_OG.png") {
 }
 
 spriteset(spriteset_BR70OG_BRGreen, "gfx/BR70_OG.png") {
-	template_train28px(0, 13)
+	template_train28px_old(0, 13)
 }
 
 spriteset(spriteset_BR70OG_BRBlue, "gfx/BR70_OG.png") {
-	template_train28px(0, 36)
+	template_train28px_old(0, 36)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR70OG,cargo_subtype){

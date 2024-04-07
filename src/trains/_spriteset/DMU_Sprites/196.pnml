@@ -3,13 +3,13 @@ spriteset(spriteset_BR196_Purchase, "gfx/BR196.png") {
 }
 
 spriteset(spriteset_BR196a_WestMidlands, "gfx/BR196.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR196b_WestMidlands, "gfx/BR196.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR196c_WestMidlands, "gfx/BR196.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }

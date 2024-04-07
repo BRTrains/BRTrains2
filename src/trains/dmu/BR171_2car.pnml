@@ -3,10 +3,10 @@ spriteset(spriteset_BR171_Purchase, "gfx/BR170.png") {
 }
 
 spriteset(spriteset_BR171a_Southern, "gfx/BR170.png") {
-	template_train32px(0, 613)
+	template_train32px_old(0, 613)
 }
 spriteset(spriteset_BR171b_Southern, "gfx/BR170.png") {
-	template_train32px(0, 663)
+	template_train32px_old(0, 663)
 }
 
 

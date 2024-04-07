@@ -7,198 +7,198 @@ spriteset(spriteset_BR305_2_Purchase, "gfx/BR305.png") {
 }
 
 spriteset(spriteset_BR305_1_a_brg, "gfx/BR305.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR305_1_b_brg, "gfx/BR305.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR305_1_c_brg, "gfx/BR305.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR305_2_a_brg, "gfx/BR305.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR305_2_b_brg, "gfx/BR305.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR305_2_c_brg, "gfx/BR305.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR305_2_d_brg, "gfx/BR305.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR305_1_a_brb, "gfx/BR305.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BR305_1_b_brb, "gfx/BR305.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_BR305_1_c_brb, "gfx/BR305.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BR305_2_a_brb, "gfx/BR305.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 spriteset(spriteset_BR305_2_b_brb, "gfx/BR305.png") {
-	template_train32px(0, 288)
+	template_train32px_old(0, 288)
 }
 
 spriteset(spriteset_BR305_2_c_brb, "gfx/BR305.png") {
-	template_train32px(0, 313)
+	template_train32px_old(0, 313)
 }
 
 spriteset(spriteset_BR305_2_d_brb, "gfx/BR305.png") {
-	template_train32px(0, 338)
+	template_train32px_old(0, 338)
 }
 
 spriteset(spriteset_BR305_1_a_brbg, "gfx/BR305.png") {
-	template_train32px(0, 363)
+	template_train32px_old(0, 363)
 }
 
 spriteset(spriteset_BR305_1_b_brbg, "gfx/BR305.png") {
-	template_train32px(0, 388)
+	template_train32px_old(0, 388)
 }
 
 spriteset(spriteset_BR305_1_c_brbg, "gfx/BR305.png") {
-	template_train32px(0, 413)
+	template_train32px_old(0, 413)
 }
 
 spriteset(spriteset_BR305_2_a_brbg, "gfx/BR305.png") {
-	template_train32px(0, 438)
+	template_train32px_old(0, 438)
 }
 
 spriteset(spriteset_BR305_2_b_brbg, "gfx/BR305.png") {
-	template_train32px(0, 463)
+	template_train32px_old(0, 463)
 }
 
 spriteset(spriteset_BR305_2_c_brbg, "gfx/BR305.png") {
-	template_train32px(0, 488)
+	template_train32px_old(0, 488)
 }
 
 spriteset(spriteset_BR305_2_d_brbg, "gfx/BR305.png") {
-	template_train32px(0, 513)
+	template_train32px_old(0, 513)
 }
 
 spriteset(spriteset_BR305_1_a_nse, "gfx/BR305.png") {
-	template_train32px(0, 538)
+	template_train32px_old(0, 538)
 }
 
 spriteset(spriteset_BR305_1_b_nse, "gfx/BR305.png") {
-	template_train32px(0, 563)
+	template_train32px_old(0, 563)
 }
 
 spriteset(spriteset_BR305_1_c_nse, "gfx/BR305.png") {
-	template_train32px(0, 588)
+	template_train32px_old(0, 588)
 }
 
 spriteset(spriteset_BR305_2_a_nse, "gfx/BR305.png") {
-	template_train32px(0, 613)
+	template_train32px_old(0, 613)
 }
 
 spriteset(spriteset_BR305_2_b_nse, "gfx/BR305.png") {
-	template_train32px(0, 638)
+	template_train32px_old(0, 638)
 }
 
 spriteset(spriteset_BR305_2_c_nse, "gfx/BR305.png") {
-	template_train32px(0, 663)
+	template_train32px_old(0, 663)
 }
 
 spriteset(spriteset_BR305_2_d_nse, "gfx/BR305.png") {
-	template_train32px(0, 688)
+	template_train32px_old(0, 688)
 }
 
 spriteset(spriteset_BR305_1_a_rrxnse, "gfx/BR305.png") {
-	template_train32px(0, 713)
+	template_train32px_old(0, 713)
 }
 
 spriteset(spriteset_BR305_1_b_rrxnse, "gfx/BR305.png") {
-	template_train32px(0, 738)
+	template_train32px_old(0, 738)
 }
 
 spriteset(spriteset_BR305_1_c_rrxnse, "gfx/BR305.png") {
-	template_train32px(0, 763)
+	template_train32px_old(0, 763)
 }
 
 spriteset(spriteset_BR305_2_a_rrxnse, "gfx/BR305.png") {
-	template_train32px(0, 788)
+	template_train32px_old(0, 788)
 }
 
 spriteset(spriteset_BR305_2_b_rrxnse, "gfx/BR305.png") {
-	template_train32px(0, 813)
+	template_train32px_old(0, 813)
 }
 
 spriteset(spriteset_BR305_2_c_rrxnse, "gfx/BR305.png") {
-	template_train32px(0, 838)
+	template_train32px_old(0, 838)
 }
 
 spriteset(spriteset_BR305_2_d_rrxnse, "gfx/BR305.png") {
-	template_train32px(0, 863)
+	template_train32px_old(0, 863)
 }
 
 spriteset(spriteset_BR305_1_a_rr, "gfx/BR305.png") {
-	template_train32px(0, 888)
+	template_train32px_old(0, 888)
 }
 
 spriteset(spriteset_BR305_1_b_rr, "gfx/BR305.png") {
-	template_train32px(0, 913)
+	template_train32px_old(0, 913)
 }
 
 spriteset(spriteset_BR305_1_c_rr, "gfx/BR305.png") {
-	template_train32px(0, 938)
+	template_train32px_old(0, 938)
 }
 
 spriteset(spriteset_BR305_2_a_rr, "gfx/BR305.png") {
-	template_train32px(0, 963)
+	template_train32px_old(0, 963)
 }
 
 spriteset(spriteset_BR305_2_b_rr, "gfx/BR305.png") {
-	template_train32px(0, 988)
+	template_train32px_old(0, 988)
 }
 
 spriteset(spriteset_BR305_2_c_rr, "gfx/BR305.png") {
-	template_train32px(0, 1013)
+	template_train32px_old(0, 1013)
 }
 
 spriteset(spriteset_BR305_2_d_rr, "gfx/BR305.png") {
-	template_train32px(0, 1038)
+	template_train32px_old(0, 1038)
 }
 spriteset(spriteset_BR305_1_a_gmpte, "gfx/BR305.png") {
-	template_train32px(0, 1063)
+	template_train32px_old(0, 1063)
 }
 
 spriteset(spriteset_BR305_1_b_gmpte, "gfx/BR305.png") {
-	template_train32px(0, 1088)
+	template_train32px_old(0, 1088)
 }
 
 spriteset(spriteset_BR305_1_c_gmpte, "gfx/BR305.png") {
-	template_train32px(0, 1113)
+	template_train32px_old(0, 1113)
 }
 
 spriteset(spriteset_BR305_2_a_gmpte, "gfx/BR305.png") {
-	template_train32px(0, 1138)
+	template_train32px_old(0, 1138)
 }
 
 spriteset(spriteset_BR305_2_b_gmpte, "gfx/BR305.png") {
-	template_train32px(0, 1163)
+	template_train32px_old(0, 1163)
 }
 
 spriteset(spriteset_BR305_2_c_gmpte, "gfx/BR305.png") {
-	template_train32px(0, 1188)
+	template_train32px_old(0, 1188)
 }
 
 spriteset(spriteset_BR305_2_d_gmpte, "gfx/BR305.png") {
-	template_train32px(0, 1213)
+	template_train32px_old(0, 1213)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR305_1_a,cargo_subtype){

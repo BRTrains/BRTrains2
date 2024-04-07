@@ -3,75 +3,75 @@ spriteset(spriteset_BR166_Purchase, "gfx/BR165.png") {
 }
 
 spriteset(spriteset_BR166a_NSE, "gfx/BR165.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR166b_NSE, "gfx/BR165.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR166c_NSE, "gfx/BR165.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR166a_ThamesTrains, "gfx/BR165.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR166b_ThamesTrains, "gfx/BR165.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR166c_ThamesTrains, "gfx/BR165.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR166a_FirstLink, "gfx/BR165.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR166b_FirstLink, "gfx/BR165.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BR166c_FirstLink, "gfx/BR165.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_BR166a_Chiltern, "gfx/BR165.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BR166b_Chiltern, "gfx/BR165.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 spriteset(spriteset_BR166c_Chiltern, "gfx/BR165.png") {
-	template_train32px(0, 288)
+	template_train32px_old(0, 288)
 }
 
 spriteset(spriteset_BR166a_FGW, "gfx/BR165.png") {
-	template_train32px(0, 313)
+	template_train32px_old(0, 313)
 }
 
 spriteset(spriteset_BR166b_FGW, "gfx/BR165.png") {
-	template_train32px(0, 338)
+	template_train32px_old(0, 338)
 }
 
 spriteset(spriteset_BR166c_FGW, "gfx/BR165.png") {
-	template_train32px(0, 363)
+	template_train32px_old(0, 363)
 }
 
 spriteset(spriteset_BR166a_GWR, "gfx/BR165.png") {
-	template_train32px(0, 388)
+	template_train32px_old(0, 388)
 }
 
 spriteset(spriteset_BR166b_GWR, "gfx/BR165.png") {
-	template_train32px(0, 413)
+	template_train32px_old(0, 413)
 }
 
 spriteset(spriteset_BR166c_GWR, "gfx/BR165.png") {
-	template_train32px(0, 438)
+	template_train32px_old(0, 438)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR166a,cargo_subtype){

@@ -11,11 +11,11 @@ spriteset(spriteset_BR325b_RM, "gfx/BR325.png") {
 }
 
 spriteset(spriteset_BR325c_RM, "gfx/BR325.png") {
-	template_train32px(0, 40)
+	template_train32px_old(0, 40)
 }
 
 spriteset(spriteset_BR325d_RM, "gfx/BR325.png") {
-	template_train32px(0, 66)
+	template_train32px_old(0, 66)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR325a,cargo_subtype){

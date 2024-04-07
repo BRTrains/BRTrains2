@@ -3,13 +3,13 @@ spriteset(spriteset_LU1967_Purchase, "gfx/LondonUnderground/LU_1967.png") {
 }
 
 spriteset(spriteset_LU1967a_TfL, "gfx/LondonUnderground/LU_1967.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 spriteset(spriteset_LU1967b_TfL, "gfx/LondonUnderground/LU_1967.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_LU1967c_TfL, "gfx/LondonUnderground/LU_1967.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 switch(FEAT_TRAINS,SELF, sw_LU1967a,cargo_subtype){

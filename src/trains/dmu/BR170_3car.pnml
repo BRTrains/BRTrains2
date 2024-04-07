@@ -3,39 +3,39 @@ spriteset(spriteset_BR170_3_Purchase, "gfx/BR170.png") {
 }
 
 spriteset(spriteset_BR170c_Central, "gfx/BR170.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR170c_LondonMidland, "gfx/BR170.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR170c_SWT, "gfx/BR170.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BR170c_GreaterAnglia, "gfx/BR170.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 spriteset(spriteset_BR170c_ScotRail, "gfx/BR170.png") {
-	template_train32px(0, 338)
+	template_train32px_old(0, 338)
 }
 
 spriteset(spriteset_BR170c_ScotRailSaltire, "gfx/BR170.png") {
-	template_train32px(0, 413)
+	template_train32px_old(0, 413)
 }
 
 spriteset(spriteset_BR170c_WMR, "gfx/BR170.png") {
-	template_train32px(0, 488)
+	template_train32px_old(0, 488)
 }
 
 spriteset(spriteset_BR170c_EMRMaroon, "gfx/BR170.png") {
-	template_train32px(0, 563)
+	template_train32px_old(0, 563)
 }
 
 spriteset(spriteset_BR170c_Northern, "gfx/BR170.png") {
-	template_train32px(0, 713)
+	template_train32px_old(0, 713)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR170c,cargo_subtype){

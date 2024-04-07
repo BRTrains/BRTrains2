@@ -3,13 +3,13 @@ spriteset(spriteset_LUCStock_Purchase, "gfx/LondonUnderground/LU_C69C77.png") {
 }
 
 spriteset(spriteset_LUCStocka_TfL, "gfx/LondonUnderground/LU_C69C77.png") {
-	template_train32px(0, 0)
+	template_train32px_old(0, 0)
 }
 spriteset(spriteset_LUCStockb_TfL, "gfx/LondonUnderground/LU_C69C77.png") {
-	template_train32px(0, 25)
+	template_train32px_old(0, 25)
 }
 spriteset(spriteset_LUCStockc_TfL, "gfx/LondonUnderground/LU_C69C77.png") {
-	template_train32px(0, 50)
+	template_train32px_old(0, 50)
 }
 
 

@@ -3,39 +3,39 @@ spriteset(spriteset_BR60_Purchase, "gfx/BR60.png") {
 }
 
 spriteset(spriteset_BR60_Colas, "gfx/BR60.png") {
-	template_train32px(0, 126)
+	template_train32px_old(0, 126)
 }
 
 spriteset(spriteset_BR60_Corus, "gfx/BR60.png") {
-	template_train32px(0, 151)
+	template_train32px_old(0, 151)
 }
 
 spriteset(spriteset_BR60_GWR, "gfx/BR60.png") {
-	template_train32px(0, 201)
+	template_train32px_old(0, 201)
 }
 
 spriteset(spriteset_BR60_RFG, "gfx/BR60.png") {
-	template_train32px(0, 251)
+	template_train32px_old(0, 251)
 }
 
 spriteset(spriteset_BR60_Loadhaul, "gfx/BR60.png") {
-	template_train32px(0, 301)
+	template_train32px_old(0, 301)
 }
 
 spriteset(spriteset_BR60_Mainline, "gfx/BR60.png") {
-	template_train32px(0, 351)
+	template_train32px_old(0, 351)
 }
 
 spriteset(spriteset_BR60_EWS, "gfx/BR60.png") {
-	template_train32px(0, 401)
+	template_train32px_old(0, 401)
 }
 
 spriteset(spriteset_BR60_BSS, "gfx/BR60.png") {
-	template_train32px(0, 451)
+	template_train32px_old(0, 451)
 }
 
 spriteset(spriteset_BR60_LoadhaulGrey, "gfx/BR60.png") {
-	template_train32px(0, 476)
+	template_train32px_old(0, 476)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR60,cargo_subtype){

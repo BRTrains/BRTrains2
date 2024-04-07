@@ -7,11 +7,11 @@ spriteset(spriteset_BR373_2_Purchase, "gfx/BR373.png") {
 }
 
 spriteset(spriteset_BR373_Eurostar, "gfx/BR373.png") {
-	template_train28px(0, 13)
+	template_train28px_old(0, 13)
 }
 
 spriteset(spriteset_BR373MS_Eurostar, "gfx/BR373.png") {
-	template_train28px(0, 38)
+	template_train28px_old(0, 38)
 }
 
 spriteset(spriteset_BR373TS_Eurostar, "gfx/BR373.png") {
@@ -31,19 +31,19 @@ spriteset(spriteset_BR373TBF_Eurostar, "gfx/BR373.png") {
 }
 
 spriteset(spriteset_BR373MSb_Eurostar, "gfx/BR373.png") {
-	template_train28px(0, 113)
+	template_train28px_old(0, 113)
 }
 
 spriteset(spriteset_BR373DM_Eurostar, "gfx/BR373.png") {
-	template_train28px(0, 138)
+	template_train28px_old(0, 138)
 }
 
 spriteset(spriteset_BR373_GNER, "gfx/BR373.png") {
-	template_train28px(0, 163)
+	template_train28px_old(0, 163)
 }
 
 spriteset(spriteset_BR373MS_GNER, "gfx/BR373.png") {
-	template_train28px(0, 188)
+	template_train28px_old(0, 188)
 }
 
 spriteset(spriteset_BR373TS_GNER, "gfx/BR373.png") {
@@ -63,19 +63,19 @@ spriteset(spriteset_BR373TBF_GNER, "gfx/BR373.png") {
 }
 
 spriteset(spriteset_BR373MSb_GNER, "gfx/BR373.png") {
-	template_train28px(0, 263)
+	template_train28px_old(0, 263)
 }
 
 spriteset(spriteset_BR373DM_GNER, "gfx/BR373.png") {
-	template_train28px(0, 288)
+	template_train28px_old(0, 288)
 }
 
 spriteset(spriteset_BR373_EurostarNew, "gfx/BR373.png") {
-	template_train28px(0, 313)
+	template_train28px_old(0, 313)
 }
 
 spriteset(spriteset_BR373MS_EurostarNew, "gfx/BR373.png") {
-	template_train28px(0, 338)
+	template_train28px_old(0, 338)
 }
 
 spriteset(spriteset_BR373TS_EurostarNew, "gfx/BR373.png") {
@@ -95,11 +95,11 @@ spriteset(spriteset_BR373TBF_EurostarNew, "gfx/BR373.png") {
 }
 
 spriteset(spriteset_BR373MSb_EurostarNew, "gfx/BR373.png") {
-	template_train28px(0, 413)
+	template_train28px_old(0, 413)
 }
 
 spriteset(spriteset_BR373DM_EurostarNew, "gfx/BR373.png") {
-	template_train28px(0, 438)
+	template_train28px_old(0, 438)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR373,cargo_subtype){

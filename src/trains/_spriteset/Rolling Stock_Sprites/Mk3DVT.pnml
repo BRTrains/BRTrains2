@@ -3,66 +3,66 @@ spriteset(spriteset_BRMk3DVT_purchase, "gfx/BRMk3DVT.png") {
 }
 
 spriteset(spriteset_BRMk3DVT_IntercitySwallow, "gfx/BRMk3DVT.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 spriteset(spriteset_BRMk3DVT_IntercitySwallow_reversed, "gfx/BRMk3DVT.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BRMk3DVT_Virgin, "gfx/BRMk3DVT.png") {
- template_train32px(0, 63)
+ template_train32px_old(0, 63)
 }
 spriteset(spriteset_BRMk3DVT_Virgin_reversed, "gfx/BRMk3DVT.png") {
- template_train32px(0, 88)
+ template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BRMk3DVT_ONE, "gfx/BRMk3DVT.png") {
- template_train32px(0, 113)
+ template_train32px_old(0, 113)
 }
 spriteset(spriteset_BRMk3DVT_ONE_reversed, "gfx/BRMk3DVT.png") {
- template_train32px(0, 138)
+ template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BRMk3DVT_Chiltern, "gfx/BRMk3DVT.png") {
- template_train32px(0, 163)
+ template_train32px_old(0, 163)
 }
 spriteset(spriteset_BRMk3DVT_Chiltern_reversed, "gfx/BRMk3DVT.png") {
- template_train32px(0, 188)
+ template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BRMk3DVT_GA, "gfx/BRMk3DVT.png") {
- template_train32px(0, 213)
+ template_train32px_old(0, 213)
 }
 spriteset(spriteset_BRMk3DVT_GA_reversed, "gfx/BRMk3DVT.png") {
- template_train32px(0, 238)
+ template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BRMk3DVT_TfW, "gfx/BRMk3DVT.png") {
- template_train32px(0, 263)
+ template_train32px_old(0, 263)
 }
 spriteset(spriteset_BRMk3DVT_TfW_reversed, "gfx/BRMk3DVT.png") {
- template_train32px(0, 288)
+ template_train32px_old(0, 288)
 }
 
 spriteset(spriteset_BRMk3DVT_VirginPretendolino, "gfx/BRMk3DVT.png") {
- template_train32px(0, 313)
+ template_train32px_old(0, 313)
 }
 spriteset(spriteset_BRMk3DVT_VirginPretendolino_reversed, "gfx/BRMk3DVT.png") {
- template_train32px(0, 338)
+ template_train32px_old(0, 338)
 }
 
 spriteset(spriteset_BRMk3DVT_ArrivaWales, "gfx/BRMk3DVT.png") {
- template_train32px(0, 363)
+ template_train32px_old(0, 363)
 }
 spriteset(spriteset_BRMk3DVT_ArrivaWales_reversed, "gfx/BRMk3DVT.png") {
- template_train32px(0, 388)
+ template_train32px_old(0, 388)
 }
 
 spriteset(spriteset_BRMk3DVT_NetworkRail, "gfx/BRMk3DVT.png") {
- template_train32px(0, 413)
+ template_train32px_old(0, 413)
 }
 spriteset(spriteset_BRMk3DVT_NetworkRail_reversed, "gfx/BRMk3DVT.png") {
- template_train32px(0, 438)
+ template_train32px_old(0, 438)
 }
 
 

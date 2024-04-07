@@ -3,27 +3,27 @@ spriteset(spriteset_BR141_Purchase, "gfx/BR140-143.png") {
 }
 
 spriteset(spriteset_BR141a_Blue, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 133)
+	template_train28px_old_pacer(0, 133)
 }
 
 spriteset(spriteset_BR141b_Blue, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 153)
+	template_train28px_old_pacer(0, 153)
 }
 
 spriteset(spriteset_BR141a_WYPTEMetro, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 53)
+	template_train28px_old_pacer(0, 53)
 }
 
 spriteset(spriteset_BR141b_WYPTEMetro, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 73)
+	template_train28px_old_pacer(0, 73)
 }
 
 spriteset(spriteset_BR141a_WYPTEVerona, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 93)
+	template_train28px_old_pacer(0, 93)
 }
 
 spriteset(spriteset_BR141b_WYPTEVerona, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 113)
+	template_train28px_old_pacer(0, 113)
 }
 
 

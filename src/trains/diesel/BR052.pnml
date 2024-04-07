@@ -3,19 +3,19 @@ spriteset(spriteset_BR52_Purchase, "gfx/BR52.png") {
 }
 
 spriteset(spriteset_BR52_BRSand, "gfx/BR52.png") {
-	template_train28px(0, 13)
+	template_train28px_old(0, 13)
 }
 
 spriteset(spriteset_BR52_BRMaroon, "gfx/BR52.png") {
-	template_train28px(0, 36)
+	template_train28px_old(0, 36)
 }
 
 spriteset(spriteset_BR52_BRBlue, "gfx/BR52.png") {
-	template_train28px(0, 59)
+	template_train28px_old(0, 59)
 }
 
 spriteset(spriteset_BR52_BRGreen, "gfx/BR52.png") {
-	template_train28px(0, 82)
+	template_train28px_old(0, 82)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR52,cargo_subtype){        

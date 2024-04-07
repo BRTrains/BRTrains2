@@ -3,27 +3,27 @@ spriteset(spriteset_BR458_Purchase, "gfx/BR4580.png") {
 }
 
 spriteset(spriteset_BR458a_SWT, "gfx/BR4580.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR458ao_SWT, "gfx/BR4580.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR458d_SWT, "gfx/BR4580.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR458do_SWT, "gfx/BR4580.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR458b_SWT, "gfx/BR4580.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR458c_SWT, "gfx/BR4580.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR458ao,position_in_consist){

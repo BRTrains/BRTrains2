@@ -3,17 +3,17 @@ spriteset(spriteset_BR168_3_Purchase, "gfx/BR168.png") {
 }
 
 spriteset(spriteset_BR168c_ChilternTurboBlue, "gfx/BR168.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_BR168c_ChilternNetworkBlue, "gfx/BR168.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR168c_ChilternTurboGrey, "gfx/BR168.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 spriteset(spriteset_BR168c_ChilternNetworkGrey, "gfx/BR168.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR168c,cargo_subtype){

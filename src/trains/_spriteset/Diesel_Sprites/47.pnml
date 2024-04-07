@@ -3,59 +3,59 @@ spriteset(spriteset_BR47_Purchase, "gfx/BR47_BR57.png") {
 }
 
 spriteset(spriteset_BR47_BRGreen, "gfx/BR47_BR57.png") {
-	template_train32px(0, 463)
+	template_train32px_old(0, 463)
 }
 
 spriteset(spriteset_BR47_BRBlue, "gfx/BR47_BR57.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR47_Porterbrook, "gfx/BR47_BR57.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR47_EWS, "gfx/BR47_BR57.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR47_BRLLogo, "gfx/BR47_BR57.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR47_BRLLogoAlt, "gfx/BR47_BR57.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR47_Anglia, "gfx/BR47_BR57.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR47_Intercity, "gfx/BR47_BR57.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR47_WCRC, "gfx/BR47_BR57.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BR47_GWR, "gfx/BR47_BR57.png") {
-	template_train32px(0, 313)
+	template_train32px_old(0, 313)
 }
 
 spriteset(spriteset_BR47_Virgin, "gfx/BR47_BR57.png") {
-	template_train32px(0, 513)
+	template_train32px_old(0, 513)
 }
 
 spriteset(spriteset_BR47_Colas, "gfx/BR47_BR57.png") {
-	template_train32px(0, 538)
+	template_train32px_old(0, 538)
 }
 
 spriteset(spriteset_BR47_One, "gfx/BR47_BR57.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 spriteset(spriteset_BR47_Freightliner, "gfx/BR47_BR57.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 // This switch called when displaying as this locomotive

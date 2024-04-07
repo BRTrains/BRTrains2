@@ -3,55 +3,55 @@ spriteset(spriteset_BR90_Purchase, "gfx/BR90.png") {
 }
 
 spriteset(spriteset_BR90_EWS, "gfx/BR90.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR90_DB, "gfx/BR90.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR90_FLGreen, "gfx/BR90.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR90_IntercitySwallow, "gfx/BR90.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR90_GreaterAnglia, "gfx/BR90.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR90_FLPowerhaul, "gfx/BR90.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR90_ONE, "gfx/BR90.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR90_GreaterAnglia2, "gfx/BR90.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BR90_Virgin, "gfx/BR90.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_BR90_REX, "gfx/BR90.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BR90_FirstScotrail, "gfx/BR90.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 spriteset(spriteset_BR90_FLGrey, "gfx/BR90.png") {
-	template_train32px(0, 288)
+	template_train32px_old(0, 288)
 }
 
 spriteset(spriteset_BR90_GNER, "gfx/BR90.png") {
-	template_train32px(0, 313)
+	template_train32px_old(0, 313)
 }
 
 // This switch called when displaying as this locomotive

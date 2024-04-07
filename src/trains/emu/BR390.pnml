@@ -3,19 +3,19 @@ spriteset(spriteset_BR390_Purchase, "gfx/BR390.png") {
 }
 
 spriteset(spriteset_BR390_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR390_AvantiWestCoast, "gfx/BR390.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR390_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 362)
+	template_train32px_old(0, 362)
 }
 
 spriteset(spriteset_BR390_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 487)
+	template_train32px_old(0, 487)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR390,cargo_subtype){
@@ -172,106 +172,106 @@ item (FEAT_TRAINS, item_BR390_11, 124) {
 }
 
 spriteset(spriteset_MF_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_PTF_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 spriteset(spriteset_TS_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_PTSRMB_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 spriteset(spriteset_MS_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_MSD_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_MFD_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_DMSO_Virgin, "gfx/BR390.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_MF_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 387)
+	template_train32px_old(0, 387)
 }
 spriteset(spriteset_PTF_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 412)
+	template_train32px_old(0, 412)
 }
 spriteset(spriteset_TS_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 387)
+	template_train32px_old(0, 387)
 }
 spriteset(spriteset_PTSRMB_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 437)
+	template_train32px_old(0, 437)
 }
 spriteset(spriteset_MS_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 387)
+	template_train32px_old(0, 387)
 }
 spriteset(spriteset_MSD_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 387)
+	template_train32px_old(0, 387)
 }
 spriteset(spriteset_MFD_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 387)
+	template_train32px_old(0, 387)
 }
 spriteset(spriteset_DMSO_VirginSilk, "gfx/BR390.png") {
-	template_train32px(0, 462)
+	template_train32px_old(0, 462)
 }
 
 spriteset(spriteset_MF_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 spriteset(spriteset_PTF_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 spriteset(spriteset_TS_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 338)
+	template_train32px_old(0, 338)
 }
 spriteset(spriteset_TS2_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 313)
+	template_train32px_old(0, 313)
 }
 spriteset(spriteset_PTSRMB_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 spriteset(spriteset_MS_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 288)
+	template_train32px_old(0, 288)
 }
 spriteset(spriteset_MSD_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 spriteset(spriteset_MFD_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 spriteset(spriteset_DMSO_Avanti, "gfx/BR390.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_MF_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 512)
+	template_train32px_old(0, 512)
 }
 spriteset(spriteset_PTF_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 537)
+	template_train32px_old(0, 537)
 }
 spriteset(spriteset_TS_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 512)
+	template_train32px_old(0, 512)
 }
 spriteset(spriteset_PTSRMB_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 562)
+	template_train32px_old(0, 562)
 }
 spriteset(spriteset_MS_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 512)
+	template_train32px_old(0, 512)
 }
 spriteset(spriteset_MSD_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 512)
+	template_train32px_old(0, 512)
 }
 spriteset(spriteset_MFD_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 512)
+	template_train32px_old(0, 512)
 }
 spriteset(spriteset_DMSO_VirginPride, "gfx/BR390.png") {
-	template_train32px(0, 587)
+	template_train32px_old(0, 587)
 }
 
 switch(FEAT_TRAINS,SELF, sw_390_MF,cargo_subtype){

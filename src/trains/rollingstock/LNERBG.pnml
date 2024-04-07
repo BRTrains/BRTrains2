@@ -3,27 +3,27 @@ spriteset(spriteset_LNERBG_Purchase, "gfx/LNERTeakBG.png") {
 }
 
 spriteset(spriteset_LNERBG_Teak, "gfx/LNERTeakTK.png") {
-	template_train28px(0, 82)
+	template_train28px_old(0, 82)
 }
 
 spriteset(spriteset_LNERBG_BRMaroon, "gfx/LNERBRMaroon.png") {
-	template_train28px(0, 82)
+	template_train28px_old(0, 82)
 }
 
 spriteset(spriteset_LNERBG_BRCarmCream, "gfx/LNERBRCarmCream.png") {
-	template_train28px(0, 82)
+	template_train28px_old(0, 82)
 }
 
 spriteset(spriteset_LNERBG_TeakR, "gfx/LNERTeakTK.png") {
-	template_train28px(0, 105)
+	template_train28px_old(0, 105)
 }
 
 spriteset(spriteset_LNERBG_BRMaroonR, "gfx/LNERTeakTK.png") {
-	template_train28px(0, 105)
+	template_train28px_old(0, 105)
 }
 
 spriteset(spriteset_LNERBG_BRCarmCreamR, "gfx/LNERTeakTK.png") {
-	template_train28px(0, 105)
+	template_train28px_old(0, 105)
 }
 
 switch (FEAT_TRAINS,SELF, sw_LNERBG_Teak,position_in_consist_from_end ) {

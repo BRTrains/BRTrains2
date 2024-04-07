@@ -3,35 +3,35 @@ spriteset(spriteset_BR333_Purchase, "gfx/BR333.png") {
 }
 
 spriteset(spriteset_BR333a_NorthernMetro, "gfx/BR333.png") {
-	template_train32px(0, 89)
+	template_train32px_old(0, 89)
 }
 
 spriteset(spriteset_BR333b_NorthernMetro, "gfx/BR333.png") {
-	template_train32px(0, 39)
+	template_train32px_old(0, 39)
 }
 
 spriteset(spriteset_BR333d_NorthernMetro, "gfx/BR333.png") {
-	template_train32px(0, 64)
+	template_train32px_old(0, 64)
 }
 
 spriteset(spriteset_BR333c_NorthernMetro, "gfx/BR333.png") {
-	template_train32px(0, 14)
+	template_train32px_old(0, 14)
 }
 
 spriteset(spriteset_BR333a_Northern, "gfx/BR333.png") {
-	template_train32px(0, 189)
+	template_train32px_old(0, 189)
 }
 
 spriteset(spriteset_BR333b_Northern, "gfx/BR333.png") {
-	template_train32px(0, 139)
+	template_train32px_old(0, 139)
 }
 
 spriteset(spriteset_BR333d_Northern, "gfx/BR333.png") {
-	template_train32px(0, 164)
+	template_train32px_old(0, 164)
 }
 
 spriteset(spriteset_BR333c_Northern, "gfx/BR333.png") {
-	template_train32px(0, 114)
+	template_train32px_old(0, 114)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR333a,cargo_subtype){

@@ -2,95 +2,95 @@ spriteset(spriteset_BR387__Purchase, "gfx/Electrostar_v2.png") {
 	template_purchase(200, 65)
 }
 spriteset(spriteset_BR387a_GWR, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 00)
+	template_train32px_old(0, 00)
 }
 spriteset(spriteset_BR387b_GWR, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 25)
+	template_train32px_old(0, 25)
 }
 spriteset(spriteset_BR387c_GWR, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 50)
+	template_train32px_old(0, 50)
 }
 spriteset(spriteset_BR387d_GWR, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 75)
+	template_train32px_old(0, 75)
 }
 
 spriteset(spriteset_BR387a_GWRun, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 00)
+	template_train32px_old(0, 00)
 }
 spriteset(spriteset_BR387b_GWRun, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 25)
+	template_train32px_old(0, 25)
 }
 spriteset(spriteset_BR387c_GWRun, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 50)
+	template_train32px_old(0, 50)
 }
 spriteset(spriteset_BR387d_GWRun, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 75)
+	template_train32px_old(0, 75)
 }
 
 spriteset(spriteset_BR387a_C2C, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1000)
+	template_train32px_old(0, 1000)
 }
 spriteset(spriteset_BR387b_C2C, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1025)
+	template_train32px_old(0, 1025)
 }
 spriteset(spriteset_BR387c_C2C, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1050)
+	template_train32px_old(0, 1050)
 }
 spriteset(spriteset_BR387d_C2C, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1075)
+	template_train32px_old(0, 1075)
 }
 
 spriteset(spriteset_BR387a_GTR, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 800)
+	template_train32px_old(0, 800)
 }
 spriteset(spriteset_BR387b_GTR, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 825)
+	template_train32px_old(0, 825)
 }
 spriteset(spriteset_BR387c_GTR, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 850)
+	template_train32px_old(0, 850)
 }
 spriteset(spriteset_BR387d_GTR, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 875)
+	template_train32px_old(0, 875)
 }
 
 spriteset(spriteset_BR387a_GatEX, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 400)
+	template_train32px_old(0, 400)
 }
 spriteset(spriteset_BR387b_GatEX, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 425)
+	template_train32px_old(0, 425)
 }
 spriteset(spriteset_BR387c_GatEX, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 450)
+	template_train32px_old(0, 450)
 }
 spriteset(spriteset_BR387d_GatEX, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 475)
+	template_train32px_old(0, 475)
 }
 
 spriteset(spriteset_BR387a_GatEXun, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1100)
+	template_train32px_old(0, 1100)
 }
 spriteset(spriteset_BR387b_GatEXun, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1125)
+	template_train32px_old(0, 1125)
 }
 spriteset(spriteset_BR387c_GatEXun, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1150)
+	template_train32px_old(0, 1150)
 }
 spriteset(spriteset_BR387d_GatEXun, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1175)
+	template_train32px_old(0, 1175)
 }
 
 
 spriteset(spriteset_BR387a_HExpress, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 200)
+	template_train32px_old(0, 200)
 }
 spriteset(spriteset_BR387b_HExpress, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 225)
+	template_train32px_old(0, 225)
 }
 spriteset(spriteset_BR387c_HExpress, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 250)
+	template_train32px_old(0, 250)
 }
 spriteset(spriteset_BR387d_HExpress, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 275)
+	template_train32px_old(0, 275)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR387_a,cargo_subtype){

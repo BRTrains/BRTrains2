@@ -1,9 +1,9 @@
 
 spriteset (spriteset_br755a, "gfx/BR755.png") { 
-	template_train28px(0,0)
+	template_train28px_old(0,0)
  }
  spriteset (spriteset_br755b, "gfx/BR755.png") { 
-	template_train28px(0,23)
+	template_train28px_old(0,23)
  }
  spriteset (spriteset_br755c, "gfx/BR755.png") { 
 	template_train24px(0,46)

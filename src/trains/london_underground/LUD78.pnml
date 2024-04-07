@@ -3,23 +3,23 @@ spriteset(spriteset_LUDStock_Purchase, "gfx/LondonUnderground/LU_D78.png") {
 }
 
 spriteset(spriteset_LUDStocka_TfL, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 0)
+	template_train32px_old(0, 0)
 }
 spriteset(spriteset_LUDStockb_TfL, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 25)
+	template_train32px_old(0, 25)
 }
 spriteset(spriteset_LUDStockc_TfL, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 50)
+	template_train32px_old(0, 50)
 }
 
 spriteset(spriteset_LUDStocka_TfLPrefurb, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 375)
+	template_train32px_old(0, 375)
 }
 spriteset(spriteset_LUDStockb_TfLPrefurb, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 400)
+	template_train32px_old(0, 400)
 }
 spriteset(spriteset_LUDStockc_TfLPrefurb, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 425)
+	template_train32px_old(0, 425)
 }
 
 

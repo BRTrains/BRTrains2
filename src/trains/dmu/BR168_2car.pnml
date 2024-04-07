@@ -3,31 +3,31 @@ spriteset(spriteset_BR168_Purchase, "gfx/BR168.png") {
 }
 
 spriteset(spriteset_BR168a_ChilternTurboBlue, "gfx/BR168.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 spriteset(spriteset_BR168b_ChilternTurboBlue, "gfx/BR168.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR168a_ChilternNetworkBlue, "gfx/BR168.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 spriteset(spriteset_BR168b_ChilternNetworkBlue, "gfx/BR168.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR168a_ChilternTurboGrey, "gfx/BR168.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 spriteset(spriteset_BR168b_ChilternTurboGrey, "gfx/BR168.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_BR168a_ChilternNetworkGrey, "gfx/BR168.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 spriteset(spriteset_BR168b_ChilternNetworkGrey, "gfx/BR168.png") {
-	template_train32px(0, 288)
+	template_train32px_old(0, 288)
 }
 
 

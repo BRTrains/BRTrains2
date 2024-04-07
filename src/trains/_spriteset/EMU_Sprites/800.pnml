@@ -20,112 +20,112 @@ spriteset(spriteset_BR810_purchase, "gfx/BR80X.png") {
 
 
 spriteset(spriteset_BR80X_front_LNER, "gfx/BR80X.png") {
-	template_train32px(0, 0)
+	template_train32px_old(0, 0)
 }
 spriteset(spriteset_BR80X_middle_LNER, "gfx/BR80X.png") {
-	template_train32px(0, 25)
+	template_train32px_old(0, 25)
 }
 spriteset(spriteset_BR80X_rear_LNER, "gfx/BR80X.png") {
-	template_train32px(0, 50)
+	template_train32px_old(0, 50)
 }
 
 spriteset(spriteset_BR80X_front_GWR, "gfx/BR80X.png") {
-	template_train32px(0, 75)
+	template_train32px_old(0, 75)
 }
 spriteset(spriteset_BR80X_middle_GWR, "gfx/BR80X.png") {
-	template_train32px(0, 100)
+	template_train32px_old(0, 100)
 }
 spriteset(spriteset_BR80X_rear_GWR, "gfx/BR80X.png") {
-	template_train32px(0, 125)
+	template_train32px_old(0, 125)
 }
 
 spriteset(spriteset_BR80X_front_Lumo, "gfx/BR80X.png") {
-	template_train32px(0, 150)
+	template_train32px_old(0, 150)
 }
 spriteset(spriteset_BR80X_middle_Lumo, "gfx/BR80X.png") {
-	template_train32px(0, 175)
+	template_train32px_old(0, 175)
 }
 spriteset(spriteset_BR80X_rear_Lumo, "gfx/BR80X.png") {
-	template_train32px(0, 200)
+	template_train32px_old(0, 200)
 }
 
 spriteset(spriteset_BR80X_front_EMR, "gfx/BR80X.png") {
-	template_train32px(0, 225)
+	template_train32px_old(0, 225)
 }
 spriteset(spriteset_BR80X_middle_EMR, "gfx/BR80X.png") {
-	template_train32px(0, 250)
+	template_train32px_old(0, 250)
 }
 spriteset(spriteset_BR80X_rear_EMR, "gfx/BR80X.png") {
-	template_train32px(0, 275)
+	template_train32px_old(0, 275)
 }
 
 spriteset(spriteset_BR80X_front_TPE, "gfx/BR80X.png") {
-	template_train32px(0, 300)
+	template_train32px_old(0, 300)
 }
 spriteset(spriteset_BR80X_middle_TPE, "gfx/BR80X.png") {
-	template_train32px(0, 325)
+	template_train32px_old(0, 325)
 }
 spriteset(spriteset_BR80X_rear_TPE, "gfx/BR80X.png") {
-	template_train32px(0, 350)
+	template_train32px_old(0, 350)
 }
 
 spriteset(spriteset_BR80X_front_HullTrains, "gfx/BR80X.png") {
-	template_train32px(0, 375)
+	template_train32px_old(0, 375)
 }
 spriteset(spriteset_BR80X_middle_HullTrains, "gfx/BR80X.png") {
-	template_train32px(0, 400)
+	template_train32px_old(0, 400)
 }
 spriteset(spriteset_BR80X_middle_special_HullTrains, "gfx/BR80X.png") {
-	template_train32px(172, 400)
+	template_train32px_old(172, 400)
 }
 spriteset(spriteset_BR80X_rear_HullTrains, "gfx/BR80X.png") {
-	template_train32px(0, 425)
+	template_train32px_old(0, 425)
 }
 
 spriteset(spriteset_BR80X_front_VTEC, "gfx/BR80X.png") {
-	template_train32px(0, 450)
+	template_train32px_old(0, 450)
 }
 spriteset(spriteset_BR80X_middle_VTEC, "gfx/BR80X.png") {
-	template_train32px(0, 475)
+	template_train32px_old(0, 475)
 }
 spriteset(spriteset_BR80X_rear_VTEC, "gfx/BR80X.png") {
-	template_train32px(0, 500)
+	template_train32px_old(0, 500)
 }
 
 spriteset(spriteset_BR80X_front_GWRPride, "gfx/BR80X.png") {
-	template_train32px(0, 525)
+	template_train32px_old(0, 525)
 }
 spriteset(spriteset_BR80X_middle_GWRPride, "gfx/BR80X.png") {
-	template_train32px(0, 550)
+	template_train32px_old(0, 550)
 }
 spriteset(spriteset_BR80X_rear_GWRPride, "gfx/BR80X.png") {
-	template_train32px(0, 575)
+	template_train32px_old(0, 575)
 }
 
 spriteset(spriteset_BR80X_front_Hitachi, "gfx/BR80X.png") {
-	template_train32px(0, 600)
+	template_train32px_old(0, 600)
 }
 spriteset(spriteset_BR80X_middle_Hitachi, "gfx/BR80X.png") {
-	template_train32px(0, 625)
+	template_train32px_old(0, 625)
 }
 spriteset(spriteset_BR80X_rear_Hitachi, "gfx/BR80X.png") {
-	template_train32px(0, 650)
+	template_train32px_old(0, 650)
 }
 
 spriteset(spriteset_BR80X_front_Avanti, "gfx/BR80X.png") {
-	template_train32px(0, 675)
+	template_train32px_old(0, 675)
 }
 spriteset(spriteset_BR80X_middle_Avanti, "gfx/BR80X.png") {
-	template_train32px(0, 700)
+	template_train32px_old(0, 700)
 }
 spriteset(spriteset_BR80X_rear_Avanti, "gfx/BR80X.png") {
-	template_train32px(0, 725)
+	template_train32px_old(0, 725)
 }
 spriteset(spriteset_BR80X_middle2_Avanti, "gfx/BR80X.png") {
-	template_train32px(0, 750)
+	template_train32px_old(0, 750)
 }
 spriteset(spriteset_BR80X_middle3_Avanti, "gfx/BR80X.png") {
-	template_train32px(0, 775)
+	template_train32px_old(0, 775)
 }
 
 

@@ -3,7 +3,7 @@ spriteset(spriteset_Kestrel_Purchase, "gfx/diesel/Kestrel.png") {
 }
 
 spriteset(spriteset_Kestrel_YellowBlack, "gfx/diesel/Kestrel.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 switch(FEAT_TRAINS,SELF, sw_Kestrel,cargo_subtype){    

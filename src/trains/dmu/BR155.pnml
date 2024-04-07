@@ -3,35 +3,35 @@ spriteset(spriteset_BR155_Purchase, "gfx/BR155a.png") {
 }
 
 spriteset(spriteset_BR155a_Regional, "gfx/BR155a.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR155a_WYPTEMetro, "gfx/BR155a.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR155a_NorthernRail, "gfx/BR155a.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR155a_Northern, "gfx/BR155a.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR155b_Regional, "gfx/BR155b.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR155b_WYPTEMetro, "gfx/BR155b.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR155b_NorthernRail, "gfx/BR155b.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR155b_Northern, "gfx/BR155b.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 

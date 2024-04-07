@@ -4,63 +4,63 @@ spriteset(spriteset_BR375_3_Purchase, "gfx/Electrostar_v2.png") {
 }
 
 spriteset(spriteset_BR375_3a_SE_Blue, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1500)
+	template_train32px_old(0, 1500)
 }
 
 spriteset(spriteset_BR375_3b_SE_Blue, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1525)
+	template_train32px_old(0, 1525)
 }
 
 spriteset(spriteset_BR375_3c_SE_Blue, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1550)
+	template_train32px_old(0, 1550)
 }
 
 spriteset(spriteset_BR375_3a_SE_Blue_Stripe, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1300)
+	template_train32px_old(0, 1300)
 }
 
 spriteset(spriteset_BR375_3b_SE_Blue_Stripe, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1325)
+	template_train32px_old(0, 1325)
 }
 
 spriteset(spriteset_BR375_3c_SE_Blue_Stripe, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1350)
+	template_train32px_old(0, 1350)
 }
 
 spriteset(spriteset_BR375_3a_SE_Yellow_Stripe, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1400)
+	template_train32px_old(0, 1400)
 }
 
 spriteset(spriteset_BR375_3b_SE_Yellow_Stripe, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1425)
+	template_train32px_old(0, 1425)
 }
 
 spriteset(spriteset_BR375_3c_SE_Yellow_Stripe, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1450)
+	template_train32px_old(0, 1450)
 }
 
 spriteset(spriteset_BR375_3a_SE_Yellow, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1600)
+	template_train32px_old(0, 1600)
 }
 
 spriteset(spriteset_BR375_3b_SE_Yellow, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1625)
+	template_train32px_old(0, 1625)
 }
 
 spriteset(spriteset_BR375_3c_SE_Yellow, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1650)
+	template_train32px_old(0, 1650)
 }
 
 spriteset(spriteset_BR375_3a_SE_Refurb_Blue, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 600)
+	template_train32px_old(0, 600)
 }
 
 spriteset(spriteset_BR375_3b_SE_Refurb_Blue, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 625)
+	template_train32px_old(0, 625)
 }
 
 spriteset(spriteset_BR375_3c_SE_Refurb_Blue, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 650)
+	template_train32px_old(0, 650)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR375_3a,cargo_subtype){

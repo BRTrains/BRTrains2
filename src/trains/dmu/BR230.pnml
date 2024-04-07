@@ -7,30 +7,30 @@ spriteset(spriteset_BR230_2car_Purchase, "gfx/LondonUnderground/LU_D78.png") {
 }
 
 spriteset(spriteset_BR230a_TfW, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 300)
+	template_train32px_old(0, 300)
 }
 spriteset(spriteset_BR230b_TfW, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 350)
+	template_train32px_old(0, 350)
 }
 spriteset(spriteset_BR230c_TfW, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 325)
+	template_train32px_old(0, 325)
 }
 
 spriteset(spriteset_BR230a_LNWR, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 225)
+	template_train32px_old(0, 225)
 }
 spriteset(spriteset_BR230b_LNWR, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 275)
+	template_train32px_old(0, 275)
 }
 
 spriteset(spriteset_BR230a_VivaRail, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 450)
+	template_train32px_old(0, 450)
 }
 spriteset(spriteset_BR230b_VivaRail, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 500)
+	template_train32px_old(0, 500)
 }
 spriteset(spriteset_BR230c_VivaRail, "gfx/LondonUnderground/LU_D78.png") {
-	template_train32px(0, 475)
+	template_train32px_old(0, 475)
 }
 
 

@@ -3,16 +3,16 @@ spriteset(spriteset_BR379_Purchase, "gfx/Electrostar_v2.png") {
 }
 
 spriteset(spriteset_BR379a_GA_White, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1000)
+	template_train32px_old(0, 1000)
 }
 spriteset(spriteset_BR379b_GA_White, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1025)
+	template_train32px_old(0, 1025)
 }
 spriteset(spriteset_BR379c_GA_White, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1050)
+	template_train32px_old(0, 1050)
 }
 spriteset(spriteset_BR379d_GA_White, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1075)
+	template_train32px_old(0, 1075)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR379a,cargo_subtype){

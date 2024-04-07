@@ -3,47 +3,47 @@ spriteset(spriteset_BR31_Purchase, "gfx/BR31.png") {
 }
 
 spriteset(spriteset_BR31_BRGreen, "gfx/BR31.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_BR31_BRBlue, "gfx/BR31.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR31_BRBlueAlt, "gfx/BR31.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR31_NetworkRail, "gfx/BR31.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_BR31_Freightliner, "gfx/BR31.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR31_Intercity, "gfx/BR31.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_BR31_EWS, "gfx/BR31.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR31_Regional, "gfx/BR31.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_BR31_Wessex, "gfx/BR31.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_BR31_TopGear, "gfx/BR31.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BR31_NetworkRailAlt, "gfx/BR31.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 

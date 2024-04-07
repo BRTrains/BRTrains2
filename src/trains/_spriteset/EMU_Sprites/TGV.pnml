@@ -3,39 +3,39 @@ spriteset(spriteset_TGV_purchase, "gfx/EMU/TGV.png") {
 }
 
 spriteset(spriteset_TGV_Front_RoyalMail, "gfx/EMU/TGV.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 spriteset(spriteset_TGV_EndCoach_RoyalMail, "gfx/EMU/TGV.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 spriteset(spriteset_TGV_EndCoachReversed_RoyalMail, "gfx/EMU/TGV.png") {
 	template_train32px_reversed(0, 163)
 }
 spriteset(spriteset_TGV_MiddleCoach_RoyalMail, "gfx/EMU/TGV.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 spriteset(spriteset_TGV_Rear_RoyalMail, "gfx/EMU/TGV.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 
 spriteset(spriteset_TGV_Front_LaPoste, "gfx/EMU/TGV.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 spriteset(spriteset_TGV_EndCoach_LaPoste, "gfx/EMU/TGV.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 spriteset(spriteset_TGV_EndCoachReversed_LaPoste, "gfx/EMU/TGV.png") {
 	template_train32px_reversed(0, 38)
 }
 spriteset(spriteset_TGV_LiveriedCoach_LaPoste, "gfx/EMU/TGV.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 spriteset(spriteset_TGV_PlainCoach_LaPoste, "gfx/EMU/TGV.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 spriteset(spriteset_TGV_Rear_LaPoste, "gfx/EMU/TGV.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 // Choose sprites depending on car position

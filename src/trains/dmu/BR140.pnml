@@ -3,11 +3,11 @@ spriteset(spriteset_BR140_Purchase, "gfx/BR140-143.png") {
 }
 
 spriteset(spriteset_BR140a_Blue, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 13)
+	template_train28px_old_pacer(0, 13)
 }
 
 spriteset(spriteset_BR140b_Blue, "gfx/BR140-143.png") {
-	template_train28px_pacer(0, 33)
+	template_train28px_old_pacer(0, 33)
 }
 
 

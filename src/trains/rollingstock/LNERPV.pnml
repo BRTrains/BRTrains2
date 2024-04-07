@@ -3,15 +3,15 @@ spriteset(spriteset_LNERPV_Purchase, "gfx/LNERTeakPV.png") {
 }
 
 spriteset(spriteset_LNERPV_Teak, "gfx/LNERTeakTK.png") {
-	template_train28px(0, 128)
+	template_train28px_old(0, 128)
 }
 
 spriteset(spriteset_LNERPV_BRMaroon, "gfx/LNERBRMaroon.png") {
-	template_train28px(0, 128)
+	template_train28px_old(0, 128)
 }
 
 spriteset(spriteset_LNERPV_BRCarmCream, "gfx/LNERBRCarmCream.png") {
-	template_train28px(0, 128)
+	template_train28px_old(0, 128)
 }
 
 switch(FEAT_TRAINS,SELF, sw_LNERPV,cargo_subtype){

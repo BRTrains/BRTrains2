@@ -3,47 +3,47 @@ spriteset(spriteset_BR158_3_Purchase, "gfx/BR158c.png") {
 }
 
 spriteset(spriteset_BR158c_NorthernRail, "gfx/BR158c.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_BR158c_RegionalExpress, "gfx/BR158c.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 
 spriteset(spriteset_BR158c_WYPTEMetro, "gfx/BR158c.png") {
-	template_train32px(0, 388)
+	template_train32px_old(0, 388)
 }
 
 spriteset(spriteset_BR158c_ArrivaTPNS, "gfx/BR158c.png") {
-	template_train32px(0, 413)
+	template_train32px_old(0, 413)
 }
 
 spriteset(spriteset_BR158c_FirstTP, "gfx/BR158c.png") {
-	template_train32px(0, 438)
+	template_train32px_old(0, 438)
 }
 
 spriteset(spriteset_BR158c_EMT, "gfx/BR158c.png") {
-	template_train32px(0, 463)
+	template_train32px_old(0, 463)
 }
 
 spriteset(spriteset_BR158c_SWT, "gfx/BR158c.png") {
-	template_train32px(0, 463)
+	template_train32px_old(0, 463)
 }
 
 spriteset(spriteset_BR158c_NSE, "gfx/BR158c.png") {
-	template_train32px(0, 488)
+	template_train32px_old(0, 488)
 }
 
 spriteset(spriteset_BR158c_FGW, "gfx/BR158c.png") {
-	template_train32px(0, 513)
+	template_train32px_old(0, 513)
 }
 
 spriteset(spriteset_BR158c_Northern, "gfx/BR158c.png") {
-	template_train32px(0, 538)
+	template_train32px_old(0, 538)
 }
 
 spriteset(spriteset_BR158c_SWR, "gfx/BR158c.png") {
-	template_train32px(0, 613)
+	template_train32px_old(0, 613)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR158_3,cargo_subtype){

@@ -3,47 +3,47 @@ spriteset(spriteset_BR378_Purchase, "gfx/Electrostar_v2.png") {
 }
 
 spriteset(spriteset_BR378a_overground, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 300)
+	template_train32px_old(0, 300)
 }
 spriteset(spriteset_BR378b_overground, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 325)
+	template_train32px_old(0, 325)
 }
 spriteset(spriteset_BR378c_overground, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 350)
+	template_train32px_old(0, 350)
 }
 spriteset(spriteset_BR378d_overground, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 375)
+	template_train32px_old(0, 375)
 }
 
 spriteset(spriteset_BR378_LOunwrapped, "gfx/Electrostar_v2.png") {
-	template_train32px(200, 350)
+	template_train32px_old(200, 350)
 }
 
 // Not an aventra, just a London Overground livery that looks like one...
 spriteset(spriteset_BR378a_Aventra, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1700)
+	template_train32px_old(0, 1700)
 }
 spriteset(spriteset_BR378b_Aventra, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1725)
+	template_train32px_old(0, 1725)
 }
 spriteset(spriteset_BR378c_Aventra, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1750)
+	template_train32px_old(0, 1750)
 }
 spriteset(spriteset_BR378d_Aventra, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 1775)
+	template_train32px_old(0, 1775)
 }
 
 spriteset(spriteset_BR378a_overground5, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 300)
+	template_train32px_old(0, 300)
 }
 spriteset(spriteset_BR378b_overground5, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 325)
+	template_train32px_old(0, 325)
 }
 spriteset(spriteset_BR378c_overground5, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 350)
+	template_train32px_old(0, 350)
 }
 spriteset(spriteset_BR378d_overground5, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 375)
+	template_train32px_old(0, 375)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR378a,cargo_subtype){

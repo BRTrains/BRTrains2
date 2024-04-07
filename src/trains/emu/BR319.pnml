@@ -3,120 +3,120 @@ spriteset(spriteset_BR319_Purchase, "gfx/BR319_v2.png") {
 }
 
 spriteset(spriteset_BR319a_Northern, "gfx/BR319_v2.png") {
-	template_train32px(0, 0)
+	template_train32px_old(0, 0)
 }
 spriteset(spriteset_BR319b_Northern, "gfx/BR319_v2.png") {
-	template_train32px(0, 25)
+	template_train32px_old(0, 25)
 }
 spriteset(spriteset_BR319c_Northern, "gfx/BR319_v2.png") {
-	template_train32px(0, 50)
+	template_train32px_old(0, 50)
 }
 spriteset(spriteset_BR319d_Northern, "gfx/BR319_v2.png") {
-	template_train32px(0, 75)
+	template_train32px_old(0, 75)
 }
 
 spriteset(spriteset_BR319a_BRTL, "gfx/BR319_v2.png") {
-	template_train32px(0, 100)
+	template_train32px_old(0, 100)
 }
 spriteset(spriteset_BR319b_BRTL, "gfx/BR319_v2.png") {
-	template_train32px(0, 125)
+	template_train32px_old(0, 125)
 }
 spriteset(spriteset_BR319c_BRTL, "gfx/BR319_v2.png") {
-	template_train32px(0, 150)
+	template_train32px_old(0, 150)
 }
 spriteset(spriteset_BR319d_BRTL, "gfx/BR319_v2.png") {
-	template_train32px(0, 175)
+	template_train32px_old(0, 175)
 }
 
 spriteset(spriteset_BR319a_Connex, "gfx/BR319_v2.png") {
-	template_train32px(0, 200)
+	template_train32px_old(0, 200)
 }
 spriteset(spriteset_BR319b_Connex, "gfx/BR319_v2.png") {
-	template_train32px(0, 225)
+	template_train32px_old(0, 225)
 }
 spriteset(spriteset_BR319c_Connex, "gfx/BR319_v2.png") {
-	template_train32px(0, 250)
+	template_train32px_old(0, 250)
 }
 spriteset(spriteset_BR319d_Connex, "gfx/BR319_v2.png") {
-	template_train32px(0, 275)
+	template_train32px_old(0, 275)
 }
 
 spriteset(spriteset_BR319a_FCC, "gfx/BR319_v2.png") {
-	template_train32px(0, 300)
+	template_train32px_old(0, 300)
 }
 spriteset(spriteset_BR319b_FCC, "gfx/BR319_v2.png") {
-	template_train32px(0, 325)
+	template_train32px_old(0, 325)
 }
 spriteset(spriteset_BR319c_FCC, "gfx/BR319_v2.png") {
-	template_train32px(0, 350)
+	template_train32px_old(0, 350)
 }
 spriteset(spriteset_BR319d_FCC, "gfx/BR319_v2.png") {
-	template_train32px(0, 375)
+	template_train32px_old(0, 375)
 }
 
 spriteset(spriteset_BR319a_GTRP, "gfx/BR319_v2.png") {
-	template_train32px(0, 400)
+	template_train32px_old(0, 400)
 }
 spriteset(spriteset_BR319b_GTRP, "gfx/BR319_v2.png") {
-	template_train32px(0, 425)
+	template_train32px_old(0, 425)
 }
 spriteset(spriteset_BR319c_GTRP, "gfx/BR319_v2.png") {
-	template_train32px(0, 450)
+	template_train32px_old(0, 450)
 }
 spriteset(spriteset_BR319d_GTRP, "gfx/BR319_v2.png") {
-	template_train32px(0, 475)
+	template_train32px_old(0, 475)
 }
 
 spriteset(spriteset_BR319a_GTRB, "gfx/BR319_v2.png") {
-	template_train32px(0, 500)
+	template_train32px_old(0, 500)
 }
 spriteset(spriteset_BR319b_GTRB, "gfx/BR319_v2.png") {
-	template_train32px(0, 525)
+	template_train32px_old(0, 525)
 }
 spriteset(spriteset_BR319c_GTRB, "gfx/BR319_v2.png") {
-	template_train32px(0, 550)
+	template_train32px_old(0, 550)
 }
 spriteset(spriteset_BR319d_GTRB, "gfx/BR319_v2.png") {
-	template_train32px(0, 575)
+	template_train32px_old(0, 575)
 }
 
 spriteset(spriteset_BR319a_Southern, "gfx/BR319_v2.png") {
-	template_train32px(0, 600)
+	template_train32px_old(0, 600)
 }
 spriteset(spriteset_BR319b_Southern, "gfx/BR319_v2.png") {
-	template_train32px(0, 625)
+	template_train32px_old(0, 625)
 }
 spriteset(spriteset_BR319c_Southern, "gfx/BR319_v2.png") {
-	template_train32px(0, 650)
+	template_train32px_old(0, 650)
 }
 spriteset(spriteset_BR319d_Southern, "gfx/BR319_v2.png") {
-	template_train32px(0, 675)
+	template_train32px_old(0, 675)
 }
 
 spriteset(spriteset_BR319a_NSE, "gfx/BR319_v2.png") {
-	template_train32px(0, 700)
+	template_train32px_old(0, 700)
 }
 spriteset(spriteset_BR319b_NSE, "gfx/BR319_v2.png") {
-	template_train32px(0, 725)
+	template_train32px_old(0, 725)
 }
 spriteset(spriteset_BR319c_NSE, "gfx/BR319_v2.png") {
-	template_train32px(0, 750)
+	template_train32px_old(0, 750)
 }
 spriteset(spriteset_BR319d_NSE, "gfx/BR319_v2.png") {
-	template_train32px(0, 775)
+	template_train32px_old(0, 775)
 }
 
 spriteset(spriteset_BR319a_LondonMidland, "gfx/BR319_v2.png") {
-	template_train32px(0, 1100)
+	template_train32px_old(0, 1100)
 }
 spriteset(spriteset_BR319b_LondonMidland, "gfx/BR319_v2.png") {
-	template_train32px(0, 1125)
+	template_train32px_old(0, 1125)
 }
 spriteset(spriteset_BR319c_LondonMidland, "gfx/BR319_v2.png") {
-	template_train32px(0, 1150)
+	template_train32px_old(0, 1150)
 }
 spriteset(spriteset_BR319d_LondonMidland, "gfx/BR319_v2.png") {
-	template_train32px(0, 1175)
+	template_train32px_old(0, 1175)
 }
 
 

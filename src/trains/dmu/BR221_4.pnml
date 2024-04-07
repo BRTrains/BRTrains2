@@ -3,27 +3,27 @@ spriteset(spriteset_BR221_4_Purchase, "gfx/BR220a.png") {
 }
 
 spriteset(spriteset_BR221_4a_Virgin, "gfx/BR220a.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR221_4a_XC, "gfx/BR220a.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR221_4b_Virgin, "gfx/BR220b.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR221_4b_XC, "gfx/BR220b.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_BR221_4c_Virgin, "gfx/BR220c.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR221_4c_XC, "gfx/BR220c.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221_4a,cargo_subtype){

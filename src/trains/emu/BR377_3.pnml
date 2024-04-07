@@ -3,16 +3,16 @@ spriteset(spriteset_BR377_3_Purchase, "gfx/Electrostar_v2.png") {
 }
 
 spriteset(spriteset_BR377_3a_southern, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 500)
+	template_train32px_old(0, 500)
 }
 spriteset(spriteset_BR377_3b_southern, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 525)
+	template_train32px_old(0, 525)
 }
 spriteset(spriteset_BR377_3c_southern, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 550)
+	template_train32px_old(0, 550)
 }
 spriteset(spriteset_BR377_3d_southern, "gfx/Electrostar_v2.png") {
-	template_train32px(0, 575)
+	template_train32px_old(0, 575)
 }
 
 

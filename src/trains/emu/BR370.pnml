@@ -3,7 +3,7 @@ spriteset(spriteset_BR370_Purchase, "gfx/BR370.png") {
 }
 
 spriteset(spriteset_BR370_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR370,cargo_subtype){
@@ -88,43 +88,43 @@ item (FEAT_TRAINS, item_BR370, 125) {
 }
 
 spriteset(spriteset_370_TF_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 88)
+	template_train32px_old(0, 88)
 }
 
 spriteset(spriteset_370_TU_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_370_TS_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_370_TRSB_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 spriteset(spriteset_370_TBF_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_370_NDM_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 
 spriteset(spriteset_370_TRSBR_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_370_TBFR_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 
 spriteset(spriteset_370_NDMR_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 
 spriteset(spriteset_370_DTS_Intercity, "gfx/BR370.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_TF,cargo_subtype){

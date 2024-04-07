@@ -1,9 +1,9 @@
 
 spriteset (spriteset_br231a, "gfx/BR231.png") { 
-	template_train28px(0,0)
+	template_train28px_old(0,0)
  }
  spriteset (spriteset_br231b, "gfx/BR231.png") { 
-	template_train28px(0,23)
+	template_train28px_old(0,23)
  }
  spriteset (spriteset_br231c, "gfx/BR231.png") { 
 	template_train24px(0,46)

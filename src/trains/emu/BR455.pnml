@@ -11,145 +11,145 @@ spriteset(spriteset_BR4559_Purchase, "gfx/BR455_v2.png") {
 }
 
 spriteset(spriteset_BR4557a_BRB, "gfx/BR455_v2.png") {
-	template_train32px(0, 150)
+	template_train32px_old(0, 150)
 }
 spriteset(spriteset_BR4558a_BRB, "gfx/BR455_v2.png") {
-	template_train32px(0, 150)
+	template_train32px_old(0, 150)
 }
 
 spriteset(spriteset_BR455tso_BRB, "gfx/BR455_v2.png") {
-	template_train32px(0, 200)
+	template_train32px_old(0, 200)
 }
 
 spriteset(spriteset_BR455mso_BRB, "gfx/BR455_v2.png") {
-	template_train32px(0, 200)
+	template_train32px_old(0, 200)
 }
 
 spriteset(spriteset_BR4557tso_BRB, "gfx/BR455_v2.png") {
-	template_train32px(0, 200)
+	template_train32px_old(0, 200)
 }
 
 spriteset(spriteset_BR4557d_BRB, "gfx/BR455_v2.png") {
-	template_train32px(0, 175)
+	template_train32px_old(0, 175)
 }
 
 spriteset(spriteset_BR4558d_BRB, "gfx/BR455_v2.png") {
-	template_train32px(0, 175)
+	template_train32px_old(0, 175)
 }
 
 spriteset(spriteset_BR4557a_NSE, "gfx/BR455_v2.png") {
-	template_train32px(0, 225)
+	template_train32px_old(0, 225)
 }
 spriteset(spriteset_BR4558a_NSE, "gfx/BR455_v2.png") {
-	template_train32px(0, 225)
+	template_train32px_old(0, 225)
 }
 
 spriteset(spriteset_BR455tso_NSE, "gfx/BR455_v2.png") {
-	template_train32px(0, 275)
+	template_train32px_old(0, 275)
 }
 
 spriteset(spriteset_BR455mso_NSE, "gfx/BR455_v2.png") {
-	template_train32px(0, 275)
+	template_train32px_old(0, 275)
 }
 
 spriteset(spriteset_BR4557tso_NSE, "gfx/BR455_v2.png") {
-	template_train32px(0, 275)
+	template_train32px_old(0, 275)
 }
 
 spriteset(spriteset_BR4557d_NSE, "gfx/BR455_v2.png") {
-	template_train32px(0, 250)
+	template_train32px_old(0, 250)
 }
 
 spriteset(spriteset_BR4558d_NSE, "gfx/BR455_v2.png") {
-	template_train32px(0, 250)
+	template_train32px_old(0, 250)
 }
 
 spriteset(spriteset_BR4557a_SWT_Old, "gfx/BR455_v2.png") {
-	template_train32px(0, 450)
+	template_train32px_old(0, 450)
 }
 
 spriteset(spriteset_BR4558a_SWT_Old, "gfx/BR455_v2.png") {
-	template_train32px(0, 450)
+	template_train32px_old(0, 450)
 }
 
 spriteset(spriteset_BR455tso_SWT_Old, "gfx/BR455_v2.png") {
-	template_train32px(0, 500)
+	template_train32px_old(0, 500)
 }
 
 spriteset(spriteset_BR455mso_SWT_Old, "gfx/BR455_v2.png") {
-	template_train32px(0, 500)
+	template_train32px_old(0, 500)
 }
 
 spriteset(spriteset_BR4557tso_SWT_Old, "gfx/BR455_v2.png") {
-	template_train32px(0, 500)
+	template_train32px_old(0, 500)
 }
 
 spriteset(spriteset_BR4557d_SWT_Old, "gfx/BR455_v2.png") {
-	template_train32px(0, 475)
+	template_train32px_old(0, 475)
 }
 
 spriteset(spriteset_BR4558d_SWT_Old, "gfx/BR455_v2.png") {
-	template_train32px(0, 475)
+	template_train32px_old(0, 475)
 }
 
 spriteset(spriteset_BR4558a_Connex, "gfx/BR455_v2.png") {
-	template_train32px(0, 375)
+	template_train32px_old(0, 375)
 }
 
 spriteset(spriteset_BR455tso_Connex, "gfx/BR455_v2.png") {
-	template_train32px(0, 425)
+	template_train32px_old(0, 425)
 }
 
 spriteset(spriteset_BR455mso_Connex, "gfx/BR455_v2.png") {
-	template_train32px(0, 425)
+	template_train32px_old(0, 425)
 }
 
 spriteset(spriteset_BR4558d_Connex, "gfx/BR455_v2.png") {
-	template_train32px(0, 400)
+	template_train32px_old(0, 400)
 }
 
 spriteset(spriteset_BR4557a_SWT, "gfx/BR455_v2.png") {
-	template_train32px(0, 75)
+	template_train32px_old(0, 75)
 }
 
 spriteset(spriteset_BR4558a_SWT, "gfx/BR455_v2.png") {
-	template_train32px(0, 75)
+	template_train32px_old(0, 75)
 }
 
 spriteset(spriteset_BR455tso_SWT, "gfx/BR455_v2.png") {
-	template_train32px(0, 125)
+	template_train32px_old(0, 125)
 }
 
 spriteset(spriteset_BR455mso_SWT, "gfx/BR455_v2.png") {
-	template_train32px(0, 125)
+	template_train32px_old(0, 125)
 }
 
 spriteset(spriteset_BR4557tso_SWT, "gfx/BR455_v2.png") {
-	template_train32px(0, 125)
+	template_train32px_old(0, 125)
 }
 
 spriteset(spriteset_BR4557d_SWT, "gfx/BR455_v2.png") {
-	template_train32px(0, 100)
+	template_train32px_old(0, 100)
 }
 
 spriteset(spriteset_BR4558d_SWT, "gfx/BR455_v2.png") {
-	template_train32px(0, 100)
+	template_train32px_old(0, 100)
 }
 
 spriteset(spriteset_BR4558a_Southern, "gfx/BR455_v2.png") {
-	template_train32px(0, 300)
+	template_train32px_old(0, 300)
 }
 
 spriteset(spriteset_BR455tso_Southern, "gfx/BR455_v2.png") {
-	template_train32px(0, 350)
+	template_train32px_old(0, 350)
 }
 
 spriteset(spriteset_BR455mso_Southern, "gfx/BR455_v2.png") {
-	template_train32px(0, 350)
+	template_train32px_old(0, 350)
 }
 
 spriteset(spriteset_BR4558d_Southern, "gfx/BR455_v2.png") {
-	template_train32px(0, 325)
+	template_train32px_old(0, 325)
 }
 
 

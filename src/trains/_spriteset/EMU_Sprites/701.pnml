@@ -1,6 +1,6 @@
-spriteset (spriteset_br_701_front, "gfx/Aventra.png") { template_train32px(0, 100) }
-spriteset (spriteset_br_701_middle, "gfx/Aventra.png") { template_train32px(0, 125) }
-spriteset (spriteset_br_701_rear, "gfx/Aventra.png") { template_train32px(0, 175) }
+spriteset (spriteset_br_701_front, "gfx/Aventra.png") { template_train32px_old(0, 100) }
+spriteset (spriteset_br_701_middle, "gfx/Aventra.png") { template_train32px_old(0, 125) }
+spriteset (spriteset_br_701_rear, "gfx/Aventra.png") { template_train32px_old(0, 175) }
 
 spriteset (spriteset_br_701_purchase, "gfx/Aventra.png") {
 	template_purchase(200, 13)

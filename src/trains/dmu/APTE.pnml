@@ -3,15 +3,15 @@ spriteset(spriteset_APTE_Purchase, "gfx/APTE.png") {
 }
 
 spriteset(spriteset_APTEa_BRBlue, "gfx/APTE.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_APTEb_BRBlue, "gfx/APTE.png") {
-	template_train32px(0, 38)
+	template_train32px_old(0, 38)
 }
 
 spriteset(spriteset_APTEc_BRBlue, "gfx/APTE.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 switch(FEAT_TRAINS,SELF, sw_APTEa,cargo_subtype){

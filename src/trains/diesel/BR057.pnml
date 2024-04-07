@@ -3,35 +3,35 @@ spriteset(spriteset_BR57_Purchase, "gfx/BR47_BR57.png") {
 }
 
 spriteset(spriteset_BR57_Freightliner, "gfx/BR47_BR57.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 spriteset(spriteset_BR57_WCRC, "gfx/BR47_BR57.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 
 spriteset(spriteset_BR57_GWR, "gfx/BR47_BR57.png") {
-	template_train32px(0, 313)
+	template_train32px_old(0, 313)
 }
 
 spriteset(spriteset_BR57_ArrivaWales, "gfx/BR47_BR57.png") {
-	template_train32px(0, 338)
+	template_train32px_old(0, 338)
 }
 
 spriteset(spriteset_BR57_DRS, "gfx/BR47_BR57.png") {
-	template_train32px(0, 363)
+	template_train32px_old(0, 363)
 }
 
 spriteset(spriteset_BR57_VirginPretendolino, "gfx/BR47_BR57.png") {
-	template_train32px(0, 388)
+	template_train32px_old(0, 388)
 }
 
 spriteset(spriteset_BR57_NetworkRail, "gfx/BR47_BR57.png") {
-	template_train32px(0, 438)
+	template_train32px_old(0, 438)
 }
 
 spriteset(spriteset_BR57_GBRf, "gfx/BR47_BR57.png") {
-	template_train32px(0, 488)
+	template_train32px_old(0, 488)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR57,cargo_subtype){    

@@ -3,23 +3,23 @@ spriteset(spriteset_BR483_Purchase, "gfx/LondonUnderground/LU_1938.png") {
 }
 
 spriteset(spriteset_BR483a_Island, "gfx/LondonUnderground/LU_1938.png") {
-	template_train32px(0, 238)
+	template_train32px_old(0, 238)
 }
 spriteset(spriteset_BR483b_Island, "gfx/LondonUnderground/LU_1938.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 spriteset(spriteset_BR483c_Island, "gfx/LondonUnderground/LU_1938.png") {
-	template_train32px(0, 288)
+	template_train32px_old(0, 288)
 }
 
 spriteset(spriteset_BR483a_NSE, "gfx/LondonUnderground/LU_1938.png") {
-	template_train32px(0, 163)
+	template_train32px_old(0, 163)
 }
 spriteset(spriteset_BR483b_NSE, "gfx/LondonUnderground/LU_1938.png") {
-	template_train32px(0, 188)
+	template_train32px_old(0, 188)
 }
 spriteset(spriteset_BR483c_NSE, "gfx/LondonUnderground/LU_1938.png") {
-	template_train32px(0, 213)
+	template_train32px_old(0, 213)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR483a,cargo_subtype){

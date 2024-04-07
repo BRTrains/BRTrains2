@@ -3,51 +3,51 @@ spriteset(spriteset_BR143_Purchase, "gfx/BR140-143.png") {
 }
 
 spriteset(spriteset_BR143a_Regional, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 13)
+	template_train28px_old_pacer(213, 13)
 }
 
 spriteset(spriteset_BR143b_Regional, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 33)
+	template_train28px_old_pacer(213, 33)
 }
 
 spriteset(spriteset_BR143a_ValleyLines, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 53)
+	template_train28px_old_pacer(213, 53)
 }
 
 spriteset(spriteset_BR143b_ValleyLines, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 73)
+	template_train28px_old_pacer(213, 73)
 }
 
 spriteset(spriteset_BR143a_WYPTEMetro, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 93)
+	template_train28px_old_pacer(213, 93)
 }
 
 spriteset(spriteset_BR143b_WYPTEMetro, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 113)
+	template_train28px_old_pacer(213, 113)
 }
 
 spriteset(spriteset_BR143a_WessexYork, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 213)
+	template_train28px_old_pacer(213, 213)
 }
 
 spriteset(spriteset_BR143b_WessexYork, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 233)
+	template_train28px_old_pacer(213, 233)
 }
 
 spriteset(spriteset_BR143a_NorthernRail, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 293)
+	template_train28px_old_pacer(213, 293)
 }
 
 spriteset(spriteset_BR143b_NorthernRail, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 313)
+	template_train28px_old_pacer(213, 313)
 }
 
 spriteset(spriteset_BR143a_GWRGreen, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 413)
+	template_train28px_old_pacer(213, 413)
 }
 
 spriteset(spriteset_BR143b_GWRGreen, "gfx/BR140-143.png") {
-	template_train28px_pacer(213, 433)
+	template_train28px_old_pacer(213, 433)
 }
 
 

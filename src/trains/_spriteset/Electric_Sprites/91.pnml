@@ -7,45 +7,45 @@ spriteset(spriteset_BR91Standalone_Purchase, "gfx/BR91.png") {
 }
 
 spriteset(spriteset_BR91_IntercitySwallow, "gfx/BR91.png") {
-	template_train32px(0, 13)
+	template_train32px_old(0, 13)
 }
 spriteset(spriteset_BR91_IntercitySwallowr, "gfx/BR91.png") {
-	template_train32px(172, 13)
+	template_train32px_old(172, 13)
 }
 
 spriteset(spriteset_BR91_NatEx, "gfx/BR91.png") {
-	template_train32px(0, 138)
+	template_train32px_old(0, 138)
 }
 spriteset(spriteset_BR91_NatExr, "gfx/BR91.png") {
-	template_train32px(172, 138)
+	template_train32px_old(172, 138)
 }
 
 spriteset(spriteset_BR91_GNER, "gfx/BR91.png") {
-	template_train32px(0, 263)
+	template_train32px_old(0, 263)
 }
 spriteset(spriteset_BR91_GNERr, "gfx/BR91.png") {
-	template_train32px(172, 263)
+	template_train32px_old(172, 263)
 }
 
 spriteset(spriteset_BR91_EastCoast, "gfx/BR91.png") {
-	template_train32px(0, 388)
+	template_train32px_old(0, 388)
 }
 spriteset(spriteset_BR91_EastCoastr, "gfx/BR91.png") {
-	template_train32px(172, 388)
+	template_train32px_old(172, 388)
 }
 
 spriteset(spriteset_BR91_VirginEC, "gfx/BR91.png") {
- template_train32px(0, 513)
+ template_train32px_old(0, 513)
 }
 spriteset(spriteset_BR91_VirginECr, "gfx/BR91.png") {
-	template_train32px(172, 513)
+	template_train32px_old(172, 513)
 }
 
 spriteset(spriteset_BR91_LNER, "gfx/BR91.png") {
- template_train32px(0, 638)
+ template_train32px_old(0, 638)
 }
 spriteset(spriteset_BR91_LNERr, "gfx/BR91.png") {
-	template_train32px(172, 638)
+	template_train32px_old(172, 638)
 }
 
 

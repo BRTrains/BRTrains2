@@ -1,7 +1,7 @@
-spriteset (spriteset_br745a, "gfx/BR745.png") { template_train28px(0, 0) }
-spriteset (spriteset_br745b, "gfx/BR745.png") { template_train28px(0, 23) }
-spriteset (spriteset_br745c, "gfx/BR745.png") { template_train28px(0, 46) }
-spriteset (spriteset_br745d, "gfx/BR745.png") { template_train28px(0, 69) }
+spriteset (spriteset_br745a, "gfx/BR745.png") { template_train28px_old(0, 0) }
+spriteset (spriteset_br745b, "gfx/BR745.png") { template_train28px_old(0, 23) }
+spriteset (spriteset_br745c, "gfx/BR745.png") { template_train28px_old(0, 46) }
+spriteset (spriteset_br745d, "gfx/BR745.png") { template_train28px_old(0, 69) }
 
 spriteset (spriteset_br745_purchase, "gfx/BR745.png") {
 	template_purchase(160,0)

@@ -3,11 +3,11 @@ spriteset(spriteset_BR85_Purchase, "gfx/electric/BR8X.png") {
 }
 
 spriteset(spriteset_BR85_RailfreightDistribution, "gfx/electric/BR8X.png") {
-	template_train32px(0, 113)
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR85_BRBlue, "gfx/electric/BR8X.png") {
-	template_train32px(0, 63)
+	template_train32px_old(0, 63)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR85, cargo_subtype){
