@@ -6,7 +6,7 @@ spriteset(spriteset_EyeCandy, "gfx/EyeCandy.png") {
 	template_train20px(0, 13)
 }
 spriteset(spriteset_EyeCandy_Depot, "gfx/EyeCandy.png") {
-	template_train20px(0, 31)
+	template_train20px(0, 32)
 }
 
 switch(FEAT_TRAINS, SELF, sw_EyeCandy_AllowMove, num_vehs_in_consist)
