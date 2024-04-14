@@ -247,6 +247,11 @@ str_LNERA3_usage				:Express Passenger
 str_LNERA3_eos					:1959-1966
 str_LNERA3_liveries				:LNER Green, BR Wartime Black, BR Apple Green, BR Brunswick Green
 
+STR_NAME_LNERP2					:LNER Gresley P2
+str_LNERP2_usage				:Express Passenger
+str_LNERP2_eos					:1934-1936
+str_LNERP2_liveries				:LNER Green
+
 STR_NAME_Standard9F				:BR Standard Class 9F
 str_Standard9F_usage			:Freight/Mixed Traffic
 str_Standard9F_eos				:1935

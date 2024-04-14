@@ -12,6 +12,7 @@ sort(FEAT_TRAINS, [
  item_GreatBear,
  item_GWRHall,
  item_GNRA1,
+ item_LNERP2,
  item_LNERA3,
  item_Standard9F,
  item_BR08,
