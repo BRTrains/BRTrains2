@@ -252,6 +252,11 @@ str_LNERP2_usage				:Express Passenger
 str_LNERP2_eos					:1934-1936
 str_LNERP2_liveries				:LNER Green
 
+STR_NAME_WDTank				    :War Department 0-6-0 'Austerity Tank'
+str_WDTank_usage				:Low speed freight/shunting
+str_WDTank_eos				    :1960
+str_WDTank_liveries			    :Wartime Black
+
 STR_NAME_Standard9F				:BR Standard Class 9F
 str_Standard9F_usage			:Freight/Mixed Traffic
 str_Standard9F_eos				:1935
