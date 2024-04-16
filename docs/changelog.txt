@@ -1,10 +1,15 @@
 - Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
+- Added Class 321
 
 # v2.8
 - Added Furness Railway 0-4-0 'Coppernob'
 - Added Furness Railway 4-4-0 K2 'Large Seagull'
+- Added War Department "Austerity Tank"
+- Added LNER P2
 - Adjusted some purchase dates and model lifespans
 - HUGE template/alignment overhaul
+- Improved Class 67
+- Improved LNER company logo (purchase sprites)
 
 # v2.7 (2024-4-2)
 - Added BR Standard Class 9F
