@@ -9,10 +9,10 @@ spriteset (spriteset_br231a, "gfx/BR231.png") {
 	template_train24px(0,46)
  }
  spriteset (spriteset_br231d, "gfx/BR231.png") { 
-	template_train24px(0,67)
+	template_train24px(0,68)
  } 
 spriteset (spriteset_br231pp, "gfx/BR231.png") { 
-	template_train20px(0,88)
+	template_train20px(0,90)
  }
 
 spriteset (spriteset_br231_purchase, "gfx/BR231.png") {
