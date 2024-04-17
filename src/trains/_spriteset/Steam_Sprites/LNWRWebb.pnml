@@ -3,7 +3,7 @@ spriteset(spriteset_LNWRWebb_Purchase, "gfx/Steam/LNWRWebb.png") {
 }
 
 spriteset(spriteset_LNWRWebb_LNWRBlack, "gfx/Steam/LNWRWebb.png") {
-	template_train24px(0, 34)
+	template_train24px(0, 35)
 }
 
 spriteset(spriteset_LNWRWebb_BRBlack, "gfx/Steam/LNWRWebb.png") {

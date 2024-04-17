@@ -7,47 +7,47 @@ spriteset(spriteset_BRTTA_Mobil, "gfx/freight/BRTTA.png") {
 }
 
 spriteset(spriteset_BRTTA_Esso, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 32)
+	template_train20px(0, 33)
 }
 
 spriteset(spriteset_BRTTA_BP1, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 51)
+	template_train20px(0, 53)
 }
 
 spriteset(spriteset_BRTTA_Suko, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 70)
+	template_train20px(0, 73)
 }
 
 spriteset(spriteset_BRTTA_Gulf, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 89)
+	template_train20px(0, 93)
 }
 
 spriteset(spriteset_BRTTA_Shell1, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 108)
+	template_train20px(0, 113)
 }
 
 spriteset(spriteset_BRTTA_BP2, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 127)
+	template_train20px(0, 133)
 }
 
 spriteset(spriteset_BRTTA_BP3, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 146)
+	template_train20px(0, 153)
 }
 
 spriteset(spriteset_BRTTA_Murco, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 165)
+	template_train20px(0, 173)
 }
 
 spriteset(spriteset_BRTTA_Shell2, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 184)
+	template_train20px(0, 193)
 }
 
 spriteset(spriteset_BRTTA_Total, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 203)
+	template_train20px(0, 213)
 }
 
 spriteset(spriteset_BRTTA_VTG, "gfx/freight/BRTTA.png") {
-	template_train20px(0, 222)
+	template_train20px(0, 233)
 }
 
 random_switch(FEAT_TRAINS, SELF, sw_BRTTA_BP)
