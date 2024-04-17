@@ -1,336 +1,336 @@
-spriteset(spriteset_BRMk1SO_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1SO_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 13)
 }
 
-spriteset(spriteset_BRMk1TSO_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1TSO_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 13)
 }
 
-spriteset(spriteset_BRMk1SK_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1SK_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 13)
 }
 
-spriteset(spriteset_BRMk1FO_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1FO_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 26)
 }
 
-spriteset(spriteset_BRMk1FK_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1FK_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 39)
 }
 
-spriteset(spriteset_BRMk1CK_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1CK_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 52)
 }
 
-spriteset(spriteset_BRMk1BSK_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1BSK_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 65)
 }
 
-spriteset(spriteset_BRMk1BSO_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1BSO_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 65)
 }
 
-spriteset(spriteset_BRMk1BSOT_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1BSOT_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 65)
 }
 
-spriteset(spriteset_BRMk1BCK_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1BCK_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 78)
 }
 
-spriteset(spriteset_BRMk1BFK_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1BFK_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 91)
 }
 
-spriteset(spriteset_BRMk1BG_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1BG_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 104)
 }
 
-spriteset(spriteset_BRMk1RK_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1RK_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 117)
 }
 
-spriteset(spriteset_BRMk1RMB_Purchase, "gfx/BRMk1Purchase.png") {
+spriteset(spriteset_BRMk1RMB_Purchase, "gfx/Rolling Stock/BRMk1Purchase.png") {
 	template_purchase(0, 130)
 }
 
-spriteset(spriteset_BRMk1SO_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1SO_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1TSO_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1TSO_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1SK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1SK_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1FO_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1FO_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 36)
 }
 
-spriteset(spriteset_BRMk1FK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1FK_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 59)
 }
 
-spriteset(spriteset_BRMk1CK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1CK_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 82)
 }
 
-spriteset(spriteset_BRMk1BSK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1BSK_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSO_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1BSO_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1BSOT_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BCK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1BCK_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 128)
 }
 
-spriteset(spriteset_BRMk1BFK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1BFK_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 151)
 }
 
-spriteset(spriteset_BRMk1BG_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1BG_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 174)
 }
 
-spriteset(spriteset_BRMk1RK_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1RK_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 197)
 }
 
-spriteset(spriteset_BRMk1RMB_BRCarmCream, "gfx/BRMk1CarmCream.png") {
+spriteset(spriteset_BRMk1RMB_BRCarmCream, "gfx/Rolling Stock/BRMk1CarmCream.png") {
 	template_train28px_old(0, 220)
 }
 
-spriteset(spriteset_BRMk1SO_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1SO_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1TSO_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1TSO_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1SK_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1SK_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1FO_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1FO_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 36)
 }
 
-spriteset(spriteset_BRMk1FK_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1FK_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 59)
 }
 
-spriteset(spriteset_BRMk1CK_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1CK_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 82)
 }
 
-spriteset(spriteset_BRMk1BSK_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1BSK_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSO_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1BSO_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1BSOT_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BCK_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1BCK_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 128)
 }
 
-spriteset(spriteset_BRMk1BFK_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1BFK_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 151)
 }
 
-spriteset(spriteset_BRMk1BG_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1BG_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 174)
 }
 
-spriteset(spriteset_BRMk1RK_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1RK_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 197)
 }
 
-spriteset(spriteset_BRMk1RMB_BRChocCream, "gfx/BRMk1ChocCream.png") {
+spriteset(spriteset_BRMk1RMB_BRChocCream, "gfx/Rolling Stock/BRMk1ChocCream.png") {
 	template_train28px_old(0, 220)
 }
 
-spriteset(spriteset_BRMk1SO_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1SO_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1TSO_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1TSO_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1SK_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1SK_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1FO_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1FO_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 36)
 }
 
-spriteset(spriteset_BRMk1FK_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1FK_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 59)
 }
 
-spriteset(spriteset_BRMk1CK_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1CK_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 82)
 }
 
-spriteset(spriteset_BRMk1BSK_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1BSK_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSO_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1BSO_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1BSOT_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BCK_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1BCK_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 128)
 }
 
-spriteset(spriteset_BRMk1BFK_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1BFK_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 151)
 }
 
-spriteset(spriteset_BRMk1BG_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1BG_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 174)
 }
 
-spriteset(spriteset_BRMk1RK_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1RK_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 197)
 }
 
-spriteset(spriteset_BRMk1RMB_BRMalachite, "gfx/BRMk1Malachite.png") {
+spriteset(spriteset_BRMk1RMB_BRMalachite, "gfx/Rolling Stock/BRMk1Malachite.png") {
 	template_train28px_old(0, 220)
 }
 
-spriteset(spriteset_BRMk1SO_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1SO_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1TSO_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1TSO_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1SK_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1SK_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1FO_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1FO_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 36)
 }
 
-spriteset(spriteset_BRMk1FK_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1FK_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 59)
 }
 
-spriteset(spriteset_BRMk1CK_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1CK_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 82)
 }
 
-spriteset(spriteset_BRMk1BSK_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1BSK_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSO_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1BSO_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1BSOT_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BCK_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1BCK_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 128)
 }
 
-spriteset(spriteset_BRMk1BFK_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1BFK_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 151)
 }
 
-spriteset(spriteset_BRMk1BG_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1BG_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 174)
 }
 
-spriteset(spriteset_BRMk1RK_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1RK_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 197)
 }
 
-spriteset(spriteset_BRMk1RMB_BRMaroon, "gfx/BRMk1Maroon.png") {
+spriteset(spriteset_BRMk1RMB_BRMaroon, "gfx/Rolling Stock/BRMk1Maroon.png") {
 	template_train28px_old(0, 220)
 }
 
-spriteset(spriteset_BRMk1SO_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1SO_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1TSO_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1TSO_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1SK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1SK_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk1FO_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1FO_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 36)
 }
 
-spriteset(spriteset_BRMk1FK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1FK_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 59)
 }
 
-spriteset(spriteset_BRMk1CK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1CK_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 82)
 }
 
-spriteset(spriteset_BRMk1BSK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1BSK_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSO_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1BSO_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1BSOT_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 105)
 }
 
-spriteset(spriteset_BRMk1BCK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1BCK_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 128)
 }
 
-spriteset(spriteset_BRMk1BFK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1BFK_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 151)
 }
 
-spriteset(spriteset_BRMk1BG_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1BG_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 174)
 }
 
-spriteset(spriteset_BRMk1RK_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1RK_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 197)
 }
 
-spriteset(spriteset_BRMk1RMB_BRBlueGrey, "gfx/BRMk1BlueGrey.png") {
+spriteset(spriteset_BRMk1RMB_BRBlueGrey, "gfx/Rolling Stock/BRMk1BlueGrey.png") {
 	template_train28px_old(0, 220)
 }
 

@@ -1,27 +1,27 @@
-spriteset(spriteset_BRMk2ATSO_Purchase, "gfx/BRMk2Purchase.png") {
+spriteset(spriteset_BRMk2ATSO_Purchase, "gfx/Rolling Stock/BRMk2Purchase.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BRMk2AFO_Purchase, "gfx/BRMk2Purchase.png") {
+spriteset(spriteset_BRMk2AFO_Purchase, "gfx/Rolling Stock/BRMk2Purchase.png") {
 	template_purchase(0, 13)
 }
 
-spriteset(spriteset_BRMk2ABSO_Purchase, "gfx/BRMk2Purchase.png") {
+spriteset(spriteset_BRMk2ABSO_Purchase, "gfx/Rolling Stock/BRMk2Purchase.png") {
 	template_purchase(0, 26)
 }
 
-spriteset(spriteset_BRMk2DTSO_Purchase, "gfx/BRMk2Purchase.png") {
+spriteset(spriteset_BRMk2DTSO_Purchase, "gfx/Rolling Stock/BRMk2Purchase.png") {
 	template_purchase(0, 39)
 }
 
-spriteset(spriteset_BRMk2DFO_Purchase, "gfx/BRMk2Purchase.png") {
+spriteset(spriteset_BRMk2DFO_Purchase, "gfx/Rolling Stock/BRMk2Purchase.png") {
 	template_purchase(0, 52)
 }
 
-spriteset(spriteset_BRMk2DBSO_Purchase, "gfx/BRMk2Purchase.png") {
+spriteset(spriteset_BRMk2DBSO_Purchase, "gfx/Rolling Stock/BRMk2Purchase.png") {
 	template_purchase(0, 65)
 }
 
-spriteset(spriteset_BRMk2DDBSO_Purchase, "gfx/BRMk2Purchase.png") {
+spriteset(spriteset_BRMk2DDBSO_Purchase, "gfx/Rolling Stock/BRMk2Purchase.png") {
 	template_purchase(0, 78)
 }

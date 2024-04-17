@@ -1,59 +1,59 @@
-spriteset(spriteset_BRMk2ATSOBRBlue, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ATSOBRBlue, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 13)
 }
 
-spriteset(spriteset_BRMk2ATSONSE, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ATSONSE, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 163)
 }
 
-spriteset(spriteset_BRMk2ATSORegionalRailways, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ATSORegionalRailways, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 238)
 }
 
-spriteset(spriteset_BRMk2ATSOScotRail, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ATSOScotRail, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 313)
 }
 
-spriteset(spriteset_BRMk2ATSOWCRC, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ATSOWCRC, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 388)
 }
 
-spriteset(spriteset_BRMk2AFOBRBlue, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2AFOBRBlue, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 38)
 }
 
-spriteset(spriteset_BRMk2AFONSE, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2AFONSE, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 188)
 }
 
-spriteset(spriteset_BRMk2AFORegionalRailways, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2AFORegionalRailways, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 263)
 }
 
-spriteset(spriteset_BRMk2AFOScotRail, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2AFOScotRail, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 338)
 }
 
-spriteset(spriteset_BRMk2AFOWCRC, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2AFOWCRC, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 413)
 }
 
-spriteset(spriteset_BRMk2ABSOBRBlue, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ABSOBRBlue, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 63)
 }
 
-spriteset(spriteset_BRMk2ABSONSE, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ABSONSE, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 213)
 }
 
-spriteset(spriteset_BRMk2ABSORegionalRailways, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ABSORegionalRailways, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 288)
 }
 
-spriteset(spriteset_BRMk2ABSOScotRail, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ABSOScotRail, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 363)
 }
 
-spriteset(spriteset_BRMk2ABSOWCRC, "gfx/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2ABSOWCRC, "gfx/Rolling Stock/BRMk2A-C.png") {
 	template_trainBRMk2(0, 438)
 }
