@@ -21,7 +21,7 @@ switch(FEAT_TRAINS,SELF, sw_GWRHallT,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_GWRHall, extra_callback_info1) {
-	1: return item_GWRHallT;
+	0: return item_GWRHallT;
 	1: return item_GWRHallT;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
