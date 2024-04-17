@@ -3,7 +3,7 @@ spriteset(spriteset_BR13_Purchase, "gfx/BR13.png") {
 }
 
 spriteset(spriteset_BR13, "gfx/BR13.png") {
-	template_train20px(0, 32)
+	template_train20px(0, 33)
 }
 
 spriteset(spriteset_BR13_1, "gfx/BR13.png") {

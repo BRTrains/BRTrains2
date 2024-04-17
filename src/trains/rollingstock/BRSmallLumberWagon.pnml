@@ -7,11 +7,11 @@ spriteset(spriteset_SmallLumberWagon_Empty, "gfx/freight/Lumber_Wagon_Small.png"
 }
 
 spriteset(spriteset_SmallLumberWagon_Half, "gfx/freight/Lumber_Wagon_Small.png") {
-	template_train20px(0, 31)
+	template_train20px(0, 33)
 }
 
 spriteset(spriteset_SmallLumberWagon_Full, "gfx/freight/Lumber_Wagon_Small.png") {
-	template_train20px(0, 49)
+	template_train20px(0, 53)
 }
 
 // Called first, display an empty container if near empty, otherwise display based on percentage full
