@@ -1,80 +1,80 @@
-spriteset(spriteset_BRHHA, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA, "gfx/Freight/BRHHA.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BRHHA_empty, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_empty, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 13)
 }
 
-spriteset(spriteset_BRHHA_coal_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_coal_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 38)
 }
 
-spriteset(spriteset_BRHHA_coal_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_coal_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 63)
 }
 
-spriteset(spriteset_BRHHA_ironore_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_ironore_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 113)
 }
 
-spriteset(spriteset_BRHHA_ironore_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_ironore_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 138)
 }
 
-spriteset(spriteset_BRHHA_lime_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_lime_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 188)
 }
 
-spriteset(spriteset_BRHHA_lime_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_lime_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 213)
 }
 
-spriteset(spriteset_BRHHA_copperore_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_copperore_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 263)
 }
 
-spriteset(spriteset_BRHHA_copperore_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_copperore_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 288)
 }
 
-spriteset(spriteset_BRHHA_bauxite_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_bauxite_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 338)
 }
 
-spriteset(spriteset_BRHHA_bauxite_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_bauxite_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 363)
 }
 
-spriteset(spriteset_BRHHA_clay_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_clay_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 413)
 }
 
-spriteset(spriteset_BRHHA_clay_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_clay_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 438)
 }
 
-spriteset(spriteset_BRHHA_phosphate_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_phosphate_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 488)
 }
 
-spriteset(spriteset_BRHHA_phosphate_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_phosphate_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 513)
 }
 
-spriteset(spriteset_BRHHA_pyriteore_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_pyriteore_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 563)
 }
 
-spriteset(spriteset_BRHHA_pyriteore_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_pyriteore_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 588)
 }
 
-spriteset(spriteset_BRHHA_sand_half, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_sand_half, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 638)
 }
 
-spriteset(spriteset_BRHHA_sand_full, "gfx/freight/BRHHA.png") {
+spriteset(spriteset_BRHHA_sand_full, "gfx/Freight/BRHHA.png") {
 	template_train32px4viewLowered(0, 663)
 }
 

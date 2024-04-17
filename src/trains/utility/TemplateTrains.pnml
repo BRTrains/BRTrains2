@@ -1,42 +1,42 @@
-spriteset(spriteset_Utility12_Purchase, "gfx/template/12px.png") {
+spriteset(spriteset_Utility12_Purchase, "gfx/Template/12px.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_Utility12, "gfx/template/12px.png") {
+spriteset(spriteset_Utility12, "gfx/Template/12px.png") {
 	template_train12px(0, 13)
 }
 
-spriteset(spriteset_Utility16_Purchase, "gfx/template/16px.png") {
+spriteset(spriteset_Utility16_Purchase, "gfx/Template/16px.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_Utility16, "gfx/template/16px.png") {
+spriteset(spriteset_Utility16, "gfx/Template/16px.png") {
 	template_train16px(0, 13)
 }
 
-spriteset(spriteset_Utility20_Purchase, "gfx/template/20px.png") {
+spriteset(spriteset_Utility20_Purchase, "gfx/Template/20px.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_Utility20, "gfx/template/20px.png") {
+spriteset(spriteset_Utility20, "gfx/Template/20px.png") {
 	template_train20px(0, 13)
 }
 
-spriteset(spriteset_Utility24_Purchase, "gfx/template/24px.png") {
+spriteset(spriteset_Utility24_Purchase, "gfx/Template/24px.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_Utility24, "gfx/template/24px.png") {
+spriteset(spriteset_Utility24, "gfx/Template/24px.png") {
 	template_train24px(0, 13)
 }
 
-spriteset(spriteset_Utility28_Purchase, "gfx/template/28px.png") {
+spriteset(spriteset_Utility28_Purchase, "gfx/Template/28px.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_Utility28, "gfx/template/28px.png") {
+spriteset(spriteset_Utility28, "gfx/Template/28px.png") {
 	template_train28px(0, 13)
 }
 
-spriteset(spriteset_Utility32_Purchase, "gfx/template/32px.png") {
+spriteset(spriteset_Utility32_Purchase, "gfx/Template/32px.png") {
 	template_purchase(0, 0)
 }
-spriteset(spriteset_Utility32, "gfx/template/32px.png") {
+spriteset(spriteset_Utility32, "gfx/Template/32px.png") {
 	template_train32px(0, 13)
 }
 

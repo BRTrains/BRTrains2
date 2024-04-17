@@ -1,16 +1,16 @@
-spriteset(spriteset_SmallLumberWagon, "gfx/freight/Lumber_Wagon_Small.png") {
+spriteset(spriteset_SmallLumberWagon, "gfx/Freight/Lumber_Wagon_Small.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_SmallLumberWagon_Empty, "gfx/freight/Lumber_Wagon_Small.png") {
+spriteset(spriteset_SmallLumberWagon_Empty, "gfx/Freight/Lumber_Wagon_Small.png") {
 	template_train20px(0, 13)
 }
 
-spriteset(spriteset_SmallLumberWagon_Half, "gfx/freight/Lumber_Wagon_Small.png") {
+spriteset(spriteset_SmallLumberWagon_Half, "gfx/Freight/Lumber_Wagon_Small.png") {
 	template_train20px(0, 33)
 }
 
-spriteset(spriteset_SmallLumberWagon_Full, "gfx/freight/Lumber_Wagon_Small.png") {
+spriteset(spriteset_SmallLumberWagon_Full, "gfx/Freight/Lumber_Wagon_Small.png") {
 	template_train20px(0, 53)
 }
 

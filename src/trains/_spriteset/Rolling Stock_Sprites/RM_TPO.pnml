@@ -1,22 +1,22 @@
-spriteset(spriteset_RMTPO_Purchase, "gfx/freight/RM_TPO.png") {
+spriteset(spriteset_RMTPO_Purchase, "gfx/Freight/RM_TPO.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_RMTPO_NoDoors, "gfx/freight/RM_TPO.png") {
+spriteset(spriteset_RMTPO_NoDoors, "gfx/Freight/RM_TPO.png") {
 	template_train28px_old(0, 13)
 }
-spriteset(spriteset_RMTPO_2Door, "gfx/freight/RM_TPO.png") {
+spriteset(spriteset_RMTPO_2Door, "gfx/Freight/RM_TPO.png") {
 	template_train28px_old(0, 36)
 }
-spriteset(spriteset_RMTPO_3Door, "gfx/freight/RM_TPO.png") {
+spriteset(spriteset_RMTPO_3Door, "gfx/Freight/RM_TPO.png") {
 	template_train28px_old(0, 59)
 }
 
-spriteset(spriteset_RMTPO_PCV, "gfx/freight/RM_TPO.png") {
+spriteset(spriteset_RMTPO_PCV, "gfx/Freight/RM_TPO.png") {
 	template_train28px_old(0, 82)
 }
 
-spriteset(spriteset_RMTPO_PCVr, "gfx/freight/RM_TPO.png") {
+spriteset(spriteset_RMTPO_PCVr, "gfx/Freight/RM_TPO.png") {
 	template_train28px_old(0, 105)
 }
 

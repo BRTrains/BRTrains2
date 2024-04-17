@@ -1,8 +1,8 @@
-spriteset(spriteset_Kestrel_Purchase, "gfx/diesel/Kestrel.png") {
+spriteset(spriteset_Kestrel_Purchase, "gfx/Diesel/Kestrel.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_Kestrel_YellowBlack, "gfx/diesel/Kestrel.png") {
+spriteset(spriteset_Kestrel_YellowBlack, "gfx/Diesel/Kestrel.png") {
 	template_train32px_old(0, 13)
 }
 

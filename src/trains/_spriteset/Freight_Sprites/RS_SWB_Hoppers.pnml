@@ -1,75 +1,75 @@
-spriteset(spriteset_RS_SWB_Hopper, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_RS_SWB_Hopper_covered_grey, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_covered_grey, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(0, 99)
 }
-spriteset(spriteset_RS_SWB_Hopper_covered_brown, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_covered_brown, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(62, 99)
 }
 
-spriteset(spriteset_RS_SWB_Hopper_coal_grey_empty, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_grey_empty, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(0, 14)
 }
-spriteset(spriteset_RS_SWB_Hopper_coal_grey_quarter, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_grey_quarter, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(62, 14)
 }
-spriteset(spriteset_RS_SWB_Hopper_coal_grey_half, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_grey_half, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(124, 14)
 }
-spriteset(spriteset_RS_SWB_Hopper_coal_grey_threequarter, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_grey_threequarter, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(186, 14)
 }
-spriteset(spriteset_RS_SWB_Hopper_coal_grey_full, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_grey_full, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(248, 14)
 }
 
-spriteset(spriteset_RS_SWB_Hopper_coal_brown_empty, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_brown_empty, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(0, 35)
 }
-spriteset(spriteset_RS_SWB_Hopper_coal_brown_quarter, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_brown_quarter, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(62, 35)
 }
-spriteset(spriteset_RS_SWB_Hopper_coal_brown_half, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_brown_half, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(124, 35)
 }
-spriteset(spriteset_RS_SWB_Hopper_coal_brown_threequarter, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_brown_threequarter, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(186, 35)
 }
-spriteset(spriteset_RS_SWB_Hopper_coal_brown_full, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_coal_brown_full, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(248, 35)
 }
 
-spriteset(spriteset_RS_SWB_Hopper_ironore_grey_empty, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_grey_empty, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(0, 56)
 }
-spriteset(spriteset_RS_SWB_Hopper_ironore_grey_quarter, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_grey_quarter, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(62, 56)
 }
-spriteset(spriteset_RS_SWB_Hopper_ironore_grey_half, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_grey_half, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(124, 56)
 }
-spriteset(spriteset_RS_SWB_Hopper_ironore_grey_threequarter, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_grey_threequarter, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(186, 56)
 }
-spriteset(spriteset_RS_SWB_Hopper_ironore_grey_full, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_grey_full, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(248, 56)
 }
 
-spriteset(spriteset_RS_SWB_Hopper_ironore_brown_empty, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_brown_empty, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(0, 77)
 }
-spriteset(spriteset_RS_SWB_Hopper_ironore_brown_quarter, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_brown_quarter, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(62, 77)
 }
-spriteset(spriteset_RS_SWB_Hopper_ironore_brown_half, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_brown_half, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(124, 77)
 }
-spriteset(spriteset_RS_SWB_Hopper_ironore_brown_threequarter, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_brown_threequarter, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(186, 77)
 }
-spriteset(spriteset_RS_SWB_Hopper_ironore_brown_full, "gfx/freight/RS_SWB_Hopper.png") {
+spriteset(spriteset_RS_SWB_Hopper_ironore_brown_full, "gfx/Freight/RS_SWB_Hopper.png") {
 	template_train20px_4view(248, 77)
 }
 
