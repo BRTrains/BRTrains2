@@ -47,7 +47,7 @@ switch(FEAT_TRAINS, SELF, switch_BR800_9car_subtype_text, cargo_subtype) {
 	1: return string(str_GWRGreen);
 	2: return string(STR_LIVERY_BR800_VTEC);
 	3: return string(str_GWRPride);
-	3: return string(str_HitachiWhite);
+	4: return string(str_HitachiWhite);
 	return CB_RESULT_NO_TEXT;
 }
 
