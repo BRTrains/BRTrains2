@@ -4,7 +4,7 @@ item(FEAT_TRAINS, item_TGV, 589) {
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2019, 09, 16);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
-		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
+		vehicle_life: VEHICLE_NEVER_EXPIRES;
 		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
 		default_cargo_type:				MAIL;
 		refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);

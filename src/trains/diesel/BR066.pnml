@@ -110,7 +110,7 @@ item (FEAT_TRAINS, item_BR66, 266) {
 		name: 							string(STR_NAME_BR66);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1998,4,21);
-		model_life:						19;
+		model_life:						VEHICLE_NEVER_EXPIRES;
 		retire_early:					1;
 		vehicle_life:					70;
 		reliability_decay:				7;

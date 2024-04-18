@@ -107,7 +107,7 @@ item (FEAT_TRAINS, item_BRTTA, 419) {
 		name: 							string(STR_NAME_BRTTA);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1966,1,1);
-		model_life:						100;
+		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes: 		bitmask(CC_LIQUID);
 		loading_speed:					20;
 		cost_factor:					49;
