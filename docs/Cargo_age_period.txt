@@ -1,0 +1,17 @@
+Suggestion from John Franklin on Discord
+
+A good suggestion is
+120 - urban metro
+160 - commuter train
+200 - normal train
+250 - express
+400 - sleeper
+and different types of luxuries. I don't know the situation of UK (although I will go there for study months later), but in China, we have hard seat, soft seat, hard sleeper, soft sleeper, sometimes luxury soft sleeper in conventional trains. In China Set: Trains, they are coded with such cargo decay factors:
+Type                    0       1        2
+Hard Seat               160     200     250
+Soft Seat               192     240     300
+Hard Sleeper            288     360     450
+Soft Sleeper            384     480     600
+Luxury Sleeper          640     800     1000
+
+Where 0 stands for "no air conditioner nor restaurant car", 1 stands for "either", 2 stands for "Both".
