@@ -1,13 +1,13 @@
-spriteset(spriteset_BR70_Purchase, "gfx/BR70.png") {
+spriteset(spriteset_BR70_Purchase, "gfx/Diesel/BR70.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR70_Freightliner, "gfx/BR70.png") {
-	template_train70pt(0, 39)
+spriteset(spriteset_BR70_Freightliner, "gfx/Diesel/BR70.png") {
+	template_train32px(0, 13)
 }
 	
-spriteset(spriteset_BR70_ColasRail, "gfx/BR70.png") {
-	template_train70pt(0, 13)
+spriteset(spriteset_BR70_ColasRail, "gfx/Diesel/BR70.png") {
+	template_train32px(0, 39)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR70,cargo_subtype){
