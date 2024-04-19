@@ -216,18 +216,6 @@ template template_train170ptF(x,y){
     [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
 
-template template_train70pt(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 25, -3, -9]
-    [ x+9, y, 22, 20, -16, -12]
-    [ x+32, y, 32, 12, -15, -7]
-    [ x+65, y, 22, 20, -4, -11]
-    [ x+88, y, 8, 25, -3, -11]
-    [ x+97, y, 22, 20, -15, -12]
-    [ x+120, y, 32, 12, -12, -7]
-    [ x+153, y, 22, 20, -4, -11]
-}
-
 // Used by units with the Multiple Unit flag - eg IC125 and MPV
 template template_mu_purchase(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
