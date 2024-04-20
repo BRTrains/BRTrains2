@@ -33,27 +33,41 @@ spriteset(spriteset_BR230c_VivaRail, "gfx/LondonUnderground/LU_D78.png") {
 	template_train32px_old(0, 475)
 }
 
+spriteset(spriteset_BR230a_GWR, "gfx/LondonUnderground/LU_D78.png") {
+	template_train32px_old(0, 525)
+}
+spriteset(spriteset_BR230b_GWR, "gfx/LondonUnderground/LU_D78.png") {
+	template_train32px_old(0, 575)
+}
+spriteset(spriteset_BR230c_GWR, "gfx/LondonUnderground/LU_D78.png") {
+	template_train32px_old(0, 550)
+}
 
 switch(FEAT_TRAINS,SELF, sw_BR230_2a,cargo_subtype){	
 	0:spriteset_BR230a_LNWR;
 	1:spriteset_BR230a_VivaRail;
+	2:spriteset_BR230a_GWR;
 }
 switch(FEAT_TRAINS,SELF, sw_BR230_2b,cargo_subtype){
 	0:spriteset_BR230b_LNWR;
 	1:spriteset_BR230b_VivaRail;
+	2:spriteset_BR230b_GWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR230_3a,cargo_subtype){
 	0:spriteset_BR230a_TfW;	
 	1:spriteset_BR230a_VivaRail;
+	2:spriteset_BR230a_GWR;
 }
 switch(FEAT_TRAINS,SELF, sw_BR230_3b,cargo_subtype){
 	0:spriteset_BR230b_TfW;		
 	1:spriteset_BR230b_VivaRail;
+	2:spriteset_BR230b_GWR;
 }
 switch(FEAT_TRAINS,SELF, sw_BR230_3c,cargo_subtype){
 	0:spriteset_BR230c_TfW;		
 	1:spriteset_BR230c_VivaRail;
+	2:spriteset_BR230c_GWR;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR230_2car, extra_callback_info1) {
@@ -69,13 +83,15 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR230_3car, extra_callback_info1) 
 
 switch(FEAT_TRAINS,SELF,sw_BR230_2car_cargo_subtype_text,cargo_subtype){
     0:	return string(str_LNWR);	
-	1:	return string(str_VivaRail);	
+	1:	return string(str_VivaRail);
+	2: 	return string(str_GWRGreen);
        return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR230_3car_cargo_subtype_text,cargo_subtype){
     0:	return string(str_TfW);	
 	1:	return string(str_VivaRail);
+	2: 	return string(str_GWRGreen);
        return CB_RESULT_NO_TEXT;
 }
 
