@@ -33,10 +33,14 @@ def check_project_structure(src_directory: Path, gfx_directory: Path,
             "\"railtypes.pnml\" not found.  It should be in \"src\" and contain the railtypetable block"
         )
         return (False, -1)
+    if not src_directory.joinpath("sound.pnml").exists():
+        print(
+            "\"sounds.pnml\" not found.  Assuming no sounds are required"
+        )
     if not src_directory.joinpath("templates.pnml").exists():
         print(
             "\"templates.pnml\" not found.  Assuming no templates are required"
-        )
+        )    
 
     print("Project structure is correct\n")
     return (has_lang_dir, 0)
@@ -63,7 +67,7 @@ def find_pnml_files(src_directory: Path):
     # Iterate through all files in src_directory recursively, finding any that end in .pnml
     for path in src_directory.rglob("*.pnml"):
         # Don't add the special ones
-        if path.stem in ["railtypes", "grf", "templates"]:
+        if path.stem in ["railtypes", "grf", "sounds", "templates"]:
             continue
 
         if path.parent.stem not in file_list.keys():
@@ -246,6 +250,7 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     # Add the special files to the internal nml file
     nml_file = copy_file(src_directory.joinpath("grf.pnml"), nml_file)
     nml_file = copy_file(src_directory.joinpath("railtypes.pnml"), nml_file)
+    nml_file = copy_file(src_directory.joinpath("sounds.pnml"), nml_file)
     nml_file = copy_file(src_directory.joinpath("templates.pnml"), nml_file)
 
     # Get a list of all the pnml files in src

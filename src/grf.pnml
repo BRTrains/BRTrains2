@@ -123,3 +123,11 @@ if(param["RUKT", 1] != 0)
 {
 	error(ERROR,string(STR_Error_RUKTS));
 }
+
+switch(FEAT_TRAINS, SELF, GetAdjustedCost, base, param_cost_factor) {
+  1: return base / 4;
+  2: return base / 2;
+  3: return base;
+  4: return base * 2;
+  5: return base * 4;
+}
