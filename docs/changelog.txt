@@ -6,6 +6,7 @@
 - Added Furness Railway 4-4-0 K2 'Large Seagull'
 - Added War Department "Austerity Tank"
 - Added LNER P2
+- Added Class 48
 - Adjusted some purchase dates and model lifespans
 - HUGE template/alignment overhaul
 - Re-drew Class 70

@@ -1,0 +1,15 @@
+spriteset(spriteset_BR48_Purchase, "gfx/BR47_BR57.png") {
+	template_purchase(0, 0)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR48,cargo_subtype){    
+    0:	spriteset_BR47_BRGreen;
+	1: 	spriteset_BR47_BRBlue;
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR48_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRGreen);
+	1: 	return string(str_BRBlue);
+       return CB_RESULT_NO_TEXT;
+}

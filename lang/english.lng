@@ -303,6 +303,11 @@ str_BR47_usage					:Mixed Traffic
 str_BR47_eos					:---
 str_BR47_liveries				:BR Green, BR Blue, BR Large Logo, BR Large Logo (Alternate), Porterbrook, EWS, Anglia, InterCity, West Coast, GWR Green, Virgin, Colas Rail, ONE, Freightliner
 
+STR_NAME_BR48					:BR Class 48 'Type 4' (Experimental)
+str_BR48_usage					:Mixed Traffic
+str_BR48_eos					:---
+str_BR48_liveries				:BR Green, BR Blue
+
 STR_NAME_Kestrel				:HS4000 'Kestrel' (Type 5 Prototype)
 str_Kestrel_usage				:Mixed Traffic
 str_Kestrel_eos					:---
