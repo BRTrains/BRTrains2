@@ -1,5 +1,5 @@
 spriteset(spriteset_BR48_Purchase, "gfx/BR47_BR57.png") {
-	template_purchase(0, 0)
+	template_purchase(176, 0)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR48,cargo_subtype){    
