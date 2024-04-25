@@ -7,13 +7,14 @@
 - Added War Department "Austerity Tank"
 - Added LNER P2
 - Added Class 48
-- Adjusted some purchase dates and model lifespans
-- HUGE template/alignment overhaul
+- Re-drew Class 175
 - Re-drew Class 70
 - Improved Class 67
+- Added GWR livery for Class 230
+- HUGE template/alignment overhaul
+- Adjusted some purchase dates and model lifespans
 - Improved LNER company logo (purchase sprites)
 - Set some additional units to never expire for late game freight
-- Added GWR livery for Class 230
 
 # v2.7 (2024-4-2)
 - Added BR Standard Class 9F
