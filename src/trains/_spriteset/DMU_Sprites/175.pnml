@@ -1,0 +1,83 @@
+spriteset(spriteset_BR175_Purchase, "gfx/DMU/175.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR175_ATWGhost, "gfx/DMU/175.png") {
+	template_train32px(0, 247)
+}
+spriteset(spriteset_BR175b_ATWGhost, "gfx/DMU/175.png") {
+	template_train32px(0, 273)
+}
+spriteset(spriteset_BR175c_ATWGhost, "gfx/DMU/175.png") {
+	template_train32px(0, 299)
+}
+
+spriteset(spriteset_BR175_FNW, "gfx/DMU/175.png") {
+	template_train32px(0, 169)
+}
+spriteset(spriteset_BR175b_FNW, "gfx/DMU/175.png") {
+	template_train32px(0, 195)
+}
+spriteset(spriteset_BR175c_FNW, "gfx/DMU/175.png") {
+	template_train32px(0, 221)
+}
+
+spriteset(spriteset_BR175_ATW, "gfx/DMU/175.png") {
+	template_train32px(0, 91)
+}
+spriteset(spriteset_BR175b_ATW, "gfx/DMU/175.png") {
+	template_train32px(0, 117)
+}
+spriteset(spriteset_BR175c_ATW, "gfx/DMU/175.png") {
+	template_train32px(0, 143)
+}
+
+spriteset(spriteset_BR175_TfW, "gfx/DMU/175.png") {
+	template_train32px(0, 13)
+}
+spriteset(spriteset_BR175b_TfW, "gfx/DMU/175.png") {
+	template_train32px(0, 39)
+}
+spriteset(spriteset_BR175c_TfW, "gfx/DMU/175.png") {
+	template_train32px(0, 65)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR175,cargo_subtype){
+    0:	spriteset_BR175_ATWGhost;
+	1:  spriteset_BR175_FNW;
+	2:  spriteset_BR175_ATW;
+	3:  spriteset_BR175_TfW;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR175b,cargo_subtype){
+    0:	spriteset_BR175b_ATWGhost;
+	1:  spriteset_BR175b_FNW;
+	2:  spriteset_BR175b_ATW;
+	3:  spriteset_BR175b_TfW;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR175c,cargo_subtype){
+    0:	spriteset_BR175c_ATWGhost;
+	1:  spriteset_BR175c_FNW;
+	2:  spriteset_BR175c_ATW;
+	3:  spriteset_BR175c_TfW;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR1751, extra_callback_info1) {
+	1: return item_175c;
+	2: return item_175b;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR175, extra_callback_info1) {
+	1: return item_175b;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR175_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_ArrivaGhost);
+	1:  return string(str_FNW);
+	2:  return string(str_ATW);
+	3:  return string(str_TfW);
+       return CB_RESULT_NO_TEXT;
+}
