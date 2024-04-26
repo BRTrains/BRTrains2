@@ -80,6 +80,7 @@ Note, this method still requires the `nml` python package to be installed.
 - Welshdragon
 - Doorslammer
 - AndyTheNorth
+- Su1phur
 
 ... And other BROS artists who's names have been lost along the way
 

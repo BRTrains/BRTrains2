@@ -7,8 +7,9 @@
 - Added War Department "Austerity Tank"
 - Added LNER P2
 - Added Class 48
-- Re-drew Class 175
 - Re-drew Class 70
+- Re-drew Class 175
+- Re-drew Class 334
 - Improved Class 67
 - Added GWR livery for Class 230
 - HUGE template/alignment overhaul
