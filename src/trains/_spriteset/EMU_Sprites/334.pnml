@@ -59,7 +59,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR341, extra_callback_info1) {
 switch(FEAT_TRAINS,SELF,sw_BR334_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRCarmCream);
 	1:  return string(str_ScotRailSaltire);
-    1:  return string(str_ScotRailPride);
+    2:  return string(str_ScotRailPride);
        return CB_RESULT_NO_TEXT;
 }
 
