@@ -5,20 +5,24 @@ spriteset(spriteset_LNERP2_Purchase, "gfx/Steam/LNERP2.png") {
 spriteset(spriteset_LNERP2_LNERGreen, "gfx/Steam/LNERP2.png") {
 	template_train32px(0, 13)
 }
-spriteset(spriteset_LNERP2Tender_LNERGreen, "gfx/Steam/LNERP2.png") {
-	template_train16px(0, 39)
+
+spriteset(spriteset_LNERP2_Wartime, "gfx/Steam/LNERP2.png") {
+	template_train32px(0, 39)
 }
 
 switch(FEAT_TRAINS,SELF, sw_LNERP2Loco,cargo_subtype){
     0:	spriteset_LNERP2_LNERGreen;
+	1:	spriteset_LNERP2_Wartime;
 }
 
 switch(FEAT_TRAINS,SELF, sw_LNERP2Tender,cargo_subtype){
-    0:	spriteset_LNERP2Tender_LNERGreen;
+    0:	spriteset_LNERA3T_LNER;
+	1:	spriteset_LNERA3T_WARTIME;
 }
 
 switch(FEAT_TRAINS,SELF,sw_LNERP2_cargo_subtype_text,cargo_subtype){
     0: return string(str_LNERGreen);
+	1: return string(str_Wartime);
        return CB_RESULT_NO_TEXT;
 }
 
