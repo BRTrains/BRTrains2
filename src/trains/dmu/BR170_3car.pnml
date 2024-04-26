@@ -63,7 +63,7 @@ switch(FEAT_TRAINS,SELF,sw_BR170_3_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_SWT);
 	3:	return string(str_GA_White);
 	4:	return string(str_ScotRail);
-	5:	return string(str_ScotrailSaltire);
+	5:	return string(str_ScotRailSaltire);
 	6:	return string(str_WMR);
 	7:	return string(str_EMRMaroon);
 	8: 	return string(str_TfW);

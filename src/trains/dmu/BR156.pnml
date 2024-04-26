@@ -290,7 +290,7 @@ switch(FEAT_TRAINS,SELF,sw_BR156_cargo_subtype_text,cargo_subtype){
 	19: return string(str_Northern);
 	20:	return string(str_EMRTransition);
 	21:	return string(str_EMRMaroonWhite);
-	22:	return string(str_ScotrailSaltire);
+	22:	return string(str_ScotRailSaltire);
 	23:	return string(str_GreaterAnglia);
        return CB_RESULT_NO_TEXT;
 }
