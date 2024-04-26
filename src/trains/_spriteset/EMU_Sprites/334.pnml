@@ -1,0 +1,65 @@
+spriteset(spriteset_BR334_Purchase, "gfx/EMU/334.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR334a_CarmCream, "gfx/EMU/334.png") {
+	template_train32px(0, 91)
+}
+spriteset(spriteset_BR334b_CarmCream, "gfx/EMU/334.png") {
+	template_train32px(0, 117)
+}
+spriteset(spriteset_BR334c_CarmCream, "gfx/EMU/334.png") {
+	template_train32px(0, 143)
+}
+
+spriteset(spriteset_BR334a_Saltire, "gfx/EMU/334.png") {
+	template_train32px(0, 13)
+}
+spriteset(spriteset_BR334b_Saltire, "gfx/EMU/334.png") {
+	template_train32px(0, 39)
+}
+spriteset(spriteset_BR334c_Saltire, "gfx/EMU/334.png") {
+	template_train32px(0, 65)
+}
+
+spriteset(spriteset_BR334a_SaltirePride, "gfx/EMU/334.png") {
+	template_train32px(0, 169)
+}
+spriteset(spriteset_BR334b_SaltirePride, "gfx/EMU/334.png") {
+	template_train32px(0, 195)
+}
+spriteset(spriteset_BR334c_SaltirePride, "gfx/EMU/334.png") {
+	template_train32px(0, 221)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR334,cargo_subtype){
+    0:	spriteset_BR334a_CarmCream;
+	1:  spriteset_BR334a_Saltire;
+    2:  spriteset_BR334a_SaltirePride;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR334b,cargo_subtype){
+    0:	spriteset_BR334b_CarmCream;
+	1:  spriteset_BR334b_Saltire;
+    2:  spriteset_BR334b_SaltirePride;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR334c,cargo_subtype){
+    0:	spriteset_BR334c_CarmCream;
+	1:  spriteset_BR334c_Saltire;
+    2:  spriteset_BR334c_SaltirePride;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR341, extra_callback_info1) {
+	1: return item_334c;
+	2: return item_334b;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR334_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRCarmCream);
+	1:  return string(str_ScotRailSaltire);
+    1:  return string(str_ScotRailPride);
+       return CB_RESULT_NO_TEXT;
+}
+
