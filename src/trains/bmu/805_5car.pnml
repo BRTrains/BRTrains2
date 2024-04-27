@@ -65,7 +65,7 @@ switch(FEAT_TRAINS, SELF, switch_BR805_5car_can_attach_wagon, vehicle_type_id) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR805_5car_power, current_railtype) {
-	ELRL: return 4000;
+	ELRL: return 3636;
 	return 2820;
 }
 

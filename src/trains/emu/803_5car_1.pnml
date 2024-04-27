@@ -49,7 +49,7 @@ item(FEAT_TRAINS, item_BR803_5car, 547) {
 		cargo_disallow_refit: [];
 		
 		speed: 125 mph;
-		power: 4000 hp;
+		power: 3636 hp;
 		cargo_capacity: (302/5);
 		weight: 205 ton;
 		

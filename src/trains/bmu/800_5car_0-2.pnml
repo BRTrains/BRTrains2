@@ -107,7 +107,7 @@ switch(FEAT_TRAINS, SELF, switch_BR800_5car_diesel_power, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR800_5car_power, current_railtype) {
-	ELRL: return 4000;
+	ELRL: return 3636;
 	return switch_BR800_5car_diesel_power;
 }
 

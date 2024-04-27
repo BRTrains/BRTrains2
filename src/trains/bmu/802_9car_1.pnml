@@ -73,7 +73,7 @@ switch(FEAT_TRAINS, SELF, switch_BR802_9car_can_attach_wagon, vehicle_type_id) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR802_9car_power, current_railtype) {
-	ELRL: return 7200;
+	ELRL: return 6060;
 	return 4700;
 }
 
