@@ -52,7 +52,7 @@ item(FEAT_TRAINS, item_BR801_9car, 452) {
 		cargo_disallow_refit: [];
 		
 		speed: 125 mph;
-		power: 5760 hp;
+		power: 7200 hp;
 		cargo_capacity: (611/9);
 		weight: 369 ton;
 		

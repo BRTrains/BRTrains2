@@ -64,11 +64,10 @@ switch(FEAT_TRAINS, SELF, switch_BR810_5car_can_attach_wagon, vehicle_type_id) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR810_5car_power, current_railtype) {
-	ELRL: return 3200;
-	return 2820;
+	ELRL: return 4000;
+	return 3944;
 }
 
-// Class 810/0/2/3 (5car)
 item(FEAT_TRAINS, item_BR810_5car, 579) {
 	property {
 		name: string(STR_BR810_5CAR);
@@ -86,7 +85,7 @@ item(FEAT_TRAINS, item_BR810_5car, 579) {
 		cargo_disallow_refit: [];
 		
 		speed: 125 mph;
-		power: 3200 hp;
+		power: 3944 hp;
 		cargo_capacity: (301/5);
 		weight: 261 ton;
 		

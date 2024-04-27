@@ -68,12 +68,6 @@ switch(FEAT_TRAINS, SELF, switch_BR807_7car_can_attach_wagon, vehicle_type_id) {
 	return string(STR_CANNOT_ATTACH);
 }
 
-switch(FEAT_TRAINS, SELF, switch_BR807_7car_power, current_railtype) {
-	ELRL: return 5760;
-	return 4700;
-}
-
-// Class 802/1 (9car)
 item(FEAT_TRAINS, item_BR807_7car, 580) {
 	property {
 		name: string(STR_BR807_7CAR);
@@ -91,14 +85,14 @@ item(FEAT_TRAINS, item_BR807_7car, 580) {
 		cargo_disallow_refit: [];
 		
 		speed: 125 mph;
-		power: 4480 hp;
+		power: 5600 hp;
 		cargo_capacity: (453/7);
 		weight: 357 ton;
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
 		refit_cost: 0;
-		track_type: RAIL;
+		track_type: ELRL;
 		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
 		running_cost_base: RUNNING_COST_ELECTRIC;
 		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
@@ -114,9 +108,7 @@ item(FEAT_TRAINS, item_BR807_7car, 580) {
 	
 	graphics {
 		default: switch_BR807_7car_spriteset;
-		purchase: spriteset_BR805_807_purchase;
-		
-		power: switch_BR807_7car_power;
+		purchase: spriteset_BR805_807_purchase;			
 		speed: switch_BR800_speed;
 
 		cargo_subtype_text: switch_BR807_7car_subtype_text;

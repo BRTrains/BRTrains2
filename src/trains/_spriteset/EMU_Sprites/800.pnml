@@ -130,7 +130,7 @@ spriteset(spriteset_BR80X_middle3_Avanti, "gfx/BR80X.png") {
 
 
 
-// Speed switch
+// 125mph service speed, 140mph design speed
 switch(FEAT_TRAINS, SELF, switch_BR800_speed, param_max_speed) {
 	0: 201;
 	1: 225;

@@ -102,7 +102,7 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_capacity, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR802_5car_power, current_railtype) {
-	ELRL: return 3200;
+	ELRL: return 4000;
 	return 2820;
 }
 

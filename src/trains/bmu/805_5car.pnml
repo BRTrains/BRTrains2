@@ -65,11 +65,10 @@ switch(FEAT_TRAINS, SELF, switch_BR805_5car_can_attach_wagon, vehicle_type_id) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR805_5car_power, current_railtype) {
-	ELRL: return 3200;
+	ELRL: return 4000;
 	return 2820;
 }
 
-// Class 805/0/2/3 (5car)
 item(FEAT_TRAINS, item_BR805_5car, 581) {
 	property {
 		name: string(STR_BR805_5CAR);
@@ -87,7 +86,7 @@ item(FEAT_TRAINS, item_BR805_5car, 581) {
 		cargo_disallow_refit: [];
 		
 		speed: 125 mph;
-		power: 3200 hp;
+		power: 4000 hp;
 		cargo_capacity: (301/5);
 		weight: 261 ton;
 		

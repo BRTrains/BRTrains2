@@ -92,15 +92,23 @@ switch(FEAT_TRAINS, SELF, switch_BR800_5car_can_attach_wagon, vehicle_type_id) {
 	return string(STR_CANNOT_ATTACH);
 }
 
-// LNER trains hold fewer passengers than GWR trains
+// GWR trains hold more passengers than LNER/others
 switch(FEAT_TRAINS, SELF, switch_BR800_5car_capacity, cargo_subtype) {
-	0: return (302/5 * param_pax);
 	1: return (326/5 * param_pax);
+	3: return (326/5 * param_pax);
+	return (302/5 * param_pax);
+}
+
+// GWR trains have higher diesel power than LNER/others
+switch(FEAT_TRAINS, SELF, switch_BR800_5car_diesel_power, cargo_subtype) {
+	1: return 2700; // GWR
+	3: return 2700; // GWR Pride
+	return 2250;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR800_5car_power, current_railtype) {
-	ELRL: return 3200;
-	return 2250;
+	ELRL: return 4000;
+	return switch_BR800_5car_diesel_power;
 }
 
 // Class 800/0/2 (5car)
@@ -121,7 +129,7 @@ item(FEAT_TRAINS, item_BR800_5car, 459) {
 		cargo_disallow_refit: [];
 		
 		speed: 125 mph;
-		power: 3200 hp;
+		power: 4000 hp;
 		cargo_capacity: (302/5);
 		weight: 243 ton;
 		
