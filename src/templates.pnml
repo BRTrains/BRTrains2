@@ -156,7 +156,7 @@ template template_purchase_anim(x,y){
 
 
 // VAGUELY SURVIVABLE FOR NOW
-// Should be redrawn thoug
+// Should be redrawn though, it's aligned but the units are a funny scale
 
 template template_train28px_old_pacer(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
@@ -178,20 +178,6 @@ template template_train28px_old_pacer(x,y){
 // ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
 // ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
 // ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-
-
-// THIS VIEW IS 8 FROM 4, IT REPEATS THE SECOND SET FOR OFFSET PURPOSES
-template template_train20px_4view(x,y){ // Clone to 8view when changed
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 18, -3, -11] // n
-    [ x+9, y, 15, 15, -8, -10] // ne
-    [ x+25, y, 20, 12, -4, -8] // e
-    [ x+46, y, 15, 15, 1, -7] // se
-    [ x, y, 8, 18, -3, -11] //s
-    [ x+9, y, 15, 15, -8, -9] //swr
-    [ x+25, y, 20, 12, -4, -8] //w
-    [ x+46, y, 15, 15, 1, -7] //nw
-}
 
 template template_trainBRMk2(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
@@ -217,28 +203,16 @@ template template_450(x,y){
     [ x+153, y, 22, 21, -3, -10]
 }
 
+// Only used by MPV
 template template_train170pt(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x, y, 8, 26, -3, -9,			NOANIM|NOWHITE]
     [ x+9, y, 22, 21, -16, -12,		NOANIM|NOWHITE]
-    [ x+32, y, 32, 12, -15, -7,		NOANIM|NOWHITE]
-    [ x+65, y, 22, 21, -4, -11,		NOANIM|NOWHITE]
+    [ x+32, y, 32, 12, -20, -7,		NOANIM|NOWHITE]
+    [ x+65, y, 22, 21, -5, -11,		NOANIM|NOWHITE]
     [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
-    [ x+97, y, 22, 21, -15, -12,	NOANIM|NOWHITE]
-    [ x+120, y, 32, 12, -12, -7,	NOANIM|NOWHITE]
-    [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
-}
-
-// Now only used by MPV
-template template_train170ptF(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 26, -3, -9,			NOANIM|NOWHITE]
-    [ x+9, y, 22, 21, -16, -12,		NOANIM|NOWHITE]
-    [ x+32, y, 32, 12, -13, -7,		NOANIM|NOWHITE]
-    [ x+65, y, 22, 21, -4, -11,		NOANIM|NOWHITE]
-    [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
-    [ x+97, y, 22, 21, -15, -12,	NOANIM|NOWHITE]
-    [ x+120, y, 32, 12, -14, -7,	NOANIM|NOWHITE]
+    [ x+97, y, 22, 21, -14, -12,	NOANIM|NOWHITE]
+    [ x+120, y, 32, 12, -20, -7,	NOANIM|NOWHITE]
     [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
 

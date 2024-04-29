@@ -7,7 +7,7 @@ spriteset(spriteset_DR98_9_NRWhite, "gfx/DR98_9.png") {
 }
 
 spriteset(spriteset_DR98_9_NRWhiteF, "gfx/DR98_9.png") {
-	template_train170ptF(176, 14)
+	template_train170pt(176, 14)
 }
 
 spriteset(spriteset_DR98_9_NRWhite_GOOD, "gfx/DR98_9_GOOD.png") {
@@ -15,7 +15,7 @@ spriteset(spriteset_DR98_9_NRWhite_GOOD, "gfx/DR98_9_GOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_NRWhite_GOODF, "gfx/DR98_9_GOOD.png") {
-	template_train170ptF(176, 14)
+	template_train170pt(176, 14)
 }
 
 spriteset(spriteset_DR98_9_NRWhite_WOOD_empty, "gfx/DR98_9_WOOD.png") {
@@ -31,15 +31,15 @@ spriteset(spriteset_DR98_9_NRWhite_WOOD_full, "gfx/DR98_9_WOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_NRWhite_WOOD_emptyF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(176, 14)
+	template_train170pt(176, 14)
 }
 
 spriteset(spriteset_DR98_9_NRWhite_WOOD_halfF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(528, 14)
+	template_train170pt(528, 14)
 }
 
 spriteset(spriteset_DR98_9_NRWhite_WOOD_fullF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(880, 14)
+	template_train170pt(880, 14)
 }
 
 spriteset(spriteset_DR98_9_NRYellow, "gfx/DR98_9.png") {
@@ -47,7 +47,7 @@ spriteset(spriteset_DR98_9_NRYellow, "gfx/DR98_9.png") {
 }
 
 spriteset(spriteset_DR98_9_NRYellowF, "gfx/DR98_9.png") {
-	template_train170ptF(176, 41)
+	template_train170pt(176, 41)
 }
 
 spriteset(spriteset_DR98_9_NRYellow_GOOD, "gfx/DR98_9_GOOD.png") {
@@ -55,7 +55,7 @@ spriteset(spriteset_DR98_9_NRYellow_GOOD, "gfx/DR98_9_GOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_NRYellow_GOODF, "gfx/DR98_9_GOOD.png") {
-	template_train170ptF(176, 41)
+	template_train170pt(176, 41)
 }
 
 spriteset(spriteset_DR98_9_NRYellow_WOOD_empty, "gfx/DR98_9_WOOD.png") {
@@ -71,15 +71,15 @@ spriteset(spriteset_DR98_9_NRYellow_WOOD_full, "gfx/DR98_9_WOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_NRYellow_WOOD_emptyF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(176, 41)
+	template_train170pt(176, 41)
 }
 
 spriteset(spriteset_DR98_9_NRYellow_WOOD_halfF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(528, 41)
+	template_train170pt(528, 41)
 }
 
 spriteset(spriteset_DR98_9_NRYellow_WOOD_fullF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(880, 41)
+	template_train170pt(880, 41)
 }
 
 spriteset(spriteset_DR98_9_NROrange, "gfx/DR98_9.png") {
@@ -87,7 +87,7 @@ spriteset(spriteset_DR98_9_NROrange, "gfx/DR98_9.png") {
 }
 
 spriteset(spriteset_DR98_9_NROrangeF, "gfx/DR98_9.png") {
-	template_train170ptF(176, 68)
+	template_train170pt(176, 68)
 }
 
 spriteset(spriteset_DR98_9_NROrange_GOOD, "gfx/DR98_9_GOOD.png") {
@@ -95,7 +95,7 @@ spriteset(spriteset_DR98_9_NROrange_GOOD, "gfx/DR98_9_GOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_NROrange_GOODF, "gfx/DR98_9_GOOD.png") {
-	template_train170ptF(176, 68)
+	template_train170pt(176, 68)
 }
 
 spriteset(spriteset_DR98_9_NROrange_WOOD_empty, "gfx/DR98_9_WOOD.png") {
@@ -111,15 +111,15 @@ spriteset(spriteset_DR98_9_NROrange_WOOD_full, "gfx/DR98_9_WOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_NROrange_WOOD_emptyF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(176, 68)
+	template_train170pt(176, 68)
 }
 
 spriteset(spriteset_DR98_9_NROrange_WOOD_halfF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(528, 68)
+	template_train170pt(528, 68)
 }
 
 spriteset(spriteset_DR98_9_NROrange_WOOD_fullF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(880, 68)
+	template_train170pt(880, 68)
 }
 
 spriteset(spriteset_DR98_9_NRBlue, "gfx/DR98_9.png") {
@@ -127,7 +127,7 @@ spriteset(spriteset_DR98_9_NRBlue, "gfx/DR98_9.png") {
 }
 
 spriteset(spriteset_DR98_9_NRBlueF, "gfx/DR98_9.png") {
-	template_train170ptF(176, 95)
+	template_train170pt(176, 95)
 }
 
 spriteset(spriteset_DR98_9_NRBlue_GOOD, "gfx/DR98_9_GOOD.png") {
@@ -135,7 +135,7 @@ spriteset(spriteset_DR98_9_NRBlue_GOOD, "gfx/DR98_9_GOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_NRBlue_GOODF, "gfx/DR98_9_GOOD.png") {
-	template_train170ptF(176, 95)
+	template_train170pt(176, 95)
 }
 
 spriteset(spriteset_DR98_9_NRBlue_WOOD_empty, "gfx/DR98_9_WOOD.png") {
@@ -151,15 +151,15 @@ spriteset(spriteset_DR98_9_NRBlue_WOOD_full, "gfx/DR98_9_WOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_NRBlue_WOOD_emptyF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(176, 95)
+	template_train170pt(176, 95)
 }
 
 spriteset(spriteset_DR98_9_NRBlue_WOOD_halfF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(528, 95)
+	template_train170pt(528, 95)
 }
 
 spriteset(spriteset_DR98_9_NRBlue_WOOD_fullF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(880, 95)
+	template_train170pt(880, 95)
 }
 
 spriteset(spriteset_DR98_9_Railtrack, "gfx/DR98_9.png") {
@@ -167,7 +167,7 @@ spriteset(spriteset_DR98_9_Railtrack, "gfx/DR98_9.png") {
 }
 
 spriteset(spriteset_DR98_9_RailtrackF, "gfx/DR98_9.png") {
-	template_train170ptF(176, 122)
+	template_train170pt(176, 122)
 }
 
 spriteset(spriteset_DR98_9_Railtrack_GOOD, "gfx/DR98_9_GOOD.png") {
@@ -175,7 +175,7 @@ spriteset(spriteset_DR98_9_Railtrack_GOOD, "gfx/DR98_9_GOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_Railtrack_GOODF, "gfx/DR98_9_GOOD.png") {
-	template_train170ptF(176, 122)
+	template_train170pt(176, 122)
 }
 
 spriteset(spriteset_DR98_9_Railtrack_WOOD_empty, "gfx/DR98_9_WOOD.png") {
@@ -191,15 +191,15 @@ spriteset(spriteset_DR98_9_Railtrack_WOOD_full, "gfx/DR98_9_WOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_Railtrack_WOOD_emptyF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(176, 122)
+	template_train170pt(176, 122)
 }
 
 spriteset(spriteset_DR98_9_Railtrack_WOOD_halfF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(528, 122)
+	template_train170pt(528, 122)
 }
 
 spriteset(spriteset_DR98_9_Railtrack_WOOD_fullF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(880, 122)
+	template_train170pt(880, 122)
 }
 
 spriteset(spriteset_DR98_9_SWTPink, "gfx/DR98_9.png") {
@@ -207,7 +207,7 @@ spriteset(spriteset_DR98_9_SWTPink, "gfx/DR98_9.png") {
 }
 
 spriteset(spriteset_DR98_9_SWTPinkF, "gfx/DR98_9.png") {
-	template_train170ptF(176, 149)
+	template_train170pt(176, 149)
 }
 
 spriteset(spriteset_DR98_9_SWTPink_GOOD, "gfx/DR98_9_GOOD.png") {
@@ -215,7 +215,7 @@ spriteset(spriteset_DR98_9_SWTPink_GOOD, "gfx/DR98_9_GOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_SWTPink_GOODF, "gfx/DR98_9_GOOD.png") {
-	template_train170ptF(176, 149)
+	template_train170pt(176, 149)
 }
 
 spriteset(spriteset_DR98_9_SWTPink_WOOD_empty, "gfx/DR98_9_WOOD.png") {
@@ -231,15 +231,15 @@ spriteset(spriteset_DR98_9_SWTPink_WOOD_full, "gfx/DR98_9_WOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_SWTPink_WOOD_emptyF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(176, 149)
+	template_train170pt(176, 149)
 }
 
 spriteset(spriteset_DR98_9_SWTPink_WOOD_halfF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(528, 149)
+	template_train170pt(528, 149)
 }
 
 spriteset(spriteset_DR98_9_SWTPink_WOOD_fullF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(880, 149)
+	template_train170pt(880, 149)
 }
 
 spriteset(spriteset_DR98_9_SWTOrange, "gfx/DR98_9.png") {
@@ -247,7 +247,7 @@ spriteset(spriteset_DR98_9_SWTOrange, "gfx/DR98_9.png") {
 }
 
 spriteset(spriteset_DR98_9_SWTOrangeF, "gfx/DR98_9.png") {
-	template_train170ptF(176, 176)
+	template_train170pt(176, 176)
 }
 
 spriteset(spriteset_DR98_9_SWTOrange_GOOD, "gfx/DR98_9_GOOD.png") {
@@ -255,7 +255,7 @@ spriteset(spriteset_DR98_9_SWTOrange_GOOD, "gfx/DR98_9_GOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_SWTOrange_GOODF, "gfx/DR98_9_GOOD.png") {
-	template_train170ptF(176, 176)
+	template_train170pt(176, 176)
 }
 
 spriteset(spriteset_DR98_9_SWTOrange_WOOD_empty, "gfx/DR98_9_WOOD.png") {
@@ -271,15 +271,15 @@ spriteset(spriteset_DR98_9_SWTOrange_WOOD_full, "gfx/DR98_9_WOOD.png") {
 }
 
 spriteset(spriteset_DR98_9_SWTOrange_WOOD_emptyF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(176, 176)
+	template_train170pt(176, 176)
 }
 
 spriteset(spriteset_DR98_9_SWTOrange_WOOD_halfF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(528, 176)
+	template_train170pt(528, 176)
 }
 
 spriteset(spriteset_DR98_9_SWTOrange_WOOD_fullF, "gfx/DR98_9_WOOD.png") {
-	template_train170ptF(880, 176)
+	template_train170pt(880, 176)
 }
 
 switch(FEAT_TRAINS,SELF,sw_DR98_9_NRWhite,var[0xc8]){
