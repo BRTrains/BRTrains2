@@ -1009,7 +1009,7 @@ str_BRTTA_liveries				:Mobil, Esso, BP (x3), SUKO, Gulf, Shell (x2), Murco, Tota
 STR_NAME_BRContainer			:BR Container Flatbed Wagon
 str_BRContainer_usage			:Food, Goods, Paper, Fruit
 str_BRContainer_eos				:---
-str_BRContainer_liveries		:Maersk, Random
+str_BRContainer_liveries		:Maersk, Tesco, Random
 
 STR_NAME_SmallLumberWagon		:Midland Railway Small Lumber Wagon
 str_SmallLumberWagon_usage		:Wood, Crates, Livestock etc
@@ -1432,6 +1432,7 @@ str_MerseyRail					: (MerseyRail)
 str_MerseyRailGoodComs			: (MerseyRail - Good Communications)
 str_MerseyRailOld				: (MerseyRail - Old)
 str_Maersk      				: (Maersk)
+str_MaerskEyeCandy 				: (Maersk - Always show container)
 str_MMLBlue						: (Midland Mainline Blue)
 str_MMLTealTang					: (Midland Mainline Teal & Tangerine)
 str_Mobil                       : (Mobil)
@@ -1474,6 +1475,7 @@ str_Pullman                     : (Blue Pullman)
 str_PullmanPanels               : (Blue Pullman - Warning Panels)
 str_PullmanBrown                : (Brown Pullman)
 str_Random                      : (Random)
+str_RandomEyeCandy              : (Random - Always show container)
 str_Railtrack					: (Railtrack)
 str_RailfreightGrey				: (Rail Freight Grey)
 str_Regional					: (Regional Railways)
@@ -1523,6 +1525,8 @@ str_SWT_stagecoach				: (Stagecoach South West Trains)
 str_SWR				            : (South Western Railway)
 str_SWRPride		            : (South Western Railway "Pride")
 str_Teak						: (GNR/LNER Teak)
+str_Tesco                       : (Tesco)
+str_TescoEyeCandy               : (Tesco - Always show container)
 str_TfL							: (TfL Rail)
 str_TfW         			    : (Transport For Wales)
 str_thameslink					: (BR Thameslink)

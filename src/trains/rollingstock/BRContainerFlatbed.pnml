@@ -3,52 +3,57 @@ spriteset(spriteset_BRContainer, "gfx/Freight/Containers.png") {
 }
 
 spriteset(spriteset_BRContainer_Empty, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 13)
+	template_train32px(0, 13)
 }
 
 spriteset(spriteset_BRContainer_Maersk, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 38)
+	template_train32px(0, 39)
 }
 
 spriteset(spriteset_BRContainer_Blue, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 63)
+	template_train32px(0, 65)
 }
 
 spriteset(spriteset_BRContainer_Orange, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 88)
+	template_train32px(0, 91)
 }
 
 spriteset(spriteset_BRContainer_Green, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 113)
+	template_train32px(0, 117)
 }
 
 spriteset(spriteset_BRContainer_Purple, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 138)
+	template_train32px(0, 143)
 }
 
 spriteset(spriteset_BRContainer_Blue2, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 163)
+	template_train32px(0, 169)
 }
 
 spriteset(spriteset_BRContainer_Red, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 188)
+	template_train32px(0, 195)
 }
 
 spriteset(spriteset_BRContainer_Yellow, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 213)
+	template_train32px(0, 221)
 }
 
 spriteset(spriteset_BRContainer_Grey, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 238)
+	template_train32px(0, 247)
 }
 
 spriteset(spriteset_BRContainer_Black, "gfx/Freight/Containers.png") {
-	template_train32px_old_reversed(0, 263)
+	template_train32px(0, 273)
+}
+
+spriteset(spriteset_BRContainer_Tesco, "gfx/Freight/Containers.png") {
+	template_train32px(0, 299)
 }
 
 random_switch(FEAT_TRAINS, SELF, sw_BRContainer_Random)
 {
-	1:	spriteset_BRContainer_Maersk;
+	2:	spriteset_BRContainer_Maersk; // Maersk is common so double chance
+	3:  spriteset_BRContainer_Tesco; // Tesco is very common so triple chance
 	1:	spriteset_BRContainer_Blue;
 	1:	spriteset_BRContainer_Orange;
 	1:	spriteset_BRContainer_Green;
@@ -60,24 +65,37 @@ random_switch(FEAT_TRAINS, SELF, sw_BRContainer_Random)
 	1:	spriteset_BRContainer_Black;
 }
 
-// Defined livery, or just random?
-switch(FEAT_TRAINS, SELF, sw_BRContainer_Livery, cargo_subtype){
-    0:	sw_BRContainer_Random;
-	1:	spriteset_BRContainer_Maersk;
+// Called third if not using eye candy liveries
+// Note some/all liveries may have multiple cargo subtypes, due to eyecandy liveries
+switch(FEAT_TRAINS, SELF, sw_BRContainer_Livery, cargo_subtype){    
+	2..3:	spriteset_BRContainer_Maersk;
+	4..5:	spriteset_BRContainer_Tesco;
+	sw_BRContainer_Random;
 }
 
-// Called first, display an empty container if near empty, otherwise move to the livery switch
-switch(FEAT_TRAINS,SELF, sw_BRContainer_Cargo, cargo_count){
-	0: sw_BRContainer_Livery; // Only here for testing
+// Called second if using eyecandy liveries
+// Display an empty container if near empty, otherwise move to the livery switch
+switch(FEAT_TRAINS,SELF, sw_BRContainer_Cargo, cargo_count){	
 	0 .. 19: spriteset_BRContainer_Empty;
 	20 .. 75: sw_BRContainer_Livery;
 }
 
-// Random Mobil Esso BP Suko Gulf Shell BP BP Murco Shell Total VTG
+// Called first
+// Skips the "loading stage" switch above if using an eyecandy livery
+switch(FEAT_TRAINS, SELF, sw_BRContainer_EyeCandyLiveries, cargo_subtype){	
+	3: spriteset_BRContainer_Maersk;
+	5: spriteset_BRContainer_Tesco;
+	sw_BRContainer_Cargo;
+}
 
 switch(FEAT_TRAINS,SELF,sw_BRContainer_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Random);
-	1:	return string(str_Maersk);
+	1: 	return string(str_RandomEyeCandy);
+	2:	return string(str_Maersk);
+	3:	return string(str_MaerskEyeCandy);
+	4:	return string(str_Tesco);
+	5:	return string(str_TescoEyeCandy);
+
 }
 
 item (FEAT_TRAINS, item_BRContainer, 465) {
@@ -105,7 +123,7 @@ item (FEAT_TRAINS, item_BRContainer, 465) {
 	graphics {
 	additional_text:					return(string(str_purchase_coach,string(str_BRContainer_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BRContainer_Cargo;
+	default: 							sw_BRContainer_EyeCandyLiveries;
 	purchase:							spriteset_BRContainer;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BRContainer_cargo_subtype_text;
