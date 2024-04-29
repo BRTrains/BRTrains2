@@ -9,7 +9,7 @@ spriteset(spriteset_TGV_EndCoach_RoyalMail, "gfx/EMU/TGV.png") {
 	template_train32px_old(0, 163)
 }
 spriteset(spriteset_TGV_EndCoachReversed_RoyalMail, "gfx/EMU/TGV.png") {
-	template_train32px_reversed(0, 163)
+	template_train32px_old_reversed(0, 163)
 }
 spriteset(spriteset_TGV_MiddleCoach_RoyalMail, "gfx/EMU/TGV.png") {
 	template_train32px_old(0, 188)
@@ -26,7 +26,7 @@ spriteset(spriteset_TGV_EndCoach_LaPoste, "gfx/EMU/TGV.png") {
 	template_train32px_old(0, 38)
 }
 spriteset(spriteset_TGV_EndCoachReversed_LaPoste, "gfx/EMU/TGV.png") {
-	template_train32px_reversed(0, 38)
+	template_train32px_old_reversed(0, 38)
 }
 spriteset(spriteset_TGV_LiveriedCoach_LaPoste, "gfx/EMU/TGV.png") {
 	template_train32px_old(0, 63)

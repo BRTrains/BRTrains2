@@ -3,11 +3,11 @@ spriteset(spriteset_BR325_Purchase, "gfx/BR325.png") {
 }
 
 spriteset(spriteset_BR325a_RM, "gfx/BR325.png") {
-	template_train32px_reversed(0, 14)
+	template_train32px_old_reversed(0, 14)
 }
 
 spriteset(spriteset_BR325b_RM, "gfx/BR325.png") {
-	template_train32px_reversed(0, 91)
+	template_train32px_old_reversed(0, 91)
 }
 
 spriteset(spriteset_BR325c_RM, "gfx/BR325.png") {

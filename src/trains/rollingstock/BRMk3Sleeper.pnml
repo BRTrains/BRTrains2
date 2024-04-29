@@ -34,7 +34,7 @@ spriteset(spriteset_BRMk3Sleeper_Stagecoach, "gfx/Rolling Stock/BRSleeper.png") 
 	template_train32px_old(0, 213)
 }
 spriteset(spriteset_BRMk3Sleeper_StagecoachReversed, "gfx/Rolling Stock/BRSleeper.png") {
-	template_train32px_reversed(0, 213)
+	template_train32px_old_reversed(0, 213)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BRMk3Sleeper_stagecoachPosition,position_in_consist % 2){

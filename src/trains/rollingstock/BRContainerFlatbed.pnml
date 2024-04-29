@@ -3,47 +3,47 @@ spriteset(spriteset_BRContainer, "gfx/Freight/Containers.png") {
 }
 
 spriteset(spriteset_BRContainer_Empty, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 13)
+	template_train32px_old_reversed(0, 13)
 }
 
 spriteset(spriteset_BRContainer_Maersk, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 38)
+	template_train32px_old_reversed(0, 38)
 }
 
 spriteset(spriteset_BRContainer_Blue, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 63)
+	template_train32px_old_reversed(0, 63)
 }
 
 spriteset(spriteset_BRContainer_Orange, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 88)
+	template_train32px_old_reversed(0, 88)
 }
 
 spriteset(spriteset_BRContainer_Green, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 113)
+	template_train32px_old_reversed(0, 113)
 }
 
 spriteset(spriteset_BRContainer_Purple, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 138)
+	template_train32px_old_reversed(0, 138)
 }
 
 spriteset(spriteset_BRContainer_Blue2, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 163)
+	template_train32px_old_reversed(0, 163)
 }
 
 spriteset(spriteset_BRContainer_Red, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 188)
+	template_train32px_old_reversed(0, 188)
 }
 
 spriteset(spriteset_BRContainer_Yellow, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 213)
+	template_train32px_old_reversed(0, 213)
 }
 
 spriteset(spriteset_BRContainer_Grey, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 238)
+	template_train32px_old_reversed(0, 238)
 }
 
 spriteset(spriteset_BRContainer_Black, "gfx/Freight/Containers.png") {
-	template_train32px_reversed(0, 263)
+	template_train32px_old_reversed(0, 263)
 }
 
 random_switch(FEAT_TRAINS, SELF, sw_BRContainer_Random)

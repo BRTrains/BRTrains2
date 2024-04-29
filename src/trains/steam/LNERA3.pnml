@@ -3,27 +3,27 @@ spriteset(spriteset_LNERA3_Purchase, "gfx/Steam/LNERA3.png") {
 }
 
 spriteset(spriteset_LNERA3_LNER, "gfx/Steam/GNRA1.png") {
-	template_train32px_anim(0, 13)
+	template_train32px_old_aim(0, 13)
 }
 
 spriteset(spriteset_LNERA3_LNERC, "gfx/Steam/GNRA1.png") {
-	template_train32px_anim(0, 13)
+	template_train32px_old_aim(0, 13)
 }
 
 spriteset(spriteset_LNERA3_WARTIME, "gfx/Steam/LNERA3.png") {
-	template_train32px_anim(0, 13)
+	template_train32px_old_aim(0, 13)
 }
 
 spriteset(spriteset_LNERA3_APPLE, "gfx/Steam/LNERA3.png") {
-	template_train32px_anim(0, 38)
+	template_train32px_old_aim(0, 38)
 }
 
 spriteset(spriteset_LNERA3_BRBLUE, "gfx/Steam/LNERA3.png") {
-	template_train32px_anim(0, 63)
+	template_train32px_old_aim(0, 63)
 }
 
 spriteset(spriteset_LNERA3_BRUNSWICK, "gfx/Steam/LNERA3.png") {
-	template_train32px_anim(0, 88)
+	template_train32px_old_aim(0, 88)
 }
 
 spriteset(spriteset_LNERA3T_LNER, "gfx/Steam/LNERA3T.png") {

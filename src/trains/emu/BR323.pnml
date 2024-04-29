@@ -11,7 +11,7 @@ spriteset(spriteset_BR323b_RR, "gfx/BR323.png") {
 }
 
 spriteset(spriteset_BR323c_RR, "gfx/BR323.png") {
-	template_train32px_reversed(172, 150)
+	template_train32px_old_reversed(172, 150)
 }
 
 spriteset(spriteset_BR323a_Centro, "gfx/BR323.png") {
@@ -23,7 +23,7 @@ spriteset(spriteset_BR323b_Centro, "gfx/BR323.png") {
 }
 
 spriteset(spriteset_BR323c_Centro, "gfx/BR323.png") {
-	template_train32px_reversed(172, 275)
+	template_train32px_old_reversed(172, 275)
 }
 
 spriteset(spriteset_BR323a_FNW, "gfx/BR323.png") {
@@ -35,7 +35,7 @@ spriteset(spriteset_BR323b_FNW, "gfx/BR323.png") {
 }
 
 spriteset(spriteset_BR323c_FNW, "gfx/BR323.png") {
-	template_train32px_reversed(172, 400)
+	template_train32px_old_reversed(172, 400)
 }
 
 spriteset(spriteset_BR323a_FNW_Barbie, "gfx/BR323.png") {
@@ -47,7 +47,7 @@ spriteset(spriteset_BR323b_FNW_Barbie, "gfx/BR323.png") {
 }
 
 spriteset(spriteset_BR323c_FNW_Barbie, "gfx/BR323.png") {
-	template_train32px_reversed(172, 525)
+	template_train32px_old_reversed(172, 525)
 }
 
 spriteset(spriteset_BR323a_NorthernRail, "gfx/BR323.png") {
@@ -59,7 +59,7 @@ spriteset(spriteset_BR323b_NorthernRail, "gfx/BR323.png") {
 }
 
 spriteset(spriteset_BR323c_NorthernRail, "gfx/BR323.png") {
-	template_train32px_reversed(172, 650)
+	template_train32px_old_reversed(172, 650)
 }
 
 spriteset(spriteset_BR323a_Northern, "gfx/BR323.png") {
@@ -71,7 +71,7 @@ spriteset(spriteset_BR323b_Northern, "gfx/BR323.png") {
 }
 
 spriteset(spriteset_BR323c_Northern, "gfx/BR323.png") {
-	template_train32px_reversed(0, 925)
+	template_train32px_old_reversed(0, 925)
 }
 
 spriteset(spriteset_BR323a_LM, "gfx/BR323.png") {
@@ -83,7 +83,7 @@ spriteset(spriteset_BR323b_LM, "gfx/BR323.png") {
 }
 
 spriteset(spriteset_BR323c_LM, "gfx/BR323.png") {
-	template_train32px_reversed(172, 775)
+	template_train32px_old_reversed(172, 775)
 }
 
 spriteset(spriteset_BR323a_WMR, "gfx/BR323.png") {
@@ -95,7 +95,7 @@ spriteset(spriteset_BR323b_WMR, "gfx/BR323.png") {
 }
 
 spriteset(spriteset_BR323c_WMR, "gfx/BR323.png") {
-	template_train32px_reversed(0, 1000)
+	template_train32px_old_reversed(0, 1000)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR323a,cargo_subtype){
