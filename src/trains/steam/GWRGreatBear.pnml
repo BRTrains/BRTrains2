@@ -7,7 +7,7 @@ spriteset(spriteset_GreatBear, "gfx/Steam/GreatBearEngine.png") {
 }
 
 spriteset(spriteset_GreatBearT_GWR, "gfx/Steam/GreatBearTender.png") {
-	template_train20px_anim(0, 13)
+	template_train20px(0, 13)
 }
 
 switch(FEAT_TRAINS,SELF, sw_GreatBearT,cargo_subtype){
