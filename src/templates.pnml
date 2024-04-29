@@ -155,6 +155,21 @@ template template_purchase_anim(x,y){
 }
 
 
+// VAGUELY SURVIVABLE FOR NOW
+// Should be redrawn thoug
+
+template template_train28px_old_pacer(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 19, -3, -10, NOANIM]    //n
+    [ x+9, y, 19, 15, -11, -9, NOANIM] //ne
+    [ x+29, y, 28, 12, -15, -7, NOANIM] //e
+    [ x+58, y, 19, 15, -2, -7, NOANIM] //se
+    [ x+78, y, 8, 19, -3, -14, NOANIM] //s
+    [ x+87, y, 19, 15, -13, -7, NOANIM] //sw
+    [ x+107, y, 28, 12, -14, -7, NOANIM] //w
+    [ x+136, y, 19, 15, -5, -8, NOANIM] //nw
+}
+
 // ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
 // ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
 // ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
@@ -173,21 +188,9 @@ template template_train20px_4view(x,y){ // Clone to 8view when changed
     [ x+25, y, 20, 12, -4, -8] // e
     [ x+46, y, 15, 15, 1, -7] // se
     [ x, y, 8, 18, -3, -11] //s
-    [ x+9, y, 15, 15, -8, -9] //sw
+    [ x+9, y, 15, 15, -8, -9] //swr
     [ x+25, y, 20, 12, -4, -8] //w
     [ x+46, y, 15, 15, 1, -7] //nw
-}
-
-template template_train28px_old_pacer(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 19, -3, -9, NOANIM]    //n
-    [ x+9, y, 19, 15, -11, -9, NOANIM] //ne
-    [ x+29, y, 28, 12, -7, -7, NOANIM] //e
-    [ x+58, y, 19, 15, -5, -8, NOANIM] //se
-    [ x+78, y, 8, 19, -3, -9, NOANIM] //s
-    [ x+87, y, 19, 15, -15, -6, NOANIM] //sw
-    [ x+107, y, 28, 12, -17, -6, NOANIM] //w
-    [ x+136, y, 19, 15, -8, -9, NOANIM] //nw
 }
 
 template template_trainBRMk2(x,y){
