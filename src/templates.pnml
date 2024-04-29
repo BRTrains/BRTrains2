@@ -177,17 +177,6 @@ template template_train20px_4view(x,y){ // Clone to 8view when changed
     [ x+25, y, 20, 12, -4, -8] //w
     [ x+46, y, 15, 15, 1, -7] //nw
 }
-template template_train20px_anim(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 17, -4, -11, ANIM]
-    [ x+10, y, 15, 15, -8, -10, ANIM]
-    [ x+27, y, 20, 12, -4, -8, ANIM]
-    [ x+49, y, 15, 15, -1, -8, ANIM]
-    [ x+66, y, 8, 17, -4, -3, ANIM]
-    [ x+76, y, 15, 15, -14, -6, ANIM]
-    [ x+93, y, 20, 12, -15, -8, ANIM]
-    [ x+115, y, 15, 15, -7, -11, ANIM]
-}
 
 template template_train28px_old_pacer(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
