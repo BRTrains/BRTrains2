@@ -3,74 +3,74 @@ spriteset(spriteset_RS_SWB_Hopper, "gfx/Freight/RS_SWB_Hopper.png") {
 }
 
 spriteset(spriteset_RS_SWB_Hopper_covered_grey, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(0, 99)
+	template_train20px(0, 413)
 }
 spriteset(spriteset_RS_SWB_Hopper_covered_brown, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(62, 99)
+	template_train20px(0, 433)
 }
 
 spriteset(spriteset_RS_SWB_Hopper_coal_grey_empty, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(0, 14)
+	template_train20px(0, 13)
 }
 spriteset(spriteset_RS_SWB_Hopper_coal_grey_quarter, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(62, 14)
+	template_train20px(0, 33)
 }
 spriteset(spriteset_RS_SWB_Hopper_coal_grey_half, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(124, 14)
+	template_train20px(0, 53)
 }
 spriteset(spriteset_RS_SWB_Hopper_coal_grey_threequarter, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(186, 14)
+	template_train20px(0, 73)
 }
 spriteset(spriteset_RS_SWB_Hopper_coal_grey_full, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(248, 14)
+	template_train20px(0, 93)
 }
 
 spriteset(spriteset_RS_SWB_Hopper_coal_brown_empty, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(0, 35)
+	template_train20px(0, 113)
 }
 spriteset(spriteset_RS_SWB_Hopper_coal_brown_quarter, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(62, 35)
+	template_train20px(0, 133)
 }
 spriteset(spriteset_RS_SWB_Hopper_coal_brown_half, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(124, 35)
+	template_train20px(0, 153)
 }
 spriteset(spriteset_RS_SWB_Hopper_coal_brown_threequarter, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(186, 35)
+	template_train20px(0, 173)
 }
 spriteset(spriteset_RS_SWB_Hopper_coal_brown_full, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(248, 35)
+	template_train20px(0, 193)
 }
 
 spriteset(spriteset_RS_SWB_Hopper_ironore_grey_empty, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(0, 56)
+	template_train20px(0, 213)
 }
 spriteset(spriteset_RS_SWB_Hopper_ironore_grey_quarter, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(62, 56)
+	template_train20px(0, 233)
 }
 spriteset(spriteset_RS_SWB_Hopper_ironore_grey_half, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(124, 56)
+	template_train20px(0, 253)
 }
 spriteset(spriteset_RS_SWB_Hopper_ironore_grey_threequarter, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(186, 56)
+	template_train20px(0, 273)
 }
 spriteset(spriteset_RS_SWB_Hopper_ironore_grey_full, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(248, 56)
+	template_train20px(0, 293)
 }
 
 spriteset(spriteset_RS_SWB_Hopper_ironore_brown_empty, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(0, 77)
+	template_train20px(0, 313)
 }
 spriteset(spriteset_RS_SWB_Hopper_ironore_brown_quarter, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(62, 77)
+	template_train20px(0, 333)
 }
 spriteset(spriteset_RS_SWB_Hopper_ironore_brown_half, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(124, 77)
+	template_train20px(0, 353)
 }
 spriteset(spriteset_RS_SWB_Hopper_ironore_brown_threequarter, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(186, 77)
+	template_train20px(0, 373)
 }
 spriteset(spriteset_RS_SWB_Hopper_ironore_brown_full, "gfx/Freight/RS_SWB_Hopper.png") {
-	template_train20px_4view(248, 77)
+	template_train20px(0, 393)
 }
 
 // Third layer, switch based on how full the wagon is
