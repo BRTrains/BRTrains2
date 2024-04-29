@@ -99,6 +99,72 @@ template template_train32px_old(x,y){
     [ x+150, y, 21, 18, -5, -10,	NOANIM] //nw
 }
 
+// REPEAT ALIGNMENTS FROM 32px_old ABOVE
+// Like old 32px template but allows items
+template template_train32px_old_aim(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x, y, 8, 24, -3, -11,			ANIM] //n
+    [ x+9, y, 21, 18, -13, -11,		ANIM] //ne *
+    [ x+31, y, 32, 12, -19, -8,		ANIM] //e
+    [ x+64, y, 21, 18, -4, -10,		ANIM] //se
+    [ x+86, y, 8, 24, -3, -18,		ANIM] //s
+    [ x+95, y, 21, 18, -13, -11,	ANIM] //sw
+    [ x+117, y, 32, 12, -14, -8,	ANIM] //w
+    [ x+150, y, 21, 18, -5, -10,	ANIM] //nw
+}
+
+// REPEAT ALIGNMENTS FROM 32px_old ABOVE
+// Note X offsets for first/last 4 items are flipped vs old 32px
+template template_train32px_old_reversed(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ x+86,  y, 8,  24, -3,  -11,	NOANIM] //n
+    [ x+95,  y, 21, 18, -13, -11,	NOANIM] //ne *
+    [ x+117, y, 32, 12, -19, -8,	NOANIM] //e
+    [ x+150, y, 21, 18, -4,  -10,	NOANIM] //se
+    [ x,     y, 8,  24, -3,  -18,	NOANIM] //s
+    [ x+9,   y, 21, 18, -13, -11,	NOANIM] //sw
+    [ x+31,  y, 32, 12, -14, -8,	NOANIM] //w
+    [ x+64,  y, 21, 18, -5,  -10,	NOANIM] //nw
+}
+
+// Purchase sprites
+
+// Used by units with the Multiple Unit flag - eg IC125 and MPV
+template template_mu_purchase(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ ]
+    [ ]
+    [x,     y,      1,     1,     -10,-   6,          NOANIM|NOWHITE]
+    [ ]
+    [ ]
+    [ ]
+    [x,     y,      87,     12,     -10,-   6,          NOANIM|NOWHITE]
+    [ ]
+}
+
+
+
+template template_purchase(x,y){
+    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
+    [x,     y,      87,     12,     -25,-   6,          NOANIM|NOWHITE]
+}
+
+template template_purchase_anim(x,y){
+    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
+    [x,     y,      87,     12,     -25,-   6,          ANIM|NOWHITE]
+}
+
+
+// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
+// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
+// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
+// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
+// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
+// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
+// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
+// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
+
+
 // THIS VIEW IS 8 FROM 4, IT REPEATS THE SECOND SET FOR OFFSET PURPOSES
 template template_train20px_4view(x,y){ // Clone to 8view when changed
     //left_x, upper_y, width, height, offset_x, offset_y
@@ -121,30 +187,6 @@ template template_train20px_anim(x,y){
     [ x+76, y, 15, 15, -14, -6, ANIM]
     [ x+93, y, 20, 12, -15, -8, ANIM]
     [ x+115, y, 15, 15, -7, -11, ANIM]
-}
-
-template template_train32px_anim(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 24, -3, -12,			ANIM|NOWHITE]
-    [ x+9, y, 21, 18, -13, -10,		ANIM|NOWHITE]
-    [ x+31, y, 32, 12, -15, -8,		ANIM|NOWHITE]
-    [ x+64, y, 21, 18, -7, -11,		ANIM|NOWHITE]
-    [ x+86, y, 8, 24, -3, -12,		ANIM|NOWHITE]
-    [ x+95, y, 21, 18, -13, -10,	ANIM|NOWHITE]
-    [ x+117, y, 32, 12, -14, -8,	ANIM|NOWHITE]
-    [ x+150, y, 21, 18, -7, -11,	ANIM|NOWHITE]
-}
-
-template template_train32px_reversed(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x+86,	y, 8, 24, -3, -12,		NOANIM|NOWHITE]
-    [ x+95, y, 21, 17, -13, -10,	NOANIM|NOWHITE]
-    [ x+117, y, 32, 12, -16, -8,	NOANIM|NOWHITE]
-    [ x+150, y, 21, 17, -5, -10,	NOANIM|NOWHITE]
-	[ x, y, 8, 24, -3, -12,			NOANIM|NOWHITE]
-    [ x+9, y, 21, 17, -13, -10,		NOANIM|NOWHITE]
-    [ x+31, y, 32, 12, -15, -8,		NOANIM|NOWHITE]
-    [ x+64, y, 21, 17, -5, -10,		NOANIM|NOWHITE]
 }
 
 template template_train28px_old_pacer(x,y){
@@ -207,33 +249,6 @@ template template_train170ptF(x,y){
     [ x+120, y, 32, 12, -14, -7,	NOANIM|NOWHITE]
     [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
-
-// Used by units with the Multiple Unit flag - eg IC125 and MPV
-template template_mu_purchase(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ ]
-    [ ]
-    [x,     y,      1,     1,     -10,-   6,          NOANIM|NOWHITE]
-    [ ]
-    [ ]
-    [ ]
-    [x,     y,      87,     12,     -10,-   6,          NOANIM|NOWHITE]
-    [ ]
-}
-
-
-
-template template_purchase(x,y){
-    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
-    [x,     y,      87,     12,     -25,-   6,          NOANIM|NOWHITE]
-}
-
-template template_purchase_anim(x,y){
-    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
-    [x,     y,      87,     12,     -25,-   6,          ANIM|NOWHITE]
-}
-
-// Train sprite template
 
 // Wtf are these offsets?
 template tmpl_train_8(x, y) {	
