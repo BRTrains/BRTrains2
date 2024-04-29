@@ -3,79 +3,83 @@ spriteset(spriteset_BRHHA, "gfx/Freight/BRHHA.png") {
 }
 
 spriteset(spriteset_BRHHA_empty, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 13)
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BRHHA_covered, "gfx/Freight/BRHHA.png") {
+	template_train32px(0, 39)
 }
 
 spriteset(spriteset_BRHHA_coal_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 38)
+	template_train32px(0, 65)
 }
 
 spriteset(spriteset_BRHHA_coal_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 63)
+	template_train32px(0, 91)
 }
 
 spriteset(spriteset_BRHHA_ironore_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 113)
+	template_train32px(0, 117)
 }
 
 spriteset(spriteset_BRHHA_ironore_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 138)
+	template_train32px(0, 143)
 }
 
 spriteset(spriteset_BRHHA_lime_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 188)
+	template_train32px(0, 169)
 }
 
 spriteset(spriteset_BRHHA_lime_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 213)
+	template_train32px(0, 195)
 }
 
 spriteset(spriteset_BRHHA_copperore_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 263)
+	template_train32px(0, 221)
 }
 
 spriteset(spriteset_BRHHA_copperore_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 288)
+	template_train32px(0, 247)
 }
 
 spriteset(spriteset_BRHHA_bauxite_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 338)
+	template_train32px(0, 273)
 }
 
 spriteset(spriteset_BRHHA_bauxite_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 363)
+	template_train32px(0, 299)
 }
 
 spriteset(spriteset_BRHHA_clay_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 413)
+	template_train32px(0, 325)
 }
 
 spriteset(spriteset_BRHHA_clay_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 438)
+	template_train32px(0, 351)
 }
 
 spriteset(spriteset_BRHHA_phosphate_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 488)
+	template_train32px(0, 325)
 }
 
 spriteset(spriteset_BRHHA_phosphate_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 513)
+	template_train32px(0, 351)
 }
 
 spriteset(spriteset_BRHHA_pyriteore_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 563)
+	template_train32px(0, 429)
 }
 
 spriteset(spriteset_BRHHA_pyriteore_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 588)
+	template_train32px(0, 455)
 }
 
 spriteset(spriteset_BRHHA_sand_half, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 638)
+	template_train32px(0, 481)
 }
 
 spriteset(spriteset_BRHHA_sand_full, "gfx/Freight/BRHHA.png") {
-	template_train32px4viewLowered(0, 663)
+	template_train32px(0, 507)
 }
 
 switch(FEAT_TRAINS,SELF, sw_HHAcoal,cargo_count){
@@ -133,6 +137,11 @@ switch(FEAT_TRAINS,SELF, sw_HHAsand,cargo_count){
 	37 .. 75: spriteset_BRHHA_sand_full;
 }
 
+switch(FEAT_TRAINS,SELF, sw_HHAcovered,cargo_count){
+	0: spriteset_BRHHA_empty;
+	spriteset_BRHHA_covered;
+}
+
 switch(FEAT_TRAINS,SELF, sw_HHAcargo, cargo_type_in_veh){
 	COAL: sw_HHAcoal;
 	IORE: sw_HHAironore;
@@ -143,6 +152,7 @@ switch(FEAT_TRAINS,SELF, sw_HHAcargo, cargo_type_in_veh){
 	PHOS: sw_HHAphosphate;
 	PORE: sw_HHApyriteore;
 	SAND: sw_HHAsand;
+	sw_HHAcovered;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BRHHA_cargo_subtype_text,cargo_subtype){
