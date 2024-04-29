@@ -40,6 +40,20 @@ spriteset(spriteset_Utility32, "gfx/Template/32px.png") {
 	template_train32px(0, 13)
 }
 
+spriteset(spriteset_Utility28OLD_Purchase, "gfx/Template/old_28px.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_Utility28OLD, "gfx/Template/old_28px.png") {
+	template_train28px_old(0, 13)
+}
+
+spriteset(spriteset_Utility32OLD_Purchase, "gfx/Template/old_32px.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_Utility32OLD, "gfx/Template/old_32px.png") {
+	template_train32px_old(0, 13)
+}
+
 switch(FEAT_TRAINS,SELF,sw_UtilityTrains_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
@@ -271,5 +285,81 @@ item (FEAT_TRAINS, item_UtilityTrain32px, 606) {
 	cargo_capacity:						return 0;
 	default: 							spriteset_Utility32;    
 	purchase:							spriteset_Utility32_Purchase;    	
+}
+}
+
+item (FEAT_TRAINS, item_UtilityTrain28pxOLD, 607) {
+	property {
+		name: 							string(STR_NAME_Utility28pxOLD);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1700,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					255;
+		reliability_decay:				10;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;		
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							5000 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	1;
+		air_drag_coefficient:			0.1;
+		length:							7;
+	}
+	graphics {	
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	default: 							spriteset_Utility28OLD;    
+	purchase:							spriteset_Utility28OLD_Purchase;    	
+}
+}
+
+item (FEAT_TRAINS, item_UtilityTrain32pxOLD, 608) {
+	property {
+		name: 							string(STR_NAME_Utility32pxOLD);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1700,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					254;
+		reliability_decay:				10;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;		
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							5000 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	1;
+		air_drag_coefficient:			0.1;
+		length:							8;
+	}
+	graphics {	
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	default: 							spriteset_Utility32OLD;    
+	purchase:							spriteset_Utility32OLD_Purchase;    	
 }
 }

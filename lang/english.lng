@@ -60,6 +60,8 @@ STR_NAME_Utility20px                    :20px alignment/test unit
 STR_NAME_Utility24px                    :24px alignment/test unit
 STR_NAME_Utility28px                    :28px alignment/test unit
 STR_NAME_Utility32px                    :32px alignment/test unit
+STR_NAME_Utility28pxOLD                 :28px alignment/test unit (OLD)
+STR_NAME_Utility32pxOLD                 :32px alignment/test unit (OLD)
 
 STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)

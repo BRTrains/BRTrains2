@@ -5,6 +5,8 @@ sort(FEAT_TRAINS, [
  item_UtilityTrain24px,
  item_UtilityTrain28px,
  item_UtilityTrain32px,
+ item_UtilityTrain28pxOLD,
+ item_UtilityTrain32pxOLD,
  item_EyeCandy,
  item_Coppernob,
  item_FurnessK2,

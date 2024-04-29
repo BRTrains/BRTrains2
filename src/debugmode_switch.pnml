@@ -1,12 +1,23 @@
  if (param[1] == 0) {
+
+// Disable some trains that aren't finished
 	disable_item(FEAT_TRAINS, 589); // TGV
 
 
-	// Ignore below here, utility/template trains for alignment
+
+
+
+
+
+
+
+// Disable some trains that only exist for template alignment or debugging
 	disable_item(FEAT_TRAINS, 601); // 12px
 	disable_item(FEAT_TRAINS, 602); // 16px
 	disable_item(FEAT_TRAINS, 603); // 20px
 	disable_item(FEAT_TRAINS, 604); // 24p
 	disable_item(FEAT_TRAINS, 605); // 28px
 	disable_item(FEAT_TRAINS, 606); // 32px
+	disable_item(FEAT_TRAINS, 607); // 28pxOLD
+	disable_item(FEAT_TRAINS, 608); // 32pxOLD
  }
