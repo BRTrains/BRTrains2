@@ -33,27 +33,27 @@ spriteset(spriteset_BluePullmanc_GreyBlue, "gfx/BluePullman.png") {
 }
 
 // Coose sprites based on liveries
-switch(FEAT_TRAINS, SELF, switch_BluePullmana, cargo_subtype) {
-	0: spriteset_BluePullmana_Pullman;
-	1: spriteset_BluePullmana_PullmanPanels;
+switch(FEAT_TRAINS, SELF, switch_BluePullmana, cargo_subtype) {	
+	0: spriteset_BluePullmana_PullmanPanels;
+	1: spriteset_BluePullmana_Pullman;
 	2: spriteset_BluePullmana_GreyBlue;
 }
 
-switch(FEAT_TRAINS, SELF, switch_BluePullmanb, cargo_subtype) {
-	0: spriteset_BluePullmanb_Pullman;	
-	1: spriteset_BluePullmanb_PullmanPanels;
+switch(FEAT_TRAINS, SELF, switch_BluePullmanb, cargo_subtype) {		
+	0: spriteset_BluePullmanb_PullmanPanels;
+	1: spriteset_BluePullmanb_Pullman;
 	2: spriteset_BluePullmanb_GreyBlue;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BluePullmanc, cargo_subtype) {
-	0: spriteset_BluePullmanc_Pullman;
-	1: spriteset_BluePullmanc_PullmanPanels;
+	0: spriteset_BluePullmanc_PullmanPanels;
+	1: spriteset_BluePullmanc_Pullman;	
 	2: spriteset_BluePullmanc_GreyBlue;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BluePullman_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_Pullman);
-	1:	return string(str_PullmanPanels);
+	0:	return string(str_PullmanPanels);
+    1:	return string(str_Pullman);	
 	2:	return string(str_BRGreyBlue);
        return CB_RESULT_NO_TEXT;
 }
