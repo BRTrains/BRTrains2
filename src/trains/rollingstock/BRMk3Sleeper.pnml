@@ -1,39 +1,39 @@
-spriteset(spriteset_BRMk3Sleeper_purchase, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_purchase, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BRMk3Sleeper_BRBlue, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_BRBlue, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk3Sleeper_Intercity, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_Intercity, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BRMk3Sleeper_FirstScotrail, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_FirstScotrail, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BRMk3Sleeper_Scotrail, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_Scotrail, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 88)
 }
 
-spriteset(spriteset_BRMk3Sleeper_CaledonianSleeper, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_CaledonianSleeper, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 113)
 }
 
-spriteset(spriteset_BRMk3Sleeper_GreatWestern, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_GreatWestern, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 138)
 }
 
-spriteset(spriteset_BRMk3Sleeper_GWR, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_GWR, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 163)
 }
 
-spriteset(spriteset_BRMk3Sleeper_Stagecoach, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_Stagecoach, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 213)
 }
-spriteset(spriteset_BRMk3Sleeper_StagecoachReversed, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk3Sleeper_StagecoachReversed, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old_reversed(0, 213)
 }
 

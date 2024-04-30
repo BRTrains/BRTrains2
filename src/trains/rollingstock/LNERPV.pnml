@@ -1,16 +1,16 @@
-spriteset(spriteset_LNERPV_Purchase, "gfx/Rolling Stock/LNERTeakPV.png") {
+spriteset(spriteset_LNERPV_Purchase, "gfx/Rolling Stock/LNER/LNERTeakPV.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_LNERPV_Teak, "gfx/Rolling Stock/LNERTeakTK.png") {
+spriteset(spriteset_LNERPV_Teak, "gfx/Rolling Stock/LNER/LNERTeakTK.png") {
 	template_train28px_old(0, 128)
 }
 
-spriteset(spriteset_LNERPV_BRMaroon, "gfx/Rolling Stock/LNERBRMaroon.png") {
+spriteset(spriteset_LNERPV_BRMaroon, "gfx/Rolling Stock/LNER/LNERBRMaroon.png") {
 	template_train28px_old(0, 128)
 }
 
-spriteset(spriteset_LNERPV_BRCarmCream, "gfx/Rolling Stock/LNERBRCarmCream.png") {
+spriteset(spriteset_LNERPV_BRCarmCream, "gfx/Rolling Stock/LNER/LNERBRCarmCream.png") {
 	template_train28px_old(0, 128)
 }
 

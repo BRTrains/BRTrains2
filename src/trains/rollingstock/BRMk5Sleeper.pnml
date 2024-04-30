@@ -1,8 +1,8 @@
-spriteset(spriteset_BRMk5Sleeper_purchase, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk5Sleeper_purchase, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_purchase(98, 0)
 }
 
-spriteset(spriteset_BRMk5Sleeper_CaledonianSleeper, "gfx/Rolling Stock/BRSleeper.png") {
+spriteset(spriteset_BRMk5Sleeper_CaledonianSleeper, "gfx/Rolling Stock/Mk3Mk5_Sleepers") {
 	template_train32px_old(0, 188)
 }
 
