@@ -1,40 +1,46 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_777_spriteset, position_in_articulated_veh % 4) {
-	0: spriteset_br_777_front;
-	3: spriteset_br_777_rear;
-	spriteset_br_777_middle;
+switch(FEAT_TRAINS, SELF, switch_br777_spriteset, position_in_articulated_veh % 4) {
+	0: spriteset_br777_front;
+	3: spriteset_br777_rear;
+	spriteset_br777_middle;
 }
 
 // Define articulations
-switch(FEAT_TRAINS, SELF, switch_br_777_articulated, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, switch_br777_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..3: return item_br_777;
+	1..3: return item_br777;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_777_particles, position_in_articulated_veh % 4) {
+switch(FEAT_TRAINS, SELF, switch_br777_particles, position_in_articulated_veh % 4) {
 	// No effects; third rail
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
+// Middle cars are shorter
+switch(FEAT_TRAINS, SELF, switch_br777_length, position_in_articulated_veh % 4) {
+	1..2: 6; // Middle vehicles 24px
+	7; // End vehicles 28px
+}
+
 // Start/stop switch, used to limit maximum length
-switch(FEAT_TRAINS, SELF, switch_br_777_start_stop, num_vehs_in_consist) {	
+switch(FEAT_TRAINS, SELF, switch_br777_start_stop, num_vehs_in_consist) {	
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
 // Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_br_777_can_attach_wagon, vehicle_type_id) {
-	item_br_777: return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, switch_br777_can_attach_wagon, vehicle_type_id) {
+	item_br777: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
 
 // Class 777
-item(FEAT_TRAINS, item_br_777, 450) {
+item(FEAT_TRAINS, item_br777, 450) {
 	property {
-		name: string(STR_BR_777);
+		name: string(STR_br777);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2020, 09, 01);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
@@ -64,21 +70,21 @@ item(FEAT_TRAINS, item_br_777, 450) {
 		extra_power_per_wagon: 0 kW;
 		tractive_effort_coefficient: 0.3;
 		air_drag_coefficient: 0.06;
-		length: 8; // full tile length vehicle
+		length: 7; // full tile length vehicle
 		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
 		extra_weight_per_wagon: 0 ton;
 		bitmask_vehicle_info: 0;
 	}
 	
 	graphics {
-		default: switch_br_777_spriteset;
-		purchase: spriteset_br_777_purchase;
-		
-		articulated_part: switch_br_777_articulated;
-		start_stop: switch_br_777_start_stop;	
-		can_attach_wagon: switch_br_777_can_attach_wagon;
-		visual_effect_and_powered: switch_br_777_particles;			
-		additional_text: string(STR_DSC_BR_777);	
+		default: switch_br777_spriteset;
+		purchase: spriteset_br777_purchase;
+		length: switch_br777_length;
+		articulated_part: switch_br777_articulated;
+		start_stop: switch_br777_start_stop;	
+		can_attach_wagon: switch_br777_can_attach_wagon;
+		visual_effect_and_powered: switch_br777_particles;			
+		additional_text: string(STR_DSC_br777);	
 		cargo_capacity:						return(484/4 * param_pax);
 		cost_factor:	return(GetAdjustedCost(50));
 		running_cost_factor: return(GetAdjustedCost(40));

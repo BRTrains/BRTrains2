@@ -108,7 +108,7 @@ STR_BR_756_4CAR                         :BR Class 756/4 (4-Car with Power Pack)
 STR_BR_769                              :BR Class 769/0/3/4 'Flex' (4-Car)
 STR_BR_769_9                            :BR Class 769/9 'Flex' (4-Car)
 
-STR_BR_777                              :BR Class 777 'METRO' (4-Car)
+STR_br777                              :BR Class 777 'METRO' (4-Car)
 
 STR_BR800_5CAR                         :BR Class 800/0/2 (5-Car)
 STR_BR800_9CAR                         :BR Class 800/1/3 (9-Car)
@@ -167,7 +167,7 @@ STR_DSC_BR_755                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric 
 STR_DSC_BR_756                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
 STR_DSC_BR_769                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London, Northen, Rail Operations Group
 STR_DSC_BR_769_9                       :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
-STR_DSC_BR_777                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Merseyrail
+STR_DSC_br777                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Merseyrail
 
 STR_DSC_BR800                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway, Great Western Railway, Virgin Trains East Coast, Hitachi
 STR_DSC_BR801                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}London North Eastern Railway, Hitachi

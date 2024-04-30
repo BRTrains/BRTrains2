@@ -1,7 +1,13 @@
-spriteset (spriteset_br_777_front, "gfx/br_777.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_777_middle, "gfx/br_777.png") { tmpl_train_8(0, 29) }
-spriteset (spriteset_br_777_rear, "gfx/br_777.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br777_purchase, "gfx/EMU/777.png") {
+	template_purchase(0,0)
+}
 
-spriteset (spriteset_br_777_purchase, "gfx/br_777.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset (spriteset_br777_front, "gfx/EMU/777.png") {
+	template_train28px(0, 13)
+}
+spriteset (spriteset_br777_middle, "gfx/EMU/777.png") {
+	template_train24px(0, 61)
+}
+spriteset (spriteset_br777_rear, "gfx/EMU/777.png") {
+	template_train28px(0, 37)
 }
