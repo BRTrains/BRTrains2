@@ -1183,62 +1183,67 @@ STR_NAME_LNERBG					:LNER Gresley Full Brake Van
 str_LNERBG_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 
 
-STR_NAME_LU1938					:London Underground 1938 Stock (8-car)
+STR_NAME_LU1938					:London Underground 1938 Stock (8-car, Deep Level)
 str_LU1938_usage				:Metro
 str_LU1938_eos					:---
 str_LU1938_liveries				:London Underground (Red Roof), London Undeground (Grey Roof)
 
-STR_NAME_LU1967					:London Underground 1967 Stock (8-car)
+STR_NAME_LU1967					:London Underground 1967 Stock (8-car, Deep Level)
 str_LU1967_usage				:Metro
 str_LU1967_eos					:---
 str_LU1967_liveries				:London Underground
 
-STR_NAME_LU1986					:London Underground Experimental (1986) Stock (2-car)
+STR_NAME_LU1986					:London Underground Experimental (1986) Stock (2-car, Deep Level)
 str_LU1986_usage				:Metro
 str_LU1986_eos					:---
 str_LU1986_liveries				:London Underground
 
-STR_NAME_LUAStock				:London Underground A60/A62 Stock (4-car)
+STR_NAME_LUAStock				:London Underground A60/A62 Stock (4-car, Sub-Surface)
 str_LUAStock_usage				:Metro
 str_LUAStock_eos				:---
 str_LUAStock_liveries			:London Underground
 
-STR_NAME_LUCStock				:London Underground C69/C77 Stock (3-car)
+STR_NAME_LUCStock				:London Underground C69/C77 Stock (3-car, Sub-Surface)
 str_LUCStock_usage				:Metro
 str_LUCStock_eos				:---
 str_LUCStock_liveries			:London Underground
 
-STR_NAME_LUDStock				:London Underground D78 Stock (3-car)
+STR_NAME_LUDStock				:London Underground D78 Stock (3-car, Sub-Surface)
 str_LUDStock_usage				:Metro
 str_LUDStock_eos				:---
 str_LUDStock_liveries			:London Underground
 
-STR_NAME_LU1992					:London Underground 1992 Stock (8-car)
-STR_NAME_LU1992_4				:London Underground 1992 Stock (4-car)
+STR_NAME_LU1992					:London Underground 1992 Stock (8-car, Deep Level)
+STR_NAME_LU1992_4				:London Underground 1992 Stock (4-car, Deep Level)
 str_LU1992_usage				:Metro
 str_LU1992_eos					:---
 str_LU1992_liveries				:London Underground, Network SouthEast
 
-STR_NAME_LU1995					:London Underground 1995 Stock (6-car)
+STR_NAME_LU1995					:London Underground 1995 Stock (6-car, Deep Level)
 str_LU1995_usage				:Metro
 str_LU1995_eos					:---
 str_LU1995_liveries				:London Underground
 
-STR_NAME_LU1996					:London Underground 1996 Stock (7-car)
+STR_NAME_LU1996					:London Underground 1996 Stock (7-car, Deep Level)
 str_LU1996_usage				:Metro
 str_LU1996_eos					:---
 str_LU1996_liveries				:London Underground
 
-STR_NAME_LULS8					:London Underground S8 Stock (8-car)
-STR_NAME_LULS7					:London Underground S7 Stock (7-car)
+STR_NAME_LULS8					:London Underground S8 Stock (8-car, Sub-Surface)
+STR_NAME_LULS7					:London Underground S7 Stock (7-car, Sub-Surface)
 str_LULS_usage					:Metro
 str_LULS_eos					:---
 str_LULS_liveries				:London Underground, London Underground - Unwrapped, London Underground - Poppies
 
-STR_NAME_LU2009					:London Underground 2009 Stock (8-car)
+STR_NAME_LU2009					:London Underground 2009 Stock (8-car, Deep Level)
 str_LU2009_usage				:Metro
 str_LU2009_eos					:---
 str_LU2009_liveries				:London Underground
+
+STR_NAME_LU2024					:London Underground 2024 Stock (9-car, Deep Level)
+str_LU2024_usage				:Metro
+str_LU2024_eos					:---
+str_LU2024_liveries				:London Underground
 
 STR_IE2800_2CAR                 :Irish Railways 2800 Class
 STR_DSC_IE2800                  :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Commuter Green, Commuter Gold, Intercity
