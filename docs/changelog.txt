@@ -1,3 +1,4 @@
+# In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Added Class 321
 - Re-drew class 66
@@ -19,6 +20,7 @@
 - Added Pride livery for Class 334
 - Added Tesco livery for Container wagon
 - Fixed 378/2 "celebration" livery only working on the first unit
+- Fixed Class 390 diagonals (some views 1px too short)
 - Improved consistency of some liveries between units
 - Improved Hitach A-Train (Class 8XX) family power outputs on diesel and electric
 - Improved LNER company logo (purchase sprites)
