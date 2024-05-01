@@ -286,7 +286,7 @@ item (FEAT_TRAINS, item_BR378_5, 228) {
 		name: 							string(STR_NAME_BR378_5);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2013,4,21);
-		model_life:						15;
+		model_life:						VEHICLE_NEVER_EXPIRES;
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
@@ -335,7 +335,7 @@ item (FEAT_TRAINS, item_BR378_5dv, 229) {
 		name: 							string(STR_NAME_BR378_5);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2013,4,21);
-		model_life:						15;
+		model_life:						VEHICLE_NEVER_EXPIRES;
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
