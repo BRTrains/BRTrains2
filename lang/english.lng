@@ -355,6 +355,11 @@ str_BR68_usage					:Mixed Traffic
 str_BR68_eos					:---
 str_BR68_liveries				:DRS, ScotRail, Chiltern Railways
 
+STR_NAME_BR88					:BR Class 88 (Bi-Mode)
+str_BR88_usage					:Mixed Traffic
+str_BR88_eos					:---
+str_BR88_liveries				:DRS
+
 STR_NAME_BR67Royal				:BR Class 67 'British Royal Train'
 str_BR67Royal_usage				:Mixed Traffic
 str_BR67Royal_eos				:---
