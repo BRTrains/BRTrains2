@@ -1,5 +1,6 @@
 - Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Added Class 321
+- Re-drew class 66
 
 # v2.8
 - Added Furness Railway 0-4-0 'Coppernob'
@@ -7,6 +8,8 @@
 - Added War Department "Austerity Tank"
 - Added LNER P2
 - Added Class 48
+- Added Class 88
+- Added London Underground 2024 Stock
 - Re-drew Class 70
 - Re-drew Class 175
 - Re-drew Class 334
@@ -15,10 +18,11 @@
 - Added GWR livery for Class 230
 - Added Pride livery for Class 334
 - Added Tesco livery for Container wagon
+- Fixed 378/2 "celebration" livery only working on the first unit
 - Improved consistency of some liveries between units
-- Adjusted some purchase dates and model lifespans
 - Improved Hitach A-Train (Class 8XX) family power outputs on diesel and electric
 - Improved LNER company logo (purchase sprites)
+- Adjusted some purchase dates and model lifespans
 - Set some additional units to never expire for late game freight
 - Re-templated a bunch of units (more than I want to count)
 - Re-aligned all templates
