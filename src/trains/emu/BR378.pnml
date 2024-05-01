@@ -64,7 +64,7 @@ switch(FEAT_TRAINS,SELF, sw_BR378c,cargo_subtype){
 	2:	spriteset_BR378c_Aventra;
 }
 
-switch(FEAT_TRAINS, SELF, switch_378_special_livery, position_in_consist)
+switch(FEAT_TRAINS, SELF, switch_378_special_livery, position_in_consist % 5)
 {
 	2: spriteset_BR378_LOunwrapped;
 	spriteset_BR378d_overground5;

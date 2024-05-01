@@ -760,8 +760,8 @@ str_BR377_5dv_usage				:Regional Passenger
 str_BR377_5dv_eos				:---
 str_BR377_5dv_liveries			:Southern
 
-STR_NAME_BR378				:BR Class 378 'Electrostar' (4-car)
-STR_NAME_BR378_3				:BR Class 378/0 'Electrostar' (5-Car, Dual Voltage)
+STR_NAME_BR378				    :BR Class 378 'Electrostar' (4-car)
+STR_NAME_BR378_3				:BR Class 378/0 'Electrostar' (3-Car, Dual Voltage)
 str_BR378_3_usage				:Urban Passenger
 str_BR378_3_eos					:---
 str_BR378_3_liveries			:London Overground
