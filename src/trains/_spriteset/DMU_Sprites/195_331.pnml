@@ -1,11 +1,19 @@
-spriteset (spriteset_br_195_331_front, "gfx/br_195_331.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_195_331_middle, "gfx/br_195_331.png") { tmpl_train_8(0, 29) }
-spriteset (spriteset_br_195_331_rear, "gfx/br_195_331.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_195_purchase, "gfx/br_195_331.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset (spriteset_br_195_purchase, "gfx/Multiple Classes/195_331.png") {
+	template_purchase(0, 0)
+}
+spriteset (spriteset_br_331_purchase, "gfx/Multiple Classes/195_331.png") {
+	template_purchase(89, 0)
 }
 
-spriteset (spriteset_br_331_middle_panto, "gfx/br_195_331.png") { tmpl_train_8(0, 105) } // electric car
-spriteset (spriteset_br_331_purchase, "gfx/br_195_331.png") {
-	[2, 136, 91, 12, -25, -6]	
+spriteset (spriteset_br_195_331_front, "gfx/Multiple Classes/195_331.png") {
+	template_train32px(0, 13)
+}
+spriteset (spriteset_br_195_331_rear, "gfx/Multiple Classes/195_331.png") {
+	template_train32px(0, 39)
+}
+spriteset (spriteset_br_195_331_middle, "gfx/Multiple Classes/195_331.png") {
+	template_train32px(0, 65)
+}
+spriteset (spriteset_br_331_middle_panto, "gfx/Multiple Classes/195_331.png") {
+	template_train32px(0, 91) // Pantograph car (331 only)
 }
