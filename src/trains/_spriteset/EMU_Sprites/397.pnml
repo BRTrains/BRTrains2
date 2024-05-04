@@ -1,8 +1,16 @@
-spriteset (spriteset_br_397_front, "gfx/br_397_tpx.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_397_middle, "gfx/br_397_tpx.png") { tmpl_train_8(0, 29) }
-spriteset (spriteset_br_397_middle_panto, "gfx/br_397_tpx.png") { tmpl_train_8(0, 105) }
-spriteset (spriteset_br_397_rear, "gfx/br_397_tpx.png") { tmpl_train_8(0, 58) }
+spriteset (spriteset_br_397_purchase, "gfx/emu/397.png") {
+	template_purchase(0,0)
+}
 
-spriteset (spriteset_br_397_purchase, "gfx/br_397_tpx.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset (spriteset_br_397_front, "gfx/emu/397.png") {
+	template_train32px(0, 13)
+}
+spriteset (spriteset_br_397_rear, "gfx/emu/397.png") {
+	template_train32px(0, 39)
+}
+spriteset (spriteset_br_397_middle, "gfx/emu/397.png") {
+	template_train32px(0, 65)
+}
+spriteset (spriteset_br_397_middle_panto, "gfx/emu/397.png") {
+	template_train32px(0, 91)
 }
