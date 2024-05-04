@@ -17,6 +17,7 @@
 - Re-drew Class 777
 - Re-drew Class 195
 - Re-drew Class 331
+- Re-drew Class 397
 - Improved Class 67
 - Added GWR livery for Class 230
 - Added Pride livery for Class 334
