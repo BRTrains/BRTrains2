@@ -1,26 +1,33 @@
-// Spriteset car definitions
-spriteset (spriteset_br_68_5a_front, "gfx/br_68_5a.png") { tmpl_train_8(0, 0) }
-spriteset (spriteset_br_68_5a_middle, "gfx/br_68_5a.png") { tmpl_train_8(0, 29) }
-spriteset (spriteset_br_68_5a_middle_reversed, "gfx/br_68_5a.png") { tmpl_train_8_reversed(0, 29) }
-spriteset (spriteset_br_68_5a_rear, "gfx/br_68_5a.png") { tmpl_train_8(0, 58) }
-spriteset (spriteset_br_68_5a_rear_reversed, "gfx/br_68_5a.png") { tmpl_train_8_reversed(0, 106) }
-spriteset (spriteset_br_68_5a_purchase, "gfx/br_68_5a.png") {
-	[2, 89, 91, 12, -25, -6]	
+spriteset (spriteset_br_68_5a_purchase, "gfx/br68_v2.png") {
+	template_purchase(0, 0)
+}
+
+spriteset (spriteset_br5a_dvt_reversed, "gfx/Rolling Stock/Mk5a.png") {
+	template_train32px(0, 13)
+}
+spriteset (spriteset_br5a_dvt, "gfx/Rolling Stock/Mk5a.png") {
+	template_train32px(0, 39)
+}
+spriteset (spriteset_br5a_middle, "gfx/Rolling Stock/Mk5a.png") {
+	template_train32px(0, 65)
+}
+spriteset (spriteset_br5a_middle_reversed, "gfx/Rolling Stock/Mk5a.png") {
+	template_train32px(0, 91)
 }
 
 switch(FEAT_TRAINS, PARENT, sw_br_68_5a_rear, vehicle_is_reversed) {
-	0: spriteset_br_68_5a_rear;
-	1: spriteset_br_68_5a_front;
+	0: spriteset_br5a_dvt;
+	1: spriteset_BR68_TPE;
 }
 
 switch(FEAT_TRAINS, PARENT, sw_br_68_5a_front, vehicle_is_reversed) {
-	0: spriteset_br_68_5a_front;
-	1: spriteset_br_68_5a_rear_reversed;
+	0: spriteset_BR68_TPE;
+	1: spriteset_br5a_dvt_reversed;
 }
 
 switch(FEAT_TRAINS, PARENT, sw_br_68_5a_middle, vehicle_is_reversed) {
-	0: spriteset_br_68_5a_middle;
-	1: spriteset_br_68_5a_middle_reversed;
+	0: spriteset_br5a_middle;
+	1: spriteset_br5a_middle_reversed;
 }
 
 // Choose sprites depending on car position
