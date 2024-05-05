@@ -39,6 +39,7 @@ switch(FEAT_TRAINS,SELF,sw_BR68_cargo_subtype_text,cargo_subtype){
 switch(FEAT_TRAINS, PARENT, sw_BR68_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
 	586: sw_PUSHPULL_LocomotiveAsMk3DVT; // Mk3 DVT
 	585: sw_PUSHPULL_LocomotiveAsMk4DVT; // Mk4 DVT
+	596: sw_PUSHPULL_LocomotiveAsMk5DVT; // Mk5 DVT
 	sw_BR68; // No compatible locomotive found, show normal sprites
 }
 

@@ -11,6 +11,7 @@
 - Added Class 48
 - Added Class 88
 - Added London Underground 2024 Stock
+- Added Mk5a coach and DVT as separate purchase items (inc PushPull with Class 68)
 - Re-drew Class 70
 - Re-drew Class 175
 - Re-drew Class 334
@@ -18,12 +19,14 @@
 - Re-drew Class 195
 - Re-drew Class 331
 - Re-drew Class 397
+- Re-drew Mk5 coaches and DVT
 - Improved Class 67
 - Added GWR livery for Class 230
 - Added Pride livery for Class 334
 - Added Tesco livery for Container wagon
 - Fixed 378/2 "celebration" livery only working on the first unit
 - Fixed Class 390 diagonals (some views 1px too short)
+- Fixed 802 TPE livery not matching other TPE liveries
 - Improved consistency of some liveries between units
 - Improved Hitach A-Train (Class 8XX) family power outputs on diesel and electric
 - Improved LNER company logo (purchase sprites)

@@ -274,7 +274,8 @@ sort(FEAT_TRAINS, [
  item_91_BRMk4TSO,
  item_91_BRMk4RFM,
  item_91_BRMk4TSOD,
- 
+ item_BRMk5a,
+ item_BRMk5DVT,
  item_BRMk5Sleeper,
  item_IE2800
  ]);

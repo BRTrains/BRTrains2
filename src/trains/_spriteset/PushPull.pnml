@@ -4,6 +4,8 @@ Switches in this file are mirrors of their respective DVT or locomotive for push
 Changes to the locomotive should be mirrored here or strange things might happen
 It is recommended to always include a default...
 
+Everything I've found should refer PARENT not SELF
+
 */
 
 // Mirror of Mk3DVT
@@ -17,6 +19,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk3DVT, [STORE_TEMP(num_vehs
     6: spriteset_BRMk3DVT_VirginPretendolino;
     7: spriteset_BRMk3DVT_ArrivaWales;
     8: spriteset_BRMk3DVT_NetworkRail;
+	spriteset_BRMk3DVT_IntercitySwallow;
 }
 
 // Mirror of Mk4DVT
@@ -30,10 +33,16 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs
     spriteset_BR91_IntercitySwallowr;
 }
 
+// Not a mirror for once, as Mk5 DVT only has one livery
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk5DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+    spriteset_br5a_dvt_reversed;
+}
+
 // Not a mirror for once, as RMTPO PCV only has one livery
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsRMTPO, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
     spriteset_RMTPO_PCVr;
 }
+
 
 // Mirror of BR47
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR47,cargo_subtype){    
@@ -51,15 +60,16 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR47,cargo_subtype){
     11: spriteset_BR47_Colas;
     12: spriteset_BR47_One;
 	13: spriteset_BR47_Freightliner;
-       return CB_RESULT_NO_TEXT;
+	spriteset_BR47_BRGreen;
 }
 
 // Mirror of BR68
-switch(FEAT_TRAINS, SELF, sw_PUSHPULL_DVTasBR68,cargo_subtype){
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR68,cargo_subtype){
     0:	spriteset_BR68_DRS;
 	1: 	spriteset_BR68_ScotRail;
 	2:	spriteset_BR68_Chiltern;
 	3:	spriteset_BR68_TPE;
+	spriteset_BR68_DRS;
 }
 
 // Mirror of BR67
@@ -73,6 +83,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,cargo_subtype){
 	6:	spriteset_BR67_BrownPullman;
 	7:	spriteset_BR67_Wrexham;
 	8:  spriteset_BR67_DBCompany;
+	spriteset_BR67_EWS;
 }
 
 // Mirror of 86
@@ -83,7 +94,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR86, cargo_subtype){
 	3: 	spriteset_BR86_RailfreightDistribution;
 	4: 	spriteset_BR86_RailExpress;
 	5: 	spriteset_BR86_EWS;
-        return CB_RESULT_NO_TEXT;
+        spriteset_BR86_BRBlue;
 }
 
 // Mirror of 87
@@ -91,7 +102,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR87, cargo_subtype){
     0:	spriteset_BR87_BRBlue;
 	1:	spriteset_BR87_IntercitySwallow;
 	2:	spriteset_BR87_Virgin;
-        return CB_RESULT_NO_TEXT;
+        spriteset_BR87_BRBlue;
 }
 
 // Mirror of BR89
@@ -117,7 +128,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR90, [STORE_TEMP(0 - position_in_a
 	10:	spriteset_BR90_REX;
 	11:	spriteset_BR90_FirstScotrail;
 	12:	spriteset_BR90_GNER;
-        return CB_RESULT_NO_TEXT;
+	spriteset_BR90_IntercitySwallow;
 }
 
 // Mirror of BR91 (IC225.pnml)
@@ -128,4 +139,5 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR91, [STORE_TEMP(0 - position_in_a
 	3:	spriteset_BR91_EastCoastr;
 	4:	spriteset_BR91_VirginECr;
     5:	spriteset_BR91_LNERr;
+	spriteset_BR91_IntercitySwallowr;
 }

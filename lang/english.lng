@@ -1120,6 +1120,12 @@ str_BRMk4RFM_liveries			:Intercity Swallow, National Express, GNER, East Coast, 
 STR_NAME_BRMk4DVT				:BR Mark 4 Driving Van Trailer
 str_BRMk4DVT_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
+STR_NAME_BRMk5DVT				:BR Mark 5 Driving Van Trailer
+str_BRMk5DVT_liveries			:Transpennine Express
+
+STR_NAME_BRMk5a				:BR Mark 5 Driving Van Trailer
+str_BRMk5a_liveries			:Transpennine Express
+
 STR_NAME_BRMk5Sleeper			:BR Mark 5 Sleeper Coach
 str_BRMk5Sleeper_liveries		:Caledonian Sleaper
 

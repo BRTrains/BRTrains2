@@ -1,0 +1,25 @@
+spriteset(spriteset_BRMk5DVT_purchase, "gfx/Rolling Stock/Mk5a.png") {
+	template_purchase(0, 0)
+}
+
+// Show own graphics when facing forward
+// WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
+switch(FEAT_TRAINS,SELF, sw_BRMk5DVT,cargo_subtype){
+    0: spriteset_br5a_dvt;
+}
+
+// If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_BRMk5DVT_PushPUll, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {		
+    196: sw_PUSHPULL_DVTasBR68; // Class 68
+	sw_BRMk5DVT; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS, SELF,sw_BRMk5DVT_CheckPosition, position_in_articulated_veh_from_end){
+    0: sw_BRMk5DVT_PushPUll; // Attempt push pull
+	sw_BRMk5DVT; // We aren't at the back of theconsist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BRMk5DVT_Sprites ,vehicle_is_reversed){
+    0:	sw_BRMk5DVT; // We're heading foward, show normal sprites
+	1:	sw_BRMk5DVT_CheckPosition; // Attempt push pull (skipping check position for now for testing)
+}
