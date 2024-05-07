@@ -1,103 +1,3 @@
-spriteset(spriteset_BR508_Purchase, "gfx/BR508.png") {
-	template_purchase(240, 0)
-}
-
-spriteset(spriteset_BR508a_BRBlue, "gfx/BR508.png") {
-	template_450(0, 0)
-}
-
-spriteset(spriteset_BR508b_BRBlue, "gfx/BR508.png") {
-	template_450(0, 27)
-}
-
-spriteset(spriteset_BR508c_BRBlue, "gfx/BR508.png") {
-	template_450(0, 54)
-}
-
-spriteset(spriteset_BR508a_MerseyRailOld, "gfx/BR508.png") {
-	template_450(0, 81)
-}
-
-spriteset(spriteset_BR508b_MerseyRailOld, "gfx/BR508.png") {
-	template_450(0, 108)
-}
-
-spriteset(spriteset_BR508c_MerseyRailOld, "gfx/BR508.png") {
-	template_450(0, 135)
-}
-
-spriteset(spriteset_BR508a_Silverlink, "gfx/BR508.png") {
-	template_450(0, 162)
-}
-
-spriteset(spriteset_BR508b_Silverlink, "gfx/BR508.png") {
-	template_450(0, 189)
-}
-
-spriteset(spriteset_BR508c_Silverlink, "gfx/BR508.png") {
-	template_450(0, 216)
-}
-
-spriteset(spriteset_BR508a_CSE, "gfx/BR508.png") {
-	template_450(0, 243)
-}
-
-spriteset(spriteset_BR508b_CSE, "gfx/BR508.png") {
-	template_450(0, 270)
-}
-
-spriteset(spriteset_BR508c_CSE, "gfx/BR508.png") {
-	template_450(0, 297)
-}
-
-spriteset(spriteset_BR508a_SE_Yellow, "gfx/BR508.png") {
-	template_450(0, 324)
-}
-
-spriteset(spriteset_BR508b_SE_Yellow, "gfx/BR508.png") {
-	template_450(0, 351)
-}
-
-spriteset(spriteset_BR508c_SE_Yellow, "gfx/BR508.png") {
-	template_450(0, 378)
-}
-
-spriteset(spriteset_BR508a_SE_Blue, "gfx/BR508.png") {
-	template_450(0, 405)
-}
-
-spriteset(spriteset_BR508b_SE_Blue, "gfx/BR508.png") {
-	template_450(0, 432)
-}
-
-spriteset(spriteset_BR508c_SE_Blue, "gfx/BR508.png") {
-	template_450(0, 459)
-}
-
-spriteset(spriteset_BR508a_MerseyRail, "gfx/BR508.png") {
-	template_450(0, 486)
-}
-
-spriteset(spriteset_BR508b_MerseyRail, "gfx/BR508.png") {
-	template_450(0, 513)
-}
-
-spriteset(spriteset_BR508c_MerseyRail, "gfx/BR508.png") {
-	template_450(0, 540)
-}
-
-spriteset(spriteset_BR508a_GoodComs, "gfx/BR508.png") {
-	template_450(0, 567)
-}
-
-spriteset(spriteset_BR508b_GoodComs, "gfx/BR508.png") {
-	template_450(0, 594)
-}
-
-spriteset(spriteset_BR508c_GoodComs, "gfx/BR508.png") {
-	template_450(0, 621)
-}
-
 switch(FEAT_TRAINS,SELF, sw_BR508a,cargo_subtype){
     0:	spriteset_BR508a_BRBlue;
 	1:  spriteset_BR508a_MerseyRailOld;
@@ -153,21 +53,21 @@ switch(FEAT_TRAINS,SELF, sw_BR507c,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR508_1, extra_callback_info1) {
-	1: return item_BR508b;
-	2: return item_BR508b;
-	3: return item_BR508c;
+	1: return item_BR508c;
+	2: return item_BR508c;
+	3: return item_BR508b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR508_2, extra_callback_info1) {
-	1: return item_BR508b;
-	2: return item_BR508c;
+	1: return item_BR508c;
+	2: return item_BR508b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR507, extra_callback_info1) {
-	1: return item_BR507b;
-	2: return item_BR507c;
+	1: return item_BR507c;
+	2: return item_BR507b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 

@@ -1,0 +1,84 @@
+spriteset(spriteset_BR508_Purchase, "gfx/EMU/507_508.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR508a_BRBlue, "gfx/EMU/507_508.png") {
+	template_train32px(0, 13)
+}
+spriteset(spriteset_BR508b_BRBlue, "gfx/EMU/507_508.png") {
+	template_train32px(0, 39)
+}
+spriteset(spriteset_BR508c_BRBlue, "gfx/EMU/507_508.png") {
+	template_train32px(0, 65)
+}
+
+spriteset(spriteset_BR508a_GoodComs, "gfx/EMU/507_508.png") {
+	template_train32px(0, 169)
+}
+spriteset(spriteset_BR508b_GoodComs, "gfx/EMU/507_508.png") {
+	template_train32px(0, 195)
+}
+spriteset(spriteset_BR508c_GoodComs, "gfx/EMU/507_508.png") {
+	template_train32px(0, 221)
+}
+
+spriteset(spriteset_BR508a_MerseyRail, "gfx/EMU/507_508.png") {
+	template_train32px(0, 247)
+}
+spriteset(spriteset_BR508b_MerseyRail, "gfx/EMU/507_508.png") {
+	template_train32px(0, 273)
+}
+spriteset(spriteset_BR508c_MerseyRail, "gfx/EMU/507_508.png") {
+	template_train32px(0, 299)
+}
+
+spriteset(spriteset_BR508a_MerseyRailOld, "gfx/EMU/507_508.png") {
+	template_train32px(0, 325)
+}
+spriteset(spriteset_BR508b_MerseyRailOld, "gfx/EMU/507_508.png") {
+	template_train32px(0, 351)
+}
+spriteset(spriteset_BR508c_MerseyRailOld, "gfx/EMU/507_508.png") {
+	template_train32px(0, 377)
+}
+
+// Connex
+spriteset(spriteset_BR508a_CSE, "gfx/EMU/507_508.png") {
+	template_train32px(0, 403)
+}
+spriteset(spriteset_BR508b_CSE, "gfx/EMU/507_508.png") {
+	template_train32px(0, 429)
+}
+spriteset(spriteset_BR508c_CSE, "gfx/EMU/507_508.png") {
+	template_train32px(0, 455)
+}
+
+spriteset(spriteset_BR508a_Silverlink, "gfx/EMU/507_508.png") {
+	template_train32px(0, 481)
+}
+spriteset(spriteset_BR508b_Silverlink, "gfx/EMU/507_508.png") {
+	template_train32px(0, 507)
+}
+spriteset(spriteset_BR508c_Silverlink, "gfx/EMU/507_508.png") {
+	template_train32px(0, 533)
+}
+
+spriteset(spriteset_BR508a_SE_Yellow, "gfx/EMU/507_508.png") {
+	template_train32px(0, 637)
+}
+spriteset(spriteset_BR508b_SE_Yellow, "gfx/EMU/507_508.png") {
+	template_train32px(0, 663)
+}
+spriteset(spriteset_BR508c_SE_Yellow, "gfx/EMU/507_508.png") {
+	template_train32px(0, 689)
+}
+
+spriteset(spriteset_BR508a_SE_Blue, "gfx/EMU/507_508.png") {
+	template_train32px(0, 559)
+}
+spriteset(spriteset_BR508b_SE_Blue, "gfx/EMU/507_508.png") {
+	template_train32px(0, 585)
+}
+spriteset(spriteset_BR508c_SE_Blue, "gfx/EMU/507_508.png") {
+	template_train32px(0, 611)
+}
