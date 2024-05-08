@@ -1,4 +1,4 @@
-﻿﻿##grflangid 0x01
+﻿##grflangid 0x01
 
 # GRF name and description
 STR_GRF_NAME							:British Rail UK Set (BRTrains v2)
@@ -619,7 +619,7 @@ str_BR222_1_usage				:Express Passenger
 str_BR222_1_eos					:---
 str_BR222_1_liveries			:Hull Trains, East Midlands Trains
 
-STR_NAME_BR230				    :BR Class 230 "D-Train"
+STR_NAME_BR230				    :BR Class 230 'D-Train'
 STR_NAME_BR230_2CAR				:BR Class 230 (2-Car)
 STR_NAME_BR230_3CAR				:BR Class 230 (3-Car)
 str_BR230_usage				    :Local Passenger
@@ -663,7 +663,7 @@ str_BR305_2_eos					:2000
 str_BR305_2_liveries			:BR Green, BR Blue, BR Blue Grey, Network SouthEast, Regional Railways - Ex-NSE, Regional Railways, GMPTE
 
 STR_NAME_BR310				    :BR Class 310
-STR_NAME_BR310_0				:BR Class 310/0 "AM-10" (4-Car)
+STR_NAME_BR310_0				:BR Class 310/0 'AM-10' (4-Car)
 STR_NAME_BR310_1				:BR Class 310/1 (3-Car)
 str_BR310_usage				    :Commuter Passenger
 str_BR310_eos					:---
@@ -697,7 +697,7 @@ str_BR333_liveries				:Northern, Northern Rail (WYPTE), Northern Spirit
 STR_NAME_BR334					:BR Class 334 (3-car)
 str_BR334_usage					:Suburban Passenger
 str_BR334_eos					:---
-str_BR334_liveries				:"Carmine and Cream", Scotrail Saltire
+str_BR334_liveries				:'Carmine and Cream', Scotrail Saltire
 
 STR_NAME_BR350					:BR Class 350 'Desiro' (4-car)
 str_BR350_usage					:Passenger
@@ -825,7 +825,7 @@ str_BR374_liveries				:Eurostar
 STR_NAME_BR411					:BR Class 411 '4-CEP'
 str_BR411_usage					:Passenger
 str_BR411_eos					:2005
-str_BR411_liveries				:BR Green, BR Blue Grey, London & South Eastern "Jaffa Cake", Network SouthEast, South West Trains, Connex, Ex-South West Trains
+str_BR411_liveries				:BR Green, BR Blue Grey, London & South Eastern 'Jaffa Cake', Network SouthEast, South West Trains, Connex, Ex-South West Trains
 
 STR_NAME_BR411_9				:BR Class 411/9 '3-CEP'
 str_BR411_9_usage				:Passenger
@@ -855,7 +855,7 @@ str_BR413_liveries				:BR Blue Grey, Network SouthEast
 STR_NAME_BR421					:BR Class 421 '4-CIG'
 str_BR421_usage					:Passenger
 str_BR421_eos					:2005
-str_BR421_liveries				:BR Green, BR Blue Grey, London & South Eastern "Jaffa Cake", Network SouthEast, South West Trains, Connex, Southern
+str_BR421_liveries				:BR Green, BR Blue Grey, London & South Eastern 'Jaffa Cake', Network SouthEast, South West Trains, Connex, Southern
 
 STR_NAME_BR421_5				:BR Class 421/5 'Greyhound'
 str_BR421_5_usage				:Passenger
@@ -1105,7 +1105,7 @@ STR_NAME_BRMk3Sleeper			:BR Mark 3 Sleeper Coach
 str_BRMk3Sleeper_liveries			:BR Blue, Intercity, First Scotrail, Scotrail, Caledonian Sleaper, Great Western, GWR
 
 STR_NAME_BRMk3DVT				:BR Mark 3 Driving Van Trailer
-str_BRMk3DVT_liveries			:Intercity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin "Pretendolino", Arriva Wales, Network Rail
+str_BRMk3DVT_liveries			:Intercity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin 'Pretendolino', Arriva Wales, Network Rail
 
 STR_NAME_BRMk4FO				:BR Mark 4 Coach (First Open)
 str_BRMk4FO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
@@ -1372,9 +1372,9 @@ str_FirstGroup					: (First Group)
 str_FirstLink					: (First Link)
 str_FirstScotRail			    : (First ScotRail)	
 str_FirstTPE                    : (First Transpennine Express)
-str_FirstTPEGeometric   		: (First TransPennine "Geometric")
+str_FirstTPEGeometric   		: (First TransPennine 'Geometric')
 str_FNW							: (First North Western)
-str_FirstDynamic                : (First Transpennine "Dynamic Lines")
+str_FirstDynamic                : (First Transpennine 'Dynamic Lines')
 str_FNWBarbie					: (First North Western - Barbie)
 str_FNWArriva					: (FNW/Arriva Hybrid)
 str_Fragonset					: (Fragonset)
@@ -1406,15 +1406,15 @@ str_Grey                        : (Grey)
 str_GRFTest1				    : (GRF Test Livery)
 str_GRFTest2					: (GRF Test Livery)
 str_GTR							: (Govia Thameslink)
-str_GTR_TBW						: (Govia "Tunbridge Wells")
-str_gtrb						: (Govia Thameslink "Blue")
-str_gtrp						: (Govia Thameslink "Pink")
-str_GTRPride					: (Govia Thameslink "Pride")
+str_GTR_TBW						: (Govia 'Tunbridge Wells')
+str_gtrb						: (Govia Thameslink 'Blue')
+str_gtrp						: (Govia Thameslink 'Pink')
+str_GTRPride					: (Govia Thameslink 'Pride')
 str_Gulf                        : (Gulf)
-str_GNRGreen					: (GNR "Green")
-str_GWRGreen					: (GWR "Green")
-str_GWRPride                    : (GWR "Pride")
-str_GWRGreenUn					: (GWR "Green" Unbranded)
+str_GNRGreen					: (GNR 'Green')
+str_GWRGreen					: (GWR 'Green')
+str_GWRPride                    : (GWR 'Pride')
+str_GWRGreenUn					: (GWR 'Green' Unbranded)
 str_HansonHall                  : (Hanson & Hall)
 str_HarryNeedle					: (Harry Needle Railroad)
 str_Hitachi						: (Hitachi)
@@ -1517,7 +1517,7 @@ str_RoyalClaret					: (British Royal Train)
 str_RoyalMail					: (Royal Mail)
 str_RoyalMailFictional			: (Royal Mail - Fictional Livery)
 str_ScotRail					: (ScotRail)
-str_ScotRailPride				: (ScotRail "Pride")
+str_ScotRailPride				: (ScotRail 'Pride')
 str_ScotRailSaltire				: (ScotRail Saltire)
 str_Shell                       : (Shell)
 str_Siemens						: (Siemens Demostrator)
@@ -1544,7 +1544,7 @@ str_SWTPink						: (South West Trains Pink)
 str_SWT_refurb					: (South West Trains Refurbished)
 str_SWT_stagecoach				: (Stagecoach South West Trains)
 str_SWR				            : (South Western Railway)
-str_SWRPride		            : (South Western Railway "Pride")
+str_SWRPride		            : (South Western Railway 'Pride')
 str_Teak						: (GNR/LNER Teak)
 str_Tesco                       : (Tesco)
 str_TescoEyeCandy               : (Tesco - Always show container)
@@ -1559,9 +1559,9 @@ str_ValleyLines                 : (Valley Lines)
 str_Virgin      				: (Virgin Trains)
 str_VirginEC					: (Virgin East Coast)
 str_VirginECLNER				: (LNER/Virgin East Coast)
-str_VirginSilk                  : (Virgin "Flowing Silk")
-str_VirginPretendolino          : (Virgin "Pretendolino")
-str_VirginPride                 : (Virgin "Pride")
+str_VirginSilk                  : (Virgin 'Flowing Silk')
+str_VirginPretendolino          : (Virgin 'Pretendolino')
+str_VirginPride                 : (Virgin 'Pride')
 str_VivaRail                    : (VivaRail)
 str_VTG                         : (VTG)
 str_WAGNPu						: (WAGN Purple)
