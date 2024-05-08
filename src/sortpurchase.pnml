@@ -9,6 +9,7 @@ sort(FEAT_TRAINS, [
  item_UtilityTrain32pxOLD,
  item_EyeCandy,
  item_Coppernob,
+ item_CaledonianSingle,
  item_FurnessK2,
  item_LNWRWebb,
  item_GreatBear,

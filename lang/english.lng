@@ -214,6 +214,11 @@ str_Coppernob_usage					:Mixed Traffic
 str_Coppernob_eos					:1848
 str_Coppernob_liveries				:Furness Railway Red
 
+STR_NAME_CaledonianSingle			:Caledonian Railway 4-2-2 'Single'
+str_CaledonianSingle_usage			:Mixed Traffic
+str_CaledonianSingle_eos			:1887
+str_CaledonianSingle_liveries		:Caledonian Blue
+
 STR_NAME_FurnessK2					:Furness Railway 4-4-0 K2 'Large Seagull'
 str_FurnessK2_usage					:Mixed Traffic
 str_FurnessK2_eos					:1892
