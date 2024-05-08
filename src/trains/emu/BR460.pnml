@@ -1,47 +1,47 @@
-spriteset(spriteset_BR460_Purchase, "gfx/BR460.png") {
-	template_purchase(283, 13)
+spriteset(spriteset_BR460_Purchase, "gfx/EMU/460.png") {
+	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR460af_GatEx, "gfx/BR460.png") {
-	template_450(0, 0)
+spriteset(spriteset_BR460_front_GatEx, "gfx/EMU/460.png") {
+	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BR460ar_GatEx, "gfx/BR460.png") {
-	template_450(0, 34)
+spriteset(spriteset_BR460_front_reversed_GatEx, "gfx/EMU/460.png") {
+	template_train32px(0, 39)
 }
 
-spriteset(spriteset_BR460b_GatEx, "gfx/BR460.png") {
-	template_450(0, 133)
+spriteset(spriteset_BR460_middle_GatEx, "gfx/EMU/460.png") {
+	template_train32px(0, 117)
 }
 
-spriteset(spriteset_BR460cf_GatEx, "gfx/BR460.png") {
-	template_450(0, 67)
+spriteset(spriteset_BR460_rear_GatEx, "gfx/EMU/460.png") {
+	template_train32px(0, 65)
 }
 
-spriteset(spriteset_BR460cr_GatEx, "gfx/BR460.png") {
-	template_450(0, 100)
+spriteset(spriteset_BR460_rear_reversed_GatEx, "gfx/EMU/460.png") {
+	template_train32px(0, 91)
 }
 
-switch(FEAT_TRAINS, PARENT, sw_BR460a_reversed, vehicle_is_reversed){
-	0: spriteset_BR460af_GatEx;
-	1: spriteset_BR460cf_GatEx;
+switch(FEAT_TRAINS, PARENT, sw_BR460_front_reversed, vehicle_is_reversed){
+	0: spriteset_BR460_front_GatEx;
+	1: spriteset_BR460_rear_GatEx;
 }
 
-switch(FEAT_TRAINS, PARENT, sw_BR460c_reversed, vehicle_is_reversed){
-	0: spriteset_BR460cr_GatEx;
-	1: spriteset_BR460ar_GatEx;
+switch(FEAT_TRAINS, PARENT, sw_BR460_rear_reversed, vehicle_is_reversed){
+	0: spriteset_BR460_rear_reversed_GatEx;
+	1: spriteset_BR460_front_reversed_GatEx;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR460a,cargo_subtype){
-    0:	sw_BR460a_reversed;
+    0:	sw_BR460_front_reversed;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR460b,cargo_subtype){
-    0:	spriteset_BR460b_GatEx;
+    0:	spriteset_BR460_middle_GatEx;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR460c,cargo_subtype){
-    0:	sw_BR460c_reversed;
+    0:	sw_BR460_rear_reversed;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR460, extra_callback_info1) {
