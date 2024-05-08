@@ -3,7 +3,7 @@
 - Added Class 321
 - Re-drew class 66
 
-# v2.8
+# v2.9
 - Added Furness Railway 0-4-0 "Coppernob"
 - Added Furness Railway 4-4-0 K2 "Large Seagull"
 - Added Caledonian Railway 4-2-2 "Single"
@@ -20,6 +20,7 @@
 - Re-drew Class 195
 - Re-drew Class 331
 - Re-drew Class 397
+- Re-drew Class 460
 - Re-drew Class 507 and 508
 - Re-drew Mk5 coaches and DVT
 - Improved Class 67
@@ -37,7 +38,7 @@
 - Re-templated a bunch of units (more than I want to count)
 - Re-aligned all templates
 
-# v2.7 (2024-4-2)
+# v2.8 (2024-4-2)
 - Added BR Standard Class 9F
 - Added Mk4 coaches as a separate purchase item (previously only available as part of IC225 "MU")
 - Added Mk3 DVT
@@ -59,8 +60,6 @@
 - Added some cargo classes for BR325
 - Added FOOD as a refit option for locomotives (enables FIRS compatibility)
 - Extended some steam train purchase lifespans to avoid gaps where nothing is available
-
-
 
 # v2.7 (2024-3-28)
 - Added Class 50

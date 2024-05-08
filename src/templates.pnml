@@ -191,18 +191,6 @@ template template_trainBRMk2(x,y){
     [ x+150, y, 21, 17, -9, -9,	NOANIM|NOWHITE]
 }
 
-template template_450(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 26, -3, -9]
-    [ x+9, y, 22, 21, -16, -10]
-    [ x+32, y, 32, 13, -15, -7]
-    [ x+65, y, 22, 21, -1, -10]
-    [ x+88, y, 8, 26, -3, -11]
-    [ x+97, y, 22, 21, -16, -10]
-    [ x+120, y, 32, 13, -12, -7]
-    [ x+153, y, 22, 21, -3, -10]
-}
-
 // Only used by MPV
 template template_train170pt(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
