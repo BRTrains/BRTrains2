@@ -152,8 +152,8 @@ switch(FEAT_TRAINS, SELF, sw_315_cargo_subtype_text, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, switch_articulated_BR315, extra_callback_info1) {
-	1: return item_BR315_b;
-	2: return item_BR315_c;
+	1: return item_BR315_c;
+	2: return item_BR315_b;
 	3: return item_BR315_d;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
