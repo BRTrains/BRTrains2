@@ -1,7 +1,7 @@
  if (param[1] == 0) {
 
 // Disable some trains that aren't finished
-	disable_item(FEAT_TRAINS, 589); // TGV
+	
 
 
 

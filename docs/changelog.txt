@@ -1,5 +1,4 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
-- Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Added Class 321
 - Re-drew class 66
 
@@ -13,6 +12,7 @@
 - Added Class 88
 - Added London Underground 2024 Stock
 - Added Mk5a coach and DVT as separate purchase items (inc PushPull with Class 68)
+- Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Re-drew Class 70
 - Re-drew Class 175
 - Re-drew Class 334
@@ -22,6 +22,7 @@
 - Re-drew Class 397
 - Re-drew Class 460
 - Re-drew Class 507 and 508
+- Re-drew Mk2 coaches
 - Re-drew Mk5 coaches and DVT
 - Improved Class 67
 - Added GWR livery for Class 230
