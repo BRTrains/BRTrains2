@@ -45,7 +45,7 @@ switch(FEAT_TRAINS, SELF, switch_br_756_4_can_attach_wagon, vehicle_type_id) {
 switch(FEAT_TRAINS, SELF, switch_br_756_4_power, current_railtype) {
 	ELRL: return 3500;
 	railtype("BR_3RDC"): return 3500;
-	return 2570;
+	return 2340;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_756_4_length, position_in_articulated_veh % 5) {
