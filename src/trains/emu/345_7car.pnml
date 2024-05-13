@@ -1,57 +1,45 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_345_spriteset, position_in_articulated_veh % 9) {
+switch(FEAT_TRAINS, SELF, switch_br_345_7car_spriteset, position_in_articulated_veh % 9) {
 	0: spriteset_br_345_front;
-	7: spriteset_br_345_middle_panto;
-	8: spriteset_br_345_rear;
+	5: spriteset_br_345_middle_panto;
+	6: spriteset_br_345_rear;
 	spriteset_br_345_middle;
 }
 
 // Define articulations
-switch(FEAT_TRAINS, SELF, switch_br_345_articulated, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, switch_br_345_7car_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..8: return item_br_345;
+	1..6: return item_br_345;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_345_particles, position_in_articulated_veh % 9) {
-	7: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+switch(FEAT_TRAINS, SELF, switch_br_345_7car_particles, position_in_articulated_veh % 9) {
+	5: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-// Start/stop switch, used to limit maximum length
-switch(FEAT_TRAINS, SELF, switch_br_345_start_stop, num_vehs_in_consist) {	
-	return CB_RESULT_NO_TEXT;   // Allow any length
-}
-
-// Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_br_345_can_attach_wagon, vehicle_type_id) {
-	item_br_345: return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_CANNOT_ATTACH);
-}
-
-
 // Class 345
-item(FEAT_TRAINS, item_br_345, 426) {
+item(FEAT_TRAINS, item_br_345_7car), 599) {
 	property {
-		name: string(STR_BR_345);
+		name: string(STR_BR_345_7CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2017, 06, 02);
-		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		model_life: 5; // replaced by 9 car after a few years
 		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
 		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
 		refittable_cargo_classes: bitmask(CC_PASSENGERS);
 		non_refittable_cargo_classes: bitmask();
-		cost_factor: 110;
+		cost_factor: 105;
 		loading_speed: 25;
-		running_cost_factor: 85;
+		running_cost_factor: 80;
 		cargo_allow_refit: [];
 		cargo_disallow_refit: [];
 		
 		speed: 90 mph;
-		power: 4000 hp;
-		cargo_capacity: (1500/9);
+		power: 3100 hp;
+		cargo_capacity: (1160/7);
 		weight: 264.21 ton;
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
@@ -60,8 +48,8 @@ item(FEAT_TRAINS, item_br_345, 426) {
 		track_type: railtype("ELRL");
 		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
 		running_cost_base: RUNNING_COST_ELECTRIC;
-		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
-		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		dual_headed: 0;
+		engine_class: ENGINE_CLASS_ELECTRIC;
 		extra_power_per_wagon: 0 kW;
 		tractive_effort_coefficient: 0.3;
 		air_drag_coefficient: 0.06;
@@ -72,15 +60,15 @@ item(FEAT_TRAINS, item_br_345, 426) {
 	}
 	
 	graphics {
-		default: switch_br_345_spriteset;
+		default: switch_br_345_7car_spriteset;
 		purchase: spriteset_br_345_purchase;
-		cargo_capacity:						return(1500/9 * param_pax);
-		articulated_part: switch_br_345_articulated;
+		cargo_capacity:						return(1160/7 * param_pax);
+		articulated_part: switch_br_345_7car_articulated;
 		start_stop: switch_br_345_start_stop;	
 		can_attach_wagon: switch_br_345_can_attach_wagon;
-		visual_effect_and_powered: switch_br_345_particles;			
+		visual_effect_and_powered: switch_br_345_7car_particles;			
 		additional_text: string(STR_DSC_BR_345);	
-		cost_factor:	return(GetAdjustedCost(110));
-		running_cost_factor: return(GetAdjustedCost(85));
+		cost_factor:	return(GetAdjustedCost(105));
+		running_cost_factor: return(GetAdjustedCost(80));
 	}
 }

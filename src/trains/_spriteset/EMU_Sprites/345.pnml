@@ -6,3 +6,14 @@ spriteset (spriteset_br_345_rear, "gfx/Aventra.png") { template_train32px_old(0,
 spriteset (spriteset_br_345_purchase, "gfx/Aventra.png") {
 	template_purchase(200, 39)
 }
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_br_345_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_br_345_can_attach_wagon, vehicle_type_id) {
+	item_br_345: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
