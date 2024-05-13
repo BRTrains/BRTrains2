@@ -10,7 +10,7 @@ switch(FEAT_TRAINS, SELF, switch_br_345_9car_spriteset, position_in_articulated_
 switch(FEAT_TRAINS, SELF, switch_br_345_9car_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..8: return item_br_345;
+	1..8: return item_br_345_9car;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 

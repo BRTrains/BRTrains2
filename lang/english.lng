@@ -79,7 +79,8 @@ STR_BR_231_4CAR							:BR Class 231/0 'FLIRT' (4-Car)
 STR_BR_331_3CAR                         :BR Class 331/0 'Civity' (3-Car)
 STR_BR_331_4CAR                         :BR Class 331/1 'Civity' (4-Car)
 
-STR_BR_345                              :BR Class 345 'Aventra' (9-Car)
+STR_BR_345_7CAR                         :BR Class 345 'Aventra' (7-Car)
+STR_BR_345_9CAR                         :BR Class 345 'Aventra' (9-Car)
 
 STR_BR_397                              :BR Class 397 'Civity' (5-Car)
 

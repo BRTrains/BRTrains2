@@ -10,7 +10,7 @@ switch(FEAT_TRAINS, SELF, switch_br_345_7car_spriteset, position_in_articulated_
 switch(FEAT_TRAINS, SELF, switch_br_345_7car_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..6: return item_br_345;
+	1..6: return item_br_345_7car;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
@@ -21,7 +21,7 @@ switch(FEAT_TRAINS, SELF, switch_br_345_7car_particles, position_in_articulated_
 }
 
 // Class 345
-item(FEAT_TRAINS, item_br_345_7car), 599) {
+item(FEAT_TRAINS, item_br_345_7car, 599) {
 	property {
 		name: string(STR_BR_345_7CAR);
 		climates_available: ALL_CLIMATES; // available in all climates

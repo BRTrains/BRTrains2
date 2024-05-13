@@ -118,7 +118,8 @@ sort(FEAT_TRAINS, [
  item_br_331_1,
  item_BR333,
  item_BR334,
- item_br_345,
+ item_br_345_7car,
+ item_br_345_9car,
  item_BR350,
  item_BR357,
  item_APTE,
@@ -277,6 +278,5 @@ sort(FEAT_TRAINS, [
  item_91_BRMk4TSOD,
  item_BRMk5a,
  item_BRMk5DVT,
- item_BRMk5Sleeper,
- item_IE2800
+ item_BRMk5Sleeper
  ]);
