@@ -10,14 +10,32 @@ spriteset(spriteset_BR139_WMR, "gfx/BR139.png") {
 	template_train20px(0, 33)
 }
 
+spriteset(spriteset_BR139_PPMPrototype, "gfx/BR139.png") {
+	template_train20px(0, 53)
+}
+
+spriteset(spriteset_BR139_BristolElectricPrototype, "gfx/BR139.png") {
+	template_train20px(0, 73)
+}
+
+spriteset(spriteset_BR139_GoCoop, "gfx/BR139.png") {
+	template_train20px(0, 93)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR139,cargo_subtype){
     0:	spriteset_BR139_LM;
 	1:	spriteset_BR139_WMR;
+	2:  spriteset_BR139_PPMPrototype;
+	3:  spriteset_BR139_BristolElectricPrototype;
+	4:  spriteset_BR139_GoCoop;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR139_cargo_subtype_text,cargo_subtype){
     0:	return string(str_LondonMidland);
 	1:	return string(str_WMR);
+	2:	return string(str_PPMProto);
+	3:	return string(str_BristolElectricProto);
+	4:	return string(str_GoCoop);
        return CB_RESULT_NO_TEXT;
 }
 
