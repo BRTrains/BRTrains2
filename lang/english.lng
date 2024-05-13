@@ -1077,7 +1077,7 @@ STR_NAME_BRMk2_Late_TSO				:BR Mark 2 D Coach (Tourist Standard Open)
 STR_NAME_BRMk2_Late_FO				:BR Mark 2 D Coach (First Open)
 STR_NAME_BRMk2_Late_BSO				:BR Mark 2 D Coach (Brake Standard Open)
 STR_NAME_BRMk2_Late_DBSO				:BR Mark 2 D Coach (Driving Brake Standard Open)
-str_BRMk2_Late__liveries				:BR Blue & Grey, Intercity, Scotrail, Arriva, Arriva New, DRS, Virgin, First Great Western 'Fag Packet', West Coast Railway Company
+str_BRMk2_Late_liveries				:BR Blue & Grey, Intercity, Scotrail, Arriva, Arriva New, DRS, Virgin, First Great Western 'Fag Packet', West Coast Railway Company
 str_BRMk2_Late_BSO_liveries			:BR Blue & Grey, Intercity, Scotrail, DRS
 
 STR_NAME_BRMk3TF				:BR Mark 3 Coach (Trailer First)

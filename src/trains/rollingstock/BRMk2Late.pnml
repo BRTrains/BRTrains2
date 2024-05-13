@@ -1,7 +1,7 @@
 
-item (FEAT_TRAINS, item_BRMk2DTSO, 320) {
+item (FEAT_TRAINS, item_BRMk2_Late_TSO, 320) {
 	property {
-		name: 							string(STR_NAME_BRMk2DTSO);
+		name: 							string(STR_NAME_BRMk2_Late_TSO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1964,4,21);
 		model_life:						100;
@@ -21,11 +21,11 @@ item (FEAT_TRAINS, item_BRMk2DTSO, 320) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMk2D_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk2_Late_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMk2D_cargo_subtype_text;
-	default: 							sw_BRMk2DTSO;
-	purchase:							spriteset_BRMk2DTSO_Purchase;
+	cargo_subtype_text:					sw_BRMk2_Late_cargo_subtype_text;
+	default: 							sw_BRMk2_Late_TSO;
+	purchase:							spriteset_BRMk2_Late_TSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(64 * param_pax);
 	cost_factor:	return(GetAdjustedCost(50));
@@ -33,9 +33,9 @@ item (FEAT_TRAINS, item_BRMk2DTSO, 320) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMk2DFO, 321) {
+item (FEAT_TRAINS, item_BRMk2_Late_FO, 321) {
 	property {
-		name: 							string(STR_NAME_BRMk2DFO);
+		name: 							string(STR_NAME_BRMk2_Late_FO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1964,4,21);
 		model_life:						100;
@@ -55,11 +55,11 @@ item (FEAT_TRAINS, item_BRMk2DFO, 321) {
 		cargo_age_period:				250;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMk2D_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk2_Late_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMk2D_cargo_subtype_text;
-	default: 							sw_BRMk2DFO;
-	purchase:							spriteset_BRMk2DFO_Purchase;
+	cargo_subtype_text:					sw_BRMk2_Late_cargo_subtype_text;
+	default: 							sw_BRMk2_Late_FO;
+	purchase:							spriteset_BRMk2_Late_FO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(42 * param_pax);
 	cost_factor:	return(GetAdjustedCost(50));
@@ -67,9 +67,9 @@ item (FEAT_TRAINS, item_BRMk2DFO, 321) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMk2DBSO, 322) {
+item (FEAT_TRAINS, item_BRMk2_Late_BSO, 322) {
 	property {
-		name: 							string(STR_NAME_BRMk2DBSO);
+		name: 							string(STR_NAME_BRMk2_Late_BSO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1964,4,21);
 		model_life:						100;
@@ -89,11 +89,11 @@ item (FEAT_TRAINS, item_BRMk2DBSO, 322) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMk2D_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk2_Late_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMk2D_cargo_subtype_text;
-	default: 							sw_BRMk2DBSO;
-	purchase:							spriteset_BRMk2DBSO_Purchase;
+	cargo_subtype_text:					sw_BRMk2_Late_cargo_subtype_text;
+	default: 							sw_BRMk2_Late_BSO;
+	purchase:							spriteset_BRMk2_Late_BSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(32 * param_pax);
 	cost_factor:	return(GetAdjustedCost(50));
@@ -101,9 +101,9 @@ item (FEAT_TRAINS, item_BRMk2DBSO, 322) {
 }
 }
 
-item (FEAT_TRAINS, item_BRMk2DDBSO, 323) {
+item (FEAT_TRAINS, item_BRMk2_Late_DBSO, 323) {
 	property {
-		name: 							string(STR_NAME_BRMk2DDBSO);
+		name: 							string(STR_NAME_BRMk2_Late_DBSO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1964,4,21);
 		model_life:						100;
@@ -123,11 +123,11 @@ item (FEAT_TRAINS, item_BRMk2DDBSO, 323) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_BRMk2DBSO_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk2_Late_BSO_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMk2DDBSO_cargo_subtype_text;
-	default: 							sw_BRMk2DDBSO;
-	purchase:							spriteset_BRMk2DBSO_Purchase;
+	cargo_subtype_text:					sw_BRMk2_Late_DBSO_cargo_subtype_text;
+	default: 							sw_BRMk2_Late_DBSO;
+	purchase:							spriteset_BRMk2_Late_BSO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(32 * param_pax);
 	cost_factor:	return(GetAdjustedCost(50));

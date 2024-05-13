@@ -47,7 +47,7 @@ switch(FEAT_TRAINS,SELF, sw_BRMk2_Late_DBSO,cargo_subtype){
 	4:  spriteset_BRMk2_Late_RDBSODRS;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BRMk2_Late__cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BRMk2_Late_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRBlue);
     1: return string(str_Intercity);
 	2: return string(str_ScotRail);
