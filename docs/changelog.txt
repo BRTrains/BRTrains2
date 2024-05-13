@@ -11,6 +11,7 @@
 - Added Class 48
 - Added Class 88
 - Added London Underground 2024 Stock
+- Added 7-car Class 345
 - Added Mk5a coach and DVT as separate purchase items (inc PushPull with Class 68)
 - Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Re-drew Class 70
@@ -27,6 +28,7 @@
 - Improved Class 67
 - Added GWR livery for Class 230
 - Added Pride livery for Class 334
+- Added Pride livery for Class 378
 - Added Tesco livery for Container wagon
 - Added Anglia livery for Class 86
 - Fixed 378/2 "celebration" livery only working on the first unit

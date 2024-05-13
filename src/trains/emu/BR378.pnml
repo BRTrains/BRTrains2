@@ -46,22 +46,38 @@ spriteset(spriteset_BR378d_overground5, "gfx/Electrostar_v2.png") {
 	template_train32px_old(0, 375)
 }
 
+spriteset(spriteset_BR378a_overgroundPride, "gfx/Electrostar_v2.png") {
+	template_train32px_old(0, 1800)
+}
+spriteset(spriteset_BR378b_overgroundPride, "gfx/Electrostar_v2.png") {
+	template_train32px_old(0, 1825)
+}
+spriteset(spriteset_BR378c_overgroundPride, "gfx/Electrostar_v2.png") {
+	template_train32px_old(0, 1850)
+}
+spriteset(spriteset_BR378d_overgroundPride, "gfx/Electrostar_v2.png") {
+	template_train32px_old(0, 1875)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR378a,cargo_subtype){
     0:	spriteset_BR378a_overground;
 	1:	spriteset_BR378a_overground5;
 	2:	spriteset_BR378a_Aventra;
+	3:	spriteset_BR378a_overgroundPride;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR378b,cargo_subtype){
     0:	spriteset_BR378b_overground;
 	1:	spriteset_BR378b_overground5;
 	2:	spriteset_BR378b_Aventra;
+	3:	spriteset_BR378b_overgroundPride;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR378c,cargo_subtype){
     0:	spriteset_BR378c_overground;
 	1:  spriteset_BR378c_overground5;
 	2:	spriteset_BR378c_Aventra;
+	3:	spriteset_BR378c_overgroundPride;
 }
 
 switch(FEAT_TRAINS, SELF, switch_378_special_livery, position_in_consist % 5)
@@ -74,6 +90,7 @@ switch(FEAT_TRAINS,SELF, sw_BR378d,cargo_subtype){
     0:	spriteset_BR378d_overground;
 	1:  switch_378_special_livery;
 	2:	spriteset_BR378d_Aventra;
+	3:	spriteset_BR378d_overgroundPride;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR378_3dv, extra_callback_info1) {
@@ -126,6 +143,7 @@ switch(FEAT_TRAINS,SELF,sw_BR378_5_cargo_subtype_text,cargo_subtype){
     0:	return string(str_overground);
 	1:	return string(str_overground5);
 	2:	return string(str_overgroundAventra);
+	3:	return string(str_overgroundPride);
        return CB_RESULT_NO_TEXT;
 }
 
