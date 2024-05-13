@@ -1068,17 +1068,17 @@ str_BRMk1RK_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachi
 STR_NAME_BRMk1RMB				:BR Mark 1 Coach (Restaurant Buffet)
 str_BRMk1RMB_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachite Green, BR Maroon, BR Blue & Grey
 
-STR_NAME_BRMk2ATSO				:BR Mark 2 A Coach (Tourist Standard Open)
-STR_NAME_BRMk2AFO				:BR Mark 2 A Coach (First Open)
-STR_NAME_BRMk2ABSO				:BR Mark 2 A Coach (Brake Standard Open)
-str_BRMk2A_liveries				:BR Blue & Grey, Network SouthEast, Regional Railways, Scotrail, West Coast Railway Company
+STR_NAME_BRMk2_Early_TSO				:BR Mark 2 A Coach (Tourist Standard Open)
+STR_NAME_BRMk2_Early_FO				:BR Mark 2 A Coach (First Open)
+STR_NAME_BRMk2_Early_BSO				:BR Mark 2 A Coach (Brake Standard Open)
+str_BRMk2_Early_liveries				:BR Blue & Grey, Network SouthEast, Regional Railways, Scotrail, West Coast Railway Company
 
-STR_NAME_BRMk2DTSO				:BR Mark 2 D Coach (Tourist Standard Open)
-STR_NAME_BRMk2DFO				:BR Mark 2 D Coach (First Open)
-STR_NAME_BRMk2DBSO				:BR Mark 2 D Coach (Brake Standard Open)
-STR_NAME_BRMk2DDBSO				:BR Mark 2 D Coach (Driving Brake Standard Open)
-str_BRMk2D_liveries				:BR Blue & Grey, Intercity, Scotrail, Arriva, Arriva New, DRS, Virgin, First Great Western 'Fag Packet', West Coast Railway Company
-str_BRMk2DBSO_liveries			:BR Blue & Grey, Intercity, Scotrail, DRS
+STR_NAME_BRMk2_Late_TSO				:BR Mark 2 D Coach (Tourist Standard Open)
+STR_NAME_BRMk2_Late_FO				:BR Mark 2 D Coach (First Open)
+STR_NAME_BRMk2_Late_BSO				:BR Mark 2 D Coach (Brake Standard Open)
+STR_NAME_BRMk2_Late_DBSO				:BR Mark 2 D Coach (Driving Brake Standard Open)
+str_BRMk2_Late__liveries				:BR Blue & Grey, Intercity, Scotrail, Arriva, Arriva New, DRS, Virgin, First Great Western 'Fag Packet', West Coast Railway Company
+str_BRMk2_Late_BSO_liveries			:BR Blue & Grey, Intercity, Scotrail, DRS
 
 STR_NAME_BRMk3TF				:BR Mark 3 Coach (Trailer First)
 str_BRMk3TF_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway

@@ -1,59 +1,59 @@
-spriteset(spriteset_BRMk2ATSOBRBlue, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_TSOBRBlue, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BRMk2ATSONSE, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_TSONSE, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 163)
 }
 
-spriteset(spriteset_BRMk2ATSORegionalRailways, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_TSORegionalRailways, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 238)
 }
 
-spriteset(spriteset_BRMk2ATSOScotRail, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_TSOScotRail, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 313)
 }
 
-spriteset(spriteset_BRMk2ATSOWCRC, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_TSOWCRC, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 388)
 }
 
-spriteset(spriteset_BRMk2AFOBRBlue, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_FOBRBlue, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 38)
 }
 
-spriteset(spriteset_BRMk2AFONSE, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_FONSE, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 188)
 }
 
-spriteset(spriteset_BRMk2AFORegionalRailways, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_FORegionalRailways, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 263)
 }
 
-spriteset(spriteset_BRMk2AFOScotRail, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_FOScotRail, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 338)
 }
 
-spriteset(spriteset_BRMk2AFOWCRC, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_FOWCRC, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 413)
 }
 
-spriteset(spriteset_BRMk2ABSOBRBlue, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_BSOBRBlue, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 63)
 }
 
-spriteset(spriteset_BRMk2ABSONSE, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_BSONSE, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 213)
 }
 
-spriteset(spriteset_BRMk2ABSORegionalRailways, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_BSORegionalRailways, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 288)
 }
 
-spriteset(spriteset_BRMk2ABSOScotRail, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_BSOScotRail, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 363)
 }
 
-spriteset(spriteset_BRMk2ABSOWCRC, "gfx/Rolling Stock/Mk2/BRMk2A-C.png") {
+spriteset(spriteset_BRMk2_Early_BSOWCRC, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 438)
 }
