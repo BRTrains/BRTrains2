@@ -1,0 +1,36 @@
+// Master list (assuming nobody's updated the others since I added this...)
+// Use for any Mk2 unit by removing the liveries that aren't used for that veriant
+
+switch(FEAT_TRAINS,SELF,sw_BRMk2_cargo_subtype_text,cargo_subtype){
+    0: return string(str_BRBlue);
+    1: return string(str_NSE);
+    2: return string(str_Regional);
+	3: return string(str_ScotRail);
+	4: return string(str_Anglia);
+	5: return string(str_WCRC);
+	6: return string(str_ONE);
+	7: return string(str_InterCity);
+	8: return string(str_NetworkRail);
+	9: return string(str_Arriva);
+	10: return string(str_DRS);
+    11: return string(str_Virgin);
+    12: return string(str_FGWFag);	
+       return CB_RESULT_NO_TEXT;
+}
+
+// Use this by removing the un-needed liveries AND replacing "Variant" with the variant name (eg DBSO, or Early_SO etc)
+switch(FEAT_TRAINS,SELF, sw_BRMk2_cargo_subtype,cargo_subtype){
+    0:	spriteset_BRMk2_Variant_BRBlue;
+	1:	spriteset_BRMk2_Variant_NSE;
+	2:	spriteset_BRMk2_Variant_Regional;
+	3:	spriteset_BRMk2_Variant_ScotRail;
+	4:  spriteset_BRMk2_Variant_Anglia;
+	5:  spriteset_BRMk2_Variant_WCRC;
+	6:  spriteset_BRMk2_Variant_ONE;
+	7:  spriteset_BRMk2_Variant_InterCity;
+	8:  spriteset_BRMk2_Variant_NetworkRail;
+	9:  spriteset_BRMk2_Variant_Arriva;
+    10:  spriteset_BRMk2_Variant_DRS;
+    11:  spriteset_BRMk2_Variant_Virgin;
+    12:  spriteset_BRMk2_Variant_FGW;
+}

@@ -1,0 +1,41 @@
+switch(FEAT_TRAINS,SELF, sw_BRMk2_Late_TSO,cargo_subtype){
+    0:	spriteset_BRMk2_Late_TSOBRBlue;
+	1:	spriteset_BRMk2_Late_TSOIntercity;
+	2:	spriteset_BRMk2_Late_TSOScotrail;
+	3:	spriteset_BRMk2_Late_TSOAnglia;
+	4:  spriteset_BRMk2_Late_TSOArriva;
+	5:  spriteset_BRMk2_Late_TSOArrivaNew;
+	6:  spriteset_BRMk2_Late_TSODRS;
+	7:  spriteset_BRMk2_Late_TSOVirgin;
+	8:  spriteset_BRMk2_Late_TSOGW;
+	9:  spriteset_BRMk2_Late_TSOWCRC;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMk2_Late_FO,cargo_subtype){
+    0:	spriteset_BRMk2_Late_FO_BRBlue;
+	1:	spriteset_BRMk2_Late_FO_Intercity;
+	2:	spriteset_BRMk2_Late_FO_Scotrail;
+	3:	spriteset_BRMk2_Late_FO_Anglia;
+	4:  spriteset_BRMk2_Late_FO_Arriva;
+	5:  spriteset_BRMk2_Late_FO_ArrivaNew;
+	6:  spriteset_BRMk2_Late_FO_DRS;
+	7:  spriteset_BRMk2_Late_FO_Virgin;
+	8:  spriteset_BRMk2_Late_FO_GW;
+	9:  spriteset_BRMk2_Late_FO_WCRC;
+}
+
+
+switch(FEAT_TRAINS,SELF,sw_BRMk2_Late_cargo_subtype_text,cargo_subtype){
+    0: return string(str_BRBlue);
+    1: return string(str_Intercity);
+	2: return string(str_ScotRail);
+	3: return string(str_Anglia);
+	4: return string(str_ArrivaBlue);
+	5: return string(str_ATW);
+	6: return string(str_DRS);
+	7: return string(str_Virgin);
+	8: return string(str_FGWFag);
+	9: return string(str_WCRC);
+       return CB_RESULT_NO_TEXT;
+}
+

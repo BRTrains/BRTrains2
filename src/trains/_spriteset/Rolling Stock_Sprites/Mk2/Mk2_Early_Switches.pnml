@@ -15,13 +15,7 @@ switch(FEAT_TRAINS,SELF, sw_BRMk2_Early_FO,cargo_subtype){
 	4:  spriteset_BRMk2_Early_FOWCRC;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BRMk2_Early_BSO,cargo_subtype){
-    0:	spriteset_BRMk2_Early_BSOBRBlue;
-	1:	spriteset_BRMk2_Early_BSONSE;
-	2:	spriteset_BRMk2_Early_BSORegionalRailways;
-	3:	spriteset_BRMk2_Early_BSOScotRail;
-	4:  spriteset_BRMk2_Early_BSOWCRC;
-}
+
 
 switch(FEAT_TRAINS,SELF,sw_BRMk2_Early_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRBlue);
