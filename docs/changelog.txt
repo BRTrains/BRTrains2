@@ -32,6 +32,7 @@
 - Added Tesco livery for Container wagon
 - Added Anglia livery for Class 86
 - Added Network Rail livery for Class 153
+- Added Prototype liveries for Class 139
 - Fixed 378/2 "celebration" livery only working on the first unit
 - Fixed Class 390 diagonals (some views 1px too short)
 - Fixed Class 802 TPE livery not matching other TPE liveries
