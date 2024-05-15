@@ -2,7 +2,7 @@ spriteset(spriteset_BRMk2_Early_SO_Purchase, "gfx/Rolling Stock/Mk2/BRMk2_Early.
 	template_purchase(0, 0)
 }
 spriteset(spriteset_BRMk2_Early_FO_Purchase, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
-	template_purchase(88), 0)
+	template_purchase(88, 0)
 }
 
 spriteset(spriteset_BRMk2_Early_SO_BRBlue, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
@@ -94,4 +94,11 @@ spriteset(spriteset_BRMk2_Early_SO_GWR, "gfx/Rolling Stock/Mk2/BRMk2_Early.png")
 }
 spriteset(spriteset_BRMk2_Early_FO_GWR, "gfx/Rolling Stock/Mk2/BRMk2_Early.png") {
 	template_train32px(0, 663)
+}
+
+spriteset(spriteset_BRMk2_Early_SO_FirstScotrail, "gfx/Rolling Stock/Mk2/BRMk2_Buffet.png") {
+	template_train32px(0, 689)
+}
+spriteset(spriteset_BRMk2_Early_FO_FirstScotrail, "gfx/Rolling Stock/Mk2/BRMk2_Buffet.png") {
+	template_train32px(0, 715)
 }

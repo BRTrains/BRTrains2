@@ -2,7 +2,7 @@ spriteset(spriteset_BRMk2_BSO_Purchase, "gfx/Rolling Stock/Mk2/BRMk2_Brake.png")
 	template_purchase(0, 0)
 }
 spriteset(spriteset_BRMk2_BFO_Purchase, "gfx/Rolling Stock/Mk2/BRMk2_Brake.png") {
-	template_purchase(88), 0)
+	template_purchase(88, 0)
 }
 
 spriteset(spriteset_BRMk2_BSO_BRBlue, "gfx/Rolling Stock/Mk2/BRMk2_Brake.png") {
@@ -94,4 +94,11 @@ spriteset(spriteset_BRMk2_BSO_GWR, "gfx/Rolling Stock/Mk2/BRMk2_Brake.png") {
 }
 spriteset(spriteset_BRMk2_BFO_GWR, "gfx/Rolling Stock/Mk2/BRMk2_Brake.png") {
 	template_train32px(0, 663)
+}
+
+spriteset(spriteset_BRMk2_BSO_FirstScotrail, "gfx/Rolling Stock/Mk2/BRMk2_Buffet.png") {
+	template_train32px(0, 689)
+}
+spriteset(spriteset_BRMk2_BFO_FirstScotrail, "gfx/Rolling Stock/Mk2/BRMk2_Buffet.png") {
+	template_train32px(0, 715)
 }

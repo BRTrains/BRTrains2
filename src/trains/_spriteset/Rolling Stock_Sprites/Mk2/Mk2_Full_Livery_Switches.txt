@@ -14,7 +14,8 @@ switch(FEAT_TRAINS,SELF,sw_BRMk2_cargo_subtype_text,cargo_subtype){
 	9: return string(str_Arriva);
 	10: return string(str_DRS);
     11: return string(str_Virgin);
-    12: return string(str_FGWFag);	
+    12: return string(str_FGWFag);
+	13: return string(str_FirstScotrail);
        return CB_RESULT_NO_TEXT;
 }
 
@@ -33,4 +34,5 @@ switch(FEAT_TRAINS,SELF, sw_BRMk2_cargo_subtype,cargo_subtype){
     10:  spriteset_BRMk2_Variant_DRS;
     11:  spriteset_BRMk2_Variant_Virgin;
     12:  spriteset_BRMk2_Variant_FGW;
+	13:  spriteset_BRMk2_Variant_FirstScotrail;
 }
