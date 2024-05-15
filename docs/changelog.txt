@@ -15,7 +15,6 @@
 - Added Mk5a coach and DVT as separate purchase items (inc PushPull with Class 68)
 - Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Added Mk2 Buffet
-- Added push-pull for Mk2 DBSO
 - Re-drew Class 70
 - Re-drew Class 175
 - Re-drew Class 334
@@ -27,6 +26,8 @@
 - Re-drew Class 507 and 508
 - Re-drew Mk2 coaches
 - Re-drew Mk5 coaches and DVT
+- Added push-pull for Mk2 DBSO
+- Lengthened Royal Mail Travelling Post Office and added push-pull with Class 47
 - Improved Class 67
 - Added GWR livery for Class 230
 - Added Pride livery for Class 334
