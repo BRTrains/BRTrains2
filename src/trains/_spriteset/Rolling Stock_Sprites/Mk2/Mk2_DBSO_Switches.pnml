@@ -1,0 +1,34 @@
+// MUST BE DUPLICATED TO PUSHPULL.PNML
+switch(FEAT_TRAINS,SELF, sw_BRMk2_DBSO,cargo_subtype){
+    0:	spriteset_BRMk2_DBSO_BRBlue;
+	1:	spriteset_BRMk2_DBSO_NSE;
+	2:	spriteset_BRMk2_DBSO_Regional;
+	3:	spriteset_BRMk2_DBSO_ScotRail;
+	4:  spriteset_BRMk2_DBSO_Anglia;
+	5:  spriteset_BRMk2_DBSO_WestCoast;
+	6:  spriteset_BRMk2_DBSO_ONE;
+	7:  spriteset_BRMk2_DBSO_InterCity;
+	8:  spriteset_BRMk2_DBSO_NetworkRail;
+	9:  spriteset_BRMk2_DBSO_Arriva;
+    10:  spriteset_BRMk2_DBSO_DRS;
+    11:  spriteset_BRMk2_DBSO_Virgin;
+    12:  spriteset_BRMk2_DBSO_FGW;
+	13:  spriteset_BRMk2_DBSO_FirstScotRail;
+}
+
+// If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_BRMk2DBSO_PushPUll, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	440: sw_PUSHPULL_DVTasBR47; // Class 47
+    566: sw_PUSHPULL_DVTasBR86; // Class 86
+	sw_BRMk2_DBSO; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS, SELF,sw_Mk2DBSO_CheckPosition, position_in_articulated_veh_from_end){
+    0: sw_BRMk2DBSO_PushPUll; // Attempt push pull
+	sw_BRMk2_DBSO; // We aren't at the back of theconsist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BRMk2DBSO_Sprites ,vehicle_is_reversed){
+    0:	sw_BRMk2_DBSO; // We're heading foward, show normal sprites
+	1:	sw_Mk2DBSO_CheckPosition; // Attempt push pull (skipping check position for now for testing)
+}

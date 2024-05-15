@@ -2,10 +2,10 @@ spriteset(spriteset_BRMk4DVT_purchase, "gfx/BR91.png") {
 	template_purchase(350, 0)
 }
 
-spriteset(spriteset_BRMk4DVT_IntercitySwallow, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_InterCitySwallow, "gfx/BR91.png") {
 	template_train32px_old(0, 113)
 }
-spriteset(spriteset_BRMk4DVT_IntercitySwallowr, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4DVT_InterCitySwallowr, "gfx/BR91.png") {
 	template_train32px_old(172, 113)
 }
 
@@ -47,7 +47,7 @@ spriteset(spriteset_BRMk4DVT_LNERr, "gfx/BR91.png") {
 // Show own graphics when facing forward
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BRMk4DVT,cargo_subtype){
-    0: spriteset_BRMk4DVT_IntercitySwallow;
+    0: spriteset_BRMk4DVT_InterCitySwallow;
     1: spriteset_BRMk4DVT_NatEx;
     2: spriteset_BRMk4DVT_GNER;
     3: spriteset_BRMk4DVT_EastCoast;

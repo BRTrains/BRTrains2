@@ -30,11 +30,11 @@ spriteset(spriteset_BR47_Anglia, "gfx/BR47_BR57.png") {
 	template_train32px_old(0, 138)
 }
 
-spriteset(spriteset_BR47_Intercity, "gfx/BR47_BR57.png") {
+spriteset(spriteset_BR47_InterCity, "gfx/BR47_BR57.png") {
 	template_train32px_old(0, 163)
 }
 
-spriteset(spriteset_BR47_WCRC, "gfx/BR47_BR57.png") {
+spriteset(spriteset_BR47_WestCoast, "gfx/BR47_BR57.png") {
 	template_train32px_old(0, 238)
 }
 
@@ -68,8 +68,8 @@ switch(FEAT_TRAINS,SELF, sw_BR47,cargo_subtype){
     4: 	spriteset_BR47_BRLLogo;
     5: 	spriteset_BR47_BRLLogoAlt;
     6: 	spriteset_BR47_Anglia;
-    7: 	spriteset_BR47_Intercity;
-    8: 	spriteset_BR47_WCRC;
+    7: 	spriteset_BR47_InterCity;
+    8: 	spriteset_BR47_WestCoast;
     9: 	spriteset_BR47_GWR;
     10: spriteset_BR47_Virgin;
     11: spriteset_BR47_Colas;
@@ -86,12 +86,12 @@ switch(FEAT_TRAINS,SELF,sw_BR47_cargo_subtype_text,cargo_subtype){
     4: 	return string(str_BRLLogo);
     5: 	return string(str_BRLLogoAlt);
     6: 	return string(str_Anglia);
-    7: 	return string(str_Intercity);
-    8: 	return string(str_WCRC);
+    7: 	return string(str_InterCity);
+    8: 	return string(str_WestCoast);
     9: 	return string(str_GWRGreen);
     10: return string(str_Virgin);
     11: return string(str_ColasRail);
-    12: return string(str_One);
+    12: return string(str_ONE);
 	13: return string(str_Freightliner);
        return CB_RESULT_NO_TEXT;
 }

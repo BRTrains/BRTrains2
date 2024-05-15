@@ -1,0 +1,16 @@
+switch(FEAT_TRAINS,SELF, sw_BRMk2_Buffet,cargo_subtype){
+    0:	spriteset_BRMk2_RFB_BRBlue;
+	1:	spriteset_BRMk2_RFB_NSE;
+	2:	spriteset_BRMk2_RFB_Regional;
+	3:	spriteset_BRMk2_RFB_ScotRail;
+	4:  spriteset_BRMk2_RFB_Anglia;
+	5:  spriteset_BRMk2_RFB_WestCoast;
+	6:  spriteset_BRMk2_RFB_ONE;
+	7:  spriteset_BRMk2_RFB_InterCity;
+	8:  spriteset_BRMk2_RFB_NetworkRail;
+	9:  spriteset_BRMk2_RFB_Arriva;
+    10:  spriteset_BRMk2_RFB_DRS;
+    11:  spriteset_BRMk2_RFB_Virgin;
+    12:  spriteset_BRMk2_RFB_FGW;
+	13:  spriteset_BRMk2_RFB_FirstScotRail;
+}

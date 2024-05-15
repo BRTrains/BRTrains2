@@ -8,8 +8,8 @@ BR47/BR57
 - BR Blue Large Logo
 - BR Blue Large Logo (Yellow ends)
 - Anglia
-- Intercity
-- Scotrail
+- InterCity
+- ScotRail
 - Freightliner Grey
 - West Coast
 - ONE
@@ -62,8 +62,8 @@ BR170
 - London Midland
 - South West Trains
 - Greater Anglia
-- Scotrail
-- Scotrail Saltire
+- ScotRail
+- ScotRail Saltire
 - West Midlands Railway
 - EMR Regional
 

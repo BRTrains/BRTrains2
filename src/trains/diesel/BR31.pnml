@@ -22,7 +22,7 @@ spriteset(spriteset_BR31_Freightliner, "gfx/BR31.png") {
 	template_train32px_old(0, 113)
 }
 
-spriteset(spriteset_BR31_Intercity, "gfx/BR31.png") {
+spriteset(spriteset_BR31_InterCity, "gfx/BR31.png") {
 	template_train32px_old(0, 138)
 }
 
@@ -54,7 +54,7 @@ switch(FEAT_TRAINS,SELF, sw_BR31,cargo_subtype){
 	3:	spriteset_BR31_NetworkRail;
 	4:	spriteset_BR31_NetworkRailAlt;
 	5:	spriteset_BR31_TopGear;
-	6:	spriteset_BR31_Intercity;
+	6:	spriteset_BR31_InterCity;
 	7:	spriteset_BR31_EWS;
 	8:	spriteset_BR31_Regional;
 	9:	spriteset_BR31_Wessex;
@@ -69,7 +69,7 @@ switch(FEAT_TRAINS,SELF,sw_BR31_cargo_subtype_text,cargo_subtype){
 	3:	return string(str_NetworkRail);
 	4:	return string(str_NetworkRailInfrastructure);
 	5:	return string(str_NetworkRailTopGear);
-	6:	return string(str_Intercity);
+	6:	return string(str_InterCity);
 	7:	return string(str_EWSRed);
 	8:	return string(str_Regional);
 	9:	return string(str_Wessex);

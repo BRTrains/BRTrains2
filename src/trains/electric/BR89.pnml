@@ -2,7 +2,7 @@ spriteset(spriteset_BR89_Purchase, "gfx/BR89.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR89_IntercitySwallow, "gfx/BR89.png") {
+spriteset(spriteset_BR89_InterCitySwallow, "gfx/BR89.png") {
 	template_train32px_old(0, 13)
 }
 
@@ -10,23 +10,23 @@ spriteset(spriteset_BR89_GNER, "gfx/BR89.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BR89_Intercity, "gfx/BR89.png") {
+spriteset(spriteset_BR89_InterCity, "gfx/BR89.png") {
 	template_train32px_old(0, 63)
 }
 
 // This switch called when displaying as this locomotive
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS, SELF, sw_BR89, cargo_subtype){
-    0:	spriteset_BR89_IntercitySwallow;
+    0:	spriteset_BR89_InterCitySwallow;
 	1:	spriteset_BR89_GNER;
-    2:	spriteset_BR89_Intercity;
+    2:	spriteset_BR89_InterCity;
         return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR89_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_IntercitySwallow);
+    0:	return string(str_InterCitySwallow);
 	1:	return string(str_GNER);
-    2:	return string(str_Intercity);
+    2:	return string(str_InterCity);
        return CB_RESULT_NO_TEXT;
 }
 

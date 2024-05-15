@@ -2,7 +2,7 @@ spriteset(spriteset_BR87_Purchase, "gfx/Electric/BR8X.png") {
 	template_purchase(264, 0)
 }
 
-spriteset(spriteset_BR87_IntercitySwallow, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR87_InterCitySwallow, "gfx/Electric/BR8X.png") {
 	template_train32px_old(0, 213)
 }
 
@@ -18,14 +18,14 @@ spriteset(spriteset_BR87_BRBlue, "gfx/Electric/BR8X.png") {
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BR87, cargo_subtype){
     0:	spriteset_BR87_BRBlue;
-	1:	spriteset_BR87_IntercitySwallow;
+	1:	spriteset_BR87_InterCitySwallow;
 	2:	spriteset_BR87_Virgin;
         return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR87_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRBlue);	
-    1:	return string(str_IntercitySwallow);
+    1:	return string(str_InterCitySwallow);
 	2:	return string(str_Virgin);
        return CB_RESULT_NO_TEXT;
 }

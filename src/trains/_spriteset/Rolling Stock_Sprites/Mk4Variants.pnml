@@ -10,19 +10,19 @@ spriteset(spriteset_BRMk4TS_purchase, "gfx/BR91.png") {
 }
 
 
-spriteset(spriteset_BRMk4FO_IntercitySwallow, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4FO_InterCitySwallow, "gfx/BR91.png") {
 	template_train32px_old(0, 38)
 }
-spriteset(spriteset_BRMk4TSOE_IntercitySwallow, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4TSOE_InterCitySwallow, "gfx/BR91.png") {
 	template_train32px_old(0, 88)
 }
-spriteset(spriteset_BRMk4TSO_IntercitySwallow, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4TSO_InterCitySwallow, "gfx/BR91.png") {
 	template_train32px_old(0, 88)
 }
-spriteset(spriteset_BRMk4RFM_IntercitySwallow, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4RFM_InterCitySwallow, "gfx/BR91.png") {
 	template_train32px_old(0, 63)
 }
-spriteset(spriteset_BRMk4TSOD_IntercitySwallow, "gfx/BR91.png") {
+spriteset(spriteset_BRMk4TSOD_InterCitySwallow, "gfx/BR91.png") {
 	template_train32px_old(0, 88)
 }
 

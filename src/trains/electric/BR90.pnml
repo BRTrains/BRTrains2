@@ -14,7 +14,7 @@ spriteset(spriteset_BR90_FLGreen, "gfx/BR90.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BR90_IntercitySwallow, "gfx/BR90.png") {
+spriteset(spriteset_BR90_InterCitySwallow, "gfx/BR90.png") {
 	template_train32px_old(0, 88)
 }
 
@@ -42,7 +42,7 @@ spriteset(spriteset_BR90_REX, "gfx/BR90.png") {
 	template_train32px_old(0, 238)
 }
 
-spriteset(spriteset_BR90_FirstScotrail, "gfx/BR90.png") {
+spriteset(spriteset_BR90_FirstScotRail, "gfx/BR90.png") {
 	template_train32px_old(0, 263)
 }
 
@@ -57,7 +57,7 @@ spriteset(spriteset_BR90_GNER, "gfx/BR90.png") {
 // This switch called when displaying as this locomotive
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BR90, cargo_subtype){
-    0:	spriteset_BR90_IntercitySwallow;
+    0:	spriteset_BR90_InterCitySwallow;
 	1:	spriteset_BR90_FLGrey;
 	2:	spriteset_BR90_EWS;
     3:	spriteset_BR90_DB;
@@ -68,19 +68,19 @@ switch(FEAT_TRAINS,SELF, sw_BR90, cargo_subtype){
 	8:	spriteset_BR90_GreaterAnglia2;	
 	9:	spriteset_BR90_Virgin;
 	10:	spriteset_BR90_REX;
-	11:	spriteset_BR90_FirstScotrail;
+	11:	spriteset_BR90_FirstScotRail;
 	12:	spriteset_BR90_GNER;
         return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR90_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_IntercitySwallow);	
+    0:	return string(str_InterCitySwallow);	
     1:	return string(str_FreightlinerGrey);
 	2:	return string(str_EWSRed);
 	3:	return string(str_DBSchenker);
 	4:	return string(str_FreightlinerGreen);
 	5:	return string(str_FreightlinerPH);
-	6:	return string(str_One);
+	6:	return string(str_ONE);
 	7:	return string(str_GA_White);
 	8:	return string(str_GA_Blue);
 	9:	return string(str_Virgin);

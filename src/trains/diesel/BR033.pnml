@@ -50,7 +50,7 @@ spriteset(spriteset_BR33_0_DRS, "gfx/BR33.png") {
 	template_train28px_old(175, 266)
 }
 
-spriteset(spriteset_BR33_0_WCRC, "gfx/BR33.png") {
+spriteset(spriteset_BR33_0_WestCoast, "gfx/BR33.png") {
 	template_train28px_old(175, 289)
 }
 
@@ -90,7 +90,7 @@ switch(FEAT_TRAINS,SELF, sw_BR33_0,cargo_subtype){
 	8:	spriteset_BR33_0_Fragonset;
 	9:	spriteset_BR33_0_EWS;
 	10:	spriteset_BR33_0_DRS;
-	11:	spriteset_BR33_0_WCRC;
+	11:	spriteset_BR33_0_WestCoast;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR33_0_cargo_subtype_text,cargo_subtype){
@@ -105,7 +105,7 @@ switch(FEAT_TRAINS,SELF,sw_BR33_0_cargo_subtype_text,cargo_subtype){
 	8:	return string(str_Fragonset);
 	9:	return string(str_EWSRed);
 	10:	return string(str_DRSCompass);
-	11:	return string(str_WCRC);
+	11:	return string(str_WestCoast);
        return CB_RESULT_NO_TEXT;
 }
 

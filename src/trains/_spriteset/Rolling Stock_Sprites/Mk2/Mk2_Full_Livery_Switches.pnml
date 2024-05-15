@@ -7,26 +7,27 @@ switch(FEAT_TRAINS,SELF,sw_BRMk2_cargo_subtype_text,cargo_subtype){
     2: return string(str_Regional);
 	3: return string(str_ScotRail);
 	4: return string(str_Anglia);
-	5: return string(str_WCRC);
+	5: return string(str_WestCoast);
 	6: return string(str_ONE);
 	7: return string(str_InterCity);
 	8: return string(str_NetworkRail);
-	9: return string(str_Arriva);
+	9: return string(str_ArrivaWales);
 	10: return string(str_DRS);
     11: return string(str_Virgin);
     12: return string(str_FGWFag);
-	13: return string(str_FirstScotrail);
+	13: return string(str_FirstScotRail);
        return CB_RESULT_NO_TEXT;
 }
 
 // Use this by removing the un-needed liveries AND replacing "Variant" with the variant name (eg DBSO, or Early_SO etc)
-switch(FEAT_TRAINS,SELF, sw_BRMk2_cargo_subtype,cargo_subtype){
+/*
+switch(FEAT_TRAINS,SELF, sw_BRMk2_Variant_cargo_subtype,cargo_subtype){
     0:	spriteset_BRMk2_Variant_BRBlue;
 	1:	spriteset_BRMk2_Variant_NSE;
 	2:	spriteset_BRMk2_Variant_Regional;
 	3:	spriteset_BRMk2_Variant_ScotRail;
 	4:  spriteset_BRMk2_Variant_Anglia;
-	5:  spriteset_BRMk2_Variant_WCRC;
+	5:  spriteset_BRMk2_Variant_WestCoast;
 	6:  spriteset_BRMk2_Variant_ONE;
 	7:  spriteset_BRMk2_Variant_InterCity;
 	8:  spriteset_BRMk2_Variant_NetworkRail;
@@ -34,5 +35,6 @@ switch(FEAT_TRAINS,SELF, sw_BRMk2_cargo_subtype,cargo_subtype){
     10:  spriteset_BRMk2_Variant_DRS;
     11:  spriteset_BRMk2_Variant_Virgin;
     12:  spriteset_BRMk2_Variant_FGW;
-	13:  spriteset_BRMk2_Variant_FirstScotrail;
+	13:  spriteset_BRMk2_Variant_FirstScotRail;
 }
+*/

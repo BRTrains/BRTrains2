@@ -261,7 +261,7 @@ sort(FEAT_TRAINS, [
  item_BRMk2_Late_SO,
  item_BRMk2_Late_FO,
  item_BRMk2_BSO,
- item_BRMk2_BFO
+ item_BRMk2_BFO,
  item_BRMk2_Buffet,
  item_BRMk3DVT,
  item_253_BRMk3TF,

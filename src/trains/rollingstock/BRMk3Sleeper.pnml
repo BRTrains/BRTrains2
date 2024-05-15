@@ -6,15 +6,15 @@ spriteset(spriteset_BRMk3Sleeper_BRBlue, "gfx/Rolling Stock/Mk3Mk5_Sleepers.png"
 	template_train32px_old(0, 13)
 }
 
-spriteset(spriteset_BRMk3Sleeper_Intercity, "gfx/Rolling Stock/Mk3Mk5_Sleepers.png") {
+spriteset(spriteset_BRMk3Sleeper_InterCity, "gfx/Rolling Stock/Mk3Mk5_Sleepers.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BRMk3Sleeper_FirstScotrail, "gfx/Rolling Stock/Mk3Mk5_Sleepers.png") {
+spriteset(spriteset_BRMk3Sleeper_FirstScotRail, "gfx/Rolling Stock/Mk3Mk5_Sleepers.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BRMk3Sleeper_Scotrail, "gfx/Rolling Stock/Mk3Mk5_Sleepers.png") {
+spriteset(spriteset_BRMk3Sleeper_ScotRail, "gfx/Rolling Stock/Mk3Mk5_Sleepers.png") {
 	template_train32px_old(0, 88)
 }
 
@@ -44,9 +44,9 @@ switch(FEAT_TRAINS,SELF, sw_BRMk3Sleeper_stagecoachPosition,position_in_consist 
 
 switch(FEAT_TRAINS,SELF, sw_BRMk3Sleeper,cargo_subtype){
     0: spriteset_BRMk3Sleeper_BRBlue;
-    1: spriteset_BRMk3Sleeper_Intercity;
-    2: spriteset_BRMk3Sleeper_FirstScotrail;
-    3: spriteset_BRMk3Sleeper_Scotrail;
+    1: spriteset_BRMk3Sleeper_InterCity;
+    2: spriteset_BRMk3Sleeper_FirstScotRail;
+    3: spriteset_BRMk3Sleeper_ScotRail;
     4: spriteset_BRMk3Sleeper_CaledonianSleeper;
     5: spriteset_BRMk3Sleeper_GreatWestern;
     6: spriteset_BRMk3Sleeper_GWR;
@@ -55,7 +55,7 @@ switch(FEAT_TRAINS,SELF, sw_BRMk3Sleeper,cargo_subtype){
 
 switch(FEAT_TRAINS,SELF,sw_BRMk3Sleeper_cargo_subtype_text,cargo_subtype){
     0:  return string(str_BRBlue);
-    1:  return string(str_Intercity);
+    1:  return string(str_InterCity);
     2:  return string(str_FirstScotRail);
     3:  return string(str_ScotRail);
     4:	return string(str_Caledonian);

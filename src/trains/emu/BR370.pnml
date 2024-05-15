@@ -2,12 +2,12 @@ spriteset(spriteset_BR370_Purchase, "gfx/BR370.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR370_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_BR370_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 13)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR370,cargo_subtype){
-    0:	spriteset_BR370_Intercity;
+    0:	spriteset_BR370_InterCity;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR370, extra_callback_info1) {
@@ -28,7 +28,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR370, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR370_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_Intercity);
+    0:	return string(str_InterCity);
        return CB_RESULT_NO_TEXT;
 }
 
@@ -87,84 +87,84 @@ item (FEAT_TRAINS, item_BR370, 125) {
 }
 }
 
-spriteset(spriteset_370_TF_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_TF_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 88)
 }
 
-spriteset(spriteset_370_TU_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_TU_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_370_TS_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_TS_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_370_TRSB_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_TRSB_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_370_TBF_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_TBF_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 113)
 }
 
-spriteset(spriteset_370_NDM_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_NDM_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 138)
 }
 
-spriteset(spriteset_370_TRSBR_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_TRSBR_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 213)
 }
 
-spriteset(spriteset_370_TBFR_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_TBFR_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 188)
 }
 
-spriteset(spriteset_370_NDMR_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_NDMR_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 163)
 }
 
-spriteset(spriteset_370_DTS_Intercity, "gfx/BR370.png") {
+spriteset(spriteset_370_DTS_InterCity, "gfx/BR370.png") {
 	template_train32px_old(0, 238)
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_TF,cargo_subtype){
-    0:	spriteset_370_TF_Intercity;
+    0:	spriteset_370_TF_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_TU,cargo_subtype){
-    0:	spriteset_370_TU_Intercity;
+    0:	spriteset_370_TU_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_TS,cargo_subtype){
-    0:	spriteset_370_TS_Intercity;
+    0:	spriteset_370_TS_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_TRSB,cargo_subtype){
-    0:	spriteset_370_TRSB_Intercity;
+    0:	spriteset_370_TRSB_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_TBF,cargo_subtype){
-    0:	spriteset_370_TBF_Intercity;
+    0:	spriteset_370_TBF_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_DTS,cargo_subtype){
-    0:	spriteset_370_DTS_Intercity;
+    0:	spriteset_370_DTS_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_NDM,cargo_subtype){
-    0:	spriteset_370_NDM_Intercity;
+    0:	spriteset_370_NDM_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_TRSBR,cargo_subtype){
-    0:	spriteset_370_TRSBR_Intercity;
+    0:	spriteset_370_TRSBR_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_TBFR,cargo_subtype){
-    0:	spriteset_370_TBFR_Intercity;
+    0:	spriteset_370_TBFR_InterCity;
 }
 
 switch(FEAT_TRAINS,SELF, sw_370_NDMR,cargo_subtype){
-    0:	spriteset_370_NDMR_Intercity;
+    0:	spriteset_370_NDMR_InterCity;
 }
 
 item (FEAT_TRAINS, item_370_DTS, 132) {

@@ -6,10 +6,10 @@ spriteset(spriteset_BR91Standalone_Purchase, "gfx/BR91.png") {
 	template_purchase(262, 0)
 }
 
-spriteset(spriteset_BR91_IntercitySwallow, "gfx/BR91.png") {
+spriteset(spriteset_BR91_InterCitySwallow, "gfx/BR91.png") {
 	template_train32px_old(0, 13)
 }
-spriteset(spriteset_BR91_IntercitySwallowr, "gfx/BR91.png") {
+spriteset(spriteset_BR91_InterCitySwallowr, "gfx/BR91.png") {
 	template_train32px_old(172, 13)
 }
 
@@ -53,7 +53,7 @@ spriteset(spriteset_BR91_LNERr, "gfx/BR91.png") {
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 // WARNING: Also edit Reversed switch below
 switch(FEAT_TRAINS,SELF, sw_BR91,cargo_subtype){
-    0:	spriteset_BR91_IntercitySwallow;
+    0:	spriteset_BR91_InterCitySwallow;
 	1:	spriteset_BR91_NatEx;
 	2:	spriteset_BR91_GNER;
 	3:	spriteset_BR91_EastCoast;
@@ -65,7 +65,7 @@ switch(FEAT_TRAINS,SELF, sw_BR91,cargo_subtype){
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 // WARNING: Also edit the non-reversed switch above
 switch(FEAT_TRAINS,SELF, sw_BR91_reversed,cargo_subtype){
-    0:	spriteset_BRMk4DVT_IntercitySwallowr;
+    0:	spriteset_BRMk4DVT_InterCitySwallowr;
 	1:	spriteset_BRMk4DVT_NatExr;
 	2:	spriteset_BRMk4DVT_GNERr;
 	3:	spriteset_BRMk4DVT_EastCoastr;
@@ -84,7 +84,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR91, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR91_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_IntercitySwallow);
+    0:	return string(str_InterCitySwallow);
 	1:	return string(str_NatEx);
 	2:	return string(str_GNER);
 	3:	return string(str_EastCoast);
@@ -105,7 +105,7 @@ switch(FEAT_TRAINS,SELF,sw_BR91_speed,param_max_speed){
 
 
 switch(FEAT_TRAINS,SELF, sw_91_BRMk4FO,cargo_subtype){
-    0: spriteset_BRMk4FO_IntercitySwallow;
+    0: spriteset_BRMk4FO_InterCitySwallow;
     1: spriteset_BRMk4FO_NatEx;
     2: spriteset_BRMk4FO_GNER;
     3: spriteset_BRMk4FO_EastCoast;
@@ -114,7 +114,7 @@ switch(FEAT_TRAINS,SELF, sw_91_BRMk4FO,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSOE,cargo_subtype){
-    0: spriteset_BRMk4TSOE_IntercitySwallow;
+    0: spriteset_BRMk4TSOE_InterCitySwallow;
     1: spriteset_BRMk4TSOE_NatEx;
     2: spriteset_BRMk4TSOE_GNER;
     3: spriteset_BRMk4TSOE_EastCoast;
@@ -123,7 +123,7 @@ switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSOE,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSO,cargo_subtype){
-    0: spriteset_BRMk4TSO_IntercitySwallow;
+    0: spriteset_BRMk4TSO_InterCitySwallow;
     1: spriteset_BRMk4TSO_NatEx;
     2: spriteset_BRMk4TSO_GNER;
     3: spriteset_BRMk4TSO_EastCoast;
@@ -132,7 +132,7 @@ switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSO,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_91_BRMk4RFM,cargo_subtype){
-    0: spriteset_BRMk4RFM_IntercitySwallow;
+    0: spriteset_BRMk4RFM_InterCitySwallow;
     1: spriteset_BRMk4RFM_NatEx;
     2: spriteset_BRMk4RFM_GNER;
     3: spriteset_BRMk4RFM_EastCoast;
@@ -141,7 +141,7 @@ switch(FEAT_TRAINS,SELF, sw_91_BRMk4RFM,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSOD,cargo_subtype){
-    0: spriteset_BRMk4TSOD_IntercitySwallow;
+    0: spriteset_BRMk4TSOD_InterCitySwallow;
     1: spriteset_BRMk4TSOD_NatEx;
     2: spriteset_BRMk4TSOD_GNER;
     3: spriteset_BRMk4TSOD_EastCoast;
@@ -150,7 +150,7 @@ switch(FEAT_TRAINS,SELF, sw_91_BRMk4TSOD,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_91_BRMk4DVT,cargo_subtype){
-    0: spriteset_BRMk4DVT_IntercitySwallow;
+    0: spriteset_BRMk4DVT_InterCitySwallow;
     1: spriteset_BRMk4DVT_NatEx;
     2: spriteset_BRMk4DVT_GNER;
     3: spriteset_BRMk4DVT_EastCoast;
@@ -159,7 +159,7 @@ switch(FEAT_TRAINS,SELF, sw_91_BRMk4DVT,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_91_BRMk4DVT_reversed,cargo_subtype){
-    0:	spriteset_BR91_IntercitySwallowr;
+    0:	spriteset_BR91_InterCitySwallowr;
 	1:	spriteset_BR91_NatExr;
 	2:	spriteset_BR91_GNERr;
 	3:	spriteset_BR91_EastCoastr;

@@ -149,7 +149,7 @@
 # v2.2 (2022-8-2)
 
 - BR350/444/450 - Tidied up cab a little, improved diagonal view cab windows
-- BR91/Mk4/IC225 sets - Added LNER Modified Intercity Swallow livery, tidied up spritesets
+- BR91/Mk4/IC225 sets - Added LNER Modified InterCity Swallow livery, tidied up spritesets
 - Mk3/Mk5 - Fixed sleeper coaches being available from year 0
 - Mk3 DVT - improved graphics (unit not yet in game)
 - Moved some old graphics to archive
@@ -200,7 +200,7 @@ LONDON UNDERGROUND
 - Re-drawn (new model)
 - Added Police livery
 
-43 (/Intercity 125)
+43 (/InterCity 125)
 - Fixed sprite alignment
 - Fixed height of some diagonals
 - Various graphical fixes
@@ -239,13 +239,13 @@ LONDON UNDERGROUND
 - New unit
 
 90
-- Added Intercity livery
+- Added InterCity livery
 - Added Greater Anglia livery
 - Added Freightliner liveries
 - Added ONE livery
 - Added Virgin livery
 - Added Rail Express livery
-- Added First Scotrail livery
+- Added First ScotRail livery
 - Added GNER livery
 
 91
@@ -273,7 +273,7 @@ LONDON UNDERGROUND
 - Added TfW livery
 
 153
-- Added Scotrail Saltire livery
+- Added ScotRail Saltire livery
 - Added TfW livery
 
 155
@@ -283,13 +283,13 @@ LONDON UNDERGROUND
 - Added Northern (modern) livery
 - Improved GWR livery for consistency
 - Added EMR (Maroon and white) livery
-- Added Scotrail (Saltire) livery
+- Added ScotRail (Saltire) livery
 
 158
 - Added Northern (modern) livery
 - Added EMR (Maroon and white) livery
 - Added SWR livery
-- Added Scotrail (Saltire) livery
+- Added ScotRail (Saltire) livery
 - Added TfW livery
 
 168
@@ -298,8 +298,8 @@ LONDON UNDERGROUND
 
 170
 - Re-drawn (new model)
-- Included some liveries that were drawn but not coded (London Midland, ONE, Scotrail Saltire, South West Trains, First Barbie, NatEx Scotrail, Midland Mainline, SPT, Greater Anglia)
-- Added some additional liveries (TfW, AtW, Scotrail, Scotrail Saltire, West Midlandds Railway, EMR Regional)
+- Included some liveries that were drawn but not coded (London Midland, ONE, ScotRail Saltire, South West Trains, First Barbie, NatEx ScotRail, Midland Mainline, SPT, Greater Anglia)
+- Added some additional liveries (TfW, AtW, ScotRail, ScotRail Saltire, West Midlandds Railway, EMR Regional)
 
 171
 - New unit based on 170 rework
@@ -333,7 +333,7 @@ LONDON UNDERGROUND
 - Added Avanti West Coast livery
 
 222
-- Added EMR Intercity (Maroon) livery
+- Added EMR InterCity (Maroon) livery
 - Added EMR (Maroon and white) livery
 - Fixed a bug where the rear cars were smaller than the rest
 

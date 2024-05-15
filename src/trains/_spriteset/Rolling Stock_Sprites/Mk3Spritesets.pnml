@@ -50,59 +50,59 @@ spriteset(spriteset_BRMk3TRUK_BRBlue, "gfx/Rolling Stock/Mk3/BRMk3TRUK.png") {
 //	template_train32px_old(0, 13)
 //}
 
-spriteset(spriteset_BRMk3TF_IntercityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TF.png") {
+spriteset(spriteset_BRMk3TF_InterCityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TF.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BRMk3TS_IntercityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TS.png") {
+spriteset(spriteset_BRMk3TS_InterCityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TS.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BRMk3TGS_IntercityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TGS.png") {
+spriteset(spriteset_BRMk3TGS_InterCityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TGS.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BRMk3TRSB_IntercityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TRSB.png") {
+spriteset(spriteset_BRMk3TRSB_InterCityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TRSB.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BRMk3TRUB_IntercityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TRUB.png") {
+spriteset(spriteset_BRMk3TRUB_InterCityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TRUB.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BRMk3TRUK_IntercityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TRUK.png") {
+spriteset(spriteset_BRMk3TRUK_InterCityExecutive, "gfx/Rolling Stock/Mk3/BRMk3TRUK.png") {
 	template_train32px_old(0, 38)
 }
 
-//spriteset(spriteset_BRMk3DMB_IntercityExecutive, "gfx/Rolling Stock/Mk3/BRMk3DMB.png") {
+//spriteset(spriteset_BRMk3DMB_InterCityExecutive, "gfx/Rolling Stock/Mk3/BRMk3DMB.png") {
 //	template_train32px_old(0, 38)
 //}
 
-spriteset(spriteset_BRMk3TF_IntercitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TF.png") {
+spriteset(spriteset_BRMk3TF_InterCitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TF.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BRMk3TS_IntercitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TS.png") {
+spriteset(spriteset_BRMk3TS_InterCitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TS.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BRMk3TGS_IntercitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TGS.png") {
+spriteset(spriteset_BRMk3TGS_InterCitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TGS.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BRMk3TRSB_IntercitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TRSB.png") {
+spriteset(spriteset_BRMk3TRSB_InterCitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TRSB.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BRMk3TRUB_IntercitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TRUB.png") {
+spriteset(spriteset_BRMk3TRUB_InterCitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TRUB.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BRMk3TRUK_IntercitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TRUK.png") {
+spriteset(spriteset_BRMk3TRUK_InterCitySwallow, "gfx/Rolling Stock/Mk3/BRMk3TRUK.png") {
 	template_train32px_old(0, 63)
 }
 
-//spriteset(spriteset_BRMk3DMB_IntercitySwallow, "gfx/Rolling Stock/Mk3/BRMk3DMB.png") {
+//spriteset(spriteset_BRMk3DMB_InterCitySwallow, "gfx/Rolling Stock/Mk3/BRMk3DMB.png") {
 //	template_train32px_old(0, 63)
 //}
 

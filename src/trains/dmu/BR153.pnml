@@ -74,7 +74,7 @@ spriteset(spriteset_BR153_LondonMidland, "gfx/BR153.png") {
 	template_train32px_old(0, 438)
 }
 
-spriteset(spriteset_BR153_ScotrailSaltire, "gfx/BR153.png") {
+spriteset(spriteset_BR153_ScotRailSaltire, "gfx/BR153.png") {
 	template_train32px_old(0, 463)
 }
 
@@ -109,7 +109,7 @@ switch(FEAT_TRAINS,SELF, sw_BR153,cargo_subtype){
 	15:	spriteset_BR153_NorthernRail;
 	16:	spriteset_BR153_FGW;
 	17:	spriteset_BR153_LondonMidland;
-	18:	spriteset_BR153_ScotrailSaltire;
+	18:	spriteset_BR153_ScotRailSaltire;
 	19:	spriteset_BR153_TfW;
 	20:	spriteset_BR153_GA;
 	21: spriteset_BR153_NetworkRail;
@@ -129,7 +129,7 @@ switch(FEAT_TRAINS,SELF,sw_BR153_cargo_subtype_text,cargo_subtype){
 	10:	return string(str_WessexHeart);
 	11:	return string(str_WessexCornwall);
 	12:	return string(str_WessexLooe);
-	13:	return string(str_One);
+	13:	return string(str_ONE);
 	14:	return string(str_EMT);
 	15:	return string(str_NorthernRail);
 	16:	return string(str_FGW);

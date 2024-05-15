@@ -102,7 +102,7 @@ spriteset(spriteset_BR156a_EMRMaroonWhite, "gfx/BR156a.png") {
 	template_train32px_old(0, 538)
 }
 
-spriteset(spriteset_BR156a_ScotrailSaltire, "gfx/BR156a.png") {
+spriteset(spriteset_BR156a_ScotRailSaltire, "gfx/BR156a.png") {
 	template_train32px_old(0, 563)
 }
 
@@ -199,7 +199,7 @@ spriteset(spriteset_BR156b_EMRMaroonWhite, "gfx/BR156b.png") {
 	template_train32px_old(0, 538)
 }
 
-spriteset(spriteset_BR156b_ScotrailSaltire, "gfx/BR156b.png") {
+spriteset(spriteset_BR156b_ScotRailSaltire, "gfx/BR156b.png") {
 	template_train32px_old(0, 563)
 }
 
@@ -231,7 +231,7 @@ switch(FEAT_TRAINS,SELF, sw_BR156a,cargo_subtype){
 	19:	spriteset_BR156a_Northern;
 	20:	spriteset_BR156a_EMRTransition;
 	21:	spriteset_BR156a_EMRMaroonWhite;
-	22:	spriteset_BR156a_ScotrailSaltire;
+	22:	spriteset_BR156a_ScotRailSaltire;
 	23:	spriteset_BR156a_GA;
 }
 
@@ -258,7 +258,7 @@ switch(FEAT_TRAINS,SELF, sw_BR156b,cargo_subtype){
 	19:	spriteset_BR156b_Northern;
 	20:	spriteset_BR156b_EMRTransition;
 	21:	spriteset_BR156b_EMRMaroonWhite;
-	22:	spriteset_BR156b_ScotrailSaltire;
+	22:	spriteset_BR156b_ScotRailSaltire;
 	23:	spriteset_BR156b_GA;
 }
 
@@ -281,10 +281,10 @@ switch(FEAT_TRAINS,SELF,sw_BR156_cargo_subtype_text,cargo_subtype){
 	10:	return string(str_NorthernExp1);
 	11:	return string(str_NorthernExp2);
 	12:	return string(str_NorthernRail);
-	13:	return string(str_OneGhost);
-	14:	return string(str_OneChapelf);
-	15:	return string(str_One);
-	16:	return string(str_OneTrans);
+	13:	return string(str_ONEGhost);
+	14:	return string(str_ONEChapelf);
+	15:	return string(str_ONE);
+	16:	return string(str_ONETrans);
 	17:	return string(str_NatEx);
 	18:	return string(str_EMT);
 	19: return string(str_Northern);

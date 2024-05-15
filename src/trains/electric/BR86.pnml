@@ -6,11 +6,11 @@ spriteset(spriteset_BR86_BRBlue, "gfx/Electric/BR8X.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BR86_IntercityExecutive, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_InterCityExecutive, "gfx/Electric/BR8X.png") {
 	template_train32px_old(0, 88)
 }
 
-spriteset(spriteset_BR86_IntercitySwallow, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_InterCitySwallow, "gfx/Electric/BR8X.png") {
 	template_train32px_old(0, 138)
 }
 
@@ -34,8 +34,8 @@ spriteset(spriteset_BR86_Anglia, "gfx/Electric/BR8X.png") {
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BR86, cargo_subtype){
     0:	spriteset_BR86_BRBlue;
-	1:	spriteset_BR86_IntercityExecutive;
-	2:	spriteset_BR86_IntercitySwallow;
+	1:	spriteset_BR86_InterCityExecutive;
+	2:	spriteset_BR86_InterCitySwallow;
 	3: 	spriteset_BR86_RailfreightDistribution;
 	4: 	spriteset_BR86_RailExpress;
 	5: 	spriteset_BR86_EWS;
@@ -45,8 +45,8 @@ switch(FEAT_TRAINS,SELF, sw_BR86, cargo_subtype){
 
 switch(FEAT_TRAINS,SELF,sw_BR86_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRBlue);	
-	1:	return string(str_IntercityExecutive);
-    2:	return string(str_IntercitySwallow);
+	1:	return string(str_InterCityExecutive);
+    2:	return string(str_InterCitySwallow);
 	3:	return string(str_RFDistribution);
 	4:	return string(str_REX);	
 	5:	return string(str_EWSRed);	
@@ -56,6 +56,7 @@ switch(FEAT_TRAINS,SELF,sw_BR86_cargo_subtype_text,cargo_subtype){
 
 // If the rear of this consist is a compatible Driving Trailer, call that vehicles's remote sprite call switch
 switch(FEAT_TRAINS, PARENT, sw_BR86_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	630: sw_PUSHPULL_LocomotiveAsMk2DBSO; // Mk2 DBSO
 	586: sw_PUSHPULL_LocomotiveAsMk3DVT; // Mk3 DVT
 	sw_BR86; // No compatible locomotive found, show normal sprites
 }

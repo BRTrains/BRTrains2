@@ -141,7 +141,7 @@ switch(FEAT_TRAINS, SELF, sw_315_cargo_subtype_text, cargo_subtype) {
     5: return string(str_WAGNWh);
     6: return string(str_WAGNPu);
     7: return string(str_FGE);
-    8: return string(str_One);
+    8: return string(str_ONE);
     9: return string(str_NXEA);
     10: return string(str_NXEAAltLights);
     11: return string(str_AGA);

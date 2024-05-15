@@ -22,7 +22,7 @@ item (FEAT_TRAINS, item_BRMk2_Early_SO, 624) {
 	graphics {
 	additional_text:					return(string(str_purchase_coach,string(str_BRMk2_Early_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMk2_Early_cargo_subtype_text;
+	cargo_subtype_text:					sw_BRMk2_cargo_subtype_text;
 	default: 							sw_BRMk2_Early_SO;
 	purchase:							spriteset_BRMk2_Early_SO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
@@ -56,7 +56,7 @@ item (FEAT_TRAINS, item_BRMk2_Early_FO, 625) {
 	graphics {
 	additional_text:					return(string(str_purchase_coach,string(str_BRMk2_Early_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BRMk2_Early_cargo_subtype_text;
+	cargo_subtype_text:					sw_BRMk2_cargo_subtype_text;
 	default: 							sw_BRMk2_Early_FO;
 	purchase:							spriteset_BRMk2_Early_FO_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;

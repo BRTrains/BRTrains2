@@ -22,7 +22,7 @@ spriteset(spriteset_BR08_Purple, "gfx/BR08.png") {
 	template_train20px(0, 93)
 }
 
-spriteset(spriteset_BR08_IntercitySwallow, "gfx/BR08.png") {
+spriteset(spriteset_BR08_InterCitySwallow, "gfx/BR08.png") {
 	template_train20px(0, 113)
 }
 
@@ -42,7 +42,7 @@ switch(FEAT_TRAINS,SELF, sw_BR08,cargo_subtype){
 	4:	spriteset_BR08_EWSRed;
 	5:	spriteset_BR08_NRYellow;
 	6:	spriteset_BR08_Purple;
-	7:	spriteset_BR08_IntercitySwallow;
+	7:	spriteset_BR08_InterCitySwallow;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR08_cargo_subtype_text,cargo_subtype){
@@ -53,7 +53,7 @@ switch(FEAT_TRAINS,SELF,sw_BR08_cargo_subtype_text,cargo_subtype){
 	4: return string(str_EWSRed);
 	5: return string(str_NRYellow);
 	6: return string(str_Purple);
-	7: return string(str_IntercitySwallow);
+	7: return string(str_InterCitySwallow);
        return CB_RESULT_NO_TEXT;
 }
 

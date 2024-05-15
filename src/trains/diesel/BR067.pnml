@@ -55,7 +55,7 @@ switch(FEAT_TRAINS,SELF, sw_BR67,cargo_subtype){
 switch(FEAT_TRAINS,SELF,sw_BR67_cargo_subtype_text,cargo_subtype){
     0:	return string(str_EWSRed);
 	1:	return string(str_ColasRail);
-	2: 	return string(str_ATW);
+	2: 	return string(str_ArrivaWales);
 	3:	return string(str_DBSchenker);
 	4:	return string(str_Caledonian);
 	5:	return string(str_RoyalClaret);

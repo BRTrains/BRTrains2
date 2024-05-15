@@ -6,7 +6,7 @@ spriteset(spriteset_BR57_Freightliner, "gfx/BR47_BR57.png") {
 	template_train32px_old(0, 213)
 }
 
-spriteset(spriteset_BR57_WCRC, "gfx/BR47_BR57.png") {
+spriteset(spriteset_BR57_WestCoast, "gfx/BR47_BR57.png") {
 	template_train32px_old(0, 238)
 }
 
@@ -35,7 +35,7 @@ spriteset(spriteset_BR57_GBRf, "gfx/BR47_BR57.png") {
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR57,cargo_subtype){    
-    0:	spriteset_BR57_WCRC;
+    0:	spriteset_BR57_WestCoast;
 	1: 	spriteset_BR57_Freightliner;
 	2: 	spriteset_BR57_GWR;
     3: 	spriteset_BR57_ArrivaWales;
@@ -47,7 +47,7 @@ switch(FEAT_TRAINS,SELF, sw_BR57,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR57_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_WCRC);
+    0:	return string(str_WestCoast);
 	1: 	return string(str_Freightliner);
 	2: 	return string(str_GWRGreen);
     3: 	return string(str_ArrivaWales);

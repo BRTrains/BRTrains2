@@ -6,11 +6,11 @@ spriteset(spriteset_BR253_BRBlue, "gfx/BR253.png") {
 	template_train32px_old(0, 13)
 }
 
-spriteset(spriteset_BR253_IntercityExecutive, "gfx/BR253.png") {
+spriteset(spriteset_BR253_InterCityExecutive, "gfx/BR253.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BR253_IntercitySwallow, "gfx/BR253.png") {
+spriteset(spriteset_BR253_InterCitySwallow, "gfx/BR253.png") {
 	template_train32px_old(0, 63)
 }
 
@@ -42,11 +42,11 @@ spriteset(spriteset_BR254_BRBlue, "gfx/BR253.png") {
 	template_train32px_old(0, 13)
 }
 
-spriteset(spriteset_BR254_IntercityExecutive, "gfx/BR253.png") {
+spriteset(spriteset_BR254_InterCityExecutive, "gfx/BR253.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BR254_IntercitySwallow, "gfx/BR253.png") {
+spriteset(spriteset_BR254_InterCitySwallow, "gfx/BR253.png") {
 	template_train32px_old(0, 63)
 }
 
@@ -84,8 +84,8 @@ spriteset(spriteset_BR253_Pullman, "gfx/BR253.png") {
 
 switch(FEAT_TRAINS,SELF, sw_BR253,cargo_subtype){
     0:	spriteset_BR253_BRBlue;
-	1:	spriteset_BR253_IntercityExecutive;
-	2:	spriteset_BR253_IntercitySwallow;
+	1:	spriteset_BR253_InterCityExecutive;
+	2:	spriteset_BR253_InterCitySwallow;
 	3:	spriteset_BR253_MMLTealTang;
 	4:	spriteset_BR253_MMLBlue;
 	5:	spriteset_BR253_EMT;
@@ -104,8 +104,8 @@ switch(FEAT_TRAINS,SELF, sw_BR253,cargo_subtype){
 
 switch(FEAT_TRAINS,SELF,sw_BR253_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRBlue);
-	1:	return string(str_IntercityExecutive);
-	2:	return string(str_IntercitySwallow);
+	1:	return string(str_InterCityExecutive);
+	2:	return string(str_InterCitySwallow);
 	3:	return string(str_MMLTealTang);
 	4:	return string(str_MMLBlue);
 	5:	return string(str_EMT);

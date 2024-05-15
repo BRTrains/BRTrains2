@@ -132,7 +132,7 @@ STR_LIVERY_BR800_HullTrains            : Hull Trains 'Paragon'
 STR_LIVERY_BR800_VTEC                  : Virgin Trains East Coast
 STR_LIVERY_BR800_Lumo                  : Lumo
 
-STR_LIVERY_BR_745_REGULAR               : Greater Anglia 'Intercity'
+STR_LIVERY_BR_745_REGULAR               : Greater Anglia 'InterCity'
 STR_LIVERY_BR_745_STANSTED              : Greater Anglia 'Stansted Express'
 
 STR_LIVERY_BR_769_TFW                   : Transport for Wales
@@ -279,7 +279,7 @@ str_BluePullman_liveries		:Blue Pullman, Blue Pullman (Warning Panels), BR Grey 
 STR_NAME_BR08					:BR Class 08 'Gronk'
 str_BR08_usage					:Shunting
 str_BR08_eos					:---
-str_BR08_liveries				:BR Black, BR Green, BR Blue, EWS Red and Gold, Network Rail Yellow, Unusual Purple, Intercity Swallow, BR General Grey
+str_BR08_liveries				:BR Black, BR Green, BR Blue, EWS Red and Gold, Network Rail Yellow, Unusual Purple, InterCity Swallow, BR General Grey
 
 STR_NAME_BR13					:BR Class 13 'Shunter'
 str_BR13_usage					:Shunting
@@ -304,7 +304,7 @@ str_BR33_1_liveries				:BR Green, BR Green (Yellow Front), BR Blue, Network Sout
 STR_NAME_BR37					:BR Class 37/0 'Tractor'
 str_BR37_usage					:Mixed Traffic
 str_BR37_eos					:---
-str_BR37_liveries				:BR Blue, BR Green, BR Large Logo, Civil Engineers 'Dutch', Colas Rail, DB Schenker, Departmental Grey, DRS, EWS, Harry Needle Railroad, Intercity, Loadhaul, Mainline Freight, Railfreight Coal, Railfreight Construction, Railfreight Distribution, Railfreight Large Logo, Railfreight Petroleum, Regional Railways, Royal Scotsman
+str_BR37_liveries				:BR Blue, BR Green, BR Large Logo, Civil Engineers 'Dutch', Colas Rail, DB Schenker, Departmental Grey, DRS, EWS, Harry Needle Railroad, InterCity, Loadhaul, Mainline Freight, Railfreight Coal, Railfreight Construction, Railfreight Distribution, Railfreight Large Logo, Railfreight Petroleum, Regional Railways, Royal Scotsman
 
 STR_NAME_BR47					:BR Class 47 'Type 4'
 str_BR47_usage					:Mixed Traffic
@@ -394,7 +394,7 @@ str_BR71_liveries				:BR Green
 STR_NAME_BR89					:BR Class 89 'Badger'
 str_BR89_usage					:Express Passenger
 str_BR89_eos					:---
-str_BR89_liveries				:Intercity Swallow, GNER, Intercity
+str_BR89_liveries				:InterCity Swallow, GNER, InterCity
 
 
 STR_NAME_18100					:18100 (Gas Turbine Prototype)
@@ -415,7 +415,7 @@ str_BR81_liveries				:BR Blue
 STR_NAME_BR82					:BR Class 82 'AL2'
 str_BR82_usage					:Mixed Traffic
 str_BR82_eos	    			:---
-str_BR82_liveries				:BR Blue, Intercity Executive
+str_BR82_liveries				:BR Blue, InterCity Executive
 
 STR_NAME_BR83					:BR Class 83 'AL3'
 str_BR83_usage					:Mixed Traffic
@@ -435,23 +435,23 @@ str_BR85_liveries				:BR Blue
 STR_NAME_BR86					:BR Class 86 'AL6'
 str_BR86_usage					:Mixed Traffic
 str_BR86_eos					:---
-str_BR86_liveries				:BR Blue, Intercity Executive, Rail Express, EWS, Railfraight Distribution, Rail Express Systems
+str_BR86_liveries				:BR Blue, InterCity Executive, Rail Express, EWS, Railfraight Distribution, Rail Express Systems
 
 STR_NAME_BR87					:BR Class 87
 str_BR87_usage					:Mixed Traffic
 str_BR87_eos					:---
-str_BR87_liveries				:BR Blue, Intercity Swallow, Virgin
+str_BR87_liveries				:BR Blue, InterCity Swallow, Virgin
 
 STR_NAME_BR90					:BR Class 90
 str_BR90_usage					:Mixed Traffic
 str_BR90_eos					:---
-str_BR90_liveries				:Intercity Swallow, Freightliner Grey, EWS, DB, Freightliner Green, Freightliner Powerhaul, ONE, Greater Anglie Blue, Greater Anglia White, Virgin, REX, First Scotrail, GNER
+str_BR90_liveries				:InterCity Swallow, Freightliner Grey, EWS, DB, Freightliner Green, Freightliner Powerhaul, ONE, Greater Anglie Blue, Greater Anglia White, Virgin, REX, First ScotRail, GNER
 
-STR_NAME_BR91					:BR Class 91 'Intercity 225'
+STR_NAME_BR91					:BR Class 91 'InterCity 225'
 STR_NAME_BR91_Standalone		:BR Class 91 (Standalone)
 str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
-str_BR91_liveries				:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+str_BR91_liveries				:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BR121					:BR Class 121 'Bubble Car'
 str_BR121_usage					:Passenger
@@ -636,12 +636,12 @@ str_BR252_liveries				:BR Blue
 STR_NAME_BR253					:BR Class 43 'HST'
 str_BR253_usage					:Express Passenger
 str_BR253_eos					:---
-str_BR253_liveries				:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, First Great Western
+str_BR253_liveries				:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, First Great Western
 
 STR_NAME_BR254					:BR Class 254 'Eastern'
 str_BR254_usage					:Express Passenger
 str_BR254_eos					:---
-str_BR254_liveries				:BR Blue, Intercity Executive, Intercity Swallow, Cross Country, Great North Eastern Railway, National Express
+str_BR254_liveries				:BR Blue, InterCity Executive, InterCity Swallow, Cross Country, Great North Eastern Railway, National Express
 
 STR_NAME_BR255					:BR Class 255 'Challenger'
 str_BR255_usage					:Express Passenger
@@ -698,7 +698,7 @@ str_BR333_liveries				:Northern, Northern Rail (WYPTE), Northern Spirit
 STR_NAME_BR334					:BR Class 334 (3-car)
 str_BR334_usage					:Suburban Passenger
 str_BR334_eos					:---
-str_BR334_liveries				:'Carmine and Cream', Scotrail Saltire
+str_BR334_liveries				:'Carmine and Cream', ScotRail Saltire
 
 STR_NAME_BR350					:BR Class 350 'Desiro' (4-car)
 str_BR350_usage					:Passenger
@@ -719,12 +719,12 @@ str_BR357_liveries				:C2C, C2C Blue, C2C Eco
 STR_NAME_APTE					:BR 'APT-E' Prototype (4-car)
 str_APTE_usage			        :Express Passenger
 str_APTE_eos					:1972
-str_APTE_liveries				:Intercity
+str_APTE_liveries				:InterCity
 
 STR_NAME_BR370					:BR Class 370 'APT-P' Prototype (14-car)
 str_BR370_usage					:Express Passenger
 str_BR370_eos					:1986
-str_BR370_liveries				:Intercity
+str_BR370_liveries				:InterCity
 
 STR_NAME_BR375_3				:BR Class 375 'Electrostar' (3-Car)
 str_BR375_3_usage				:Suburban Passenger
@@ -1069,62 +1069,66 @@ str_BRMk1RK_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachi
 STR_NAME_BRMk1RMB				:BR Mark 1 Coach (Restaurant Buffet)
 str_BRMk1RMB_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachite Green, BR Maroon, BR Blue & Grey
 
-STR_NAME_BRMk2_Early_SO				:BR Mark 2 A Coach (Tourist Standard Open)
-STR_NAME_BRMk2_Early_FO				:BR Mark 2 A Coach (First Open)
-STR_NAME_BRMk2_Early_BSO				:BR Mark 2 A Coach (Brake Standard Open)
-str_BRMk2_Early_liveries				:BR Blue & Grey, Network SouthEast, Regional Railways, Scotrail, West Coast Railway Company
+STR_NAME_BRMk2_DBSO				:BR Mark 2 Driving Coach (Driving Brake Standard Class)
+STR_NAME_BRMk2_Early_SO			:BR Mark 2 Coach (A-C Standard Class)
+STR_NAME_BRMk2_Early_FO			:BR Mark 2 Coach (A-C First Class)
+STR_NAME_BRMk2_Late_SO			:BR Mark 2 Coach (D-F Standard Class) 
+STR_NAME_BRMk2_Late_FO			:BR Mark 2 Coach (D-F First Class)
+STR_NAME_BRMk2_BSO				:BR Mark 2 Guard (Brake Standard Class)
+STR_NAME_BRMk2_BFO				:BR Mark 2 Guard Coach (Brake First Class)
+STR_NAME_BRMk2_Buffet			:BR Mark 2 Buffet Coach (First Class)
+STR_NAME_BRMk2_Pullaman			:BR Mark 2 Pullman Coach (First Class)
+STR_NAME_BRMk2_Sleeper			:BR Mark 2 Sleeper Coach
 
-STR_NAME_BRMk2_Late_SO				:BR Mark 2 D Coach (Tourist Standard Open)
-STR_NAME_BRMk2_Late_FO				:BR Mark 2 D Coach (First Open)
-STR_NAME_BRMk2_Late_BSO				:BR Mark 2 D Coach (Brake Standard Open)
-STR_NAME_BRMk2_Late_DBSO				:BR Mark 2 D Coach (Driving Brake Standard Open)
-str_BRMk2_Late_liveries				:BR Blue & Grey, Intercity, Scotrail, Arriva, Arriva New, DRS, Virgin, First Great Western 'Fag Packet', West Coast Railway Company
-str_BRMk2_Late_BSO_liveries			:BR Blue & Grey, Intercity, Scotrail, DRS
+str_BRMk2_Early_liveries		:BR Blue & Grey, Network SouthEast, Regional Railways, ScotRail, West Coast Railway Company
+str_BRMk2_Late_liveries			:BR Blue & Grey, InterCity, ScotRail, Arriva, Arriva New, DRS, Virgin, First Great Western 'Fag Packet', West Coast Railway Company
+str_BRMk2_BFO_liveries			:BR Blue & Grey, InterCity, ScotRail, DRS
+str_BRMk2_Buffet_liveries		:BR Blue & Grey, InterCity, ScotRail, Arriva, Arriva New, DRS, Virgin, First Great Western 'Fag Packet', West Coast Railway Company
 
 STR_NAME_BRMk3TF				:BR Mark 3 Coach (Trailer First)
-str_BRMk3TF_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
+str_BRMk3TF_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
 STR_NAME_BRMk3TS				:BR Mark 3 Coach (Trailer Second)
-str_BRMk3TS_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
+str_BRMk3TS_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
 STR_NAME_BRMk3TGS				:BR Mark 3 Coach (Trailer Guard Second)
-str_BRMk3TGS_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
+str_BRMk3TGS_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
 STR_NAME_BRMk3TRSB				:BR Mark 3 Coach (Trailer Buffet)
-str_BRMk3TRSB_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
+str_BRMk3TRSB_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
 STR_NAME_BRMk3TRUB				:BR Mark 3 Coach (Trailer Buffet)
-str_BRMk3TRUB_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
+str_BRMk3TRUB_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
 STR_NAME_BRMk3TRUK				:BR Mark 3 Coach (Trailer Kitchen)
-str_BRMk3TRUK_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
+str_BRMk3TRUK_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
 STR_NAME_BRMk3DMB				:BR Mark 3 Driving Motor Brake
-str_BRMk3DMB_liveries			:BR Blue, Intercity Executive, Intercity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
+str_BRMk3DMB_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
 STR_NAME_BRMk3Sleeper			:BR Mark 3 Sleeper Coach
-str_BRMk3Sleeper_liveries			:BR Blue, Intercity, First Scotrail, Scotrail, Caledonian Sleaper, Great Western, GWR
+str_BRMk3Sleeper_liveries			:BR Blue, InterCity, First ScotRail, ScotRail, Caledonian Sleaper, Great Western, GWR
 
 STR_NAME_BRMk3DVT				:BR Mark 3 Driving Van Trailer
-str_BRMk3DVT_liveries			:Intercity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin 'Pretendolino', Arriva Wales, Network Rail
+str_BRMk3DVT_liveries			:InterCity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin 'Pretendolino', Arriva Wales, Network Rail
 
 STR_NAME_BRMk4FO				:BR Mark 4 Coach (First Open)
-str_BRMk4FO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+str_BRMk4FO_liveries			:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BRMk4TSO				:BR Mark 4 Coach (Trailer Standard Open)
-str_BRMk4TSO_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+str_BRMk4TSO_liveries			:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BRMk4TSOE				:BR Mark 4 Coach (Trailer Standard Open End)
-str_BRMk4TSOE_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+str_BRMk4TSOE_liveries			:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BRMk4TSOD				:BR Mark 4 Coach (Trailer Standard Open Disabled)
-str_BRMk4TSOD_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+str_BRMk4TSOD_liveries			:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BRMk4RFM				:BR Mark 4 Coach (Trailer Restaurant First)
-str_BRMk4RFM_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+str_BRMk4RFM_liveries			:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BRMk4DVT				:BR Mark 4 Driving Van Trailer
-str_BRMk4DVT_liveries			:Intercity Swallow, National Express, GNER, East Coast, Virgin East Coast
+str_BRMk4DVT_liveries			:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
 STR_NAME_BRMk5DVT				:BR Mark 5 Driving Van Trailer
 str_BRMk5DVT_liveries			:Transpennine Express
@@ -1165,25 +1169,25 @@ STR_NAME_390_DMSO				:BR Class 390 Driving Motor Standard Open
 str_BR390_DMSO_liveries			:Virgin Trains
 
 STR_NAME_370_TF					:BR Class 370 Trailer First
-str_370_TF_liveries				:Intercity
+str_370_TF_liveries				:InterCity
 
 STR_NAME_370_TS					:BR Class 370 Trailer Standard
-str_370_TS_liveries				:Intercity
+str_370_TS_liveries				:InterCity
 
 STR_NAME_370_TBF				:BR Class 370 Trailer Brake First
-str_370_TBF_liveries			:Intercity
+str_370_TBF_liveries			:InterCity
 
 STR_NAME_370_TRSB				:BR Class 370 Trailer Restaurant Standard Buffet
-str_370_TRSB_liveries			:Intercity
+str_370_TRSB_liveries			:InterCity
 
 STR_NAME_370_TU					:BR Class 370 Trailer Unclassified
-str_370_TU_liveries				:Intercity
+str_370_TU_liveries				:InterCity
 
 STR_NAME_370_NDM				:BR Class 370 Non-Driving Motor
-str_370_NDM_liveries			:Intercity
+str_370_NDM_liveries			:InterCity
 
 STR_NAME_370_DTS				:BR Class 370 Driving Trailer Standard
-str_BR370_DTS_liveries			:Intercity
+str_BR370_DTS_liveries			:InterCity
 
 STR_NAME_LNERTK					:LNER Gresley Coach (Third Corridor)
 str_LNERTK_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
@@ -1258,7 +1262,7 @@ str_LU2024_eos					:---
 str_LU2024_liveries				:London Underground
 
 STR_IE2800_2CAR                 :Irish Railways 2800 Class
-STR_DSC_IE2800                  :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Commuter Green, Commuter Gold, Intercity
+STR_DSC_IE2800                  :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Commuter Green, Commuter Gold, InterCity
 
 STR_NAME_LNERBCK				:LNER Gresley Coach (Brake Composite Corridor)
 str_LNERBCK_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream	
@@ -1287,9 +1291,8 @@ str_ArrivaHeart					: (Arriva Heart of Wales)
 str_ArrivaSilver				: (Arriva Silver)
 str_ArrivaTimes					: (Arriva Time Are Changing)
 str_ArrivaTPNS					: (Arriva TransPennine Northern Spirit)
-str_ArrivaWales					: (Arriva Wales)
-str_ATW							: (Arriva Trains Wales)
-str_ATWMail						: (Arriva Trains Wales - Western Mail)
+str_ArrivaWales					: (Arriva Trains Wales)
+str_ArrivaWalesMail				: (Arriva Trains Wales - Western Mail)
 str_AvantiWestCoast             : (Avanti West Coast)
 str_BangerBlue_Stripe           : (Banger Blue with White Stripe)
 str_BP                          : (BP)
@@ -1425,10 +1428,10 @@ str_HitachiWhite				: (Hitachi)
 str_HeathrowExpressPurple       : (Heathrow Express - Grey and Purple)
 str_HogwartsExpress             : (Hogwarts Express)
 str_HT							: (Hull Trains)
-str_Inter7City                  : (Inter7City - Scotrail)
-str_Intercity					: (Intercity)
-str_IntercityExecutive			: (Intercity Executive)
-str_IntercitySwallow			: (Intercity Swallow)
+str_Inter7City                  : (Inter7City - ScotRail)
+str_InterCity					: (InterCity)
+str_InterCityExecutive			: (InterCity Executive)
+str_InterCitySwallow			: (InterCity Swallow)
 str_Kestrel                     : (Kestrel Prototype - Yellow and Black)
 str_LaPoste					    : (La Poste)
 str_LNER                        : (LNER Red/White)
@@ -1486,10 +1489,10 @@ str_NSEG						: (Network South East Grey)
 str_NWM							: (Network West Midlands)
 str_NXEA						: (National Express East Anglia)
 str_NXEAAltLights				: (National Express East Anglia - Alternative Lights)
-str_One							: (One)
-str_OneChapelf					: (One 'Chapelfield')
-str_OneGhost					: (One 'Ghost White')
-str_OneTrans					: (One - Transitional)
+str_ONE							: (One)
+str_ONEChapelf					: (One 'Chapelfield')
+str_ONEGhost					: (One 'Ghost White')
+str_ONETrans					: (One - Transitional)
 str_overground					: (London Overground)
 str_overgroundAventra			: (Fake Aventra - London Overground)
 str_overground5					: (5-Car Celebration - London Overground)
@@ -1581,7 +1584,7 @@ str_WessexGinster				: (Wessex Trains - Ginsters)
 str_WessexHeart					: (Wessex Trains - Heart of Wessex)
 str_WessexLooe					: (Wessex Trains - Looe Valley Ad.)
 str_WessexYork                  : (Wessex Trains - York)
-str_WCRC						: (West Coast Railway Company)
+str_WestCoast						: (West Coast Railway Company)
 str_WMR                         : (West Midlands Railway)
 str_Wrexham						: (Wrexham & Shropshire)
 str_WYPTEMetro					: (WYPTE Metro)

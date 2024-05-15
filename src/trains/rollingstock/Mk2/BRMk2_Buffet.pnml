@@ -23,8 +23,8 @@ item (FEAT_TRAINS, item_BRMk2_Buffet, 621) {
 	additional_text:					return(string(str_purchase_coach,string(str_BRMk2_Buffet_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BRMk2_cargo_subtype_text;
-	default: 							sw_BRMk2_Early_BSO;
-	purchase:							spriteset_BRMk2_Early_BSO_Purchase;
+	default: 							sw_BRMk2_Buffet;
+	purchase:							spriteset_BRMk2_RFB_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_capacity: return(31 * param_pax);
 	cost_factor:	return(GetAdjustedCost(50));

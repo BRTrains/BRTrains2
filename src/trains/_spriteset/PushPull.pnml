@@ -8,9 +8,27 @@ Everything I've found should refer PARENT not SELF
 
 */
 
+// Mirror of Mk2DBSO
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk2DBSO, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
+    0:	spriteset_BRMk2_DBSO_BRBlue;
+	1:	spriteset_BRMk2_DBSO_NSE;
+	2:	spriteset_BRMk2_DBSO_Regional;
+	3:	spriteset_BRMk2_DBSO_ScotRail;
+	4:  spriteset_BRMk2_DBSO_Anglia;
+	5:  spriteset_BRMk2_DBSO_WestCoast;
+	6:  spriteset_BRMk2_DBSO_ONE;
+	7:  spriteset_BRMk2_DBSO_InterCity;
+	8:  spriteset_BRMk2_DBSO_NetworkRail;
+	9:  spriteset_BRMk2_DBSO_Arriva;
+    10:  spriteset_BRMk2_DBSO_DRS;
+    11:  spriteset_BRMk2_DBSO_Virgin;
+    12:  spriteset_BRMk2_DBSO_FGW;
+	13:  spriteset_BRMk2_DBSO_FirstScotRail;
+}
+
 // Mirror of Mk3DVT
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk3DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0: spriteset_BRMk3DVT_IntercitySwallow;
+    0: spriteset_BRMk3DVT_InterCitySwallow;
     1: spriteset_BRMk3DVT_Virgin;
     2: spriteset_BRMk3DVT_ONE;
     3: spriteset_BRMk3DVT_Chiltern;
@@ -19,18 +37,18 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk3DVT, [STORE_TEMP(num_vehs
     6: spriteset_BRMk3DVT_VirginPretendolino;
     7: spriteset_BRMk3DVT_ArrivaWales;
     8: spriteset_BRMk3DVT_NetworkRail;
-	spriteset_BRMk3DVT_IntercitySwallow;
+	spriteset_BRMk3DVT_InterCitySwallow;
 }
 
 // Mirror of Mk4DVT
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0:	spriteset_BRMk4DVT_IntercitySwallowr;
+    0:	spriteset_BRMk4DVT_InterCitySwallowr;
 	1:	spriteset_BRMk4DVT_NatExr;
 	2:	spriteset_BRMk4DVT_GNERr;
 	3:	spriteset_BRMk4DVT_EastCoastr;
 	4:	spriteset_BRMk4DVT_VirginECr;
     5:	spriteset_BRMk4DVT_LNERr;
-    spriteset_BR91_IntercitySwallowr;
+    spriteset_BR91_InterCitySwallowr;
 }
 
 // Not a mirror for once, as Mk5 DVT only has one livery
@@ -53,8 +71,8 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR47,cargo_subtype){
     4: 	spriteset_BR47_BRLLogo;
     5: 	spriteset_BR47_BRLLogoAlt;
     6: 	spriteset_BR47_Anglia;
-    7: 	spriteset_BR47_Intercity;
-    8: 	spriteset_BR47_WCRC;
+    7: 	spriteset_BR47_InterCity;
+    8: 	spriteset_BR47_WestCoast;
     9: 	spriteset_BR47_GWR;
     10: spriteset_BR47_Virgin;
     11: spriteset_BR47_Colas;
@@ -89,8 +107,8 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,cargo_subtype){
 // Mirror of 86
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR86, cargo_subtype){
     0:	spriteset_BR86_BRBlue;
-	1:	spriteset_BR86_IntercityExecutive;
-	2:	spriteset_BR86_IntercitySwallow;
+	1:	spriteset_BR86_InterCityExecutive;
+	2:	spriteset_BR86_InterCitySwallow;
 	3: 	spriteset_BR86_RailfreightDistribution;
 	4: 	spriteset_BR86_RailExpress;
 	5: 	spriteset_BR86_EWS;
@@ -100,22 +118,22 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR86, cargo_subtype){
 // Mirror of 87
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR87, cargo_subtype){
     0:	spriteset_BR87_BRBlue;
-	1:	spriteset_BR87_IntercitySwallow;
+	1:	spriteset_BR87_InterCitySwallow;
 	2:	spriteset_BR87_Virgin;
         spriteset_BR87_BRBlue;
 }
 
 // Mirror of BR89
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR89, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0:	spriteset_BR89_IntercitySwallow;
+    0:	spriteset_BR89_InterCitySwallow;
 	1:	spriteset_BR89_GNER;
-    2:	spriteset_BR89_Intercity;
-    spriteset_BR89_IntercitySwallow;
+    2:	spriteset_BR89_InterCity;
+    spriteset_BR89_InterCitySwallow;
 }
 
 // Mirror of BR90
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR90, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0:	spriteset_BR90_IntercitySwallow;
+    0:	spriteset_BR90_InterCitySwallow;
 	1:	spriteset_BR90_FLGrey;
 	2:	spriteset_BR90_EWS;
     3:	spriteset_BR90_DB;
@@ -126,18 +144,18 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR90, [STORE_TEMP(0 - position_in_a
 	8:	spriteset_BR90_GreaterAnglia2;	
 	9:	spriteset_BR90_Virgin;
 	10:	spriteset_BR90_REX;
-	11:	spriteset_BR90_FirstScotrail;
+	11:	spriteset_BR90_FirstScotRail;
 	12:	spriteset_BR90_GNER;
-	spriteset_BR90_IntercitySwallow;
+	spriteset_BR90_InterCitySwallow;
 }
 
 // Mirror of BR91 (IC225.pnml)
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR91, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0:	spriteset_BR91_IntercitySwallowr;
+    0:	spriteset_BR91_InterCitySwallowr;
 	1:	spriteset_BR91_NatExr;
 	2:	spriteset_BR91_GNERr;
 	3:	spriteset_BR91_EastCoastr;
 	4:	spriteset_BR91_VirginECr;
     5:	spriteset_BR91_LNERr;
-	spriteset_BR91_IntercitySwallowr;
+	spriteset_BR91_InterCitySwallowr;
 }

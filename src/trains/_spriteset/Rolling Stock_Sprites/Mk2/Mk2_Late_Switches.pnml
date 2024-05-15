@@ -1,0 +1,33 @@
+switch(FEAT_TRAINS,SELF, sw_BRMk2_Late_SO,cargo_subtype){
+    0:	spriteset_BRMk2_Late_SO_BRBlue;
+	1:	spriteset_BRMk2_Late_SO_NSE;
+	2:	spriteset_BRMk2_Late_SO_Regional;
+	3:	spriteset_BRMk2_Late_SO_ScotRail;
+	4:  spriteset_BRMk2_Late_SO_Anglia;
+	5:  spriteset_BRMk2_Late_SO_WestCoast;
+	6:  spriteset_BRMk2_Late_SO_ONE;
+	7:  spriteset_BRMk2_Late_SO_InterCity;
+	8:  spriteset_BRMk2_Late_SO_NetworkRail;
+	9:  spriteset_BRMk2_Late_SO_Arriva;
+    10:  spriteset_BRMk2_Late_SO_DRS;
+    11:  spriteset_BRMk2_Late_SO_Virgin;
+    12:  spriteset_BRMk2_Late_SO_FGW;
+	13:  spriteset_BRMk2_Late_SO_FirstScotRail;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BRMk2_Late_FO,cargo_subtype){
+    0:	spriteset_BRMk2_Late_FO_BRBlue;
+	1:	spriteset_BRMk2_Late_FO_NSE;
+	2:	spriteset_BRMk2_Late_FO_Regional;
+	3:	spriteset_BRMk2_Late_FO_ScotRail;
+	4:  spriteset_BRMk2_Late_FO_Anglia;
+	5:  spriteset_BRMk2_Late_FO_WestCoast;
+	6:  spriteset_BRMk2_Late_FO_ONE;
+	7:  spriteset_BRMk2_Late_FO_InterCity;
+	8:  spriteset_BRMk2_Late_FO_NetworkRail;
+	9:  spriteset_BRMk2_Late_FO_Arriva;
+    10:  spriteset_BRMk2_Late_FO_DRS;
+    11:  spriteset_BRMk2_Late_FO_Virgin;
+    12:  spriteset_BRMk2_Late_FO_FGW;
+	13:  spriteset_BRMk2_Late_FO_FirstScotRail;
+}

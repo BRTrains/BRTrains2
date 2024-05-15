@@ -26,10 +26,10 @@ spriteset(spriteset_BRMk2_Late_FO_Regional, "gfx/Rolling Stock/Mk2/BRMk2_Late.pn
 	template_train32px(0, 143)
 }
 
-spriteset(spriteset_BRMk2_Late_SO_Scotrail, "gfx/Rolling Stock/Mk2/BRMk2_Late.png") {
+spriteset(spriteset_BRMk2_Late_SO_ScotRail, "gfx/Rolling Stock/Mk2/BRMk2_Late.png") {
 	template_train32px(0, 169)
 }
-spriteset(spriteset_BRMk2_Late_FO_Scotrail, "gfx/Rolling Stock/Mk2/BRMk2_Late.png") {
+spriteset(spriteset_BRMk2_Late_FO_ScotRail, "gfx/Rolling Stock/Mk2/BRMk2_Late.png") {
 	template_train32px(0, 195)
 }
 
@@ -89,16 +89,16 @@ spriteset(spriteset_BRMk2_Late_FO_Virgin, "gfx/Rolling Stock/Mk2/BRMk2_Late.png"
 	template_train32px(0, 611)
 }
 
-spriteset(spriteset_BRMk2_Late_SO_GWR, "gfx/Rolling Stock/Mk2/BRMk2_Late.png") {
+spriteset(spriteset_BRMk2_Late_SO_FGW, "gfx/Rolling Stock/Mk2/BRMk2_Late.png") {
 	template_train32px(0, 637)
 }
-spriteset(spriteset_BRMk2_Late_FO_GWR, "gfx/Rolling Stock/Mk2/BRMk2_Late.png") {
+spriteset(spriteset_BRMk2_Late_FO_FGW, "gfx/Rolling Stock/Mk2/BRMk2_Late.png") {
 	template_train32px(0, 663)
 }
 
-spriteset(spriteset_BRMk2_Late_SO_FirstScotrail, "gfx/Rolling Stock/Mk2/BRMk2_Buffet.png") {
+spriteset(spriteset_BRMk2_Late_SO_FirstScotRail, "gfx/Rolling Stock/Mk2/BRMk2_Buffet.png") {
 	template_train32px(0, 689)
 }
-spriteset(spriteset_BRMk2_Late_FO_FirstScotrail, "gfx/Rolling Stock/Mk2/BRMk2_Buffet.png") {
+spriteset(spriteset_BRMk2_Late_FO_FirstScotRail, "gfx/Rolling Stock/Mk2/BRMk2_Buffet.png") {
 	template_train32px(0, 715)
 }

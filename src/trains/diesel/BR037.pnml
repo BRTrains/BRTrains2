@@ -22,7 +22,7 @@ spriteset(spriteset_BR37_RFLLCentre, "gfx/BR37.png") {
 	template_train32px_old(0, 113)
 }
 
-spriteset(spriteset_BR37_Intercity, "gfx/BR37.png") {
+spriteset(spriteset_BR37_InterCity, "gfx/BR37.png") {
 	template_train32px_old(0, 138)
 }
 
@@ -137,7 +137,7 @@ switch(FEAT_TRAINS,SELF, sw_BR37,cargo_subtype){
 	3:	spriteset_BR37_BRLLogoSplit;
 	4:	spriteset_BR37_RFLLSplit;
 	5:	spriteset_BR37_RFLLCentre;
-	6:	spriteset_BR37_Intercity;
+	6:	spriteset_BR37_InterCity;
 	7:	spriteset_BR37_DeptGrey;
 	8:	spriteset_BR37_CivilDutch;
 	9:	spriteset_BR37_BRGrey;
@@ -172,7 +172,7 @@ switch(FEAT_TRAINS,SELF,sw_BR37_cargo_subtype_text,cargo_subtype){
 	3:	return string(str_BRLLogoSplit);
 	4:	return string(str_RFLLSplit);
 	5:	return string(str_RFLLCentre);
-	6:	return string(str_Intercity);
+	6:	return string(str_InterCity);
 	7:	return string(str_DeptGrey);
 	8:	return string(str_CivilDutch);
 	9:	return string(str_BRGrey);

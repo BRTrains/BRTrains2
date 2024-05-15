@@ -2,7 +2,7 @@ spriteset(spriteset_BR82_Purchase, "gfx/Electric/BR8X.png") {
 	template_purchase(176, 13)
 }
 
-spriteset(spriteset_BR82_IntercityExecutive, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR82_InterCityExecutive, "gfx/Electric/BR8X.png") {
 	template_train32px_old(0, 88)
 }
 
@@ -12,14 +12,14 @@ spriteset(spriteset_BR82_BRBlue, "gfx/Electric/BR8X.png") {
 
 switch(FEAT_TRAINS,SELF, sw_BR82, cargo_subtype){
     0:	spriteset_BR82_BRBlue;
-	1:	spriteset_BR82_IntercityExecutive;
+	1:	spriteset_BR82_InterCityExecutive;
 
         return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR82_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRBlue);	
-    1:	return string(str_IntercityExecutive);
+    1:	return string(str_InterCityExecutive);
        return CB_RESULT_NO_TEXT;
 }
 

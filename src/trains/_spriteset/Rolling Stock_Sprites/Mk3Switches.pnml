@@ -1,7 +1,7 @@
 switch(FEAT_TRAINS,SELF, sw_253_BRMk3TF,cargo_subtype){
     0:	spriteset_BRMk3TF_BRBlue;
-    1:	spriteset_BRMk3TF_IntercityExecutive;
-	2:	spriteset_BRMk3TF_IntercitySwallow;
+    1:	spriteset_BRMk3TF_InterCityExecutive;
+	2:	spriteset_BRMk3TF_InterCitySwallow;
 	3:	spriteset_BRMk3TF_MMLTealTang;
 	4:	spriteset_BRMk3TF_MMLBlue;
 	5:	spriteset_BRMk3TF_EMT;
@@ -20,8 +20,8 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMk3TF,cargo_subtype){
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMk3TS,cargo_subtype){
     0:	spriteset_BRMk3TS_BRBlue;
-	1:	spriteset_BRMk3TS_IntercityExecutive;
-	2:	spriteset_BRMk3TS_IntercitySwallow;
+	1:	spriteset_BRMk3TS_InterCityExecutive;
+	2:	spriteset_BRMk3TS_InterCitySwallow;
 	3:	spriteset_BRMk3TS_MMLTealTang;
 	4:	spriteset_BRMk3TS_MMLBlue;
 	5:	spriteset_BRMk3TS_EMT;
@@ -40,8 +40,8 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMk3TS,cargo_subtype){
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMk3TGS,cargo_subtype){
     0:	spriteset_BRMk3TGS_BRBlue;
-	1:	spriteset_BRMk3TGS_IntercityExecutive;
-	2:	spriteset_BRMk3TGS_IntercitySwallow;
+	1:	spriteset_BRMk3TGS_InterCityExecutive;
+	2:	spriteset_BRMk3TGS_InterCitySwallow;
 	3:	spriteset_BRMk3TGS_MMLTealTang;
 	4:	spriteset_BRMk3TGS_MMLBlue;
 	5:	spriteset_BRMk3TGS_EMT;
@@ -60,8 +60,8 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMk3TGS,cargo_subtype){
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMk3TRSB,cargo_subtype){
     0:	spriteset_BRMk3TRSB_BRBlue;
-	1:	spriteset_BRMk3TRSB_IntercityExecutive;
-	2:	spriteset_BRMk3TRSB_IntercitySwallow;
+	1:	spriteset_BRMk3TRSB_InterCityExecutive;
+	2:	spriteset_BRMk3TRSB_InterCitySwallow;
 	3:	spriteset_BRMk3TRSB_MMLTealTang;
 	4:	spriteset_BRMk3TRSB_MMLBlue;
 	5:	spriteset_BRMk3TRSB_EMT;
@@ -80,8 +80,8 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMk3TRSB,cargo_subtype){
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMk3TRUB,cargo_subtype){
     0:	spriteset_BRMk3TRUB_BRBlue;
-	1:	spriteset_BRMk3TRUB_IntercityExecutive;
-	2:	spriteset_BRMk3TRUB_IntercitySwallow;
+	1:	spriteset_BRMk3TRUB_InterCityExecutive;
+	2:	spriteset_BRMk3TRUB_InterCitySwallow;
 	3:	spriteset_BRMk3TRUB_MMLTealTang;
 	4:	spriteset_BRMk3TRUB_MMLBlue;
 	5:	spriteset_BRMk3TRUB_EMT;
@@ -100,8 +100,8 @@ switch(FEAT_TRAINS,SELF, sw_253_BRMk3TRUB,cargo_subtype){
 
 switch(FEAT_TRAINS,SELF, sw_253_BRMk3TRUK,cargo_subtype){
     0:	spriteset_BRMk3TRUK_BRBlue;
-	1:	spriteset_BRMk3TRUK_IntercityExecutive;
-	2:	spriteset_BRMk3TRUK_IntercitySwallow;
+	1:	spriteset_BRMk3TRUK_InterCityExecutive;
+	2:	spriteset_BRMk3TRUK_InterCitySwallow;
 	3:	spriteset_BRMk3TRUK_MMLTealTang;
 	4:	spriteset_BRMk3TRUK_MMLBlue;
 	5:	spriteset_BRMk3TRUK_EMT;
