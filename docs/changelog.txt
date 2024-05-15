@@ -15,6 +15,7 @@
 - Added Mk5a coach and DVT as separate purchase items (inc PushPull with Class 68)
 - Added SNCF La Poste TGV (It ran on National rail to St Pancras, I promise)
 - Added Mk2 Buffet
+- Added push-pull for Mk2 DBSO
 - Re-drew Class 70
 - Re-drew Class 175
 - Re-drew Class 334
