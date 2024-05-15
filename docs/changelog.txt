@@ -26,8 +26,8 @@
 - Re-drew Class 507 and 508
 - Re-drew Mk2 coaches
 - Re-drew Mk5 coaches and DVT
+- Re-drew (lengthened) Royal Mail Travelling Post Office and added push-pull with Class 47
 - Added push-pull for Mk2 DBSO
-- Lengthened Royal Mail Travelling Post Office and added push-pull with Class 47
 - Improved Class 67
 - Added GWR livery for Class 230
 - Added Pride livery for Class 334
