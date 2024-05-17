@@ -1,0 +1,87 @@
+
+switch(FEAT_TRAINS,SELF,sw_MPV_cargo_subtype_text,cargo_subtype){
+	0:  return(string(str_NRYellow,string(str_MPV_Geometry)));
+	1:  return(string(str_NRYellow,string(str_MPV_GeometryOpen)));
+	3:  return(string(str_NRBlue,string(str_MPV_Geometry)));
+	2:  return(string(str_NRBlue,string(str_MPV_GeometryOpen)));
+	//4:  return(string(str_NROrange,string(str_MPV_Geometry)));
+	//5:  return(string(str_NROrange,string(str_MPV_GeometryOpen)));
+	//6:  return(string(str_NRWhite,string(str_MPV_Geometry)));
+	//7:  return(string(str_NRWhite,string(str_MPV_GeometryOpen)));
+	//8:  return(string(str_Railtrack,string(str_MPV_Geometry)));
+	//9:  return(string(str_Railtrack,string(str_MPV_GeometryOpen)));
+	//10:  return(string(str_SWTPink,string(str_MPV_Geometry)));
+	//11:  return(string(str_SWTPink,string(str_MPV_GeometryOpen)));
+	//12:  return(string(str_SWTOrange,string(str_MPV_Geometry)));
+	//13:  return(string(str_SWTOrange,string(str_MPV_GeometryOpen)));
+    return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_MPV_Single,cargo_subtype){
+	0:	spriteset_MPV_Single_Open_NetworkRailYellow;
+	1:	spriteset_MPV_Single_Geometry_NetworkRailYellow;
+	2:	spriteset_MPV_Single_Open_NetworkRailBlue;
+	3:	spriteset_MPV_Single_Geometry_NetworkRailBlue;
+	//4:	spriteset_MPV_Single_Open_NetworkRailOrange;
+	//5:	spriteset_MPV_Single_Geometry_NetworkRailOrange;
+    //6:	spriteset_MPV_Single_Open_NetworkRailWhite;
+	//7:	spriteset_MPV_Single_Geometry_NetworkRailWhite;
+	//8:	spriteset_MPV_Single_Open_Railtrack;
+	//9:	spriteset_MPV_Single_Geometry_Railtrack;
+	//10:	spriteset_MPV_Single_Open_SWTPink;
+	//11:	spriteset_MPV_Single_Geometry_SWTPink;
+	//12:	spriteset_MPV_Single_Open_SWTOrange;
+	//13:	spriteset_MPV_Single_Geometry_SWTOrange;	
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Single_effect,var[0xc8]){
+	0xFE:	0;
+	0xFF:	0;
+	diesel_create_visual_effect;
+}
+
+item (FEAT_TRAINS, item_MPV_Single, 235) {
+	property {
+		name: 							string(STR_NAME_MPV_Single);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1999,4,21);
+		model_life:						25;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					20;
+		cost_factor:					39;
+		running_cost_factor:			15;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_FLIP;
+		refit_cost:						8;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							355 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;		
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							14 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_MPV_usage),string(str_MPV_eos),string(str_MPV_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_MPV_cargo_subtype_text;
+	default: 							sw_MPV_Single;
+	purchase:							spriteset_MPV_Single_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						sw_MPV_Single_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}
