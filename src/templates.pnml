@@ -142,8 +142,6 @@ template template_mu_purchase(x,y){
     [ ]
 }
 
-
-
 template template_purchase(x,y){
     //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
     [x,     y,      87,     12,     -25,-   6,          NOANIM|NOWHITE]
@@ -168,26 +166,4 @@ template template_train28px_old_pacer(x,y){
     [ x+87, y, 19, 15, -13, -7, NOANIM] //sw
     [ x+107, y, 28, 12, -14, -7, NOANIM] //w
     [ x+136, y, 19, 15, -5, -8, NOANIM] //nw
-}
-
-// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-// ANYTHING BELOW THIS SHOULD BE REPLACED ASAP
-
-// Only used by MPV
-template template_train170pt(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x, y, 8, 26, -3, -9,			NOANIM|NOWHITE]
-    [ x+9, y, 22, 21, -16, -12,		NOANIM|NOWHITE]
-    [ x+32, y, 32, 12, -20, -7,		NOANIM|NOWHITE]
-    [ x+65, y, 22, 21, -5, -11,		NOANIM|NOWHITE]
-    [ x+88, y, 8, 26, -3, -11,		NOANIM|NOWHITE]
-    [ x+97, y, 22, 21, -14, -12,	NOANIM|NOWHITE]
-    [ x+120, y, 32, 12, -20, -7,	NOANIM|NOWHITE]
-    [ x+153, y, 22, 21, -4, -11,	NOANIM|NOWHITE]
 }
