@@ -1,0 +1,37 @@
+spritegroup spritegroup_MPV_Dual_Reversed_NRYellow_WOOD {
+    loaded:  [spriteset_MPV_Reversed_Wood_Empty_NRYellow, spriteset_MPV_Reversed_Wood_Light_NRYellow, spriteset_MPV_Reversed_Wood_Half_NRYellow, spriteset_MPV_Reversed_Wood_Full_NRYellow];
+    loading: [spriteset_MPV_Reversed_Wood_Empty_NRYellow, spriteset_MPV_Reversed_Wood_Light_NRYellow, spriteset_MPV_Reversed_Wood_Half_NRYellow, spriteset_MPV_Reversed_Wood_Full_NRYellow];
+    
+}
+spritegroup spritegroup_MPV_Dual_NRYellow_WOOD {
+    loaded:  [spriteset_MPV_Wood_Empty_NRYellow, spriteset_MPV_Wood_Light_NRYellow, spriteset_MPV_Wood_Half_NRYellow, spriteset_MPV_Reversed_Wood_Full_NRYellow];
+    loading: [spriteset_MPV_Wood_Empty_NRYellow, spriteset_MPV_Wood_Light_NRYellow, spriteset_MPV_Wood_Half_NRYellow, spriteset_MPV_Reversed_Wood_Full_NRYellow];
+}
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRYellow_WOOD,position_in_articulated_veh){	
+	0:	spritegroup_MPV_Dual_NRYellow_WOOD;
+	spritegroup_MPV_Dual_Reversed_NRYellow_WOOD;
+}
+
+spritegroup spritegroup_MPV_Dual_Reversed_NRBlue_WOOD {
+    loaded:  [spriteset_MPV_Reversed_Wood_Empty_NRBlue, spriteset_MPV_Reversed_Wood_Light_NRBlue, spriteset_MPV_Reversed_Wood_Half_NRBlue, spriteset_MPV_Reversed_Wood_Full_NRBlue];
+    loading: [spriteset_MPV_Reversed_Wood_Empty_NRBlue, spriteset_MPV_Reversed_Wood_Light_NRBlue, spriteset_MPV_Reversed_Wood_Half_NRBlue, spriteset_MPV_Reversed_Wood_Full_NRBlue];
+    
+}
+spritegroup spritegroup_MPV_Dual_NRBlue_WOOD {
+    loaded:  [spriteset_MPV_Wood_Empty_NRBlue, spriteset_MPV_Wood_Light_NRBlue, spriteset_MPV_Wood_Half_NRBlue, spriteset_MPV_Reversed_Wood_Full_NRBlue];
+    loading: [spriteset_MPV_Wood_Empty_NRBlue, spriteset_MPV_Wood_Light_NRBlue, spriteset_MPV_Wood_Half_NRBlue, spriteset_MPV_Reversed_Wood_Full_NRBlue];
+}
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRBlue_WOOD,position_in_articulated_veh){	
+	0:	spritegroup_MPV_Dual_NRBlue_WOOD;
+	spritegroup_MPV_Dual_Reversed_NRBlue_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF, sw_MPV_Dual_WOOD,cargo_subtype){
+	0:	sw_MPV_Dual_NRYellow_WOOD;
+    1:	sw_MPV_Dual_NRBlue_WOOD;
+    //2:	sw_MPV_Dual_NRWhite_WOOD;
+	//3:	sw_MPV_Dual_NROrange_WOOD;
+	//4:	sw_MPV_Dual_Railtrack_WOOD;
+	//5:	sw_MPV_Dual_SWTPink_WOOD;
+	//6:	sw_MPV_Dual_SWTOrange_WOOD;
+}

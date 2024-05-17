@@ -18,14 +18,14 @@ switch(FEAT_TRAINS,SELF,sw_MPV_cargo_subtype_text,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF, sw_MPV_Single,cargo_subtype){
-	0:	spriteset_MPV_Single_Open_NetworkRailYellow;
-	1:	spriteset_MPV_Single_Geometry_NetworkRailYellow;
-	2:	spriteset_MPV_Single_Open_NetworkRailBlue;
-	3:	spriteset_MPV_Single_Geometry_NetworkRailBlue;
-	//4:	spriteset_MPV_Single_Open_NetworkRailOrange;
-	//5:	spriteset_MPV_Single_Geometry_NetworkRailOrange;
-    //6:	spriteset_MPV_Single_Open_NetworkRailWhite;
-	//7:	spriteset_MPV_Single_Geometry_NetworkRailWhite;
+	0:	spriteset_MPV_Single_Open_NRYellow;
+	1:	spriteset_MPV_Single_Geometry_NRYellow;
+	2:	spriteset_MPV_Single_Open_NRBlue;
+	3:	spriteset_MPV_Single_Geometry_NRBlue;
+	//4:	spriteset_MPV_Single_Open_NROrange;
+	//5:	spriteset_MPV_Single_Geometry_NROrange;
+    //6:	spriteset_MPV_Single_Open_NRWhite;
+	//7:	spriteset_MPV_Single_Geometry_NRWhite;
 	//8:	spriteset_MPV_Single_Open_Railtrack;
 	//9:	spriteset_MPV_Single_Geometry_Railtrack;
 	//10:	spriteset_MPV_Single_Open_SWTPink;

@@ -1,6 +1,9 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Added Class 321
 - Re-drew class 66
+- Re-drew Class 358
+- Re-drew Class 68
+- Re-drew MPV Departmental Vehicle
 
 # v2.9
 - Added Furness Railway 0-4-0 "Coppernob"
