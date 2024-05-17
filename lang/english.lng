@@ -204,10 +204,10 @@ str_route_8						:RA8 (<22.8 tonne Axle Load)
 str_route_9						:RA9 (<24.1 tonne Axle Load)
 str_route_10					:RA10 (<25.4 tonne Axle Load)
 
-STR_NAME_DR98_9					:Departmental Railways 98/9 "MPV" (2-car)
-str_DR98_9_usage				:Deparmental Railway
-str_DR98_9_eos					:---
-str_DR98_9_liveries				:Network Rail, Railtrack, South West Trains
+STR_NAME_MPV_Dual					:Departmental Railways 98/9 "MPV" (2-car)
+str_MPV_Dual_usage				:Deparmental Railway
+str_MPV_Dual_eos					:---
+str_MPV_Dual_liveries				:Network Rail, Railtrack, South West Trains
 
 
 STR_NAME_Coppernob					:Furness Railway 0-4-0 "Coppernob"

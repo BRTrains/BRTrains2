@@ -215,7 +215,7 @@ sort(FEAT_TRAINS, [
  item_BR805_5car,
  item_BR807_7car,
  item_BR810_5car, 
- item_DR98_9,   
+ item_MPV_Dual,   
  item_LUAStock,
  item_LUCStock,
  item_LUDStock,

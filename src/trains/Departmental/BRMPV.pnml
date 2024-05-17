@@ -1,0 +1,297 @@
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRWhite,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_NRWhiteF;
+	0xFF:	spriteset_MPV_Dual_NRWhiteF;
+	spriteset_MPV_Dual_NRWhite;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRYellow,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_NRYellowF;
+	0xFF:	spriteset_MPV_Dual_NRYellowF;
+	spriteset_MPV_Dual_NRYellow;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NROrange,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_NROrangeF;
+	0xFF:	spriteset_MPV_Dual_NROrangeF;
+	spriteset_MPV_Dual_NROrange;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRBlue,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_NRBlueF;
+	0xFF:	spriteset_MPV_Dual_NRBlueF;
+	spriteset_MPV_Dual_NRBlue;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_Railtrack,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_RailtrackF;
+	0xFF:	spriteset_MPV_Dual_RailtrackF;
+	spriteset_MPV_Dual_Railtrack;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTPink,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_SWTPinkF;
+	0xFF:	spriteset_MPV_Dual_SWTPinkF;
+	spriteset_MPV_Dual_SWTPink;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTOrange,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_SWTOrangeF;
+	0xFF:	spriteset_MPV_Dual_SWTOrangeF;
+	spriteset_MPV_Dual_SWTOrange;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_NRWhite);
+	1:	return string(str_NRYellow);
+	2:	return string(str_NROrange);
+	3:	return string(str_NRBlue);
+	4:	return string(str_Railtrack);
+	5:	return string(str_SWTPink);
+	6:	return string(str_SWTOrange);
+       return CB_RESULT_NO_TEXT;
+}
+
+spritegroup spritegroup_MPV_Dual_NRWhite_WOOD {
+    loaded:  [spriteset_MPV_Dual_NRWhite_WOOD_empty, spriteset_MPV_Dual_NRWhite_WOOD_half, spriteset_MPV_Dual_NRWhite_WOOD_full];
+    loading: [spriteset_MPV_Dual_NRWhite_WOOD_empty, spriteset_MPV_Dual_NRWhite_WOOD_half, spriteset_MPV_Dual_NRWhite_WOOD_full];
+}
+
+spritegroup spritegroup_MPV_Dual_NRWhite_WOODF {
+    loaded:  [spriteset_MPV_Dual_NRWhite_WOOD_emptyF, spriteset_MPV_Dual_NRWhite_WOOD_halfF, spriteset_MPV_Dual_NRWhite_WOOD_fullF];
+    loading: [spriteset_MPV_Dual_NRWhite_WOOD_emptyF, spriteset_MPV_Dual_NRWhite_WOOD_halfF, spriteset_MPV_Dual_NRWhite_WOOD_fullF];
+}
+
+spritegroup spritegroup_MPV_Dual_NRYellow_WOOD {
+    loaded:  [spriteset_MPV_Dual_NRYellow_WOOD_empty, spriteset_MPV_Dual_NRYellow_WOOD_half, spriteset_MPV_Dual_NRYellow_WOOD_full];
+    loading: [spriteset_MPV_Dual_NRYellow_WOOD_empty, spriteset_MPV_Dual_NRYellow_WOOD_half, spriteset_MPV_Dual_NRYellow_WOOD_full];
+}
+
+spritegroup spritegroup_MPV_Dual_NRYellow_WOODF {
+    loaded:  [spriteset_MPV_Dual_NRYellow_WOOD_emptyF, spriteset_MPV_Dual_NRYellow_WOOD_halfF, spriteset_MPV_Dual_NRYellow_WOOD_fullF];
+    loading: [spriteset_MPV_Dual_NRYellow_WOOD_emptyF, spriteset_MPV_Dual_NRYellow_WOOD_halfF, spriteset_MPV_Dual_NRYellow_WOOD_fullF];
+}
+
+spritegroup spritegroup_MPV_Dual_NROrange_WOOD {
+    loaded:  [spriteset_MPV_Dual_NROrange_WOOD_empty, spriteset_MPV_Dual_NROrange_WOOD_half, spriteset_MPV_Dual_NROrange_WOOD_full];
+    loading: [spriteset_MPV_Dual_NROrange_WOOD_empty, spriteset_MPV_Dual_NROrange_WOOD_half, spriteset_MPV_Dual_NROrange_WOOD_full];
+}
+
+spritegroup spritegroup_MPV_Dual_NROrange_WOODF {
+    loaded:  [spriteset_MPV_Dual_NROrange_WOOD_emptyF, spriteset_MPV_Dual_NROrange_WOOD_halfF, spriteset_MPV_Dual_NROrange_WOOD_fullF];
+    loading: [spriteset_MPV_Dual_NROrange_WOOD_emptyF, spriteset_MPV_Dual_NROrange_WOOD_halfF, spriteset_MPV_Dual_NROrange_WOOD_fullF];
+}
+
+spritegroup spritegroup_MPV_Dual_NRBlue_WOOD {
+    loaded:  [spriteset_MPV_Dual_NRBlue_WOOD_empty, spriteset_MPV_Dual_NRBlue_WOOD_half, spriteset_MPV_Dual_NRBlue_WOOD_full];
+    loading: [spriteset_MPV_Dual_NRBlue_WOOD_empty, spriteset_MPV_Dual_NRBlue_WOOD_half, spriteset_MPV_Dual_NRBlue_WOOD_full];
+}
+
+spritegroup spritegroup_MPV_Dual_NRBlue_WOODF {
+    loaded:  [spriteset_MPV_Dual_NRBlue_WOOD_emptyF, spriteset_MPV_Dual_NRBlue_WOOD_halfF, spriteset_MPV_Dual_NRBlue_WOOD_fullF];
+    loading: [spriteset_MPV_Dual_NRBlue_WOOD_emptyF, spriteset_MPV_Dual_NRBlue_WOOD_halfF, spriteset_MPV_Dual_NRBlue_WOOD_fullF];
+}
+
+spritegroup spritegroup_MPV_Dual_Railtrack_WOOD {
+    loaded:  [spriteset_MPV_Dual_Railtrack_WOOD_empty, spriteset_MPV_Dual_Railtrack_WOOD_half, spriteset_MPV_Dual_Railtrack_WOOD_full];
+    loading: [spriteset_MPV_Dual_Railtrack_WOOD_empty, spriteset_MPV_Dual_Railtrack_WOOD_half, spriteset_MPV_Dual_Railtrack_WOOD_full];
+}
+
+spritegroup spritegroup_MPV_Dual_Railtrack_WOODF {
+    loaded:  [spriteset_MPV_Dual_Railtrack_WOOD_emptyF, spriteset_MPV_Dual_Railtrack_WOOD_halfF, spriteset_MPV_Dual_Railtrack_WOOD_fullF];
+    loading: [spriteset_MPV_Dual_Railtrack_WOOD_emptyF, spriteset_MPV_Dual_Railtrack_WOOD_halfF, spriteset_MPV_Dual_Railtrack_WOOD_fullF];
+}
+
+spritegroup spritegroup_MPV_Dual_SWTPink_WOOD {
+    loaded:  [spriteset_MPV_Dual_SWTPink_WOOD_empty, spriteset_MPV_Dual_SWTPink_WOOD_half, spriteset_MPV_Dual_SWTPink_WOOD_full];
+    loading: [spriteset_MPV_Dual_SWTPink_WOOD_empty, spriteset_MPV_Dual_SWTPink_WOOD_half, spriteset_MPV_Dual_SWTPink_WOOD_full];
+}
+
+spritegroup spritegroup_MPV_Dual_SWTPink_WOODF {
+    loaded:  [spriteset_MPV_Dual_SWTPink_WOOD_emptyF, spriteset_MPV_Dual_SWTPink_WOOD_halfF, spriteset_MPV_Dual_SWTPink_WOOD_fullF];
+    loading: [spriteset_MPV_Dual_SWTPink_WOOD_emptyF, spriteset_MPV_Dual_SWTPink_WOOD_halfF, spriteset_MPV_Dual_SWTPink_WOOD_fullF];
+}
+
+spritegroup spritegroup_MPV_Dual_SWTOrange_WOOD {
+    loaded:  [spriteset_MPV_Dual_SWTOrange_WOOD_empty, spriteset_MPV_Dual_SWTOrange_WOOD_half, spriteset_MPV_Dual_SWTOrange_WOOD_full];
+    loading: [spriteset_MPV_Dual_SWTOrange_WOOD_empty, spriteset_MPV_Dual_SWTOrange_WOOD_half, spriteset_MPV_Dual_SWTOrange_WOOD_full];
+}
+
+spritegroup spritegroup_MPV_Dual_SWTOrange_WOODF {
+    loaded:  [spriteset_MPV_Dual_SWTOrange_WOOD_emptyF, spriteset_MPV_Dual_SWTOrange_WOOD_halfF, spriteset_MPV_Dual_SWTOrange_WOOD_fullF];
+    loading: [spriteset_MPV_Dual_SWTOrange_WOOD_emptyF, spriteset_MPV_Dual_SWTOrange_WOOD_halfF, spriteset_MPV_Dual_SWTOrange_WOOD_fullF];
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRWhite_WOOD,var[0xc8]){
+	0xFE:	spritegroup_MPV_Dual_NRWhite_WOODF;
+	0xFF:	spritegroup_MPV_Dual_NRWhite_WOODF;
+	spritegroup_MPV_Dual_NRWhite_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRYellow_WOOD,var[0xc8]){
+	0xFE:	spritegroup_MPV_Dual_NRYellow_WOODF;
+	0xFF:	spritegroup_MPV_Dual_NRYellow_WOODF;
+	spritegroup_MPV_Dual_NRYellow_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NROrange_WOOD,var[0xc8]){
+	0xFE:	spritegroup_MPV_Dual_NROrange_WOODF;
+	0xFF:	spritegroup_MPV_Dual_NROrange_WOODF;
+	spritegroup_MPV_Dual_NROrange_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRBlue_WOOD,var[0xc8]){
+	0xFE:	spritegroup_MPV_Dual_NRBlue_WOODF;
+	0xFF:	spritegroup_MPV_Dual_NRBlue_WOODF;
+	spritegroup_MPV_Dual_NRBlue_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_Railtrack_WOOD,var[0xc8]){
+	0xFE:	spritegroup_MPV_Dual_Railtrack_WOODF;
+	0xFF:	spritegroup_MPV_Dual_Railtrack_WOODF;
+	spritegroup_MPV_Dual_Railtrack_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTPink_WOOD,var[0xc8]){
+	0xFE:	spritegroup_MPV_Dual_SWTPink_WOODF;
+	0xFF:	spritegroup_MPV_Dual_SWTPink_WOODF;
+	spritegroup_MPV_Dual_SWTPink_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTOrange_WOOD,var[0xc8]){
+	0xFE:	spritegroup_MPV_Dual_SWTOrange_WOODF;
+	0xFF:	spritegroup_MPV_Dual_SWTOrange_WOODF;
+	spritegroup_MPV_Dual_SWTOrange_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRWhite_GOOD,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_NRWhite_GOODF;
+	0xFF:	spriteset_MPV_Dual_NRWhite_GOODF;
+	spriteset_MPV_Dual_NRWhite_GOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRYellow_GOOD,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_NRYellow_GOODF;
+	0xFF:	spriteset_MPV_Dual_NRYellow_GOODF;
+	spriteset_MPV_Dual_NRYellow_GOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NROrange_GOOD,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_NROrange_GOODF;
+	0xFF:	spriteset_MPV_Dual_NROrange_GOODF;
+	spriteset_MPV_Dual_NROrange_GOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRBlue_GOOD,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_NRBlue_GOODF;
+	0xFF:	spriteset_MPV_Dual_NRBlue_GOODF;
+	spriteset_MPV_Dual_NRBlue_GOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_Railtrack_GOOD,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_Railtrack_GOODF;
+	0xFF:	spriteset_MPV_Dual_Railtrack_GOODF;
+	spriteset_MPV_Dual_Railtrack_GOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTPink_GOOD,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_SWTPink_GOODF;
+	0xFF:	spriteset_MPV_Dual_SWTPink_GOODF;
+	spriteset_MPV_Dual_SWTPink_GOOD;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTOrange_GOOD,var[0xc8]){
+	0xFE:	spriteset_MPV_Dual_SWTOrange_GOODF;
+	0xFF:	spriteset_MPV_Dual_SWTOrange_GOODF;
+	spriteset_MPV_Dual_SWTOrange_GOOD;
+}
+
+switch(FEAT_TRAINS,SELF, sw_MPV_Dual,cargo_subtype){
+    //0:	sw_MPV_Dual_NRWhite;
+	1:	sw_MPV_Dual_NRYellow;
+	//2:	sw_MPV_Dual_NROrange;
+	3:	sw_MPV_Dual_NRBlue;
+	//4:	sw_MPV_Dual_Railtrack;
+	//5:	sw_MPV_Dual_SWTPink;
+	//6:	sw_MPV_Dual_SWTOrange;
+}
+
+switch(FEAT_TRAINS,SELF, sw_MPV_Dual_WOOD,cargo_subtype){
+    //0:	sw_MPV_Dual_NRWhite_WOOD;
+	1:	sw_MPV_Dual_NRYellow_WOOD;
+	//2:	sw_MPV_Dual_NROrange_WOOD;
+	3:	sw_MPV_Dual_NRBlue_WOOD;
+	//4:	sw_MPV_Dual_Railtrack_WOOD;
+	//5:	sw_MPV_Dual_SWTPink_WOOD;
+	//6:	sw_MPV_Dual_SWTOrange_WOOD;
+}
+
+switch(FEAT_TRAINS,SELF, sw_MPV_Dual_GOOD,cargo_subtype){
+    //0:	sw_MPV_Dual_NRWhite_GOOD;
+	1:	sw_MPV_Dual_NRYellow_GOOD;
+	//2:	sw_MPV_Dual_NROrange_GOOD;
+	3:	sw_MPV_Dual_NRBlue_GOOD;
+	//4:	sw_MPV_Dual_Railtrack_GOOD;
+	//5:	sw_MPV_Dual_SWTPink_GOOD;
+	//6:	sw_MPV_Dual_SWTOrange_GOOD;
+}
+
+switch (FEAT_TRAINS, SELF, sw_MPV_Dual_capacity, cargo_type_in_veh) {
+        WOOD: return 40;
+        GOOD: return 40;
+        return 0;
+    }
+	
+switch(FEAT_TRAINS,SELF,sw_MPV_Dual_effect,var[0xc8]){
+	0xFE:	0;
+	0xFF:	0;
+	diesel_create_visual_effect;
+}
+
+item (FEAT_TRAINS, item_MPV_Dual, 136) {
+	property {
+		name: 							string(STR_NAME_MPV_Dual);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1999,4,21);
+		model_life:						25;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[PASS, GOOD, WOOD];
+		loading_speed:					20;
+		cost_factor:					39;
+		running_cost_factor:			15;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_MU;
+		refit_cost:						8;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							710 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					1;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							25 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_MPV_Dual_usage),string(str_MPV_Dual_eos),string(str_MPV_Dual_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						sw_MPV_Dual_capacity;
+	cargo_subtype_text:					sw_MPV_Dual_cargo_subtype_text;
+	GOOD:								sw_MPV_Dual_GOOD;
+	WOOD:								sw_MPV_Dual_WOOD;
+	default: 							sw_MPV_Dual;
+	purchase:							spriteset_MPV_Dual_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						sw_MPV_Dual_effect;
+	sound_effect:						sw_dmu_sound;
+}
+}
