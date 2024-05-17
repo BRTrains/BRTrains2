@@ -1,36 +1,36 @@
 switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRYellow,position_in_articulated_veh){	
-	0:	spriteset_MPV_Dual_Reversed_Empty_NRYellow;
-	spriteset_MPV_Dual_Empty_NRYellow;
+	0:	spriteset_MPV_Front_Empty_NRYellow;
+	spriteset_MPV_Rear_Empty_NRYellow;
 }
 
 switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRBlue,position_in_articulated_veh){
-	0:	spriteset_MPV_Dual_Reversed_Empty_NRBlue;
-	spriteset_MPV_Dual_Empty_NRBlue;
+	0:	spriteset_MPV_Front_Empty_NRBlue;
+	spriteset_MPV_Rear_Empty_NRBlue;
 }
 
 // switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRWhite,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Dual_Reversed_Empty_NRWhite;
-// 	spriteset_MPV_Dual_Empty_NRWhite;
+// 	0:	spriteset_MPV_Front_Empty_NRWhite;
+// 	spriteset_MPV_Rear_Empty_NRWhite;
 // }
 
 // switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NROrange,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Dual_Reversed_Empty_NROrange;
-// 	spriteset_MPV_Dual_Empty_NROrange;
+// 	0:	spriteset_MPV_Front_Empty_NROrange;
+// 	spriteset_MPV_Rear_Empty_NROrange;
 // }
 
 // switch(FEAT_TRAINS,SELF,sw_MPV_Dual_Railtrack,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Dual_Reversed_Empty_RailtrackF;
-// 	spriteset_MPV_Dual_Empty_Railtrack;
+// 	0:	spriteset_MPV_Front_Empty_RailtrackF;
+// 	spriteset_MPV_Rear_Empty_Railtrack;
 // }
 
 // switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTPink,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Dual_Reversed_Empty_SWTPinkF;
-// 	spriteset_MPV_Dual_Empty_SWTPink;
+// 	0:	spriteset_MPV_Front_Empty_SWTPinkF;
+// 	spriteset_MPV_Rear_Empty_SWTPink;
 // }
 
 // switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTOrange,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Dual_Reversed_Empty_SWTOrangeF;
-// 	spriteset_MPV_Dual_Empty_SWTOrange;
+// 	0:	spriteset_MPV_Front_Empty_SWTOrangeF;
+// 	spriteset_MPV_Rear_Empty_SWTOrange;
 // }
 
 switch(FEAT_TRAINS,SELF,sw_MPV_Dual_cargo_subtype_text,cargo_subtype){

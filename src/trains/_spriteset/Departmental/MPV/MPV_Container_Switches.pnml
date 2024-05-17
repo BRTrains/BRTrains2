@@ -1,38 +1,12 @@
 switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRYellow_GOOD,position_in_articulated_veh){	
-	0:	spriteset_MPV_Container_Grey_NRYellow;
-	spriteset_MPV_Reversed_Container_Grey_NRYellow;
+	0: spriteset_MPV_Front_Container_Grey_NRYellow;
+	spriteset_MPV_Rear_Container_Grey_NRYellow;
 }
 
 switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRBlue_GOOD,position_in_articulated_veh){
-	0: spriteset_MPV_Reversed_Container_Grey_NRYellow;
-	spriteset_MPV_Container_Grey_NRYellow;	
+	0: spriteset_MPV_Front_Container_Grey_NRYellow;
+	spriteset_MPV_Rear_Container_Grey_NRYellow;	
 }
-
-// switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NRWhite_GOOD,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Container_Grey_NRYellow;
-// 	spriteset_MPV_Reversed_Container_Grey_NRYellow;
-// }
-
-// switch(FEAT_TRAINS,SELF,sw_MPV_Dual_NROrange_GOOD,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Container_Grey_NRYellow;
-// 	spriteset_MPV_Reversed_Container_Grey_NRYellow;
-// }
-
-// switch(FEAT_TRAINS,SELF,sw_MPV_Dual_Railtrack_GOOD,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Container_Grey_NRYellow;
-// 	spriteset_MPV_Reversed_Container_Grey_NRYellow;
-// }
-
-// switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTPink_GOOD,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Container_Grey_NRYellow;
-// 	spriteset_MPV_Reversed_Container_Grey_NRYellow;
-// }
-
-// switch(FEAT_TRAINS,SELF,sw_MPV_Dual_SWTOrange_GOOD,position_in_articulated_veh){	
-// 	0:	spriteset_MPV_Container_Grey_SWTOrange;
-// 	spriteset_MPV_Reversed_Container_Grey_SWTOrange;
-// }
-
 
 switch(FEAT_TRAINS,SELF, sw_MPV_Dual_GOOD,cargo_subtype){
     0:	sw_MPV_Dual_NRYellow_GOOD;
