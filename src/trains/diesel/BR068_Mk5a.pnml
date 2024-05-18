@@ -1,4 +1,4 @@
-spriteset (spriteset_br_68_5a_purchase, "gfx/br68_v2.png") {
+spriteset (spriteset_br_68_5a_purchase, "gfx/BR68_v2.png") {
 	template_purchase(0, 0)
 }
 
