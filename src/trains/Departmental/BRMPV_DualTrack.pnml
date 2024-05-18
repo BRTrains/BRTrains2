@@ -1,6 +1,6 @@
-item (FEAT_TRAINS, item_MPV_Dual, 136) {
+item (FEAT_TRAINS, item_MPV_DualTrack, 234) {
 	property {
-		name: 							string(STR_NAME_MPV_Dual);
+		name: 							string(STR_NAME_MPV_DualTrack);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1999,4,21);
 		model_life:						25;
@@ -8,7 +8,7 @@ item (FEAT_TRAINS, item_MPV_Dual, 136) {
 		vehicle_life:					50;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[PASS, GOOD, WOOD];
+		cargo_allow_refit:				[PASS];
 		loading_speed:					20;
 		cost_factor:					39;
 		running_cost_factor:			15;
@@ -35,14 +35,12 @@ item (FEAT_TRAINS, item_MPV_Dual, 136) {
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_MPV_usage),string(str_MPV_eos),string(str_MPV_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_capacity:						sw_MPV_Dual_capacity;
-	cargo_subtype_text:					sw_MPV_Dual_cargo_subtype_text;
-	GOOD:								sw_MPV_Dual_GOOD;
-	WOOD:								sw_MPV_Dual_WOOD;
-	default: 							sw_MPV_Dual;
-	purchase:							spriteset_MPV_Dual_Purchase;
+	cargo_capacity:						0;
+	cargo_subtype_text:					sw_MPV_DualTrack_cargo_subtype_text;	
+	default: 							sw_MPV_DualTrack;
+	purchase:							spriteset_MPV_DualTrack_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						sw_MPV_Dual_effect;
+	create_effect:						sw_MPV_DualTrack_effect;
 	sound_effect:						sw_dmu_sound;
 }
 }

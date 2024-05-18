@@ -2,7 +2,6 @@
  	disable_item(FEAT_TRAINS, 270); // 455
 	disable_item(FEAT_TRAINS, 268); // 455
 	disable_item(FEAT_TRAINS, 256); // 700
-	disable_item(FEAT_TRAINS, 234); // 378
 	disable_item(FEAT_TRAINS, 231, 232);  //378
 	disable_item(FEAT_TRAINS, 225); // 378
 	disable_item(FEAT_TRAINS, 218, 224); // 377

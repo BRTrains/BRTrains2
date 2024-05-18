@@ -1,6 +1,6 @@
-item (FEAT_TRAINS, item_MPV_Single, 235) {
+item (FEAT_TRAINS, item_MPV_DualFreight, 136) {
 	property {
-		name: 							string(STR_NAME_MPV_Single);
+		name: 							string(STR_NAME_MPV_DualFreight);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1999,4,21);
 		model_life:						25;
@@ -8,21 +8,22 @@ item (FEAT_TRAINS, item_MPV_Single, 235) {
 		vehicle_life:					50;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD, FOOD];
+		cargo_allow_refit:				[GOOD, WOOD];
 		loading_speed:					20;
 		cost_factor:					39;
 		running_cost_factor:			15;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
-		misc_flags:						TRAIN_FLAG_FLIP;
+		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						8;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							355 hp;
-		running_cost_base:				RUNNING_COST_DIESEL;		
+		power:							710 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					1;
 		default_cargo_type:				PASS;
 		cargo_capacity:					1;
-		weight:							14 ton;
+		weight:							25 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.3;
 		air_drag_coefficient:			0.1;
@@ -34,12 +35,14 @@ item (FEAT_TRAINS, item_MPV_Single, 235) {
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_MPV_usage),string(str_MPV_eos),string(str_MPV_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_MPV_cargo_subtype_text;
-	default: 							sw_MPV_Single;
-	purchase:							spriteset_MPV_Single_Purchase;
+	cargo_capacity:						sw_MPV_DualFreight_capacity;
+	cargo_subtype_text:					sw_MPV_DualFreight_cargo_subtype_text;
+	GOOD:								sw_MPV_DualFreight_GOOD;
+	WOOD:								sw_MPV_DualFreight_WOOD;
+	default: 							sw_MPV_DualFreight;
+	purchase:							spriteset_MPV_DualFreight_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						sw_MPV_Single_effect;
+	create_effect:						sw_MPV_DualFreight_effect;
 	sound_effect:						sw_dmu_sound;
 }
 }

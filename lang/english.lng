@@ -204,14 +204,16 @@ str_route_8						:RA8 (<22.8 tonne Axle Load)
 str_route_9						:RA9 (<24.1 tonne Axle Load)
 str_route_10					:RA10 (<25.4 tonne Axle Load)
 
-STR_NAME_MPV_Single				:Departmental Railways 98/9 "MPV" (1-car dual cab)
-STR_NAME_MPV_Dual				:Departmental Railways 98/9 "MPV" (2-car)
-str_MPV_usage				    :Deparmental Railway
+STR_NAME_MPV_Single				:Departmental Class 98/9 "MPV" Track Maintenance Unit (1-car)
+STR_NAME_MPV_DualTrack			:Departmental Class 98/9 "MPV" Track Maintenance Unit (2-car)
+STR_NAME_MPV_DualFreight		:Departmental Class 98/9 "Freight MPV" Container Unit (2-car)
+str_MPV_usage				    :Departmental Railway
 str_MPV_eos					    :---
 str_MPV_liveries				:Network Rail, Railtrack, South West Trains
 
-str_MPV_Geometry                    : - Track Geometry (Covered)
-str_MPV_GeometryOpen                : - Track Geometry (Open)
+str_MPV_Geometry                : - Track Geometry (Covered)
+str_MPV_GeometryOpen            : - Track Geometry (Open)
+str_MPV_Leaf                    : - Leaf Removal
 
 
 STR_NAME_Coppernob					:Furness Railway 0-4-0 "Coppernob"
