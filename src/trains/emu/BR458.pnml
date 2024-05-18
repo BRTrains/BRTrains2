@@ -1,72 +1,72 @@
-spriteset(spriteset_BR458_Purchase, "gfx/BR4580.png") {
+spriteset(spriteset_BR458_0_Purchase, "gfx/BR4580.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR458a_SWT, "gfx/BR4580.png") {
+spriteset(spriteset_BR458_0a_SWT, "gfx/BR4580.png") {
 	template_train32px_old(0, 13)
 }
 
-spriteset(spriteset_BR458ao_SWT, "gfx/BR4580.png") {
+spriteset(spriteset_BR458_0ao_SWT, "gfx/BR4580.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BR458d_SWT, "gfx/BR4580.png") {
+spriteset(spriteset_BR458_0d_SWT, "gfx/BR4580.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BR458do_SWT, "gfx/BR4580.png") {
+spriteset(spriteset_BR458_0do_SWT, "gfx/BR4580.png") {
 	template_train32px_old(0, 88)
 }
 
-spriteset(spriteset_BR458b_SWT, "gfx/BR4580.png") {
+spriteset(spriteset_BR458_0b_SWT, "gfx/BR4580.png") {
 	template_train32px_old(0, 113)
 }
 
-spriteset(spriteset_BR458c_SWT, "gfx/BR4580.png") {
+spriteset(spriteset_BR458_0c_SWT, "gfx/BR4580.png") {
 	template_train32px_old(0, 138)
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR458ao,position_in_consist){
-    0:	spriteset_BR458a_SWT;
-	spriteset_BR458ao_SWT;
+switch(FEAT_TRAINS,SELF, sw_BR458_0ao,position_in_consist){
+    0:	spriteset_BR458_0a_SWT;
+	spriteset_BR458_0ao_SWT;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR458a,cargo_subtype){
-    0:	sw_BR458ao;
+switch(FEAT_TRAINS,SELF, sw_BR458_0a,cargo_subtype){
+    0:	sw_BR458_0ao;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR458b,cargo_subtype){
-    0:	spriteset_BR458b_SWT;
+switch(FEAT_TRAINS,SELF, sw_BR458_0b,cargo_subtype){
+    0:	spriteset_BR458_0b_SWT;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR458c,cargo_subtype){
-    0:	spriteset_BR458c_SWT;
+switch(FEAT_TRAINS,SELF, sw_BR458_0c,cargo_subtype){
+    0:	spriteset_BR458_0c_SWT;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR458do,position_in_consist_from_end){
-    0:	spriteset_BR458d_SWT;
-	spriteset_BR458do_SWT;
+switch(FEAT_TRAINS,SELF, sw_BR458_0do,position_in_consist_from_end){
+    0:	spriteset_BR458_0d_SWT;
+	spriteset_BR458_0do_SWT;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR458d,cargo_subtype){
-    0:	sw_BR458do;
+switch(FEAT_TRAINS,SELF, sw_BR458_0d,cargo_subtype){
+    0:	sw_BR458_0do;
 }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_BR458, extra_callback_info1) {
-	1: return item_BR458b;
-	2: return item_BR458c;
-	3: return item_BR458d;
+switch (FEAT_TRAINS, SELF, switch_articulated_BR458_0, extra_callback_info1) {
+	1: return item_BR458_0b;
+	2: return item_BR458_0c;
+	3: return item_BR458_0d;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR458_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BR458_0_cargo_subtype_text,cargo_subtype){
     0:	return string(str_SWT);
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR4580, 332) {
+item (FEAT_TRAINS, item_BR458_0, 332) {
 	property {
-		name: 							string(STR_NAME_BR458);
+		name: 							string(STR_NAME_BR458_0);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1999,4,21);
 		model_life:						15;
@@ -100,12 +100,12 @@ item (FEAT_TRAINS, item_BR4580, 332) {
 		cargo_age_period:				195;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR458_usage),string(str_BR458_eos),string(str_BR458_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR458_usage),string(str_BR458_0_eos),string(str_BR458_0_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR458_cargo_subtype_text;
-	articulated_part:        			switch_articulated_BR458;
-	default: 							sw_BR458a;
-	purchase:							spriteset_BR458_Purchase;
+	cargo_subtype_text:					sw_BR458_0_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR458_0;
+	default: 							sw_BR458_0a;
+	purchase:							spriteset_BR458_0_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect_SAA3;
 	sound_effect:						sw_electric_sound;
@@ -116,9 +116,9 @@ item (FEAT_TRAINS, item_BR4580, 332) {
 }
 }
 
-item (FEAT_TRAINS, item_BR458b, 333) {
+item (FEAT_TRAINS, item_BR458_0b, 333) {
 	property {
-		name: 							string(STR_NAME_BR458);
+		name: 							string(STR_NAME_BR458_0);
 		climates_available: 			NO_CLIMATE;
 		introduction_date:				date(1999,4,21);
 		model_life:						15;
@@ -153,16 +153,16 @@ item (FEAT_TRAINS, item_BR458b, 333) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR458b;
+	default: 							sw_BR458_0b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(75 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_BR458c, 334) {
+item (FEAT_TRAINS, item_BR458_0c, 334) {
 	property {
-		name: 							string(STR_NAME_BR458);
+		name: 							string(STR_NAME_BR458_0);
 		climates_available: 			NO_CLIMATE;
 		introduction_date:				date(1999,4,21);
 		model_life:						15;
@@ -195,19 +195,19 @@ item (FEAT_TRAINS, item_BR458c, 334) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR458_usage),string(str_BR458_eos),string(str_BR458_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR458_usage),string(str_BR458_0_eos),string(str_BR458_0_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR458_cargo_subtype_text;
-	default: 							sw_BR458c;
+	cargo_subtype_text:					sw_BR458_0_cargo_subtype_text;
+	default: 							sw_BR458_0c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(60 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_BR458d, 335) {
+item (FEAT_TRAINS, item_BR458_0d, 335) {
 	property {
-		name: 							string(STR_NAME_BR458);
+		name: 							string(STR_NAME_BR458_0);
 		climates_available: 			NO_CLIMATE;
 		introduction_date:				date(1999,4,21);
 		model_life:						15;
@@ -240,10 +240,10 @@ item (FEAT_TRAINS, item_BR458d, 335) {
 		cargo_age_period:				195;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR458_usage),string(str_BR458_eos),string(str_BR458_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR458_usage),string(str_BR458_0_eos),string(str_BR458_0_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR458_cargo_subtype_text;
-	default: 							sw_BR458d;
+	cargo_subtype_text:					sw_BR458_0_cargo_subtype_text;
+	default: 							sw_BR458_0d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(75 * param_pax);

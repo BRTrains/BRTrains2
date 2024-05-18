@@ -932,10 +932,17 @@ str_BR456_usage					:Passenger
 str_BR456_eos					:---
 str_BR456_liveries				:Network SouthEast, Connex, Southern, Transitional, South West Trains
 
-STR_NAME_BR458					:BR Class 458/0 "Juniper"
 str_BR458_usage					:Fast Passenger
-str_BR458_eos					:2014
-str_BR458_liveries				:South West Trains
+
+STR_NAME_BR458_0				:BR Class 458/0 "Juniper"
+str_BR458_0_eos					:2014
+str_BR458_0_liveries			:South West Trains
+
+STR_NAME_BR458_4					:BR Class 458/4 "Juniper"
+STR_NAME_BR458_5					:BR Class 458/5 "Juniper"
+str_BR458_45_usage					:Fast Passenger
+str_BR458_45_eos				    :2013
+str_BR458_45_liveries				:South West Trains, South Western Railway
 
 STR_NAME_BR460					:BR Class 460 "8-GAT"
 str_BR460_usage					:Express Passenger
