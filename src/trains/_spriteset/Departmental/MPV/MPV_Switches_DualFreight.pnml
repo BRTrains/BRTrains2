@@ -55,7 +55,7 @@ switch(FEAT_TRAINS,SELF, sw_MPV_DualFreight,cargo_subtype){
 	//6:	sw_MPV_DualTrack_SWTOrange;
 }
 
-switch (FEAT_TRAINS, SELF, sw_MPV_DualFreight_capacity, cargo_type_in_veh) {
+switch (FEAT_TRAINS, SELF, sw_MPV_DualFreight_Capacity, cargo_type_in_veh) {
         WOOD: return 40;
         GOOD: return 40;
         return 0;
