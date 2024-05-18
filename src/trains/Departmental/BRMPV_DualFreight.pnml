@@ -35,7 +35,7 @@ item (FEAT_TRAINS, item_MPV_DualFreight, 136) {
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_MPV_usage),string(str_MPV_eos),string(str_MPV_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_capacity:						sw_MPV_DualFreight_Capacity;
+	cargo_capacity:						sw_MPV_DualFreight_cargocapacity;
 	cargo_subtype_text:					sw_MPV_DualFreight_cargo_subtype_text;
 	GOOD:								sw_MPV_DualFreight_GOOD;
 	WOOD:								sw_MPV_DualFreight_WOOD;
