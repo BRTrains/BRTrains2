@@ -1,0 +1,19 @@
+spriteset(spriteset_BR458_0_Purchase, "gfx/EMU/458_0.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR458_front_SWT, "gfx/EMU/458_0.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR458_rear_SWT, "gfx/EMU/458_0.png") {
+	template_train32px(0, 39)
+}
+
+spriteset(spriteset_BR458_middle_SWT, "gfx/EMU/458_0.png") {
+	template_train32px(0, 65)
+}
+
+spriteset(spriteset_BR458_middle_pantowell_SWT, "gfx/EMU/458_0.png") {
+	template_train32px(0, 91)
+}
