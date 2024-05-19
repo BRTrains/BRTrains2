@@ -3,7 +3,11 @@
 - Re-drew class 66
 - Re-drew Class 68
 
-# v2.9
+# v2.10
+- Added Class 555
+- Re-drew Class 458/0
+
+# v2.9 (2024-05-18)
 - Added Furness Railway 0-4-0 "Coppernob"
 - Added Furness Railway 4-4-0 K2 "Large Seagull"
 - Added Caledonian Railway 4-2-2 "Single"

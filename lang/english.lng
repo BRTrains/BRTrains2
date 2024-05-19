@@ -84,6 +84,8 @@ STR_BR_345_9CAR                         :BR Class 345 "Aventra" (9-Car)
 
 STR_BR_397                              :BR Class 397 "Civity" (5-Car)
 
+STR_BR555                              :BR Class 555 "METRO" (5-Car)
+
 STR_BR_701_0                            :BR Class 701/0 "Aventra" (10-Car)
 STR_BR_701_5                            :BR Class 701/5 "Aventra" (5-Car)
 
@@ -153,6 +155,7 @@ STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multipl
 STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
 STR_DSC_BR_397                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
+STR_DSC_BR555                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger/Metro{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Tyne and Wear Metro
 
 STR_DSC_TGV                            :Type: {BLUE}High Speed Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Mail/Goods{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}La Poste, Royal Mail (fictional)
 

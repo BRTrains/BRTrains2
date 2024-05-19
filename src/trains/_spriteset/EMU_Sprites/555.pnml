@@ -1,0 +1,16 @@
+spriteset (spriteset_BR555_purchase, "gfx/EMU/555.png") {
+	template_purchase(0,0)
+}
+
+spriteset (spriteset_BR555_front, "gfx/EMU/555.png") {
+	template_train28px(0, 13)
+}
+spriteset (spriteset_BR555_rear, "gfx/EMU/555.png") {
+	template_train28px(0, 37)
+}
+spriteset (spriteset_BR555_middle_doubledoor, "gfx/EMU/555.png") {
+	template_train24px(0, 61)
+}
+spriteset (spriteset_BR555_middle_singledoor, "gfx/EMU/555.png") {
+	template_train24px(0, 83)
+}

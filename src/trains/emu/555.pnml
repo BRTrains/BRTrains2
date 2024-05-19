@@ -1,0 +1,93 @@
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_BR555_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_BR555_front;
+	2: spriteset_BR555_middle_doubledoor;
+	4: spriteset_BR555_rear;
+	spriteset_BR555_middle_singledoor;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_BR555_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..4: return item_BR555;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_BR555_particles, position_in_articulated_veh % 5) {
+	// No effects; third rail
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Middle cars are shorter
+switch(FEAT_TRAINS, SELF, switch_BR555_length, position_in_articulated_veh % 5) {
+	1..3: 6; // Middle vehicles 24px
+	7; // End vehicles 28px
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_BR555_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_BR555_can_attach_wagon, vehicle_type_id) {
+	item_BR555: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+
+// Class 555
+item(FEAT_TRAINS, item_BR555, 635) {
+	property {
+		name: string(STR_BR555);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2024, 05, 01);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 50;
+		loading_speed: 25;
+		running_cost_factor: 40;
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 50 mph;
+		power: 1770 hp;
+		cargo_capacity: (600/5);
+		weight: 98 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
+		refit_cost: 0;
+		track_type: BR_3RDR;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.3;
+		air_drag_coefficient: 0.06;
+		length: 7; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {
+		default: switch_BR555_spriteset;
+		purchase: spriteset_BR555_purchase;
+		length: switch_BR555_length;
+		articulated_part: switch_BR555_articulated;
+		start_stop: switch_BR555_start_stop;	
+		can_attach_wagon: switch_BR555_can_attach_wagon;
+		visual_effect_and_powered: switch_BR555_particles;			
+		additional_text: string(STR_DSC_BR555);	
+		cargo_capacity:						return(600/5 * param_pax);
+		cost_factor:	return(GetAdjustedCost(40));
+		running_cost_factor: return(GetAdjustedCost(35));
+	}
+}
