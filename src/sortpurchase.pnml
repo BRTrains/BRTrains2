@@ -1,13 +1,4 @@
 sort(FEAT_TRAINS, [
- item_UtilityTrain12px,
- item_UtilityTrain16px,
- item_UtilityTrain20px,
- item_UtilityTrain24px,
- item_UtilityTrain28px,
- item_UtilityTrain32px,
- item_UtilityTrain28pxOLD,
- item_UtilityTrain32pxOLD,
- item_EyeCandy,
  item_Coppernob,
  item_CaledonianSingle,
  item_FurnessK2,
@@ -284,5 +275,14 @@ sort(FEAT_TRAINS, [
  item_91_BRMk4TSOD,
  item_BRMk5a,
  item_BRMk5DVT,
- item_BRMk5Sleeper
+ item_BRMk5Sleepe,
+ item_EyeCandy
+ item_UtilityTrain12px,
+ item_UtilityTrain16px,
+ item_UtilityTrain20px,
+ item_UtilityTrain24px,
+ item_UtilityTrain28px,
+ item_UtilityTrain32px,
+ item_UtilityTrain28pxOLD,
+ item_UtilityTrain32pxOLD
  ]);
