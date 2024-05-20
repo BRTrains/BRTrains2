@@ -5,10 +5,8 @@
 
 
 
-
-
-
-
+// Disable trams
+	disable_item(FEAT_ROADVEHS, 595); // London Underground 2024 stock tram
 
 
 // Disable some trains that only exist for template alignment or debugging

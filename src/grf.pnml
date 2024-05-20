@@ -135,3 +135,11 @@ switch(FEAT_TRAINS, SELF, GetAdjustedCost, base, param_cost_factor) {
   4: return base * 2;
   5: return base * 4;
 }
+
+switch(FEAT_ROADVEHS, SELF, GetAdjustedCostTRAM, base, param_cost_factor) {
+  1: return base / 4;
+  2: return base / 2;
+  3: return base;
+  4: return base * 2;
+  5: return base * 4;
+}
