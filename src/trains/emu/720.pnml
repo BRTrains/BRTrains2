@@ -1,5 +1,5 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_720_5_spriteset, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_720_spriteset, position_in_articulated_veh % 5) {
 	0: spriteset_br_720_front_GA;
 	1: spriteset_br_720_middle_panto_GA;
 	4: spriteset_br_720_rear_GA;
@@ -7,36 +7,35 @@ switch(FEAT_TRAINS, SELF, switch_br_720_5_spriteset, position_in_articulated_veh
 }
 
 // Define articulations
-switch(FEAT_TRAINS, SELF, switch_br_720_5_articulated, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, switch_br_720_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..4: return item_br_720_5;
+	1..4: return item_br_720;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_720_5_particles, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_720_particles, position_in_articulated_veh % 5) {
 	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
 // Start/stop switch, used to limit maximum length
-switch(FEAT_TRAINS, SELF, switch_br_720_5_start_stop, num_vehs_in_consist) {	
+switch(FEAT_TRAINS, SELF, switch_br_720_start_stop, num_vehs_in_consist) {	
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
 // Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_br_720_5_can_attach_wagon, vehicle_type_id) {
-	item_br_720_5: return CB_RESULT_ATTACH_ALLOW;
-	item_br_720_1: return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, switch_br_720_can_attach_wagon, vehicle_type_id) {
+	item_br_720: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
 
 // Class 720
-item(FEAT_TRAINS, item_br_720_5, 448) {
+item(FEAT_TRAINS, item_br_720, 448) {
 	property {
-		name: string(STR_BR_720_5);
+		name: string(STR_BR_720);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2020, 03, 17);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
@@ -51,7 +50,7 @@ item(FEAT_TRAINS, item_br_720_5, 448) {
 		cargo_disallow_refit: [];
 		
 		speed: 100 mph;
-		power: 2100 hp;
+		power: 3100 hp;
 		cargo_capacity: (685/5);
 		weight: 120 ton;
 		
@@ -73,13 +72,13 @@ item(FEAT_TRAINS, item_br_720_5, 448) {
 	}
 	
 	graphics {
-		default: switch_br_720_5_spriteset;
+		default: switch_br_720_spriteset;
 		purchase: spriteset_br_720_purchase;
 		
-		articulated_part: switch_br_720_5_articulated;
-		start_stop: switch_br_720_5_start_stop;	
-		can_attach_wagon: switch_br_720_5_can_attach_wagon;
-		visual_effect_and_powered: switch_br_720_5_particles;			
+		articulated_part: switch_br_720_articulated;
+		start_stop: switch_br_720_start_stop;	
+		can_attach_wagon: switch_br_720_can_attach_wagon;
+		visual_effect_and_powered: switch_br_720_particles;			
 		additional_text: string(STR_DSC_BR_720);	
 		cargo_capacity:						return(685/5 * param_pax);
 		cost_factor:	return(GetAdjustedCost(95));

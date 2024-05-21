@@ -95,8 +95,7 @@ STR_BR_710_1                            :BR Class 710/1 "Aventra" (4-Car)
 STR_BR_710_2_4CAR                       :BR Class 710/2 "Aventra" (4-Car)
 STR_BR_710_2_5CAR                       :BR Class 710/2 "Aventra" (5-Car)
 
-STR_BR_720_1                            :BR Class 720/1 "Aventra" (10-Car)
-STR_BR_720_5                            :BR Class 720/5 "Aventra" (5-Car)
+STR_BR_720                            :BR Class 720 "Aventra" (5-Car)
 
 STR_BR730_0                            :BR Class 730/0 "Aventra" (3-Car)
 STR_BR730_2                            :BR Class 730/2 "Aventra" (5-Car)
