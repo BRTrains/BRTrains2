@@ -70,6 +70,10 @@ STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive witho
 STR_NAME_M5000                          :Bombardier M5000 (2-car Single Unit)
 STR_NAME_M5000_DOUBLE                   :Bombardier M5000 (4-car Double Unit)
 
+STR_NAME_B07                          :Bombardier M5000 (2-car Single Unit)
+STR_NAME_B07_DOUBLE                   :Bombardier M5000 (4-car Double Unit)
+STR_NAME_B07_TRIPLE                   :Bombardier M5000 (6-car Triple Unit)
+
 STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
 
 STR_BR_195_2CAR							:BR Class 195/0 "Civity" (2-Car)
@@ -1366,6 +1370,7 @@ str_Crimson						: (BR Crimson Lake)
 str_DBSchenker					: (DB Schenker)
 str_DBSCompany					: (DBSchenker Company Train)
 str_DeptGrey					: (Departmental Grey)
+str_DLRRed                      : (Docklands Light Railway Red)
 str_DRS							: (DRS)
 str_DRSCentre					: (DRS - Centre Headcode)
 str_DRSCompass					: (DRS - Compass)
