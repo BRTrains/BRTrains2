@@ -54,14 +54,17 @@ STR_PARAM_HALF                 :1/2
 
 # Vehicle names
 
-STR_NAME_Utility12px                    :12px alignment/test unit
-STR_NAME_Utility16px                    :16px alignment/test unit
-STR_NAME_Utility20px                    :20px alignment/test unit
-STR_NAME_Utility24px                    :24px alignment/test unit
-STR_NAME_Utility28px                    :28px alignment/test unit
-STR_NAME_Utility32px                    :32px alignment/test unit
-STR_NAME_Utility28pxOLD                 :28px alignment/test unit (OLD)
-STR_NAME_Utility32pxOLD                 :32px alignment/test unit (OLD)
+STR_NAME_Utility4px                     :DEBUG UNIT 4px alignment/test unit
+STR_NAME_Utility8px                     :DEBUG UNIT 8px alignment/test unit
+STR_NAME_Utility12px                    :DEBUG UNIT 12px alignment/test unit
+STR_NAME_Utility16px                    :DEBUG UNIT 16px alignment/test unit
+STR_NAME_Utility20px                    :DEBUG UNIT 20px alignment/test unit
+STR_NAME_Utility24px                    :DEBUG UNIT 24px alignment/test unit
+STR_NAME_Utility28px                    :DEBUG UNIT 28px alignment/test unit
+STR_NAME_Utility32px                    :DEBUG UNIT 32px alignment/test unit
+STR_NAME_Utility28pxOLD                 :DEBUG UNIT 28px alignment/test unit (OLD TEMPLATE)
+STR_NAME_Utility32pxOLD                 :DEBUG UNIT 32px alignment/test unit (OLD TEMPLATE)
+STR_DESC_Utility                        :This unit is used to debug alignment and scale issues with the set, and is only visible with the Developer Mode parameter enabled. It is not intended for gameplay use
 
 STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)

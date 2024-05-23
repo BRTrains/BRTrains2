@@ -1,3 +1,17 @@
+spriteset(spriteset_Utility4_Purchase, "gfx/Template/4px.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_Utility4, "gfx/Template/4px.png") {
+	template_train4px(0, 13)
+}
+
+spriteset(spriteset_Utility8_Purchase, "gfx/Template/8px.png") {
+	template_purchase(0, 0)
+}
+spriteset(spriteset_Utility8, "gfx/Template/8px.png") {
+	template_train8px(0, 13)
+}
+
 spriteset(spriteset_Utility12_Purchase, "gfx/Template/12px.png") {
 	template_purchase(0, 0)
 }
@@ -91,8 +105,86 @@ item (FEAT_TRAINS, item_UtilityTrain12px, 601) {
 	graphics {	
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility12;    
-	purchase:							spriteset_Utility12_Purchase;    	
+	purchase:							spriteset_Utility12_Purchase;
+}
+}
+
+item (FEAT_TRAINS, item_UtilityTrain4px, 609) {
+	property {
+		name: 							string(STR_NAME_Utility4px);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1700,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					255;
+		reliability_decay:				10;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;		
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							5000 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	1;
+		air_drag_coefficient:			0.1;
+		length:							1;
+	}
+	graphics {	
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
+	default: 							spriteset_Utility4;    
+	purchase:							spriteset_Utility4_Purchase;    	
+}
+}
+
+item (FEAT_TRAINS, item_UtilityTrain8px, 610) {
+	property {
+		name: 							string(STR_NAME_Utility8px);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1700,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					255;
+		reliability_decay:				10;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;		
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							5000 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	1;
+		air_drag_coefficient:			0.1;
+		length:							2;
+	}
+	graphics {	
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	default: 							spriteset_Utility8;    
+	purchase:							spriteset_Utility8_Purchase;    	
 }
 }
 
@@ -130,6 +222,7 @@ item (FEAT_TRAINS, item_UtilityTrain16px, 602) {
 	graphics {	
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility16;
 	purchase:							spriteset_Utility16_Purchase;    	
 }
@@ -169,6 +262,7 @@ item (FEAT_TRAINS, item_UtilityTrain20px, 603) {
 	graphics {	
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility20;    
 	purchase:							spriteset_Utility20_Purchase;    	
 }
@@ -207,6 +301,7 @@ item (FEAT_TRAINS, item_UtilityTrain24px, 604) {
 	graphics {	
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility24;    
 	purchase:							spriteset_Utility24_Purchase;    	
 }
@@ -245,6 +340,7 @@ item (FEAT_TRAINS, item_UtilityTrain28px, 605) {
 	graphics {	
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility28;    
 	purchase:							spriteset_Utility28_Purchase;    	
 }
@@ -283,6 +379,7 @@ item (FEAT_TRAINS, item_UtilityTrain32px, 606) {
 	graphics {	
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility32;    
 	purchase:							spriteset_Utility32_Purchase;    	
 }
@@ -321,6 +418,7 @@ item (FEAT_TRAINS, item_UtilityTrain28pxOLD, 607) {
 	graphics {	
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility28OLD;    
 	purchase:							spriteset_Utility28OLD_Purchase;    	
 }
@@ -359,6 +457,7 @@ item (FEAT_TRAINS, item_UtilityTrain32pxOLD, 608) {
 	graphics {	
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
+	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility32OLD;    
 	purchase:							spriteset_Utility32OLD_Purchase;    	
 }

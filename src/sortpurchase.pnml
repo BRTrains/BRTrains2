@@ -276,6 +276,8 @@ sort(FEAT_TRAINS, [
  item_BRMk5DVT,
  item_BRMk5Sleeper,
  item_EyeCandy,
+ item_UtilityTrain4px,
+ item_UtilityTrain8px,
  item_UtilityTrain12px,
  item_UtilityTrain16px,
  item_UtilityTrain20px,
