@@ -1,0 +1,10 @@
+spriteset (spriteset_M5000_purchase, "gfx/Tram/Metrolink_M5000.png") {
+	template_purchase(0,0)
+}
+
+spriteset (spriteset_M5000_front_Metrolink, "gfx/Tram/Metrolink_M5000.png") {
+	template_train20px(0, 13)
+}
+spriteset (spriteset_M5000_rear_Metrolink, "gfx/Tram/Metrolink_M5000.png") {
+	template_train20px(0, 33)
+}

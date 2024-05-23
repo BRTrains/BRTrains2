@@ -6,6 +6,8 @@
 # v2.10
 - Added Class 555
 - Re-drew Class 458/0
+- Removed 10-car Class 720 (never entered service)
+- Added Bombardier M5000 (Manchester Metrolink tram)
 
 # v2.9 (2024-05-18)
 - Added Furness Railway 0-4-0 "Coppernob"

@@ -67,6 +67,8 @@ STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)
 STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive without an attached unit
 
+STR_NAME_M5000                          :Bombardier M5000 (Manchester Metrolink)
+
 STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
 
 STR_BR_195_2CAR							:BR Class 195/0 "Civity" (2-Car)
@@ -1473,6 +1475,7 @@ str_MainlineFreight				: (Mainline Freight)
 str_MerseyRail					: (MerseyRail)
 str_MerseyRailGoodComs			: (MerseyRail - Good Communications)
 str_MerseyRailOld				: (MerseyRail - Old)
+str_MetrolinkYellow              : (Manchester Metrolink - Yellow)
 str_Maersk      				: (Maersk)
 str_MaerskEyeCandy 				: (Maersk - Always show container)
 str_MMLBlue						: (Midland Mainline Blue)
