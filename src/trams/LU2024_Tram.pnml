@@ -29,6 +29,7 @@ switch(FEAT_ROADVEHS,SELF,sw_TRAM_LU2024_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_ROADVEHS, item_TRAM_LU2024, 595) {
 	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
 		name: 							string(STR_NAME_LU2024);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2024,1,1);
@@ -43,10 +44,9 @@ item (FEAT_ROADVEHS, item_TRAM_LU2024, 595) {
 		running_cost_factor:			41;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							62 mph;		
-		refit_cost:						0;
-		road_type:						RAIL;		
+		refit_cost:						0;		
 		power:							2550 hp;
-		running_cost_base:				RUNNING_COST_ELECTRIC;		
+		running_cost_base:           	RUNNING_COST_ROADVEH;		
 		default_cargo_type:				PASS;
 		cargo_capacity:					255;
 		weight:							1 ton;		
