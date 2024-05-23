@@ -1,10 +1,10 @@
 switch (FEAT_ROADVEHS, SELF, switch_articulated_TRAM_M5000, extra_callback_info1) {
-	1: return item_TRAM_M5000;	
+	1: return item_TRAM_M5000_Single;	
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
 
-item (FEAT_ROADVEHS, item_TRAM_M5000, 637) {
+item (FEAT_ROADVEHS, item_TRAM_M5000_Single, 637) {
 	property {
 		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
 		name: 							string(STR_NAME_M5000);
