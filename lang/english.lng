@@ -67,7 +67,8 @@ STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)
 STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive without an attached unit
 
-STR_NAME_M5000                          :Bombardier M5000 (Manchester Metrolink)
+STR_NAME_M5000                          :Bombardier M5000 (2-car Single Unit)
+STR_NAME_M5000_DOUBLE                   :Bombardier M5000 (4-car Double Unit)
 
 STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
 
