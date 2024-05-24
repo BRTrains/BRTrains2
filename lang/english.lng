@@ -70,12 +70,14 @@ STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
 STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)
 STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive without an attached unit
 
-STR_NAME_M5000                          :Bombardier M5000 (2-car Single Unit)
-STR_NAME_M5000_DOUBLE                   :Bombardier M5000 (4-car Double Unit)
+STR_NAME_CR4000                         :London Trams CR4000 (2-car Single Unit)
 
-STR_NAME_B07                          :Bombardier M5000 (2-car Single Unit)
-STR_NAME_B07_DOUBLE                   :Bombardier M5000 (4-car Double Unit)
-STR_NAME_B07_TRIPLE                   :Bombardier M5000 (6-car Triple Unit)
+STR_NAME_M5000                          :Manchester Metrolink M5000 (2-car Single Unit)
+STR_NAME_M5000_DOUBLE                   :Manchester Metrolink M5000 (4-car Double Unit)
+
+STR_NAME_B07                          :Docklands Light Railway B07 (2-car Single Unit)
+STR_NAME_B07_DOUBLE                   :Docklands Light Railway B07 (4-car Double Unit)
+STR_NAME_B07_TRIPLE                   :Docklands Light Railway B07 (6-car Triple Unit)
 
 STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
 
@@ -1584,6 +1586,7 @@ str_Teak						: (GNR/LNER Teak)
 str_Tesco                       : (Tesco)
 str_TescoEyeCandy               : (Tesco - Always show container)
 str_TfL							: (TfL Rail)
+str_TfLTrams					: (TfL London Trams)
 str_TfW         			    : (Transport For Wales)
 str_thameslink					: (BR Thameslink)
 str_ThamesTrains				: (Thames Trains)
