@@ -94,6 +94,21 @@ grf {
 			}
 		}
 	param 6 {
+			param_tram{
+				name: string(STR_PARAM_NAME_TRAM);
+				desc: string(STR_PARAM_DESC_TRAM);
+				min_value: 0;
+				max_value: 3;
+				def_value: 1;
+				names: {
+					0: string(STR_TRAM_DEFAULT);
+					1: string(STR_TRAM_TRAINONLY);
+					2: string(STR_TRAM_TRAMONLY);
+					3: string(STR_TRAM_BOTH);
+				};
+			}
+	}		
+	param 6 {
 			param_2cc{
 				name: string(STR_PARAM_NAME_2CC);
 				desc: string(STR_PARAM_DESC_2CC);

@@ -35,6 +35,14 @@ STR_PARAM_DESC_PAX_MULTIPLIER  :Increase passenger capacity to allow use of real
 STR_PARAM_NAME_COST_MULTIPLIER  :Purchase/Running Cost Multiplier
 STR_PARAM_DESC_COST_MULTIPLIER  :Increase or decrease purchase price and running costs, if you find they aren't balanced to your taste
 
+STR_PARAM_NAME_TRAM              :Metro Trains and Tram availability
+STR_PARAM_DESC_TRAM              :Should Trams and Metro units be available as trams or trains?
+STR_TRAM_DEFAULT                 :(Default) Realistic Heavy/Light rail split (Trams and light rail as trams, heavy rail as trains)
+STR_TRAM_TRAINONLY               :Display all Metro units as Trains only (no trams)
+STR_TRAM_TRAMONLY                :Display all Metro Units as Trams only (no London Underground trains etc, only as trams)
+STR_TRAM_BOTH                    :Display Trams and Trains as both Trams and Trains (all purchaseable as either)
+STR_TRAM_EXTRA                   :Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
+
 STR_PARAM_NAME_2CC              :Parameter not in use (yet)
 STR_PARAM_DESC_2CC              :Parameter reserved for future feature
 STR_NO_2CC                      :No
