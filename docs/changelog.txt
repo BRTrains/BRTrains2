@@ -2,6 +2,7 @@
 - Added Class 321
 - Re-drew class 66
 - Re-drew Class 68
+- Added Stadtler Variobahn (London Trams)
 
 # v2.10
 - Added Class 555
@@ -9,6 +10,9 @@
 - Removed 10-car Class 720 (never entered service)
 - Added Bombardier M5000 (Manchester Metrolink tram)
 - Added Bombardier B07 (Docklands Light Rail)
+- Added Bombardier CR4000 (London Trams)
+- Added tram variant of Parry People Mover, Class 555 (T&W Metro), Class 777 (Merseyrail)
+- Added tram variants of LU 2024 stock
 
 # v2.9 (2024-05-18)
 - Added Furness Railway 0-4-0 "Coppernob"
