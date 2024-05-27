@@ -1,9 +1,9 @@
 switch(FEAT_ROADVEHS,SELF, sw_TRAM_BR139,cargo_subtype){
-    0:	spriteset_BR139_LM;
-	1:	spriteset_BR139_WMR;
-	2:  spriteset_BR139_PPMPrototype;
-	3:  spriteset_BR139_BristolElectricPrototype;
-	4:  spriteset_BR139_GoCoop;
+    0:	spriteset_tram_BR139_LM;
+	1:	spriteset_tram_BR139_WMR;
+	2:  spriteset_tram_BR139_PPMPrototype;
+	3:  spriteset_tram_BR139_BristolElectricPrototype;
+	4:  spriteset_tram_BR139_GoCoop;
 }
 
 switch(FEAT_ROADVEHS,SELF,sw_TRAM_BR139_cargo_subtype_text,cargo_subtype){

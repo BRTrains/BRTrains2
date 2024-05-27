@@ -37,10 +37,18 @@ def check_project_structure(src_directory: Path, gfx_directory: Path,
         print(
             "\"sounds.pnml\" not found.  Assuming no sounds are required"
         )
-    if not src_directory.joinpath("templates.pnml").exists():
+    if not src_directory.joinpath("templates_shared.pnml").exists():
         print(
-            "\"templates.pnml\" not found.  Assuming no templates are required"
-        )    
+            "\"templates_shared.pnml\" not found.  Assuming no templates are required"
+        )
+    if not src_directory.joinpath("templates_trains.pnml").exists():
+        print(
+            "\"templates_trains.pnml\" not found.  Assuming no templates are required"
+        )
+    if not src_directory.joinpath("templates_trams.pnml").exists():
+        print(
+            "\"templates_trams.pnml\" not found.  Assuming no templates are required"
+        )
 
     print("Project structure is correct\n")
     return (has_lang_dir, 0)
@@ -67,7 +75,7 @@ def find_pnml_files(src_directory: Path):
     # Iterate through all files in src_directory recursively, finding any that end in .pnml
     for path in src_directory.rglob("*.pnml"):
         # Don't add the special ones
-        if path.stem in ["railtypes", "grf", "sounds", "templates"]:
+        if path.stem in ["railtypes", "grf", "sounds", "templates_shared", "templates_trains", "templates_trams"]:
             continue
 
         if path.parent.stem not in file_list.keys():
@@ -251,7 +259,9 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     nml_file = copy_file(src_directory.joinpath("grf.pnml"), nml_file)
     nml_file = copy_file(src_directory.joinpath("railtypes.pnml"), nml_file)
     nml_file = copy_file(src_directory.joinpath("sounds.pnml"), nml_file)
-    nml_file = copy_file(src_directory.joinpath("templates.pnml"), nml_file)
+    nml_file = copy_file(src_directory.joinpath("templates_shared.pnml"), nml_file)
+    nml_file = copy_file(src_directory.joinpath("templates_trains.pnml"), nml_file)
+    nml_file = copy_file(src_directory.joinpath("templates_trams.pnml"), nml_file)
 
     # Get a list of all the pnml files in src
     file_list = find_pnml_files(src_directory)

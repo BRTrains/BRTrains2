@@ -1,0 +1,24 @@
+// Purchase sprites
+
+// Used by units with the Multiple Unit flag - eg IC125 and MPV
+template template_mu_purchase(x,y){
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [ ]
+    [ ]
+    [x,     y,      1,     1,     -10,-   6,          NOANIM|NOWHITE]
+    [ ]
+    [ ]
+    [ ]
+    [x,     y,      87,     12,     -10,-   6,          NOANIM|NOWHITE]
+    [ ]
+}
+
+template template_purchase(x,y){
+    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
+    [x,     y,      87,     12,     -25,-   6,          NOANIM|NOWHITE]
+}
+
+template template_purchase_anim(x,y){
+    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
+    [x,     y,      87,     12,     -25,-   6,          ANIM|NOWHITE]
+}

@@ -1,3 +1,8 @@
+// THESE FIRST 8 ARE THE CORE TEMPLATES
+// Use them for all new units and when re-working existing units
+// Some are duplicated allowing ANIM (animated) flags etc or reversed, and any alignment changes should be copied over
+// Everything else below template_train(4-32)px is a legacy template, which is correctly aligned but shouldn't be used for new units
+
 template template_train4px(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
     [ x,     y, 8, 11,  -3, -12]      //n
@@ -20,19 +25,6 @@ template template_train8px(x,y){
     [ x+50,  y, 10, 13, -13,  -6]  //sw
     [ x+61,  y,  9, 13, -15,  -9]  //w
     [ x+71,  y, 10, 13,  -5, -11]  //nw
-}
-
-// NE, SE, SE, NW diagonals lowered 1px vs train (literally no idea why, it only seems to matter on 8px?)
-template template_TRAM8px(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ x,     y,  8, 13,  -3, -12]      //n
-    [ x+9,   y, 10, 13,  -1, -11]   //ne
-    [ x+20,  y,  9, 13,   4,  -9]    //e 
-    [ x+30,  y, 10, 13,   7,  -4]    //se
-    [ x+41,  y,  8, 13,  -3,  -7]    //s
-    [ x+50,  y, 10, 13, -13,  -5]  //sw
-    [ x+61,  y,  9, 13, -15,  -9]  //w
-    [ x+71,  y, 10, 13,  -5, -10]  //nw
 }
 
 
@@ -109,8 +101,9 @@ template template_train32px(x,y){
 }
 
 //////////////////////////////////////////////////////////////////////////////
-// TEMPLATES BELOW HERE DO NOT HAVE THE ADDITIONAL VERTICAL PIXEL ABOVE YET
-// BECAUSE IT'S A TON OF WORK TO CHANGE A ZILLION SPRITESHEETS
+// THE NEXT FOUR TEMPLATES ARE LEGACY 28 AND 32PX, AND AN ANIMATED AND REVESED TEMPLATE FOR 32PX
+// BECAUSE IT'S A TON OF WORK TO CHANGE A ZILLION SPRITESHEETS TO THE CORE TEMPLATES ABOVE
+// THEY DO NOT HAVE THE ADDITIONAL VERTICAL PIXEL ABOVE, OVERLAPPING CORRIDOR CONNECTIONS OR THE FULL DIAGONAL LENGTHS
 //////////////////////////////////////////////////////////////////////////////
 
 template template_train28px_old(x,y){
@@ -165,33 +158,8 @@ template template_train32px_old_reversed(x,y){
     [ x+64,  y, 21, 18, -4,  -10,	NOANIM] //nw
 }
 
-// Purchase sprites
-
-// Used by units with the Multiple Unit flag - eg IC125 and MPV
-template template_mu_purchase(x,y){
-    //left_x, upper_y, width, height, offset_x, offset_y
-    [ ]
-    [ ]
-    [x,     y,      1,     1,     -10,-   6,          NOANIM|NOWHITE]
-    [ ]
-    [ ]
-    [ ]
-    [x,     y,      87,     12,     -10,-   6,          NOANIM|NOWHITE]
-    [ ]
-}
-
-template template_purchase(x,y){
-    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
-    [x,     y,      87,     12,     -25,-   6,          NOANIM|NOWHITE]
-}
-
-template template_purchase_anim(x,y){
-    //xpos, ypos,   width,  height, xoffset, yoffset,   Flags
-    [x,     y,      87,     12,     -25,-   6,          ANIM|NOWHITE]
-}
-
-
-// VAGUELY SURVIVABLE FOR NOW
+// THE LAST NON-STANDARD LEGACY TEMPLATE
+// Vaguely survivable for now
 // Should be redrawn though, it's aligned but the units are a funny scale
 
 template template_train28px_old_pacer(x,y){

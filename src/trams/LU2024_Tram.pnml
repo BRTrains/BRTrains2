@@ -5,9 +5,9 @@ switch(FEAT_ROADVEHS, SELF, switch_TRAM_LU2024_length, position_in_articulated_v
 }
 
 switch(FEAT_ROADVEHS,SELF, sw_TRAM_LU2024_TfL, position_in_articulated_veh % 9){
-	0:spriteset_LU2024_front_TfL;
-	8:spriteset_LU2024_rear_TfL;
-	spriteset_LU2024_middle_TfL;
+	0:spriteset_tram_LU2024_front_TfL;
+	8:spriteset_tram_LU2024_rear_TfL;
+	spriteset_tram_LU2024_middle_TfL;
 }
 
 switch(FEAT_ROADVEHS,SELF, sw_TRAM_LU2024,cargo_subtype){

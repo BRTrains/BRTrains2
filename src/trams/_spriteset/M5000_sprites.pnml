@@ -7,10 +7,10 @@ spriteset (spriteset_M5000_Double_purchase, "gfx/Tram/Metrolink_M5000.png") {
 }
 
 spriteset (spriteset_M5000_front_Metrolink, "gfx/Tram/Metrolink_M5000.png") {
-	template_train20px(0, 13)
+	template_tram20px(0, 13)
 }
 spriteset (spriteset_M5000_rear_Metrolink, "gfx/Tram/Metrolink_M5000.png") {
-	template_train20px(0, 33)
+	template_tram20px(0, 33)
 }
 
 switch(FEAT_ROADVEHS,SELF,sw_TRAM_M5000_cargo_subtype_text,cargo_subtype){

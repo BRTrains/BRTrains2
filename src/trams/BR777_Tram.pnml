@@ -1,8 +1,8 @@
 // Choose sprites depending on car position
 switch(FEAT_ROADVEHS, SELF, switch_TRAM_BR777_spriteset, position_in_articulated_veh % 4) {
-	0: spriteset_br777_front;	
-	3: spriteset_br777_rear;
-	spriteset_br777_middle;
+	0: spriteset_tram_br777_front;	
+	3: spriteset_tram_br777_rear;
+	spriteset_tram_br777_middle;
 }
 // Middle cars are shorter
 switch(FEAT_ROADVEHS, SELF, switch_TRAM_BR777_length, position_in_articulated_veh % 4) {
