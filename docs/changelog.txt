@@ -11,6 +11,9 @@
 - Added Bombardier M5000 (Manchester Metrolink tram)
 - Added Bombardier B07 (Docklands Light Rail)
 - Added Bombardier CR4000 (London Trams)
+- Added Stadler "Croydon" Variobahn (London Trams)
+- Added Bombardier Flexity 2 (Blackpool Tramway)
+- Added CAF Urbos 3 (West Midlands Metro)
 - Added tram variant of Parry People Mover, Class 555 (T&W Metro), Class 777 (Merseyrail)
 - Added tram variants of LU 2024 stock
 
