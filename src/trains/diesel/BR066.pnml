@@ -1,107 +1,60 @@
-spriteset(spriteset_BR66_Purchase, "gfx/BR66.png") {
+spriteset(spriteset_BR66_Purchase, "gfx/Diesel/66.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR66_EWS, "gfx/BR66.png") {
-	template_train32px_old(0, 13)
+spriteset(spriteset_BR66_FL, "gfx/Diesel/66.png") {
+	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BR66_FL, "gfx/BR66.png") {
-	template_train32px_old(0, 38)
+spriteset(spriteset_BR66_FL2, "gfx/Diesel/66.png") {
+	template_train32px(0, 39)
 }
 
-spriteset(spriteset_BR66_FLPH, "gfx/BR66.png") {
-	template_train32px_old(0, 63)
+spriteset(spriteset_BR66_EWS, "gfx/Diesel/66.png") {
+	template_train32px(0, 65)
 }
 
-spriteset(spriteset_BR66_FL2, "gfx/BR66.png") {
-	template_train32px_old(0, 88)
+spriteset(spriteset_BR66_DBSchenker, "gfx/Diesel/66.png") {
+	template_train32px(0, 91)
 }
 
-spriteset(spriteset_BR66_FLSH, "gfx/BR66.png") {
-	template_train32px_old(0, 113)
+spriteset(spriteset_BR66_BRBlue, "gfx/Diesel/66.png") {
+	template_train32px(0, 117)
 }
 
-spriteset(spriteset_BR66_DBSchenker, "gfx/BR66.png") {
-	template_train32px_old(0, 138)
+spriteset(spriteset_BR66_GBRf, "gfx/Diesel/66.png") {
+	template_train32px(0, 143)
 }
 
-spriteset(spriteset_BR66_GBRf2, "gfx/BR66.png") {
-	template_train32px_old(0, 163)
+spriteset(spriteset_BR66_Colas, "gfx/Diesel/66.png") {
+	template_train32px(0, 169)
 }
 
-spriteset(spriteset_BR66_GBRf3, "gfx/BR66.png") {
-	template_train32px_old(0, 188)
-}
-
-spriteset(spriteset_BR66_GBRf4, "gfx/BR66.png") {
-	template_train32px_old(0, 213)
-}
-
-spriteset(spriteset_BR66_GBRf1, "gfx/BR66.png") {
-	template_train32px_old(0, 238)
-}
-
-spriteset(spriteset_BR66_GBRfTfL, "gfx/BR66.png") {
-	template_train32px_old(0, 263)
-}
-
-spriteset(spriteset_BR66_GBRfHB, "gfx/BR66.png") {
-	template_train32px_old(0, 288)
-}
-
-spriteset(spriteset_BR66_Colas, "gfx/BR66.png") {
-	template_train32px_old(0, 313)
-}
-
-spriteset(spriteset_BR66_FastLine, "gfx/BR66.png") {
-	template_train32px_old(0, 338)
-}
-
-spriteset(spriteset_BR66_DRS1, "gfx/BR66.png") {
-	template_train32px_old(0, 363)
-}
-
-spriteset(spriteset_BR66_DRS2, "gfx/BR66.png") {
-	template_train32px_old(0, 388)
+spriteset(spriteset_BR66_FastLine, "gfx/Diesel/66.png") {
+	template_train32px(0, 195)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR66,cargo_subtype){
-    0:	spriteset_BR66_EWS;
-	1: 	spriteset_BR66_FL;
-	2: 	spriteset_BR66_FL2;
-	3: 	spriteset_BR66_FLPH;
-	4: 	spriteset_BR66_FLSH;
-	5:	spriteset_BR66_DBSchenker;
-	6:	spriteset_BR66_GBRf1;
-	7:	spriteset_BR66_GBRf2;
-	8:	spriteset_BR66_GBRf3;
-	9:	spriteset_BR66_GBRf4;
-	10:	spriteset_BR66_GBRfTfL;
-	11:	spriteset_BR66_GBRfHB;
-	12: spriteset_BR66_Colas;
-	13:	spriteset_BR66_FastLine;
-	14:	spriteset_BR66_DRS1;
-	15:	spriteset_BR66_DRS2;
+	0: 	spriteset_BR66_FL;
+	1: 	spriteset_BR66_FL2;
+	2:	spriteset_BR66_EWS;
+	3:	spriteset_BR66_DBSchenker;
+	4:	spriteset_BR66_BRBlue;
+	5:	spriteset_BR66_GBRf;
+	6: spriteset_BR66_Colas;
+	7:	spriteset_BR66_FastLine;
+	spriteset_BR66_FL; // Default because we removed some livery variants, avoids a breaking change
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR66_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_EWSRed);
-	1: 	return string(str_Freightliner);
-	2: 	return string(str_Freightliner2);
-	3: 	return string(str_FreightlinerPH);
-	4: 	return string(str_FreightlinerSH);
-	5:	return string(str_DBSchenker);
-	6:	return string(str_GBRfBar);
-	7:	return string(str_GBRf);
-	8:	return string(str_GBRf2);
-	9:	return string(str_GBRf3);
-	10:	return string(str_GBRfTfL);
-	11:	return string(str_GBRfHB);
-	12:	return string(str_ColasRail);
-	13:	return string(str_FastLine);
-	14:	return string(str_DRSCompass);
-	15:	return string(str_DRSCompass2);
+	0: 	return string(str_Freightliner);
+	1: 	return string(str_Freightliner2);
+	2:	return string(str_EWSRed);
+	3:	return string(str_DBSchenker);
+	4:	return string(str_BRBlue);
+	5:	return string(str_GBRf);
+	6:	return string(str_ColasRail);
+	7:	return string(str_FastLine);
        return CB_RESULT_NO_TEXT;
 }
 
