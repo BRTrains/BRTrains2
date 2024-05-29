@@ -1,5 +1,5 @@
 spriteset (spriteset_br_68_5a_purchase, "gfx/BR68_v2.png") {
-	template_purchase(0, 0)
+	template_purchase(88, 0)
 }
 
 spriteset (spriteset_br5a_dvt_reversed, "gfx/Rolling Stock/Mk5a.png") {

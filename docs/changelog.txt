@@ -1,6 +1,5 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Added Class 321
-- Re-drew Class 68 (What's actually been done here I can't remember??)
 
 # v2.10
 - Added Class 555
@@ -17,6 +16,7 @@
 - Re-drew Class 458/0
 - Re-drew class 66
 - Removed 10-car Class 720 (never entered service)
+- Improved Class 68
 
 # v2.9 (2024-05-18)
 - Added Furness Railway 0-4-0 "Coppernob"
