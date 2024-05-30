@@ -61,14 +61,14 @@ template template_tram20px(x,y){ // Clone to 4view when changed
 }
 template template_tram20px_tall(x,y){ // Clone to 4view when changed
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x,     y,  8, 25,  -3, -13] // n
-    [ x+9,   y, 16, 22,  -0, -11] //ne
-    [ x+26,  y, 21, 19,  -8,  -9] //e
-    [ x+48,  y, 16, 22,  -8,  -8] //se
-    [ x+65,  y,  8, 25,  -3, -13] //s
-    [ x+74,  y, 16, 22, -12,  -7] //sw
-    [ x+91,  y, 21, 19, -15,  -9] //w
-    [ x+113, y, 16, 22,  -8, -10] //nw
+    [ x,     y,  8, 25,  -3, -19] // n
+    [ x+9,   y, 16, 22,  -0, -17] //ne
+    [ x+26,  y, 21, 19,  -8, -15] //e
+    [ x+48,  y, 16, 22,  -8, -14] //se
+    [ x+65,  y,  8, 25,  -3, -19] //s
+    [ x+74,  y, 16, 22, -12, -13] //sw
+    [ x+91,  y, 21, 19, -15, -15] //w
+    [ x+113, y, 16, 22,  -8, -16] //nw
 }
 
 template template_tram24px(x,y){

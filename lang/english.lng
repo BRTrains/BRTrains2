@@ -79,6 +79,8 @@ STR_DESC_EyeCandy                       :An invisible locomotive intended for us
 STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive without an attached unit
 
 # TRAM NAMES
+STR_NAME_GlasgowWooden                :Glasgow Trams Wooden Double Decker
+STR_NAME_BlackpoolStandard147         :Blackpool Trams 1920s "Standard" Double Decker
 STR_NAME_CR4000                       :London Trams CR4000 (2-car Single Unit)
 STR_NAME_LondonVariobahn              :London Trams Variobahn (5-car Single Unit)
 STR_NAME_BirminghamUrbos              :West Midlands Metro Urbos 3 (5-car Single Unit)

@@ -1,5 +1,8 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Added Class 321
+- Furness Railway Railmotor?
+- Added Glasgow Wooden Tram
+- Added Blackpool 1924 Standard 147
 
 # v2.10
 - Added Class 555
