@@ -1,8 +1,6 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Added Class 321
 - Furness Railway Railmotor?
-- Added Glasgow Wooden Tram
-- Added Blackpool 1924 Standard 147
 
 # v2.10
 - Added Class 555
@@ -14,12 +12,15 @@
 - Added CAF Urbos 3 (West Midlands Metro)
 - Added Siemens-Duewag "Supertram" (Sheffield Supertram)
 - Added Stadler Class 399 "Citylink" (Sheffield Supertram)
+- Added Glasgow Wooden Tram
+- Added Blackpool 1924 Standard 147
 - Added tram variant of Parry People Mover, Class 555 (T&W Metro), Class 777 (Merseyrail)
 - Added tram variants of LU 2024 stock
 - Re-drew Class 458/0
 - Re-drew class 66
 - Removed 10-car Class 720 (never entered service)
 - Improved Class 68
+- Added TPE Pride livery for Class 802
 
 # v2.9 (2024-05-18)
 - Added Furness Railway 0-4-0 "Coppernob"

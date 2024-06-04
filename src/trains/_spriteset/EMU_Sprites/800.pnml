@@ -128,7 +128,15 @@ spriteset(spriteset_BR80X_middle3_Avanti, "gfx/BR80X.png") {
 	template_train32px_old(0, 775)
 }
 
-
+spriteset(spriteset_BR80X_front_TPEPride, "gfx/BR80X.png") {
+	template_train32px_old(0, 800)
+}
+spriteset(spriteset_BR80X_middle_TPEPride, "gfx/BR80X.png") {
+	template_train32px_old(0, 825)
+}
+spriteset(spriteset_BR80X_rear_TPEPride, "gfx/BR80X.png") {
+	template_train32px_old(0, 850)
+}
 
 // 125mph service speed, 140mph design speed
 switch(FEAT_TRAINS, SELF, switch_BR800_speed, param_max_speed) {
