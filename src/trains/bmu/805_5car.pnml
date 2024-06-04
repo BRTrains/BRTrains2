@@ -1,10 +1,21 @@
 // Livery callbacks
-switch(FEAT_TRAINS, SELF, switch_BR805_5car_spriteset_Avanti, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_BR805_5car_spriteset_Avanti_normal, position_in_articulated_veh % 5) {
 	0: spriteset_BR80X_front_Avanti;
 	1: spriteset_BR80X_middle3_Avanti;
 	2: spriteset_BR80X_middle2_Avanti;
 	3: spriteset_BR80X_middle_Avanti;
 	4: spriteset_BR80X_rear_Avanti;	
+}
+switch(FEAT_TRAINS, SELF, switch_BR805_5car_spriteset_Avanti_reversed, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_Avanti;
+	2: spriteset_BR80X_middle3_Avanti;
+	3: spriteset_BR80X_middle2_Avanti;
+	1: spriteset_BR80X_middle_Avanti;
+	4: spriteset_BR80X_rear_Avanti;	
+}
+switch(FEAT_TRAINS, PARENT, switch_BR805_5car_spriteset_Avanti, vehicle_is_reversed) {
+	0: switch_BR805_5car_spriteset_Avanti_normal;
+	1: switch_BR805_5car_spriteset_Avanti_reversed;	
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR805_5car_spriteset_Hitachi, position_in_articulated_veh % 5) {
