@@ -41,7 +41,7 @@ STR_TRAM_DEFAULT                 :(Default) Realistic Heavy/Light rail split (Tr
 STR_TRAM_TRAINONLY               :Display all Metro units as Trains only (no trams)
 STR_TRAM_TRAMONLY                :Display all Metro Units as Trams only (no London Underground trains etc, only as trams)
 STR_TRAM_BOTH                    :Display Trams and Trains as both Trams and Trains (all purchaseable as either)
-STR_TRAM_EXTRA                   :Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
+STR_TRAM_EXTRA                   :(Experimental) Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
 STR_TRAM_SUPEREXTRA              :(Experimental) Include a slightly ridiculous number of extra units (London Overground, trains used for suburban routes)
 
 STR_PARAM_NAME_2CC              :Parameter not in use (yet)

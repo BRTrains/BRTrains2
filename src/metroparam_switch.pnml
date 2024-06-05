@@ -7,8 +7,6 @@
 
 if (param[6] < 5) {
     // Disable "SUPEREXTRA" tram units at 5 or any setting below 5
-
-
 }
 
 if (param[6] < 4) {
@@ -18,18 +16,28 @@ if (param[6] < 4) {
 // Do nothing when set to 3 specifically, "EXTRA" and "SUPEREXTRA" will already be removed above
 // and BOTH includes both tram and train versions so there's nothing to disable
 
-if (param[6] == 2) { // TRAM
-    // Disable train versions of all metro units
-}
-
-if (param[6] == 1) { // TRAIN
+if (param[6] == 2) { // TRAM ONLY
     // Disable train versions of all metro units
     disable_item(FEAT_TRAINS, 595); // London Underground 2024 stock tram
+    disable_item(FEAT_TRAINS, 636); // Class 555
+    disable_item(FEAT_TRAINS, 450); // Class 777
+    disable_item(FEAT_TRAINS, 464); // Class 139 Parry People Mover
+    
+}
+
+if (param[6] == 1) { // TRAIN ONLY
+    // Disable tram versions of all metro units (where duplicated)
+    disable_item(FEAT_ROADVEHS, 643); // Class 777
+    disable_item(FEAT_ROADVEHS, 642); // Class 555
+    disable_item(FEAT_ROADVEHS, 595); // London Underground 2024 stock
+
 }
 
 if (param[6] == 0) { // DEFAULT
     // Disable tram versions of heavy rail units
     disable_item(FEAT_ROADVEHS, 595); // London Underground 2024 stock tram
+    disable_item(FEAT_ROADVEHS, 643); // Class 777
+    disable_item(FEAT_ROADVEHS, 642); // Class 555
 
     // Disable train versions of light rail versions
 }
