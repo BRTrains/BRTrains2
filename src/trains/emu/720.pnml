@@ -1,9 +1,27 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_720_spriteset, position_in_articulated_veh % 5) {
+switch(FEAT_TRAINS, SELF, switch_br_720_spriteset_GA, position_in_articulated_veh % 5) {
 	0: spriteset_br_720_front_GA;
 	1: spriteset_br_720_middle_panto_GA;
 	4: spriteset_br_720_rear_GA;
 	spriteset_br_720_middle_GA;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_720_spriteset_C2C, position_in_articulated_veh % 5) {
+	0: spriteset_br_720_front_C2C;
+	1: spriteset_br_720_middle_panto_C2C;
+	4: spriteset_br_720_rear_C2C;
+	spriteset_br_720_middle_C2C;
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_720_spriteset, cargo_subtype) {
+	0: switch_br_720_spriteset_GA;
+	1: switch_br_720_spriteset_C2C;	
+}
+
+switch(FEAT_TRAINS, SELF, switch_br_720_subtype_text, cargo_subtype) {
+	0: return string(str_GreaterAnglia);
+	1: return string(str_C2C);	
+	return CB_RESULT_NO_TEXT;
 }
 
 // Define articulations
@@ -74,7 +92,7 @@ item(FEAT_TRAINS, item_br_720, 448) {
 	graphics {
 		default: switch_br_720_spriteset;
 		purchase: spriteset_br_720_purchase;
-		
+		cargo_subtype_text: switch_br_720_subtype_text;
 		articulated_part: switch_br_720_articulated;
 		start_stop: switch_br_720_start_stop;	
 		can_attach_wagon: switch_br_720_can_attach_wagon;
