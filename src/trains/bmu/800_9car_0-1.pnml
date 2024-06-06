@@ -134,7 +134,6 @@ item(FEAT_TRAINS, item_BR800_9car, 460) {
 		weight: 438 ton;
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
-		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
 		refit_cost: 0;
 		track_type: RAIL;
 		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train

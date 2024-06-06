@@ -56,7 +56,6 @@ item (FEAT_TRAINS, item_BR377_5, 218) {
 		running_cost_factor:			38;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							100 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						BR_3RDR;
 		ai_special_flag:				AI_FLAG_CARGO;

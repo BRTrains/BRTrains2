@@ -295,7 +295,6 @@ item (FEAT_TRAINS, item_BR423, 347) {
 		running_cost_factor:			27;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						SAA3;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -479,7 +478,6 @@ item (FEAT_TRAINS, item_BR423_9, 351) {
 		running_cost_factor:			27;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						SAA3;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -662,7 +660,6 @@ item (FEAT_TRAINS, item_BR480, 355) {
 		running_cost_factor:			27;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						SAA3;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -710,7 +707,6 @@ item (FEAT_TRAINS, item_BR480_dtclf, 356) {
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						SAA3;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -754,7 +750,6 @@ item (FEAT_TRAINS, item_BR480_dtclr, 357) {
 		running_cost_factor:			27;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						SAA3;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -798,7 +793,6 @@ item (FEAT_TRAINS, item_BR480_mbso, 358) {
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						SAA3;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -842,7 +836,6 @@ item (FEAT_TRAINS, item_BR480_buf, 359) {
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						SAA3;
 		ai_special_flag:				AI_FLAG_CARGO;

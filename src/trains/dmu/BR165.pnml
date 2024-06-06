@@ -167,7 +167,6 @@ item (FEAT_TRAINS, item_BR165_0_2, 398) {
 		running_cost_factor:			21;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -218,7 +217,6 @@ item (FEAT_TRAINS, item_BR165_0_3, 399) {
 		running_cost_factor:			28;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -269,7 +267,6 @@ item (FEAT_TRAINS, item_165_0b, 400) {
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -314,7 +311,6 @@ item (FEAT_TRAINS, item_165_0c, 401) {
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -359,7 +355,6 @@ item (FEAT_TRAINS, item_BR165_1_2, 402) {
 		running_cost_factor:			21;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -408,7 +403,6 @@ item (FEAT_TRAINS, item_BR165_1_3, 403) {
 		running_cost_factor:			28;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -457,7 +451,6 @@ item (FEAT_TRAINS, item_165_1b, 404) {
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -502,7 +495,6 @@ item (FEAT_TRAINS, item_165_1c, 405) {
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;

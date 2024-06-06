@@ -57,7 +57,6 @@ item (FEAT_TRAINS, item_LU2024, 595) {
 		running_cost_factor:			41;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							62 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						BR_4RDR;
 		ai_special_flag:				AI_FLAG_CARGO;

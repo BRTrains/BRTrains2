@@ -111,7 +111,6 @@ item (FEAT_TRAINS, item_BR374, 88) {
 		running_cost_factor:			255;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							320 km/h;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						ELRL;
 		ai_special_flag:				AI_FLAG_CARGO;

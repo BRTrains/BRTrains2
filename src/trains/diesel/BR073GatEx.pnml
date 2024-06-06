@@ -79,7 +79,6 @@ item (FEAT_TRAINS, item_BR73GatEx, 261) {
 		running_cost_factor:			69;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						BR_3RDR;
 		ai_special_flag:				AI_FLAG_CARGO;

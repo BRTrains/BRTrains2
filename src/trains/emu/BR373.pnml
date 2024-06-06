@@ -219,7 +219,6 @@ item (FEAT_TRAINS, item_BR373, 80) {
 		running_cost_factor:			207;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							300 km/h;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						BR_3RDC;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -272,7 +271,6 @@ item (FEAT_TRAINS, item_BR373_25kv, 557) {
 		running_cost_factor:			207;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							300 km/h;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						ELRL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -323,7 +321,6 @@ item (FEAT_TRAINS, item_BR373_2, 97) {
 		running_cost_factor:			194;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							300 km/h;
-		misc_flags:						TRAIN_FLAG_MU;
 		refit_cost:						0;
 		track_type:						ELRL;
 		ai_special_flag:				AI_FLAG_CARGO;

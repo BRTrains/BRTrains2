@@ -90,7 +90,6 @@ item(FEAT_TRAINS, item_br_769, 457) {
 		cargo_capacity: (304/4);
 		weight: 147.8 ton; 
 		sprite_id:						SPRITE_ID_NEW_TRAIN;		
-		misc_flags: bitmask(TRAIN_FLAG_MU); // acts as multiple-unit
 		refit_cost: 0;
 		track_type: RAIL;
 		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
