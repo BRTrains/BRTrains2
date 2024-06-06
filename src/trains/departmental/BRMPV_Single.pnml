@@ -14,7 +14,6 @@ item (FEAT_TRAINS, item_MPV_Single, 235) {
 		running_cost_factor:			15;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
-		misc_flags:						TRAIN_FLAG_FLIP;
 		refit_cost:						8;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
