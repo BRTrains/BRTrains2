@@ -79,7 +79,7 @@ switch(FEAT_TRAINS,SELF,sw_BR508_1_cargo_subtype_text,cargo_subtype){
 switch(FEAT_TRAINS,SELF,sw_BR508_cargo_subtype_text,cargo_subtype){
     0:	return string(str_BRBlue);
 	1:  return string(str_MerseyRailOld);
-	2:  return string(str_SilverLink);
+	2:  return string(str_Silverlink);
 	3:  return string(str_Connex);
 	4:  return string(str_Southeastern_yellow);
 	5:  return string(str_Southeastern_blue);

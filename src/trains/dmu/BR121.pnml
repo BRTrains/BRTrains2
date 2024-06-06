@@ -50,7 +50,7 @@ switch(FEAT_TRAINS,SELF,sw_BR121_cargo_subtype_text,cargo_subtype){
 	4:	return string(str_BRBlueCentre);
 	5:	return string(str_BRRefurb);
 	6:	return string(str_BRBlueGrey);
-	7:	return string(str_SilverLink);
+	7:	return string(str_Silverlink);
        return CB_RESULT_NO_TEXT;
 }
 

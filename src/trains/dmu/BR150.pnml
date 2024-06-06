@@ -38,7 +38,7 @@ spriteset(spriteset_BR150a_RegionalGrey, "gfx/BR150_1a.png") {
 	template_train32px_old(0, 188)
 }
 
-spriteset(spriteset_BR150a_SilverLink, "gfx/BR150_1a.png") {
+spriteset(spriteset_BR150a_Silverlink, "gfx/BR150_1a.png") {
 	template_train32px_old(0, 213)
 }
 
@@ -102,7 +102,7 @@ spriteset(spriteset_BR150b_RegionalGrey, "gfx/BR150_1b.png") {
 	template_train32px_old(0, 188)
 }
 
-spriteset(spriteset_BR150b_SilverLink, "gfx/BR150_1b.png") {
+spriteset(spriteset_BR150b_Silverlink, "gfx/BR150_1b.png") {
 	template_train32px_old(0, 213)
 }
 

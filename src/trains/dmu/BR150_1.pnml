@@ -12,7 +12,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150_1,cargo_subtype){
 	6:	spriteset_BR150a_FNW;
 	7:	spriteset_BR150a_SuperSprinter;
 	8:	spriteset_BR150a_FGW;
-	9:	spriteset_BR150a_SilverLink;
+	9:	spriteset_BR150a_Silverlink;
 	10:	spriteset_BR150a_NorthernRail;
 	11:	spriteset_BR150a_BRTest;
 	12: spriteset_BR150a_Railtrack;
@@ -30,7 +30,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150_1b,cargo_subtype){
 	6:	spriteset_BR150b_FNW;
 	7:	spriteset_BR150b_SuperSprinter;
 	8:	spriteset_BR150b_FGW;
-	9:	spriteset_BR150b_SilverLink;
+	9:	spriteset_BR150b_Silverlink;
 	10:	spriteset_BR150b_NorthernRail;
 	11:	spriteset_BR150b_BRTest;
 	12: spriteset_BR150b_Railtrack;
@@ -54,7 +54,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_1_cargo_subtype_text,cargo_subtype){
 	6:	return string(str_FNW);
 	7:	return string(str_SuperSprinter);
 	8:	return string(str_FGW);
-	9:	return string(str_SilverLink);
+	9:	return string(str_Silverlink);
 	10:	return string(str_NorthernRail);
 	11:	return string(str_BRTest);
 	12: return string(str_Railtrack);

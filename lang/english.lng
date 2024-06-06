@@ -526,7 +526,7 @@ str_BR150_liveries				:BR Prototype, Regional Railways, Centro, Central Trains, 
 STR_NAME_BR150_1				:BR Class 150/1 "Sprinter" (2-car)
 str_BR150_1_usage				:Passenger
 str_BR150_1_eos					:---
-str_BR150_1_liveries			:Regional Railways, Regional Railways (Grey), Centro, Central Trains, Network West Midlands, First North Western, Super Sprinter, SilverLink, Northern Rail, First Great Western, BR Track Test, Railtrack, Network Rail
+str_BR150_1_liveries			:Regional Railways, Regional Railways (Grey), Centro, Central Trains, Network West Midlands, First North Western, Super Sprinter, Silverlink, Northern Rail, First Great Western, BR Track Test, Railtrack, Network Rail
 
 STR_NAME_BR150_2				:BR Class 150/2 "Sprinter" (2-car)
 str_BR150_2_usage				:Passenger
@@ -1528,6 +1528,7 @@ str_NROrange					: (Network Rail Orange)
 str_NRTest						: (Network Rail Test Train)
 str_NRWhite						: (Network Rail White)
 str_NRYellow					: (Network Rail Yellow)
+str_NS							: (Nederlandse Spoorwegen - Dutch Railways)
 str_NSE							: (Network South East)
 str_NSEAlt						: (Network South East - Alternative Scheme)
 str_NSEG						: (Network South East Grey)
@@ -1574,8 +1575,8 @@ str_ScotRailPride				: (ScotRail "Pride")
 str_ScotRailSaltire				: (ScotRail Saltire)
 str_Shell                       : (Shell)
 str_Siemens						: (Siemens Demostrator)
-str_SilverLink					: (SilverLink)
-str_SilverLinkCentral			: (SilverLink/Central Trains)
+str_Silverlink					: (Silverlink)
+str_SilverlinkCentral			: (Silverlink/Central Trains)
 str_Southeastern				: (Southeastern)
 str_Southeastern_blue			: (Southeastern Blue)
 str_Southeastern_blue_refurbished	: (Southeastern Refurbished Blue)
