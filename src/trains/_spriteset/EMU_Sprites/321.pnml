@@ -1,0 +1,33 @@
+spriteset (spriteset_BR321_purchase, "gfx/EMU/321.png") {
+	template_purchase(200, 0)
+}
+
+spriteset (spriteset_BR321_front_NSE, "gfx/EMU/321.png") { 			template_train32px(0, 0) }
+spriteset (spriteset_BR321_rear_NSE, "gfx/EMU/321.png") { 			template_train32px(0, 26) }
+spriteset (spriteset_BR321_middle_NSE, "gfx/EMU/321.png") { 		template_train32px(0, 52) }
+spriteset (spriteset_BR321_middle_panto_NSE, "gfx/EMU/321.png") { 	template_train32px(0, 78) }
+
+spriteset (spriteset_BR321_front_NS, "gfx/EMU/321.png") { 			template_train32px(0, 104) }
+spriteset (spriteset_BR321_rear_NS, "gfx/EMU/321.png") { 			template_train32px(0, 130) }
+spriteset (spriteset_BR321_middle_NS, "gfx/EMU/321.png") { 			template_train32px(0, 156) }
+spriteset (spriteset_BR321_middle_panto_NS, "gfx/EMU/321.png") { 	template_train32px(0, 182) }
+
+spriteset (spriteset_BR321_front_GreaterAnglia, "gfx/EMU/321.png") { 			template_train32px(0, 208) }
+spriteset (spriteset_BR321_rear_GreaterAnglia, "gfx/EMU/321.png") { 			template_train32px(0, 234) }
+spriteset (spriteset_BR321_middle_GreaterAnglia, "gfx/EMU/321.png") {	 		template_train32px(0, 260) }
+spriteset (spriteset_BR321_middle_panto_GreaterAnglia, "gfx/EMU/321.png") { 	template_train32px(0, 286) }
+
+spriteset (spriteset_BR321_front_Silverlink, "gfx/EMU/321.png") { 			template_train32px(0, 312) }
+spriteset (spriteset_BR321_rear_Silverlink, "gfx/EMU/321.png") { 			template_train32px(0, 338) }
+spriteset (spriteset_BR321_middle_Silverlink, "gfx/EMU/321.png") { 			template_train32px(0, 364) }
+spriteset (spriteset_BR321_middle_panto_Silverlink, "gfx/EMU/321.png") { 	template_train32px(0, 390) }
+
+spriteset (spriteset_BR321_front_LondonMidland, "gfx/EMU/321.png") { 			template_train32px(0, 416) }
+spriteset (spriteset_BR321_rear_LondonMidland, "gfx/EMU/321.png") { 			template_train32px(0, 442) }
+spriteset (spriteset_BR321_middle_LondonMidland, "gfx/EMU/321.png") { 			template_train32px(0, 468) }
+spriteset (spriteset_BR321_middle_panto_LondonMidland, "gfx/EMU/321.png") { 	template_train32px(0, 494) }
+
+spriteset (spriteset_BR321_front_WYPTE, "gfx/EMU/321.png") { 			template_train32px(0, 520) }
+spriteset (spriteset_BR321_rear_WYPTE, "gfx/EMU/321.png") { 			template_train32px(0, 546) }
+spriteset (spriteset_BR321_middle_WYPTE, "gfx/EMU/321.png") { 			template_train32px(0, 572) }
+spriteset (spriteset_BR321_middle_panto_WYPTE, "gfx/EMU/321.png") { 	template_train32px(0, 598) }

@@ -106,6 +106,8 @@ STR_BR_231_4CAR							:BR Class 231/0 "FLIRT" (4-Car)
 STR_BR_331_3CAR                         :BR Class 331/0 "Civity" (3-Car)
 STR_BR_331_4CAR                         :BR Class 331/1 "Civity" (4-Car)
 
+STR_BR321                              :BR Class 321 "Dusty Bin" (4-Car)
+
 STR_BR_345_7CAR                         :BR Class 345 "Aventra" (7-Car)
 STR_BR_345_9CAR                         :BR Class 345 "Aventra" (9-Car)
 
@@ -178,6 +180,7 @@ STR_DSC_BR_196                         :Type: {RED}Diesel Multiple Unit{}{BLACK}
 STR_DSC_BR_197                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}TfW Rail
 STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
 
+STR_DSC_BR321                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}NSE, Dutch Railways, Greater Anglia, Silverlink, London Midland, WYPTE
 STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
 STR_DSC_BR_397                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express

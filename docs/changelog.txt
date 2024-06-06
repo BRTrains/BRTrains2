@@ -1,8 +1,8 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
-- Added Class 321
 - Furness Railway Railmotor?
 
 # v2.10
+- Added Class 321
 - Added Class 555
 - Added Bombardier M5000 (Manchester Metrolink tram)
 - Added Bombardier B07 (Docklands Light Rail)
