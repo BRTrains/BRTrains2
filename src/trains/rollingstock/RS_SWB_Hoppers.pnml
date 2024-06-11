@@ -11,7 +11,7 @@ item (FEAT_TRAINS, item_RS_SWB_Hopper, 555) {
 		model_life:						100;
 		refittable_cargo_classes:		bitmask(CC_BULK,CC_COVERED, CC_POWDERIZED);	
 		loading_speed:					20;
-		cost_factor:					30;
+		cost_factor:					25;
 		running_cost_factor:			11;
 		power:							0;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
@@ -19,7 +19,7 @@ item (FEAT_TRAINS, item_RS_SWB_Hopper, 555) {
 		running_cost_base:				RUNNING_COST_STEAM;
 		default_cargo_type:				COAL;
 		cargo_capacity:					40;
-		weight:							28 ton;
+		weight:							20 ton;
 		tractive_effort_coefficient:	0.08;
 		air_drag_coefficient:			0.07;
 		length:							5;
@@ -32,7 +32,7 @@ item (FEAT_TRAINS, item_RS_SWB_Hopper, 555) {
 	purchase:							spriteset_RS_SWB_Hopper;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_RS_SWB_Hopper_cargo_subtype_text;
-	cost_factor:	return(GetAdjustedCost(30));
+	cost_factor:	return(GetAdjustedCost(25));
 	running_cost_factor: return(GetAdjustedCost(11));
 }
 }
