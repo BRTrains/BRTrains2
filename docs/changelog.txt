@@ -5,6 +5,8 @@
 - Added Furness Railway Goods Wagon
 - Improved FIRS compatibility and general cargo refit options
 - Fixed Coppernob tender length
+- Fixed Container purchase sprite
+- Removed some unnecessary flags
 
 # v2.10 (2024-06-06)
 - Added Class 321
