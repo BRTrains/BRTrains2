@@ -1047,6 +1047,11 @@ str_BR800_usage					:Regional Passenger
 str_BR800_eos					:---
 str_BR800_liveries				:Hitachi, GWR
 
+STR_NAME_FurnessGoodsVan		:Furness Railway Goods Van
+str_FurnessGoodsVan_usage		:Misc Cargo
+str_FurnessGoodsVan_eos			:---
+str_FurnessGoodsVan_liveries	:Grey, Brown
+
 STR_NAME_RS_SWB_Hopper			:LNER Standard Medium Hopper
 str_RS_SWB_Hopper_usage			:Bulk Cargos
 str_RS_SWB_Hopper_eos			:---
@@ -1063,12 +1068,12 @@ str_BRTTA_eos					:---
 str_BRTTA_liveries				:Mobil, Esso, BP (x3), SUKO, Gulf, Shell (x2), Murco, Total, VTG
 
 STR_NAME_BRContainer			:BR Container Flatbed Wagon
-str_BRContainer_usage			:Food, Goods, Paper, Fruit
+str_BRContainer_usage			:Misc. Cargo
 str_BRContainer_eos				:---
 str_BRContainer_liveries		:Maersk, Tesco, Random
 
 STR_NAME_SmallLumberWagon		:Midland Railway Small Lumber Wagon
-str_SmallLumberWagon_usage		:Wood, Crates, Livestock etc
+str_SmallLumberWagon_usage		:Wood
 str_SmallLumberWagon_eos		:---
 str_SmallLumberWagon_liveries	:Green
 

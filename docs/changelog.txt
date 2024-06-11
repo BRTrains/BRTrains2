@@ -1,6 +1,11 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Furness Railway Railmotor?
 
+# v2.11
+- Added Furness Railway Goods Wagon
+- Improved FIRS compatibility and general cargo refit options
+- Fixed Coppernob tender length
+
 # v2.10
 - Added Class 321
 - Added Class 555

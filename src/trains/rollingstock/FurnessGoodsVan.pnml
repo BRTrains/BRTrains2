@@ -1,0 +1,82 @@
+spriteset(spriteset_FurnessGoodsVan, "gfx/Freight/Furness_Goods_Van.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_FurnessGoodsVan_GreyOpen, "gfx/Freight/Furness_Goods_Van.png") {
+	template_train20px(0, 13)
+}
+spriteset(spriteset_FurnessGoodsVan_Grey, "gfx/Freight/Furness_Goods_Van.png") {
+	template_train20px(0, 33)
+}
+
+spriteset(spriteset_FurnessGoodsVan_BrownOpen, "gfx/Freight/Furness_Goods_Van.png") {
+	template_train20px(0, 53)
+}
+spriteset(spriteset_FurnessGoodsVan_Brown, "gfx/Freight/Furness_Goods_Van.png") {
+	template_train20px(0, 73)
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_FurnessGoodsVan_Grey)
+{
+	1:	spriteset_FurnessGoodsVan_GreyOpen;
+	1:	spriteset_FurnessGoodsVan_Grey;
+}
+random_switch(FEAT_TRAINS, SELF, sw_FurnessGoodsVan_Brown)
+{
+	1:	spriteset_FurnessGoodsVan_BrownOpen;
+	1:	spriteset_FurnessGoodsVan_Brown;
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_FurnessGoodsVan_Random)
+{
+	1:	sw_FurnessGoodsVan_Grey;
+	1:	sw_FurnessGoodsVan_Brown;
+}
+
+// Called first
+// Skips the "loading stage" switch above if using an eyecandy livery
+switch(FEAT_TRAINS, SELF, sw_FurnessGoodsVan, cargo_subtype){	
+	0: sw_FurnessGoodsVan_Random;
+	1: sw_FurnessGoodsVan_Grey;
+	2: sw_FurnessGoodsVan_Brown;
+}
+
+switch(FEAT_TRAINS,SELF,sw_FurnessGoodsVan_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Random);
+	1:	return string(str_Grey);
+	2:	return string(str_Brown);
+}
+
+item (FEAT_TRAINS, item_FurnessGoodsVan, 654) {
+	property {
+		name: 							string(STR_NAME_FurnessGoodsVan);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1848,4,21);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED);		
+		default_cargo_type:				GOOD;
+		loading_speed:					15;
+		cost_factor:					30;
+		running_cost_factor:			11;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		cargo_capacity:					35;
+		weight:							20 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.07;
+		length:							5;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_FurnessGoodsVan_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_FurnessGoodsVan;
+	purchase:							spriteset_FurnessGoodsVan;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_FurnessGoodsVan_cargo_subtype_text;
+		cost_factor:	return(GetAdjustedCost(25));
+	running_cost_factor: return(GetAdjustedCost(11));
+}
+}
