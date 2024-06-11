@@ -6,7 +6,7 @@
 - Improved FIRS compatibility and general cargo refit options
 - Fixed Coppernob tender length
 
-# v2.10
+# v2.10 (2024-06-06)
 - Added Class 321
 - Added Class 555
 - Added Bombardier M5000 (Manchester Metrolink tram)

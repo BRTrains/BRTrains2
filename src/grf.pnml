@@ -4,8 +4,8 @@ grf {
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
 	// Remove the "2." from the "real" version, eg v2.8 becomes 9
-	// 10 (2.10) released BaNaNaS 	2024-06-06T00:17:43+00:00
-	version: 10;
+	// 10 (2.10) released BaNaNaS 2024-06-06T00:17:43+00:00
+	version: 11;
 	//bump up this number to whatever the "next release" version is when breaking compatibility.
 	// Eg if 8 (2.8) has released and the next version is 9 (2.9) then set it to 9
 	min_compatible_version: 10;
