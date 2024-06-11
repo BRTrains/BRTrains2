@@ -104,7 +104,9 @@ item (FEAT_TRAINS, item_BRContainer, 465) {
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1966,1,1);
 		model_life:						VEHICLE_NEVER_EXPIRES;
-		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS);
+		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED);
+		cargo_allow_refit:				[GOOD, FISH, FOOD];
+		default_cargo_type:				GOOD;
 		loading_speed:					20;
 		cost_factor:					49;
 		running_cost_factor:			17;
@@ -112,7 +114,6 @@ item (FEAT_TRAINS, item_BRContainer, 465) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		refit_cost:						0;
 		running_cost_base:				RUNNING_COST_STEAM;
-		default_cargo_type:				GOOD;
 		cargo_capacity:					72;
 		weight:							28 ton;
 		tractive_effort_coefficient:	0.08;
