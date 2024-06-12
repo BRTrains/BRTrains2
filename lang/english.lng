@@ -1057,6 +1057,11 @@ str_FurnessTankWagon_usage		:Liquids
 str_FurnessTankWagon_eos		:---
 str_FurnessTankWagon_liveries	:Grey
 
+STR_NAME_Furness20TonHopper		:Furness Railway 20 Ton Hopper
+str_Furness20TonHopper_usage	:Bulk
+str_Furness20TonHopper_eos		:---
+str_Furness20TonHopper_liveries	:Grey
+
 STR_NAME_RS_SWB_Hopper			:LNER Standard Medium Hopper
 str_RS_SWB_Hopper_usage			:Bulk Cargos
 str_RS_SWB_Hopper_eos			:---
