@@ -228,6 +228,7 @@ sort(FEAT_TRAINS, [
  item_LU2024,
  item_BR325,
  item_FurnessGoodsVan,
+ item_FurnessTankWagon,
  item_SmallLumberWagon,
  item_RS_SWB_Hopper,
  item_BRHHA,

@@ -1052,6 +1052,11 @@ str_FurnessGoodsVan_usage		:Misc Cargo
 str_FurnessGoodsVan_eos			:---
 str_FurnessGoodsVan_liveries	:Grey, Brown
 
+STR_NAME_FurnessTankWagon		:Furness Railway Rectangular Tanker Wagon
+str_FurnessTankWagon_usage		:Liquids
+str_FurnessTankWagon_eos		:---
+str_FurnessTankWagon_liveries	:Grey
+
 STR_NAME_RS_SWB_Hopper			:LNER Standard Medium Hopper
 str_RS_SWB_Hopper_usage			:Bulk Cargos
 str_RS_SWB_Hopper_eos			:---
