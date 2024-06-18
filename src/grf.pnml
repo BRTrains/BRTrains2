@@ -127,6 +127,10 @@ grf {
 }
 disable_item(FEAT_TRAINS);
 
+// Fix depot sprites
+traininfo_y_offset = 2;
+train_width_32_px = 1;
+
 if(param["BRT\16", 1] != 0)
 {
 	error(ERROR,string(STR_Error_MUTSBRTrains));
