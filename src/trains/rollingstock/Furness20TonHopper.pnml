@@ -54,7 +54,7 @@ item (FEAT_TRAINS, item_Furness20TonHopper, 656) {
 		weight:							20 ton;
 		tractive_effort_coefficient:	0.08;
 		air_drag_coefficient:			0.07;
-		length:							4;
+		length:							3;
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
