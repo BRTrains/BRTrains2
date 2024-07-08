@@ -1,16 +1,21 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Furness Railway Railmotor?
+- LMS Black 5 (gfx done need coding)
+- LMS Jubilee (gfx done need coding) 
+- SR Z-Class (gfx done need coding)
 
-# v2.11
-- Added Furness Railway Goods Wagon
+# v2.12
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
+- Fixed some horizontal view lengths
+- Fixed depot sprite (vertical alignment and 32px sprite flag)
+
+# v2.11 (Hotfix 2024-06-11)
+- Added Furness Railway Goods Wagon
 - Improved FIRS compatibility and general cargo refit options
 - Fixed Coppernob tender length
 - Fixed Container purchase sprite
 - Removed some unnecessary flags
-- Fixed some horizontal view lengths
-- Fixed depot sprite (vertical alignment and 32px sprite flag)
 
 # v2.10 (2024-06-06)
 - Added Class 321
