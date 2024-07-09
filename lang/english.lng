@@ -303,6 +303,11 @@ str_WDTank_usage				:Low speed freight/shunting
 str_WDTank_eos				    :1960
 str_WDTank_liveries			    :Wartime Black
 
+STR_NAME_SRZClass			    :Southern Railway 0-8-0 "Z Class"
+str_SRZClass_usage				:Heavy shunting, short haul freight
+str_SRZClass_eos				:1929
+str_SRZClass_liveries			:SR Black, BR Transitional Black, BR Cycling Lion
+
 STR_NAME_Standard9F				:BR Standard Class 9F
 str_Standard9F_usage			:Freight/Mixed Traffic
 str_Standard9F_eos				:1935
