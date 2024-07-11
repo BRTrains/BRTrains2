@@ -61,7 +61,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR456, extra_callback_info1) {
 switch(FEAT_TRAINS,SELF,sw_BR456_cargo_subtype_text,cargo_subtype){
     0:	return string(str_NSE);
     1:	return string(str_Connex);
-    2:	return string(str_southern);
+    2:	return string(str_Southern);
 	3:	return string(str_ROSCO);
     4:	return string(str_SWT);
        return CB_RESULT_NO_TEXT;

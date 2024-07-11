@@ -35,7 +35,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR377_3, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR377_3_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_southern);
+    0:	return string(str_Southern);
        return CB_RESULT_NO_TEXT;
 }
 

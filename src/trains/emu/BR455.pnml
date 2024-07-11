@@ -251,7 +251,7 @@ switch(FEAT_TRAINS,SELF,sw_BR4558_cargo_subtype_text,cargo_subtype){
     2:	return string(str_SWT_stagecoach);
     3:	return string(str_Connex);
     4:	return string(str_SWT);
-    5:	return string(str_southern);
+    5:	return string(str_Southern);
        return CB_RESULT_NO_TEXT;
 }
 

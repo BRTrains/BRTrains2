@@ -186,7 +186,7 @@ switch(FEAT_TRAINS,SELF,sw_BR319_cargo_subtype_text,cargo_subtype){
     3:	return string(str_fcc);    
     4:	return string(str_gtrp);
     5:	return string(str_gtrb);    
-	6:	return string(str_southern);    
+	6:	return string(str_Southern);    
 	7: return string(str_Northern);
 	8: return string(str_LondonMidland);
        return CB_RESULT_NO_TEXT;
