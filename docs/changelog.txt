@@ -2,9 +2,9 @@
 - Furness Railway Railmotor?
 - LMS Black 5 (gfx done need coding)
 - LMS Jubilee (gfx done need coding) 
-- SR Z-Class (gfx done need coding)
 
 # v2.12
+- Added Southern Railway Z-Class
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
 - Fixed some horizontal view lengths
