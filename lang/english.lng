@@ -303,7 +303,7 @@ str_WDTank_usage				:Low speed freight/shunting
 str_WDTank_eos				    :1960
 str_WDTank_liveries			    :Wartime Black
 
-STR_NAME_SRZClass			    :Southern Railway 0-8-0 "Z Class"
+STR_NAME_SRZClass			    :Southern Railway 0-8-0T "Z Class" Tank
 str_SRZClass_usage				:Heavy shunting, short haul freight
 str_SRZClass_eos				:1929
 str_SRZClass_liveries			:SR Black, BR Transitional Black, BR Cycling Lion
@@ -1380,6 +1380,7 @@ str_BRGreenSplit				: (BR Green - Split Box)
 str_BRGreenYellow				: (BR Green - Yellow Front)
 str_BRGrey						: (BR General Grey)
 str_BRGreyBlue					: (BR Grey and Blue)
+str_BRLion                      : (BR Black - Lion)
 str_BRLLogo				        : (BR Large Logo)
 str_BRLLogoAlt  				: (BR Large Logo - Alternate)
 str_BRLLogoCentre				: (BR Large Logo - Centre Headcode)
@@ -1607,8 +1608,8 @@ str_Southeastern_blue_stripe	: (Southeastern Blue with Stripe)
 str_Southeastern_TBW			: (Southeastern Tunbridge Wells)
 str_Southeastern_yellow			: (Southeastern Yellow)
 str_Southeastern_yellow_stripe	: (Southeastern Yellow with Stripe)
-str_southern					: (Southern)
 str_Southern					: (Southern)
+str_SRBlack                     : (Southern Railway Black)
 str_Stagecoach                  : (Stagecoach)
 str_StagecoachWhite             : (Stagecoach White)
 str_StagecoachBlue              : (Stagecoach Blue)

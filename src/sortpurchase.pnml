@@ -3,6 +3,7 @@ sort(FEAT_TRAINS, [
  item_CaledonianSingle,
  item_FurnessK2,
  item_LNWRWebb,
+ item_SRZClass,
  item_GreatBear,
  item_GWRHall,
  item_GNRA1,
