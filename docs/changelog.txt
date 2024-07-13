@@ -9,6 +9,7 @@
 - Added Furness Railway 20-ton Hopper Wagon
 - Fixed some horizontal view lengths
 - Fixed depot sprite (vertical alignment and 32px sprite flag)
+- Fixed articulated tram capacities
 
 # v2.11 (Hotfix 2024-06-11)
 - Added Furness Railway Goods Wagon
