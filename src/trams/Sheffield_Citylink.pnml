@@ -39,7 +39,7 @@ item (FEAT_ROADVEHS, item_TRAM_SheffieldCitylink, 649) {
 	default: 							sw_TRAM_SheffieldCitylink;
 	purchase:							spriteset_SheffieldCitylink_purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	cargo_capacity: return(236 * param_pax);
+	cargo_capacity: return(236 * param_pax / 2);
 	cost_factor:	return(GetAdjustedCostTRAM(35));
 	running_cost_factor: return(GetAdjustedCostTRAM(30));
 	weight: 66;

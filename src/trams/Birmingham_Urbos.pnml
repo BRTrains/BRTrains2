@@ -52,7 +52,7 @@ item (FEAT_ROADVEHS, item_TRAM_BirminghamUrbos, 647) {
 	default: 							switch_TRAM_BirminghamUrbos_spriteset;
 	purchase:							spriteset_BirminghamUrbos_purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	cargo_capacity: return(210 * param_pax);
+	cargo_capacity: return(210 * param_pax / 5);
 	cost_factor:	return(GetAdjustedCostTRAM(40));
 	running_cost_factor: return(GetAdjustedCostTRAM(35));
 	weight: 50;

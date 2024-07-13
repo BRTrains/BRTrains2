@@ -38,7 +38,7 @@ item (FEAT_ROADVEHS, item_TRAM_CR4000, 644) {
 	default: 							sw_TRAM_CR4000;
 	purchase:							spriteset_CR4000_purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	cargo_capacity: return(200 * param_pax);
+	cargo_capacity: return(200 * param_pax / 2);
 	cost_factor:	return(GetAdjustedCostTRAM(20));
 	running_cost_factor: return(GetAdjustedCostTRAM(18));
 	weight: 80;

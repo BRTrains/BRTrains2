@@ -38,7 +38,7 @@ item (FEAT_ROADVEHS, item_TRAM_M5000_Double, 638) {
 	default: 							sw_TRAM_M5000;
 	purchase:							spriteset_M5000_Double_purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	cargo_capacity: return(400 * param_pax);
+	cargo_capacity: return(400 * param_pax / 4);
 	cost_factor:	return(GetAdjustedCostTRAM(30));
 	running_cost_factor: return(GetAdjustedCostTRAM(27));
 	weight: 160;
