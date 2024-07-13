@@ -99,7 +99,7 @@ grf {
 				desc: string(STR_PARAM_DESC_TRAM);
 				min_value: 0;
 				max_value: 5;
-				def_value: 1;
+				def_value: 0;
 				names: {
 					0: string(STR_TRAM_DEFAULT);
 					1: string(STR_TRAM_TRAINONLY);
