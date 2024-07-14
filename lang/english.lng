@@ -264,7 +264,7 @@ str_FurnessK2_usage					:Mixed Traffic
 str_FurnessK2_eos					:1892
 str_FurnessK2_liveries				:Furness Railway Red
 
-STR_NAME_LNWRWebb				:LNWR 0-6-2 Webb "Coal Tank"
+STR_NAME_LNWRWebb				:LNWR 0-6-2 "Webb Coal Tank"
 str_LNWRWebb_usage				:Low speed freight
 str_LNWRWebb_eos				:1988
 str_LNWRWebb_liveries			:LNWR Black, BR Black
@@ -274,37 +274,37 @@ str_GreatBear_usage					:Express Passenger
 str_GreatBear_eos					:1908
 str_GreatBear_liveries				:GWR Green
 
-STR_NAME_GWRCastle					:GWR 4-6-0 "Castle" Class
+STR_NAME_GWRCastle					:GWR 4-6-0 "Castle"
 str_GWRCastle_usage			   		:Express Passenger
 str_GWRCastle_eos					:1923
 str_GWRCastle_liveries				:GWR Green
 
-STR_NAME_GWRHall				:GWR 4-6-0 "Hall" Class
+STR_NAME_GWRHall				:GWR 4-6-0 "Hall"
 str_GWRHall_usage		   		:Express Passenger
 str_GWRHall_eos				    :1946
 str_GWRHall_liveries			:GWR Green, Hogwarts Express
 
-STR_NAME_GNRA1					:GNR Gresley 4-6-2 A1
+STR_NAME_GNRA1					:GNR Gresley 4-6-2 "A1"
 str_GNRA1_usage					:Express Passenger
 str_GNRA1_eos					:1928-1935
 str_GNRA1_liveries				:GNR Green, LNER Green
 
-STR_NAME_LNERA3					:LNER Gresley 4-6-2 A3
+STR_NAME_LNERA3					:LNER Gresley 4-6-2 "A3"
 str_LNERA3_usage				:Express Passenger
 str_LNERA3_eos					:1959-1966
 str_LNERA3_liveries				:LNER Green, BR Wartime Black, BR Apple Green, BR Brunswick Green
 
-STR_NAME_LNERP2					:LNER Gresley 2-8-2 P2
+STR_NAME_LNERP2					:LNER Gresley 2-8-2 "P2"
 str_LNERP2_usage				:Express Passenger
 str_LNERP2_eos					:1934-1936ß
 str_LNERP2_liveries				:LNER Green
 
-STR_NAME_LMSJubilee				:LMS 4-6-0 Jubilee
+STR_NAME_LMSJubilee				:LMS 4-6-0 "Jubilee"
 str_LMSJubilee_usage		    :Express Passenger
 str_LMSJubilee_eos				:1934-1936
 str_LMSJubilee_liveries			:LNER Green
 
-STR_NAME_LMSBlack5				:LMS 4-6-0 Black5
+STR_NAME_LMSBlack5				:LMS 4-6-0 "Black5"
 str_LMSBlack5_usage		        :Mixed Traffic
 str_LMSBlack5_eos				:1934-1951
 str_LMSBlack5_liveries			:LNER Green
@@ -318,6 +318,11 @@ STR_NAME_SRZClass			    :Southern Railway 0-8-0T "Z Class" Tank
 str_SRZClass_usage				:Heavy shunting, short haul freight
 str_SRZClass_eos				:1929
 str_SRZClass_liveries			:SR Black, BR Transitional Black, BR Cycling Lion
+
+STR_NAME_GERL77			    :LNER 0-6-2T "N7" (GER "L77") Tank
+str_GERL77_usage			:Heavy shunting, short haul freight
+str_GERL77_eos				:1915-1928
+str_GERL77_liveries			:GER Blue, GER Black, LNER Apple Green, LNER Black, BR Black
 
 STR_NAME_Standard9F				:BR Standard Class 9F
 str_Standard9F_usage			:Freight/Mixed Traffic
