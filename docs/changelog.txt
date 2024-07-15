@@ -3,6 +3,7 @@
 - LMS Black 5 (gfx done need coding)
 - LMS Jubilee (gfx done need coding) 
 - LNER P2 Streamlined version (gfx done need coding)
+- GWR Dean Goods (gfx done need coding) 
 
 # v2.12
 - Added Southern Railway Z-Class
