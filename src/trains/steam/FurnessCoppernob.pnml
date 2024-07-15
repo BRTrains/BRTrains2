@@ -63,9 +63,9 @@ item (FEAT_TRAINS, item_Coppernob, 584) {
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							15 ton;
+		weight:							19 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.3;
+		tractive_effort_coefficient:	0.18;
 		air_drag_coefficient:			0.1;
 		length:							5;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;

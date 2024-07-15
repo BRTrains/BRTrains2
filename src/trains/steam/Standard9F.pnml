@@ -72,9 +72,9 @@ item (FEAT_TRAINS, item_Standard9F, 587) {
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							139 ton;
+		weight:							141.4 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.3;
+		tractive_effort_coefficient:	0.125;
 		air_drag_coefficient:			0.1;
 		length:							8;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;

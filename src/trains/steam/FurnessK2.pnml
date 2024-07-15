@@ -53,7 +53,7 @@ item (FEAT_TRAINS, item_FurnessK2, 590) {
 		cost_factor:					10;
 		running_cost_factor:			10;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							85 mph;
+		speed:							70 mph;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						RAIL;
@@ -65,7 +65,7 @@ item (FEAT_TRAINS, item_FurnessK2, 590) {
 		cargo_capacity:					1;
 		weight:							70 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.4;
+		tractive_effort_coefficient:	0.088;
 		air_drag_coefficient:			0.1;
 		length:							5;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;

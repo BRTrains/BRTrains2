@@ -44,14 +44,14 @@ item (FEAT_TRAINS, item_GreatBear, 484) {
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							1000 hp;
+		power:							1300 hp;
 		running_cost_base:				RUNNING_COST_STEAM;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							142 ton;
+		weight:							145 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.3;
+		tractive_effort_coefficient:	0.085;
 		air_drag_coefficient:			0.1;
 		length:							8;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;

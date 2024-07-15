@@ -23,9 +23,9 @@ item (FEAT_TRAINS, item_LNWRWebb, 554) {
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							43 ton;
+		weight:							44.5 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.3;
+		tractive_effort_coefficient:	0.165;
 		air_drag_coefficient:			0.1;
 		length:							6;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
