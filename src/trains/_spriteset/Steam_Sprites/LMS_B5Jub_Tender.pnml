@@ -1,0 +1,19 @@
+spriteset(spriteset_LMS_B5JubTender_LMSRed, "gfx/Steam/LMS_Jubilee_Black5_Tender.png") {
+	template_train16px(0, 13)
+}
+
+spriteset(spriteset_LMS_B5JubTender_LMSBlack, "gfx/Steam/LMS_Jubilee_Black5_Tender.png") {
+	template_train16px(0, 47)
+}
+
+spriteset(spriteset_LMS_B5JubTender_BRBlackLion, "gfx/Steam/LMS_Jubilee_Black5_Tender.png") {
+	template_train16px(0, 71)
+}
+
+spriteset(spriteset_LMS_B5JubTender_BRBlackText, "gfx/Steam/LMS_Jubilee_Black5_Tender.png") {
+	template_train16px(0, 96)
+}
+
+spriteset(spriteset_LMS_B5JubTender_BRRedText, "gfx/Steam/LMS_Jubilee_Black5_Tender.png") {
+	template_train16px(0, 121)
+}
