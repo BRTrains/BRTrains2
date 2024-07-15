@@ -319,10 +319,10 @@ str_SRZClass_usage				:Heavy shunting, short haul freight
 str_SRZClass_eos				:1929
 str_SRZClass_liveries			:SR Black, BR Transitional Black, BR Cycling Lion
 
-STR_NAME_GERL77			    :LNER 0-6-2T "N7" (GER "L77") Tank
-str_GERL77_usage			:Heavy shunting, short haul freight
-str_GERL77_eos				:1915-1928
-str_GERL77_liveries			:GER Blue, GER Black, LNER Apple Green, LNER Black, BR Black
+STR_NAME_GER_L77			    :LNER 0-6-2T "N7" (GER "L77") Tank
+str_GER_L77_usage			:Heavy shunting, short haul freight
+str_GER_L77_eos				:1915-1928
+str_GER_L77_liveries			:GER Blue, GER Black, LNER Apple Green, LNER Black, BR Black
 
 STR_NAME_Standard9F				:BR Standard Class 9F
 str_Standard9F_usage			:Freight/Mixed Traffic
@@ -1484,6 +1484,8 @@ str_GBRf3						: (GBRf - 3rd Version Lights)
 str_GBRfBar						: (GBRf "Barbie")
 str_GBRfTfL						: (GBRf London Underground 150 Years)
 str_GBRfHB						: (GBRf "Harry Beck")
+str_GERBlue						: (GER Blue)
+str_GERBlack					: (GER Black)
 str_GMPTE						: (GMPTE)
 str_GC							: (Grand Central)
 str_GCLined						: (Grand Central Lined)
@@ -1521,8 +1523,10 @@ str_LaPoste					    : (La Poste)
 str_LNER                        : (LNER Red/White)
 str_LNERCorridorTender			: (LNER Green Corridor Tender)
 str_LNERGreen					: (LNER Green)
+str_LNERAppleGreen		        : (LNER Apple Green)
+str_LNERBlack					: (LNER Black)
 str_LNWR					    : (London Northwestern Railway)
-str_LNWRBlack					    : (LNWR - Black)
+str_LNWRBlack					: (LNWR Black)
 str_LNWRSimple				    : (London Northwestern Railway - Transitional)
 str_Loadhaul					: (Loadhaul)
 str_LoadhaulGrey				: (Loadhaul Grey)

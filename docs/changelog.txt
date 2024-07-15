@@ -2,14 +2,17 @@
 - Furness Railway Railmotor?
 - LMS Black 5 (gfx done need coding)
 - LMS Jubilee (gfx done need coding) 
+- LNER P2 Streamlined version (gfx done need coding)
 
 # v2.12
 - Added Southern Railway Z-Class
+- GER L77 (LNER N7)
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
 - Fixed some horizontal view lengths
 - Fixed depot sprite (vertical alignment and 32px sprite flag)
 - Fixed articulated tram capacities
+- Fixed steam tractive efforts (and adjusted some other stats)
 
 # v2.11 (Hotfix 2024-06-11)
 - Added Furness Railway Goods Wagon

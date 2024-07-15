@@ -1,6 +1,6 @@
-item (FEAT_TRAINS, item_SRZClass, 567) {
+item (FEAT_TRAINS, item_GER_L77, 660) {
 	property {
-		name: 							string(STR_NAME_SRZClass);
+		name: 							string(STR_NAME_GER_L77);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1915,1,1);
 		model_life:						15;
@@ -33,12 +33,12 @@ item (FEAT_TRAINS, item_SRZClass, 567) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_1),string(str_SRZClass_usage),string(str_SRZClass_eos),string(str_SRZClass_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_1),string(str_GER_L77_usage),string(str_GER_L77_eos),string(str_GER_L77_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_SRZClass_cargo_subtype_text;	
-	default: 							sw_SRZClass;
-	purchase:							spriteset_SRZClass_Purchase;
+	cargo_subtype_text:					sw_GER_L77_cargo_subtype_text;	
+	default: 							sw_GER_L77;
+	purchase:							spriteset_GER_L77_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
 	sound_effect:						sw_steam_sound;
