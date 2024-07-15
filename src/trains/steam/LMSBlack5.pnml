@@ -1,91 +1,51 @@
 
-// spriteset(spriteset_LMSBlack5_Purchase, "gfx/Steam/LMSJubilee.png") {
-// 	template_purchase_anim(0, 0)
-// }
-
-// spriteset(spriteset_LMSBlack5_FurnessRed, "gfx/Steam/LMSJubilee.png") {
-// 	template_train20px(0, 13)
-// }
-
-// spriteset(spriteset_LMSBlack5T_FurnessRed, "gfx/Steam/LMSJubilee.png") {
-// 	template_train12px(0, 33)
-// }
-
-// switch(FEAT_TRAINS,SELF, sw_LMSBlack5Loco,cargo_subtype){
-//     0:	spriteset_LMSBlack5_FurnessRed;
-// }
-
-// switch(FEAT_TRAINS,SELF, sw_LMSBlack5Tender,cargo_subtype){
-//     0:	spriteset_LMSBlack5T_FurnessRed;
-// }
-
-// switch(FEAT_TRAINS, SELF, sw_LMSBlack5, position_in_articulated_veh){
-// 	0: sw_LMSBlack5Loco;
-// 	1: sw_LMSBlack5Tender;
-// }
-
-// switch(FEAT_TRAINS, SELF, switch_LMSBlack5_length, position_in_articulated_veh) {	
-// 	0: return 5;
-// 	1: return 3;
-// }
-
-// switch (FEAT_TRAINS, SELF, switch_articulated_LMSBlack5, extra_callback_info1) {
-// 	1: return item_LMSBlack5;
-//     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
-// }
-
-// switch(FEAT_TRAINS,SELF,sw_LMSBlack5_cargo_subtype_text,cargo_subtype){
-//     0: return string(str_FurnessRed);
-//        return CB_RESULT_NO_TEXT;
-// }
-
-// item (FEAT_TRAINS, item_LMSBlack5, 590) {
-// 	property {
-// 		name: 							string(STR_NAME_LMSBlack5);
-// 		climates_available: 			ALL_CLIMATES;
-// 		introduction_date:				date(1934,2,1);
-// 		model_life:						40;
-// 		retire_early:					1;
-// 		vehicle_life:					40;
-// 		reliability_decay:				7;
-// 		refittable_cargo_classes:		0;
-// 		cargo_allow_refit:				[GOOD, FOOD];
-// 		loading_speed:					3;
-// 		cost_factor:					18;
-// 		running_cost_factor:			21;
-// 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-// 		speed:							85 mph;
-// 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
-// 		refit_cost:						0;
-// 		track_type:						RAIL;
-// 		ai_special_flag:				AI_FLAG_CARGO;
-// 		power:							1500 hp;
-// 		running_cost_base:				RUNNING_COST_STEAM;
-// 		dual_headed:					0;
-// 		default_cargo_type:				GOOD;
-// 		cargo_capacity:					1;
-// 		weight:							130 ton;
-// 		engine_class:					ENGINE_CLASS_STEAM;
-// 		tractive_effort_coefficient:	0.28; // RL 0.14, 24.4k lbf
-// 		air_drag_coefficient:			0.1;
-// 		length:							5;
-// 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
-// 		extra_weight_per_wagon:			0;
-// 		bitmask_vehicle_info:			0;
-// 	}
-// 	graphics {
-// 	length: switch_LMSBlack5_length;	
-// 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_LMSBlack5_usage),string(str_LMSBlack5_eos),string(str_LMSBlack5_liveries)));
-// 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-// 	cargo_capacity:						return 0;
-// 	cargo_subtype_text:					sw_LMSBlack5_cargo_subtype_text;
-// 	articulated_part:        			switch_articulated_LMSBlack5;
-// 	default: 							sw_LMSBlack5;
-// 	purchase:							spriteset_LMSBlack5_Purchase;
-// 	colour_mapping: 					return PALETTE_CC_FIRST;
-// 	create_effect:						steam_create_visual_effect;
-// 	sound_effect:						sw_steam_sound;
-// 	cost_factor:	return(GetAdjustedCost(10));
-// 	running_cost_factor: return(GetAdjustedCost(10));
-// }
-// }
+item (FEAT_TRAINS, item_LMSBlack5, 659) {
+	property {
+		name: 							string(STR_NAME_LMSBlack5);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1934,2,1);
+		model_life:						40;
+		retire_early:					1;
+		vehicle_life:					40;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					18;
+		running_cost_factor:			21;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							85 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1500 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							130 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	0.28; // RL 0.14, 24.4k lbf
+		air_drag_coefficient:			0.1;
+		length:							5;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	length: switch_LMSBlack5_length;	
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_LMSBlack5_usage),string(str_LMSBlack5_eos),string(str_LMSBlack5_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_LMSBlack5_cargo_subtype_text;
+	articulated_part:        			switch_articulated_LMSBlack5;
+	default: 							sw_LMSBlack5;
+	purchase:							spriteset_LMSBlack5_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						steam_create_visual_effect;
+	sound_effect:						sw_steam_sound;
+	cost_factor:	return(GetAdjustedCost(10));
+	running_cost_factor: return(GetAdjustedCost(10));
+}
+}

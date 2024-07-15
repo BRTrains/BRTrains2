@@ -1,13 +1,13 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Furness Railway Railmotor?
-- LMS Black 5 (gfx done need coding)
-- LMS Jubilee (gfx done need coding) 
 - LNER P2 Streamlined version (gfx done need coding)
 - GWR Dean Goods (gfx done need coding) 
 
 # v2.12
 - Added Southern Railway Z-Class
-- GER L77 (LNER N7)
+- Added GER L77 (LNER N7)
+- Added LMS Black 5
+- Added LMS Jubilee
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
 - Fixed some horizontal view lengths
