@@ -25,7 +25,7 @@ item (FEAT_TRAINS, item_LMSJubilee, 658) {
 		cargo_capacity:					1;
 		weight:							130 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.29; // RL: 0.146
+		tractive_effort_coefficient:	0.146;
 		air_drag_coefficient:			0.1;
 		length:							5;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
@@ -44,7 +44,7 @@ item (FEAT_TRAINS, item_LMSJubilee, 658) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
 	sound_effect:						sw_steam_sound;
-	cost_factor:	return(GetAdjustedCost(10));
-	running_cost_factor: return(GetAdjustedCost(10));
+	cost_factor:	return(GetAdjustedCost(25));
+	running_cost_factor: return(GetAdjustedCost(28));
 }
 }
