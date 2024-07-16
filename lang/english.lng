@@ -269,6 +269,11 @@ str_LNWRWebb_usage				:Low speed freight
 str_LNWRWebb_eos				:1988
 str_LNWRWebb_liveries			:LNWR Black, BR Black
 
+STR_NAME_GWR_DeanGoods				:GWR 2301 0-6-0 "Dean Goods"
+str_GWR_DeanGoods_usage			   		:Freight and local passenger services
+str_GWR_DeanGoods_eos					:1883
+str_GWR_DeanGoods_liveries				:GWR Green, GWR Green & Chrome
+
 STR_NAME_GreatBear					:GWR 4-6-2 "Great Bear"
 str_GreatBear_usage					:Express Passenger
 str_GreatBear_eos					:1908
@@ -1504,10 +1509,11 @@ str_gtrb						: (Govia Thameslink "Blue")
 str_gtrp						: (Govia Thameslink "Pink")
 str_GTRPride					: (Govia Thameslink "Pride")
 str_Gulf                        : (Gulf)
-str_GNRGreen					: (GNR "Green")
-str_GWRGreen					: (GWR "Green")
+str_GNRGreen					: (GNR Green)
+str_GWRGreen					: (GWR Green)
+str_GWRGreenChrome				: (GWR Green & Chrome)
 str_GWRPride                    : (GWR "Pride")
-str_GWRGreenUn					: (GWR "Green" Unbranded)
+str_GWRGreenUn					: (GWR Green Unbranded)
 str_HansonHall                  : (Hanson & Hall)
 str_HarryNeedle					: (Harry Needle Railroad)
 str_Hitachi						: (Hitachi)

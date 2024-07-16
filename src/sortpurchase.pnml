@@ -5,6 +5,7 @@ sort(FEAT_TRAINS, [
  item_LNWRWebb,
  item_SRZClass,
  item_GER_L77,
+ item_GWR_DeanGoods,
  item_GreatBear,
  item_GWRHall,
  item_LMSBlack5,
