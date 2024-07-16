@@ -31,7 +31,7 @@ item (FEAT_TRAINS, item_LNERPV, 9) {
 	property {
 		name: 							string(STR_NAME_LNERPV);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1846,4,21);
+		introduction_date:				date(1840,4,21);
 		model_life:						100;
 		cargo_allow_refit:				[MAIL];
 		loading_speed:					10;

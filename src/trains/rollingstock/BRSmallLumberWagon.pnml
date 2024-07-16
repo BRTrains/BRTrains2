@@ -25,7 +25,7 @@ item (FEAT_TRAINS, item_SmallLumberWagon, 582) {
 	property {
 		name: 							string(STR_NAME_SmallLumberWagon);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1800,1,1);
+		introduction_date:				date(1840,1,1);
 		model_life:						50;
 		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS);
 		loading_speed:					15;

@@ -39,7 +39,7 @@ item (FEAT_TRAINS, item_Furness20TonHopper, 656) {
 	property {
 		name: 							string(STR_NAME_Furness20TonHopper);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1848,4,21);
+		introduction_date:				date(1840,4,21);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes:		bitmask(CC_BULK, CC_COVERED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);	
 		default_cargo_type:				COAL;
