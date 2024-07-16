@@ -10,6 +10,7 @@
 - Added LMS Jubilee
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
+- Fixed some introduction and model lifespans (set is now fully freight playable from 1840 onwards)
 - Fixed some horizontal view lengths
 - Fixed depot sprite (vertical alignment and 32px sprite flag)
 - Fixed articulated tram capacities

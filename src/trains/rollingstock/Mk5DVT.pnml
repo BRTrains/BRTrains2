@@ -4,6 +4,7 @@ item (FEAT_TRAINS, item_BRMk5DVT, 596) {
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		introduction_date:				date(1989,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					14;
 		cost_factor:					30;
