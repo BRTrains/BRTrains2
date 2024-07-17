@@ -60,7 +60,7 @@ item (FEAT_TRAINS, item_BR88, 594) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_7),string(str_BR88_usage),string(str_BR88_eos),string(str_BR88_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_bimode),string(str_route_7),string(str_BR88_usage),string(str_BR88_eos),string(str_BR88_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					switch_BR88_cargo_subtype_text;

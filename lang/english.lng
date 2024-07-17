@@ -86,6 +86,8 @@ STR_NAME_CR4000                       :London Trams CR4000 (2-car Single Unit)
 STR_NAME_LondonVariobahn              :London Trams Variobahn (5-car Single Unit)
 STR_NAME_BirminghamUrbos              :West Midlands Metro Urbos 3 (5-car Single Unit)
 STR_NAME_BlackpoolFlexity             :Blackpool Transport Flexity 2 (5-car Single Unit)
+STR_NAME_T68                          :Manchester Metrolink T-68 (2-car Single Unit)
+STR_NAME_T68_DOUBLE                   :Manchester Metrolink T-68 (4-car Double Unit)
 STR_NAME_M5000                        :Manchester Metrolink M5000 (2-car Single Unit)
 STR_NAME_M5000_DOUBLE                 :Manchester Metrolink M5000 (4-car Double Unit)
 STR_NAME_B07                          :Docklands Light Railway B07 (2-car Single Unit)
@@ -220,6 +222,8 @@ str_purchase_coach				:{BLACK}Liveries: {GOLD}{STRING}{BLACK}
 
 str_purchase_type_diesel		:{RED}Diesel locomotive
 str_purchase_type_steam			:{GREEN}Steam Locomotive
+str_purchase_type_bimode        :{PURPLE}Bi-Mode Locomotive
+str_purchase_type_bmu			:{PURPLE}Bi-Mode Multiple Unit
 str_purchase_type_dmu			:{RED}Diesel Multiple Unit
 str_purchase_type_demu			:{RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit
 str_purchase_type_emu			:{BLUE}Electric Multiple Unit
