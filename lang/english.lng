@@ -230,17 +230,6 @@ str_purchase_type_emu			:{BLUE}Electric Multiple Unit
 str_purchase_type_electric		:{BLUE}Electric Locomotive
 str_purchase_type_gtu  		:{ORANGE}Gas Turbine Experimental Unit
 
-str_route_1						:RA1 (<13 tonne Axle Load)
-str_route_2						:RA2 (<15.5 tonne Axle Load)
-str_route_3						:RA3 (<16.5 tonne Axle Load)
-str_route_4						:RA4 (<17.5 tonne Axle Load)
-str_route_5						:RA5 (<19.0 tonne Axle Load)
-str_route_6						:RA6 (<20.3 tonne Axle Load)
-str_route_7						:RA7 (<21.4 tonne Axle Load)
-str_route_8						:RA8 (<22.8 tonne Axle Load)
-str_route_9						:RA9 (<24.1 tonne Axle Load)
-str_route_10					:RA10 (<25.4 tonne Axle Load)
-
 STR_NAME_MPV_Single				:Departmental Class 98/9 "MPV" Track Maintenance Unit (1-car)
 STR_NAME_MPV_DualTrack			:Departmental Class 98/9 "MPV" Track Maintenance Unit (2-car)
 STR_NAME_MPV_DualFreight		:Departmental Class 98/9 "Freight MPV" Container Unit (2-car)

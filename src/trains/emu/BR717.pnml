@@ -77,7 +77,7 @@ item (FEAT_TRAINS, item_BR717, 518) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR717_usage),string(str_BR717_eos),string(str_BR717_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR717_usage),string(str_BR717_eos),string(str_BR717_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR717_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR717;
@@ -170,7 +170,7 @@ item (FEAT_TRAINS, item_BR717c, 520) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR717_usage),string(str_BR717_eos),string(str_BR717_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR717_usage),string(str_BR717_eos),string(str_BR717_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR717_cargo_subtype_text;
 	default: 							sw_BR717c;
@@ -214,7 +214,7 @@ item (FEAT_TRAINS, item_BR717d, 521) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR717_usage),string(str_BR717_eos),string(str_BR717_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR717_usage),string(str_BR717_eos),string(str_BR717_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR717_cargo_subtype_text;
 	default: 							sw_BR717d;

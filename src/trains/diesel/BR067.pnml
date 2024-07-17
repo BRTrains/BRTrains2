@@ -116,7 +116,7 @@ item (FEAT_TRAINS, item_BR67, 151) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_8),string(str_BR67_usage),string(str_BR67_eos),string(str_BR67_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR67_usage),string(str_BR67_eos),string(str_BR67_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_BR67_cargo_subtype_text;

@@ -105,7 +105,7 @@ item (FEAT_TRAINS, item_BR86, 566) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_route_7),string(str_BR86_usage),string(str_BR86_eos),string(str_BR86_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_BR86_usage),string(str_BR86_eos),string(str_BR86_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_BR86_cargo_subtype_text;

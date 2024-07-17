@@ -84,7 +84,7 @@ item (FEAT_TRAINS, item_LUAStock, 507) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_LUAStock_usage),string(str_LUAStock_eos),string(str_LUAStock_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LUAStock_usage),string(str_LUAStock_eos),string(str_LUAStock_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_LUAStock_cargo_subtype_text;
 	articulated_part:        			switch_articulated_LUAStock;
@@ -175,7 +175,7 @@ item (FEAT_TRAINS, item_LUAStockc, 509) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_LUAStock_usage),string(str_LUAStock_eos),string(str_LUAStock_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LUAStock_usage),string(str_LUAStock_eos),string(str_LUAStock_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_LUAStock_cargo_subtype_text;
 	default: 							sw_LUAStockc;

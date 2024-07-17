@@ -56,7 +56,7 @@ item (FEAT_ROADVEHS, item_TRAM_LU2024, 595) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_LU2024_usage),string(str_LU2024_eos),string(str_LU2024_liveries)));	
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LU2024_usage),string(str_LU2024_eos),string(str_LU2024_liveries)));	
 	cargo_subtype_text:					sw_TRAM_LU2024_cargo_subtype_text;
 	articulated_part:        			switch_articulated_TRAM_LU2024;
 	default: 							sw_TRAM_LU2024;

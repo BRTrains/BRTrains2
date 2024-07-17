@@ -74,7 +74,7 @@ item (FEAT_TRAINS, item_FurnessK2, 590) {
 	}
 	graphics {
 	length: switch_FurnessK2_length;	
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_FurnessK2_usage),string(str_FurnessK2_eos),string(str_FurnessK2_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_FurnessK2_usage),string(str_FurnessK2_eos),string(str_FurnessK2_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_FurnessK2_cargo_subtype_text;

@@ -67,7 +67,7 @@ item (FEAT_TRAINS, item_GWRHall, 512) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_GWRHall_usage),string(str_GWRHall_eos),string(str_GWRHall_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_GWRHall_usage),string(str_GWRHall_eos),string(str_GWRHall_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_GWRHall_cargo_subtype_text;

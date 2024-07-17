@@ -90,7 +90,7 @@ item (FEAT_TRAINS, item_LU1992, 528) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_LU1992_usage),string(str_LU1992_eos),string(str_LU1992_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LU1992_usage),string(str_LU1992_eos),string(str_LU1992_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_LU1992_cargo_subtype_text;
 	articulated_part:        			switch_articulated_LU1992;
@@ -140,7 +140,7 @@ item (FEAT_TRAINS, item_LU1992_4, 546) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_LU1992_usage),string(str_LU1992_eos),string(str_LU1992_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LU1992_usage),string(str_LU1992_eos),string(str_LU1992_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_LU1992_cargo_subtype_text;
 	articulated_part:        			switch_articulated_LU1992_4;

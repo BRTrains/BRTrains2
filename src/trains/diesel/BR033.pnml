@@ -162,7 +162,7 @@ item (FEAT_TRAINS, item_BR33_0, 252) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_6),string(str_BR33_0_usage),string(str_BR33_0_eos),string(str_BR33_0_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR33_0_usage),string(str_BR33_0_eos),string(str_BR33_0_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_BR33_0_cargo_subtype_text;
@@ -211,7 +211,7 @@ item (FEAT_TRAINS, item_BR33_1, 253) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_route_6),string(str_BR33_1_usage),string(str_BR33_1_eos),string(str_BR33_1_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR33_1_usage),string(str_BR33_1_eos),string(str_BR33_1_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_BR33_1_cargo_subtype_text;

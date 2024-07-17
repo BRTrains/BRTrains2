@@ -146,7 +146,7 @@ item (FEAT_TRAINS, item_BR170, 62) {
 		cargo_age_period:				195;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_route_2),string(str_BR170_usage),string(str_BR170_eos),string(str_BR170_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR170_usage),string(str_BR170_eos),string(str_BR170_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR170_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR170_2car;

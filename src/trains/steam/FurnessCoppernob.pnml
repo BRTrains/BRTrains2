@@ -74,7 +74,7 @@ item (FEAT_TRAINS, item_Coppernob, 584) {
 	}
 	graphics {
 	length: switch_coppernob_length;	
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_Coppernob_usage),string(str_Coppernob_eos),string(str_Coppernob_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_Coppernob_usage),string(str_Coppernob_eos),string(str_Coppernob_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_Coppernob_cargo_subtype_text;

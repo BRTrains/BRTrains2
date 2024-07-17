@@ -102,7 +102,7 @@ item (FEAT_TRAINS, item_BR700, 255) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR700_usage),string(str_BR700_eos),string(str_BR700_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR700_usage),string(str_BR700_eos),string(str_BR700_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR700_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR700;
@@ -152,7 +152,7 @@ item (FEAT_TRAINS, item_BR700_2, 256) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR700_usage),string(str_BR700_eos),string(str_BR700_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR700_usage),string(str_BR700_eos),string(str_BR700_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR700_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR700_2;
@@ -245,7 +245,7 @@ item (FEAT_TRAINS, item_BR700c, 258) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR700_usage),string(str_BR700_eos),string(str_BR700_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR700_usage),string(str_BR700_eos),string(str_BR700_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR700_cargo_subtype_text;
 	default: 							sw_BR700c;
@@ -289,7 +289,7 @@ item (FEAT_TRAINS, item_BR700d, 259) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_2),string(str_BR700_usage),string(str_BR700_eos),string(str_BR700_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR700_usage),string(str_BR700_eos),string(str_BR700_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR700_cargo_subtype_text;
 	default: 							sw_BR700d;

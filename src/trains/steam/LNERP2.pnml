@@ -76,7 +76,7 @@ item (FEAT_TRAINS, item_LNERP2, 591) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_route_9),string(str_LNERP2_usage),string(str_LNERP2_eos),string(str_LNERP2_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_LNERP2_usage),string(str_LNERP2_eos),string(str_LNERP2_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_LNERP2_cargo_subtype_text;

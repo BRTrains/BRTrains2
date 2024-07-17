@@ -130,7 +130,7 @@ item (FEAT_TRAINS, item_BR374, 88) {
 		cargo_age_period:				250;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_route_3),string(str_BR374_usage),string(str_BR374_eos),string(str_BR374_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR374_usage),string(str_BR374_eos),string(str_BR374_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR374_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR374;
