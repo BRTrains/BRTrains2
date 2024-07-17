@@ -16,6 +16,7 @@
 - Fixed depot sprite (vertical alignment and 32px sprite flag)
 - Fixed articulated tram capacities
 - Fixed steam tractive efforts (and adjusted some other stats)
+- Removed Route Availability from information strings
 
 # v2.11 (Hotfix 2024-06-11)
 - Added Furness Railway Goods Wagon
