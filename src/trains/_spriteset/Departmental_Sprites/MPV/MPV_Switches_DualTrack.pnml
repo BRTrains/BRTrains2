@@ -45,9 +45,9 @@ switch(FEAT_TRAINS,SELF,sw_MPV_DualTrack_Leaf_NRBlue,position_in_articulated_veh
 
 switch(FEAT_TRAINS,SELF,sw_MPV_DualTrack_cargo_subtype_text,cargo_subtype){
 	0:	return string(str_NRYellow);
-	1:  return(string(str_NRYellow,string(str_MPV_Leaf)));
+	1:  return string(STR_CONCAT_2d, string(str_NRYellow), string(str_MPV_Leaf) );
 	2:	return string(str_NRBlue);
-	3:  return(string(str_NRBlue,string(str_MPV_Leaf)));
+	3:  return string(STR_CONCAT_2d, string(str_NRBlue), string(str_MPV_Leaf) );
     //4:	return string(str_NRWhite);
 	//5:	return string(str_NRWhite);
     //6:	return string(str_NROrange);

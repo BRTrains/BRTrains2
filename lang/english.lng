@@ -4,6 +4,22 @@
 STR_GRF_NAME							:British Rail UK Set (BRTrains v2)
 STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern UK Train Set (MUTS).{}{}{WHITE}The British Rail Set (BRTrains v2){COPYRIGHT}2020 {LTBLUE}Audigex{WHITE}{}MUTS {COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{WHITE}{}UKTrains (v1) {COPYRIGHT}2015 {LTBLUE}Leander {WHITE}& {GREEN}BROS Artists{}{}{WHITE}License: {LTBLUE}GPL v2
 
+# Concat without spaces etc
+STR_CONCAT_2	:{STRING}{STRING}
+STR_CONCAT_3	:{STRING}{STRING}{STRING}
+STR_CONCAT_4	:{STRING}{STRING}{STRING}{STRING}
+STR_CONCAT_5	:{STRING}{STRING}{STRING}{STRING}{STRING}
+# Concat with dash
+STR_CONCAT_2d	: {STRING} - {STRING}
+STR_CONCAT_3d	: {STRING} - {STRING} - {STRING}
+STR_CONCAT_4d	: {STRING} - {STRING} - {STRING} - {STRING}
+STR_CONCAT_5d	: {STRING} - {STRING} - {STRING} - {STRING} - {STRING}
+# Concat with spaces
+STR_CONCAT_2s	: {STRING} {STRING}
+STR_CONCAT_3s	: {STRING} {STRING} {STRING}
+STR_CONCAT_4s	: {STRING} {STRING} {STRING} {STRING}
+STR_CONCAT_5s	: {STRING} {STRING} {STRING} {STRING} {STRING}
+
 
 STR_Electrostar                 :Bombardier Electrostar
 
@@ -214,8 +230,8 @@ STR_DSC_BR805_5CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {
 STR_DSC_BR807_7CAR                    :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Avanti West Coast, Hitachi
 STR_DSC_BR810_5CAR                    :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}East Midland Railway, Hitachi
 
-str_purchase_loco_with_liveries	:{BLACK}Type: {STRING}{}{BLACK}Route Availability: {GOLD}{STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
-str_purchase_loco				:{BLACK}Type: {STRING}{}{BLACK}Route Availability: {GOLD}{STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}
+str_purchase_loco_with_liveries	:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
+str_purchase_loco				:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}
 str_purchase_steam_liveries		:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
 str_purchase_coach				:{BLACK}Liveries: {GOLD}{STRING}{BLACK}
 
@@ -228,7 +244,7 @@ str_purchase_type_dmu			:{RED}Diesel Multiple Unit
 str_purchase_type_demu			:{RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit
 str_purchase_type_emu			:{BLUE}Electric Multiple Unit
 str_purchase_type_electric		:{BLUE}Electric Locomotive
-str_purchase_type_gtu  		:{ORANGE}Gas Turbine Experimental Unit
+str_purchase_type_gtu  		    :{ORANGE}Gas Turbine Experimental Unit
 
 STR_NAME_MPV_Single				:Departmental Class 98/9 "MPV" Track Maintenance Unit (1-car)
 STR_NAME_MPV_DualTrack			:Departmental Class 98/9 "MPV" Track Maintenance Unit (2-car)
@@ -237,9 +253,9 @@ str_MPV_usage				    :Departmental Railway
 str_MPV_eos					    :---
 str_MPV_liveries				:Network Rail, Railtrack, South West Trains
 
-str_MPV_Geometry                : - Track Geometry (Covered)
-str_MPV_GeometryOpen            : - Track Geometry (Open)
-str_MPV_Leaf                    : - Leaf Removal
+str_MPV_Geometry                :Track Geometry (Covered)
+str_MPV_GeometryOpen            :Track Geometry (Open)
+str_MPV_Leaf                    :Leaf Removal
 
 
 STR_NAME_Coppernob					:Furness Railway 0-4-0 "Coppernob"
