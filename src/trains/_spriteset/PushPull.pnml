@@ -10,20 +10,20 @@ Everything I've found should refer PARENT not SELF
 
 // Mirror of Mk2DBSO
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk2DBSO, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0:	spriteset_BRMk2_DBSO_BRBlue;
-	1:	spriteset_BRMk2_DBSO_NSE;
-	2:	spriteset_BRMk2_DBSO_Regional;
-	3:	spriteset_BRMk2_DBSO_ScotRail;
-	4:  spriteset_BRMk2_DBSO_Anglia;
-	5:  spriteset_BRMk2_DBSO_WestCoast;
-	6:  spriteset_BRMk2_DBSO_ONE;
-	7:  spriteset_BRMk2_DBSO_InterCity;
-	8:  spriteset_BRMk2_DBSO_NetworkRail;
-	9:  spriteset_BRMk2_DBSO_Arriva;
-    10:  spriteset_BRMk2_DBSO_DRS;
-    11:  spriteset_BRMk2_DBSO_Virgin;
-    12:  spriteset_BRMk2_DBSO_FGW;
-	13:  spriteset_BRMk2_DBSO_FirstScotRail;
+    0:	spriteset_BRMk2_DBSO_Reversed_BRBlue;
+	1:	spriteset_BRMk2_DBSO_Reversed_NSE;
+	2:	spriteset_BRMk2_DBSO_Reversed_Regional;
+	3:	spriteset_BRMk2_DBSO_Reversed_ScotRail;
+	4:  spriteset_BRMk2_DBSO_Reversed_Anglia;
+	5:  spriteset_BRMk2_DBSO_Reversed_WestCoast;
+	6:  spriteset_BRMk2_DBSO_Reversed_ONE;
+	7:  spriteset_BRMk2_DBSO_Reversed_InterCity;
+	8:  spriteset_BRMk2_DBSO_Reversed_NetworkRail;
+	9:  spriteset_BRMk2_DBSO_Reversed_Arriva;
+    10:  spriteset_BRMk2_DBSO_Reversed_DRS;
+    11:  spriteset_BRMk2_DBSO_Reversed_Virgin;
+    12:  spriteset_BRMk2_DBSO_Reversed_FGW;
+	13:  spriteset_BRMk2_DBSO_Reversed_FirstScotRail;
 }
 
 // Mirror of Mk3DVT
