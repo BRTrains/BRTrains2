@@ -32,3 +32,4 @@ gfx/Template_DiskStation_*
 /.nmlcache
 /Reference Images
 docs/Class 80X power calculations.ods
+build.sh
