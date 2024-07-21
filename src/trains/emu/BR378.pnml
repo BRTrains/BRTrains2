@@ -152,7 +152,7 @@ item (FEAT_TRAINS, item_BR378_3dv, 225) {
 		name: 							string(STR_NAME_BR378_3);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2009,4,21);
-		model_life:						15;
+		model_life:						5;
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
@@ -203,7 +203,7 @@ item (FEAT_TRAINS, item_BR378_4, 226) {
 		name: 							string(STR_NAME_BR378_4);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2011,4,21);
-		model_life:						15;
+		model_life:						5;
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
@@ -251,7 +251,7 @@ item (FEAT_TRAINS, item_BR378_4dv, 227) {
 		name: 							string(STR_NAME_BR378_4);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2011,4,21);
-		model_life:						15;
+		model_life:						5;
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
