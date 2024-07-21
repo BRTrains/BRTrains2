@@ -7,7 +7,7 @@ spriteset (spriteset_GlasgowWooden, "gfx/Tram/Glasgow_Wooden.png") {
 }
 
 switch(FEAT_ROADVEHS,SELF,sw_TRAM_GlasgowWooden_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_MetrolinkYellow);
+    0:	return string(str_GlasgowCorporation);
        return CB_RESULT_NO_TEXT;
 }
 
