@@ -3,6 +3,7 @@ sort(FEAT_TRAINS, [
  item_CaledonianSingle,
  item_FurnessK2,
  item_LNWRWebb,
+ item_LSWR_AdamsRadial,
  item_SRZClass,
  item_GER_L77,
  item_GWR_DeanGoods,

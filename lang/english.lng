@@ -273,15 +273,20 @@ str_FurnessK2_usage					:Mixed Traffic
 str_FurnessK2_eos					:1892
 str_FurnessK2_liveries				:Furness Railway Red
 
-STR_NAME_LNWRWebb				:LNWR 0-6-2 "Webb Coal Tank"
+STR_NAME_LNWRWebb				:LNWR 0-6-2T "Webb Coal Tank"
 str_LNWRWebb_usage				:Low speed freight
-str_LNWRWebb_eos				:1988
+str_LNWRWebb_eos				:1881-1882
 str_LNWRWebb_liveries			:LNWR Black, BR Black
 
+STR_NAME_LSWR_AdamsRadial		:LSWR 4-4-2T "Adams Radial Tank"
+str_LSWR_AdamsRadial_usage		:Low Speed Mixed Traffic
+str_LSWR_AdamsRadial_eos		:1882-1885
+str_LSWR_AdamsRadial_liveries	:LSWR Sage Green
+
 STR_NAME_GWR_DeanGoods				:GWR 2301 0-6-0 "Dean Goods"
-str_GWR_DeanGoods_usage			   		:Freight and local passenger services
-str_GWR_DeanGoods_eos					:1883
-str_GWR_DeanGoods_liveries				:GWR Green, GWR Green & Chrome
+str_GWR_DeanGoods_usage			   	:Freight and local passenger services
+str_GWR_DeanGoods_eos				:1883
+str_GWR_DeanGoods_liveries		    :GWR Green, GWR Green & Chrome
 
 STR_NAME_GreatBear					:GWR 4-6-2 "Great Bear"
 str_GreatBear_usage					:Express Passenger
@@ -1552,6 +1557,7 @@ str_Loadhaul					: (Loadhaul)
 str_LoadhaulGrey				: (Loadhaul - Grey)
 str_LondonMidland				: (London Midland)
 str_LSE							: (London and South East - Jaffa Cake)
+str_LSWRSageGreen               : (LSWR - Sage Green)
 str_LTS							: (LTS Rail)
 str_LU_TfL						: (London Underground)
 str_LU_Prefurb                  : (London Underground - Pre-Refurb)
