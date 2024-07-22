@@ -1,13 +1,14 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Furness Railway Railmotor?
 - LNER P2 Streamlined version (gfx done need coding)
-- GWR Dean Goods (gfx done need coding) 
 
 # v2.12
-- Added Southern Railway Z-Class
-- Added GER L77 (LNER N7)
 - Added LMS Black 5
 - Added LMS Jubilee
+- Added Southern Railway Z-Class
+- Added GER L77 (LNER N7)
+- GWR Dean Goods
+- Added LSWR Adams Radial Tank
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
 - Added AnsaldoBreda T-68 (Manchester Metrolink tram)
