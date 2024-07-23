@@ -243,7 +243,7 @@ sort(FEAT_TRAINS, [
  item_BRTTA,
  item_BRContainer,
  item_RMTPO,
- item_LMS_StanierP3,
+ item_LMS_StanierP3_50BG,
  item_LNERTK,
  item_LNERBCK,
  item_LNERPV,
