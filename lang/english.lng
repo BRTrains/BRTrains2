@@ -1289,6 +1289,9 @@ str_370_NDM_liveries			:InterCity
 STR_NAME_370_DTS				:BR Class 370 Driving Trailer Standard
 str_BR370_DTS_liveries			:InterCity
 
+STR_NAME_LMS_StanierP3 			:LMS Stanier P3 50ft BG coach
+str_LMS_StanierP3_liveries		:LMS Red
+
 STR_NAME_LNERTK					:LNER Gresley Coach (Third Corridor)
 str_LNERTK_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 

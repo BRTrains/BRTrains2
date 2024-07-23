@@ -5,10 +5,11 @@
 # v2.12
 - Added LMS Black 5
 - Added LMS Jubilee
+- Added GWR Dean Goods
 - Added Southern Railway Z-Class
 - Added GER L77 (LNER N7)
-- GWR Dean Goods
 - Added LSWR Adams Radial Tank
+- Added LMS Stanier P3 coach
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
 - Added AnsaldoBreda T-68 (Manchester Metrolink tram)

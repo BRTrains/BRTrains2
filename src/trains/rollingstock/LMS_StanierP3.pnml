@@ -1,0 +1,50 @@
+spriteset(spriteset_LMS_StanierP3_Purchase, "gfx/Rolling Stock/LMS/LMS_Stanier_P3_50ft_BG.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_LMS_StanierP3_Teak, "gfx/Rolling Stock/LMS/LMS_Stanier_P3_50ft_BG.png") {
+	template_train24px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, sw_LMS_StanierP3,cargo_subtype){
+    0:	spriteset_LMS_StanierP3_Teak;
+}
+	
+switch(FEAT_TRAINS,SELF,sw_LMS_StanierP3_cargo_subtype_text,cargo_subtype){
+    0: return string(str_LMSRed);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_LMS_StanierP3, 668) {
+	property {
+		name: 							string(STR_NAME_LMS_StanierP3);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1933,4,1);
+		model_life:						30;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					12;
+		cost_factor:					15;
+		running_cost_factor:			7;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							30 ton;
+		length:							6;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_LMS_StanierP3_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_LMS_StanierP3_cargo_subtype_text;
+	default: 							sw_LMS_StanierP3;
+	purchase:							spriteset_LMS_StanierP3_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(50 * param_pax);
+	cost_factor:	return(GetAdjustedCost(15));
+	running_cost_factor: return(GetAdjustedCost(7));
+}
+}
