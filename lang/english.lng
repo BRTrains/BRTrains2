@@ -195,7 +195,7 @@ STR_CANNOT_ATTACH						:Cannot attach a different class of train
 STR_DSC_BR_MK5A                        :Type: {RED}Diesel Locomotive{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
 
 STR_DSC_BR_195                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
-STR_DSC_BR_196                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}TfW Rail
+STR_DSC_BR_196                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}West Midlands Railway
 STR_DSC_BR_197                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}TfW Rail
 STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
 
