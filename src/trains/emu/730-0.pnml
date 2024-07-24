@@ -5,12 +5,20 @@ switch(FEAT_TRAINS, SELF, switch_br730_0_spriteset_WMR, position_in_articulated_
 	2: spriteset_br730_rear_WMR;
 }
 
+switch(FEAT_TRAINS, SELF, switch_br730_0_spriteset_LNWR, position_in_articulated_veh % 3) {
+	0: spriteset_br730_front_LNWR;
+	1: spriteset_br730_middlepanto_LNWR;
+	2: spriteset_br730_rear_LNWR;
+}
+
 switch(FEAT_TRAINS, SELF, switch_br730_0_spriteset, cargo_subtype) {
-	0: switch_br730_0_spriteset_WMR;	
+	0: switch_br730_0_spriteset_WMR;
+	1: switch_br730_0_spriteset_LNWR;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br730_0_subtype_text, cargo_subtype) {
-	0: return string(str_LNWR);	
+	0: return string(str_WMR);
+	1: return string(str_LNWR);
 	return CB_RESULT_NO_TEXT;
 }
 

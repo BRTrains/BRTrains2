@@ -1,18 +1,18 @@
-spriteset (spriteset_br730_front_LNWR, "gfx/BR730.png") { template_train32px_old(0, 0) }
-spriteset (spriteset_br730_rear_LNWR, "gfx/BR730.png") { template_train32px_old(0, 25) }
-spriteset (spriteset_br730_middle_LNWR, "gfx/BR730.png") { template_train32px_old(0, 50) }
-spriteset (spriteset_br730_middlepanto_LNWR, "gfx/BR730.png") { template_train32px_old(0, 75) }
+spriteset (spriteset_br730_front_LNWR, "gfx/BR730.png") { template_train32px_old(0, 100) }
+spriteset (spriteset_br730_rear_LNWR, "gfx/BR730.png") { template_train32px_old(0, 125) }
+spriteset (spriteset_br730_middle_LNWR, "gfx/BR730.png") { template_train32px_old(0, 150) }
+spriteset (spriteset_br730_middlepanto_LNWR, "gfx/BR730.png") { template_train32px_old(0, 175) }
 
 
-spriteset (spriteset_br730_front_WMR, "gfx/BR730.png") { template_train32px_old(0, 100) }
-spriteset (spriteset_br730_rear_WMR, "gfx/BR730.png") { template_train32px_old(0, 125) }
-spriteset (spriteset_br730_middle_WMR, "gfx/BR730.png") { template_train32px_old(0, 150) }
-spriteset (spriteset_br730_middlepanto_WMR, "gfx/BR730.png") { template_train32px_old(0, 175) }
+spriteset (spriteset_br730_front_WMR, "gfx/BR730.png") { template_train32px_old(0, 0) }
+spriteset (spriteset_br730_rear_WMR, "gfx/BR730.png") { template_train32px_old(0, 25) }
+spriteset (spriteset_br730_middle_WMR, "gfx/BR730.png") { template_train32px_old(0, 50) }
+spriteset (spriteset_br730_middlepanto_WMR, "gfx/BR730.png") { template_train32px_old(0, 75) }
 
 
 spriteset (spriteset_br730_0_purchase, "gfx/BR730.png") {
-	template_purchase(200, 13)
+	template_purchase(200, 0)
 }
 spriteset (spriteset_br730_2_purchase, "gfx/BR730.png") {
-	template_purchase(200, 0)
+	template_purchase(200, 13)
 }
