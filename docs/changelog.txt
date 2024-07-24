@@ -13,6 +13,7 @@
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
 - Added AnsaldoBreda T-68 (Manchester Metrolink tram)
+- Improved LNER Teak coach windows and roofs to fit scale better
 - Fixed some introduction and model lifespans (set is now fully freight playable from ~1850 onwards)
 - Fixed 730/0 and /2 having swapped livery options
 - Fixed some horizontal view lengths
