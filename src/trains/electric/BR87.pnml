@@ -3,15 +3,15 @@ spriteset(spriteset_BR87_Purchase, "gfx/Electric/BR8X.png") {
 }
 
 spriteset(spriteset_BR87_InterCitySwallow, "gfx/Electric/BR8X.png") {
-	template_train32px_old(0, 213)
+	template_train32px(0, 221)
 }
 
 spriteset(spriteset_BR87_Virgin, "gfx/Electric/BR8X.png") {
-	template_train32px_old(0, 238)
+	template_train32px(0, 247)
 }
 
 spriteset(spriteset_BR87_BRBlue, "gfx/Electric/BR8X.png") {
-	template_train32px_old(0, 263)
+	template_train32px(0, 273)
 }
 
 // This switch called when displaying as this locomotive

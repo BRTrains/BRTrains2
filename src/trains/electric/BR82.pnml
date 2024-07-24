@@ -1,13 +1,13 @@
 spriteset(spriteset_BR82_Purchase, "gfx/Electric/BR8X.png") {
-	template_purchase(176, 13)
+	template_purchase(264, 13)
 }
 
 spriteset(spriteset_BR82_InterCityExecutive, "gfx/Electric/BR8X.png") {
-	template_train32px_old(0, 88)
+	template_train32px(0, 91)
 }
 
 spriteset(spriteset_BR82_BRBlue, "gfx/Electric/BR8X.png") {
-	template_train32px_old(0, 63)
+	template_train32px(0, 65)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR82, cargo_subtype){
