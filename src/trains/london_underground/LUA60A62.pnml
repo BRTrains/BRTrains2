@@ -1,24 +1,24 @@
-spriteset(spriteset_LUAStock_Purchase, "gfx/LondonUnderground/LU_A60A62.png") {
+spriteset(spriteset_LUAStock_Purchase, "gfx/Metro/LU_A60A62.png") {
 	template_purchase(200, 0)
 }
 
-spriteset(spriteset_LUAStocka_TfL, "gfx/LondonUnderground/LU_A60A62.png") {
+spriteset(spriteset_LUAStocka_TfL, "gfx/Metro/LU_A60A62.png") {
 	template_train32px_old(0, 0)
 }
-spriteset(spriteset_LUAStockb_TfL, "gfx/LondonUnderground/LU_A60A62.png") {
+spriteset(spriteset_LUAStockb_TfL, "gfx/Metro/LU_A60A62.png") {
 	template_train32px_old(0, 25)
 }
-spriteset(spriteset_LUAStockc_TfL, "gfx/LondonUnderground/LU_A60A62.png") {
+spriteset(spriteset_LUAStockc_TfL, "gfx/Metro/LU_A60A62.png") {
 	template_train32px_old(0, 50)
 }
 
-spriteset(spriteset_LUAStocka_TfLWhite, "gfx/LondonUnderground/LU_A60A62.png") {
+spriteset(spriteset_LUAStocka_TfLWhite, "gfx/Metro/LU_A60A62.png") {
 	template_train32px_old(0, 75)
 }
-spriteset(spriteset_LUAStockb_TfLWhite, "gfx/LondonUnderground/LU_A60A62.png") {
+spriteset(spriteset_LUAStockb_TfLWhite, "gfx/Metro/LU_A60A62.png") {
 	template_train32px_old(0, 100)
 }
-spriteset(spriteset_LUAStockc_TfLWhite, "gfx/LondonUnderground/LU_A60A62.png") {
+spriteset(spriteset_LUAStockc_TfLWhite, "gfx/Metro/LU_A60A62.png") {
 	template_train32px_old(0, 125)
 }
 

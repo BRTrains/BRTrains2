@@ -1,25 +1,25 @@
-spriteset(spriteset_LU1986_Purchase, "gfx/LondonUnderground/LU_1986.png") {
+spriteset(spriteset_LU1986_Purchase, "gfx/Metro/LU_1986.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_LU1986a_TfLGreen, "gfx/LondonUnderground/LU_1986.png") {
+spriteset(spriteset_LU1986a_TfLGreen, "gfx/Metro/LU_1986.png") {
 	template_train32px_old(0, 63)
 }
-spriteset(spriteset_LU1986b_TfLGreen, "gfx/LondonUnderground/LU_1986.png") {
+spriteset(spriteset_LU1986b_TfLGreen, "gfx/Metro/LU_1986.png") {
 	template_train32px_old(0, 88)
 }
 
-spriteset(spriteset_LU1986a_TfLRed, "gfx/LondonUnderground/LU_1986.png") {
+spriteset(spriteset_LU1986a_TfLRed, "gfx/Metro/LU_1986.png") {
 	template_train32px_old(0, 13)
 }
-spriteset(spriteset_LU1986b_TfLRed, "gfx/LondonUnderground/LU_1986.png") {
+spriteset(spriteset_LU1986b_TfLRed, "gfx/Metro/LU_1986.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_LU1986a_TfLBlue, "gfx/LondonUnderground/LU_1986.png") {
+spriteset(spriteset_LU1986a_TfLBlue, "gfx/Metro/LU_1986.png") {
 	template_train32px_old(0, 113)
 }
-spriteset(spriteset_LU1986b_TfLBlue, "gfx/LondonUnderground/LU_1986.png") {
+spriteset(spriteset_LU1986b_TfLBlue, "gfx/Metro/LU_1986.png") {
 	template_train32px_old(0, 138)
 }
 

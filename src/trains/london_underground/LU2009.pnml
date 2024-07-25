@@ -1,14 +1,14 @@
-spriteset(spriteset_LU2009_Purchase, "gfx/LondonUnderground/LU_2009.png") {
+spriteset(spriteset_LU2009_Purchase, "gfx/Metro/LU_2009.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_LU2009a_TfL, "gfx/LondonUnderground/LU_2009.png") {
+spriteset(spriteset_LU2009a_TfL, "gfx/Metro/LU_2009.png") {
 	template_train32px_old(0, 13)
 }
-spriteset(spriteset_LU2009b_TfL, "gfx/LondonUnderground/LU_2009.png") {
+spriteset(spriteset_LU2009b_TfL, "gfx/Metro/LU_2009.png") {
 	template_train32px_old(0, 38)
 }
-spriteset(spriteset_LU2009c_TfL, "gfx/LondonUnderground/LU_2009.png") {
+spriteset(spriteset_LU2009c_TfL, "gfx/Metro/LU_2009.png") {
 	template_train32px_old(0, 63)
 }
 

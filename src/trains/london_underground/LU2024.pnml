@@ -1,14 +1,14 @@
-spriteset(spriteset_LU2024_Purchase, "gfx/LondonUnderground/LU_2024.png") {
+spriteset(spriteset_LU2024_Purchase, "gfx/Metro/LU_2024.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_LU2024_front_TfL, "gfx/LondonUnderground/LU_2024.png") {
+spriteset(spriteset_LU2024_front_TfL, "gfx/Metro/LU_2024.png") {
 	template_train20px(0, 13)
 }
-spriteset(spriteset_LU2024_middle_TfL, "gfx/LondonUnderground/LU_2024.png") {
+spriteset(spriteset_LU2024_middle_TfL, "gfx/Metro/LU_2024.png") {
 	template_train16px(0, 33)
 }
-spriteset(spriteset_LU2024_rear_TfL, "gfx/LondonUnderground/LU_2024.png") {
+spriteset(spriteset_LU2024_rear_TfL, "gfx/Metro/LU_2024.png") {
 	template_train20px(0, 52)
 }
 
