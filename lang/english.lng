@@ -1301,6 +1301,12 @@ str_LNERPV_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 STR_NAME_LNERBG					:LNER Gresley Full Brake Van
 str_LNERBG_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 
+STR_NAME_LNER_Thompson_61FK		    :LNER Thompson 61 ft TK
+str_LNER_Thompson_61FK_liveries		:LNER "Teak"
+
+STR_NAME_LNER_Thompson_63TK		    :LNER Thompson 63 ft TK
+str_LNER_Thompson_63TK_liveries		:LNER "Teak"
+
 
 STR_NAME_LU1938					:London Underground 1938 Stock (8-car, Deep Level)
 str_LU1938_usage				:Metro
@@ -1553,6 +1559,8 @@ str_LNERCorridorTender			: (LNER - Green Corridor Tender)
 str_LNERGreen					: (LNER - Green)
 str_LNERAppleGreen		        : (LNER - Apple Green)
 str_LNERBlack					: (LNER - Black)
+str_LNERTeak					: (GNR/LNER - Teak)
+str_LNERFauxTeak                : (LNER - "Teak")
 str_LNWR					    : (London Northwestern Railway)
 str_LNWRBlack					: (LNWR - Black)
 str_LNWRSimple				    : (London Northwestern Railway - Transitional)
@@ -1675,7 +1683,6 @@ str_SWT_refurb					: (South West Trains - Refurbished)
 str_SWT_stagecoach				: (South West Trains - Stagecoach)
 str_SWR				            : (South Western Railway)
 str_SWRPride		            : (South Western Railway - Pride)
-str_Teak						: (GNR/LNER - Teak)
 str_Tesco                       : (Tesco)
 str_TescoEyeCandy               : (Tesco - Always show container)
 str_TfL							: (TfL Rail)
