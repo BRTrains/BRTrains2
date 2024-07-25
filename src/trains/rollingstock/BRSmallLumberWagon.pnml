@@ -1,29 +1,29 @@
-spriteset(spriteset_SmallLumberWagon, "gfx/Freight/Lumber_Wagon_Small.png") {
+spriteset(spriteset_FurnessLumberWagon, "gfx/Freight/Furness_Lumber_Wagon_Small.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_SmallLumberWagon_Empty, "gfx/Freight/Lumber_Wagon_Small.png") {
+spriteset(spriteset_FurnessLumberWagon_Empty, "gfx/Freight/Furness_Lumber_Wagon_Small.png") {
 	template_train20px(0, 13)
 }
 
-spriteset(spriteset_SmallLumberWagon_Half, "gfx/Freight/Lumber_Wagon_Small.png") {
+spriteset(spriteset_FurnessLumberWagon_Half, "gfx/Freight/Furness_Lumber_Wagon_Small.png") {
 	template_train20px(0, 33)
 }
 
-spriteset(spriteset_SmallLumberWagon_Full, "gfx/Freight/Lumber_Wagon_Small.png") {
+spriteset(spriteset_FurnessLumberWagon_Full, "gfx/Freight/Furness_Lumber_Wagon_Small.png") {
 	template_train20px(0, 53)
 }
 
 // Called first, display an empty container if near empty, otherwise display based on percentage full
-switch(FEAT_TRAINS,SELF, sw_SmallLumberWagon_Cargo, cargo_count){	
-	0 .. 19: spriteset_SmallLumberWagon_Empty;
-	20 .. 75: spriteset_SmallLumberWagon_Half;
-    spriteset_SmallLumberWagon_Full;
+switch(FEAT_TRAINS,SELF, sw_FurnessLumberWagon_Cargo, cargo_count){	
+	0 .. 19: spriteset_FurnessLumberWagon_Empty;
+	20 .. 75: spriteset_FurnessLumberWagon_Half;
+    spriteset_FurnessLumberWagon_Full;
 }
 
-item (FEAT_TRAINS, item_SmallLumberWagon, 582) {
+item (FEAT_TRAINS, item_FurnessLumberWagon, 582) {
 	property {
-		name: 							string(STR_NAME_SmallLumberWagon);
+		name: 							string(STR_NAME_FurnessLumberWagon);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1840,1,1);
 		model_life:						50;
@@ -44,10 +44,10 @@ item (FEAT_TRAINS, item_SmallLumberWagon, 582) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_coach,string(str_SmallLumberWagon_liveries)));
+	additional_text:					return(string(str_purchase_coach,string(str_FurnessLumberWagon_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_SmallLumberWagon_Cargo;
-	purchase:							spriteset_SmallLumberWagon;
+	default: 							sw_FurnessLumberWagon_Cargo;
+	purchase:							spriteset_FurnessLumberWagon;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cost_factor:	return(GetAdjustedCost(20));
 	running_cost_factor: return(GetAdjustedCost(12));

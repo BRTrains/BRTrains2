@@ -1122,10 +1122,10 @@ str_BRContainer_usage			:Misc. Cargo
 str_BRContainer_eos				:---
 str_BRContainer_liveries		:Maersk, Tesco, Random
 
-STR_NAME_SmallLumberWagon		:Midland Railway Small Lumber Wagon
-str_SmallLumberWagon_usage		:Wood
-str_SmallLumberWagon_eos		:---
-str_SmallLumberWagon_liveries	:Green
+STR_NAME_FurnessLumberWagon		:Furness Railway Small Lumber Wagon
+str_FurnessLumberWagon_usage		:Wood
+str_FurnessLumberWagon_eos		:---
+str_FurnessLumberWagon_liveries	:Green
 
 STR_NAME_BRMk1FO				:BR Mark 1 Coach (First Open)
 str_BRMk1FO_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachite Green, BR Maroon, BR Blue & Grey
