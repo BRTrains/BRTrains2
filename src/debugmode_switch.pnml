@@ -1,4 +1,6 @@
  if (param[1] == 0) {
+// Disable some trams that aren't finished
+	disable_item(FEAT_ROADVEHS, 490); // LU 1938 Tram
 
 // Disable some trains that aren't finished
 	disable_item(FEAT_TRAINS, 661); // GWR Dean Goods

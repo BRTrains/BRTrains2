@@ -1,4 +1,4 @@
-item (FEAT_ROADVEHS, item_TRAM_LU1938, 700) {
+item (FEAT_ROADVEHS, item_TRAM_LU1938, 490) {
 	property {
 		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
 		name: 							string(STR_NAME_LU1938);
