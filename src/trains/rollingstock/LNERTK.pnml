@@ -21,7 +21,7 @@ switch(FEAT_TRAINS,SELF, sw_LNERTK,cargo_subtype){
 }
 	
 switch(FEAT_TRAINS,SELF,sw_LNERTK_cargo_subtype_text,cargo_subtype){
-    0: return string(str_Teak);
+    0: return string(str_LNERTeak);
     1: return string(str_BRMaroon);
 	2: return string(str_BRCarmCream);
        return CB_RESULT_NO_TEXT;

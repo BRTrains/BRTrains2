@@ -9,9 +9,10 @@
 - Added Southern Railway Z-Class
 - Added GER L77 (LNER N7)
 - Added LSWR Adams Radial Tank
-- Added LMS Stanier P3 coach
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
+- Added LMS Stanier P3 coach
+- Added LNER Thompson 61ft FK and 63ft TK coaches
 - Added AnsaldoBreda T-68 (Manchester Metrolink tram)
 - Improved LNER Teak coach windows and roofs to fit scale better
 - Fixed some introduction and model lifespans (set is now fully freight playable from ~1850 onwards)
