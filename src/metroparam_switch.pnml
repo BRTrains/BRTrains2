@@ -18,11 +18,13 @@ if (param[6] < 4) {
 
 if (param[6] == 2) { // TRAM ONLY
     // Disable train versions of all metro units
-    disable_item(FEAT_TRAINS, 595); // London Underground 2024 stock tram
+    disable_item(FEAT_TRAINS, 595); // 2024 Tube Stock tram
+    disable_item(FEAT_TRAINS, 490); // 1938 Tube Stock tram
+	disable_item(FEAT_TRAINS, 292); // S7 Tube Stock tram
+	disable_item(FEAT_TRAINS, 293); // S8 Tube Stock tram
     disable_item(FEAT_TRAINS, 636); // Class 555
     disable_item(FEAT_TRAINS, 450); // Class 777
     disable_item(FEAT_TRAINS, 464); // Class 139 Parry People Mover
-    
 }
 
 if (param[6] == 1) { // TRAIN ONLY
@@ -30,7 +32,9 @@ if (param[6] == 1) { // TRAIN ONLY
     disable_item(FEAT_ROADVEHS, 643); // Class 777
     disable_item(FEAT_ROADVEHS, 642); // Class 555
     disable_item(FEAT_ROADVEHS, 595); // London Underground 2024 stock
-
+    disable_item(FEAT_ROADVEHS, 490); // 1938 Tube Stock tram
+	disable_item(FEAT_ROADVEHS, 292); // S7 Tube Stock tram
+	disable_item(FEAT_ROADVEHS, 293); // S8 Tube Stock tram
 }
 
 if (param[6] == 0) { // DEFAULT
@@ -38,6 +42,11 @@ if (param[6] == 0) { // DEFAULT
     disable_item(FEAT_ROADVEHS, 595); // London Underground 2024 stock tram
     disable_item(FEAT_ROADVEHS, 643); // Class 777
     disable_item(FEAT_ROADVEHS, 642); // Class 555
+    disable_item(FEAT_ROADVEHS, 643); // Class 777
+    disable_item(FEAT_ROADVEHS, 642); // Class 555
+    disable_item(FEAT_ROADVEHS, 490); // 1938 Tube Stock tram
+	disable_item(FEAT_ROADVEHS, 292); // S7 Tube Stock tram
+	disable_item(FEAT_ROADVEHS, 293); // S8 Tube Stock tram
 
     // Disable train versions of light rail versions
 }
