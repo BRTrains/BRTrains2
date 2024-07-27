@@ -64,6 +64,7 @@ item (FEAT_ROADVEHS, item_TRAM_LU2024, 595) {
 	power:							3400;
 	weight:							197;
 	colour_mapping: 					return PALETTE_CC_FIRST;	
+	sound_effect:						sw_TRAM_electric_sound;
 	length: switch_TRAM_LU2024_length;
 	cargo_capacity: return(1076 * param_pax / 9);
 		cost_factor:	return(GetAdjustedCostTRAM(61));
