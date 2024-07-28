@@ -1,34 +1,48 @@
-spriteset(spriteset_Standard9F_Purchase, "gfx/Steam/Standard9F.png") {
+spriteset(spriteset_Standard9F_Purchase, "gfx/Steam/BR_Standard_9F.png") {
 	template_purchase_anim(0, 0)
 }
 
-spriteset(spriteset_Standard9F_BRBlack, "gfx/Steam/Standard9F.png") {
-	template_train32px_old(0, 13)
+spriteset(spriteset_Standard9F_BRBlack_Unnamed, "gfx/Steam/BR_Standard_9F.png") {
+	template_train32px(0, 13)
 }
-spriteset(spriteset_Standard9FTender_BRBlack, "gfx/Steam/Standard9F.png") {
-	template_train16px(0, 38)
+spriteset(spriteset_Standard9F_BRBlack_Named, "gfx/Steam/BR_Standard_9F.png") {
+	template_train32px(0, 65)
+}
+spriteset(spriteset_Standard9FTender_BRBlack, "gfx/Steam/BR_11A1G1H_Tender.png") {
+	template_train16px(0, 13)
 }
 
-spriteset(spriteset_Standard9F_BRGreen, "gfx/Steam/Standard9F.png") {
-	template_train32px_old(0, 56)
+spriteset(spriteset_Standard9F_BRGreen_Unnamed, "gfx/Steam/BR_Standard_9F.png") {
+	template_train32px(0, 39)
 }
-spriteset(spriteset_Standard9FTender_BRGreen, "gfx/Steam/Standard9F.png") {
-	template_train16px(0, 81)
+spriteset(spriteset_Standard9F_BRGreen_Named, "gfx/Steam/BR_Standard_9F.png") {
+	template_train32px(0, 91)
 }
+spriteset(spriteset_Standard9FTender_BRGreen, "gfx/Steam/BR_11A1G1H_Tender.png") {
+	template_train16px(0, 39)
+}
+
+
 
 switch(FEAT_TRAINS,SELF, sw_Standard9FLoco,cargo_subtype){
-    0:	spriteset_Standard9F_BRBlack;
-	1: 	spriteset_Standard9F_BRGreen;
+    0:	spriteset_Standard9F_BRBlack_Unnamed;
+	1: 	spriteset_Standard9F_BRGreen_Unnamed;
+	2:	spriteset_Standard9F_BRBlack_Named;
+	3: 	spriteset_Standard9F_BRGreen_Named;
 }
 
 switch(FEAT_TRAINS,SELF, sw_Standard9FTender,cargo_subtype){
     0:	spriteset_Standard9FTender_BRBlack;
 	1: 	spriteset_Standard9FTender_BRGreen;
+	2:	spriteset_Standard9FTender_BRBlack;
+	3:	spriteset_Standard9FTender_BRGreen;
 }
 
 switch(FEAT_TRAINS,SELF,sw_Standard9F_cargo_subtype_text,cargo_subtype){
-    0: return string(str_BRBlack);
-    1: return string(str_BRGreen);
+    0: return string(STR_CONCAT_2, string(str_BRBlack), string(str_UnnamedSuffix));
+    1: return string(STR_CONCAT_2, string(str_BRGreen), string(str_UnnamedSuffix));
+	2: return string(STR_CONCAT_2, string(str_BRBlack), string(str_NamedSuffix));
+	3: return string(STR_CONCAT_2, string(str_BRGreen), string(str_NamedSuffix));
        return CB_RESULT_NO_TEXT;
 }
 

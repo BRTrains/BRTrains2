@@ -1386,6 +1386,9 @@ STR_NAME_EWSRFM					:EWS Company Train (Restaurant First Modular)
 STR_NAME_EWSSLEP				:EWS Company Train (Sleeper Coach)
 STR_NAME_EWSDVT					:EWS Company Train (Driving Van Trailer)
 
+str_NamedSuffix                 : - Named
+str_UnnamedSuffix               : - Unnamed
+
 str_AGA							: (Abellio Greater Anglia)
 str_AGAAltLights				: (Abellio Greater Anglia - Alternative Lights)
 str_AlphaWales					: (Alphaline Wales and Borders)
