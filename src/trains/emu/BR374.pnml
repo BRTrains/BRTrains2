@@ -38,40 +38,57 @@ spriteset(spriteset_BR374DFb_Eurostar, "gfx/BR374.png") {
 	template_train32px_old(0, 113)
 }
 
+spriteset(spriteset_BR374_Front_EurostarOlympics, "gfx/BR374.png") {
+	template_train32px_old(0, 138)
+}
+
+spriteset(spriteset_BR374_Rear_EurostarOlympics, "gfx/BR374.png") {
+	template_train32px_old(0, 163)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR374,cargo_subtype){
     0:	spriteset_BR374_Eurostar;
+	1:	spriteset_BR374_Front_EurostarOlympics;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR374MF,cargo_subtype){
     0:	spriteset_BR374MF_Eurostar;
+	1:	spriteset_BR374MF_Eurostar;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR374TF,cargo_subtype){
     0:	spriteset_BR374TF_Eurostar;
+	1:	spriteset_BR374TF_Eurostar;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR374MS,cargo_subtype){
     0:	spriteset_BR374MS_Eurostar;
+	1:	spriteset_BR374MS_Eurostar;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR374TS,cargo_subtype){
     0:	spriteset_BR374TS_Eurostar;
+	1:	spriteset_BR374TS_Eurostar;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR374TBS,cargo_subtype){
     0:	spriteset_BR374TBS_Eurostar;
+	1:	spriteset_BR374TBS_Eurostar;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR374MSb,cargo_subtype){
     0:	spriteset_BR374MSb_Eurostar;
+	1:	spriteset_BR374MSb_Eurostar;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR374MFb,cargo_subtype){
     0:	spriteset_BR374MFb_Eurostar;
+	1:	spriteset_BR374MFb_Eurostar;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR374DFb,cargo_subtype){
     0:	spriteset_BR374DFb_Eurostar;
+	1: 	spriteset_BR374_Rear_EurostarOlympics;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR374, extra_callback_info1) {
@@ -92,6 +109,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR374, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR374_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Eurostar);
+	1:	return string(STR_CONCAT_2, string(str_Eurostar), string(strsuffix_Olympics));
        return CB_RESULT_NO_TEXT;
 }
 

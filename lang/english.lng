@@ -20,6 +20,11 @@ STR_CONCAT_3s	: {STRING} {STRING} {STRING}
 STR_CONCAT_4s	: {STRING} {STRING} {STRING} {STRING}
 STR_CONCAT_5s	: {STRING} {STRING} {STRING} {STRING} {STRING}
 
+# Suffixes used to build names
+strsuffix_Named                 : - Named
+strsuffix_Unnamed               : - Unnamed
+strsuffix_Olympics              : - Olympics
+
 
 # Parameters 
 STR_PARAM_MAX_SPEED             :Max Speed
@@ -1385,9 +1390,6 @@ STR_NAME_EWSFO					:EWS Company Train (First Open)
 STR_NAME_EWSRFM					:EWS Company Train (Restaurant First Modular)
 STR_NAME_EWSSLEP				:EWS Company Train (Sleeper Coach)
 STR_NAME_EWSDVT					:EWS Company Train (Driving Van Trailer)
-
-str_NamedSuffix                 : - Named
-str_UnnamedSuffix               : - Unnamed
 
 str_AGA							: (Abellio Greater Anglia)
 str_AGAAltLights				: (Abellio Greater Anglia - Alternative Lights)
