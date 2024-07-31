@@ -1,8 +1,5 @@
  if (param[1] == 0) {
 // Disable some trams that aren't finished
-	disable_item(FEAT_ROADVEHS, 490); // 1938 Tube Stock
-	disable_item(FEAT_ROADVEHS, 292); // S7 Tube Stock
-	disable_item(FEAT_ROADVEHS, 293); // S8 Tube Stock
 
 // Disable some trains that aren't finished
 

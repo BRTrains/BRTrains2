@@ -3,13 +3,13 @@ spriteset(spriteset_LUS7S8_Purchase, "gfx/Metro/LU_S7S8.png") {
 }
 
 spriteset(spriteset_LUS7S8a_TfL, "gfx/Metro/LU_S7S8.png") {
-	template_train32px_old(0, 0)
+	template_train32px(0, 0)
 }
 spriteset(spriteset_LUS7S8b_TfL, "gfx/Metro/LU_S7S8.png") {
-	template_train32px_old(0, 25)
+	template_train32px(0, 26)
 }
 spriteset(spriteset_LUS7S8c_TfL, "gfx/Metro/LU_S7S8.png") {
-	template_train32px_old(0, 50)
+	template_train32px(0, 52)
 }
 
 

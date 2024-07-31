@@ -3,23 +3,23 @@ spriteset(spriteset_LU1938_Purchase, "gfx/Metro/LU_1938.png") {
 }
 
 spriteset(spriteset_LU1938a_LURedRoof, "gfx/Metro/LU_1938.png") {
-	template_train32px_old(0, 13)
+	template_train32px(0, 13)
 }
 spriteset(spriteset_LU1938b_LURedRoof, "gfx/Metro/LU_1938.png") {
-	template_train32px_old(0, 38)
+	template_train32px(0, 39)
 }
 spriteset(spriteset_LU1938c_LURedRoof, "gfx/Metro/LU_1938.png") {
-	template_train32px_old(0, 63)
+	template_train32px(0, 65)
 }
 
 spriteset(spriteset_LU1938a_LUGreyRoof, "gfx/Metro/LU_1938.png") {
-	template_train32px_old(0, 88)
+	template_train32px(0, 91)
 }
 spriteset(spriteset_LU1938b_LUGreyRoof, "gfx/Metro/LU_1938.png") {
-	template_train32px_old(0, 113)
+	template_train32px(0, 117)
 }
 spriteset(spriteset_LU1938c_LUGreyRoof, "gfx/Metro/LU_1938.png") {
-	template_train32px_old(0, 138)
+	template_train32px(0, 143)
 }
 
 switch(FEAT_TRAINS,SELF, sw_LU1938a,cargo_subtype){
