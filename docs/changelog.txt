@@ -1,7 +1,8 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Furness Railway Railmotor?
 - LNER P2 Streamlined version (gfx done need coding)
-- LU 1938 Stock as Tram
+- GWR 5700/6700/8750 Class (gfx done need coding)
+- Class 52 (new gfx, presumably need template swap in code and additional livery adding)
 
 # v2.12
 - Added LMS Black 5
