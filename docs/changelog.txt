@@ -15,6 +15,8 @@
 - Added LMS Stanier P3 coach
 - Added LNER Thompson 61ft FK and 63ft TK coaches
 - Added AnsaldoBreda T-68 (Manchester Metrolink tram)
+- Added LU S7/S8 stock Tram variants
+- Added LU 1938 stock Tram Variant
 - Improved LNER Teak coach windows and roofs to fit scale better
 - Improved Standard 9F
 - Fixed some introduction and model lifespans (set is now fully freight playable from ~1850 onwards)

@@ -30,7 +30,7 @@ item (FEAT_ROADVEHS, item_TRAM_LU1938, 490) {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LU1938_usage),string(str_LU1938_eos),string(str_LU1938_liveries)));
 	cargo_subtype_text:					sw_TRAM_LU1938_cargo_subtype_text;
 	articulated_part:        			switch_articulated_TRAM_LU1938;
-	default: 							sw_TRAM_LU1938a;
+	default: 							sw_TRAM_LU1938;
 	purchase:							spriteset_TRAM_LU1938_Purchase;
 	cargo_capacity: return(141 * param_pax / 8);
 	cost_factor:	return(GetAdjustedCostTRAM(61));

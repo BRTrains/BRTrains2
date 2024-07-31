@@ -47,3 +47,10 @@ switch(FEAT_ROADVEHS,SELF,sw_TRAM_LU1938_cargo_subtype_text,cargo_subtype){
 	1:	return string(str_LU_Alt);
        return CB_RESULT_NO_TEXT;
 }
+
+switch(FEAT_ROADVEHS, SELF, sw_TRAM_LU1938, position_in_articulated_veh)
+{
+	0: sw_TRAM_LU1938a;
+	7: sw_TRAM_LU1938b;
+	sw_TRAM_LU1938c;
+}
