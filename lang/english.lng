@@ -21,10 +21,15 @@ STR_CONCAT_4s	: {STRING} {STRING} {STRING} {STRING}
 STR_CONCAT_5s	: {STRING} {STRING} {STRING} {STRING} {STRING}
 
 # Suffixes used to build names
+strsuffix_Blue                  : - Blue
+strsuffix_Black                 : - Black
+strsuffix_Desert                : - Desert Sands
+strsuffix_Green                 : - Green
+strsuffix_GoldenOchre           : - Golden Ochre
+strsuffix_Maroon                : - Maroon
 strsuffix_Named                 : - Named
-strsuffix_Unnamed               : - Unnamed
 strsuffix_Olympics              : - Olympics
-
+strsuffix_Unnamed               : - Unnamed
 
 # Parameters 
 STR_PARAM_MAX_SPEED             :Max Speed
