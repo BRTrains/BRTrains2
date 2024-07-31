@@ -1,36 +1,42 @@
-spriteset(spriteset_BR52_Purchase, "gfx/BR52.png") {
+spriteset(spriteset_BR52_Purchase, "gfx/Diesel/52.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR52_BRSand, "gfx/BR52.png") {
-	template_train28px_old(0, 13)
+spriteset(spriteset_BR52_BRBlue, "gfx/Diesel/52.png") {
+	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BR52_BRMaroon, "gfx/BR52.png") {
-	template_train28px_old(0, 36)
+spriteset(spriteset_BR52_BRSand, "gfx/Diesel/52.png") {
+	template_train32px(0, 39)
 }
 
-spriteset(spriteset_BR52_BRBlue, "gfx/BR52.png") {
-	template_train28px_old(0, 59)
+spriteset(spriteset_BR52_BRMaroon, "gfx/Diesel/52.png") {
+	template_train32px(0, 65)
 }
 
-spriteset(spriteset_BR52_BRGreen, "gfx/BR52.png") {
-	template_train28px_old(0, 82)
+spriteset(spriteset_BR52_BRGreen, "gfx/Diesel/52.png") {
+	template_train32px(0, 91)
+}
+
+spriteset(spriteset_BR52_BROchre, "gfx/Diesel/52.png") {
+	template_train32px(0, 117)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR52,cargo_subtype){        
-	0:	spriteset_BR52_BRSand;
-	1:	spriteset_BR52_BRMaroon;
-	2:	spriteset_BR52_BRBlue;
+	0:	spriteset_BR52_BRBlue;
+	1:	spriteset_BR52_BRSand;
+	2:	spriteset_BR52_BRMaroon;
 	3:	spriteset_BR52_BRGreen;
+	4:	spriteset_BR52_BROchre;
        return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR52_cargo_subtype_text,cargo_subtype){
-	0:	return string(str_BRDesertSand);
-	1:	return string(str_BRMaroon);
-    2:	return string(str_BRBlue);
+	0:	return string(str_BRBlue);
+	1:	return string(str_BRDesertSand);
+	2:	return string(str_BRMaroon);
 	3:	return string(str_BRGreen);
+	4:	return string(str_BROchre);
        return CB_RESULT_NO_TEXT;
 }
 
