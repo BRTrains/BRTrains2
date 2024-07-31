@@ -5,7 +5,6 @@
 	disable_item(FEAT_ROADVEHS, 293); // S8 Tube Stock
 
 // Disable some trains that aren't finished
-	disable_item(FEAT_TRAINS, 661); // GWR Dean Goods
 
 // Disable some trains that only exist for template alignment or debugging
 	disable_item(FEAT_TRAINS, 601); // 12px
