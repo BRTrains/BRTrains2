@@ -1,12 +1,12 @@
-spriteset(spriteset_BR70_Purchase, "gfx/Diesel/BR70.png") {
+spriteset(spriteset_BR70_Purchase, "gfx/Diesel/70.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR70_Freightliner, "gfx/Diesel/BR70.png") {
+spriteset(spriteset_BR70_Freightliner, "gfx/Diesel/70.png") {
 	template_train32px(0, 13)
 }
 	
-spriteset(spriteset_BR70_ColasRail, "gfx/Diesel/BR70.png") {
+spriteset(spriteset_BR70_ColasRail, "gfx/Diesel/70.png") {
 	template_train32px(0, 39)
 }
 
