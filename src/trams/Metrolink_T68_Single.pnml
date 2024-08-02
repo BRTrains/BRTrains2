@@ -33,6 +33,7 @@ item (FEAT_ROADVEHS, item_TRAM_T68_Single, 662) {
 		cargo_age_period:				185;
 	}
 	graphics {
+	sound_effect:						sw_TRAM_electric_sound;
 	cargo_subtype_text:					sw_TRAM_T68_cargo_subtype_text;
 	articulated_part:        			switch_articulated_TRAM_T68;
 	default: 							sw_TRAM_T68;

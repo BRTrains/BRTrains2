@@ -34,6 +34,7 @@ item (FEAT_ROADVEHS, item_TRAM_SheffieldCitylink, 649) {
 		cargo_age_period:				185;
 	}
 	graphics {
+	sound_effect:						sw_TRAM_electric_sound;
 	cargo_subtype_text:					sw_TRAM_SheffieldCitylink_cargo_subtype_text;
 	articulated_part:        			switch_articulated_TRAM_SheffieldCitylink;
 	default: 							sw_TRAM_SheffieldCitylink;
