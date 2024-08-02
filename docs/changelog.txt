@@ -29,6 +29,7 @@
 - Fixed steam tractive efforts (and adjusted some other stats)
 - Fixed Class 80-87 (+prototypes) sprite templates
 - Fixed 196 livery (incorrectly labelled WMR as TfW)
+- Re-added sounds for trams
 - Removed Route Availability from information strings
 
 # v2.11 (Hotfix 2024-06-11)
