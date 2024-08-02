@@ -109,7 +109,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR374, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR374_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Eurostar);
-	1:	return string(STR_CONCAT_2, string(str_Eurostar), string(strsuffix_Olympics));
+	1:	return string(STR_CONCAT_2, string(str_Eurostar), string(str_var_Olympics));
        return CB_RESULT_NO_TEXT;
 }
 
