@@ -369,6 +369,11 @@ str_BR08_usage					:Shunting
 str_BR08_eos					:---
 str_BR08_liveries				:BR Black, BR Green, BR Blue, EWS Red and Gold, Network Rail Yellow, Unusual Purple, InterCity Swallow, BR General Grey
 
+STR_NAME_BR20					:BR Class 20 "Chopper"
+str_BR20_usage					:Light freight
+str_BR20_eos					:---
+str_BR20_liveries				:BR Blue
+
 STR_NAME_BR13					:BR Class 13 "Shunter"
 str_BR13_usage					:Shunting
 str_BR13_eos					:1983-1986

@@ -18,6 +18,7 @@ sort(FEAT_TRAINS, [
  item_Standard9F,
  item_BR08,
  item_BR13,
+ item_BR20,
  item_BR31,
  item_BR33_0,
  item_BR33_1,

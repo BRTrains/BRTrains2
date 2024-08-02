@@ -1,0 +1,64 @@
+spriteset(spriteset_BR20_Purchase, "gfx/Diesel/20.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR20_BRBlue, "gfx/Diesel/20.png") {
+	template_train20px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR20,cargo_subtype){
+	0: 	spriteset_BR20_BRBlue;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR20_cargo_subtype_text,cargo_subtype){
+    0: return string(str_BRBlue);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR20, 671) {
+	property {
+		name: 							string(STR_NAME_BR20);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1957,1,1);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					60;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];			
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1000 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							73 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.256;
+		air_drag_coefficient:			0.1;
+		length:							5;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR20_usage),string(str_BR20_eos),string(str_BR20_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR20_cargo_subtype_text;
+	default: 							sw_BR20;
+	purchase:							spriteset_BR20_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_gronk_sound;
+	cost_factor:	return(GetAdjustedCost(25));
+	running_cost_factor: return(GetAdjustedCost(6));
+}
+}
