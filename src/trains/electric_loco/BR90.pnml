@@ -1,57 +1,61 @@
-spriteset(spriteset_BR90_Purchase, "gfx/BR90.png") {
+spriteset(spriteset_BR90_Purchase, "gfx/electric/90.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR90_EWS, "gfx/BR90.png") {
-	template_train32px_old(0, 13)
+spriteset(spriteset_BR90_EWS, "gfx/electric/90.png") {
+	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BR90_DB, "gfx/BR90.png") {
-	template_train32px_old(0, 38)
+spriteset(spriteset_BR90_DB, "gfx/electric/90.png") {
+	template_train32px(0, 39)
 }
 
-spriteset(spriteset_BR90_FLGreen, "gfx/BR90.png") {
-	template_train32px_old(0, 63)
+spriteset(spriteset_BR90_FLGreen, "gfx/electric/90.png") {
+	template_train32px(0, 65)
 }
 
-spriteset(spriteset_BR90_InterCitySwallow, "gfx/BR90.png") {
-	template_train32px_old(0, 88)
+spriteset(spriteset_BR90_InterCitySwallow, "gfx/electric/90.png") {
+	template_train32px(0, 91)
 }
 
-spriteset(spriteset_BR90_GreaterAnglia, "gfx/BR90.png") {
-	template_train32px_old(0, 113)
+spriteset(spriteset_BR90_GreaterAnglia, "gfx/electric/90.png") {
+	template_train32px(0, 117)
 }
 
-spriteset(spriteset_BR90_FLPowerhaul, "gfx/BR90.png") {
-	template_train32px_old(0, 138)
+spriteset(spriteset_BR90_FLPowerhaul, "gfx/electric/90.png") {
+	template_train32px(0, 143)
 }
 
-spriteset(spriteset_BR90_ONE, "gfx/BR90.png") {
-	template_train32px_old(0, 163)
+spriteset(spriteset_BR90_ONE, "gfx/electric/90.png") {
+	template_train32px(0, 169)
 }
 
-spriteset(spriteset_BR90_GreaterAnglia2, "gfx/BR90.png") {
-	template_train32px_old(0, 188)
+spriteset(spriteset_BR90_GreaterAnglia2, "gfx/electric/90.png") {
+	template_train32px(0, 195)
 }
 
-spriteset(spriteset_BR90_Virgin, "gfx/BR90.png") {
-	template_train32px_old(0, 213)
+spriteset(spriteset_BR90_Virgin, "gfx/electric/90.png") {
+	template_train32px(0, 221)
 }
 
-spriteset(spriteset_BR90_REX, "gfx/BR90.png") {
-	template_train32px_old(0, 238)
+spriteset(spriteset_BR90_REX, "gfx/electric/90.png") {
+	template_train32px(0, 247)
 }
 
-spriteset(spriteset_BR90_FirstScotRail, "gfx/BR90.png") {
-	template_train32px_old(0, 263)
+spriteset(spriteset_BR90_FirstScotRail, "gfx/electric/90.png") {
+	template_train32px(0, 273)
 }
 
-spriteset(spriteset_BR90_FLGrey, "gfx/BR90.png") {
-	template_train32px_old(0, 288)
+spriteset(spriteset_BR90_FLGrey, "gfx/electric/90.png") {
+	template_train32px(0, 299)
 }
 
-spriteset(spriteset_BR90_GNER, "gfx/BR90.png") {
-	template_train32px_old(0, 313)
+spriteset(spriteset_BR90_GNER, "gfx/electric/90.png") {
+	template_train32px(0, 325)
+}
+
+spriteset(spriteset_BR90_FreightlinerOrange, "gfx/electric/90.png") {
+	template_train32px(0, 351)
 }
 
 // This switch called when displaying as this locomotive
@@ -70,6 +74,7 @@ switch(FEAT_TRAINS,SELF, sw_BR90, cargo_subtype){
 	10:	spriteset_BR90_REX;
 	11:	spriteset_BR90_FirstScotRail;
 	12:	spriteset_BR90_GNER;
+	13:	spriteset_BR90_FreightlinerOrange;
         return CB_RESULT_NO_TEXT;
 }
 
@@ -87,6 +92,7 @@ switch(FEAT_TRAINS,SELF,sw_BR90_cargo_subtype_text,cargo_subtype){
 	10:	return string(str_REX);
 	11:	return string(str_FirstScotRail);
 	12:	return string(str_GNER);
+	13: return string(str_FreightlinerOrange);
        return CB_RESULT_NO_TEXT;
 }
 
