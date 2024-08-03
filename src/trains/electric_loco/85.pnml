@@ -1,12 +1,12 @@
-spriteset(spriteset_BR85_Purchase, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR85_Purchase, "gfx/Electric/8X.png") {
 	template_purchase(264, 26)
 }
 
-spriteset(spriteset_BR85_RailfreightDistribution, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR85_RailfreightDistribution, "gfx/Electric/8X.png") {
 	template_train32px(0, 117)
 }
 
-spriteset(spriteset_BR85_BRBlue, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR85_BRBlue, "gfx/Electric/8X.png") {
 	template_train32px(0, 65)
 }
 

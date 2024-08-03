@@ -1,8 +1,8 @@
-spriteset(spriteset_BR80_Purchase, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR80_Purchase, "gfx/Electric/8X.png") {
 	template_purchase(88, 0)
 }
 
-spriteset(spriteset_BR80_BRBlack, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR80_BRBlack, "gfx/Electric/8X.png") {
 	template_train32px(0, 39)
 }
 

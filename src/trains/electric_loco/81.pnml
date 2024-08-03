@@ -1,26 +1,26 @@
-spriteset(spriteset_BR83_Purchase, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR81_Purchase, "gfx/Electric/8X.png") {
 	template_purchase(176, 0)
 }
 
-spriteset(spriteset_BR83_BRBlue, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR81_BRBlue, "gfx/Electric/8X.png") {
 	template_train32px(0, 65)
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR83, cargo_subtype){
-    0:	spriteset_BR83_BRBlue;
+switch(FEAT_TRAINS,SELF, sw_BR81, cargo_subtype){
+    0:	spriteset_BR81_BRBlue;
         return CB_RESULT_NO_TEXT;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR83_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_BRBlue);
+switch(FEAT_TRAINS,SELF,sw_BR81_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRBlue);	
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR83, 563) {
+item (FEAT_TRAINS, item_BR81, 561) {
 	property {
-		name: 							string(STR_NAME_BR83);
+		name: 							string(STR_NAME_BR81);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1960,1,1);
+		introduction_date:				date(1959,1,1);
 		model_life:						30;
 		retire_early:					1;
 		vehicle_life:					70;
@@ -28,19 +28,19 @@ item (FEAT_TRAINS, item_BR83, 563) {
 		refittable_cargo_classes:		0;
 		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
-		cost_factor:					34;
-		running_cost_factor:			34;
+		cost_factor:					37;
+		running_cost_factor:			37;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							100 mph;
 		refit_cost:						0;
 		track_type:						ELRL;	
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							2950 hp;
+		power:							3680 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							76.4 ton;
+		weight:							79.6 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;
 		tractive_effort_coefficient:	0.3;
 		air_drag_coefficient:			0.05;
@@ -50,14 +50,14 @@ item (FEAT_TRAINS, item_BR83, 563) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_BR83_usage),string(str_BR83_eos),string(str_BR83_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_BR81_usage),string(str_BR81_eos),string(str_BR81_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_BR83_cargo_subtype_text;
-	default: 							sw_BR83;
-	purchase:							spriteset_BR83_Purchase;
+	cargo_subtype_text:					sw_BR81_cargo_subtype_text;
+	default: 							sw_BR81;
+	purchase:							spriteset_BR81_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	cost_factor:	return(GetAdjustedCost(34));
-	running_cost_factor: return(GetAdjustedCost(34));
+	cost_factor:	return(GetAdjustedCost(37));
+	running_cost_factor: return(GetAdjustedCost(37));
 }
 }

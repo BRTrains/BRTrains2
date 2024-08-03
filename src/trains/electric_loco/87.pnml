@@ -1,16 +1,16 @@
-spriteset(spriteset_BR87_Purchase, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR87_Purchase, "gfx/Electric/8X.png") {
 	template_purchase(264, 0)
 }
 
-spriteset(spriteset_BR87_InterCitySwallow, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR87_InterCitySwallow, "gfx/Electric/8X.png") {
 	template_train32px(0, 221)
 }
 
-spriteset(spriteset_BR87_Virgin, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR87_Virgin, "gfx/Electric/8X.png") {
 	template_train32px(0, 247)
 }
 
-spriteset(spriteset_BR87_BRBlue, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR87_BRBlue, "gfx/Electric/8X.png") {
 	template_train32px(0, 273)
 }
 

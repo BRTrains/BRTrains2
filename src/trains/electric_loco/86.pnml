@@ -1,32 +1,32 @@
-spriteset(spriteset_BR86_Purchase, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_Purchase, "gfx/Electric/8X.png") {
 	template_purchase(264, 39)
 }
 
-spriteset(spriteset_BR86_BRBlue, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_BRBlue, "gfx/Electric/8X.png") {
 	template_train32px(0, 65)
 }
 
-spriteset(spriteset_BR86_InterCityExecutive, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_InterCityExecutive, "gfx/Electric/8X.png") {
 	template_train32px(0, 91)
 }
 
-spriteset(spriteset_BR86_InterCitySwallow, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_InterCitySwallow, "gfx/Electric/8X.png") {
 	template_train32px(0, 143)
 }
 
-spriteset(spriteset_BR86_RailfreightDistribution, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_RailfreightDistribution, "gfx/Electric/8X.png") {
 	template_train32px(0, 117)
 }
 
-spriteset(spriteset_BR86_RailExpress, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_RailExpress, "gfx/Electric/8X.png") {
 	template_train32px(0, 195)
 }
 
-spriteset(spriteset_BR86_EWS, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_EWS, "gfx/Electric/8X.png") {
 	template_train32px(0, 169)
 }
 
-spriteset(spriteset_BR86_Anglia, "gfx/Electric/BR8X.png") {
+spriteset(spriteset_BR86_Anglia, "gfx/Electric/8X.png") {
 	template_train32px(0, 299)
 }
 
