@@ -34,6 +34,10 @@ spriteset(spriteset_BR66_FastLine, "gfx/Diesel/66.png") {
 	template_train32px(0, 195)
 }
 
+spriteset(spriteset_BR66_FreightlinerOrange, "gfx/Diesel/66.png") {
+	template_train32px(0, 221)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR66,cargo_subtype){
 	0: 	spriteset_BR66_FL;
 	1: 	spriteset_BR66_FL2;
@@ -41,8 +45,9 @@ switch(FEAT_TRAINS,SELF, sw_BR66,cargo_subtype){
 	3:	spriteset_BR66_DBSchenker;
 	4:	spriteset_BR66_BRBlue;
 	5:	spriteset_BR66_GBRf;
-	6: spriteset_BR66_Colas;
+	6:	spriteset_BR66_Colas;
 	7:	spriteset_BR66_FastLine;
+	8:	spriteset_BR66_FreightlinerOrange;
 	spriteset_BR66_FL; // Default because we removed some livery variants, avoids a breaking change
 }
 
@@ -55,6 +60,7 @@ switch(FEAT_TRAINS,SELF,sw_BR66_cargo_subtype_text,cargo_subtype){
 	5:	return string(str_GBRf);
 	6:	return string(str_ColasRail);
 	7:	return string(str_FastLine);
+	8: 	return string(str_FreightlinerOrange);
        return CB_RESULT_NO_TEXT;
 }
 

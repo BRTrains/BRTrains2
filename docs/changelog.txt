@@ -21,6 +21,7 @@
 - Re-drew Class 52
 - Improved LNER Teak coach windows and roofs to fit scale better
 - Improved Standard 9F
+- Added Orange Freightliner livery for Class 66, Class 90
 - Fixed some introduction and model lifespans (set is now fully freight playable from ~1850 onwards)
 - Fixed 730/0 and /2 having swapped livery options
 - Fixed some horizontal view lengths
