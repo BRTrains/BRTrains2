@@ -2,7 +2,7 @@ spriteset(spriteset_BRMk5a_purchase, "gfx/Rolling Stock/Mk5a.png") {
 	template_purchase(88, 0)
 }
 
-item (FEAT_TRAINS, item_BRMk5a, 545) {
+item (FEAT_TRAINS, item_BRMk5a, 597) {
 	property {
 		variant_group:					header_BRMk5;
 		name: 							string(STR_NAME_BRMk5a);
