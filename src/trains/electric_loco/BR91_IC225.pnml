@@ -65,7 +65,7 @@ item (FEAT_TRAINS, item_91_BRMk4DVT, 113) {
   speed: 125 mph;
   misc_flags: TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
   refit_cost: 0;
-  track_type: ELRL;
+  track_type: RAIL;
   ai_special_flag: AI_FLAG_CARGO;
   power: 0;
   running_cost_base: RUNNING_COST_ELECTRIC;
@@ -101,7 +101,7 @@ item (FEAT_TRAINS, item_91_BRMk4FO, 112) {
   running_cost_factor: 0;
   sprite_id: SPRITE_ID_NEW_TRAIN;
   refit_cost: 0;
-  track_type: ELRL;
+  track_type: RAIL;
   power: 0;
   running_cost_base: RUNNING_COST_NONE;
   dual_headed: 0;
@@ -137,7 +137,7 @@ item (FEAT_TRAINS, item_91_BRMk4TSOE, 109) {
   running_cost_factor: 0;
   sprite_id: SPRITE_ID_NEW_TRAIN;
   refit_cost: 0;
-  track_type: ELRL;
+  track_type: RAIL;
   power: 0;
   running_cost_base: RUNNING_COST_NONE;
   dual_headed: 0;
@@ -173,7 +173,7 @@ item (FEAT_TRAINS, item_91_BRMk4TSO, 110) {
   running_cost_factor: 0;
   sprite_id: SPRITE_ID_NEW_TRAIN;
   refit_cost: 0;
-  track_type: ELRL;
+  track_type: RAIL;
   power: 0;
   running_cost_base: RUNNING_COST_NONE;
   dual_headed: 0;
@@ -209,7 +209,7 @@ item (FEAT_TRAINS, item_91_BRMk4RFM, 111) {
   running_cost_factor: 0;
   sprite_id: SPRITE_ID_NEW_TRAIN;
   refit_cost: 0;
-  track_type: ELRL;
+  track_type: RAIL;
   power: 0;
   running_cost_base: RUNNING_COST_NONE;
   dual_headed: 0;
@@ -245,7 +245,7 @@ item (FEAT_TRAINS, item_91_BRMk4TSOD, 114) {
   running_cost_factor: 0;
   sprite_id: SPRITE_ID_NEW_TRAIN;
   refit_cost: 0;
-  track_type: ELRL;
+  track_type: RAIL;
   power: 0;
   running_cost_base: RUNNING_COST_NONE;
   dual_headed: 0;

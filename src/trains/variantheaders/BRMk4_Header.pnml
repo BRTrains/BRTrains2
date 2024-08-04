@@ -1,6 +1,6 @@
 item (FEAT_TRAINS, header_BRMk4, 10004) {
  property {
-  name: string(STR_NAME_BRMk4TSO);
+  name: string(STR_NAME_BRMk4_Header);
   climates_available: NO_CLIMATE;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
