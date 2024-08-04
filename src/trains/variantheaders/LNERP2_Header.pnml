@@ -1,4 +1,4 @@
-item (FEAT_TRAINS, header_LNERP2, 10001) {
+item (FEAT_TRAINS, header_LNERP2, 10000) {
 	property {
 		name: 							string(STR_NAME_LNERP2);
 		climates_available: 			NO_CLIMATE;

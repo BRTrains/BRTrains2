@@ -91,6 +91,7 @@ item (FEAT_TRAINS, item_91_BRMk4DVT, 113) {
 
 item (FEAT_TRAINS, item_91_BRMk4FO, 112) {
  property {
+  variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4FO);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
@@ -126,6 +127,7 @@ item (FEAT_TRAINS, item_91_BRMk4FO, 112) {
 
 item (FEAT_TRAINS, item_91_BRMk4TSOE, 109) {
  property {
+    variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4TSOE);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
@@ -161,6 +163,7 @@ item (FEAT_TRAINS, item_91_BRMk4TSOE, 109) {
 
 item (FEAT_TRAINS, item_91_BRMk4TSO, 110) {
  property {
+    variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4TSO);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
@@ -196,6 +199,7 @@ item (FEAT_TRAINS, item_91_BRMk4TSO, 110) {
 
 item (FEAT_TRAINS, item_91_BRMk4RFM, 111) {
  property {
+    variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4RFM);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
@@ -231,6 +235,7 @@ item (FEAT_TRAINS, item_91_BRMk4RFM, 111) {
 
 item (FEAT_TRAINS, item_91_BRMk4TSOD, 114) {
  property {
+    variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4TSOD);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;

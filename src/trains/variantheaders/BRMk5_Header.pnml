@@ -1,24 +1,24 @@
-item (FEAT_TRAINS, item_BRMk4DVT, 585) {
+item (FEAT_TRAINS, header_BRMk5, 10005) {
 	property {
-		variant_group: header_BRMk4;
-		name: 							string(STR_NAME_BRMk4DVT);
-		climates_available: 			ALL_CLIMATES;
+		name: 							string(STR_NAME_BRMk5_Header);
+		climates_available: 			NO_CLIMATE;
 		refittable_cargo_classes:		CC_PASSENGERS;
-		introduction_date:				date(1989,1,1);
-		cargo_allow_refit:				[MAIL];
+		introduction_date: 				date(2019, 08, 04);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					14;
-		cost_factor:					30;
-		running_cost_factor:			12;
+		cost_factor:					52;
+		running_cost_factor:			17;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		refit_cost:						0;
 		track_type:						RAIL;
-		speed:							140 mph;
+		speed:							125 mph;
 		power:							0;
 		running_cost_base:				RUNNING_COST_STEAM;
 		dual_headed:					0;
-		default_cargo_type:				MAIL;
-		cargo_capacity:					1;
-		weight:							43 ton;
+		default_cargo_type:				PASS;
+		cargo_capacity:					60;
+		weight:							40 ton;
 		tractive_effort_coefficient:	0;
 		air_drag_coefficient:			0;
 		length:							8;
@@ -29,12 +29,10 @@ item (FEAT_TRAINS, item_BRMk4DVT, 585) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_BRMk4DVT_Sprites;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-	cargo_subtype_text:					sw_BR91_cargo_subtype_text;
-	purchase:							spriteset_BRMk4DVT_purchase;
-	speed:								160;
-	cargo_capacity: return(0);
+ 	default: 							sw_br_68_5a_middle;
+	colour_mapping: 					return PALETTE_CC_FIRST;	
+	purchase:							spriteset_BRMk5a_purchase;	
+	cargo_capacity: return(60 * param_pax);
 	cost_factor:	return(GetAdjustedCost(52));
 	running_cost_factor: return(GetAdjustedCost(17));
 }

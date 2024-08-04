@@ -1,5 +1,6 @@
 item (FEAT_TRAINS, item_BRMk2_Early_SO, 624) {
 	property {
+		variant_group:					header_BRMk2;
 		name: 							string(STR_NAME_BRMk2_Early_SO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1964,4,21);
@@ -34,6 +35,7 @@ item (FEAT_TRAINS, item_BRMk2_Early_SO, 624) {
 
 item (FEAT_TRAINS, item_BRMk2_Early_FO, 625) {
 	property {
+		variant_group:					header_BRMk2;
 		name: 							string(STR_NAME_BRMk2_Early_FO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1964,4,21);

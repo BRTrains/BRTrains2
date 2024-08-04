@@ -1,5 +1,6 @@
 item (FEAT_TRAINS, item_BRMk2_Buffet, 621) {
 	property {
+		variant_group:					header_BRMk2;
 		name: 							string(STR_NAME_BRMk2_Buffet);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1964,4,21);

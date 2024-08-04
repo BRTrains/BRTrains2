@@ -67,6 +67,7 @@ switch(FEAT_TRAINS,SELF,sw_BRMk3Sleeper_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BRMk3Sleeper, 544) {
 	property {
+		variant_group:					header_BRMk3;
 		name: 							string(STR_NAME_BRMk3Sleeper);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;

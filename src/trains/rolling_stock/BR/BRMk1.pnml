@@ -457,6 +457,7 @@ switch(FEAT_TRAINS,SELF,sw_BRMk1_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BRMk1SO, 137) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1SO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1963,4,21);
@@ -492,6 +493,7 @@ item (FEAT_TRAINS, item_BRMk1SO, 137) {
 
 item (FEAT_TRAINS, item_BRMk1FO, 138) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1FO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
@@ -527,6 +529,7 @@ item (FEAT_TRAINS, item_BRMk1FO, 138) {
 
 item (FEAT_TRAINS, item_BRMk1FK, 139) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1FK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
@@ -562,6 +565,7 @@ item (FEAT_TRAINS, item_BRMk1FK, 139) {
 
 item (FEAT_TRAINS, item_BRMk1CK, 140) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1CK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);
@@ -597,6 +601,7 @@ item (FEAT_TRAINS, item_BRMk1CK, 140) {
 
 item (FEAT_TRAINS, item_BRMk1BSK, 141) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1BSK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
@@ -632,6 +637,7 @@ item (FEAT_TRAINS, item_BRMk1BSK, 141) {
 
 item (FEAT_TRAINS, item_BRMk1BCK, 142) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1BCK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);
@@ -667,6 +673,7 @@ item (FEAT_TRAINS, item_BRMk1BCK, 142) {
 
 item (FEAT_TRAINS, item_BRMk1BFK, 143) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1BFK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
@@ -702,6 +709,7 @@ item (FEAT_TRAINS, item_BRMk1BFK, 143) {
 
 item (FEAT_TRAINS, item_BRMk1BG, 144) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1BG);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
@@ -737,6 +745,7 @@ item (FEAT_TRAINS, item_BRMk1BG, 144) {
 
 item (FEAT_TRAINS, item_BRMk1RK, 145) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1RK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
@@ -772,6 +781,7 @@ item (FEAT_TRAINS, item_BRMk1RK, 145) {
 
 item (FEAT_TRAINS, item_BRMk1RMB, 146) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1RMB);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1957,4,21);
@@ -807,6 +817,7 @@ item (FEAT_TRAINS, item_BRMk1RMB, 146) {
 
 item (FEAT_TRAINS, item_BRMk1SK, 147) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1SK);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1951,4,21);
@@ -841,6 +852,7 @@ item (FEAT_TRAINS, item_BRMk1SK, 147) {
 
 item (FEAT_TRAINS, item_BRMk1BSO, 148) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1BSO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1955,4,21);
@@ -875,6 +887,7 @@ item (FEAT_TRAINS, item_BRMk1BSO, 148) {
 
 item (FEAT_TRAINS, item_BRMk1BSOT, 149) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1BSOT);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);
@@ -909,6 +922,7 @@ item (FEAT_TRAINS, item_BRMk1BSOT, 149) {
 
 item (FEAT_TRAINS, item_BRMk1TSO, 150) {
 	property {
+		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1TSO);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);

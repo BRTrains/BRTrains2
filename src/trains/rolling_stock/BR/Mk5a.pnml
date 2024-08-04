@@ -4,6 +4,7 @@ spriteset(spriteset_BRMk5a_purchase, "gfx/Rolling Stock/Mk5a.png") {
 
 item (FEAT_TRAINS, item_BRMk5a, 545) {
 	property {
+		variant_group:					header_BRMk5;
 		name: 							string(STR_NAME_BRMk5a);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
