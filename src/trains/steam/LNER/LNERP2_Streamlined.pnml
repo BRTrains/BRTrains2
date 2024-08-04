@@ -1,6 +1,6 @@
-item (FEAT_TRAINS, item_LNERP2, 591) {
+item (FEAT_TRAINS, item_LNERP2_Streamlined, 672) {
 	property {
-		name: 							string(STR_NAME_LNERP2);
+		name: 							string(STR_NAME_LNERP2_Streamlined);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1934,1,1);
 		model_life:						20;
@@ -39,8 +39,8 @@ item (FEAT_TRAINS, item_LNERP2, 591) {
 	cargo_capacity:						return 0;
 	cargo_subtype_text:					sw_LNERP2_cargo_subtype_text;
 	articulated_part:        			sw_articulated_LNERP2;
-	default: 							sw_LNERP2;
-	purchase:							spriteset_LNERP2_Purchase;
+	default: 							sw_LNERP2_Streamlined;
+	purchase:							spriteset_LNERP2_Streamlined_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
 	sound_effect:						sw_steam_sound;
