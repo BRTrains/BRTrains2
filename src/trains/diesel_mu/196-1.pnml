@@ -39,6 +39,7 @@ switch(FEAT_TRAINS, SELF, switch_br_196_1_can_attach_wagon, vehicle_type_id) {
 // Class 196/1 (4car)
 item(FEAT_TRAINS, item_br_196_1, 433) {
 	property {
+		variant_group:					header_Civity;
 		name: string(STR_BR_196_4CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2021, 07, 01);

@@ -93,6 +93,7 @@ switch(FEAT_TRAINS,SELF,sw_BR221_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR221, 188) {
 	property {
+		variant_group:					header_Voyager;
 		name: 							string(STR_NAME_BR221);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2001,4,21);

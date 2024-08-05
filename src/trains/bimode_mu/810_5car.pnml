@@ -70,6 +70,7 @@ switch(FEAT_TRAINS, SELF, switch_BR810_5car_power, current_railtype) {
 
 item(FEAT_TRAINS, item_BR810_5car, 579) {
 	property {
+		variant_group:				header_IEP;
 		name: string(STR_BR810_5CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2024, 08, 18);

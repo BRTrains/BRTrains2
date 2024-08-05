@@ -73,13 +73,18 @@ str_var_Unnamed               :Unnamed
 # Variant group headers
 STR_LU_Subsurface_Header        :London Underground sub-surface
 STR_LU_Deeplevel_Header         :London Underground deep level
-STR_Pacer_Header                :British Rail "Pacers"
-STR_Sprinter_Header             :British Rail "Sprinters"
+STR_Pacer_Header                :British Rail "Pacer"
+STR_Sprinter_Header             :British Rail "Sprinter"
+STR_Turbo_Header                :British Rail "Turbo"
 STR_Turbostar_Header            :British Rail "Turbostar"/"Clubman"
 STR_Voyager_Header              :Brirish Rail "Voyager"/"Meridian"
-STR_Aventra_Header              :British Rail "Aventras"
-STR_Electrostar_Header          :British Rail "Electrostars"
+STR_Aventra_Header              :British Rail "Aventra"
+STR_Electrostar_Header          :British Rail "Electrostar"
 STR_IEP_Header                  :British Rail "Intercity Express Program"
+STR_Departmental_Header         :National Rail Maintenance Vehicles
+STR_Civity_Header               :British Rail "Civity"
+STR_Debug_Header                :BRTrains DEBUG units (see description)
+STR_Debug_AdditionalText        :Units for BRTrains debugging - Not intended for gameplay{}Disable these using the BRTrains "Developer Mode" parameter
 
 # Parameters 
 STR_PARAM_MAX_SPEED             :Max Speed

@@ -23,6 +23,7 @@ switch(FEAT_TRAINS,SELF,sw_BR171_4_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR171_4, 480) {
 	property {
+		variant_group:					header_Turbostar;
 		name: 							string(STR_NAME_BR171_4);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1998,4,21);

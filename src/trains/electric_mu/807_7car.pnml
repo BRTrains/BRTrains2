@@ -70,6 +70,7 @@ switch(FEAT_TRAINS, SELF, switch_BR807_7car_can_attach_wagon, vehicle_type_id) {
 
 item(FEAT_TRAINS, item_BR807_7car, 580) {
 	property {
+		variant_group:				header_IEP;
 		name: string(STR_BR807_7CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2018, 08, 18);

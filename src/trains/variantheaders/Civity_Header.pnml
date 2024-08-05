@@ -1,0 +1,11 @@
+item (FEAT_TRAINS, header_Civity, 10017) {
+	property {
+		name: 							string(STR_Civity_Header);
+		climates_available: 			NO_CLIMATE;					
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		power:							1;
+	}
+	graphics {	
+		purchase:							spriteset_BR196_Purchase;	
+	}
+}

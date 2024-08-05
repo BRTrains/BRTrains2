@@ -74,6 +74,7 @@ switch(FEAT_TRAINS,SELF,sw_UtilityTrains_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_UtilityTrain12px, 601) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility12px);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -113,6 +114,7 @@ item (FEAT_TRAINS, item_UtilityTrain12px, 601) {
 
 item (FEAT_TRAINS, item_UtilityTrain4px, 609) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility4px);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -152,6 +154,7 @@ item (FEAT_TRAINS, item_UtilityTrain4px, 609) {
 
 item (FEAT_TRAINS, item_UtilityTrain8px, 610) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility8px);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -191,6 +194,7 @@ item (FEAT_TRAINS, item_UtilityTrain8px, 610) {
 
 item (FEAT_TRAINS, item_UtilityTrain16px, 602) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility16px);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -231,6 +235,7 @@ item (FEAT_TRAINS, item_UtilityTrain16px, 602) {
 
 item (FEAT_TRAINS, item_UtilityTrain20px, 603) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility20px);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -270,6 +275,7 @@ item (FEAT_TRAINS, item_UtilityTrain20px, 603) {
 
 item (FEAT_TRAINS, item_UtilityTrain24px, 604) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility24px);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -309,6 +315,7 @@ item (FEAT_TRAINS, item_UtilityTrain24px, 604) {
 
 item (FEAT_TRAINS, item_UtilityTrain28px, 605) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility28px);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -348,6 +355,7 @@ item (FEAT_TRAINS, item_UtilityTrain28px, 605) {
 
 item (FEAT_TRAINS, item_UtilityTrain32px, 606) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility32px);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -387,6 +395,7 @@ item (FEAT_TRAINS, item_UtilityTrain32px, 606) {
 
 item (FEAT_TRAINS, item_UtilityTrain28pxOLD, 607) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility28pxOLD);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);
@@ -426,6 +435,7 @@ item (FEAT_TRAINS, item_UtilityTrain28pxOLD, 607) {
 
 item (FEAT_TRAINS, item_UtilityTrain32pxOLD, 608) {
 	property {
+		variant_group:					header_Debug;
 		name: 							string(STR_NAME_Utility32pxOLD);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1700,1,1);

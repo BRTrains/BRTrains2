@@ -153,6 +153,7 @@ switch(FEAT_TRAINS,SELF,sw_BR165_1_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR165_0_2, 398) {
 	property {
+		variant_group:					header_Turbo;
 		name: 							string(STR_NAME_BR165_0_2);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1990,4,21);
@@ -203,6 +204,7 @@ item (FEAT_TRAINS, item_BR165_0_2, 398) {
 
 item (FEAT_TRAINS, item_BR165_0_3, 399) {
 	property {
+		variant_group:					header_Turbo;
 		name: 							string(STR_NAME_BR165_0_3);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1990,4,21);
@@ -341,6 +343,7 @@ item (FEAT_TRAINS, item_165_0c, 401) {
 
 item (FEAT_TRAINS, item_BR165_1_2, 402) {
 	property {
+		variant_group:					header_Turbo;
 		name: 							string(STR_NAME_BR165_1_2);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1990,4,21);
@@ -389,6 +392,7 @@ item (FEAT_TRAINS, item_BR165_1_2, 402) {
 
 item (FEAT_TRAINS, item_BR165_1_3, 403) {
 	property {
+		variant_group:					header_Turbo;
 		name: 							string(STR_NAME_BR165_1_3);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1990,4,21);

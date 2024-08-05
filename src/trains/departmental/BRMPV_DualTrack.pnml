@@ -1,5 +1,6 @@
 item (FEAT_TRAINS, item_MPV_DualTrack, 234) {
 	property {
+		variant_group:					header_Departmental;
 		name: 							string(STR_NAME_MPV_DualTrack);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1999,4,21);

@@ -114,6 +114,7 @@ switch(FEAT_TRAINS, SELF, switch_BR800_5car_power, current_railtype) {
 // Class 800/0/2 (5car)
 item(FEAT_TRAINS, item_BR800_5car, 459) {
 	property {
+		variant_group:				header_IEP;
 		name: string(STR_BR800_5CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2017, 10, 06);
