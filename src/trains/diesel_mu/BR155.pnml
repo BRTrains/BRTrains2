@@ -64,6 +64,7 @@ switch(FEAT_TRAINS,SELF,sw_BR155_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR155, 55) {
 	property {
+		variant_group:					header_Sprinter;
 		name: 							string(STR_NAME_BR155);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1987,4,21);
