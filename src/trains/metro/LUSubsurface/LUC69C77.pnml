@@ -1,60 +1,47 @@
-spriteset(spriteset_LUAStock_Purchase, "gfx/Metro/LU_A60A62.png") {
+spriteset(spriteset_LUCStock_Purchase, "gfx/Metro/LU_C69C77.png") {
 	template_purchase(200, 0)
 }
 
-spriteset(spriteset_LUAStocka_TfL, "gfx/Metro/LU_A60A62.png") {
+spriteset(spriteset_LUCStocka_TfL, "gfx/Metro/LU_C69C77.png") {
 	template_train32px_old(0, 0)
 }
-spriteset(spriteset_LUAStockb_TfL, "gfx/Metro/LU_A60A62.png") {
+spriteset(spriteset_LUCStockb_TfL, "gfx/Metro/LU_C69C77.png") {
 	template_train32px_old(0, 25)
 }
-spriteset(spriteset_LUAStockc_TfL, "gfx/Metro/LU_A60A62.png") {
+spriteset(spriteset_LUCStockc_TfL, "gfx/Metro/LU_C69C77.png") {
 	template_train32px_old(0, 50)
 }
 
-spriteset(spriteset_LUAStocka_TfLWhite, "gfx/Metro/LU_A60A62.png") {
-	template_train32px_old(0, 75)
-}
-spriteset(spriteset_LUAStockb_TfLWhite, "gfx/Metro/LU_A60A62.png") {
-	template_train32px_old(0, 100)
-}
-spriteset(spriteset_LUAStockc_TfLWhite, "gfx/Metro/LU_A60A62.png") {
-	template_train32px_old(0, 125)
+
+switch(FEAT_TRAINS,SELF, sw_LUCStocka,cargo_subtype){
+    0:	spriteset_LUCStocka_TfL;	
 }
 
-
-switch(FEAT_TRAINS,SELF, sw_LUAStocka,cargo_subtype){
-    0:	spriteset_LUAStocka_TfL;
-	1:	spriteset_LUAStocka_TfLWhite;
+switch(FEAT_TRAINS,SELF, sw_LUCStockb,cargo_subtype){
+    0:	spriteset_LUCStockb_TfL;	
 }
 
-switch(FEAT_TRAINS,SELF, sw_LUAStockb,cargo_subtype){
-    0:	spriteset_LUAStockb_TfL;
-	1:	spriteset_LUAStockb_TfLWhite;
+switch(FEAT_TRAINS,SELF, sw_LUCStockc,cargo_subtype){
+    0:	spriteset_LUCStockc_TfL;	
 }
 
-switch(FEAT_TRAINS,SELF, sw_LUAStockc,cargo_subtype){
-    0:	spriteset_LUAStockc_TfL;
-	1:	spriteset_LUAStockc_TfLWhite;
-}
-
-switch (FEAT_TRAINS, SELF, switch_articulated_LUAStock, extra_callback_info1) {
-	1..2: return item_LUAStockb;
-	3: return item_LUAStockc;
+switch (FEAT_TRAINS, SELF, switch_articulated_LUCStock, extra_callback_info1) {
+	1: return item_LUCStockb;
+	2: return item_LUCStockc;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_LUAStock_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_LU_TfL);
-	1:	return string(str_LU_Unpainted);
+switch(FEAT_TRAINS,SELF,sw_LUCStock_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_LU_TfL);	
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_LUAStock, 507) {
+item (FEAT_TRAINS, item_LUCStock, 540) {
 	property {
-		name: 							string(STR_NAME_LUAStock);
+		variant_group:					header_LU_Subsurface;
+		name: 							string(STR_NAME_LUCStock);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1961,1,1);
+		introduction_date:				date(1970,4,21);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -63,9 +50,9 @@ item (FEAT_TRAINS, item_LUAStock, 507) {
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					40;
 		cost_factor:					113;
-		running_cost_factor:			70;
+		running_cost_factor:			45;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							70 mph;
+		speed:							45 mph;
 		refit_cost:						0;
 		track_type:						BR_4RDR;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -84,25 +71,25 @@ item (FEAT_TRAINS, item_LUAStock, 507) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LUAStock_usage),string(str_LUAStock_eos),string(str_LUAStock_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LUCStock_usage),string(str_LUCStock_eos),string(str_LUCStock_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_LUAStock_cargo_subtype_text;
-	articulated_part:        			switch_articulated_LUAStock;
-	default: 							sw_LUAStocka;
-	purchase:							spriteset_LUAStock_Purchase;
+	cargo_subtype_text:					sw_LUCStock_cargo_subtype_text;
+	articulated_part:        			switch_articulated_LUCStock;
+	default: 							sw_LUCStocka;
+	purchase:							spriteset_LUCStock_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(205 * param_pax);
 		cost_factor:	return(GetAdjustedCost(113));
-	running_cost_factor: return(GetAdjustedCost(70));
+	running_cost_factor: return(GetAdjustedCost(45));
 }
 }
 
-item (FEAT_TRAINS, item_LUAStockb, 508) {
+item (FEAT_TRAINS, item_LUCStockb, 541) {
 	property {
-		name: 							string(STR_NAME_LUAStock);
+		name: 							string(STR_NAME_LUCStock);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1961,1,1);
+		introduction_date:				date(2002,4,21);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -113,7 +100,7 @@ item (FEAT_TRAINS, item_LUAStockb, 508) {
 		cost_factor:					1;
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							70 mph;
+		speed:							60 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						BR_4RDR;
@@ -134,18 +121,18 @@ item (FEAT_TRAINS, item_LUAStockb, 508) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_LUAStockb;
+	default: 							sw_LUCStockb;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(125 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_LUAStockc, 509) {
+item (FEAT_TRAINS, item_LUCStockc, 542) {
 	property {
-		name: 							string(STR_NAME_LUAStock);
+		name: 							string(STR_NAME_LUCStock);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1961,1,1);
+		introduction_date:				date(2002,4,21);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -156,7 +143,7 @@ item (FEAT_TRAINS, item_LUAStockc, 509) {
 		cost_factor:					1;
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							70 mph;
+		speed:							60 mph;
 		refit_cost:						0;
 		track_type:						BR_4RDR;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -175,10 +162,10 @@ item (FEAT_TRAINS, item_LUAStockc, 509) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LUAStock_usage),string(str_LUAStock_eos),string(str_LUAStock_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LUCStock_usage),string(str_LUCStock_eos),string(str_LUCStock_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_LUAStock_cargo_subtype_text;
-	default: 							sw_LUAStockc;
+	cargo_subtype_text:					sw_LUCStock_cargo_subtype_text;
+	default: 							sw_LUCStockc;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(204 * param_pax);

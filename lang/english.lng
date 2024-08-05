@@ -1182,7 +1182,7 @@ str_FurnessLumberWagon_usage		:Wood
 str_FurnessLumberWagon_eos		:---
 str_FurnessLumberWagon_liveries	:Green
 
-STR_NAME_BRMk1_Header			:BR Mark 1 Coaches
+STR_NAME_BRMk1_Header			:BR Mark 1 Coaches (Click to Expand)
 STR_NAME_BRMk1FO				:BR Mark 1 Coach (First Open)
 str_BRMk1FO_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachite Green, BR Maroon, BR Blue & Grey
 
@@ -1225,7 +1225,7 @@ str_BRMk1RK_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachi
 STR_NAME_BRMk1RMB				:BR Mark 1 Coach (Restaurant Buffet)
 str_BRMk1RMB_liveries			:BR Carmine and Cream, BR Chocolate and Cream, BR Malachite Green, BR Maroon, BR Blue & Grey
 
-STR_NAME_BRMk2_Header			:BR Mark 2 Coaches
+STR_NAME_BRMk2_Header			:BR Mark 2 Coaches (Click to Expand)
 STR_NAME_BRMk2_DBSO				:BR Mark 2 Driving Coach (Driving Brake Standard Class)
 STR_NAME_BRMk2_Early_SO			:BR Mark 2 Coach (A-C Standard Class)
 STR_NAME_BRMk2_Early_FO			:BR Mark 2 Coach (A-C First Class)
@@ -1243,7 +1243,7 @@ str_BRMk2_BFO_liveries			:BR Blue & Grey, InterCity, ScotRail, DRS
 str_BRMk2_Buffet_liveries		:BR Blue & Grey, InterCity, ScotRail, Arriva, Arriva New, DRS, Virgin, First Great Western "Fag Packet", West Coast Railway Company
 
 
-STR_NAME_BRMk3_Header			:BR Mark 3 Coaches
+STR_NAME_BRMk3_Header			:BR Mark 3 Coaches (Click to Expand)
 
 STR_NAME_BRMk3TF				:BR Mark 3 Coach (Trailer First)
 str_BRMk3TF_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
@@ -1272,7 +1272,7 @@ str_BRMk3Sleeper_liveries			:BR Blue, InterCity, First ScotRail, ScotRail, Caled
 STR_NAME_BRMk3DVT				:BR Mark 3 Driving Van Trailer
 str_BRMk3DVT_liveries			:InterCity Swallow, Virgin, ONE, Chiltern, Greater Anglia, Transport for Wales, Virgin "Pretendolino", Arriva Wales, Network Rail
 
-STR_NAME_BRMk4_Header			:BR Mark 4 Coaches
+STR_NAME_BRMk4_Header			:BR Mark 4 Coaches (Click to Expand)
 
 STR_NAME_BRMk4FO				:BR Mark 4 Coach (First Open)
 str_BRMk4FO_liveries			:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
@@ -1292,7 +1292,7 @@ str_BRMk4RFM_liveries			:InterCity Swallow, National Express, GNER, East Coast, 
 STR_NAME_BRMk4DVT				:BR Mark 4 Driving Van Trailer
 str_BRMk4DVT_liveries			:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
-STR_NAME_BRMk5_Header			:BR Mark 5 Coaches
+STR_NAME_BRMk5_Header			:BR Mark 5 Coaches (Click to Expand)
 
 STR_NAME_BRMk5DVT				:BR Mark 5 Driving Van Trailer
 str_BRMk5DVT_liveries			:Transpennine Express
@@ -1371,6 +1371,8 @@ str_LNER_Thompson_61FK_liveries		:LNER "Teak"
 STR_NAME_LNER_Thompson_63TK		    :LNER Thompson 63 ft TK
 str_LNER_Thompson_63TK_liveries		:LNER "Teak"
 
+STR_LU_Subsurface_Header        :London Underground sub-surface
+STR_LU_Deeplevel_Header        :London Underground deep level
 
 STR_NAME_LU1938					:London Underground 1938 Stock (8-car, Deep Level)
 str_LU1938_usage				:Metro
@@ -1835,3 +1837,27 @@ str_whyte_2100      :2-10-0
 
 str_whyte_garrett260   :2-6-0+0-6-2
 str_whyte_garrett280   :2-8-0+0-8-2
+
+# Power types
+str_steam           :Steam
+str_electric        :Electric
+str_electric_AC     :Electric (Overhead power)
+str_electric_3rd    :Electric (3rd Rail)
+str_electric_4th    :Electric (4th Rail)
+str_electric_dual   :Electric (Dual Voltage 3rd rail + overhead)
+str_diesel          :Diesel
+str_bimodeDE        :Bi-mode (Diesel + Electric)
+str_bimodeBE        :Bi-mode (Battery + Electric)
+str_trimode         :Tri-mode (Diesel + Electric + Battery
+
+# Just some numbers
+str_0       :0
+str_1       :1
+str_2       :2
+str_3       :3
+str_4       :4
+str_5       :5
+str_6       :6
+str_7       :7
+str_8       :8
+str_9       :9

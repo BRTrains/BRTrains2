@@ -1,46 +1,47 @@
-spriteset(spriteset_LU1995_Purchase, "gfx/Metro/LU_1995.png") {
+spriteset(spriteset_LU2009_Purchase, "gfx/Metro/LU_2009.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_LU1995a_TfL, "gfx/Metro/LU_1995.png") {
+spriteset(spriteset_LU2009a_TfL, "gfx/Metro/LU_2009.png") {
 	template_train32px_old(0, 13)
 }
-spriteset(spriteset_LU1995b_TfL, "gfx/Metro/LU_1995.png") {
+spriteset(spriteset_LU2009b_TfL, "gfx/Metro/LU_2009.png") {
 	template_train32px_old(0, 38)
 }
-spriteset(spriteset_LU1995c_TfL, "gfx/Metro/LU_1995.png") {
+spriteset(spriteset_LU2009c_TfL, "gfx/Metro/LU_2009.png") {
 	template_train32px_old(0, 63)
 }
 
-switch(FEAT_TRAINS,SELF, sw_LU1995a,cargo_subtype){
-	0:spriteset_LU1995a_TfL;	
+switch(FEAT_TRAINS,SELF, sw_LU2009a,cargo_subtype){
+	0:spriteset_LU2009a_TfL;	
 }
 
-switch(FEAT_TRAINS,SELF, sw_LU1995b,cargo_subtype){
-	0:spriteset_LU1995b_TfL;	
+switch(FEAT_TRAINS,SELF, sw_LU2009b,cargo_subtype){
+	0:spriteset_LU2009b_TfL;	
 }
 
-switch(FEAT_TRAINS,SELF, sw_LU1995c,cargo_subtype){
-	0:spriteset_LU1995c_TfL;	
+switch(FEAT_TRAINS,SELF, sw_LU2009c,cargo_subtype){
+	0:spriteset_LU2009c_TfL;	
 }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_LU1995, extra_callback_info1) {
-	1..4: return item_LU1995c;	
-	5: return item_LU1995b;
+switch (FEAT_TRAINS, SELF, switch_articulated_LU2009, extra_callback_info1) {
+	1..6: return item_LU2009c;	
+	7: return item_LU2009b;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_LU1995_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_LU2009_cargo_subtype_text,cargo_subtype){
     0:	return string(str_LU_TfL);
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_LU1995, 522) {
+item (FEAT_TRAINS, item_LU2009, 485) {
 	property {
-		name: 							string(STR_NAME_LU1995);
+		variant_group:					header_LU_Deeplevel;
+		name: 							string(STR_NAME_LU2009);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1995,1,1);
-		model_life:						15;
+		introduction_date:				date(2009,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
 		retire_early:					1;
 		vehicle_life:					50;
 		reliability_decay:				7;
@@ -50,7 +51,7 @@ item (FEAT_TRAINS, item_LU1995, 522) {
 		cost_factor:					61;
 		running_cost_factor:			37;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							62 mph;
+		speed:							60 mph;
 		refit_cost:						0;
 		track_type:						BR_4RDR;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -59,7 +60,7 @@ item (FEAT_TRAINS, item_LU1995, 522) {
 		dual_headed:					0;
 		default_cargo_type:				PASS;
 		cargo_capacity:					141;
-		weight:							180 ton;
+		weight:							197 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;
 		tractive_effort_coefficient:	0.08;
 		air_drag_coefficient:			0.05;
@@ -70,12 +71,12 @@ item (FEAT_TRAINS, item_LU1995, 522) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LU1995_usage),string(str_LU1995_eos),string(str_LU1995_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LU2009_usage),string(str_LU2009_eos),string(str_LU2009_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_LU1995_cargo_subtype_text;
-	articulated_part:        			switch_articulated_LU1995;
-	default: 							sw_LU1995a;
-	purchase:							spriteset_LU1995_Purchase;
+	cargo_subtype_text:					sw_LU2009_cargo_subtype_text;
+	articulated_part:        			switch_articulated_LU2009;
+	default: 							sw_LU2009a;
+	purchase:							spriteset_LU2009_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_electric_sound;
@@ -85,11 +86,11 @@ item (FEAT_TRAINS, item_LU1995, 522) {
 }
 }
 
-item (FEAT_TRAINS, item_LU1995b, 523) {
+item (FEAT_TRAINS, item_LU2009b, 486) {
 	property {
-		name: 							string(STR_NAME_LU1995);
+		name: 							string(STR_NAME_LU2009);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1995,1,1);
+		introduction_date:				date(2009,1,1);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -100,7 +101,7 @@ item (FEAT_TRAINS, item_LU1995b, 523) {
 		cost_factor:					1;
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							62 mph;
+		speed:							60 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						BR_4RDR;
@@ -122,18 +123,18 @@ item (FEAT_TRAINS, item_LU1995b, 523) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_LU1995b;
+	default: 							sw_LU2009b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(141 * param_pax);
 }
 }
 
-item (FEAT_TRAINS, item_LU1995c, 524) {
+item (FEAT_TRAINS, item_LU2009c, 487) {
 	property {
-		name: 							string(STR_NAME_LU1995);
+		name: 							string(STR_NAME_LU2009);
 		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1995,1,1);
+		introduction_date:				date(2009,1,1);
 		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					50;
@@ -144,7 +145,7 @@ item (FEAT_TRAINS, item_LU1995c, 524) {
 		cost_factor:					1;
 		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							62 mph;
+		speed:							60 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						BR_4RDR;
@@ -166,7 +167,7 @@ item (FEAT_TRAINS, item_LU1995c, 524) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_LU1995c;
+	default: 							sw_LU2009c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_electric_sound;
 	cargo_capacity: return(141 * param_pax);

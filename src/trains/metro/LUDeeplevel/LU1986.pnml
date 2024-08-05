@@ -49,6 +49,7 @@ switch(FEAT_TRAINS,SELF,sw_LU1986_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_LU1986, 510) {
 	property {
+		variant_group:					header_LU_Deeplevel;
 		name: 							string(STR_NAME_LU1986);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1986,1,1);

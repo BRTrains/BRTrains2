@@ -57,6 +57,7 @@ switch(FEAT_TRAINS,SELF,sw_LU1992_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_LU1992, 528) {
 	property {
+		variant_group:					header_LU_Deeplevel;
 		name: 							string(STR_NAME_LU1992);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1992,1,1);
@@ -107,6 +108,7 @@ item (FEAT_TRAINS, item_LU1992, 528) {
 
 item (FEAT_TRAINS, item_LU1992_4, 546) {
 	property {
+		variant_group:					header_LU_Deeplevel;
 		name: 							string(STR_NAME_LU1992_4);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1992,1,1);

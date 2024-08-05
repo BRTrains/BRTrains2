@@ -44,6 +44,7 @@ switch(FEAT_TRAINS,SELF,sw_LULS_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_LULS7, 292) {
 	property {
+		variant_group:					header_LU_Subsurface;
 		name: 							string(STR_NAME_LULS7);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2012,4,21);
@@ -92,6 +93,7 @@ item (FEAT_TRAINS, item_LULS7, 292) {
 
 item (FEAT_TRAINS, item_LULS8, 293) {
 	property {
+		variant_group:					header_LU_Subsurface;
 		name: 							string(STR_NAME_LULS8);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2010,4,21);
