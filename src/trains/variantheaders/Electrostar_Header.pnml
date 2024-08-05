@@ -6,6 +6,6 @@ item (FEAT_TRAINS, header_Electrostar, 10012) {
 		power:							1;
 	}
 	graphics {	
-		purchase:							spriteset_LU1967_Purchase;	
+		purchase:							spriteset_BR378_Purchase;	
 	}
 }

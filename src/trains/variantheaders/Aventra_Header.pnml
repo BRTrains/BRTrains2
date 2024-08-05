@@ -6,6 +6,6 @@ item (FEAT_TRAINS, header_Aventra, 10013) {
 		power:							1;
 	}
 	graphics {	
-		purchase:							spriteset_LU1967_Purchase;	
+		purchase:							spriteset_br_345_purchase;	
 	}
 }
