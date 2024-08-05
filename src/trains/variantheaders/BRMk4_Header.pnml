@@ -1,34 +1,10 @@
 item (FEAT_TRAINS, header_BRMk4, 10004) {
- property {
-  name: string(STR_NAME_BRMk4_Header);
-  climates_available: NO_CLIMATE;
-  refittable_cargo_classes: 0;
-  cargo_allow_refit: [PASS];
-  loading_speed: 14;
-  cost_factor: 0;
-  running_cost_factor: 0;
-  sprite_id: SPRITE_ID_NEW_TRAIN;
-  refit_cost: 0;
-  track_type: ELRL;
-  power: 0;
-  running_cost_base: RUNNING_COST_NONE;
-  dual_headed: 0;
-  default_cargo_type: PASS;
-  cargo_capacity: 76;
-  weight: 0;
-  tractive_effort_coefficient: 0;
-  air_drag_coefficient: 0;
-  length: 8;
-  effect_spawn_model_and_powered: EFFECT_SPAWN_MODEL_NONE;
-  extra_weight_per_wagon: 0;
-  bitmask_vehicle_info: 0;
- }
- graphics {
- can_attach_wagon: CB_RESULT_ATTACH_ALLOW;
-  default: sw_91_BRMk4TSO;
- colour_mapping: return PALETTE_CC_FIRST;
- cargo_capacity: return(76 * param_pax);
- cargo_subtype_text:					sw_BR91_cargo_subtype_text;
- purchase:							spriteset_BRMk4TS_purchase;
-}
+    property {
+        name: string(STR_NAME_BRMk4_Header);
+        climates_available: NO_CLIMATE;
+        sprite_id: SPRITE_ID_NEW_TRAIN;
+    }
+    graphics {
+        purchase:							spriteset_BRMk4TS_purchase;
+    }
 }
