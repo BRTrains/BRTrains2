@@ -70,6 +70,17 @@ str_var_Named                 :Named
 str_var_Olympics              :Olympics
 str_var_Unnamed               :Unnamed
 
+# Variant group headers
+STR_LU_Subsurface_Header        :London Underground sub-surface
+STR_LU_Deeplevel_Header         :London Underground deep level
+STR_Pacer_Header                :British Rail "Pacers"
+STR_Sprinter_Header             :British Rail "Sprinters"
+STR_Turbostar_Header            :British Rail "Turbostar"/"Clubman"
+STR_Voyager_Header              :Brirish Rail "Voyager"/"Meridian"
+STR_Aventra_Header              :British Rail "Aventras"
+STR_Electrostar_Header          :British Rail "Electrostars"
+STR_IEP_Header                  :British Rail "Intercity Express Program"
+
 # Parameters 
 STR_PARAM_MAX_SPEED             :Max Speed
 STR_PARAM_MAX_SPEED_DESC        :Toggle Between Service Speed and Design Speed
@@ -1370,9 +1381,6 @@ str_LNER_Thompson_61FK_liveries		:LNER "Teak"
 
 STR_NAME_LNER_Thompson_63TK		    :LNER Thompson 63 ft TK
 str_LNER_Thompson_63TK_liveries		:LNER "Teak"
-
-STR_LU_Subsurface_Header        :London Underground sub-surface
-STR_LU_Deeplevel_Header        :London Underground deep level
 
 STR_NAME_LU1938					:London Underground 1938 Stock (8-car, Deep Level)
 str_LU1938_usage				:Metro

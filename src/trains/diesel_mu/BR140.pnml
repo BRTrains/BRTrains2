@@ -31,6 +31,7 @@ switch(FEAT_TRAINS,SELF,sw_BR140_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR140, 1401) {
 	property {
+		variant_group:					header_Pacer;
 		name: 							string(STR_NAME_BR140);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1984,4,21);
