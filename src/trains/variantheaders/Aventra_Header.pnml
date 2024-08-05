@@ -1,0 +1,11 @@
+item (FEAT_TRAINS, header_Aventra, 10013) {
+	property {
+		name: 							string(STR_LU_Aventra_Header);
+		climates_available: 			NO_CLIMATE;					
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		power:							1;
+	}
+	graphics {	
+		purchase:							spriteset_LU1967_Purchase;	
+	}
+}
