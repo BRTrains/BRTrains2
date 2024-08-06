@@ -149,6 +149,7 @@ switch(FEAT_TRAINS,SELF,sw_BR378_5_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR378_3dv, 225) {
 	property {
+		variant_group:					header_Electrostar;
 		name: 							string(STR_NAME_BR378_3);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2009,4,21);
@@ -200,6 +201,7 @@ item (FEAT_TRAINS, item_BR378_3dv, 225) {
 
 item (FEAT_TRAINS, item_BR378_4, 226) {
 	property {
+		variant_group:					header_Electrostar;
 		name: 							string(STR_NAME_BR378_4);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2011,4,21);
@@ -248,6 +250,7 @@ item (FEAT_TRAINS, item_BR378_4, 226) {
 
 item (FEAT_TRAINS, item_BR378_4dv, 227) {
 	property {
+		variant_group:					header_Electrostar;
 		name: 							string(STR_NAME_BR378_4);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2011,4,21);
@@ -298,6 +301,7 @@ item (FEAT_TRAINS, item_BR378_4dv, 227) {
 
 item (FEAT_TRAINS, item_BR378_5, 228) {
 	property {
+		variant_group:					header_Electrostar;
 		name: 							string(STR_NAME_BR378_5);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2013,4,21);
@@ -346,6 +350,7 @@ item (FEAT_TRAINS, item_BR378_5, 228) {
 
 item (FEAT_TRAINS, item_BR378_5dv, 229) {
 	property {
+		variant_group:					header_Electrostar;
 		name: 							string(STR_NAME_BR378_5);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2013,4,21);

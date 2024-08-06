@@ -45,6 +45,7 @@ switch(FEAT_TRAINS,SELF,sw_BR377_5dv_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR377_5dv, 221) {
 	property {
+		variant_group:					header_Electrostar;
 		name: 							string(STR_NAME_BR377_5dv);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2014,4,21);
