@@ -1,5 +1,6 @@
 item (FEAT_TRAINS, item_GER_L77, 660) {
 	property {
+		variant_group:					header_Steam;
 		name: 							string(STR_NAME_GER_L77);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1915,1,1);

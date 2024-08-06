@@ -1,0 +1,11 @@
+item (FEAT_TRAINS, header_Electric, 10025) {
+	property {
+		name: 							string(STR_Electric_Header);
+		climates_available: 			NO_CLIMATE;					
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		power:							1;
+	}
+	graphics {	
+		purchase:							spriteset_BR90_Purchase;	
+	}
+}

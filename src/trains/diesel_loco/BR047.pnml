@@ -18,6 +18,7 @@ switch(FEAT_TRAINS,PARENT,sw_BR47_Sprites ,vehicle_is_reversed){
 
 item (FEAT_TRAINS, item_BR47, 440) {
 	property {
+		variant_group:					header_Diesel;
 		name: 							string(STR_NAME_BR47);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1962,4,21);

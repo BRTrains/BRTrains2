@@ -1,4 +1,7 @@
 sort(FEAT_TRAINS, [
+header_Steam,
+header_Diesel,
+header_Electric,
  item_Coppernob,
  item_CaledonianSingle,
  item_FurnessK2,

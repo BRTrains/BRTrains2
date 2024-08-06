@@ -65,6 +65,7 @@ switch(FEAT_TRAINS,SELF,sw_BR60_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR60, 267) {
 	property {
+		variant_group:					header_Diesel;
 		name: 							string(STR_NAME_BR60);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1989,4,21);

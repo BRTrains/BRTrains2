@@ -17,6 +17,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR13, extra_callback_info1) {
 
 item (FEAT_TRAINS, item_BR13, 2) {
 	property {
+		variant_group:					header_Diesel;
 		name: 							string(STR_NAME_BR13);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1965,4,21);

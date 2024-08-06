@@ -34,6 +34,7 @@ switch(FEAT_TRAINS,SELF,sw_GWRHall_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_GWRHall, 512) {
 	property {
+		variant_group:					header_Steam;
 		name: 							string(STR_NAME_GWRHall);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1946,2,10);

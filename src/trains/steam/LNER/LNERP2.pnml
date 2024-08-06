@@ -1,5 +1,6 @@
 item (FEAT_TRAINS, item_LNERP2, 591) {
 	property {
+		variant_group:					header_LNERP2;
 		name: 							string(STR_NAME_LNERP2);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1934,1,1);
@@ -30,8 +31,7 @@ item (FEAT_TRAINS, item_LNERP2, 591) {
 		length:							8;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
 		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-		variant_group:					header_LNERP2;
+		bitmask_vehicle_info:			0;		
 	}
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_LNERP2_usage),string(str_LNERP2_eos),string(str_LNERP2_liveries)));

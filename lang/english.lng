@@ -73,6 +73,9 @@ str_var_Unnamed               :Unnamed
 # Variant group headers
 STR_LU_Subsurface_Header        :London Underground sub-surface
 STR_LU_Deeplevel_Header         :London Underground deep level
+STR_Steam_Header                :British Rail Steam Locomotives
+STR_Diesel_Header               :British Rail Diesel Locomotives
+STR_Electric_Header             :British Rail Electric Locomotives
 STR_Pacer_Header                :British Rail "Pacer"
 STR_Sprinter_Header             :British Rail "Sprinter"
 STR_Turbo_Header                :British Rail "Turbo"

@@ -40,6 +40,7 @@ switch(FEAT_TRAINS,SELF,sw_Coppernob_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_Coppernob, 584) {
 	property {
+		variant_group:					header_Steam;
 		name: 							string(STR_NAME_Coppernob);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1848,4,21);
