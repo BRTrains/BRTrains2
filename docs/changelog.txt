@@ -2,6 +2,7 @@
 - Furness Railway Railmotor?
 - GWR 5700/6700/8750 Class (gfx done need coding)
 - Class 20 (graphics drawn? Need to check if they're actually right.... looksl ike the wheels etc need to be taller on some views, definitely needs more liveries)
+- Stephenson's Planet
 
 # v2.12
 - Added Class 58

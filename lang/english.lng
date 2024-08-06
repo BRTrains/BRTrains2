@@ -330,6 +330,10 @@ str_MPV_Geometry                :Track Geometry (Covered)
 str_MPV_GeometryOpen            :Track Geometry (Open)
 str_MPV_Leaf                    :Leaf Removal
 
+STR_NAME_StephensonPlanet			:Stephenson's 2-2-0 "Planet"
+str_StephensonPlanet_usage			:Mixed Traffic
+str_StephensonPlanet_eos			:1830
+str_StephensonPlanet_liveries		:Teak
 
 STR_NAME_Coppernob					:Furness Railway 0-4-0 "Coppernob"
 str_Coppernob_usage					:Mixed Traffic
@@ -1787,6 +1791,7 @@ str_SWT_refurb					: (South West Trains - Refurbished)
 str_SWT_stagecoach				: (South West Trains - Stagecoach)
 str_SWR				            : (South Western Railway)
 str_SWRPride		            : (South Western Railway - Pride)
+str_Teak                        : (Teak)
 str_Tesco                       : (Tesco)
 str_TescoEyeCandy               : (Tesco - Always show container)
 str_TfL							: (TfL Rail)

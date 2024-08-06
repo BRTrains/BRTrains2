@@ -3,6 +3,7 @@
 
 // Disable some trains that aren't finished
 	disable_item(FEAT_TRAINS, 671); // Class 20
+	disable_item(FEAT_TRAINS, 674); // Stephenson's Planet
 
 // Disable some trains that only exist for template alignment or debugging
 	disable_item(FEAT_TRAINS, 601); // 12px
