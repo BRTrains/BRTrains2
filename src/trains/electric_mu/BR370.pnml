@@ -39,6 +39,7 @@ switch(FEAT_TRAINS,SELF,sw_BR370_speed,param_max_speed){
 
 item (FEAT_TRAINS, item_BR370, 125) {
 	property {
+		variant_group:					header_APT;
 		name: 							string(STR_NAME_BR370);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1979,4,21);

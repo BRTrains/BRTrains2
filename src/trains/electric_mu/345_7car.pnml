@@ -23,6 +23,7 @@ switch(FEAT_TRAINS, SELF, switch_br_345_7car_particles, position_in_articulated_
 // Class 345
 item(FEAT_TRAINS, item_br_345_7car, 599) {
 	property {
+		variant_group:					header_Aventra;
 		name: string(STR_BR_345_7CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2017, 06, 02);

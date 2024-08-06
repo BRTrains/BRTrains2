@@ -34,6 +34,7 @@ switch(FEAT_TRAINS, SELF, switch_br_701_5_can_attach_wagon, vehicle_type_id) {
 // Class 701
 item(FEAT_TRAINS, item_br_701_5, 429) {
 	property {
+		variant_group:					header_Aventra;
 		name: string(STR_BR_701_5);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2020, 11, 01);

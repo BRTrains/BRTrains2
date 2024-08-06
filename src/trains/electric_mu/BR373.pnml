@@ -205,6 +205,7 @@ switch(FEAT_TRAINS,SELF,switch_BR373DV_speed, tile_powers_railtype("ELRL")){
 
 item (FEAT_TRAINS, item_BR373, 80) {
 	property {
+		variant_group:					header_Eurostar;
 		name: 							string(STR_NAME_BR373Dual);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1993,4,21);
@@ -257,6 +258,7 @@ item (FEAT_TRAINS, item_BR373, 80) {
 
 item (FEAT_TRAINS, item_BR373_25kv, 557) {
 	property {
+		variant_group:					header_Eurostar;
 		name: 							string(STR_NAME_BR373);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2007,4,21);
@@ -307,6 +309,7 @@ item (FEAT_TRAINS, item_BR373_25kv, 557) {
 
 item (FEAT_TRAINS, item_BR373_2, 97) {
 	property {
+		variant_group:					header_Eurostar;
 		name: 							string(STR_NAME_BR373_2);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1993,4,21);

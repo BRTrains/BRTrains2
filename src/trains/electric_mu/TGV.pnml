@@ -1,5 +1,6 @@
 item(FEAT_TRAINS, item_TGV, 589) {
 	property {
+		variant_group:					header_Eurostar;
 		name: string(STR_TGV);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2019, 09, 16);

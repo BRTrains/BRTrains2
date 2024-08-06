@@ -98,6 +98,7 @@ switch(FEAT_TRAINS,SELF,sw_BR230_3car_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR230_2CAR, 501) {
 	property {
+		variant_group:			header_DTrain;
 		name: 							string(STR_NAME_BR230_2CAR);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2019,1,1);
@@ -147,6 +148,7 @@ item (FEAT_TRAINS, item_BR230_2CAR, 501) {
 
 item (FEAT_TRAINS, item_BR230_3CAR, 502) {
 	property {
+		variant_group:			header_DTrain;
 		name: 							string(STR_NAME_BR230_3CAR);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2021,1,1);

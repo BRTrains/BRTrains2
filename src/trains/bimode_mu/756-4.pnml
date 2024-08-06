@@ -58,6 +58,7 @@ switch(FEAT_TRAINS, SELF, switch_br_756_4_length, position_in_articulated_veh % 
 // Class 756/4 (4.5car)
 item(FEAT_TRAINS, item_br_756_4, 573) {
 	property {
+		variant_group:			header_Flirt;
 		name: string(STR_BR_756_4CAR);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2019, 07, 29);

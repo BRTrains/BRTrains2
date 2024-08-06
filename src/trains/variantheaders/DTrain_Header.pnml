@@ -1,0 +1,11 @@
+item (FEAT_TRAINS, header_DTrain, 10021) {
+	property {
+		name: 							string(STR_DTrain_Header);
+		climates_available: 			NO_CLIMATE;					
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		power:							1;
+	}
+	graphics {	
+		purchase:							spriteset_BR230_3car_Purchase;	
+	}
+}

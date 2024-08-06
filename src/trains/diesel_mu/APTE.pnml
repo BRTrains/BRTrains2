@@ -39,6 +39,7 @@ switch(FEAT_TRAINS,SELF,sw_APTE_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_APTE, 568) {
 	property {
+		variant_group:					header_APT;
 		name: 							string(STR_NAME_APTE);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1972,4,21);

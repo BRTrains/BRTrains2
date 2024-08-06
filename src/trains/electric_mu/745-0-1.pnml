@@ -59,6 +59,7 @@ switch(FEAT_TRAINS, SELF, switch_br_745_subtype_text, cargo_subtype) {
 // Class 331/0 (3car)
 item(FEAT_TRAINS, item_br_745, 449) {
 	property {
+		variant_group:			header_Flirt;
 		name: string(STR_BR_745);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2020, 01, 08);

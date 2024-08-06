@@ -46,6 +46,7 @@ switch(FEAT_TRAINS,SELF,sw_BR484_speed,param_max_speed){
 
 item (FEAT_TRAINS, item_BR484, 499) {
 	property {
+		variant_group:			header_DTrain;
 		name: 							string(STR_NAME_BR484);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2021,1,1);
