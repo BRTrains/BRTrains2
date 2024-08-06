@@ -498,6 +498,16 @@ str_BR57_usage					:Mixed Traffic
 str_BR57_eos					:---
 str_BR57_liveries				:
 
+STR_NAME_BR58					:BR Class 58 "Bone"
+str_BR58_usage					:Heavy Freight
+str_BR58_eos					:---
+str_BR58_liveries				:Railfreight (2 Tone Grey, 3 Tone Grey, 3 Tone Grey Coal Sector, Mainline Grey, Mainline Blue)
+
+STR_NAME_BR59					:BR Class 59 "Super Shed"
+str_BR59_usage					:Mixed Freight
+str_BR59_eos					:---
+str_BR59_liveries				:
+
 STR_NAME_BR60					:BR Class 60 "Tug"
 str_BR60_usage					:Mixed Freight
 str_BR60_eos					:---
@@ -1722,7 +1732,12 @@ str_PullmanBrown                : (Brown Pullman)
 str_Random                      : (Random)
 str_RandomEyeCandy              : (Random - Always show container)
 str_Railtrack					: (Railtrack)
-str_RailfreightGrey				: (Rail Freight - Grey)
+str_RailfreightGrey				: (RailFreight - Grey)
+str_Railfreight2Grey			: (RailFreight - 2 Tone Grey)
+str_Railfreight3Grey			: (RailFreight - 3 Tone Grey)
+str_Railfreight3GreyCoal		: (RailFreight - 3 Tone Grey - Coal)
+str_RailfreightMainlineGrey		: (RailFreight - Mainline Grey)
+str_RailfreightMainlineBlue		: (RailFreight - Mainline Blue)
 str_Regional					: (Regional Railways)
 str_RegionalExpress				: (Regional Railways Express)
 str_RegionalGreen				: (Regional Railways - Green)
