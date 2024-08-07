@@ -25,6 +25,7 @@
 - Improved Standard 9F
 - Added Orange Freightliner livery for Class 66, Class 90
 - Started using variant groups to organise purchase list
+- Fixed tilting train speeds in curves (221, 390, 370/APT-P, APT-E)
 - Fixed some introduction and model lifespans (set is now fully freight playable from ~1850 onwards)
 - Fixed 730/0 and /2 having swapped livery options
 - Fixed some horizontal view lengths
