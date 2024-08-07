@@ -85,7 +85,6 @@ switch(FEAT_TRAINS,SELF,sw_LNERA3_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_LNERA3, 6) {
 	property {
-		variant_group:					header_Steam;
 		name: 							string(STR_NAME_LNERA3);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1928,4,21);

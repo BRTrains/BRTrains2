@@ -40,7 +40,6 @@ switch(FEAT_TRAINS,SELF,sw_CaledonianSingle_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_CaledonianSingle, 598) {
 	property {
-		variant_group:					header_Steam;
 		name: 							string(STR_NAME_CaledonianSingle);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1886,2,1);

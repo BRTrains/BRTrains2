@@ -1,4 +1,4 @@
-item (FEAT_TRAINS, header_Desiro, 10022) {
+item (FEAT_TRAINS, header_DesiroCity, 10022) {
 	property {
 		name: 							string(STR_Desiro_Header);
 		climates_available: 			NO_CLIMATE;					

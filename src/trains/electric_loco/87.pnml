@@ -48,7 +48,6 @@ switch(FEAT_TRAINS,PARENT,sw_BR87_Sprites ,vehicle_is_reversed){
 
 item (FEAT_TRAINS, item_BR87, 567) {
 	property {
-		variant_group:					header_Electric;
 		name: 							string(STR_NAME_BR87);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1973,1,1);

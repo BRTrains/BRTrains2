@@ -1,6 +1,5 @@
 item (FEAT_TRAINS, header_LNERP2, 10000) {
 	property {
-		variant_group:					header_Steam;
 		name: 							string(STR_NAME_LNERP2);
 		climates_available: 			NO_CLIMATE;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;

@@ -40,7 +40,6 @@ switch(FEAT_TRAINS,SELF,sw_StephensonPlanet_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_StephensonPlanet, 674) {
 	property {
-		variant_group:					header_Steam;
 		name: 							string(STR_NAME_StephensonPlanet);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1830,9,1);

@@ -1,6 +1,5 @@
 item (FEAT_TRAINS, item_GWR_DeanGoods, 661) {
 	property {
-		variant_group:					header_Steam;
 		name: 							string(STR_NAME_GWR_DeanGoods);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1883,2,1);

@@ -18,7 +18,6 @@ switch(FEAT_TRAINS,SELF,sw_BR80_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR80, 560) {
 	property {
-		variant_group:					header_Electric;
 		name: 							string(STR_NAME_BR80);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1958,1,1);

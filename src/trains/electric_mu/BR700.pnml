@@ -70,7 +70,7 @@ switch(FEAT_TRAINS,SELF,sw_BR700_cargo_subtype_text,cargo_subtype){
 
 item (FEAT_TRAINS, item_BR700, 255) {
 	property {
-		variant_group:					header_Desiro;
+		variant_group:					header_DesiroCity;
 		name: 							string(STR_NAME_BR700);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2015,4,21);
@@ -121,7 +121,7 @@ item (FEAT_TRAINS, item_BR700, 255) {
 
 item (FEAT_TRAINS, item_BR700_2, 256) {
 	property {
-		variant_group:					header_Desiro;
+		variant_group:					header_DesiroCity;
 		name: 							string(STR_NAME_BR700_2);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2015,4,21);

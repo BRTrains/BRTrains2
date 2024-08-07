@@ -63,7 +63,6 @@ switch (FEAT_TRAINS, SELF, sw_articulated_Standard9F, extra_callback_info1) {
 
 item (FEAT_TRAINS, item_Standard9F, 587) {
 	property {
-		variant_group:					header_Steam;
 		name: 							string(STR_NAME_Standard9F);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1954,2,4);

@@ -1,7 +1,6 @@
 
 item (FEAT_TRAINS, item_LMSBlack5, 659) {
 	property {
-		variant_group:					header_Steam;
 		name: 							string(STR_NAME_LMSBlack5);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1934,2,1);

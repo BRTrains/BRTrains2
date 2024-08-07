@@ -1,6 +1,5 @@
 item (FEAT_TRAINS, item_LNWRWebb, 554) {
 	property {
-		variant_group:					header_Steam;
 		name: 							string(STR_NAME_LNWRWebb);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1881,1,1);
