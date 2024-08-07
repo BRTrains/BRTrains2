@@ -80,8 +80,7 @@ item (FEAT_TRAINS, item_BR390, 115) {
 		cost_factor:					140;
 		running_cost_factor:			113;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							125 mph;
-		misc_flags:						TRAIN_FLAG_TILT;
+		speed:							125 mph;		
 		refit_cost:						0;
 		track_type:						ELRL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -99,6 +98,7 @@ item (FEAT_TRAINS, item_BR390, 115) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				250;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR390_usage),string(str_BR390_eos),string(str_BR390_liveries)));
@@ -152,6 +152,7 @@ item (FEAT_TRAINS, item_BR390_11, 124) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				250;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR390_usage),string(str_BR390_eos),string(str_BR390_liveries)));
@@ -371,6 +372,7 @@ item (FEAT_TRAINS, item_390_DMSO, 121) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
@@ -407,6 +409,7 @@ item (FEAT_TRAINS, item_390_MF, 116) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				250;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
@@ -444,6 +447,7 @@ item (FEAT_TRAINS, item_390_PTF, 117) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				250;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
@@ -478,6 +482,7 @@ item (FEAT_TRAINS, item_390_TS, 119) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
@@ -512,6 +517,7 @@ item (FEAT_TRAINS, item_390_TS2, 1199) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
@@ -546,6 +552,7 @@ item (FEAT_TRAINS, item_390_PTSRMB, 120) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
@@ -580,6 +587,7 @@ item (FEAT_TRAINS, item_390_MS, 118) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
@@ -616,6 +624,7 @@ item (FEAT_TRAINS, item_390_MSD, 123) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
@@ -652,6 +661,7 @@ item (FEAT_TRAINS, item_390_MFD, 122) {
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				250;
+		curve_speed_mod:				0.3;
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
