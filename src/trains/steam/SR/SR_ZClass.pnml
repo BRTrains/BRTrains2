@@ -1,4 +1,4 @@
-item (FEAT_TRAINS, item_SRZClass, 567) {
+item (FEAT_TRAINS, item_SRZClass, 657) {
 	property {
 		name: 							string(STR_NAME_SRZClass);
 		climates_available: 			ALL_CLIMATES;
