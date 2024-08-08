@@ -22,7 +22,6 @@
 - Added AnsaldoBreda T-68 (Manchester Metrolink tram)
 - Added LU S7/S8 stock Tram variants
 - Added LU 1938 stock Tram Variant
-
 - Added "Flying Banana" Network Rail Measurement Train
 - Re-drew Class 52
 - Improved LNER Teak coach windows and roofs to fit scale better
