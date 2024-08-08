@@ -5,7 +5,9 @@
 - Stephenson's Planet (Coded, tweak graphics a British)
 - Class 58
 
-# v2.12
+# v2.13
+
+# v2.12 (2024-08-08)
 - Added LMS Black 5
 - Added LMS Jubilee
 - Added GWR Dean Goods
