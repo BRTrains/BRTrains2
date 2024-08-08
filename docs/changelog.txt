@@ -3,23 +3,25 @@
 - GWR 5700/6700/8750 Class (gfx done need coding)
 - Class 20 (graphics drawn? Need to check if they're actually right.... looksl ike the wheels etc need to be taller on some views, definitely needs more liveries)
 - Stephenson's Planet (Coded, tweak graphics a British)
+- Class 58
 
 # v2.12
-- Added Class 58
 - Added LMS Black 5
 - Added LMS Jubilee
 - Added GWR Dean Goods
 - Added Southern Railway Z-Class
 - Added GER L77 (LNER N7)
 - Added LSWR Adams Radial Tank
+- Added LNER P2 Streamlined variant
 - Added Furness Railway Rectangular Tanker Wagon
 - Added Furness Railway 20-ton Hopper Wagon
 - Added LMS Stanier P3 coach
-- Added LNER P2 Streamlined variant
 - Added LNER Thompson 61ft FK and 63ft TK coaches
 - Added AnsaldoBreda T-68 (Manchester Metrolink tram)
 - Added LU S7/S8 stock Tram variants
 - Added LU 1938 stock Tram Variant
+
+- Added "Flying Banana" Network Rail Measurement Train
 - Re-drew Class 52
 - Improved LNER Teak coach windows and roofs to fit scale better
 - Improved Standard 9F
@@ -36,6 +38,7 @@
 - Fixed 196 livery (incorrectly labelled WMR as TfW)
 - Fixed Mk4 coaches not working on unelectrified tracks
 - Fixed Mk5 sleeper being overwritten and not visible
+- Fixed IC125 only ever showing front lights
 - Re-added sounds for trams
 - Removed Route Availability from information strings
 
