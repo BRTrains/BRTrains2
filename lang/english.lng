@@ -332,6 +332,11 @@ str_MPV_Geometry                :Track Geometry (Covered)
 str_MPV_GeometryOpen            :Track Geometry (Open)
 str_MPV_Leaf                    :Leaf Removal
 
+STR_NAME_FlyingBanana					:Network Rail "Flying Banana" New Measurement Train
+str_FlyingBanana_usage					:Track Measurement
+str_FlyingBanana_eos					:---
+str_FlyingBanana_liveries				:Network Rail Yellow
+
 STR_NAME_StephensonPlanet			:Stephenson's 2-2-0 "Planet"
 str_StephensonPlanet_usage			:Mixed Traffic
 str_StephensonPlanet_eos			:1830
@@ -806,20 +811,20 @@ str_BR252_usage					:Express Passenger
 str_BR252_eos					:---
 str_BR252_liveries				:BR Blue
 
-STR_NAME_BR253					:BR Class 43 "HST"
-str_BR253_usage					:Express Passenger
-str_BR253_eos					:---
-str_BR253_liveries				:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, First Great Western
+STR_NAME_BR43					:BR Class 43 "HST"
+str_BR43_usage					:Express Passenger
+str_BR43_eos					:---
+str_BR43_liveries				:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, First Great Western
 
-STR_NAME_BR254					:BR Class 254 "Eastern"
-str_BR254_usage					:Express Passenger
-str_BR254_eos					:---
-str_BR254_liveries				:BR Blue, InterCity Executive, InterCity Swallow, Cross Country, Great North Eastern Railway, National Express
-
-STR_NAME_BR255					:BR Class 255 "Challenger"
-str_BR255_usage					:Express Passenger
-str_BR255_eos					:---
-str_BR255_liveries				:Cross Country, Grand Central, Grand Central Lined
+# STR_NAME_BR43					:BR Class 254 "Eastern"
+# str_BR43_usage					:Express Passenger
+# str_BR43_eos					:---
+# str_BR43_liveries				:BR Blue, InterCity Executive, InterCity Swallow, Cross Country, Great North Eastern Railway, National Express
+# 
+# STR_NAME_BR43					:BR Class 255 "Challenger"
+# str_BR43_usage					:Express Passenger
+# str_BR43_eos					:---
+# str_BR43_liveries				:Cross Country, Grand Central, Grand Central Lined
 
 STR_NAME_BR302					:BR Class 302 "AM-2" (4-car)
 str_BR302_usage					:Commuter Passenger

@@ -1,4 +1,4 @@
-item (FEAT_TRAINS, item_253_BRMk3TS, 14) {
+item (FEAT_TRAINS, item_BRMk3TS, 14) {
 	property {
 		variant_group:					header_BRMk3;
 		name: 							string(STR_NAME_BRMk3TS);
@@ -30,7 +30,7 @@ item (FEAT_TRAINS, item_253_BRMk3TS, 14) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
  	default: 							sw_253_BRMk3TS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	cargo_subtype_text:					sw_BR253_cargo_subtype_text;
+	cargo_subtype_text:					sw_BR43_cargo_subtype_text;
 	purchase:							spriteset_BRMk3TS_purchase;
 	speed:								200;
 	cargo_capacity: return(72 * param_pax);

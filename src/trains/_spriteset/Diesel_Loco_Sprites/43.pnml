@@ -1,0 +1,217 @@
+spriteset(spriteset_BR43_Purchase, "gfx/Diesel/43.png") {
+	template_mu_purchase(0, 0)
+}
+
+spriteset(spriteset_BR43_BRBlue, "gfx/Diesel/43.png") {
+	template_train32px(0, 13)
+}
+spriteset(spriteset_BR43_rear_reversed_BRBlue, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 13)
+}
+
+spriteset(spriteset_BR43_InterCityExecutive, "gfx/Diesel/43.png") {
+	template_train32px(0, 39)
+}
+spriteset(spriteset_BR43_rear_reversed_InterCityExecutive, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 39)
+}
+
+spriteset(spriteset_BR43_InterCitySwallow, "gfx/Diesel/43.png") {
+	template_train32px(0, 65)
+}
+spriteset(spriteset_BR43_rear_reversed_InterCitySwallow, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 65)
+}
+
+spriteset(spriteset_BR43_MMLTealTang, "gfx/Diesel/43.png") {
+	template_train32px(0, 91)
+}
+spriteset(spriteset_BR43_rear_reversed_MMLTealTang, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 91)
+}
+
+spriteset(spriteset_BR43_MMLBlue, "gfx/Diesel/43.png") {
+	template_train32px(0, 117)
+}
+spriteset(spriteset_BR43_rear_reversed_MMLBlue, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 117)
+}
+
+spriteset(spriteset_BR43_EMT, "gfx/Diesel/43.png") {
+	template_train32px(0, 143)
+}
+spriteset(spriteset_BR43_rear_reversed_EMT, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 143)
+}
+
+spriteset(spriteset_BR43_Virgin, "gfx/Diesel/43.png") {
+	template_train32px(0, 169)
+}
+spriteset(spriteset_BR43_rear_reversed_Virgin, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 169)
+}
+
+spriteset(spriteset_BR43_XC, "gfx/Diesel/43.png") {
+	template_train32px(0, 195)
+}
+spriteset(spriteset_BR43_rear_reversed_XC, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 195)
+}
+
+spriteset(spriteset_BR43_GC, "gfx/Diesel/43.png") {
+	template_train32px(0, 221)
+}
+spriteset(spriteset_BR43_rear_reversed_GC, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 221)
+}
+
+spriteset(spriteset_BR43_NatEx, "gfx/Diesel/43.png") {
+	template_train32px(0, 247)
+}
+spriteset(spriteset_BR43_rear_reversed_NatEx, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 247)
+}
+
+spriteset(spriteset_BR43_FGW, "gfx/Diesel/43.png") {
+	template_train32px(0, 273)
+}
+spriteset(spriteset_BR43_rear_reversed_FGW, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 273)
+}
+
+spriteset(spriteset_BR43_GNER, "gfx/Diesel/43.png") {
+	template_train32px(0, 299)
+}
+spriteset(spriteset_BR43_rear_reversed_GNER, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 299)
+}
+
+spriteset(spriteset_BR43_GCLined, "gfx/Diesel/43.png") {
+	template_train32px(0, 325)
+}
+spriteset(spriteset_BR43_rear_reversed_GCLined, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 325)
+}
+
+spriteset(spriteset_BR43_GWRGreen, "gfx/Diesel/43.png") {
+	template_train32px(0, 351)
+}
+spriteset(spriteset_BR43_rear_reversed_GWRGreen, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 351)
+}
+
+spriteset(spriteset_BR43_Inter7City, "gfx/Diesel/43.png") {
+	template_train32px(0, 377)
+}
+spriteset(spriteset_BR43_rear_reversed_Inter7City, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 377)
+}
+
+spriteset(spriteset_BR43_LNER, "gfx/Diesel/43.png") {
+	template_train32px(0, 403)
+}
+spriteset(spriteset_BR43_rear_reversed_LNER, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 403)
+}
+
+spriteset(spriteset_BR43_Pullman, "gfx/Diesel/43.png") {
+	template_train32px(0, 429)
+}
+spriteset(spriteset_BR43_rear_Pullman, "gfx/Diesel/43.png") {
+	template_train32px(200, 429)
+}
+spriteset(spriteset_BR43_rear_reversed_Pullman, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 429)
+}
+
+spriteset(spriteset_BR43_NetworkRail, "gfx/Diesel/43.png") {
+	template_train32px(0, 455)
+}
+spriteset(spriteset_BR43_rear_NetworkRail, "gfx/Diesel/43.png") {
+	template_train32px(200, 455)
+}
+spriteset(spriteset_BR43_rear_reversed_NetworkRail, "gfx/Diesel/43.png") {
+	template_train32px_reversed(200, 455)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR43_front,cargo_subtype){
+    0:	spriteset_BR43_BRBlue;
+	1:	spriteset_BR43_InterCityExecutive;
+	2:	spriteset_BR43_InterCitySwallow;
+	3:	spriteset_BR43_MMLTealTang;
+	4:	spriteset_BR43_MMLBlue;
+	5:	spriteset_BR43_EMT;
+	6:	spriteset_BR43_Virgin;
+	7:	spriteset_BR43_FGW;
+	8:	spriteset_BR43_GWRGreen;
+	9:	spriteset_BR43_XC;
+	10:	spriteset_BR43_GNER;
+	11:	spriteset_BR43_NatEx;
+	12:	spriteset_BR43_GC;
+	13:	spriteset_BR43_GCLined;
+	14: spriteset_BR43_Inter7City;
+	15: spriteset_BR43_LNER;
+	16: spriteset_BR43_Pullman;	
+	// Network Rail handled separately
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR43_rear,cargo_subtype){
+    0:	spriteset_BR43_rear_reversed_BRBlue;
+	1:	spriteset_BR43_rear_reversed_InterCityExecutive;
+	2:	spriteset_BR43_rear_reversed_InterCitySwallow;
+	3:	spriteset_BR43_rear_reversed_MMLTealTang;
+	4:	spriteset_BR43_rear_reversed_MMLBlue;
+	5:	spriteset_BR43_rear_reversed_EMT;
+	6:	spriteset_BR43_rear_reversed_Virgin;
+	7:	spriteset_BR43_rear_reversed_FGW;
+	8:	spriteset_BR43_rear_reversed_GWRGreen;
+	9:	spriteset_BR43_rear_reversed_XC;
+	10:	spriteset_BR43_rear_reversed_GNER;
+	11:	spriteset_BR43_rear_reversed_NatEx;
+	12:	spriteset_BR43_rear_reversed_GC;
+	13:	spriteset_BR43_rear_reversed_GCLined;
+	14: spriteset_BR43_rear_reversed_Inter7City;
+	15: spriteset_BR43_rear_reversed_LNER;
+	16: spriteset_BR43_rear_reversed_Pullman;
+	// Network Rail handled separately
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR43, position_in_consist)
+{
+	0: sw_BR43_front;
+	sw_BR43_rear;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR43_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRBlue);
+	1:	return string(str_InterCityExecutive);
+	2:	return string(str_InterCitySwallow);
+	3:	return string(str_MMLTealTang);
+	4:	return string(str_MMLBlue);
+	5:	return string(str_EMT);
+	6:	return string(str_Virgin);
+	7:	return string(str_FGW);
+	8:	return string(str_GWRGreen);
+	9:	return string(str_XC);
+	10:	return string(str_GNER);
+	11:	return string(str_NatEx);
+	12:	return string(str_GC);
+	13:	return string(str_GCLined);
+	14:	return string(str_Inter7City);
+	15:	return string(str_VirginECLNER);
+	16:	return string(str_Pullman);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR43_sound_type,cargo_subtype){
+    0:	return sw_hst_sound;
+	1:	return sw_hst_sound;
+	2:	return sw_hst_sound;
+	3:	return sw_hst_sound;
+	4:	return sw_hst_sound;
+	5:	return sw_hst_sound;
+	6:	return sw_hst_sound;
+	7:	return sw_mtu_sound;
+	8:	return sw_mtu_sound;
+	return sw_hst_sound;
+}
