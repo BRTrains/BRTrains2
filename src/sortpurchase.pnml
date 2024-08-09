@@ -3,6 +3,7 @@ sort(FEAT_TRAINS, [
   item_Coppernob,
   item_CaledonianSingle,
   item_FurnessK2,
+  item_LNER_J70,
   item_LNWRWebb,
   item_LSWR_AdamsRadial,
   item_SRZClass,
