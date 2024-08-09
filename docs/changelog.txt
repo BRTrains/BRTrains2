@@ -6,6 +6,7 @@
 - Class 58
 
 # v2.13
+- Added LNER J70
 
 # v2.12 (2024-08-08)
 - Added LMS Black 5
