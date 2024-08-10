@@ -7,6 +7,7 @@
 
 # v2.13
 - Added LNER J70
+- Added Class 68 + Mk3 rake
 
 # v2.12 (2024-08-08)
 - Added LMS Black 5

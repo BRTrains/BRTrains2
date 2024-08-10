@@ -77,7 +77,7 @@ item (FEAT_TRAINS, item_BR68, 196) {
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							85 ton;
+		weight:							327 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.31;
 		air_drag_coefficient:			0.1;

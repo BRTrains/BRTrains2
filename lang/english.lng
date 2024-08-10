@@ -188,6 +188,7 @@ STR_NAME_SheffieldSupertram           :Sheffield Supertram (3-car Single Unit)
 STR_NAME_SheffieldCitylink            :Sheffield Class 399 Citylink (3-car Single Unit)
 
 STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
+STR_BR_68_6Mk3                          :BR Class 68 + Mk3 set (6-Car +  DVT + locomotive)
 
 STR_BR_195_2CAR							:BR Class 195/0 "Civity" (2-Car)
 STR_BR_195_3CAR							:BR Class 195/1 "Civity" (3-Car)
