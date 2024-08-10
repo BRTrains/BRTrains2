@@ -55,6 +55,7 @@ switch(FEAT_TRAINS,PARENT,sw_BR68_Sprites ,vehicle_is_reversed){
 
 item (FEAT_TRAINS, item_BR68, 196) {
 	property {
+		variant_group: header_68;
 		name: 							string(STR_NAME_BR68);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(2013,4,21);

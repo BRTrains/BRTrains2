@@ -1,11 +1,11 @@
-item (FEAT_TRAINS, header_Diesel, 10024) {
+item (FEAT_TRAINS, header_68, 10024) {
 	property {
-		name: 							string(STR_Diesel_Header);
+		name: 							string(STR_NAME_BR68);
 		climates_available: 			NO_CLIMATE;					
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		power:							1;
 	}
 	graphics {	
-		purchase:							spriteset_BR66_Purchase;	
+		purchase:							spriteset_BR68_Purchase;	
 	}
 }

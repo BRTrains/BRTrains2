@@ -51,6 +51,7 @@ switch(FEAT_TRAINS, SELF, switch_br_68_6Mk3_particles, position_in_articulated_v
 // Class 195/0 (2car)
 item(FEAT_TRAINS, item_br_68_6Mk3, 689) {
 	property {
+		variant_group: header_68;
 		name: string(STR_BR_68_6Mk3);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2019, 08, 04);
