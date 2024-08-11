@@ -164,8 +164,9 @@ STR_NAME_Utility32pxOLD                 :DEBUG UNIT 32px alignment/test unit (OL
 STR_DESC_Utility                        :This unit is used to debug alignment and scale issues with the set, and is only visible with the Developer Mode parameter enabled. It is not intended for gameplay use
 
 STR_NAME_EyeCandy                       :Invisible Locomotive (Eyecandy)
-STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding)
+STR_DESC_EyeCandy                       :An invisible locomotive intended for use for eyecandy (eg putting freight wagons in a siding).{}VERY expensive to run when moving, free when stationary
 STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive without an attached unit
+STR_EyeCandy_AI                         :AI companies cannot use the Eye Candy locomotive (if this is not an AI company please contact the BRTrains developer on Discord or TT-Forums)
 
 # TRAM NAMES
 STR_NAME_GlasgowWooden                :Glasgow Corporation Wooden Classic (Double Decker)

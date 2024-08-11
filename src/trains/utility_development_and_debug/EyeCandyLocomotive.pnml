@@ -9,16 +9,65 @@ spriteset(spriteset_EyeCandy_Depot, "gfx/EyeCandy.png") {
 	template_train20px(0, 33)
 }
 
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_AllowMove, num_vehs_in_consist)
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_AllowMove_Length, num_vehs_in_consist)
 {
     1: return(string(STR_EyeCandy_NoAttachedUnit));
     CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_AllowMove, company_type)
+{
+	PLAYERTYPE_AI: return(string(STR_EyeCandy_AI));
+	sw_EyeCandy_AllowMove_Length;
 }
 
 switch(FEAT_TRAINS,SELF,sw_EyeCandy_Sprites, vehicle_is_in_depot)
 {
     0: spriteset_EyeCandy;
     1: spriteset_EyeCandy_Depot;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_RunningCost_Movement, vehicle_is_stopped)
+{
+	0: 255;
+	1: 0;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_RunningCost, company_type)
+{
+	PLAYERTYPE_AI: 255;
+	sw_EyeCandy_RunningCost_Movement;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_PurchaseCost, company_type)
+{
+	PLAYERTYPE_AI: 255;
+	PLAYERTYPE_HUMAN: 0;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_Power, company_type)
+{
+	PLAYERTYPE_AI: 0;
+	PLAYERTYPE_HUMAN: 10000;
+}
+
+// km/h
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_Speed, company_type)
+{
+	PLAYERTYPE_AI: 1;
+	PLAYERTYPE_HUMAN: 80;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_Weight, company_type)
+{
+	PLAYERTYPE_AI: 10000;
+	PLAYERTYPE_HUMAN: 30;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_TE, company_type)
+{
+	PLAYERTYPE_AI: 0;
+	PLAYERTYPE_HUMAN: 255;
 }
 
 item (FEAT_TRAINS, item_EyeCandy, 578) {
@@ -33,22 +82,23 @@ item (FEAT_TRAINS, item_EyeCandy, 578) {
 		refittable_cargo_classes:		0;
 		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
-		cost_factor:					1;
-		running_cost_factor:			1;
+		cost_factor:					255;
+		running_cost_factor:			255;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							50 mph;
+		speed:							1 mph;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							5000 hp;
+		power:							1 hp;
 		running_cost_base:				RUNNING_COST_STEAM;
+		running_cost_factor:			255;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
 		weight:							1 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	1;
+		tractive_effort_coefficient:	0.1;
 		air_drag_coefficient:			0.1;
 		length:							6;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
@@ -63,7 +113,12 @@ item (FEAT_TRAINS, item_EyeCandy, 578) {
 	purchase:							spriteset_EyeCandy_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;		
     start_stop:                         sw_EyeCandy_AllowMove;
-	cost_factor:	return 1;
-	running_cost_factor: return 1;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
 }
 }
