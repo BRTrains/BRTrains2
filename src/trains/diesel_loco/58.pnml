@@ -22,12 +22,17 @@ spriteset(spriteset_BR58_RFMainlineBlue, "gfx/Diesel/58.png") {
 	template_train32px(0, 117)
 }
 
+spriteset(spriteset_BR58_EWS, "gfx/Diesel/58.png") {
+	template_train32px(0, 143)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR58,cargo_subtype){
 	0: 	spriteset_BR58_RF2Grey;
 	1: 	spriteset_BR58_RF3Grey;
 	2:	spriteset_BR58_RF3GreyCoal;
 	3:	spriteset_BR58_RFMainlineGrey;
 	4:	spriteset_BR58_RFMainlineBlue;
+	5:	spriteset_BR58_EWS;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR58_cargo_subtype_text,cargo_subtype){
@@ -36,6 +41,7 @@ switch(FEAT_TRAINS,SELF,sw_BR58_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_Railfreight3GreyCoal);
 	3:	return string(str_RailfreightMainlineGrey);
 	4:	return string(str_RailfreightMainlineBlue);
+	5:	return string(str_EWSRed);
        return CB_RESULT_NO_TEXT;
 }
 
