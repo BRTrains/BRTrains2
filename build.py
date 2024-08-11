@@ -267,17 +267,26 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     file_list = find_pnml_files(src_directory)
     print("Finished finding pnml files\n")
     pnml_files = list()
-    # Read all the files in folders that begin with "_" into the internal nml
+    append_files = list()
+    # Priority folders: Read all the files in folders that begin with "_" into the internal nml
     for directory in file_list:
         if directory.startswith("_"):
             for file in file_list[directory]:
                 print("Reading '%s'" % (file.stem + file.suffix))
                 nml_file = copy_file(file, nml_file)
         else:
-            pnml_files += file_list[directory]
+            if directory == "append":
+                append_files += file_list[directory]
+            else:
+                pnml_files += file_list[directory]
 
     # Read the regular files
     for file in sorted(pnml_files):
+        print("Reading '%s'" % (file.stem + file.suffix))
+        nml_file = copy_file(file, nml_file)
+
+    # Read the append files (mostly switches to disable units)
+    for file in sorted(append_files):
         print("Reading '%s'" % (file.stem + file.suffix))
         nml_file = copy_file(file, nml_file)
 
