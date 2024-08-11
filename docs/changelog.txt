@@ -10,6 +10,7 @@
 - Added Class 68 + Mk3 rake
 - Adjusted EyeCandy engine to hopefully discourage AI use
 - Fixed some animated pixels on HST rear power car
+- Fixed vehicles not being removed correctly by parameters
 
 # v2.12 (2024-08-08)
 - Added LMS Black 5
