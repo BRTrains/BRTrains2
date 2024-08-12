@@ -266,28 +266,57 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     # Get a list of all the pnml files in src
     file_list = find_pnml_files(src_directory)
     print("Finished finding pnml files\n")
+    pushpull_files = list()
+    priority_files = list()
     pnml_files = list()
     append_files = list()
     # Priority folders: Read all the files in folders that begin with "_" into the internal nml
     for directory in file_list:
+        # Group pushpull files
+        if directory.startswith("PushPull"): 
+            pushpull_files += file_list[directory]
+            continue
+
+        # Grab priority files that need to be run first
         if directory.startswith("_"):
-            for file in file_list[directory]:
-                print("Reading '%s'" % (file.stem + file.suffix))
-                nml_file = copy_file(file, nml_file)
+            priority_files += file_list[directory]
+            continue
+
+        # Grab "append" files (that go at the end)
+        if directory == "append":
+            append_files += file_list[directory]
+            continue
+        
+        # Everything else
         else:
-            if directory == "append":
-                append_files += file_list[directory]
-            else:
-                pnml_files += file_list[directory]
+                pnml_files += file_list[directory]             
+
+    # Special pushpull file first
+    for file in sorted(pushpull_files):
+        if file.stem.startswith("PushPull"):
+            print("Found PushPull.pnml special item")
+            nml_file = copy_file(file, nml_file)
+
+    # Read the other pushpull files
+    for file in sorted(pushpull_files):
+        if file.stem.startswith("PushPull"):
+            continue;
+        print("Reading pushpull file '%s'" % (file.stem + file.suffix))
+        nml_file = copy_file(file, nml_file)
+
+    # Read the priority files
+    for file in sorted(priority_files):
+        print("Reading priority file '%s'" % (file.stem + file.suffix))
+        nml_file = copy_file(file, nml_file)
 
     # Read the regular files
     for file in sorted(pnml_files):
-        print("Reading '%s'" % (file.stem + file.suffix))
+        # print("Reading '%s'" % (file.stem + file.suffix))
         nml_file = copy_file(file, nml_file)
 
     # Read the append files (mostly switches to disable units)
     for file in sorted(append_files):
-        print("Reading '%s'" % (file.stem + file.suffix))
+        # print("Reading '%s'" % (file.stem + file.suffix))
         nml_file = copy_file(file, nml_file)
 
     print("Copied all files to internal buffer\n")
