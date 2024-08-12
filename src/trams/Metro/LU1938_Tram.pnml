@@ -32,7 +32,7 @@ item (FEAT_ROADVEHS, item_TRAM_LU1938, 490) {
 	articulated_part:        			switch_articulated_TRAM_LU1938;
 	default: 							sw_TRAM_LU1938;
 	purchase:							spriteset_TRAM_LU1938_Purchase;
-	cargo_capacity: return(141 * param_pax / 8);
+	cargo_capacity: return(1128 * param_pax / 8);
 	cost_factor:	return(GetAdjustedCostTRAM(61));
 	running_cost_factor: return(GetAdjustedCostTRAM(37));
 	weight: 197;

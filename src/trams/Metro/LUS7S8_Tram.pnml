@@ -33,7 +33,7 @@ item (FEAT_ROADVEHS, item_TRAM_LULS7, 292) {
 	purchase:							spriteset_TRAM_LUS7S8_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_TRAM_electric_sound;
-	cargo_capacity: return(205 * param_pax /7);
+	cargo_capacity: return(1435 * param_pax /7);
 	cost_factor:	return(GetAdjustedCostTRAM(113));
 	running_cost_factor: return(GetAdjustedCostTRAM(45));
 	weight: 213;
@@ -76,7 +76,7 @@ item (FEAT_ROADVEHS, item_TRAM_LULS8, 293) {
 	purchase:							spriteset_TRAM_LUS7S8_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_TRAM_electric_sound;
-	cargo_capacity: return(205 * param_pax / 8);
+	cargo_capacity: return(1640 * param_pax / 8);
 	cost_factor:	return(GetAdjustedCostTRAM(125));
 	running_cost_factor: return(GetAdjustedCostTRAM(50));
 	weight: 242;

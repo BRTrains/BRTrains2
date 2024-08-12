@@ -51,7 +51,7 @@ item (FEAT_ROADVEHS, item_TRAM_BR777, 643) {
 	purchase:							spriteset_br777_purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_TRAM_electric_sound;
-	cargo_capacity: return(484 * param_pax / 4);
+	cargo_capacity: return(121 * param_pax);
 	cost_factor:	return(GetAdjustedCostTRAM(50));
 	running_cost_factor: return(GetAdjustedCostTRAM(40));
 	weight: 99;
