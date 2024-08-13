@@ -1,15 +1,12 @@
 # BR Trains v2
-A UK Train Set for OpenTTD, based on the original BRTrains set (itself based on the unfinished BRSet and BROS, previous attempts at a UK set) and Modern UK Train Set (MUTS), an independent add-on for BRTrains including trains released after 2015 (the last date available in BRTrains v1)
+A UK Train Set addon (newGRF) for OpenTTD, aiming to replicate UK rail (train and tram) rolling stock from the entire history of the British Railway Network
 
-This set aims to combine the BRTrains and MUTS sets, and add modern liveries to trains originally included in BRTrains, and fix colouring/scaling and other graphical inconsistencies in the BRTrains set, since that set was developed by many users over many years and is not known for excessive consistency...
-
-### Train List
-
+With a focus on real-world consists and liveries, this set is unashamedly real-world-first with an aim to be able to recreate the UK rail network in game. If it's ever run on the UK network, we probably either have it or intend to soon. If you find something missing you love, let us know in Discord on TT-Forums - requests tend to jump to the top of the queue
 
 ### Installation
 Grab the latest release from the in-game content downloader.
 
-Alternatively get it from the releases page and copy it into your `OpenTTD/newGRF` folder.
+Alternatively get it from the releases page and copy it into your `OpenTTD/newGRF` folder (usually in your Documents folder)
 
 ### Building from Source
 Easy version: Just push the source to Github and it will build automatically. Otherwise:
@@ -25,22 +22,7 @@ python build.py --compile brtrainsv2
 This should first compile the `.nml` file, then compile that through to a `.grf` file using `nml`.  Install in the same manner
 as previously described, copying the generated `.grf` file into `OpenTTD/newGRF`.
 
-To copy the grf and start the game, closing all existing instances, run the following command in your terminal of choice:
-```bash
-python build.py --run brtrainsv2
-```
-This will also perform the --compile function, and will not start the game if an error is thrown during the compilation process.
 
-#### Building with Powershell
-Alternatively, you can build the project through Powershell.
-To find out how to use the Powershell build script, simply run:
-```powershell
-Get-Help .\build.ps1 -Full
-```
-The most commonly used command invocation is:
-```powershell
-.\build.ps1 -StartGame -Verbose
-```
 Note, this method still requires the `nml` python package to be installed.
 
 ### Credits (in no particular order)
@@ -76,11 +58,13 @@ Note, this method still requires the `nml` python package to be installed.
 - GamingBloke  
 - SquireJames  
 - Erato  
-- DJ Nekkid 
+- DJ Nekkid
 - Welshdragon
 - Doorslammer
 - AndyTheNorth
 - Su1phur
+- Csuke
+- Fabiana
 
 ... And other BROS artists who's names have been lost along the way
 
@@ -90,9 +74,10 @@ Detailed BROS credits available at https://docs.google.com/spreadsheets/d/1XVF7V
 ### Contributing
 If you want to add to the pack, just pull request it and it might make it in, or join us on Discord (invite link below) and post any sprites you'd like to contribute
 
-### Discord
-
-Suggestions, bugs, feedback etc is always welcome on our Discord: https://discord.gg/xWrUDReJdV
+### Discord and Forums
+- Suggestions, bugs, feedback etc is always welcome on our Discord: https://discord.gg/xWrUDReJdV
+- Request and bug reports can also be directed to [our development thread on TT-Forums](https://www.tt-forums.net/viewtopic.php?t=74766)
+- Release information (dates, version numbers etc) can be found on [this forum thread](https://www.tt-forums.net/viewtopic.php?t=90160&start=20)
 
 ### License
 This project is licensed under the GPLv2 license
