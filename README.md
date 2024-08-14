@@ -64,7 +64,7 @@ Note, this method still requires the `nml` python package to be installed.
 - AndyTheNorth
 - Su1phur
 - Csuke
-- Fabiana
+- the_thomas_fan
 
 ... And other BROS artists who's names have been lost along the way
 
