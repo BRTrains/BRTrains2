@@ -1,17 +1,17 @@
-spriteset(spriteset_BR89_Purchase, "gfx/BR89.png") {
+spriteset(spriteset_BR89_Purchase, "gfx/Electric/89.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR89_InterCitySwallow, "gfx/BR89.png") {
-	template_train32px_old(0, 13)
+spriteset(spriteset_BR89_InterCitySwallow, "gfx/Electric/89.png") {
+	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BR89_GNER, "gfx/BR89.png") {
-	template_train32px_old(0, 38)
+spriteset(spriteset_BR89_GNER, "gfx/Electric/89.png") {
+	template_train32px(0, 39)
 }
 
-spriteset(spriteset_BR89_InterCity, "gfx/BR89.png") {
-	template_train32px_old(0, 63)
+spriteset(spriteset_BR89_InterCity, "gfx/Electric/89.png") {
+	template_train32px(0, 65)
 }
 
 // This switch called when displaying as this locomotive
