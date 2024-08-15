@@ -2,13 +2,15 @@
 - Furness Railway Railmotor?
 - GWR 5700/6700/8750 Class (gfx done need coding)
 - Class 20 (graphics drawn? Need to check if they're actually right.... looks like the wheels etc need to be taller on some views, definitely needs more liveries)
-- Stephenson's Planet (Coded, tweak graphics)
+- Stephenson's Planet (Coded, tweak graphics, add wagons?)
+- Added about a million liveries for Class 66
 
 # v2.13
 - Added LNER J70
 - Added Class 58
 - Added Class 68 + Mk3 rake
 - Adjusted EyeCandy engine to hopefully discourage AI use
+- Improved Class 89 sprites
 - Fixed some animated pixels on HST rear power car
 - Fixed some tram capacities
 - Fixed Tram parameter switch
