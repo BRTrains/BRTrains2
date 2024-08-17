@@ -3,6 +3,7 @@
 - GWR 5700/6700/8750 Class (gfx done need coding)
 - Class 20 (graphics drawn? Need to check if they're actually right.... looks like the wheels etc need to be taller on some views, definitely needs more liveries)
 - Stephenson's Planet (Coded, tweak graphics, add wagons?)
+- Class 99 (gfx done need coding)
 - Added about a million liveries for Class 66
 
 # v2.13
