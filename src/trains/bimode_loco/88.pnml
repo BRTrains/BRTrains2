@@ -30,7 +30,7 @@ item (FEAT_TRAINS, item_BR88, 594) {
 	property {
 		name: 							string(STR_NAME_BR88);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(2024,4,21);
+		introduction_date:				date(2017,6,11);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		retire_early:					1;
 		vehicle_life:					70;
@@ -38,8 +38,8 @@ item (FEAT_TRAINS, item_BR88, 594) {
 		refittable_cargo_classes:		0;
 		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
-		cost_factor:					52;
-		running_cost_factor:			30;
+		cost_factor:					1;
+		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							100 mph;
 		refit_cost:						0;
