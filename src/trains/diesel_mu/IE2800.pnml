@@ -30,7 +30,7 @@ switch(FEAT_TRAINS, SELF, switch_IE2800_0_can_attach_wagon, vehicle_type_id) {
 item(FEAT_TRAINS, item_IE2800, 571) {
 	property {
 		name: string(STR_IE2800_2CAR);
-		climates_available: ALL_CLIMATES; // available in all climates
+		climates_available: NO_CLIMATE; // available in all climates
 		introduction_date: date(2000, 01, 01);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
 		vehicle_life: 35; // years after vehicle is deemed "old" and should be replaced
