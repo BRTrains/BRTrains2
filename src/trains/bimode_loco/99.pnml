@@ -1,0 +1,82 @@
+spriteset(spriteset_BR99_Purchase, "gfx/Electric/99.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR99_GBRfBlue, "gfx/Electric/99.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR99_GBRfBlack, "gfx/Electric/99.png") {
+	template_train32px(0, 39)
+}
+
+switch(FEAT_TRAINS,SELF, switch_BR99,cargo_subtype){
+    0:	spriteset_BR99_GBRfBlue;
+	1:	spriteset_BR99_GBRfBlack;
+}
+
+switch(FEAT_TRAINS,SELF,switch_BR99_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_GBRfBlue);
+	1:	return string(str_GBRfBlack);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR99_power, current_railtype) {
+	ELRL: return 6000;
+	return 2100;
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_BR99_sound, current_railtype) {
+	RAIL: sw_66_sound;
+	return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR99, 690) {
+	property {
+		name: 							string(STR_NAME_BR99);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2025,8,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							110 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.4545;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_bimode),string(str_BR99_usage),string(str_BR99_eos),string(str_BR99_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					switch_BR99_cargo_subtype_text;
+	default: 							switch_BR99;
+	purchase:							spriteset_BR99_Purchase;
+	power:								switch_BR99_power;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						switch_BR99_sound;
+	cost_factor:	return(GetAdjustedCost(55));
+	running_cost_factor: return(GetAdjustedCost(34));
+}
+}

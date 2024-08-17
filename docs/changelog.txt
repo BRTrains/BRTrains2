@@ -10,12 +10,15 @@
 - Added LNER J70
 - Added Class 58
 - Added Class 68 + Mk3 rake
+- Added Class 93
+- Added Class 99
 - Adjusted EyeCandy engine to hopefully discourage AI use
 - Improved Class 89 sprites
 - Fixed some animated pixels on HST rear power car
 - Fixed some tram capacities
 - Fixed Tram parameter switch
 - Fixed Debug Mode and Simple Mode not removing some vehicles
+- Fixed Class 88 stats and introduction date
 
 # v2.12 (2024-08-08)
 - Added LMS Black 5

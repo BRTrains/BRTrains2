@@ -547,11 +547,6 @@ str_BR68_usage					:Mixed Traffic
 str_BR68_eos					:---
 str_BR68_liveries				:DRS, ScotRail, Chiltern Railways
 
-STR_NAME_BR88					:BR Class 88 (Bi-Mode)
-str_BR88_usage					:Mixed Traffic
-str_BR88_eos					:---
-str_BR88_liveries				:DRS
-
 STR_NAME_BR67Royal				:BR Class 67 "British Royal Train"
 str_BR67Royal_usage				:Mixed Traffic
 str_BR67Royal_eos				:---
@@ -576,12 +571,6 @@ STR_NAME_BR71					:BR Class 71
 str_BR71_usage					:Mixed Traffic
 str_BR71_eos					:---
 str_BR71_liveries				:BR Green
-
-STR_NAME_BR89					:BR Class 89 "Badger"
-str_BR89_usage					:Express Passenger
-str_BR89_eos					:---
-str_BR89_liveries				:InterCity Swallow, GNER, InterCity
-
 
 STR_NAME_18100					:18100 (Gas Turbine Prototype)
 str_18100_usage					:Mixed Traffic
@@ -628,6 +617,16 @@ str_BR87_usage					:Mixed Traffic
 str_BR87_eos					:---
 str_BR87_liveries				:BR Blue, InterCity Swallow, Virgin
 
+STR_NAME_BR88					:BR Class 88 (Bi-Mode)
+str_BR88_usage					:Mixed Traffic
+str_BR88_eos					:---
+str_BR88_liveries				:DRS
+
+STR_NAME_BR89					:BR Class 89 "Badger"
+str_BR89_usage					:Express Passenger
+str_BR89_eos					:---
+str_BR89_liveries				:InterCity Swallow, GNER, InterCity
+
 STR_NAME_BR90					:BR Class 90
 str_BR90_usage					:Mixed Traffic
 str_BR90_eos					:---
@@ -638,6 +637,16 @@ STR_NAME_BR91_Standalone		:BR Class 91
 str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
 str_BR91_liveries				:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
+
+STR_NAME_BR93					:BR Class 93 (Tri-Mode)
+str_BR93_usage					:Mixed Traffic
+str_BR93_eos					:---
+str_BR93_liveries				:DRS
+
+STR_NAME_BR99					:BR Class 99 (Bi-Mode)
+str_BR99_usage					:Mixed Traffic
+str_BR99_eos					:---
+str_BR99_liveries				:GBRf Blue, GBRf Black
 
 STR_NAME_BR121					:BR Class 121 "Bubble Car" (1-car)
 str_BR121_usage					:Passenger
@@ -1580,6 +1589,7 @@ str_DBSCompany					: (DBSchenker - Company Train)
 str_DeptGrey					: (Departmental Grey)
 str_DLRRed                      : (Docklands Light Railway - Red)
 str_DRS							: (DRS)
+str_DRSGreen					: (DRS - Green)
 str_DRSCentre					: (DRS - Centre Headcode)
 str_DRSCompass					: (DRS - Compass)
 str_DRSCompass2					: (DRS - Compass - 2nd Version Lights)
@@ -1632,6 +1642,8 @@ str_GBRf3						: (GBRf - 3rd Version Lights)
 str_GBRfBar						: (GBRf - Barbie)
 str_GBRfTfL						: (GBRf - London Underground 150 Years)
 str_GBRfHB						: (GBRf - "Harry Beck")
+str_GBRfBlue					: (GBRf - Blue)
+str_GBRfBlack					: (GBRf - Black)
 str_GERBlue						: (GER - Blue)
 str_GERBlack					: (GER - Black)
 str_GMPTE						: (GMPTE)

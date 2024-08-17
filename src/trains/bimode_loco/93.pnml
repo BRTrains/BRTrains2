@@ -1,0 +1,75 @@
+spriteset(spriteset_BR93_Purchase, "gfx/Electric/93.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR93_DRSGreen, "gfx/Electric/93.png") {
+	template_train32px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, switch_BR93,cargo_subtype){
+    0:	spriteset_BR93_DRSGreen;	
+}
+
+switch(FEAT_TRAINS,SELF,switch_BR93_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_DRSGreen);	
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR93_power, current_railtype) {
+	ELRL: return 5940;
+	return 1740;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR93_sound, current_railtype) {
+	RAIL: sw_66_sound;
+	return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR93, 691) {
+	property {
+		name: 							string(STR_NAME_BR93);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2024,8,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							86 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.337;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_bimode),string(str_BR93_usage),string(str_BR93_eos),string(str_BR93_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					switch_BR93_cargo_subtype_text;
+	default: 							switch_BR93;
+	purchase:							spriteset_BR93_Purchase;
+	power:								switch_BR93_power;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						switch_BR93_sound;
+	cost_factor:	return(GetAdjustedCost(50));
+	running_cost_factor: return(GetAdjustedCost(28));
+}
+}
