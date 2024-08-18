@@ -1,0 +1,88 @@
+spriteset(spriteset_BR28_Purchase, "gfx/Diesel/28.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR28_BRGreen, "gfx/Diesel/28.png") {
+	template_train28px(0, 13)
+}
+
+spriteset(spriteset_BR28_BRGreenPanel, "gfx/Diesel/28.png") {
+	template_train28px(0, 39)
+}
+
+spriteset(spriteset_BR28_BRGreenYellow, "gfx/Diesel/28.png") {
+	template_train28px(0, 65)
+}
+
+spriteset(spriteset_BR28_BRBlue, "gfx/Diesel/28.png") {
+	template_train28px(0, 91)
+}
+
+spriteset(spriteset_BR28_BRResearch, "gfx/Diesel/28.png") {
+	template_train28px(0, 117)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR28,cargo_subtype){
+	0: 	spriteset_BR28_BRGreen;
+	1: 	spriteset_BR28_BRGreenPanel;
+	2: 	spriteset_BR28_BRGreenYellow;
+	3: 	spriteset_BR28_BRBlue;
+	4: 	spriteset_BR28_BRResearch;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR28_cargo_subtype_text,cargo_subtype){
+    0: return string(str_BRGreen);
+	1: return string(str_BRGreenPanel);
+	2: return string(str_BRGreenYellow);
+	3: return string(str_BRBlue);
+	4: return string(str_BRResearch);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR28, 692) {
+	property {
+		name: 							string(STR_NAME_BR28);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1959,1,1);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					60;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];			
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1200 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							97 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.229;
+		air_drag_coefficient:			0.1;
+		length:							5;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR28_usage),string(str_BR28_eos),string(str_BR28_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR28_cargo_subtype_text;
+	default: 							sw_BR28;
+	purchase:							spriteset_BR28_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_gronk_sound;
+	cost_factor:	return(GetAdjustedCost(27));
+	running_cost_factor: return(GetAdjustedCost(14));
+}
+}

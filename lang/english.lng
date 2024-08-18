@@ -123,14 +123,20 @@ STR_PARAM_DESC_PAX_MULTIPLIER  :Increase passenger capacity to allow use of real
 STR_PARAM_NAME_COST_MULTIPLIER  :Purchase/Running Cost Multiplier
 STR_PARAM_DESC_COST_MULTIPLIER  :Increase or decrease purchase price and running costs, if you find they aren't balanced to your taste
 
-STR_PARAM_NAME_TRAM              :Metro Trains and Tram availability
-STR_PARAM_DESC_TRAM              :Should Trams and Metro units be available as trams or trains?
+STR_PARAM_NAME_TRAMMETRO         :Metro Trains and Tram availability
+STR_PARAM_DESC_TRAMMETRO         :Should Trams and Metro units be available as trams or trains?
 STR_TRAM_DEFAULT                 :(Default) Realistic Heavy/Light rail split (Trams and light rail as trams, heavy rail as trains)
 STR_TRAM_TRAINONLY               :Display all Metro units as Trains only (no trams)
 STR_TRAM_TRAMONLY                :Display all Metro Units as Trams only (no London Underground trains etc, only as trams)
 STR_TRAM_BOTH                    :Display Trams and Trains as both Trams and Trains (all purchaseable as either)
 STR_TRAM_EXTRA                   :(Experimental) Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
 STR_TRAM_SUPEREXTRA              :(Experimental) Include a slightly ridiculous number of extra units (London Overground, trains used for suburban routes)
+
+STR_PARAM_NAME_METRO            :Metro-as-Tram availability
+STR_PARAM_DESC_METRO            :Should Metro units be available as trams?
+STR_METRO_OFF                   :No
+STR_METRO_ON                    :Yes
+STR_METRO_SUPER                 :Yes (And include some suburban trains)
 
 STR_PARAM_NAME_2CC              :Parameter not in use (yet)
 STR_PARAM_DESC_2CC              :Parameter reserved for future feature
@@ -461,6 +467,11 @@ STR_NAME_BR20					:BR Class 20 "Chopper"
 str_BR20_usage					:Light freight
 str_BR20_eos					:---
 str_BR20_liveries				:BR Blue
+
+STR_NAME_BR28					:BR Class 28 "Co-Bo"
+str_BR28_usage					:Freight, Local Passenger
+str_BR28_eos					:---
+str_BR28_liveries				:BR Green, BR Green (Yellow Panel), BR Green (Yellow Front), BR Blue, BR Research Department
 
 STR_NAME_BR31					:BR Class 31 "Type 2"
 str_BR31_usage					:Express Passenger
@@ -1550,6 +1561,7 @@ str_BRGreen						: (BR - Green)
 str_BRGreenCentre				: (BR - Green, Centre Headcode)
 str_BRGreenSplit				: (BR - Green, Split Box)
 str_BRGreenYellow				: (BR - Green, Yellow Front)
+str_BRGreenPanel				: (BR - Green, Yellow Panel)
 str_BRGrey						: (BR - General Grey)
 str_BRGreyBlue					: (BR - Grey and Blue)
 str_BRLion                      : (BR - Black & Lion)
@@ -1562,6 +1574,7 @@ str_BRMaroon					: (BR - Maroon)
 str_BROchre                     : (BR - Golden Ochre)
 str_BRPrototype					: (BR - Prototype)
 str_BRProvincial                : (BR - Provincial)
+str_BRResearch                  : (BR - Research Department)
 str_BRRefurb                    : (BR - Refurbished)
 str_BRTransitionalRed           : (BR - TransitionalRed)
 str_BRTest						: (BR - Track Test Train)
