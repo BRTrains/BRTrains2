@@ -5,13 +5,75 @@ spriteset(spriteset_BR20_Purchase, "gfx/Diesel/20.png") {
 spriteset(spriteset_BR20_BRBlue, "gfx/Diesel/20.png") {
 	template_train20px(0, 13)
 }
+spriteset(spriteset_BR20_reversed_BRBlue, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 13)
+}
 
-switch(FEAT_TRAINS,SELF, sw_BR20,cargo_subtype){
-	0: 	spriteset_BR20_BRBlue;
+spriteset(spriteset_BR20_GBRf, "gfx/Diesel/20.png") {
+	template_train20px(0, 39)
+}
+spriteset(spriteset_BR20_reversed_GBRf, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 39)
+}
+
+spriteset(spriteset_BR20_GBRf2Tone, "gfx/Diesel/20.png") {
+	template_train20px(0, 65)
+}
+spriteset(spriteset_BR20_reversed_GBRf2Tone, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 65)
+}
+
+spriteset(spriteset_BR20_BR2Tone, "gfx/Diesel/20.png") {
+	template_train20px(0, 91)
+}
+spriteset(spriteset_BR20_reversed_BR2Tone, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 91)
+}
+
+spriteset(spriteset_BR20_EWS, "gfx/Diesel/20.png") {
+	template_train20px(0, 117)
+}
+spriteset(spriteset_BR20_reversed_EWS, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 117)
+}
+
+spriteset(spriteset_BR20_BRRailfreightGrey, "gfx/Diesel/20.png") {
+	template_train20px(0, 143)
+}
+spriteset(spriteset_BR20_reversed_BRRailfreightGrey, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 143)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR20_normal,cargo_subtype){
+	0: 	spriteset_BR20_BRRailfreightGrey;
+	1: 	spriteset_BR20_BRBlue;
+	2: 	spriteset_BR20_GBRf;
+	3: 	spriteset_BR20_GBRf2Tone;
+	4: 	spriteset_BR20_BR2Tone;
+	5: 	spriteset_BR20_EWS;
+}
+switch(FEAT_TRAINS,SELF, sw_BR20_reversed,cargo_subtype){
+	0:  spriteset_BR20_reversed_BRRailfreightGrey;
+	1: 	spriteset_BR20_reversed_BRBlue;
+	2: 	spriteset_BR20_reversed_GBRf;
+	3: 	spriteset_BR20_reversed_GBRf2Tone;
+	4: 	spriteset_BR20_reversed_BR2Tone;
+	5: 	spriteset_BR20_reversed_EWS;
+}
+
+// Automatically flip second vehicle
+switch(FEAT_TRAINS,SELF, sw_BR20, position_in_consist % 2){
+	0: sw_BR20_reversed;
+	sw_BR20_normal;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR20_cargo_subtype_text,cargo_subtype){
-    0: return string(str_BRBlue);
+	0: return string(str_BRRailfreightGrey);
+	1: return string(str_BRBlue);
+	2: return string(str_GBRf);
+	3: return string(str_GBRf2ToneGrey);
+	4: return string(str_BR2ToneGrey);
+	5: return string(str_EWSRed);
        return CB_RESULT_NO_TEXT;
 }
 
