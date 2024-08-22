@@ -5,30 +5,60 @@ spriteset(spriteset_BR28_Purchase, "gfx/Diesel/28.png") {
 spriteset(spriteset_BR28_BRGreen, "gfx/Diesel/28.png") {
 	template_train28px(0, 13)
 }
+spriteset(spriteset_BR28_reversed_BRGreen, "gfx/Diesel/28.png") {
+	template_train28px_reversed(0, 13)
+}
 
 spriteset(spriteset_BR28_BRGreenPanel, "gfx/Diesel/28.png") {
 	template_train28px(0, 39)
+}
+spriteset(spriteset_BR28_reversed_BRGreenPanel, "gfx/Diesel/28.png") {
+	template_train28px_reversed(0, 39)
 }
 
 spriteset(spriteset_BR28_BRGreenYellow, "gfx/Diesel/28.png") {
 	template_train28px(0, 65)
 }
+spriteset(spriteset_BR28_reversed_BRGreenYellow, "gfx/Diesel/28.png") {
+	template_train28px_reversed(0, 65)
+}
 
 spriteset(spriteset_BR28_BRBlue, "gfx/Diesel/28.png") {
 	template_train28px(0, 91)
+}
+spriteset(spriteset_BR28_reversed_BRBlue, "gfx/Diesel/28.png") {
+	template_train28px_reversed(0, 91)
 }
 
 spriteset(spriteset_BR28_BRResearch, "gfx/Diesel/28.png") {
 	template_train28px(0, 117)
 }
+spriteset(spriteset_BR28_reversed_BRResearch, "gfx/Diesel/28.png") {
+	template_train28px_reversed(0, 117)
+}
 
-switch(FEAT_TRAINS,SELF, sw_BR28,cargo_subtype){
+switch(FEAT_TRAINS,SELF, sw_BR28_normal,cargo_subtype){
 	0: 	spriteset_BR28_BRGreen;
 	1: 	spriteset_BR28_BRGreenPanel;
 	2: 	spriteset_BR28_BRGreenYellow;
 	3: 	spriteset_BR28_BRBlue;
 	4: 	spriteset_BR28_BRResearch;
 }
+
+switch(FEAT_TRAINS,SELF, sw_BR28_reversed,cargo_subtype){
+	0: 	spriteset_BR28_reversed_BRGreen;
+	1: 	spriteset_BR28_reversed_BRGreenPanel;
+	2: 	spriteset_BR28_reversed_BRGreenYellow;
+	3: 	spriteset_BR28_reversed_BRBlue;
+	4: 	spriteset_BR28_reversed_BRResearch;
+}
+
+// Automatically flip second vehicle
+switch(FEAT_TRAINS,SELF, sw_BR28, position_in_consist){
+	1: sw_BR28_reversed;
+	sw_BR28_normal;
+}
+
 
 switch(FEAT_TRAINS,SELF,sw_BR28_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRGreen);
@@ -67,7 +97,7 @@ item (FEAT_TRAINS, item_BR28, 692) {
 		engine_class:					ENGINE_CLASS_DIESEL;
 		tractive_effort_coefficient:	0.229;
 		air_drag_coefficient:			0.1;
-		length:							5;
+		length:							7;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
