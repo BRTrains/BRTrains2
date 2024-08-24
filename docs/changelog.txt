@@ -11,6 +11,7 @@
 - Added Class 93
 - Added Class 99
 - Adjusted EyeCandy engine to hopefully discourage AI use
+- Reworked Southern Region CC Class (OG BR Class 70)
 - Improved Class 89 sprites
 - Added a pile of liveries for Class 66
 - Fixed some animated pixels on HST rear power car

@@ -1,13 +1,13 @@
-spriteset(spriteset_BR70OG_Purchase, "gfx/BR70_OG.png") {
+spriteset(spriteset_BR70OG_Purchase, "gfx/Electric/SR_CC_BR70.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR70OG_BRGreen, "gfx/BR70_OG.png") {
-	template_train28px_old(0, 13)
+spriteset(spriteset_BR70OG_BRGreen, "gfx/Electric/SR_CC_BR70.png") {
+	template_train28px(0, 13)
 }
 
-spriteset(spriteset_BR70OG_BRBlue, "gfx/BR70_OG.png") {
-	template_train28px_old(0, 36)
+spriteset(spriteset_BR70OG_BRBlue, "gfx/Electric/SR_CC_BR70.png") {
+	template_train28px(0, 37)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR70OG,cargo_subtype){
