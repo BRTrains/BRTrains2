@@ -31,7 +31,7 @@ item (FEAT_TRAINS, item_LNER_Thompson_63TK, 670) {
 		refit_cost:						0;
 		running_cost_base:				RUNNING_COST_STEAM;
 		default_cargo_type:				PASS;
-		cargo_capacity:					40;
+		cargo_capacity:					1;
 		weight:							33 ton;
 		length:							8;
 		bitmask_vehicle_info:			0;
