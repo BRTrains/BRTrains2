@@ -543,10 +543,13 @@ str_BR58_usage					:Heavy Freight
 str_BR58_eos					:---
 str_BR58_liveries				:Railfreight (2 Tone Grey, 3 Tone Grey, 3 Tone Grey Coal Sector, Mainline Grey, Mainline Blue)
 
-STR_NAME_BR59					:BR Class 59 "Super Shed"
+STR_NAME_BR59_01				:BR Class 59/0/1 "Super Shed"
+STR_NAME_BR59_2					:BR Class 59/2 "Super Shed"
 str_BR59_usage					:Mixed Freight
-str_BR59_eos					:---
-str_BR59_liveries				:
+str_BR59_01_eos					:---
+str_BR59_01_liveries			:
+str_BR59_2_eos					:---
+str_BR59_2_liveries				:
 
 STR_NAME_BR60					:BR Class 60 "Tug"
 str_BR60_usage					:Mixed Freight
