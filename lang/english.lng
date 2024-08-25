@@ -75,6 +75,7 @@ str_col_Desert                :Desert Sands
 str_col_GoldenOchre           :Golden Ochre
 str_col_Maroon                :Maroon
 str_col_BloodCustard          :Blood and Custard
+str_col_Teak                  :Teak
 
 str_var_Named                 :Named
 str_var_Olympics              :Olympics
