@@ -1,0 +1,56 @@
+spriteset(spriteset_LNER_Gresley_616TK_Purchase, "gfx/Rolling Stock/LNER/LNER_Gresley_61ft6in_TK.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_LNER_Gresley_616TK_Teak, "gfx/Rolling Stock/LNER/LNER_Gresley_61ft6in_TK.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_LNER_Gresley_616TK_BloodCustard, "gfx/Rolling Stock/LNER/LNER_Gresley_61ft6in_TK.png") {
+	template_train32px(0, 39)
+}
+
+switch(FEAT_TRAINS,SELF, sw_LNER_Gresley_616TK,cargo_subtype){
+    0:	spriteset_LNER_Gresley_616TK_Teak;
+	1:	spriteset_LNER_Gresley_616TK_BloodCustard;
+}
+	
+switch(FEAT_TRAINS,SELF,sw_LNER_Gresley_616TK_cargo_subtype_text,cargo_subtype){
+    0: return string(str_LNERTeak);
+	1: return string(STR_LIVERY, string(str_abbr_LNER), string(str_col_BloodCustard));
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_LNER_Gresley_616TK, 693) {
+	property {
+		name: 							string(STR_NAME_LNER_Gresley_616TK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1923,1,1);
+		model_life:						25;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					10;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							34 ton;
+		length:							8;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_LNER_Gresley_616TK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_LNER_Gresley_616TK_cargo_subtype_text;
+	default: 							sw_LNER_Gresley_616TK;
+	purchase:							spriteset_LNER_Gresley_616TK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(35 * param_pax);
+		cost_factor:	return(GetAdjustedCost(27));
+	running_cost_factor: return(GetAdjustedCost(28));
+}
+}

@@ -1,7 +1,9 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
-- GWR 5700/6700/8750 Class (gfx done need coding)
 - Class 20 (WIP: ... looks like the wheels etc need to be taller on some views, definitely needs more liveries)
 - Stephenson's Planet (tweak graphics, add wagons?)
+- GWR 5700/6700/8750 Class (needs coding)
+- Conflat A (needs coding)
+- Conflat B (needs coding)
 
 # v2.13
 - Added LNER J70
@@ -10,6 +12,7 @@
 - Added Class 68 + Mk3 rake
 - Added Class 93
 - Added Class 99
+- Added LNER Gresley 61 Ft 6 teak coach
 - Adjusted EyeCandy engine to hopefully discourage AI use
 - Reworked Southern Region CC Class (OG BR Class 70)
 - Improved Class 89 sprites

@@ -36,8 +36,10 @@ STR_Name_BR_MUClass_NoNickname      :BR Class {STRING} ({STRING}-car)
 # Abbreviations
 str_abbr_BR             :BR
 str_abbr_EMR            :EMR
+str_abbr_GWR            :GWR
 str_abbr_LNER           :LNER
 str_abbr_LNWR           :LNWR
+str_abbr_LSWR           :LSWR
 str_abbr_TPE            :TPE
 str_abbr_VXC            :VXC
 str_abbr_VTEC           :VTEC
@@ -58,13 +60,21 @@ str_comp_VTEC                   :Virgin East Coast
 str_comp_VTWC                   :Virgin West Coast
 str_comp_WMR                    :West Midland Railway
 
+str_sep_space                 : 
+str_sep_dash                  : - 
+str_sep_dashonly              :-
+
 # Suffixes used to build names
 str_col_Blue                  :Blue
-str_col_Black                 :Black
-str_col_Desert                :Desert Sands
 str_col_Green                 :Green
+str_col_Black                 :Black
+str_col_Yellow                :Yellow
+str_col_Red                   :Red
+str_col_Purple                :Purple
+str_col_Desert                :Desert Sands
 str_col_GoldenOchre           :Golden Ochre
 str_col_Maroon                :Maroon
+str_col_BloodCustard          :Blood and Custard
 
 str_var_Named                 :Named
 str_var_Olympics              :Olympics
@@ -1426,7 +1436,7 @@ str_370_NDM_liveries			:InterCity
 STR_NAME_370_DTS				:BR Class 370 Driving Trailer Standard
 str_BR370_DTS_liveries			:InterCity
 
-STR_NAME_LMS_StanierP3_50BG 			:LMS Stanier Period 3 50 ft BG Coach
+STR_NAME_LMS_StanierP3_50BG 		:LMS Stanier Period 3 50 ft BG Coach
 str_LMS_StanierP3_50BG_liveries		:LMS Red
 
 STR_NAME_LNERTK					:LNER Gresley Coach (Third Corridor)
@@ -1438,10 +1448,13 @@ str_LNERPV_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 STR_NAME_LNERBG					:LNER Gresley Full Brake Van
 str_LNERBG_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 
-STR_NAME_LNER_Thompson_61FK		    :LNER Thompson 61 ft TK
+STR_NAME_LNER_Gresley_616TK		            :LNER Gresley 61' 6" TK
+str_LNER_Gresley_616TK_liveries		:LNER "Teak", LNER "Blood and Custard"
+
+STR_NAME_LNER_Thompson_61FK		    :LNER Thompson 61' TK
 str_LNER_Thompson_61FK_liveries		:LNER "Teak"
 
-STR_NAME_LNER_Thompson_63TK		    :LNER Thompson 63 ft TK
+STR_NAME_LNER_Thompson_63TK		    :LNER Thompson 63' TK
 str_LNER_Thompson_63TK_liveries		:LNER "Teak"
 
 STR_NAME_LU1938					:London Underground 1938 Stock (8-car, Deep Level)
