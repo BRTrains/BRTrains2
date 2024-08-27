@@ -19,7 +19,7 @@ item (FEAT_TRAINS, item_LNERP2, 591) {
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							2200 hp;
+		power:							2150 hp;
 		running_cost_base:				RUNNING_COST_STEAM;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
