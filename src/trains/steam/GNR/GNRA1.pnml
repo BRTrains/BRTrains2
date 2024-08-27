@@ -1,16 +1,16 @@
-spriteset(spriteset_GNRA1_Purchase, "gfx/Steam/GNRA1.png") {
+spriteset(spriteset_GNRA1_Purchase, "gfx/Steam/GNR_A1.png") {
 	template_purchase_anim(0, 0)
 }
 
-spriteset(spriteset_GNRA1, "gfx/Steam/GNRA1.png") {
+spriteset(spriteset_GNRA1, "gfx/Steam/GNR_A1.png") {
 	template_train32px_old_aim(0, 13)
 }
 
-spriteset(spriteset_GNRA1T_GNR, "gfx/Steam/GNRA1T.png") {
+spriteset(spriteset_GNRA1T_GNR, "gfx/Steam/GNR_A1T.png") {
 	template_train20px(0, 13)
 }
 
-spriteset(spriteset_GNRA1T_LNER, "gfx/Steam/GNRA1T.png") {
+spriteset(spriteset_GNRA1T_LNER, "gfx/Steam/GNR_A1T.png") {
 	template_train20px(0, 33)
 }
 

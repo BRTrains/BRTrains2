@@ -1,52 +1,52 @@
-spriteset(spriteset_LNERA3_Purchase, "gfx/Steam/LNERA3.png") {
+spriteset(spriteset_LNERA3_Purchase, "gfx/Steam/LNER_A3.png") {
 	template_purchase_anim(0, 0)
 }
 
-spriteset(spriteset_LNERA3_LNER, "gfx/Steam/GNRA1.png") {
+spriteset(spriteset_LNERA3_LNER, "gfx/Steam/GNR_A1.png") {
 	template_train32px_old_aim(0, 13)
 }
 
-spriteset(spriteset_LNERA3_LNERC, "gfx/Steam/GNRA1.png") {
+spriteset(spriteset_LNERA3_LNERC, "gfx/Steam/GNR_A1.png") {
 	template_train32px_old_aim(0, 13)
 }
 
-spriteset(spriteset_LNERA3_WARTIME, "gfx/Steam/LNERA3.png") {
+spriteset(spriteset_LNERA3_WARTIME, "gfx/Steam/LNER_A3.png") {
 	template_train32px_old_aim(0, 13)
 }
 
-spriteset(spriteset_LNERA3_APPLE, "gfx/Steam/LNERA3.png") {
+spriteset(spriteset_LNERA3_APPLE, "gfx/Steam/LNER_A3.png") {
 	template_train32px_old_aim(0, 38)
 }
 
-spriteset(spriteset_LNERA3_BRBLUE, "gfx/Steam/LNERA3.png") {
+spriteset(spriteset_LNERA3_BRBLUE, "gfx/Steam/LNER_A3.png") {
 	template_train32px_old_aim(0, 63)
 }
 
-spriteset(spriteset_LNERA3_BRUNSWICK, "gfx/Steam/LNERA3.png") {
+spriteset(spriteset_LNERA3_BRUNSWICK, "gfx/Steam/LNER_A3.png") {
 	template_train32px_old_aim(0, 88)
 }
 
-spriteset(spriteset_LNERA3T_LNER, "gfx/Steam/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_LNER, "gfx/Steam/LNER_A3T.png") {
 	template_train20px(0, 13)
 }
 
-spriteset(spriteset_LNERA3T_LNERC, "gfx/Steam/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_LNERC, "gfx/Steam/LNER_A3T.png") {
 	template_train20px(0, 33)
 }
 
-spriteset(spriteset_LNERA3T_WARTIME, "gfx/Steam/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_WARTIME, "gfx/Steam/LNER_A3T.png") {
 	template_train20px(0, 53)
 }
 
-spriteset(spriteset_LNERA3T_APPLE, "gfx/Steam/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_APPLE, "gfx/Steam/LNER_A3T.png") {
 	template_train20px(0, 73)
 }
 
-spriteset(spriteset_LNERA3T_BRBLUE, "gfx/Steam/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_BRBLUE, "gfx/Steam/LNER_A3T.png") {
 	template_train20px(0, 93)
 }
 
-spriteset(spriteset_LNERA3T_BRUNSWICK, "gfx/Steam/LNERA3T.png") {
+spriteset(spriteset_LNERA3T_BRUNSWICK, "gfx/Steam/LNER_A3T.png") {
 	template_train20px(0, 113)
 }
 
