@@ -13,6 +13,7 @@ sort(FEAT_TRAINS, [
   item_GWRHall,
   item_LMSBlack5,
   item_LMSJubilee,
+  item_LNERV2,
   item_GNRA1,
   header_LNERP2,
     item_LNERP2,

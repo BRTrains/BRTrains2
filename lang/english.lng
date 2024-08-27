@@ -412,6 +412,11 @@ str_GWRHall_usage		   		:Express Passenger
 str_GWRHall_eos				    :1946
 str_GWRHall_liveries			:GWR Green, Hogwarts Express
 
+STR_NAME_LNERV2					:LNER Gresley 2-6-2 "V2"
+str_LNERV2_usage				:Fast Freight, Passenger, Express Passenger
+str_LNERV2_eos					:1936-1944
+str_LNERV2_liveries				:LNER Green
+
 STR_NAME_GNRA1					:GNR Gresley 4-6-2 "A1"
 str_GNRA1_usage					:Express Passenger
 str_GNRA1_eos					:1928-1935
@@ -425,7 +430,7 @@ str_LNERA3_liveries				:LNER Green, BR Wartime Black, BR Apple Green, BR Brunswi
 STR_NAME_LNERP2					:LNER Gresley 2-8-2 "P2"
 STR_NAME_LNERP2_Streamlined		:LNER Gresley 2-8-2 "P2" (Streamlined)
 str_LNERP2_usage				:Express Passenger
-str_LNERP2_eos					:1934-1936ß
+str_LNERP2_eos					:1934-1936
 str_LNERP2_liveries				:LNER Green
 
 STR_NAME_LMSJubilee				:LMS 4-6-0 "Jubilee"
