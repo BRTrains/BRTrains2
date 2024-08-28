@@ -2,18 +2,18 @@ item (FEAT_TRAINS, item_LNERV2, 696) {
 	property {		
 		name: 							string(STR_NAME_LNERV2);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1934,1,1);
-		model_life:						20;
+		introduction_date:				date(1936,1,1);
+		model_life:						15;
 		retire_early:					1;
 		vehicle_life:					20;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
 		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
-		cost_factor:					25;
-		running_cost_factor:			26;
+		cost_factor:					1;
+		running_cost_factor:			1;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							90 mph;
+		speed:							95 mph;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						RAIL;
@@ -23,9 +23,9 @@ item (FEAT_TRAINS, item_LNERV2, 696) {
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							168 ton;
+		weight:							145 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.115;
+		tractive_effort_coefficient:	0.105;
 		air_drag_coefficient:			0.1;
 		length:							8;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
@@ -43,8 +43,8 @@ item (FEAT_TRAINS, item_LNERV2, 696) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
 	sound_effect:						sw_steam_sound;
-	cost_factor:						return(GetAdjustedCost(26));
-	running_cost_factor:				return(GetAdjustedCost(30));
+	cost_factor:						return(GetAdjustedCost(23));
+	running_cost_factor:				return(GetAdjustedCost(28));
 	length:								sw_LNERV2_length;
 	}
 }
