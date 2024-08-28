@@ -34,9 +34,13 @@ STR_Name_BR_MUClass_NoNickname      :BR Class {STRING} ({STRING}-car)
 
 
 # Abbreviations
+str_abbr_AWC            :AWC
 str_abbr_BR             :BR
+str_abbr_FR             :FR
+str_abbr_DRS            :DRS
 str_abbr_EMR            :EMR
 str_abbr_GWR            :GWR
+str_abbr_HNR            :HNR
 str_abbr_LNER           :LNER
 str_abbr_LNWR           :LNWR
 str_abbr_LSWR           :LSWR
@@ -49,8 +53,11 @@ str_abbr_WMR            :WMR
 # Companies
 str_comp_Avanti                 :Avanti West Coast
 str_comp_BR                     :British Rail
+str_comp_DRS                     :Direct Rail Services
 str_comp_Furness                :Furness Railway
+str_comp_Freightliner           :Freightliner
 str_comp_GWR                    :Great Western Railway
+str_comp_HarryNeedle            :Harry Needle Railroad
 str_comp_Northern               :Northern
 str_comp_NorthernRail           :Northern Rail
 str_comp_SWR                    :South Western Railway
@@ -76,6 +83,7 @@ str_col_GoldenOchre           :Golden Ochre
 str_col_Maroon                :Maroon
 str_col_BloodCustard          :Blood and Custard
 str_col_Teak                  :Teak
+str_col_Orange                :Orange
 
 str_var_Named                 :Named
 str_var_Olympics              :Olympics
@@ -391,6 +399,15 @@ STR_NAME_LSWR_AdamsRadial		:LSWR 4-4-2T "Adams Radial Tank"
 str_LSWR_AdamsRadial_usage		:Low Speed Mixed Traffic
 str_LSWR_AdamsRadial_eos		:1882-1885
 str_LSWR_AdamsRadial_liveries	:LSWR Sage Green
+
+
+STR_NAME_GWR_5700   				:GWR 5700 0-6-0PT
+str_GWR_5700_usage			   	    :Slow freight and shunting
+STR_NAME_GWR_6700   				:GWR 6700 0-6-0PT
+STR_NAME_GWR_8750   				:GWR 8750 0-6-0PT
+str_GWR_67008750_usage			   	:Slow freight, local passenger, shunting
+str_GWR_67008750_eos				:1929-1950
+str_GWR_67008750_liveries		    :GWR Green
 
 STR_NAME_GWR_DeanGoods				:GWR 2301 0-6-0 "Dean Goods"
 str_GWR_DeanGoods_usage			   	:Freight and local passenger services
@@ -1532,7 +1549,7 @@ STR_IE2800_2CAR                 :Irish Railways 2800 Class
 STR_DSC_IE2800                  :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Commuter Green, Commuter Gold, InterCity
 
 STR_NAME_LNERBCK				:LNER Gresley Coach (Brake Composite Corridor)
-str_LNERBCK_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream	
+str_LNERBCK_liveries			:GNR/LNER Teak, BR Maroon, BR Carmine and Cream	
 STR_NAME_RoyalBFK				:British Royal Train (Brake First Corridor)
 STR_NAME_RoyalSLE				:British Royal Train (Sleeper Coach)
 STR_NAME_RoyalTRUK				:British Royal Train (Restaurant Unclassified)
@@ -1552,6 +1569,7 @@ str_AlphaWessex					: (Alphaline Wessex)
 str_AngliaFestival				: (Anglia - Norwich & Norfolk Festival Ad.)
 str_Apple						: (BR - Apple Green)
 str_Anglia						: (Anglia Trains)
+str_ARC					        : (ARC)
 str_ArrivaBlue					: (Arriva - Blue)
 str_ArrivaCream					: (Arriva - Cream)
 str_ArrivaGhost					: (Arriva - Ghost)
@@ -1679,7 +1697,8 @@ str_GatExUn						: (Gatwick Express - Unbranded)
 str_GBRf						: (GBRf)
 str_GBRf2						: (GBRf - 2nd Version Lights)
 str_GBRf3						: (GBRf - 3rd Version Lights)
-str_GBRfTfL						: (GBRf - London Underground 150 Years)
+str_GBRfTfLWhite				: (GBRf - London Underground 150 Years - White)
+str_GBRfTfLBlack				: (GBRf - London Underground 150 Years - Black)
 str_GBRfHB						: (GBRf - "Harry Beck")
 str_GBRfBlue					: (GBRf - Blue)
 str_GBRfBlack					: (GBRf - Black)
@@ -1768,6 +1787,7 @@ str_Mobil                       : (Mobil)
 str_Murco                       : (Murco)
 str_NatEx						: (National Express)
 str_NatExScotRail				: (ScotRail - National Express)
+str_NationalPower				: (National Power)
 str_NetworkRail                 : (Network Rail)
 str_NetworkRailInfrastructure   : (Network Rail - Infrastructure)
 str_NetworkRailTopGear          : (Network Rail - Top Gear)

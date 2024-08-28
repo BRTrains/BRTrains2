@@ -1,18 +1,13 @@
 spriteset(spriteset_BR59_2_Purchase, "gfx/Diesel/66.png") {
-	template_purchase(0, 0)
-}
-
-spriteset(spriteset_BR59_2_FL, "gfx/Diesel/66.png") {
-	template_train32px(0, 13)
+	template_purchase(176, 0)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR59_2,cargo_subtype){
-	0: 	spriteset_BR59_2_FL;
-	spriteset_BR59_2_FL; // Default because we removed some livery variants, avoids a breaking change
+	0: 	spriteset_BR66_NationalPower;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR59_2_cargo_subtype_text,cargo_subtype){
-	0: 	return string(str_Freightliner);
+	0: 	return string(str_NationalPower);
        return CB_RESULT_NO_TEXT;
 }
 

@@ -1,0 +1,173 @@
+spriteset(spriteset_BR66_Purchase, "gfx/Diesel/66.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR66_FL, "gfx/Diesel/66.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR66_FL2, "gfx/Diesel/66.png") {
+	template_train32px(0, 39)
+}
+
+spriteset(spriteset_BR66_EWS, "gfx/Diesel/66.png") {
+	template_train32px(0, 65)
+}
+
+spriteset(spriteset_BR66_DBSchenker, "gfx/Diesel/66.png") {
+	template_train32px(0, 91)
+}
+
+spriteset(spriteset_BR66_BRBlue, "gfx/Diesel/66.png") {
+	template_train32px(0, 117)
+}
+
+spriteset(spriteset_BR66_GBRf, "gfx/Diesel/66.png") {
+	template_train32px(0, 143)
+}
+
+spriteset(spriteset_BR66_Colas, "gfx/Diesel/66.png") {
+	template_train32px(0, 169)
+}
+
+spriteset(spriteset_BR66_FastLine, "gfx/Diesel/66.png") {
+	template_train32px(0, 195)
+}
+
+spriteset(spriteset_BR66_FreightlinerOrange, "gfx/Diesel/66.png") {
+	template_train32px(0, 221)
+}
+
+spriteset(spriteset_BR66_DRS, "gfx/Diesel/66.png") {
+	template_train32px(0, 247)
+}
+
+spriteset(spriteset_BR66_MaritimeIntermodal, "gfx/Diesel/66.png") {
+	template_train32px(0, 273)
+}
+
+spriteset(spriteset_BR66_Hanson, "gfx/Diesel/66.png") {
+	template_train32px(0, 299)
+}
+
+spriteset(spriteset_BR66_AggregateIndustries, "gfx/Diesel/66.png") {
+	template_train32px(0, 325)
+}
+
+spriteset(spriteset_BR66_GBRfMSC, "gfx/Diesel/66.png") {
+	template_train32px(0, 377)
+}
+
+spriteset(spriteset_BR66_GBRfEveningStar, "gfx/Diesel/66.png") {
+	template_train32px(0, 403)
+}
+
+spriteset(spriteset_BR66_GBRfTfLWhite, "gfx/Diesel/66.png") {
+	template_train32px(0, 429)
+}
+
+spriteset(spriteset_BR66_Heidelberg, "gfx/Diesel/66.png") {
+	template_train32px(0, 455)
+}
+
+spriteset(spriteset_BR66_Biffa, "gfx/Diesel/66.png") {
+	template_train32px(0, 481)
+}
+
+spriteset(spriteset_BR66_GBRfFirstBarbie, "gfx/Diesel/66.png") {
+	template_train32px(0, 507)
+}
+
+spriteset(spriteset_BR66_ONE, "gfx/Diesel/66.png") {
+	template_train32px(0, 533)
+}
+
+spriteset(spriteset_BR66_GBRfHS2, "gfx/Diesel/66.png") {
+	template_train32px(0, 559)
+}
+
+spriteset(spriteset_BR66_GBRf2ToneGrey, "gfx/Diesel/66.png") {
+	template_train32px(0, 585)
+}
+
+spriteset(spriteset_BR66_FreightlinerShanks, "gfx/Diesel/66.png") {
+	template_train32px(0, 611)
+}
+
+spriteset(spriteset_BR66_DBSteel, "gfx/Diesel/66.png") {
+	template_train32px(0, 637)
+}
+
+spriteset(spriteset_BR66_NationalPower, "gfx/Diesel/66.png") {
+	template_train32px(0, 663)
+}
+
+spriteset(spriteset_BR66_ARC, "gfx/Diesel/66.png") {
+	template_train32px(0, 689)
+}
+
+spriteset(spriteset_BR66_GBRfTfLBlack, "gfx/Diesel/66.png") {
+	template_train32px(0, 715)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR66,cargo_subtype){
+	0: 	spriteset_BR66_FL;
+	1: 	spriteset_BR66_FL2;
+	2:	spriteset_BR66_EWS;
+	3:	spriteset_BR66_DBSchenker;
+	4:	spriteset_BR66_BRBlue;
+	5:	spriteset_BR66_GBRf;
+	6:	spriteset_BR66_Colas;
+	7:	spriteset_BR66_FastLine;
+	8:	spriteset_BR66_FreightlinerOrange;
+	9:	spriteset_BR66_DRS;
+	10: spriteset_BR66_MaritimeIntermodal;
+	11: spriteset_BR66_Hanson;
+	12: spriteset_BR66_AggregateIndustries;
+	13: spriteset_BR66_GBRfMSC;
+	14: spriteset_BR66_GBRfEveningStar;
+	15: spriteset_BR66_GBRfTfLWhite;
+	16: spriteset_BR66_GBRfTfLBlack;
+	17: spriteset_BR66_Heidelberg;
+	18: spriteset_BR66_Biffa;
+	19: spriteset_BR66_GBRfFirstBarbie;
+	20: spriteset_BR66_ONE;
+	21: spriteset_BR66_GBRfHS2;
+	22: spriteset_BR66_GBRf2ToneGrey;
+	23: spriteset_BR66_FreightlinerShanks;
+	24: spriteset_BR66_DBSteel;
+	25:	spriteset_BR66_NationalPower;
+	26: spriteset_BR66_ARC;
+	spriteset_BR66_FL; // Default because we removed some livery variants, avoids a breaking change
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR66_cargo_subtype_text,cargo_subtype){
+	0: 	return string(str_Freightliner);
+	1: 	return string(str_Freightliner2);
+	2:	return string(str_EWSRed);
+	3:	return string(str_DBSchenker);
+	4:	return string(str_BRBlue);
+	5:	return string(str_GBRf);
+	6:	return string(str_ColasRail);
+	7:	return string(str_FastLine);
+	8: 	return string(str_FreightlinerOrange);
+	9:	return string(str_DRS);
+	10: return string(str_MaritimeIntermodal);
+	11: return string(str_HansonHall);
+	12: return string(str_AggregateIndustries);
+	13: return string(str_GBRfMSC);
+	14: return string(str_GBRfEveningStar);
+	15: return string(str_GBRfTfLWhite);
+	16: return string(str_GBRfTfLBlack);
+	17: return string(str_Heidelberg);
+	18: return string(str_Biffa);
+	19: return string(str_GBRfBarbie);
+	20: return string(str_ONE);
+	21: return string(str_GBRfHS2);
+	22: return string(str_GBRf2ToneGrey);
+	23: return string(str_FreightlinerSH);
+	24: return string(str_DBSteel);
+	25: return string(str_NationalPower);
+	26: return string(str_ARC);
+       return CB_RESULT_NO_TEXT;
+}
