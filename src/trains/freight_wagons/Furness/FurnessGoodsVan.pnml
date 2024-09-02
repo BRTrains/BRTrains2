@@ -62,7 +62,7 @@ item (FEAT_TRAINS, item_FurnessGoodsVan, 654) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		refit_cost:						0;
 		running_cost_base:				RUNNING_COST_STEAM;
-		cargo_capacity:					35;
+		cargo_capacity:					22;
 		weight:							20 ton;
 		tractive_effort_coefficient:	0.08;
 		air_drag_coefficient:			0.07;
