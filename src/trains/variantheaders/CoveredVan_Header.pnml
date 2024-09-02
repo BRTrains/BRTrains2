@@ -1,0 +1,11 @@
+item (FEAT_TRAINS, header_CoveredVan, 10030) {
+	property {
+		name: 							string(STR_CoveredVan_Header);
+		climates_available: 			NO_CLIMATE;					
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		power:							0;
+	}
+	graphics {
+		purchase: spriteset_BRVGA_Purchase;
+	}
+}

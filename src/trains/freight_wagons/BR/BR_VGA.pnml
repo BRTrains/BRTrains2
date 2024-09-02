@@ -1,0 +1,63 @@
+spriteset(spriteset_BRVGA_Purchase, "gfx/Freight/BR_VGA_VKA_vans.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BRVGA_Grey, "gfx/Freight/BR_VGA_VKA_vans.png") {
+	template_train20px(0, 13)
+}
+
+spriteset(spriteset_BRVGA_Grey_Speedlink, "gfx/Freight/BR_VGA_VKA_vans.png") {
+	template_train20px(0, 39)
+}
+
+spriteset(spriteset_BRVGA_Grey_Exhibition, "gfx/Freight/BR_VGA_VKA_vans.png") {
+	template_train20px(0, 65)
+}
+
+// Called first
+// Skips the "loading stage" switch above if using an eyecandy livery
+switch(FEAT_TRAINS, SELF, sw_BRVGA, cargo_subtype){	
+	0: spriteset_BRVGA_Grey;
+	1: spriteset_BRVGA_Grey_Speedlink;
+	2: spriteset_BRVGA_Grey_Exhibition;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BRVGA_cargo_subtype_text,cargo_subtype){    
+	0:	return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Grey));
+	1:	return string(STR_LIVERY_EXTENDED, string(str_abbr_BR), string(str_col_Grey), string(str_var_Speedlink));
+	2:	return string(STR_LIVERY_EXTENDED, string(str_abbr_BR), string(str_col_Grey), string(str_var_Exhibition));
+}
+
+item (FEAT_TRAINS, item_BRVGA, 700) {
+	property {
+		variant_group:					header_CoveredVan;
+		name: 							string(STR_NAME_BRVGA);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1981,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED, CC_ARMOURED);		
+		default_cargo_type:				GOOD;
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		cargo_capacity:					28;
+		weight:							20 ton;		
+		air_drag_coefficient:			0.07;
+		length:							5;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRVGA_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BRVGA;
+	purchase:							spriteset_BRVGA_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_subtype_text:					sw_BRVGA_cargo_subtype_text;
+	cost_factor:	return(GetAdjustedCost(29));
+	running_cost_factor: return(GetAdjustedCost(17));
+}
+}

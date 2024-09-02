@@ -21,6 +21,7 @@ STR_CONCAT_4s	: {STRING} {STRING} {STRING} {STRING}
 STR_CONCAT_5s	: {STRING} {STRING} {STRING} {STRING} {STRING}
 
 STR_LIVERY          : ({STRING} - {STRING})
+STR_LIVERY_EXTENDED : ({STRING} - {STRING} - {STRING})
 STR_LIVERY_SPECIAL  : ({STRING} - {STRING} - {SILVER}{STRING})
 
 # Company name, whyte notation, nickname
@@ -84,10 +85,13 @@ str_col_Maroon                :Maroon
 str_col_BloodCustard          :Blood and Custard
 str_col_Teak                  :Teak
 str_col_Orange                :Orange
+str_col_Grey                  :Grey
 
 str_var_Named                 :Named
 str_var_Olympics              :Olympics
 str_var_Unnamed               :Unnamed
+str_var_Speedlink             :Speedlink
+str_var_Exhibition            :Exhibition
 
 # Variant group headers
 STR_LU_Subsurface_Header        :London Underground sub-surface units
@@ -114,6 +118,7 @@ STR_Departmental_Header         :National Rail Maintenance Vehicles
 STR_Civity_Header               :British Rail "Civity" family
 STR_Debug_Header                :BRTrains DEBUG units (see description)
 STR_Debug_AdditionalText        :Units for BRTrains debugging - Not intended for gameplay{}Disable these using the BRTrains "Developer Mode" parameter
+STR_CoveredVan_Header           :British Rail VGA/VKA Covered Vans
 
 # Parameters 
 STR_PARAM_MAX_SPEED             :Max Speed
@@ -336,7 +341,6 @@ str_purchase_loco_with_liveries	:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STR
 str_purchase_loco				:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}
 str_purchase_steam_liveries		:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
 str_purchase_coach				:{BLACK}Liveries: {GOLD}{STRING}{BLACK}
-
 
 str_purchase_type_diesel		:{RED}Diesel locomotive
 str_purchase_type_steam			:{GREEN}Steam Locomotive
@@ -1252,7 +1256,7 @@ str_BR800_eos					:---
 str_BR800_liveries				:Hitachi, GWR
 
 STR_NAME_FurnessGoodsVan		:Furness Railway Goods Van
-str_FurnessGoodsVan_usage		:Misc Cargo
+str_FurnessGoodsVan_usage		:Goods, Misc. Cargo
 str_FurnessGoodsVan_eos			:---
 str_FurnessGoodsVan_liveries	:Grey, Brown
 
@@ -1280,6 +1284,14 @@ STR_NAME_BRTTA					:BR Tanker Wagon
 str_BRTTA_usage					:Liquid Cargo
 str_BRTTA_eos					:---
 str_BRTTA_liveries				:Mobil, Esso, BP (x3), SUKO, Gulf, Shell (x2), Murco, Total, VTG
+
+STR_NAME_BRVGA					:BR VGA Wagon
+str_BRVGA_usage					:Goods, Misc. Cargo
+str_BRVGA_liveries				:BR Grey, BR Grey (Speedlink), BR Grey (Exhibition)
+
+STR_NAME_BRVKA					:BR VKA Wagon
+str_BRVKA_usage					:Goods, Misc. Cargo
+str_BRVKA_liveries				:BR Grey, BR Grey (Speedlink), BR Grey (Exhibition)
 
 STR_NAME_BRContainer			:BR Container Flatbed Wagon
 str_BRContainer_usage			:Misc. Cargo
