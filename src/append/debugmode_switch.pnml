@@ -2,6 +2,8 @@
 // Disable some trams that aren't finished
 
 // Disable some trains that aren't finished
+	disable_item(FEAT_TRAINS, 484); // Great Bear
+	disable_item(FEAT_TRAINS, 512); // Hall
 	disable_item(FEAT_TRAINS, 671); // Class 20
 	disable_item(FEAT_TRAINS, 674); // Stephenson's Planet
 	disable_item(FEAT_TRAINS, 694); // Class 59/01

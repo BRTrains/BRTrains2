@@ -27,7 +27,7 @@ switch(FEAT_TRAINS,SELF,sw_GreatBear_cargo_subtype_text,cargo_subtype){
 item (FEAT_TRAINS, item_GreatBear, 484) {
 	property {
 		name: 							string(STR_NAME_GreatBear);
-		climates_available: 			ALL_CLIMATES;
+		climates_available: 			NO_CLIMATE;
 		introduction_date:				date(1908,2,10);
 		model_life:						25;
 		retire_early:					1;

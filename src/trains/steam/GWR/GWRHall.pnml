@@ -35,7 +35,7 @@ switch(FEAT_TRAINS,SELF,sw_GWRHall_cargo_subtype_text,cargo_subtype){
 item (FEAT_TRAINS, item_GWRHall, 512) {
 	property {
 		name: 							string(STR_NAME_GWRHall);
-		climates_available: 			ALL_CLIMATES;
+		climates_available: 			NO_CLIMATE;
 		introduction_date:				date(1946,2,10);
 		model_life:						25;
 		retire_early:					1;

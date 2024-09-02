@@ -6,6 +6,9 @@
 - Conflat B (needs coding)
 - Class 59 (code liveries and add to lang file)
 - LNER Gresley BCK
+- BR VGA and VKA vans
+- More LNER Black 5 and Jubilee liveries
+- GWR Great Bear and Hall class rework
 
 # v2.13
 - Added LNER J70
@@ -20,13 +23,15 @@
 - Reworked Southern Region CC Class (OG BR Class 70)
 - Added a pile of liveries for Class 66
 - Improved Class 89 sprites
-- Improved Clas 68/88
+- Improved Class 68/88
 - Added Harry Needle Orange livery for Class 37
 - Fixed some animated pixels on HST rear power car
 - Fixed some tram capacities
 - Fixed Tram parameter switch
 - Fixed Debug Mode and Simple Mode not removing some vehicles
 - Fixed Class 88 stats and introduction date
+- Fixed Class 08 having steam icon
+- Disabled Great Bear and Hall pending rework
 
 # v2.12 (2024-08-08)
 - Added LMS Black 5
