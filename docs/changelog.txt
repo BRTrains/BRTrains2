@@ -19,7 +19,8 @@
 - Added Class 93
 - Added Class 99
 - Added LNER Gresley 61 Ft 6 teak coach
-- Added BR VGA and VKA vans
+- Added GCR Robinson 50 ft mahogany coach
+- Added BR VGA and VKA goods vans
 - Adjusted EyeCandy engine to hopefully discourage AI use
 - Reworked Southern Region CC Class (OG BR Class 70)
 - Added a pile of liveries for Class 66

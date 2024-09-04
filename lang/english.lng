@@ -40,6 +40,7 @@ str_abbr_BR             :BR
 str_abbr_FR             :FR
 str_abbr_DRS            :DRS
 str_abbr_EMR            :EMR
+str_abbr_GCR            :GCR
 str_abbr_GWR            :GWR
 str_abbr_HNR            :HNR
 str_abbr_LNER           :LNER
@@ -54,9 +55,10 @@ str_abbr_WMR            :WMR
 # Companies
 str_comp_Avanti                 :Avanti West Coast
 str_comp_BR                     :British Rail
-str_comp_DRS                     :Direct Rail Services
+str_comp_DRS                    :Direct Rail Services
 str_comp_Furness                :Furness Railway
 str_comp_Freightliner           :Freightliner
+str_comp_GCR                    :Great Central Railway
 str_comp_GWR                    :Great Western Railway
 str_comp_HarryNeedle            :Harry Needle Railroad
 str_comp_Northern               :Northern
@@ -86,6 +88,7 @@ str_col_BloodCustard          :Blood and Custard
 str_col_Teak                  :Teak
 str_col_Orange                :Orange
 str_col_Grey                  :Grey
+str_col_Mahogany              :Mahogany
 
 str_var_Named                 :Named
 str_var_Olympics              :Olympics
@@ -1476,6 +1479,9 @@ str_BR370_DTS_liveries			:InterCity
 
 STR_NAME_LMS_StanierP3_50BG 		:LMS Stanier Period 3 50 ft BG Coach
 str_LMS_StanierP3_50BG_liveries		:LMS Red
+
+STR_NAME_GCR_Robinson_50_CLSO       :GCR Robinson 50 ft Semi-Corridor Lavatory Composite
+str_GCR_Robinson_50_CLSO_liveries   :GCR Mahogany
 
 STR_NAME_LNERTK					:LNER Gresley Coach (Third Corridor)
 str_LNERTK_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream

@@ -1,0 +1,51 @@
+spriteset(spriteset_GCR_Robinson_50_CLSO_Purchase, "gfx/Rolling Stock/GCR/GCR_Robinson_50_CLSO.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_GCR_Robinson_50_CLSO_Teak, "gfx/Rolling Stock/GCR/GCR_Robinson_50_CLSO.png") {
+	template_train24px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, sw_GCR_Robinson_50_CLSO,cargo_subtype){
+    0:	spriteset_GCR_Robinson_50_CLSO_Teak;
+}
+	
+switch(FEAT_TRAINS,SELF,sw_GCR_Robinson_50_CLSO_cargo_subtype_text,cargo_subtype){
+    0: return string(STR_LIVERY, string(str_abbr_GCR), string(str_col_Mahogany));
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_GCR_Robinson_50_CLSO, 702) {
+	property {
+		name: 							string(STR_NAME_GCR_Robinson_50_CLSO);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1903,1,1);
+		model_life:						10;
+		vehicle_life:					50;
+		cargo_allow_refit:				[PASS];
+		loading_speed:					8;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							30 ton;
+		length:							6;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_GCR_Robinson_50_CLSO_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_GCR_Robinson_50_CLSO_cargo_subtype_text;
+	default: 							sw_GCR_Robinson_50_CLSO;
+	purchase:							spriteset_GCR_Robinson_50_CLSO_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(40 * param_pax);
+	cost_factor:	return(GetAdjustedCost(27));
+	running_cost_factor: return(GetAdjustedCost(29));
+}
+}
