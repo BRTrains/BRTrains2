@@ -15,7 +15,7 @@ switch(FEAT_TRAINS,SELF,sw_GCR_Robinson_50_CLSO_cargo_subtype_text,cargo_subtype
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_GCR_Robinson_50_CLSO, 702) {
+item (FEAT_TRAINS, item_GCR_Robinson_50_CLSO, 704) {
 	property {
 		name: 							string(STR_NAME_GCR_Robinson_50_CLSO);
 		climates_available: 			ALL_CLIMATES;
