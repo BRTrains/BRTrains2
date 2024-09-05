@@ -8,11 +8,11 @@
 - Coronation Coaches
 - More LNER Black 5 and Jubilee liveries
 - GWR Great Bear and Hall class rework
-- LMS 0-10-0 "Big Bertha" (needs coding)
 
 # v2.13
 - Added LNER J70
 - Added LNER V2
+- Added LMS 0-10-0 "Big Bertha"
 - Added Class 28
 - Added Class 58
 - Added Class 68 + Mk3 rake

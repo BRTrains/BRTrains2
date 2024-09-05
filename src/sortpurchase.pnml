@@ -11,6 +11,7 @@ sort(FEAT_TRAINS, [
   item_GWR_DeanGoods,
   item_GreatBear,
   item_GWRHall,
+  item_LMSBigBertha,
   item_LMSBlack5,
   item_LMSJubilee,
   item_LNERV2,

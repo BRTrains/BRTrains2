@@ -457,15 +457,20 @@ str_LNERP2_usage				:Express Passenger
 str_LNERP2_eos					:1934-1936
 str_LNERP2_liveries				:LNER Green
 
+STR_NAME_LMSBigBertha			:LMS 0-10-0 "Big Bertha"
+str_LMSBigBertha_usage		    :Banking
+str_LMSBigBertha_eos			:1919
+str_LMSBigBertha_liveries		:LMS Red
+
 STR_NAME_LMSJubilee				:LMS 4-6-0 "Jubilee"
 str_LMSJubilee_usage		    :Express Passenger
 str_LMSJubilee_eos				:1934-1936
-str_LMSJubilee_liveries			:LNER Green
+str_LMSJubilee_liveries			:LMS Red
 
 STR_NAME_LMSBlack5				:LMS 4-6-0 "Black5"
 str_LMSBlack5_usage		        :Mixed Traffic
 str_LMSBlack5_eos				:1934-1951
-str_LMSBlack5_liveries			:LNER Green
+str_LMSBlack5_liveries			:LMS Black
 
 STR_NAME_WDTank				    :War Department 0-6-0 "Austerity Tank"
 str_WDTank_usage				:Low speed freight/shunting
