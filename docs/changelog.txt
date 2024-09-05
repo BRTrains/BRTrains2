@@ -5,10 +5,10 @@
 - Conflat A (needs coding)
 - Conflat B (needs coding)
 - Class 59 (code liveries and add to lang file)
-- LNER Gresley BCK
 - Coronation Coaches
 - More LNER Black 5 and Jubilee liveries
 - GWR Great Bear and Hall class rework
+- LMS 0-10-0 "Big Bertha" (needs coding)
 
 # v2.13
 - Added LNER J70
@@ -18,7 +18,8 @@
 - Added Class 68 + Mk3 rake
 - Added Class 93
 - Added Class 99
-- Added LNER Gresley 61 Ft 6 teak coach
+- Added LNER Gresley 61 Ft 6 TK teak coach
+- Added LNER Gresley 61 Ft 6 BCK teak coach
 - Added GCR Robinson 50 ft mahogany coach
 - Added BR VGA and VKA goods vans
 - Adjusted EyeCandy engine to hopefully discourage AI use

@@ -1492,8 +1492,11 @@ str_LNERPV_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 STR_NAME_LNERBG					:LNER Gresley Full Brake Van
 str_LNERBG_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 
-STR_NAME_LNER_Gresley_616TK		            :LNER Gresley 61' 6" TK
-str_LNER_Gresley_616TK_liveries		:LNER "Teak", LNER "Blood and Custard"
+STR_NAME_LNER_Gresley_616TK		    :LNER Gresley 61' 6" TK
+str_LNER_Gresley_616TK_liveries		:LNER "Teak", LNER "Blood and Custard", BR Maroon, BR Blue
+
+STR_NAME_LNER_Gresley_616BCK		    :LNER Gresley 61' 6" BCK
+str_LNER_Gresley_616BCK_liveries		:LNER "Teak", LNER "Blood and Custard", BR Maroon, BR Blue
 
 STR_NAME_LNER_Thompson_61FK		    :LNER Thompson 61' TK
 str_LNER_Thompson_61FK_liveries		:LNER "Teak"
