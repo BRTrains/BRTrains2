@@ -1,12 +1,12 @@
-spriteset(spriteset_LMSBlack5_Purchase, "gfx/Steam/LMS_Jubilee_Black5.png") {
+spriteset(spriteset_LMSBlack5_Purchase, "gfx/Steam/LMS_Stanier_Black_5.png") {
 	template_purchase_anim(0, 15)
 }
 
-spriteset(spriteset_LMSBlack5_LMSBlack, "gfx/Steam/LMS_Jubilee_Black5.png") {
+spriteset(spriteset_LMSBlack5_LMSBlack, "gfx/Steam/LMS_Stanier_Black_5.png") {
 	template_train24px(0, 29)
 }
 
-spriteset(spriteset_LMSBlack5_LMSBlackNamed, "gfx/Steam/LMS_Jubilee_Black5.png") {
+spriteset(spriteset_LMSBlack5_LMSBlackNamed, "gfx/Steam/LMS_Stanier_Black_5.png") {
 	template_train24px(0, 86)
 }
 
