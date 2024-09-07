@@ -8,6 +8,8 @@
 - Coronation Coaches
 - More LNER Black 5 and Jubilee liveries
 - GWR Great Bear and Hall class rework
+- Stanier 8F
+- Class 56
 
 # v2.13
 - Added LNER J70
