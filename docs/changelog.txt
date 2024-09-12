@@ -10,6 +10,7 @@
 - GWR Great Bear and Hall class rework
 - Stanier 8F
 - Class 56
+- Made eyecandy, debug,  and departmental vehicles unattractive to AI
 
 # v2.13
 - Added LNER J70
