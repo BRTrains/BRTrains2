@@ -1,17 +1,26 @@
 spriteset(spriteset_LMSBlack5_Purchase, "gfx/Steam/LMS_Stanier_Black_5.png") {
-	template_purchase_anim(0, 15)
+	template_purchase_anim(0, 0)
 }
 
-spriteset(spriteset_LMSBlack5_LMSBlack, "gfx/Steam/LMS_Stanier_Black_5.png") {
-	template_train24px(0, 29)
+spriteset(spriteset_LMSBlack5_Black, "gfx/Steam/LMS_Stanier_Black_5.png") {
+	template_train24px(0, 13)
 }
 
-spriteset(spriteset_LMSBlack5_LMSBlackNamed, "gfx/Steam/LMS_Stanier_Black_5.png") {
-	template_train24px(0, 86)
+spriteset(spriteset_LMSBlack5_BlackNamed, "gfx/Steam/LMS_Stanier_Black_5.png") {
+	template_train24px(0, 39)
+}
+
+spriteset(spriteset_LMSBlack5_BlackCaprotti, "gfx/Steam/LMS_Stanier_Black_5.png") {
+	template_train24px(0, 65)
 }
 
 switch(FEAT_TRAINS,SELF, sw_LMSBlack5Loco,cargo_subtype){
-    spriteset_LMSBlack5_LMSBlack;	
+    0: spriteset_LMSBlack5_Black;
+	1: spriteset_LMSBlack5_BlackNamed;
+	2: spriteset_LMSBlack5_BlackCaprotti;
+	3: spriteset_LMSBlack5_Black;
+	4: spriteset_LMSBlack5_BlackNamed;
+	5: spriteset_LMSBlack5_BlackCaprotti;
 }
 
 switch(FEAT_TRAINS,SELF, sw_LMSBlack5Tender,cargo_subtype){
