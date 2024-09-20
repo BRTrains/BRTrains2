@@ -6,14 +6,30 @@ spriteset(spriteset_LMS_B5JubTender_LMSBlack, "gfx/Steam/LMS_Stanier_4000_impgal
 	template_train16px(0, 47)
 }
 
-spriteset(spriteset_LMS_B5JubTender_BRBlackLion, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
+spriteset(spriteset_LMS_B5JubTender_BRBlackText, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
 	template_train16px(0, 71)
 }
 
-spriteset(spriteset_LMS_B5JubTender_BRBlackText, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
+spriteset(spriteset_LMS_B5JubTender_BRRedText, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
 	template_train16px(0, 96)
 }
 
-spriteset(spriteset_LMS_B5JubTender_BRRedText, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
-	template_train16px(0, 121)
+spriteset(spriteset_LMS_B5JubTender_BRRedLion, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
+	template_train16px(0, 119)
+}
+
+spriteset(spriteset_LMS_B5JubTender_BRBlackLion, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
+	template_train16px(0, 141)
+}
+
+spriteset(spriteset_LMS_B5JubTender_BRGreenLion, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
+	template_train16px(0, 164)
+}
+
+spriteset(spriteset_LMS_B5JubTender_BRBlueLion, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
+	template_train16px(0, 187)
+}
+
+spriteset(spriteset_LMS_B5JubTender_WDGrey, "gfx/Steam/LMS_Stanier_4000_impgal.png") {
+	template_train16px(0, 209)
 }

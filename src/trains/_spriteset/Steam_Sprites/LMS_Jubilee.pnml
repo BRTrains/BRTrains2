@@ -34,8 +34,11 @@ switch(FEAT_TRAINS,SELF, sw_LMSJubileeTender,cargo_subtype){
     0:	spriteset_LMS_B5JubTender_LMSRed;
 	1:	spriteset_LMS_B5JubTender_LMSBlack;
 	2:	spriteset_LMS_B5JubTender_BRRedText;
-	3: 	spriteset_LMS_B5JubTender_BRBlackLion;
-	4:	spriteset_LMS_B5JubTender_BRBlackText;
+	3:	spriteset_LMS_B5JubTender_BRRedLion;
+	4: 	spriteset_LMS_B5JubTender_BRBlackLion;
+	5:	spriteset_LMS_B5JubTender_BRBlackText;
+	6: 	spriteset_LMS_B5JubTender_BRGreenLion;
+	7: 	spriteset_LMS_B5JubTender_BRBlueLion;
 }
 
 switch(FEAT_TRAINS, SELF, sw_LMSJubilee, position_in_articulated_veh){
@@ -57,7 +60,10 @@ switch(FEAT_TRAINS,SELF,sw_LMSJubilee_cargo_subtype_text,cargo_subtype){
     0: return string(str_LMSRed);
 	1: return string(str_LMSBlack);
 	2: return string(str_BRTransitionalRed);
-	3: return string(str_BRLion);
-	4: return string(str_BRBlack);
+	3: return string(str_BRMaroon);
+	4: return string(str_BRLion);
+	5: return string(str_BRBlack);
+	6: return string(str_BRGreen);
+	7: return string(str_BRBlue);
        return CB_RESULT_NO_TEXT;
 }
