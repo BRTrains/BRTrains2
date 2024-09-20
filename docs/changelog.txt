@@ -6,11 +6,13 @@
 - Conflat B (needs coding)
 - Class 59 (code liveries and add to lang file)
 - Coronation Coaches
-- More LNER Black 5 and Jubilee liveries
 - GWR Great Bear and Hall class rework
 - Stanier 8F
 - Class 56
+- Class 69
 - Made eyecandy, debug,  and departmental vehicles unattractive to AI
+- LNER Gresley 61ft6 TPO
+- GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 
 # v2.13
 - Added LNER J70
@@ -28,9 +30,11 @@
 - Adjusted EyeCandy engine to hopefully discourage AI use
 - Reworked Southern Region CC Class (OG BR Class 70)
 - Added a pile of liveries for Class 66
+- Added some LNER Black 5 and Jubilee liveries
 - Improved Class 89 sprites
 - Improved Class 68/88
 - Added Harry Needle Orange livery for Class 37
+- Improved steam train naming conventions and consistency
 - Fixed some animated pixels on HST rear power car
 - Fixed some tram capacities
 - Fixed Tram parameter switch
