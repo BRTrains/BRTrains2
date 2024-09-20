@@ -371,126 +371,125 @@ str_FlyingBanana_usage					:Track Measurement
 str_FlyingBanana_eos					:---
 str_FlyingBanana_liveries				:Network Rail Yellow
 
-STR_NAME_StephensonPlanet			:Stephenson's 2-2-0 "Planet"
-str_StephensonPlanet_usage			:Mixed Traffic
-str_StephensonPlanet_eos			:1830
-str_StephensonPlanet_liveries		:Teak
+STR_NAME_StephensonPlanet			    :L&MR Stephenson 2-2-0 "Planet"
+str_StephensonPlanet_usage			    :Mixed Traffic
+str_StephensonPlanet_eos			    :1830-1841
+str_StephensonPlanet_liveries		    :Teak
 
 
-STR_NAME_LNER_J70			    :GER 0-6-0T "C53" (LNER "J70") Tank
-str_LNER_J70_usage			    :Light freight and shunting
-str_LNER_J70_eos				:1903-1921
-str_LNER_J70_liveries			:GER/LNER Teak
+STR_NAME_LNER_J70			        :GER Class C53 0-6-0T (LNER "J70")
+str_LNER_J70_usage			        :Light Mixed Traffic
+str_LNER_J70_eos				    :1903-1955
+str_LNER_J70_liveries			    :GER Teak
 
-STR_NAME_Coppernob					:Furness Railway 0-4-0 "Coppernob"
+STR_NAME_Coppernob					:FR A2 Class 0-4-0 "Old Coppernob"
 str_Coppernob_usage					:Mixed Traffic
-str_Coppernob_eos					:1848
-str_Coppernob_liveries				:Furness Railway Red
+str_Coppernob_eos					:1848-1898
+str_Coppernob_liveries				:FR Red
 
-STR_NAME_CaledonianSingle			:Caledonian Railway 4-2-2 "Single"
-str_CaledonianSingle_usage			:Mixed Traffic
-str_CaledonianSingle_eos			:1887
-str_CaledonianSingle_liveries		:Caledonian Blue
+STR_NAME_CaledonianSingle			:CR Single 4-2-2 "No. 123"
+str_CaledonianSingle_usage			:Exhibition, Directors' Train
+str_CaledonianSingle_eos			:1887-1935
+str_CaledonianSingle_liveries		:CR Blue
 
-STR_NAME_FurnessK2					:Furness Railway 4-4-0 K2 "Large Seagull"
+STR_NAME_FurnessK2					:FR Pettigrew K2 Class 4-4-0 "Large Seagull"
 str_FurnessK2_usage					:Mixed Traffic
-str_FurnessK2_eos					:1892
-str_FurnessK2_liveries				:Furness Railway Red
+str_FurnessK2_eos					:1892-1931
+str_FurnessK2_liveries				:FR Red
 
-STR_NAME_LNWRWebb				:LNWR 0-6-2T "Webb Coal Tank"
-str_LNWRWebb_usage				:Low speed freight
-str_LNWRWebb_eos				:1881-1882
-str_LNWRWebb_liveries			:LNWR Black, BR Black
+STR_NAME_LNWRWebb				    :LNWR Webb Coal Tank 0-6-2T
+str_LNWRWebb_usage				    :Low speed freight
+str_LNWRWebb_eos				    :1881-1958
+str_LNWRWebb_liveries			    :LNWR Black, BR Black
 
-STR_NAME_LSWR_AdamsRadial		:LSWR 4-4-2T "Adams Radial Tank"
-str_LSWR_AdamsRadial_usage		:Low Speed Mixed Traffic
-str_LSWR_AdamsRadial_eos		:1882-1885
-str_LSWR_AdamsRadial_liveries	:LSWR Sage Green
+STR_NAME_LSWR_AdamsRadial		    :LSWR Adams 415 Class 4-4-2T "Adams Radial Tank"
+str_LSWR_AdamsRadial_usage		    :Suburban Passenger
+str_LSWR_AdamsRadial_eos		    :1882-1961
+str_LSWR_AdamsRadial_liveries	    :LSWR Sage Green
 
-
-STR_NAME_GWR_5700   				:GWR 5700 0-6-0PT
-str_GWR_5700_usage			   	    :Slow freight and shunting
-STR_NAME_GWR_6700   				:GWR 6700 0-6-0PT
-STR_NAME_GWR_8750   				:GWR 8750 0-6-0PT
-str_GWR_67008750_usage			   	:Slow freight, local passenger, shunting
-str_GWR_67008750_eos				:1929-1950
+STR_NAME_GWR_5700   				:GWR Collett 5700 Class 0-6-0PT
+str_GWR_5700_usage			   	    :Freight, Shunting
+STR_NAME_GWR_6700   				:GWR Collett 6700 Class 0-6-0PT
+STR_NAME_GWR_8750   				:GWR Collett 8750 Class 0-6-0PT
+str_GWR_67008750_usage			   	:Freight, Suburban Passenger, Shunting
+str_GWR_67008750_eos				:1929-1971
 str_GWR_67008750_liveries		    :GWR Green
 
-STR_NAME_GWR_DeanGoods				:GWR 2301 0-6-0 "Dean Goods"
-str_GWR_DeanGoods_usage			   	:Freight and local passenger services
+STR_NAME_GWR_DeanGoods				:GWR Dean 2301 Class 0-6-0 "Dean Goods"
+str_GWR_DeanGoods_usage			   	:Mixed Traffic
 str_GWR_DeanGoods_eos				:1883
 str_GWR_DeanGoods_liveries		    :GWR Green, GWR Green & Chrome
 
-STR_NAME_GreatBear					:GWR 4-6-2 "Great Bear"
-str_GreatBear_usage					:Express Passenger
-str_GreatBear_eos					:1908
+STR_NAME_GreatBear					:GWR Churchward 111 4-6-2 "The Great Bear"
+str_GreatBear_usage					:Experimental
+str_GreatBear_eos					:1908-1924
 str_GreatBear_liveries				:GWR Green
 
-STR_NAME_GWRCastle					:GWR 4-6-0 "Castle"
+STR_NAME_GWRCastle					:GWR Churchward 4073 Class 4-6-0 "Castle"
 str_GWRCastle_usage			   		:Express Passenger
-str_GWRCastle_eos					:1923
+str_GWRCastle_eos					:1923-1965
 str_GWRCastle_liveries				:GWR Green
 
-STR_NAME_GWRHall				:GWR 4-6-0 "Hall"
-str_GWRHall_usage		   		:Express Passenger
-str_GWRHall_eos				    :1946
-str_GWRHall_liveries			:GWR Green, Hogwarts Express
+STR_NAME_GWRHall				    :GWR Collett 4900 Class 4-6-0 "Hall"
+str_GWRHall_usage		   		    :Express Passenger
+str_GWRHall_eos				        :1946
+str_GWRHall_liveries			    :GWR Green, Hogwarts Express
 
-STR_NAME_LNERV2					:LNER Gresley 2-6-2 "V2"
-str_LNERV2_usage				:Fast Freight, Passenger, Express Passenger
-str_LNERV2_eos					:1936-1944
-str_LNERV2_liveries				:LNER Green
+STR_NAME_LNERV2					    :LNER Gresley Class V2 2-6-2
+str_LNERV2_usage				    :Fast Freight, Passenger, Express Passenger
+str_LNERV2_eos					    :1936-1966
+str_LNERV2_liveries				    :LNER Green
 
-STR_NAME_GNRA1					:GNR Gresley 4-6-2 "A1"
-str_GNRA1_usage					:Express Passenger
-str_GNRA1_eos					:1928-1935
-str_GNRA1_liveries				:GNR Green, LNER Green
+STR_NAME_GNRA1					    :GNR Gresley Class A1 4-6-2 
+str_GNRA1_usage					    :Express Passenger
+str_GNRA1_eos					    :1922-1949
+str_GNRA1_liveries				    :GNR Green, LNER Green
 
-STR_NAME_LNERA3					:LNER Gresley 4-6-2 "A3"
-str_LNERA3_usage				:Express Passenger
-str_LNERA3_eos					:1959-1966
-str_LNERA3_liveries				:LNER Green, BR Wartime Black, BR Apple Green, BR Brunswick Green
+STR_NAME_LNERA3					    :LNER Gresley Class A3 4-6-2
+str_LNERA3_usage				    :Express Passenger
+str_LNERA3_eos					    :1928-1966
+str_LNERA3_liveries				    :LNER Green, LNER Wartime Black, BR Apple Green, BR Brunswick Green
 
-STR_NAME_LNERP2					:LNER Gresley 2-8-2 "P2"
-STR_NAME_LNERP2_Streamlined		:LNER Gresley 2-8-2 "P2" (Streamlined)
-str_LNERP2_usage				:Express Passenger
-str_LNERP2_eos					:1934-1936
-str_LNERP2_liveries				:LNER Green
+STR_NAME_LNERP2					    :LNER Gresley Class P2 2-8-2
+STR_NAME_LNERP2_Streamlined		    :LNER Gresley Class P2 2-8-2 (Streamlined)
+str_LNERP2_usage				    :Express Passenger
+str_LNERP2_eos					    :1934-1944
+str_LNERP2_liveries				    :LNER Green, LNER Wartime Black
 
-STR_NAME_LMSBigBertha			:LMS 0-10-0 "Big Bertha"
-str_LMSBigBertha_usage		    :Banking
-str_LMSBigBertha_eos			:1919
-str_LMSBigBertha_liveries		:LMS Red
+STR_NAME_LMSBigBertha			    :MR Fowler Lickey Banker 0-10-0 "Big Bertha"
+str_LMSBigBertha_usage		        :Banking
+str_LMSBigBertha_eos			    :1919-1956
+str_LMSBigBertha_liveries		    :MR Maroon
 
-STR_NAME_LMSJubilee				:LMS 4-6-0 "Jubilee"
-str_LMSJubilee_usage		    :Express Passenger
-str_LMSJubilee_eos				:1934-1936
-str_LMSJubilee_liveries			:LMS Red
+STR_NAME_LMSJubilee				    :LMS Stanier Jubilee Class 4-6-0
+str_LMSJubilee_usage		        :Express Passenger
+str_LMSJubilee_eos				    :1934-1967
+str_LMSJubilee_liveries			    :LMS Crimson, LMS Wartime Black, BR Transitional Black, BR Black, BR Brunswick Green, BR Blue
 
-STR_NAME_LMSBlack5				:LMS 4-6-0 "Black5"
-str_LMSBlack5_usage		        :Mixed Traffic
-str_LMSBlack5_eos				:1934-1951
-str_LMSBlack5_liveries			:LMS Black
+STR_NAME_LMSBlack5				    :LMS Stanier Class 5MT 4-6-0 "Black Five"
+str_LMSBlack5_usage		            :Mixed Traffic
+str_LMSBlack5_eos				    :1934-1968
+str_LMSBlack5_liveries			    :LMS Black, BR Transitional Black, BR Black
 
-STR_NAME_WDTank				    :War Department 0-6-0 "Austerity Tank"
-str_WDTank_usage				:Low speed freight/shunting
-str_WDTank_eos				    :1960
-str_WDTank_liveries			    :Wartime Black
+STR_NAME_WDTank				        :WD Austerity 0-6-0ST "Austerity Tank"
+str_WDTank_usage				    :Low speed freight/shunting
+str_WDTank_eos				        :1960
+str_WDTank_liveries			        :Wartime Black
 
-STR_NAME_SRZClass			    :Southern Railway 0-8-0T "Z Class" Tank
-str_SRZClass_usage				:Heavy shunting, short haul freight
-str_SRZClass_eos				:1929
-str_SRZClass_liveries			:SR Black, BR Transitional Black, BR Cycling Lion
+STR_NAME_SRZClass			        :SR Maunsell Z Class 0-8-0T
+str_SRZClass_usage				    :Heavy shunting, short haul freight
+str_SRZClass_eos				    :1929-1962
+str_SRZClass_liveries			    :SR Black, BR Transitional Black, BR Black
 
-STR_NAME_GER_L77			    :LNER 0-6-2T "N7" (GER "L77") Tank
-str_GER_L77_usage			:Heavy shunting, short haul freight
-str_GER_L77_eos				:1915-1928
-str_GER_L77_liveries			:GER Blue, GER Black, LNER Apple Green, LNER Black, BR Black
+STR_NAME_GER_L77			        :GER Hill Class L77 0-6-2T (LNER Class N7)
+str_GER_L77_usage			        :Suburban Passenger
+str_GER_L77_eos				        :1915-1962
+str_GER_L77_liveries			    :GER Blue, GER Black, LNER Apple Green, LNER Black, BR Black
 
-STR_NAME_Standard9F				:BR Standard Class 9F
-str_Standard9F_usage			:Freight/Mixed Traffic
-str_Standard9F_eos				:1935
-str_Standard9F_liveries			:BR Black, BR Green
+STR_NAME_Standard9F				    :BR Standard Class 9F
+str_Standard9F_usage			    :Heavy Freight/Mixed Traffic
+str_Standard9F_eos				    :1954-1968
+str_Standard9F_liveries			    :BR Black, BR Brunswick Green
 
 STR_NAME_BluePullman_6Car		:BR "Blue Pullman" (6 car)
 STR_NAME_BluePullman_8Car		:BR "Blue Pullman" (8 car)
@@ -508,83 +507,138 @@ str_BR13_usage					:Shunting
 str_BR13_eos					:1983-1986
 str_BR13_liveries				:BR Blue
 
+STR_NAME_BR14                   :BR Class 14 "Teddy Bear"
+str_BR14_usage                  :Freight
+str_BR14_eos                    :1964-1987
+str_BR14_liveries               :---
+
+STR_NAME_BR15                   :BR Class 15
+str_BR15_usage                  :Freight
+str_BR15_eos                    :1957-1971
+str_BR15_liveries               :---
+
+STR_NAME_BR16                   :BR Class 16
+str_BR16_usage                  :Freight 
+str_BR16_eos                    :1958-1968
+str_BR16_liveries               :---
+
+STR_NAME_BR17                   :BR Class 17
+str_BR17_usage                  :Freight
+str_BR17_eos                    :1962-1971
+str_BR17_liveries               :---
+
 STR_NAME_BR20					:BR Class 20 "Chopper"
 str_BR20_usage					:Light freight
-str_BR20_eos					:---
+str_BR20_eos					:1965-1985
 str_BR20_liveries				:BR Blue
+
+STR_NAME_BR21_NBL               :BR Class 21 (NBL)
+str_BR21_usage                  :Mixed Traffic
+str_BR21_eos                    :1958-1968
+str_BR21_liveries               :---
+
+STR_NAME_BR22                   :BR Class 22 "Baby Warship"
+str_BR22_usage                  :Mixed Traffic
+str_BR22_eos                    :1959-1972
+str_BR22_liveries               :---
 
 STR_NAME_BR28					:BR Class 28 "Co-Bo"
 str_BR28_usage					:Freight, Local Passenger
-str_BR28_eos					:---
+str_BR28_eos					:1958-1968
 str_BR28_liveries				:BR Green, BR Green (Yellow Panel), BR Green (Yellow Front), BR Blue, BR Research Department
 
-STR_NAME_BR31					:BR Class 31 "Type 2"
+STR_NAME_BR31					:BR Class 31 "Gurgler" 
 str_BR31_usage					:Express Passenger
-str_BR31_eos					:---
-str_BR31_liveries				:
+str_BR31_eos					:1957-2017
+str_BR31_liveries				:---
 
 STR_NAME_BR33_0					:BR Class 33/0 "Crompton"
 str_BR33_0_usage				:Mixed Traffic
-str_BR33_0_eos					:---
+str_BR33_0_eos					:1960-Present
 str_BR33_0_liveries				:BR Green, BR Green (Yellow Front), BR Blue, Network SouthEast, Civil Engineers "Dutch", Colas Rail, DRS, EWS, Railfreight Construction, Railfreight Distribution, Fragonset, West Coast Railway Company
 
-STR_NAME_BR33_1					:BR Class 33/1 "Crompton"
+STR_NAME_BR33_1					:BR Class 33/1 "Crompton/Bagpipes"
 str_BR33_1_usage				:Push-Pull Haulage
-str_BR33_1_eos					:---
+str_BR33_1_eos					:1960-Present
 str_BR33_1_liveries				:BR Green, BR Green (Yellow Front), BR Blue, Network SouthEast, Fragonset
+
+STR_NAME_BR35                   :BR Class 35 "Hymek"
+str_BR35_usage                  :Mixed Traffic
+str_BR35_eos                    :1961-1975
+str_BR35_liveries               :---
 
 STR_NAME_BR37					:BR Class 37/0 "Tractor"
 str_BR37_usage					:Mixed Traffic
 str_BR37_eos					:---
 str_BR37_liveries				:BR Blue, BR Green, BR Large Logo, Civil Engineers "Dutch", Colas Rail, DB Schenker, Departmental Grey, DRS, EWS, Harry Needle Railroad, InterCity, Loadhaul, Mainline Freight, Railfreight Coal, Railfreight Construction, Railfreight Distribution, Railfreight Large Logo, Railfreight Petroleum, Regional Railways, Royal Scotsman
 
-STR_NAME_BR47					:BR Class 47 "Type 4"
+STR_NAME_BR44                   :BR Class 44 "Peak"
+str_BR44_usage                  :Express Passenger
+str_BR44_eos                    :1959-1980
+str_BR44_liveries               :---
+
+STR_NAME_BR45                   :BR Class 45 "Peak"
+str_BR45_usage                  :Express Passenger
+str_BR45_eos                    :1960-1989
+str_BR45_liveries               :---
+
+STR_NAME_BR46                   :BR Class 46 "Peak"
+str_BR46_usage                  :Express Passenger
+str_BR46_eos                    :1961-1984
+str_BR46_liveries               :---
+
+STR_NAME_BR44_45_46             :BR Class 44/45/46 "Peak"
+str_BR44_45_46_usage            :Express Passenger
+str_BR44_45_46_eos              :1959-1984
+str_BR44_45_46_liveries         :---
+
+STR_NAME_BR47					:BR Class 47
 str_BR47_usage					:Mixed Traffic
-str_BR47_eos					:---
+str_BR47_eos					:1962-Present
 str_BR47_liveries				:BR Green, BR Blue, BR Large Logo, BR Large Logo (Alternate), Porterbrook, EWS, Anglia, InterCity, West Coast, GWR Green, Virgin, Colas Rail, ONE, Freightliner
 
-STR_NAME_BR48					:BR Class 48 "Type 4" (Experimental)
+STR_NAME_BR48					:BR Class 48 
 str_BR48_usage					:Mixed Traffic
-str_BR48_eos					:---
+str_BR48_eos					:1965-1971
 str_BR48_liveries				:BR Green, BR Blue
 
-STR_NAME_Kestrel				:HS4000 "Kestrel" (Type 5 Prototype)
-str_Kestrel_usage				:Mixed Traffic
-str_Kestrel_eos					:---
+STR_NAME_Kestrel				:BR HS4000 "Kestrel" 
+str_Kestrel_usage				:Experimental
+str_Kestrel_eos					:1967-1971
 str_Kestrel_liveries			:Kestrel Black and Yellow
 
 STR_NAME_BR50					:BR Class 50 "Hoover"
 str_BR50_usage					:Express Passenger
-str_BR50_eos					:---
+str_BR50_eos					:1967-1994
 str_BR50_liveries				:BR Blue, BR Large Logo, BR Green, Network SouthEast, Network SouthEast (Alternate) GBRf, Hanson & Hall
 
 STR_NAME_BR52					:BR Class 52 "Western"
 str_BR52_usage					:Mixed Traffic
-str_BR52_eos					:---
+str_BR52_eos					:1961-1977
 str_BR52_liveries				:BR Desert Sand, BR Maroon, BR Green, BR Blue
 
 STR_NAME_BR55					:BR Class 55 "Deltic"
 str_BR55_usage					:Express Passenger
-str_BR55_eos					:1982
+str_BR55_eos					:1961-1982
 str_BR55_liveries				:BR Green, BR Green with Yellow Front, BR Blue
 
 STR_NAME_BR57					:BR Class 57 "Thunderbird"
 str_BR57_usage					:Mixed Traffic
 str_BR57_eos					:---
-str_BR57_liveries				:
+str_BR57_liveries				:---
 
 STR_NAME_BR58					:BR Class 58 "Bone"
 str_BR58_usage					:Heavy Freight
-str_BR58_eos					:---
+str_BR58_eos					:1983-2002
 str_BR58_liveries				:Railfreight (2 Tone Grey, 3 Tone Grey, 3 Tone Grey Coal Sector, Mainline Grey, Mainline Blue)
 
 STR_NAME_BR59_01				:BR Class 59/0/1 "Super Shed"
 STR_NAME_BR59_2					:BR Class 59/2 "Super Shed"
 str_BR59_usage					:Mixed Freight
-str_BR59_01_eos					:---
-str_BR59_01_liveries			:
-str_BR59_2_eos					:---
-str_BR59_2_liveries				:
+str_BR59_01_eos					:1986-Present
+str_BR59_01_liveries			:---
+str_BR59_2_eos					:1994-Present
+str_BR59_2_liveries				:---
 
 STR_NAME_BR60					:BR Class 60 "Tug"
 str_BR60_usage					:Mixed Freight
@@ -593,7 +647,7 @@ str_BR60_liveries				:Railfreight Grey, Mainline, Loadhaul Grey, Loadhaul, Briti
 
 STR_NAME_BR66					:BR Class 66 "Shed"
 str_BR66_usage					:Mixed Freight
-str_BR66_eos					:---
+str_BR66_eos					:1998-Present
 str_BR66_liveries				:EWS, Freightliner, DB Schenker, GBRf, GBRf Tfl, GBRf Harry Beck, Colas Rail, Fastline, DRS
 
 STR_NAME_BR67					:BR Class 67 "Skip"
@@ -631,14 +685,14 @@ str_BR71_usage					:Mixed Traffic
 str_BR71_eos					:---
 str_BR71_liveries				:BR Green
 
-STR_NAME_18100					:18100 (Gas Turbine Prototype)
-str_18100_usage					:Mixed Traffic
-str_18100_eos		    		:---
+STR_NAME_18100					:BR 18100 (Gas Turbine Prototype)
+str_18100_usage					:Experimental
+str_18100_eos		    		:1951-1957
 str_18100_liveries				:BR Black
 
 STR_NAME_BR80					:BR Class 80 (25kV Prototype)
-str_BR80_usage					:Mixed Traffic
-str_BR80_eos		    		:---
+str_BR80_usage					:Experimental
+str_BR80_eos		    		:1958-1968
 str_BR80_liveries				:BR Black
 
 STR_NAME_BR81					:BR Class 81 "AL1"
