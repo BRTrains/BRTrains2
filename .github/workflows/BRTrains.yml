@@ -15,7 +15,7 @@ jobs:
       - name: Build
         run: python3 build.py --compile brtrainsv2
       - name: Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: brtrainsv2
           path: build/brtrainsv2.*
