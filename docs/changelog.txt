@@ -7,17 +7,16 @@
 - Class 59 (code liveries and add to lang file)
 - Coronation Coaches
 - GWR Great Bear and Hall class rework
-- Stanier 8F
 - Class 56
 - Class 69
 - Made eyecandy, debug,  and departmental vehicles unattractive to AI
-- LNER Gresley 61ft6 TPO
 - GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 
 # v2.13
 - Added LNER J70
 - Added LNER V2
 - Added LMS 0-10-0 "Big Bertha"
+- Added LMS Stanier 8F
 - Added Class 28
 - Added Class 58
 - Added Class 68 + Mk3 rake
@@ -25,7 +24,9 @@
 - Added Class 99
 - Added LNER Gresley 61 Ft 6 TK teak coach
 - Added LNER Gresley 61 Ft 6 BCK teak coach
-- Added GCR Robinson 50 ft mahogany coach
+- Added LNER Gresley 61ft6 TPO travelling post office
+- Added LNER Gresley 61ft6 BG mail coach
+- Added GCR Robinson 50 ft mahogany coach (2 variants)
 - Added BR VGA and VKA goods vans
 - Adjusted EyeCandy engine to hopefully discourage AI use
 - Reworked Southern Region CC Class (OG BR Class 70)
