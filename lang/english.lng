@@ -471,6 +471,11 @@ str_LMSBlack5_usage		            :Mixed Traffic
 str_LMSBlack5_eos				    :1934-1968
 str_LMSBlack5_liveries			    :LMS Black, BR Transitional Black, BR Black
 
+STR_NAME_LMS8F                      :LMS Stanier Class 8F
+str_LMS8F_usage                     :Heavy Freight
+str_LMS8F_eos                       :1935-1968
+str_LMS8F_liveries                  :LMS BLack, BR Transitional Black, BR Black, WD Grey
+
 STR_NAME_WDTank				        :WD Austerity 0-6-0ST "Austerity Tank"
 str_WDTank_usage				    :Low speed freight/shunting
 str_WDTank_eos				        :1960
@@ -1557,6 +1562,12 @@ str_LNER_Gresley_616TK_liveries		:LNER "Teak", LNER "Blood and Custard", BR Maro
 STR_NAME_LNER_Gresley_616BCK		    :LNER Gresley 61' 6" BCK
 str_LNER_Gresley_616BCK_liveries		:LNER "Teak", LNER "Blood and Custard", BR Maroon, BR Blue
 
+STR_NAME_LNER_Gresley_616BG         :LNER Gresley 61' 6" BG
+str_LNER_Gresley_616BG_liveries     :LNER Teak, BR "Blood and Custard", BR Maroon, BR Blue
+
+STR_NAME_LNER_Gresley_616TPO        :LNER Gresley 61' 6" TPO
+str_LNER_Gresley_616TPO_liveries    :LNER Teak, BR "Blood and Custard", BR Maroon, BR Blue
+
 STR_NAME_LNER_Thompson_61FK		    :LNER Thompson 61' TK
 str_LNER_Thompson_61FK_liveries		:LNER "Teak"
 
@@ -1991,6 +2002,9 @@ str_WAGNWh						: (WAGN - White)
 str_WAGNYg						: (WAGN - Yellow & Green)
 str_WalesWest					: (Wales and West)
 str_Wartime						: (BR - Wartime Black)
+str_WDGrey                      : (War Department Grey)
+str_WDKhaki                     : (War Department Khaki Drab)
+str_WDGreen                     : (War Department Bronze Green)
 str_Wessex						: (Wessex Trains)
 str_WessexCornwall				: (Wessex Trains - Cornwall and Devon Ad.)
 str_WessexGinster				: (Wessex Trains - Ginsters)
