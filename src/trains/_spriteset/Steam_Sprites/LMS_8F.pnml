@@ -3,11 +3,11 @@ spriteset(spriteset_LMS8F_Purchase, "gfx/Steam/LMS_Stanier_8F.png") {
 }
 
 spriteset(spriteset_LMS8F_Black, "gfx/Steam/LMS_Stanier_8F.png") {
-    template_purchase_anim(0, 13)
+    template_train32px(0, 13)
 } 
 
 spriteset(spriteset_LMS8F_WDGrey, "gfx/Steam/LMS_Stanier_8F.png") {
-    template_purchase_anim(0, 39)
+    template_train32px(0, 39)
 }
 
 switch(FEAT_TRAINS,SELF, sw_LMS8FLoco, cargo_subtype) {
