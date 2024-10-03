@@ -35,6 +35,7 @@
 - Improved Class 89 sprites
 - Improved Class 68/88
 - Added Harry Needle Orange livery for Class 37
+- Added Freightliner Orange livery for Class 70
 - Improved steam train naming conventions and consistency
 - Fixed some animated pixels on HST rear power car
 - Fixed some tram capacities

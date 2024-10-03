@@ -2,7 +2,7 @@ spriteset(spriteset_BR70_Purchase, "gfx/Diesel/70.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR70_Freightliner, "gfx/Diesel/70.png") {
+spriteset(spriteset_BR70_FreightlinerPowerhaul, "gfx/Diesel/70.png") {
 	template_train32px(0, 13)
 }
 	
@@ -10,14 +10,20 @@ spriteset(spriteset_BR70_ColasRail, "gfx/Diesel/70.png") {
 	template_train32px(0, 39)
 }
 
+spriteset(spriteset_BR70_FreightlinerOrange, "gfx/Diesel/70.png") {
+	template_train32px(0, 65)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR70,cargo_subtype){
-    0:	spriteset_BR70_Freightliner;
+    0:	spriteset_BR70_FreightlinerPowerhaul;
 	1: 	spriteset_BR70_ColasRail;
+	2:	spriteset_BR70_FreightlinerOrange;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR70_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Freightliner);
 	1: 	return string(str_ColasRail);
+	2: 	return string(str_FreightlinerOrange);
        return CB_RESULT_NO_TEXT;
 }
 
