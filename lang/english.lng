@@ -64,37 +64,44 @@ str_comp_HarryNeedle            :Harry Needle Railroad
 str_comp_Northern               :Northern
 str_comp_NorthernRail           :Northern Rail
 str_comp_SWR                    :South Western Railway
+str_comp_TigerNacco             :Tiger Nacco
+str_comp_TSL                    :Traffic Services Limited
 str_comp_TPE                    :Transpennine Express
 str_comp_VXC                    :Virgin CrossCountry
 str_comp_VTEC                   :Virgin East Coast
 str_comp_VTWC                   :Virgin West Coast
 str_comp_WMR                    :West Midland Railway
 
-str_sep_space                 : 
-str_sep_dash                  : - 
-str_sep_dashonly              :-
+str_comp_gen_priv_owner         :Private Owner
+
+str_sep_space                   : 
+str_sep_dash                    : - 
+str_sep_dashonly                :-
 
 # Suffixes used to build names
-str_col_Blue                  :Blue
-str_col_Green                 :Green
-str_col_Black                 :Black
-str_col_Yellow                :Yellow
-str_col_Red                   :Red
-str_col_Purple                :Purple
-str_col_Desert                :Desert Sands
-str_col_GoldenOchre           :Golden Ochre
-str_col_Maroon                :Maroon
-str_col_BloodCustard          :Blood and Custard
-str_col_Teak                  :Teak
-str_col_Orange                :Orange
-str_col_Grey                  :Grey
-str_col_Mahogany              :Mahogany
+str_col_Blue                    :Blue
+str_col_Green                   :Green
+str_col_Black                   :Black
+str_col_Yellow                  :Yellow
+str_col_Red                     :Red
+str_col_Purple                  :Purple
+str_col_Desert                  :Desert Sands
+str_col_GoldenOchre             :Golden Ochre
+str_col_Maroon                  :Maroon
+str_col_BloodCustard            :Blood and Custard
+str_col_Teak                    :Teak
+str_col_Orange                  :Orange
+str_col_Grey                    :Grey
+str_col_Mahogany                :Mahogany
+str_col_Bauxite                 :Bauxite
 
-str_var_Named                 :Named
-str_var_Olympics              :Olympics
-str_var_Unnamed               :Unnamed
-str_var_Speedlink             :Speedlink
-str_var_Exhibition            :Exhibition
+str_var_Named                   :Named
+str_var_Olympics                :Olympics
+str_var_Unnamed                 :Unnamed
+str_var_Speedlink               :Speedlink
+str_var_Exhibition              :Exhibition
+str_var_Polybulk                :Polybulk
+str_var_Grainflow               :Grainflow
 
 # Variant group headers
 STR_LU_Subsurface_Header        :London Underground sub-surface units
@@ -144,20 +151,20 @@ STR_PARAM_DESC_DEV			    :Optionally enable in-development trains (unfinished/in
 STR_PARAM_DEV_ON				:Development mode (includes in-progress or unfinished trains etc)
 STR_PARAM_DEV_OFF				:Default mode
 
-STR_PARAM_NAME_PAX_MULTIPLIER  :Passenger Capacity Multiplier
-STR_PARAM_DESC_PAX_MULTIPLIER  :Increase passenger capacity to allow use of real-world train sizes with higher capacity routes
+STR_PARAM_NAME_PAX_MULTIPLIER   :Passenger Capacity Multiplier
+STR_PARAM_DESC_PAX_MULTIPLIER   :Increase passenger capacity to allow use of real-world train sizes with higher capacity routes
 
 STR_PARAM_NAME_COST_MULTIPLIER  :Purchase/Running Cost Multiplier
 STR_PARAM_DESC_COST_MULTIPLIER  :Increase or decrease purchase price and running costs, if you find they aren't balanced to your taste
 
-STR_PARAM_NAME_TRAMMETRO         :Metro Trains and Tram availability
-STR_PARAM_DESC_TRAMMETRO         :Should Trams and Metro units be available as trams or trains?
-STR_TRAM_DEFAULT                 :(Default) Realistic Heavy/Light rail split (Trams and light rail as trams, heavy rail as trains)
-STR_TRAM_TRAINONLY               :Display all Metro units as Trains only (no trams)
-STR_TRAM_TRAMONLY                :Display all Metro Units as Trams only (no London Underground trains etc, only as trams)
-STR_TRAM_BOTH                    :Display Trams and Trains as both Trams and Trains (all purchaseable as either)
-STR_TRAM_EXTRA                   :(Experimental) Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
-STR_TRAM_SUPEREXTRA              :(Experimental) Include a slightly ridiculous number of extra units (London Overground, trains used for suburban routes)
+STR_PARAM_NAME_TRAMMETRO        :Metro Trains and Tram availability
+STR_PARAM_DESC_TRAMMETRO        :Should Trams and Metro units be available as trams or trains?
+STR_TRAM_DEFAULT                :(Default) Realistic Heavy/Light rail split (Trams and light rail as trams, heavy rail as trains)
+STR_TRAM_TRAINONLY              :Display all Metro units as Trains only (no trams)
+STR_TRAM_TRAMONLY               :Display all Metro Units as Trams only (no London Underground trains etc, only as trams)
+STR_TRAM_BOTH                   :Display Trams and Trains as both Trams and Trains (all purchaseable as either)
+STR_TRAM_EXTRA                  :(Experimental) Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
+STR_TRAM_SUPEREXTRA             :(Experimental) Include a slightly ridiculous number of extra units (London Overground, trains used for suburban routes)
 
 STR_PARAM_NAME_METRO            :Metro-as-Tram availability
 STR_PARAM_DESC_METRO            :Should Metro units be available as trams?
@@ -1322,6 +1329,10 @@ str_BR800_usage					:Regional Passenger
 str_BR800_eos					:---
 str_BR800_liveries				:Hitachi, GWR
 
+# # # # # # #
+# # WAGON # #
+# # # # # # #
+
 STR_NAME_FurnessGoodsVan		:Furness Railway Goods Van
 str_FurnessGoodsVan_usage		:Goods, Misc. Cargo
 str_FurnessGoodsVan_eos			:---
@@ -1337,10 +1348,20 @@ str_Furness20TonHopper_usage	:Bulk
 str_Furness20TonHopper_eos		:---
 str_Furness20TonHopper_liveries	:Grey
 
+STR_NAME_FurnessLumberWagon		:Furness Railway Small Lumber Wagon
+str_FurnessLumberWagon_usage	:Wood
+str_FurnessLumberWagon_eos		:---
+str_FurnessLumberWagon_liveries	:Green
+
 STR_NAME_RS_SWB_Hopper			:LNER Standard Medium Hopper
 str_RS_SWB_Hopper_usage			:Bulk Cargos
 str_RS_SWB_Hopper_eos			:---
 str_RS_SWB_Hopper_liveries		:Grey, Brown
+
+STR_NAME_GWR_Mink_G             :GWR "Mink G" Goods Van
+str_GWR_Mink_G_usage            :Goods, Misc. Cargo
+str_GWR_Mink_G_eos              :--
+str_GWR_Mink_G_liveries         :GWR Grey, BR Bauxite
 
 STR_NAME_BRHHA					:BR HHA Wagon
 str_BRHHA_usage					:Bulk Cargos
@@ -1365,10 +1386,30 @@ str_BRContainer_usage			:Misc. Cargo
 str_BRContainer_eos				:---
 str_BRContainer_liveries		:Maersk, Tesco, Random
 
-STR_NAME_FurnessLumberWagon		:Furness Railway Small Lumber Wagon
-str_FurnessLumberWagon_usage		:Wood
-str_FurnessLumberWagon_eos		:---
-str_FurnessLumberWagon_liveries	:Green
+STR_NAME_BRT_CovHop             :BRT Covered Hopper
+STR_NAME_BRT_Whisky_CovHop      :BRT Covered Hopper "Whisky CovHop"
+str_BRT_CovHop_usage            :Bulk Cargos
+str_BRT_CovHop_eos              :---
+str_BRT_CovHop_liveries         :Grainflow, BR Grey, BR Brown, Private Owner Blue, Private Owner Blue with Advertising, Private Owner Yellow
+
+STR_NAME_BRJIA_Polybulk         :BR JIA "Polybulk" Hopper
+str_BRJIA_Polybulk_usage        :Bulk Cargos
+str_BRJIA_Polybulk_eos          :---
+str_BRJIA_Polybulk_liveries     :Traffic Service Limited Polybulk, Polybulk, Grainflow, Tiger Nacco Grey
+
+# # # # # # # # 
+# # COACHES # #
+# # # # # # # #
+
+STR_NAME_LNER_CorSet_Header     :LNER Coronation 
+STR_NAME_LNER_CorSet_BT_KT      :LNER Coronation Articulated Coach (Brake Third + Kitchen Third)
+STR_NAME_LNER_CorSet_OF_OF      :LNER Coronation Articulated Coach (Open First + Open First)
+STR_NAME_LNER_CorSet_OT_KT      :LNER Coronation Articulated Coach (Open Third + Kitchen Third)
+STR_NAME_LNER_CorSet_OT_BT      :LNER Coronation Articulated Coach (Open Third + Brake Third)
+STR_NAME_LNER_CorSet_OBV        :LNER Coronation Observation Coach
+STR_NAME_LNER_CorSet_OT_OT      :LNER Coronation Articulated Coach (Open Third + Open Third)
+
+STR_LNER_CORSET_liveries        :LNER Coronation Garter Blue
 
 STR_NAME_BRMk1_Header			:BR Mark 1 Coaches
 STR_NAME_BRMk1FO				:BR Mark 1 Coach (First Open)
@@ -1676,7 +1717,7 @@ str_Biffa                       : (Biffa)
 str_BlackpoolTransport          : (Blackpool Transport)
 str_BoltonCorporation           : (BoltonCorporation)
 str_BP                          : (BP)
-str_BR2ToneGrey               : (BR - 2 Tone Grey)
+str_BR2ToneGrey                 : (BR - 2 Tone Grey)
 str_BRBlack						: (BR - Black)
 str_BRBlue						: (BR - Blue)
 str_BRBlueAlt					: (BR - Blue, Alternate)
