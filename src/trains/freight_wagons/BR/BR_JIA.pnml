@@ -1,0 +1,67 @@
+spriteset(spriteset_BR_JIA_Polybulk_purchase, "gfx/Freight/BR_JIA_Polybulk.png") {
+    template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR_JIA_TSLPolybulk, "gfx/Freight/BR_JIA_Polybulk.png") {
+    template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR_JIA_Polybulk, "gfx/Freight/BR_JIA_Polybulk.png") {
+    template_train32px(0, 39)
+}
+
+spriteset(spriteset_BR_JIA_Grainflow, "gfx/Freight/BR_JIA_Polybulk.png") {
+    template_train32px(0, 65)
+}
+
+spriteset(spriteset_BR_JIA_Tiger_Nacco_Grey, "gfx/Freight/BR_JIA_Polybulk.png") {
+    template_train32px(0, 91)
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR_JIA_cargo, cargo_subtype) {
+    0: spriteset_BR_JIA_TSLPolybulk;
+    1: spriteset_BR_JIA_Polybulk;
+    2: spriteset_BR_JIA_Grainflow;
+    3: spriteset_BR_JIA_Tiger_Nacco_Grey;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR_JIA_cargo_subtype_text, cargo_subtype) {
+    0:  return string(STR_LIVERY, string(str_comp_TSL), string(str_var_Polybulk));
+    1:  return string(STR_LIVERY, string(str_var_Polybulk));
+    2:  return string(STR_LIVERY, string(str_var_Grainflow));
+    3:  return string(STR_LIVERY_EXTENDED, string(str_comp_TigerNacco), string(str_col_Grey));
+    #    return CB_RESULT_NO_TEXT;
+}
+
+item(FEAT_TRAINS, item_BRJIA, 709) {
+    property {
+		name: 							string(STR_NAME_BRJIA_Polybulk);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1974,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		refittable_cargo_classes:		bitmask(CC_BULK, CC_COVERED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);		
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+        speed:                          75 mph;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		cargo_capacity:					58;
+		weight:							22 ton;		
+		air_drag_coefficient:			0.07;
+		length:							8;
+		bitmask_vehicle_info:			0;
+    }
+    graphics {
+        additional_text:                return(string(str_purchase_coach, string(str_BRJIA_Polybulk_liveries)));
+        can_attach_wagon:               CB_RESULT_ATTACH_ALLOW;
+        default:                        sw_BR_JIA_cargo;
+        purchase:                       spriteset_BR_JIA_Polybulk_purchase;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        cargo_subtype_text:             sw_BRJIA_cargo_subtype_text;
+        cost_factor:                    return(GetAdjustedCost(29));
+        running_cost_factor:            return(GetAdjustedCost(17));
+    }
+}

@@ -1,0 +1,55 @@
+spriteset(spriteset_GWR_Mink_G_purchase, "gfx/Freight/GWR_Mink_G.png") {
+    template_purchase(0, 0)
+}
+
+spriteset(spriteset_GWR_Mink_G_Grey, "gfx/Freight/GWR_Mink_G.png") {
+    template_train20px(0, 13)
+}
+
+spriteset(spriteset_GWR_Mink_G_Bauxite, "gfx/Freight/GWR_Mink_G.png") {
+    template_train20px(0, 39)
+}
+
+switch(FEAT_TRAINS, SELF, sw_GWR_Mink_G_cargo, cargo_subtype) {
+    0: spriteset_GWR_Mink_G_Grey;
+    1: spriteset_GWR_Mink_G_Bauxite;
+}
+
+switch(FEAT_TRAINS, SELF, sw_GWR_Mink_G_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_LIVERY_EXTENDED, string(str_comp_GWR), string(str_col_Grey));
+    1: return string(STR_LIVERY_EXTENDED, string(str_comp_BR), string(str_col_Bauxite));
+    # return CB_RESULT_NO_TEXT;
+}
+
+item(FEAT_TRAINS, item_GWRMinkG, 710) {
+    property {
+		name: 							string(STR_NAME_GWR_Mink_G);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1930,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED, CC_ARMOURED);	
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+        speed:                          50 mph;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		cargo_capacity:					20;
+		weight:							20 ton;		
+		air_drag_coefficient:			0.07;
+		length:							5;
+		bitmask_vehicle_info:			0;
+    }
+    graphics {
+        additional_text:                return(string(str_purchase_coach, string(str_GWR_Mink_G_liveries)));
+        can_attach_wagon:               CB_RESULT_ATTACH_ALLOW;
+        default:                        sw_GWR_Mink_G_cargo;
+        purchase:                       spriteset_GWR_Mink_G_purchase;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        cargo_subtype_text:             sw_GWR_Mink_G_cargo_subtype_text;
+        cost_factor:                    return(GetAdjustedCost(29));
+        running_cost_factor:            return(GetAdjustedCost(17));
+    }
+}

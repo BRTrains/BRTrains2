@@ -94,6 +94,7 @@ str_col_Orange                  :Orange
 str_col_Grey                    :Grey
 str_col_Mahogany                :Mahogany
 str_col_Bauxite                 :Bauxite
+str_col_Brown                   :Brown
 
 str_var_Named                   :Named
 str_var_Olympics                :Olympics
@@ -102,6 +103,7 @@ str_var_Speedlink               :Speedlink
 str_var_Exhibition              :Exhibition
 str_var_Polybulk                :Polybulk
 str_var_Grainflow               :Grainflow
+str_var_Advertisement           :with Advertisement
 
 # Variant group headers
 STR_LU_Subsurface_Header        :London Underground sub-surface units
@@ -1386,8 +1388,8 @@ str_BRContainer_usage			:Misc. Cargo
 str_BRContainer_eos				:---
 str_BRContainer_liveries		:Maersk, Tesco, Random
 
-STR_NAME_BRT_CovHop             :BRT Covered Hopper
-STR_NAME_BRT_Whisky_CovHop      :BRT Covered Hopper "Whisky CovHop"
+STR_NAME_BRT_CovHop             :BRT PAA Covered Hopper
+STR_NAME_BRT_Whisky_CovHop      :BRT PAV Covered Hopper "Whisky CovHop"
 str_BRT_CovHop_usage            :Bulk Cargos
 str_BRT_CovHop_eos              :---
 str_BRT_CovHop_liveries         :Grainflow, BR Grey, BR Brown, Private Owner Blue, Private Owner Blue with Advertising, Private Owner Yellow
