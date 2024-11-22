@@ -27,10 +27,9 @@ switch(FEAT_TRAINS, SELF, sw_BR_JIA_cargo, cargo_subtype) {
 
 switch(FEAT_TRAINS, SELF, sw_BR_JIA_cargo_subtype_text, cargo_subtype) {
     0:  return string(STR_LIVERY, string(str_comp_TSL), string(str_var_Polybulk));
-    1:  return string(STR_LIVERY, string(str_var_Polybulk));
-    2:  return string(STR_LIVERY, string(str_var_Grainflow));
-    3:  return string(STR_LIVERY_EXTENDED, string(str_comp_TigerNacco), string(str_col_Grey));
-    #    return CB_RESULT_NO_TEXT;
+    1:  return string(STR_LIVERY_SHORT, string(str_var_Polybulk));
+    2:  return string(STR_LIVERY_SHORT, string(str_var_Grainflow));
+    3:  return string(STR_LIVERY, string(str_comp_TigerNacco), string(str_col_Grey));
 }
 
 item(FEAT_TRAINS, item_BRJIA, 709) {
@@ -60,7 +59,7 @@ item(FEAT_TRAINS, item_BRJIA, 709) {
         default:                        sw_BR_JIA_cargo;
         purchase:                       spriteset_BR_JIA_Polybulk_purchase;
         colour_mapping:                 return PALETTE_CC_FIRST;
-        cargo_subtype_text:             sw_BRJIA_cargo_subtype_text;
+        cargo_subtype_text:             sw_BR_JIA_cargo_subtype_text;
         cost_factor:                    return(GetAdjustedCost(29));
         running_cost_factor:            return(GetAdjustedCost(17));
     }

@@ -20,6 +20,7 @@ STR_CONCAT_3s	: {STRING} {STRING} {STRING}
 STR_CONCAT_4s	: {STRING} {STRING} {STRING} {STRING}
 STR_CONCAT_5s	: {STRING} {STRING} {STRING} {STRING} {STRING}
 
+STR_LIVERY_SHORT    : ({STRING})
 STR_LIVERY          : ({STRING} - {STRING})
 STR_LIVERY_EXTENDED : ({STRING} - {STRING} - {STRING})
 STR_LIVERY_SPECIAL  : ({STRING} - {STRING} - {SILVER}{STRING})
@@ -1752,7 +1753,7 @@ str_BRProvincial                : (BR - Provincial)
 str_BRRailfreightGrey           : (BR - Railfreight Grey)
 str_BRResearch                  : (BR - Research Department)
 str_BRRefurb                    : (BR - Refurbished)
-str_BRTransitionalRed           : (BR - TransitionalRed)
+str_BRTransitionalRed           : (BR - Transitional Red)
 str_BRTest						: (BR - Track Test Train)
 str_BristolElectricProto        : (Bristol Electric - Prototype)
 str_Brown                       : (Brown)

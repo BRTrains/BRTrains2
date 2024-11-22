@@ -16,9 +16,8 @@ switch(FEAT_TRAINS, SELF, sw_GWR_Mink_G_cargo, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_GWR_Mink_G_cargo_subtype_text, cargo_subtype) {
-    0: return string(STR_LIVERY_EXTENDED, string(str_comp_GWR), string(str_col_Grey));
-    1: return string(STR_LIVERY_EXTENDED, string(str_comp_BR), string(str_col_Bauxite));
-    # return CB_RESULT_NO_TEXT;
+    0: return string(STR_LIVERY, string(str_abbr_GWR), string(str_col_Grey));
+    1: return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Bauxite));
 }
 
 item(FEAT_TRAINS, item_GWRMinkG, 710) {

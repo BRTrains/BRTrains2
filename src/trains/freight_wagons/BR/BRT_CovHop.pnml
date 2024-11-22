@@ -7,23 +7,23 @@ spriteset(spriteset_BRT_CovHop_Grainflow, "gfx/Freight/BRT_CovHop.png") {
 }
 
 spriteset(spriteset_BRT_CovHop_Grey, "gfx/Freight/BRT_CovHop.png") {
-    template_train32px(0, 39)
+    template_train20px(0, 39)
 }
 
 spriteset(spriteset_BRT_CovHop_Brown, "gfx/Freight/BRT_CovHop.png") {
-    template_train32px(0, 65)
+    template_train20px(0, 65)
 }
 
 spriteset(spriteset_BRT_CovHop_Priv_Blue, "gfx/Freight/BRT_CovHop.png") {
-    template_train32px(0, 91)
+    template_train20px(0, 91)
 }
 
 spriteset(spriteset_BRT_CovHop_Priv_Blue_Ad, "gfx/Freight/BRT_CovHop.png") {
-    template_train32px(0, 117)
+    template_train20px(0, 117)
 }
 
 spriteset(spriteset_BRT_CovHop_Priv_Yellow, "gfx/Freight/BRT_CovHop.png") {
-    template_train32px(0, 144)
+    template_train20px(0, 143)
 }
 
 switch(FEAT_TRAINS, SELF, sw_BRT_CovHop, cargo_subtype) {
@@ -36,12 +36,12 @@ switch(FEAT_TRAINS, SELF, sw_BRT_CovHop, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_BRT_CovHop_cargo_subtype_text, cargo_subtype) {
-    0: return string(STR_LIVERY, string(str_var_Polybulk));
-    1: return string(STR_LIVERY_EXTENDED, string(str_comp_BR), string(str_col_Grey));
-    2: return string(STR_LIVERY_EXTENDED, string(str_comp_BR), string(str_col_Brown));
-    3: return string(STR_LIVERY_EXTENDED, string(str_comp_gen_priv_owner), string(str_col_Blue));
-    4: return string(STR_LIVERY_SPECIAL, string(str_comp_gen_priv_owner), string(str_col_Blue), string(str_var_Advertisement));
-    5: return string(STR_LIVERY_EXTENDED, string(str_comp_gen_priv_owner), string(str_col_Yellow));
+    0: return string(STR_LIVERY_SHORT, string(str_var_Polybulk));
+    1: return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Grey));
+    2: return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Brown));
+    3: return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Blue));
+    4: return string(STR_LIVERY_EXTENDED, string(str_comp_gen_priv_owner), string(str_col_Blue), string(str_var_Advertisement));
+    5: return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Yellow));
 }
 
 item(FEAT_TRAINS, item_BRTCovHop, 708) {
@@ -62,16 +62,16 @@ item(FEAT_TRAINS, item_BRTCovHop, 708) {
 		cargo_capacity:					35;
 		weight:							13 ton;		
 		air_drag_coefficient:			0.07;
-		length:							8;
+		length:							5;
 		bitmask_vehicle_info:			0;
     }
     graphics {
         additional_text:                return(string(str_purchase_coach, string(str_BRJIA_Polybulk_liveries)));
         can_attach_wagon:               CB_RESULT_ATTACH_ALLOW;
-        default:                        sw_BR_JIA_cargo;
+        default:                        sw_BRT_CovHop;
         purchase:                       spriteset_BRT_CovHop_purchase;
         colour_mapping:                 return PALETTE_CC_FIRST;
-        cargo_subtype_text:             sw_BRJIA_cargo_subtype_text;
+        cargo_subtype_text:             sw_BRT_CovHop_cargo_subtype_text;
         cost_factor:                    return(GetAdjustedCost(29));
         running_cost_factor:            return(GetAdjustedCost(17));
     }
