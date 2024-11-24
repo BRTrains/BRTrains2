@@ -51,19 +51,21 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs
     spriteset_BR91_InterCitySwallowr;
 }
 
-// Not a mirror for once, as Mk5 DVT only has one livery
+// Not a mirror for once, as Mk5 DVT only has one livery. SECOND LIVERY ITEM IS REQUIRED TO AVOID NML BREAKING. The 0: item is a dummy!
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk5DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    spriteset_br5a_dvt_reversed;
+    0: spriteset_br5a_dvt;
+	spriteset_br5a_dvt_reversed;
 }
 
-// Not a mirror for once, as RMTPO PCV only has one livery
+// Not a mirror for once, as RMTPO PCV only has one livery. SECOND LIVERY ITEM IS REQUIRED TO AVOID NML BREAKING. The 0: item is a dummy!
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsRMTPO, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    spriteset_RMTPO_PCVr;
+    0: spriteset_RMTPO_PCV;
+	spriteset_RMTPO_PCVr;
 }
 
 
 // Mirror of BR47
-switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR47,cargo_subtype){    
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR47,[STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){    
     0:	spriteset_BR47_BRGreen;
 	1: 	spriteset_BR47_BRBlue;
 	2: 	spriteset_BR47_Porterbrook;
@@ -82,7 +84,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR47,cargo_subtype){
 }
 
 // Mirror of BR68
-switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR68,cargo_subtype){
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR68,[STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
     0:	spriteset_BR68_DRS;
 	1: 	spriteset_BR68_ScotRail;
 	2:	spriteset_BR68_Chiltern;
@@ -91,7 +93,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR68,cargo_subtype){
 }
 
 // Mirror of BR67
-switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,cargo_subtype){
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,[STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
     0:	spriteset_BR67_EWS;
 	1:	spriteset_BR67_Colas;
 	2: 	spriteset_BR67_ATW;
@@ -105,7 +107,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR67,cargo_subtype){
 }
 
 // Mirror of 86
-switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR86, cargo_subtype){
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR86, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
     0:	spriteset_BR86_BRBlue;
 	1:	spriteset_BR86_InterCityExecutive;
 	2:	spriteset_BR86_InterCitySwallow;
@@ -116,7 +118,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR86, cargo_subtype){
 }
 
 // Mirror of 87
-switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR87, cargo_subtype){
+switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR87, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
     0:	spriteset_BR87_BRBlue;
 	1:	spriteset_BR87_InterCitySwallow;
 	2:	spriteset_BR87_Virgin;

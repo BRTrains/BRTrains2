@@ -41,6 +41,7 @@
 - Added Harry Needle Orange livery for Class 37
 - Added Freightliner Orange livery for Class 70
 - Improved steam train naming conventions and consistency
+- Fixed Class 47 and 68 push pull code preventing them from reversing at all
 - Fixed some animated pixels on HST rear power car
 - Fixed some tram capacities
 - Fixed Tram parameter switch

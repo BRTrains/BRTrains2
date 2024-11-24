@@ -6,7 +6,7 @@ switch(FEAT_TRAINS, PARENT, sw_BR47_PushPUll, [STORE_TEMP(num_vehs_in_consist - 
 	sw_BR47; // No compatible locomotive found, show normal sprites
 }
 
-switch(FEAT_TRAINS, SELF,sw_BR47_CheckPosition, position_in_consist){
+switch(FEAT_TRAINS, PARENT,sw_BR47_CheckPosition, position_in_consist){
     0: sw_BR47_PushPUll; // Attempt push pull
 	sw_BR47; // We aren't at the front of the consist, show normal sprites
 }
