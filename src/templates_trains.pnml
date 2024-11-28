@@ -123,13 +123,13 @@ template template_train32px(x,y){
 }
 template template_train32px_reversed(x,y){
     //left_x, upper_y, width, height, offset_x, offset_y
-    [ x+89,  y, 8,  25, -3, -19,	NOANIM] //s as n
+    [ x+89,  y, 8,  25, -3, -12,	NOANIM] //s as n
     [ x+98,  y, 22, 19, -13, -12,	NOANIM] //sw as ne
-    [ x+121, y, 33, 13, -15, -9,	NOANIM] //w as e
+    [ x+121, y, 33, 13, -20, -9,	NOANIM] //w as e
     [ x+155, y, 22, 19, -5, -11,	NOANIM] //nw as se
-    [ x,     y, 8,  25, -3, -12,	NOANIM] //n as s
+    [ x,     y, 8,  25, -3, -19,	NOANIM] //n as s
     [ x+9,   y, 22, 19, -13, -12,	NOANIM] //ne as sw
-    [ x+32,  y, 33, 13, -20, -9,	NOANIM] //e as w
+    [ x+32,  y, 33, 13, -15, -9,	NOANIM] //e as w
     [ x+66,  y, 22, 19, -5, -11,	NOANIM] //se as nw
 }
 
