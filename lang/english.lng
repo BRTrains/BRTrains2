@@ -96,6 +96,7 @@ str_col_Grey                    :Grey
 str_col_Mahogany                :Mahogany
 str_col_Bauxite                 :Bauxite
 str_col_Brown                   :Brown
+str_col_GarterBlue              :Garter Blue
 
 str_var_Named                   :Named
 str_var_Olympics                :Olympics
@@ -1404,7 +1405,7 @@ str_BRJIA_Polybulk_liveries     :Traffic Service Limited Polybulk, Polybulk, Gra
 # # COACHES # #
 # # # # # # # #
 
-STR_NAME_LNER_CorSet_Header     :LNER Coronation 
+STR_NAME_LNER_CorSet            :LNER Coronation Set
 STR_NAME_LNER_CorSet_BT_KT      :LNER Coronation Articulated Coach (Brake Third + Kitchen Third)
 STR_NAME_LNER_CorSet_OF_OF      :LNER Coronation Articulated Coach (Open First + Open First)
 STR_NAME_LNER_CorSet_OT_KT      :LNER Coronation Articulated Coach (Open Third + Kitchen Third)
@@ -1412,7 +1413,7 @@ STR_NAME_LNER_CorSet_OT_BT      :LNER Coronation Articulated Coach (Open Third +
 STR_NAME_LNER_CorSet_OBV        :LNER Coronation Observation Coach
 STR_NAME_LNER_CorSet_OT_OT      :LNER Coronation Articulated Coach (Open Third + Open Third)
 
-STR_LNER_CORSET_liveries        :LNER Coronation Garter Blue
+STR_LNER_CorSet_liveries        :LNER Coronation Garter Blue, BR Carmine and Cream
 
 STR_NAME_BRMk1_Header			:BR Mark 1 Coaches
 STR_NAME_BRMk1FO				:BR Mark 1 Coach (First Open)

@@ -1,0 +1,99 @@
+spriteset(spriteset_LNER_CorSet_Purchase, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_purchase(0, 0)
+}
+
+spriteset(spriteset_LNER_CorSet_BT_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 13)
+}
+
+spriteset(spriteset_LNER_CorSet_BTRev_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px_reversed(0, 13)
+}
+
+spriteset(spriteset_LNER_CorSet_KT_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 42)
+}
+
+spriteset(spriteset_LNER_CorSet_KTRev_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px_reversed(0, 42)
+}
+
+spriteset(spriteset_LNER_CorSet_OF_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 71)
+}
+
+spriteset(spriteset_LNER_CorSet_OFRev_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px_reversed(0, 71)
+}
+
+spriteset(spriteset_LNER_CorSet_OT_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 100)
+}
+
+spriteset(spriteset_LNER_CorSet_OTRev_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px_reversed(0, 100)
+}
+
+spriteset(spriteset_LNER_CorSet_OBV_CorBlue, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 129)
+}
+
+spriteset(spriteset_LNER_CorSet_BT_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 158)
+}
+
+spriteset(spriteset_LNER_CorSet_BTRev_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px_reversed(0, 158)
+}
+
+spriteset(spriteset_LNER_CorSet_KT_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 187)
+}
+
+spriteset(spriteset_LNER_CorSet_KTRev_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px_reversed(0, 187)
+}
+
+spriteset(spriteset_LNER_CorSet_OF_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 216)
+}
+
+spriteset(spriteset_LNER_CorSet_OFRev_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px_reversed(0, 216)
+}
+
+spriteset(spriteset_LNER_CorSet_OT_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 245)
+}
+
+spriteset(spriteset_LNER_CorSet_OTRev_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px_reversed(0, 245)
+}
+
+spriteset(spriteset_LNER_CorSet_OBV_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 274)
+}
+
+spriteset(spriteset_LNER_CorSet_OBV_New_BnC, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_train32px(0, 303)
+}
+
+spriteset(spriteset_LNER_CorSet_BT_KT_Purchase, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_purchase(0, 333)
+}
+
+spriteset(spriteset_LNER_CorSet_2OF_Purchase, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_purchase(0, 347)
+}
+
+spriteset(spriteset_LNER_CorSet_OT_KT_Purchase, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_purchase(0, 361)
+}
+
+spriteset(spriteset_LNER_CorSet_OT_BT_Purchase, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_purchase(0, 376)
+}
+
+spriteset(spriteset_LNER_CorSet_2OT_Purchase, "gfx/Rolling Stock/LNER/LNERCoronationSetImp.png") {
+    template_purchase(0, 390)
+}
