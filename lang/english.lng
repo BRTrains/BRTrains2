@@ -1406,12 +1406,12 @@ str_BRJIA_Polybulk_liveries     :Traffic Service Limited Polybulk, Polybulk, Gra
 # # # # # # # #
 
 STR_NAME_LNER_CorSet            :LNER Coronation Set
-STR_NAME_LNER_CorSet_BT_KT      :LNER Coronation Articulated Coach (Brake Third + Kitchen Third)
-STR_NAME_LNER_CorSet_OF_OF      :LNER Coronation Articulated Coach (Open First + Open First)
-STR_NAME_LNER_CorSet_OT_KT      :LNER Coronation Articulated Coach (Open Third + Kitchen Third)
-STR_NAME_LNER_CorSet_OT_BT      :LNER Coronation Articulated Coach (Open Third + Brake Third)
+STR_NAME_LNER_CorSet_BT_KT      :LNER Coronation Articulated Coach (BT + KT)
+STR_NAME_LNER_CorSet_OF_OF      :LNER Coronation Articulated Coach (OF + OF)
+STR_NAME_LNER_CorSet_OT_KT      :LNER Coronation Articulated Coach (OT + KT)
+STR_NAME_LNER_CorSet_OT_BT      :LNER Coronation Articulated Coach (OT + BT)
 STR_NAME_LNER_CorSet_OBV        :LNER Coronation Observation Coach
-STR_NAME_LNER_CorSet_OT_OT      :LNER Coronation Articulated Coach (Open Third + Open Third)
+STR_NAME_LNER_CorSet_OT_OT      :LNER Coronation Articulated Coach (OT + OT)
 
 STR_LNER_CorSet_liveries        :LNER Coronation Garter Blue, BR Carmine and Cream
 

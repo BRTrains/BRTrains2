@@ -62,8 +62,8 @@ item (FEAT_TRAINS, item_LNER_Gresley_616BCK, 702) {
 	default: 							sw_LNER_Gresley_616BCK;
 	purchase:							spriteset_LNER_Gresley_616BCK_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	cargo_capacity: return(36 * param_pax);
-	cost_factor:	return(GetAdjustedCost(30));
-	running_cost_factor: return(GetAdjustedCost(31));
+	cargo_capacity: 					return(36 * param_pax);
+	cost_factor:						return(GetAdjustedCost(30));
+	running_cost_factor: 				return(GetAdjustedCost(31));
 }
 }

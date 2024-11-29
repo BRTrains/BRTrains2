@@ -2,7 +2,7 @@ item (FEAT_TRAINS, item_LMSBigBertha, 703) {
 	property {
 		name: 							string(STR_NAME_LMSBigBertha);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1934,2,1);
+		introduction_date:				date(1919,1,1);
 		model_life:						10;
 		retire_early:					1;
 		vehicle_life:					30;

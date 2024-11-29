@@ -12,6 +12,7 @@
 - Made eyecandy, debug, and departmental vehicles unattractive to AI
 - GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 - BRT Whisky CovHop (PAV) - Only variant code needed
+- Metropolitan Class G 
 
 # v2.13
 - Added LNER J70
@@ -32,6 +33,7 @@
 - Added BR VGA and VKA goods vans
 - Added BR JIA "Polybulk" Covered Hopper
 - Added BRT PAA Covered Hopper
+- Added LNER Coronation Train Set, and individual articulated coaches
 - Adjusted EyeCandy engine to hopefully discourage AI use
 - Reworked Southern Region CC Class (OG BR Class 70)
 - Added a pile of liveries for Class 66
@@ -48,6 +50,8 @@
 - Fixed Debug Mode and Simple Mode not removing some vehicles
 - Fixed Class 88 stats and introduction date
 - Fixed Class 08 having steam icon
+- Fixed misaligned tender on the BR Standard Class 9F
+- Fixed 32px reversing template being misaligned
 - Disabled Great Bear and Hall pending rework
 
 # v2.12 (2024-08-08)

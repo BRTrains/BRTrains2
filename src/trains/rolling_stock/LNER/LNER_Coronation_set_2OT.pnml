@@ -1,0 +1,65 @@
+switch(FEAT_TRAINS, SELF, sw_Coronation_2OT_articulated, extra_callback_info1) {
+    0..1: return item_LNER_Coronation_set_2OT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Coronation_2OT_CorBlue, position_in_articulated_veh ) {
+    0: spriteset_LNER_CorSet_OT_CorBlue;
+    1: spriteset_LNER_CorSet_OTRev_CorBlue;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Coronation_2OT_BnC, position_in_articulated_veh ) {
+    0: spriteset_LNER_CorSet_OT_BnC;
+    1: spriteset_LNER_CorSet_OTRev_BnC;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Coronation_2OT_Capacity, position_in_articulated_veh ) {
+    0..1: 30;  // OT
+}
+
+switch(FEAT_TRAINS, SELF, sw_Coronation_2OT_liveries, cargo_subtype) {
+    0: sw_Coronation_2OT_CorBlue;
+    1: sw_Coronation_2OT_BnC;
+}
+
+switch(FEAT_TRAINS, SELF, sw_Coronation_2OT_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_LIVERY, string(str_abbr_LNER), string(str_col_GarterBlue));
+	1: return string(STR_LIVERY, string(str_abbr_BR), string(str_col_BloodCustard));
+}
+
+item(FEAT_TRAINS, item_LNER_Coronation_set_2OT, 717) {
+    property {
+        variant_group:                  item_LNER_Cornation_Set;
+        name:                           string(STR_NAME_LNER_CorSet_OT_OT);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1937, 7, 5);
+        model_life:                     30;
+        cargo_allow_refit:              [PASS];
+		loading_speed:					10;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							76 ton;
+		length:							8;
+		bitmask_vehicle_info:			0;
+    }
+    graphics {
+        additional_text:                return(string(str_purchase_coach, string(STR_LNER_CorSet_liveries)));
+        articulated_part:               sw_Coronation_2OT_articulated;
+        
+        can_attach_wagon:               CB_RESULT_ATTACH_DISALLOW;
+        cargo_capacity:                 sw_Coronation_2OT_Capacity;
+        cargo_subtype_text:             sw_Coronation_2OT_cargo_subtype_text;
+        colour_mapping:                 return PALETTE_CC_FIRST;
+        cost_factor:                    return(GetAdjustedCost(25));
+
+        default:                        sw_Coronation_2OT_liveries;
+        purchase:                       spriteset_LNER_CorSet_2OT_Purchase;
+        running_cost_factor:            return(GetAdjustedCost(25));
+    }
+}
