@@ -1,0 +1,52 @@
+item(FEAT_TRAINS, item_SR_Q1, 718) {
+    property {
+		name: 							string(STR_NAME_SRQ1);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1942,1,1);
+		model_life:						25;
+		retire_early:					1;
+		vehicle_life:					30;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					20;
+		running_cost_factor:			24;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							65 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1550 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							90.7 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	0.187561;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+    }
+    graphics {
+        additional_text:			    return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_SRQ1_usage),string(str_SRQ1_eos),string(str_SRQ1_liveries)));
+        articulated_part:        		sw_SR_Q1_articulated;
+
+        can_attach_wagon:				CB_RESULT_ATTACH_ALLOW;
+        cargo_capacity:					return 0;
+        cargo_subtype_text:				sw_SR_Q1_cargo_subtype_text;
+        colour_mapping: 				return PALETTE_CC_FIRST;
+        cost_factor:					return(GetAdjustedCost(23));
+        create_effect:					steam_create_visual_effect;
+        
+        default: 						sw_SR_Q1;
+        purchase:						spriteset_SR_Q1_Purchase;
+        running_cost_factor:			return(GetAdjustedCost(28));
+        sound_effect:					sw_steam_sound;
+        length:							sw_SR_Q1_length;
+    }
+}

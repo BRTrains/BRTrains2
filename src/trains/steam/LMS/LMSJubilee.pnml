@@ -18,7 +18,7 @@ item (FEAT_TRAINS, item_LMSJubilee, 658) {
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							1550 hp;
+		power:							1700 hp;
 		running_cost_base:				RUNNING_COST_STEAM;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;

@@ -3,7 +3,7 @@ item (FEAT_TRAINS, item_LNERV2, 696) {
 		name: 							string(STR_NAME_LNERV2);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1936,1,1);
-		model_life:						15;
+		model_life:						30;
 		retire_early:					1;
 		vehicle_life:					20;
 		reliability_decay:				7;
@@ -18,7 +18,7 @@ item (FEAT_TRAINS, item_LNERV2, 696) {
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							2150 hp;
+		power:							1800 hp;
 		running_cost_base:				RUNNING_COST_STEAM;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;

@@ -1,0 +1,45 @@
+spriteset(spriteset_SR_Q1_Purchase, "gfx/Steam/SR_Bulleid_Q1.png") {
+    template_purchase(0, 0)
+}
+
+spriteset(spriteset_SR_Q1_engine, "gfx/Steam/SR_Bulleid_Q1.png") {
+    template_train20px(0, 13)
+}
+
+spriteset(spriteset_SR_Q1_tender_SR, "gfx/Steam/SR_Bulleid_Q1_Tender.png") {
+    template_train16px(0, 13)
+}
+
+spriteset(spriteset_SR_Q1_tender_BR, "gfx/Steam/SR_Bulleid_Q1_Tender.png") {
+    template_train16px(0, 39)
+}
+
+switch(FEAT_TRAINS, SELF, sw_SR_Q1_Loco, cargo_subtype) {
+    0: spriteset_SR_Q1_engine;
+    1: spriteset_SR_Q1_engine;
+}
+
+switch(FEAT_TRAINS, SELF, sw_SR_Q1_tender, cargo_subtype) {
+    0: spriteset_SR_Q1_tender_SR;
+    1: spriteset_SR_Q1_tender_BR;
+}
+
+switch(FEAT_TRAINS, SELF, sw_SR_Q1_cargo_subtype_text, cargo_subtype) {
+    0: return string(str_SRBlack);
+    1: return string(str_BRLion);
+}
+
+switch(FEAT_TRAINS, SELF, sw_SR_Q1, position_in_articulated_veh) {
+    0: sw_SR_Q1_Loco;
+    1: sw_SR_Q1_tender;
+}
+
+switch(FEAT_TRAINS, SELF, sw_SR_Q1_length, position_in_articulated_veh) {
+    0: return 5;
+    1: return 4;
+}
+
+switch (FEAT_TRAINS, SELF, sw_SR_Q1_articulated, extra_callback_info1) {
+    1: return item_SR_Q1;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // stop adding vehicle parts
+}

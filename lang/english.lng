@@ -482,12 +482,17 @@ str_LMSBlack5_usage		            :Mixed Traffic
 str_LMSBlack5_eos				    :1934-1968
 str_LMSBlack5_liveries			    :LMS Black, BR Transitional Black, BR Black
 
-STR_NAME_LMS8F                      :LMS Stanier Class 8F
+STR_NAME_LMS8F                      :LMS Stanier Class 8F 2-8-0
 str_LMS8F_usage                     :Heavy Freight
 str_LMS8F_eos                       :1935-1968
 str_LMS8F_liveries                  :LMS BLack, BR Transitional Black, BR Black, WD Grey
 
-STR_NAME_WDTank				        :WD Austerity 0-6-0ST "Austerity Tank"
+STR_NAME_SRQ1                       :SR Bulleid Q1 Class 0-6-0
+str_SRQ1_usage                      :Freight
+str_SRQ1_eos                        :1942-1966
+str_SRQ1_liveries                   :SR Black, BR Black
+
+STR_NAME_WDTank				        :WD Austerity "Austerity Tank" 0-6-0ST 
 str_WDTank_usage				    :Low speed freight/shunting
 str_WDTank_eos				        :1960
 str_WDTank_liveries			        :Wartime Black
