@@ -52,6 +52,7 @@ str_abbr_VXC            :VXC
 str_abbr_VTEC           :VTEC
 str_abbr_VTWC           :VTWC
 str_abbr_WMR            :WMR
+str_abbr_LBSC            :LBSCR
 
 # Companies
 str_comp_Avanti                 :Avanti West Coast
@@ -72,6 +73,7 @@ str_comp_VXC                    :Virgin CrossCountry
 str_comp_VTEC                   :Virgin East Coast
 str_comp_VTWC                   :Virgin West Coast
 str_comp_WMR                    :West Midland Railway
+str_comp_LBSC                   :London brighton and south coast railway
 
 str_comp_gen_priv_owner         :Private Owner
 
@@ -386,6 +388,12 @@ STR_NAME_StephensonPlanet			    :L&MR Stephenson 2-2-0 "Planet"
 str_StephensonPlanet_usage			    :Mixed Traffic
 str_StephensonPlanet_eos			    :1830-1841
 str_StephensonPlanet_liveries		    :Teak
+
+
+STR_NAME_LBSCR_E2			        :LBSCR E2 class 0-6-0T (NWR "Thomas")
+str_LBSCR_E2_usage			        :freight
+str_LBSCR_E2_eos				    :1913-1963
+str_LBSCR_E2_liveries			    :LBSCR Umber,Black
 
 
 STR_NAME_LNER_J70			        :GER Class C53 0-6-0T (LNER "J70")
