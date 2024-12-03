@@ -1,4 +1,4 @@
-item (FEAT_TRAINS, item_LNER_J70, 688) {
+item (FEAT_TRAINS, item_LBSCR_E2, 688) {
 	property {
 		name: 							string(STR_NAME_LBSCR_E2);
 		climates_available: 			ALL_CLIMATES;
