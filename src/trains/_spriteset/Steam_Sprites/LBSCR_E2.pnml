@@ -7,10 +7,10 @@ spriteset(spriteset_LBSCR_E2_LNERTeak, "gfx/Steam/LBSCR_E2.png") {
 }
 
 switch(FEAT_TRAINS,SELF, sw_LBSCR_E2,cargo_subtype){
-    0:	spriteset_LBSCR_E2_LNERTeak;
+    0:	spriteset_LBSCR_E2_LBSCUmber;
 }
 
 switch(FEAT_TRAINS,SELF,sw_LBSCR_E2_cargo_subtype_text,cargo_subtype){
-    0: return string(str_LNERTeak);
+    0: return string(str_LBSCUmber);
        return CB_RESULT_NO_TEXT;
 }
