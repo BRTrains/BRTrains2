@@ -2,7 +2,7 @@ spriteset(spriteset__Purchase, "gfx/Steam/LBSCR_E2.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_LBSCR_E2_LNERTeak, "gfx/Steam/LBSCR_E2.png") {
+spriteset(spriteset_LBSCR_E2_LBSCUmber, "gfx/Steam/LBSCR_E2.png") {
 	template_train20px(0, 13)
 }
 
