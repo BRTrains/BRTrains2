@@ -13,7 +13,7 @@ item (FEAT_TRAINS, item_LBSCR_E2, 688) {
 		cost_factor:					6;
 		running_cost_factor:			6;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							45 mph;
+		speed:							50 mph;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
 		track_type:						RAIL;
