@@ -25,9 +25,9 @@ item (FEAT_TRAINS, item_LNER_J70, 688) {
 		cargo_capacity:					1;
 		weight:						 	52 ton;
 		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.217;
+		tractive_effort_coefficient:	0.182;
 		air_drag_coefficient:			0.1;
-		length:							20;
+		length:							5;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
@@ -36,7 +36,7 @@ item (FEAT_TRAINS, item_LNER_J70, 688) {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_LBSCR_E2_usage),string(str_LBSCR_E2_eos),string(str_LBSCR_E2_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_LNER_J70_cargo_subtype_text;	
+	cargo_subtype_text:					sw_LBSCR_E2_cargo_subtype_text;	
 	default: 							sw_LBSCR_E2;
 	purchase:							spriteset_LBSCR_E2_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
