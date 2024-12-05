@@ -8,7 +8,6 @@
 - GWR Great Bear and Hall class rework
 - Class 56
 - Class 69
-- Made eyecandy, debug, and departmental vehicles unattractive to AI
 - GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 - BRT Whisky CovHop (PAV) - Only variant code needed
 - Metropolitan Class G 
@@ -34,7 +33,7 @@
 - Added BRT PAA Covered Hopper
 - Added LNER Coronation Train Set, and individual articulated coaches
 - Added SR Bulleid Q1
-- Adjusted EyeCandy engine to hopefully discourage AI use
+- Made eyecandy, debug, and departmental vehicles unattractive to AI (hopefully)
 - Reworked Southern Region CC Class (OG BR Class 70)
 - Added a pile of liveries for Class 66
 - Added some LNER Black 5 and Jubilee liveries

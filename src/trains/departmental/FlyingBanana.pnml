@@ -84,8 +84,14 @@ item (FEAT_TRAINS, item_FlyingBanana, 687) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_voyager_sound;
-	cargo_capacity:						return(0);
-	cost_factor:	return(GetAdjustedCost(1));
-	running_cost_factor: return(GetAdjustedCost(1));
+	// AI Poison Pill below
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
 }
 }

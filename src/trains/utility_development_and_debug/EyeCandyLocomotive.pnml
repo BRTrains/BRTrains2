@@ -12,62 +12,13 @@ spriteset(spriteset_EyeCandy_Depot, "gfx/EyeCandy.png") {
 switch(FEAT_TRAINS, SELF, sw_EyeCandy_AllowMove_Length, num_vehs_in_consist)
 {
     1: return(string(STR_EyeCandy_NoAttachedUnit));
-    CB_RESULT_NO_TEXT;
-}
-
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_AllowMove, company_type)
-{
-	PLAYERTYPE_AI: return(string(STR_EyeCandy_AI));
-	sw_EyeCandy_AllowMove_Length;
+    sw_EyeCandy_AllowMove;
 }
 
 switch(FEAT_TRAINS,SELF,sw_EyeCandy_Sprites, vehicle_is_in_depot)
 {
     0: spriteset_EyeCandy;
     1: spriteset_EyeCandy_Depot;
-}
-
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_RunningCost_Movement, vehicle_is_stopped)
-{
-	0: 255;
-	1: 0;
-}
-
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_RunningCost, company_type)
-{
-	PLAYERTYPE_AI: 255;
-	sw_EyeCandy_RunningCost_Movement;
-}
-
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_PurchaseCost, company_type)
-{
-	PLAYERTYPE_AI: 255;
-	PLAYERTYPE_HUMAN: 0;
-}
-
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_Power, company_type)
-{
-	PLAYERTYPE_AI: 0;
-	PLAYERTYPE_HUMAN: 10000;
-}
-
-// km/h
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_Speed, company_type)
-{
-	PLAYERTYPE_AI: 1;
-	PLAYERTYPE_HUMAN: 80;
-}
-
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_Weight, company_type)
-{
-	PLAYERTYPE_AI: 10000;
-	PLAYERTYPE_HUMAN: 30;
-}
-
-switch(FEAT_TRAINS, SELF, sw_EyeCandy_TE, company_type)
-{
-	PLAYERTYPE_AI: 0;
-	PLAYERTYPE_HUMAN: 255;
 }
 
 item (FEAT_TRAINS, item_EyeCandy, 578) {
@@ -112,7 +63,8 @@ item (FEAT_TRAINS, item_EyeCandy, 578) {
 	default: 							sw_EyeCandy_Sprites;    
 	purchase:							spriteset_EyeCandy_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;		
-    start_stop:                         sw_EyeCandy_AllowMove;
+	// AI Poison Pill below
+    start_stop:                         sw_EyeCandy_AllowMove_Length;
 	cost_factor:	sw_EyeCandy_PurchaseCost;
 	running_cost_factor: sw_EyeCandy_RunningCost;
 	purchase_running_cost_factor: sw_EyeCandy_RunningCost;

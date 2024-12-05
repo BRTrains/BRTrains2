@@ -109,6 +109,15 @@ item (FEAT_TRAINS, item_UtilityTrain12px, 601) {
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility12;    
 	purchase:							spriteset_Utility12_Purchase;
+	// AI Poison Pill below
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
 }
 }
 
@@ -148,7 +157,16 @@ item (FEAT_TRAINS, item_UtilityTrain4px, 609) {
 	cargo_capacity:						return 0;
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility4;    
-	purchase:							spriteset_Utility4_Purchase;    	
+	purchase:							spriteset_Utility4_Purchase;    
+	// AI Poison Pill below
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;	
 }
 }
 
@@ -187,7 +205,16 @@ item (FEAT_TRAINS, item_UtilityTrain8px, 610) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
 	default: 							spriteset_Utility8;    
-	purchase:							spriteset_Utility8_Purchase;    	
+	purchase:							spriteset_Utility8_Purchase;  
+	// AI Poison Pill below 
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE; 	
 }
 }
 
@@ -228,7 +255,16 @@ item (FEAT_TRAINS, item_UtilityTrain16px, 602) {
 	cargo_capacity:						return 0;
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility16;
-	purchase:							spriteset_Utility16_Purchase;    	
+	purchase:							spriteset_Utility16_Purchase;    
+	// AI Poison Pill below
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;	
 }
 }
 
@@ -269,7 +305,16 @@ item (FEAT_TRAINS, item_UtilityTrain20px, 603) {
 	cargo_capacity:						return 0;
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility20;    
-	purchase:							spriteset_Utility20_Purchase;    	
+	purchase:							spriteset_Utility20_Purchase;    
+	// AI Poison Pill below	
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
 }
 }
 
@@ -309,7 +354,16 @@ item (FEAT_TRAINS, item_UtilityTrain24px, 604) {
 	cargo_capacity:						return 0;
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility24;    
-	purchase:							spriteset_Utility24_Purchase;    	
+	purchase:							spriteset_Utility24_Purchase;    
+	// AI Poison Pill below
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;	
 }
 }
 
@@ -349,7 +403,16 @@ item (FEAT_TRAINS, item_UtilityTrain28px, 605) {
 	cargo_capacity:						return 0;
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility28;    
-	purchase:							spriteset_Utility28_Purchase;    	
+	purchase:							spriteset_Utility28_Purchase;
+	// AI Poison Pill below    	
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
 }
 }
 
@@ -389,7 +452,16 @@ item (FEAT_TRAINS, item_UtilityTrain32px, 606) {
 	cargo_capacity:						return 0;
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility32;    
-	purchase:							spriteset_Utility32_Purchase;    	
+	purchase:							spriteset_Utility32_Purchase;   
+	// AI Poison Pill below 	
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
 }
 }
 
@@ -429,7 +501,16 @@ item (FEAT_TRAINS, item_UtilityTrain28pxOLD, 607) {
 	cargo_capacity:						return 0;
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility28OLD;    
-	purchase:							spriteset_Utility28OLD_Purchase;    	
+	purchase:							spriteset_Utility28OLD_Purchase;   
+	// AI Poison Pill below
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE; 	
 }
 }
 
@@ -469,6 +550,15 @@ item (FEAT_TRAINS, item_UtilityTrain32pxOLD, 608) {
 	cargo_capacity:						return 0;
 	additional_text:					return(string(STR_DESC_Utility));
 	default: 							spriteset_Utility32OLD;    
-	purchase:							spriteset_Utility32OLD_Purchase;    	
+	purchase:							spriteset_Utility32OLD_Purchase;    
+	// AI Poison Pill below	
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
 }
 }

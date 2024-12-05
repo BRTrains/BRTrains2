@@ -44,5 +44,14 @@ item (FEAT_TRAINS, item_MPV_DualFreight, 136) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						sw_MPV_DualFreight_effect;
 	sound_effect:						sw_dmu_sound;
+	// AI Poison Pill below
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
 }
 }
