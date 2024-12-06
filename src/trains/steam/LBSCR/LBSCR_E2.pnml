@@ -1,0 +1,48 @@
+item (FEAT_TRAINS, item_LBSCR_E2, 705) {
+	property {
+		name: 							string(STR_NAME_LBSCR_E2);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1913,1,1);
+		model_life:						3;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					6;
+		running_cost_factor:			6;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							350 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:						 	52 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	0.182;
+		air_drag_coefficient:			0.1;
+		length:							5;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_LBSCR_E2_usage),string(str_LBSCR_E2_eos),string(str_LBSCR_E2_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_LBSCR_E2_cargo_subtype_text;	
+	default: 							sw_LBSCR_E2;
+	purchase:							spriteset_LBSCR_E2_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						steam_create_visual_effect;
+	sound_effect:						sw_steam_sound;
+	cost_factor:	return(GetAdjustedCost(4));
+	running_cost_factor: return(GetAdjustedCost(3));
+}
+}
