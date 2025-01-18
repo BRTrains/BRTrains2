@@ -90,6 +90,10 @@ grf {
 					3: string(STR_PARAM_1X);
 					4: string(STR_PARAM_2X);										
 					5: string(STR_PARAM_4X);
+					6: string(STR_PARAM_8X);
+					7: string(STR_PARAM_12X);
+					8: string(STR_PARAM_16X);
+					9: string(STR_PARAM_32X);
 				};
 			}
 		}
@@ -155,6 +159,10 @@ switch(FEAT_TRAINS, SELF, GetAdjustedCost, base, param_cost_factor) {
   3: return base;
   4: return base * 2;
   5: return base * 4;
+  6: return base * 8;
+  7: return base * 12;
+  8: return base * 16;
+  9: return base * 32;
 }
 
 switch(FEAT_ROADVEHS, SELF, GetAdjustedCostTRAM, base, param_cost_factor) {
@@ -163,4 +171,8 @@ switch(FEAT_ROADVEHS, SELF, GetAdjustedCostTRAM, base, param_cost_factor) {
   3: return base;
   4: return base * 2;
   5: return base * 4;
+  6: return base * 8;
+  7: return base * 12;
+  8: return base * 16;
+  9: return base * 32;
 }

@@ -190,6 +190,10 @@ STR_PARAM_1X                    :1x (Default)
 STR_PARAM_2X                    :2x
 STR_PARAM_3X                    :3x
 STR_PARAM_4X                    :4x
+STR_PARAM_8X                    :8x
+STR_PARAM_12X                   :12x
+STR_PARAM_16X                   :16x
+STR_PARAM_32X                   :32x
 STR_PARAM_QUARTER              :1/4
 STR_PARAM_HALF                 :1/2
 
