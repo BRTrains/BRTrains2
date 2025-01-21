@@ -11,6 +11,7 @@ sort(FEAT_TRAINS, [
   item_GER_L77,
   item_SRZClass,
   item_GreatBear,
+  item_LBSCR_E2,
   item_GWRHall,
   item_GNRA1,
   item_LMSBlack5,
