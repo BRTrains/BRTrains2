@@ -52,6 +52,7 @@
 - Fixed misaligned tender on the BR Standard Class 9F
 - Fixed 32px reversing template being misaligned
 - Disabled Great Bear and Hall pending rework
+- Added more options for running cost parameter
 
 # v2.12 (2024-08-08)
 - Added LMS Black 5
