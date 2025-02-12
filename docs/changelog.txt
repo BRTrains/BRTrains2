@@ -13,7 +13,9 @@
 - Metropolitan Class G 
 
 # v2.14
-- Powerhaul lined livery for Class 70
+- Added Powerhaul lined livery for Class 70
+- Added GWR livery for Class 158 (2 and 3 car)
+- Added GWR livery for Class 150/2
 
 # v2.13 (2025-02-10)
 - Added LNER J70
