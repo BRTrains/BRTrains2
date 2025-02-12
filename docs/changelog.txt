@@ -12,7 +12,10 @@
 - BRT Whisky CovHop (PAV) - Only variant code needed
 - Metropolitan Class G 
 
-# v2.13
+# v2.14
+- Powerhaul lined livery for Class 70
+
+# v2.13 (2025-02-10)
 - Added LNER J70
 - Added LNER V2
 - Added LMS 0-10-0 "Big Bertha"
