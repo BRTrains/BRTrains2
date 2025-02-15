@@ -187,3 +187,16 @@ switch(FEAT_ROADVEHS,SELF,sw_TRAM_classic_emu_sound,param_sounds){
 	0:	sw_TRAM_default_sound;
 	1:	sw_TRAM_classic_emu_sound_on;
 }
+
+
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_metrolink_sound_on,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/metrolink_toot.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/elen_stop.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/elen_idle.wav");
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_metrolink_sound,param_sounds){
+	0:	sw_TRAM_default_sound;
+	1:	sw_TRAM_metrolink_sound_on;
+}
