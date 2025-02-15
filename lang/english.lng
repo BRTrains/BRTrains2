@@ -75,6 +75,7 @@ str_comp_WMR                    :West Midland Railway
 
 str_comp_gen_priv_owner         :Private Owner
 
+
 str_sep_space                   : 
 str_sep_dash                    : - 
 str_sep_dashonly                :-
@@ -312,6 +313,9 @@ STR_LIVERY_BR_745_STANSTED              : Greater Anglia "Stansted Express"
 STR_LIVERY_BR_769_TFW                   : Transport for Wales
 STR_LIVERY_BR_769_ROG                   : Rail Operations Group
 STR_LIVERY_BR_769_NORTHERN              : Northern Trains
+
+STR_DEPRECATED_DESC                     : DEPRECATED
+STR_DEPRECATED_DESC                     : (Deprecated vehicle, please use a newer version. This vehicle has been functionally removed from the BRTrains set, but the deprecated vehicle is still included to avoid breaking savegames)
 
 # Messages
 STR_CANNOT_ATTACH						:Cannot attach a different class of train
