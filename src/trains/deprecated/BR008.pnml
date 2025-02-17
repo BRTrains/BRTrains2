@@ -1,51 +1,51 @@
-spriteset(spriteset_BR08_Purchase, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_Purchase, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR08_BRGreen, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_BRGreen, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 13)
 }
 
-spriteset(spriteset_BR08_BRBlue, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_BRBlue, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 33)
 }
 
-spriteset(spriteset_BR08_EWSRed, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_EWSRed, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 53)
 }
 
-spriteset(spriteset_BR08_NRYellow, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_NRYellow, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 73)
 }
 
-spriteset(spriteset_BR08_Purple, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_Purple, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 93)
 }
 
-spriteset(spriteset_BR08_InterCitySwallow, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_InterCitySwallow, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 113)
 }
 
-spriteset(spriteset_BR08_BRBlack, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_BRBlack, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 133)
 }
 
-spriteset(spriteset_BR08_BRGrey, "gfx/BR08.png") {
+spriteset(spriteset_BR08_DEPRECATED_BRGrey, "gfx/deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 153)
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR08,cargo_subtype){
-    0:	spriteset_BR08_BRGreen;
-	1: 	spriteset_BR08_BRBlue;
-	2:	spriteset_BR08_BRBlack;
-	3:	spriteset_BR08_BRGrey;
-	4:	spriteset_BR08_EWSRed;
-	5:	spriteset_BR08_NRYellow;
-	6:	spriteset_BR08_Purple;
-	7:	spriteset_BR08_InterCitySwallow;
+switch(FEAT_TRAINS,SELF, sw_BR08_DEPRECATED,cargo_subtype){
+    0:	spriteset_BR08_DEPRECATED_BRGreen;
+	1: 	spriteset_BR08_DEPRECATED_BRBlue;
+	2:	spriteset_BR08_DEPRECATED_BRBlack;
+	3:	spriteset_BR08_DEPRECATED_BRGrey;
+	4:	spriteset_BR08_DEPRECATED_EWSRed;
+	5:	spriteset_BR08_DEPRECATED_NRYellow;
+	6:	spriteset_BR08_DEPRECATED_Purple;
+	7:	spriteset_BR08_DEPRECATED_InterCitySwallow;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR08_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BR08_DEPRECATED_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRGreen);
     1: return string(str_BRBlue);
 	2: return string(str_BRBlack);
@@ -57,9 +57,10 @@ switch(FEAT_TRAINS,SELF,sw_BR08_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR08, 1) {
+// Deprecated and replaced by ID 719
+item (FEAT_TRAINS, item_BR08_DEPRECATED, 1) {
 	property {
-		name: 							string(STR_NAME_BR08);
+		name: 							string(STR_CONCAT_2d, string(STR_DEPRECATED), string(STR_NAME_BR08));
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1952,4,21);
 		model_life:						15;
@@ -91,12 +92,12 @@ item (FEAT_TRAINS, item_BR08, 1) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR08_usage),string(str_BR08_eos),string(str_BR08_liveries)));
+	additional_text:					return(string(STR_DEPRECATED_DESC));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_BR08_cargo_subtype_text;
-	default: 							sw_BR08;
-	purchase:							spriteset_BR08_Purchase;
+	cargo_subtype_text:					sw_BR08_DEPRECATED_cargo_subtype_text;
+	default: 							sw_BR08_DEPRECATED;
+	purchase:							spriteset_BR08_DEPRECATED_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_gronk_sound;
