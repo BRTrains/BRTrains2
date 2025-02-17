@@ -1,0 +1,16 @@
+spriteset(spriteset__Purchase, "gfx/Steam/LBSCR_E2.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_LBSCR_E2_LBSCUmber, "gfx/Steam/LBSCR_E2.png") {
+	template_train20px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, sw_LBSCR_E2,cargo_subtype){
+    0:	spriteset_LBSCR_E2_LBSCUmber;
+}
+
+switch(FEAT_TRAINS,SELF,sw_LBSCR_E2_cargo_subtype_text,cargo_subtype){
+    0: return string(str_LBSCUmber);
+       return CB_RESULT_NO_TEXT;
+}
