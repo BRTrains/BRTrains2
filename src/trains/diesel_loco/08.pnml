@@ -10,7 +10,7 @@ spriteset(spriteset_BR08_BRBlue, "gfx/Diesel/08.png") {
 	template_train16px(0, 39)
 }
 
-spriteset(spriteset_BR08_EWSRed, "gfx/Diesel/08.png") {
+spriteset(spriteset_BR08_BRRed, "gfx/Diesel/08.png") {
 	template_train16px(0, 65)
 }
 
@@ -34,26 +34,63 @@ spriteset(spriteset_BR08_BRGrey, "gfx/Diesel/08.png") {
 	template_train16px(0, 247)
 }
 
+spriteset(spriteset_BR08_EWSRed, "gfx/Diesel/08.png") {
+	template_train16px(0, 273)
+}
+
+spriteset(spriteset_BR08_DB, "gfx/Diesel/08.png") {
+	template_train16px(0, 299)
+}
+
+spriteset(spriteset_BR08_EMT, "gfx/Diesel/08.png") {
+	template_train16px(0, 325)
+}
+
+spriteset(spriteset_BR08_GBRf, "gfx/Diesel/08.png") {
+	template_train16px(0, 351)
+}
+
+spriteset(spriteset_BR08_FreightlinerOrange, "gfx/Diesel/08.png") {
+	template_train16px(0, 377)
+}
+
+spriteset(spriteset_BR08_FreightlinerGreen, "gfx/Diesel/08.png") {
+	template_train16px(0, 403)
+}
+
+
 switch(FEAT_TRAINS,SELF, sw_BR08,cargo_subtype){
     0:	spriteset_BR08_BRGreen;
 	1: 	spriteset_BR08_BRBlue;
 	2:	spriteset_BR08_BRBlack;
-	3:	spriteset_BR08_BRGrey;
-	4:	spriteset_BR08_EWSRed;
+	3:	spriteset_BR08_BRRed;
+	4:	spriteset_BR08_BRGrey;
 	5:	spriteset_BR08_NRYellow;
 	6:	spriteset_BR08_Purple;
 	7:	spriteset_BR08_InterCitySwallow;
+	8:	spriteset_BR08_EWSRed;
+	9:	spriteset_BR08_DB;
+	10:	spriteset_BR08_EMT;
+	11: spriteset_BR08_GBRf;
+	12: spriteset_BR08_FreightlinerGreen;
+	13: spriteset_BR08_FreightlinerOrange;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR08_cargo_subtype_text,cargo_subtype){
     0: return string(str_BRGreen);
     1: return string(str_BRBlue);
 	2: return string(str_BRBlack);
-	3: return string(str_BRGrey);
-	4: return string(str_EWSRed);
+	3: return string(str_BRRed);
+	4: return string(str_BRGrey);
 	5: return string(str_NRYellow);
 	6: return string(str_Purple);
 	7: return string(str_InterCitySwallow);
+	8: return string(str_EWSRed);
+	9: return string(str_DBSchenker);
+	10: return string(str_EMT);
+	11: return string(str_GBRf);
+	12: return string(str_FreightlinerGreen);
+	13: return string(str_FreightlinerOrange);
        return CB_RESULT_NO_TEXT;
 }
 
