@@ -1,23 +1,24 @@
-spriteset(spriteset_BR13_Purchase, "gfx/BR13.png") {
+spriteset(spriteset_BR13_DEPRECATED_Purchase, "gfx/Deprecated/BR13_DEPRECATED.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR13, "gfx/BR13.png") {
+spriteset(spriteset_BR13_DEPRECATED, "gfx/Deprecated/BR13_DEPRECATED.png") {
 	template_train20px(0, 33)
 }
 
-spriteset(spriteset_BR13_1, "gfx/BR13.png") {
+spriteset(spriteset_BR13_1_DEPRECATED, "gfx/Deprecated/BR13_DEPRECATED.png") {
 	template_train20px(0, 13)
 }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_BR13, extra_callback_info1) {
-    1: return item_BR13_1;
+switch (FEAT_TRAINS, SELF, switch_articulated_BR13_DEPRECATED, extra_callback_info1) {
+    1: return item_BR13_1_DEPRECATED;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-item (FEAT_TRAINS, item_BR13, 2) {
+// Deprecated and replaced by ID 720
+item (FEAT_TRAINS, item_BR13_DEPRECATED, 2) {
 	property {
-		name: 							string(STR_NAME_BR13);
+		name: 							string(STR_CONCAT_2d, string(STR_DEPRECATED), string(STR_NAME_BR13));
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1965,4,21);
 		model_life:						5;
@@ -49,12 +50,12 @@ item (FEAT_TRAINS, item_BR13, 2) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR13_usage),string(str_BR13_eos),string(str_BR13_liveries)));
+	additional_text:					return(string(STR_DEPRECATED_DESC));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	articulated_part:        			switch_articulated_BR13;
-	default: 							spriteset_BR13;
-	purchase:							spriteset_BR13_Purchase;
+	articulated_part:        			switch_articulated_BR13_DEPRECATED;
+	default: 							spriteset_BR13_DEPRECATED;
+	purchase:							spriteset_BR13_DEPRECATED_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_gronk_sound;
@@ -63,9 +64,9 @@ item (FEAT_TRAINS, item_BR13, 2) {
 }
 }
 
-item (FEAT_TRAINS, item_BR13_1, 3) {
+item (FEAT_TRAINS, item_BR13_1_DEPRECATED, 3) {
 	property {
-		name: 							string(STR_NAME_GNRA1);
+		name: 							string(STR_DEPRECATED);
 		climates_available: 			NO_CLIMATE;
 		refittable_cargo_classes:		0;
 		cargo_allow_refit:				[GOOD, FOOD];
@@ -91,7 +92,7 @@ item (FEAT_TRAINS, item_BR13_1, 3) {
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	default: 							spriteset_BR13_1;
+	default: 							spriteset_BR13_1_DEPRECATED;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_gronk_sound;
