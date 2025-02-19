@@ -83,15 +83,6 @@ switch(FEAT_TRAINS, SELF, switch_BR800_5car_start_stop, num_vehs_in_consist) {
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
-// Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_BR800_5car_can_attach_wagon, vehicle_type_id) {
-	item_BR800_5car: return CB_RESULT_ATTACH_ALLOW;
-	item_BR800_9car: return CB_RESULT_ATTACH_ALLOW;
-	item_BR802_5car: return CB_RESULT_ATTACH_ALLOW;
-	item_BR802_9car: return CB_RESULT_ATTACH_ALLOW;	
-	return string(STR_CANNOT_ATTACH);
-}
-
 // GWR trains hold more passengers than LNER/others
 switch(FEAT_TRAINS, SELF, switch_BR800_5car_capacity, cargo_subtype) {
 	1: return (326/5 * param_pax);
@@ -160,7 +151,7 @@ item(FEAT_TRAINS, item_BR800_5car, 459) {
 
 		articulated_part: switch_BR800_5car_articulated;
 		start_stop: switch_BR800_5car_start_stop;	
-		can_attach_wagon: switch_BR800_5car_can_attach_wagon;
+		can_attach_wagon: sw_IET_Attach;
 		visual_effect_and_powered: switch_BR800_5car_particles;
 				
 		cargo_capacity: switch_BR800_5car_capacity;

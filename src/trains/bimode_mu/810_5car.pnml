@@ -57,12 +57,6 @@ switch(FEAT_TRAINS, SELF, switch_BR810_5car_start_stop, num_vehs_in_consist) {
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
-// Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_BR810_5car_can_attach_wagon, vehicle_type_id) {
-	item_BR810_5car: return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_CANNOT_ATTACH);
-}
-
 switch(FEAT_TRAINS, SELF, switch_BR810_5car_power, current_railtype) {
 	ELRL: return 3636;
 	return 3944;
@@ -116,7 +110,7 @@ item(FEAT_TRAINS, item_BR810_5car, 579) {
 
 		articulated_part: switch_BR810_5car_articulated;
 		start_stop: switch_BR810_5car_start_stop;	
-		can_attach_wagon: switch_BR810_5car_can_attach_wagon;
+		can_attach_wagon: sw_IET_Attach;
 		visual_effect_and_powered: switch_BR810_5car_particles;
 				
 		cargo_capacity: return (301/5 * param_pax);

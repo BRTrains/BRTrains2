@@ -1,0 +1,13 @@
+switch(FEAT_TRAINS, SELF, sw_IET_Attach, vehicle_type_id) {
+    item_BR800_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR800_9car: return CB_RESULT_ATTACH_ALLOW;
+    item_BR801_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR801_9car: return CB_RESULT_ATTACH_ALLOW;
+    item_BR802_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR802_9car: return CB_RESULT_ATTACH_ALLOW;
+    item_BR803_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_BR805_5car: return CB_RESULT_ATTACH_ALLOW;
+    item_BR807_7car: return CB_RESULT_ATTACH_ALLOW;
+    item_BR810_5car: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}

@@ -26,12 +26,6 @@ switch(FEAT_TRAINS, SELF, switch_BR803_5car_start_stop, num_vehs_in_consist) {
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
-// Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_BR803_5car_can_attach_wagon, vehicle_type_id) {
-	item_BR803_5car: return CB_RESULT_ATTACH_ALLOW;	
-	return string(STR_CANNOT_ATTACH);
-}
-
 item(FEAT_TRAINS, item_BR803_5car, 547) {
 	property {
 		variant_group:				header_IEP;
@@ -78,7 +72,7 @@ item(FEAT_TRAINS, item_BR803_5car, 547) {
 
 		articulated_part: switch_BR803_5car_articulated;
 		start_stop: switch_BR803_5car_start_stop;	
-		can_attach_wagon: switch_BR803_5car_can_attach_wagon;
+		can_attach_wagon: sw_IET_Attach;
 		visual_effect_and_powered: switch_BR803_5car_particles;
 		additional_text: string(STR_DSC_BR803);	
 		cargo_capacity:						return(302/5 * param_pax);	
