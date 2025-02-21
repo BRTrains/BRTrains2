@@ -10,15 +10,16 @@
 - Class 69
 - GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 - BRT Whisky CovHop (PAV) - Only variant code needed
-- Metropolitan Class G 
 
 # v2.14
+- Added Metropolitan Class G 
 - Added Powerhaul lined livery for Class 70
 - Added GWR livery for Class 158 (2 and 3 car)
 - Added GWR livery for Class 150/2
 - Reworked and shortened Class 08
 - Additional liveries for Class 08
 - Metrolink trams now TOOOOOT correctly
+- IET can now attach to all other IET classes (800-810)
 
 # v2.13 (2025-02-10)
 - Added LNER J70

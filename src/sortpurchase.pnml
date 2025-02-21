@@ -9,6 +9,7 @@ sort(FEAT_TRAINS, [
   item_LNER_J70,
   item_LMSBigBertha,
   item_GER_L77,
+  item_MetGClass,
   item_SRZClass,
   item_GreatBear,
   item_GWRHall,

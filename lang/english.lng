@@ -62,6 +62,7 @@ str_comp_Freightliner           :Freightliner
 str_comp_GCR                    :Great Central Railway
 str_comp_GWR                    :Great Western Railway
 str_comp_HarryNeedle            :Harry Needle Railroad
+str_comp_Metropolitan           :Metropolitan Railway
 str_comp_Northern               :Northern
 str_comp_NorthernRail           :Northern Rail
 str_comp_SWR                    :South Western Railway
@@ -81,23 +82,25 @@ str_sep_dash                    : -
 str_sep_dashonly                :-
 
 # Suffixes used to build names
-str_col_Blue                    :Blue
-str_col_Green                   :Green
+str_col_AppleGreen              :Apple Green
+str_col_Bauxite                 :Bauxite
 str_col_Black                   :Black
-str_col_Yellow                  :Yellow
-str_col_Red                     :Red
-str_col_Purple                  :Purple
-str_col_Desert                  :Desert Sands
-str_col_GoldenOchre             :Golden Ochre
-str_col_Maroon                  :Maroon
+str_col_Blue                    :Blue
 str_col_BloodCustard            :Blood and Custard
-str_col_Teak                    :Teak
-str_col_Orange                  :Orange
+str_col_Brown                   :Brown
+str_col_Crimson                 :Crimson
+str_col_Desert                  :Desert Sands
+str_col_GarterBlue              :Garter Blue
+str_col_GoldenOchre             :Golden Ochre
+str_col_Green                   :Green
 str_col_Grey                    :Grey
 str_col_Mahogany                :Mahogany
-str_col_Bauxite                 :Bauxite
-str_col_Brown                   :Brown
-str_col_GarterBlue              :Garter Blue
+str_col_Maroon                  :Maroon
+str_col_Orange                  :Orange
+str_col_Purple                  :Purple
+str_col_Red                     :Red
+str_col_Teak                    :Teak
+str_col_Yellow                  :Yellow
 
 str_var_Named                   :Named
 str_var_Olympics                :Olympics
@@ -182,6 +185,11 @@ STR_PARAM_DESC_2CC              :Parameter reserved for future feature
 STR_NO_2CC                      :No
 STR_USE_2CC                     :Yes
 STR_ONLY_2CC                    :Only
+
+STR_PARAM_HIDE_VEHS     :Hide/Show default vehicles?
+STR_PARAM_HIDE_VEHS_DESC:Should we hide default vehicles? (Note, this will not override other newGRFs if they hide the default vehicles, it just means BRTrains will not do so)
+STR_PARAM_HIDE_DEFAULT          :Hide
+STR_PARAM_SHOW_DEFAULT          :Show
 
 STR_Error_MUTSBRTrains          :You have BRTrains (v1) or the Modern UK Trainset loaded, they have been deactivated by BRTrains v2, which is a development of these sets and includes all units previously belonging to those sets
 STR_Error_RUKTS                 :You appear to have both the "BR Set (BRSet)" and "Representative UK Trainset (RUKTS)"  activated. This won't break anything, but it will probably be confusing. Consider disabling one of these sets for an optimal experience
@@ -519,6 +527,11 @@ STR_NAME_Standard9F				    :BR Standard Class 9F
 str_Standard9F_usage			    :Heavy Freight/Mixed Traffic
 str_Standard9F_eos				    :1954-1968
 str_Standard9F_liveries			    :BR Black, BR Brunswick Green
+
+STR_NAME_MetGClass			        :Metropolitan Railway G Class 0-6-4T
+str_MetGClass_usage				    :Metro passenger
+str_MetGClass_eos				    :1915
+str_MetGClass_liveries			    :Metropolitan Crimson, Metropolitan Black, LNER Apple Green, LNER Black
 
 STR_NAME_BluePullman_6Car		:BR "Blue Pullman" (6 car)
 STR_NAME_BluePullman_8Car		:BR "Blue Pullman" (8 car)
