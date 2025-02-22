@@ -18,6 +18,7 @@
 - Added GWR livery for Class 150/2
 - Reworked and shortened Class 08
 - Additional liveries for Class 08
+- PRM Compliant BR Blue livery for class 455
 - Metrolink trams now TOOOOOT correctly
 - IET can now attach to all other IET classes (800-810)
 

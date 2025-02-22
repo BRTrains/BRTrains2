@@ -152,6 +152,32 @@ spriteset(spriteset_BR4558d_Southern, "gfx/BR455_v2.png") {
 	template_train32px_old(0, 325)
 }
 
+spriteset(spriteset_BR4557a_BRBluePRM, "gfx/BR455_v2.png") {
+	template_train32px_old(0, 525)
+}
+spriteset(spriteset_BR4558a_BRBluePRM, "gfx/BR455_v2.png") {
+	template_train32px_old(0, 525)
+}
+
+spriteset(spriteset_BR455tso_BRBluePRM, "gfx/BR455_v2.png") {
+	template_train32px_old(0, 550)
+}
+
+spriteset(spriteset_BR455mso_BRBluePRM, "gfx/BR455_v2.png") {
+	template_train32px_old(0, 550)
+}
+
+spriteset(spriteset_BR4557tso_BRBluePRM, "gfx/BR455_v2.png") {
+	template_train32px_old(0, 200)
+}
+
+spriteset(spriteset_BR4557d_BRBluePRM, "gfx/BR455_v2.png") {
+	template_train32px_old(0, 575)
+}
+
+spriteset(spriteset_BR4558d_BRBluePRM, "gfx/BR455_v2.png") {
+	template_train32px_old(0, 575)
+}
 
 switch(FEAT_TRAINS,SELF, sw_BR4557a,cargo_subtype){
     0:	spriteset_BR4557a_BRB;
@@ -167,6 +193,7 @@ switch(FEAT_TRAINS,SELF, sw_BR4558a,cargo_subtype){
     3:	spriteset_BR4558a_Connex;
     4:	spriteset_BR4558a_SWT;
     5:	spriteset_BR4558a_Southern;
+	6:	spriteset_BR4558a_BRBluePRM;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR4558mso,cargo_subtype){
@@ -176,6 +203,7 @@ switch(FEAT_TRAINS,SELF, sw_BR4558mso,cargo_subtype){
     3:	spriteset_BR455mso_Connex;
     4:	spriteset_BR455mso_SWT;
     5:	spriteset_BR455mso_Southern;
+	6:	spriteset_BR455mso_BRBluePRM;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR4558tso,cargo_subtype){
@@ -185,6 +213,7 @@ switch(FEAT_TRAINS,SELF, sw_BR4558tso,cargo_subtype){
     3:	spriteset_BR455tso_Connex;
     4:	spriteset_BR455tso_SWT;
     5:	spriteset_BR455tso_Southern;
+	6:	spriteset_BR455tso_BRBluePRM;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR4559mso,cargo_subtype){
@@ -222,6 +251,7 @@ switch(FEAT_TRAINS,SELF, sw_BR4558d,cargo_subtype){
     3:	spriteset_BR4558d_Connex;
     4:	spriteset_BR4558d_SWT;
     5:	spriteset_BR4558d_Southern;
+	6:	spriteset_BR4558d_BRBluePRM;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR4557, extra_callback_info1) {
@@ -252,6 +282,7 @@ switch(FEAT_TRAINS,SELF,sw_BR4558_cargo_subtype_text,cargo_subtype){
     3:	return string(str_Connex);
     4:	return string(str_SWT);
     5:	return string(str_Southern);
+	6:	return string(STR_LIVERY, string(str_BRBlueGrey), string(str_var_PRM));
        return CB_RESULT_NO_TEXT;
 }
 
