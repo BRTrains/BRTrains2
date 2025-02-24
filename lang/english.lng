@@ -56,6 +56,7 @@ str_abbr_WMR            :WMR
 # Companies
 str_comp_Avanti                 :Avanti West Coast
 str_comp_BR                     :British Rail
+str_comp_XC                     :CrossCountry
 str_comp_DRS                    :Direct Rail Services
 str_comp_Furness                :Furness Railway
 str_comp_Freightliner           :Freightliner

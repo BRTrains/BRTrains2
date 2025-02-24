@@ -38,6 +38,14 @@ spriteset(spriteset_BR170c_Northern, "gfx/BR170.png") {
 	template_train32px_old(0, 713)
 }
 
+spriteset(spriteset_BR170c_CrossCountry, "gfx/BR170.png") {
+	template_train32px_old(0, 788)
+}
+
+spriteset(spriteset_BR170c_CrossCountry2, "gfx/BR170.png") {
+	template_train32px_old(0, 863)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR170c,cargo_subtype){
     0:	spriteset_BR170c_Central;
 	1:	spriteset_BR170c_LondonMidland;
@@ -49,6 +57,8 @@ switch(FEAT_TRAINS,SELF, sw_BR170c,cargo_subtype){
 	7:	spriteset_BR170c_EMRMaroon;
 	8:	spriteset_BR170c_GreaterAnglia; // TfW, the livery is identical at this scale
 	9:	spriteset_BR170c_Northern; // 3 car only
+	10:	spriteset_BR170c_CrossCountry;
+	11:	spriteset_BR170c_CrossCountry2;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR170_3car, extra_callback_info1) {
@@ -68,6 +78,8 @@ switch(FEAT_TRAINS,SELF,sw_BR170_3_cargo_subtype_text,cargo_subtype){
 	7:	return string(str_EMRMaroon);
 	8: 	return string(str_TfW);
 	9: 	return string(str_Northern);
+	10:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
+	11:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
        return CB_RESULT_NO_TEXT;
 }
 

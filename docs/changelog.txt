@@ -16,6 +16,7 @@
 - Added Powerhaul lined livery for Class 70
 - Added GWR livery for Class 158 (2 and 3 car)
 - Added GWR livery for Class 150/2
+- Added CrossCountry liveries for Class 170 (2 and 3 car)
 - Reworked and shortened Class 08
 - Additional liveries for Class 08
 - PRM Compliant BR Blue livery for class 455
