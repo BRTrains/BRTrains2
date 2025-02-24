@@ -91,9 +91,9 @@ switch(FEAT_TRAINS,SELF, sw_BR170a,cargo_subtype){
 	6:	spriteset_BR170a_WMR;
 	7:	spriteset_BR170a_EMRMaroon;
 	8:	spriteset_BR170a_GreaterAnglia; // TfW, the livery is identical at this scale
-	9:	spriteset_BR170a_Northern; // 3 car only
-	10:	spriteset_BR170a_CrossCountry;
-	11:	spriteset_BR170a_CrossCountry2;
+	9:	spriteset_BR170a_CrossCountry;
+	10:	spriteset_BR170a_CrossCountry2;
+	11:	spriteset_BR170a_Northern; // 3 car only, has to stay at the end of this list
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR170b,cargo_subtype){
@@ -106,9 +106,9 @@ switch(FEAT_TRAINS,SELF, sw_BR170b,cargo_subtype){
 	6:	spriteset_BR170b_WMR;
 	7:	spriteset_BR170b_EMRMaroon;
 	8:	spriteset_BR170b_GreaterAnglia; // TfW, the livery is identical at this scale
-	9:	spriteset_BR170b_Northern; // 3 car only
-	10:	spriteset_BR170b_CrossCountry;
-	11:	spriteset_BR170b_CrossCountry2;
+	9:	spriteset_BR170b_CrossCountry;
+	10:	spriteset_BR170b_CrossCountry2;
+	11:	spriteset_BR170b_Northern; // 3 car only, has to stay at the end of this list
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR170_2car, extra_callback_info1) {	
@@ -126,8 +126,9 @@ switch(FEAT_TRAINS,SELF,sw_BR170_cargo_subtype_text,cargo_subtype){
 	6:	return string(str_WMR); 
 	7:	return string(str_EMRMaroon);
 	8: 	return string(str_TfW);
-	10:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
-	11:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
+	9:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
+	10:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
+	11: return string(str_Northern);
        return CB_RESULT_NO_TEXT;
 }
 
