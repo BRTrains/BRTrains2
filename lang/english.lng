@@ -112,6 +112,7 @@ str_var_Polybulk                :Polybulk
 str_var_Grainflow               :Grainflow
 str_var_Advertisement           :with Advertisement
 str_var_PRM                     :PRM Compliant
+str_var_Ukraine                 :Ukraine
 
 # Variant group headers
 STR_LU_Subsurface_Header        :London Underground sub-surface units

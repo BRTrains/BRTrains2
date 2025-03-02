@@ -85,12 +85,29 @@ spriteset(spriteset_BR350d_LNWRFull, "gfx/BR350_450_Desiro.png") {
 	template_train32px_old(0, 475)
 }
 
+spriteset(spriteset_BR350a_LNWRUkraine, "gfx/BR350_450_Desiro.png") {
+	template_train32px_old(0, 700)
+}
+
+spriteset(spriteset_BR350b_LNWRUkraine, "gfx/BR350_450_Desiro.png") {
+	template_train32px_old(0, 725)
+}
+
+spriteset(spriteset_BR350c_LNWRUkraine, "gfx/BR350_450_Desiro.png") {
+	template_train32px_old(0, 750)
+}
+
+spriteset(spriteset_BR350d_LNWRUkraine, "gfx/BR350_450_Desiro.png") {
+	template_train32px_old(0, 775)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR350a,cargo_subtype){
     0:	spriteset_BR350a_LM;
 	1:	spriteset_BR350a_SLinkCentral;
 	2:	spriteset_BR350a_TPE;
 	3:	spriteset_BR350a_LNWRSimple;
 	4:	spriteset_BR350a_LNWRFull;
+	5:	spriteset_BR350a_LNWRUkraine;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR350b,cargo_subtype){
@@ -99,6 +116,7 @@ switch(FEAT_TRAINS,SELF, sw_BR350b,cargo_subtype){
 	2:	spriteset_BR350b_TPE;
 	3:	spriteset_BR350b_LNWRSimple;
 	4:	spriteset_BR350b_LNWRFull;
+	5:	spriteset_BR350b_LNWRUkraine;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR350c,cargo_subtype){
@@ -107,6 +125,7 @@ switch(FEAT_TRAINS,SELF, sw_BR350c,cargo_subtype){
 	2:	spriteset_BR350c_TPE;
 	3:	spriteset_BR350c_LNWRSimple;
 	4:	spriteset_BR350c_LNWRFull;
+	5:	spriteset_BR350c_LNWRUkraine;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR350d,cargo_subtype){
@@ -115,6 +134,7 @@ switch(FEAT_TRAINS,SELF, sw_BR350d,cargo_subtype){
 	2:	spriteset_BR350d_TPE;
 	3:	spriteset_BR350d_LNWRSimple;
 	4:	spriteset_BR350d_LNWRFull;
+	5:	spriteset_BR350d_LNWRUkraine;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR350, extra_callback_info1) {
@@ -130,7 +150,7 @@ switch(FEAT_TRAINS,SELF,sw_BR350_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_TPE);
 	3:	return string(str_LNWRSimple);
 	4:	return string(str_LNWR);
-
+	5:	return string(STR_LIVERY, string(str_LNWR), string(str_var_Ukraine));
        return CB_RESULT_NO_TEXT;
 }
 
