@@ -1093,7 +1093,7 @@ str_BR375_4_liveries			:Connex, Southeastern Blue, Southeastern Blue Stripe, Sou
 STR_NAME_BR376					:BR Class 376 "Electrostar" (5-car)
 str_BR376_usage					:Urban Passenger
 str_BR376_eos					:---
-str_BR376_liveries				:Southeastern Yellow
+str_BR376_liveries				:Southeastern Yellow, Southeastern Blue
 
 STR_NAME_BR377_3				:BR Class 377/3 "Electrostar" (3-Car)
 str_BR377_3_usage				:Urban Passenger

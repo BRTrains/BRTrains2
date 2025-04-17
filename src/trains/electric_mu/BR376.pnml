@@ -15,21 +15,38 @@ spriteset(spriteset_BR376d_SE_Yellow, "gfx/Electrostar_v2.png") {
 	template_train32px_old(0, 775)
 }
 
+spriteset(spriteset_BR376a_SE_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px_old(0, 1900)
+}
+spriteset(spriteset_BR376b_SE_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px_old(0, 1925)
+}
+spriteset(spriteset_BR376c_SE_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px_old(0, 1950)
+}
+spriteset(spriteset_BR376d_SE_Blue, "gfx/Electrostar_v2.png") {
+	template_train32px_old(0, 1975)
+}
+
 
 switch(FEAT_TRAINS,SELF, sw_BR376a,cargo_subtype){
     0:	spriteset_BR376a_SE_Yellow;
+	1:	spriteset_BR376a_SE_Blue;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR376b,cargo_subtype){
     0:	spriteset_BR376b_SE_Yellow;
+	1:	spriteset_BR376b_SE_Blue;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR376c,cargo_subtype){
     0:	spriteset_BR376c_SE_Yellow;
+	1:	spriteset_BR376c_SE_Blue;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR376d,cargo_subtype){
     0:	spriteset_BR376d_SE_Yellow;
+	1:	spriteset_BR376d_SE_Blue;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR376, extra_callback_info1) {
@@ -42,6 +59,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR376, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR376_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Southeastern_yellow);
+	1:	return string(str_Southeastern_blue);
 	 return CB_RESULT_NO_TEXT;
 }
 

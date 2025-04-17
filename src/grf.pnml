@@ -82,7 +82,7 @@ grf {
 				name: string(STR_PARAM_NAME_COST_MULTIPLIER);
 				desc: string(STR_PARAM_DESC_COST_MULTIPLIER);
 				min_value: 1;
-				max_value: 5;
+				max_value: 9;
 				def_value: 3;
 				names: {
 					1: string(STR_PARAM_QUARTER);
@@ -128,8 +128,25 @@ grf {
 				};
 			}
 	}
+	param 8 {		
+			param_default_vehs{
+				name: string(STR_PARAM_HIDE_VEHS);
+				desc: string(STR_PARAM_HIDE_VEHS_DESC);
+				min_value: 0;
+				max_value: 1;
+				def_value: 1;
+				names: {
+					0: string(STR_PARAM_SHOW_DEFAULT);
+					1: string(STR_PARAM_HIDE_DEFAULT);				
+				};
+			}
+	}
 }
-disable_item(FEAT_TRAINS);
+
+if(param_default_vehs == 0)
+{
+	disable_item(FEAT_TRAINS);
+}
 
 // Fix depot sprites
 traininfo_y_offset = 2;
