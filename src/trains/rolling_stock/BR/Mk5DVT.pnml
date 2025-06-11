@@ -4,7 +4,7 @@ item (FEAT_TRAINS, item_BRMk5DVT, 596) {
 		name: 							string(STR_NAME_BRMk5DVT);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
-		introduction_date:				date(1989,1,1);
+		introduction_date:				date(2019,08,04);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					14;
@@ -29,12 +29,12 @@ item (FEAT_TRAINS, item_BRMk5DVT, 596) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_BRMk5DVT_Sprites;
-	colour_mapping: 					return PALETTE_CC_FIRST;	
-	purchase:							spriteset_BRMk5DVT_purchase;	
-	cargo_capacity: return(60 * param_pax);
-	cost_factor:	return(GetAdjustedCost(30));
-	running_cost_factor: return(GetAdjustedCost(17));
-}
+		can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+		default: 							sw_BRMk5DVT_Sprites;
+		colour_mapping: 					return PALETTE_CC_FIRST;	
+		purchase:							spriteset_BRMk5DVT_purchase;	
+		cargo_capacity: return(60 * param_pax);
+		cost_factor:	return(GetAdjustedCost(30));
+		running_cost_factor: return(GetAdjustedCost(17));
+	}
 }
