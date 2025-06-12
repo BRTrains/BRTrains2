@@ -24,6 +24,9 @@
 - PRM Compliant BR Blue livery for class 455
 - Metrolink trams now TOOOOOT correctly
 - IET can now attach to all other IET classes (800-810)
+- Fixed Mk5a DVT introduction date
+- Fixed 458 livery string
+- Fixed LNWR Class 150 reversed sprite
 
 # v2.13 (2025-02-10)
 - Added LNER J70
