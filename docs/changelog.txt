@@ -27,6 +27,7 @@
 - Fixed Mk5a DVT introduction date
 - Fixed 458 livery string
 - Fixed LNWR Class 150 reversed sprite
+- Fixed LNWR Class 350 horizontal view corridor connection
 
 # v2.13 (2025-02-10)
 - Added LNER J70
