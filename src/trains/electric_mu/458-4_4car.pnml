@@ -73,7 +73,7 @@ item(FEAT_TRAINS, item_br458_4car, 633) {
 		visual_effect_and_powered: switch_br458_4car_particles;
 				
 		cargo_capacity: return (286/5);
-		additional_text: string(STR_DSC_BR_397);
+		additional_text: string(STR_DSC_BR_458_45);
 		cost_factor:	return(GetAdjustedCost(76));
 		running_cost_factor: return(GetAdjustedCost(40));
 	}

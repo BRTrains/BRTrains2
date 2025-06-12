@@ -342,6 +342,7 @@ STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multipl
 STR_DSC_BR321                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}NSE, Dutch Railways, Greater Anglia, Silverlink, London Midland, WYPTE
 STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
+STR_DSC_BR_458_45                       :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}South Western Trains, South Western Railway
 STR_DSC_BR_397                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
 STR_DSC_BR555                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger/Metro{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Tyne and Wear Metro
 
