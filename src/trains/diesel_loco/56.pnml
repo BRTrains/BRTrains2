@@ -3,43 +3,43 @@ spriteset(spriteset_BR56_Purchase, "gfx/Diesel/56.png") {
 }
 
 spriteset(spriteset_BR56_BRBlue, "gfx/Diesel/56.png") {
-	template_train32px(0, 14)
+	template_train32px(0, 13)
 }
 
 spriteset(spriteset_BR56_BRBlue_LargeLogo, "gfx/Diesel/56.png") {
-	template_train32px(0, 40)
+	template_train32px(0, 39)
 }
 
 spriteset(spriteset_BR56_BRGrey, "gfx/Diesel/56.png") {
-	template_train32px(0, 118)
+	template_train32px(0, 117)
 }
 
 spriteset(spriteset_BR56_BRRailfreightGrey, "gfx/Diesel/56.png") {
-	template_train32px(0, 144)
+	template_train32px(0, 143)
 }
 
 spriteset(spriteset_BR56_EWS, "gfx/Diesel/56.png") {
-	template_train32px(0, 66)
+	template_train32px(0, 65)
 }
 
 spriteset(spriteset_BR56_Fastline, "gfx/Diesel/56.png") {
-	template_train32px(0, 92)
+	template_train32px(0, 91)
 }
 
 spriteset(spriteset_BR56_DCGreen, "gfx/Diesel/56.png") {
-	template_train32px(0, 170)
+	template_train32px(0, 169)
 }
 
 spriteset(spriteset_BR56_DCGrey, "gfx/Diesel/56.png") {
-	template_train32px(0, 196)
+	template_train32px(0, 195)
 }
 
 spriteset(spriteset_BR56_Colas, "gfx/Diesel/56.png") {
-	template_train32px(0, 222)
+	template_train32px(0, 221)
 }
 
 spriteset(spriteset_BR56_Artemis, "gfx/Diesel/56.png") {
-	template_train32px(0, 248)
+	template_train32px(0, 247)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR56,cargo_subtype){
