@@ -30,6 +30,10 @@ spriteset(spriteset_BR50_BRGreen, "gfx/BR50.png") {
 	template_train32px_old(0, 163)
 }
 
+spriteset(spriteset_BR50_RailFreightGeneral, "gfx/BR50.png") {
+	template_train32px_old(0, 188)
+}
+
 
 switch(FEAT_TRAINS,SELF, sw_BR50,cargo_subtype){    
     0:	spriteset_BR50_BRBlue;
@@ -39,6 +43,7 @@ switch(FEAT_TRAINS,SELF, sw_BR50,cargo_subtype){
     4: 	spriteset_BR50_NSEAlt;
     5: 	spriteset_BR50_GBRF;
     6: 	spriteset_BR50_HansonHall;
+	7:  spriteset_BR50_RailFreightGeneral;
        return CB_RESULT_NO_TEXT;
 }
 
@@ -50,6 +55,7 @@ switch(FEAT_TRAINS,SELF,sw_BR50_cargo_subtype_text,cargo_subtype){
 	4:	return string(str_NSEAlt);
 	5:	return string(str_GBRf);
 	6: return string(str_HansonHall);
+	7: return string(str_RailfreightGrey);
        return CB_RESULT_NO_TEXT;
 }
 
