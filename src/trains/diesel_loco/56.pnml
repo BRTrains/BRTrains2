@@ -1,0 +1,118 @@
+spriteset(spriteset_BR56_Purchase, "gfx/Diesel/56.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR56_BRBlue, "gfx/Diesel/56.png") {
+	template_train32px(0, 14)
+}
+
+spriteset(spriteset_BR56_BRBlue_LargeLogo, "gfx/Diesel/56.png") {
+	template_train32px(0, 40)
+}
+
+spriteset(spriteset_BR56_BRGrey, "gfx/Diesel/56.png") {
+	template_train32px(0, 118)
+}
+
+spriteset(spriteset_BR56_BRRailfreightGrey, "gfx/Diesel/56.png") {
+	template_train32px(0, 144)
+}
+
+spriteset(spriteset_BR56_EWS, "gfx/Diesel/56.png") {
+	template_train32px(0, 66)
+}
+
+spriteset(spriteset_BR56_Fastline, "gfx/Diesel/56.png") {
+	template_train32px(0, 92)
+}
+
+spriteset(spriteset_BR56_DCGreen, "gfx/Diesel/56.png") {
+	template_train32px(0, 170)
+}
+
+spriteset(spriteset_BR56_DCGrey, "gfx/Diesel/56.png") {
+	template_train32px(0, 196)
+}
+
+spriteset(spriteset_BR56_Colas, "gfx/Diesel/56.png") {
+	template_train32px(0, 222)
+}
+
+spriteset(spriteset_BR56_Artemis, "gfx/Diesel/56.png") {
+	template_train32px(0, 248)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR56,cargo_subtype){
+	0: 	spriteset_BR56_BRBlue;
+	1: 	spriteset_BR56_BRBlue_LargeLogo;
+	2:	spriteset_BR56_BRGrey;
+	3:	spriteset_BR56_BRRailfreightGrey;
+	4:	spriteset_BR56_EWS;
+	5:	spriteset_BR56_Fastline;
+	6:	spriteset_BR56_DCGreen;
+	7:	spriteset_BR56_DCGrey;
+	8:	spriteset_BR56_Colas;
+	9:	spriteset_BR56_Artemis;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR56_cargo_subtype_text,cargo_subtype){
+	0: 	return string(str_BRBlue);
+	1: 	return string(str_BRLLogo);
+	2:	return string(str_BRGrey);
+	3:	return string(str_BRRailfreightGrey);
+	4:	return string(str_EWSRed);
+	5:	return string(str_FastLine);
+	6:	return string(str_DCGreen);
+	7:	return string(str_DCGrey);
+	8:	return string(str_ColasRail);
+	9:	return string(str_Artemis);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR56, 722) {
+	property {
+		name: 							string(STR_NAME_BR56);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1976,5,11);
+		model_life:						9;
+		retire_early:					1;
+		vehicle_life:					40;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							80 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							3250 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							123 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.228;
+		air_drag_coefficient:			0.07;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR56_usage),string(str_BR56_eos),string(str_BR56_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR56_cargo_subtype_text;
+	default: 							sw_BR56;
+	purchase:							spriteset_BR56_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_66_sound;
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(43));
+}
+}

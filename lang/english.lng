@@ -669,6 +669,11 @@ str_BR55_usage					:Express Passenger
 str_BR55_eos					:1961-1982
 str_BR55_liveries				:BR Green, BR Green with Yellow Front, BR Blue
 
+STR_NAME_BR56					:BR Class 56 "Gridiron"
+str_BR56_usage					:Heavy Freight
+str_BR56_eos					:1976-Present
+str_BR56_liveries				:BR Blue, BR Blue Large Logo, BR Grey, BR Railfreight Grey, EWS, Fastline, DC Green, DC Grey, Colas, Artemis
+
 STR_NAME_BR57					:BR Class 57 "Thunderbird"
 str_BR57_usage					:Mixed Traffic
 str_BR57_eos					:---
@@ -1746,6 +1751,7 @@ str_ArrivaTimes					: (Arriva - Time Are Changing)
 str_ArrivaTPNS					: (Arriva - TransPennine Northern Spirit)
 str_ArrivaWales					: (Arriva Trains Wales)
 str_ArrivaWalesMail				: (Arriva Trains Wales - Western Mail)
+str_Artemis                     : (Artemis)
 str_AvantiWestCoast             : (Avanti West Coast)
 str_BangerBlue_Stripe           : (Banger Blue with White Stripe)
 str_Biffa                       : (Biffa)
@@ -1812,6 +1818,8 @@ str_Crimson						: (BR - Crimson Lake)
 str_DBSchenker					: (DB Schenker)
 str_DBSCompany					: (DBSchenker - Company Train)
 str_DBSteel                     : (DB - Steel on Steel)
+str_DCGreen                     : (DC Railfreight - Green)
+str_DCGrey                      : (DC Railfreight - Grey)
 str_DeptGrey					: (Departmental Grey)
 str_DLRRed                      : (Docklands Light Railway - Red)
 str_DRS							: (DRS)
