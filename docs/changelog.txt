@@ -19,6 +19,8 @@
 - Added GWR livery for Class 150/2
 - Added CrossCountry liveries for Class 170 (2 and 3 car)
 - Added SE Blue livery for Class 376
+- Added London Overground livery for Class 321
+- Added Railfreight livery for Class 50
 - Reworked and shortened Class 08
 - Additional liveries for Class 08
 - PRM Compliant BR Blue livery for class 455

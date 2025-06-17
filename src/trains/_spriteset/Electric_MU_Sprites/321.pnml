@@ -31,3 +31,8 @@ spriteset (spriteset_BR321_front_WYPTE, "gfx/EMU/321.png") { 			template_train32
 spriteset (spriteset_BR321_rear_WYPTE, "gfx/EMU/321.png") { 			template_train32px(0, 546) }
 spriteset (spriteset_BR321_middle_WYPTE, "gfx/EMU/321.png") { 			template_train32px(0, 572) }
 spriteset (spriteset_BR321_middle_panto_WYPTE, "gfx/EMU/321.png") { 	template_train32px(0, 598) }
+
+spriteset (spriteset_BR321_front_LO, "gfx/EMU/321.png") { 			template_train32px(0, 624) }
+spriteset (spriteset_BR321_rear_LO, "gfx/EMU/321.png") { 			template_train32px(0, 650) }
+spriteset (spriteset_BR321_middle_LO, "gfx/EMU/321.png") { 			template_train32px(0, 676) }
+spriteset (spriteset_BR321_middle_panto_LO, "gfx/EMU/321.png") { 	template_train32px(0, 702) }
