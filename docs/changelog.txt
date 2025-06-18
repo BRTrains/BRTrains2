@@ -13,6 +13,7 @@
 
 # v2.14
 - Added Metropolitan Class G 
+- Added Class 56
 - Added Powerhaul lined livery for Class 70
 - Added Ukraine livery for Class 350
 - Added GWR livery for Class 158 (2 and 3 car)
@@ -29,7 +30,8 @@
 - Fixed Mk5a DVT introduction date
 - Fixed 458 livery string
 - Fixed LNWR Class 150 reversed sprite
-- Fixed LNWR Class 350 horizontal view corridor connection
+- Fixed LNWR Class 350 corridor connection (horizontal view)
+- Fixed some Class 321 lengths (horizontal view)
 
 # v2.13 (2025-02-10)
 - Added LNER J70
