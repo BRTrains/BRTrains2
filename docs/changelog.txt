@@ -22,7 +22,7 @@
 - Added SE Blue livery for Class 376
 - Added London Overground livery for Class 321
 - Added Railfreight livery for Class 50
-- Added DC Green and DC Grey liveries for Class 31
+- Added DC Green, DC Grey, Railtrack liveries for Class 31
 - Reworked and shortened Class 08
 - Additional liveries for Class 08
 - PRM Compliant BR Blue livery for class 455
