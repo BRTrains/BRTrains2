@@ -597,7 +597,7 @@ str_BR28_liveries				:BR Green, BR Green (Yellow Panel), BR Green (Yellow Front)
 STR_NAME_BR31					:BR Class 31 "Gurgler" 
 str_BR31_usage					:Express Passenger
 str_BR31_eos					:1957-2017
-str_BR31_liveries				:---
+str_BR31_liveries				:BR Green, BR Blue & Yellow, BR Blue, Network Rail, Network Rail Infrastructure, InterCity, EWS, Regional Railways, Wessex Trains, Freightliner, DC Railfreight Grey, DC Railfreight Green, Railtrack, Top Gear
 
 STR_NAME_BR33_0					:BR Class 33/0 "Crompton"
 str_BR33_0_usage				:Mixed Traffic
