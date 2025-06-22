@@ -688,9 +688,9 @@ STR_NAME_BR59_01				:BR Class 59/0/1 "Super Shed"
 STR_NAME_BR59_2					:BR Class 59/2 "Super Shed"
 str_BR59_usage					:Mixed Freight
 str_BR59_01_eos					:1986-Present
-str_BR59_01_liveries			:---
+str_BR59_01_liveries			:Foster Yeoman Grey, Foster Yeoman Blue, ARC, Mendip, Hanson & Hall, Aggregate Industries, EWS, DB Cargo, Freightliner Orange, GBRf Blue, GBRf Heidelberg
 str_BR59_2_eos					:1994-Present
-str_BR59_2_liveries				:---
+str_BR59_2_liveries				:National Power, EWS, DB Cargo
 
 STR_NAME_BR60					:BR Class 60 "Tug"
 str_BR60_usage					:Mixed Freight
@@ -1854,6 +1854,8 @@ str_FirstScotRail			    : (First ScotRail)
 str_FirstTPE                    : (First Transpennine Express)
 str_FirstTPEGeometric   		: (First TransPennine - Geometric)
 str_FNW							: (First North Western)
+str_FosterYeomanGrey            : (Foster Yeoman - Grey)
+str_FosterYeomanBlue            : (Foster Yeoman - Blue)
 str_FirstDynamic                : (First Transpennine - Dynamic Lines)
 str_FNWBarbie					: (First North Western - Barbie)
 str_FNWArriva					: (FNW/Arriva Hybrid)
@@ -1958,6 +1960,7 @@ str_MerseyRailOld				: (MerseyRail - Old)
 str_MetrolinkYellow             : (Manchester Metrolink - Yellow)
 str_Maersk      				: (Maersk)
 str_MaerskEyeCandy 				: (Maersk - Always show container)
+str_Mendip                      : (Mendip)
 str_MMLBlue						: (Midland Mainline - Blue)
 str_MMLTealTang					: (Midland Mainline - Teal & Tangerine)
 str_Mobil                       : (Mobil)
