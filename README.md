@@ -25,51 +25,12 @@ as previously described, copying the generated `.grf` file into `OpenTTD/newGRF`
 
 Note, this method still requires the `nml` python package to be installed.
 
-### Credits (in no particular order)
+### Credits and Contributions
+BRTrains V2 largely Authored/Drawn/Curated by Audigex, built on the work of many others including predecessor projects
 
-#### Developers
+This project is a culmination of work by many members of the OpenTTD community over a long period of time
 
-- Audigex - BRTrains v2 (This project)
-- Leander - BRTrains
-- Gwyd - BRTrains
-- KubaP - MUTS  
-- AlmostCthulhu - MUTS   
-
-#### Artists
-
-- Leander  
-- Ameecher  
-- Voyager One  
-- Class93  
-- RailwayMan  
-- KubaP  
-- AlmostCthuluhu  
-- Audigex  
-- Gwyd  
-- Ronstar  
-- Purno  
-- le_harv  
-- Helmar  
-- Pilot  
-- Growl  
-- Red Dragon  
-- Beardie  
-- TheAmir259  
-- GamingBloke  
-- SquireJames  
-- Erato  
-- DJ Nekkid
-- Welshdragon
-- Doorslammer
-- AndyTheNorth
-- Su1phur
-- Csuke
-- the_thomas_fan
-
-... And other BROS artists who's names have been lost along the way
-
-Detailed BROS credits available at https://docs.google.com/spreadsheets/d/1XVF7VXa1B5tcqJiXRvRNtJ34bvyPZL9UtzXi1YENuts/edit#gid=1244600467
-
+Individual contributions can be found at [CREDITS](./CREDITS.md)
 
 ### Contributing
 If you want to add to the pack, just pull request it and it might make it in, or join us on Discord (invite link below) and post any sprites you'd like to contribute

@@ -118,6 +118,10 @@ spriteset(spriteset_BR66_FosterYeomanBlue, "gfx/Diesel/66.png") {
 	template_train32px(0, 767)
 }
 
+spriteset(spriteset_BR66_Mendip, "gfx/Diesel/66.png") {
+	template_train32px(0, 793)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR66,cargo_subtype){
 	0: 	spriteset_BR66_FL;
 	1: 	spriteset_BR66_FL2;

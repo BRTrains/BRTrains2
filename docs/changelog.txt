@@ -13,6 +13,7 @@
 # v2.14
 - Added Metropolitan Class G 
 - Added Class 56
+- Added Class 59
 - Added Powerhaul lined livery for Class 70
 - Added Ukraine livery for Class 350
 - Added GWR livery for Class 158 (2 and 3 car)
@@ -21,6 +22,7 @@
 - Added SE Blue livery for Class 376
 - Added London Overground livery for Class 321
 - Added Railfreight livery for Class 50
+- Added DC Green, DC Grey, Railtrack liveries for Class 31
 - Reworked and shortened Class 08
 - Additional liveries for Class 08
 - PRM Compliant BR Blue livery for class 455
@@ -31,6 +33,7 @@
 - Fixed LNWR Class 150 reversed sprite
 - Fixed LNWR Class 350 corridor connection (horizontal view)
 - Fixed some Class 321 lengths (horizontal view)
+- Separated credits out from Readme file
 
 # v2.13 (2025-02-10)
 - Added LNER J70

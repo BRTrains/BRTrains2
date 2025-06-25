@@ -4,10 +4,14 @@ spriteset(spriteset_BR59_2_Purchase, "gfx/Diesel/66.png") {
 
 switch(FEAT_TRAINS,SELF, sw_BR59_2,cargo_subtype){
 	0: 	spriteset_BR66_NationalPower;
+	1:  spriteset_BR66_EWS;
+	2:  spriteset_BR66_DBSchenker;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR59_2_cargo_subtype_text,cargo_subtype){
 	0: 	return string(str_NationalPower);
+	1:	return string(str_EWSRed);
+	2:	return string(str_DBSchenker);
        return CB_RESULT_NO_TEXT;
 }
 

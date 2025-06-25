@@ -46,6 +46,17 @@ spriteset(spriteset_BR31_NetworkRailAlt, "gfx/BR31.png") {
 	template_train32px_old(0, 263)
 }
 
+spriteset(spriteset_BR31_DCGrey, "gfx/BR31.png") {
+	template_train32px_old(0, 288)
+}
+
+spriteset(spriteset_BR31_DCGreen, "gfx/BR31.png") {
+	template_train32px_old(0, 313)
+}
+
+spriteset(spriteset_BR31_Railtrack, "gfx/BR31.png") {
+	template_train32px_old(0, 338)
+}
 
 switch(FEAT_TRAINS,SELF, sw_BR31,cargo_subtype){    
     0:	spriteset_BR31_BRGreen;
@@ -59,6 +70,9 @@ switch(FEAT_TRAINS,SELF, sw_BR31,cargo_subtype){
 	8:	spriteset_BR31_Regional;
 	9:	spriteset_BR31_Wessex;
 	10:	spriteset_BR31_Freightliner;
+	11: spriteset_BR31_DCGrey;
+	12: spriteset_BR31_DCGreen;
+	13: spriteset_BR31_Railtrack;
        return CB_RESULT_NO_TEXT;
 }
 
@@ -74,6 +88,9 @@ switch(FEAT_TRAINS,SELF,sw_BR31_cargo_subtype_text,cargo_subtype){
 	8:	return string(str_Regional);
 	9:	return string(str_Wessex);
 	10:	return string(str_Freightliner);
+	11: return string(str_DCGrey);
+	12: return string(str_DCGreen);
+	13: return string(str_Railtrack);
        return CB_RESULT_NO_TEXT;
 }
 

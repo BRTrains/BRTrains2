@@ -3,11 +3,31 @@ spriteset(spriteset_BR59_01_Purchase, "gfx/Diesel/66.png") {
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR59_01,cargo_subtype){
-	0: 	spriteset_BR66_ARC;	
+	0: 	spriteset_BR66_FosterYeomanGrey;
+	1: 	spriteset_BR66_FosterYeomanBlue;
+	2: 	spriteset_BR66_ARC;
+	3:  spriteset_BR66_Mendip;
+	4:  spriteset_BR66_Hanson;
+	5:  spriteset_BR66_AggregateIndustries;
+	6:  spriteset_BR66_EWS;
+	7:  spriteset_BR66_DBSchenker;
+	8:  spriteset_BR66_FreightlinerOrange;
+	9:  spriteset_BR66_GBRf;
+	10: spriteset_BR66_Heidelberg;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR59_01_cargo_subtype_text,cargo_subtype){
-	0: 	return string(str_ARC);
+	0: 	return string(str_FosterYeomanGrey);
+	1: 	return string(str_FosterYeomanBlue);
+	2: 	return string(str_ARC);
+	3: 	return string(str_Mendip);
+	4: 	return string(str_HansonHall);
+	5: 	return string(str_AggregateIndustries);
+	6:	return string(str_EWSRed);
+	7:	return string(str_DBSchenker);
+	8: 	return string(str_FreightlinerOrange);
+	9: 	return string(str_GBRf);
+	10: return string(str_Heidelberg);
        return CB_RESULT_NO_TEXT;
 }
 
