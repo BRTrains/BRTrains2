@@ -4,12 +4,11 @@
 - GWR 5700/6700/8750 Class (needs coding)
 - Conflat A (needs coding)
 - Conflat B (needs coding)
-- Class 59 (code liveries and add to lang file)
 - GWR Great Bear and Hall class rework
-- Class 56
 - Class 69
 - GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 - BRT Whisky CovHop (PAV) - Only variant code needed
+- Class 92
 
 # v2.14
 - Added Metropolitan Class G 
