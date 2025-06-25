@@ -58,7 +58,7 @@ switch(FEAT_TRAINS,SELF,sw_BRMk3Sleeper_cargo_subtype_text,cargo_subtype){
     1:  return string(str_InterCity);
     2:  return string(str_FirstScotRail);
     3:  return string(str_ScotRail);
-    4:	return string(str_Caledonian);
+    4:	return string(str_CaledonianSleeper);
     5:  return string(str_GreatWestern);
     6:  return string(str_GWRGreen);
 	7:  return string(str_Stagecoach);

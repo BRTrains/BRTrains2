@@ -1,0 +1,46 @@
+spriteset(spriteset_BR92_Purchase, "gfx/Electric/92.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR92_EWS, "gfx/Electric/92.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR92_RailFreightGrey, "gfx/Electric/92.png") {
+	template_train32px(0, 39)
+}
+
+spriteset(spriteset_BR92_CaledonianSleeper, "gfx/Electric/92.png") {
+	template_train32px(0, 65)
+}
+
+spriteset(spriteset_BR92_GBRf, "gfx/Electric/92.png") {
+	template_train32px(0, 91)
+}
+
+spriteset(spriteset_BR92_DBSchenker, "gfx/Electric/92.png") {
+	template_train32px(0, 117)
+}
+
+spriteset(spriteset_BR92_StobartRail, "gfx/Electric/92.png") {
+	template_train32px(0, 143)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR92,cargo_subtype){
+	0: 	spriteset_BR92_RailFreightGrey;
+	1:	spriteset_BR92_EWS;
+	2:	spriteset_BR92_DBSchenker;
+	3:	spriteset_BR92_GBRf;
+	4:	spriteset_BR92_CaledonianSleeper;
+	5:  spriteset_BR92_StobartRail;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR92_cargo_subtype_text,cargo_subtype){
+	0: 	return string(str_BRRailfreightGrey);
+	1:	return string(str_EWSRed);
+	2:	return string(str_DBSchenker);
+	3:	return string(str_GBRf);
+	4:	return string(str_CaledonianSleeper);
+	5:	return string(str_StobartRail);
+       return CB_RESULT_NO_TEXT;
+}

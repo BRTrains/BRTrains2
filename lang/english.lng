@@ -803,6 +803,11 @@ str_BR91_usage					:Express Passenger
 str_BR91_eos					:---
 str_BR91_liveries				:InterCity Swallow, National Express, GNER, East Coast, Virgin East Coast
 
+STR_NAME_BR92					:BR Class 92
+str_BR92_usage					:Mixed Traffic, Sleeper Services
+str_BR92_eos		    		:1993
+str_BR92_liveries				:Railfreight Grey, EWS, DB Cargo, GBRf, Caledonian Sleeper, Stobart Rail
+
 STR_NAME_BR93					:BR Class 93 (Tri-Mode)
 str_BR93_usage					:Mixed Traffic
 str_BR93_eos					:---
@@ -1800,7 +1805,8 @@ str_Brunswick					: (BR - Brunswick Green)
 str_BSS							: (British Steel)
 str_C2C							: (C2C)
 str_C2CBlue						: (C2C - Blue)
-str_Caledonian					: (Caledonian Sleeper)
+str_CaledonianBlue  			: (Caledonian Blue)
+str_CaledonianSleeper			: (Caledonian Sleeper)
 str_Central						: (Central Trains)
 str_CentralAnglia				: (Central/Anglia Hybrid)
 str_Centro						: (Centro)
@@ -2052,6 +2058,7 @@ str_SRBlack                     : (Southern Railway - Black)
 str_Stagecoach                  : (Stagecoach)
 str_StagecoachWhite             : (Stagecoach - White)
 str_StagecoachBlue              : (Stagecoach - Blue)
+str_StobartRail                 : (Stobart Rail)
 str_StrathclydeOrange			: (Strathclyde - Orange)
 str_StrathclydePTE				: (Strathclyde PTE)
 str_SuperSprinter				: (BR Super Sprinter)

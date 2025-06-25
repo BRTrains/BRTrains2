@@ -8,12 +8,12 @@
 - Class 69
 - GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 - BRT Whisky CovHop (PAV) - Only variant code needed
-- Class 92
 
 # v2.14
 - Added Metropolitan Class G 
 - Added Class 56
 - Added Class 59
+- Added Class 92
 - Added Powerhaul lined livery for Class 70
 - Added Ukraine livery for Class 350
 - Added GWR livery for Class 158 (2 and 3 car)

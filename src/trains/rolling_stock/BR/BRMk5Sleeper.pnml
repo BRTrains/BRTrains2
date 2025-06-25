@@ -11,7 +11,7 @@ switch(FEAT_TRAINS,SELF, sw_BRMk5Sleeper,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF,sw_BRMk5Sleeper_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_Caledonian);
+    0:	return string(str_CaledonianSleeper);
        return CB_RESULT_NO_TEXT;
 }
 

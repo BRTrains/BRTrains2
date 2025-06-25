@@ -70,10 +70,8 @@ sort(FEAT_TRAINS, [
  item_BR88,
  item_BR89,
  item_BR90,
- item_BR91,
  item_BR91Standalone,
- item_BluePullman_6Car, // Don't really belong anywhere but after the IC225 and before the DMUs seems to fit
- item_BluePullman_8Car, // Don't really belong anywhere but after the IC225 and before the DMUs seems to fit
+ item_BR92,
  item_BR93,
  item_BR99,
  item_BR121,
@@ -144,6 +142,9 @@ sort(FEAT_TRAINS, [
  item_BR333,
  item_BR334,
  item_BR350,
+ item_BR91, // Intercity 225
+ item_BluePullman_6Car,
+ item_BluePullman_8Car,
 header_APT,
    item_BR370,
    item_APTE,
