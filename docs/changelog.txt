@@ -10,7 +10,8 @@
 - BRT Whisky CovHop (PAV) - Only variant code needed
 
 # v2.14
-- Added Metropolitan Class G 
+- Added Metropolitan Class G
+- Addef Furness 115 Class
 - Added Class 56
 - Added Class 59
 - Added Class 92

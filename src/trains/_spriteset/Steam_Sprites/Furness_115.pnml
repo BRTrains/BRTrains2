@@ -1,0 +1,16 @@
+spriteset(spriteset_Furness115_Purchase, "gfx/Steam/Furness_115Class.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_Furness115_FurnessRed, "gfx/Steam/Furness_115Class.png") {
+	template_train32px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, sw_Furness115,cargo_subtype){    
+	0: 	spriteset_Furness115_FurnessRed;
+}
+
+switch(FEAT_TRAINS,SELF,sw_Furness115_cargo_subtype_text,cargo_subtype){
+    0: return string(str_FurnessRed);
+       return CB_RESULT_NO_TEXT;
+}

@@ -1,0 +1,48 @@
+item (FEAT_TRAINS, item_Furness115, 725) {
+	property {
+		name: 							string(STR_NAME_Furness115);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1920,1,1);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					35;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					14;
+		running_cost_factor:			14;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1000 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							93 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	0.110;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_Furness115_usage),string(str_Furness115_eos),string(str_Furness115_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_Furness115_cargo_subtype_text;	
+	default: 							sw_Furness115;
+	purchase:							spriteset_Furness115_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						steam_create_visual_effect;
+	sound_effect:						sw_steam_sound;
+		cost_factor:	return(GetAdjustedCost(14));
+	running_cost_factor: return(GetAdjustedCost(14));
+}
+}

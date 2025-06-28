@@ -430,6 +430,11 @@ str_FurnessK2_usage					:Mixed Traffic
 str_FurnessK2_eos					:1892-1931
 str_FurnessK2_liveries				:FR Red
 
+STR_NAME_Furness115					:FR Rutherford N1 Class 4-6-4 "Jumbo"
+str_Furness115_usage				:Express Passenger
+str_Furness115_eos					:1920-1921
+str_Furness115_liveries				:FR Red
+
 STR_NAME_LNWRWebb				    :LNWR Webb Coal Tank 0-6-2T
 str_LNWRWebb_usage				    :Low speed freight
 str_LNWRWebb_eos				    :1881-1958

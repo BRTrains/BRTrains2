@@ -6,6 +6,7 @@ sort(FEAT_TRAINS, [
   item_GWR_DeanGoods,
   item_CaledonianSingle,
   item_FurnessK2,
+  item_Furness115,
   item_LNER_J70,
   item_LMSBigBertha,
   item_GER_L77,
