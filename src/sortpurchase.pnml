@@ -136,6 +136,7 @@ sort(FEAT_TRAINS, [
  item_BR315,
  item_BR319,
  item_BR321,
+ item_BR321_Freight,
  item_BR323,
  item_br_331_0,
  item_br_331_1,

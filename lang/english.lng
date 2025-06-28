@@ -262,6 +262,7 @@ STR_BR_331_3CAR                         :BR Class 331/0 "Civity" (3-Car)
 STR_BR_331_4CAR                         :BR Class 331/1 "Civity" (4-Car)
 
 STR_BR321                              :BR Class 321 "Dusty Bin" (4-Car)
+STR_BR321_Freight                      :BR Class 321 Parcels Variant (4-Car)
 
 STR_BR_345_7CAR                         :BR Class 345 "Aventra" (7-Car)
 STR_BR_345_9CAR                         :BR Class 345 "Aventra" (9-Car)
@@ -340,6 +341,7 @@ STR_DSC_BR_197                         :Type: {RED}Diesel Multiple Unit{}{BLACK}
 STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
 
 STR_DSC_BR321                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}NSE, Dutch Railways, Greater Anglia, Silverlink, London Midland, WYPTE
+STR_DSC_BR321_Freight                 :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Parcels/Freight{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD} Swift Express
 STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
 STR_DSC_BR_458_45                       :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}South Western Trains, South Western Railway
@@ -2071,6 +2073,7 @@ str_SWT_refurb					: (South West Trains - Refurbished)
 str_SWT_stagecoach				: (South West Trains - Stagecoach)
 str_SWR				            : (South Western Railway)
 str_SWRPride		            : (South Western Railway - Pride)
+str_SwiftExpress	            : (Swift Express)
 str_Teak                        : (Teak)
 str_Tesco                       : (Tesco)
 str_TescoEyeCandy               : (Tesco - Always show container)
