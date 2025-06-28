@@ -709,6 +709,11 @@ str_BR66_usage					:Mixed Freight
 str_BR66_eos					:1998-Present
 str_BR66_liveries				:EWS, Freightliner, DB Schenker, GBRf, GBRf Tfl, GBRf Harry Beck, Colas Rail, Fastline, DRS
 
+STR_NAME_BR66_6					:BR Class 66_6 "Super Shed"
+str_BR66_6_usage				:Heavy Freight
+str_BR66_6_eos					:2000-Present
+str_BR66_6_liveries				:EWS, Freightliner, DB Schenker, GBRf, Colas Rail
+
 STR_NAME_BR67					:BR Class 67 "Skip"
 str_BR67_usage					:Mixed Traffic
 str_BR67_eos					:---

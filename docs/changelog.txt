@@ -16,6 +16,7 @@
 - Added Class 59
 - Added Class 92
 - Added Class 321 Parcels variant
+- Added Class 66/6 Heavy Haul variant
 - Added Powerhaul lined livery for Class 70
 - Added Ukraine livery for Class 350
 - Added GWR livery for Class 158 (2 and 3 car)

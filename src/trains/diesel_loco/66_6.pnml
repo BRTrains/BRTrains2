@@ -1,8 +1,8 @@
-item (FEAT_TRAINS, item_BR66, 266) {
+item (FEAT_TRAINS, item_BR66_6, 726) {
 	property {
-		name: 							string(STR_NAME_BR66);
+		name: 							string(STR_NAME_BR66_6);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1998,4,21);
+		introduction_date:				date(2000,4,21);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		retire_early:					1;
 		vehicle_life:					40;
@@ -13,7 +13,7 @@ item (FEAT_TRAINS, item_BR66, 266) {
 		cost_factor:					43;
 		running_cost_factor:			37;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							75 mph;
+		speed:							65 mph;
 		refit_cost:						0;
 		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
@@ -22,9 +22,9 @@ item (FEAT_TRAINS, item_BR66, 266) {
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							130 ton;
+		weight:							132 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.323;
+		tractive_effort_coefficient:	0.392;
 		air_drag_coefficient:			0.07;
 		length:							8;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
@@ -32,16 +32,16 @@ item (FEAT_TRAINS, item_BR66, 266) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR66_usage),string(str_BR66_eos),string(str_BR66_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR66_6_usage),string(str_BR66_6_eos),string(str_BR66_6_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_BR66_cargo_subtype_text;
-	default: 							sw_BR66;
-	purchase:							spriteset_BR66_Purchase;
+	cargo_subtype_text:					sw_BR66_6_cargo_subtype_text;
+	default: 							sw_BR66_6;
+	purchase:							spriteset_BR66_6_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_66_sound;
-	cost_factor:	return(GetAdjustedCost(43));
-	running_cost_factor: return(GetAdjustedCost(37));
+	cost_factor:	return(GetAdjustedCost(46));
+	running_cost_factor: return(GetAdjustedCost(39));
 }
 }

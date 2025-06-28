@@ -2,6 +2,10 @@ spriteset(spriteset_BR66_Purchase, "gfx/Diesel/66.png") {
 	template_purchase(0, 0)
 }
 
+spriteset(spriteset_BR66_6_Purchase, "gfx/Diesel/66.png") {
+	template_purchase(264, 0)
+}
+
 spriteset(spriteset_BR66_FL, "gfx/Diesel/66.png") {
 	template_train32px(0, 13)
 }
@@ -181,5 +185,26 @@ switch(FEAT_TRAINS,SELF,sw_BR66_cargo_subtype_text,cargo_subtype){
 	24: return string(str_DBSteel);
 	25: return string(str_NationalPower);
 	26: return string(str_ARC);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR66_6,cargo_subtype){
+	0: 	spriteset_BR66_FL;
+	1: 	spriteset_BR66_FL2;
+	2:	spriteset_BR66_EWS;
+	3:	spriteset_BR66_DBSchenker;
+	4:	spriteset_BR66_GBRf;
+	5:	spriteset_BR66_Colas;
+	6:	spriteset_BR66_FreightlinerOrange;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR66_6_cargo_subtype_text,cargo_subtype){
+	0: 	return string(str_Freightliner);
+	1: 	return string(str_Freightliner2);
+	2:	return string(str_EWSRed);
+	3:	return string(str_DBSchenker);
+	4:	return string(str_GBRf);
+	5:	return string(str_ColasRail);
+	6: 	return string(str_FreightlinerOrange);
        return CB_RESULT_NO_TEXT;
 }
