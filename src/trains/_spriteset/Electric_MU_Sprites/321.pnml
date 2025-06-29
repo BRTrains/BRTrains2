@@ -45,3 +45,130 @@ spriteset (spriteset_BR321_front_SwiftExpress, "gfx/EMU/321.png") { 			template_
 spriteset (spriteset_BR321_rear_SwiftExpress, "gfx/EMU/321.png") { 			template_train32px(0, 754) }
 spriteset (spriteset_BR321_middle_SwiftExpress, "gfx/EMU/321.png") { 			template_train32px(0, 780) }
 spriteset (spriteset_BR321_middle_panto_SwiftExpress, "gfx/EMU/321.png") { 	template_train32px(0, 806) }
+
+spriteset (spriteset_BR321_front_FirstGreatEastern, "gfx/EMU/321.png") { 			template_train32px(0, 832) }
+spriteset (spriteset_BR321_rear_FirstGreatEastern, "gfx/EMU/321.png") { 			template_train32px(0, 858) }
+spriteset (spriteset_BR321_middle_FirstGreatEastern, "gfx/EMU/321.png") { 			template_train32px(0, 884) }
+spriteset (spriteset_BR321_middle_panto_FirstGreatEastern, "gfx/EMU/321.png") { 	template_train32px(0, 910) }
+
+spriteset (spriteset_BR321_front_ArrivaNorthern, "gfx/EMU/321.png") { 			template_train32px(0, 936) }
+spriteset (spriteset_BR321_rear_ArrivaNorthern, "gfx/EMU/321.png") { 			template_train32px(0, 962) }
+spriteset (spriteset_BR321_middle_ArrivaNorthern, "gfx/EMU/321.png") { 			template_train32px(0, 988) }
+spriteset (spriteset_BR321_middle_panto_ArrivaNorthern, "gfx/EMU/321.png") { 	template_train32px(0, 1014) }
+
+spriteset (spriteset_BR321_front_GAInterim, "gfx/EMU/321.png") { 			template_train32px(0, 1040) }
+spriteset (spriteset_BR321_rear_GAInterim, "gfx/EMU/321.png") { 			template_train32px(0, 1066) }
+spriteset (spriteset_BR321_middle_GAInterim, "gfx/EMU/321.png") { 			template_train32px(0, 1092) }
+spriteset (spriteset_BR321_middle_panto_GAInterim, "gfx/EMU/321.png") { 	template_train32px(0, 1118) }
+
+spriteset (spriteset_BR321_front_GARenatus, "gfx/EMU/321.png") { 			template_train32px(0, 1144) }
+spriteset (spriteset_BR321_rear_GARenatus, "gfx/EMU/321.png") { 			template_train32px(0, 1170) }
+spriteset (spriteset_BR321_middle_GARenatus, "gfx/EMU/321.png") { 			template_train32px(0, 1196) }
+spriteset (spriteset_BR321_middle_panto_GARenatus, "gfx/EMU/321.png") { 	template_train32px(0, 1222) }
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_NSE, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_NSE;
+	1: spriteset_BR321_middle_panto_NSE;
+	2: spriteset_BR321_middle_NSE;
+	3: spriteset_BR321_rear_NSE;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_NS, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_NS;
+	1: spriteset_BR321_middle_panto_NS;
+	2: spriteset_BR321_middle_NS;
+	3: spriteset_BR321_rear_NS;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_GreaterAnglia, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_GreaterAnglia;
+	1: spriteset_BR321_middle_panto_GreaterAnglia;
+	2: spriteset_BR321_middle_GreaterAnglia;
+	3: spriteset_BR321_rear_GreaterAnglia;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_Silverlink, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_Silverlink;
+	1: spriteset_BR321_middle_panto_Silverlink;
+	2: spriteset_BR321_middle_Silverlink;
+	3: spriteset_BR321_rear_Silverlink;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_LondonMidland, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_LondonMidland;
+	1: spriteset_BR321_middle_panto_LondonMidland;
+	2: spriteset_BR321_middle_LondonMidland;
+	3: spriteset_BR321_rear_LondonMidland;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_WYPTE, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_WYPTE;
+	1: spriteset_BR321_middle_panto_WYPTE;
+	2: spriteset_BR321_middle_WYPTE;
+	3: spriteset_BR321_rear_WYPTE;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_LO, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_LO;
+	1: spriteset_BR321_middle_panto_LO;
+	2: spriteset_BR321_middle_LO;
+	3: spriteset_BR321_rear_LO;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_FirstGreatEastern, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_FirstGreatEastern;
+	1: spriteset_BR321_middle_panto_FirstGreatEastern;
+	2: spriteset_BR321_middle_FirstGreatEastern;
+	3: spriteset_BR321_rear_FirstGreatEastern;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_ArrivaNorthern, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_ArrivaNorthern;
+	1: spriteset_BR321_middle_panto_ArrivaNorthern;
+	2: spriteset_BR321_middle_ArrivaNorthern;
+	3: spriteset_BR321_rear_ArrivaNorthern;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_GAInterim, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_GAInterim;
+	1: spriteset_BR321_middle_panto_GAInterim;
+	2: spriteset_BR321_middle_GAInterim;
+	3: spriteset_BR321_rear_GAInterim;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_GARenatus, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_GARenatus;
+	1: spriteset_BR321_middle_panto_GARenatus;
+	2: spriteset_BR321_middle_GARenatus;
+	3: spriteset_BR321_rear_GARenatus;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset, cargo_subtype) {
+	0: switch_BR321_spriteset_NSE;
+	1: switch_BR321_spriteset_NS;
+	2: switch_BR321_spriteset_GreaterAnglia;
+	3: switch_BR321_spriteset_Silverlink;
+	4: switch_BR321_spriteset_LondonMidland;
+	5: switch_BR321_spriteset_WYPTE;
+	6: switch_BR321_spriteset_LO;
+	7: switch_BR321_spriteset_FirstGreatEastern;
+	8: switch_BR321_spriteset_ArrivaNorthern;
+	9: switch_BR321_spriteset_GAInterim;
+	10: switch_BR321_spriteset_GARenatus;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_subtype_text, cargo_subtype) {
+	0: return string(str_NSE);
+	1: return string(str_NS);
+	2: return string(str_GreaterAnglia);
+	3: return string(str_Silverlink);
+	4: return string(str_LondonMidland);
+	5: return string(str_WYPTEMetro);
+	6: return string(str_overground);
+	7: return string(str_FGE);
+	8: return string(str_ArrivaNorthern);
+	9: return string(str_GA_Interim);
+	10: return string(str_GA_Renatus);
+	return CB_RESULT_NO_TEXT;
+}

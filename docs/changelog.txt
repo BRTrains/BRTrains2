@@ -25,7 +25,7 @@
 - Added GWR livery for Class 150/2
 - Added CrossCountry liveries for Class 170 (2 and 3 car)
 - Added SE Blue livery for Class 376
-- Added London Overground livery for Class 321
+- Multiple liveries for Class 321 (London Overground, FGE, AtN, GA Interim and Renatus)
 - Added Railfreight livery for Class 50
 - Added DC Green, DC Grey, Railtrack liveries for Class 31
 - Reworked and shortened Class 08

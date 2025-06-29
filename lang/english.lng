@@ -346,7 +346,7 @@ STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multipl
 STR_DSC_BR320_0                        :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Strathclyde PTE Orange, Strathclyde PTE Carmine & Cream, ScotRail Saltire
 STR_DSC_BR320_X                        :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Strathclyde PTE Carmine & Cream, ScotRail Saltire
 
-STR_DSC_BR321                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}NSE, Dutch Railways, Greater Anglia, Silverlink, London Midland, WYPTE
+STR_DSC_BR321                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}NSE, Dutch Railways, Greater Anglia, Silverlink, London Midland, WYPTE, London Overground, First Great Eastern, Arriva Trains Northern, Greater Anglia Interim, Greater Anglia Renatus
 STR_DSC_BR321_Freight                 :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Parcels/Freight{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD} Swift Express
 STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
@@ -1770,6 +1770,7 @@ str_ArrivaCream					: (Arriva - Cream)
 str_ArrivaGhost					: (Arriva - Ghost)
 str_ArrivaHeart					: (Arriva - Heart of Wales)
 str_ArrivaSilver				: (Arriva - Silver)
+str_ArrivaNorthern				: (Arriva Trains Northern)
 str_ArrivaTimes					: (Arriva - Time Are Changing)
 str_ArrivaTPNS					: (Arriva - TransPennine Northern Spirit)
 str_ArrivaWales					: (Arriva Trains Wales)
@@ -1895,6 +1896,8 @@ str_FreightlinerLined           : (Freightliner - Powerhaul Lined)
 str_FurnessRed                  : (Furness Railway - Red)
 str_GA_White					: (Greater Anglia - White)
 str_GA_Blue                     : (Greater Anglia - Blue)
+str_GA_Interim					: (Greater Anglia - Interim)
+str_GA_Renatus					: (Greater Anglia - Renatus)
 str_GatEx						: (Gatwick Express)
 str_GatExUn						: (Gatwick Express - Unbranded)
 str_GBRf						: (GBRf)
