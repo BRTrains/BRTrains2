@@ -196,7 +196,7 @@ switch(FEAT_TRAINS, SELF, switch_BR321_subtype_text, cargo_subtype) {
 	8: return string(str_ArrivaNorthern);
 	9: return string(str_GA_Interim);
 	10: return string(str_GA_Renatus);
-	11: return string(str_FCC);
+	11: return string(str_fcc);
 	12: return string(str_NXEA);
 	return CB_RESULT_NO_TEXT;
 }
