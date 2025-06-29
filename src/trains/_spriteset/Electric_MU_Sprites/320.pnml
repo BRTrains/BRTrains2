@@ -1,22 +1,22 @@
-spriteset (spriteset_BR320_0_purchase, "gfx/EMU/321.png") {
-	template_purchase(200, 39)
+spriteset (spriteset_BR320_0_purchase, "gfx/EMU/320.png") {
+	template_purchase(200, 0)
 }
 
-spriteset (spriteset_BR320_X_purchase, "gfx/EMU/321.png") {
-	template_purchase(200, 52)
+spriteset (spriteset_BR320_X_purchase, "gfx/EMU/320.png") {
+	template_purchase(200, 13)
 }
 
-spriteset (spriteset_BR320_front_SPTOrange, "gfx/EMU/321.png") { 			template_train32px(0, 1768) }
-spriteset (spriteset_BR320_rear_SPTOrange, "gfx/EMU/321.png") { 			template_train32px(0, 1794) }
-spriteset (spriteset_BR320_middle_panto_SPTOrange, "gfx/EMU/321.png") { 	template_train32px(0, 1846) }
+spriteset (spriteset_BR320_front_ScotRailSaltire, "gfx/EMU/320.png") { 			template_train32px(0, 0) }
+spriteset (spriteset_BR320_rear_ScotRailSaltire, "gfx/EMU/320.png") { 			template_train32px(0, 26) }
+spriteset (spriteset_BR320_middle_panto_ScotRailSaltire, "gfx/EMU/320.png") { 	template_train32px(0, 78) }
 
-spriteset (spriteset_BR320_front_SPTCarmine, "gfx/EMU/321.png") { 			template_train32px(0, 1664) }
-spriteset (spriteset_BR320_rear_SPTCarmine, "gfx/EMU/321.png") { 			template_train32px(0, 1690) }
-spriteset (spriteset_BR320_middle_panto_SPTCarmine, "gfx/EMU/321.png") { 	template_train32px(0, 1742) }
+spriteset (spriteset_BR320_front_SPTCarmine, "gfx/EMU/320.png") { 			template_train32px(0, 104) }
+spriteset (spriteset_BR320_rear_SPTCarmine, "gfx/EMU/320.png") { 			template_train32px(0, 130) }
+spriteset (spriteset_BR320_middle_panto_SPTCarmine, "gfx/EMU/320.png") { 	template_train32px(0, 182) }
 
-spriteset (spriteset_BR320_front_ScotRailSaltire, "gfx/EMU/321.png") { 			template_train32px(0, 1560) }
-spriteset (spriteset_BR320_rear_ScotRailSaltire, "gfx/EMU/321.png") { 			template_train32px(0, 1586) }
-spriteset (spriteset_BR320_middle_panto_ScotRailSaltire, "gfx/EMU/321.png") { 	template_train32px(0, 1638) }
+spriteset (spriteset_BR320_front_SPTOrange, "gfx/EMU/320.png") { 			template_train32px(0, 208) }
+spriteset (spriteset_BR320_rear_SPTOrange, "gfx/EMU/320.png") { 			template_train32px(0, 234) }
+spriteset (spriteset_BR320_middle_panto_SPTOrange, "gfx/EMU/320.png") { 	template_train32px(0, 286) }
 
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BR320_spriteset_SPTCarmine, position_in_articulated_veh % 4) {
