@@ -1,0 +1,93 @@
+spriteset (spriteset_BR320_0_purchase, "gfx/EMU/321.png") {
+	template_purchase(200, 39)
+}
+
+spriteset (spriteset_BR320_X_purchase, "gfx/EMU/321.png") {
+	template_purchase(200, 52)
+}
+
+spriteset (spriteset_BR320_front_SPTOrange, "gfx/EMU/321.png") { 			template_train32px(0, 1768) }
+spriteset (spriteset_BR320_rear_SPTOrange, "gfx/EMU/321.png") { 			template_train32px(0, 1794) }
+spriteset (spriteset_BR320_middle_panto_SPTOrange, "gfx/EMU/321.png") { 	template_train32px(0, 1846) }
+
+spriteset (spriteset_BR320_front_SPTCarmine, "gfx/EMU/321.png") { 			template_train32px(0, 1664) }
+spriteset (spriteset_BR320_rear_SPTCarmine, "gfx/EMU/321.png") { 			template_train32px(0, 1690) }
+spriteset (spriteset_BR320_middle_panto_SPTCarmine, "gfx/EMU/321.png") { 	template_train32px(0, 1742) }
+
+spriteset (spriteset_BR320_front_ScotRailSaltire, "gfx/EMU/321.png") { 			template_train32px(0, 1560) }
+spriteset (spriteset_BR320_rear_ScotRailSaltire, "gfx/EMU/321.png") { 			template_train32px(0, 1586) }
+spriteset (spriteset_BR320_middle_panto_ScotRailSaltire, "gfx/EMU/321.png") { 	template_train32px(0, 1638) }
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_BR320_spriteset_SPTCarmine, position_in_articulated_veh % 4) {
+	0: spriteset_BR320_front_SPTCarmine;
+	1: spriteset_BR320_middle_panto_SPTCarmine;	
+	2: spriteset_BR320_rear_SPTCarmine;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR320_spriteset_SPTOrange, position_in_articulated_veh % 4) {
+	0: spriteset_BR320_front_SPTOrange;
+	1: spriteset_BR320_middle_panto_SPTOrange;	
+	2: spriteset_BR320_rear_SPTOrange;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR320_spriteset_ScotRailSaltire, position_in_articulated_veh % 4) {
+	0: spriteset_BR320_front_ScotRailSaltire;
+	1: spriteset_BR320_middle_panto_ScotRailSaltire;	
+	2: spriteset_BR320_rear_ScotRailSaltire;
+}
+
+// 320_0 (320/0)
+switch(FEAT_TRAINS, SELF, switch_BR320_0_spriteset, cargo_subtype) {
+	0: switch_BR320_spriteset_SPTOrange;
+	1: switch_BR320_spriteset_SPTCarmine;
+	2: switch_BR320_spriteset_ScotRailSaltire;
+}
+// 320_0 (320/0)
+switch(FEAT_TRAINS, SELF, switch_BR320_0_subtype_text, cargo_subtype) {
+	0: return string(str_StrathclydeOrange);
+	1: return string(str_StrathclydeCandC);	
+	2: return string(str_ScotRailSaltire);
+	return CB_RESULT_NO_TEXT;
+}
+
+// 320_X (320/1 /3 /4)
+switch(FEAT_TRAINS, SELF, switch_BR320_X_spriteset, cargo_subtype) {
+	0: switch_BR320_spriteset_SPTCarmine;
+	1: switch_BR320_spriteset_ScotRailSaltire;
+}
+// 320_X (320/1 /3 /4)
+switch(FEAT_TRAINS, SELF, switch_BR320_X_subtype_text, cargo_subtype) {
+	0: return string(str_StrathclydeCandC);
+	1: return string(str_ScotRailSaltire);
+	return CB_RESULT_NO_TEXT;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_BR320_0_articulated, extra_callback_info1) {
+	1..2: return item_BR320_0;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+// Define articulations
+switch(FEAT_TRAINS, SELF, switch_BR320_X_articulated, extra_callback_info1) {
+	1..2: return item_BR320_X;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, switch_BR320_particles, position_in_articulated_veh % 3) {
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, switch_BR320_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, switch_BR320_can_attach_wagon, vehicle_type_id) {
+	item_BR320_0: return CB_RESULT_ATTACH_ALLOW;
+	item_BR320_X: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}

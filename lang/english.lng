@@ -261,6 +261,9 @@ STR_BR_231_4CAR							:BR Class 231/0 "FLIRT" (4-Car)
 STR_BR_331_3CAR                         :BR Class 331/0 "Civity" (3-Car)
 STR_BR_331_4CAR                         :BR Class 331/1 "Civity" (4-Car)
 
+STR_BR320_0                             :BR Class 320/0 (3-Car)
+STR_BR320_X                             :BR Class 320/1/3/4 (3-Car)
+
 STR_BR321                              :BR Class 321 "Dusty Bin" (4-Car)
 STR_BR321_Freight                      :BR Class 321 Parcels Variant (4-Car)
 
@@ -339,6 +342,9 @@ STR_DSC_BR_195                         :Type: {RED}Diesel Multiple Unit{}{BLACK}
 STR_DSC_BR_196                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}West Midlands Railway
 STR_DSC_BR_197                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}TfW Rail
 STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
+
+STR_DSC_BR320_0                        :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Strathclyde PTE Orange, Strathclyde PTE Carmine & Cream, ScotRail Saltire
+STR_DSC_BR320_X                        :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Strathclyde PTE Carmine & Cream, ScotRail Saltire
 
 STR_DSC_BR321                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}NSE, Dutch Railways, Greater Anglia, Silverlink, London Midland, WYPTE
 STR_DSC_BR321_Freight                 :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Parcels/Freight{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD} Swift Express
@@ -2072,7 +2078,7 @@ str_StagecoachWhite             : (Stagecoach - White)
 str_StagecoachBlue              : (Stagecoach - Blue)
 str_StobartRail                 : (Stobart Rail)
 str_StrathclydeOrange			: (Strathclyde - Orange)
-str_StrathclydePTE				: (Strathclyde PTE)
+str_StrathclydeCandC			: (Strathclyde - Carmine and Cream)
 str_SuperSprinter				: (BR Super Sprinter)
 str_Suko                        : (Suko)
 str_SWT							: (South West Trains)

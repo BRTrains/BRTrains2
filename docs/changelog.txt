@@ -1,4 +1,5 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
+- Class 318 (needs coding)
 - Class 20
 - Stephenson's Planet (tweak graphics, add wagons?)
 - GWR 5700/6700/8750 Class (needs coding)
@@ -14,9 +15,10 @@
 - Addef Furness 115 Class
 - Added Class 56
 - Added Class 59
-- Added Class 92
-- Added Class 321 Parcels variant
 - Added Class 66/6 Heavy Haul variant
+- Added Class 92
+- Added Class 320
+- Added Class 321 Parcels variant
 - Added Powerhaul lined livery for Class 70
 - Added Ukraine livery for Class 350
 - Added GWR livery for Class 158 (2 and 3 car)
