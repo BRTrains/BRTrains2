@@ -66,6 +66,16 @@ spriteset (spriteset_BR321_rear_GARenatus, "gfx/EMU/321.png") { 			template_trai
 spriteset (spriteset_BR321_middle_GARenatus, "gfx/EMU/321.png") { 			template_train32px(0, 1196) }
 spriteset (spriteset_BR321_middle_panto_GARenatus, "gfx/EMU/321.png") { 	template_train32px(0, 1222) }
 
+spriteset (spriteset_BR321_front_FCC, "gfx/EMU/321.png") { 				template_train32px(0, 1248) }
+spriteset (spriteset_BR321_rear_FCC, "gfx/EMU/321.png") { 				template_train32px(0, 1274) }
+spriteset (spriteset_BR321_middle_FCC, "gfx/EMU/321.png") { 			template_train32px(0, 1300) }
+spriteset (spriteset_BR321_middle_panto_FCC, "gfx/EMU/321.png") { 		template_train32px(0, 1326) }
+
+spriteset (spriteset_BR321_front_NXEA, "gfx/EMU/321.png") { 			template_train32px(0, 1352) }
+spriteset (spriteset_BR321_rear_NXEA, "gfx/EMU/321.png") { 				template_train32px(0, 1378) }
+spriteset (spriteset_BR321_middle_NXEA, "gfx/EMU/321.png") { 			template_train32px(0, 1404) }
+spriteset (spriteset_BR321_middle_panto_NXEA, "gfx/EMU/321.png") { 		template_train32px(0, 1430) }
+
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_NSE, position_in_articulated_veh % 4) {
 	0: spriteset_BR321_front_NSE;
@@ -144,6 +154,20 @@ switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_GARenatus, position_in_articula
 	3: spriteset_BR321_rear_GARenatus;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_FCC, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_FCC;
+	1: spriteset_BR321_middle_panto_FCC;
+	2: spriteset_BR321_middle_FCC;
+	3: spriteset_BR321_rear_FCC;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_spriteset_NXEA, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_front_NXEA;
+	1: spriteset_BR321_middle_panto_NXEA;
+	2: spriteset_BR321_middle_NXEA;
+	3: spriteset_BR321_rear_NXEA;
+}
+
 switch(FEAT_TRAINS, SELF, switch_BR321_spriteset, cargo_subtype) {
 	0: switch_BR321_spriteset_NSE;
 	1: switch_BR321_spriteset_NS;
@@ -156,6 +180,8 @@ switch(FEAT_TRAINS, SELF, switch_BR321_spriteset, cargo_subtype) {
 	8: switch_BR321_spriteset_ArrivaNorthern;
 	9: switch_BR321_spriteset_GAInterim;
 	10: switch_BR321_spriteset_GARenatus;
+	11: switch_BR321_spriteset_FCC;
+	12: switch_BR321_spriteset_NXEA;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR321_subtype_text, cargo_subtype) {
@@ -170,5 +196,7 @@ switch(FEAT_TRAINS, SELF, switch_BR321_subtype_text, cargo_subtype) {
 	8: return string(str_ArrivaNorthern);
 	9: return string(str_GA_Interim);
 	10: return string(str_GA_Renatus);
+	11: return string(str_FCC);
+	12: return string(str_NXEA);
 	return CB_RESULT_NO_TEXT;
 }
