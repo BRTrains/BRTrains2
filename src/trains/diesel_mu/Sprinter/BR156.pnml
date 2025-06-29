@@ -272,7 +272,7 @@ switch(FEAT_TRAINS,SELF,sw_BR156_cargo_subtype_text,cargo_subtype){
 	1:	return string(str_RegionalGreen);
 	2:	return string(str_RegionalExpress);
 	3:	return string(str_StrathclydeOrange);
-	4:	return string(str_StrathclydePTE);
+	4:	return string(str_StrathclydeCandC);
 	5:	return string(str_ScotRail);
 	6:	return string(str_FirstScotRail);
 	7:	return string(str_Central);
