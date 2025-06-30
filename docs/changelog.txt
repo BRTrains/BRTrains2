@@ -10,7 +10,9 @@
 - GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 - BRT Whisky CovHop (PAV) - Only variant code needed
 
-# v2.14
+# v2.15
+
+# v2.14 (2025-06-30)
 - Added Metropolitan Class G
 - Addef Furness 115 Class
 - Added Class 56

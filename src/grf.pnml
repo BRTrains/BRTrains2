@@ -3,9 +3,9 @@ grf {
 	grfid: "brv2"; // BRTrains v2, based on BRTrains, BROS, and the Modern UK Trains set (addon to BRTrains)
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	// Remove the "2." from the "real" version, eg v2.8 becomes 9
-	// 13 (2.13) released BaNaNaS 	2025-02-10T23:19:56
-	version: 14;
+	// Remove the "2." from the "real" version, eg v2.8 becomes 9	
+	// 14 (2.14) released BaNaNaS 	2025-06-30T18:02:59
+	version: 15;
 	//bump up this number to whatever the "next release" version is when breaking compatibility.
 	// Eg if 8 (2.8) has released and the next version is 9 (2.9) then set it to 9
 	min_compatible_version: 10;
