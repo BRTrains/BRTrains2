@@ -317,7 +317,7 @@ switch(FEAT_TRAINS,SELF,sw_BR158_cargo_subtype_text,cargo_subtype){
 	6:	return string(str_ArrivaTPNS);
 	7:	return string(str_ArrivaWales);
 	8:	return string(str_ArrivaWalesMail);
-	9:	return string(str_FNW);
+	9:	return string(str_FirstNorthWestern);
 	10:	return string(str_FirstScotRail);
 	11:	return string(str_FirstTPE);
 	12:	return string(str_FGW);

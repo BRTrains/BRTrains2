@@ -141,8 +141,8 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR323, extra_callback_info1) {
 switch(FEAT_TRAINS,SELF,sw_BR323_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Regional);
 	1:  return string(str_Centro);
-	2:  return string(str_FNW);
-	3:  return string(str_FNWBarbie);
+	2:  return string(str_FirstNorthWestern);
+	3:  return string(str_FirstNorthWesternBarbie);
 	4:  return string(str_NorthernRail);
 	5:  return string(str_LondonMidland);
 	6:	return string(str_Northern);

@@ -76,7 +76,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR175, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR175_cargo_subtype_text,cargo_subtype){
     0:	return string(str_ArrivaGhost);
-	1:  return string(str_FNW);
+	1:  return string(str_FirstNorthWestern);
 	2:  return string(str_ArrivaWales);
 	3:  return string(str_TfW);
        return CB_RESULT_NO_TEXT;

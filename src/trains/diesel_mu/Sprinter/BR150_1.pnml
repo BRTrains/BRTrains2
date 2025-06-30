@@ -51,7 +51,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_1_cargo_subtype_text,cargo_subtype){
 	3:	return string(str_LondonMidland);
 	4:	return string(str_NWM);
 	5:	return string(str_Central);
-	6:	return string(str_FNW);
+	6:	return string(str_FirstNorthWestern);
 	7:	return string(str_SuperSprinter);
 	8:	return string(str_FGW);
 	9:	return string(str_Silverlink);

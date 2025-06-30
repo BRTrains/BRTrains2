@@ -120,8 +120,8 @@ switch(FEAT_TRAINS,SELF,sw_BR153_cargo_subtype_text,cargo_subtype){
 	1:	return string(str_Central);
 	2:	return string(str_EastAnglia);
 	3:	return string(str_AngliaFestival);
-	4:	return string(str_FNW);
-	5:	return string(str_FNWArriva);
+	4:	return string(str_FirstNorthWestern);
+	5:	return string(str_FirstNorthWesternArriva);
 	6:	return string(str_ArrivaBlue);
 	7:	return string(str_ArrivaCream);
 	8:	return string(str_ArrivaHeart);

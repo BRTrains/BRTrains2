@@ -160,7 +160,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_2_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_Central);
 	3:	return string(str_CentralAnglia);
 	4:	return string(str_EastAnglia);
-	5:	return string(str_FNW);
+	5:	return string(str_FirstNorthWestern);
 	6:	return string(str_NorthernRail);
 	7:	return string(str_FGW);
 	8:	return string(str_NWM);
