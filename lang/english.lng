@@ -267,6 +267,8 @@ STR_BR320_X                             :BR Class 320/1/3/4 (3-Car)
 STR_BR321                              :BR Class 321 "Dusty Bin" (4-Car)
 STR_BR321_Freight                      :BR Class 321 Parcels Variant (4-Car)
 
+STR_BR322                              :BR Class 322 (4-Car)
+
 STR_BR_345_7CAR                         :BR Class 345 "Aventra" (7-Car)
 STR_BR_345_9CAR                         :BR Class 345 "Aventra" (9-Car)
 
@@ -345,9 +347,10 @@ STR_DSC_BR_231                         :Type: {RED}Diesel{BLACK} {PURPLE}Multipl
 
 STR_DSC_BR320_0                        :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Strathclyde PTE Orange, Strathclyde PTE Carmine & Cream, ScotRail Saltire
 STR_DSC_BR320_X                        :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Strathclyde PTE Carmine & Cream, ScotRail Saltire
-
 STR_DSC_BR321                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}NSE, Dutch Railways, Greater Anglia, Silverlink, London Midland, WYPTE, London Overground, First Great Eastern, Arriva Trains Northern, Greater Anglia Interim, Greater Anglia Renatus, First Capital Connect, National Express East Anglia
 STR_DSC_BR321_Freight                 :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Parcels/Freight{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD} Swift Express
+STR_DSC_BR322                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD} Stansted Express Gold, Stansted Express Green, Greater Anglia (Interim), First Scotrail, First North Western, Northern Rail (Interim) x2
+
 STR_DSC_BR_331                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_345                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London
 STR_DSC_BR_458_45                       :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Express Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}South Western Trains, South Western Railway
@@ -1875,13 +1878,13 @@ str_FGWDL						: (First Great Western - Dynamic Lines)
 str_fcc							: (First Capital Connect - Urban Lights)
 str_FirstGroup					: (First Group)
 str_FirstLink					: (First Link)
-str_FirstScotRail			    : (First ScotRail)	
+str_FirstScotRail			    : (First ScotRail)
 str_FirstTPE                    : (First Transpennine Express)
 str_FirstTPEGeometric   		: (First TransPennine - Geometric)
-str_FNW							: (First North Western)
+str_FirstNorthWestern			: (First North Western)
 str_FirstDynamic                : (First Transpennine - Dynamic Lines)
-str_FNWBarbie					: (First North Western - Barbie)
-str_FNWArriva					: (FNW/Arriva Hybrid)
+str_FirstNorthWesternBarbie		: (First North Western - Barbie)
+str_FirstNorthWesternArriva		: (FNW/Arriva Hybrid)
 str_FosterYeomanGrey            : (Foster Yeoman - Grey)
 str_FosterYeomanBlue            : (Foster Yeoman - Blue)
 str_Fragonset					: (Fragonset)
@@ -2004,6 +2007,8 @@ str_NorthernExp1				: (Northern Rail - Experimental 1)
 str_NorthernExp2				: (Northern Rail - Experimental 2)
 str_NorthernPorterbrook			: (Northern Rail - Porterbrook)
 str_NorthernRail				: (Northern Rail)
+str_NorthernRail_Interim1       : (Northern Rail - Interim 1)
+str_NorthernRail_Interim2       : (Northern Rail - Interim 2)
 str_NorthernRailMetro			: (Northern Rail - Metro)
 str_NorthernSpirit				: (Northern Spirit)
 str_NorthWesternTrains          : (North Western Trains)
@@ -2076,6 +2081,8 @@ str_Southeastern_yellow			: (Southeastern - Yellow)
 str_Southeastern_yellow_stripe	: (Southeastern - Yellow with Stripe)
 str_Southern					: (Southern)
 str_SRBlack                     : (Southern Railway - Black)
+str_StanstedExpressGold         : (Stansted Express - Gold)
+str_StanstedExpressGreen        : (Stansted Express - Green)
 str_Stagecoach                  : (Stagecoach)
 str_StagecoachWhite             : (Stagecoach - White)
 str_StagecoachBlue              : (Stagecoach - Blue)

@@ -1,0 +1,109 @@
+spriteset (spriteset_BR322_purchase, "gfx/EMU/322.png") {
+	template_purchase(200, 0)
+}
+
+spriteset (spriteset_BR322_front_Stansted, "gfx/EMU/322.png") { 			template_train32px(0, 0) }
+spriteset (spriteset_BR322_rear_Stansted, "gfx/EMU/322.png") { 			template_train32px(0, 26) }
+spriteset (spriteset_BR322_middle_Stansted, "gfx/EMU/322.png") { 		template_train32px(0, 52) }
+spriteset (spriteset_BR322_middle_panto_Stansted, "gfx/EMU/322.png") { 	template_train32px(0, 78) }
+
+spriteset (spriteset_BR322_front_Stansted2, "gfx/EMU/322.png") { 			template_train32px(0, 104) }
+spriteset (spriteset_BR322_rear_Stansted2, "gfx/EMU/322.png") { 			template_train32px(0, 130) }
+spriteset (spriteset_BR322_middle_Stansted2, "gfx/EMU/322.png") { 			template_train32px(0, 156) }
+spriteset (spriteset_BR322_middle_panto_Stansted2, "gfx/EMU/322.png") { 	template_train32px(0, 182) }
+
+spriteset (spriteset_BR322_front_GreaterAnglia, "gfx/EMU/322.png") { 			template_train32px(0, 208) }
+spriteset (spriteset_BR322_rear_GreaterAnglia, "gfx/EMU/322.png") { 			template_train32px(0, 234) }
+spriteset (spriteset_BR322_middle_GreaterAnglia, "gfx/EMU/322.png") {	 		template_train32px(0, 260) }
+spriteset (spriteset_BR322_middle_panto_GreaterAnglia, "gfx/EMU/322.png") { 	template_train32px(0, 286) }
+
+spriteset (spriteset_BR322_front_First_ScotRail, "gfx/EMU/322.png") { 			template_train32px(0, 312) }
+spriteset (spriteset_BR322_rear_First_ScotRail, "gfx/EMU/322.png") { 			template_train32px(0, 338) }
+spriteset (spriteset_BR322_middle_First_ScotRail, "gfx/EMU/322.png") { 			template_train32px(0, 364) }
+spriteset (spriteset_BR322_middle_panto_First_ScotRail, "gfx/EMU/322.png") { 	template_train32px(0, 390) }
+
+spriteset (spriteset_BR322_front_First_NW, "gfx/EMU/322.png") { 			template_train32px(0, 416) }
+spriteset (spriteset_BR322_rear_First_NW, "gfx/EMU/322.png") { 			template_train32px(0, 442) }
+spriteset (spriteset_BR322_middle_First_NW, "gfx/EMU/322.png") { 			template_train32px(0, 468) }
+spriteset (spriteset_BR322_middle_panto_First_NW, "gfx/EMU/322.png") { 	template_train32px(0, 494) }
+
+spriteset (spriteset_BR322_front_Northern, "gfx/EMU/322.png") { 			template_train32px(0, 520) }
+spriteset (spriteset_BR322_rear_Northern, "gfx/EMU/322.png") { 			template_train32px(0, 546) }
+spriteset (spriteset_BR322_middle_Northern, "gfx/EMU/322.png") { 			template_train32px(0, 572) }
+spriteset (spriteset_BR322_middle_panto_Northern, "gfx/EMU/322.png") { 	template_train32px(0, 598) }
+
+spriteset (spriteset_BR322_front_Northern2, "gfx/EMU/322.png") { 			template_train32px(0, 624) }
+spriteset (spriteset_BR322_rear_Northern2, "gfx/EMU/322.png") { 			template_train32px(0, 650) }
+spriteset (spriteset_BR322_middle_Northern2, "gfx/EMU/322.png") { 			template_train32px(0, 676) }
+spriteset (spriteset_BR322_middle_panto_Northern2, "gfx/EMU/322.png") { 	template_train32px(0, 702) }
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, switch_BR322_spriteset_Stansted, position_in_articulated_veh % 4) {
+	0: spriteset_BR322_front_Stansted;
+	1: spriteset_BR322_middle_panto_Stansted;
+	2: spriteset_BR322_middle_Stansted;
+	3: spriteset_BR322_rear_Stansted;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR322_spriteset_Stansted2, position_in_articulated_veh % 4) {
+	0: spriteset_BR322_front_Stansted2;
+	1: spriteset_BR322_middle_panto_Stansted2;
+	2: spriteset_BR322_middle_Stansted2;
+	3: spriteset_BR322_rear_Stansted2;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR322_spriteset_GreaterAnglia, position_in_articulated_veh % 4) {
+	0: spriteset_BR322_front_GreaterAnglia;
+	1: spriteset_BR322_middle_panto_GreaterAnglia;
+	2: spriteset_BR322_middle_GreaterAnglia;
+	3: spriteset_BR322_rear_GreaterAnglia;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR322_spriteset_First_ScotRail, position_in_articulated_veh % 4) {
+	0: spriteset_BR322_front_First_ScotRail;
+	1: spriteset_BR322_middle_panto_First_ScotRail;
+	2: spriteset_BR322_middle_First_ScotRail;
+	3: spriteset_BR322_rear_First_ScotRail;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR322_spriteset_First_NW, position_in_articulated_veh % 4) {
+	0: spriteset_BR322_front_First_NW;
+	1: spriteset_BR322_middle_panto_First_NW;
+	2: spriteset_BR322_middle_First_NW;
+	3: spriteset_BR322_rear_First_NW;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR322_spriteset_Northern, position_in_articulated_veh % 4) {
+	0: spriteset_BR322_front_Northern;
+	1: spriteset_BR322_middle_panto_Northern;
+	2: spriteset_BR322_middle_Northern;
+	3: spriteset_BR322_rear_Northern;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR322_spriteset_Northern2, position_in_articulated_veh % 4) {
+	0: spriteset_BR322_front_Northern2;
+	1: spriteset_BR322_middle_panto_Northern2;
+	2: spriteset_BR322_middle_Northern2;
+	3: spriteset_BR322_rear_Northern2;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR322_spriteset, cargo_subtype) {
+	0: switch_BR322_spriteset_Stansted;
+	1: switch_BR322_spriteset_Stansted2;
+	2: switch_BR322_spriteset_GreaterAnglia;
+	3: switch_BR322_spriteset_First_ScotRail;
+	4: switch_BR322_spriteset_First_NW;
+	5: switch_BR322_spriteset_Northern;
+	6: switch_BR322_spriteset_Northern2;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR322_subtype_text, cargo_subtype) {
+	0: return string(str_StanstedExpressGold);
+	1: return string(str_StanstedExpressGreen);
+	2: return string(str_GreaterAnglia);
+	3: return string(str_FirstScotRail);
+	4: return string(str_FirstNorthWestern);
+	5: return string(str_NorthernRail_Interim1);
+	6: return string(str_NorthernRail_Interim2);
+	return CB_RESULT_NO_TEXT;
+}
