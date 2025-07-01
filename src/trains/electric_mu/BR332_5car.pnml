@@ -1,0 +1,48 @@
+item (FEAT_TRAINS, item_BR332_5car, 731) {
+	property {
+		name: 							string(STR_NAME_BR332_5car);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1997,4,1);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					30;
+		cost_factor:					65;
+		running_cost_factor:			40;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							109 mph;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1900 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							173 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.06;
+		air_drag_coefficient:			0.06;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR332_usage),string(str_BR332_eos),string(str_BR332_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR332_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR332_5car;
+	default: 							sw_BR332_5car;
+	purchase:							spriteset_BR332_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+	cargo_capacity: return(203/4 * param_pax);
+		 cost_factor:	return(GetAdjustedCost(65));
+	running_cost_factor: return(GetAdjustedCost(40));
+}
+}

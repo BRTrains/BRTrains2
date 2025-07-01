@@ -11,6 +11,7 @@
 - BRT Whisky CovHop (PAV) - Only variant code needed
 
 # v2.15
+- Added Class 322
 - Reworked Class 333
 - Added Northern Spirit livery for Class 333
 

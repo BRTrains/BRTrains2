@@ -1076,6 +1076,12 @@ str_BR325_usage					:Express Mail
 str_BR325_eos					:---
 str_BR325_liveries				:Royal Mail
 
+STR_NAME_BR332_4car				:BR Class 332 (4-car)
+STR_NAME_BR332_5car				:BR Class 332 (5-car)
+str_BR332_usage					:Suburban Passenger
+str_BR332_eos					:---
+str_BR332_liveries				:Heathrow Express
+
 STR_NAME_BR333					:BR Class 333 (4-car)
 str_BR333_usage					:Suburban Passenger
 str_BR333_eos					:---
@@ -1947,6 +1953,7 @@ str_Heidelberg                  : (Heidelberg)
 str_Hitachi						: (Hitachi)
 str_HitachiWhite				: (Hitachi - White)
 str_HeathrowExpressPurple       : (Heathrow Express - Grey and Purple)
+str_HeathrowExpressSilver       : (Heathrow Express - Silver)
 str_HogwartsExpress             : (Hogwarts Express)
 str_HT							: (Hull Trains)
 str_Inter7City                  : (ScotRail - Inter7City)

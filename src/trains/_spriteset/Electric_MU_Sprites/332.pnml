@@ -1,0 +1,45 @@
+spriteset(spriteset_BR332_Purchase, "gfx/EMU/332.png") {
+	template_purchase(200, 0)
+}
+spriteset (spriteset_BR332_front_HeathrowExpress, "gfx/EMU/332.png") { 					template_train32px(0, 0) }
+spriteset (spriteset_BR332_rear_HeathrowExpress, "gfx/EMU/332.png") { 					template_train32px(0, 26) }
+spriteset (spriteset_BR332_middle_HeathrowExpress, "gfx/EMU/332.png") { 				template_train32px(0, 52) }
+spriteset (spriteset_BR332_middle_panto_HeathrowExpress, "gfx/EMU/332.png") { 			template_train32px(0, 78) }
+
+switch(FEAT_TRAINS,SELF,sw_BR332_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_HeathrowExpressSilver);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR332_4car_spriteset_HeathrowExpress, position_in_articulated_veh % 4) {
+	0: spriteset_BR332_front_HeathrowExpress;
+	1: spriteset_BR332_middle_panto_HeathrowExpress;
+	2: spriteset_BR332_middle_HeathrowExpress;
+	3: spriteset_BR332_rear_HeathrowExpress;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR332_4car, cargo_subtype) {
+	0: switch_BR332_4car_spriteset_HeathrowExpress;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR332_4car, extra_callback_info1) {
+	1..3: return item_BR332_4car;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR332_5car_spriteset_HeathrowExpress, position_in_articulated_veh % 5) {
+	0: spriteset_BR332_front_HeathrowExpress;
+	1: spriteset_BR332_middle_HeathrowExpress;
+	2: spriteset_BR332_middle_panto_HeathrowExpress;
+	3: spriteset_BR332_middle_HeathrowExpress;
+	4: spriteset_BR332_rear_HeathrowExpress;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR332_5car, cargo_subtype) {
+	0: switch_BR332_5car_spriteset_HeathrowExpress;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR332_5car, extra_callback_info1) {
+	1..4: return item_BR332_5car;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
