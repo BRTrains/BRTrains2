@@ -1,0 +1,80 @@
+spriteset (spriteset_BR<<CLASS>>_purchase, "gfx/EMU/<<CLASS>>.png") {
+	template_purchase(0, 0)
+}
+
+spriteset (spriteset_BR<<CLASS>>_front_NSE, "gfx/<<TYPE>>/<<CLASS>>.png") { 			template_train<<PXLEN>>px(0, <<Y>>) }
+spriteset (spriteset_BR<<CLASS>>_rear_NSE, "gfx/<<TYPE>>/<<CLASS>>.png") { 			template_train<<PXLEN>>px(0, <<Y>>) }
+spriteset (spriteset_BR<<CLASS>>_middle_NSE, "gfx/<<TYPE>>/<<CLASS>>.png") { 		    template_train<<PXLEN>>px(0, <<Y>>) }
+spriteset (spriteset_BR<<CLASS>>_middle_panto_NSE, "gfx/<<TYPE>>/<<CLASS>>.png") { 	template_train<<PXLEN>>px(0, <<Y>>) }
+
+switch(FEAT_TRAINS, SELF, switch_BR<<CLASS>>_spriteset_<<LIVERY1>>, position_in_articulated_veh % <<TRAINLEN>>) {
+	0: spriteset_BR<<CLASS>>_front_<<LIVERY1>>;
+	1: spriteset_BR<<CLASS>>_middle_panto_<<LIVERY1>>;
+	2: spriteset_BR<<CLASS>>_middle_<<LIVERY1>>;
+	3: spriteset_BR<<CLASS>>_rear_<<LIVERY1>>;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR<<CLASS>>, cargo_subtype) {
+	0: switch_BR<<CLASS>>_spriteset_<<LIVERY1>>;
+	1: switch_BR<<CLASS>>_spriteset_<<LIVERY2>>;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR<<CLASS>>_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_<<LIVERY1>>);
+	1:	return string(str_<<LIVERY2>>);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR<<CLASS>>, extra_callback_info1) {
+	1..3: return item_BR<<CLASS>>;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+item (FEAT_TRAINS, item_BR<<CLASS>>, <<SPRITEID>>) {
+	property {
+		name: 							string(STR_NAME_BR<<CLASS>>);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(<<YEAR>>,<<MONTH>>,<<DAY>>);
+		model_life:						<<MODELLIFE>>;
+		retire_early:					1;
+		vehicle_life:					<<VEHICLELIFE>>;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					30;
+		cost_factor:					<<COSTFACTOR>>;
+		running_cost_factor:			<<RUNNINGCOSTFACTOR>>;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							<<SPEED>> mph;
+		refit_cost:						0;
+		track_type:						<<RAILTYPE>>>>;
+		ai_special_flag:				AI_FLAG_PASSENGER;
+		power:							<<POWER>>>> hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					<<CARGOCAPACITY>>;
+		weight:							<<WEIGHT>> ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	<<TECOEFFICIENT>>;
+		air_drag_coefficient:			0.06;
+		length:							<<LENGTH>>;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR<<CLASS>>_usage),string(str_BR<<CLASS>>_eos),string(str_BR<<CLASS>>_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR<<CLASS>>_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR<<CLASS>>;
+	default: 							sw_BR<<CLASS>>;
+	purchase:							spriteset_BR<<CLASS>>_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_networker_sound;
+	cargo_capacity: return(<<CARGOCAPACITY>>>>/4 * param_pax);
+	cost_factor:	return(GetAdjustedCost(<<PURCHASECOSTFACTOR>>));
+	running_cost_factor: return(GetAdjustedCost(<<RUNNINGCOSTFACTOR>>));
+}
+}
