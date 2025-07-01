@@ -22,8 +22,8 @@ switch(FEAT_TRAINS,SELF,switch_BR99_cargo_subtype_text,cargo_subtype){
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR99_power, current_railtype) {
-	ELRL: return 6000;
-	return 2100;
+	ELRL: return 8000;
+	return 2400;
 }
 
 
