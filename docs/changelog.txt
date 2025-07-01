@@ -11,10 +11,12 @@
 - BRT Whisky CovHop (PAV) - Only variant code needed
 
 # v2.15
+- Reworked Class 333
+- Added Northern Spirit livery for Class 333
 
 # v2.14 (2025-06-30)
 - Added Metropolitan Class G
-- Addef Furness 115 Class
+- Added Furness 115 Class
 - Added Class 56
 - Added Class 59
 - Added Class 66/6 Heavy Haul variant

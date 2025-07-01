@@ -1,0 +1,17 @@
+spriteset(spriteset_BR333_Purchase, "gfx/EMU/333.png") {
+	template_purchase(200, 0)
+}
+spriteset (spriteset_BR333_front_WYPTE, "gfx/EMU/333.png") { 					template_train32px(0, 0) }
+spriteset (spriteset_BR333_rear_WYPTE, "gfx/EMU/333.png") { 					template_train32px(0, 26) }
+spriteset (spriteset_BR333_middle_WYPTE, "gfx/EMU/333.png") { 					template_train32px(0, 52) }
+spriteset (spriteset_BR333_middle_panto_WYPTE, "gfx/EMU/333.png") { 			template_train32px(0, 78) }
+
+spriteset (spriteset_BR333_front_NorthernSpirit, "gfx/EMU/333.png") { 			template_train32px(0, 104) }
+spriteset (spriteset_BR333_rear_NorthernSpirit, "gfx/EMU/333.png") { 			template_train32px(0, 130) }
+spriteset (spriteset_BR333_middle_NorthernSpirit, "gfx/EMU/333.png") { 			template_train32px(0, 156) }
+spriteset (spriteset_BR333_middle_panto_NorthernSpirit, "gfx/EMU/333.png") { 	template_train32px(0, 182) }
+
+spriteset (spriteset_BR333_front_Northern, "gfx/EMU/333.png") { 				template_train32px(0, 208) }
+spriteset (spriteset_BR333_rear_Northern, "gfx/EMU/333.png") { 					template_train32px(0, 234) }
+spriteset (spriteset_BR333_middle_Northern, "gfx/EMU/333.png") { 				template_train32px(0, 260) }
+spriteset (spriteset_BR333_middle_panto_Northern, "gfx/EMU/333.png") { 			template_train32px(0, 286) }
