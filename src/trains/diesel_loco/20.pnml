@@ -44,21 +44,75 @@ spriteset(spriteset_BR20_reversed_BRRailfreightGrey, "gfx/Diesel/20.png") {
 	template_train20px_reversed(0, 143)
 }
 
+spriteset(spriteset_BR20_DRS, "gfx/Diesel/20.png") {
+	template_train20px(0, 169)
+}
+spriteset(spriteset_BR20_reversed_DRS, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 169)
+}
+
+spriteset(spriteset_BR20_LondonUnderground, "gfx/Diesel/20.png") {
+	template_train20px(0, 195)
+}
+spriteset(spriteset_BR20_reversed_LondonUnderground, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 195)
+}
+
+spriteset(spriteset_BR20_DBCargo, "gfx/Diesel/20.png") {
+	template_train20px(0, 221)
+}
+spriteset(spriteset_BR20_reversed_DBCargo, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 221)
+}
+
+spriteset(spriteset_BR20_BalfourBeatty, "gfx/Diesel/20.png") {
+	template_train20px(0, 247)
+}
+spriteset(spriteset_BR20_reversed_BalfourBeatty, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 247)
+}
+
+spriteset(spriteset_BR20_NetworkRail, "gfx/Diesel/20.png") {
+	template_train20px(0, 273)
+}
+spriteset(spriteset_BR20_reversed_NetworkRail, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 273)
+}
+
+spriteset(spriteset_BR20_LondonTransport, "gfx/Diesel/20.png") {
+	template_train20px(0, 299)
+}
+spriteset(spriteset_BR20_reversed_LondonTransport, "gfx/Diesel/20.png") {
+	template_train20px_reversed(0, 299)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR20_normal,cargo_subtype){
-	0: 	spriteset_BR20_BRRailfreightGrey;
-	1: 	spriteset_BR20_BRBlue;
-	2: 	spriteset_BR20_GBRf;
-	3: 	spriteset_BR20_GBRf2Tone;
-	4: 	spriteset_BR20_BR2Tone;
+	0: 	spriteset_BR20_BRBlue;
+	1: 	spriteset_BR20_BR2Tone;
+	2: 	spriteset_BR20_BRRailfreightGrey;
+	3: 	spriteset_BR20_GBRf;
+	4: 	spriteset_BR20_GBRf2Tone;
 	5: 	spriteset_BR20_EWS;
+	6: 	spriteset_BR20_DRS;
+	7: 	spriteset_BR20_LondonUnderground;
+	8: 	spriteset_BR20_DBCargo;
+	9: 	spriteset_BR20_BalfourBeatty;
+	10:	spriteset_BR20_NetworkRail;
+	11:	spriteset_BR20_LondonTransport;
 }
 switch(FEAT_TRAINS,SELF, sw_BR20_reversed,cargo_subtype){
-	0:  spriteset_BR20_reversed_BRRailfreightGrey;
-	1: 	spriteset_BR20_reversed_BRBlue;
-	2: 	spriteset_BR20_reversed_GBRf;
-	3: 	spriteset_BR20_reversed_GBRf2Tone;
-	4: 	spriteset_BR20_reversed_BR2Tone;
+	0: 	spriteset_BR20_reversed_BRBlue;
+	1: 	spriteset_BR20_reversed_BR2Tone;
+	2: 	spriteset_BR20_reversed_BRRailfreightGrey;
+	3: 	spriteset_BR20_reversed_GBRf;
+	4: 	spriteset_BR20_reversed_GBRf2Tone;
 	5: 	spriteset_BR20_reversed_EWS;
+	6: 	spriteset_BR20_reversed_DRS;
+	7: 	spriteset_BR20_reversed_LondonUnderground;
+	8: 	spriteset_BR20_reversed_DBCargo;
+	9: 	spriteset_BR20_reversed_BalfourBeatty;
+	10:	spriteset_BR20_reversed_NetworkRail;
+	11:	spriteset_BR20_reversed_LondonTransport;
 }
 
 // Automatically flip second vehicle
@@ -68,12 +122,18 @@ switch(FEAT_TRAINS,SELF, sw_BR20, position_in_consist % 2){
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR20_cargo_subtype_text,cargo_subtype){
-	0: return string(str_BRRailfreightGrey);
-	1: return string(str_BRBlue);
-	2: return string(str_GBRf);
-	3: return string(str_GBRf2ToneGrey);
-	4: return string(str_BR2ToneGrey);
+	0: return string(str_BRBlue);
+	1: return string(str_BR2ToneGrey);
+	2: return string(str_BRRailfreightGrey);
+	3: return string(str_GBRf);
+	4: return string(str_GBRf2ToneGrey);
 	5: return string(str_EWSRed);
+	6: return string(str_DRS);
+	7: return string(str_DBSchenker);
+	8: return string(str_BalfourBeatty);
+	9: return string(str_LU_TfL);
+	10: return string(str_NetworkRail);
+	11: return string(str_LondonTransport);
        return CB_RESULT_NO_TEXT;
 }
 

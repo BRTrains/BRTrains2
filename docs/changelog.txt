@@ -1,6 +1,5 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Class 318 (needs coding)
-- Class 20
 - Stephenson's Planet (tweak graphics, add wagons?)
 - GWR 5700/6700/8750 Class (needs coding)
 - Conflat A (needs coding)
@@ -12,8 +11,11 @@
 
 # v2.15
 - Added Class 322
+- Reworked Class 20
 - Reworked Class 333
 - Added Northern Spirit livery for Class 333
+- Added a bunch of liveries for Class 20
+- Fixed Class 99 power
 
 # v2.14 (2025-06-30)
 - Added Metropolitan Class G
