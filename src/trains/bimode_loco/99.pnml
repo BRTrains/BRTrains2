@@ -22,8 +22,13 @@ switch(FEAT_TRAINS,SELF,switch_BR99_cargo_subtype_text,cargo_subtype){
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR99_power, current_railtype) {
-	ELRL: return 8000;
+	ELRL: return 8270;
 	return 2400;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR99_speed,param_max_speed){
+	0:	return 160;
+	1:	return 121;
 }
 
 
@@ -56,9 +61,9 @@ item (FEAT_TRAINS, item_BR99, 690) {
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							110 ton;
+		weight:							113 ton;
 		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.4545;
+		tractive_effort_coefficient:	0.451508;
 		air_drag_coefficient:			0.1;
 		length:							8;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
@@ -73,6 +78,7 @@ item (FEAT_TRAINS, item_BR99, 690) {
 	default: 							switch_BR99;
 	purchase:							spriteset_BR99_Purchase;
 	power:								switch_BR99_power;
+	speed:								sw_BR99_speed;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						switch_BR99_sound;
