@@ -108,9 +108,9 @@ switch(FEAT_TRAINS,SELF, sw_BR20_reversed,cargo_subtype){
 	4: 	spriteset_BR20_reversed_GBRf2Tone;
 	5: 	spriteset_BR20_reversed_EWS;
 	6: 	spriteset_BR20_reversed_DRS;
-	7: 	spriteset_BR20_reversed_LondonUnderground;
-	8: 	spriteset_BR20_reversed_DBCargo;
-	9: 	spriteset_BR20_reversed_BalfourBeatty;
+	7: 	spriteset_BR20_reversed_DBCargo;
+	8: 	spriteset_BR20_reversed_BalfourBeatty;
+	9: 	spriteset_BR20_reversed_LondonUnderground;
 	10:	spriteset_BR20_reversed_NetworkRail;
 	11:	spriteset_BR20_reversed_LondonTransport;
 }
