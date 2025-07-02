@@ -1,0 +1,56 @@
+spriteset(spriteset_BRConflatP, "gfx/Freight/BR_Conflat_P.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BRConflatP_Empty, "gfx/Freight/BR_Conflat_P.png") {
+	template_train16px(0, 13)
+}
+
+spriteset(spriteset_BRConflatP_SmallLeft, "gfx/Freight/BR_Conflat_P.png") {
+	template_train16px(0, 91)
+}
+spriteset(spriteset_BRConflatP_SmallRight, "gfx/Freight/BR_Conflat_P.png") {
+	template_train16px_reversed(0, 91)
+}
+
+spriteset(spriteset_BRConflatP_LargeLeft, "gfx/Freight/BR_Conflat_P.png") {
+	template_train16px(0, 39)
+}
+spriteset(spriteset_BRConflatP_LargeRight, "gfx/Freight/BR_Conflat_P.png") {
+	template_train16px_reversed(0, 39)
+}
+
+spriteset(spriteset_BRConflatP_Full, "gfx/Freight/BR_Conflat_P.png") {
+	template_train16px(0, 65)
+}
+spriteset(spriteset_BRConflatP_Full_reversed, "gfx/Freight/BR_Conflat_P.png") {
+	template_train16px(0, 65)
+}
+
+// When partially full, randomly choose between the four half-full options
+random_switch(FEAT_TRAINS, SELF, sw_BRConflatP_SmallRandom)
+{
+	1:	spriteset_BRConflatP_SmallLeft;
+	1:	spriteset_BRConflatP_SmallRight;
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_BRConflatP_LargeRandom)
+{
+	1:	spriteset_BRConflatP_LargeLeft;
+	1:	spriteset_BRConflatP_LargeRight;
+}
+
+// Randomly choose a full orientation
+random_switch(FEAT_TRAINS, SELF, sw_BRConflatP_FullRandom)
+{
+	1:	spriteset_BRConflatP_Full;
+	1:	spriteset_BRConflatP_Full_reversed;
+}
+
+// Third layer, switch based on how full the wagon is
+switch(FEAT_TRAINS,SELF, sw_BRConflatP,cargo_count){
+	0 .. 5: spriteset_BRConflatP_Empty;
+    5 .. 40: sw_BRConflatP_SmallRandom;
+	41 .. 80: sw_BRConflatP_LargeRandom;
+	sw_BRConflatP_FullRandom;
+}

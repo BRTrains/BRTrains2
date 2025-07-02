@@ -1,0 +1,32 @@
+item (FEAT_TRAINS, item_BRConflatA, 732) {
+	property {
+		name: 							string(STR_NAME_BRConflatA);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1950,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED);		
+		default_cargo_type:				GOOD;
+		loading_speed:					25;
+		cost_factor:					28;
+		running_cost_factor:			8;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		cargo_capacity:					25;
+		weight:							10 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.07;
+		length:							3;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRConflat_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	default: 							sw_BRConflatA;
+	purchase:							spriteset_BRConflatA;
+	colour_mapping: 					return PALETTE_CC_FIRST;	
+	cost_factor:	return(GetAdjustedCost(28));
+	running_cost_factor: return(GetAdjustedCost(8));
+}
+}

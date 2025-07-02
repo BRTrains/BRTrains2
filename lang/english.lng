@@ -1453,6 +1453,13 @@ STR_NAME_BRVKA					:BR VKA Wagon
 str_BRVKA_usage					:Goods, Misc. Cargo
 str_BRVKA_liveries				:BR Grey, BR Grey (Speedlink), BR Grey (Exhibition)
 
+
+STR_NAME_BRConflatA  			:BR Conflat A Container Wagon
+STR_NAME_BRConflatP  			:BR Conflat A Container Wagon
+str_BRConflat_usage 			:Misc. Cargo
+str_BRConflat_eos				:---
+str_BRConflat_liveries	    	:---
+
 STR_NAME_BRContainer			:BR Container Flatbed Wagon
 str_BRContainer_usage			:Misc. Cargo
 str_BRContainer_eos				:---
