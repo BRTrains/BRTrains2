@@ -4,18 +4,19 @@
 - GWR 5700/6700/8750 Class (needs coding)
 - GWR Great Bear and Hall class rework
 - Class 69
-- GWR Dean 25ft 4 Compartment Second Class (SY), Diagram S1/LA9N, Built 1871, seats 32
 - BRT Whisky CovHop (PAV) - Only variant code needed
 
 # v2.15
 - Added Class 322
+- Added Class 799
 - Added BR Conflat "A" wagon
 - Added BR Conflat "P" wagon
+- Added GWR Dean 25ft 4 Compartment Second Class (SY)
 - Reworked Class 20
 - Reworked Class 333
 - Added Northern Spirit livery for Class 333
 - Added a bunch of liveries for Class 20
-- Fixed Class 99 power
+- Amended Class 99 power, service speed, weight, TE for real world values
 - Fixed 455 BR Blue PRM livery bug
 
 # v2.14 (2025-06-30)

@@ -1672,6 +1672,10 @@ str_LMS_StanierP3_50BG_liveries		:LMS Red
 STR_NAME_GCR_Robinson_50_CLSO       :GCR Robinson 50 ft Semi-Corridor Lavatory Composite
 str_GCR_Robinson_50_CLSO_liveries   :GCR Mahogany
 
+
+STR_NAME_GWR_254_Comp_SY            :GWR Dean 25ft 4 Compartment Second Class (SY)
+str_GWR_254_Comp_SY_liveries		:GWR Cream + Oak
+
 STR_NAME_LNERTK					:LNER Gresley Coach (Third Corridor)
 str_LNERTK_liveries				:GNR/LNER Teak, BR Maroon, BR Carmine and Cream
 
@@ -1956,6 +1960,7 @@ str_gtrp						: (Govia Thameslink - Pink)
 str_GTRPride					: (Govia Thameslink - Pride)
 str_Gulf                        : (Gulf)
 str_GNRGreen					: (GNR - Green)
+str_GWRCreamOak                 : (GWR - Cream and Oak)
 str_GWRGreen					: (GWR - Green)
 str_GWRGreenChrome				: (GWR - Green & Chrome)
 str_GWRPride                    : (GWR - Pride)
