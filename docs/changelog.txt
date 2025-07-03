@@ -4,7 +4,6 @@
 - GWR 5700/6700/8750 Class (needs coding)
 - GWR Great Bear and Hall class rework
 - Class 69
-- BRT Whisky CovHop (PAV) - Only variant code needed
 
 # v2.15
 - Added Class 322
@@ -18,6 +17,7 @@
 - Added a bunch of liveries for Class 20
 - Amended Class 99 power, service speed, weight, TE for real world values
 - Fixed 455 BR Blue PRM livery bug
+- Fixed 66/6 position in purchase list
 
 # v2.14 (2025-06-30)
 - Added Metropolitan Class G
