@@ -176,7 +176,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150,cargo_subtype){
 	3:	spriteset_BR150a_LondonMidland;
 	4:	spriteset_BR150a_FGW;
 	5:	spriteset_BR150a_Central;
-	6:	spriteset_BR150a_Northern;
+	6 .. 7:	spriteset_BR150a_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR150b,cargo_subtype){
@@ -186,7 +186,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150b,cargo_subtype){
 	3:	spriteset_BR150b_LondonMidland;
 	4:	spriteset_BR150b_FGW;
 	5:	spriteset_BR150b_Central;
-	6:	spriteset_BR150b_Northern;
+	6 .. 7:	spriteset_BR150b_Northern;
 }
 
 // Northern has weird consists made up of 3 cab cars
@@ -203,7 +203,8 @@ switch(FEAT_TRAINS,SELF, sw_BR150c,cargo_subtype){
 	3:	spriteset_BR150c_LondonMidland;
 	4:	spriteset_BR150c_FGW;
 	5:	spriteset_BR150c_Central;
-	6:	sw_BR150_0_NorthernNonsense;
+	6:  spriteset_BR150c_Northern;
+	7:	sw_BR150_0_NorthernNonsense;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR150, extra_callback_info1) {
@@ -220,6 +221,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_cargo_subtype_text,cargo_subtype){
 	4:	return string(str_FGW);
 	5:	return string(str_Central);	
 	6:  return string(str_Northern);
+	7:  return string(str_NorthernCentreCab);
        return CB_RESULT_NO_TEXT;
 }
 

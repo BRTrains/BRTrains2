@@ -61,7 +61,7 @@ switch(FEAT_TRAINS,SELF, sw_BR158_3,cargo_subtype){
 	7:	spriteset_BR158a_NSE;
 	8:	spriteset_BR158a_SWT;
 	9:	spriteset_BR158a_Northern;
-	10:	spriteset_BR158a_GWR;
+	10 .. 11:	spriteset_BR158a_GWR;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR158b_3,cargo_subtype){
@@ -75,7 +75,14 @@ switch(FEAT_TRAINS,SELF, sw_BR158b_3,cargo_subtype){
 	7:	spriteset_BR158b_NSE;
 	8:	spriteset_BR158b_SWT;
 	9:	spriteset_BR158b_Northern;
-	10:	spriteset_BR158b_GWR;
+	10  .. 11:	spriteset_BR158b_GWR;
+}
+
+// GWR has weird consists made up of 3 cab cars
+random_switch(FEAT_TRAINS, SELF, sw_BR158_GWRNonsense)
+{
+	1:	spriteset_BR158c_GWR; // 1 unit is actually 3-car
+	4:	spriteset_BR158b_GWR; // 4 other GWR 158 units have a driving car inserted in the middle
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR158c,cargo_subtype){
@@ -90,6 +97,7 @@ switch(FEAT_TRAINS,SELF, sw_BR158c,cargo_subtype){
 	8:	spriteset_BR158c_SWT;
 	9:	spriteset_BR158c_Northern;
 	10:	spriteset_BR158c_GWR;
+	11: sw_BR158_GWRNonsense;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR158_3, extra_callback_info1) {
@@ -110,6 +118,7 @@ switch(FEAT_TRAINS,SELF,sw_BR158_3_cargo_subtype_text,cargo_subtype){
 	8:	return string(str_SWT);
 	9:	return string(str_Northern);
 	10:	return string(str_GWRGreen);
+	11: return string(str_GWRGreenCentreCab);
        return CB_RESULT_NO_TEXT;
 }
 

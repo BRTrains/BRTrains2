@@ -15,6 +15,8 @@
 - Reworked Class 323
 - Reworked Class 333
 - Added Northern livery for Class 150/0 and /2
+- Added Northern's weird "3 cab car" variant of the Class 150
+- Added GWR's weird "3 cab car" variant of the Class 158
 - Added Northern Spirit livery for Class 333
 - Added PRM-compliant Centro livery for Class 323
 - Added a bunch of liveries for Class 20
