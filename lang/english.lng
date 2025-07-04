@@ -1069,7 +1069,7 @@ str_BR319_liveries				:Network SouthEast, Network SouthEast Grey, BR Thameslink,
 STR_NAME_BR323					:BR Class 323 (3-car)
 str_BR323_usage					:Suburban Passenger
 str_BR323_eos					:---
-str_BR323_liveries				:Regional Railways, Centro, First North Western, First North Western - Barbie, Northern, London Midland
+str_BR323_liveries				:Regional Railways, Centro, First North Western, First North Western - Barbie, Northern, London Midland, WMR PRM-compliant Centro
 
 STR_NAME_BR325					:BR Class 325 (4-car)
 str_BR325_usage					:Express Mail
@@ -2168,6 +2168,7 @@ str_WessexYork                  : (Wessex Trains - York)
 str_WestCoast					: (West Coast Railway Company)
 str_WestMidlandsMetro           : (West Midlands Metro)
 str_WMR                         : (West Midlands Railway)
+str_WMRCentro                    : (WMR - PRM Compliant Centro)
 str_Wrexham						: (Wrexham & Shropshire)
 str_WYPTEMetro					: (WYPTE Metro)
 str_WYPTEVerona                 : (WYPTE Verona - Green and Cream)

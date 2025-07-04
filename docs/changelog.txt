@@ -12,8 +12,10 @@
 - Added BR Conflat "P" wagon
 - Added GWR Dean 25ft 4 Compartment Second Class (SY)
 - Reworked Class 20
+- Reworked Class 323
 - Reworked Class 333
 - Added Northern Spirit livery for Class 333
+- Added PRM-compliant Centro livery for Class 323
 - Added a bunch of liveries for Class 20
 - Amended Class 99 power, service speed, weight, TE for real world values
 - Fixed 455 BR Blue PRM livery bug
