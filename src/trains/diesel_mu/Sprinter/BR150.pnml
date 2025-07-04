@@ -66,6 +66,10 @@ spriteset(spriteset_BR150a_LNWR, "gfx/BR150_1a.png") {
 	template_train32px_old(0, 363)
 }
 
+spriteset(spriteset_BR150a_Northern, "gfx/BR150_1a.png") {
+	template_train32px_old(0, 388)
+}
+
 spriteset(spriteset_BR150b_BRPrototype, "gfx/BR150_1b.png") {
 	template_train32px_old(0, 13)
 }
@@ -130,6 +134,10 @@ spriteset(spriteset_BR150b_LNWR, "gfx/BR150_1b.png") {
 	template_train32px_old(0, 363)
 }
 
+spriteset(spriteset_BR150b_Northern, "gfx/BR150_1b.png") {
+	template_train32px_old(0, 388)
+}
+
 spriteset(spriteset_BR150c_BRPrototype, "gfx/BR150_1c.png") {
 	template_train32px_old(0, 13)
 }
@@ -154,6 +162,10 @@ spriteset(spriteset_BR150c_FGW, "gfx/BR150_1c.png") {
 	template_train32px_old(0, 113)
 }
 
+spriteset(spriteset_BR150c_Northern, "gfx/BR150_1c.png") {
+	template_train32px_old(0, 138)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR150,cargo_subtype){
     0:	spriteset_BR150a_BRPrototype;
 	1:	spriteset_BR150a_Regional;
@@ -161,6 +173,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150,cargo_subtype){
 	3:	spriteset_BR150a_LondonMidland;
 	4:	spriteset_BR150a_FGW;
 	5:	spriteset_BR150a_Central;
+	6:	spriteset_BR150a_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR150b,cargo_subtype){
@@ -170,6 +183,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150b,cargo_subtype){
 	3:	spriteset_BR150b_LondonMidland;
 	4:	spriteset_BR150b_FGW;
 	5:	spriteset_BR150b_Central;
+	6:	spriteset_BR150b_Northern;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR150c,cargo_subtype){
@@ -179,6 +193,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150c,cargo_subtype){
 	3:	spriteset_BR150c_LondonMidland;
 	4:	spriteset_BR150c_FGW;
 	5:	spriteset_BR150c_Central;
+	6:	spriteset_BR150c_Northern;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR150, extra_callback_info1) {
@@ -194,6 +209,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_cargo_subtype_text,cargo_subtype){
 	3:	return string(str_LondonMidland);
 	4:	return string(str_FGW);
 	5:	return string(str_Central);	
+	6:  return string(str_Northern);
        return CB_RESULT_NO_TEXT;
 }
 
