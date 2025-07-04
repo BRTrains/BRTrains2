@@ -14,6 +14,7 @@
 - Reworked Class 20
 - Reworked Class 323
 - Reworked Class 333
+- Added Northern livery for Class 150/0 and /2
 - Added Northern Spirit livery for Class 333
 - Added PRM-compliant Centro livery for Class 323
 - Added a bunch of liveries for Class 20
