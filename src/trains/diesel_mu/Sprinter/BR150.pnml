@@ -165,6 +165,9 @@ spriteset(spriteset_BR150c_FGW, "gfx/BR150_1c.png") {
 spriteset(spriteset_BR150c_Northern, "gfx/BR150_1c.png") {
 	template_train32px_old(0, 138)
 }
+spriteset(spriteset_BR150c_NorthernWeirdCabCentreCar, "gfx/BR150_1c.png") {
+	template_train32px_old(0, 163)
+}
 
 switch(FEAT_TRAINS,SELF, sw_BR150,cargo_subtype){
     0:	spriteset_BR150a_BRPrototype;
@@ -186,6 +189,13 @@ switch(FEAT_TRAINS,SELF, sw_BR150b,cargo_subtype){
 	6:	spriteset_BR150b_Northern;
 }
 
+// Northern has weird consists made up of 3 cab cars
+random_switch(FEAT_TRAINS, SELF, sw_BR150_0_NorthernNonsense)
+{
+	2:	spriteset_BR150c_Northern; // 2 prototypes are actually 3-car
+	6:	spriteset_BR150c_NorthernWeirdCabCentreCar;	 // 6 other Northern 150/0 units are this weird abomination
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR150c,cargo_subtype){
     0:	spriteset_BR150c_BRPrototype;
 	1:	spriteset_BR150c_Regional;
@@ -193,7 +203,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150c,cargo_subtype){
 	3:	spriteset_BR150c_LondonMidland;
 	4:	spriteset_BR150c_FGW;
 	5:	spriteset_BR150c_Central;
-	6:	spriteset_BR150c_Northern;
+	6:	sw_BR150_0_NorthernNonsense;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR150, extra_callback_info1) {
