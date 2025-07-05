@@ -53,14 +53,14 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs
 
 // Not a mirror for once, as Mk5 DVT only has one livery. SECOND LIVERY ITEM IS REQUIRED TO AVOID NML BREAKING. The 0: item is a dummy!
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk5DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0: spriteset_br5a_dvt;
-	spriteset_br5a_dvt_reversed;
+    0: spriteset_br5a_dvt_reversed;
+	spriteset_br5a_dvt;
 }
 
 // Not a mirror for once, as RMTPO PCV only has one livery. SECOND LIVERY ITEM IS REQUIRED TO AVOID NML BREAKING. The 0: item is a dummy!
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsRMTPO, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0: spriteset_RMTPO_PCV;
-	spriteset_RMTPO_PCVr;
+    0: spriteset_RMTPO_PCVr;
+	spriteset_RMTPO_PCV;
 }
 
 

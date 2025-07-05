@@ -23,6 +23,7 @@
 - Amended Class 99 power, service speed, weight, TE for real world values
 - Fixed 455 BR Blue PRM livery bug
 - Fixed 66/6 position in purchase list
+- Fixed Royal Mail TPO and Mk5 DVT push-pull
 
 # v2.14 (2025-06-30)
 - Added Metropolitan Class G

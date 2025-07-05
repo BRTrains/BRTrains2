@@ -20,6 +20,7 @@ spriteset(spriteset_RMTPO_PCVr, "gfx/Rolling Stock/RoyalMail_TPO.png") {
 	template_train32px(0, 117)
 }
 
+// Random choice for non-PCV driving car
 random_switch(FEAT_TRAINS, SELF, sw_RMTPO_Random)
 {
 	1:	spriteset_RMTPO_NoDoors;
@@ -27,8 +28,32 @@ random_switch(FEAT_TRAINS, SELF, sw_RMTPO_Random)
 	1:	spriteset_RMTPO_3Door;
 }
 
+// Show own graphics when facing forward
+// WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
+switch(FEAT_TRAINS,SELF, sw_RMTPO_PCV,cargo_subtype){
+    0: 	spriteset_RMTPO_PCV;
+}
+
+// If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_RMTPO_PCV_PushPUll, [STORE_TEMP(0 - position_in_articulated_veh, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {		
+    440: sw_PUSHPULL_DVTasBR47; // Class 47
+	spriteset_RMTPO_PCV; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS, SELF,sw_RMTPO_PCV_CheckPosition, position_in_articulated_veh_from_end){
+    0: sw_RMTPO_PCV_PushPUll; // Attempt push pull
+	spriteset_RMTPO_PCV; // We aren't at the back of the consist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_RMTPO_PCV_CheckReversed ,vehicle_is_reversed){
+    0:	spriteset_RMTPO_PCV; // We're heading foward, show normal sprites
+	1:	sw_RMTPO_PCV_CheckPosition; // Attempt push pull (skipping check position for now for testing)
+}
+
+
+// Called first, check if we're at the back of the consist
 switch(FEAT_TRAINS, SELF, sw_RMTPO, position_in_consist_from_end)
 {
-	0: spriteset_RMTPO_PCV;
-	sw_RMTPO_Random;
+	0: sw_RMTPO_PCV_CheckReversed;//spriteset_RMTPO_PCV; // At the back of the consist, driving car (push pull)
+	sw_RMTPO_Random; // Not at the back, just show a random sprite for the coach
 }
