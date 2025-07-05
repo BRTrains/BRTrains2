@@ -1,0 +1,70 @@
+spriteset(spriteset_BR69_Purchase, "gfx/Diesel/69.png") {
+	template_purchase(200, 0)
+}
+
+spriteset(spriteset_BR69_GBRfBlueOrange, "gfx/Diesel/69.png") {
+	template_train32px(0, 0)
+}
+
+spriteset(spriteset_BR69_BRGreen, "gfx/Diesel/69.png") {
+	template_train32px(0, 26)
+}
+
+spriteset(spriteset_BR69_BRMaroon, "gfx/Diesel/69.png") {
+	template_train32px(0, 52)
+}
+
+spriteset(spriteset_BR69_BRBlue, "gfx/Diesel/69.png") {
+	template_train32px(0, 78)
+}
+
+spriteset(spriteset_BR69_BRBlueLLogo, "gfx/Diesel/69.png") {
+	template_train32px(0, 104)
+}
+
+spriteset(spriteset_BR69_BRBlueRed, "gfx/Diesel/69.png") {
+	template_train32px(0, 130)
+}
+
+spriteset(spriteset_BR69_AndysManClub, "gfx/Diesel/69.png") {
+	template_train32px(0, 156)
+}
+
+spriteset(spriteset_BR69_BTP, "gfx/Diesel/69.png") {
+	template_train32px(0, 182)
+}
+
+spriteset(spriteset_BR69_Kestrel, "gfx/Diesel/69.png") {
+	template_train32px(0, 208)
+}
+
+spriteset(spriteset_BR69_GBRf2ToneGreen, "gfx/Diesel/69.png") {
+	template_train32px(0, 234)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR69,cargo_subtype){
+	0: 	spriteset_BR69_GBRfBlueOrange;
+	1:	spriteset_BR69_BRGreen;
+	2:	spriteset_BR69_BRMaroon;
+	3: 	spriteset_BR69_BRBlue;
+	4:	spriteset_BR69_BRBlueLLogo;
+	5:	spriteset_BR69_BRBlueRed;
+	6:	spriteset_BR69_AndysManClub;
+	7:	spriteset_BR69_BTP;
+	8:	spriteset_BR69_Kestrel;
+	9:	spriteset_BR69_GBRf2ToneGreen;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR69_cargo_subtype_text,cargo_subtype){
+	0: 	return string(str_GBRf);
+	1:	return string(str_BRGreen);
+	2:	return string(str_BRMaroon);
+	3: 	return string(str_BRBlue);
+	4:	return string(str_BRLLogo);
+	5:	return string(str_BRResearch);
+	6:	return string(str_GBRfAndysManClub);
+	7:	return string(str_GBRfBTP);
+	8: 	return string(str_GBRfKestrel);
+	9:	return string(str_GBRf2ToneGreen);
+       return CB_RESULT_NO_TEXT;
+}

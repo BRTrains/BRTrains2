@@ -728,11 +728,6 @@ str_BR67_usage					:Mixed Traffic
 str_BR67_eos					:---
 str_BR67_liveries				:Arriva Trains Wales, DB Schenker, EWS, Caledonian Sleeper, Wrexham & Shropshire, Royal Claret, Colas Rail
 
-STR_NAME_BR68					:BR Class 68 "Warskip"
-str_BR68_usage					:Mixed Traffic
-str_BR68_eos					:---
-str_BR68_liveries				:DRS, ScotRail, Chiltern Railways
-
 STR_NAME_BR67Royal				:BR Class 67 "British Royal Train"
 str_BR67Royal_usage				:Mixed Traffic
 str_BR67Royal_eos				:---
@@ -742,6 +737,16 @@ STR_NAME_BR67EWS				:BR Class 67 "Company Train"
 str_BR67EWS_usage				:Mixed Traffic
 str_BR67EWS_eos					:---
 str_BR67EWS_liveries			:EWS Company Train, DB Schenker Company Train
+
+STR_NAME_BR68					:BR Class 68 "Warskip"
+str_BR68_usage					:Mixed Traffic
+str_BR68_eos					:---
+str_BR68_liveries				:DRS, ScotRail, Chiltern Railways
+
+STR_NAME_BR69					:BR Class 69
+str_BR69_usage					:Mixed Freight
+str_BR69_eos					:2020-Present
+str_BR69_liveries				:GBRf Blue & Orange, BR Green, BR Maroon, BR Blue, BR Blue Large Logo, BR Blue & Red, GBRf AndysManClub, GBRf British Transport Police, GBRf Kestrel Tribute, GBRf 2 Tone Green
 
 STR_NAME_BR70OG					:Southern Railway Class CC (BR Class 70)
 str_BR70OG_usage			    :Mixed Traffic
@@ -1818,6 +1823,7 @@ str_BRBlueGrey					: (BR - Blue Grey)
 str_BRBlueCentre				: (BR - Blue, Centre Headcode)
 str_BRBlueSplit					: (BR - Blue, Split Box)
 str_BRBlueYellow				: (BR - Blue, Yellow Front)
+str_BRBlueRed                   : (BR Blue and Red)
 str_BRCarmCream					: (BR - Carmine and Cream)
 str_BRChocCream					: (BR - Chocolate and Cream)
 str_BRDesertSand                : (BR - Desert Sand)
@@ -1930,16 +1936,20 @@ str_GatExUn						: (Gatwick Express - Unbranded)
 str_GBRf						: (GBRf)
 str_GBRf2						: (GBRf - 2nd Version Lights)
 str_GBRf3						: (GBRf - 3rd Version Lights)
+str_GBRf2ToneGrey               : (GBRf - 2 Tone Grey)
+str_GBRf2ToneGreen              : (GBRf - 2 Tone Green)
+str_GBRfAndysManClub            : (GBRf - Andys Man Club)
+str_GBRfBarbie					: (GBRf - Barbie)
+str_GBRfBlack					: (GBRf - Black)
+str_GBRfBlue					: (GBRf - Blue)
+str_GBRfBTP                     : (GBRf - British Transport Police)
+str_GBRfEveningStar             : (GBRf - Evening Star)
+str_GBRfHB						: (GBRf - Harry Beck)
+str_GBRfHS2						: (GBRf - HS2)
+str_GBRfKestrel                 : (GBRf - Kestrel Tribute)
 str_GBRfTfLWhite				: (GBRf - London Underground 150 Years - White)
 str_GBRfTfLBlack				: (GBRf - London Underground 150 Years - Black)
-str_GBRfHB						: (GBRf - "Harry Beck")
-str_GBRfBlue					: (GBRf - Blue)
-str_GBRfBlack					: (GBRf - Black)
 str_GBRfMSC                     : (GBRf - MSC)
-str_GBRf2ToneGrey               : (GBRf - 2 Tone Grey)
-str_GBRfBarbie					: (GBRf - Barbie)
-str_GBRfHS2						: (GBRf - HS2)
-str_GBRfEveningStar             : (GBRf - Evening Star)
 str_GERBlue						: (GER - Blue)
 str_GERBlack					: (GER - Black)
 str_GMPTE						: (GMPTE)
