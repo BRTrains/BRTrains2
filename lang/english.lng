@@ -25,6 +25,8 @@ STR_LIVERY          : ({STRING} - {STRING})
 STR_LIVERY_EXTENDED : ({STRING} - {STRING} - {STRING})
 STR_LIVERY_SPECIAL  : ({STRING} - {STRING} - {SILVER}{STRING})
 
+STR_FORMER_LIVERY   : (Ex-{STRING})
+
 # Company name, whyte notation, nickname
 STR_Name_SteamTender          :{STRING} {STRING} "{STRING}" Tender
 STR_Name_SteamTank          :{STRING} {STRING}T "{STRING}" Tank
@@ -41,12 +43,15 @@ str_abbr_BR             :BR
 str_abbr_FR             :FR
 str_abbr_DRS            :DRS
 str_abbr_EMR            :EMR
+str_abbr_FCC            :FCC
+str_abbr_GA             :GA
 str_abbr_GCR            :GCR
 str_abbr_GWR            :GWR
 str_abbr_HNR            :HNR
 str_abbr_LNER           :LNER
 str_abbr_LNWR           :LNWR
 str_abbr_LSWR           :LSWR
+str_abbr_NXEA           :NXEA
 str_abbr_TPE            :TPE
 str_abbr_VXC            :VXC
 str_abbr_VTEC           :VTEC

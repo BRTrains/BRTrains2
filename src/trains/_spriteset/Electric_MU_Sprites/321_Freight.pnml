@@ -1,0 +1,79 @@
+spriteset (spriteset_BR321_Freight_purchase, "gfx/EMU/321_Freight.png") {
+	template_purchase(200, 0)
+}
+spriteset (spriteset_BR321_Freight_front_SwiftExpress, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 0) }
+spriteset (spriteset_BR321_Freight_rear_SwiftExpress, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 26) }
+spriteset (spriteset_BR321_Freight_middle_SwiftExpress, "gfx/EMU/321_Freight.png") { 		template_train32px(0, 52) }
+spriteset (spriteset_BR321_Freight_middle_panto_SwiftExpress, "gfx/EMU/321_Freight.png") { 	template_train32px(0, 78) }
+
+switch(FEAT_TRAINS, SELF, switch_BR321_Freight_spriteset_SwiftExpress, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_Freight_front_SwiftExpress;
+	1: spriteset_BR321_Freight_middle_panto_SwiftExpress;
+	2: spriteset_BR321_Freight_middle_SwiftExpress;
+	3: spriteset_BR321_Freight_rear_SwiftExpress;
+}
+
+spriteset (spriteset_BR321_Freight_front_ExFCC, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 104) }
+spriteset (spriteset_BR321_Freight_rear_ExFCC, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 130) }
+spriteset (spriteset_BR321_Freight_middle_ExFCC, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 156) }
+spriteset (spriteset_BR321_Freight_middle_panto_ExFCC, "gfx/EMU/321_Freight.png") { 	template_train32px(0, 182) }
+
+switch(FEAT_TRAINS, SELF, switch_BR321_Freight_spriteset_ExFCC, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_Freight_front_ExFCC;
+	1: spriteset_BR321_Freight_middle_panto_ExFCC;
+	2: spriteset_BR321_Freight_middle_ExFCC;
+	3: spriteset_BR321_Freight_rear_ExFCC;
+}
+
+spriteset (spriteset_BR321_Freight_front_ExNXEA, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 208) }
+spriteset (spriteset_BR321_Freight_rear_ExNXEA, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 234) }
+spriteset (spriteset_BR321_Freight_middle_ExNXEA, "gfx/EMU/321_Freight.png") {	 		template_train32px(0, 260) }
+spriteset (spriteset_BR321_Freight_middle_panto_ExNXEA, "gfx/EMU/321_Freight.png") { 	template_train32px(0, 286) }
+
+switch(FEAT_TRAINS, SELF, switch_BR321_Freight_spriteset_ExNXEA, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_Freight_front_ExNXEA;
+	1: spriteset_BR321_Freight_middle_panto_ExNXEA;
+	2: spriteset_BR321_Freight_middle_ExNXEA;
+	3: spriteset_BR321_Freight_rear_ExNXEA;
+}
+
+spriteset (spriteset_BR321_Freight_front_ExGABlue, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 312) }
+spriteset (spriteset_BR321_Freight_rear_ExGABlue, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 338) }
+spriteset (spriteset_BR321_Freight_middle_ExGABlue, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 364) }
+spriteset (spriteset_BR321_Freight_middle_panto_ExGABlue, "gfx/EMU/321_Freight.png") { 	template_train32px(0, 390) }
+
+switch(FEAT_TRAINS, SELF, switch_BR321_Freight_spriteset_ExGABlue, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_Freight_front_ExGABlue;
+	1: spriteset_BR321_Freight_middle_panto_ExGABlue;
+	2: spriteset_BR321_Freight_middle_ExGABlue;
+	3: spriteset_BR321_Freight_rear_ExGABlue;
+}
+
+spriteset (spriteset_BR321_Freight_front_ExGARed, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 416) }
+spriteset (spriteset_BR321_Freight_rear_ExGARed, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 442) }
+spriteset (spriteset_BR321_Freight_middle_ExGARed, "gfx/EMU/321_Freight.png") { 			template_train32px(0, 468) }
+spriteset (spriteset_BR321_Freight_middle_panto_ExGARed, "gfx/EMU/321_Freight.png") { 	template_train32px(0, 494) }
+
+switch(FEAT_TRAINS, SELF, switch_BR321_Freight_spriteset_ExGARed, position_in_articulated_veh % 4) {
+	0: spriteset_BR321_Freight_front_ExGARed;
+	1: spriteset_BR321_Freight_middle_panto_ExGARed;
+	2: spriteset_BR321_Freight_middle_ExGARed;
+	3: spriteset_BR321_Freight_rear_ExGARed;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_Freight_spriteset, cargo_subtype) {
+	0: switch_BR321_Freight_spriteset_SwiftExpress;
+	1: switch_BR321_Freight_spriteset_ExFCC;
+	2: switch_BR321_Freight_spriteset_ExNXEA;
+	3: switch_BR321_Freight_spriteset_ExGABlue;
+	4: switch_BR321_Freight_spriteset_ExGARed;
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR321_Freight_subtype_text, cargo_subtype) {
+	0: return string(str_SwiftExpress);
+	1: return string(STR_FORMER_LIVERY,string(str_abbr_FCC));
+	2: return string(STR_FORMER_LIVERY,string(str_abbr_NXEA));
+	3: return string(STR_FORMER_LIVERY,string(STR_CONCAT_2,string(str_abbr_GA), string(str_col_Blue)));	
+	4: return string(STR_FORMER_LIVERY,string(STR_CONCAT_2,string(str_abbr_GA), string(str_col_Red)));	
+	return CB_RESULT_NO_TEXT;
+}
