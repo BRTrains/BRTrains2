@@ -19,7 +19,7 @@
 - Added GWR's weird "3 cab car" variant of the Class 158
 - Added Northern Spirit livery for Class 333
 - Added PRM-compliant Centro livery for Class 323
-- Added Colas livery for Class 86
+- Added Electric Blue and Colas livery for Class 86
 - Added a bunch of liveries for Class 20
 - Added some former NXEA/GA/FCC liveries for Class 321 Parcels variant
 - Amended Class 99 power, service speed, weight, TE for real world values
