@@ -1,36 +1,36 @@
-spriteset(spriteset_BR08_DEPRECATED_Purchase, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_Purchase, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR08_DEPRECATED_BRGreen, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_BRGreen, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 13)
 }
 
-spriteset(spriteset_BR08_DEPRECATED_BRBlue, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_BRBlue, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 33)
 }
 
-spriteset(spriteset_BR08_DEPRECATED_EWSRed, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_EWSRed, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 53)
 }
 
-spriteset(spriteset_BR08_DEPRECATED_NRYellow, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_NRYellow, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 73)
 }
 
-spriteset(spriteset_BR08_DEPRECATED_Purple, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_Purple, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 93)
 }
 
-spriteset(spriteset_BR08_DEPRECATED_InterCitySwallow, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_InterCitySwallow, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 113)
 }
 
-spriteset(spriteset_BR08_DEPRECATED_BRBlack, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_BRBlack, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 133)
 }
 
-spriteset(spriteset_BR08_DEPRECATED_BRGrey, "gfx/deprecated/BR08_DEPRECATED.png") {
+spriteset(spriteset_BR08_DEPRECATED_BRGrey, "gfx/Deprecated/BR08_DEPRECATED.png") {
 	template_train20px(0, 153)
 }
 
