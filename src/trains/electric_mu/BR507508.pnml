@@ -139,7 +139,7 @@ item (FEAT_TRAINS, item_BR508_1, 325) {
 	purchase:							spriteset_BR508_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(74 * param_pax);
 }
 }
@@ -187,7 +187,7 @@ item (FEAT_TRAINS, item_BR508_2, 328) {
 	purchase:							spriteset_BR508_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(74 * param_pax);
 }
 }
@@ -275,7 +275,7 @@ item (FEAT_TRAINS, item_BR508c, 327) {
 	cargo_subtype_text:					sw_BR508_cargo_subtype_text;
 	default: 							sw_BR508c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(74 * param_pax);
 }
 }
@@ -326,7 +326,7 @@ item (FEAT_TRAINS, item_BR507, 329) {
 	purchase:							spriteset_BR508_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(74 * param_pax);
 }
 }
@@ -414,7 +414,7 @@ item (FEAT_TRAINS, item_BR507c, 331) {
 	cargo_subtype_text:					sw_BR507_cargo_subtype_text;
 	default: 							sw_BR507c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(74 * param_pax);
 }
 }

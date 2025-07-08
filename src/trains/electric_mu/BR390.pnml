@@ -109,7 +109,7 @@ item (FEAT_TRAINS, item_BR390, 115) {
 	purchase:							spriteset_BR390_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	speed:								sw_BR390_speed;
 	cargo_capacity: return(18 * param_pax);
 	cost_factor:	return(GetAdjustedCost(140));
@@ -163,7 +163,7 @@ item (FEAT_TRAINS, item_BR390_11, 124) {
 	purchase:							spriteset_BR390_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	speed:								sw_BR390_speed;
 	cargo_capacity: return(18 * param_pax);
 	cost_factor:	return(GetAdjustedCost(159));
@@ -379,7 +379,7 @@ item (FEAT_TRAINS, item_390_DMSO, 121) {
 	default: 							sw_390_DMSO;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(46 * param_pax);
 }
 }
@@ -416,7 +416,7 @@ item (FEAT_TRAINS, item_390_MF, 116) {
  	default: 							sw_390_MF;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(46 * param_pax);
 }
 }
@@ -594,7 +594,7 @@ item (FEAT_TRAINS, item_390_MS, 118) {
  	default: 							sw_390_MS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(76 * param_pax);
 }
 }
@@ -631,7 +631,7 @@ item (FEAT_TRAINS, item_390_MSD, 123) {
  	default: 							sw_390_MSD;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(62 * param_pax);
 }
 }
@@ -668,7 +668,7 @@ item (FEAT_TRAINS, item_390_MFD, 122) {
  	default: 							sw_390_MFD;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(37 * param_pax);
 }
 }

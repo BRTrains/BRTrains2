@@ -205,7 +205,7 @@ item (FEAT_TRAINS, item_BR323, 395) {
 	default: 							sw_BR323a;
 	purchase:							spriteset_BR323_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_networker_sound;
+	sound_effect:						sw_sound_electric_465;
 	cargo_capacity: return(98 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(56));
 	running_cost_factor: return(GetAdjustedCost(32));
@@ -251,7 +251,7 @@ item (FEAT_TRAINS, item_BR323b, 396) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR323b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_networker_sound;
+	sound_effect:						sw_sound_electric_465;
 	create_effect:						electric_create_visual_effect;
 	cargo_capacity: return(93 * param_pax);
 }
@@ -296,7 +296,7 @@ item (FEAT_TRAINS, item_BR323c, 397) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR323c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_networker_sound;
+	sound_effect:						sw_sound_electric_465;
 	cargo_capacity: return(98 * param_pax);
 
 }

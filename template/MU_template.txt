@@ -72,7 +72,7 @@ item (FEAT_TRAINS, item_BR<<CLASS>>, <<SPRITEID>>) {
 	default: 							sw_BR<<CLASS>>;
 	purchase:							spriteset_BR<<CLASS>>_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_networker_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(<<CARGOCAPACITY>>>>/4 * param_pax);
 	cost_factor:	return(GetAdjustedCost(<<PURCHASECOSTFACTOR>>));
 	running_cost_factor: return(GetAdjustedCost(<<RUNNINGCOSTFACTOR>>));

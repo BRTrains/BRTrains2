@@ -106,7 +106,7 @@ item (FEAT_TRAINS, item_BR155, 55) {
 	purchase:							spriteset_BR155_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	cargo_capacity:						return(80 * param_pax);
 	cost_factor:	return(GetAdjustedCost(36));
 	running_cost_factor: return(GetAdjustedCost(18));
@@ -153,7 +153,7 @@ item (FEAT_TRAINS, item_155b, 56) {
 	default: 							sw_BR155b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	cargo_capacity:						return(80 * param_pax);
 }
 }

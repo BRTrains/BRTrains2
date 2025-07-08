@@ -33,7 +33,7 @@ item (FEAT_ROADVEHS, item_TRAM_M5000_Double, 638) {
 		cargo_age_period:				185;
 	}
 	graphics {
-	sound_effect:						sw_TRAM_metrolink_sound;
+	sound_effect:						sw_sound_TRAM_metrolink;
 	cargo_subtype_text:					sw_TRAM_M5000_cargo_subtype_text;
 	articulated_part:        			switch_articulated_TRAM_M5000_Double;
 	default: 							sw_TRAM_M5000;

@@ -47,7 +47,7 @@ item (FEAT_ROADVEHS, item_TRAM_BR139, 645) {
 	default: 							sw_TRAM_BR139;
 	purchase:							spriteset_BR139_Purchase;		
 	cargo_capacity:						return(50 * param_pax);
-	sound_effect:						sw_TRAM_dmu_sound;
+	sound_effect:						sw_sound_TRAM_diesel_dmu_gen2;
 	cost_factor:	return(GetAdjustedCostTRAM(10));
 	running_cost_factor: return(GetAdjustedCostTRAM(5));
 }

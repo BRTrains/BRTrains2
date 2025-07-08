@@ -60,7 +60,7 @@ item (FEAT_TRAINS, item_BR504, 577) {
 	purchase:							spriteset_BR504_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(90 * param_pax);
 }
 }

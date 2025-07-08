@@ -58,7 +58,7 @@ item (FEAT_TRAINS, item_BR13_DEPRECATED, 2) {
 	purchase:							spriteset_BR13_DEPRECATED_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_gronk_sound;
+	sound_effect:						sw_sound_diesel_08;
 	cost_factor:	return(GetAdjustedCost(35));
 	running_cost_factor: return(GetAdjustedCost(12));
 }
@@ -95,6 +95,6 @@ item (FEAT_TRAINS, item_BR13_1_DEPRECATED, 3) {
 	default: 							spriteset_BR13_1_DEPRECATED;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_gronk_sound;
+	sound_effect:						sw_sound_diesel_08;
 }
 }

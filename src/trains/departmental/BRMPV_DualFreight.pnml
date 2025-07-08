@@ -43,7 +43,7 @@ item (FEAT_TRAINS, item_MPV_DualFreight, 136) {
 	purchase:							spriteset_MPV_DualFreight_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						sw_MPV_DualFreight_effect;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	// AI Poison Pill below
 	start_stop:		sw_EyeCandy_AllowMove;
 	cost_factor:	sw_EyeCandy_PurchaseCost;

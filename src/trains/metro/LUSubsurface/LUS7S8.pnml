@@ -84,7 +84,7 @@ item (FEAT_TRAINS, item_LULS7, 292) {
 	default: 							sw_LULSa;
 	purchase:							spriteset_LUS7S8_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_tube_modern;
 	cargo_capacity: return(205 * param_pax);
 		cost_factor:	return(GetAdjustedCost(113));
 	running_cost_factor: return(GetAdjustedCost(45));
@@ -134,7 +134,7 @@ item (FEAT_TRAINS, item_LULS8, 293) {
 	purchase:							spriteset_LUS7S8_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_tube_modern;
 	cargo_capacity: return(205 * param_pax);
 		cost_factor:	return(GetAdjustedCost(125));
 	running_cost_factor: return(GetAdjustedCost(50));
@@ -179,7 +179,7 @@ item (FEAT_TRAINS, item_LULSb, 294) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_LULSb;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_tube_modern;
 	cargo_capacity: return(125 * param_pax);
 }
 }
@@ -223,7 +223,7 @@ item (FEAT_TRAINS, item_LULSc, 295) {
 	cargo_subtype_text:					sw_LULS_cargo_subtype_text;
 	default: 							sw_LULSc;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_tube_modern;
 	cargo_capacity: return(204 * param_pax);
 }
 }

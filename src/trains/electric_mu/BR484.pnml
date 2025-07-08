@@ -88,7 +88,7 @@ item (FEAT_TRAINS, item_BR484, 499) {
 	purchase:							spriteset_BR484_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(141 * param_pax);
 	speed:								sw_BR484_speed;
 	cost_factor:	return(GetAdjustedCost(61));
@@ -136,7 +136,7 @@ item (FEAT_TRAINS, item_BR484b, 500) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR484b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_88;
 	speed:								sw_BR484_speed;
 	cargo_capacity: return(141 * param_pax);
 }

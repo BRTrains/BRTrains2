@@ -40,7 +40,7 @@ item (FEAT_TRAINS, item_BR69, 736) {
 	purchase:							spriteset_BR69_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_66_sound;
+	sound_effect:						sw_sound_diesel_66;
 	cost_factor:	return(GetAdjustedCost(40));
 	running_cost_factor: return(GetAdjustedCost(34));
 }

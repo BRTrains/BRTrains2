@@ -41,7 +41,7 @@ item (FEAT_TRAINS, item_GER_L77, 660) {
 	purchase:							spriteset_GER_L77_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
-	sound_effect:						sw_steam_sound;
+	sound_effect:						sw_sound_steam_generic;
 	cost_factor:	return(GetAdjustedCost(16));
 	running_cost_factor: return(GetAdjustedCost(14));
 }

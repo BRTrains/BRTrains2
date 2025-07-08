@@ -92,7 +92,7 @@ item (FEAT_TRAINS, item_LUAStock, 507) {
 	default: 							sw_LUAStocka;
 	purchase:							spriteset_LUAStock_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_tube_GEC;
 	cargo_capacity: return(205 * param_pax);
 		cost_factor:	return(GetAdjustedCost(113));
 	running_cost_factor: return(GetAdjustedCost(70));
@@ -137,7 +137,7 @@ item (FEAT_TRAINS, item_LUAStockb, 508) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_LUAStockb;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_tube_GEC;
 	cargo_capacity: return(125 * param_pax);
 }
 }
@@ -181,7 +181,7 @@ item (FEAT_TRAINS, item_LUAStockc, 509) {
 	cargo_subtype_text:					sw_LUAStock_cargo_subtype_text;
 	default: 							sw_LUAStockc;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_tube_GEC;
 	cargo_capacity: return(204 * param_pax);
 }
 }

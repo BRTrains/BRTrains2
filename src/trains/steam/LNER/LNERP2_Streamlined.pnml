@@ -43,7 +43,7 @@ item (FEAT_TRAINS, item_LNERP2_Streamlined, 672) {
 	purchase:							spriteset_LNERP2_Streamlined_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
-	sound_effect:						sw_steam_sound;
+	sound_effect:						sw_sound_steam_generic;
 	cost_factor:						return(GetAdjustedCost(26));
 	running_cost_factor:				return(GetAdjustedCost(30));
 	length:								sw_LNERP2_length;

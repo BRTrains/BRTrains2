@@ -58,7 +58,7 @@ item (FEAT_TRAINS, item_Kestrel, 556) {
 	purchase:							spriteset_Kestrel_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_deltic_sound;
+	sound_effect:						sw_sound_diesel_46;
 	cost_factor:	return(GetAdjustedCost(44));
 	running_cost_factor: return(GetAdjustedCost(40));
 }

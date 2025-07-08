@@ -418,7 +418,7 @@ item (FEAT_TRAINS, item_370_NDM, 131) {
  	default: 							sw_370_NDM;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_86;
 }
 }
 
@@ -524,6 +524,6 @@ item (FEAT_TRAINS, item_370_NDMR, 134) {
  	default: 							sw_370_NDMR;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_86;
 }
 }

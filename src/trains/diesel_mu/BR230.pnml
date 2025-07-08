@@ -139,7 +139,7 @@ item (FEAT_TRAINS, item_BR230_2CAR, 501) {
 	default: 							sw_BR230_2a;
 	purchase:							spriteset_BR230_2car_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;	
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	cargo_capacity: return(86 * param_pax);
 	cost_factor:	return(GetAdjustedCost(61));
 	running_cost_factor: return(GetAdjustedCost(37));
@@ -189,7 +189,7 @@ item (FEAT_TRAINS, item_BR230_3CAR, 502) {
 	default: 							sw_BR230_3a;
 	purchase:							spriteset_BR230_3car_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;	
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	cargo_capacity: return(86 * param_pax);
 	cost_factor:	return(GetAdjustedCost(22));
 	running_cost_factor: return(GetAdjustedCost(18));
@@ -235,7 +235,7 @@ item (FEAT_TRAINS, item_BR230_2b, 503) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR230_2b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	cargo_capacity: return(86 * param_pax);
 }
 }
@@ -279,7 +279,7 @@ item (FEAT_TRAINS, item_BR230_3b, 504) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR230_3b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	cargo_capacity: return(86 * param_pax);
 }
 }
@@ -323,7 +323,7 @@ item (FEAT_TRAINS, item_BR230_3c, 505) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR230_3c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	cargo_capacity: return(86 * param_pax);
 }
 }

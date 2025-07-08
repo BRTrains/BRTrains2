@@ -82,7 +82,7 @@ item (FEAT_TRAINS, item_BR52, 548) {
 	purchase:							spriteset_BR52_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_deltic_sound;
+	sound_effect:						sw_sound_diesel_46;
 	cost_factor:	return(GetAdjustedCost(38));
 	running_cost_factor: return(GetAdjustedCost(37));
 }
