@@ -1,20 +1,3 @@
-// Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_BR321_Freight_spriteset_SwiftExpress, position_in_articulated_veh % 4) {
-	0: spriteset_BR321_front_SwiftExpress;
-	1: spriteset_BR321_middle_panto_SwiftExpress;
-	2: spriteset_BR321_middle_SwiftExpress;
-	3: spriteset_BR321_rear_SwiftExpress;
-}
-
-switch(FEAT_TRAINS, SELF, switch_BR321_Freight_spriteset, cargo_subtype) {
-	0: switch_BR321_Freight_spriteset_SwiftExpress;
-}
-
-switch(FEAT_TRAINS, SELF, switch_BR321_Freight_subtype_text, cargo_subtype) {
-	0: return string(str_SwiftExpress);
-	return CB_RESULT_NO_TEXT;
-}
-
 // Define articulations
 switch(FEAT_TRAINS, SELF, switch_BR321_Freight_articulated, extra_callback_info1) {
 	1..3: return item_BR321_Freight;

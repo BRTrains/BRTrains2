@@ -2,10 +2,6 @@ spriteset (spriteset_BR321_purchase, "gfx/EMU/321.png") {
 	template_purchase(200, 0)
 }
 
-spriteset (spriteset_BR321_Freight_purchase, "gfx/EMU/321.png") {
-	template_purchase(200, 13)
-}
-
 spriteset (spriteset_BR321_front_NSE, "gfx/EMU/321.png") { 			template_train32px(0, 0) }
 spriteset (spriteset_BR321_rear_NSE, "gfx/EMU/321.png") { 			template_train32px(0, 26) }
 spriteset (spriteset_BR321_middle_NSE, "gfx/EMU/321.png") { 		template_train32px(0, 52) }
@@ -40,11 +36,6 @@ spriteset (spriteset_BR321_front_LO, "gfx/EMU/321.png") { 			template_train32px(
 spriteset (spriteset_BR321_rear_LO, "gfx/EMU/321.png") { 			template_train32px(0, 650) }
 spriteset (spriteset_BR321_middle_LO, "gfx/EMU/321.png") { 			template_train32px(0, 676) }
 spriteset (spriteset_BR321_middle_panto_LO, "gfx/EMU/321.png") { 	template_train32px(0, 702) }
-
-spriteset (spriteset_BR321_front_SwiftExpress, "gfx/EMU/321.png") { 			template_train32px(0, 728) }
-spriteset (spriteset_BR321_rear_SwiftExpress, "gfx/EMU/321.png") { 			template_train32px(0, 754) }
-spriteset (spriteset_BR321_middle_SwiftExpress, "gfx/EMU/321.png") { 			template_train32px(0, 780) }
-spriteset (spriteset_BR321_middle_panto_SwiftExpress, "gfx/EMU/321.png") { 	template_train32px(0, 806) }
 
 spriteset (spriteset_BR321_front_FirstGreatEastern, "gfx/EMU/321.png") { 			template_train32px(0, 832) }
 spriteset (spriteset_BR321_rear_FirstGreatEastern, "gfx/EMU/321.png") { 			template_train32px(0, 858) }

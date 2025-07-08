@@ -1,0 +1,68 @@
+spriteset (spriteset_BR325_Purchase, "gfx/EMU/325.png") {
+	template_purchase(200, 0)
+}
+
+spriteset (spriteset_BR325_front_RMStripe, "gfx/EMU/325.png") { 			template_train32px(0, 0) }
+spriteset (spriteset_BR325_rear_RMStripe, "gfx/EMU/325.png") { 			template_train32px(0, 26) }
+spriteset (spriteset_BR325_middle_RMStripe, "gfx/EMU/325.png") { 		template_train32px(0, 52) }
+spriteset (spriteset_BR325_middle_panto_RMStripe, "gfx/EMU/325.png") { 	template_train32px(0, 78) }
+
+spriteset (spriteset_BR325_front_RMRed, "gfx/EMU/325.png") { 			template_train32px(0, 104) }
+spriteset (spriteset_BR325_rear_RMRed, "gfx/EMU/325.png") { 			template_train32px(0, 130) }
+spriteset (spriteset_BR325_middle_RMRed, "gfx/EMU/325.png") { 			template_train32px(0, 156) }
+spriteset (spriteset_BR325_middle_panto_RMRed, "gfx/EMU/325.png") { 	template_train32px(0, 182) }
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, sw_BR325_spriteset_RMRed, position_in_articulated_veh % 4) {
+	0: spriteset_BR325_front_RMRed;
+	1: spriteset_BR325_middle_RMRed;
+	2: spriteset_BR325_middle_panto_RMRed;
+	3: spriteset_BR325_rear_RMRed;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR325_spriteset_RMStripe, position_in_articulated_veh % 4) {
+	0: spriteset_BR325_front_RMStripe;
+	1: spriteset_BR325_middle_RMStripe;
+	2: spriteset_BR325_middle_panto_RMStripe;
+	3: spriteset_BR325_rear_RMStripe;
+}
+
+// 325_0 (325/0)
+switch(FEAT_TRAINS, SELF, sw_BR325, cargo_subtype) {	
+	0: sw_BR325_spriteset_RMStripe;
+	1: sw_BR325_spriteset_RMRed;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR325_cargo_subtype_text, cargo_subtype) {
+	0: return string(str_RoyalMailStripe);
+	1: return string(str_RoyalMailRed);
+	return CB_RESULT_NO_TEXT;
+}
+
+// Define articulations
+switch(FEAT_TRAINS, SELF, sw_BR325_articulated, extra_callback_info1) {
+	1..3: return item_BR325;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Only give particle effects to front/rear cars
+switch(FEAT_TRAINS, SELF, sw_BR325_particles, position_in_articulated_veh % 4) {
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, sw_BR325_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, sw_BR325_can_attach_wagon, vehicle_type_id) {
+	item_BR325: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR325_cargo_capacity, position_in_articulated_veh % 4) {
+	1: return 93;
+	return 98;
+}

@@ -34,6 +34,19 @@ spriteset(spriteset_BR86_ElectricBlue, "gfx/Electric/8X.png") {
 	template_train32px(0, 325)
 }
 
+spriteset(spriteset_BR86_Colas, "gfx/Electric/8X.png") {
+	template_train32px(0, 351)
+}
+
+spriteset(spriteset_BR86_Freightliner, "gfx/Electric/8X.png") {
+	template_train32px(0, 377)
+}
+
+spriteset(spriteset_BR86_FreightlinerPowerhaul, "gfx/Electric/8X.png") {
+	template_train32px(0, 403)
+}
+
+
 // This switch called when displaying as this locomotive
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BR86, cargo_subtype){
@@ -45,6 +58,9 @@ switch(FEAT_TRAINS,SELF, sw_BR86, cargo_subtype){
 	5: 	spriteset_BR86_EWS;
 	6:  spriteset_BR86_Anglia;
 	7:  spriteset_BR86_ElectricBlue;
+	8:  spriteset_BR86_Colas;
+	9:  spriteset_BR86_Freightliner;
+	10:  spriteset_BR86_FreightlinerPowerhaul;
         return CB_RESULT_NO_TEXT;
 }
 
@@ -57,6 +73,9 @@ switch(FEAT_TRAINS,SELF,sw_BR86_cargo_subtype_text,cargo_subtype){
 	5:	return string(str_EWSRed);	
 	6:	return string(str_Anglia);
 	7:	return string(str_BRElectricBlue);
+	8:	return string(str_ColasRail);
+	9:	return string(str_FreightlinerGreen);
+	10:	return string(str_FreightlinerPH);
        return CB_RESULT_NO_TEXT;
 }
 

@@ -25,6 +25,8 @@ STR_LIVERY          : ({STRING} - {STRING})
 STR_LIVERY_EXTENDED : ({STRING} - {STRING} - {STRING})
 STR_LIVERY_SPECIAL  : ({STRING} - {STRING} - {SILVER}{STRING})
 
+STR_FORMER_LIVERY   : (Ex-{STRING})
+
 # Company name, whyte notation, nickname
 STR_Name_SteamTender          :{STRING} {STRING} "{STRING}" Tender
 STR_Name_SteamTank          :{STRING} {STRING}T "{STRING}" Tank
@@ -41,12 +43,15 @@ str_abbr_BR             :BR
 str_abbr_FR             :FR
 str_abbr_DRS            :DRS
 str_abbr_EMR            :EMR
+str_abbr_FCC            :FCC
+str_abbr_GA             :GA
 str_abbr_GCR            :GCR
 str_abbr_GWR            :GWR
 str_abbr_HNR            :HNR
 str_abbr_LNER           :LNER
 str_abbr_LNWR           :LNWR
 str_abbr_LSWR           :LSWR
+str_abbr_NXEA           :NXEA
 str_abbr_TPE            :TPE
 str_abbr_VXC            :VXC
 str_abbr_VTEC           :VTEC
@@ -1079,7 +1084,7 @@ str_BR323_liveries				:Regional Railways, Centro, First North Western, First Nor
 STR_NAME_BR325					:BR Class 325 (4-car)
 str_BR325_usage					:Express Mail
 str_BR325_eos					:---
-str_BR325_liveries				:Royal Mail
+str_BR325_liveries				:Royal Mail Striped, Royal Mail Plain Red
 
 STR_NAME_BR332_4car				:BR Class 332 (4-car)
 STR_NAME_BR332_5car				:BR Class 332 (5-car)
@@ -2105,6 +2110,8 @@ str_RFPetrol					: (Railfreight - Petroleum)
 str_Royal						: (Royal Scotsman)
 str_RoyalClaret					: (British Royal Train)
 str_RoyalMail					: (Royal Mail)
+str_RoyalMailRed				: (Royal Mail - Red)
+str_RoyalMailStripe				: (Royal Mail - Red with Stripe)
 str_RoyalMailBoards				: (Royal Mail - Advertising boards)
 str_RoyalMailFictional			: (Royal Mail - Fictional Livery)
 str_ScotRail					: (ScotRail)
