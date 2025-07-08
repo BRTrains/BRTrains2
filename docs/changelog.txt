@@ -3,6 +3,7 @@
 - Stephenson's Planet (tweak graphics, add wagons?)
 - GWR 5700/6700/8750 Class (needs coding)
 - GWR Great Bear and Hall class rework
+- Class 360
 
 # v2.15
 - Added Class 69
