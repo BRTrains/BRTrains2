@@ -33,7 +33,7 @@ def check_project_structure(src_directory: Path, gfx_directory: Path,
             "\"railtypes.pnml\" not found.  It should be in \"src\" and contain the railtypetable block"
         )
         return (False, -1)
-    if not src_directory.joinpath("sound.pnml").exists():
+    if not src_directory.joinpath("sounds.pnml").exists():
         print(
             "\"sounds.pnml\" not found.  Assuming no sounds are required"
         )
