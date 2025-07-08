@@ -40,7 +40,7 @@ item (FEAT_TRAINS, item_BR325, 420) {
 	default: 							sw_BR325;
 	purchase:							spriteset_BR325_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_networker_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: sw_BR325_cargo_capacity;
 	cost_factor:	return(GetAdjustedCost(56));
 	running_cost_factor: return(GetAdjustedCost(32));
