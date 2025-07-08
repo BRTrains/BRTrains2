@@ -68,7 +68,7 @@ item (FEAT_TRAINS, item_BR93, 691) {
 	power:								switch_BR93_power;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						switch_BR93_sound;
+	sound_effect:						sw_sound_hybrid_88;
 	cost_factor:	return(GetAdjustedCost(50));
 	running_cost_factor: return(GetAdjustedCost(28));
 }

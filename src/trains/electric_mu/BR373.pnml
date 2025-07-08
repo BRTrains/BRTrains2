@@ -247,7 +247,7 @@ item (FEAT_TRAINS, item_BR373, 80) {
 	purchase:							spriteset_BR373_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_86;
 	cargo_capacity:						return(50 * param_pax);
 	cost_factor:						return(GetAdjustedCost(243));
 	running_cost_factor: 				return(GetAdjustedCost(207));
@@ -300,7 +300,7 @@ item (FEAT_TRAINS, item_BR373_25kv, 557) {
 	purchase:							spriteset_BR373_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_86;
 	cargo_capacity: return(50 * param_pax);
 	cost_factor:	return(GetAdjustedCost(243));
 	running_cost_factor: return(GetAdjustedCost(207));
@@ -351,7 +351,7 @@ item (FEAT_TRAINS, item_BR373_2, 97) {
 	purchase:							spriteset_BR373_2_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_86;
 	cargo_capacity: return(50 * param_pax);
 }
 }
@@ -396,7 +396,7 @@ item (FEAT_TRAINS, item_BR373MS, 81) {
 	default: 							sw_BR373MS;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_86;
 	cargo_capacity: return(48 * param_pax);
 }
 }
@@ -612,7 +612,7 @@ item (FEAT_TRAINS, item_BR373MSb, 86) {
 	default: 							sw_BR373MSb;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_86;
 	cargo_capacity: return(48 * param_pax);
 }
 }
@@ -657,6 +657,6 @@ item (FEAT_TRAINS, item_BR373DM, 87) {
 	default: 							sw_BR373DM;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electric_sound;
+	sound_effect:						sw_sound_electric_86;
 }
 }

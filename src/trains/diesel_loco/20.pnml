@@ -179,7 +179,7 @@ item (FEAT_TRAINS, item_BR20, 671) {
 	purchase:							spriteset_BR20_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_gronk_sound;
+	sound_effect:						sw_sound_diesel_thumper;
 	cost_factor:	return(GetAdjustedCost(25));
 	running_cost_factor: return(GetAdjustedCost(6));
 }

@@ -41,7 +41,7 @@ item (FEAT_TRAINS, item_SRZClass, 657) {
 	purchase:							spriteset_SRZClass_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
-	sound_effect:						sw_steam_sound;
+	sound_effect:						sw_sound_steam_generic;
 	cost_factor:	return(GetAdjustedCost(18));
 	running_cost_factor: return(GetAdjustedCost(20));
 }

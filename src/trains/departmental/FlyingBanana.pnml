@@ -83,7 +83,7 @@ item (FEAT_TRAINS, item_FlyingBanana, 687) {
 	purchase:							spriteset_FlyingBanana_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_voyager_sound;
+	sound_effect:						sw_sound_diesel_hst_vp185;
 	// AI Poison Pill below
 	start_stop:		sw_EyeCandy_AllowMove;
 	cost_factor:	sw_EyeCandy_PurchaseCost;

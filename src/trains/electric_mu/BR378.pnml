@@ -191,7 +191,7 @@ item (FEAT_TRAINS, item_BR378_3dv, 225) {
 	purchase:							spriteset_BR378_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electrostar_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(210 * param_pax);
 	cost_factor:	return(GetAdjustedCost(42));
 	running_cost_factor: return(GetAdjustedCost(35));
@@ -243,7 +243,7 @@ item (FEAT_TRAINS, item_BR378_4, 226) {
 	purchase:							spriteset_BR378_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electrostar_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(210 * param_pax);
 }
 }
@@ -292,7 +292,7 @@ item (FEAT_TRAINS, item_BR378_4dv, 227) {
 	purchase:							spriteset_BR378_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electrostar_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(210 * param_pax);
 }
 }
@@ -343,7 +343,7 @@ item (FEAT_TRAINS, item_BR378_5, 228) {
 	purchase:							spriteset_BR378_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electrostar_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(210 * param_pax);
 }
 }
@@ -392,7 +392,7 @@ item (FEAT_TRAINS, item_BR378_5dv, 229) {
 	purchase:							spriteset_BR378_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electrostar_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(210 * param_pax);
 }
 }
@@ -437,7 +437,7 @@ item (FEAT_TRAINS, item_BR378b, 231) {
 	default: 							sw_BR378b;	
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electrostar_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(210 * param_pax);
 }
 }
@@ -482,7 +482,7 @@ item (FEAT_TRAINS, item_BR378c, 232) {
 	default: 							sw_BR378c;	
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_electrostar_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(210 * param_pax);
 }
 }
@@ -526,7 +526,7 @@ item (FEAT_TRAINS, item_BR378d, 233) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;		
 	default: 							sw_BR378d;	
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_electrostar_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(210 * param_pax);
 }
 }

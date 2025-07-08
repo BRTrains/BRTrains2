@@ -111,7 +111,7 @@ item (FEAT_TRAINS, item_BR28, 692) {
 	purchase:							spriteset_BR28_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_gronk_sound;
+	sound_effect:						sw_sound_diesel_25;
 	cost_factor:	return(GetAdjustedCost(27));
 	running_cost_factor: return(GetAdjustedCost(14));
 }

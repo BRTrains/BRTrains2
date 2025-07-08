@@ -69,7 +69,7 @@ item (FEAT_TRAINS, item_BR88, 594) {
 	power:								switch_br88_power;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						switch_br88_sound;
+	sound_effect:						sw_sound_hybrid_88;
 	cost_factor:	return(GetAdjustedCost(52));
 	running_cost_factor: return(GetAdjustedCost(30));
 }

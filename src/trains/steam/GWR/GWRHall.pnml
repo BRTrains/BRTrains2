@@ -76,7 +76,7 @@ item (FEAT_TRAINS, item_GWRHall, 512) {
 	purchase:							spriteset_GWRHall_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
-	sound_effect:						sw_steam_sound;
+	sound_effect:						sw_sound_steam_generic;
 	cost_factor:	return(GetAdjustedCost(26));
 	running_cost_factor: return(GetAdjustedCost(30));
 }

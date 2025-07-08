@@ -321,7 +321,7 @@ item (FEAT_TRAINS, item_BR423, 347) {
 	default: 							sw_BR423_a;
 	purchase:							spriteset_BR423_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	create_effect:						electric_create_visual_effect_SAA3;
 	cargo_capacity: return(62 * param_pax);
 	cost_factor:	return(GetAdjustedCost(47));
@@ -370,7 +370,7 @@ item (FEAT_TRAINS, item_BR423_b, 348) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR423_b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(58 * param_pax);
 }
 }
@@ -414,7 +414,7 @@ item (FEAT_TRAINS, item_BR423_c, 349) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR423_c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(98 * param_pax);
 }
 }
@@ -458,7 +458,7 @@ item (FEAT_TRAINS, item_BR423_d, 350) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR423_d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	create_effect:						electric_create_visual_effect_SAA3;
 	cargo_capacity: return(62 * param_pax);
 }
@@ -506,7 +506,7 @@ item (FEAT_TRAINS, item_BR423_9, 351) {
 	default: 							sw_BR423_9_a;
 	purchase:							spriteset_BR423_9_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	create_effect:						electric_create_visual_effect_SAA3;
 	cargo_capacity: return(70 * param_pax);
 }
@@ -551,7 +551,7 @@ item (FEAT_TRAINS, item_BR423_9_b, 352) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR423_9_b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(76 * param_pax);
 }
 }
@@ -595,7 +595,7 @@ item (FEAT_TRAINS, item_BR423_9_c, 353) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR423_9_c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(98 * param_pax);
 }
 }
@@ -639,7 +639,7 @@ item (FEAT_TRAINS, item_BR423_9_d, 354) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR423_9_d;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	create_effect:						electric_create_visual_effect_SAA3;
 	cargo_capacity: return(70 * param_pax);
 }
@@ -689,7 +689,7 @@ item (FEAT_TRAINS, item_BR480, 355) {
 	default: 							sw_BR480_dtclf;
 	purchase:							spriteset_BR480_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	create_effect:						electric_create_visual_effect_SAA3;
 	cargo_capacity: return(62 * param_pax);
 }
@@ -733,7 +733,7 @@ item (FEAT_TRAINS, item_BR480_dtclf, 356) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR480_dtclf;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	create_effect:						electric_create_visual_effect_SAA3;
 	cargo_capacity: return(62 * param_pax);
 }
@@ -777,7 +777,7 @@ item (FEAT_TRAINS, item_BR480_dtclr, 357) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR480_dtclr;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	create_effect:						electric_create_visual_effect_SAA3;
 	cargo_capacity: return(62 * param_pax);
 }
@@ -821,7 +821,7 @@ item (FEAT_TRAINS, item_BR480_mbso, 358) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR480_mbso;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(58 * param_pax);
 }
 }
@@ -864,7 +864,7 @@ item (FEAT_TRAINS, item_BR480_buf, 359) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_BR480_buf;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_classic_emu_sound;
+	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity: return(23 * param_pax);
 }
 }

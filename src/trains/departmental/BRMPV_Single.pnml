@@ -40,7 +40,7 @@ item (FEAT_TRAINS, item_MPV_Single, 235) {
 	purchase:							spriteset_MPV_Single_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						sw_MPV_Single_effect;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_dmu_gen2;
 	// AI Poison Pill below
 	start_stop:		sw_EyeCandy_AllowMove;
 	cost_factor:	sw_EyeCandy_PurchaseCost;

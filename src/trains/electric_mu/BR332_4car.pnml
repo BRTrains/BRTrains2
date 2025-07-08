@@ -40,7 +40,7 @@ item (FEAT_TRAINS, item_BR332_4car, 730) {
 	default: 							sw_BR332_4car;
 	purchase:							spriteset_BR332_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_networker_sound;
+	sound_effect:						sw_sound_electric_88;
 	cargo_capacity: return(203/4 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(65));
 	running_cost_factor: return(GetAdjustedCost(40));

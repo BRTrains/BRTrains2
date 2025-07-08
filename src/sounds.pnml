@@ -462,6 +462,54 @@ switch (FEAT_TRAINS, SELF, sw_sound_electric_GEC, param_sounds){
 }
 
 /*
+	Tube - GEC
+	
+	Generic electric motor sounds with depot whistles for the tube stock.
+*/
+
+switch(FEAT_TRAINS, PARENT, sw_sound_tube_GEC_coast, current_speed){
+	0..10 :	sound("sfx/electric/GEC_slow.wav");
+	11..20:	sound("sfx/electric/GEC_med.wav");
+	sound("sfx/electric/GEC_fast.wav");
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_tube_GEC_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/whistle_depot.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/whistle_depot.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_tube_GEC_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_tube_GEC, param_sounds){
+	1:sw_sound_tube_GEC_on;
+	sw_sound_default;
+}
+
+/*
+	Tube - Modern
+	
+	Modern traction motors but with the tube depot whistle.
+*/
+
+switch(FEAT_TRAINS, PARENT, sw_sound_tube_modern_coast, current_speed){
+	0..10:	sound("sfx/electric/88_fast.wav");
+	11..20:	sound("sfx/electric/88_slow.wav");
+	sound("sfx/electric/desiro_run_high.wav");
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_tube_modern_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/whistle_depot.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/whistle_depot.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_tube_modern_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_TRAIN_BREAKDOWN;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_tube_modern, param_sounds){
+	1:sw_sound_tube_modern_on;
+	sw_sound_default;
+}
+
+/*
 	Generic random steam.
 	
 	Generic steam sounds for all kettles. Needs further improvement.
@@ -501,7 +549,7 @@ switch (FEAT_TRAINS, SELF, sw_sound_steam_generic_on, getbits(extra_callback_inf
 
 switch (FEAT_TRAINS, SELF, sw_sound_steam_generic, param_sounds){
 	1:sw_sound_steam_generic_on;
-	sw_sound_default;
+	sw_sound_steam_default;
 }
 
 

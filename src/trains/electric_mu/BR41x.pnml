@@ -756,7 +756,7 @@ item (FEAT_TRAINS, item_BR415_1, 296) {
 	default: 							sw_BR415_1;
 	purchase:							spriteset_BR415_1_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
- 	sound_effect:						sw_classic_emu_sound;
+ 	sound_effect:						sw_sound_electric_GEC;
 	 cargo_capacity:						return(82 * param_pax);
 	 cost_factor:	return(GetAdjustedCost(49));
 	running_cost_factor: return(GetAdjustedCost(28));
@@ -805,7 +805,7 @@ item (FEAT_TRAINS, item_BR415_2, 297) {
 	default: 							sw_BR415_2;
 	purchase:							spriteset_BR415_2_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
- 	sound_effect:						sw_classic_emu_sound;
+ 	sound_effect:						sw_sound_electric_GEC;
 	 cargo_capacity:						return(82 * param_pax);
 	 cost_factor:	return(GetAdjustedCost(48));
 	running_cost_factor: return(GetAdjustedCost(28));
@@ -854,7 +854,7 @@ item (FEAT_TRAINS, item_BR416_1, 298) {
 	default: 							sw_BR416_1;
 	purchase:							spriteset_BR416_1_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
- 	sound_effect:						sw_classic_emu_sound;
+ 	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity:						return(82 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(49));
 	running_cost_factor: return(GetAdjustedCost(28));
@@ -903,7 +903,7 @@ item (FEAT_TRAINS, item_BR416_2, 299) {
 	default: 							sw_BR416_2;
 	purchase:							spriteset_BR416_2_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
- 	sound_effect:						sw_classic_emu_sound;
+ 	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity:						return(82 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(48));
 	running_cost_factor: return(GetAdjustedCost(28));
@@ -952,7 +952,7 @@ item (FEAT_TRAINS, item_BR414_1, 300) {
 	default: 							sw_BR414_1;
 	purchase:							spriteset_BR414_1_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
- 	sound_effect:						sw_classic_emu_sound;
+ 	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity:						return(56 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(31));
 	running_cost_factor: return(GetAdjustedCost(17));
@@ -1001,7 +1001,7 @@ item (FEAT_TRAINS, item_BR414_2, 301) {
 	default: 							sw_BR414_2;
 	purchase:							spriteset_BR414_2_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
- 	sound_effect:						sw_classic_emu_sound;
+ 	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity:						return(69 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(31));
 	running_cost_factor: return(GetAdjustedCost(18));
@@ -1051,7 +1051,7 @@ item (FEAT_TRAINS, item_BR418_1, 302) {
 	default: 							sw_BR418_1;
 	purchase:							spriteset_BR414_1_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
- 	sound_effect:						sw_classic_emu_sound;
+ 	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity:						return(69 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(33));
 	running_cost_factor: return(GetAdjustedCost(19));
@@ -1100,7 +1100,7 @@ item (FEAT_TRAINS, item_BR413, 303) {
 	default: 							sw_BR413;
 	purchase:							spriteset_BR413_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
- 	sound_effect:						sw_classic_emu_sound;
+ 	sound_effect:						sw_sound_electric_GEC;
 	cargo_capacity:						return(69 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(33));
 	running_cost_factor: return(GetAdjustedCost(19));

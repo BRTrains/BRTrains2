@@ -51,7 +51,7 @@ item (FEAT_ROADVEHS, item_TRAM_BR555, 642) {
 	default: 							switch_TRAM_BR555_spriteset;
 	purchase:							spriteset_BR555_purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_TRAM_electric_sound;
+	sound_effect:						sw_sound_TRAM_electric_88;
 	cargo_capacity: return(600 * param_pax / 5);
 	cost_factor:	return(GetAdjustedCostTRAM(40));
 	running_cost_factor: return(GetAdjustedCostTRAM(35));

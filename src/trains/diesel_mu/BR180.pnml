@@ -162,7 +162,7 @@ item (FEAT_TRAINS, item_BR180, 67) {
 	purchase:							spriteset_BR180_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_220;
 	cargo_capacity:						return(55 * param_pax);
 	cost_factor:	return(GetAdjustedCost(92));
 	running_cost_factor: return(GetAdjustedCost(68));
@@ -209,7 +209,7 @@ item (FEAT_TRAINS, item_180b, 68) {
 	default: 							sw_BR180b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_220;
 	cargo_capacity:						return(59 * param_pax);
 }
 }
@@ -254,7 +254,7 @@ item (FEAT_TRAINS, item_180_MFL, 230) {
 	default: 							sw_BR180b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_220;
 	cargo_capacity:						return(59 * param_pax);
 }
 }
@@ -299,7 +299,7 @@ item (FEAT_TRAINS, item_180c, 69) {
 	default: 							sw_BR180c;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_dmu_sound;
+	sound_effect:						sw_sound_diesel_220;
 	cargo_capacity:						return(55 * param_pax);
 }
 }

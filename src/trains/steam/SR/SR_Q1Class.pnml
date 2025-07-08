@@ -46,7 +46,7 @@ item(FEAT_TRAINS, item_SR_Q1, 718) {
         default: 						sw_SR_Q1;
         purchase:						spriteset_SR_Q1_Purchase;
         running_cost_factor:			return(GetAdjustedCost(28));
-        sound_effect:					sw_steam_sound;
+        sound_effect:					sw_sound_steam_generic;
         length:							sw_SR_Q1_length;
     }
 }
