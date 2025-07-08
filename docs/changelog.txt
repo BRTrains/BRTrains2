@@ -4,6 +4,7 @@
 - GWR 5700/6700/8750 Class (needs coding)
 - GWR Great Bear and Hall class rework
 - Class 360
+- Class 411, 412, 421, 422, 438 etc rework
 
 # v2.15
 - Added Class 69
