@@ -31,12 +31,6 @@ switch(FEAT_TRAINS,SELF,sw_BR99_speed,param_max_speed){
 	1:	return 121;
 }
 
-
-switch(FEAT_TRAINS, SELF, switch_BR99_sound, current_railtype) {
-	RAIL: sw_66_sound;
-	return CB_RESULT_NO_TEXT;
-}
-
 item (FEAT_TRAINS, item_BR99, 690) {
 	property {
 		name: 							string(STR_NAME_BR99);

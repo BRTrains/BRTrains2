@@ -91,7 +91,7 @@ item (FEAT_TRAINS, item_LU1986, 510) {
 	purchase:							spriteset_LU1986_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
-	sound_effect:						sw_sound_electric_tube;
+	sound_effect:						sw_sound_tube_GEC;
 	cargo_capacity: return(130 * param_pax);
 		cost_factor:	return(GetAdjustedCost(61));
 	running_cost_factor: return(GetAdjustedCost(37));
@@ -137,7 +137,7 @@ item (FEAT_TRAINS, item_LU1986b, 511) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	default: 							sw_LU1986b;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	sound_effect:						sw_sound_electric_tube;
+	sound_effect:						sw_sound_tube_GEC;
 	cargo_capacity: return(130 * param_pax);
 }
 }

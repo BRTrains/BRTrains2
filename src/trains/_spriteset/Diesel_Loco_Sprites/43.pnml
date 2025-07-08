@@ -202,16 +202,3 @@ switch(FEAT_TRAINS,SELF,sw_BR43_cargo_subtype_text,cargo_subtype){
 	16:	return string(str_Pullman);
        return CB_RESULT_NO_TEXT;
 }
-
-switch(FEAT_TRAINS,SELF,sw_BR43_sound_type,cargo_subtype){
-    0:	return sw_hst_sound;
-	1:	return sw_hst_sound;
-	2:	return sw_hst_sound;
-	3:	return sw_hst_sound;
-	4:	return sw_hst_sound;
-	5:	return sw_hst_sound;
-	6:	return sw_hst_sound;
-	7:	return sw_mtu_sound;
-	8:	return sw_mtu_sound;
-	return sw_hst_sound;
-}

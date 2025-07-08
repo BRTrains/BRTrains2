@@ -21,11 +21,6 @@ switch(FEAT_TRAINS, SELF, switch_br88_power, current_railtype) {
 }
 
 
-switch(FEAT_TRAINS, SELF, switch_br88_sound, current_railtype) {
-	RAIL: sw_66_sound;
-	return CB_RESULT_NO_TEXT;
-}
-
 item (FEAT_TRAINS, item_BR88, 594) {
 	property {
 		name: 							string(STR_NAME_BR88);
