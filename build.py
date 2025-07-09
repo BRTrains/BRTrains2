@@ -69,11 +69,11 @@ def copy_file(filepath: Path, nml_file: str):
     return nml_file
 
 
-def find_pnml_files(src_directory: Path):
-    print("Finding pnml files in %s" % src_directory)
+def find_files(src_directory: Path, filetype: str):
+    print("Finding ." + filetype + " files in %s" % src_directory)
     file_list = dict()
     # Iterate through all files in src_directory recursively, finding any that end in .pnml
-    for path in src_directory.rglob("*.pnml"):
+    for path in src_directory.rglob("*." + filetype):
         # Don't add the special ones
         if path.stem in ["railtypes", "grf", "sounds", "templates_shared", "templates_trains", "templates_trams"]:
             continue
@@ -136,114 +136,53 @@ def compile_grf(has_lang_dir, grf_name, lang_dir):
         print("nml is not installed.  You can get it using 'pip install nml'")
         return -2
 
-
-def run_game(grf_name):
-    from sys import platform
-
-    print("Detecting platform")
-
-    # Change default paths depending on whether we use Linux or Windows (sorry OSX)
-    if platform.startswith("linux"):
-        newgrf_dir = Path.home().joinpath(".openttd", "newgrf")
-        executable_path = "/usr/bin/openttd"
-        kill_cmd = ["killall","openttd"]
-        print("Detected as Linux")
-    elif platform.startswith("win32"):
-        newgrf_dir = Path.home().joinpath("Documents", "OpenTTD", "newgrf")
-        executable_path = "C:/Program Files/OpenTTD/openttd.exe"
-        kill_cmd = ["taskkill.exe" "/IM" "OpenTTD.exe"]
-        print("Detected as Windows")
-    else:
-        print("Detected as Other.  Cannot run game.")
-        return -3
-
-    print("Attempting to read config")
-    json_read_ok = False
-    # Check that the config file exists
-    if Path("build/build.json").exists():
-        from json import load, decoder
-        with open("build/build.json") as json_data:
-            # Try to read the config file
-            try:
-                data = load(json_data)
-            # Errors if the file in invalid
-            except decoder.JSONDecodeError:
-                print("The config file is invalid")
-                json_read_ok = False
-            else:
-                # Read successfully
-                # Try to read the keys from the json file
-                try:
-                    newgrf_dir = data["newgrf_dir"]
-                    executable_path = data["executable"]
-                # Errors if not all keys are found
-                except KeyError:
-                    print("The config json file is invalid")
-                    json_read_ok = False
-                # Read successfully, set read_ok to true
-                else:
-                    json_read_ok = True
-                    print("Read config successfully")
-
-    # If reading the json didn't work
-    if not json_read_ok:
-        from json import dump
-        from os import access, X_OK
-
-        print("No config, require user input")
-
-        # Prompt the user for the "newgrf" directory until we get something like it
-        while not Path(newgrf_dir).exists():
-            newgrf_dir = input("Enter the newgrf directory: ")
-            if len(newgrf_dir) > 6:
-                newgrf_dir = "~/.openttd/newgrf"
-                continue
-            if newgrf_dir[-6:] != "newgrf":
-                newgrf_dir = "~/.openttd/newgrf"
-
-        # Prompt the user for the executable path until we get an executable
-        while not Path(executable_path).exists():
-            executable_path = input("Enter the OpenTTD executable path: ")
-            if not (access(executable_path, X_OK)):
-                executable_path = "/usr/bin/openttd"
-
-        # Dump the two paths to a json file for next time
-        with open("build/build.json", "w") as json_data:
-            data = {
-                "newgrf_dir": str(newgrf_dir),
-                "executable": str(executable_path)
-            }
-            dump(data, json_data)
-
-    from shutil import copy
-    from subprocess import Popen
-    from os import devnull
-
-    # Kill existing processes
-    print("Killing existing processes")
-    try:
-        kill_process = Popen(kill_cmd)
-        kill_process.wait()
-    except:
-        print("Something went wrong when trying to kill processes")
-
-    # Copy grf
-    print("Copying grf")
-    copy("build/" + grf_name + ".grf", Path(newgrf_dir))
-
-    # Run the game in it's root directory
-    print("Running game\n")
-    # Redirect stdout and stderr
-    null = open(devnull, "w")
-    Popen([executable_path, "-t", "2050", "-g"], cwd=Path(executable_path).parent, stdout=null, stderr=null)
-    null
-    return 2
-
-
 def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
-    src_directory = Path("src")
-    lang_directory = Path("lang")
-    gfx_directory = Path("gfx")
+
+    # List of files that have already been added
+    processed_files = set()
+
+    src_directory_name = "src"
+    lang_directory_name = "lang"
+    gfx_directory_name = "gfx"
+
+    prepend_directory_name = "prepend"
+    append_directory_name = "append"
+
+    sprite_suffix = "sprites"
+    switch_suffix = "switches"
+
+    filetype = "pnml"
+
+    src_directory = Path(src_directory_name)
+    lang_directory = Path(lang_directory_name)
+    gfx_directory = Path(gfx_directory_name)
+
+    # Variant Headers
+    variantheader_directory = Path(src_directory_name + "variantheader")
+
+    # Electric
+    electric_mu_directory = Path(src_directory_name + "electric_MU")
+    electric_loco_directory = Path(src_directory_name + "electric_loco")
+    # Diesel
+    diesel_mu_directory = Path(src_directory_name + "diesel_MU")
+    diesel_loco_directory = Path(src_directory_name + "diesel_loco")
+    # Multimode
+    multimode_mu_directory = Path(src_directory_name + "multimode_MU")
+    multimode_loco_directory = Path(src_directory_name + "multimode_loco")
+    # Alternative Fuel (battery, hyrdogen)
+    altfuel_mu_directory = Path(src_directory_name + "altfuel_MU")
+    altfuel_loco_directory = Path(src_directory_name + "altfuel_loco")
+    # Steam
+    steam_loco_directory = Path(src_directory_name + "steam_loco")
+    # Metro
+    metro_directory = Path(src_directory_name + "metro")
+
+    # Rolling Stock
+    rolling_stock_directory = Path(src_directory_name + "rolling_stock")
+    # Freight
+    freight_wagon_directory = Path(src_directory_name + "freight_wagon")
+    # Utility and Debug
+    utility = Path(src_directory_name + "utility_and_debug")
 
     nml_file = ""
     has_lang_dir = False
@@ -256,15 +195,16 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
         return -1
 
     # Add the special files to the internal nml file
-    nml_file = copy_file(src_directory.joinpath("grf.pnml"), nml_file)
-    nml_file = copy_file(src_directory.joinpath("railtypes.pnml"), nml_file)
-    nml_file = copy_file(src_directory.joinpath("sounds.pnml"), nml_file)
-    nml_file = copy_file(src_directory.joinpath("templates_shared.pnml"), nml_file)
-    nml_file = copy_file(src_directory.joinpath("templates_trains.pnml"), nml_file)
-    nml_file = copy_file(src_directory.joinpath("templates_trams.pnml"), nml_file)
+    nml_file = copy_file(src_directory.joinpath("grf." + filetype), nml_file)
+    nml_file = copy_file(src_directory.joinpath("railtypes." + filetype), nml_file)
+    # Sounds, templates should now be handled in /prepend folders
+    #nml_file = copy_file(src_directory.joinpath("sounds." + filetype), nml_file)
+    #nml_file = copy_file(src_directory.joinpath("templates_shared." + filetype), nml_file)
+    #nml_file = copy_file(src_directory.joinpath("templates_trains." + filetype), nml_file)
+    #nml_file = copy_file(src_directory.joinpath("templates_trams." + filetype), nml_file)
 
     # Get a list of all the pnml files in src
-    file_list = find_pnml_files(src_directory)
+    file_list = find_files(src_directory, filetype)
     print("Finished finding pnml files\n")
     pushpull_files = list()
     priority_files = list()
