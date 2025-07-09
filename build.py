@@ -8,8 +8,7 @@ def append_file(filepath: Path, nml_file: str):
     if not filepath.exists():
         print("The file <%s> does not exist" % str(filepath))
         return -1
-        
-
+    
     # Read the pnml file into the internal nml
     with open(str(filepath), "r") as file:
         nml_file += "// " + filepath.stem + filepath.suffix + "\n"
@@ -19,16 +18,24 @@ def append_file(filepath: Path, nml_file: str):
     return nml_file
 
 
-def find_files_in_directory(src_directory: Path, filetype: str):
-    print("Finding ." + filetype + " files in %s" % src_directory)
+def find_files_in_directory(src_directory: Path, auto = False):
+    print("Finding .pnml files in %s" % src_directory)
+
+    exclude_dirs = {}
+    search_files = {}
+    if auto:
+        search_files = sorted(src_directory.rglob("*.pnml"))
+    else:
+        exclude_dirs = {"append", "prepend", "sprites"}
+        search_files = sorted(src_directory.glob("*.pnml"))
+        
+
     file_list = dict()
-    # Iterate through all files in src_directory recursively, finding any that end in .pnml
-    for path in src_directory.rglob("*." + filetype):
-
-        # TODO: remove this once handled elsewhhere
-        # Don't add the special ones
-        #if path.stem in ["railtypes", "grf", "sounds", "templates_shared", "templates_trains", "templates_trams"]:
-
+    # Iterate through all files in src_directory, finding any that end in .pnml
+    for path in search_files:
+        if auto and path.parent.stem in exclude_dirs:
+            continue
+        # Don't add duplicates
         if path.parent.stem not in file_list.keys():
             file_list[path.parent.stem] = list()
         file_list[path.parent.stem].append(path)
@@ -40,14 +47,22 @@ def find_files_in_directory(src_directory: Path, filetype: str):
 
     return file_list
 
-def handle_folder(directory: Path, filetype: str):
+def handle_folder(directory: Path, auto=False):
     file_list = dict()
 
-    file_list += find_files_in_directory(directory / "prepend", filetype)
+    if (directory / "prepend").exists():
+        file_list.update(find_files_in_directory(directory / "prepend", False))
 
-    file_list += find_files_in_directory(directory, filetype)
+    # If there's a sprites folder, process files in there first
+    if (directory / "sprites").exists():
+        print("The 'sprites' subfolder exists.")
+        file_list.update(find_files_in_directory(directory / "sprites", True))
 
-    file_list += find_files_in_directory(directory / "append", filetype)
+    # Grab the vehicles
+    file_list.update(find_files_in_directory(directory, auto))
+
+    if (directory / "append").exists():
+        file_list.update(find_files_in_directory(directory / "append", False))
 
     return file_list
 
@@ -107,106 +122,72 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     sprite_suffix = "sprites"
     switch_suffix = "switches"
 
-    filetype = "pnml"
-
     src_directory = Path(src_directory_name)
     lang_directory = Path(lang_directory_name)
     gfx_directory = Path(gfx_directory_name)
 
+    trains_directory = Path(src_directory_name) / Path("trains")
+
     # Variant Headers
-    variantheader_directory = Path(src_directory_name + "variantheader")
+    variantheader_directory = Path(trains_directory / "variantheader")
 
-    # Electric
-    electric_mu_directory = Path(src_directory_name + "electric_MU")
-    electric_loco_directory = Path(src_directory_name + "electric_loco")
-    # Diesel
-    diesel_mu_directory = Path(src_directory_name + "diesel_MU")
-    diesel_loco_directory = Path(src_directory_name + "diesel_loco")
-    # Multimode
-    multimode_mu_directory = Path(src_directory_name + "multimode_MU")
-    multimode_loco_directory = Path(src_directory_name + "multimode_loco")
-    # Alternative Fuel (battery, hyrdogen)
-    altfuel_mu_directory = Path(src_directory_name + "altfuel_MU")
-    altfuel_loco_directory = Path(src_directory_name + "altfuel_loco")
-    # Steam
-    steam_loco_directory = Path(src_directory_name + "steam_loco")
+    train_directories = {
+        "multimode_mu",
+        "electric_mu",
+        "diesel_mu",
+        "altfuel_mu",
+        "multimode_loco",
+        "electric_loco",
+        "diesel_loco",
+        "altfuel_loco",
+        "steam_loco",
+        "rolling_stock",
+        "freight_wagon",
+        "utility_and_debug",
+        "deprecated"
+    }
+
     # Metro
-    metro_directory = Path(src_directory_name + "metro")
+    metro_directory = Path(trains_directory / "metro")
 
-    # Rolling Stock
-    rolling_stock_directory = Path(src_directory_name + "rolling_stock")
-    # Freight
-    freight_wagon_directory = Path(src_directory_name + "freight_wagon")
-    # Utility and Debug
-    utility = Path(src_directory_name + "utility_and_debug")
 
     nml_file = ""
     has_lang_dir = False
 
     # Add the special files to the internal nml file
-    nml_file = append_file(src_directory.joinpath("grf." + filetype), nml_file)
-    nml_file = append_file(src_directory.joinpath("railtypes." + filetype), nml_file)
-    # Sounds, templates should now be handled in /prepend folders
+    nml_file = append_file(src_directory / "grf.pnml", nml_file)
 
-    # Get a list of all the pnml files in src
-    file_list = find_files_in_directory(src_directory, filetype)
+    file_list = dict()
+
+    file_list.update(handle_folder(src_directory / "grf_prepend"))
+
+    file_list.update(handle_folder(trains_directory))
+
+
+    for directory in train_directories:
+        filepath = trains_directory / directory / "sprites"
+        file_list.update(handle_folder(filepath, False))
+
+    file_list.update(handle_folder(variantheader_directory, True))
+
+    for directory in train_directories:
+        filepath = trains_directory / directory
+        file_list.update(handle_folder(filepath, True))
+
+    file_list.update(handle_folder(src_directory / "grf_append"))
+    
+    
     print("Finished finding pnml files\n")
-    # pushpull_files = list()
-    # priority_files = list()
+
+    # Grab the raw list of files from the dictionary
     pnml_files = list()
-    # append_files = list()
+    for files in file_list.values():
+        pnml_files.extend(files)
 
-
-    # Priority folders: Read all the files in folders that begin with "_" into the internal nml
-    #for directory in file_list:
-        # Group pushpull files
-        # if directory.startswith("PushPull"): 
-        #     pushpull_files += file_list[directory]
-        #     continue
-
-        # Grab priority files that need to be run first
-        # if directory.startswith("_"):
-        #     priority_files += file_list[directory]
-        #     continue
-
-        # Grab "append" files (that go at the end)
-        # if directory == "append":
-        #     append_files += file_list[directory]
-        #     continue
-        
-        # Everything else
-        # else:
-        #         pnml_files += file_list[directory]       
-
-    # pnml_files += file_list[directory]        
-
-    # Special pushpull file first
-    # for file in sorted(pushpull_files):
-    #     if file.stem.startswith("PushPull"):
-    #         print("Found PushPull.pnml special item")
-    #         nml_file = append_file(file, nml_file)
-
-    # Read the other pushpull files
-    # for file in sorted(pushpull_files):
-    #     if file.stem.startswith("PushPull"):
-    #         continue;
-    #     print("Reading pushpull file '%s'" % (file.stem + file.suffix))
-    #     nml_file = append_file(file, nml_file)
-
-    # Read the priority files
-    # for file in sorted(priority_files):
-    #     print("Reading priority file '%s'" % (file.stem + file.suffix))
-    #     nml_file = append_file(file, nml_file)
-
-    # Read the regular files
-    for file in sorted(pnml_files):
+    # Read the files into the buffer
+    for file in pnml_files:
         # print("Reading '%s'" % (file.stem + file.suffix))
         nml_file = append_file(file, nml_file)
-
-    # Read the append files (mostly switches to disable units)
-    # for file in sorted(append_files):
-    #     # print("Reading '%s'" % (file.stem + file.suffix))
-    #     nml_file = append_file(file, nml_file)
 
     print("Copied all files to internal buffer\n")
 
