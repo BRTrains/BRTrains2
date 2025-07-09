@@ -96,7 +96,7 @@ item (FEAT_TRAINS, item_BR68, 196) {
 	purchase:							spriteset_BR68_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_sound_diesel_68;
+	sound_effect:						sw_66_sound;
 	cost_factor:	return(GetAdjustedCost(46));
 	running_cost_factor: return(GetAdjustedCost(35));
 }
