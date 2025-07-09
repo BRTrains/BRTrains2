@@ -3,57 +3,6 @@ from sys import argv
 from argparse import ArgumentParser
 from importlib import util
 
-
-def check_project_structure(src_directory: Path, gfx_directory: Path,
-                            lang_directory: Path):
-
-    has_lang_dir = True
-
-    # Check that the project is properly structured
-    if not src_directory.exists():
-        print("\"src\" directory not found.  Aborting")
-        return (False, -1)
-    if not gfx_directory.exists():
-        print("\"gfx\" directory not found.  Aborting")
-        return (False, -1)
-    if not lang_directory.exists():
-        print(
-            "\"lang\" directory not found.  Assuming hard-coded strings (this is not best practice)"
-        )
-        has_lang_dir = False
-
-    # Find the grf, railtypes, and templates files
-    if not src_directory.joinpath("grf.pnml").exists():
-        print(
-            "\"grf.pnml\" not found.  It should be in \"src\" and contain the grf block"
-        )
-        return (False, -1)
-    if not src_directory.joinpath("railtypes.pnml").exists():
-        print(
-            "\"railtypes.pnml\" not found.  It should be in \"src\" and contain the railtypetable block"
-        )
-        return (False, -1)
-    if not src_directory.joinpath("sounds.pnml").exists():
-        print(
-            "\"sounds.pnml\" not found.  Assuming no sounds are required"
-        )
-    if not src_directory.joinpath("templates_shared.pnml").exists():
-        print(
-            "\"templates_shared.pnml\" not found.  Assuming no templates are required"
-        )
-    if not src_directory.joinpath("templates_trains.pnml").exists():
-        print(
-            "\"templates_trains.pnml\" not found.  Assuming no templates are required"
-        )
-    if not src_directory.joinpath("templates_trams.pnml").exists():
-        print(
-            "\"templates_trams.pnml\" not found.  Assuming no templates are required"
-        )
-
-    print("Project structure is correct\n")
-    return (has_lang_dir, 0)
-
-
 def copy_file(filepath: Path, nml_file: str):
     # If the pnml filepath doesn't exist, exit
     if not filepath.exists():
@@ -134,7 +83,7 @@ def compile_grf(has_lang_dir, grf_name, lang_dir):
     else:
         # nml isn't installed
         print("nml is not installed.  You can get it using 'pip install nml'")
-        return -2
+        return -1
 
 def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
 
@@ -187,21 +136,10 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     nml_file = ""
     has_lang_dir = False
 
-    # Check if the project is set up properly and we have a lang directory
-    (has_lang_dir,
-     error_code) = check_project_structure(src_directory, gfx_directory,
-                                           lang_directory)
-    if error_code != 0:
-        return -1
-
     # Add the special files to the internal nml file
     nml_file = copy_file(src_directory.joinpath("grf." + filetype), nml_file)
     nml_file = copy_file(src_directory.joinpath("railtypes." + filetype), nml_file)
     # Sounds, templates should now be handled in /prepend folders
-    #nml_file = copy_file(src_directory.joinpath("sounds." + filetype), nml_file)
-    #nml_file = copy_file(src_directory.joinpath("templates_shared." + filetype), nml_file)
-    #nml_file = copy_file(src_directory.joinpath("templates_trains." + filetype), nml_file)
-    #nml_file = copy_file(src_directory.joinpath("templates_trams." + filetype), nml_file)
 
     # Get a list of all the pnml files in src
     file_list = find_files(src_directory, filetype)
@@ -210,6 +148,8 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     priority_files = list()
     pnml_files = list()
     append_files = list()
+
+
     # Priority folders: Read all the files in folders that begin with "_" into the internal nml
     for directory in file_list:
         # Group pushpull files
@@ -267,17 +207,11 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
         return -1
 
     # If we're compiling or running the game
-    if b_compile_grf or b_run_game:
+    if b_compile_grf:
         # Try to compile the GRF
         error = compile_grf(has_lang_dir, grf_name, lang_dir)
-        if error == -2:
+        if error == -1:
             return -2
-        elif b_run_game == False:
-            return 1
-
-    # Optionally run the game
-    if b_run_game:
-        return run_game(grf_name)
 
     return 0
 
@@ -310,13 +244,7 @@ if __name__ == "__main__":
             "The nml file failed to compile properly.  Please consult the log")
     elif error_code == -2:
         print("The nml file compiled correctly, but nml failed to compile it")
-    elif error_code == -3:
-        print(
-            "The grf file compiled successfully but the game failed to start")
     elif error_code == 1:
         print("The grf file was compiled successfully")
-    elif error_code == 2:
-        print(
-            "The grf file was compiled successfully, and the game was started")
     else:
         print("The nml file was compiled successfully (this is the not grf)")
