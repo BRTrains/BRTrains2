@@ -1,0 +1,118 @@
+
+
+
+// ===========================================================================================================
+
+// HYBRID sounds
+
+/*
+	Class 73
+	
+	Uses GEC motors on 3rd rail and a Thumper engine on diesel.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_73_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/thumper_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/thumper_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/thumper_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_electric_73_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_electric_GEC_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_73_on, tile_powers_railtype("SAA3") || tile_powers_railtype("3RDR")){
+	1:sw_sound_electric_73_on;
+	sw_sound_diesel_73_on;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_73, param_sounds){
+	1:sw_sound_hybrid_73_on;
+	sw_sound_default;
+}
+
+/*
+	Class 800
+	
+	Uses Hitachi AC motors on OHLE and MTU engines on diesel.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_800_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_4.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_4.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/220_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/220_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_electric_800_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_4.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_4.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_electric_88_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_800_on, tile_powers_railtype("ELRL")){
+	1:sw_sound_electric_800_on	;
+	sw_sound_diesel_800_on;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_800, param_sounds){
+	1:sw_sound_hybrid_800_on;
+	sw_sound_default;
+}
+
+/*
+	Class 88 (hybrid switches)
+	
+	Uses AC motors on OHLE and Caterpillar engine on diesel.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_88_on, tile_powers_railtype("ELRL")){
+	1:sw_sound_electric_88_on	;
+	sw_sound_diesel_68_on;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_88, param_sounds){
+	1:sw_sound_hybrid_88_on;
+	sw_sound_default;
+}
+
+/*
+	Class 769
+	
+	Uses GEC motors on 3rd rail and a Thumper engine on diesel.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_769_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_5.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_5.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/dmu_gen2_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/dmu_gen2_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/dmu_gen2_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_electric_769_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_5.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_5.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_electric_GEC_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_769_on, tile_powers_railtype("ELRL") || tile_powers_railtype("SAA3") || tile_powers_railtype("3RDR")){
+	1:sw_sound_electric_769_on;
+	sw_sound_diesel_769_on;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_769, param_sounds){
+	1:sw_sound_hybrid_769_on;
+	sw_sound_default;
+}
+

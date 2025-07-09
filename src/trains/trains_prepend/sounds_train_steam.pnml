@@ -1,0 +1,61 @@
+
+
+switch (FEAT_TRAINS, SELF, steam_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_STEAM, 0, 0, 10), 0x100)]) {
+    return 1;
+}
+
+switch(FEAT_TRAINS,SELF,sw_sound_default,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			SOUND_DEPARTURE_STEAM;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch(FEAT_TRAINS,SELF,sw_sound_steam_default,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_TUNNEL:			SOUND_DEPARTURE_STEAM;
+	SOUND_EVENT_START: 			SOUND_DEPARTURE_STEAM;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+
+/*
+	Generic random steam.
+	
+	Generic steam sounds for all kettles. Needs further improvement.
+*/
+
+random_switch(FEAT_TRAINS, SELF, sw_sound_steam_generic_visual_effect_slow){
+	1	: sound("sfx/steam/piston_stroke1.wav");
+	1	: sound("sfx/steam/piston_stroke2.wav");
+	1	: sound("sfx/steam/piston_stroke3.wav");
+	1	: sound("sfx/steam/piston_stroke4.wav");
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_sound_steam_generic_visual_effect_medium){
+	1	: sound("sfx/steam/qr_chuff_1.wav");
+	1	: sound("sfx/steam/qr_chuff_2.wav");
+	1	: sound("sfx/steam/qr_chuff_3.wav");
+	1	: sound("sfx/steam/qr_chuff_4.wav");
+}
+
+random_switch(FEAT_TRAINS, SELF, sw_sound_steam_generic_visual_effect_fast){
+	1	: sound("sfx/steam/qr_hiss_1.wav");
+	1	: sound("sfx/steam/qr_hiss_2.wav");
+}
+
+switch(FEAT_TRAINS, PARENT, sw_sound_steam_generic_visual_effect, current_speed){
+	0..20:	sw_sound_steam_generic_visual_effect_slow;
+	21..40:	sw_sound_steam_generic_visual_effect_medium;
+	sw_sound_steam_generic_visual_effect_fast;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_steam_generic_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/whistle_a4.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/whistle_a4.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sw_sound_steam_generic_visual_effect;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_steam_generic, param_sounds){
+	1:sw_sound_steam_generic_on;
+	sw_sound_steam_default;
+}
+
