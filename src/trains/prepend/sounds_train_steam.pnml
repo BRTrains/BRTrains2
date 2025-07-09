@@ -3,12 +3,6 @@
 switch (FEAT_TRAINS, SELF, steam_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_STEAM, 0, 0, 10), 0x100)]) {
     return 1;
 }
-
-switch(FEAT_TRAINS,SELF,sw_sound_default,getbits(extra_callback_info1, 0, 8)){
-	SOUND_EVENT_START: 			SOUND_DEPARTURE_STEAM;
-	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
-}
-
 switch(FEAT_TRAINS,SELF,sw_sound_steam_default,getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_TUNNEL:			SOUND_DEPARTURE_STEAM;
 	SOUND_EVENT_START: 			SOUND_DEPARTURE_STEAM;
