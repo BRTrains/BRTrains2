@@ -26,6 +26,8 @@ This Project (BRTrains v2) builds on previous projects
 - 507001 "PEP"
 - On-Track Plant veg
 - AndyTheNorth (indirect via Iron Horse sprites borrowed by this project)
+- StarRaid (sounds) 
+
 
 #### Predecessor projects, from which some artwork is still present in this project
 
