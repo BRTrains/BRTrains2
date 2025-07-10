@@ -1,3 +1,17 @@
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_B07_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_DLRRed);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B07_DLRRed, position_in_articulated_veh % 2){
+	0:spriteset_B07_front_DLRRed;
+	1:spriteset_B07_rear_DLRRed;	
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B07,cargo_subtype){
+	0: sw_TRAM_B07_DLRRed;
+}
+
 switch (FEAT_ROADVEHS, SELF, switch_articulated_TRAM_B07_Double, extra_callback_info1) {
 	1..3: return item_TRAM_B07_Double;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts

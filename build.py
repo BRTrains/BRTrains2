@@ -11,12 +11,11 @@ def append_file(filepath: Path, nml_file: str):
     
     # Read the pnml file into the internal nml
     with open(str(filepath), "r") as file:
-        nml_file += "// " + filepath.stem + filepath.suffix + "\n"
+        nml_file += "// " + str(filepath) + "\n"
         for line in file:
             nml_file += line
     nml_file += "\n\n"
     return nml_file
-
 
 def find_files_in_directory(src_directory: Path, auto = False):
     print("Finding .pnml files in %s" % src_directory)
@@ -36,9 +35,9 @@ def find_files_in_directory(src_directory: Path, auto = False):
         if auto and path.parent.stem in exclude_dirs:
             continue
         # Don't add duplicates
-        if path.parent.stem not in file_list.keys():
-            file_list[path.parent.stem] = list()
-        file_list[path.parent.stem].append(path)
+        if str(path.parent) not in file_list.keys():
+            file_list[str(path.parent)] = list()
+        file_list[str(path.parent)].append(path)
 
     # List found files
     for directory in file_list.keys():
@@ -51,17 +50,19 @@ def handle_folder(directory: Path, auto=False):
     file_list = dict()
 
     if (directory / "prepend").exists():
+        handle_folder(directory / "prepend", auto)
         file_list.update(find_files_in_directory(directory / "prepend", False))
 
     # If there's a sprites folder, process files in there first
     if (directory / "sprites").exists():
-        print("The 'sprites' subfolder exists.")
+        handle_folder(directory / "sprites", auto)
         file_list.update(find_files_in_directory(directory / "sprites", True))
 
     # Grab the vehicles
     file_list.update(find_files_in_directory(directory, auto))
 
     if (directory / "append").exists():
+        handle_folder(directory / "append", auto)
         file_list.update(find_files_in_directory(directory / "append", False))
 
     return file_list
@@ -127,9 +128,10 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
     gfx_directory = Path(gfx_directory_name)
 
     trains_directory = Path(src_directory_name) / Path("trains")
+    trams_directory = Path(src_directory_name) / Path("trams")
 
     # Variant Headers
-    variantheader_directory = Path(trains_directory / "variantheader")
+    variantheader_directory = Path()
 
     train_directories = {
         "multimode_mu",
@@ -143,6 +145,8 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
         "steam_loco",
         "rolling_stock",
         "freight_wagon",
+        "metro",
+        "departmental",
         "utility_and_debug",
         "deprecated"
     }
@@ -168,11 +172,17 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
         filepath = trains_directory / directory / "sprites"
         file_list.update(handle_folder(filepath, False))
 
-    file_list.update(handle_folder(variantheader_directory, True))
+    file_list.update(handle_folder(trains_directory / "variantheader", True))
+
+    file_list.update(handle_folder(trains_directory / "push_pull"))
 
     for directory in train_directories:
         filepath = trains_directory / directory
-        file_list.update(handle_folder(filepath, True))
+        file_list.update(handle_folder(filepath, True))    
+    
+
+    file_list.update(handle_folder(trams_directory, True))
+    
 
     file_list.update(handle_folder(src_directory / "grf_append"))
     
@@ -186,7 +196,8 @@ def main(grf_name, src_dir, lang_dir, gfx_dir, b_compile_grf, b_run_game):
 
     # Read the files into the buffer
     for file in pnml_files:
-        # print("Reading '%s'" % (file.stem + file.suffix))
+        # print("Reading '%s'" % ( file.stem + file.suffix))
+        print(file)
         nml_file = append_file(file, nml_file)
 
     print("Copied all files to internal buffer\n")
