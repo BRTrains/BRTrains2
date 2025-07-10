@@ -19,21 +19,12 @@ def append_file(filepath: Path, nml_file: str):
 
 def find_files_in_directory(src_directory: Path, auto = False):
     print("Finding .pnml files in %s" % src_directory)
-
-    exclude_dirs = {}
-    search_files = {}
-    if auto:
-        search_files = sorted(src_directory.rglob("*.pnml"))
-    else:
-        exclude_dirs = {"append", "prepend", "sprites"}
-        search_files = sorted(src_directory.glob("*.pnml"))
-        
+    
+    search_files = sorted(src_directory.glob("*.pnml"))        
 
     file_list = dict()
     # Iterate through all files in src_directory, finding any that end in .pnml
-    for path in search_files:
-        if auto and path.parent.stem in exclude_dirs:
-            continue
+    for path in search_files:        
         # Don't add duplicates
         if str(path.parent) not in file_list.keys():
             file_list[str(path.parent)] = list()
@@ -49,21 +40,35 @@ def find_files_in_directory(src_directory: Path, auto = False):
 def handle_folder(directory: Path, auto=False):
     file_list = dict()
 
+    if not directory.exists():
+        print("Cannot handle folder: The path <%s> does not exist" % str(directory))
+        return file_list # Return empty dict
+
+
     if (directory / "prepend").exists():
         handle_folder(directory / "prepend", auto)
-        file_list.update(find_files_in_directory(directory / "prepend", False))
+        file_list.update(find_files_in_directory(directory / "prepend"))
 
     # If there's a sprites folder, process files in there first
     if (directory / "sprites").exists():
         handle_folder(directory / "sprites", auto)
-        file_list.update(find_files_in_directory(directory / "sprites", True))
+        file_list.update(find_files_in_directory(directory / "sprites"))
 
     # Grab the vehicles
-    file_list.update(find_files_in_directory(directory, auto))
+    file_list.update(find_files_in_directory(directory))
+
+    # Automatically look at subdirectories
+    if auto:
+        # Don't automatically walk subdirectories
+        exclude_dirs = {"append", "prepend", "sprites"}
+        subdirectories = [p for p in directory.iterdir() if p.is_dir() and p.name not in exclude_dirs]
+        for subdir in subdirectories:        
+            handle_folder(subdir, True)
+        
 
     if (directory / "append").exists():
         handle_folder(directory / "append", auto)
-        file_list.update(find_files_in_directory(directory / "append", False))
+        file_list.update(find_files_in_directory(directory / "append"))
 
     return file_list
 
