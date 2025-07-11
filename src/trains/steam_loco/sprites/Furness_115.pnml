@@ -1,0 +1,8 @@
+spriteset(spriteset_Furness115_Purchase, "gfx/Steam/Furness_115Class.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_Furness115_FurnessRed, "gfx/Steam/Furness_115Class.png") {
+	template_train32px(0, 13)
+}
+

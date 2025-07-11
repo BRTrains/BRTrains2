@@ -1,0 +1,87 @@
+switch(FEAT_TRAINS,SELF, sw_LMS8FLoco, cargo_subtype) {
+    0: spriteset_LMS8F_Black;
+    1: spriteset_LMS8F_Black;
+    2: spriteset_LMS8F_Black;
+    3: spriteset_LMS8F_WDGrey;
+}
+
+switch(FEAT_TRAINS, SELF, sw_LMS8FTender, cargo_subtype) {
+	0:	spriteset_LMS_B5JubTender_LMSBlack;
+	1: 	spriteset_LMS_B5JubTender_BRBlackLion;
+	2:	spriteset_LMS_B5JubTender_BRBlackText;
+    3:  spriteset_LMS_B5JubTender_WDGrey;
+}
+
+switch(FEAT_TRAINS, SELF, sw_LMS8F, position_in_articulated_veh) {
+    0: sw_LMS8FLoco;
+    1: sw_LMS8FTender;
+}
+
+switch(FEAT_TRAINS, SELF, switch_LMS8F_length, position_in_articulated_veh) {	
+	0: return 5;
+	1: return 4;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_LMS8F, extra_callback_info1) {
+	1: return item_LMS8F;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_LMS8F_cargo_subtype_text,cargo_subtype){
+    0: return string(str_LMSBlack);
+	1: return string(str_BRLion);
+	2: return string(str_BRBlack);
+	3: return string(str_WDGrey);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_LMS8F, 707) {
+	property {
+		name: 							string(STR_NAME_LMS8F);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1935,2,1);
+		model_life:						40;
+		retire_early:					1;
+		vehicle_life:					40;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					18;
+		running_cost_factor:			21;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1800 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							130 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	0.28; // RL 0.11, 32.4k lbf
+		air_drag_coefficient:			0.1;
+		length:							5;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+        length: switch_LMS8F_length;	
+        additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_LMS8F_usage),string(str_LMS8F_eos),string(str_LMS8F_liveries)));
+        can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+        cargo_capacity:						return 0;
+        cargo_subtype_text:					sw_LMS8F_cargo_subtype_text;
+        articulated_part:        			switch_articulated_LMS8F;
+        default: 							sw_LMS8F;
+        purchase:							spriteset_LMS8F_Purchase;
+        colour_mapping: 					return PALETTE_CC_FIRST;
+        create_effect:						steam_create_visual_effect;
+        sound_effect:						sw_sound_steam_generic;
+        cost_factor:	return(GetAdjustedCost(24));
+        running_cost_factor: return(GetAdjustedCost(23));
+    }
+}

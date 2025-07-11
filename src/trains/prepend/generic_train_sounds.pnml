@@ -1,0 +1,23 @@
+/* Generic template
+
+switch (FEAT_TRAINS, SELF, sw_sound_X_Y_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_1.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_1.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/X/Y_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/X/Y_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/X/Y_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_X_Y, param_sounds){
+	1:sw_sound_X_Y_on;
+	sw_sound_default;
+}
+
+
+*/
+
+switch(FEAT_TRAINS,SELF,sw_sound_default,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			SOUND_DEPARTURE_STEAM;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}

@@ -1,0 +1,24 @@
+spriteset(spriteset_LNERP2_Purchase, "gfx/Steam/LNER_P2.png") {
+	template_purchase_anim(0, 0)
+}
+
+spriteset(spriteset_LNERP2_LNERGreen, "gfx/Steam/LNER_P2.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_LNERP2_Wartime, "gfx/Steam/LNER_P2.png") {
+	template_train32px(0, 39)
+}
+
+spriteset(spriteset_LNERP2_Streamlined_Purchase, "gfx/Steam/LNER_P2_Streamlined.png") {
+	template_purchase_anim(0, 0)
+}
+
+spriteset(spriteset_LNERP2_Streamlined_LNERGreen, "gfx/Steam/LNER_P2_Streamlined.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_LNERP2_Streamlined_Wartime, "gfx/Steam/LNER_P2_Streamlined.png") {
+	template_train32px(0, 39)
+}
+

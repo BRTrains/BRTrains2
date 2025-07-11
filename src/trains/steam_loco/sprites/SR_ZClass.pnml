@@ -1,0 +1,16 @@
+spriteset(spriteset_SRZClass_Purchase, "gfx/Steam/SRzclass.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_SRZClass_SRBlack, "gfx/Steam/SRzclass.png") {
+	template_train24px(0, 13)
+}
+
+spriteset(spriteset_SRZClass_BRBlack, "gfx/Steam/SRzclass.png") {
+	template_train24px(0, 35)
+}
+
+spriteset(spriteset_SRZClass_BRLion, "gfx/Steam/SRzclass.png") {
+	template_train24px(0, 57)
+}
+

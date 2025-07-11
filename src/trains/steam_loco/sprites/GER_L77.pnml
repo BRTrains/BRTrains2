@@ -1,0 +1,24 @@
+spriteset(spriteset_GER_L77_Purchase, "gfx/Steam/GER_L77.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_GER_L77_GERBlue, "gfx/Steam/GER_L77.png") {
+	template_train24px(0, 13)
+}
+
+spriteset(spriteset_GER_L77_GERBlack, "gfx/Steam/GER_L77.png") {
+	template_train24px(0, 72)
+}
+
+spriteset(spriteset_GER_L77_LNERAppleGreen, "gfx/Steam/GER_L77.png") {
+	template_train24px(0, 46)
+}
+
+spriteset(spriteset_GER_L77_LNERBlack, "gfx/Steam/GER_L77.png") {
+	template_train24px(0, 98)
+}
+
+spriteset(spriteset_GER_L77_BRBlack, "gfx/Steam/GER_L77.png") {
+	template_train24px(0, 124)
+}
+

@@ -1,0 +1,65 @@
+// If the rear of this consist is a compatible Driving Trailer, call that vehicles's remote sprite call switch
+switch(FEAT_TRAINS, PARENT, sw_BR47_PushPUll, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {	
+	483: sw_PUSHPULL_LocomotiveAsRMTPO; // Royal Mail TPO PCV
+	630: sw_PUSHPULL_LocomotiveAsMk2DBSO; // Mk2 DBSO
+	586: sw_PUSHPULL_LocomotiveAsMk3DVT; // Mk3 DVT
+	sw_BR47; // No compatible locomotive found, show normal sprites
+}
+
+switch(FEAT_TRAINS, PARENT,sw_BR47_CheckPosition, position_in_consist){
+    0: sw_BR47_PushPUll; // Attempt push pull
+	sw_BR47; // We aren't at the front of the consist, show normal sprites
+}
+
+switch(FEAT_TRAINS,PARENT,sw_BR47_Sprites ,vehicle_is_reversed){
+    0:	sw_BR47; // We're heading foward, show normal sprites
+	1:	sw_BR47_CheckPosition; // Attempt push pull
+}
+
+item (FEAT_TRAINS, item_BR47, 440) {
+	property {
+		name: 							string(STR_NAME_BR47);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1962,4,21);
+		model_life:						19;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					38;
+		running_cost_factor:			37;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							75 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							2750 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							112 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.275;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_BR47_usage),string(str_BR47_eos),string(str_BR47_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_BR47_cargo_subtype_text;
+	default: 							sw_BR47_Sprites;
+	purchase:							spriteset_BR47_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_sound_diesel_55;
+	cost_factor:	return(GetAdjustedCost(38));
+	running_cost_factor: return(GetAdjustedCost(37));
+}
+}

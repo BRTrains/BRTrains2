@@ -1,0 +1,62 @@
+switch(FEAT_TRAINS,SELF, sw_SRZClass,cargo_subtype){
+    0:	spriteset_SRZClass_SRBlack;
+	1: 	spriteset_SRZClass_BRBlack;
+    2:  spriteset_SRZClass_BRLion;
+}
+
+switch(FEAT_TRAINS,SELF,sw_SRZClass_cargo_subtype_text,cargo_subtype){
+    0: return string(str_SRBlack);
+    1: return string(str_BRBlack);
+    2: return string(str_BRLion);
+       return CB_RESULT_NO_TEXT;
+}
+
+
+item (FEAT_TRAINS, item_SRZClass, 657) {
+	property {
+		name: 							string(STR_NAME_SRZClass);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1929,1,1);
+		model_life:						20;
+		retire_early:					1;
+		vehicle_life:					30;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					6;
+		running_cost_factor:			6;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;
+		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1300 hp;
+		running_cost_base:				RUNNING_COST_STEAM;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							72.7 ton;
+		engine_class:					ENGINE_CLASS_STEAM;
+		tractive_effort_coefficient:	0.179;
+		air_drag_coefficient:			0.1;
+		length:							6;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_SRZClass_usage),string(str_SRZClass_eos),string(str_SRZClass_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_SRZClass_cargo_subtype_text;	
+	default: 							sw_SRZClass;
+	purchase:							spriteset_SRZClass_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						steam_create_visual_effect;
+	sound_effect:						sw_sound_steam_generic;
+	cost_factor:	return(GetAdjustedCost(18));
+	running_cost_factor: return(GetAdjustedCost(20));
+}
+}

@@ -1,0 +1,8 @@
+spriteset(spriteset_LNER_J70_Purchase, "gfx/Steam/LNER_J70.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_LNER_J70_LNERTeak, "gfx/Steam/LNER_J70.png") {
+	template_train16px(0, 13)
+}
+

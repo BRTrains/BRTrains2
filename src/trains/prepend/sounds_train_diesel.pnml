@@ -1,0 +1,309 @@
+switch (FEAT_TRAINS, SELF, diesel_create_visual_effect, [STORE_TEMP(create_effect(EFFECT_SPRITE_DIESEL, 0, 0, 10), 0x100)]) {
+    return 1;
+}
+
+
+
+/* 
+	Class 08
+	
+	Use this for shunters.
+	Only needs a running sound and not an exhaust effect sound as shunters sound consistent in motion.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_08_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_1.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_1.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/08_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/08_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_08, param_sounds){
+	1:sw_sound_diesel_08_on;
+	sw_sound_default;
+}
+
+/*
+	Class 25
+	
+	
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_25_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/25_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/25_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/25_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_25, param_sounds){
+	1:sw_sound_diesel_25_on;
+	sw_sound_default;
+}
+
+/*
+	Class 37
+	
+	Also used for the Class 31.
+*/
+
+switch(FEAT_TRAINS, PARENT, sw_sound_diesel_37_coast, current_speed){
+	0..18 : sound("sfx/diesel/37_coast_low.wav") ;
+	sound("sfx/diesel/37_coast_high.wav") ;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_37_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_7.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_7.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/37_run.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_diesel_37_coast;
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/37_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_37, param_sounds){
+	1:sw_sound_diesel_37_on;
+	sw_sound_default;
+}
+
+/*
+	Class 40
+	
+	
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_40_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_3.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_3.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/40_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/50_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/40_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_40, param_sounds){
+	1:sw_sound_diesel_40_on;
+	sw_sound_default;
+}
+
+/*
+	Class 46
+	
+	Used for Classes 44 to 46 "Peaks" and the Class 47, all using the same engine.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_46_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_3.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_3.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/46_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/46_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/46_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_46, param_sounds){
+	1:sw_sound_diesel_46_on;
+	sw_sound_default;
+}
+
+/*
+	Class 50
+	
+	
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_50_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_5.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_5.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/50_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/50_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/50_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_50, param_sounds){
+	1:sw_sound_diesel_50_on;
+	sw_sound_default;
+}
+
+/*
+	Class 55
+	
+	Deltic.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_55_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_7.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_7.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/55_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/55_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/55_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_55, param_sounds){
+	1:sw_sound_diesel_55_on;
+	sw_sound_default;
+}
+
+/*
+	Class 57
+	
+	
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_57_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_6.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_6.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/57_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/57_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/57_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_57, param_sounds){
+	1:sw_sound_diesel_57_on;
+	sw_sound_default;
+}
+
+/*
+	Class 60
+	
+	Used by Classes 56 & 58 as well.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_60_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_6.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_6.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/46_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/60_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/60_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_60, param_sounds){
+	1:sw_sound_diesel_60_on;
+	sw_sound_default;
+}
+
+/*
+	Class 66
+	
+	Used by Classes 59, 67 & 69 as well.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_66_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_6.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_6.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/68_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/66_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/66_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_66, param_sounds){
+	1:sw_sound_diesel_66_on;
+	sw_sound_default;
+}
+
+/*
+	Class 68
+	
+	Also used by Class 70 and Class 88 on diesel.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_68_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_4.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_4.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/68_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/68_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/68_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_68, param_sounds){
+	1:sw_sound_diesel_68_on;
+	sw_sound_default;
+}
+
+/*
+	Class 220
+	
+	Used by Classes 180, 221, 222 & IET series when on Diesel.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_220_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_3.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_3.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/220_run.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/220_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_220, param_sounds){
+	1:sw_sound_diesel_220_on;
+	sw_sound_default;
+}
+
+/*
+	Second Generation DMU
+	
+	Used for most DMUs built after 1980.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_dmu_gen2_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/dmu_gen2_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/dmu_gen2_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/dmu_gen2_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_dmu_gen2, param_sounds){
+	1:sw_sound_diesel_dmu_gen2_on;
+	sw_sound_default;
+}
+
+/*
+	VP185 HST
+	
+	Use for all HSTs and Class 210, as it uses a similar if smaller engine.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_hst_vp185_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_5.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_5.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/hst_vp185_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/hst_vp185_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/hst_vp185_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_hst_vp185, param_sounds){
+	1:sw_sound_diesel_hst_vp185_on;
+	sw_sound_default;
+}
+
+/*
+	Thumper
+	
+	Use for all thumpers, as well as classes 20.
+*/
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_thumper_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/thump_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/thump_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/thump_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_TRAINS, SELF, sw_sound_diesel_thumper, param_sounds){
+	1:sw_sound_diesel_thumper_on;
+	sw_sound_default;
+}

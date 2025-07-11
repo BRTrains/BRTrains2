@@ -1,0 +1,12 @@
+spriteset(spriteset_LNERV2_Purchase, "gfx/Steam/LNER_V2.png") {
+	template_purchase_anim(0, 0)
+}
+
+spriteset(spriteset_LNERV2_LNERGreen, "gfx/Steam/LNER_V2.png") {
+	template_train28px(0, 13)
+}
+
+spriteset(spriteset_LNERV2_Tender_LNERGreen, "gfx/Steam/LNER_4200_Gal_Tender.png") {
+	template_train12px(0, 13)
+}
+

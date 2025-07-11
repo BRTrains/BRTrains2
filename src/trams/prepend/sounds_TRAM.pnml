@@ -1,0 +1,205 @@
+/* Generic template
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_X_Y_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_1.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_1.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/X/Y_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/X/Y_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/X/Y_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_X_Y, param_sounds){
+	1:sw_sound_TRAM_X_Y_on;
+	sw_sound_TRAM_default;
+}
+
+
+*/
+
+switch(FEAT_ROADVEHS,SELF,sw_sound_TRAM_default,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			SOUND_DEPARTURE_STEAM;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch(FEAT_ROADVEHS,SELF,sw_sound_TRAM_steam_default,getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_TUNNEL:			SOUND_DEPARTURE_STEAM;
+	SOUND_EVENT_START: 			SOUND_DEPARTURE_STEAM;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+/*
+	Second Generation DMU
+	
+	Used for most DMUs built after 1980.
+*/
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_diesel_dmu_gen2_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/dmu_gen2_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/dmu_gen2_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/dmu_gen2_idle.wav"); // Only use for diesel
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_diesel_dmu_gen2, param_sounds){
+	1:sw_sound_TRAM_diesel_dmu_gen2_on;
+	sw_sound_TRAM_default;
+}
+
+/*
+	Class 88 (electric motors)
+	
+	Used as a generic sound set for modern electric traction in general.
+*/
+
+switch(FEAT_ROADVEHS, PARENT, sw_sound_TRAM_electric_88_coast, current_speed){
+	0..27 : sound("sfx/electric/88_fast.wav");
+	sound("sfx/electric/88_slow.wav");
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_electric_88_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_4.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_4.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_TRAM_electric_88_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_electric_88, param_sounds){
+	1:sw_sound_TRAM_electric_88_on;
+	sw_sound_TRAM_default;
+}
+
+/*
+	GEC motors
+	
+	Generic electric motor sounds for a whole plethora of traction.
+*/
+
+switch(FEAT_ROADVEHS, PARENT, sw_sound_TRAM_electric_GEC_coast, current_speed){
+	0..16 :	sound("sfx/electric/GEC_slow.wav");
+	17..26:	sound("sfx/electric/GEC_med.wav");
+	sound("sfx/electric/GEC_fast.wav");
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_electric_GEC_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/horn_9.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_9.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_TRAM_electric_GEC_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_electric_GEC, param_sounds){
+	1:sw_sound_TRAM_electric_GEC_on;
+	sw_sound_TRAM_default;
+}
+
+/*
+	Tube - GEC
+	
+	Generic electric motor sounds with depot whistles for the tube stock.
+*/
+
+switch(FEAT_ROADVEHS, PARENT, sw_sound_TRAM_tube_GEC_coast, current_speed){
+	0..10 :	sound("sfx/electric/GEC_slow.wav");
+	11..20:	sound("sfx/electric/GEC_med.wav");
+	sound("sfx/electric/GEC_fast.wav");
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_tube_GEC_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/whistle_depot.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/whistle_depot.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_TRAM_tube_GEC_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_tube_GEC, param_sounds){
+	1:sw_sound_TRAM_tube_GEC_on;
+	sw_sound_TRAM_default;
+}
+
+/*
+	Tube - Modern
+	
+	Modern traction motors but with the tube depot whistle.
+*/
+
+switch(FEAT_ROADVEHS, PARENT, sw_sound_TRAM_tube_modern_coast, current_speed){
+	0..10:	sound("sfx/electric/88_fast.wav");
+	11..20:	sound("sfx/electric/88_slow.wav");
+	sound("sfx/electric/desiro_run_high.wav");
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_tube_modern_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/whistle_depot.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/whistle_depot.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_TRAM_tube_modern_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_tube_modern, param_sounds){
+	1:sw_sound_TRAM_tube_modern_on;
+	sw_sound_TRAM_default;
+}
+
+/*
+	Metrolink
+	
+	Modern traction motors but with the Metrolink toot.
+*/
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_metrolink_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/metrolink_toot.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/metrolink_toot.wav");
+	SOUND_EVENT_RUNNING_16:		sw_sound_TRAM_tube_modern_coast;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_metrolink, param_sounds){
+	1:sw_sound_TRAM_metrolink_on;
+	sw_sound_TRAM_default;
+}
+
+/*
+	Generic random steam.
+	
+	Generic steam sounds for all kettles. Needs further improvement.
+*/
+
+random_switch(FEAT_ROADVEHS, SELF, sw_sound_TRAM_steam_generic_visual_effect_slow){
+	1	: sound("sfx/steam/piston_stroke1.wav");
+	1	: sound("sfx/steam/piston_stroke2.wav");
+	1	: sound("sfx/steam/piston_stroke3.wav");
+	1	: sound("sfx/steam/piston_stroke4.wav");
+}
+
+random_switch(FEAT_ROADVEHS, SELF, sw_sound_TRAM_steam_generic_visual_effect_medium){
+	1	: sound("sfx/steam/qr_chuff_1.wav");
+	1	: sound("sfx/steam/qr_chuff_2.wav");
+	1	: sound("sfx/steam/qr_chuff_3.wav");
+	1	: sound("sfx/steam/qr_chuff_4.wav");
+}
+
+random_switch(FEAT_ROADVEHS, SELF, sw_sound_TRAM_steam_generic_visual_effect_fast){
+	1	: sound("sfx/steam/qr_hiss_1.wav");
+	1	: sound("sfx/steam/qr_hiss_3.wav");
+}
+
+switch(FEAT_ROADVEHS, PARENT, sw_sound_TRAM_steam_generic_visual_effect, current_speed){
+	0..20:	sw_sound_TRAM_steam_generic_visual_effect_slow;
+	21..40:	sw_sound_TRAM_steam_generic_visual_effect_medium;
+	sw_sound_TRAM_steam_generic_visual_effect_fast;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_steam_generic_on, getbits(extra_callback_info1, 0, 8)){
+	SOUND_EVENT_START: 			sound("sfx/horns/whistle_a4.wav");
+	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/whistle_a4.wav");
+	SOUND_EVENT_VISUAL_EFFECT:	sw_sound_TRAM_steam_generic_visual_effect;
+	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
+}
+
+switch (FEAT_ROADVEHS, SELF, sw_sound_TRAM_steam_generic, param_sounds){
+	1:sw_sound_TRAM_steam_generic_on;
+	sw_sound_TRAM_steam_default;
+}

@@ -1,0 +1,8 @@
+spriteset(spriteset_WDTank_Purchase, "gfx/Steam/WDAusterityTank.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_WDTank_WartimeBlack, "gfx/Steam/WDAusterityTank.png") {
+	template_train20px(0, 13)
+}
+

@@ -1,0 +1,20 @@
+spriteset(spriteset_LMSJubilee_Purchase, "gfx/Steam/LMS_Stanier_Jubilee.png") {
+	template_purchase_anim(0, 0)
+}
+
+spriteset(spriteset_LMSJubilee_Red, "gfx/Steam/LMS_Stanier_Jubilee.png") {
+	template_train24px(0, 13)
+}
+
+spriteset(spriteset_LMSJubilee_Black, "gfx/Steam/LMS_Stanier_Jubilee.png") {
+	template_train24px(0, 39)
+}
+
+spriteset(spriteset_LMSJubilee_Green, "gfx/Steam/LMS_Stanier_Jubilee.png") {
+	template_train24px(0, 66)
+}
+
+spriteset(spriteset_LMSJubilee_Blue, "gfx/Steam/LMS_Stanier_Jubilee.png") {
+	template_train24px(0, 92)
+}
+

@@ -1,0 +1,19 @@
+spriteset(spriteset_MetGClass_Purchase, "gfx/Steam/Metropolitan_Class_G.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_MetGClass_MetCrimson, "gfx/Steam/Metropolitan_Class_G.png") {
+	template_train24px(0, 13)
+}
+
+spriteset(spriteset_MetGClass_MetBlack, "gfx/Steam/Metropolitan_Class_G.png") {
+	template_train24px(0, 39)
+}
+
+spriteset(spriteset_MetGClass_LNERGreen, "gfx/Steam/Metropolitan_Class_G.png") {
+	template_train24px(0, 65)
+}
+
+spriteset(spriteset_MetGClass_LNERBlack, "gfx/Steam/Metropolitan_Class_G.png") {
+	template_train24px(0, 91)
+}

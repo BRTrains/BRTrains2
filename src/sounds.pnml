@@ -337,9 +337,9 @@ switch (FEAT_TRAINS, SELF, sw_sound_diesel_hst_vp185, param_sounds){
 switch (FEAT_TRAINS, SELF, sw_sound_diesel_thumper_on, getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
 	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
-	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/thumper_run.wav");
-	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/thumper_coast.wav");
-	SOUND_EVENT_STOPPED:		sound("sfx/diesel/thumper_idle.wav"); // Only use for diesel
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/thump_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/thump_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/thump_idle.wav"); // Only use for diesel
 	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
 }
 
@@ -420,7 +420,7 @@ switch (FEAT_TRAINS, SELF, sw_sound_electric_465, param_sounds){
 */
 
 switch(FEAT_TRAINS, PARENT, sw_sound_electric_350_coast, current_speed){
-	0..16 :	sound("sfx/electric/desiro_run_slow.wav");
+	0..16 :	sound("sfx/electric/desiro_run_low.wav");
 	17..32:	sound("sfx/electric/desiro_run_medium.wav");
 	sound("sfx/electric/desiro_run_high.wav");
 }
@@ -531,7 +531,7 @@ random_switch(FEAT_TRAINS, SELF, sw_sound_steam_generic_visual_effect_medium){
 
 random_switch(FEAT_TRAINS, SELF, sw_sound_steam_generic_visual_effect_fast){
 	1	: sound("sfx/steam/qr_hiss_1.wav");
-	1	: sound("sfx/steam/qr_hiss_2.wav");
+	1	: sound("sfx/steam/qr_hiss_3.wav");
 }
 
 switch(FEAT_TRAINS, PARENT, sw_sound_steam_generic_visual_effect, current_speed){
@@ -568,9 +568,9 @@ switch (FEAT_TRAINS, SELF, sw_sound_steam_generic, param_sounds){
 switch (FEAT_TRAINS, SELF, sw_sound_diesel_73_on, getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
 	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
-	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/thumper_run.wav");
-	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/thumper_coast.wav");
-	SOUND_EVENT_STOPPED:		sound("sfx/diesel/thumper_idle.wav"); // Only use for diesel
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/thump_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/thump_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/thump_idle.wav"); // Only use for diesel
 	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
 }
 
