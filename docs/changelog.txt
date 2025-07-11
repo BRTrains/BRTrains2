@@ -7,6 +7,7 @@
 - Class 411, 412, 421, 422, 438 etc rework
 
 # v2.15
+- New sounds for most units, added sounds for a ton of units that don't have them
 - Added Class 69
 - Added Class 322
 - Added Class 799
@@ -31,6 +32,7 @@
 - Fixed Royal Mail TPO and Mk5 DVT push-pull
 - Fixed 86 Anglia livery
 - Fixed 325 not being dual voltage
+- Reworked build script to reduce concurrent sprite group usage
 
 # v2.14 (2025-06-30)
 - Added Metropolitan Class G

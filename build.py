@@ -250,7 +250,7 @@ if __name__ == "__main__":
             "The nml file failed to compile properly.  Please consult the log")
     elif error_code == -2:
         print("The nml file compiled correctly, but nml failed to compile it")
-    elif error_code == 1:
+    elif error_code == 0:
         print("The grf file was compiled successfully")
-    else:
-        print("The nml file was compiled successfully (this is the not grf)")
+    else:         
+        print("Unknown outcome. Error code <%s>" % str(error_code))
