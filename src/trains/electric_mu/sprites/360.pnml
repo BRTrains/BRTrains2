@@ -1,0 +1,110 @@
+spriteset(spriteset_BR360_1_Purchase, "gfx/EMU/360.png") {
+	template_purchase(200, 0)
+}
+
+spriteset(spriteset_BR360_2_4car_Purchase, "gfx/EMU/360.png") {
+	template_purchase(200, 13)
+}
+
+spriteset(spriteset_BR360_2_5car_Purchase, "gfx/EMU/360.png") {
+	template_purchase(200, 26)
+}
+
+
+spriteset(spriteset_BR360_front_NXEAGrey, "gfx/EMU/360.png") {
+	template_train32px(0, 0)
+}
+spriteset(spriteset_BR360_rear_NXEAGrey, "gfx/EMU/360.png") {
+	template_train32px(0, 26)
+}
+spriteset(spriteset_BR360_middle_NXEAGrey, "gfx/EMU/360.png") {
+	template_train32px(0, 52)
+}
+spriteset(spriteset_BR360_middlepanto_NXEAGrey, "gfx/EMU/360.png") {
+	template_train32px(0, 78)
+}
+
+spriteset(spriteset_BR360_front_NXEABlue, "gfx/EMU/360.png") {
+	template_train32px(0, 104)
+}
+spriteset(spriteset_BR360_rear_NXEABlue, "gfx/EMU/360.png") {
+	template_train32px(0, 130)
+}
+spriteset(spriteset_BR360_middle_NXEABlue, "gfx/EMU/360.png") {
+	template_train32px(0, 156)
+}
+spriteset(spriteset_BR360_middlepanto_NXEABlue, "gfx/EMU/360.png") {
+	template_train32px(0, 182)
+}
+
+spriteset(spriteset_BR360_front_EMRBlue, "gfx/EMU/360.png") {
+	template_train32px(0, 208)
+}
+spriteset(spriteset_BR360_rear_EMRBlue, "gfx/EMU/360.png") {
+	template_train32px(0, 234)
+}
+spriteset(spriteset_BR360_middle_EMRBlue, "gfx/EMU/360.png") {
+	template_train32px(0, 260)
+}
+spriteset(spriteset_BR360_middlepanto_EMRBlue, "gfx/EMU/360.png") {
+	template_train32px(0, 286)
+}
+
+spriteset(spriteset_BR360_front1_EMRMaroon, "gfx/EMU/360.png") {
+	template_train32px(0, 312)
+}
+spriteset(spriteset_BR360_rear1_EMRMaroon, "gfx/EMU/360.png") {
+	template_train32px(0, 338)
+}
+spriteset(spriteset_BR360_front2_EMRMaroon, "gfx/EMU/360.png") {
+	template_train32px(0, 364)
+}
+spriteset(spriteset_BR360_rear2_EMRMaroon, "gfx/EMU/360.png") {
+	template_train32px(0, 390)
+}
+spriteset(spriteset_BR360_middle_EMRMaroon, "gfx/EMU/360.png") {
+	template_train32px(0, 416)
+}
+spriteset(spriteset_BR360_middlepanto_EMRMaroon, "gfx/EMU/360.png") {
+	template_train32px(0, 442)
+}
+
+
+spriteset(spriteset_BR360_front_HeathrowConnect, "gfx/EMU/360.png") {
+	template_train32px(0, 468)
+}
+spriteset(spriteset_BR360_rear_HeathrowConnect, "gfx/EMU/360.png") {
+	template_train32px(0, 494)
+}
+spriteset(spriteset_BR360_middle_HeathrowConnect, "gfx/EMU/360.png") {
+	template_train32px(0, 520)
+}
+spriteset(spriteset_BR360_middlepanto_HeathrowConnect, "gfx/EMU/360.png") {
+	template_train32px(0, 546)
+}
+
+spriteset(spriteset_BR360_front_HeathrowExpress, "gfx/EMU/360.png") {
+	template_train32px(0, 572)
+}
+spriteset(spriteset_BR360_rear_HeathrowExpress, "gfx/EMU/360.png") {
+	template_train32px(0, 598)
+}
+spriteset(spriteset_BR360_middle_HeathrowExpress, "gfx/EMU/360.png") {
+	template_train32px(0, 624)
+}
+spriteset(spriteset_BR360_middlepanto_HeathrowExpress, "gfx/EMU/360.png") {
+	template_train32px(0, 650)
+}
+
+spriteset(spriteset_BR360_front_FGE, "gfx/EMU/360.png") {
+	template_train32px(0, 676)
+}
+spriteset(spriteset_BR360_rear_FGE, "gfx/EMU/360.png") {
+	template_train32px(0, 702)
+}
+spriteset(spriteset_BR360_middle_FGE, "gfx/EMU/360.png") {
+	template_train32px(0, 728)
+}
+spriteset(spriteset_BR360_middlepanto_FGE, "gfx/EMU/360.png") {
+	template_train32px(0, 754)
+}

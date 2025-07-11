@@ -1,0 +1,123 @@
+
+switch(FEAT_TRAINS, SELF, sw_BR360_1_FGE, position_in_articulated_veh % 4)
+{
+	0: spriteset_BR360_front_FGE;
+	1: spriteset_BR360_middle_FGE;
+	2: spriteset_BR360_middlepanto_FGE;
+	3: spriteset_BR360_rear_FGE;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR360_1_NXEABlue, position_in_articulated_veh % 4)
+{
+	0: spriteset_BR360_front_NXEABlue;
+	1: spriteset_BR360_middle_NXEABlue;
+	2: spriteset_BR360_middlepanto_NXEABlue;
+	3: spriteset_BR360_rear_NXEABlue;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR360_1_NXEAGrey, position_in_articulated_veh % 4)
+{
+	0: spriteset_BR360_front_NXEAGrey;
+	1: spriteset_BR360_middle_NXEAGrey;
+	2: spriteset_BR360_middlepanto_NXEAGrey;
+	3: spriteset_BR360_rear_NXEAGrey;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR360_1_EMRBlue, position_in_articulated_veh % 4)
+{
+	0: spriteset_BR360_front_EMRBlue;
+	1: spriteset_BR360_middle_EMRBlue;
+	2: spriteset_BR360_middlepanto_EMRBlue;
+	3: spriteset_BR360_rear_EMRBlue;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR360_1_EMRMaroon1, position_in_articulated_veh % 4)
+{
+	0: spriteset_BR360_front1_EMRMaroon;
+	1: spriteset_BR360_middle_EMRMaroon;
+	2: spriteset_BR360_middlepanto_EMRMaroon;
+	3: spriteset_BR360_rear1_EMRMaroon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR360_1_EMRMaroon2, position_in_articulated_veh % 4)
+{
+	0: spriteset_BR360_front2_EMRMaroon;
+	1: spriteset_BR360_middle_EMRMaroon;
+	2: spriteset_BR360_middlepanto_EMRMaroon;
+	3: spriteset_BR360_rear2_EMRMaroon;
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_BR360_1,cargo_subtype){
+    0:	sw_BR360_1_FGE;
+	1:	sw_BR360_1_NXEABlue;
+	2:	sw_BR360_1_NXEAGrey;
+	3:	sw_BR360_1_EMRBlue;
+	4:	sw_BR360_1_EMRMaroon1;
+	5:	sw_BR360_1_EMRMaroon2;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR360_1, extra_callback_info1) {
+	1..3: return item_BR360_1;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR360_1_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_FirstGreatEasternBarbie);
+	1:	return string(str_NXEABlue);
+	2:	return string(str_NXEAGrey);
+	3:	return string(str_EMRBlue);
+	4:	return string(str_EMRMaroon);
+	5:	return string(str_EMRMaroonCab);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR360_1, 737) {
+	property {		
+		name: 							string(STR_NAME_BR360_1);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2002,4,1);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					42;
+		running_cost_factor:			38;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		refit_cost:						0;
+		track_type:						ELRL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							2080 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							165 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.2;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR360_usage),string(str_BR360_eos),string(str_BR360_1_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR360_1_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR360_1;
+	default: 							sw_BR360_1;
+	purchase:							spriteset_BR360_1_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_sound_electric_350;
+	cargo_capacity: return(280 * param_pax / 4);
+		 cost_factor:	return(GetAdjustedCost(42));
+	running_cost_factor: return(GetAdjustedCost(38));
+}
+}
