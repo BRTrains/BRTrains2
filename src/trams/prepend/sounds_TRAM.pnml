@@ -183,7 +183,7 @@ random_switch(FEAT_ROADVEHS, SELF, sw_sound_TRAM_steam_generic_visual_effect_med
 
 random_switch(FEAT_ROADVEHS, SELF, sw_sound_TRAM_steam_generic_visual_effect_fast){
 	1	: sound("sfx/steam/qr_hiss_1.wav");
-	1	: sound("sfx/steam/qr_hiss_2.wav");
+	1	: sound("sfx/steam/qr_hiss_3.wav");
 }
 
 switch(FEAT_ROADVEHS, PARENT, sw_sound_TRAM_steam_generic_visual_effect, current_speed){

@@ -14,9 +14,9 @@
 switch (FEAT_TRAINS, SELF, sw_sound_diesel_73_on, getbits(extra_callback_info1, 0, 8)){
 	SOUND_EVENT_START: 			sound("sfx/horns/horn_8.wav");
 	SOUND_EVENT_TUNNEL: 		sound("sfx/horns/horn_8.wav");
-	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/thumper_run.wav");
-	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/thumper_coast.wav");
-	SOUND_EVENT_STOPPED:		sound("sfx/diesel/thumper_idle.wav"); // Only use for diesel
+	SOUND_EVENT_VISUAL_EFFECT:	sound("sfx/diesel/thump_run.wav");
+	SOUND_EVENT_RUNNING_16:		sound("sfx/diesel/thump_coast.wav");
+	SOUND_EVENT_STOPPED:		sound("sfx/diesel/thump_idle.wav"); // Only use for diesel
 	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
 }
 

@@ -32,7 +32,7 @@ random_switch(FEAT_TRAINS, SELF, sw_sound_steam_generic_visual_effect_medium){
 
 random_switch(FEAT_TRAINS, SELF, sw_sound_steam_generic_visual_effect_fast){
 	1	: sound("sfx/steam/qr_hiss_1.wav");
-	1	: sound("sfx/steam/qr_hiss_2.wav");
+	1	: sound("sfx/steam/qr_hiss_3.wav");
 }
 
 switch(FEAT_TRAINS, PARENT, sw_sound_steam_generic_visual_effect, current_speed){

@@ -78,7 +78,7 @@ switch (FEAT_TRAINS, SELF, sw_sound_electric_465, param_sounds){
 */
 
 switch(FEAT_TRAINS, PARENT, sw_sound_electric_350_coast, current_speed){
-	0..16 :	sound("sfx/electric/desiro_run_slow.wav");
+	0..16 :	sound("sfx/electric/desiro_run_low.wav");
 	17..32:	sound("sfx/electric/desiro_run_medium.wav");
 	sound("sfx/electric/desiro_run_high.wav");
 }
