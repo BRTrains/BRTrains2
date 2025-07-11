@@ -31,8 +31,8 @@ switch (FEAT_TRAINS, SELF, sw_sound_electric_86, param_sounds){
 */
 
 switch(FEAT_TRAINS, PARENT, sw_sound_electric_88_coast, current_speed){
-	0..27 : sound("sfx/electric/88_fast.wav");
-	sound("sfx/electric/88_slow.wav");
+	0..26 : sound("sfx/electric/88_slow.wav");
+	sound("sfx/electric/88_fast.wav");
 }
 
 switch (FEAT_TRAINS, SELF, sw_sound_electric_88_on, getbits(extra_callback_info1, 0, 8)){
@@ -55,7 +55,7 @@ switch (FEAT_TRAINS, SELF, sw_sound_electric_88, param_sounds){
 
 switch(FEAT_TRAINS, PARENT, sw_sound_electric_465_coast, current_speed){
 	0..13 :	sound("sfx/electric/465_slow.wav");
-	14..27:	sound("sfx/electric/465_medium.wav");
+	14..26:	sound("sfx/electric/465_medium.wav");
 	sound("sfx/electric/desiro_run_high.wav");
 }
 
@@ -79,7 +79,7 @@ switch (FEAT_TRAINS, SELF, sw_sound_electric_465, param_sounds){
 
 switch(FEAT_TRAINS, PARENT, sw_sound_electric_350_coast, current_speed){
 	0..16 :	sound("sfx/electric/desiro_run_low.wav");
-	17..32:	sound("sfx/electric/desiro_run_medium.wav");
+	17..26:	sound("sfx/electric/desiro_run_medium.wav");
 	sound("sfx/electric/desiro_run_high.wav");
 }
 
