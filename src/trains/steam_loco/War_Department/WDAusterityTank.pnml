@@ -1,3 +1,13 @@
+switch(FEAT_TRAINS,SELF, sw_WDTank,cargo_subtype){    
+	0: 	spriteset_WDTank_WartimeBlack;
+}
+
+switch(FEAT_TRAINS,SELF,sw_WDTank_cargo_subtype_text,cargo_subtype){
+    0: return string(str_Wartime);    
+       return CB_RESULT_NO_TEXT;
+}
+
+
 item (FEAT_TRAINS, item_WDTank, 592) {
 	property {
 		name: 							string(STR_NAME_WDTank);

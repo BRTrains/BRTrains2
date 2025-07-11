@@ -1,3 +1,22 @@
+
+
+switch(FEAT_TRAINS,SELF, sw_MetGClass,cargo_subtype){
+    0:	spriteset_MetGClass_MetCrimson;
+	1: 	spriteset_MetGClass_MetBlack;
+    2:  spriteset_MetGClass_LNERGreen;
+    3:  spriteset_MetGClass_LNERBlack;
+}
+
+switch(FEAT_TRAINS,SELF,sw_MetGClass_cargo_subtype_text,cargo_subtype){
+    0: return string(STR_CONCAT_2d, string(str_comp_Metropolitan), string(str_col_Crimson));
+    1: return string(STR_CONCAT_2d, string(str_comp_Metropolitan), string(str_col_Black));
+    2: return string(STR_CONCAT_2d, string(str_abbr_LNER), string(str_col_AppleGreen));
+    3: return string(STR_CONCAT_2d, string(str_abbr_LNER), string(str_col_Black));    
+       return CB_RESULT_NO_TEXT;
+}
+
+
+
 item (FEAT_TRAINS, item_MetGClass, 721) {
 	property {
 		name: 							string(STR_NAME_MetGClass);

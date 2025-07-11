@@ -1,3 +1,12 @@
+switch(FEAT_TRAINS,SELF, sw_Furness115,cargo_subtype){    
+	0: 	spriteset_Furness115_FurnessRed;
+}
+
+switch(FEAT_TRAINS,SELF,sw_Furness115_cargo_subtype_text,cargo_subtype){
+    0: return string(str_FurnessRed);
+       return CB_RESULT_NO_TEXT;
+}
+
 item (FEAT_TRAINS, item_Furness115, 725) {
 	property {
 		name: 							string(STR_NAME_Furness115);

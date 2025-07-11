@@ -1,3 +1,39 @@
+switch(FEAT_TRAINS,SELF, sw_LMS8FLoco, cargo_subtype) {
+    0: spriteset_LMS8F_Black;
+    1: spriteset_LMS8F_Black;
+    2: spriteset_LMS8F_Black;
+    3: spriteset_LMS8F_WDGrey;
+}
+
+switch(FEAT_TRAINS, SELF, sw_LMS8FTender, cargo_subtype) {
+	0:	spriteset_LMS_B5JubTender_LMSBlack;
+	1: 	spriteset_LMS_B5JubTender_BRBlackLion;
+	2:	spriteset_LMS_B5JubTender_BRBlackText;
+    3:  spriteset_LMS_B5JubTender_WDGrey;
+}
+
+switch(FEAT_TRAINS, SELF, sw_LMS8F, position_in_articulated_veh) {
+    0: sw_LMS8FLoco;
+    1: sw_LMS8FTender;
+}
+
+switch(FEAT_TRAINS, SELF, switch_LMS8F_length, position_in_articulated_veh) {	
+	0: return 5;
+	1: return 4;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_LMS8F, extra_callback_info1) {
+	1: return item_LMS8F;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_LMS8F_cargo_subtype_text,cargo_subtype){
+    0: return string(str_LMSBlack);
+	1: return string(str_BRLion);
+	2: return string(str_BRBlack);
+	3: return string(str_WDGrey);
+       return CB_RESULT_NO_TEXT;
+}
 
 item (FEAT_TRAINS, item_LMS8F, 707) {
 	property {

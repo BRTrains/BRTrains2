@@ -1,3 +1,15 @@
+switch(FEAT_TRAINS,SELF, sw_LNWRWebb,cargo_subtype){
+    0:	spriteset_LNWRWebb_LNWRBlack;
+	1: 	spriteset_LNWRWebb_BRBlack;
+}
+
+switch(FEAT_TRAINS,SELF,sw_LNWRWebb_cargo_subtype_text,cargo_subtype){
+    0: return string(str_LNWRBlack);
+    1: return string(str_BRBlack);
+       return CB_RESULT_NO_TEXT;
+}
+
+
 item (FEAT_TRAINS, item_LNWRWebb, 554) {
 	property {
 		name: 							string(STR_NAME_LNWRWebb);

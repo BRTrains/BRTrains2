@@ -1,3 +1,13 @@
+switch(FEAT_TRAINS,SELF, sw_LSWR_AdamsRadial,cargo_subtype){
+    0:	spriteset_LSWR_AdamsRadial_SRBlack;
+}
+
+switch(FEAT_TRAINS,SELF,sw_LSWR_AdamsRadial_cargo_subtype_text,cargo_subtype){
+    0: return string(str_LSWRSageGreen);
+       return CB_RESULT_NO_TEXT;
+}
+
+
 item (FEAT_TRAINS, item_LSWR_AdamsRadial, 667) {
 	property {		
 		name: 							string(STR_NAME_LSWR_AdamsRadial);
