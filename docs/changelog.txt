@@ -1,12 +1,13 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
 - Class 318 (needs coding)
 - Stephenson's Planet (tweak graphics, add wagons?)
-- GWR 5700/6700/8750 Class (needs coding)
 - GWR Great Bear and Hall class rework
 - Class 411, 412, 421, 422, 438 etc rework
 
 # v2.15
 - New sounds for most units, added sounds for a ton of units that don't have them
+- Added GWR 5700 Class
+- Added GWR 6700 Class
 - Added Class 69
 - Added Class 322
 - Added Class 360

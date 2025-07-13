@@ -1,6 +1,8 @@
 sort(FEAT_TRAINS, [
   item_StephensonPlanet,
   item_Coppernob,
+  item_GWR5700,
+  item_GWR6700,
   item_LNWRWebb,
   item_LSWR_AdamsRadial,
   item_GWR_DeanGoods,

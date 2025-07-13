@@ -459,13 +459,12 @@ str_LSWR_AdamsRadial_usage		    :Suburban Passenger
 str_LSWR_AdamsRadial_eos		    :1882-1961
 str_LSWR_AdamsRadial_liveries	    :LSWR Sage Green
 
-STR_NAME_GWR_5700   				:GWR Collett 5700 Class 0-6-0PT
-str_GWR_5700_usage			   	    :Freight, Shunting
-STR_NAME_GWR_6700   				:GWR Collett 6700 Class 0-6-0PT
-STR_NAME_GWR_8750   				:GWR Collett 8750 Class 0-6-0PT
-str_GWR_67008750_usage			   	:Freight, Suburban Passenger, Shunting
-str_GWR_67008750_eos				:1929-1971
-str_GWR_67008750_liveries		    :GWR Green
+STR_NAME_GWR5700   				    :GWR Collett 5700 Class 0-6-0PT
+str_GWR5700_usage			   	    :Freight, Shunting
+STR_NAME_GWR6700   				    :GWR Collett 6700 Class 0-6-0PT
+str_GWR6700_usage			   	    :Freight, Suburban Passenger, Shunting
+str_GWRX700_eos				        :1929-1971
+str_GWRX700_liveries		        :GWR Green
 
 STR_NAME_GWR_DeanGoods				:GWR Dean 2301 Class 0-6-0 "Dean Goods"
 str_GWR_DeanGoods_usage			   	:Mixed Traffic

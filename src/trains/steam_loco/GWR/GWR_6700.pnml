@@ -1,4 +1,4 @@
-switch(FEAT_TRAINS, SELF, sw_GWR5700, build_year){
+switch(FEAT_TRAINS, SELF, sw_GWR6700, build_year){
 	0..1933: spriteset_GWR5700_GWRGreen1929;
 	1934 .. 1942: spriteset_GWR5700_GWRGreen1934;
     1942 .. 1947: spriteset_GWR5700_GWRGreen1942;
@@ -6,9 +6,9 @@ switch(FEAT_TRAINS, SELF, sw_GWR5700, build_year){
     spriteset_GWR5700_Preserved; // Default (after 1966 withdrawal)
 }
 
-item (FEAT_TRAINS, item_GWR5700, 697) {
+item (FEAT_TRAINS, item_GWR6700, 698) {
 	property {		
-		name: 							string(STR_NAME_GWR5700);
+		name: 							string(STR_NAME_GWR6700);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1929,1,1);
 		model_life:						31;
@@ -41,15 +41,15 @@ item (FEAT_TRAINS, item_GWR5700, 697) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_GWR5700_usage),string(str_GWRX700_eos),string(str_GWRX700_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_GWR6700_usage),string(str_GWRX700_eos),string(str_GWRX700_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;	
-	default: 							sw_GWR5700;
+	default: 							sw_GWR6700;
 	purchase:							spriteset_GWR5700_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						steam_create_visual_effect;
 	sound_effect:						sw_sound_steam_generic;
-	cost_factor:	return(GetAdjustedCost(4));
-	running_cost_factor: return(GetAdjustedCost(5));
+	cost_factor:	return(GetAdjustedCost(5));
+	running_cost_factor: return(GetAdjustedCost(6));
 }
 }

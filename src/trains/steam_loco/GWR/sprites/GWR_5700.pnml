@@ -1,0 +1,23 @@
+spriteset(spriteset_GWR5700_Purchase, "gfx/Steam/GWR_570067008750_Class.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_GWR5700_GWRGreen1929, "gfx/Steam/GWR_570067008750_Class.png") {
+	template_train16px(0, 13)
+}
+
+spriteset(spriteset_GWR5700_GWRGreen1934, "gfx/Steam/GWR_570067008750_Class.png") {
+	template_train16px(0, 39)
+}
+
+spriteset(spriteset_GWR5700_GWRGreen1942, "gfx/Steam/GWR_570067008750_Class.png") {
+	template_train16px(0, 65)
+}
+
+spriteset(spriteset_GWR5700_BRTram, "gfx/Steam/GWR_570067008750_Class.png") {
+	template_train16px(0, 91)
+}
+
+spriteset(spriteset_GWR5700_Preserved, "gfx/Steam/GWR_570067008750_Class.png") {
+	template_train16px(0, 117)
+}
