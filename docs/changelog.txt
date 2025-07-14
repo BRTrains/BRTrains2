@@ -4,6 +4,8 @@
 - GWR Great Bear and Hall class rework
 - Class 411, 412, 421, 422, 438 etc rework
 - Central London Railway 1900 Stock
+- Turbostar rework
+- Class 128
 
 # v2.15
 - New sounds for most units, added sounds for a ton of units that don't have them
