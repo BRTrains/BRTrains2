@@ -5,7 +5,7 @@ item (FEAT_TRAINS, item_BRMk4DVT, 585) {
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		introduction_date:				date(1989,1,1);
-		cargo_allow_refit:				[MAIL];
+		cargo_allow_refit:				[PASS];
 		loading_speed:					14;
 		cost_factor:					30;
 		running_cost_factor:			12;
@@ -16,7 +16,7 @@ item (FEAT_TRAINS, item_BRMk4DVT, 585) {
 		power:							0;
 		running_cost_base:				RUNNING_COST_STEAM;
 		dual_headed:					0;
-		default_cargo_type:				MAIL;
+		default_cargo_type:				PASS;
 		cargo_capacity:					1;
 		weight:							43 ton;
 		tractive_effort_coefficient:	0;

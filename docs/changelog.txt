@@ -36,6 +36,7 @@
 - Fixed Royal Mail TPO and Mk5 DVT push-pull
 - Fixed 86 Anglia livery
 - Fixed 325 not being dual voltage
+- Fixed Mk3 and Mk4 brake vans filtering under mail not passengers
 - Reworked build script to reduce concurrent sprite group usage
 
 # v2.14 (2025-06-30)
