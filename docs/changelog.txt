@@ -5,13 +5,13 @@
 - Class 411, 412, 421, 422, 438 etc rework
 - Central London Railway 1900 Stock
 - Turbostar rework
-- Class 128
 
 # v2.15
 - New sounds for most units, added sounds for a ton of units that don't have them
 - Added GWR 5700 Class
 - Added GWR 6700 Class
 - Added Class 69
+- Added Class 128
 - Added Class 322
 - Added Class 360
 - Added Class 799

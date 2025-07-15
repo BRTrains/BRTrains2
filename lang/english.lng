@@ -853,6 +853,11 @@ str_BR121_usage					:Passenger
 str_BR121_eos					:---
 str_BR121_liveries				:BR Green, BR Blue, Railtrack
 
+STR_NAME_BR128					:BR Class 128 "Post Office Motor Parcels Van" (1-car)
+str_BR128_usage					:Mail and Parcels
+str_BR128_eos					:---
+str_BR128_liveries				:BR Green, BR Blue, Royal Mail
+
 STR_NAME_BR139					:BR Class 139 "Parry People Mover" (1-car)
 str_BR139_usage					:Passenger
 str_BR139_eos					:---

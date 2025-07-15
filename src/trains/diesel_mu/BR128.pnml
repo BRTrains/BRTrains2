@@ -1,0 +1,77 @@
+spriteset(spriteset_BR128_Purchase, "gfx/DMU/128.png") {
+	template_purchase(200, 0)
+}
+
+spriteset(spriteset_BR128_BRGreen, "gfx/DMU/128.png") {
+	template_train32px(0, 0)
+}
+
+spriteset(spriteset_BR128_BRBlue, "gfx/DMU/128.png") {
+	template_train32px(0, 26)
+}
+
+spriteset(spriteset_BR128_RoyalMail, "gfx/DMU/128.png") {
+	template_train32px(0, 52)
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR128,cargo_subtype){
+    0:	spriteset_BR128_BRGreen;
+	1:	spriteset_BR128_BRBlue;
+	2:	spriteset_BR128_RoyalMail;
+
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR128_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRGreen);
+	1:	return string(str_BRBlue);
+	2:	return string(str_RoyalMail);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR128, 740) {
+	property {
+		name: 							string(STR_NAME_BR128);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1959,4,1);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					30;
+		reliability_decay:				7;
+		refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+		loading_speed:					1;
+		cost_factor:					1;
+		running_cost_factor:			11;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							70 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							460 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				MAIL;
+		cargo_capacity:					35;
+		weight:							42 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+		}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR128_usage),string(str_BR128_eos),string(str_BR128_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR128_cargo_subtype_text;
+	default: 							sw_BR128;
+	purchase:							spriteset_BR128_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_sound_diesel_25;
+	cargo_capacity:						return(35);
+	cost_factor:	return(GetAdjustedCost(40));
+	running_cost_factor: return(GetAdjustedCost(22));
+}
+}
