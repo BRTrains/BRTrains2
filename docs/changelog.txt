@@ -4,6 +4,7 @@
 - GWR Great Bear and Hall class rework
 - Class 411, 412, 421, 422, 438 etc rework
 - Central London Railway 1900 Stock
+- Class 168 Rework
 - Class 170 Rework
 - Class 172 (/0/1 and /2/3)
 - Class 101
