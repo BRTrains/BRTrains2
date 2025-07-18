@@ -1,15 +1,15 @@
-spriteset(spriteset_BR196_Purchase, "gfx/BR196.png") {
+spriteset(spriteset_BR196_Purchase, "gfx/DMU/196.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR196a_WestMidlands, "gfx/BR196.png") {
-	template_train32px_old(0, 13)
+spriteset(spriteset_BR196_front_WestMidlands, "gfx/DMU/196.png") {
+	template_train32px(0, 13)
 }
 
-spriteset(spriteset_BR196b_WestMidlands, "gfx/BR196.png") {
-	template_train32px_old(0, 38)
+spriteset(spriteset_BR196_middle_WestMidlands, "gfx/DMU/196.png") {
+	template_train32px(0, 39)
 }
 
-spriteset(spriteset_BR196c_WestMidlands, "gfx/BR196.png") {
-	template_train32px_old(0, 63)
+spriteset(spriteset_BR196_rear_WestMidlands, "gfx/DMU/196.png") {
+	template_train32px(0, 65)
 }
