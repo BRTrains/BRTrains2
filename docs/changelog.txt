@@ -4,7 +4,8 @@
 - GWR Great Bear and Hall class rework
 - Class 411, 412, 421, 422, 438 etc rework
 - Central London Railway 1900 Stock
-- Turbostar rework
+- Class 170 Rework
+- Class 172 (/0/1 and /2/3)
 - Class 101
 
 # v2.15
@@ -20,6 +21,7 @@
 - Added BR Conflat "P" wagon
 - Added GWR Dean 25ft 4 Compartment Second Class (SY)
 - Reworked Class 20
+- Reworked Class 171
 - Reworked Class 323
 - Reworked Class 333
 - Mini-rework for Class 325, moved to new template and added stripe-less Royal Mail livery
