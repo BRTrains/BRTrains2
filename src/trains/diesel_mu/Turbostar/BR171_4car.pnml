@@ -1,9 +1,9 @@
-spriteset(spriteset_BR171_4_Purchase, "gfx/BR170.png") {
-	template_purchase(88, 0)
+spriteset(spriteset_BR171_4_Purchase, "gfx/DMU/171.png") {
+	template_purchase(200, 0)
 }
 
-spriteset(spriteset_BR171c_Southern, "gfx/BR170.png") {
-	template_train32px_old(0, 638)
+spriteset(spriteset_BR171c_Southern, "gfx/DMU/171.png") {
+	template_train32px(0, 52)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR171c,cargo_subtype){

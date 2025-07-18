@@ -1,12 +1,12 @@
-spriteset(spriteset_BR171_Purchase, "gfx/BR170.png") {
-	template_purchase(88, 0)
+spriteset(spriteset_BR171_Purchase, "gfx/DMU/171.png") {
+	template_purchase(200, 0)
 }
 
-spriteset(spriteset_BR171a_Southern, "gfx/BR170.png") {
-	template_train32px_old(0, 613)
+spriteset(spriteset_BR171a_Southern, "gfx/DMU/171.png") {
+	template_train32px(0, 0)
 }
-spriteset(spriteset_BR171b_Southern, "gfx/BR170.png") {
-	template_train32px_old(0, 663)
+spriteset(spriteset_BR171b_Southern, "gfx/DMU/171.png") {
+	template_train32px(0, 26)
 }
 
 
