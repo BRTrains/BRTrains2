@@ -6,6 +6,6 @@ item (FEAT_TRAINS, header_Turbostar, 10010) {
 		power:							1;
 	}
 	graphics {	
-		purchase:							spriteset_BR170_3_Purchase;	
+		purchase:							spriteset_BR170_Purchase;	
 	}
 }
