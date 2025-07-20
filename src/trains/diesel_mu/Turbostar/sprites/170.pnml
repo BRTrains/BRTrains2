@@ -112,7 +112,6 @@ spriteset(spriteset_BR170_front_CrossCountry2, "gfx/BR170.png") {
 spriteset(spriteset_BR170_middle_CrossCountry2, "gfx/BR170.png") {
 	template_train32px_old(0, 863)
 }
-
 spriteset(spriteset_BR170_rear_CrossCountry2, "gfx/BR170.png") {
 	template_train32px_old(0, 888)
 }
