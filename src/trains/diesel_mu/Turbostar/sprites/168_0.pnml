@@ -67,18 +67,6 @@ switch(FEAT_TRAINS, SELF, sw_BR168_0_ChilternGrey, position_in_articulated_veh_f
 	1: sw_BR168_0_ChilternGrey_sw2;
 }
 
-switch(FEAT_TRAINS, SELF, sw_BR168_0_capacity_sw2, position_in_articulated_veh)
-{
-	0: return(50 * param_pax);
-	return(67 * param_pax);
-}
-switch(FEAT_TRAINS, SELF, sw_BR168_0_cargo_capacity, position_in_articulated_veh_from_end)
-{
-	0: return(57 * param_pax);
-	1: sw_BR168_0_capacity_sw2;
-}
-
-
 switch(FEAT_TRAINS, SELF, sw_BR168_0, cargo_subtype){
 	0:	sw_BR168_0_ChilternBlue;
 	1:	sw_BR168_0_ChilternBlue2;

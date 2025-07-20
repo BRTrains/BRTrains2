@@ -1,0 +1,118 @@
+spriteset(spriteset_BR170_Purchase, "gfx/BR170.png") {
+	template_purchase(0, 0)
+}
+
+
+spriteset(spriteset_BR170_front_Central, "gfx/BR170.png") {
+	template_train32px_old(0, 13)
+}
+spriteset(spriteset_BR170_middle_Central, "gfx/BR170.png") {
+	template_train32px_old(0, 38)
+}
+spriteset(spriteset_BR170_rear_Central, "gfx/BR170.png") {
+	template_train32px_old(0, 63)
+}
+
+spriteset(spriteset_BR170_front_LondonMidland, "gfx/BR170.png") {
+	template_train32px_old(0, 88)
+}
+spriteset(spriteset_BR170_middle_LondonMidland, "gfx/BR170.png") {
+	template_train32px_old(0, 113)
+}
+spriteset(spriteset_BR170_rear_LondonMidland, "gfx/BR170.png") {
+	template_train32px_old(0, 138)
+}
+
+spriteset(spriteset_BR170_front_SWT, "gfx/BR170.png") {
+	template_train32px_old(0, 163)
+}
+spriteset(spriteset_BR170_middle_SWT, "gfx/BR170.png") {
+	template_train32px_old(0, 188)
+}
+spriteset(spriteset_BR170_rear_SWT, "gfx/BR170.png") {
+	template_train32px_old(0, 213)
+}
+
+spriteset(spriteset_BR170_front_GreaterAnglia, "gfx/BR170.png") {
+	template_train32px_old(0, 238)
+}
+spriteset(spriteset_BR170_middle_GreaterAnglia, "gfx/BR170.png") {
+	template_train32px_old(0, 263)
+}
+spriteset(spriteset_BR170_rear_GreaterAnglia, "gfx/BR170.png") {
+	template_train32px_old(0, 288)
+}
+
+
+spriteset(spriteset_BR170_front_ScotRail, "gfx/BR170.png") {
+	template_train32px_old(0, 313)
+}
+spriteset(spriteset_BR170_middle_ScotRail, "gfx/BR170.png") {
+	template_train32px_old(0, 338)
+}
+spriteset(spriteset_BR170_rear_ScotRail, "gfx/BR170.png") {
+	template_train32px_old(0, 363)
+}
+
+spriteset(spriteset_BR170_front_ScotRailSaltire, "gfx/BR170.png") {
+	template_train32px_old(0, 388)
+}
+spriteset(spriteset_BR170_middle_ScotRailSaltire, "gfx/BR170.png") {
+	template_train32px_old(0, 413)
+}
+spriteset(spriteset_BR170_rear_ScotRailSaltire, "gfx/BR170.png") {
+	template_train32px_old(0, 438)
+}
+
+spriteset(spriteset_BR170_front_WMR, "gfx/BR170.png") {
+	template_train32px_old(0, 463)
+}
+spriteset(spriteset_BR170_middle_WMR, "gfx/BR170.png") {
+	template_train32px_old(0, 488)
+}
+spriteset(spriteset_BR170_rear_WMR, "gfx/BR170.png") {
+	template_train32px_old(0, 513)
+}
+
+spriteset(spriteset_BR170_front_EMRMaroon, "gfx/BR170.png") {
+	template_train32px_old(0, 538)
+}
+spriteset(spriteset_BR170_middle_EMRMaroon, "gfx/BR170.png") {
+	template_train32px_old(0, 563)
+}
+spriteset(spriteset_BR170_rear_EMRMaroon, "gfx/BR170.png") {
+	template_train32px_old(0, 588)
+}
+
+spriteset(spriteset_BR170_front_Northern, "gfx/BR170.png") {
+	template_train32px_old(0, 688)
+}
+spriteset(spriteset_BR170_middle_Northern, "gfx/BR170.png") {
+	template_train32px_old(0, 713)
+}
+
+spriteset(spriteset_BR170_rear_Northern, "gfx/BR170.png") {
+	template_train32px_old(0, 738)
+}
+
+spriteset(spriteset_BR170_front_CrossCountry, "gfx/BR170.png") {
+	template_train32px_old(0, 763)
+}
+spriteset(spriteset_BR170_middle_CrossCountry, "gfx/BR170.png") {
+	template_train32px_old(0, 788)
+}
+
+spriteset(spriteset_BR170_rear_CrossCountry, "gfx/BR170.png") {
+	template_train32px_old(0, 813)
+}
+
+spriteset(spriteset_BR170_front_CrossCountry2, "gfx/BR170.png") {
+	template_train32px_old(0, 838)
+}
+spriteset(spriteset_BR170_middle_CrossCountry2, "gfx/BR170.png") {
+	template_train32px_old(0, 863)
+}
+
+spriteset(spriteset_BR170_rear_CrossCountry2, "gfx/BR170.png") {
+	template_train32px_old(0, 888)
+}

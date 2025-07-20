@@ -1,0 +1,10 @@
+switch(FEAT_TRAINS, SELF, sw_Turbostar_capacity_sw2, position_in_articulated_veh)
+{
+	0: return(50 * param_pax);
+	return(67 * param_pax);
+}
+switch(FEAT_TRAINS, SELF, sw_Turbostar_cargo_capacity, position_in_articulated_veh_from_end)
+{
+	0: return(57 * param_pax);
+	1: sw_Turbostar_capacity_sw2;
+}

@@ -50,7 +50,7 @@ item (FEAT_TRAINS, item_BR168_123_4car, 539) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						sw_BR168_123_cargo_capacity;
+	cargo_capacity:						sw_Turbostar_cargo_capacity;
 	cost_factor:	return(GetAdjustedCost(54));
 	running_cost_factor: return(GetAdjustedCost(34));
 }

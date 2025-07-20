@@ -1,50 +1,3 @@
-spriteset(spriteset_BR170_3_Purchase, "gfx/BR170.png") {
-	template_purchase(0, 0)
-}
-
-spriteset(spriteset_BR170c_Central, "gfx/BR170.png") {
-	template_train32px_old(0, 38)
-}
-
-spriteset(spriteset_BR170c_LondonMidland, "gfx/BR170.png") {
-	template_train32px_old(0, 113)
-}
-
-spriteset(spriteset_BR170c_SWT, "gfx/BR170.png") {
-	template_train32px_old(0, 188)
-}
-
-spriteset(spriteset_BR170c_GreaterAnglia, "gfx/BR170.png") {
-	template_train32px_old(0, 263)
-}
-
-spriteset(spriteset_BR170c_ScotRail, "gfx/BR170.png") {
-	template_train32px_old(0, 338)
-}
-
-spriteset(spriteset_BR170c_ScotRailSaltire, "gfx/BR170.png") {
-	template_train32px_old(0, 413)
-}
-
-spriteset(spriteset_BR170c_WMR, "gfx/BR170.png") {
-	template_train32px_old(0, 488)
-}
-
-spriteset(spriteset_BR170c_EMRMaroon, "gfx/BR170.png") {
-	template_train32px_old(0, 563)
-}
-
-spriteset(spriteset_BR170c_Northern, "gfx/BR170.png") {
-	template_train32px_old(0, 713)
-}
-
-spriteset(spriteset_BR170c_CrossCountry, "gfx/BR170.png") {
-	template_train32px_old(0, 788)
-}
-
-spriteset(spriteset_BR170c_CrossCountry2, "gfx/BR170.png") {
-	template_train32px_old(0, 863)
-}
 
 switch(FEAT_TRAINS,SELF, sw_BR170c,cargo_subtype){
     0:	spriteset_BR170c_Central;
@@ -124,102 +77,102 @@ item (FEAT_TRAINS, item_BR170_3, 64) {
 	cargo_subtype_text:					sw_BR170_3_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR170_3car;
 	default: 							sw_BR170a;
-	purchase:							spriteset_BR170_3_Purchase;
+	purchase:							spriteset_BR170_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(50 * param_pax);
+	cargo_capacity:						sw_Turbostar_cargo_capacity;
 	cost_factor:	return(GetAdjustedCost(54));
 	running_cost_factor: return(GetAdjustedCost(34));
 }
 }
 
-item (FEAT_TRAINS, item_170b_3, 65) {
-	property {
-		name: 							string(STR_NAME_BR170_3);
-		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1998,4,21);
-		model_life:						8;
-		retire_early:					1;
-		vehicle_life:					50;
-		reliability_decay:				7;
-		refittable_cargo_classes:		CC_PASSENGERS;
-		cargo_allow_refit:				[PASS, TOUR];
-		loading_speed:					20;
-		cost_factor:					1;
-		running_cost_factor:			1;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							100 mph;
-		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
-		refit_cost:						0;
-		track_type:						RAIL;
-		ai_special_flag:				AI_FLAG_CARGO;
-		power:							0;
-		running_cost_base:				RUNNING_COST_DIESEL;
-		dual_headed:					0;
-		default_cargo_type:				PASS;
-		cargo_capacity:					57;
-		weight:							0;
-		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.3;
-		air_drag_coefficient:			0.1;
-		length:							8;
-		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
-		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-		cargo_age_period:				185;
-	}
-	graphics {
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR170b;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(57 * param_pax);
-}
-}
+// item (FEAT_TRAINS, item_170b_3, 65) {
+// 	property {
+// 		name: 							string(STR_NAME_BR170_3);
+// 		climates_available: 			NO_CLIMATE;
+// 		introduction_date:				date(1998,4,21);
+// 		model_life:						8;
+// 		retire_early:					1;
+// 		vehicle_life:					50;
+// 		reliability_decay:				7;
+// 		refittable_cargo_classes:		CC_PASSENGERS;
+// 		cargo_allow_refit:				[PASS, TOUR];
+// 		loading_speed:					20;
+// 		cost_factor:					1;
+// 		running_cost_factor:			1;
+// 		sprite_id:						SPRITE_ID_NEW_TRAIN;
+// 		speed:							100 mph;
+// 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+// 		refit_cost:						0;
+// 		track_type:						RAIL;
+// 		ai_special_flag:				AI_FLAG_CARGO;
+// 		power:							0;
+// 		running_cost_base:				RUNNING_COST_DIESEL;
+// 		dual_headed:					0;
+// 		default_cargo_type:				PASS;
+// 		cargo_capacity:					57;
+// 		weight:							0;
+// 		engine_class:					ENGINE_CLASS_DIESEL;
+// 		tractive_effort_coefficient:	0.3;
+// 		air_drag_coefficient:			0.1;
+// 		length:							8;
+// 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+// 		extra_weight_per_wagon:			0;
+// 		bitmask_vehicle_info:			0;
+// 		cargo_age_period:				185;
+// 	}
+// 	graphics {
+// 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+// 	default: 							sw_BR170b;
+// 	colour_mapping: 					return PALETTE_CC_FIRST;
+// 	create_effect:						diesel_create_visual_effect;
+// 	sound_effect:						sw_sound_diesel_dmu_gen2;
+// 	cargo_capacity:						return(57 * param_pax);
+// }
+// }
 
-item (FEAT_TRAINS, item_170c, 66) {
-	property {
-		name: 							string(STR_NAME_BR170_3);
-		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1998,4,21);
-		model_life:						8;
-		retire_early:					1;
-		vehicle_life:					50;
-		reliability_decay:				7;
-		refittable_cargo_classes:		CC_PASSENGERS;
-		cargo_allow_refit:				[PASS, TOUR];
-		loading_speed:					20;
-		cost_factor:					1;
-		running_cost_factor:			1;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							100 mph;
-		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
-		refit_cost:						0;
-		track_type:						RAIL;
-		ai_special_flag:				AI_FLAG_CARGO;
-		power:							0;
-		running_cost_base:				RUNNING_COST_DIESEL;
-		dual_headed:					0;
-		default_cargo_type:				PASS;
-		cargo_capacity:					67;
-		weight:							0;
-		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.3;
-		air_drag_coefficient:			0.1;
-		length:							8;
-		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
-		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-		cargo_age_period:				185;
-	}
-	graphics {
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR170c;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(67 * param_pax);
-}
-}
+// item (FEAT_TRAINS, item_170c, 66) {
+// 	property {
+// 		name: 							string(STR_NAME_BR170_3);
+// 		climates_available: 			NO_CLIMATE;
+// 		introduction_date:				date(1998,4,21);
+// 		model_life:						8;
+// 		retire_early:					1;
+// 		vehicle_life:					50;
+// 		reliability_decay:				7;
+// 		refittable_cargo_classes:		CC_PASSENGERS;
+// 		cargo_allow_refit:				[PASS, TOUR];
+// 		loading_speed:					20;
+// 		cost_factor:					1;
+// 		running_cost_factor:			1;
+// 		sprite_id:						SPRITE_ID_NEW_TRAIN;
+// 		speed:							100 mph;
+// 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+// 		refit_cost:						0;
+// 		track_type:						RAIL;
+// 		ai_special_flag:				AI_FLAG_CARGO;
+// 		power:							0;
+// 		running_cost_base:				RUNNING_COST_DIESEL;
+// 		dual_headed:					0;
+// 		default_cargo_type:				PASS;
+// 		cargo_capacity:					67;
+// 		weight:							0;
+// 		engine_class:					ENGINE_CLASS_DIESEL;
+// 		tractive_effort_coefficient:	0.3;
+// 		air_drag_coefficient:			0.1;
+// 		length:							8;
+// 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+// 		extra_weight_per_wagon:			0;
+// 		bitmask_vehicle_info:			0;
+// 		cargo_age_period:				185;
+// 	}
+// 	graphics {
+// 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+// 	default: 							sw_BR170c;
+// 	colour_mapping: 					return PALETTE_CC_FIRST;
+// 	create_effect:						diesel_create_visual_effect;
+// 	sound_effect:						sw_sound_diesel_dmu_gen2;
+// 	cargo_capacity:						return(67 * param_pax);
+// }
+// }

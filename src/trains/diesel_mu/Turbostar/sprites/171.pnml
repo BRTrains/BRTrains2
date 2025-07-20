@@ -1,0 +1,34 @@
+spriteset(spriteset_BR171_Purchase, "gfx/DMU/171.png") {
+	template_purchase(200, 0)
+}
+
+spriteset(spriteset_BR171_front_Southern, "gfx/DMU/171.png") {
+	template_train32px(0, 0)
+}
+spriteset(spriteset_BR171_rear_Southern, "gfx/DMU/171.png") {
+	template_train32px(0, 26)
+}
+spriteset(spriteset_BR171_middle_Southern, "gfx/DMU/171.png") {
+	template_train32px(0, 52)
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR171_Southern_sw2, position_in_articulated_veh)
+{
+	0: spriteset_BR171_front_Southern;
+	spriteset_BR171_middle_Southern;
+}
+switch(FEAT_TRAINS, SELF, sw_BR171_Southern, position_in_articulated_veh_from_end)
+{
+	0: spriteset_BR171_rear_Southern;
+	sw_BR171_Southern_sw2;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR171, cargo_subtype)
+{
+    0: sw_BR171_Southern;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR171_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Southern);
+       return CB_RESULT_NO_TEXT;
+}

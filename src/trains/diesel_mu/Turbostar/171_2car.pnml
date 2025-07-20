@@ -1,12 +1,12 @@
-switch (FEAT_TRAINS, SELF, switch_articulated_BR168_123_2car, extra_callback_info1) {	
-	1: return item_BR168_123_2car;
+switch (FEAT_TRAINS, SELF, switch_articulated_BR171_2car, extra_callback_info1) {	
+	1: return item_171_2car;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-item (FEAT_TRAINS, item_BR168_123_2car, 535) {
+item (FEAT_TRAINS, item_BR171_2car, 478) {
 	property {
 		variant_group:					header_Turbostar;
-		name: 							string(STR_NAME_BR168_123_2car);
+		name: 							string(STR_NAME_BR171);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1998,4,21);
 		model_life:						8;
@@ -39,12 +39,12 @@ item (FEAT_TRAINS, item_BR168_123_2car, 535) {
 		cargo_age_period:				195;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR168_usage),string(str_BR168_eos),string(str_BR168_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR171_usage),string(str_BR171_eos),string(str_BR171_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR168_123_cargo_subtype_text;
-	articulated_part:        			switch_articulated_BR168_123_2car;
-	default: 							sw_BR168_123;
-	purchase:							spriteset_BR168_123_Purchase;
+	cargo_subtype_text:					sw_BR171_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR171_2car;
+	default: 							sw_BR1711;
+	purchase:							spriteset_BR171_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
@@ -54,9 +54,9 @@ item (FEAT_TRAINS, item_BR168_123_2car, 535) {
 }
 }
 
-// item (FEAT_TRAINS, item_168b, 536) {
+// item (FEAT_TRAINS, item_171b, 479) {
 // 	property {
-// 		name: 							string(STR_NAME_BR168_123_2car);
+// 		name: 							string(STR_NAME_BR171);
 // 		climates_available: 			NO_CLIMATE;
 // 		introduction_date:				date(1998,4,21);
 // 		model_life:						8;
@@ -91,7 +91,7 @@ item (FEAT_TRAINS, item_BR168_123_2car, 535) {
 // 	}
 // 	graphics {
 // 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-// 	default: 							sw_BR168_123_2carb;
+// 	default: 							sw_BR171b;
 // 	colour_mapping: 					return PALETTE_CC_FIRST;
 // 	create_effect:						diesel_create_visual_effect;
 // 	sound_effect:						sw_sound_diesel_dmu_gen2;
