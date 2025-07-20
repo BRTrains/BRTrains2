@@ -1,25 +1,14 @@
-spriteset(spriteset_BR168_4_Purchase, "gfx/BR168.png") {
-	template_purchase(0, 0)
-}
 
-switch (FEAT_TRAINS, SELF, switch_articulated_BR168_4car, extra_callback_info1) {
-	1..2: return item_168c;
-	3: return item_168b;
+switch (FEAT_TRAINS, SELF, switch_articulated_BR168_123_4car, extra_callback_info1) {
+	1..3: return item_BR168_123_4car;	
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR168_4_cargo_subtype_text,cargo_subtype){
-	0:	return string(str_ChilternTurboBlue);
-	1:	return string(str_ChilternNetworkBlue);
-	2:	return string(str_ChilternTurboGrey);
-	3:	return string(str_ChilternNetworkGrey);
-       return CB_RESULT_NO_TEXT;       
-}
 
-item (FEAT_TRAINS, item_BR168_4, 539) {
+item (FEAT_TRAINS, item_BR168_123_4car, 539) {
 	property {
 		variant_group:					header_Turbostar;
-		name: 							string(STR_NAME_BR168_4);
+		name: 							string(STR_NAME_BR168_123_4car);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1998,4,21);
 		model_life:						8;
@@ -54,14 +43,14 @@ item (FEAT_TRAINS, item_BR168_4, 539) {
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR168_usage),string(str_BR168_eos),string(str_BR168_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR168_4_cargo_subtype_text;
-	articulated_part:        			switch_articulated_BR168_4car;
-	default: 							sw_BR168a;
-	purchase:							spriteset_BR168_4_Purchase;
+	cargo_subtype_text:					sw_BR168_123_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR168_123_4car;
+	default: 							sw_BR168_123;
+	purchase:							spriteset_BR168_123_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(50 * param_pax);
+	cargo_capacity:						sw_BR168_123_cargo_capacity;
 	cost_factor:	return(GetAdjustedCost(54));
 	running_cost_factor: return(GetAdjustedCost(34));
 }

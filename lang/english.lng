@@ -947,12 +947,16 @@ str_BR166_usage					:Passenger
 str_BR166_eos					:---
 str_BR166_liveries				:Network SouthEast, Thames Trains, First Great Western "Link", First Great Western "Dynamic Lines", Great Western Railway
 
-STR_NAME_BR168					:BR Class 168 "Clubman" (2-Car)
+
+STR_NAME_BR168_0_2car			:BR Class 168/0 "Clubman" (2-Car)
+STR_NAME_BR168_0_3car			:BR Class 168/0 "Clubman" (3-Car)
+STR_NAME_BR168_0_4car			:BR Class 168/0 "Clubman" (4-Car)
+STR_NAME_BR168_123_2car			:BR Class 168/1/2/3 "Clubman" (2-Car)
+STR_NAME_BR168_123_3car			:BR Class 168/1/2/3 "Clubman" (3-Car)
+STR_NAME_BR168_123_4car			:BR Class 168/1/2/3 "Clubman" (4-Car)
 str_BR168_usage					:Passenger
 str_BR168_eos					:---
-str_BR168_liveries				:Chiltern Blue, Chiltern Grey
-STR_NAME_BR168_3				:BR Class 168 "Clubman" (3-Car)
-STR_NAME_BR168_4				:BR Class 168 "Clubman" (4-Car)
+str_BR168_liveries				:Chiltern Blue (Blue doors), Chiltern Blue (Grey Doors), Chiltern Grey
 
 STR_NAME_BR170					:BR Class 170 "Turbostar" (2-Car)
 str_BR170_usage					:Passenger
@@ -1881,10 +1885,9 @@ str_Central						: (Central Trains)
 str_CentralAnglia				: (Central/Anglia Hybrid)
 str_Centro						: (Centro)
 str_Chiltern                    : (Chiltern Railways)
-str_ChilternTurboBlue           : (Chiltern - Blue, Turbostar Cab)
-str_ChilternNetworkBlue			: (Chiltern - Blue, Networker Cab)
-str_ChilternTurboGrey           : (Chiltern - Grey, Turbostar Cab)
-str_ChilternNetworkGrey			: (Chiltern - Grey, Networker Cab)
+str_ChilternBlue                : (Chiltern - Blue, Blue doorsb)
+str_ChilternBlue2               : (Chiltern - Blue, White doors)
+str_ChilternGrey                : (Chiltern - Grey)
 str_CivilDutch					: (Civil Engineers - Dutch)
 str_ColasRail					: (Colas Rail)
 str_Connex						: (Connex)

@@ -1,0 +1,94 @@
+spriteset(spriteset_BR168_0_Purchase, "gfx/DMU/168_1_2_3.png") {
+	template_purchase(200, 0)
+}
+
+
+spriteset(spriteset_BR168_0_front_ChilternBlue, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 78)
+}
+spriteset(spriteset_BR168_0_middle_ChilternBlue, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 130)
+}
+spriteset(spriteset_BR168_0_rear_ChilternBlue, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 104)
+}
+
+spriteset(spriteset_BR168_0_front_ChilternBlue2, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 234)
+}
+spriteset(spriteset_BR168_0_middle_ChilternBlue2, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 286)
+}
+spriteset(spriteset_BR168_0_rear_ChilternBlue2, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 260)
+}
+
+spriteset(spriteset_BR168_0_front_ChilternGrey, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 0)
+}
+spriteset(spriteset_BR168_0_middle_ChilternGrey, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 52)
+}
+spriteset(spriteset_BR168_0_rear_ChilternGrey, "gfx/DMU/168_1_2_3.png") {
+	template_train32px(0, 26)
+}
+
+
+switch(FEAT_TRAINS, SELF, sw_BR168_0_ChilternBlue_sw2, position_in_articulated_veh)
+{
+	0: spriteset_BR168_0_front_ChilternBlue;
+	spriteset_BR168_0_middle_ChilternBlue;
+}
+switch(FEAT_TRAINS, SELF, sw_BR168_0_ChilternBlue, position_in_articulated_veh_from_end)
+{
+	0: spriteset_BR168_0_rear_ChilternBlue;
+	sw_BR168_0_ChilternBlue_sw2;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR168_0_ChilternBlue2_sw2, position_in_articulated_veh)
+{
+	0: spriteset_BR168_0_front_ChilternBlue2;
+	spriteset_BR168_0_middle_ChilternBlue2;
+}
+switch(FEAT_TRAINS, SELF, sw_BR168_0_ChilternBlue2, position_in_articulated_veh_from_end)
+{
+	0: spriteset_BR168_0_rear_ChilternBlue2;
+	1: sw_BR168_0_ChilternBlue2_sw2;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR168_0_ChilternGrey_sw2, position_in_articulated_veh)
+{
+	0: spriteset_BR168_0_front_ChilternGrey;
+	spriteset_BR168_0_middle_ChilternGrey;
+}
+switch(FEAT_TRAINS, SELF, sw_BR168_0_ChilternGrey, position_in_articulated_veh_from_end)
+{
+	0: spriteset_BR168_0_rear_ChilternGrey;
+	1: sw_BR168_0_ChilternGrey_sw2;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR168_0_capacity_sw2, position_in_articulated_veh)
+{
+	0: return(50 * param_pax);
+	return(67 * param_pax);
+}
+switch(FEAT_TRAINS, SELF, sw_BR168_0_cargo_capacity, position_in_articulated_veh_from_end)
+{
+	0: return(57 * param_pax);
+	1: sw_BR168_0_capacity_sw2;
+}
+
+
+switch(FEAT_TRAINS, SELF, sw_BR168_0, cargo_subtype){
+	0:	sw_BR168_0_ChilternBlue;
+	1:	sw_BR168_0_ChilternBlue2;
+	2:	sw_BR168_0_ChilternGrey;
+	sw_BR168_0_ChilternBlue;	// Default required because some liveries were removed
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR168_0_cargo_subtype_text,cargo_subtype){
+	0:	return string(str_ChilternBlue);
+	1:	return string(str_ChilternBlue2);
+	2:	return string(str_ChilternGrey);
+    return CB_RESULT_NO_TEXT;
+}
