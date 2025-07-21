@@ -3,20 +3,44 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR170_2car, extra_callback_info1) 
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
+switch(FEAT_TRAINS,SELF, sw_BR170_2car, cargo_subtype){
+	0: 	sw_BR170_MidlandMainline;
+	1:  sw_BR170_CentralGreen;
+	2:	sw_BR170_CentralRobinHood;
+	3:	sw_BR170_CentralBeAdvert;
+	4:	sw_BR171_Southern; // Use the 171 sprites for the Southern 170s pre-conversion
+	5:	sw_BR170_SWT;
+	6:	sw_BR170_TPE;
+	7:	sw_BR170_EMRMaroon;
+	8:	sw_BR170_EMRPride;
+	9:	sw_BR170_XCMaroon;
+	10:	sw_BR170_XCRed;
+	11:	sw_BR170_NXEA;
+	12:	sw_BR170_GreaterAnglia;
+	13:	sw_BR170_TfW;
+	14: sw_BR170_Bombardier;
+	15: sw_BR170_WMR;
+	16: sw_BR170_LondonMidland;
+    	return CB_RESULT_NO_TEXT;
+
 switch(FEAT_TRAINS,SELF,sw_BR170_2car_cargo_subtype_text,cargo_subtype){
-	//7:	return string(STR_LIVERY_SPECIAL, string(str_comp_EMR), string(str_special_Pride));
-    0:	return string(str_Central);
-	1:	return string(str_LondonMidland);
-	2:	return string(str_SWT);
-	3:	return string(str_GA_White);
-	4:	return string(str_ScotRail);
-	5:	return string(str_ScotRailSaltire);
-	6:	return string(str_WMR); 
+	0:	return string(str_MidlandMainline);
+	1:  return string(STR_LIVERY, string(str_comp_Central), string(str_col_Green));
+	2:  return string(STR_LIVERY, string(str_comp_Central), string(str_special_RobinHood));
+	3:  return string(STR_LIVERY_ADVERT, string(str_comp_Central), string(str_ad_Be));
+	4:	return string(str_Southern);
+	5:	return string(str_SWT);
+	6:	return string(str_TPE);
 	7:	return string(str_EMRMaroon);
-	8: 	return string(str_TfW);
-	9:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
+	8:	return string(STR_LIVERY_SPECIAL, string(str_comp_EMR), string(str_special_Pride));
+    9:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
 	10:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
-	11: return string(str_Northern);
+	11:	return string(str_NXEA);
+	12:	return string(str_GreaterAnglia);
+	13:	return string(str_TfW);
+	14: return string(STR_MANUFACTURER, string(str_Bombardier));
+	15:	return string(str_WMR); 
+	16:	return string(str_LondonMidland);
        return CB_RESULT_NO_TEXT;
 }
 
