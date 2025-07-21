@@ -123,13 +123,13 @@ switch(FEAT_TRAINS, SELF, sw_BR170_ScotRailSaltire, position_in_articulated_veh_
 	sw_BR170_ScotRailSaltire_sw2;
 }
 
-spriteset(spriteset_BR170_front_WMR, "gfx/BR170.png") {
+spriteset(spriteset_BR170_front_WestMidlandsRailway, "gfx/BR170.png") {
 	template_train32px(0, 463)
 }
-spriteset(spriteset_BR170_middle_WMR, "gfx/BR170.png") {
+spriteset(spriteset_BR170_middle_WestMidlandsRailway, "gfx/BR170.png") {
 	template_train32px(0, 488)
 }
-spriteset(spriteset_BR170_rear_WMR, "gfx/BR170.png") {
+spriteset(spriteset_BR170_rear_WestMidlandsRailway, "gfx/BR170.png") {
 	template_train32px(0, 513)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_WestMidlandsRailway_sw2, position_in_articulated_veh)

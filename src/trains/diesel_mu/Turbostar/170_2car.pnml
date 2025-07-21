@@ -1,9 +1,10 @@
 switch (FEAT_TRAINS, SELF, switch_articulated_BR170_2car, extra_callback_info1) {	
-	1: return item_170_2car;
+	1: return item_BR170_2car;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR170_2car_cargo_subtype_text,cargo_subtype){
+	//7:	return string(STR_LIVERY_SPECIAL, string(str_comp_EMR), string(str_special_Pride));
     0:	return string(str_Central);
 	1:	return string(str_LondonMidland);
 	2:	return string(str_SWT);
