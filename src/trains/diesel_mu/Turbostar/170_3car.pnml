@@ -3,7 +3,33 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR170_3car, extra_callback_info1) 
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR170_3_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS,SELF,sw_BR170_3car,cargo_subtype){
+	0:	sw_BR170_MidlandMainline;
+	1:	sw_BR170_CentralExMM;
+	2:  sw_BR170_CentralWhite;
+	3:  sw_BR170_CentralGreen;
+	4:  sw_BR170_CentralQJump;
+	5:	sw_BR170_HullTrins;
+	6:	sw_BR170_Anglia;
+	7:	sw_BR170_NXEA;
+	8:	sw_BR170_ONE;
+	9:	sw_BR170_GreaterAnglia;
+	10:	sw_BR170_TfW;
+	11:	sw_BR170_EMRMaroon;
+	12:	sw_BR170_XCMaroon;
+	13:	sw_BR170_XCRed;
+	14:	sw_BR170_XCPride;
+	15: sw_BR170_LondonMidland;
+	16: sw_BR170_SPTOrange;
+	17: sw_BR170_NXScotrail;
+	18:	sw_BR170_FirstScotRail;
+	19: sw_BR170_ScotRailSaltire;
+	20: sw_BR170_ScotRailSaltirePride;
+	21: sw_BR170_ScotRailSaltireBTP;
+	22: sw_BR170_Northern;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR170_3car_cargo_subtype_text,cargo_subtype){
 	0:	return string(str_MidlandMainline);
 	1:	return string(STR_COMPANY_FORMER_LIVERY, str_Central, str_MidlandMainline);
 	2:  return string(STR_LIVERY, string(str_comp_Central), string(str_col_White));
@@ -19,13 +45,14 @@ switch(FEAT_TRAINS,SELF,sw_BR170_3_cargo_subtype_text,cargo_subtype){
 	12:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
 	13:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
 	14:	return string(STR_LIVERY_SPECIAL, string(str_comp_XC), string(str_special_Pride));
-	15: return string(str_SPTOrange);
-	16: return string(str_NXScotRail);
-	17:	return string(str_FirstScotRail);
-	18: return string(str_ScotRailSaltire);
-	19: return string(STR_LIVERY_SPECIAL, string(str_ScotRailSaltire), string(str_special_Pride));
-	20: return string(STR_LIVERY_SPECIAL, string(str_ScotRailSaltire), string(str_special_BTP));
-	21: return string(str_Northern);
+	15: return string(str_LondonMidland);
+	16: return string(str_SPTOrange);
+	17: return string(str_NXScotRail);
+	18:	return string(str_FirstScotRail);
+	19: return string(str_ScotRailSaltire);
+	20: return string(STR_LIVERY_SPECIAL, string(str_ScotRailSaltire), string(str_special_Pride));
+	21: return string(STR_LIVERY_SPECIAL, string(str_ScotRailSaltire), string(str_special_BTP));
+	22: return string(str_Northern);
        return CB_RESULT_NO_TEXT;
 }
 
@@ -67,7 +94,7 @@ item (FEAT_TRAINS, item_BR170_3, 64) {
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR170_usage),string(str_BR170_eos),string(str_BR170_3_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR170_3_cargo_subtype_text;
+	cargo_subtype_text:					sw_BR170_3car_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR170_3car;
 	default: 							sw_BR170_3car;
 	purchase:							spriteset_BR170_Purchase;
