@@ -1,12 +1,12 @@
-switch (FEAT_TRAINS, SELF, switch_articulated_BR168_123_3car, extra_callback_info1) {
-	1..2: item_BR168_123_3car;
+switch (FEAT_TRAINS, SELF, switch_articulated_BR168_0_3car, extra_callback_info1) {
+	1..2: item_BR168_0_3car;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-item (FEAT_TRAINS, item_BR168_123_3car, 538) {
+item (FEAT_TRAINS, item_BR168_0_3car, 742) {
 	property {
 		variant_group:					header_Turbostar;
-		name: 							string(STR_NAME_BR168_123_3car);
+		name: 							string(STR_NAME_BR168_0_3car);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1998,4,21);
 		model_life:						8;
@@ -41,10 +41,10 @@ item (FEAT_TRAINS, item_BR168_123_3car, 538) {
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR168_usage),string(str_BR168_eos),string(str_BR168_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR168_123_cargo_subtype_text;
-	articulated_part:        			switch_articulated_BR168_123_3car;
-	default: 							sw_BR168_123;
-	purchase:							spriteset_BR168_123_Purchase;
+	cargo_subtype_text:					sw_BR168_0_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR168_0_3car;
+	default: 							sw_BR168_0;
+	purchase:							spriteset_BR168_0_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
