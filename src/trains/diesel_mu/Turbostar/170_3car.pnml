@@ -24,9 +24,8 @@ switch(FEAT_TRAINS,SELF,sw_BR170_3car,cargo_subtype){
 	17: sw_BR170_NXScotrail;
 	18:	sw_BR170_FirstScotRail;
 	19: sw_BR170_ScotRailSaltire;
-	20: sw_BR170_ScotRailSaltirePride;
-	21: sw_BR170_ScotRailSaltireBTP;
-	22: sw_BR170_Northern;
+	20: sw_BR170_ScotRailSaltireBTP;
+	21: sw_BR170_Northern;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR170_3car_cargo_subtype_text,cargo_subtype){
