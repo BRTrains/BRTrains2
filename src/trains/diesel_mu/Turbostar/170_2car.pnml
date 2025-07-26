@@ -21,7 +21,8 @@ switch(FEAT_TRAINS,SELF, sw_BR170_2car, cargo_subtype){
 	14: sw_BR170_Bombardier;
 	15: sw_BR170_WMR;
 	16: sw_BR170_LondonMidland;
-    	return CB_RESULT_NO_TEXT;
+   	return CB_RESULT_NO_TEXT;
+}
 
 switch(FEAT_TRAINS,SELF,sw_BR170_2car_cargo_subtype_text,cargo_subtype){
 	0:	return string(str_MidlandMainline);
