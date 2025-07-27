@@ -1,4 +1,1 @@
 // Disable some deprecated items
-disable_item(FEAT_TRAINS, 1); // BR08 replaced by ID 719
-disable_item(FEAT_TRAINS, 2); // BR13 replaced by 720
-disable_item(FEAT_TRAINS, 2); // BR13 cont.
