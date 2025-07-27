@@ -44,14 +44,27 @@ switch(FEAT_TRAINS, SELF, sw_BR172_01_LondonOverground, position_in_articulated_
 	sw_BR172_01_LondonOverground_sw2;
 }
 
-switch(FEAT_TRAINS, SELF, sw_BR172_01, cargo_subtype)
+switch(FEAT_TRAINS, SELF, sw_BR172_0, cargo_subtype)
 {
-    0: sw_BR172_01_WestMidlandsRailway;
-	1: sw_BR172_01_LondonOverground;
+	0: sw_BR172_01_LondonOverground;
+	1: sw_BR172_01_WestMidlandsRailway;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR172_01_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_WestMidlandsRailway);
-	1:	return string(str_LondonOverground);
+switch(FEAT_TRAINS,SELF,sw_BR172_0_cargo_subtype_text,cargo_subtype){    
+	0:	return string(str_LondonOverground);
+	1:	return string(str_comp_WMR);
        return CB_RESULT_NO_TEXT;
 }
+
+switch(FEAT_TRAINS, SELF, sw_BR172_1, cargo_subtype)
+{
+	0: sw_BR168_0_ChilternBlue; // Use 168/0 sprites for Chiltern blue livery
+	1: sw_BR172_01_WestMidlandsRailway;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR172_1_cargo_subtype_text,cargo_subtype){    
+	0:	return string(str_ChilternBlue);
+	1:	return string(str_comp_WMR);
+       return CB_RESULT_NO_TEXT;
+}
+

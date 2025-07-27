@@ -988,6 +988,17 @@ str_BR171_eos					:---
 str_BR171_2car_liveries			:Southern
 str_BR171_4car_liveries			:Southern
 
+STR_NAME_BR172_0				:BR Class 172/0 "Turbostar" (2-Car)
+STR_NAME_BR172_1				:BR Class 172/1 "Turbostar" (2-Car)
+STR_NAME_BR172_23_2car 			:BR Class 172/2/3 "Turbostar" (2-Car)
+STR_NAME_BR172_23_3car 			:BR Class 172/2/3 "Turbostar" (3-Car)
+str_BR172_usage					:Regional Passenger
+str_BR172_eos					:---
+str_BR172_0_liveries            :London Overground, West Midlands Railway
+str_BR172_1_liveries            :Chiltern, West Midlands Railway
+str_BR172_23_2car_liveries		:London Midland, West Midlands Railway
+str_BR172_23_3car_liveries		:London Midland, West Midlands Railway Launch livery, West Midlands Railway
+
 STR_NAME_BR1750					:BR Class 175/0 "Coradia" (2-Car)
 STR_NAME_BR1751					:BR Class 175/1 "Coradia" (3-Car)
 str_BR175_usage					:Passenger
@@ -2108,10 +2119,10 @@ str_ONE							: (One)
 str_ONEChapelf					: (One - Chapelfield)
 str_ONEGhost					: (One - Ghost White)
 str_ONETrans					: (One - Transitional)
-str_overground					: (London Overground)
-str_overgroundAventra			: (London Overground - Fake Aventra)
-str_overground5					: (London Overground - 5-Car Celebration)
-str_overgroundPride				: (London Overground - Pride)
+str_LondonOverground					: (London Overground)
+str_LondonOvergroundAventra			: (London Overground - Fake Aventra)
+str_LondonOverground5					: (London Overground - 5-Car Celebration)
+str_LondonOvergroundPride				: (London Overground - Pride)
 str_Police						: (Police)
 str_Porterbrook_Hydroflex       : (Porterbrook - Hydroflex White and Green)
 str_PPMProto                    : (Parry People Mover - Prototype)

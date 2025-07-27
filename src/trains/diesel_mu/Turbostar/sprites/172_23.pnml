@@ -1,14 +1,14 @@
-spriteset(spriteset_BR172_23_Purchase, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_Purchase, "gfx/DMU/172_2_3.png") {
 	template_purchase(200, 0)
 }
 
-spriteset(spriteset_BR172_23_front_WestMidlandsRailway, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_front_WestMidlandsRailway, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 0)
 }
-spriteset(spriteset_BR172_23_rear_WestMidlandsRailway, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_rear_WestMidlandsRailway, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 26)
 }
-spriteset(spriteset_BR172_23_middle_WestMidlandsRailway, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_middle_WestMidlandsRailway, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 52)
 }
 
@@ -23,13 +23,13 @@ switch(FEAT_TRAINS, SELF, sw_BR172_23_WestMidlandsRailway, position_in_articulat
 	sw_BR172_23_WestMidlandsRailway_sw2;
 }
 
-spriteset(spriteset_BR172_23_front_LondonMidland, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_front_LondonMidland, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 78)
 }
-spriteset(spriteset_BR172_23_rear_LondonMidland, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_rear_LondonMidland, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 104)
 }
-spriteset(spriteset_BR172_23_middle_LondonMidland, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_middle_LondonMidland, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 130)
 }
 
@@ -44,13 +44,13 @@ switch(FEAT_TRAINS, SELF, sw_BR172_23_LondonMidland, position_in_articulated_veh
 	sw_BR172_23_LondonMidland_sw2;
 }
 
-spriteset(spriteset_BR172_23_front_WMRLaunch, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_front_WMRLaunch, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 156)
 }
-spriteset(spriteset_BR172_23_rear_WMRLaunch, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_rear_WMRLaunch, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 182)
 }
-spriteset(spriteset_BR172_23_middle_WMRLaunch, "gfx/DMU/172_0_1.png") {
+spriteset(spriteset_BR172_23_middle_WMRLaunch, "gfx/DMU/172_2_3.png") {
 	template_train32px(0, 208)
 }
 
@@ -65,15 +65,27 @@ switch(FEAT_TRAINS, SELF, sw_BR172_23_WMRLaunch, position_in_articulated_veh_fro
 	sw_BR172_23_WMRLaunch_sw2;
 }
 
-switch(FEAT_TRAINS, SELF, sw_BR172_23, cargo_subtype)
+switch(FEAT_TRAINS, SELF, sw_BR172_23_2car, cargo_subtype)
+{
+    0: sw_BR172_23_WestMidlandsRailway;	
+	1: sw_BR172_23_LondonMidland;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR172_23_2car_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_comp_WMR);
+	1:	return string(str_LondonMidland);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR172_23_3car, cargo_subtype)
 {
     0: sw_BR172_23_WestMidlandsRailway;
 	1: sw_BR172_23_WMRLaunch;
 	2: sw_BR172_23_LondonMidland;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR172_23_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_WestMidlandsRailway);
+switch(FEAT_TRAINS,SELF,sw_BR172_23_3car_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_comp_WMR);
 	1:	return string(STR_LIVERY_SPECIAL, string(str_comp_WMR), string(str_special_Launch));
 	2:	return string(str_LondonMidland);
        return CB_RESULT_NO_TEXT;
