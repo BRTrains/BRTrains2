@@ -10,7 +10,7 @@ item (FEAT_TRAINS, item_BR168_123_4car, 539) {
 		variant_group:					header_Turbostar;
 		name: 							string(STR_NAME_BR168_123_4car);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1998,4,21);
+		introduction_date:				date(2004,4,21);
 		model_life:						8;
 		retire_early:					1;
 		vehicle_life:					50;
