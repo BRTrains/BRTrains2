@@ -85,7 +85,7 @@ str_comp_TPE                    :Transpennine Express
 str_comp_VXC                    :Virgin CrossCountry
 str_comp_VTEC                   :Virgin East Coast
 str_comp_VTWC                   :Virgin West Coast
-str_comp_WMR                    :West Midland Railway
+str_comp_WMR                    :West Midlands Railway
 
 str_comp_gen_priv_owner         :Private Owner
 
@@ -131,6 +131,7 @@ str_special_RobinHood           :Robin Hood Line
 str_special_BTP                 :British Transport Police
 str_special_Pride               :Pride
 str_special_GoGold              :Go Gold for Childhood Cancer Prevention
+str_special_Launch              :Launch livery
 
 str_ad_BeQJump                  :Be QJump
 
