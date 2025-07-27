@@ -26,9 +26,9 @@ switch(FEAT_TRAINS, SELF, sw_BR_JIA_cargo, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_BR_JIA_cargo_subtype_text, cargo_subtype) {
-    0:  return string(STR_LIVERY, string(str_comp_TSL), string(str_var_Polybulk));
-    1:  return string(STR_LIVERY_SHORT, string(str_var_Polybulk));
-    2:  return string(STR_LIVERY_SHORT, string(str_var_Grainflow));
+    0:  return string(STR_LIVERY, string(str_comp_TSL), string(str_special_Polybulk));
+    1:  return string(STR_LIVERY_SHORT, string(str_special_Polybulk));
+    2:  return string(STR_LIVERY_SHORT, string(str_special_Grainflow));
     3:  return string(STR_LIVERY, string(str_comp_TigerNacco), string(str_col_Grey));
 }
 

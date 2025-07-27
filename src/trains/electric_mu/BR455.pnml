@@ -282,7 +282,7 @@ switch(FEAT_TRAINS,SELF,sw_BR4558_cargo_subtype_text,cargo_subtype){
     3:	return string(str_Connex);
     4:	return string(str_SWT);
     5:	return string(str_Southern);
-	6:	return string(STR_LIVERY, string(str_BRBlueGrey), string(str_var_PRM));
+	6:	return string(STR_LIVERY, string(str_BRBlueGrey), string(str_special_PRM));
        return CB_RESULT_NO_TEXT;
 }
 

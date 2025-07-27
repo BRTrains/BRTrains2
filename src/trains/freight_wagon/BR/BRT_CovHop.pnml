@@ -36,11 +36,11 @@ switch(FEAT_TRAINS, SELF, sw_BRT_CovHop, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_BRT_CovHop_cargo_subtype_text, cargo_subtype) {
-    0: return string(STR_LIVERY_SHORT, string(str_var_Polybulk));
+    0: return string(STR_LIVERY_SHORT, string(str_special_Polybulk));
     1: return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Grey));
     2: return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Brown));
     3: return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Blue));
-    4: return string(STR_LIVERY_EXTENDED, string(str_comp_gen_priv_owner), string(str_col_Blue), string(str_var_Advertisement));
+    4: return string(STR_LIVERY_EXTENDED, string(str_comp_gen_priv_owner), string(str_col_Blue), string(str_special_Advertisement));
     5: return string(STR_LIVERY, string(str_comp_gen_priv_owner), string(str_col_Yellow));
 }
 

@@ -24,8 +24,8 @@ switch(FEAT_TRAINS, SELF, sw_BRVGA, cargo_subtype){
 
 switch(FEAT_TRAINS,SELF,sw_BRVGA_cargo_subtype_text,cargo_subtype){    
 	0:	return string(STR_LIVERY, string(str_abbr_BR), string(str_col_Grey));
-	1:	return string(STR_LIVERY_EXTENDED, string(str_abbr_BR), string(str_col_Grey), string(str_var_Speedlink));
-	2:	return string(STR_LIVERY_EXTENDED, string(str_abbr_BR), string(str_col_Grey), string(str_var_Exhibition));
+	1:	return string(STR_LIVERY_EXTENDED, string(str_abbr_BR), string(str_col_Grey), string(str_special_Speedlink));
+	2:	return string(STR_LIVERY_EXTENDED, string(str_abbr_BR), string(str_col_Grey), string(str_special_Exhibition));
 }
 
 item (FEAT_TRAINS, item_BRVGA, 700) {

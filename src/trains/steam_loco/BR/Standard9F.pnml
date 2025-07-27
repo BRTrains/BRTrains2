@@ -39,10 +39,10 @@ switch(FEAT_TRAINS,SELF, sw_Standard9FTender,cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF,sw_Standard9F_cargo_subtype_text,cargo_subtype){
-    0: return string(STR_CONCAT_2, string(str_BRBlack), string(str_var_Unnamed));
-    1: return string(STR_CONCAT_2, string(str_BRGreen), string(str_var_Unnamed));
-	2: return string(STR_CONCAT_2, string(str_BRBlack), string(str_var_Named));
-	3: return string(STR_CONCAT_2, string(str_BRGreen), string(str_var_Named));
+    0: return string(STR_CONCAT_2, string(str_BRBlack), string(str_special_Unnamed));
+    1: return string(STR_CONCAT_2, string(str_BRGreen), string(str_special_Unnamed));
+	2: return string(STR_CONCAT_2, string(str_BRBlack), string(str_special_Named));
+	3: return string(STR_CONCAT_2, string(str_BRGreen), string(str_special_Named));
        return CB_RESULT_NO_TEXT;
 }
 

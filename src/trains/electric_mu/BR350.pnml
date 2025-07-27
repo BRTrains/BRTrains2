@@ -150,7 +150,7 @@ switch(FEAT_TRAINS,SELF,sw_BR350_cargo_subtype_text,cargo_subtype){
 	2:	return string(str_TPE);
 	3:	return string(str_LNWRSimple);
 	4:	return string(str_LNWR);
-	5:	return string(STR_LIVERY, string(str_LNWR), string(str_var_Ukraine));
+	5:	return string(STR_LIVERY, string(str_LNWR), string(str_special_Ukraine));
        return CB_RESULT_NO_TEXT;
 }
 

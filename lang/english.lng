@@ -20,10 +20,12 @@ STR_CONCAT_3s	: {STRING} {STRING} {STRING}
 STR_CONCAT_4s	: {STRING} {STRING} {STRING} {STRING}
 STR_CONCAT_5s	: {STRING} {STRING} {STRING} {STRING} {STRING}
 
-STR_LIVERY_SHORT    : ({STRING})
-STR_LIVERY          : ({STRING} - {STRING})
-STR_LIVERY_EXTENDED : ({STRING} - {STRING} - {STRING})
-STR_LIVERY_SPECIAL  : ({STRING} - {STRING} - {SILVER}{STRING})
+STR_LIVERY_SHORT        : ({STRING})
+STR_LIVERY              : ({STRING} - {STRING})
+STR_LIVERY_EXTENDED     : ({STRING} - {STRING} - {STRING})
+STR_LIVERY_SPECIAL      : ({STRING} - {STRING} - {SILVER}{STRING})
+STR_LIVERY_ADVERT       : ({STRING} advertisement livery: {STRING})
+STR_LIVERY_MANUFACTURER : Manufacturer livery: {STRING}
 
 STR_COMPANY_FORMER_LIVERY : ({STRING} - Ex-{STRING})
 STR_FORMER_LIVERY   : (Ex-{STRING})
@@ -62,14 +64,18 @@ str_abbr_WMR            :WMR
 # Companies
 str_comp_Avanti                 :Avanti West Coast
 str_comp_BR                     :British Rail
+str_comp_C2C                    :C2C
+str_comp_Central                :Central
 str_comp_XC                     :CrossCountry
 str_comp_DRS                    :Direct Rail Services
+str_comp_EMR                    :East Midlands Railway
 str_comp_Furness                :Furness Railway
 str_comp_Freightliner           :Freightliner
 str_comp_GCR                    :Great Central Railway
 str_comp_GWR                    :Great Western Railway
 str_comp_HarryNeedle            :Harry Needle Railroad
 str_comp_Metropolitan           :Metropolitan Railway
+str_comp_MidlandMainLine        :Midland Main Line
 str_comp_Northern               :Northern
 str_comp_NorthernRail           :Northern Rail
 str_comp_SWR                    :South Western Railway
@@ -104,21 +110,29 @@ str_col_Grey                    :Grey
 str_col_Mahogany                :Mahogany
 str_col_Maroon                  :Maroon
 str_col_Orange                  :Orange
+str_col_Pink                    :Pink
 str_col_Purple                  :Purple
 str_col_Red                     :Red
 str_col_Teak                    :Teak
+str_col_White                   :White
 str_col_Yellow                  :Yellow
 
-str_var_Named                   :Named
-str_var_Olympics                :Olympics
-str_var_Unnamed                 :Unnamed
-str_var_Speedlink               :Speedlink
-str_var_Exhibition              :Exhibition
-str_var_Polybulk                :Polybulk
-str_var_Grainflow               :Grainflow
-str_var_Advertisement           :with Advertisement
-str_var_PRM                     :PRM Compliant
-str_var_Ukraine                 :Ukraine
+str_special_Named               :Named
+str_special_Olympics            :Olympics
+str_special_Unnamed             :Unnamed
+str_special_Speedlink           :Speedlink
+str_special_Exhibition          :Exhibition
+str_special_Polybulk            :Polybulk
+str_special_Grainflow           :Grainflow
+str_special_Advertisement       :with Advertisement
+str_special_PRM                 :PRM Compliant
+str_special_Ukraine             :Ukraine
+str_special_RobinHood           :Robin Hood Line
+str_special_BTP                 :British Transport Police
+str_special_Pride               :Pride
+str_special_GoGold              :Go Gold for Childhood Cancer Prevention
+
+str_ad_BeQJump                  :Be QJump
 
 # Variant group headers
 STR_LU_Subsurface_Header        :London Underground sub-surface units
@@ -959,25 +973,19 @@ str_BR168_usage					:Passenger
 str_BR168_eos					:---
 str_BR168_liveries				:Chiltern Blue (Blue doors), Chiltern Blue (Grey Doors), Chiltern Grey
 
-STR_NAME_BR170					:BR Class 170 "Turbostar" (2-Car)
-str_BR170_usage					:Passenger
+STR_NAME_BR170_2car				:BR Class 170 "Turbostar" (2-Car)
+STR_NAME_BR170_3car				:BR Class 170 "Turbostar" (3-Car)
+str_BR170_usage					:Regional Passenger
 str_BR170_eos					:---
-str_BR170_liveries				:Central Trains, London Midland, One, ScotRail Saltire, South West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE, West Midland Railway, East Midlands Railway, Transport For Wales
+str_BR170_2car_liveries			:Midland Main Line, Central Trains Green, Central Trains Robin Hood Line, Central Trains BeQJump, Southern, South West Trains, TransPennine Express, East Midlands Railway maroon, East Midlands Railway Pride, CrossCountry Maroon, CrossCountry Red, National Express East Anglia, Greater Anglia, Transport for Wales, West Midlands Railway, Bombardier, London Midland
+str_BR170_3car_liveries			:Midland Main Line, Central Trains former-MML, Central Trains White, Central Trains Green, Central Trains advertisement Be QJump, Hull Trains, Anglia, National Express East Anglia, ONE, Greater Anglia, Transport for Wales, West Midlands Railway, East Midlands Railway Maroon, Cross Country Maroon, Cross Country Red, Cross Country Pride, London Midland, SPT Carmine and Cream, SPT Orange, National Express ScotRail, First ScotRail, ScotRail Saltire, ScotRail Saltire British Transport Police, Northern
 
-STR_NAME_BR170_3				:BR Class 170 "Turbostar" (3-Car)
-str_BR170_3_usage				:Passenger
-str_BR170_3_eos					:---
-str_BR170_3_liveries			:Central Trains, London Midland, One, ScotRail Saltire, South West Trains, First ScotRail, Greater Anglia White, Greater Anglia (Old), NatEx ScotRail, Strathclyde PTE, West Midland Railway, East Midlands Railway, Transport For Wales
-
-STR_NAME_BR171					:BR Class 171 "Turbostar" (2-Car)
-str_BR171_usage					:Passenger
+STR_NAME_BR171_2car				:BR Class 171 "Turbostar" (2-Car)
+STR_NAME_BR171_4car 			:BR Class 171 "Turbostar" (4-Car)
+str_BR171_usage					:Regional Passenger
 str_BR171_eos					:---
-str_BR171_liveries				:Southern
-
-STR_NAME_BR171_4				:BR Class 171 "Turbostar" (4-Car)
-str_BR171_4_usage				:Passenger
-str_BR171_4_eos					:---
-str_BR171_4_liveries			:Southern
+str_BR171_2car_liveries			:Southern
+str_BR171_4car_liveries			:Southern
 
 STR_NAME_BR1750					:BR Class 175/0 "Coradia" (2-Car)
 STR_NAME_BR1751					:BR Class 175/1 "Coradia" (3-Car)
@@ -1124,7 +1132,7 @@ str_ElectroTest_liveries		:
 STR_NAME_BR357					:BR Class 357 "Electrostar" (4-car)
 str_BR357_usage					:Surburban Passenger
 str_BR357_eos					:---
-str_BR357_liveries				:C2C, C2C Blue, C2C Eco
+str_BR357_liveries				:C2C White, C2C Blue, C2C Go Gold for Childhood Cancer Prevention, C2C Pink, C2C Green (Eco), LTS
 
 
 STR_NAME_BR360_1                :BR Class 360/1 "Desiro" (4-car)
@@ -1835,6 +1843,7 @@ str_BangerBlue_Stripe           : (Banger Blue with White Stripe)
 str_Biffa                       : (Biffa)
 str_BlackpoolTransport          : (Blackpool Transport)
 str_BoltonCorporation           : (BoltonCorporation)
+str_Bombardier                  : Bombardier
 str_BP                          : (BP)
 str_BR2ToneGrey                 : (BR - 2 Tone Grey)
 str_BRBlack						: (BR - Black)
@@ -2013,7 +2022,7 @@ str_HeathrowExpressSilverStripe : (Heathrow Express - Silver and Blue, Red Strip
 str_HeathrowExpressSilverBlue   : (Heathrow Express - Silver and Blue)
 str_HeathrowExpressSilverPurple : (Heathrow Express - Silver and Purple)
 str_HogwartsExpress             : (Hogwarts Express)
-str_HT							: (Hull Trains)
+str_HullTrains					: (Hull Trains)
 str_Inter7City                  : (ScotRail - Inter7City)
 str_InterCity					: (InterCity)
 str_InterCityExecutive			: (InterCity Executive)
@@ -2093,6 +2102,7 @@ str_NXEA						: (National Express East Anglia)
 str_NXEABlue					: (National Express East Anglia - Blue)
 str_NXEAGrey					: (National Express East Anglia - Grey and White)
 str_NXEAAltLights				: (National Express East Anglia - Alternative Lights)
+str_NXScotRail					: (National Express ScotRail)
 str_ONE							: (One)
 str_ONEChapelf					: (One - Chapelfield)
 str_ONEGhost					: (One - Ghost White)

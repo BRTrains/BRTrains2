@@ -86,7 +86,7 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR222_1, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR222_1_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_HT);
+    0:	return string(str_HullTrains);
 	1:	return string(str_EMT);
 	2:	return string(str_EMRMaroon);
 	3:	return string(str_EMRMaroonWhite);
