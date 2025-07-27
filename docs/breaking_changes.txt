@@ -1,0 +1,19 @@
+This document lists known breaking changes, which are changes which break savegame compatibility and may cause desync issues in multiplayer
+
+When savegame-breaking changes are made, the minimum compatible version will be increased to the current version
+(meaning the version will not automatically be used in older savegames)
+
+Users who which to override this may do so, but will need to refer to the below list for information on the units that caused the breaking change
+Sending any vehicles of the relevant unit to the depot and deleting it, then performing the update manually, should avoid broken units
+
+Items marked with a + will break in a way which can be fixed after-the-fact by sending the unit to the depot
+Items marked with a - may break in ways which mean they break in-place cannot be sent to the depot, and you would need to crash another unit into them to remove them
+Items marked ? are unconfirmed
+
+v2.15
+? Re-written build script may result in unexpected behaviour
++ Class 168 (articulation changed)
++ Class 170 (articulation changed)
++ Class 357 (articulation changed)
+- Class 08 (previously deprecated, now removed)
+- Class 13 (previously deprecated, now removed)
