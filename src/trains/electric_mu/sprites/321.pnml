@@ -182,7 +182,7 @@ switch(FEAT_TRAINS, SELF, switch_BR321_subtype_text, cargo_subtype) {
 	3: return string(str_Silverlink);
 	4: return string(str_LondonMidland);
 	5: return string(str_WYPTEMetro);
-	6: return string(str_overground);
+	6: return string(str_LondonOverground);
 	7: return string(str_FGE);
 	8: return string(str_ArrivaNorthern);
 	9: return string(str_GA_Interim);

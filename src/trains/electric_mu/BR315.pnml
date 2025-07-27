@@ -147,7 +147,7 @@ switch(FEAT_TRAINS, SELF, sw_315_cargo_subtype_text, cargo_subtype) {
     11: return string(str_AGA);
     12: return string(str_AGAAltLights);
     13: return string(str_TfL);
-    14: return string(str_overground);
+    14: return string(str_LondonOverground);
     return CB_RESULT_NO_TEXT;
 }
 
