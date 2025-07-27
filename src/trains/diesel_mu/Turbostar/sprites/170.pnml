@@ -5,11 +5,11 @@ spriteset(spriteset_BR170_Purchase, "gfx/DMU/170.png") {
 spriteset(spriteset_BR170_front_MidlandMainline, "gfx/DMU/170.png") {
 	template_train32px(0, 0)
 }
-spriteset(spriteset_BR170_middle_MidlandMainline, "gfx/DMU/170.png") {
-	template_train32px(0, 52)
-}
 spriteset(spriteset_BR170_rear_MidlandMainline, "gfx/DMU/170.png") {
 	template_train32px(0, 26)
+}
+spriteset(spriteset_BR170_middle_MidlandMainline, "gfx/DMU/170.png") {
+	template_train32px(0, 52)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_MidlandMainline_sw2, position_in_articulated_veh)
 {
@@ -25,11 +25,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_MidlandMainline, position_in_articulated_veh_
 spriteset(spriteset_BR170_front_CentralGreen, "gfx/DMU/170.png") {
 	template_train32px(0, 312)
 }
-spriteset(spriteset_BR170_middle_CentralGreen, "gfx/DMU/170.png") {
-	template_train32px(0, 364)
-}
 spriteset(spriteset_BR170_rear_CentralGreen, "gfx/DMU/170.png") {
 	template_train32px(0, 338)
+}
+spriteset(spriteset_BR170_middle_CentralGreen, "gfx/DMU/170.png") {
+	template_train32px(0, 364)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_CentralGreen_sw2, position_in_articulated_veh)
 {
@@ -45,11 +45,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_CentralGreen, position_in_articulated_veh_fro
 spriteset(spriteset_BR170_front_CentralRobinHood, "gfx/DMU/170.png") {
 	template_train32px(0, 1976)
 }
-spriteset(spriteset_BR170_middle_CentralRobinHood, "gfx/DMU/170.png") {
-	template_train32px(0, 2028)
-}
 spriteset(spriteset_BR170_rear_CentralRobinHood, "gfx/DMU/170.png") {
 	template_train32px(0, 2002)
+}
+spriteset(spriteset_BR170_middle_CentralRobinHood, "gfx/DMU/170.png") {
+	template_train32px(0, 2028)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_CentralRobinHood_sw2, position_in_articulated_veh)
 {
@@ -65,11 +65,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_CentralRobinHood, position_in_articulated_veh
 spriteset(spriteset_BR170_front_TransPennineExpress, "gfx/DMU/170.png") {
 	template_train32px(0, 754)
 }
-spriteset(spriteset_BR170_middle_TransPennineExpress, "gfx/DMU/170.png") {
-	template_train32px(0, 806)
-}
 spriteset(spriteset_BR170_rear_TransPennineExpress, "gfx/DMU/170.png") {
 	template_train32px(0, 780)
+}
+spriteset(spriteset_BR170_middle_TransPennineExpress, "gfx/DMU/170.png") {
+	template_train32px(0, 806)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_TransPennineExpress_sw2, position_in_articulated_veh)
 {
@@ -85,11 +85,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_TransPennineExpress, position_in_articulated_
 spriteset(spriteset_BR170_front_LondonMidland, "gfx/DMU/170.png") {
 	template_train32px(0, 390)
 }
-spriteset(spriteset_BR170_middle_LondonMidland, "gfx/DMU/170.png") {
-	template_train32px(0, 442)
-}
 spriteset(spriteset_BR170_rear_LondonMidland, "gfx/DMU/170.png") {
 	template_train32px(0, 416)
+}
+spriteset(spriteset_BR170_middle_LondonMidland, "gfx/DMU/170.png") {
+	template_train32px(0, 442)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_LondonMidland_sw2, position_in_articulated_veh)
 {
@@ -105,11 +105,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_LondonMidland, position_in_articulated_veh_fr
 spriteset(spriteset_BR170_front_SouthWestTrains, "gfx/DMU/170.png") {
 	template_train32px(0, 676)
 }
-spriteset(spriteset_BR170_middle_SouthWestTrains, "gfx/DMU/170.png") {
-	template_train32px(0, 728)
-}
 spriteset(spriteset_BR170_rear_SouthWestTrains, "gfx/DMU/170.png") {
 	template_train32px(0, 702)
+}
+spriteset(spriteset_BR170_middle_SouthWestTrains, "gfx/DMU/170.png") {
+	template_train32px(0, 728)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_SouthWestTrains_sw2, position_in_articulated_veh)
 {
@@ -125,11 +125,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_SouthWestTrains, position_in_articulated_veh_
 spriteset(spriteset_BR170_front_GreaterAnglia_TfW, "gfx/DMU/170.png") {
 	template_train32px(0, 598)
 }
-spriteset(spriteset_BR170_middle_GreaterAnglia_TfW, "gfx/DMU/170.png") {
-	template_train32px(0, 650)
-}
 spriteset(spriteset_BR170_rear_GreaterAnglia_TfW, "gfx/DMU/170.png") {
 	template_train32px(0, 624)
+}
+spriteset(spriteset_BR170_middle_GreaterAnglia_TfW, "gfx/DMU/170.png") {
+	template_train32px(0, 650)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_GreaterAnglia_TfW_sw2, position_in_articulated_veh)
 {
@@ -146,10 +146,10 @@ switch(FEAT_TRAINS, SELF, sw_BR170_GreaterAnglia_TfW, position_in_articulated_ve
 spriteset(spriteset_BR170_front_ScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 313)
 }
-spriteset(spriteset_BR170_middle_ScotRail, "gfx/DMU/170.png") {
+spriteset(spriteset_BR170_rear_ScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 338)
 }
-spriteset(spriteset_BR170_rear_ScotRail, "gfx/DMU/170.png") {
+spriteset(spriteset_BR170_middle_ScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 363)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_ScotRail_sw2, position_in_articulated_veh)
@@ -166,10 +166,10 @@ switch(FEAT_TRAINS, SELF, sw_BR170_ScotRail, position_in_articulated_veh_from_en
 spriteset(spriteset_BR170_front_ScotRailSaltire, "gfx/DMU/170.png") {
 	template_train32px(0, 1196)
 }
-spriteset(spriteset_BR170_middle_ScotRailSaltire, "gfx/DMU/170.png") {
+spriteset(spriteset_BR170_rear_ScotRailSaltire, "gfx/DMU/170.png") {
 	template_train32px(0, 1222)
 }
-spriteset(spriteset_BR170_rear_ScotRailSaltire, "gfx/DMU/170.png") {
+spriteset(spriteset_BR170_middle_ScotRailSaltire, "gfx/DMU/170.png") {
 	template_train32px(0, 1248)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_ScotRailSaltire_sw2, position_in_articulated_veh)
@@ -186,11 +186,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_ScotRailSaltire, position_in_articulated_veh_
 spriteset(spriteset_BR170_front_WestMidlandsRailway, "gfx/DMU/170.png") {
 	template_train32px(0, 234)
 }
-spriteset(spriteset_BR170_middle_WestMidlandsRailway, "gfx/DMU/170.png") {
-	template_train32px(0, 286)
-}
 spriteset(spriteset_BR170_rear_WestMidlandsRailway, "gfx/DMU/170.png") {
 	template_train32px(0, 260)
+}
+spriteset(spriteset_BR170_middle_WestMidlandsRailway, "gfx/DMU/170.png") {
+	template_train32px(0, 286)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_WestMidlandsRailway_sw2, position_in_articulated_veh)
 {
@@ -206,11 +206,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_WestMidlandsRailway, position_in_articulated_
 spriteset(spriteset_BR170_front_EMRMaroon, "gfx/DMU/170.png") {
 	template_train32px(0, 468)
 }
-spriteset(spriteset_BR170_middle_EMRMaroon, "gfx/DMU/170.png") {
-	template_train32px(0, 520) // Shared with EMR Pride
-}
 spriteset(spriteset_BR170_rear_EMRMaroon, "gfx/DMU/170.png") {
 	template_train32px(0, 494)
+}
+spriteset(spriteset_BR170_middle_EMRMaroon, "gfx/DMU/170.png") {
+	template_train32px(0, 520) // Shared with EMR Pride
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_EMRMaroon_sw2, position_in_articulated_veh)
 {
@@ -226,11 +226,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_EMRMaroon, position_in_articulated_veh_from_e
 spriteset(spriteset_BR170_front_EMRPride, "gfx/DMU/170.png") {
 	template_train32px(0, 546)
 }
-spriteset(spriteset_BR170_middle_EMRPride, "gfx/DMU/170.png") {
-	template_train32px(0, 520) // Use normal EMR Maroon sprites
-}
 spriteset(spriteset_BR170_rear_EMRPride, "gfx/DMU/170.png") {
 	template_train32px(0, 572)
+}
+spriteset(spriteset_BR170_middle_EMRPride, "gfx/DMU/170.png") {
+	template_train32px(0, 520) // Use normal EMR Maroon sprites
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_EMRPride_sw2, position_in_articulated_veh)
 {
@@ -246,11 +246,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_EMRPride, position_in_articulated_veh_from_en
 spriteset(spriteset_BR170_front_Northern, "gfx/DMU/170.png") {
 	template_train32px(0, 78)
 }
-spriteset(spriteset_BR170_middle_Northern, "gfx/DMU/170.png") {
-	template_train32px(0, 130)
-}
 spriteset(spriteset_BR170_rear_Northern, "gfx/DMU/170.png") {
 	template_train32px(0, 104)
+}
+spriteset(spriteset_BR170_middle_Northern, "gfx/DMU/170.png") {
+	template_train32px(0, 130)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_Northern_sw2, position_in_articulated_veh)
 {
@@ -266,11 +266,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_Northern, position_in_articulated_veh_from_en
 spriteset(spriteset_BR170_front_CrossCountryMaroon, "gfx/DMU/170.png") {
 	template_train32px(0, 832)
 }
-spriteset(spriteset_BR170_middle_CrossCountryMaroon, "gfx/DMU/170.png") {
-	template_train32px(0, 936) // Shared middle coach with XC Pride
-}
 spriteset(spriteset_BR170_rear_CrossCountryMaroon, "gfx/DMU/170.png") {
 	template_train32px(0, 858)
+}
+spriteset(spriteset_BR170_middle_CrossCountryMaroon, "gfx/DMU/170.png") {
+	template_train32px(0, 936) // Shared middle coach with XC Pride
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_CrossCountryMaroon_sw2, position_in_articulated_veh)
 {
@@ -286,11 +286,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_CrossCountryMaroon, position_in_articulated_v
 spriteset(spriteset_BR170_front_CrossCountryRed, "gfx/DMU/170.png") {
 	template_train32px(0, 962)
 }
-spriteset(spriteset_BR170_middle_CrossCountryRed, "gfx/DMU/170.png") {
-	template_train32px(0, 1014)
-}
 spriteset(spriteset_BR170_rear_CrossCountryRed, "gfx/DMU/170.png") {
 	template_train32px(0, 988)
+}
+spriteset(spriteset_BR170_middle_CrossCountryRed, "gfx/DMU/170.png") {
+	template_train32px(0, 1014)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_CrossCountryRed_sw2, position_in_articulated_veh)
 {
@@ -306,11 +306,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_CrossCountryRed, position_in_articulated_veh_
 spriteset(spriteset_BR170_front_CrossCountryPride, "gfx/DMU/170.png") {
 	template_train32px(0, 884)
 }
-spriteset(spriteset_BR170_middle_CrossCountryPride, "gfx/DMU/170.png") {
-	template_train32px(0, 936) // Shared with XC Maroon
-}
 spriteset(spriteset_BR170_rear_CrossCountryPride, "gfx/DMU/170.png") {
 	template_train32px(0, 910)
+}
+spriteset(spriteset_BR170_middle_CrossCountryPride, "gfx/DMU/170.png") {
+	template_train32px(0, 936) // Shared with XC Maroon
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_CrossCountryPride_sw2, position_in_articulated_veh)
 {
@@ -326,11 +326,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_CrossCountryPride, position_in_articulated_ve
 spriteset(spriteset_BR170_front_NXEA, "gfx/DMU/170.png") {
 	template_train32px(0, 1820)
 }
-spriteset(spriteset_BR170_middle_NXEA, "gfx/DMU/170.png") {
-	template_train32px(0, 1872)
-}
 spriteset(spriteset_BR170_rear_NXEA, "gfx/DMU/170.png") {
 	template_train32px(0, 1846)
+}
+spriteset(spriteset_BR170_middle_NXEA, "gfx/DMU/170.png") {
+	template_train32px(0, 1872)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_NXEA_sw2, position_in_articulated_veh)
 {
@@ -346,11 +346,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_NXEA, position_in_articulated_veh_from_end)
 spriteset(spriteset_BR170_front_Bombardier, "gfx/DMU/170.png") {
 	template_train32px(0, 1430)
 }
-spriteset(spriteset_BR170_middle_Bombardier, "gfx/DMU/170.png") {
-	template_train32px(0, 1482)
-}
 spriteset(spriteset_BR170_rear_Bombardier, "gfx/DMU/170.png") {
 	template_train32px(0, 1456)
+}
+spriteset(spriteset_BR170_middle_Bombardier, "gfx/DMU/170.png") {
+	template_train32px(0, 1482)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_Bombardier_sw2, position_in_articulated_veh)
 {
@@ -366,11 +366,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_Bombardier, position_in_articulated_veh_from_
 spriteset(spriteset_BR170_front_CentralExMM, "gfx/DMU/170.png") {
 	template_train32px(0, 1352)
 }
-spriteset(spriteset_BR170_middle_CentralExMM, "gfx/DMU/170.png") {
-	template_train32px(0, 1404)
-}
 spriteset(spriteset_BR170_rear_CentralExMM, "gfx/DMU/170.png") {
 	template_train32px(0, 1378)
+}
+spriteset(spriteset_BR170_middle_CentralExMM, "gfx/DMU/170.png") {
+	template_train32px(0, 1404)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_CentralExMM_sw2, position_in_articulated_veh)
 {
@@ -386,11 +386,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_CentralExMM, position_in_articulated_veh_from
 spriteset(spriteset_BR170_front_CentralWhite, "gfx/DMU/170.png") {
 	template_train32px(0, 1586)
 }
-spriteset(spriteset_BR170_middle_CentralWhite, "gfx/DMU/170.png") {
-	template_train32px(0, 1638)
-}
 spriteset(spriteset_BR170_rear_CentralWhite, "gfx/DMU/170.png") {
 	template_train32px(0, 1612)
+}
+spriteset(spriteset_BR170_middle_CentralWhite, "gfx/DMU/170.png") {
+	template_train32px(0, 1638)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_CentralWhite_sw2, position_in_articulated_veh)
 {
@@ -406,11 +406,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_CentralWhite, position_in_articulated_veh_fro
 spriteset(spriteset_BR170_front_CentralQJump, "gfx/DMU/170.png") {
 	template_train32px(0, 1664)
 }
-spriteset(spriteset_BR170_middle_CentralQJump, "gfx/DMU/170.png") {
-	template_train32px(0, 1716)
-}
 spriteset(spriteset_BR170_rear_CentralQJump, "gfx/DMU/170.png") {
 	template_train32px(0, 1690)
+}
+spriteset(spriteset_BR170_middle_CentralQJump, "gfx/DMU/170.png") {
+	template_train32px(0, 1716)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_CentralQJump_sw2, position_in_articulated_veh)
 {
@@ -426,11 +426,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_CentralQJump, position_in_articulated_veh_fro
 spriteset(spriteset_BR170_front_HullTrains, "gfx/DMU/170.png") {
 	template_train32px(0, 1898)
 }
-spriteset(spriteset_BR170_middle_HullTrains, "gfx/DMU/170.png") {
-	template_train32px(0, 1950)
-}
 spriteset(spriteset_BR170_rear_HullTrains, "gfx/DMU/170.png") {
 	template_train32px(0, 1924)
+}
+spriteset(spriteset_BR170_middle_HullTrains, "gfx/DMU/170.png") {
+	template_train32px(0, 1950)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_HullTrains_sw2, position_in_articulated_veh)
 {
@@ -446,11 +446,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_HullTrains, position_in_articulated_veh_from_
 spriteset(spriteset_BR170_front_Anglia, "gfx/DMU/170.png") {
 	template_train32px(0, 1742)
 }
-spriteset(spriteset_BR170_middle_Anglia, "gfx/DMU/170.png") {
-	template_train32px(0, 1794)
-}
 spriteset(spriteset_BR170_rear_Anglia, "gfx/DMU/170.png") {
 	template_train32px(0, 1768)
+}
+spriteset(spriteset_BR170_middle_Anglia, "gfx/DMU/170.png") {
+	template_train32px(0, 1794)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_Anglia_sw2, position_in_articulated_veh)
 {
@@ -466,11 +466,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_Anglia, position_in_articulated_veh_from_end)
 spriteset(spriteset_BR170_front_ONE, "gfx/DMU/170.png") {
 	template_train32px(0, 1274)
 }
-spriteset(spriteset_BR170_middle_ONE, "gfx/DMU/170.png") {
-	template_train32px(0, 1326)
-}
 spriteset(spriteset_BR170_rear_ONE, "gfx/DMU/170.png") {
 	template_train32px(0, 1300)
+}
+spriteset(spriteset_BR170_middle_ONE, "gfx/DMU/170.png") {
+	template_train32px(0, 1326)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_ONE_sw2, position_in_articulated_veh)
 {
@@ -486,11 +486,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_ONE, position_in_articulated_veh_from_end)
 spriteset(spriteset_BR170_front_SPTCarmineAndCream, "gfx/DMU/170.png") {
 	template_train32px(0, 1118)
 }
-spriteset(spriteset_BR170_middle_SPTCarmineAndCream, "gfx/DMU/170.png") {
-	template_train32px(0, 1170)
-}
 spriteset(spriteset_BR170_rear_SPTCarmineAndCream, "gfx/DMU/170.png") {
 	template_train32px(0, 1144)
+}
+spriteset(spriteset_BR170_middle_SPTCarmineAndCream, "gfx/DMU/170.png") {
+	template_train32px(0, 1170)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_SPTCarmineAndCream_sw2, position_in_articulated_veh)
 {
@@ -506,11 +506,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_SPTCarmineAndCream, position_in_articulated_v
 spriteset(spriteset_BR170_front_NXScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 1040)
 }
-spriteset(spriteset_BR170_middle_NXScotRail, "gfx/DMU/170.png") {
-	template_train32px(0, 1066)
-}
 spriteset(spriteset_BR170_rear_NXScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 1092)
+}
+spriteset(spriteset_BR170_middle_NXScotRail, "gfx/DMU/170.png") {
+	template_train32px(0, 1066)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_NXScotRail_sw2, position_in_articulated_veh)
 {
@@ -526,11 +526,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_NXScotRail, position_in_articulated_veh_from_
 spriteset(spriteset_BR170_front_FirstScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 156)
 }
-spriteset(spriteset_BR170_middle_FirstScotRail, "gfx/DMU/170.png") {
-	template_train32px(0, 208)
-}
 spriteset(spriteset_BR170_rear_FirstScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 130)
+}
+spriteset(spriteset_BR170_middle_FirstScotRail, "gfx/DMU/170.png") {
+	template_train32px(0, 208)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_FirstScotRail_sw2, position_in_articulated_veh)
 {
@@ -546,11 +546,11 @@ switch(FEAT_TRAINS, SELF, sw_BR170_FirstScotRail, position_in_articulated_veh_fr
 spriteset(spriteset_BR170_front_ScotRailSaltireBTP, "gfx/DMU/170.png") {
 	template_train32px(0, 1508)
 }
-spriteset(spriteset_BR170_middle_ScotRailSaltireBTP, "gfx/DMU/170.png") {
-	template_train32px(0, 1560)
-}
 spriteset(spriteset_BR170_rear_ScotRailSaltireBTP, "gfx/DMU/170.png") {
 	template_train32px(0, 1534)
+}
+spriteset(spriteset_BR170_middle_ScotRailSaltireBTP, "gfx/DMU/170.png") {
+	template_train32px(0, 1560)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_ScotRailSaltireBTP_sw2, position_in_articulated_veh)
 {
