@@ -8,7 +8,7 @@ grf {
 	version: 15;
 	//bump up this number to whatever the "next release" version is when breaking compatibility.
 	// Eg if 8 (2.8) has released and the next version is 9 (2.9) then set it to 9
-	min_compatible_version: 10;
+	min_compatible_version: 15;
 	param 0 {
 		param_max_speed {
 			type: int;
