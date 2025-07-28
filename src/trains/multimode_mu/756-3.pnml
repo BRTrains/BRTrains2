@@ -23,9 +23,8 @@ switch(FEAT_TRAINS, SELF, switch_br_756_3_particles_diesel, position_in_articula
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_756_3_particles, current_railtype) {
-	ELRL: switch_br_756_3_particles_electric;
-	railtype("BR_3RDC"): switch_br_756_3_particles_electric;
+switch(FEAT_TRAINS, SELF, switch_br_756_3_particles, tile_powers_railtype("ELRL")) {
+	1: switch_br_756_3_particles_electric;	
 	switch_br_756_3_particles_diesel;
 }
 
@@ -41,9 +40,8 @@ switch(FEAT_TRAINS, SELF, switch_br_756_3_can_attach_wagon, vehicle_type_id) {
 	return string(STR_CANNOT_ATTACH);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_756_3_power, current_railtype) {
-	ELRL: return 3500;
-	railtype("BR_3RDC"): return 3500;
+switch(FEAT_TRAINS, SELF, switch_br_756_3_power, tile_powers_railtype("ELRL")) {
+	1: return 3500;	
 	return 2340;
 }
 

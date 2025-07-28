@@ -82,8 +82,8 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_particles_electric, position_in_arti
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_BR802_5car_particles, current_railtype) {
-	ELRL: switch_BR802_5car_particles_electric;
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_particles, tile_powers_railtype("ELRL")) {
+	1: switch_BR802_5car_particles_electric;
 	switch_BR802_5car_particles_diesel;
 }
 
@@ -99,8 +99,8 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_capacity, cargo_subtype) {
 	2: return (342/5 * param_pax);
 }
 
-switch(FEAT_TRAINS, SELF, switch_BR802_5car_power, current_railtype) {
-	ELRL: return 3636;
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_power, tile_powers_railtype("ELRL")) {
+	1: return 3636;
 	return 2820;
 }
 

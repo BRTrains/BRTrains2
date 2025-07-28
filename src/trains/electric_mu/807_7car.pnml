@@ -49,8 +49,8 @@ switch(FEAT_TRAINS, SELF, switch_BR807_7car_particles_electric, position_in_arti
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_BR807_7car_particles, current_railtype) {
-	ELRL: switch_BR807_7car_particles_electric;
+switch(FEAT_TRAINS, SELF, switch_BR807_7car_particles, tile_powers_railtype("ELRL")) {
+	1: switch_BR807_7car_particles_electric;
 	switch_BR807_7car_particles_diesel;
 }
 

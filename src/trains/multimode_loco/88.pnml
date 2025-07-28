@@ -15,8 +15,8 @@ switch(FEAT_TRAINS,SELF,switch_BR88_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-switch(FEAT_TRAINS, SELF, switch_br88_power, current_railtype) {
-	ELRL: return 5400;
+switch(FEAT_TRAINS, SELF, switch_br88_power, tile_powers_railtype("ELRL")) {
+	1: return 5400;
 	return 940;
 }
 

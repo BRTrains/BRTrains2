@@ -40,12 +40,10 @@ switch(FEAT_TRAINS, SELF, switch_br_769_particles_diesel, position_in_articulate
     visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
 }
 
-// Only give particle effects to middle/pantograph car
-switch(FEAT_TRAINS, SELF, switch_br_769_particles, current_railtype) {
+// Only give particle effects to middle/pantograph car on OHLE
+switch(FEAT_TRAINS, SELF, switch_br_769_particles, tile_powers_railtype("ELRL") || tile_powers_railtype("BR_3RDC")) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
-	ELRL: switch_br_769_particles_ohle;
-    railtype("BR_3RDC"): switch_br_769_particles_ohle;
-    railtype("BR_3RDR"): switch_br_769_particles_diesel;
+	1: switch_br_769_particles_ohle; 
 	switch_br_769_particles_diesel;
 }
 

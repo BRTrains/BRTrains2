@@ -73,8 +73,8 @@ switch(FEAT_TRAINS, SELF, switch_BR800_9car_particles_diesel, position_in_articu
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_BR800_9car_particles, current_railtype) {
-	ELRL: switch_BR800_9car_particles_electric;
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_particles, tile_powers_railtype("ELRL")) {
+	1: switch_BR800_9car_particles_electric;
 	switch_BR800_9car_particles_diesel;
 }
 
@@ -97,8 +97,8 @@ switch(FEAT_TRAINS, SELF, switch_BR800_9car_diesel_power, cargo_subtype) {
 	return 3750; // Anything else
 }
 
-switch(FEAT_TRAINS, SELF, switch_BR800_9car_power, current_railtype) {
-	ELRL: return 6060;
+switch(FEAT_TRAINS, SELF, switch_BR800_9car_power, tile_powers_railtype("ELRL")) {
+	1: return 6060;
 	return switch_BR800_9car_diesel_power;
 }
 

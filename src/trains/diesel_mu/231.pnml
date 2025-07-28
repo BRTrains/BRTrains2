@@ -24,7 +24,8 @@ switch(FEAT_TRAINS, SELF, switch_br_231_particles_diesel, position_in_articulate
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_231_particles, current_railtype) {
+switch(FEAT_TRAINS, SELF, switch_br_231_particles, tile_powers_railtype("ELRL")) {
+	1: switch_br_231_particles_electric;
 	switch_br_231_particles_diesel;
 }
 
@@ -37,10 +38,6 @@ switch(FEAT_TRAINS, SELF, switch_br_231_start_stop, num_vehs_in_consist) {
 switch(FEAT_TRAINS, SELF, switch_br_231_can_attach_wagon, vehicle_type_id) {
 	item_br_231: return CB_RESULT_ATTACH_ALLOW;	
 	return string(STR_CANNOT_ATTACH);
-}
-
-switch(FEAT_TRAINS, SELF, switch_br_231_power, current_railtype) {
-	return 2000;
 }
 
 switch(FEAT_TRAINS, SELF, switch_br_231_length, position_in_articulated_veh % 5) {
@@ -69,7 +66,7 @@ item(FEAT_TRAINS, item_br_231, 574) {
 		cargo_disallow_refit: [];
 		
 		speed: 90 mph;
-		power: 3500 hp;
+		power: 2000 hp;
 		cargo_capacity: (229/4);
 		weight: 114.3 ton; 
 		
@@ -96,9 +93,7 @@ item(FEAT_TRAINS, item_br_231, 574) {
 		articulated_part: switch_br_231_articulated;
 		start_stop: switch_br_231_start_stop;	
 		can_attach_wagon: switch_br_231_can_attach_wagon;
-		visual_effect_and_powered: switch_br_231_particles;
-				
-		power: switch_br_231_power;
+		visual_effect_and_powered: switch_br_231_particles;		
 		length: switch_br_231_length;
 		additional_text: string(STR_DSC_BR_231);
 		cargo_capacity:						return(229/4 * param_pax);	
