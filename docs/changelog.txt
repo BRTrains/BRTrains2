@@ -46,6 +46,7 @@ SAVEGAME BREAKING VERSION
 - Fixed 325 not being dual voltage
 - Fixed Mk3 and Mk4 brake vans filtering under mail not passengers
 - Fixed 810 EMR livery (too gold)
+- Fixed LU 2024 stock capacity
 - Reworked build script to reduce concurrent sprite group usage
 
 # v2.14 (2025-06-30)

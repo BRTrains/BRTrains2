@@ -18,3 +18,4 @@ v2.15
 - Irish Railways 2800 Class (removed)
 - Class 08 (previously deprecated, now removed)
 - Class 13 (previously deprecated, now removed)
+- LU2024 Stock (wrong capacity)
