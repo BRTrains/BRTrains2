@@ -4,7 +4,6 @@
 - GWR Great Bear and Hall class rework
 - Class 411, 412, 421, 422, 438 etc rework
 - Central London Railway 1900 Stock
-- Class 172 (/0/1 and /2/3)
 - Class 101
 
 # v2.15
@@ -14,6 +13,7 @@ SAVEGAME BREAKING VERSION
 - Added GWR 6700 Class
 - Added Class 69
 - Added Class 128
+- Added Class 172 (/0/1 and /2/3)
 - Added Class 322
 - Added Class 360
 - Added Class 799
@@ -21,7 +21,7 @@ SAVEGAME BREAKING VERSION
 - Added BR Conflat "P" wagon
 - Added GWR Dean 25ft 4 Compartment Second Class (SY)
 - Reworked Class 20
-- Reworked Class 168
+- Reworked Class 168, split into /0 and /1/2/3 versions
 - Reworked Class 170
 - Reworked Class 171
 - Reworked Class 323
