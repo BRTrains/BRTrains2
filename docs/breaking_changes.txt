@@ -15,5 +15,6 @@ v2.15
 + Class 168 (articulation changed)
 + Class 170 (articulation changed)
 + Class 357 (articulation changed)
+- Irish Railways 2800 Class (removed)
 - Class 08 (previously deprecated, now removed)
 - Class 13 (previously deprecated, now removed)

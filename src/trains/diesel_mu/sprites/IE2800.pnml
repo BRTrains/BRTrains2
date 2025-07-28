@@ -1,6 +1,0 @@
-spriteset (spriteset_IE2800_front, "gfx/IE/DMU/IE2800.png") { template_train32px_old(0, 13) }
-spriteset (spriteset_IE2800_rear, "gfx/IE/DMU/IE2800.png") { template_train32px_old(0, 38) }
-
-spriteset (spriteset_IE2800_purchase, "gfx/IE/DMU/IE2800.png") {
-	template_purchase(0,0)
-}
