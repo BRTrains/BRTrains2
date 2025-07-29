@@ -1615,10 +1615,10 @@ str_BRMk3TS_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland
 STR_NAME_BRMk3TGS				:BR Mark 3 Coach (Trailer Guard Second)
 str_BRMk3TGS_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
-STR_NAME_BRMk3TRSB				:BR Mark 3 Coach (Trailer Buffet)
+STR_NAME_BRMk3TRSB				:BR Mark 3 Coach (Trailer Buffet Second)
 str_BRMk3TRSB_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
-STR_NAME_BRMk3TRUB				:BR Mark 3 Coach (Trailer Buffet)
+STR_NAME_BRMk3TRUB				:BR Mark 3 Coach (Trailer Buffet Unclassified)
 str_BRMk3TRUB_liveries			:BR Blue, InterCity Executive, InterCity Swallow, Midland Mainline (Teal & Tangerine), Midland Mainline (Blue), East Midlands Trains, Virgin Trains, Cross Country, Grand Central, Grand Central Lined, First Great Western, Great North Eastern Railway
 
 STR_NAME_BRMk3TRUK				:BR Mark 3 Coach (Trailer Kitchen)

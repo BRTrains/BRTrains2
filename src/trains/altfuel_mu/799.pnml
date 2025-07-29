@@ -54,7 +54,7 @@ item (FEAT_TRAINS, item_BR799, 734) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							100 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDC;
+		track_type:						RAIL;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							1438 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -81,7 +81,7 @@ item (FEAT_TRAINS, item_BR799, 734) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						electric_create_visual_effect;
 	sound_effect:						sw_sound_electric_88;
-	cargo_capacity: return(246 * param_pax);
+	cargo_capacity: return(246 * param_pax / 4);
 	cost_factor:	return(GetAdjustedCost(86));
 	running_cost_factor: return(GetAdjustedCost(63));
 }
