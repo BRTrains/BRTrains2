@@ -37,6 +37,17 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR799, extra_callback_info1) {
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR799_particles_electric, position_in_articulated_veh % 4) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	2: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR799_particles, tile_powers_railtype("ELRL")) {
+	1: switch_BR799_particles_electric;
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); // No visual effects on hydrogen mode, because we don't have a gentle water vapour particle effect
+}
+
 item (FEAT_TRAINS, item_BR799, 734) {
 	property {
 		name: 							string(STR_NAME_BR799);
@@ -84,5 +95,6 @@ item (FEAT_TRAINS, item_BR799, 734) {
 	cargo_capacity: return(246 * param_pax / 4);
 	cost_factor:	return(GetAdjustedCost(86));
 	running_cost_factor: return(GetAdjustedCost(63));
+	visual_effect_and_powered: switch_BR799_particles;
 }
 }
