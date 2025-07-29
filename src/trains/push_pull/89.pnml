@@ -63,7 +63,7 @@ item (FEAT_TRAINS, item_BR89, 418) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							125 mph;
 		refit_cost:						0;
-		track_type:						RAIL;
+		track_type:						ELRL;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							5850 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
