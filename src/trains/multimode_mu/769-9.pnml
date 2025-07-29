@@ -72,7 +72,7 @@ item(FEAT_TRAINS, item_br_769_9, 458) {
 		cargo_disallow_refit: [];
 		
 		speed: 100 mph;
-		power: 2092 hp;
+		power: 1 hp;
 		cargo_capacity: (300/4);
 		weight: 155.2 ton; 
 		
@@ -95,6 +95,7 @@ item(FEAT_TRAINS, item_br_769_9, 458) {
 	graphics {
 		default: switch_br_769_9_spriteset;
 		purchase: spriteset_BR769_9_Purchase;
+		power: switch_br_769_power;
 		
 		articulated_part: switch_br_769_9_articulated;
 		start_stop: switch_br_769_9_start_stop;	

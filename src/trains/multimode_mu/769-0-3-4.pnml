@@ -66,6 +66,11 @@ switch(FEAT_TRAINS, SELF, switch_br_769_subtype_text, cargo_subtype) {
 	return CB_RESULT_NO_TEXT;
 }
 
+switch(FEAT_TRAINS, SELF, switch_br_769_power, tile_powers_railtype("ELRL") || tile_powers_railtype("BR_3RDC")) {
+	1: return 1330;
+	return 1040;
+}
+
 // Class 331/0 (3car)
 item(FEAT_TRAINS, item_br_769, 457) {
 	property {
@@ -84,7 +89,7 @@ item(FEAT_TRAINS, item_br_769, 457) {
 		cargo_disallow_refit: [];
 		
 		speed: 100 mph;
-		power: 2092 hp;
+		power: 1 hp;
 		cargo_capacity: (304/4);
 		weight: 147.8 ton; 
 		sprite_id:						SPRITE_ID_NEW_TRAIN;		
@@ -94,7 +99,6 @@ item(FEAT_TRAINS, item_br_769, 457) {
 		running_cost_base: RUNNING_COST_ELECTRIC;
 		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
 		engine_class: ENGINE_CLASS_DIESEL; // even if its 3rd rail, ELECTRIC would give overhead wire effects
-		extra_power_per_wagon: 0 kW;
 		tractive_effort_coefficient: 0.3;
 		air_drag_coefficient: 0.06;
 		length: 8; // full tile length vehicle
@@ -107,6 +111,7 @@ item(FEAT_TRAINS, item_br_769, 457) {
 		default: switch_br_769_spriteset;
 		purchase: spriteset_BR769_Purchase;
 		cargo_subtype_text: switch_br_769_subtype_text;
+		power: switch_br_769_power;
 		
 		articulated_part: switch_br_769_articulated;
 		start_stop: switch_br_769_start_stop;	
