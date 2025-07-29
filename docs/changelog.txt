@@ -349,7 +349,7 @@ SAVEGAME BREAKING VERSION
 - BR720 - Added C2C livery
 - Fixed GRF name for BaNaNaS and GRF List
 
-# v2 - First full release under the British Rail Set (BRSet) name (22-7-30)
+# v2 - First full release as BRTrains v2 (intitially renamed as BRSet, but reverted to the BRTrains name later) (22-7-30)
 
 
 Anything labelled as "Re-drawn (new model)" or "New Unit"
