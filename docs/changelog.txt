@@ -47,6 +47,10 @@ SAVEGAME BREAKING VERSION
 - Fixed Mk3 and Mk4 brake vans filtering under mail not passengers
 - Fixed 810 EMR livery (too gold)
 - Fixed LU 2024 stock capacity
+- Fixed 769 power outputs
+- Fixed 66/6 name
+- Fixed 89 not being limited to ELRL
+- Removed some deprecated units (08, 13, IE 2800 Class)
 - Reworked build script to reduce concurrent sprite group usage
 
 # v2.14 (2025-06-30)

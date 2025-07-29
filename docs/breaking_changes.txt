@@ -8,7 +8,7 @@ Sending any vehicles of the relevant unit to the depot and deleting it, then per
 
 Items marked with a + will break in a way which can be fixed after-the-fact by sending the unit to the depot
 Items marked with a - may break in ways which mean they break in-place cannot be sent to the depot, and you would need to crash another unit into them to remove them
-Items marked ? are unconfirmed
+Items marked ? are unconfirmed or may have unknown/unexpected results
 
 v2.15
 ? Re-written build script may result in unexpected behaviour
@@ -19,3 +19,4 @@ v2.15
 - Class 08 (previously deprecated, now removed)
 - Class 13 (previously deprecated, now removed)
 - LU2024 Stock (wrong capacity)
+- Class 89 (fixed running on non-electrified track)
