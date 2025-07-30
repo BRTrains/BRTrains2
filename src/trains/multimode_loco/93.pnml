@@ -16,7 +16,7 @@ switch(FEAT_TRAINS,SELF,switch_BR93_cargo_subtype_text,cargo_subtype){
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR93_power, tile_powers_railtype("ELRL")) {
-	1: return 5940;
+	1: return 6200;
 	return 1740;
 }
 
