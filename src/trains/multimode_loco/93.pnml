@@ -66,5 +66,6 @@ item (FEAT_TRAINS, item_BR93, 691) {
 	sound_effect:						sw_sound_hybrid_88;
 	cost_factor:	return(GetAdjustedCost(50));
 	running_cost_factor: return(GetAdjustedCost(28));
+	visual_effect_and_powered: sw_multimode_locomotive_particles;
 }
 }
