@@ -51,6 +51,8 @@ SAVEGAME BREAKING VERSION
 - Fixed 769 power outputs
 - Fixed 66/6 name
 - Fixed 89 not being limited to ELRL
+- Fixed 99 speed parameter
+- Fixed 88/93/99 particles
 - Removed some deprecated units (08, 13, IE 2800 Class)
 - Reworked build script to reduce concurrent sprite group usage
 
