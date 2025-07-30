@@ -1,4 +1,4 @@
 switch(FEAT_TRAINS, SELF, sw_multimode_locomotive_particles, tile_powers_railtype("ELRL") || tile_powers_railtype("BR_3RDC")) {
-	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, ENABLE_WAGON_POWER);; 	
+	1: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, ENABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, ENABLE_WAGON_POWER);
 }
