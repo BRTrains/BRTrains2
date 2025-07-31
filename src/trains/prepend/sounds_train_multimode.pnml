@@ -27,7 +27,7 @@ switch (FEAT_TRAINS, SELF, sw_sound_electric_73_on, getbits(extra_callback_info1
 	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
 }
 
-switch (FEAT_TRAINS, SELF, sw_sound_hybrid_73_on, tile_powers_railtype("SAA3") || tile_powers_railtype("3RDR")){
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_73_on, tile_powers_railtype("BR_3RDR")){
 	1:sw_sound_electric_73_on;
 	sw_sound_diesel_73_on;
 }
@@ -106,7 +106,7 @@ switch (FEAT_TRAINS, SELF, sw_sound_electric_769_on, getbits(extra_callback_info
 	SOUND_EVENT_BREAKDOWN:		SOUND_BREAKDOWN_TRAIN_SHIP;
 }
 
-switch (FEAT_TRAINS, SELF, sw_sound_hybrid_769_on, tile_powers_railtype("ELRL") || tile_powers_railtype("SAA3") || tile_powers_railtype("3RDR")){
+switch (FEAT_TRAINS, SELF, sw_sound_hybrid_769_on, tile_powers_railtype("ELRL") || tile_powers_railtype("BR_3RDR")){
 	1:sw_sound_electric_769_on;
 	sw_sound_diesel_769_on;
 }
