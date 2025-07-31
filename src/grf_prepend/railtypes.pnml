@@ -1,16 +1,16 @@
 railtypetable {
     RAIL,
 	ELRL,
-	"3RDR",
-	SAA3,
 	BR_3RDR: [SAA3, "3RDR", ELRL], // 3rd Rail
-	BR_3RDC: [SAAZ, SAA3, "3RDC", "3RDR", ELRL], // 3rd Rail or Catenary
+	BR_3RDC: [SAAZ, "3RDC", ELRL], // 3rd Rail or Catenary
 	BR_4RDR: [SAA4, SAA3, ELRL], // 3rd or 4th rail
+
+	// BR_3RDC: [SAAZ, "3RDC", SAA3, "3RDR", ELRL], // 3rd Rail or Catenary
 }
 
 roadtypetable {
     ROAD,
     ELRD,
-	RAIL,
-	ELRL,
+	RAIL: [RAAN, RAIL],
+	ELRL: [RAAE, ELRL]	
 }
