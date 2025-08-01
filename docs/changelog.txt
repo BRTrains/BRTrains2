@@ -5,8 +5,8 @@
 - Class 411, 412, 421, 422, 438 etc rework
 - Central London Railway 1900 Stock
 - Class 101
+- Class 398, 399 train variants
 - Mk1 rework
-- Class 398
 
 # v2.15
 SAVEGAME BREAKING VERSION
@@ -18,6 +18,7 @@ SAVEGAME BREAKING VERSION
 - Added Class 172 (/0/1 and /2/3)
 - Added Class 322
 - Added Class 360
+- Added Class 398 (Tram variant)
 - Added Class 799
 - Added BR Conflat "A" wagon
 - Added BR Conflat "P" wagon

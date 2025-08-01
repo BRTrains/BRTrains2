@@ -79,6 +79,7 @@ str_comp_MidlandMainLine        :Midland Main Line
 str_comp_Northern               :Northern
 str_comp_NorthernRail           :Northern Rail
 str_comp_SWR                    :South Western Railway
+str_comp_TfW                    :Transport for Wales
 str_comp_TigerNacco             :Tiger Nacco
 str_comp_TSL                    :Traffic Services Limited
 str_comp_TPE                    :Transpennine Express
@@ -267,7 +268,8 @@ STR_NAME_B07                          :Docklands Light Railway B07 (2-car Single
 STR_NAME_B07_DOUBLE                   :Docklands Light Railway B07 (4-car Double Unit)
 STR_NAME_B07_TRIPLE                   :Docklands Light Railway B07 (6-car Triple Unit)
 STR_NAME_SheffieldSupertram           :Sheffield Supertram (3-car Single Unit)
-STR_NAME_SheffieldCitylink            :Sheffield Class 399 Citylink (3-car Single Unit)
+STR_NAME_BR398                        :British Rail Class 398 Citylink tram-train (3-car Single Unit)
+STR_NAME_SheffieldCitylink            :Sheffield Class 399 tram-train (3-car Single Unit)
 
 STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
 STR_BR_68_6Mk3                          :BR Class 68 + Mk3 set (6-Car +  DVT + locomotive)
