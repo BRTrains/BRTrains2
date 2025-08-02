@@ -268,6 +268,7 @@ STR_NAME_B07                          :Docklands Light Railway B07 (2-car Single
 STR_NAME_B07_DOUBLE                   :Docklands Light Railway B07 (4-car Double Unit)
 STR_NAME_B07_TRIPLE                   :Docklands Light Railway B07 (6-car Triple Unit)
 STR_NAME_SheffieldSupertram           :Sheffield Supertram (3-car Single Unit)
+STR_NAME_EdinburghUrbos               :Edinburgh Trams Urbos 3 (5-car Single Unit)
 
 STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
 STR_BR_68_6Mk3                          :BR Class 68 + Mk3 set (6-Car +  DVT + locomotive)

@@ -10,6 +10,7 @@
 # v2.15
 SAVEGAME BREAKING VERSION
 - New sounds for most units, added sounds for a ton of units that don't have them
+- Added Edinburgh Urbos tram
 - Added GWR 5700 Class
 - Added GWR 6700 Class
 - Added Class 69

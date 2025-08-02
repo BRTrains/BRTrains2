@@ -1,0 +1,36 @@
+spriteset (spriteset_EdinburghUrbos_purchase, "gfx/Tram/Edinburgh_Urbos.png") {
+	template_purchase(0,0)
+}
+
+spriteset (spriteset_EdinburghUrbos_front_EdinburghTrams, "gfx/Tram/Edinburgh_Urbos.png") {
+	template_tram12px(0, 13)
+}
+spriteset (spriteset_EdinburghUrbos_frontMiddle_EdinburghTrams, "gfx/Tram/Edinburgh_Urbos.png") {
+	template_tram12px(0, 45)
+}
+spriteset (spriteset_EdinburghUrbos_centre_EdinburghTrams, "gfx/Tram/Edinburgh_Urbos.png") {
+	template_tram8px(0, 77)
+}
+spriteset (spriteset_EdinburghUrbos_rearMiddle_EdinburghTrams, "gfx/Tram/Edinburgh_Urbos.png") {
+	template_tram12px(0, 61)
+}
+spriteset (spriteset_EdinburghUrbos_rear_EdinburghTrams, "gfx/Tram/Edinburgh_Urbos.png") {
+	template_tram12px(0, 29)
+}
+
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_EdinburghUrbos_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_EdinburghTramsTrams);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_EdinburghUrbos_EdinburghTrams, position_in_articulated_veh % 2){
+	0:spriteset_EdinburghUrbos_front_EdinburghTrams;
+	1:spriteset_EdinburghUrbos_frontMiddle_EdinburghTrams;
+	2:spriteset_EdinburghUrbos_centre_EdinburghTrams;
+	3:spriteset_EdinburghUrbos_rearMiddle_EdinburghTrams;
+	4:spriteset_EdinburghUrbos_rear_EdinburghTrams;
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_EdinburghUrbos,cargo_subtype){
+	0: sw_TRAM_EdinburghUrbos_EdinburghTrams;
+}
