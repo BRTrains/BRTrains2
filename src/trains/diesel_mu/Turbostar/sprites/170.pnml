@@ -527,7 +527,7 @@ spriteset(spriteset_BR170_front_FirstScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 156)
 }
 spriteset(spriteset_BR170_rear_FirstScotRail, "gfx/DMU/170.png") {
-	template_train32px(0, 130)
+	template_train32px(0, 182)
 }
 spriteset(spriteset_BR170_middle_FirstScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 208)

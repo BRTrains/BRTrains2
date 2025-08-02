@@ -29,6 +29,7 @@ SAVEGAME BREAKING VERSION
 - Reworked Class 170
 - Reworked Class 171
 - Reworked Class 323
+- Reworked Class 332
 - Reworked Class 333
 - Reworked Class 357
 - Mini-rework for Class 325, moved to new template and added stripe-less Royal Mail livery
