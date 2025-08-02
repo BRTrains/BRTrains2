@@ -268,8 +268,6 @@ STR_NAME_B07                          :Docklands Light Railway B07 (2-car Single
 STR_NAME_B07_DOUBLE                   :Docklands Light Railway B07 (4-car Double Unit)
 STR_NAME_B07_TRIPLE                   :Docklands Light Railway B07 (6-car Triple Unit)
 STR_NAME_SheffieldSupertram           :Sheffield Supertram (3-car Single Unit)
-STR_NAME_BR398                        :British Rail Class 398 Citylink tram-train (3-car Single Unit)
-STR_NAME_SheffieldCitylink            :Sheffield Class 399 tram-train (3-car Single Unit)
 
 STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
 STR_BR_68_6Mk3                          :BR Class 68 + Mk3 set (6-Car +  DVT + locomotive)
@@ -1168,6 +1166,16 @@ str_BR370_usage					:Express Passenger
 str_BR370_eos					:1986
 str_BR370_liveries				:InterCity
 
+STR_NAME_BR373_2				:BR Class 373/2 "North of London" (16-car)
+str_BR373_2_usage				:Express Passenger
+str_BR373_2_eos					:---
+str_BR373_2_liveries			:Eurostar Debranded, GNER
+
+STR_NAME_BR374					:BR Class 374 "Velaro" (16-car)
+str_BR374_usage					:International Passenger
+str_BR374_eos					:---
+str_BR374_liveries				:Eurostar
+
 STR_NAME_BR375_3				:BR Class 375 "Electrostar" (3-Car)
 str_BR375_3_usage				:Suburban Passenger
 str_BR375_3_eos					:---
@@ -1249,21 +1257,23 @@ str_BR395_usage					:Passenger
 str_BR395_eos					:---
 str_BR395_liveries				:Southeastern
 
+STR_NAME_BR398                  :BR Class 398 "Citylink" tram-train (3-car Single Unit)
+str_BR398_usage					:Metro tram-train
+str_BR398_eos					:---
+str_BR398_liveries				:Transport for Wales (Grey Front), Transport for Wales (Yellow Front)
+
+STR_NAME_BR399                  :BR Class 399 "Sheffield Citylink" tram-train (3-car Single Unit)
+str_BR399_usage					:Metro tram-train
+str_BR399_eos					:---
+str_BR399_liveries				:Stagecoach Blue
+
 STR_NAME_BR373					:BR Class 373/1 "Three Capitals" (20-car)
 STR_NAME_BR373Dual              :BR Class 373 "Three Capitals" (Dual Voltage) (20-car)
 str_BR373_usage					:International Passenger
 str_BR373_eos					:---
 str_BR373_liveries				:Eurostar
 
-STR_NAME_BR373_2				:BR Class 373/2 "North of London" (16-car)
-str_BR373_2_usage				:Express Passenger
-str_BR373_2_eos					:---
-str_BR373_2_liveries			:Eurostar Debranded, GNER
 
-STR_NAME_BR374					:BR Class 374 "Velaro" (16-car)
-str_BR374_usage					:International Passenger
-str_BR374_eos					:---
-str_BR374_liveries				:Eurostar
 
 STR_NAME_BR411					:BR Class 411 "4-CEP"
 str_BR411_usage					:Passenger

@@ -7,10 +7,12 @@
 
 if (param[6] < 5) {
     // Disable "SUPEREXTRA" tram units at 5 or any setting below 5
+    // This will potentially be used for eg London Overground, Class 455
 }
 
 if (param[6] < 4) {
     // Disable "EXTRA" tram units at 4 or any setting below 4
+    // This will potentially be used for eg Thameslink and Crossrail units
 }
 
 // Do nothing when set to 3 specifically, "EXTRA" and "SUPEREXTRA" will already be removed above
@@ -25,6 +27,8 @@ if (param[6] == 2) { // TRAM ONLY
     disable_item(FEAT_TRAINS, 636); // Class 555
     disable_item(FEAT_TRAINS, 450); // Class 777
     disable_item(FEAT_TRAINS, 464); // Class 139 Parry People Mover
+    disable_item(FEAT_TRAINS, 749); // Class 398 / TfW Citylink
+    disable_item(FEAT_TRAINS, 750); // Class 399 / Sheffield Citylink
 }
 
 if (param[6] == 1) { // TRAIN ONLY
@@ -35,6 +39,8 @@ if (param[6] == 1) { // TRAIN ONLY
     disable_item(FEAT_ROADVEHS, 490); // 1938 Tube Stock tram
 	disable_item(FEAT_ROADVEHS, 292); // S7 Tube Stock tram
 	disable_item(FEAT_ROADVEHS, 293); // S8 Tube Stock tram
+    disable_item(FEAT_ROADVEHS, 748); // Class 398 / TfW Citylink
+    disable_item(FEAT_ROADVEHS, 649); // Class 399 / Sheffield Citylink
 }
 
 if (param[6] == 0) { // DEFAULT
@@ -49,4 +55,6 @@ if (param[6] == 0) { // DEFAULT
 	disable_item(FEAT_ROADVEHS, 293); // S8 Tube Stock tram
 
     // Disable train versions of light rail versions
+
+    // Class 398 and 399 are NOT disabled here as they actually run on both tram and train tracks
 }

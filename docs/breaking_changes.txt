@@ -19,4 +19,5 @@ v2.15
 - Class 08 (previously deprecated, now removed)
 - Class 13 (previously deprecated, now removed)
 - LU2024 Stock (wrong capacity)
+- Class 399 (wrong capacity)
 - Class 89 (fixed running on non-electrified track)

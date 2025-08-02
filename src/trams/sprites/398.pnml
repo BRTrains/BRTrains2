@@ -1,0 +1,44 @@
+spriteset (spriteset_TRAM_BR398_purchase, "gfx/Tram/BR398.png") {
+	template_purchase(0,0)
+}
+
+spriteset (spriteset_TRAM_BR398_front_TfWGreyCabEnd, "gfx/Tram/BR398.png") {
+	template_tram20px(0, 13)
+}
+spriteset (spriteset_TRAM_BR398_rear_TfWGreyCabEnd, "gfx/Tram/BR398.png") {
+	template_tram20px(0, 33)
+}
+
+spriteset (spriteset_TRAM_BR398_front_TfWYellowCabEnd, "gfx/Tram/BR398.png") {
+	template_tram20px(0, 53)
+}
+spriteset (spriteset_TRAM_BR398_rear_TfWYellowCabEnd, "gfx/Tram/BR398.png") {
+	template_tram20px(0, 73)
+}
+
+spriteset (spriteset_TRAM_BR398_middle_TfW, "gfx/Tram/BR398.png") {
+	template_tram20px(0, 93) // Shared with both TfL liveries
+}
+
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_BR398_cargo_subtype_text,cargo_subtype){
+    0:	return string(STR_LIVERY, string(str_comp_TfW), string(str_col_Grey));
+	1:	return string(STR_LIVERY, string(str_comp_TfW), string(str_col_Yellow));
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_BR398_TfWGreyCabEnd, position_in_articulated_veh % 3){
+	0:spriteset_TRAM_BR398_front_TfWGreyCabEnd;
+	1:spriteset_TRAM_BR398_middle_TfW;
+	2:spriteset_TRAM_BR398_rear_TfWGreyCabEnd;	
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_BR398_TfWYellowCabEnd, position_in_articulated_veh % 3){
+	0:spriteset_TRAM_BR398_front_TfWYellowCabEnd;
+	1:spriteset_TRAM_BR398_middle_TfW;
+	2:spriteset_TRAM_BR398_rear_TfWYellowCabEnd;	
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_BR398,cargo_subtype){
+	0: sw_TRAM_BR398_TfWGreyCabEnd;
+	1: sw_TRAM_BR398_TfWYellowCabEnd;
+}
