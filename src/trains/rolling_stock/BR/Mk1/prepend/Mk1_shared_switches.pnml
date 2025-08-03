@@ -1,0 +1,8 @@
+switch(FEAT_TRAINS,SELF,sw_BRMk1_cargo_subtype_text,cargo_subtype){
+    0: return string(str_BRCarmCream);
+    1: return string(str_BRChocCream);
+	2: return string(str_BRMalachite);
+	3: return string(str_BRMaroon);
+	4: return string(str_BRBlue);
+       return CB_RESULT_NO_TEXT;
+}
