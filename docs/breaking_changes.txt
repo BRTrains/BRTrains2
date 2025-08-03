@@ -21,3 +21,4 @@ v2.15
 - LU2024 Stock (wrong capacity)
 - Class 399 (wrong capacity)
 - Class 89 (fixed running on non-electrified track)
+- Mk1 coach (length)

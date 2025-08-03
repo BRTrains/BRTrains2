@@ -473,7 +473,7 @@ item (FEAT_TRAINS, item_BRMk1SO, 137) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					48;
 		weight:							32 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
 	}
@@ -510,7 +510,7 @@ item (FEAT_TRAINS, item_BRMk1FO, 138) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					42;
 		weight:							33 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				250;
 	}
@@ -546,7 +546,7 @@ item (FEAT_TRAINS, item_BRMk1FK, 139) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					42;
 		weight:							32 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				250;
 	}
@@ -582,7 +582,7 @@ item (FEAT_TRAINS, item_BRMk1CK, 140) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					48;
 		weight:							32 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				200;
 	}
@@ -618,7 +618,7 @@ item (FEAT_TRAINS, item_BRMk1BSK, 141) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					32;
 		weight:							36 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
 	}
@@ -654,7 +654,7 @@ item (FEAT_TRAINS, item_BRMk1BCK, 142) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					24;
 		weight:							36 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				200;
 	}
@@ -690,7 +690,7 @@ item (FEAT_TRAINS, item_BRMk1BFK, 143) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					24;
 		weight:							36 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				250;
 	}
@@ -726,7 +726,7 @@ item (FEAT_TRAINS, item_BRMk1BG, 144) {
 		default_cargo_type:				MAIL;
 		cargo_capacity:					10;
 		weight:							32 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
 	}
@@ -762,7 +762,7 @@ item (FEAT_TRAINS, item_BRMk1RK, 145) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					1;
 		weight:							36 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
 	}
@@ -798,7 +798,7 @@ item (FEAT_TRAINS, item_BRMk1RMB, 146) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					44;
 		weight:							35 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_age_period:				185;
 	}
@@ -834,7 +834,7 @@ item (FEAT_TRAINS, item_BRMk1SK, 147) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					64;
 		weight:							32 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
@@ -869,7 +869,7 @@ item (FEAT_TRAINS, item_BRMk1BSO, 148) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					39;
 		weight:							34 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
@@ -904,7 +904,7 @@ item (FEAT_TRAINS, item_BRMk1BSOT, 149) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					31;
 		weight:							35 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
@@ -939,7 +939,7 @@ item (FEAT_TRAINS, item_BRMk1TSO, 150) {
 		default_cargo_type:				PASS;
 		cargo_capacity:					64;
 		weight:							41 ton;
-		length:							7;
+		length:							8;
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
