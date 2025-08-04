@@ -1,0 +1,32 @@
+item (FEAT_TRAINS, item_BRMk1RK, 145) {
+	property {
+		variant_group:					header_BRMk1;
+		name: 							string(STR_NAME_BRMk1RK);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1951,4,21);
+		model_life:						100;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					10;
+		power:							0;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							90 mph;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_STEAM;
+		default_cargo_type:				PASS;
+		weight:							36 ton;
+		length:							8;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_coach,string(str_BRMk1RK_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BRMk1_cargo_subtype_text;
+	default: 							sw_BRMk1RK;
+	cargo_capacity:						return 0;
+	purchase:							spriteset_BRMk1RK_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cost_factor:	return(GetAdjustedCost(49));
+	running_cost_factor: return(GetAdjustedCost(17));	
+}
+}
