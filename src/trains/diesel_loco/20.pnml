@@ -115,16 +115,16 @@ switch(FEAT_TRAINS,SELF, sw_BR20_reversed,cargo_subtype){
 	11:	spriteset_BR20_reversed_LondonTransport;
 }
 
-switch(FEAT_TRAINS, SELF, sw_BR20_front, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x1, 0x5F]])
+switch(FEAT_TRAINS, SELF, sw_BR20_front, [STORE_TEMP(0, 0x10F), var[0x61, 9, 0x1, 0x5F]])
 {
+	0: sw_BR20_reversed;
 	1: sw_BR20_normal;
-	sw_BR20_reversed;
 }
 
-switch(FEAT_TRAINS, SELF, sw_BR20_second, [STORE_TEMP(0, 0x10F), var[0x61, 0, 0x1, 0x5F]])
+switch(FEAT_TRAINS, SELF, sw_BR20_second, [STORE_TEMP(-1, 0x10F), var[0x61, 9, 0x1, 0x5F]])
 {
-	1: sw_BR20_reversed;
-	sw_BR20_normal;
+	0: sw_BR20_normal;
+	1: sw_BR20_reversed;	
 }
 
 // 50-50
