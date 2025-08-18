@@ -1,0 +1,8 @@
+# GRF name and description
+STR_GRF_NAME							:British Rail UK Set (BRTrains v2)
+STR_GRF_DESC							:A development of the BRTrains set (based on BROS) and Modern UK Train Set (MUTS).{}{}{WHITE}The British Rail Set (BRTrains v2){COPYRIGHT}2020 {LTBLUE}Audigex{WHITE}{}MUTS {COPYRIGHT}2020 {LTBLUE}KubaP {WHITE}& {GREEN}AlmostCthulhu{WHITE}{}BRTrains (v1) {COPYRIGHT}2015+ {LTBLUE}Leander {WHITE}& {GREEN}BROS Artists{}{}{WHITE}License: {LTBLUE}GPL v2
+
+STR_Error_MUTSBRTrains          :You have BRTrains (v1) or the Modern UK Trainset loaded, they have been deactivated by BRTrains v2, which is a development of these sets and includes all units previously belonging to those sets
+STR_Error_RUKTS                 :You appear to have both the "BR Set (BRSet)" and "Representative UK Trainset (RUKTS)"  activated. This won't break anything, but it will probably be confusing. Consider disabling one of these sets for an optimal experience
+
+STR_CANNOT_ATTACH						:Cannot attach a different class of train

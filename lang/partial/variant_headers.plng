@@ -1,0 +1,26 @@
+# Variant group headers
+STR_LU_Subsurface_Header        :London Underground sub-surface units
+STR_LU_Deeplevel_Header         :London Underground deep level units
+STR_Steam_Header                :British Rail Steam Locomotives
+STR_Diesel_Header               :British Rail Diesel Locomotives
+STR_Electric_Header             :British Rail Electric Locomotives
+STR_AL1to7_Header               :British Rail Class 80-87 "AC Electric"
+STR_Pacer_Header                :British Rail Class 140-144 "Pacer"
+STR_Sprinter_Header             :British Rail Class 150-156 "Sprinter"
+STR_ExpressSprinter_Header      :British Rail Class 158-159 "Express Sprinter"
+STR_Turbo_Header                :British Rail Class 165-166 "Turbo"
+STR_Turbostar_Header            :British Rail Class 168-172 "Turbostar"/"Clubman"
+STR_Voyager_Header              :British Rail Class 220-222 "Voyager"/"Meridian"
+STR_DesiroCity_Header           :British Rail "Desiro City" family
+STR_Aventra_Header              :British Rail "Aventra" family
+STR_Electrostar_Header          :British Rail "Electrostar" family
+STR_APT_Header                  :British Rail "Advanced Passenger Train"
+STR_DTrain_Header               :British Rail "D Train" family
+STR_Flirt_Header                :British Rail "Flirt" family
+STR_Eurostar_Header             :British Rail "Eurostar"/TGV
+STR_IEP_Header                  :British Rail "Intercity Express Program"
+STR_Departmental_Header         :National Rail Maintenance Vehicles
+STR_Civity_Header               :British Rail "Civity" family
+STR_Debug_Header                :BRTrains DEBUG units (see description)
+STR_Debug_AdditionalText        :Units for BRTrains debugging - Not intended for gameplay{}Disable these using the BRTrains "Developer Mode" parameter
+STR_CoveredVan_Header           :British Rail VGA/VKA Covered Vans

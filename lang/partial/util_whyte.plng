@@ -1,0 +1,46 @@
+
+# Whyte
+str_whyte_020       :0-2-0
+str_whyte_022       :0-2-2
+str_whyte_024       :0-2-4
+str_whyte_040       :0-4-0
+str_whyte_042       :0-4-2
+str_whyte_044       :0-4-4
+str_whyte_060       :0-6-0
+str_whyte_062       :0-6-2
+str_whyte_064       :0-6-4
+str_whyte_080       :0-8-0
+str_whyte_082       :0-8-2
+str_whyte_084       :0-8-4
+
+str_whyte_220       :2-2-0
+str_whyte_222       :2-2-2
+str_whyte_224       :2-2-4
+str_whyte_240       :2-4-0
+str_whyte_242       :2-4-2
+str_whyte_244       :2-4-4
+str_whyte_260       :2-6-0
+str_whyte_262       :2-6-2
+str_whyte_264       :2-6-4
+str_whyte_280       :2-8-0
+str_whyte_282       :2-8-2
+str_whyte_284       :2-8-4
+
+str_whyte_420       :4-2-0
+str_whyte_422       :4-2-2
+str_whyte_424       :4-2-4
+str_whyte_440       :4-4-0
+str_whyte_442       :4-4-2
+str_whyte_444       :4-4-4
+str_whyte_460       :4-6-0
+str_whyte_462       :4-6-2
+str_whyte_464       :4-6-4
+str_whyte_480       :4-8-0
+str_whyte_482       :4-8-2
+str_whyte_484       :4-8-4
+
+str_whyte_0100      :0-10-0
+str_whyte_2100      :2-10-0
+
+str_whyte_garrett260   :2-6-0+0-6-2
+str_whyte_garrett280   :2-8-0+0-8-2

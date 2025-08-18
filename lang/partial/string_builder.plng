@@ -1,0 +1,48 @@
+
+# Concat without spaces etc
+STR_CONCAT_2	:{STRING}{STRING}
+STR_CONCAT_3	:{STRING}{STRING}{STRING}
+STR_CONCAT_4	:{STRING}{STRING}{STRING}{STRING}
+STR_CONCAT_5	:{STRING}{STRING}{STRING}{STRING}{STRING}
+# Concat with dash
+STR_CONCAT_2d	: {STRING} - {STRING}
+STR_CONCAT_3d	: {STRING} - {STRING} - {STRING}
+STR_CONCAT_4d	: {STRING} - {STRING} - {STRING} - {STRING}
+STR_CONCAT_5d	: {STRING} - {STRING} - {STRING} - {STRING} - {STRING}
+# Concat with spaces
+STR_CONCAT_2s	: {STRING} {STRING}
+STR_CONCAT_3s	: {STRING} {STRING} {STRING}
+STR_CONCAT_4s	: {STRING} {STRING} {STRING} {STRING}
+STR_CONCAT_5s	: {STRING} {STRING} {STRING} {STRING} {STRING}
+
+STR_LIVERY_SHORT        : ({STRING})
+STR_LIVERY              : ({STRING} - {STRING})
+STR_LIVERY_EXTENDED     : ({STRING} - {STRING} - {STRING})
+STR_LIVERY_SPECIAL      : ({STRING} - {STRING} - {SILVER}{STRING})
+STR_LIVERY_ADVERT       : ({STRING} advertisement livery: {STRING})
+STR_LIVERY_MANUFACTURER : Manufacturer livery: {STRING}
+
+STR_COMPANY_FORMER_LIVERY : ({STRING} - Ex-{STRING})
+STR_FORMER_LIVERY   : (Ex-{STRING})
+
+# Company name, whyte notation, nickname
+STR_Name_SteamTender          :{STRING} {STRING} "{STRING}" Tender
+STR_Name_SteamTank          :{STRING} {STRING}T "{STRING}" Tank
+
+# TOPS class, nickname, length
+STR_Name_BR_MUClass                 :BR Class {STRING} "{STRING}" ({STRING}-car) 
+# TOPS class, length
+STR_Name_BR_MUClass_NoNickname      :BR Class {STRING} ({STRING}-car)
+
+
+str_comp_gen_priv_owner         :Private Owner
+
+str_sep_space                   : 
+str_sep_dash                    : - 
+str_sep_dashonly                :-
+
+
+str_purchase_loco_with_liveries	:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
+str_purchase_loco				:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}
+str_purchase_steam_liveries		:{BLACK}Type: {STRING}{}{BLACK}Usage: {GOLD}{STRING}{}{BLACK}Withdrawal: {GOLD}{STRING}{}{BLACK}Liveries: {GOLD}{STRING}{BLACK}
+str_purchase_coach				:{BLACK}Liveries: {GOLD}{STRING}{BLACK}

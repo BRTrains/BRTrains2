@@ -1,0 +1,26 @@
+# Companies
+str_comp_Avanti                 :Avanti West Coast
+str_comp_BR                     :British Rail
+str_comp_C2C                    :C2C
+str_comp_Central                :Central
+str_comp_XC                     :CrossCountry
+str_comp_DRS                    :Direct Rail Services
+str_comp_EMR                    :East Midlands Railway
+str_comp_Furness                :Furness Railway
+str_comp_Freightliner           :Freightliner
+str_comp_GCR                    :Great Central Railway
+str_comp_GWR                    :Great Western Railway
+str_comp_HarryNeedle            :Harry Needle Railroad
+str_comp_Metropolitan           :Metropolitan Railway
+str_comp_MidlandMainLine        :Midland Main Line
+str_comp_Northern               :Northern
+str_comp_NorthernRail           :Northern Rail
+str_comp_SWR                    :South Western Railway
+str_comp_TfW                    :Transport for Wales
+str_comp_TigerNacco             :Tiger Nacco
+str_comp_TSL                    :Traffic Services Limited
+str_comp_TPE                    :Transpennine Express
+str_comp_VXC                    :Virgin CrossCountry
+str_comp_VTEC                   :Virgin East Coast
+str_comp_VTWC                   :Virgin West Coast
+str_comp_WMR                    :West Midlands Railway

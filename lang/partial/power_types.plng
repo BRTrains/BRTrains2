@@ -1,0 +1,21 @@
+# Power types
+str_steam           :Steam
+str_electric        :Electric
+str_electric_AC     :Electric (Overhead power)
+str_electric_3rd    :Electric (3rd Rail)
+str_electric_4th    :Electric (4th Rail)
+str_electric_dual   :Electric (Dual Voltage 3rd rail + overhead)
+str_diesel          :Diesel
+str_bimodeDE        :Bi-mode (Diesel + Electric)
+str_bimodeBE        :Bi-mode (Battery + Electric)
+str_trimode         :Tri-mode (Diesel + Electric + Battery
+
+str_purchase_type_diesel		:{RED}Diesel locomotive
+str_purchase_type_steam			:{GREEN}Steam Locomotive
+str_purchase_type_bimode        :{PURPLE}Bi-Mode Locomotive
+str_purchase_type_bmu			:{PURPLE}Bi-Mode Multiple Unit
+str_purchase_type_dmu			:{RED}Diesel Multiple Unit
+str_purchase_type_demu			:{RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit
+str_purchase_type_emu			:{BLUE}Electric Multiple Unit
+str_purchase_type_electric		:{BLUE}Electric Locomotive
+str_purchase_type_gtu  		    :{ORANGE}Gas Turbine Experimental Unit

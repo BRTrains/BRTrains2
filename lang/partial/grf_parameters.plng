@@ -1,0 +1,64 @@
+# Parameters 
+STR_PARAM_MAX_SPEED             :Max Speed
+STR_PARAM_MAX_SPEED_DESC        :Toggle Between Service Speed and Design Speed
+STR_PARAM_MAX_SPEED_SERVICE     :Service Speed
+STR_PARAM_MAX_SPEED_DESIGN      :Design Speed
+
+STR_PARAM_NAME_SOUNDS			:Running Sounds
+STR_PARAM_DESC_SOUNDS			:Enable or Disable Running Sounds
+STR_PARAM_SOUNDS_OFF			:Disabled
+STR_PARAM_SOUNDS_ON				:Enabled
+
+STR_PARAM_NAME_SIMPLE			:Complexity
+STR_PARAM_DESC_SIMPLE			:Optionally remove some similar trains for a simpler purchase list
+STR_PARAM_COMPLEX				:All Trains
+STR_PARAM_SIMPLE				:Representitive Selection
+
+STR_PARAM_NAME_DEV  			:Developer mode
+STR_PARAM_DESC_DEV			    :Optionally enable in-development trains (unfinished/in progress)
+STR_PARAM_DEV_ON				:Development mode (includes in-progress or unfinished trains etc)
+STR_PARAM_DEV_OFF				:Default mode
+
+STR_PARAM_NAME_PAX_MULTIPLIER   :Passenger Capacity Multiplier
+STR_PARAM_DESC_PAX_MULTIPLIER   :Increase passenger capacity to allow use of real-world train sizes with higher capacity routes
+
+STR_PARAM_NAME_COST_MULTIPLIER  :Purchase/Running Cost Multiplier
+STR_PARAM_DESC_COST_MULTIPLIER  :Increase or decrease purchase price and running costs, if you find they aren't balanced to your taste
+
+STR_PARAM_NAME_TRAMMETRO        :Metro Trains and Tram availability
+STR_PARAM_DESC_TRAMMETRO        :Should Trams and Metro units be available as trams or trains?
+STR_TRAM_DEFAULT                :(Default) Realistic Heavy/Light rail split (Trams and light rail as trams, heavy rail as trains)
+STR_TRAM_TRAINONLY              :Display all Metro units as Trains only (no trams)
+STR_TRAM_TRAMONLY               :Display all Metro Units as Trams only (no London Underground trains etc, only as trams)
+STR_TRAM_BOTH                   :Display Trams and Trains as both Trams and Trains (all purchaseable as either)
+STR_TRAM_EXTRA                  :(Experimental) Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
+STR_TRAM_SUPEREXTRA             :(Experimental) Include a slightly ridiculous number of extra units (London Overground, trains used for suburban routes)
+
+STR_PARAM_NAME_METRO            :Metro-as-Tram availability
+STR_PARAM_DESC_METRO            :Should Metro units be available as trams?
+STR_METRO_OFF                   :No
+STR_METRO_ON                    :Yes
+STR_METRO_SUPER                 :Yes (And include some suburban trains)
+
+STR_PARAM_NAME_2CC              :Parameter not in use (yet)
+STR_PARAM_DESC_2CC              :Parameter reserved for future feature
+STR_NO_2CC                      :No
+STR_USE_2CC                     :Yes
+STR_ONLY_2CC                    :Only
+
+STR_PARAM_HIDE_VEHS     :Hide/Show default vehicles?
+STR_PARAM_HIDE_VEHS_DESC:Should we hide default vehicles? (Note, this will not override other newGRFs if they hide the default vehicles, it just means BRTrains will not do so)
+STR_PARAM_HIDE_DEFAULT          :Hide
+STR_PARAM_SHOW_DEFAULT          :Show
+
+# Warning: these are used for multiple parameters, if you need to modify them, maybe add different strings?
+STR_PARAM_1X                    :1x (Default)
+STR_PARAM_2X                    :2x
+STR_PARAM_3X                    :3x
+STR_PARAM_4X                    :4x
+STR_PARAM_8X                    :8x
+STR_PARAM_12X                   :12x
+STR_PARAM_16X                   :16x
+STR_PARAM_32X                   :32x
+STR_PARAM_QUARTER              :1/4
+STR_PARAM_HALF                 :1/2
