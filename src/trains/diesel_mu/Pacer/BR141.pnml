@@ -60,7 +60,7 @@ switch(FEAT_TRAINS,SELF,sw_BR141_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR141, 1411) {
+item (FEAT_TRAINS, item_BR141, 753) {
 	property {
 		variant_group:					header_Pacer;
 		name: 							string(STR_NAME_BR141);
