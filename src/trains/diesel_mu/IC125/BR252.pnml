@@ -2,20 +2,20 @@ spriteset(spriteset_BR252_Purchase, "gfx/BR41.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR252a_BRBlue, "gfx/BR41.png") {
+spriteset(spriteset_BR252_front_BRBlue, "gfx/BR41.png") {
 	template_train32px_old(0, 13)
 }
-spriteset(spriteset_BR252b_BRBlue, "gfx/BR41.png") {
+spriteset(spriteset_BR252_middle_BRBlue, "gfx/BR41.png") {
 	template_train32px_old(0, 38)
 }
-spriteset(spriteset_BR252c_BRBlue, "gfx/BR41.png") {
+spriteset(spriteset_BR252_rear_BRBlue, "gfx/BR41.png") {
 	template_train32px_old(0, 63)
 }
 
 switch(FEAT_TRAINS, SELF, sw_BR252_BRBlue, position_in_articulated_veh) {
-	0: spriteset_BR252a_BRBlue;
-	1..9: spriteset_BR252b_BRBlue;
-	10: spriteset_BR252c_BRBlue;
+	0: spriteset_BR252_front_BRBlue;
+	1..9: spriteset_BR252_middle_BRBlue;
+	10: spriteset_BR252_rear_BRBlue;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR252,cargo_subtype) {
