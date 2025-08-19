@@ -2,14 +2,14 @@ spriteset(spriteset_BR197_Purchase, "gfx/BR197.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BR197a_TFW, "gfx/BR197.png") {
+spriteset(spriteset_BR197_front_TFW, "gfx/BR197.png") {
 	template_train32px_old(0, 13)
 }
 
-spriteset(spriteset_BR197b_TFW, "gfx/BR197.png") {
+spriteset(spriteset_BR197_rear_TFW, "gfx/BR197.png") {
 	template_train32px_old(0, 38)
 }
 
-spriteset(spriteset_BR197c_TFW, "gfx/BR197.png") {
+spriteset(spriteset_BR197_middle_TFW, "gfx/BR197.png") {
 	template_train32px_old(0, 63)
 }

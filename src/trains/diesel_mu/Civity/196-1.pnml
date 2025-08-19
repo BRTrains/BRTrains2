@@ -1,8 +1,5 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_196_1_spriteset, position_in_articulated_veh % 4) {
-	// 0 is first car, 1 is second car, 2 is third car, so on...
-	// % 3 means that the graphics will repeat properly if another train is added to the end
-	// so that we get: (front,middle,end);(front,middle,end)...
 	0: spriteset_BR196_front_WestMidlands;
 	3: spriteset_BR196_middle_WestMidlands;
 	spriteset_BR196_rear_WestMidlands;

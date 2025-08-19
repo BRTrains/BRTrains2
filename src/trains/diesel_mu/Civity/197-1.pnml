@@ -1,11 +1,8 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_197_1_spriteset, position_in_articulated_veh % 3) {
-	// 0 is first car, 1 is second car, 2 is third car, so on...
-	// % 3 means that the graphics will repeat properly if another train is added to the end
-	// so that we get: (front,middle,end);(front,middle,end)...
-	0: spriteset_BR197a_TFW;
-	2: spriteset_BR197b_TFW;
-	spriteset_BR197c_TFW;
+	0: spriteset_BR197_front_TFW;
+	2: spriteset_BR197_rear_TFW;
+	spriteset_BR197_middle_TFW;
 }
 
 // Define articulations

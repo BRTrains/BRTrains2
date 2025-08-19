@@ -1,8 +1,5 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_195_1_spriteset, position_in_articulated_veh % 3) {
-	// 0 is first car, 1 is second car, 2 is third car, so on...
-	// % 3 means that the graphics will repeat properly if another train is added to the end
-	// so that we get: (front,middle,end);(front,middle,end)...
 	0: spriteset_br_195_331_front;
 	2: spriteset_br_195_331_rear;
 	spriteset_br_195_331_middle;
@@ -17,8 +14,7 @@ switch(FEAT_TRAINS, SELF, switch_br_195_1_articulated, extra_callback_info1) {
 }
 
 // Only give particle effects to front/rear cars
-switch(FEAT_TRAINS, SELF, switch_br_195_1_particles, position_in_articulated_veh % 3) {
-	// 0 is first car, 1 is second car, 2 is third car, so on...
+switch(FEAT_TRAINS, SELF, switch_br_195_1_particles, position_in_articulated_veh % 3) {	
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	2: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
