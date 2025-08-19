@@ -2,96 +2,124 @@ spriteset(spriteset_BR142_Purchase, "gfx/BR140-143.png") {
 	template_purchase(176, 0)
 }
 
-spriteset(spriteset_BR142a_BRProvincial, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_front_BRProvincial, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 293)
 }
 
-spriteset(spriteset_BR142b_BRProvincial, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_rear_BRProvincial, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 313)
 }
 
-spriteset(spriteset_BR142a_Regional, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_front_Regional, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 173)
 }
 
-spriteset(spriteset_BR142b_Regional, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_rear_Regional, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 193)
 }
 
-spriteset(spriteset_BR142a_NorthernRail, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_front_NorthernRail, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 213)
 }
 
-spriteset(spriteset_BR142b_NorthernRail, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_rear_NorthernRail, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 233)
 }
 
-spriteset(spriteset_BR142a_NorthernSpirit, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_front_NorthernSpirit, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 253)
 }
 
-spriteset(spriteset_BR142b_NorthernSpirit, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_rear_NorthernSpirit, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 273)
 }
 
-spriteset(spriteset_BR142a_ArrivaWales, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_front_ArrivaWales, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 333)
 }
 
-spriteset(spriteset_BR142b_ArrivaWales, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_rear_ArrivaWales, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 353)
 }
 
-spriteset(spriteset_BR142a_NorthWesternTrains, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_front_NorthWesternTrains, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 413)
 }
 
-spriteset(spriteset_BR142b_NorthWesternTrains, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_rear_NorthWesternTrains, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 433)
 }
 
-spriteset(spriteset_BR142a_MerseyRail, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_front_MerseyRail, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 453)
 }
 
-spriteset(spriteset_BR142b_MerseyRail, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_rear_MerseyRail, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 473)
 }
 
-spriteset(spriteset_BR142a_WYTPEMetro, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_front_WYPTEMetro, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 493)
 }
 
-spriteset(spriteset_BR142b_WYTPEMetro, "gfx/BR140-143.png") {
+spriteset(spriteset_BR142_rear_WYPTEMetro, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 513)
 }
 
-
-switch(FEAT_TRAINS,SELF, sw_BR142a,cargo_subtype){
-    0:	spriteset_BR142a_BRProvincial;
-	1:	spriteset_BR142a_Regional;
-	2:	spriteset_BR142a_NorthernRail;
-    3:	spriteset_BR142a_NorthernSpirit;
-    4:	spriteset_BR142a_ArrivaWales;
-    5: 	spriteset_BR142a_NorthWesternTrains;
-    6: 	spriteset_BR142a_MerseyRail;
-    7:  spriteset_BR142a_WYTPEMetro;
-
+switch(FEAT_TRAINS,SELF, sw_BR142_BRProvincial, position_in_articulated_veh % 2){
+	0: spriteset_BR142_front_BRProvincial;
+	1: spriteset_BR142_rear_BRProvincial;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR142b,cargo_subtype){
-    0:	spriteset_BR142b_BRProvincial;
-	1:	spriteset_BR142b_Regional;
-	2:	spriteset_BR142b_NorthernRail;
-    3:	spriteset_BR142b_NorthernSpirit;
-    4:	spriteset_BR142b_ArrivaWales;
-    5: 	spriteset_BR142b_NorthWesternTrains;
-    6: 	spriteset_BR142b_MerseyRail;
-    7:  spriteset_BR142b_WYTPEMetro;
+switch(FEAT_TRAINS,SELF, sw_BR142_Regional, position_in_articulated_veh % 2){
+	0: spriteset_BR142_front_Regional;
+	1: spriteset_BR142_rear_Regional;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR142_NorthernRail, position_in_articulated_veh % 2){
+	0: spriteset_BR142_front_NorthernRail;
+	1: spriteset_BR142_rear_NorthernRail;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR142_NorthernSpirit, position_in_articulated_veh % 2){
+	0: spriteset_BR142_front_NorthernSpirit;
+	1: spriteset_BR142_rear_NorthernSpirit;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR142_ArrivaWales, position_in_articulated_veh % 2){
+	0: spriteset_BR142_front_ArrivaWales;
+	1: spriteset_BR142_rear_ArrivaWales;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR142_NorthWesternTrains, position_in_articulated_veh % 2){
+	0: spriteset_BR142_front_NorthWesternTrains;
+	1: spriteset_BR142_rear_NorthWesternTrains;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR142_MerseyRail, position_in_articulated_veh % 2){
+	0: spriteset_BR142_front_MerseyRail;
+	1: spriteset_BR142_rear_MerseyRail;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR142_WYPTEMetro, position_in_articulated_veh % 2){
+	0: spriteset_BR142_front_WYPTEMetro;
+	1: spriteset_BR142_rear_WYPTEMetro;
+}
+
+
+switch(FEAT_TRAINS, SELF, sw_BR142, cargo_subtype){
+    0:	sw_BR142_BRProvincial;
+	1:	sw_BR142_Regional;
+	2:	sw_BR142_NorthernRail;
+    3:	sw_BR142_NorthernSpirit;
+    4:	sw_BR142_ArrivaWales;
+    5: 	sw_BR142_NorthWesternTrains;
+    6: 	sw_BR142_MerseyRail;
+    7:  sw_BR142_WYPTEMetro;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR142, extra_callback_info1) {
-	1: return item_142b;
+	1: return item_BR142;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
@@ -147,58 +175,11 @@ item (FEAT_TRAINS, item_BR142, 1421) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR142_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR142;
-	default: 							sw_BR142a;
+	default: 							sw_BR142;
 	purchase:							spriteset_BR142_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(62 * param_pax);
-}
-}
-
-item (FEAT_TRAINS, item_142b, 1422) {
-	property {
-		name: 							string(STR_NAME_BR142);
-		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1985,4,21);
-		model_life:						8;
-		retire_early:					1;
-		vehicle_life:					40;
-		reliability_decay:				10;
-		refittable_cargo_classes:		CC_PASSENGERS;
-		cargo_allow_refit:				[PASS, TOUR];
-		loading_speed:					22;
-		cost_factor:					18;
-		running_cost_factor:			14;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							75 mph;
-		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
-		refit_cost:						0;
-		track_type:						RAIL;
-		ai_special_flag:				AI_FLAG_CARGO;
-		power:							0;
-		running_cost_base:				RUNNING_COST_DIESEL;
-		dual_headed:					0;
-		default_cargo_type:				PASS;
-		cargo_capacity:					60;
-		weight:							24 ton;
-		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.3;
-		air_drag_coefficient:			0.1;
-		length:							7;
-		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
-		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-		cargo_age_period:				185;
-		}
-	graphics {
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR142b;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(60 * param_pax);
-	cost_factor:	return(GetAdjustedCost(18));
-	running_cost_factor: return(GetAdjustedCost(14));
+	cargo_capacity:						return(112 * param_pax / 2);
 }
 }

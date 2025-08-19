@@ -2,45 +2,54 @@ spriteset(spriteset_BR141_Purchase, "gfx/BR140-143.png") {
 	template_purchase(88, 0)
 }
 
-spriteset(spriteset_BR141a_Blue, "gfx/BR140-143.png") {
+spriteset(spriteset_BR141_front_Blue, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 133)
 }
 
-spriteset(spriteset_BR141b_Blue, "gfx/BR140-143.png") {
+spriteset(spriteset_BR141_rear_Blue, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 153)
 }
 
-spriteset(spriteset_BR141a_WYPTEMetro, "gfx/BR140-143.png") {
+spriteset(spriteset_BR141_front_WYPTEMetro, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 53)
 }
 
-spriteset(spriteset_BR141b_WYPTEMetro, "gfx/BR140-143.png") {
+spriteset(spriteset_BR141_rear_WYPTEMetro, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 73)
 }
 
-spriteset(spriteset_BR141a_WYPTEVerona, "gfx/BR140-143.png") {
+spriteset(spriteset_BR141_front_WYPTEVerona, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 93)
 }
 
-spriteset(spriteset_BR141b_WYPTEVerona, "gfx/BR140-143.png") {
+spriteset(spriteset_BR141_rear_WYPTEVerona, "gfx/BR140-143.png") {
 	template_train28px_old_pacer(0, 113)
 }
 
 
-switch(FEAT_TRAINS,SELF, sw_BR141a,cargo_subtype){
-    0:	spriteset_BR141a_Blue;
-	1:	spriteset_BR141a_WYPTEMetro;
-	2:	spriteset_BR141a_WYPTEVerona;
+switch(FEAT_TRAINS,SELF, sw_BR141_BRBlue, position_in_articulated_veh % 2){
+	0: spriteset_BR141_front_Blue;
+	1: spriteset_BR141_rear_Blue;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR141b,cargo_subtype){
-    0:	spriteset_BR141b_Blue;
-	1:	spriteset_BR141b_WYPTEMetro;
-	2:	spriteset_BR141b_WYPTEVerona;
+switch(FEAT_TRAINS,SELF, sw_BR141_WYPTEMetro, position_in_articulated_veh % 2){
+	0: spriteset_BR141_front_WYPTEMetro;
+	1: spriteset_BR141_rear_WYPTEMetro;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR141_WYPTEVerona, position_in_articulated_veh % 2){
+	0: spriteset_BR141_front_WYPTEVerona;
+	1: spriteset_BR141_rear_WYPTEVerona;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR141,cargo_subtype){
+    0: sw_BR141_BRBlue;
+	1: sw_BR141_WYPTEMetro;
+	2: sw_BR141_WYPTEVerona;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR141, extra_callback_info1) {
-	1: return item_141b;
+	1: return item_BR141;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
@@ -91,58 +100,13 @@ item (FEAT_TRAINS, item_BR141, 1411) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR141_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR141;
-	default: 							sw_BR141a;
+	default: 							sw_BR141;
 	purchase:							spriteset_BR141_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity: 					return(50 * param_pax);
+	cargo_capacity: 					return(94 * param_pax / 2);
 	cost_factor:	return(GetAdjustedCost(18));
 	running_cost_factor: return(GetAdjustedCost(14));
-}
-}
-
-item (FEAT_TRAINS, item_141b, 1412) {
-	property {
-		name: 							string(STR_NAME_BR141);
-		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1984,4,21);
-		model_life:						8;
-		retire_early:					1;
-		vehicle_life:					30;
-		reliability_decay:				10;
-		refittable_cargo_classes:		CC_PASSENGERS;
-		cargo_allow_refit:				[PASS, TOUR];
-		loading_speed:					22;
-		cost_factor:					18;
-		running_cost_factor:			14;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							75 mph;
-		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
-		refit_cost:						0;
-		track_type:						RAIL;
-		ai_special_flag:				AI_FLAG_CARGO;
-		power:							0;
-		running_cost_base:				RUNNING_COST_DIESEL;
-		dual_headed:					0;
-		default_cargo_type:				PASS;
-		cargo_capacity:					44;
-		weight:							26;
-		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.3;
-		air_drag_coefficient:			0.1;
-		length:							7;
-		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
-		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-		cargo_age_period:				185;
-		}
-	graphics {
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR141b;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity: 					return(44 * param_pax);
 }
 }
