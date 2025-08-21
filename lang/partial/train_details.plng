@@ -566,10 +566,10 @@ str_BR143_usage					:Passenger
 str_BR143_eos					:---
 str_BR143_liveries				:Regional Rail, Valley Lines, WYTPE Metro, Wessex Trains, Northern Rail, Great Western Railway
 
-STR_NAME_BR150					:BR Class 150/0 "Sprinter" (3-car)
-str_BR150_usage					:Passenger
-str_BR150_eos					:---
-str_BR150_liveries				:BR Prototype, Regional Railways, Centro, Central Trains, London Midland, First Great Western
+STR_NAME_BR150_0					:BR Class 150/0 "Sprinter" (3-car)
+str_BR150_0_usage					:Passenger
+str_BR150_0_eos					:---
+str_BR150_0_liveries				:BR Prototype, Regional Railways, Centro, Central Trains, London Midland, First Great Western
 
 STR_NAME_BR150_1				:BR Class 150/1 "Sprinter" (2-car)
 str_BR150_1_usage				:Passenger

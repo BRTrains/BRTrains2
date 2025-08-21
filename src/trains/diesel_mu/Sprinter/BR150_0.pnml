@@ -1,20 +1,20 @@
-switch(FEAT_TRAINS,SELF, sw_BR150,cargo_subtype){
-    0:	sw_BR150_BRPrototype;
-	1:	sw_BR150_Regional;
-	2:	sw_BR150_Centro;
-	3:	sw_BR150_LondonMidland;
-	4:	sw_BR150_FGW;
-	5:	sw_BR150_Central;
-	6:	sw_BR150_Northern;
-	7:  sw_BR150_NorthernNonsense;
+switch(FEAT_TRAINS, SELF, sw_BR150_0, cargo_subtype){
+    0:	sw_BR150_01_BRPrototype;
+	1:	sw_BR150_01_Regional;
+	2:	sw_BR150_01_Centro;
+	3:	sw_BR150_01_LondonMidland;
+	4:	sw_BR150_01_FGW;
+	5:	sw_BR150_01_Central;
+	6:	sw_BR150_01_Northern;
+	7:  sw_BR150_01_NorthernNonsense;
 }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_BR150, extra_callback_info1) {
+switch (FEAT_TRAINS, SELF, switch_articulated_BR150_0, extra_callback_info1) {
 	1..2: return item_BR150_0;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR150_cargo_subtype_text,cargo_subtype){
+switch(FEAT_TRAINS, SELF, sw_BR150_0_cargo_subtype_text, cargo_subtype){
     0:	return string(str_BRPrototype);
 	1:	return string(str_Regional);
 	2:	return string(str_Centro);
@@ -29,7 +29,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_cargo_subtype_text,cargo_subtype){
 item (FEAT_TRAINS, item_BR150_0, 41) {
 	property {
 		variant_group:					header_Sprinter;
-		name: 							string(STR_NAME_BR150);
+		name: 							string(STR_NAME_BR150_0);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1984,4,21);
 		model_life:						8;
@@ -61,12 +61,12 @@ item (FEAT_TRAINS, item_BR150_0, 41) {
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR150_usage),string(str_BR150_eos),string(str_BR150_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_dmu),string(str_BR150_0_usage),string(str_BR150_0_eos),string(str_BR150_0_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_subtype_text:					sw_BR150_cargo_subtype_text;
-	articulated_part:        			switch_articulated_BR150;
-	default: 							sw_BR150;
-	purchase:							spriteset_BR150_Purchase;
+	cargo_subtype_text:					sw_BR150_0_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR150_0;
+	default: 							sw_BR150_0;
+	purchase:							spriteset_BR150_0_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;

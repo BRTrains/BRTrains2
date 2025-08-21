@@ -161,7 +161,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150_2b,cargo_subtype){
 
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR150_2, extra_callback_info1) {
-	1: return item_150b_2;
+	1: return item_BR150_2;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 

@@ -1,46 +1,23 @@
-spriteset(spriteset_BR150_1_Purchase, "gfx/BR150_1a.png") {
-	template_purchase(0, 0)
-}
-
 switch(FEAT_TRAINS,SELF, sw_BR150_1,cargo_subtype){
-    0:	spriteset_BR150_front_Regional;
-	1:	spriteset_BR150_front_RegionalGrey;
-	2:	spriteset_BR150_front_Centro;
-	3:	spriteset_BR150_front_LondonMidland;
-	4:	spriteset_BR150_front_NWM;
-	5:	spriteset_BR150_front_Central;
-	6:	spriteset_BR150_front_FNW;
-	7:	spriteset_BR150_front_SuperSprinter;
-	8:	spriteset_BR150_front_FGW;
-	9:	spriteset_BR150_front_Silverlink;
-	10:	spriteset_BR150_front_NorthernRail;
-	11:	spriteset_BR150_front_BRTest;
-	12: spriteset_BR150_front_Railtrack;
-	13: spriteset_BR150_front_NRTest;
-	14: spriteset_BR150_front_LNWR;
+    0:	sw_BR150_01_Regional;
+	1:	sw_BR150_01_RegionalGrey;
+	2:	sw_BR150_01_Centro;
+	3:	sw_BR150_01_LondonMidland;
+	4:	sw_BR150_01_NWM;
+	5:	sw_BR150_01_Central;
+	6:	sw_BR150_01_FNW;
+	7:	sw_BR150_01_SuperSprinter;
+	8:	sw_BR150_01_FGW;
+	9:	sw_BR150_01_SilverLink;
+	10:	sw_BR150_01_NorthernRail;
+	11:	sw_BR150_01_BRTest;
+	12: sw_BR150_01_RailTrack;
+	13: sw_BR150_01_NRTest;
+	14: sw_BR150_01_LNWR;
 }
-
-switch(FEAT_TRAINS,SELF, sw_BR150_1b,cargo_subtype){
-    0:	spriteset_BR150_rear_Regional;
-	1:	spriteset_BR150_rear_RegionalGrey;
-	2:	spriteset_BR150_rear_Centro;
-	3:	spriteset_BR150_rear_LondonMidland;
-	4:	spriteset_BR150_rear_NWM;
-	5:	spriteset_BR150_rear_Central;
-	6:	spriteset_BR150_rear_FNW;
-	7:	spriteset_BR150_rear_SuperSprinter;
-	8:	spriteset_BR150_rear_FGW;
-	9:	spriteset_BR150_rear_Silverlink;
-	10:	spriteset_BR150_rear_NorthernRail;
-	11:	spriteset_BR150_rear_BRTest;
-	12: spriteset_BR150_rear_Railtrack;
-	13: spriteset_BR150_rear_NRTest;
-	14: spriteset_BR150_rear_LNWR;
-}
-
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR150_1, extra_callback_info1) {
-	1: return item_150_1;
+	1: return item_BR150_1;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
