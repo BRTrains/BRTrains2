@@ -1,164 +1,20 @@
-spriteset(spriteset_BR150_2_Purchase, "gfx/BR150_2a.png") {
-	template_purchase(0, 0)
-}
-
-spriteset(spriteset_BR150_front_2_Regional, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 13)
-}
-
-spriteset(spriteset_BR150_front_2_RegionalMersey, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 38)
-}
-
-spriteset(spriteset_BR150_front_2_Central, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 63)
-}
-
-spriteset(spriteset_BR150_front_2_CentralAnglia, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 88)
-}
-
-spriteset(spriteset_BR150_front_2_EastAnglia, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 113)
-}
-
-spriteset(spriteset_BR150_front_2_FNW, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 138)
-}
-
-spriteset(spriteset_BR150_front_2_NorthernRail, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 163)
-}
-
-spriteset(spriteset_BR150_front_2_FGW, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 188)
-}
-
-spriteset(spriteset_BR150_front_2_NWM, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 213)
-}
-
-spriteset(spriteset_BR150_front_2_ArrivaWales, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 238)
-}
-
-spriteset(spriteset_BR150_front_2_Wessex, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 263)
-}
-
-spriteset(spriteset_BR150_front_2_ScotRail, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 288)
-}
-
-spriteset(spriteset_BR150_front_2_TfW, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 313)
-}
-
-spriteset(spriteset_BR150_front_2_GWR, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 338)
-}
-
-
-spriteset(spriteset_BR150_front_2_Northern, "gfx/BR150_2a.png") {
-	template_train32px_old(0, 363)
-}
-
-spriteset(spriteset_BR150_rear_2_Regional, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 13)
-}
-
-spriteset(spriteset_BR150_rear_2_RegionalMersey, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 38)
-}
-
-spriteset(spriteset_BR150_rear_2_Central, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 63)
-}
-
-spriteset(spriteset_BR150_rear_2_CentralAnglia, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 88)
-}
-
-spriteset(spriteset_BR150_rear_2_EastAnglia, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 113)
-}
-
-spriteset(spriteset_BR150_rear_2_FNW, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 138)
-}
-
-spriteset(spriteset_BR150_rear_2_NorthernRail, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 163)
-}
-
-spriteset(spriteset_BR150_rear_2_FGW, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 188)
-}
-
-spriteset(spriteset_BR150_rear_2_NWM, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 213)
-}
-
-spriteset(spriteset_BR150_rear_2_ArrivaWales, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 238)
-}
-
-spriteset(spriteset_BR150_rear_2_Wessex, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 263)
-}
-
-spriteset(spriteset_BR150_rear_2_ScotRail, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 288)
-}
-
-spriteset(spriteset_BR150_rear_2_TfW, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 313)
-}
-
-spriteset(spriteset_BR150_rear_2_GWR, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 338)
-}
-
-spriteset(spriteset_BR150_rear_2_Northern, "gfx/BR150_2b.png") {
-	template_train32px_old(0, 363)
-}
-
 switch(FEAT_TRAINS,SELF, sw_BR150_2,cargo_subtype){
-    0:	spriteset_BR150_front_2_Regional;
-	1:	spriteset_BR150_front_2_RegionalMersey;
-	2:	spriteset_BR150_front_2_Central;
-	3:	spriteset_BR150_front_2_CentralAnglia;
-	4:	spriteset_BR150_front_2_EastAnglia;
-	5:	spriteset_BR150_front_2_FNW;
-	6:	spriteset_BR150_front_2_NorthernRail;
-	7:	spriteset_BR150_front_2_FGW;
-	8:	spriteset_BR150_front_2_NWM;
-	9:	spriteset_BR150_front_2_ArrivaWales;
-	10:	spriteset_BR150_front_2_Wessex;
-	11: spriteset_BR150_front_2_ScotRail;
-	12: spriteset_BR150_front_2_TfW;
-	13: spriteset_BR150_front_2_GWR;
-	14: spriteset_BR150_front_2_Northern;
+    0:	sw_BR150_2_Regional;
+	1:	sw_BR150_2_RegionalMersey;
+	2:	sw_BR150_2_Central;
+	3:	sw_BR150_2_CentralAnglia;
+	4:	sw_BR150_2_EastAnglia;
+	5:	sw_BR150_2_FNW;
+	6:	sw_BR150_2_NorthernRail;
+	7:	sw_BR150_2_FGW;
+	8:	sw_BR150_2_NWM;
+	9:	sw_BR150_2_ArrivaWales;
+	10:	sw_BR150_2_Wessex;
+	11: sw_BR150_2_ScotRail;
+	12: sw_BR150_2_TfW;
+	13: sw_BR150_2_GWR;
+	14: sw_BR150_2_Northern;
 }
-
-switch(FEAT_TRAINS,SELF, sw_BR150_2b,cargo_subtype){
-    0:	spriteset_BR150_rear_2_Regional;
-	1:	spriteset_BR150_rear_2_RegionalMersey;
-	2:	spriteset_BR150_rear_2_Central;
-	3:	spriteset_BR150_rear_2_CentralAnglia;
-	4:	spriteset_BR150_rear_2_EastAnglia;
-	5:	spriteset_BR150_rear_2_FNW;
-	6:	spriteset_BR150_rear_2_NorthernRail;
-	7:	spriteset_BR150_rear_2_FGW;
-	8:	spriteset_BR150_rear_2_NWM;
-	9:	spriteset_BR150_rear_2_ArrivaWales;
-	10:	spriteset_BR150_rear_2_Wessex;
-	11: spriteset_BR150_rear_2_ScotRail;
-	12: spriteset_BR150_rear_2_TfW;
-	13: spriteset_BR150_rear_2_GWR;
-	14: spriteset_BR150_rear_2_Northern;
-}
-
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR150_2, extra_callback_info1) {
 	1: return item_BR150_2;
