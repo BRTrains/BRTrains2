@@ -1,0 +1,3 @@
+spriteset(spriteset_error_32px, "gfx/Error.png") {
+	template_train32px(0, 13)
+}
