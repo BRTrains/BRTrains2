@@ -1,0 +1,33 @@
+spriteset(spriteset_BR151_Purchase, "gfx/BR151.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR151_front_BRPrototype, "gfx/BR151.png") {
+	template_train32px_old(0, 88)
+}
+spriteset(spriteset_BR151_rear_BRPrototype, "gfx/BR151.png") {
+	template_train32px_old(0, 113)
+}
+spriteset(spriteset_BR151_middle_BRPrototype, "gfx/BR151.png") {
+	template_train32px_old(0, 138)
+}
+switch(FEAT_TRAINS,SELF, sw_BR151_BRPrototype, position_in_articulated_veh){
+	0: spriteset_BR151_front_BRPrototype;
+    1: spriteset_BR151_middle_BRPrototype;
+	2: spriteset_BR151_rear_BRPrototype;
+}
+
+spriteset(spriteset_BR151_front_Regional, "gfx/BR151.png") {
+	template_train32px_old(0, 13)
+}
+spriteset(spriteset_BR151_rear_Regional, "gfx/BR151.png") {
+	template_train32px_old(0, 38)
+}
+spriteset(spriteset_BR151_middle_Regional, "gfx/BR151.png") {
+	template_train32px_old(0, 63)
+}
+switch(FEAT_TRAINS,SELF, sw_BR151_Regional, position_in_articulated_veh){
+	0: spriteset_BR151_front_Regional;
+    1: spriteset_BR151_middle_Regional;
+	2: spriteset_BR151_rear_Regional;
+}
