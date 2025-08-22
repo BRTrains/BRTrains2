@@ -1,265 +1,28 @@
-spriteset(spriteset_BR156_Purchase, "gfx/BR156a.png") {
-	template_purchase(0, 0)
-}
-
-spriteset(spriteset_BR156a_Regional, "gfx/BR156a.png") {
-	template_train32px_old(0, 13)
-}
-
-spriteset(spriteset_BR156a_RegionalGreen, "gfx/BR156a.png") {
-	template_train32px_old(0, 38)
-}
-
-spriteset(spriteset_BR156a_RegionalExpress, "gfx/BR156a.png") {
-	template_train32px_old(0, 63)
-}
-
-spriteset(spriteset_BR156a_StrathclydeOrange, "gfx/BR156a.png") {
-	template_train32px_old(0, 88)
-}
-
-spriteset(spriteset_BR156a_StrathclydePTE, "gfx/BR156a.png") {
-	template_train32px_old(0, 113)
-}
-
-spriteset(spriteset_BR156a_ScotRail, "gfx/BR156a.png") {
-	template_train32px_old(0, 138)
-}
-
-spriteset(spriteset_BR156a_FirstScotRail, "gfx/BR156a.png") {
-	template_train32px_old(0, 163)
-}
-
-spriteset(spriteset_BR156a_Central, "gfx/BR156a.png") {
-	template_train32px_old(0, 188)
-}
-
-spriteset(spriteset_BR156a_EMT, "gfx/BR156a.png") {
-	template_train32px_old(0, 213)
-}
-
-spriteset(spriteset_BR156a_NorthernSpirit, "gfx/BR156a.png") {
-	template_train32px_old(0, 238)
-}
-
-spriteset(spriteset_BR156a_NorthernPorterbrook, "gfx/BR156a.png") {
-	template_train32px_old(0, 263)
-}
-
-spriteset(spriteset_BR156a_NorthernExp1, "gfx/BR156a.png") {
-	template_train32px_old(0, 288)
-}
-
-spriteset(spriteset_BR156a_NorthernExp2, "gfx/BR156a.png") {
-	template_train32px_old(0, 313)
-}
-
-spriteset(spriteset_BR156a_NorthernRail, "gfx/BR156a.png") {
-	template_train32px_old(0, 338)
-}
-
-spriteset(spriteset_BR156a_OneGhost, "gfx/BR156a.png") {
-	template_train32px_old(0, 363)
-}
-
-spriteset(spriteset_BR156a_OneChapelf, "gfx/BR156a.png") {
-	template_train32px_old(0, 388)
-}
-
-spriteset(spriteset_BR156a_One, "gfx/BR156a.png") {
-	template_train32px_old(0, 413)
-}
-
-spriteset(spriteset_BR156a_OneTrans, "gfx/BR156a.png") {
-	template_train32px_old(0, 438)
-}
-
-spriteset(spriteset_BR156a_NatEx, "gfx/BR156a.png") {
-	template_train32px_old(0, 463)
-}
-
-spriteset(spriteset_BR156a_SWT, "gfx/BR156a.png") {
-	template_train32px_old(0, 463)
-}
-
-spriteset(spriteset_BR156a_NSE, "gfx/BR156a.png") {
-	template_train32px_old(0, 488)
-}
-
-spriteset(spriteset_BR156a_FGW, "gfx/BR156a.png") {
-	template_train32px_old(0, 513)
-}
-
-spriteset(spriteset_BR156a_Northern, "gfx/BR156a.png") {
-	template_train32px_old(0, 488)
-}
-
-spriteset(spriteset_BR156a_EMRTransition, "gfx/BR156a.png") {
-	template_train32px_old(0, 513)
-}
-
-spriteset(spriteset_BR156a_EMRMaroonWhite, "gfx/BR156a.png") {
-	template_train32px_old(0, 538)
-}
-
-spriteset(spriteset_BR156a_ScotRailSaltire, "gfx/BR156a.png") {
-	template_train32px_old(0, 563)
-}
-
-spriteset(spriteset_BR156a_GA, "gfx/BR156a.png") {
-	template_train32px_old(0, 588)
-}
-
-
-spriteset(spriteset_BR156b_Regional, "gfx/BR156b.png") {
-	template_train32px_old(0, 13)
-}
-
-spriteset(spriteset_BR156b_RegionalGreen, "gfx/BR156b.png") {
-	template_train32px_old(0, 38)
-}
-
-spriteset(spriteset_BR156b_RegionalExpress, "gfx/BR156b.png") {
-	template_train32px_old(0, 63)
-}
-
-spriteset(spriteset_BR156b_StrathclydeOrange, "gfx/BR156b.png") {
-	template_train32px_old(0, 88)
-}
-
-spriteset(spriteset_BR156b_StrathclydePTE, "gfx/BR156b.png") {
-	template_train32px_old(0, 113)
-}
-
-spriteset(spriteset_BR156b_ScotRail, "gfx/BR156b.png") {
-	template_train32px_old(0, 138)
-}
-
-spriteset(spriteset_BR156b_FirstScotRail, "gfx/BR156b.png") {
-	template_train32px_old(0, 163)
-}
-
-spriteset(spriteset_BR156b_Central, "gfx/BR156b.png") {
-	template_train32px_old(0, 188)
-}
-
-spriteset(spriteset_BR156b_EMT, "gfx/BR156b.png") {
-	template_train32px_old(0, 213)
-}
-
-spriteset(spriteset_BR156b_NorthernSpirit, "gfx/BR156b.png") {
-	template_train32px_old(0, 238)
-}
-
-spriteset(spriteset_BR156b_NorthernPorterbrook, "gfx/BR156b.png") {
-	template_train32px_old(0, 263)
-}
-
-spriteset(spriteset_BR156b_NorthernExp1, "gfx/BR156b.png") {
-	template_train32px_old(0, 288)
-}
-
-spriteset(spriteset_BR156b_NorthernExp2, "gfx/BR156b.png") {
-	template_train32px_old(0, 313)
-}
-
-spriteset(spriteset_BR156b_NorthernRail, "gfx/BR156b.png") {
-	template_train32px_old(0, 338)
-}
-
-spriteset(spriteset_BR156b_OneGhost, "gfx/BR156b.png") {
-	template_train32px_old(0, 363)
-}
-
-spriteset(spriteset_BR156b_OneChapelf, "gfx/BR156b.png") {
-	template_train32px_old(0, 388)
-}
-
-spriteset(spriteset_BR156b_One, "gfx/BR156b.png") {
-	template_train32px_old(0, 413)
-}
-
-spriteset(spriteset_BR156b_OneTrans, "gfx/BR156b.png") {
-	template_train32px_old(0, 438)
-}
-
-spriteset(spriteset_BR156b_NatEx, "gfx/BR156b.png") {
-	template_train32px_old(0, 463)
-}
-
-spriteset(spriteset_BR156b_Northern, "gfx/BR156b.png") {
-	template_train32px_old(0, 488)
-}
-
-spriteset(spriteset_BR156b_EMRTransition, "gfx/BR156b.png") {
-	template_train32px_old(0, 513)
-}
-
-spriteset(spriteset_BR156b_EMRMaroonWhite, "gfx/BR156b.png") {
-	template_train32px_old(0, 538)
-}
-
-spriteset(spriteset_BR156b_ScotRailSaltire, "gfx/BR156b.png") {
-	template_train32px_old(0, 563)
-}
-
-spriteset(spriteset_BR156b_GA, "gfx/BR156b.png") {
-	template_train32px_old(0, 588)
-}
-
-
-switch(FEAT_TRAINS,SELF, sw_BR156a,cargo_subtype){
-    0:	spriteset_BR156a_Regional;
-	1:	spriteset_BR156a_RegionalGreen;
-	2:	spriteset_BR156a_RegionalExpress;
-	3:	spriteset_BR156a_StrathclydeOrange;
-	4:	spriteset_BR156a_StrathclydePTE;
-	5:	spriteset_BR156a_ScotRail;
-	6:	spriteset_BR156a_FirstScotRail;
-	7:	spriteset_BR156a_Central;
-	8:	spriteset_BR156a_NorthernSpirit;
-	9:	spriteset_BR156a_NorthernPorterbrook;
-	10:	spriteset_BR156a_NorthernExp1;
-	11:	spriteset_BR156a_NorthernExp2;
-	12:	spriteset_BR156a_NorthernRail;
-	13:	spriteset_BR156a_OneGhost;
-	14:	spriteset_BR156a_OneChapelf;
-	15:	spriteset_BR156a_One;
-	16:	spriteset_BR156a_OneTrans;
-	17:	spriteset_BR156a_NatEx;
-	18:	spriteset_BR156a_EMT;
-	19:	spriteset_BR156a_Northern;
-	20:	spriteset_BR156a_EMRTransition;
-	21:	spriteset_BR156a_EMRMaroonWhite;
-	22:	spriteset_BR156a_ScotRailSaltire;
-	23:	spriteset_BR156a_GA;
-}
-
-switch(FEAT_TRAINS,SELF, sw_BR156b,cargo_subtype){
-    0:	spriteset_BR156b_Regional;
-	1:	spriteset_BR156b_RegionalGreen;
-	2:	spriteset_BR156b_RegionalExpress;
-	3:	spriteset_BR156b_StrathclydeOrange;
-	4:	spriteset_BR156b_StrathclydePTE;
-	5:	spriteset_BR156b_ScotRail;
-	6:	spriteset_BR156b_FirstScotRail;
-	7:	spriteset_BR156b_Central;
-	8:	spriteset_BR156b_NorthernSpirit;
-	9:	spriteset_BR156b_NorthernPorterbrook;
-	10:	spriteset_BR156b_NorthernExp1;
-	11:	spriteset_BR156b_NorthernExp2;
-	12:	spriteset_BR156b_NorthernRail;
-	13:	spriteset_BR156b_OneGhost;
-	14:	spriteset_BR156b_OneChapelf;
-	15:	spriteset_BR156b_One;
-	16:	spriteset_BR156b_OneTrans;
-	17:	spriteset_BR156b_NatEx;
-	18:	spriteset_BR156b_EMT;
-	19:	spriteset_BR156b_Northern;
-	20:	spriteset_BR156b_EMRTransition;
-	21:	spriteset_BR156b_EMRMaroonWhite;
-	22:	spriteset_BR156b_ScotRailSaltire;
-	23:	spriteset_BR156b_GA;
+switch(FEAT_TRAINS,SELF, sw_BR156, cargo_subtype){
+    0:	sw_BR156_Regional;
+	1:	sw_BR156_RegionalGreen;
+	2:	sw_BR156_RegionalExpress;
+	3:	sw_BR156_StrathclydeOrange;
+	4:	sw_BR156_StrathclydePTE;
+	5:	sw_BR156_ScotRail;
+	6:	sw_BR156_FirstScotRail;
+	7:	sw_BR156_Central;
+	8:	sw_BR156_NorthernSpirit;
+	9:	sw_BR156_NorthernPorterbrook;
+	10:	sw_BR156_NorthernExp1;
+	11:	sw_BR156_NorthernExp2;
+	12:	sw_BR156_NorthernRail;
+	13:	sw_BR156_OneGhost;
+	14:	sw_BR156_OneChapelf;
+	15:	sw_BR156_One;
+	16:	sw_BR156_OneTrans;
+	17:	sw_BR156_NatEx;
+	18:	sw_BR156_EMT;
+	19:	sw_BR156_Northern;
+	20:	sw_BR156_EMRTransition;
+	21:	sw_BR156_EMRMaroonWhite;
+	22:	sw_BR156_ScotRailSaltire;
+	23:	sw_BR156_GA;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR156, extra_callback_info1) {
@@ -335,7 +98,7 @@ item (FEAT_TRAINS, item_BR156, 57) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR156_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR156;
-	default: 							sw_BR156a;
+	default: 							sw_BR156;
 	purchase:							spriteset_BR156_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;

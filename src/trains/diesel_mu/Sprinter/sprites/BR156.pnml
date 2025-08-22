@@ -1,0 +1,300 @@
+spriteset(spriteset_BR156_Purchase, "gfx/BR156a.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR156_front_Regional, "gfx/BR156a.png") {
+	template_train32px_old(0, 13)
+}
+spriteset(spriteset_BR156_rear_Regional, "gfx/BR156b.png") {
+	template_train32px_old(0, 13)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_Regional, position_in_articulated_veh){
+	0: spriteset_BR156_front_Regional;
+	1: spriteset_BR156_rear_Regional;
+}
+
+spriteset(spriteset_BR156_front_RegionalGreen, "gfx/BR156a.png") {
+	template_train32px_old(0, 38)
+}
+spriteset(spriteset_BR156_rear_RegionalGreen, "gfx/BR156b.png") {
+	template_train32px_old(0, 38)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_RegionalGreen, position_in_articulated_veh){
+	0: spriteset_BR156_front_RegionalGreen;
+	1: spriteset_BR156_rear_RegionalGreen;
+}
+
+spriteset(spriteset_BR156_front_RegionalExpress, "gfx/BR156a.png") {
+	template_train32px_old(0, 63)
+}
+spriteset(spriteset_BR156_rear_RegionalExpress, "gfx/BR156b.png") {
+	template_train32px_old(0, 63)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_RegionalExpress, position_in_articulated_veh){
+	0: spriteset_BR156_front_RegionalExpress;
+	1: spriteset_BR156_rear_RegionalExpress;
+}
+
+spriteset(spriteset_BR156_front_StrathclydeOrange, "gfx/BR156a.png") {
+	template_train32px_old(0, 88)
+}
+spriteset(spriteset_BR156_rear_StrathclydeOrange, "gfx/BR156b.png") {
+	template_train32px_old(0, 88)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_StrathclydeOrange, position_in_articulated_veh){
+	0: spriteset_BR156_front_StrathclydeOrange;
+	1: spriteset_BR156_rear_StrathclydeOrange;
+}
+
+spriteset(spriteset_BR156_front_StrathclydePTE, "gfx/BR156a.png") {
+	template_train32px_old(0, 113)
+}
+spriteset(spriteset_BR156_rear_StrathclydePTE, "gfx/BR156b.png") {
+	template_train32px_old(0, 113)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_StrathclydePTE, position_in_articulated_veh){
+	0: spriteset_BR156_front_StrathclydePTE;
+	1: spriteset_BR156_rear_StrathclydePTE;
+}
+
+spriteset(spriteset_BR156_front_ScotRail, "gfx/BR156a.png") {
+	template_train32px_old(0, 138)
+}
+spriteset(spriteset_BR156_rear_ScotRail, "gfx/BR156b.png") {
+	template_train32px_old(0, 138)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_ScotRail, position_in_articulated_veh){
+	0: spriteset_BR156_front_ScotRail;
+	1: spriteset_BR156_rear_ScotRail;
+}
+
+spriteset(spriteset_BR156_front_FirstScotRail, "gfx/BR156a.png") {
+	template_train32px_old(0, 163)
+}
+spriteset(spriteset_BR156_rear_FirstScotRail, "gfx/BR156b.png") {
+	template_train32px_old(0, 163)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_FirstScotRail, position_in_articulated_veh){
+	0: spriteset_BR156_front_FirstScotRail;
+	1: spriteset_BR156_rear_FirstScotRail;
+}
+
+spriteset(spriteset_BR156_front_Central, "gfx/BR156a.png") {
+	template_train32px_old(0, 188)
+}
+spriteset(spriteset_BR156_rear_Central, "gfx/BR156b.png") {
+	template_train32px_old(0, 188)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_Central, position_in_articulated_veh){
+	0: spriteset_BR156_front_Central;
+	1: spriteset_BR156_rear_Central;
+}
+
+spriteset(spriteset_BR156_front_EMT, "gfx/BR156a.png") {
+	template_train32px_old(0, 213)
+}
+spriteset(spriteset_BR156_rear_EMT, "gfx/BR156b.png") {
+	template_train32px_old(0, 213)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_EMT, position_in_articulated_veh){
+	0: spriteset_BR156_front_EMT;
+	1: spriteset_BR156_rear_EMT;
+}
+
+spriteset(spriteset_BR156_front_NorthernSpirit, "gfx/BR156a.png") {
+	template_train32px_old(0, 238)
+}
+spriteset(spriteset_BR156_rear_NorthernSpirit, "gfx/BR156b.png") {
+	template_train32px_old(0, 238)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_NorthernSpirit, position_in_articulated_veh){
+	0: spriteset_BR156_front_NorthernSpirit;
+	1: spriteset_BR156_rear_NorthernSpirit;
+}
+
+spriteset(spriteset_BR156_front_NorthernPorterbrook, "gfx/BR156a.png") {
+	template_train32px_old(0, 263)
+}
+spriteset(spriteset_BR156_rear_NorthernPorterbrook, "gfx/BR156b.png") {
+	template_train32px_old(0, 263)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_NorthernPorterbrook, position_in_articulated_veh){
+	0: spriteset_BR156_front_NorthernPorterbrook;
+	1: spriteset_BR156_rear_NorthernPorterbrook;
+}
+
+spriteset(spriteset_BR156_front_NorthernExp1, "gfx/BR156a.png") {
+	template_train32px_old(0, 288)
+}
+spriteset(spriteset_BR156_rear_NorthernExp1, "gfx/BR156b.png") {
+	template_train32px_old(0, 288)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_NorthernExp1, position_in_articulated_veh){
+	0: spriteset_BR156_front_NorthernExp1;
+	1: spriteset_BR156_rear_NorthernExp1;
+}
+
+spriteset(spriteset_BR156_front_NorthernExp2, "gfx/BR156a.png") {
+	template_train32px_old(0, 313)
+}
+spriteset(spriteset_BR156_rear_NorthernExp2, "gfx/BR156b.png") {
+	template_train32px_old(0, 313)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_NorthernExp2, position_in_articulated_veh){
+	0: spriteset_BR156_front_NorthernExp2;
+	1: spriteset_BR156_rear_NorthernExp2;
+}
+
+spriteset(spriteset_BR156_front_NorthernRail, "gfx/BR156a.png") {
+	template_train32px_old(0, 338)
+}
+spriteset(spriteset_BR156_rear_NorthernRail, "gfx/BR156b.png") {
+	template_train32px_old(0, 338)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_NorthernRail, position_in_articulated_veh){
+	0: spriteset_BR156_front_NorthernRail;
+	1: spriteset_BR156_rear_NorthernRail;
+}
+
+spriteset(spriteset_BR156_front_OneGhost, "gfx/BR156a.png") {
+	template_train32px_old(0, 363)
+}
+spriteset(spriteset_BR156_rear_OneGhost, "gfx/BR156b.png") {
+	template_train32px_old(0, 363)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_OneGhost, position_in_articulated_veh){
+	0: spriteset_BR156_front_OneGhost;
+	1: spriteset_BR156_rear_OneGhost;
+}
+
+spriteset(spriteset_BR156_front_OneChapelf, "gfx/BR156a.png") {
+	template_train32px_old(0, 388)
+}
+spriteset(spriteset_BR156_rear_OneChapelf, "gfx/BR156b.png") {
+	template_train32px_old(0, 388)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_OneChapelf, position_in_articulated_veh){
+	0: spriteset_BR156_front_OneChapelf;
+	1: spriteset_BR156_rear_OneChapelf;
+}
+
+spriteset(spriteset_BR156_front_One, "gfx/BR156a.png") {
+	template_train32px_old(0, 413)
+}
+spriteset(spriteset_BR156_rear_One, "gfx/BR156b.png") {
+	template_train32px_old(0, 413)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_One, position_in_articulated_veh){
+	0: spriteset_BR156_front_One;
+	1: spriteset_BR156_rear_One;
+}
+
+spriteset(spriteset_BR156_front_OneTrans, "gfx/BR156a.png") {
+	template_train32px_old(0, 438)
+}
+spriteset(spriteset_BR156_rear_OneTrans, "gfx/BR156b.png") {
+	template_train32px_old(0, 438)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_OneTrans, position_in_articulated_veh){
+	0: spriteset_BR156_front_OneTrans;
+	1: spriteset_BR156_rear_OneTrans;
+}
+
+spriteset(spriteset_BR156_front_NatEx, "gfx/BR156a.png") {
+	template_train32px_old(0, 463)
+}
+spriteset(spriteset_BR156_rear_NatEx, "gfx/BR156b.png") {
+	template_train32px_old(0, 463)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_NatEx, position_in_articulated_veh){
+	0: spriteset_BR156_front_NatEx;
+	1: spriteset_BR156_rear_NatEx;
+}
+
+spriteset(spriteset_BR156_front_SWT, "gfx/BR156a.png") {
+	template_train32px_old(0, 463)
+}
+spriteset(spriteset_BR156_rear_SWT, "gfx/BR156b.png") {
+	template_train32px_old(0, 463)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_SWT, position_in_articulated_veh){
+	0: spriteset_BR156_front_SWT;
+	1: spriteset_BR156_rear_SWT;
+}
+
+spriteset(spriteset_BR156_front_NSE, "gfx/BR156a.png") {
+	template_train32px_old(0, 488)
+}
+spriteset(spriteset_BR156_rear_NSE, "gfx/BR156b.png") {
+	template_train32px_old(0, 488)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_NSE, position_in_articulated_veh){
+	0: spriteset_BR156_front_NSE;
+	1: spriteset_BR156_rear_NSE;
+}
+
+spriteset(spriteset_BR156_front_FGW, "gfx/BR156a.png") {
+	template_train32px_old(0, 513)
+}
+spriteset(spriteset_BR156_rear_FGW, "gfx/BR156b.png") {
+	template_train32px_old(0, 513)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_FGW, position_in_articulated_veh){
+	0: spriteset_BR156_front_FGW;
+	1: spriteset_BR156_rear_FGW;
+}
+
+spriteset(spriteset_BR156_front_Northern, "gfx/BR156a.png") {
+	template_train32px_old(0, 488)
+}
+spriteset(spriteset_BR156_rear_Northern, "gfx/BR156b.png") {
+	template_train32px_old(0, 488)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_Northern, position_in_articulated_veh){
+	0: spriteset_BR156_front_Northern;
+	1: spriteset_BR156_rear_Northern;
+}
+
+spriteset(spriteset_BR156_front_EMRTransition, "gfx/BR156a.png") {
+	template_train32px_old(0, 513)
+}
+spriteset(spriteset_BR156_rear_EMRTransition, "gfx/BR156b.png") {
+	template_train32px_old(0, 513)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_EMRTransition, position_in_articulated_veh){
+	0: spriteset_BR156_front_EMRTransition;
+	1: spriteset_BR156_rear_EMRTransition;
+}
+
+spriteset(spriteset_BR156_front_EMRMaroonWhite, "gfx/BR156a.png") {
+	template_train32px_old(0, 538)
+}
+spriteset(spriteset_BR156_rear_EMRMaroonWhite, "gfx/BR156b.png") {
+	template_train32px_old(0, 538)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_EMRMaroonWhite, position_in_articulated_veh){
+	0: spriteset_BR156_front_EMRMaroonWhite;
+	1: spriteset_BR156_rear_EMRMaroonWhite;
+}
+
+spriteset(spriteset_BR156_front_ScotRailSaltire, "gfx/BR156a.png") {
+	template_train32px_old(0, 563)
+}
+spriteset(spriteset_BR156_rear_ScotRailSaltire, "gfx/BR156b.png") {
+	template_train32px_old(0, 563)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_ScotRailSaltire, position_in_articulated_veh){
+	0: spriteset_BR156_front_ScotRailSaltire;
+	1: spriteset_BR156_rear_ScotRailSaltire;
+}
+
+spriteset(spriteset_BR156_front_GA, "gfx/BR156a.png") {
+	template_train32px_old(0, 588)
+}
+spriteset(spriteset_BR156_rear_GA, "gfx/BR156b.png") {
+	template_train32px_old(0, 588)
+}
+switch(FEAT_TRAINS,SELF, sw_BR156_GA, position_in_articulated_veh){
+	0: spriteset_BR156_front_GA;
+	1: spriteset_BR156_rear_GA;
+}
