@@ -154,7 +154,6 @@ switch(FEAT_TRAINS,SELF, sw_BR66,cargo_subtype){
 	24: spriteset_BR66_DBSteel;
 	25:	spriteset_BR66_NationalPower;
 	26: spriteset_BR66_ARC;
-	spriteset_BR66_FL; // Default because we removed some livery variants, avoids a breaking change
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR66_cargo_subtype_text,cargo_subtype){

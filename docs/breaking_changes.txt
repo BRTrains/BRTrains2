@@ -12,9 +12,8 @@ Items marked ? are unconfirmed or may have unknown/unexpected results
 
 v2.15
 ? Re-written build script may result in unexpected behaviour
-+ Class 168 (articulation changed)
-+ Class 170 (articulation changed)
-+ Class 357 (articulation changed)
++ Changes to articulation for many units
+- Pacer classes 140-143 (new sprite IDs)
 - Irish Railways 2800 Class (removed)
 - Class 08 (previously deprecated, now removed)
 - Class 13 (previously deprecated, now removed)
@@ -22,3 +21,4 @@ v2.15
 - Class 399 (wrong capacity)
 - Class 89 (fixed running on non-electrified track)
 - Mk1 coach (length)
+- Class 66 removed default livery
