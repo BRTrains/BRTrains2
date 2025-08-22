@@ -2,8 +2,6 @@ spriteset(spriteset_BR159_Purchase, "gfx/BR158b.png") {
 	template_purchase(0, 0)
 }
 
-// Spritesets are in 158 files
-
 switch(FEAT_TRAINS,SELF, sw_BR159,cargo_subtype){
 	0:	spriteset_BR158a_NSE;
 	1:	spriteset_BR158a_SWT;
@@ -23,8 +21,7 @@ switch(FEAT_TRAINS,SELF, sw_BR159c,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR159, extra_callback_info1) {
-	1: return item_159c;
-	2: return item_159b;
+	1..2: return item_BR159;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
@@ -80,98 +77,8 @@ item (FEAT_TRAINS, item_BR159, 59) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(63 * param_pax);
+	cargo_capacity:						return(194 * param_pax / 3);
 	cost_factor:	return(GetAdjustedCost(53));
 	running_cost_factor: return(GetAdjustedCost(29));
-}
-}
-
-item (FEAT_TRAINS, item_159b, 60) {
-	property {
-		name: 							string(STR_NAME_BR159);
-		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1993,4,21);
-		model_life:						8;
-		retire_early:					1;
-		vehicle_life:					50;
-		reliability_decay:				7;
-		refittable_cargo_classes:		CC_PASSENGERS;
-		cargo_allow_refit:				[PASS, TOUR];
-		loading_speed:					20;
-		cost_factor:					1;
-		running_cost_factor:			1;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
-		refit_cost:						0;
-		track_type:						RAIL;
-		ai_special_flag:				AI_FLAG_CARGO;
-		power:							0;
-		running_cost_base:				RUNNING_COST_DIESEL;
-		dual_headed:					0;
-		default_cargo_type:				PASS;
-		cargo_capacity:					63;
-		weight:							0;
-		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.3;
-		air_drag_coefficient:			0.1;
-		length:							8;
-		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
-		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-		cargo_age_period:				185;
-	}
-	graphics {
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR159b;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(63 * param_pax);
-}
-}
-
-item (FEAT_TRAINS, item_159c, 61) {
-	property {
-		name: 							string(STR_NAME_BR159);
-		climates_available: 			NO_CLIMATE;
-		introduction_date:				date(1993,4,21);
-		model_life:						8;
-		retire_early:					1;
-		vehicle_life:					50;
-		reliability_decay:				7;
-		refittable_cargo_classes:		CC_PASSENGERS;
-		cargo_allow_refit:				[PASS, TOUR];
-		loading_speed:					20;
-		cost_factor:					1;
-		running_cost_factor:			1;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							90 mph;
-		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
-		refit_cost:						0;
-		track_type:						RAIL;
-		ai_special_flag:				AI_FLAG_CARGO;
-		power:							0;
-		running_cost_base:				RUNNING_COST_DIESEL;
-		dual_headed:					0;
-		default_cargo_type:				PASS;
-		cargo_capacity:					68;
-		weight:							0;
-		engine_class:					ENGINE_CLASS_DIESEL;
-		tractive_effort_coefficient:	0.3;
-		air_drag_coefficient:			0.1;
-		length:							8;
-		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
-		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-		cargo_age_period:				185;
-	}
-	graphics {
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	default: 							sw_BR159c;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						diesel_create_visual_effect;
-	sound_effect:						sw_sound_diesel_dmu_gen2;
-	cargo_capacity:						return(68 * param_pax);
 }
 }
