@@ -6,6 +6,6 @@ item (FEAT_TRAINS, header_ExpressSprinter, 10027) {
 		power:							1;
 	}
 	graphics {	
-		purchase:							spriteset_BR158_3_Purchase;	
+		purchase:							spriteset_BR158_3car_Purchase;	
 	}
 }

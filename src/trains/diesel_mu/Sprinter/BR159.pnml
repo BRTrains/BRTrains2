@@ -1,23 +1,9 @@
-spriteset(spriteset_BR159_Purchase, "gfx/BR158b.png") {
-	template_purchase(0, 0)
-}
+
 
 switch(FEAT_TRAINS,SELF, sw_BR159,cargo_subtype){
-	0:	spriteset_BR158a_NSE;
-	1:	spriteset_BR158a_SWT;
-	2:	spriteset_BR158a_SWR;
-}
-
-switch(FEAT_TRAINS,SELF, sw_BR159b,cargo_subtype){
-	0:	spriteset_BR158b_NSE;
-	1:	spriteset_BR158b_SWT;
-	2:	spriteset_BR158b_SWR;
-}
-
-switch(FEAT_TRAINS,SELF, sw_BR159c,cargo_subtype){
-	0:	spriteset_BR158c_NSE;
-	1:	spriteset_BR158c_SWT;
-	2:	spriteset_BR158c_SWR;
+	0:	sw_BR158_NSE;
+	1:	sw_BR158_SWT;
+	2:	sw_BR158_SWR;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR159, extra_callback_info1) {

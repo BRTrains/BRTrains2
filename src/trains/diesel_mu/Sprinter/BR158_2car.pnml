@@ -1,71 +1,37 @@
-
-
-switch(FEAT_TRAINS,SELF, sw_BR158a,cargo_subtype){
-    0:	spriteset_BR158a_RegionalExpress;
-	1:	spriteset_BR158a_WalesWest;
-	2:	spriteset_BR158a_AlphaWales;
-	3:	spriteset_BR158a_AlphaWessex;
-	4:	spriteset_BR158a_WessexGinster;
-	5:	spriteset_BR158a_ArrivaSilver;
-	6:	spriteset_BR158a_ArrivaTPNS;
-	7:	spriteset_BR158a_ATW;
-	8:	spriteset_BR158a_ATWMail;
-	9:	spriteset_BR158a_FNW;
-	10:	spriteset_BR158a_FirstScotRail;
-	11:	spriteset_BR158a_FirstTP;
-	12:	spriteset_BR158a_FGW;
-	13:	spriteset_BR158a_NatExScotRail;
-	14:	spriteset_BR158a_WYPTEMetro;
-	15:	spriteset_BR158a_NorthernRail;
-	16:	spriteset_BR158a_NorthernRailMetro;
-	17:	spriteset_BR158a_ScotRailSaltire;
-	18:	spriteset_BR158a_Central;
-	19:	spriteset_BR158a_EMT;
-	20:	spriteset_BR158a_NSE;
-	21:	spriteset_BR158a_SWT;
-	22:	spriteset_BR158a_Northern;
-	23:	spriteset_BR158a_EMRMaroonWhite;
-	24:	spriteset_BR158a_EMRTransition;
-	25: spriteset_BR158a_SWR;
-	26: spriteset_BR158a_TfW;
-	27: spriteset_BR158a_NorthernToY;
-	28:	spriteset_BR158a_GWR;
-}
-
-switch(FEAT_TRAINS,SELF, sw_BR158b,cargo_subtype){
-    0:	spriteset_BR158b_RegionalExpress;
-	1:	spriteset_BR158b_WalesWest;
-	2:	spriteset_BR158b_AlphaWales;
-	3:	spriteset_BR158b_AlphaWessex;
-	4:	spriteset_BR158b_WessexGinster;
-	5:	spriteset_BR158b_ArrivaSilver;
-	6:	spriteset_BR158b_ArrivaTPNS;
-	7:	spriteset_BR158b_ATW;
-	8:	spriteset_BR158b_ATWMail;
-	9:	spriteset_BR158b_FNW;
-	10:	spriteset_BR158b_FirstScotRail;
-	11:	spriteset_BR158b_FirstTP;
-	12:	spriteset_BR158b_FGW;
-	13:	spriteset_BR158b_NatExScotRail;
-	14:	spriteset_BR158b_WYPTEMetro;
-	15:	spriteset_BR158b_NorthernRail;
-	16:	spriteset_BR158b_NorthernRailMetro;
-	17:	spriteset_BR158b_ScotRailSaltire;
-	18:	spriteset_BR158b_Central;
-	19:	spriteset_BR158b_EMT;
-	20:	spriteset_BR158b_NSE;
-	21:	spriteset_BR158b_SWT;
-	22:	spriteset_BR158b_Northern;
-	23:	spriteset_BR158b_EMRMaroonWhite;
-	24:	spriteset_BR158b_EMRTransition;
-	25: spriteset_BR158b_SWR;
-	26: spriteset_BR158b_TfW;
-	27: spriteset_BR158b_NorthernToY;
-	28:	spriteset_BR158b_GWR;
+switch(FEAT_TRAINS,SELF, sw_BR158_2car, cargo_subtype){
+    0:	sw_BR158_RegionalExpress;
+	1:	sw_BR158_WalesWest;
+	2:	sw_BR158_AlphaWales;
+	3:	sw_BR158_AlphaWessex;
+	4:	sw_BR158_WessexGinster;
+	5:	sw_BR158_ArrivaSilver;
+	6:	sw_BR158_ArrivaTPNS;
+	7:	sw_BR158_ATW;
+	8:	sw_BR158_ATWMail;
+	9:	sw_BR158_FNW;
+	10:	sw_BR158_FirstScotRail;
+	11:	sw_BR158_FirstTP;
+	12:	sw_BR158_FGW;
+	13:	sw_BR158_NatExScotRail;
+	14:	sw_BR158_WYPTEMetro;
+	15:	sw_BR158_NorthernRail;
+	16:	sw_BR158_NorthernRailMetro;
+	17:	sw_BR158_ScotRailSaltire;
+	18:	sw_BR158_Central;
+	19:	sw_BR158_EMT;
+	20:	sw_BR158_NSE;
+	21:	sw_BR158_SWT;
+	22:	sw_BR158_Northern;
+	23:	sw_BR158_EMRMaroonWhite;
+	24:	sw_BR158_EMRTransition;
+	25: sw_BR158_SWR;
+	26: sw_BR158_TfW;
+	27: sw_BR158_NorthernToY;
+	28:	sw_BR158_GWR;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR158, extra_callback_info1) {
-	1: return item_BR158;
+	1: return item_BR158_2car;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
@@ -102,10 +68,10 @@ switch(FEAT_TRAINS,SELF,sw_BR158_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR158, 36) {
+item (FEAT_TRAINS, item_BR158_2car, 36) {
 	property {
 		variant_group:					header_ExpressSprinter;
-		name: 							string(STR_NAME_BR158);
+		name: 							string(STR_NAME_BR158_2car);
 		climates_available: 			ALL_CLIMATES;
 		introduction_date:				date(1989,4,21);
 		model_life:						8;
@@ -142,8 +108,8 @@ item (FEAT_TRAINS, item_BR158, 36) {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_subtype_text:					sw_BR158_cargo_subtype_text;
 	articulated_part:        			switch_articulated_BR158;
-	default: 							sw_BR158a;
-	purchase:							spriteset_BR158_Purchase;
+	default: 							sw_BR158_2car;
+	purchase:							spriteset_BR158_2car_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
