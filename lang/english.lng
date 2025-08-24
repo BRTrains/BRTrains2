@@ -1293,14 +1293,14 @@ str_BR159_usage					:Express Passenger
 str_BR159_eos					:---
 str_BR159_liveries				:Network South East, South West Trains
 
-STR_NAME_BR165_0_2				:BR Class 165/0 "Chiltern Turbo" (2-Car)
-STR_NAME_BR165_0_3				:BR Class 165/0 "Chiltern Turbo" (3-Car)
-STR_NAME_BR165_1_2				:BR Class 165/1 "Thames Turbo" (2-Car)
-STR_NAME_BR165_1_3				:BR Class 165/1 "Thames Turbo" (3-Car)
-str_BR165_usage					:Passenger
-str_BR165_eos					:---
-str_BR1650_liveries				:Network SouthEast, Chiltern Railways
-str_BR1651_liveries				:Network SouthEast, Thames Trains, First Great Western "Link", First Great Western "Dynamic Lines", Great Western Railway
+STR_NAME_BR165_0_2car				:BR Class 165/0 "Chiltern Turbo" (2-Car)
+STR_NAME_BR165_0_3car				:BR Class 165/0 "Chiltern Turbo" (3-Car)
+STR_NAME_BR165_1_2car				:BR Class 165/1 "Thames Turbo" (2-Car)
+STR_NAME_BR165_1_3car				:BR Class 165/1 "Thames Turbo" (3-Car)
+str_BR165_usage					    :Passenger
+str_BR165_eos					    :---
+str_BR165_0_liveries				:Network SouthEast, Chiltern Railways
+str_BR165_1_liveries				:Network SouthEast, Thames Trains, First Great Western "Link", First Great Western "Dynamic Lines", Great Western Railway
 
 STR_NAME_BR166					:BR Class 166 "Thames Turbo" (3-car)
 str_BR166_usage					:Passenger

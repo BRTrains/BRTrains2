@@ -1,0 +1,140 @@
+spriteset(spriteset_BR165_Purchase, "gfx/BR165.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR165_front_NSE, "gfx/BR165.png") {
+	template_train32px_old(0, 13)
+}
+spriteset(spriteset_BR165_middle_NSE, "gfx/BR165.png") {
+	template_train32px_old(0, 38)
+}
+spriteset(spriteset_BR165_rear_NSE, "gfx/BR165.png") {
+	template_train32px_old(0, 63)
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_NSE_sw2, position_in_articulated_veh_from_end){
+	0: spriteset_BR165_rear_NSE;
+	1: spriteset_BR165_middle_NSE;
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_NSE, position_in_articulated_veh){
+	0: spriteset_BR165_front_NSE;
+	1: sw_BR165_NSE_sw2;
+}
+
+spriteset(spriteset_BR165_front_ThamesTrains, "gfx/BR165.png") {
+	template_train32px_old(0, 88)
+}
+spriteset(spriteset_BR165_middle_ThamesTrains, "gfx/BR165.png") {
+	template_train32px_old(0, 113)
+}
+spriteset(spriteset_BR165_rear_ThamesTrains, "gfx/BR165.png") {
+	template_train32px_old(0, 138)
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_ThamesTrains_sw2, position_in_articulated_veh_from_end){
+	0: spriteset_BR165_rear_ThamesTrains;
+	1: spriteset_BR165_middle_ThamesTrains;
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_ThamesTrains, position_in_articulated_veh){
+	0: spriteset_BR165_front_ThamesTrains;
+	1: sw_BR165_ThamesTrains_sw2;
+}
+
+spriteset(spriteset_BR165_front_FirstLink, "gfx/BR165.png") {
+	template_train32px_old(0, 163)
+}
+spriteset(spriteset_BR165_middle_FirstLink, "gfx/BR165.png") {
+	template_train32px_old(0, 188)
+}
+spriteset(spriteset_BR165_rear_FirstLink, "gfx/BR165.png") {
+	template_train32px_old(0, 213)
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_FirstLink_sw2, position_in_articulated_veh_from_end){
+	0: spriteset_BR165_rear_FirstLink;
+	1: spriteset_BR165_middle_FirstLink;
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_FirstLink, position_in_articulated_veh){
+	0: spriteset_BR165_front_FirstLink;
+	1: sw_BR165_FirstLink_sw2;
+}
+
+spriteset(spriteset_BR165_front_Chiltern, "gfx/BR165.png") {
+	template_train32px_old(0, 238)
+}
+spriteset(spriteset_BR165_middle_Chiltern, "gfx/BR165.png") {
+	template_train32px_old(0, 263)
+}
+spriteset(spriteset_BR165_rear_Chiltern, "gfx/BR165.png") {
+	template_train32px_old(0, 288)
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_Chiltern_sw2, position_in_articulated_veh_from_end){
+	0: spriteset_BR165_rear_Chiltern;
+	1: spriteset_BR165_middle_Chiltern;
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_Chiltern, position_in_articulated_veh){
+	0: spriteset_BR165_front_Chiltern;
+	1: sw_BR165_Chiltern_sw2;
+}
+
+spriteset(spriteset_BR165_front_FGW, "gfx/BR165.png") {
+	template_train32px_old(0, 313)
+}
+spriteset(spriteset_BR165_middle_FGW, "gfx/BR165.png") {
+	template_train32px_old(0, 338)
+}
+spriteset(spriteset_BR165_rear_FGW, "gfx/BR165.png") {
+	template_train32px_old(0, 363)
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_FGW_sw2, position_in_articulated_veh_from_end){
+	0: spriteset_BR165_rear_FGW;
+	1: spriteset_BR165_middle_FGW;
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_FGW, position_in_articulated_veh){
+	0: spriteset_BR165_front_FGW;
+	1: sw_BR165_FGW_sw2;
+}
+
+spriteset(spriteset_BR165_front_GWR, "gfx/BR165.png") {
+	template_train32px_old(0, 388)
+}
+spriteset(spriteset_BR165_middle_GWR, "gfx/BR165.png") {
+	template_train32px_old(0, 413)
+}
+spriteset(spriteset_BR165_rear_GWR, "gfx/BR165.png") {
+	template_train32px_old(0, 438)
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_GWR_sw2, position_in_articulated_veh_from_end){
+	0: spriteset_BR165_rear_GWR;
+	1: spriteset_BR165_middle_GWR;
+}
+switch(FEAT_TRAINS,SELF, sw_BR165_GWR, position_in_articulated_veh){
+	0: spriteset_BR165_front_GWR;
+	1: sw_BR165_GWR_sw2;
+}
+
+
+switch(FEAT_TRAINS,SELF, sw_BR165_0,cargo_subtype){
+    0:	sw_BR165_NSE;
+	1:	sw_BR165_Chiltern;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR165_1,cargo_subtype){
+    0:	sw_BR165_NSE;
+	1:	sw_BR165_ThamesTrains;
+	2:	sw_BR165_FirstLink;
+	3:	sw_BR165_FGW;
+	4:	sw_BR165_GWR;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR165_0_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_NSE);
+	1:	return string(str_Chiltern);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR165_1_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_NSE);
+	1:	return string(str_ThamesTrains);
+	2:	return string(str_FirstLink);
+	3:	return string(str_FGWDL);
+	4:	return string(str_GWRGreen);
+       return CB_RESULT_NO_TEXT;
+}
