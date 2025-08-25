@@ -1,11 +1,10 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_br_231_spriteset, position_in_articulated_veh % 5) {
-	0: spriteset_br231a;
-    1: spriteset_br231c;
-	2: spriteset_br231pp;
-    3: spriteset_br231d;
-	4: spriteset_br231b;
-	spriteset_br231c;
+	0: spriteset_BR231_front;
+    1: spriteset_BR231_fronttrailer;
+	2: spriteset_BR231_powerpack;
+    3: spriteset_BR231_reartrailer;
+	4: spriteset_BR231_rear;
 }
 
 // Define articulations
