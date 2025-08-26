@@ -2,53 +2,53 @@ spriteset(spriteset_BluePullman_Purchase, "gfx/BluePullman.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_BluePullmana_Pullman, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_front_Pullman, "gfx/BluePullman.png") {
 	template_train32px_old(0, 13)
 }
-spriteset(spriteset_BluePullmanb_Pullman, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_rear_Pullman, "gfx/BluePullman.png") {
 	template_train32px_old(0, 38)
 }
-spriteset(spriteset_BluePullmanc_Pullman, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_middle_Pullman, "gfx/BluePullman.png") {
 	template_train32px_old(0, 63)
 }
 
-spriteset(spriteset_BluePullmana_PullmanPanels, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_front_PullmanPanels, "gfx/BluePullman.png") {
 	template_train32px_old(0, 88)
 }
-spriteset(spriteset_BluePullmanb_PullmanPanels, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_rear_PullmanPanels, "gfx/BluePullman.png") {
 	template_train32px_old(0, 113)
 }
-spriteset(spriteset_BluePullmanc_PullmanPanels, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_middle_PullmanPanels, "gfx/BluePullman.png") {
 	template_train32px_old(0, 138)
 }
 
-spriteset(spriteset_BluePullmana_GreyBlue, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_front_GreyBlue, "gfx/BluePullman.png") {
 	template_train32px_old(0, 163)
 }
-spriteset(spriteset_BluePullmanb_GreyBlue, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_rear_GreyBlue, "gfx/BluePullman.png") {
 	template_train32px_old(0, 188)
 }
-spriteset(spriteset_BluePullmanc_GreyBlue, "gfx/BluePullman.png") {
+spriteset(spriteset_BluePullman_middle_GreyBlue, "gfx/BluePullman.png") {
 	template_train32px_old(0, 213)
 }
 
 // Coose sprites based on liveries
-switch(FEAT_TRAINS, SELF, switch_BluePullmana, cargo_subtype) {	
-	0: spriteset_BluePullmana_PullmanPanels;
-	1: spriteset_BluePullmana_Pullman;
-	2: spriteset_BluePullmana_GreyBlue;
+switch(FEAT_TRAINS, SELF, switch_BluePullman_front, cargo_subtype) {	
+	0: spriteset_BluePullman_front_PullmanPanels;
+	1: spriteset_BluePullman_front_Pullman;
+	2: spriteset_BluePullman_front_GreyBlue;
 }
 
-switch(FEAT_TRAINS, SELF, switch_BluePullmanb, cargo_subtype) {		
-	0: spriteset_BluePullmanb_PullmanPanels;
-	1: spriteset_BluePullmanb_Pullman;
-	2: spriteset_BluePullmanb_GreyBlue;
+switch(FEAT_TRAINS, SELF, switch_BluePullman_rear, cargo_subtype) {		
+	0: spriteset_BluePullman_rear_PullmanPanels;
+	1: spriteset_BluePullman_rear_Pullman;
+	2: spriteset_BluePullman_rear_GreyBlue;
 }
 
-switch(FEAT_TRAINS, SELF, switch_BluePullmanc, cargo_subtype) {
-	0: spriteset_BluePullmanc_PullmanPanels;
-	1: spriteset_BluePullmanc_Pullman;	
-	2: spriteset_BluePullmanc_GreyBlue;
+switch(FEAT_TRAINS, SELF, switch_BluePullman_middle, cargo_subtype) {
+	0: spriteset_BluePullman_middle_PullmanPanels;
+	1: spriteset_BluePullman_middle_Pullman;	
+	2: spriteset_BluePullman_middle_GreyBlue;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BluePullman_cargo_subtype_text,cargo_subtype){

@@ -1,28 +1,6 @@
-spriteset(spriteset_APTE_Purchase, "gfx/APTE.png") {
-	template_purchase(0, 0)
-}
-
-spriteset(spriteset_APTE_front_BRBlue, "gfx/APTE.png") {
-	template_train32px_old(0, 13)
-}
-
-spriteset(spriteset_APTE_rear_BRBlue, "gfx/APTE.png") {
-	template_train32px_old(0, 38)
-}
-
-spriteset(spriteset_APTE_middle_BRBlue, "gfx/APTE.png") {
-	template_train32px_old(0, 63)
-}
-
 switch(FEAT_TRAINS,SELF,sw_APTE_speed,param_max_speed){
 	0:	return 201;
 	1:	return 225;
-}
-
-switch(FEAT_TRAINS,SELF, sw_APTE_BRBlue, position_in_articulated_veh % 4){
-    0:	spriteset_APTE_front_BRBlue;
-	1:	spriteset_APTE_middle_BRBlue;
-	2:	spriteset_APTE_rear_BRBlue;	
 }
 
 switch(FEAT_TRAINS,SELF, sw_APTE, cargo_subtype){

@@ -1,8 +1,8 @@
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BluePullman_8Car_spriteset, position_in_articulated_veh % 8) {
-	0: switch_BluePullmana;
-	7: switch_BluePullmanb;
-	switch_BluePullmanc;
+	0: switch_BluePullman_front;
+	7: switch_BluePullman_rear;
+	switch_BluePullman_middle;
 }
 
 // Define articulations
