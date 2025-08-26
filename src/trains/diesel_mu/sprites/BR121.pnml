@@ -1,0 +1,31 @@
+spriteset(spriteset_BR121_Purchase, "gfx/BR121.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR121_Green, "gfx/BR121.png") {
+	template_train32px_old(0, 13)
+}
+
+spriteset(spriteset_BR121_Blue, "gfx/BR121.png") {
+	template_train32px_old(0, 38)
+}
+
+spriteset(spriteset_BR121_Railtrack, "gfx/BR121.png") {
+	template_train32px_old(0, 63)
+}
+
+spriteset(spriteset_BR121_BRGreen2, "gfx/BR121.png") {
+	template_train32px_old(0, 88)
+}
+spriteset(spriteset_BR121_BRBlue2, "gfx/BR121.png") {
+	template_train32px_old(0, 113)
+}
+spriteset(spriteset_BR121_BRRefurb, "gfx/BR121.png") {
+	template_train32px_old(0, 138)
+}
+spriteset(spriteset_BR121_BRBlueGrey, "gfx/BR121.png") {
+	template_train32px_old(0, 163)
+}
+spriteset(spriteset_BR121_Silverlink, "gfx/BR121.png") {
+	template_train32px_old(0, 188)
+}
