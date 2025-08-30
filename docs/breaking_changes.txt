@@ -22,5 +22,6 @@ v2.15
 - Class 399 (wrong capacity)
 - Class 730/0 (wrong capacity)
 - Class 701 (use seated capacity)
+- Class 333 (wrong capacity)
 - Class 89 (fixed running on non-electrified track)
 - Mk1 coach (length)

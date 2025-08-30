@@ -81,7 +81,7 @@ item (FEAT_TRAINS, item_BR333, 436) {
 	purchase:							spriteset_BR333_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	sound_effect:						sw_sound_electric_88;
-	cargo_capacity: return(392/4 * param_pax);
+	cargo_capacity: return(360/4 * param_pax);
 		 cost_factor:	return(GetAdjustedCost(56));
 	running_cost_factor: return(GetAdjustedCost(32));
 }
