@@ -60,6 +60,7 @@ SAVEGAME BREAKING VERSION
 - Fixed 88/93/99 particles
 - Fixed BR399 (Sheffield Citylink) capacity
 - Fixed 730/0 capacity
+- Fixed 701 capacity
 - Removed some deprecated units (08, 13, IE 2800 Class)
 - Reworked build script to reduce concurrent sprite group usage
 
