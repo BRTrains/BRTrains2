@@ -1,0 +1,138 @@
+spriteset(spriteset_BR390_Purchase, "gfx/EMU/390.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR390_front_Virgin, "gfx/EMU/390.png") {
+	template_train32px(0, 13)
+}
+spriteset(spriteset_BR390_middle_Virgin, "gfx/EMU/390.png") {
+	template_train32px(0, 39)
+}
+spriteset(spriteset_BR390_middlePanto_Virgin, "gfx/EMU/390.png") {
+	template_train32px(0, 65)
+}
+spriteset(spriteset_BR390_middlePantoReversed_Virgin, "gfx/EMU/390.png") {
+	template_train32px(0, 91)
+}
+spriteset(spriteset_BR390_rear_Virgin, "gfx/EMU/390.png") {
+	template_train32px(0, 117)
+}
+switch(FEAT_TRAINS, SELF, sw_BR390_Virgin_sw2, position_in_articulated_veh) {
+	0: spriteset_BR390_front_Virgin;
+	2: spriteset_BR390_middlePanto_Virgin;
+	spriteset_BR390_middle_Virgin;
+}
+switch(FEAT_TRAINS, SELF, sw_BR390_Virgin, position_in_articulated_veh_from_end) {
+	0: spriteset_BR390_rear_Virgin;
+	2: spriteset_BR390_middlePantoReversed_Virgin;
+	sw_BR390_Virgin_sw2;
+}
+
+spriteset(spriteset_BR390_front_VirginSilk, "gfx/EMU/390.png") {
+	template_train32px(0, 377)
+}
+spriteset(spriteset_BR390_middle_VirginSilk, "gfx/EMU/390.png") {
+	template_train32px(0, 403)
+}
+spriteset(spriteset_BR390_middlePanto_VirginSilk, "gfx/EMU/390.png") {
+	template_train32px(0, 429)
+}
+spriteset(spriteset_BR390_middlePantoReversed_VirginSilk, "gfx/EMU/390.png") {
+	template_train32px(0, 455)
+}
+spriteset(spriteset_BR390_rear_VirginSilk, "gfx/EMU/390.png") {
+	template_train32px(0, 481)
+}
+switch(FEAT_TRAINS, SELF, sw_BR390_VirginSilk_sw2, position_in_articulated_veh) {
+	0: spriteset_BR390_front_VirginSilk;
+	2: spriteset_BR390_middlePanto_VirginSilk;
+	spriteset_BR390_middle_VirginSilk;
+}
+switch(FEAT_TRAINS, SELF, sw_BR390_VirginSilk, position_in_articulated_veh_from_end) {
+	0: spriteset_BR390_rear_VirginSilk;
+	2: spriteset_BR390_middlePantoReversed_VirginSilk;
+	sw_BR390_VirginSilk_sw2;
+}
+
+spriteset(spriteset_BR390_front_VirginPride, "gfx/EMU/390.png") {
+	template_train32px(0, 507)
+}
+spriteset(spriteset_BR390_middle_VirginPride, "gfx/EMU/390.png") {
+	template_train32px(0, 533)
+}
+spriteset(spriteset_BR390_middlePanto_VirginPride, "gfx/EMU/390.png") {
+	template_train32px(0, 559)
+}
+spriteset(spriteset_BR390_middlePantoReversed_VirginPride, "gfx/EMU/390.png") {
+	template_train32px(0, 585)
+}
+spriteset(spriteset_BR390_rear_VirginPride, "gfx/EMU/390.png") {
+	template_train32px(0, 611)
+}
+switch(FEAT_TRAINS, SELF, sw_BR390_VirginPride_sw2, position_in_articulated_veh) {
+	0: spriteset_BR390_front_VirginPride;
+	2: spriteset_BR390_middlePanto_VirginPride;
+	spriteset_BR390_middle_VirginPride;
+}
+switch(FEAT_TRAINS, SELF, sw_BR390_VirginPride, position_in_articulated_veh_from_end) {
+	0: spriteset_BR390_rear_VirginPride;
+	2: spriteset_BR390_middlePantoReversed_VirginPride;
+	sw_BR390_VirginPride_sw2;
+}
+
+spriteset(spriteset_BR390_front_AvantiWestCoast, "gfx/EMU/390.png") {
+	template_train32px(0, 143)
+}
+spriteset(spriteset_BR390_middleCentre_Avanti, "gfx/EMU/390.png") {
+	template_train32px(0, 169)
+}
+spriteset(spriteset_BR390_middlePantoRear_Avanti, "gfx/EMU/390.png") {
+	template_train32px(0, 195)
+}
+spriteset(spriteset_BR390_middlePanto_Avanti, "gfx/EMU/390.png") {
+	template_train32px(0, 221)
+}
+spriteset(spriteset_BR390_rear_Avanti, "gfx/EMU/390.png") {
+	template_train32px(0, 247)
+}
+spriteset(spriteset_BR390_middleVariant1_Avanti, "gfx/EMU/390.png") {
+	template_train32px(0, 273)
+}
+spriteset(spriteset_BR390_middleVariant2_Avanti, "gfx/EMU/390.png") {
+	template_train32px(0, 299)
+}
+spriteset(spriteset_BR390_middleVariant3_Avanti, "gfx/EMU/390.png") {
+	template_train32px(0, 325)
+}
+spriteset(spriteset_BR390_middleVariant4_Avanti, "gfx/EMU/390.png") {
+	template_train32px(0, 351)
+}
+switch (FEAT_TRAINS, SELF, sw_BR390_9car_AvantiWestCoast, position_in_articulated_veh % 9) {
+	0: spriteset_BR390_front_AvantiWestCoast;
+	1: spriteset_BR390_middleVariant1_Avanti;
+	2: spriteset_BR390_middlePanto_Avanti;
+	3: spriteset_BR390_middleVariant1_Avanti;
+	4: spriteset_BR390_middleVariant4_Avanti;
+	5: spriteset_BR390_middleCentre_Avanti;
+	6: spriteset_BR390_middlePantoRear_Avanti;
+	7: spriteset_BR390_middleVariant2_Avanti;
+	8: spriteset_BR390_rear_Avanti;
+}
+switch (FEAT_TRAINS, SELF, sw_BR390_11car_AvantiWestCoast, position_in_articulated_veh % 11) {
+	0: spriteset_BR390_front_AvantiWestCoast;
+	1: spriteset_BR390_middleVariant1_Avanti;
+	2: spriteset_BR390_middlePanto_Avanti;
+	3: spriteset_BR390_middleVariant1_Avanti;
+	4: spriteset_BR390_middleVariant4_Avanti;
+	5: spriteset_BR390_middleCentre_Avanti;
+	6: spriteset_BR390_middleVariant3_Avanti;
+	7: spriteset_BR390_middleVariant2_Avanti;
+	8: spriteset_BR390_middlePantoRear_Avanti;
+	9: spriteset_BR390_middleVariant2_Avanti;
+	10: spriteset_BR390_rear_Avanti;
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR390_speed,param_max_speed){
+	0:	return 201;
+	1:	return 225;
+}

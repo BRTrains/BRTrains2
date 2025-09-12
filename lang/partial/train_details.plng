@@ -910,8 +910,8 @@ str_BR387__usage					:Regional Passenger
 str_BR387__eos					:---
 str_BR387__liveries				:Govia Thameslink, Gatwick Express (Branded & Unbranded), GWR Green (Brended & Unbranded), c2c
 
-STR_NAME_BR390					:BR Class 390/0 "Pendolino" (9-car)
-STR_NAME_BR390_11				:BR Class 390/1 "Pendolino" (11-car)
+STR_NAME_BR390_9car          	:BR Class 390/0 "Pendolino" (9-car)
+STR_NAME_BR390_11car			:BR Class 390/1 "Pendolino" (11-car)
 str_BR390_usage					:Express Passenger
 str_BR390_eos					:---
 str_BR390_liveries				:Virgin Trains

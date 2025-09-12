@@ -25,3 +25,4 @@ v2.15
 - Class 89 (fixed running on non-electrified track)
 - Mk1 coach (length)
 - Class 66 removed default livery
+- Reworked 390 code
