@@ -1,5 +1,5 @@
 # In progress/nightly releases, not yet on BaNaNaS (may require debug mode parameter to be enabled, graphics may not yet be coded etc)
-- Class 318 (needs coding)
+- Class 317/318 (needs coding)
 - Stephenson's Planet (tweak graphics, add wagons?)
 - GWR Great Bear and Hall class rework
 - Class 411, 412, 421, 422, 438 etc rework

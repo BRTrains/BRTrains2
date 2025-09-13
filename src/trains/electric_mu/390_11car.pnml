@@ -2,7 +2,8 @@ switch(FEAT_TRAINS,SELF, sw_BR390_11car, cargo_subtype){
     0:	sw_BR390_Virgin;
 	1:	sw_BR390_VirginSilk;
 	2:	sw_BR390_VirginPride;
-	3:	sw_BR390_11car_AvantiWestCoast;
+	3:	sw_BR390_11car_Avanti;
+	4:	sw_BR390_11car_AvantiPride;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR390_11car_cargo_subtype_text,cargo_subtype){
@@ -10,6 +11,7 @@ switch(FEAT_TRAINS,SELF,sw_BR390_11car_cargo_subtype_text,cargo_subtype){
 	1:	return string(str_AvantiWestCoast);
 	2:	return string(str_VirginSilk);
 	3:	return string(str_VirginPride);
+	4:	return string(str_AvantiPride);
        return CB_RESULT_NO_TEXT;
 }
 

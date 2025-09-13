@@ -2,7 +2,7 @@ switch(FEAT_TRAINS,SELF, sw_BR390_9car, cargo_subtype){
     0:	sw_BR390_Virgin;
 	1:	sw_BR390_VirginSilk;
 	2:	sw_BR390_VirginPride;
-	3:	sw_BR390_9car_AvantiWestCoast;
+	3:	sw_BR390_9car_Avanti;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR390_9car_cargo_subtype_text,cargo_subtype){
