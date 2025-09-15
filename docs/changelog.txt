@@ -34,6 +34,7 @@ SAVEGAME BREAKING VERSION
 - Reworked Class 333
 - Reworked Class 357
 - Mini-rework for Class 325, moved to new template and added stripe-less Royal Mail livery
+- Added ScotRail livery for Class 47
 - Added Pride/"Trainbow" livery for Class 390
 - Added Northern livery for Class 150/0 and /2
 - Added Northern's weird "3 cab car" variant of the Class 150
