@@ -34,6 +34,10 @@ spriteset(spriteset_BR47_InterCity, "gfx/BR47_BR57.png") {
 	template_train32px_old(0, 163)
 }
 
+spriteset(spriteset_BR47_ScotRail, "gfx/BR47_BR57.png") {
+	template_train32px_old(0, 188)
+}
+
 spriteset(spriteset_BR47_WestCoast, "gfx/BR47_BR57.png") {
 	template_train32px_old(0, 238)
 }
@@ -75,6 +79,7 @@ switch(FEAT_TRAINS,SELF, sw_BR47,cargo_subtype){
     11: spriteset_BR47_Colas;
     12: spriteset_BR47_One;
 	13: spriteset_BR47_Freightliner;
+    14: spriteset_BR47_ScotRail;
        return CB_RESULT_NO_TEXT;
 }
 
@@ -93,5 +98,6 @@ switch(FEAT_TRAINS,SELF,sw_BR47_cargo_subtype_text,cargo_subtype){
     11: return string(str_ColasRail);
     12: return string(str_ONE);
 	13: return string(str_Freightliner);
+    14: return string(str_ScotRail);
        return CB_RESULT_NO_TEXT;
 }

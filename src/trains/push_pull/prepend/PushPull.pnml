@@ -80,6 +80,7 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR47,[STORE_TEMP(0 - position_in_ar
     11: spriteset_BR47_Colas;
     12: spriteset_BR47_One;
 	13: spriteset_BR47_Freightliner;
+	14: spriteset_BR47_ScotRail;
 	spriteset_BR47_BRGreen;
 }
 
