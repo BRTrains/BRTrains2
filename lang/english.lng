@@ -2251,6 +2251,7 @@ STR_NAME_P86                          :Docklands Light Railway P86 (2-car Single
 STR_NAME_P86_DOUBLE                   :Docklands Light Railway P86 (4-car Double Unit)
 STR_NAME_SheffieldSupertram           :Sheffield Supertram (3-car Single Unit)
 STR_NAME_EdinburghUrbos               :Edinburgh Trams Urbos 3 (5-car Single Unit)
+STR_NAME_NottinghamCitadis            :Nottingham Express Transit Citadis 302 (5-car Single Unit)
 
 # lang\partial\util_numbers.plng
 # Just some numbers
