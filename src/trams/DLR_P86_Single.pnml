@@ -4,7 +4,7 @@ switch (FEAT_ROADVEHS, SELF, switch_articulated_TRAM_P86, extra_callback_info1) 
 }
 
 
-item (FEAT_ROADVEHS, item_TRAM_P86_Single, 757) {
+item (FEAT_ROADVEHS, item_TRAM_P86_Single, 758) {
 	property {
 		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
 		name: 							string(STR_NAME_P86);
