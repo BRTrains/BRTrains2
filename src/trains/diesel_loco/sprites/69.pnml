@@ -42,6 +42,10 @@ spriteset(spriteset_BR69_GBRf2ToneGreen, "gfx/Diesel/69.png") {
 	template_train32px(0, 234)
 }
 
+spriteset(spriteset_BR69_GBRfRailfreightGrey, "gfx/Diesel/69.png") {
+	template_train32px(0, 260)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR69,cargo_subtype){
 	0: 	spriteset_BR69_GBRfBlueOrange;
 	1:	spriteset_BR69_BRGreen;
@@ -53,6 +57,7 @@ switch(FEAT_TRAINS,SELF, sw_BR69,cargo_subtype){
 	7:	spriteset_BR69_BTP;
 	8:	spriteset_BR69_Kestrel;
 	9:	spriteset_BR69_GBRf2ToneGreen;
+	10:	spriteset_BR69_GBRfRailfreightGrey;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR69_cargo_subtype_text,cargo_subtype){
@@ -66,5 +71,6 @@ switch(FEAT_TRAINS,SELF,sw_BR69_cargo_subtype_text,cargo_subtype){
 	7:	return string(str_GBRfBTP);
 	8: 	return string(str_GBRfKestrel);
 	9:	return string(str_GBRf2ToneGreen);
+	10: return string(str_GBRfRailfreightGrey);
        return CB_RESULT_NO_TEXT;
 }

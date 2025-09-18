@@ -318,6 +318,7 @@ str_GBRfKestrel                 : (GBRf - Kestrel Tribute)
 str_GBRfTfLWhite				: (GBRf - London Underground 150 Years - White)
 str_GBRfTfLBlack				: (GBRf - London Underground 150 Years - Black)
 str_GBRfMSC                     : (GBRf - MSC)
+str_GBRfRailfreightGrey         : (GBRf - Railfreight Grey)
 str_GERBlue						: (GER - Blue)
 str_GERBlack					: (GER - Black)
 str_GMPTE						: (GMPTE)
@@ -1115,7 +1116,7 @@ str_BR68_liveries				:DRS, ScotRail, Chiltern Railways
 STR_NAME_BR69					:BR Class 69
 str_BR69_usage					:Mixed Freight
 str_BR69_eos					:2020-Present
-str_BR69_liveries				:GBRf Blue & Orange, BR Green, BR Maroon, BR Blue, BR Blue Large Logo, BR Blue & Red, GBRf AndysManClub, GBRf British Transport Police, GBRf Kestrel Tribute, GBRf 2 Tone Green
+str_BR69_liveries				:GBRf Blue & Orange, BR Green, BR Maroon, BR Blue, BR Blue Large Logo, BR Blue & Red, GBRf AndysManClub, GBRf British Transport Police, GBRf Kestrel Tribute, GBRf 2 Tone Green, GBRf Railfreight Grey
 
 STR_NAME_BR70OG					:Southern Railway Class CC (BR Class 70)
 str_BR70OG_usage			    :Mixed Traffic
