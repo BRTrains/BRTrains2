@@ -16,6 +16,6 @@ spriteset(spriteset_APTE_middle_BRBlue, "gfx/APTE.png") {
 
 switch(FEAT_TRAINS,SELF, sw_APTE_BRBlue, position_in_articulated_veh % 4){
     0:	spriteset_APTE_front_BRBlue;
-	1:	spriteset_APTE_middle_BRBlue;
-	2:	spriteset_APTE_rear_BRBlue;	
+	2:	spriteset_APTE_rear_BRBlue;
+	spriteset_APTE_middle_BRBlue;
 }

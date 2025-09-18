@@ -6,10 +6,10 @@ spriteset(spriteset_BR252_front_BRBlue, "gfx/BR41.png") {
 	template_train32px_old(0, 13)
 }
 spriteset(spriteset_BR252_middle_BRBlue, "gfx/BR41.png") {
-	template_train32px_old(0, 38)
+	template_train32px_old(0, 63)
 }
 spriteset(spriteset_BR252_rear_BRBlue, "gfx/BR41.png") {
-	template_train32px_old(0, 63)
+	template_train32px_old(0, 38)
 }
 
 switch(FEAT_TRAINS, SELF, sw_BR252_BRBlue, position_in_articulated_veh) {
