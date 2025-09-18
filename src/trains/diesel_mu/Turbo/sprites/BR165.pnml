@@ -13,11 +13,11 @@ spriteset(spriteset_BR165_rear_NSE, "gfx/BR165.png") {
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_NSE_sw2, position_in_articulated_veh_from_end){
 	0: spriteset_BR165_rear_NSE;
-	1: spriteset_BR165_middle_NSE;
+	spriteset_BR165_middle_NSE;
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_NSE, position_in_articulated_veh){
 	0: spriteset_BR165_front_NSE;
-	1: sw_BR165_NSE_sw2;
+	sw_BR165_NSE_sw2;
 }
 
 spriteset(spriteset_BR165_front_ThamesTrains, "gfx/BR165.png") {
@@ -31,11 +31,11 @@ spriteset(spriteset_BR165_rear_ThamesTrains, "gfx/BR165.png") {
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_ThamesTrains_sw2, position_in_articulated_veh_from_end){
 	0: spriteset_BR165_rear_ThamesTrains;
-	1: spriteset_BR165_middle_ThamesTrains;
+	spriteset_BR165_middle_ThamesTrains;
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_ThamesTrains, position_in_articulated_veh){
 	0: spriteset_BR165_front_ThamesTrains;
-	1: sw_BR165_ThamesTrains_sw2;
+	sw_BR165_ThamesTrains_sw2;
 }
 
 spriteset(spriteset_BR165_front_FirstLink, "gfx/BR165.png") {
@@ -49,11 +49,11 @@ spriteset(spriteset_BR165_rear_FirstLink, "gfx/BR165.png") {
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_FirstLink_sw2, position_in_articulated_veh_from_end){
 	0: spriteset_BR165_rear_FirstLink;
-	1: spriteset_BR165_middle_FirstLink;
+	spriteset_BR165_middle_FirstLink;
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_FirstLink, position_in_articulated_veh){
 	0: spriteset_BR165_front_FirstLink;
-	1: sw_BR165_FirstLink_sw2;
+	sw_BR165_FirstLink_sw2;
 }
 
 spriteset(spriteset_BR165_front_Chiltern, "gfx/BR165.png") {
@@ -67,11 +67,11 @@ spriteset(spriteset_BR165_rear_Chiltern, "gfx/BR165.png") {
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_Chiltern_sw2, position_in_articulated_veh_from_end){
 	0: spriteset_BR165_rear_Chiltern;
-	1: spriteset_BR165_middle_Chiltern;
+	spriteset_BR165_middle_Chiltern;
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_Chiltern, position_in_articulated_veh){
 	0: spriteset_BR165_front_Chiltern;
-	1: sw_BR165_Chiltern_sw2;
+	sw_BR165_Chiltern_sw2;
 }
 
 spriteset(spriteset_BR165_front_FGW, "gfx/BR165.png") {
@@ -85,11 +85,11 @@ spriteset(spriteset_BR165_rear_FGW, "gfx/BR165.png") {
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_FGW_sw2, position_in_articulated_veh_from_end){
 	0: spriteset_BR165_rear_FGW;
-	1: spriteset_BR165_middle_FGW;
+	spriteset_BR165_middle_FGW;
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_FGW, position_in_articulated_veh){
 	0: spriteset_BR165_front_FGW;
-	1: sw_BR165_FGW_sw2;
+	sw_BR165_FGW_sw2;
 }
 
 spriteset(spriteset_BR165_front_GWR, "gfx/BR165.png") {
@@ -103,11 +103,11 @@ spriteset(spriteset_BR165_rear_GWR, "gfx/BR165.png") {
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_GWR_sw2, position_in_articulated_veh_from_end){
 	0: spriteset_BR165_rear_GWR;
-	1: spriteset_BR165_middle_GWR;
+	spriteset_BR165_middle_GWR;
 }
 switch(FEAT_TRAINS,SELF, sw_BR165_GWR, position_in_articulated_veh){
 	0: spriteset_BR165_front_GWR;
-	1: sw_BR165_GWR_sw2;
+	sw_BR165_GWR_sw2;
 }
 
 
