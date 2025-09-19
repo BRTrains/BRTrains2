@@ -10,8 +10,6 @@ item (FEAT_TRAINS, item_BR1750, 339) {
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					20;
-		cost_factor:					42;
-		running_cost_factor:			47;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							100 mph;
 		refit_cost:						0;
@@ -60,8 +58,6 @@ item (FEAT_TRAINS, item_BR1751, 340) {
 		refittable_cargo_classes:		CC_PASSENGERS;
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					20;
-		cost_factor:					55;
-		running_cost_factor:			36;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							100 mph;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
@@ -94,6 +90,8 @@ item (FEAT_TRAINS, item_BR1751, 340) {
 	create_effect:						diesel_create_visual_effect;
 	sound_effect:						sw_sound_diesel_dmu_gen2;
 	cargo_capacity:						return(54 * param_pax);
+	cost_factor:	return(GetAdjustedCost(46));
+	running_cost_factor: return(GetAdjustedCost(49));
 }
 }
 

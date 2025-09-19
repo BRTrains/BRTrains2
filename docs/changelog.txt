@@ -23,7 +23,7 @@ SAVEGAME BREAKING VERSION
 - Added Class 799
 - Added DLR B86 stock
 - Added Edinburgh Urbos tram
-- Added Nottingham Trams Citadis 302
+- Added Nottinghamn Trams Citadis 302
 - Added BR Conflat "A" wagon
 - Added BR Conflat "P" wagon
 - Added GWR Dean 25ft 4 Compartment Second Class (SY)
@@ -50,6 +50,7 @@ SAVEGAME BREAKING VERSION
 - Added some former NXEA/GA/FCC liveries for Class 321 Parcels variant
 - Amended Class 99 power, service speed, weight, TE for real world values
 - Improved WMR liveries for 196, 730
+- Fixed running cost parameter only applying to one subclass of Class 175
 - Fixed a bunch of sound and power bugs for multimode units
 - Fixed 455 BR Blue PRM livery bug
 - Fixed 66/6 position in purchase list
