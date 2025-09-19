@@ -13,7 +13,7 @@ jobs:
       - name: Dependencies
         run: python3 --version && pip3 install setuptools pip && pip3 install nml
       - name: Build
-        run: python3 build.py --compile brtrainsv2
+        run: python3 build.py brtrainsv2
       - name: Artifact
         uses: actions/upload-artifact@v4
         with:
