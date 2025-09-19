@@ -58,6 +58,10 @@ spriteset(spriteset_BR08_FreightlinerGreen, "gfx/Diesel/08.png") {
 	template_train16px(0, 403)
 }
 
+spriteset(spriteset_BR08_NSE, "gfx/Diesel/08.png") {
+	template_train16px(0, 429)
+}
+
 
 switch(FEAT_TRAINS,SELF, sw_BR08,cargo_subtype){
     0:	spriteset_BR08_BRGreen;
@@ -74,6 +78,7 @@ switch(FEAT_TRAINS,SELF, sw_BR08,cargo_subtype){
 	11: spriteset_BR08_GBRf;
 	12: spriteset_BR08_FreightlinerGreen;
 	13: spriteset_BR08_FreightlinerOrange;
+	14: spriteset_BR08_NSE;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR08_cargo_subtype_text,cargo_subtype){
@@ -91,6 +96,7 @@ switch(FEAT_TRAINS,SELF,sw_BR08_cargo_subtype_text,cargo_subtype){
 	11: return string(str_GBRf);
 	12: return string(str_FreightlinerGreen);
 	13: return string(str_FreightlinerOrange);
+	14: return string(str_NSE);
        return CB_RESULT_NO_TEXT;
 }
 
