@@ -11,7 +11,6 @@
 # v2.15
 SAVEGAME BREAKING VERSION
 - New sounds for most units, added sounds for a ton of units that don't have them
-- Added Edinburgh Urbos tram
 - Added GWR 5700 Class
 - Added GWR 6700 Class
 - Added Class 69
@@ -22,6 +21,9 @@ SAVEGAME BREAKING VERSION
 - Added Class 398 Tram and train variants
 - Added Class 399 Tram variant
 - Added Class 799
+- Added DLR B86 stock
+- Added Edinburgh Urbos tram
+- Added Nottingham Trams Citadis 302
 - Added BR Conflat "A" wagon
 - Added BR Conflat "P" wagon
 - Added GWR Dean 25ft 4 Compartment Second Class (SY)
@@ -34,6 +36,7 @@ SAVEGAME BREAKING VERSION
 - Reworked Class 333
 - Reworked Class 357
 - Mini-rework for Class 325, moved to new template and added stripe-less Royal Mail livery
+- Added NSE livery for Class 08
 - Added GBRf Railfreight Grey livery for Class 69
 - Added ScotRail livery for Class 47
 - Added Pride/"Trainbow" livery for Class 390
