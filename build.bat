@@ -1,1 +1,1 @@
-python build.py --compile brtrainsv2
+python build.py brtrainsv2
