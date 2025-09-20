@@ -663,8 +663,8 @@ str_BR172_1_liveries            :Chiltern, West Midlands Railway
 str_BR172_23_2car_liveries		:London Midland, West Midlands Railway
 str_BR172_23_3car_liveries		:London Midland, West Midlands Railway Launch livery, West Midlands Railway
 
-STR_NAME_BR1750					:BR Class 175/0 "Coradia" (2-Car)
-STR_NAME_BR1751					:BR Class 175/1 "Coradia" (3-Car)
+STR_NAME_BR175_3car					:BR Class 175/0 "Coradia" (2-Car)
+STR_NAME_BR175_2car					:BR Class 175/1 "Coradia" (3-Car)
 str_BR175_usage					:Passenger
 str_BR175_eos					:---
 str_BR175_liveries				:Arriva "Ghost", First North Western, Arriva Trains, Transport for Wales
