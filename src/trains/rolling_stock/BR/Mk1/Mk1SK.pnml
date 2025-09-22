@@ -16,6 +16,7 @@ item (FEAT_TRAINS, item_BRMk1SK, 147) {
 		weight:							32 ton;
 		length:							8;
 		bitmask_vehicle_info:			0;
+		cargo_capacity:					1;
 	}
 	graphics {
 		additional_text:					return(string(str_purchase_coach,string(str_BRMk1SK_liveries)));

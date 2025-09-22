@@ -2,24 +2,24 @@ spriteset(spriteset_BRMk1BSOT_Purchase, "gfx/Rolling Stock/Mk1/BRMk1Purchase.png
 	template_purchase(0, 65)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRCarmCream, "gfx/Rolling Stock/Mk1/BRMk1CarmCream.png") {
-	template_train28px_old(0, 105)
+spriteset(spriteset_BRMk1BSOT_BRCarmCream, "gfx/Rolling Stock/Mk1/Mk1_CarmineCream.png") {
+	template_train32px(0, 104)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRChocCream, "gfx/Rolling Stock/Mk1/BRMk1ChocCream.png") {
-	template_train28px_old(0, 105)
+spriteset(spriteset_BRMk1BSOT_BRChocCream, "gfx/Rolling Stock/Mk1/Mk1_ChocolateCream.png") {
+	template_train32px(0, 104)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRMalachite, "gfx/Rolling Stock/Mk1/BRMk1Malachite.png") {
-	template_train28px_old(0, 105)
+spriteset(spriteset_BRMk1BSOT_BRMalachite, "gfx/Rolling Stock/Mk1/Mk1_MalachiteGreen.png") {
+	template_train32px(0, 104)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRMaroon, "gfx/Rolling Stock/Mk1/BRMk1Maroon.png") {
-	template_train28px_old(0, 105)
+spriteset(spriteset_BRMk1BSOT_BRMaroon, "gfx/Rolling Stock/Mk1/Mk1_BRMaroon.png") {
+	template_train32px(0, 104)
 }
 
-spriteset(spriteset_BRMk1BSOT_BRBlueGrey, "gfx/Rolling Stock/Mk1/BRMk1BlueGrey.png") {
-	template_train28px_old(0, 105)
+spriteset(spriteset_BRMk1BSOT_BRBlueGrey, "gfx/Rolling Stock/Mk1/Mk1_BRBlue.png") {
+	template_train32px(0, 104)
 }
 
 switch(FEAT_TRAINS,SELF, sw_BRMk1BSOT,cargo_subtype){
