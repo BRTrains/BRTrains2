@@ -33,7 +33,6 @@ item (FEAT_TRAINS, item_BRMk4DVT, 585) {
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BR91_cargo_subtype_text;
 	purchase:							spriteset_BRMk4DVT_purchase;
-	speed:								160;
 	cargo_capacity: return(0);
 	cost_factor:	return(GetAdjustedCost(52));
 	running_cost_factor: return(GetAdjustedCost(17));

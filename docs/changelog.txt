@@ -27,6 +27,7 @@ SAVEGAME BREAKING VERSION
 - Added BR Conflat "A" wagon
 - Added BR Conflat "P" wagon
 - Added GWR Dean 25ft 4 Compartment Second Class (SY)
+- Reworked Mk1 coach
 - Reworked Class 20
 - Reworked Class 168, split into /0 and /1/2/3 versions
 - Reworked Class 170
@@ -69,6 +70,7 @@ SAVEGAME BREAKING VERSION
 - Fixed 730/0 capacity
 - Fixed 701 capacity
 - Fixed 333 capacity
+- Fixed Mk4 DVT speed
 - Removed some deprecated units (08, 13, IE 2800 Class)
 - Reworked build script to reduce concurrent sprite group usage
 
