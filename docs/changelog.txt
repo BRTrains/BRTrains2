@@ -49,6 +49,7 @@ SAVEGAME BREAKING VERSION
 - Added Electric Blue, Colas, Freightliner (x2) liveries for Class 86
 - Added a bunch of liveries for Class 20
 - Added some former NXEA/GA/FCC liveries for Class 321 Parcels variant
+- Added Hull Trains (grey stripe) livery variant for Class 802
 - Amended Class 99 power, service speed, weight, TE for real world values
 - Improved WMR liveries for 196, 730
 - Fixed running cost parameter only applying to one subclass of Class 175
