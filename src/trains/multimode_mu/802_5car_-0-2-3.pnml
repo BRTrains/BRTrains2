@@ -36,6 +36,12 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_TPEPride, position_in_arti
 	spriteset_BR80X_middle_TPEPride;
 }
 
+switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset_HullGreyStripe, position_in_articulated_veh % 5) {
+	0: spriteset_BR80X_front_HullGreyStripe;
+	4: spriteset_BR80X_rear_HullGreyStripe;
+	spriteset_BR80X_middle_HullGreyStripe;
+}
+
 // Choose sprites depending on car position
 switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset, cargo_subtype) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
@@ -47,15 +53,17 @@ switch(FEAT_TRAINS, SELF, switch_BR802_5car_spriteset, cargo_subtype) {
 	3: switch_BR802_5car_spriteset_GWRPride;
 	4: switch_BR802_5car_spriteset_Hitachi;
 	5: switch_BR802_5car_spriteset_TPEPride;
+	6: switch_BR802_5car_spriteset_HullGreyStripe;
 }
 
 switch(FEAT_TRAINS, SELF, switch_BR802_5car_subtype_text, cargo_subtype) {
 	0: return string(str_GWRGreen);
-	1: return string(STR_LIVERY_BR800_TPE);	
-	2: return string(STR_LIVERY_BR800_HullTrains);
+	1: return string(str_TPE);	
+	2: return string(str_HullTrains);
 	3: return string(str_GWRPride);
 	4: return string(str_HitachiWhite);
-	5: return string(str_TPEPride);	
+	5: return string(str_TPEPride);
+	6: return string(str_HullTrainsGreyStripe);
 	return CB_RESULT_NO_TEXT;
 }
 
