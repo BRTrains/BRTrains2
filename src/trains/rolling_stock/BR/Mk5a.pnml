@@ -33,8 +33,9 @@ item (FEAT_TRAINS, item_BRMk5a, 597) {
 		cargo_age_period:				185;
 	}
 	graphics {
+		cargo_subtype_text: sw_BR68_5a_cargo_subtype_text;
 		can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-		default: 							sw_br_68_5a_middle;
+		default: 							sw_BR68_5a_middle;
 		colour_mapping: 					return PALETTE_CC_FIRST;	
 		purchase:							spriteset_BRMk5a_purchase;	
 		cargo_capacity: return(60 * param_pax);

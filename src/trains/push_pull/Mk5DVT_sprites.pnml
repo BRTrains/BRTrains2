@@ -5,7 +5,8 @@ spriteset(spriteset_BRMk5DVT_purchase, "gfx/Rolling Stock/Mk5a.png") {
 // Show own graphics when facing forward
 // WARNING: If editing this, also edit PushPull.pnml in the Spritesets folder
 switch(FEAT_TRAINS,SELF, sw_BRMk5DVT,cargo_subtype){
-    0: spriteset_br5a_dvt;
+    0: spriteset_BRMk5a_dvt_reversed_TPE;
+    1: spriteset_BRMk5a_dvt_reversed_ChilternBlue;
 }
 
 // If the front of this consist is a compatible locomotive, call that locomotive's remote sprite call switch

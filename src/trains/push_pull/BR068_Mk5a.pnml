@@ -1,72 +1,116 @@
-spriteset (spriteset_br_68_5a_purchase, "gfx/BR68_v2.png") {
+spriteset (spriteset_BR68_5a_purchase, "gfx/BR68_v2.png") {
 	template_purchase(88, 0)
 }
 
-spriteset (spriteset_br5a_dvt_reversed, "gfx/Rolling Stock/Mk5a.png") {
+spriteset (spriteset_BRMk5a_dvt_TPE, "gfx/Rolling Stock/Mk5a.png") {
 	template_train32px(0, 13)
 }
-spriteset (spriteset_br5a_dvt, "gfx/Rolling Stock/Mk5a.png") {
+spriteset (spriteset_BRMk5a_dvt_reversed_TPE, "gfx/Rolling Stock/Mk5a.png") {
 	template_train32px(0, 39)
 }
-spriteset (spriteset_br5a_middle, "gfx/Rolling Stock/Mk5a.png") {
+spriteset (spriteset_BRMk5a_middle_TPE, "gfx/Rolling Stock/Mk5a.png") {
 	template_train32px(0, 65)
 }
-spriteset (spriteset_br5a_middle_reversed, "gfx/Rolling Stock/Mk5a.png") {
+spriteset (spriteset_BRMk5a_middle_reversed_TPE, "gfx/Rolling Stock/Mk5a.png") {
 	template_train32px(0, 91)
 }
-
-switch(FEAT_TRAINS, PARENT, sw_br_68_5a_rear, vehicle_is_reversed) {
-	0: spriteset_br5a_dvt;
-	1: spriteset_BR68_TPE;
+switch(FEAT_TRAINS, PARENT, sw_BRMk5a_middle_TPE, vehicle_is_reversed) {
+	0: spriteset_BRMk5a_middle_TPE;
+	1: spriteset_BRMk5a_middle_reversed_TPE;
 }
 
-switch(FEAT_TRAINS, PARENT, sw_br_68_5a_front, vehicle_is_reversed) {
+spriteset (spriteset_BRMk5a_dvt_reversed_ChilternBlue, "gfx/Rolling Stock/Mk5a.png") {
+	template_train32px(0, 143)
+}
+spriteset (spriteset_BRMk5a_dvt_ChilternBlue, "gfx/Rolling Stock/Mk5a.png") {
+	template_train32px(0, 117)
+}
+spriteset (spriteset_BRMk5a_middle_ChilternBlue, "gfx/Rolling Stock/Mk5a.png") {
+	template_train32px(0, 169)
+}
+spriteset (spriteset_BRMk5a_middle_reversed_ChilternBlue, "gfx/Rolling Stock/Mk5a.png") {
+	template_train32px_reversed(0, 169)
+}
+switch(FEAT_TRAINS, PARENT, sw_BRMk5a_middle_ChilternBlue, vehicle_is_reversed) {
+	0: spriteset_BRMk5a_middle_ChilternBlue;
+	1: spriteset_BRMk5a_middle_reversed_ChilternBlue;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_BR68_5a_locomotive, cargo_subtype) {
 	0: spriteset_BR68_TPE;
-	1: spriteset_br5a_dvt_reversed;
+	1: sw_BR68_ChilternBlue;
 }
 
-switch(FEAT_TRAINS, PARENT, sw_br_68_5a_middle, vehicle_is_reversed) {
-	0: spriteset_br5a_middle;
-	1: spriteset_br5a_middle_reversed;
+switch(FEAT_TRAINS, SELF, sw_BR68_5a_middle, cargo_subtype) {
+	0: sw_BRMk5a_middle_TPE;
+	1: sw_BRMk5a_middle_ChilternBlue;
+}
+
+
+switch(FEAT_TRAINS, SELF, sw_BR68_5a_DVT, cargo_subtype) {
+	0: spriteset_BRMk5a_dvt_reversed_TPE;
+	1: spriteset_BRMk5a_dvt_reversed_ChilternBlue;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR68_5a_DVT_reversed, cargo_subtype) {
+	0: spriteset_BRMk5a_dvt_TPE;
+	1: spriteset_BRMk5a_dvt_ChilternBlue;
+}
+
+
+switch(FEAT_TRAINS, PARENT, sw_BR68_5a_DVT_pushpull, vehicle_is_reversed) {
+	0: sw_BR68_5a_DVT;
+	1: sw_BR68_5a_locomotive;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_BR68_5a_locomotive_pushpull, vehicle_is_reversed) {
+	0: sw_BR68_5a_locomotive;
+	1: sw_BR68_5a_DVT_reversed;
 }
 
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_spriteset, position_in_articulated_veh % 6) {	
-	0: sw_br_68_5a_front;
-	5: sw_br_68_5a_rear;
-	sw_br_68_5a_middle;
+switch(FEAT_TRAINS, SELF, switch_BR68_5a, position_in_articulated_veh % 6) {	
+	0: sw_BR68_5a_locomotive_pushpull;
+	5: sw_BR68_5a_DVT_pushpull;
+	sw_BR68_5a_middle;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR68_5a_cargo_subtype_text, cargo_subtype)
+{
+	0:	return string(str_TPE);
+	1: 	return string(str_Chiltern2ToneBlue);
 }
 
 // Define articulations
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_articulated, extra_callback_info1) {
+switch(FEAT_TRAINS, SELF, switch_BR68_5a_articulated, extra_callback_info1) {
 	// extra_callback_info1 returns the car number, so 1 is the second car, .. so on
 	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
-	1..5: return item_br_68_5a;
+	1..5: return item_BR68_5a;
 	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
 }
 
 // Start/stop switch, used to limit maximum length
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_start_stop, num_vehs_in_consist) {	
+switch(FEAT_TRAINS, SELF, switch_BR68_5a_start_stop, num_vehs_in_consist) {	
 	return CB_RESULT_NO_TEXT;   // Allow any length
 }
 
 // Only allow the same train type to be added to itself
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_can_attach_wagon, vehicle_type_id) {
-	item_br_68_5a: return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, switch_BR68_5a_can_attach_wagon, vehicle_type_id) {
+	item_BR68_5a: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
 // Only the driving engine has particles
-switch(FEAT_TRAINS, SELF, switch_br_68_5a_particles, position_in_articulated_veh % 6) {
+switch(FEAT_TRAINS, SELF, switch_BR68_5a_particles, position_in_articulated_veh % 6) {
 	0: visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
 // Class 195/0 (2car)
-item(FEAT_TRAINS, item_br_68_5a, 442) {
+item(FEAT_TRAINS, item_BR68_5a, 442) {
 	property {
 		variant_group: header_68;
-		name: string(STR_BR_68_5A);
+		name: string(STR_BR68_5a);
 		climates_available: ALL_CLIMATES; // available in all climates
 		introduction_date: date(2019, 08, 04);
 		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
@@ -102,18 +146,18 @@ item(FEAT_TRAINS, item_br_68_5a, 442) {
 	}
 	
 	graphics {
-		default: switch_br_68_5a_spriteset;
-		purchase: spriteset_br_68_5a_purchase;
+		default: switch_BR68_5a;
+		cargo_subtype_text: sw_BR68_5a_cargo_subtype_text;
+		purchase: spriteset_BR68_5a_purchase;
 		
-		articulated_part: switch_br_68_5a_articulated;
-		start_stop: switch_br_68_5a_start_stop;	
-		can_attach_wagon: switch_br_68_5a_can_attach_wagon;
-		visual_effect_and_powered: switch_br_68_5a_particles;
+		articulated_part: switch_BR68_5a_articulated;
+		start_stop: switch_BR68_5a_start_stop;	
+		can_attach_wagon: switch_BR68_5a_can_attach_wagon;
+		visual_effect_and_powered: switch_BR68_5a_particles;
 				
 		cargo_capacity: return (291/6 * param_pax);
 		additional_text: string(STR_DSC_BR_MK5A);	
 		cost_factor:	return(GetAdjustedCost(65));
-	running_cost_factor: return(GetAdjustedCost(100));
-		
+		running_cost_factor: return(GetAdjustedCost(100));
 	}
 }

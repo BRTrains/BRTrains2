@@ -16,7 +16,7 @@ STR_EyeCandy_NoAttachedUnit             :Cannot start Eye Candy locomotive witho
 STR_EyeCandy_AI                         :AI companies cannot use the Eye Candy locomotive (if this is not an AI company please contact the BRTrains developer on Discord or TT-Forums)
 
 
-STR_BR_68_5A                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
+STR_BR68_5a                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
 STR_BR_68_6Mk3                          :BR Class 68 + Mk3 set (6-Car +  DVT + locomotive)
 
 STR_BR_195_2CAR							:BR Class 195/0 "Civity" (2-Car)

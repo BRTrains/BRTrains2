@@ -1,0 +1,33 @@
+spriteset(spriteset_BR68_Purchase, "gfx/BR68_v2.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR68_DRS, "gfx/BR68_v2.png") {
+	template_train32px_old(0, 13)
+}
+	
+spriteset(spriteset_BR68_ScotRail, "gfx/BR68_v2.png") {
+	template_train32px_old(0, 88)
+}
+
+spriteset(spriteset_BR68_Chiltern, "gfx/BR68_v2.png") {
+	template_train32px_old(0, 63)
+}
+
+spriteset(spriteset_BR68_TPE, "gfx/BR68_v2.png") {
+	template_train32px_old(0, 38)
+}
+
+spriteset(spriteset_BR68_ChilternBlue, "gfx/BR68_v2.png") {
+	template_train32px_old(0, 188)
+}
+
+spriteset(spriteset_BR68_ChilternBlue_reversed, "gfx/BR68_v2.png") {
+	template_train32px_old(0, 213)
+}
+
+switch(FEAT_TRAINS, PARENT, sw_BR68_ChilternBlue, vehicle_is_reversed)
+{
+	0: spriteset_BR68_ChilternBlue;
+	1: spriteset_BR68_ChilternBlue_reversed;
+}

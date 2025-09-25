@@ -51,10 +51,10 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk4DVT, [STORE_TEMP(num_vehs
     spriteset_BR91_InterCitySwallowr;
 }
 
-// Not a mirror for once, as Mk5 DVT only has one livery. SECOND LIVERY ITEM IS REQUIRED TO AVOID NML BREAKING. The 0: item is a dummy!
+// Mirror of Mk5a DVT
 switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_LocomotiveAsMk5DVT, [STORE_TEMP(num_vehs_in_consist - 1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xF2]]){
-    0: spriteset_br5a_dvt_reversed;
-	spriteset_br5a_dvt;
+    0: spriteset_BRMk5a_dvt_TPE;
+	1: spriteset_BRMk5a_dvt_ChilternBlue;
 }
 
 // Not a mirror for once, as RMTPO PCV only has one livery. SECOND LIVERY ITEM IS REQUIRED TO AVOID NML BREAKING. The 0: item is a dummy!
@@ -89,8 +89,8 @@ switch(FEAT_TRAINS, PARENT, sw_PUSHPULL_DVTasBR68,[STORE_TEMP(0 - position_in_ar
     0:	spriteset_BR68_DRS;
 	1: 	spriteset_BR68_ScotRail;
 	2:	spriteset_BR68_Chiltern;
-	3:	spriteset_BR68_TPE;
-	spriteset_BR68_DRS;
+	3:	spriteset_BR68_TPE;	
+	4:	spriteset_BR68_ChilternBlue_reversed; // Assymetric livery, but we know it must be reversed in order to be doing pushpull
 }
 
 // Mirror of BR67
