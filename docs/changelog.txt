@@ -37,6 +37,7 @@ SAVEGAME BREAKING VERSION
 - Reworked Class 333
 - Reworked Class 357
 - Mini-rework for Class 325, moved to new template and added stripe-less Royal Mail livery
+- Added Chiltern Blue/Blue livery for Class 68, Mk5a, and 68+5a rake
 - Added NSE livery for Class 08
 - Added GBRf Railfreight Grey livery for Class 69
 - Added ScotRail livery for Class 47
