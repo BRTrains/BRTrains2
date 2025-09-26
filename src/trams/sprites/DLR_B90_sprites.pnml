@@ -153,8 +153,8 @@ switch(FEAT_ROADVEHS,SELF,sw_TRAM_B90_cargo_subtype_text,cargo_subtype){
 	2: return string(STR_LIVERY_EXTENDED, string(str_abbr_DLR), string(str_col_Red), string(str_cab_red));
 	3: return string(STR_LIVERY_EXTENDED, string(str_abbr_DLR), string(str_col_Red), string(str_cab_black));
 	4: return string(STR_LIVERY_ADVERT, string(str_abbr_DLR), string(str_ad_GeneralElectric));
-	5: return string(STR_LIVERY_SPECIAL, string(str_abbr_DLR), string(str_special_Olympics));
-	6: return string(STR_LIVERY_SPECIAL, string(str_abbr_DLR), string(str_special_Pride));
+	5: return string(STR_LIVERY, string(str_abbr_DLR), string(str_special_Olympics));
+	6: return string(STR_LIVERY, string(str_abbr_DLR), string(str_special_Pride));
 	7: return string(STR_LIVERY_ADVERT, string(str_abbr_DLR), string(str_ad_TourDeFrance));
 	8: return string(STR_LIVERY_ADVERT, string(str_abbr_DLR), string(str_ad_Lewisham));
        return CB_RESULT_NO_TEXT;

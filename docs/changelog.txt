@@ -21,7 +21,8 @@ SAVEGAME BREAKING VERSION
 - Added Class 398 Tram and train variants
 - Added Class 399 Tram variant
 - Added Class 799
-- Added DLR B86 stock
+- Added DLR P86 stock
+- Added DLR B90/B92/B2K stock
 - Added Edinburgh Urbos tram
 - Added Nottinghamn Trams Citadis 302
 - Added BR Conflat "A" wagon

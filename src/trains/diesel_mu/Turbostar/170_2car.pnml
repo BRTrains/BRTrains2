@@ -31,7 +31,7 @@ switch(FEAT_TRAINS,SELF,sw_BR170_2car_cargo_subtype_text,cargo_subtype){
 	4:	return string(str_SWT);
 	5:	return string(str_TPE);
 	6:	return string(str_EMRMaroon);
-	7:	return string(STR_LIVERY_SPECIAL, string(str_comp_EMR), string(str_special_Pride));
+	7:	return string(STR_LIVERY, string(str_comp_EMR), string(str_special_Pride));
     8:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
 	9:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
 	10:	return string(str_NXEA);

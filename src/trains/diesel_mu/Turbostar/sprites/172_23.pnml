@@ -86,7 +86,7 @@ switch(FEAT_TRAINS, SELF, sw_BR172_23_3car, cargo_subtype)
 
 switch(FEAT_TRAINS,SELF,sw_BR172_23_3car_cargo_subtype_text,cargo_subtype){
     0:	return string(str_comp_WMR);
-	1:	return string(STR_LIVERY_SPECIAL, string(str_comp_WMR), string(str_special_Launch));
+	1:	return string(STR_LIVERY, string(str_comp_WMR), string(str_special_Launch));
 	2:	return string(str_LondonMidland);
        return CB_RESULT_NO_TEXT;
 }
