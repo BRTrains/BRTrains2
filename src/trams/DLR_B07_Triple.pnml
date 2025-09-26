@@ -42,6 +42,6 @@ item (FEAT_ROADVEHS, item_TRAM_B07_Triple, 641) {
 	cargo_capacity: return(852 * param_pax / 6);
 	cost_factor:	return(GetAdjustedCostTRAM(40));
 	running_cost_factor: return(GetAdjustedCostTRAM(36));
-	weight: 144;
+	weight: 216;
 }
 }
