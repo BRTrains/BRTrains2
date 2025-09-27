@@ -15,6 +15,7 @@ str_comp_Metropolitan           :Metropolitan Railway
 str_comp_MidlandMainLine        :Midland Main Line
 str_comp_Northern               :Northern
 str_comp_NorthernRail           :Northern Rail
+str_comp_ProgressRail           :Progresss Rail
 str_comp_SWR                    :South Western Railway
 str_comp_TfW                    :Transport for Wales
 str_comp_TigerNacco             :Tiger Nacco
