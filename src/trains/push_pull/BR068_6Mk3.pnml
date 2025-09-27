@@ -97,7 +97,7 @@ item(FEAT_TRAINS, item_br_68_6Mk3, 689) {
 		visual_effect_and_powered: switch_br_68_6Mk3_particles;
 				
 		cargo_capacity: return (408/8 * param_pax);
-		additional_text: string(STR_DSC_BR_MK5A);	
+		additional_text: string(STR_DSC_BR68_Mk3);	
 		cost_factor:	return(GetAdjustedCost(65));
 	running_cost_factor: return(GetAdjustedCost(100));
 		

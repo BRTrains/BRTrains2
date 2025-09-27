@@ -5,7 +5,6 @@
 - Class 411, 412, 421, 422, 438 etc rework
 - Central London Railway 1900 Stock
 - Class 101
-- Mk1 rework
 - Mk1 sleeper (SLC)
 
 # v2.15

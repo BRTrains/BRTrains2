@@ -17,7 +17,7 @@ STR_EyeCandy_AI                         :AI companies cannot use the Eye Candy l
 
 
 STR_BR68_5a                            :BR Class 68 + "Nova 2" Mark 5A set (5-Car + locomotive)
-STR_BR_68_6Mk3                          :BR Class 68 + Mk3 set (6-Car +  DVT + locomotive)
+STR_BR_68_6Mk3                         :BR Class 68 + Mk3 set (6-Car +  DVT + locomotive)
 
 STR_BR_195_2CAR							:BR Class 195/0 "Civity" (2-Car)
 STR_BR_195_3CAR							:BR Class 195/1 "Civity" (3-Car)
@@ -1508,7 +1508,8 @@ STR_NAME_EWSSLEP				:EWS Company Train (Sleeper Coach)
 STR_NAME_EWSDVT					:EWS Company Train (Driving Van Trailer)
 
 # Vehicle Descriptions
-STR_DSC_BR_MK5A                        :Type: {RED}Diesel Locomotive{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
+STR_DSC_BR68_MK5A                        :Type: {RED}Diesel Locomotive{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transpennine Express
+STR_DSC_BR68_Mk3                        :Type: {RED}Diesel Locomotive{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Chiltern
 
 STR_DSC_BR_195                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Northern
 STR_DSC_BR_196                         :Type: {RED}Diesel Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}West Midlands Railway
