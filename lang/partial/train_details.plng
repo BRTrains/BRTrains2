@@ -112,22 +112,27 @@ str_LNER_J70_usage			        :Light Mixed Traffic
 str_LNER_J70_eos				    :1903-1955
 str_LNER_J70_liveries			    :GER Teak
 
-STR_NAME_Coppernob					:FR A2 Class 0-4-0 "Old Coppernob"
-str_Coppernob_usage					:Mixed Traffic
-str_Coppernob_eos					:1848-1898
-str_Coppernob_liveries				:FR Red
-
-STR_NAME_CaledonianSingle			:CR Single 4-2-2 "No. 123"
+STR_NAME_CaledonianSingle			:Caledonian Single 4-2-2 "No. 123"
 str_CaledonianSingle_usage			:Exhibition, Directors' Train
 str_CaledonianSingle_eos			:1887-1935
 str_CaledonianSingle_liveries		:CR Blue
 
-STR_NAME_FurnessK2					:FR Pettigrew K2 Class 4-4-0 "Large Seagull"
+STR_NAME_Coppernob					:Furness A2 Class 0-4-0 "Old Coppernob"
+str_Coppernob_usage					:Mixed Traffic
+str_Coppernob_eos					:1848-1898
+str_Coppernob_liveries				:FR Red
+
+STR_NAME_FurnessD1				    :Furness Sharp D1 Class 0-6-0 "Sharpie"
+str_FurnessD1_usage			    	:Mixed Traffic
+str_FurnessD1_eos				    :1866
+str_FurnessD1_liveries		        :FR Red
+
+STR_NAME_FurnessK2					:Furness Pettigrew K2 Class 4-4-0 "Large Seagull"
 str_FurnessK2_usage					:Mixed Traffic
 str_FurnessK2_eos					:1892-1931
 str_FurnessK2_liveries				:FR Red
 
-STR_NAME_Furness115					:FR Rutherford N1/115 Class 4-6-4 "Jumbo"
+STR_NAME_Furness115					:Furness Rutherford N1/115 Class 4-6-4 "Jumbo"
 str_Furness115_usage				:Express Passenger
 str_Furness115_eos					:1920-1921
 str_Furness115_liveries				:FR Red

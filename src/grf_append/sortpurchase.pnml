@@ -5,6 +5,7 @@ sort(FEAT_TRAINS, [
   item_GWR6700,
   item_LNWRWebb,
   item_LSWR_AdamsRadial,
+  item_FurnessD1,
   item_GWR_DeanGoods,
   item_CaledonianSingle,
   item_FurnessK2,

@@ -1,0 +1,12 @@
+spriteset(spriteset_FurnessD1_Purchase, "gfx/Steam/FurnessD1.png") {
+	template_purchase_anim(0, 0)
+}
+
+spriteset(spriteset_FurnessD1_FurnessRed, "gfx/Steam/FurnessD1.png") {
+	template_train20px(0, 39)
+}
+
+spriteset(spriteset_FurnessD1_Tender_FurnessRed, "gfx/Steam/FurnessD1_Tender.png") {
+	template_train16px(0, 13)
+}
+
