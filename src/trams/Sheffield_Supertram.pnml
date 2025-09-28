@@ -1,6 +1,5 @@
 switch (FEAT_ROADVEHS, SELF, switch_articulated_TRAM_SheffieldSupertram, extra_callback_info1) {
-	1: return item_TRAM_SheffieldSupertram;
-	2: return item_TRAM_SheffieldSupertram;
+	1..2: return item_TRAM_SheffieldSupertram;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
