@@ -1,0 +1,31 @@
+========================
+TODO
+========================
+
+DMUs
+EMUs
+Metro (trains)
+PushPull done except
+IC225
+
+Steam done except
+    GNR/LNER A1
+    LNER A3
+    GWR Great Bear
+    GWR Hall
+
+Diesel locos done but check where blue pullman, HST (+prototype), APT-E are
+Electric locos done except IC225 in pushpull, check where APT-P is
+
+
+=======================================
+DONE
+=======================================
+
+Bimode etc locos done
+Freight done
+Rolling stock done
+Multimode MUs done
+Alternative fuel MUs done
+Departmental done
+Trams done (including metro)
