@@ -6,6 +6,7 @@
 - Central London Railway 1900 Stock
 - Class 101
 - Mk1 sleeper (SLC)
+- Class 76 (Needs coding)
 
 # v2.15
 SAVEGAME BREAKING VERSION
