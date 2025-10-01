@@ -1,0 +1,7 @@
+spriteset(spriteset_BR76_Purchase, "gfx/Electric/8X.png") {
+	template_purchase(88, 0)
+}
+
+spriteset(spriteset_BR76_BRBlack, "gfx/Electric/8X.png") {
+	template_train32px(0, 39)
+}
