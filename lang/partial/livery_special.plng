@@ -21,3 +21,9 @@ str_ad_GeneralElectric          :General Electric
 
 str_cab_red                     :Red Cab
 str_cab_black                   :Black Cab
+
+str_warn                        :Warning Panel
+str_warn_None                   :No Warning Panel
+str_warn_Small                  :Small Warning Panel
+str_warn_Large                  :Large Warning Panel
+str_warn_Full                   :Full Cab Warning Panel

@@ -1,7 +1,27 @@
+spriteset(spriteset_BR76_Tommy_Purchase, "gfx/Electric/8X.png") {
+	template_purchase(0, 0)
+}
+
 spriteset(spriteset_BR76_Purchase, "gfx/Electric/8X.png") {
 	template_purchase(88, 0)
 }
 
 spriteset(spriteset_BR76_BRBlack, "gfx/Electric/8X.png") {
+	template_train32px(0, 13)
+}
+
+spriteset(spriteset_BR76_BRGreen, "gfx/Electric/8X.png") {
 	template_train32px(0, 39)
+}
+
+spriteset(spriteset_BR76_BRGreen2, "gfx/Electric/8X.png") {
+	template_train32px(0, 65)
+}
+
+spriteset(spriteset_BR76_BRBlue, "gfx/Electric/8X.png") {
+	template_train32px(0, 91)
+}
+
+spriteset(spriteset_BR76_LNERGreen, "gfx/Electric/8X.png") {
+	template_train32px(0, 117)
 }

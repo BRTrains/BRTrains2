@@ -1,20 +1,22 @@
 switch(FEAT_TRAINS,SELF, sw_BR76, cargo_subtype){
-    0:	spriteset_BR76_BRBlack;
-	1:	spriteset_BR76_BRGreen;
-	2:	spriteset_BR76_BRGreen2;
-	3:	spriteset_BR76_BRBlue;
+	0:	spriteset_BR76_LNERGreen;
+    1:	spriteset_BR76_BRBlack;
+	2:	spriteset_BR76_BRGreen;
+	3:	spriteset_BR76_BRGreen2;
+	4:	spriteset_BR76_BRBlue;
         return CB_RESULT_NO_TEXT;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR76_cargo_subtype_text,cargo_subtype){
-	0:	return string(STR_LIVERY, string(str_comp_BR), string(str_col_Black));
-	1:	return string(STR_LIVERY, string(str_comp_BR), string(str_col_Green));
-	2:	return string(STR_LIVERY_EXTENDED, string(str_comp_BR), string(str_col_Green), string(str_warn));
-	3:	return string(STR_LIVERY, string(str_comp_BR), string(str_col_Blue));
+    0:	return string(STR_LIVERY, string(str_comp_LNER), string(str_col_Green));
+	1:	return string(STR_LIVERY, string(str_comp_BR), string(str_col_Black));
+	2:	return string(STR_LIVERY, string(str_comp_BR), string(str_col_Green));
+	3:	return string(STR_LIVERY_EXTENDED, string(str_comp_BR), string(str_col_Green), string(str_warn));
+	4:	return string(STR_LIVERY, string(str_comp_BR), string(str_col_Blue));
 	return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR76, 766) {
+item (FEAT_TRAINS, item_BR76, 765) {
 	property {
 		name: 							string(STR_NAME_BR76);
 		climates_available: 			ALL_CLIMATES;
