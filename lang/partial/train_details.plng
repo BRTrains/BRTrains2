@@ -455,10 +455,10 @@ str_BR71_usage					:Mixed Traffic
 str_BR71_eos					:---
 str_BR71_liveries				:BR Green
 
-STR_NAME_BR76_Tommy				:LNER Gresley "EM1" (Class 67 prototype "Tommy")
-str_BR76_Tommy_usage			:Experimental
-str_BR76_Tommy_eos		    	:1941
-str_BR76_Tommy_liveries			:LNER Green, LNER Black, BR Green, BR Green (Warning Panels), BR Blue
+STR_NAME_BR76_Prototype				:LNER Gresley "EM1" (Class 67 prototype "Tommy")
+str_BR76_Prototype_usage			:Experimental
+str_BR76_Prototype_eos		    	:1941
+str_BR76_Prototype_liveries			:LNER Green, LNER Black, BR Green, BR Green (Warning Panels), BR Blue
 
 STR_NAME_BR76				:BR Class 67 (LNER Gresley "EM1")
 str_BR76_usage					:Mixed Traffic

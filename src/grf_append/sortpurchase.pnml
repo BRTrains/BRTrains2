@@ -63,6 +63,8 @@ sort(FEAT_TRAINS, [
  item_BR70,
  item_BR71,
  item_BR73GatEx,
+ item_BR76_Prototype,
+ item_BR76,
  item_18100,
  header_AL1to7,
  item_BR80,

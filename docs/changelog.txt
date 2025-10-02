@@ -6,7 +6,6 @@
 - Central London Railway 1900 Stock
 - Class 101
 - Mk1 sleeper (SLC)
-- Class 76 (Needs coding)
 
 # v2.15
 SAVEGAME BREAKING VERSION
@@ -14,6 +13,7 @@ SAVEGAME BREAKING VERSION
 - Added Furness Railway D1 Class
 - Added GWR 5700 Class
 - Added GWR 6700 Class
+- Added Class 76 + Prototype
 - Added Class 69
 - Added Class 128
 - Added Class 172 (/0/1 and /2/3)

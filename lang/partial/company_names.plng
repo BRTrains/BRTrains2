@@ -11,6 +11,7 @@ str_comp_Freightliner           :Freightliner
 str_comp_GCR                    :Great Central Railway
 str_comp_GWR                    :Great Western Railway
 str_comp_HarryNeedle            :Harry Needle Railroad
+str_comp_LNER                   :London & Northwestern Railway
 str_comp_Metropolitan           :Metropolitan Railway
 str_comp_MidlandMainLine        :Midland Main Line
 str_comp_Northern               :Northern

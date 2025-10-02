@@ -1,4 +1,4 @@
-switch(FEAT_TRAINS,SELF, sw_BR76, cargo_subtype){
+switch(FEAT_TRAINS,SELF, sw_BR76_Prototype, cargo_subtype){
 	0:	spriteset_BR76_LNERGreen;
     1:	spriteset_BR76_BRBlack;
 	2:	spriteset_BR76_BRGreen;
@@ -7,8 +7,8 @@ switch(FEAT_TRAINS,SELF, sw_BR76, cargo_subtype){
         return CB_RESULT_NO_TEXT;
 }
 
-switch(FEAT_TRAINS,SELF,sw_BR76_cargo_subtype_text,cargo_subtype){
-    0:	return string(STR_LIVERY, string(str_comp_LNER), string(str_col_Green));
+switch(FEAT_TRAINS,SELF,sw_BR76_Prototype_cargo_subtype_text,cargo_subtype){
+    0:	return string(STR_LIVERY, string(str_abbr_LNER), string(str_col_Green));
 	1:	return string(STR_LIVERY, string(str_comp_BR), string(str_col_Black));
 	2:	return string(STR_LIVERY, string(str_comp_BR), string(str_col_Green));
 	3:	return string(STR_LIVERY_EXTENDED, string(str_comp_BR), string(str_col_Green), string(str_warn));
@@ -16,48 +16,46 @@ switch(FEAT_TRAINS,SELF,sw_BR76_cargo_subtype_text,cargo_subtype){
 	return CB_RESULT_NO_TEXT;
 }
 
-item (FEAT_TRAINS, item_BR76, 765) {
+item (FEAT_TRAINS, item_BR76_Prototype, 765) {
 	property {
-		name: 							string(STR_NAME_BR76);
+		name: 							string(STR_NAME_BR76_Prototype);
 		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1958,1,1);
-		model_life:						20;
+		introduction_date:				date(1941,1,1);
+		model_life:						15;
 		retire_early:					1;
-		vehicle_life:					40;
+		vehicle_life:					30;
 		reliability_decay:				7;
 		refittable_cargo_classes:		0;
 		cargo_allow_refit:				[GOOD, FOOD];
 		loading_speed:					3;
-		cost_factor:					45;
-		running_cost_factor:			45;
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							90 mph;
+		speed:							65 mph;
 		refit_cost:						0;
 		track_type:						ELRL;	
 		ai_special_flag:				AI_FLAG_CARGO;
-		power:							2500 hp;
+		power:							1300 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
 		dual_headed:					0;
 		default_cargo_type:				GOOD;
 		cargo_capacity:					1;
-		weight:							109 ton;
+		weight:							89 ton;
 		engine_class:					ENGINE_CLASS_ELECTRIC;
-		tractive_effort_coefficient:	0.3;
+		tractive_effort_coefficient:	0.229;
 		air_drag_coefficient:			0.05;
-		length:							8;
+		length:							6;
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
 	}
 	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_BR76_usage),string(str_BR76_eos),string(str_BR76_liveries)));
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_BR76_Prototype_usage),string(str_BR76_Prototype_eos),string(str_BR76_Prototype_liveries)));
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
 	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_BR76_cargo_subtype_text;
-	default: 							sw_BR76;
-	purchase:							spriteset_BR76_Purchase;
+	cargo_subtype_text:					sw_BR76_Prototype_cargo_subtype_text;
+	default: 							sw_BR76_Prototype;
+	purchase:							spriteset_BR76_Prototype_Purchase;
 	colour_mapping: 					return PALETTE_CC_FIRST;
-	cost_factor:	return(GetAdjustedCost(45));
-	running_cost_factor: return(GetAdjustedCost(45));
+	cost_factor:	return(GetAdjustedCost(38));
+	running_cost_factor: return(GetAdjustedCost(38));
 }
 }
