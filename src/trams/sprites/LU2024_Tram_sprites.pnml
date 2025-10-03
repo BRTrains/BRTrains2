@@ -1,9 +1,0 @@
-spriteset(spriteset_tram_LU2024_front_TfL, "gfx/Metro/LU_2024.png") {
-	template_tram20px(0, 13)
-}
-spriteset(spriteset_tram_LU2024_middle_TfL, "gfx/Metro/LU_2024.png") {
-	template_tram16px(0, 33)
-}
-spriteset(spriteset_tram_LU2024_rear_TfL, "gfx/Metro/LU_2024.png") {
-	template_tram20px(0, 52)
-}

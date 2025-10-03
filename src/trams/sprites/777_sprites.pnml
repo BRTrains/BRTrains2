@@ -1,9 +1,0 @@
-spriteset (spriteset_tram_br777_front, "gfx/EMU/777.png") {
-	template_tram28px(0, 13)
-}
-spriteset (spriteset_tram_br777_middle, "gfx/EMU/777.png") {
-	template_tram24px(0, 61)
-}
-spriteset (spriteset_tram_br777_rear, "gfx/EMU/777.png") {
-	template_tram28px(0, 37)
-}
