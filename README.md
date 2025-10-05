@@ -17,7 +17,7 @@ Building from the source should be mostly automated using the `build.py` script,
   
 To build the grf completely, just run the following command in your terminal:
 ```bash
-python build.py --compile brtrainsv2
+python build.py brtrainsv2
 ```
 This should first compile the `.nml` file, then compile that through to a `.grf` file using `nml`.  Install in the same manner
 as previously described, copying the generated `.grf` file into `OpenTTD/newGRF`.
