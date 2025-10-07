@@ -2,6 +2,7 @@ from pathlib import Path
 from sys import argv
 from argparse import ArgumentParser
 from importlib import util
+import time
 import os
 
 def append_file(filepath: Path, nml_file: str):
@@ -235,6 +236,8 @@ def main(grf_name):
 
 
 if __name__ == "__main__":
+    startTime = time.time()
+
     # Parser arguments
     parser = ArgumentParser(description="Compile pnml files into one nml file")
     parser.add_argument("grf_name")
@@ -248,6 +251,6 @@ if __name__ == "__main__":
     elif error_code == -2:
         print("The nml file compiled correctly, but nml failed to compile it")
     elif error_code == 0:
-        print("The grf file was compiled successfully")
+        print("The grf file was compiled successfully in ", round((time.time() - startTime),2), " seconds")
     else:         
         print("Unknown outcome. Error code <%s>" % str(error_code))
