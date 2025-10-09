@@ -23,20 +23,7 @@ grf {
 			};
 		}
 	}
-	param 1 {		
-		param_dev_mode{
-			name: string(STR_PARAM_NAME_DEV);
-			desc: string(STR_PARAM_DESC_DEV);
-			min_value: 0;
-			max_value: 1;
-			def_value: 0;
-			names: {
-				0: string(STR_PARAM_DEV_OFF);
-				1: string(STR_PARAM_DEV_ON);
-			};
-		}
-	}
-	param 2 {
+	param 1 {
 		param_sounds{
 			name: string(STR_PARAM_NAME_SOUNDS);
 			desc: string(STR_PARAM_DESC_SOUNDS);
@@ -49,20 +36,7 @@ grf {
 			};
 		}
 	}
-	param 3 {		
-		param_simple_mode{
-			name: string(STR_PARAM_NAME_SIMPLE);
-			desc: string(STR_PARAM_DESC_SIMPLE);
-			min_value: 0;
-			max_value: 1;
-			def_value: 0;
-			names: {
-				0: string(STR_PARAM_COMPLEX);
-				1: string(STR_PARAM_SIMPLE);				
-			};
-		}
-	}
-	param 4 {
+	param 2 {
 		param_pax{
 			name: string(STR_PARAM_NAME_PAX_MULTIPLIER);
 			desc: string(STR_PARAM_DESC_PAX_MULTIPLIER);
@@ -77,7 +51,7 @@ grf {
 			};
 		}
 	}
-	param 5 {
+	param 3 {
 			param_cost_factor{
 				name: string(STR_PARAM_NAME_COST_MULTIPLIER);
 				desc: string(STR_PARAM_DESC_COST_MULTIPLIER);
@@ -96,39 +70,8 @@ grf {
 					9: string(STR_PARAM_32X);
 				};
 			}
-		}
-	param 6 {
-			param_tram{
-				name: string(STR_PARAM_NAME_TRAMMETRO);
-				desc: string(STR_PARAM_DESC_TRAMMETRO);
-				min_value: 0;
-				max_value: 5;
-				def_value: 0;
-				names: {
-					0: string(STR_TRAM_DEFAULT);
-					1: string(STR_TRAM_TRAINONLY);
-					2: string(STR_TRAM_TRAMONLY);
-					3: string(STR_TRAM_BOTH);
-					4: string(STR_TRAM_EXTRA);
-					5: string(STR_TRAM_SUPEREXTRA);
-				};
-			}
-	}		
-	param 7 {
-			param_2cc{
-				name: string(STR_PARAM_NAME_2CC);
-				desc: string(STR_PARAM_DESC_2CC);
-				min_value: 0;
-				max_value: 2;
-				def_value: 1;
-				names: {
-					0: string(STR_NO_2CC);
-					1: string(STR_USE_2CC);
-					2: string(STR_ONLY_2CC);
-				};
-			}
 	}
-	param 8 {		
+	param 4 {		
 			param_default_vehs{
 				name: string(STR_PARAM_HIDE_VEHS);
 				desc: string(STR_PARAM_HIDE_VEHS_DESC);
@@ -163,11 +106,6 @@ if(param["MUKT", 1] != 0)
 {
 	error(ERROR,string(STR_Error_MUTSBRTrains));
 	deactivate("MUKT");
-}
-
-if(param["RUKT", 1] != 0)
-{
-	error(ERROR,string(STR_Error_RUKTS));
 }
 
 switch(FEAT_TRAINS, SELF, GetAdjustedCost, base, param_cost_factor) {
