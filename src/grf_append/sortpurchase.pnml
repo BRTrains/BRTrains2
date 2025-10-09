@@ -29,8 +29,6 @@ sort(FEAT_TRAINS, [
  item_SR_Q1,
  item_WDTank,
  item_Standard9F,
- item_BR08,
- item_BR13,
  item_BR20,
  item_BR28,
  item_BR31,
