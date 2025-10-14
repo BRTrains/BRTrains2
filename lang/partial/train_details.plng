@@ -1104,7 +1104,7 @@ BR488							:Class 488 Coach
 STR_NAME_BR504					:BR Class 504
 str_BR504_usage					:Urban Passenger
 str_BR504_eos					:---
-str_BR504_liveries				:BR Blue, BR Green, GMPTE, BR Blue (Wlternate), BR Blue (Wraparound)
+str_BR504_liveries				:BR Blue, BR Green, GMPTE, BR Blue (Alternate), BR Blue (Wraparound)
 
 STR_NAME_BR507					:BR Class 507 
 str_BR507_usage					:Urban Passenger
