@@ -1,5 +1,4 @@
 from pathlib import Path
-from sys import argv
 from argparse import ArgumentParser
 from importlib import util
 import time
