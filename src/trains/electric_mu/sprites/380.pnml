@@ -1,0 +1,33 @@
+spriteset(spriteset_BR380_Purchase, "gfx/EMU/380.png") {
+	template_purchase(0, 0)
+}
+spriteset (spriteset_BR380_front_ScotRail_Saltire, "gfx/EMU/380.png") { 		template_train32px(0, 13) }
+spriteset (spriteset_BR380_middle_ScotRail_Saltire, "gfx/EMU/380.png") { 		template_train32px(0, 65) }
+spriteset (spriteset_BR380_middle_panto_ScotRail_Saltire, "gfx/EMU/380.png") { 	template_train32px(0, 91) }
+spriteset (spriteset_BR380_rear_ScotRail_Saltire, "gfx/EMU/380.png") { 			template_train32px(0, 39) }
+
+switch(FEAT_TRAINS, SELF, sw_BR380_cargo_subtype_text, cargo_subtype){
+    0:	return string(str_ScotRailSaltire);
+    return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR380_3car_ScotRail_Saltire, position_in_articulated_veh % 3) {
+	0: spriteset_BR380_front_ScotRail_Saltire;
+	1: spriteset_BR380_middle_panto_ScotRail_Saltire;
+	2: spriteset_BR380_rear_ScotRail_Saltire;	
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR380_3car, cargo_subtype) {
+	0: sw_BR380_3car_ScotRail_Saltire;
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR380_4car_ScotRail_Saltire, position_in_articulated_veh % 4) {
+	0: spriteset_BR380_front_ScotRail_Saltire;
+	1: spriteset_BR380_middle_ScotRail_Saltire;
+	2: spriteset_BR380_middle_panto_ScotRail_Saltire;
+	3: spriteset_BR380_rear_ScotRail_Saltire;	
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR380_4car, cargo_subtype) {
+	0: sw_BR380_4car_ScotRail_Saltire;
+}

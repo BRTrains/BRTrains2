@@ -6,7 +6,6 @@
 - Central London Railway 1900 Stock
 - Class 101
 - Mk1 sleeper (SLC)
-- Class 380
 
 # v2.15
 SAVEGAME BREAKING VERSION
@@ -20,6 +19,7 @@ SAVEGAME BREAKING VERSION
 - Added Class 172 (/0/1 and /2/3)
 - Added Class 322
 - Added Class 360
+- Added Class 380
 - Added Class 398 Tram and train variants
 - Added Class 399 Tram variant
 - Added Class 799

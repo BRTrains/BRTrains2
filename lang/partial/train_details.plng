@@ -911,6 +911,12 @@ str_BR378_5_usage				:Urban Passenger
 str_BR378_5_eos					:---
 str_BR378_5_liveries			:London Overground, London Overground 5 Car Celebration
 
+STR_NAME_BR380_3car				:BR Class 380/0 "Desiro" (3-car)
+STR_NAME_BR380_4car				:BR Class 380/1 "Desiro" (4-car)
+str_BR380_usage     			:Urban Passenger
+str_BR380_eos		    		:---
+str_BR380_liveries		    	:ScotRail Saltire
+
 STR_NAME_BR378_4dc				:BR Class 378/1 "Electrostar" (4-Car)
 
 STR_NAME_BR378_5dc				:BR Class 378/1 "Electrostar" (5-Car)
