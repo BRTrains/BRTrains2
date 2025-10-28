@@ -1352,11 +1352,11 @@ str_BRMk4DVT_liveries			:InterCity Swallow, National Express, GNER, East Coast, 
 
 STR_NAME_BRMk5_Header			:BR Mark 5 Coaches
 
-STR_NAME_BRMk5DVT				:BR Mark 5a Driving Van Trailer
+STR_NAME_BRMk5DVT				:BR Mark 5a Driving Trailer (DT)
 str_BRMk5DVT_liveries			:Transpennine Express
 
-STR_NAME_BRMk5a				:BR Mark 5a Coach
-str_BRMk5a_liveries			:Transpennine Express
+STR_NAME_BRMk5a				    :BR Mark 5a Coach
+str_BRMk5a_liveries			    :Transpennine Express
 
 STR_NAME_BRMk5Sleeper			:BR Mark 5 Sleeper Coach
 str_BRMk5Sleeper_liveries		:Caledonian Sleaper
