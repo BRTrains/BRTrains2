@@ -1,8 +1,14 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_196_0_spriteset, position_in_articulated_veh % 2) {
-	0: spriteset_BR196_front_WestMidlands;
-	spriteset_BR196_middle_WestMidlands;
+switch(FEAT_TRAINS, SELF, switch_br_196_0_spriteset, cargo_subtype) {
+	0: sw_BR196_WMR;
+	1: sw_BR196_Chiltern;
 }
+
+switch(FEAT_TRAINS, SELF, switch_br_196_0_liveries, cargo_subtype) {
+	0: return string(str_WMR);
+	1: return string(str_Chiltern);
+}
+
 
 // Define articulations
 switch(FEAT_TRAINS, SELF, switch_br_196_0_articulated, extra_callback_info1) {
@@ -66,6 +72,7 @@ item(FEAT_TRAINS, item_br_196_0, 432) {
 	graphics {
 		default: switch_br_196_0_spriteset;
 		purchase: spriteset_BR196_Purchase;
+		cargo_subtype_text: switch_br_196_0_liveries;
 		
 		articulated_part: switch_br_196_0_articulated;
 		start_stop: switch_br_196_0_start_stop;	

@@ -75,13 +75,10 @@ def handle_folder(directory: Path, auto=False):
     if (directory / "sprites").exists():
         file_list.update(handle_folder(directory / "sprites", auto))
         file_list.update(find_files_in_directory(directory / "sprites"))
-
-    # Grab the vehicles
+    
     file_list.update(find_files_in_directory(directory))
 
-    # Automatically look at subdirectories
     if auto:
-        # Don't automatically walk subdirectories, only when auto is set
         exclude_dirs = {"append", "prepend", "sprites"}
         subdirectories = [p for p in directory.iterdir() if p.is_dir() and p.name not in exclude_dirs]
         for subdir in subdirectories:        

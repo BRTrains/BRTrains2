@@ -1,8 +1,6 @@
 // Choose sprites depending on car position
-switch(FEAT_TRAINS, SELF, switch_br_196_1_spriteset, position_in_articulated_veh % 4) {
-	0: spriteset_BR196_front_WestMidlands;
-	3: spriteset_BR196_middle_WestMidlands;
-	spriteset_BR196_rear_WestMidlands;
+switch(FEAT_TRAINS, SELF, switch_br_196_1_spriteset, cargo_subtype) {
+	sw_BR196_WMR;
 }
 
 // Define articulations
