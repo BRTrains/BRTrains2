@@ -3,6 +3,8 @@ from argparse import ArgumentParser
 from importlib import util
 import time
 import os
+import sys
+import shutil
 
 def append_file(filepath: Path, nml_file: str):
     # If the pnml filepath doesn't exist, exit
@@ -113,27 +115,40 @@ def write_file(filename: str, nml_file: str):
 
 
 def compile_grf(grf_name, lang_dir):
-    # Check if we have the nml package
-    found_nml = util.find_spec("nml")
-    if found_nml is not None:
-        # Import nml's main module
-        import nml.main
-        parameters = []        
-        # Add lang directory to the build parameters
-        parameters = ["--lang", str(lang_dir), "build/" + grf_name + ".nml"]        
+    nml_path = Path(__file__).resolve().parents[1] / "nml"
+    nmlc = None
 
+    # Try local ../nml first
+    if nml_path.exists() and nml_path.is_dir():
+        print("Using local instance in ../nml as nml compiler")
+        sys.path.insert(0, str(nml_path))
         try:
-            # Try to compile the nml file
-            nml.main.main(parameters)
-        except SystemExit:
-            # nml uses sys.exit(), so catch this to stop the program exiting
-            print("nml tried to exit but was stopped")
-        print("Finished compiling grf file\n")
-        return 1
-    else:
-        # nml isn't installed
-        print("nml is not installed.  You can get it using 'pip install nml'")
-        return -1
+            import nml.main as nmlc
+        except ImportError:
+            nmlc = None
+
+    # If local not available, try installed package
+    if nmlc is None:
+        found_nml = util.find_spec("nml")
+        if found_nml is not None:
+            print("Using nml from python")
+            import nml.main as nmlc
+        else:
+            print("nml is not installed. You can get it using 'pip install nml'")
+            return -1
+
+    # Prepare parameters
+    parameters = ["--lang", str(lang_dir), "build/" + grf_name + ".nml"]
+
+    # Compile
+    try:
+        nmlc.main(parameters)
+    except SystemExit:
+        # nml calls sys.exit() internally
+        print("NML Finished")
+
+    print("Finished compiling grf file\n")
+    return 1
 
 def main(grf_name):
     concat_lang_file()
