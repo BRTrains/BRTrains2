@@ -29,7 +29,7 @@ spriteset(spriteset_BR196_rear_Chiltern, "gfx/DMU/196.png") {
 	template_train32px(0, 117)
 }
 spriteset(spriteset_BR196_middle_Chiltern, "gfx/DMU/196.png") {
-	template_train32px(0, 113)
+	template_train32px(0, 143)
 }
 switch(FEAT_TRAINS, SELF, sw_BR196_Chiltern_sw2, position_in_articulated_veh)
 {
