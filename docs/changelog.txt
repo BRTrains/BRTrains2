@@ -52,6 +52,7 @@ SAVEGAME BREAKING VERSION
 - Improved WMR liveries for 196, 730
 - Fixed running cost parameter only applying to one subclass of Class 175
 - Fixed a bunch of sound and power bugs for multimode units
+- Fixed 231/756 door layouts
 - Fixed 455 BR Blue PRM livery bug
 - Fixed 66/6 position in purchase list
 - Fixed Royal Mail TPO and Mk5 DVT push-pull
