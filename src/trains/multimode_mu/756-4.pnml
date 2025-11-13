@@ -3,7 +3,7 @@ switch(FEAT_TRAINS, SELF, switch_br_756_4_spriteset, position_in_articulated_veh
 	0: spriteset_br756a;
     1: spriteset_br756c;
 	2: spriteset_br756pp;
-    3: spriteset_br756d;
+    3: spriteset_br756_doubledoor;
 	4: spriteset_br756b;
 	spriteset_br756c;
 }
