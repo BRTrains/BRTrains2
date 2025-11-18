@@ -48,7 +48,7 @@ item(FEAT_TRAINS, item_br458_5car, 634) {
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		refit_cost: 0;
-		track_type: BR_3RDR;
+		track_type: THIRD;
 		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
 		running_cost_base: RUNNING_COST_ELECTRIC;
 		dual_headed: 0; // set to 0 otherwise limited to 2 cars only

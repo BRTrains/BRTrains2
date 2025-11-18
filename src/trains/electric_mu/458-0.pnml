@@ -50,7 +50,7 @@ item (FEAT_TRAINS, item_BR458_0, 332) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							100 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		cargo_capacity:					(220/4);
 		power:							2172 hp;

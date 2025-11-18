@@ -20,7 +20,7 @@ switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_particles_elrl, position_in_artic
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
 
-switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_3rdrailparticles, tile_powers_railtype("BR_3RDC")) {
+switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_3rdrailparticles, tile_powers_railtype("THIRD")) {
 	1: switch_br_710_2_4car_particles_elrl;
 	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
 }
@@ -69,7 +69,7 @@ item(FEAT_TRAINS, item_br_710_2_4car, 445) {
 		
 		sprite_id: SPRITE_ID_NEW_TRAIN; // required
 		refit_cost: 0;
-		track_type: BR_3RDR;
+		track_type: THIRD;
 		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
 		running_cost_base: RUNNING_COST_ELECTRIC;
 		dual_headed: 0; // set to 0 otherwise limited to 2 cars only

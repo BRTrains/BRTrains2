@@ -296,7 +296,7 @@ item (FEAT_TRAINS, item_BR423, 347) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							1000 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -347,7 +347,7 @@ item (FEAT_TRAINS, item_BR423_b, 348) {
 		speed:							90 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -392,7 +392,7 @@ item (FEAT_TRAINS, item_BR423_c, 349) {
 		speed:							90 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -436,7 +436,7 @@ item (FEAT_TRAINS, item_BR423_d, 350) {
 		speed:							75 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -479,7 +479,7 @@ item (FEAT_TRAINS, item_BR423_9, 351) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							1000 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -527,7 +527,7 @@ item (FEAT_TRAINS, item_BR423_9_b, 352) {
 		speed:							90 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -572,7 +572,7 @@ item (FEAT_TRAINS, item_BR423_9_c, 353) {
 		speed:							90 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -616,7 +616,7 @@ item (FEAT_TRAINS, item_BR423_9_d, 354) {
 		speed:							75 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -661,7 +661,7 @@ item (FEAT_TRAINS, item_BR480, 355) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							3000 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -708,7 +708,7 @@ item (FEAT_TRAINS, item_BR480_dtclf, 356) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -751,7 +751,7 @@ item (FEAT_TRAINS, item_BR480_dtclr, 357) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -794,7 +794,7 @@ item (FEAT_TRAINS, item_BR480_mbso, 358) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -837,7 +837,7 @@ item (FEAT_TRAINS, item_BR480_buf, 359) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							90 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;

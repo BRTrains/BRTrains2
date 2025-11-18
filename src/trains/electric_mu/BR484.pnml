@@ -62,7 +62,7 @@ item (FEAT_TRAINS, item_BR484, 499) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							45 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							1500 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -115,7 +115,7 @@ item (FEAT_TRAINS, item_BR484b, 500) {
 		speed:							45 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_4RDR;
+		track_type:						FOURTH;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;

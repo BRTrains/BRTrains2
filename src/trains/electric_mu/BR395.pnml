@@ -37,7 +37,7 @@ switch(FEAT_TRAINS,SELF,sw_BR395_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-switch (FEAT_TRAINS, SELF,sw_BR395_speed, tile_powers_railtype("BR_3RDR")) {                    
+switch (FEAT_TRAINS, SELF,sw_BR395_speed, tile_powers_railtype("THIRD")) {                    
     1: return 160;            
     return 225;
 }
@@ -59,7 +59,7 @@ item (FEAT_TRAINS, item_BR395, 77) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							225 km/h;
 		refit_cost:						0;
-		track_type:						[BR_3RDC, BR_3RDR, ELRL];
+		track_type:						[THIRD, THIRD, ELRL];
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							4480 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -110,7 +110,7 @@ item (FEAT_TRAINS, item_395b, 78) {
 		speed:							225 km/h;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						[BR_3RDC, BR_3RDR, ELRL];
+		track_type:						[THIRD, THIRD, ELRL];
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -156,7 +156,7 @@ item (FEAT_TRAINS, item_395c, 79) {
 		speed:							225 km/h;
 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						[BR_3RDC, BR_3RDR, ELRL];
+		track_type:						[THIRD, THIRD, ELRL];
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0;
 		running_cost_base:				RUNNING_COST_ELECTRIC;

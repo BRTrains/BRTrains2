@@ -81,7 +81,7 @@ item (FEAT_TRAINS, item_BR376, 204) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							2682 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -134,7 +134,7 @@ item (FEAT_TRAINS, item_BR376_b, 205) {
 		speed:							75 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -177,7 +177,7 @@ item (FEAT_TRAINS, item_BR376_c,206) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -223,7 +223,7 @@ item (FEAT_TRAINS, item_BR376_d, 207) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							75 mph;
 		refit_cost:						0;
-		track_type:						BR_3RDR;
+		track_type:						THIRD;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;

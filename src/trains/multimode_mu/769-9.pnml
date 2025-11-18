@@ -29,14 +29,14 @@ switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_diesel, position_in_articula
 
 
 // 3rd rail particles
-switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_3rdrail, tile_powers_railtype("BR_3RDR")) {
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles_3rdrail, tile_powers_railtype("THIRD")) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
-	railtype("BR_3RDR"): switch_br_769_9_particles_3rdr;
+	railtype("THIRD"): switch_br_769_9_particles_3rdr;
 	switch_br_769_9_particles_diesel;
 }
 
 // Only give particle effects to middle/pantograph car on OHLE
-switch(FEAT_TRAINS, SELF, switch_br_769_9_particles, tile_powers_railtype("ELRL") || tile_powers_railtype("BR_3RDC")) {
+switch(FEAT_TRAINS, SELF, switch_br_769_9_particles, tile_powers_railtype("ELRL") || tile_powers_railtype("THIRD")) {
 	// 0 is first car, 1 is second car, 2 is third car, so on...
 	1: switch_br_769_9_particles_ohle; 
 	switch_br_769_9_particles_3rdrail;
