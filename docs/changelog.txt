@@ -50,6 +50,7 @@ SAVEGAME BREAKING VERSION
 - Added Hull Trains (grey stripe) livery variant for Class 802
 - Amended Class 99 power, service speed, weight, TE for real world values
 - Improved WMR liveries for 196, 730
+- Fixed dual-voltage trains only appearing on 3rd Rail on some track sets
 - Fixed running cost parameter only applying to one subclass of Class 175
 - Fixed a bunch of sound and power bugs for multimode units
 - Fixed 231/756 door layouts
