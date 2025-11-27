@@ -134,6 +134,10 @@ spriteset(spriteset_BR37_HarryNeedleOrange, "gfx/BR37.png") {
 	template_train32px_old(0, 813)
 }
 
+spriteset(spriteset_BR37_BRBlueRed, "gfx/BR37.png") {
+	template_train32px_old(0, 838)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR37,cargo_subtype){
 	0:	spriteset_BR37_BRGreen;
     1:	spriteset_BR37_BRGreenCentre;
@@ -168,6 +172,7 @@ switch(FEAT_TRAINS,SELF, sw_BR37,cargo_subtype){
 	30: spriteset_BR37_Police;
 	31: spriteset_BR37_BRBlack;
 	32: spriteset_BR37_HarryNeedleOrange;
+	33: spriteset_BR37_BRBlueRed;
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR37_cargo_subtype_text,cargo_subtype){
@@ -204,6 +209,7 @@ switch(FEAT_TRAINS,SELF,sw_BR37_cargo_subtype_text,cargo_subtype){
 	30: return string(str_Police);
 	31: return string(STR_LIVERY, string(str_comp_BR), string(str_col_Black));
 	32: return string(STR_LIVERY, string(str_comp_HarryNeedle), string(str_col_Orange));
+	33: return string(str_BRBlueRed);
        return CB_RESULT_NO_TEXT;
 }
 
