@@ -4,6 +4,7 @@ item (FEAT_TRAINS, item_BRMk3TRSB, 16) {
 		name: 							string(STR_NAME_BRMk3TRSB);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
+		introduction_date:				date(1975,4,21);
 		cargo_allow_refit:				[PASS, TOUR];
 		loading_speed:					14;
 		cost_factor:					52;
