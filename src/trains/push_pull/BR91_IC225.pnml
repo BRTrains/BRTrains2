@@ -93,6 +93,7 @@ item (FEAT_TRAINS, item_91_BRMk4FO, 112) {
  property {
   variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4FO);
+  introduction_date:				date(1989,4,21);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
@@ -129,6 +130,7 @@ item (FEAT_TRAINS, item_91_BRMk4TSOE, 109) {
  property {
     variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4TSOE);
+  introduction_date:				date(1989,4,21);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
@@ -165,6 +167,7 @@ item (FEAT_TRAINS, item_91_BRMk4TSO, 110) {
  property {
     variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4TSO);
+  introduction_date:				date(1989,4,21);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
@@ -201,6 +204,7 @@ item (FEAT_TRAINS, item_91_BRMk4RFM, 111) {
  property {
     variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4RFM);
+  introduction_date:				date(1989,4,21);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
@@ -237,6 +241,7 @@ item (FEAT_TRAINS, item_91_BRMk4TSOD, 114) {
  property {
     variant_group: header_BRMk4;
   name: string(STR_NAME_BRMk4TSOD);
+  introduction_date:				date(1989,4,21);
   climates_available: ALL_CLIMATES;
   refittable_cargo_classes: 0;
   cargo_allow_refit: [PASS];
