@@ -89,6 +89,7 @@ grf {
 if(param_default_vehs == 0)
 {
 	disable_item(FEAT_TRAINS);
+	disable_item(FEAT_ROADVEHS);
 }
 
 // Fix depot sprites
@@ -102,10 +103,10 @@ if(param["BRT\16", 1] != 0)
 }
 
 
-if(param["MUKT", 1] != 0)
+if(param["\4D\55\4B\54", 1] != 0)
 {
 	error(ERROR,string(STR_Error_MUTSBRTrains));
-	deactivate("MUKT");
+	deactivate("\4D\55\4B\54");
 }
 
 switch(FEAT_TRAINS, SELF, GetAdjustedCost, base, param_cost_factor) {
