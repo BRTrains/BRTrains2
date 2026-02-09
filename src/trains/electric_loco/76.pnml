@@ -44,6 +44,8 @@ item (FEAT_TRAINS, item_BR76, 766) {
 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
 		extra_weight_per_wagon:			0;
 		bitmask_vehicle_info:			0;
+		cost_factor:					1;
+		running_cost_factor:			1;
 	}
 	graphics {
 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_BR76_usage),string(str_BR76_eos),string(str_BR76_liveries)));
