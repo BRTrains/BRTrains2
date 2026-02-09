@@ -39,7 +39,7 @@ switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_start_stop, num_vehs_in_consist) 
 // Only allow the same train type to be added to itself
 switch(FEAT_TRAINS, SELF, switch_br_710_2_4car_can_attach_wagon, vehicle_type_id) {
 	item_br_710_2_4car: return CB_RESULT_ATTACH_ALLOW;
-	item_br_710_2_5car: return CB_RESULT_ATTACH_ALLOW;
+	item_br_710_3_5car: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_CANNOT_ATTACH);
 }
 
