@@ -17,6 +17,8 @@ item (FEAT_TRAINS, item_BRMk1BSO, 148) {
 		length:							8;
 		bitmask_vehicle_info:			0;
 		cargo_capacity:					1;
+		cost_factor:					1;
+		running_cost_factor:			1;
 	}
 	graphics {
 		additional_text:					return(string(str_purchase_coach,string(str_BRMk1BSO_liveries)));
