@@ -8,6 +8,7 @@
 - Mk1 sleeper (SLC)
 - Pretendolino 90 + Mk3
 - Eurostar Class 9
+- Standard Class 2T
 
 # v2.15
 SAVEGAME BREAKING VERSION
