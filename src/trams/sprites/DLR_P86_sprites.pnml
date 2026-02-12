@@ -1,0 +1,28 @@
+spriteset (spriteset_P86_purchase, "gfx/Tram/DLR_P86.png") {
+	template_purchase(0,0)
+}
+
+spriteset (spriteset_P86_Double_purchase, "gfx/Tram/DLR_P86.png") {
+	template_purchase(88,0)
+}
+
+spriteset (spriteset_P86_front_DLRBlue, "gfx/Tram/DLR_P86.png") {
+	template_tram20px(0, 13)
+}
+spriteset (spriteset_P86_rear_DLRBlue, "gfx/Tram/DLR_P86.png") {
+	template_tram20px(0, 33)
+}
+
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_P86_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_DLRBlue);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_P86_DLRBlue, position_in_articulated_veh % 2){
+	0:spriteset_P86_front_DLRBlue;
+	1:spriteset_P86_rear_DLRBlue;	
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_P86,cargo_subtype){
+	0: sw_TRAM_P86_DLRBlue;
+}

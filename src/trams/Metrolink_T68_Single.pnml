@@ -1,0 +1,47 @@
+switch (FEAT_ROADVEHS, SELF, switch_articulated_TRAM_T68, extra_callback_info1) {
+	1: return item_TRAM_T68_Single;	
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+
+item (FEAT_ROADVEHS, item_TRAM_T68_Single, 662) {
+	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
+		name: 							string(STR_NAME_T68);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1992,4,6);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					29;
+		cost_factor:					20;
+		running_cost_factor:			18;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;		
+		refit_cost:						0;		
+		power:							564 hp;
+		running_cost_base:           	RUNNING_COST_ROADVEH;		
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.05;
+		length:							5;						
+		cargo_age_period:				185;
+	}
+	graphics {
+	sound_effect:						sw_sound_TRAM_tube_modern;
+	cargo_subtype_text:					sw_TRAM_T68_cargo_subtype_text;
+	articulated_part:        			switch_articulated_TRAM_T68;
+	default: 							sw_TRAM_T68;
+	purchase:							spriteset_T68_purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(166 * param_pax / 2);
+	cost_factor:	return(GetAdjustedCostTRAM(20));
+	running_cost_factor: return(GetAdjustedCostTRAM(18));
+	weight: 98;
+}
+}

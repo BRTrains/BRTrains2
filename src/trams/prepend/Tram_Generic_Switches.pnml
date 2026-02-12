@@ -1,0 +1,12 @@
+
+switch(FEAT_ROADVEHS, SELF, GetAdjustedCostTRAM, base, param_cost_factor) {
+  1: return base / 4;
+  2: return base / 2;
+  3: return base;
+  4: return base * 2;
+  5: return base * 4;
+  6: return base * 8;
+  7: return base * 12;
+  8: return base * 16;
+  9: return base * 32;
+}

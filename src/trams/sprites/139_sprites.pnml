@@ -1,0 +1,19 @@
+spriteset(spriteset_tram_BR139_LM, "gfx/DMU/139.png") {
+	template_tram20px(0, 13)
+}
+
+spriteset(spriteset_tram_BR139_WMR, "gfx/DMU/139.png") {
+	template_tram20px(0, 33)
+}
+
+spriteset(spriteset_tram_BR139_PPMPrototype, "gfx/DMU/139.png") {
+	template_tram20px(0, 53)
+}
+
+spriteset(spriteset_tram_BR139_BristolElectricPrototype, "gfx/DMU/139.png") {
+	template_tram20px(0, 73)
+}
+
+spriteset(spriteset_tram_BR139_GoCoop, "gfx/DMU/139.png") {
+	template_tram20px(0, 93)
+}

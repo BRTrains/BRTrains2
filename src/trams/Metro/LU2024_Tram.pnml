@@ -1,0 +1,73 @@
+switch(FEAT_ROADVEHS, SELF, switch_TRAM_LU2024_length, position_in_articulated_veh % 9) {
+	0: return 5;
+	8: return 5;
+	return 4;
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_LU2024_TfL, position_in_articulated_veh % 9){
+	0:spriteset_tram_LU2024_front_TfL;
+	8:spriteset_tram_LU2024_rear_TfL;
+	spriteset_tram_LU2024_middle_TfL;
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_LU2024,cargo_subtype){
+	0: sw_TRAM_LU2024_TfL;
+}
+
+switch (FEAT_ROADVEHS, SELF, switch_articulated_TRAM_LU2024, extra_callback_info1) {
+	1..8: return item_TRAM_LU2024;	
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_LU2024_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_LU_TfL);
+       return CB_RESULT_NO_TEXT;
+}
+
+
+
+
+item (FEAT_ROADVEHS, item_TRAM_LU2024, 595) {
+	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
+		name: 							string(STR_NAME_LU2024);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2024,1,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					29;
+		cost_factor:					61;
+		running_cost_factor:			41;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							62 mph;		
+		refit_cost:						0;		
+		power:							2550 hp;
+		running_cost_base:           	RUNNING_COST_ROADVEH;		
+		default_cargo_type:				PASS;
+		cargo_capacity:					255;
+		weight:							1 ton;		
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.05;
+		length:							4;						
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LU2024_usage),string(str_LU2024_eos),string(str_LU2024_liveries)));	
+	cargo_subtype_text:					sw_TRAM_LU2024_cargo_subtype_text;
+	articulated_part:        			switch_articulated_TRAM_LU2024;
+	default: 							sw_TRAM_LU2024;
+	purchase:							spriteset_LU2024_Purchase;
+	power:							3400;
+	weight:							197;
+	colour_mapping: 					return PALETTE_CC_FIRST;	
+	sound_effect:						sw_sound_TRAM_tube_modern;
+	length: switch_TRAM_LU2024_length;
+	cargo_capacity: return(1076 * param_pax / 9);
+		cost_factor:	return(GetAdjustedCostTRAM(61));
+	running_cost_factor: return(GetAdjustedCostTRAM(37));
+}
+}

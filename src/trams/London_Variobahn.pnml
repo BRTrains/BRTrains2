@@ -1,0 +1,63 @@
+// Choose sprites depending on car position
+switch(FEAT_ROADVEHS, SELF, switch_TRAM_LondonVariobahn_spriteset, position_in_articulated_veh % 5) {
+	0: spriteset_LondonVariobahn_front_TfL;
+	1: spriteset_LondonVariobahn_frontMiddle_TfL;
+	2: spriteset_LondonVariobahn_centre_TfL;
+	3: spriteset_LondonVariobahn_rearMiddle_TfL;
+	4: spriteset_LondonVariobahn_rear_TfL;
+}
+// Middle cars are shorter
+switch(FEAT_ROADVEHS, SELF, switch_TRAM_LondonVariobahn_length, position_in_articulated_veh % 5) {
+	2: 2; // Middle vehicles 8px 2/8
+	3; // Everything except middle vehicles 12px 3/8
+}
+
+// How many articulated parts?
+switch (FEAT_ROADVEHS, SELF, switch_articulated_TRAM_LondonVariobahn, extra_callback_info1) {
+	1..4: return item_TRAM_LondonVariobahn;	
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+
+item (FEAT_ROADVEHS, item_TRAM_LondonVariobahn, 646) {
+	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
+		name: 							string(STR_NAME_LondonVariobahn);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2024,5,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					29;
+		cost_factor:					20;
+		running_cost_factor:			18;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;		
+		refit_cost:						0;		
+		power:							1 hp;
+		running_cost_base:           	RUNNING_COST_ROADVEH;		
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.05;
+		length:							5;						
+		cargo_age_period:				185;
+	}
+	graphics {	
+	sound_effect:						sw_sound_TRAM_tube_modern;
+	articulated_part:        			switch_articulated_TRAM_LondonVariobahn;
+	default: 							switch_TRAM_LondonVariobahn_spriteset;
+	purchase:							spriteset_LondonVariobahn_purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cargo_capacity: return(206 * param_pax / 5);
+	cost_factor:	return(GetAdjustedCostTRAM(40));
+	running_cost_factor: return(GetAdjustedCostTRAM(35));
+	weight: 50;
+	power: 600;
+	length: switch_TRAM_LondonVariobahn_length;
+}
+}

@@ -1,0 +1,65 @@
+spriteset(spriteset_Kestrel_Purchase, "gfx/Diesel/Kestrel.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_Kestrel_YellowBlack, "gfx/Diesel/Kestrel.png") {
+	template_train32px(0, 13)
+}
+
+switch(FEAT_TRAINS,SELF, sw_Kestrel,cargo_subtype){    
+    0:	spriteset_Kestrel_YellowBlack;
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_Kestrel_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Kestrel);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_Kestrel, 556) {
+	property {
+		name: 							string(STR_NAME_Kestrel);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1967,1,1);
+		model_life:						10;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				9;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					44;
+		running_cost_factor:			40;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							110 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							4000 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							133 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.275;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_diesel),string(str_Kestrel_usage),string(str_Kestrel_eos),string(str_Kestrel_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_Kestrel_cargo_subtype_text;
+	default: 							sw_Kestrel;
+	purchase:							spriteset_Kestrel_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						diesel_create_visual_effect;
+	sound_effect:						sw_sound_diesel_46;
+	cost_factor:	return(GetAdjustedCost(44));
+	running_cost_factor: return(GetAdjustedCost(40));
+}
+}

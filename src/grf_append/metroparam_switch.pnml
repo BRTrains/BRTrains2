@@ -1,0 +1,60 @@
+// 0 : DEFAULT : (Default) Realistic Heavy/Light rail split (Trams and light rail as trams, heavy rail as trains)
+// 1 : TRAINONLY : Display all Metro units as Trains only (no trams)
+// 2 : TRAMONLY : Display all Metro Units as Trams only (no London Underground trains etc, only as trams)
+// 3 : BOTH : Display Trams and Trains as both Trams and Trains (all purchaseable as either)
+// 4 : EXTRA : Display as both AND include some extra heavy rail units (Thameslink, Crossrail etc)
+// 5 : SUPEREXTRA : (Experimental) Include a slightly ridiculous number of extra units (London Overground, trains used for suburban routes)
+
+if (param[6] < 5) {
+    // Disable "SUPEREXTRA" tram units at 5 or any setting below 5
+    // This will potentially be used for eg London Overground, Class 455
+}
+
+if (param[6] < 4) {
+    // Disable "EXTRA" tram units at 4 or any setting below 4
+    // This will potentially be used for eg Thameslink and Crossrail units
+}
+
+// Do nothing when set to 3 specifically, "EXTRA" and "SUPEREXTRA" will already be removed above
+// and BOTH includes both tram and train versions so there's nothing to disable
+
+if (param[6] == 2) { // TRAM ONLY
+    // Disable train versions of all metro units
+    disable_item(FEAT_TRAINS, 595); // 2024 Tube Stock tram
+    disable_item(FEAT_TRAINS, 490); // 1938 Tube Stock tram
+	disable_item(FEAT_TRAINS, 292); // S7 Tube Stock tram
+	disable_item(FEAT_TRAINS, 293); // S8 Tube Stock tram
+    disable_item(FEAT_TRAINS, 636); // Class 555
+    disable_item(FEAT_TRAINS, 450); // Class 777
+    disable_item(FEAT_TRAINS, 464); // Class 139 Parry People Mover
+    disable_item(FEAT_TRAINS, 749); // Class 398 / TfW Citylink
+    disable_item(FEAT_TRAINS, 750); // Class 399 / Sheffield Citylink
+}
+
+if (param[6] == 1) { // TRAIN ONLY
+    // Disable tram versions of all metro units (where duplicated)
+    disable_item(FEAT_ROADVEHS, 643); // Class 777
+    disable_item(FEAT_ROADVEHS, 642); // Class 555
+    disable_item(FEAT_ROADVEHS, 595); // London Underground 2024 stock
+    disable_item(FEAT_ROADVEHS, 490); // 1938 Tube Stock tram
+	disable_item(FEAT_ROADVEHS, 292); // S7 Tube Stock tram
+	disable_item(FEAT_ROADVEHS, 293); // S8 Tube Stock tram
+    disable_item(FEAT_ROADVEHS, 748); // Class 398 / TfW Citylink
+    disable_item(FEAT_ROADVEHS, 649); // Class 399 / Sheffield Citylink
+}
+
+if (param[6] == 0) { // DEFAULT
+    // Disable tram versions of heavy rail units
+    disable_item(FEAT_ROADVEHS, 595); // London Underground 2024 stock tram
+    disable_item(FEAT_ROADVEHS, 643); // Class 777
+    disable_item(FEAT_ROADVEHS, 642); // Class 555
+    disable_item(FEAT_ROADVEHS, 643); // Class 777
+    disable_item(FEAT_ROADVEHS, 642); // Class 555
+    disable_item(FEAT_ROADVEHS, 490); // 1938 Tube Stock tram
+	disable_item(FEAT_ROADVEHS, 292); // S7 Tube Stock tram
+	disable_item(FEAT_ROADVEHS, 293); // S8 Tube Stock tram
+
+    // Disable train versions of light rail versions
+
+    // Class 398 and 399 are NOT disabled here as they actually run on both tram and train tracks
+}

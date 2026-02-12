@@ -1,0 +1,161 @@
+spriteset (spriteset_B90_purchase, "gfx/Tram/DLR_B90.png") {
+	template_purchase(0,0)
+}
+
+spriteset (spriteset_B90_Double_purchase, "gfx/Tram/DLR_B90.png") {
+	template_purchase(88,0)
+}
+
+spriteset (spriteset_B90_Triple_purchase, "gfx/Tram/DLR_B90.png") {
+	template_purchase(88,0)
+}
+
+spriteset (spriteset_B90_front_DLRBlue, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 13)
+}
+spriteset (spriteset_B90_rear_DLRBlue, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 33)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_DLRBlue, position_in_articulated_veh % 2){
+	0:spriteset_B90_front_DLRBlue;
+	1:spriteset_B90_rear_DLRBlue;	
+}
+
+spriteset (spriteset_B90_front_DLRTurquoise, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 53)
+}
+spriteset (spriteset_B90_rear_DLRTurquoise, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 73)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_DLRTurquoise, position_in_articulated_veh % 2){
+	0:spriteset_B90_front_DLRTurquoise;
+	1:spriteset_B90_rear_DLRTurquoise;	
+}
+
+spriteset (spriteset_B90_front_DLRRed1, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 93)
+}
+spriteset (spriteset_B90_rear_DLRRed1, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 113)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_DLRRed1, position_in_articulated_veh % 2){
+	0:spriteset_B90_front_DLRRed1;
+	1:spriteset_B90_rear_DLRRed1;	
+}
+
+spriteset (spriteset_B90_front_GeneralElectric, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 133)
+}
+spriteset (spriteset_B90_rear_GeneralElectric, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 153)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_GeneralElectric, position_in_articulated_veh % 2){
+	0:spriteset_B90_front_GeneralElectric;
+	1:spriteset_B90_rear_GeneralElectric;	
+}
+
+spriteset (spriteset_B90_front_DLRRed2, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 173)
+}
+spriteset (spriteset_B90_rear_DLRRed2, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 193)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_DLRRed2, position_in_articulated_veh % 2){
+	0:spriteset_B90_front_DLRRed2;
+	1:spriteset_B90_rear_DLRRed2;	
+}
+
+spriteset (spriteset_B90_front_LondonOlympicsBlue, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 213)
+}
+spriteset (spriteset_B90_rear_LondonOlympicsBlue, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 233)
+}
+spriteset (spriteset_B90_front_LondonOlympicsYellow, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 253)
+}
+spriteset (spriteset_B90_rear_LondonOlympicsYellow, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 273)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_LondonOlympics_forward, position_in_articulated_veh % 4){
+	0:spriteset_B90_front_LondonOlympicsBlue;
+	1:spriteset_B90_rear_LondonOlympicsBlue;
+	2:spriteset_B90_front_LondonOlympicsYellow;
+	3:spriteset_B90_rear_LondonOlympicsYellow;
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_LondonOlympics_reversed, position_in_articulated_veh % 4){
+	0:spriteset_B90_front_LondonOlympicsYellow;
+	1:spriteset_B90_rear_LondonOlympicsYellow;
+	2:spriteset_B90_front_LondonOlympicsBlue;
+	3:spriteset_B90_rear_LondonOlympicsBlue;
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_LondonOlympics_double, vehicle_is_reversed){
+	0: sw_TRAM_B90_LondonOlympics_forward;
+	1: sw_TRAM_B90_LondonOlympics_reversed;
+}
+random_switch(FEAT_ROADVEHS, SELF, sw_TRAM_B90_LondonOlympics_random){
+	1: sw_TRAM_B90_LondonOlympics_forward;
+	1: sw_TRAM_B90_LondonOlympics_reversed;
+}
+switch(FEAT_ROADVEHS, SELF, sw_TRAM_B90_LondonOlympics, num_vehs_in_consist){	 
+	4: sw_TRAM_B90_LondonOlympics_double; // Pushpull, baby
+	sw_TRAM_B90_LondonOlympics_random; // Singles and triples will randomise
+}
+
+spriteset (spriteset_B90_front_DLRPride, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 293)
+}
+spriteset (spriteset_B90_rear_DLRPride, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 313)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_DLRPride, position_in_articulated_veh % 2){
+	0:spriteset_B90_front_DLRPride;
+	1:spriteset_B90_rear_DLRPride;	
+}
+
+spriteset (spriteset_B90_front_TourDeFrance, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 333)
+}
+spriteset (spriteset_B90_rear_TourDeFrance, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 353)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_TourDeFrance, position_in_articulated_veh % 2){
+	0:spriteset_B90_front_TourDeFrance;
+	1:spriteset_B90_rear_TourDeFrance;	
+}
+
+spriteset (spriteset_B90_front_LewishamAd, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 373)
+}
+spriteset (spriteset_B90_rear_LewishamAd, "gfx/Tram/DLR_B90.png") {
+	template_tram20px(0, 393)
+}
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_LewishamAd, position_in_articulated_veh % 2){
+	0:spriteset_B90_front_LewishamAd;
+	1:spriteset_B90_rear_LewishamAd;	
+}
+
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90,cargo_subtype){
+	0: sw_TRAM_B90_DLRBlue;
+	1: sw_TRAM_B90_DLRTurquoise;
+	2: sw_TRAM_B90_DLRRed1;
+	3: sw_TRAM_B90_DLRRed2;
+	4: sw_TRAM_B90_GeneralElectric;
+	5: sw_TRAM_B90_LondonOlympics;
+	6: sw_TRAM_B90_DLRPride;
+	7: sw_TRAM_B90_TourDeFrance;
+	8: sw_TRAM_B90_LewishamAd;
+}
+
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_B90_cargo_subtype_text,cargo_subtype){
+    0: return string(STR_LIVERY, string(str_abbr_DLR), string(str_col_Blue));
+	1: return string(STR_LIVERY, string(str_abbr_DLR), string(str_col_Turquoise));
+	2: return string(STR_LIVERY_EXTENDED, string(str_abbr_DLR), string(str_col_Red), string(str_cab_red));
+	3: return string(STR_LIVERY_EXTENDED, string(str_abbr_DLR), string(str_col_Red), string(str_cab_black));
+	4: return string(STR_LIVERY_ADVERT, string(str_abbr_DLR), string(str_ad_GeneralElectric));
+	5: return string(STR_LIVERY, string(str_abbr_DLR), string(str_special_Olympics));
+	6: return string(STR_LIVERY, string(str_abbr_DLR), string(str_special_Pride));
+	7: return string(STR_LIVERY_ADVERT, string(str_abbr_DLR), string(str_ad_TourDeFrance));
+	8: return string(STR_LIVERY_ADVERT, string(str_abbr_DLR), string(str_ad_Lewisham));
+       return CB_RESULT_NO_TEXT;
+}

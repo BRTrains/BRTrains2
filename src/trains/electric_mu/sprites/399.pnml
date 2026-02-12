@@ -1,0 +1,32 @@
+spriteset (spriteset_BR399_purchase, "gfx/Tram/Sheffield_Citylink.png") {
+	template_purchase(0,0)
+}
+
+spriteset (spriteset_BR399_Double_purchase, "gfx/Tram/Sheffield_Citylink.png") {
+	template_purchase(88,0)
+}
+
+spriteset (spriteset_BR399_front_StagecoachBlue, "gfx/Tram/Sheffield_Citylink.png") {
+	template_train20px(0, 13)
+}
+spriteset (spriteset_BR399_middle_StagecoachBlue, "gfx/Tram/Sheffield_Citylink.png") {
+	template_train20px(0, 53)
+}
+spriteset (spriteset_BR399_rear_StagecoachBlue, "gfx/Tram/Sheffield_Citylink.png") {
+	template_train20px(0, 33)
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR399_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_StagecoachBlue);
+       return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR399_StagecoachBlue, position_in_articulated_veh % 3){
+	0:spriteset_BR399_front_StagecoachBlue;
+	1:spriteset_BR399_middle_StagecoachBlue;
+	2:spriteset_BR399_rear_StagecoachBlue;	
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR399,cargo_subtype){
+	0: sw_BR399_StagecoachBlue;
+}

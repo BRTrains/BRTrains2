@@ -1,0 +1,85 @@
+item (FEAT_ROADVEHS, item_TRAM_LULS7, 292) {
+	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
+		name: 							string(STR_NAME_LULS7);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2012,4,21);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					40;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		refit_cost:						0;
+		power:							1 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.08;
+		length:							8;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LULS_usage),string(str_LULS_eos),string(str_LULS_liveries)));
+	cargo_subtype_text:					sw_TRAM_LULS_cargo_subtype_text;
+	articulated_part:        			switch_articulated_TRAM_LULS7;
+	default: 							switch_TRAM_LULS7;
+	purchase:							spriteset_TRAM_LUS7S8_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_sound_TRAM_tube_modern;
+	cargo_capacity: return(1435 * param_pax /7);
+	cost_factor:	return(GetAdjustedCostTRAM(113));
+	running_cost_factor: return(GetAdjustedCostTRAM(45));
+	weight: 213;
+	power: 4160;
+}
+}
+
+item (FEAT_ROADVEHS, item_TRAM_LULS8, 293) {
+	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
+		name: 							string(STR_NAME_LULS8);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2010,4,21);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					40;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		refit_cost:						0;
+		power:							1 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.08;
+		length:							8;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LULS_usage),string(str_LULS_eos),string(str_LULS_liveries)));
+	cargo_subtype_text:					sw_TRAM_LULS_cargo_subtype_text;
+	articulated_part:        			switch_articulated_TRAM_LULS8;
+	default: 							switch_TRAM_LULS8;
+	purchase:							spriteset_TRAM_LUS7S8_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_sound_TRAM_tube_modern;
+	cargo_capacity: return(1640 * param_pax / 8);
+	cost_factor:	return(GetAdjustedCostTRAM(125));
+	running_cost_factor: return(GetAdjustedCostTRAM(50));
+	weight: 242;
+	power: 4992;
+}
+}

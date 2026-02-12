@@ -1,0 +1,83 @@
+spriteset(spriteset_BR252_Purchase, "gfx/BR41.png") {
+	template_purchase(0, 0)
+}
+
+spriteset(spriteset_BR252_front_BRBlue, "gfx/BR41.png") {
+	template_train32px_old(0, 13)
+}
+spriteset(spriteset_BR252_middle_BRBlue, "gfx/BR41.png") {
+	template_train32px_old(0, 63)
+}
+spriteset(spriteset_BR252_rear_BRBlue, "gfx/BR41.png") {
+	template_train32px_old(0, 38)
+}
+
+switch(FEAT_TRAINS, SELF, sw_BR252_BRBlue, position_in_articulated_veh) {
+	0: spriteset_BR252_front_BRBlue;
+	1..9: spriteset_BR252_middle_BRBlue;
+	10: spriteset_BR252_rear_BRBlue;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR252,cargo_subtype) {
+    0:	sw_BR252_BRBlue;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR252, extra_callback_info1) {	
+	1..10: return item_BR252;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR252_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_BRBlue);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_BR252, 549) {
+	property {
+		name: 							string(STR_NAME_BR252);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1971,1,1);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					14;
+		cost_factor:					45;
+		running_cost_factor:			55;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							125 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							4500 hp;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					0;
+		weight:							68 ton;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_DIESEL;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				250;
+	}
+	graphics {
+		additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_demu),string(str_BR252_usage),string(str_BR252_eos),string(str_BR252_liveries)));
+		can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+		cargo_subtype_text:					sw_BR252_cargo_subtype_text;
+		articulated_part:        			switch_articulated_BR252;
+		default: 							sw_BR252;
+		purchase:							spriteset_BR252_Purchase;
+		colour_mapping: 					return PALETTE_CC_FIRST;
+		create_effect:						diesel_create_visual_effect;
+		sound_effect:						sw_sound_diesel_hst_vp185;
+		cargo_capacity:						return(666 * param_pax / 11);
+		cost_factor:	return(GetAdjustedCost(117));
+		running_cost_factor: return(GetAdjustedCost(92));
+	}
+}

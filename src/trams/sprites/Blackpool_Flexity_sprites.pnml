@@ -1,0 +1,19 @@
+spriteset (spriteset_BlackpoolFlexity_purchase, "gfx/Tram/Blackpool_Flexity2.png") {
+	template_purchase(0,0)
+}
+
+spriteset (spriteset_BlackpoolFlexity_front_BlackpoolTransport, "gfx/Tram/Blackpool_Flexity2.png") {
+	template_tram12px(0, 13)
+}
+spriteset (spriteset_BlackpoolFlexity_frontMiddle_BlackpoolTransport, "gfx/Tram/Blackpool_Flexity2.png") {
+	template_tram12px(0, 45)
+}
+spriteset (spriteset_BlackpoolFlexity_centre_BlackpoolTransport, "gfx/Tram/Blackpool_Flexity2.png") {
+	template_tram8px(0, 61)
+}
+spriteset (spriteset_BlackpoolFlexity_rearMiddle_BlackpoolTransport, "gfx/Tram/Blackpool_Flexity2.png") {
+	template_tram12px(0, 45)
+}
+spriteset (spriteset_BlackpoolFlexity_rear_BlackpoolTransport, "gfx/Tram/Blackpool_Flexity2.png") {
+	template_tram12px(0, 29)
+}

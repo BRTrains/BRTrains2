@@ -1,0 +1,70 @@
+// Define articulations
+switch(FEAT_TRAINS, SELF, sw_BR399_articulated, extra_callback_info1) {
+	// extra_callback_info1 returns the car number, so 1 is the second car, 2 the third, .. so on
+	// The callback runs this switch until it returns NO_MORE_ARTICULATED_PARTS, which ends the growth
+	1..2: return item_BR399;
+	return CB_RESULT_NO_MORE_ARTICULATED_PARTS; // Stop adding more cars
+}
+
+// Start/stop switch, used to limit maximum length
+switch(FEAT_TRAINS, SELF, sw_BR399_start_stop, num_vehs_in_consist) {	
+	return CB_RESULT_NO_TEXT;   // Allow any length
+}
+
+// Only allow the same train type to be added to itself
+switch(FEAT_TRAINS, SELF, sw_BR399_can_attach_wagon, vehicle_type_id) {
+	item_BR399: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_CANNOT_ATTACH);
+}
+
+item(FEAT_TRAINS, item_BR399, 750) {
+	property {
+		name: string(STR_NAME_BR399);
+		climates_available: ALL_CLIMATES; // available in all climates
+		introduction_date: date(2017, 1, 23);
+		model_life: VEHICLE_NEVER_EXPIRES; // keep available forever		
+		vehicle_life: 30; // years after vehicle is deemed "old" and should be replaced
+		reliability_decay: 0; // dont reduce reliabilty, (will grow from 75% upwards over the years)
+		refittable_cargo_classes: bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes: bitmask();
+		cost_factor: 1;
+		running_cost_factor: 1;
+		loading_speed: 25;	
+		cargo_allow_refit: [];
+		cargo_disallow_refit: [];
+		
+		speed: 62 mph;
+		power: 1170 hp;
+		cargo_capacity: 1;
+		weight: 66 ton;
+		
+		sprite_id: SPRITE_ID_NEW_TRAIN; // required
+		refit_cost: 0;
+		track_type: ELRL;
+		ai_special_flag: AI_FLAG_PASSENGER; // tell ai that this is a passenger train
+		running_cost_base: RUNNING_COST_ELECTRIC;
+		dual_headed: 0; // set to 0 otherwise limited to 2 cars only
+		engine_class: ENGINE_CLASS_ELECTRIC; // even if its 3rd rail, ELECTRIC would give overhead wire effects
+		extra_power_per_wagon: 0 kW;
+		tractive_effort_coefficient: 0.08;
+		air_drag_coefficient: 0.05;
+		length: 5; // full tile length vehicle
+		visual_effect_and_powered: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER); // visual fx
+		extra_weight_per_wagon: 0 ton;
+		bitmask_vehicle_info: 0;
+	}
+	
+	graphics {		
+		default: sw_BR399;
+		purchase: spriteset_BR399_purchase;
+		articulated_part: sw_BR399_articulated;
+		sound_effect:	sw_sound_tube_modern;
+		start_stop: sw_BR399_start_stop;	
+		can_attach_wagon: sw_BR399_can_attach_wagon;				
+		additional_text: return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR399_usage),string(str_BR399_eos),string(str_BR399_liveries)));
+		cargo_subtype_text: sw_BR399_cargo_subtype_text;
+		cargo_capacity:						return(236 * param_pax / 3);
+		cost_factor:	return(GetAdjustedCost(35));
+		running_cost_factor: return(GetAdjustedCost(30));
+	}
+}

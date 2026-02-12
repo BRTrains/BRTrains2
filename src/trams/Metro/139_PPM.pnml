@@ -1,0 +1,54 @@
+switch(FEAT_ROADVEHS,SELF, sw_TRAM_BR139,cargo_subtype){
+    0:	spriteset_tram_BR139_LM;
+	1:	spriteset_tram_BR139_WMR;
+	2:  spriteset_tram_BR139_PPMPrototype;
+	3:  spriteset_tram_BR139_BristolElectricPrototype;
+	4:  spriteset_tram_BR139_GoCoop;
+}
+
+switch(FEAT_ROADVEHS,SELF,sw_TRAM_BR139_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_LondonMidland);
+	1:	return string(str_WMR);
+	2:	return string(str_PPMProto);
+	3:	return string(str_BristolElectricProto);
+	4:	return string(str_GoCoop);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_ROADVEHS, item_TRAM_BR139, 645) {
+	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
+		name: 							string(STR_NAME_BR139);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2009,6,1);
+		model_life:						8;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					10;
+		running_cost_factor:			5;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							50 mph;		
+		refit_cost:						0;		
+		power:							86 hp;				
+		default_cargo_type:				PASS;
+		cargo_capacity:					50;
+		weight:							12 ton;		
+		tractive_effort_coefficient:	0.3;
+		air_drag_coefficient:			0.1;
+		length:							5;				
+		cargo_age_period:				185;
+		}
+	graphics {	
+	cargo_subtype_text:					sw_TRAM_BR139_cargo_subtype_text;
+	default: 							sw_TRAM_BR139;
+	purchase:							spriteset_BR139_Purchase;		
+	cargo_capacity:						return(50 * param_pax);
+	sound_effect:						sw_sound_TRAM_diesel_dmu_gen2;
+	cost_factor:	return(GetAdjustedCostTRAM(10));
+	running_cost_factor: return(GetAdjustedCostTRAM(5));
+}
+}

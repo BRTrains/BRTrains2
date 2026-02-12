@@ -1,0 +1,44 @@
+item (FEAT_ROADVEHS, item_TRAM_LU1938, 490) {
+	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
+		name: 							string(STR_NAME_LU1938);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1938,1,1);
+		model_life:						15;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					61;
+		running_cost_factor:			37;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							60 mph;
+		power:							2500 hp;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_ROADVEH;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							1 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_LU1938_usage),string(str_LU1938_eos),string(str_LU1938_liveries)));
+	cargo_subtype_text:					sw_TRAM_LU1938_cargo_subtype_text;
+	articulated_part:        			switch_articulated_TRAM_LU1938;
+	default: 							sw_TRAM_LU1938;
+	purchase:							spriteset_TRAM_LU1938_Purchase;
+	cargo_capacity: return(1128 * param_pax / 8);
+	cost_factor:	return(GetAdjustedCostTRAM(61));
+	running_cost_factor: return(GetAdjustedCostTRAM(37));
+	weight: 197;
+	power: 2500;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	sound_effect:						sw_sound_TRAM_tube_GEC;
+
+}
+}

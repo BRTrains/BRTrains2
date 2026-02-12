@@ -1,0 +1,100 @@
+spriteset(spriteset_BR799_Purchase, "gfx/AFMU/799.png") {
+	template_purchase(200, 0)
+}
+
+spriteset(spriteset_BR799_front_PBHydroflex, "gfx/AFMU/799.png") {
+	template_train32px(0, 0)
+}
+spriteset(spriteset_BR799_mid_PBHydroflex, "gfx/AFMU/799.png") {
+	template_train32px(0, 26)
+}
+spriteset(spriteset_BR799_midPanto_PBHydroflex, "gfx/AFMU/799.png") {
+	template_train32px(0, 52)
+}
+spriteset(spriteset_BR799_rear_PBHydroflex, "gfx/AFMU/799.png") {
+	template_train32px(0, 78)
+}
+
+// Choose sprites depending on car position
+switch(FEAT_TRAINS, SELF, sw_BR799_PBHydroflex, position_in_articulated_veh % 4) {
+	0: spriteset_BR799_front_PBHydroflex;
+    1: spriteset_BR799_mid_PBHydroflex;
+	2: spriteset_BR799_midPanto_PBHydroflex;
+    3: spriteset_BR799_rear_PBHydroflex;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR799,cargo_subtype){
+	0: sw_BR799_PBHydroflex;	
+}
+
+switch(FEAT_TRAINS,SELF,sw_BR799_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_Porterbrook_Hydroflex);    
+       return CB_RESULT_NO_TEXT;
+}
+
+switch (FEAT_TRAINS, SELF, switch_articulated_BR799, extra_callback_info1) {
+	1 .. 3: return item_BR799;	
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR799_particles_electric, position_in_articulated_veh % 4) {
+	// 0 is first car, 1 is second car, 2 is third car, so on...
+	2: visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER);
+}
+
+switch(FEAT_TRAINS, SELF, switch_BR799_particles, tile_powers_railtype("ELRL")) {
+	1: switch_BR799_particles_electric;
+	visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 0, DISABLE_WAGON_POWER); // No visual effects on hydrogen mode, because we don't have a gentle water vapour particle effect
+}
+
+item (FEAT_TRAINS, item_BR799, 734) {
+	property {
+		name: 							string(STR_NAME_BR799);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(2019,4,1);
+		model_life:						5;
+		retire_early:					1;
+		vehicle_life:					10;
+		reliability_decay:				7;
+		refittable_cargo_classes:		CC_PASSENGERS;
+		cargo_allow_refit:				[PASS, TOUR];
+		loading_speed:					25;
+		cost_factor:					1;
+		running_cost_factor:			1;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							100 mph;
+		refit_cost:						0;
+		track_type:						RAIL;
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							1438 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				PASS;
+		cargo_capacity:					1;
+		weight:							168 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+		cargo_age_period:				185;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_emu),string(str_BR799_usage),string(str_BR799_eos),string(str_BR799_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_subtype_text:					sw_BR799_cargo_subtype_text;
+	articulated_part:        			switch_articulated_BR799;
+	default: 							sw_BR799;
+	purchase:							spriteset_BR799_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	create_effect:						electric_create_visual_effect;
+	sound_effect:						sw_sound_electric_88;
+	cargo_capacity: return(246 * param_pax / 4);
+	cost_factor:	return(GetAdjustedCost(86));
+	running_cost_factor: return(GetAdjustedCost(63));
+	visual_effect_and_powered: switch_BR799_particles;
+}
+}

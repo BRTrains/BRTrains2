@@ -1,0 +1,45 @@
+switch (FEAT_ROADVEHS, SELF, switch_articulated_TRAM_BlackpoolBrush_Mail, extra_callback_info1) {
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+}
+
+
+item (FEAT_ROADVEHS, item_TRAM_BlackpoolBrush_Mail, 665) {
+	property {
+		misc_flags:                 	bitmask(ROADVEH_FLAG_TRAM);
+		name: 							string(STR_NAME_BlackpoolBrush_Mail);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1937,4,1);
+		model_life:						VEHICLE_NEVER_EXPIRES;
+		retire_early:					1;
+		vehicle_life:					50;
+		reliability_decay:				7;
+		refittable_cargo_classes:		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);
+		cargo_allow_refit:				[MAIL];
+		loading_speed:					35;
+		cost_factor:					3;
+		running_cost_factor:			3;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							35 mph;		
+		refit_cost:						0;		
+		power:							114 hp;
+		running_cost_base:           	RUNNING_COST_ROADVEH;		
+		default_cargo_type:				MAIL;
+		cargo_capacity:					30;
+		weight:							1 ton;
+		tractive_effort_coefficient:	0.08;
+		air_drag_coefficient:			0.05;
+		length:							5;						
+		cargo_age_period:				185;
+	}
+	graphics {
+	sound_effect:						sw_sound_TRAM_tube_GEC;
+	cargo_subtype_text:					sw_TRAM_BlackpoolBrush_Mail_cargo_subtype_text;
+	articulated_part:        			switch_articulated_TRAM_BlackpoolBrush_Mail;
+	default: 							sw_TRAM_BlackpoolBrush_Mail;
+	purchase:							spriteset_BlackpoolBrush_Mail_purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;	
+	cost_factor:	return(GetAdjustedCostTRAM(3));
+	running_cost_factor: return(GetAdjustedCostTRAM(3));
+	weight: 9;
+}
+}
