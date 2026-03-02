@@ -2,7 +2,7 @@ railtypetable {
     RAIL,
 	ELRL: [SAAA, SAAE, ELRL],
 	THIRD: [SAA3, "3RDR", ELRL], // 3rd Rail	
-	FOURTH: [SAA4, SAA3, ELRL], // 3rd or 4th rail
+	FOURTH: [SAA4, SAA3, ELRL] // 3rd or 4th rail
 
 	// THIRD: [SAAZ, "3RDC", SAA3, "3RDR", ELRL], // 3rd Rail or Catenary
 }

@@ -68,7 +68,7 @@ item (FEAT_TRAINS, item_LUDStock, 496) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							45 mph;
 		refit_cost:						0;
-		track_type:						BR_4RDR;
+		track_type:						FOURTH;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							3000 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -117,7 +117,7 @@ item (FEAT_TRAINS, item_LUDStockb, 497) {
 		speed:							60 mph;
 		misc_flags:		 TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
 		refit_cost:						0;
-		track_type:						BR_4RDR;
+		track_type:						FOURTH;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;
@@ -159,7 +159,7 @@ item (FEAT_TRAINS, item_LUDStockc, 498) {
 		sprite_id:						SPRITE_ID_NEW_TRAIN;
 		speed:							60 mph;
 		refit_cost:						0;
-		track_type:						BR_4RDR;
+		track_type:						FOURTH;
 		ai_special_flag:				AI_FLAG_CARGO;
 		power:							0 hp;
 		running_cost_base:				RUNNING_COST_ELECTRIC;

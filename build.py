@@ -166,7 +166,8 @@ def main(grf_name):
     src_directory = Path(src_directory_name)
     lang_directory = Path(lang_directory_name)    
 
-    trains_directory = Path(src_directory_name) / Path("trains")    
+    trains_directory = Path(src_directory_name) / Path("trains")
+    trams_directory = Path(src_directory_name) / Path("trams")
 
     # Variant Headers
     variantheader_directory = Path()
@@ -182,7 +183,8 @@ def main(grf_name):
         "altfuel_loco",
         "steam_loco",
         "rolling_stock",
-        "freight_wagon",        
+        "freight_wagon", 
+        "metro",      
         "departmental",
         "utility_and_debug",
         "deprecated"
@@ -210,7 +212,9 @@ def main(grf_name):
 
     for directory in train_directories:
         filepath = trains_directory / directory
-        file_list.update(handle_folder(filepath, True))        
+        file_list.update(handle_folder(filepath, True))
+
+    file_list.update(handle_folder(trams_directory, True))
     
 
     file_list.update(handle_folder(src_directory / "grf_append"))
