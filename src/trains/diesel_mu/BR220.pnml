@@ -10,12 +10,20 @@ spriteset(spriteset_BR220a_XC, "gfx/BR220a.png") {
 	template_train32px_old(0, 38)
 }
 
+spriteset(spriteset_BR220a_XCRefurb, "gfx/BR220a.png") {
+	template_train32px_old(0, 113)
+}
+
 spriteset(spriteset_BR220b_Virgin, "gfx/BR220b.png") {
 	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR220b_XC, "gfx/BR220b.png") {
 	template_train32px_old(0, 38)
+}
+
+spriteset(spriteset_BR220b_XCRefurb, "gfx/BR220b.png") {
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR220c_Virgin, "gfx/BR220c.png") {
@@ -26,19 +34,26 @@ spriteset(spriteset_BR220c_XC, "gfx/BR220c.png") {
 	template_train32px_old(0, 38)
 }
 
+spriteset(spriteset_BR220c_XCRefurb, "gfx/BR220c.png") {
+	template_train32px_old(0, 113)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR220a,cargo_subtype){
     0:	spriteset_BR220a_Virgin;
 	1:	spriteset_BR220a_XC;
+	2:	spriteset_BR220a_XCRefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR220b,cargo_subtype){
     0:	spriteset_BR220b_Virgin;
 	1:	spriteset_BR220b_XC;
+	2:	spriteset_BR220b_XCRefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR220c,cargo_subtype){
     0:	spriteset_BR220c_Virgin;
 	1:	spriteset_BR220c_XC;
+	2:	spriteset_BR220c_XCRefurb;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR220, extra_callback_info1) {
@@ -49,7 +64,8 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR220, extra_callback_info1) {
 
 switch(FEAT_TRAINS,SELF,sw_BR220_cargo_subtype_text,cargo_subtype){
     0:	return string(str_Virgin);
-	1:	return string(str_XC);
+	1:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
+	2:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
        return CB_RESULT_NO_TEXT;
 }
 

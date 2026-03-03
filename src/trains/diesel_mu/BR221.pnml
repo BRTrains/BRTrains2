@@ -22,6 +22,16 @@ spriteset(spriteset_BR221c_XC, "gfx/BR220c.png") {
 	template_train32px_old(0, 38)
 }
 
+spriteset(spriteset_BR221a_XCRefurb, "gfx/BR220a.png") {
+	template_train32px_old(0, 113)
+}
+spriteset(spriteset_BR221b_XCRefurb, "gfx/BR220b.png") {
+	template_train32px_old(0, 113)
+}
+spriteset(spriteset_BR221c_XCRefurb, "gfx/BR220c.png") {
+	template_train32px_old(0, 113)
+}
+
 spriteset(spriteset_BR221a_Avanti, "gfx/BR220a.png") {
 	template_train32px_old(0, 63)
 }
@@ -43,31 +53,35 @@ spriteset(spriteset_BR221c_GrandCentral, "gfx/BR220c.png") {
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221a,cargo_subtype){
-    0:	spriteset_BR221a_Virgin;
-	1:	spriteset_BR221a_XC;
-	2:	spriteset_BR221a_Avanti;
-	3:	spriteset_BR221a_GrandCentral;
+    0:	spriteset_BR221a_Virgin;	
+	1:	spriteset_BR221a_Avanti;
+	2:	spriteset_BR221a_GrandCentral;
+	3:	spriteset_BR221a_XC;
+	4:	spriteset_BR221a_XCRefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221b,cargo_subtype){
-    0:	spriteset_BR221b_Virgin;
-	1:	spriteset_BR221b_XC;
-	2:	spriteset_BR221b_Avanti;
-	3:	spriteset_BR221b_GrandCentral;
+    0:	spriteset_BR221b_Virgin;	
+	1:	spriteset_BR221b_Avanti;
+	2:	spriteset_BR221b_GrandCentral;
+	3:	spriteset_BR221b_XC;
+	4:	spriteset_BR221b_XCRefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221d,cargo_subtype){
-    0:	spriteset_BR221b_Virgin;
-	1:	spriteset_BR221b_XC;
-	2:	spriteset_BR221b_Avanti;
-	3:	spriteset_BR221b_GrandCentral;
+    0:	spriteset_BR221b_Virgin;	
+	1:	spriteset_BR221b_Avanti;
+	2:	spriteset_BR221b_GrandCentral;
+	3:	spriteset_BR221b_XC;
+	4:	spriteset_BR221b_XCRefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221c,cargo_subtype){
-    0:	spriteset_BR221c_Virgin;
-	1:	spriteset_BR221c_XC;
-	2:	spriteset_BR221c_Avanti;
-	3:	spriteset_BR221c_GrandCentral;
+    0:	spriteset_BR221c_Virgin;	
+	1:	spriteset_BR221c_Avanti;
+	2:	spriteset_BR221c_GrandCentral;
+	3:	spriteset_BR221c_XC;
+	4:	spriteset_BR221c_XCRefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221_capacity,cargo_subtype){
@@ -84,10 +98,11 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR221, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR221_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_Virgin);
-	1:	return string(str_XC);
-	2:	return string(str_AvantiWestCoast);
-	3:	return string(str_GC);
+    0:	return string(str_Virgin);	
+	1:	return string(str_AvantiWestCoast);
+	2:	return string(str_GC);
+	3:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
+	4:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
        return CB_RESULT_NO_TEXT;
 }
 

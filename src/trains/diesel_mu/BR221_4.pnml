@@ -10,12 +10,20 @@ spriteset(spriteset_BR221_4a_XC, "gfx/BR220a.png") {
 	template_train32px_old(0, 38)
 }
 
+spriteset(spriteset_BR221_4a_XCRefurb, "gfx/BR220a.png") {
+	template_train32px_old(0, 113)
+}
+
 spriteset(spriteset_BR221_4b_Virgin, "gfx/BR220b.png") {
 	template_train32px_old(0, 13)
 }
 
 spriteset(spriteset_BR221_4b_XC, "gfx/BR220b.png") {
 	template_train32px_old(0, 38)
+}
+
+spriteset(spriteset_BR221_4b_XCRefurb, "gfx/BR220b.png") {
+	template_train32px_old(0, 113)
 }
 
 spriteset(spriteset_BR221_4c_Virgin, "gfx/BR220c.png") {
@@ -26,24 +34,32 @@ spriteset(spriteset_BR221_4c_XC, "gfx/BR220c.png") {
 	template_train32px_old(0, 38)
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR221_4a,cargo_subtype){
-    0:	spriteset_BR221_4a_XC;
-	1:	spriteset_BR221_4a_Virgin;
+spriteset(spriteset_BR221_4c_XCRefurb, "gfx/BR220c.png") {
+	template_train32px_old(0, 113)
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR221_4b,cargo_subtype){
-    0:	spriteset_BR221_4b_XC;
-	1:	spriteset_BR221_4b_Virgin;
+switch(FEAT_TRAINS,SELF, sw_BR221_4a,cargo_subtype){    
+	0:	spriteset_BR221_4a_Virgin;
+	1:	spriteset_BR221_4a_XC;
+	2:	spriteset_BR221_4a_XCRefurb;
+}
+
+switch(FEAT_TRAINS,SELF, sw_BR221_4b,cargo_subtype){    
+	0:	spriteset_BR221_4b_Virgin;
+	1:	spriteset_BR221_4b_XC;
+	2:	spriteset_BR221_4b_XCRefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221_4d,cargo_subtype){
-    0:	spriteset_BR221_4b_XC;
-	1:	spriteset_BR221_4b_Virgin;
+	0:	spriteset_BR221_4b_Virgin;
+    1:	spriteset_BR221_4b_XC;	
+	2:	spriteset_BR221_4b_XCRefurb;
 }
 
-switch(FEAT_TRAINS,SELF, sw_BR221_4c,cargo_subtype){
-    0:	spriteset_BR221_4c_XC;
-	1:	spriteset_BR221_4c_Virgin;
+switch(FEAT_TRAINS,SELF, sw_BR221_4c,cargo_subtype){    
+	0:	spriteset_BR221_4c_Virgin;
+	1:	spriteset_BR221_4c_XC;
+	2:	spriteset_BR221_4c_XCRefurb;
 }
 
 switch(FEAT_TRAINS,SELF, sw_BR221_4_capacity,cargo_subtype){
@@ -60,8 +76,9 @@ switch (FEAT_TRAINS, SELF, switch_articulated_BR221_4, extra_callback_info1) {
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR221_4_cargo_subtype_text,cargo_subtype){
-    0:	return string(str_XC);
-	1:	return string(str_Virgin);
+    0:	return string(str_Virgin);	
+	1:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Maroon));
+	2:	return string(STR_LIVERY, string(str_comp_XC), string(str_col_Red));
        return CB_RESULT_NO_TEXT;
 }
 
