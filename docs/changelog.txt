@@ -77,6 +77,7 @@ SAVEGAME BREAKING VERSION
 - Fixed 701 capacity
 - Fixed 333 capacity
 - Fixed Mk4 DVT speed
+- Fixed "hide default vehicle" parameter values being switched
 - Removed some deprecated units (08, 13, IE 2800 Class)
 - Reworked build script to reduce concurrent sprite group usage
 
