@@ -86,7 +86,7 @@ grf {
 	}
 }
 
-if(param_default_vehs == 0)
+if(param_default_vehs == 1)
 {
 	disable_item(FEAT_TRAINS);
 	disable_item(FEAT_ROADVEHS);
