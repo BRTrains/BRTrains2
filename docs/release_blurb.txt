@@ -1,0 +1,38 @@
+
+
+:WereGettingThere: BRTrains v2.15 released :WereGettingThere:
+
+This is quite a large release, and specifically is a **SAVEGAME BREAKING RELEASE**.
+This release is VERY likely to break if you try to upgrade a running game using a previous version, please don't even attempt it.
+
+Major changes this release include a sound overhaul, using new (more realistic) sounds for most units and adding sounds for many units that previously didn't have them, along with a badly needed rework of the Turbostar family
+
+New units: 
+- GWR 5700/6700 Class
+- Furness Railway D1 Class
+- Class 69
+- Class 76 (+Prototype unit)
+- Class 128
+- Class 172
+- Class 322
+- Class 360
+- Class 380
+- Class 398 (tram + train variants)
+- Class 399 (tram + train variants)
+- Class 799
+- DLR P86 Stock
+- DLR B90/B90/B2K Stock
+- Edinburgh Ubros tram
+- Nottingham Citadis 302 tram
+- BR Conflat A and Conflat P wagons
+- GWR Dean 25'4@ Compartment Coach
+
+Redrawn units
+- The entire Turbostar family (and Class 357)
+- Class 20
+- Class 323
+- Class 332
+- Class 333
+- Mk1 Coach
+
+Along with 35 additional liveries for 15 existing units, and a pile of bugfixed/minor improvements
