@@ -249,6 +249,42 @@ def main(grf_name):
 
     return 0
 
+def copy_to_openttd_newgrf(src_file):
+    """
+    Copy src_file to the user's Documents/OpenTTD/newgrf directory if it exists.
+    Works on Windows and macOS, untested on Linux
+
+    Args:
+        src_file (str or Path): Path to the file to copy.
+    Returns:
+        Path | None: Destination path if copied, None if folder not found or copy failed.
+    """
+    src = Path(src_file).expanduser().resolve()
+    if not src.is_file():
+        raise FileNotFoundError(f"Source file not found: {src}")
+
+    # Get the user's Documents folder in a cross-platform way
+    documents = Path.home() / "Documents"
+    target_dir = documents / "OpenTTD" / "newgrf"
+
+    if not target_dir.exists():
+        print(f"Target folder not found: {target_dir}, trying alternate")
+        documents_alt = Path.home() / "OneDrive" / "Documents"
+        target_dir = documents_alt / "OpenTTD" / "newGRF"
+
+    if not target_dir.exists():
+        print(f"Target folder not found: {target_dir}")
+        return None
+
+    dest = target_dir / src.name
+    try:
+        shutil.copy2(src, dest)
+        print(f"Copied to: {dest}")
+        return dest
+    except Exception as e:
+        print(f"Copy failed: {e}")
+        return None
+
 
 if __name__ == "__main__":
     startTime = time.time()
@@ -257,6 +293,8 @@ if __name__ == "__main__":
     parser = ArgumentParser(description="Compile pnml files into one nml file")
     parser.add_argument("grf_name")
     args = parser.parse_args()
+
+    copy_to_openttd_newgrf(f"build/{args.grf_name}.grf")
 
     # Reports any errors in the nml file compilation process
     error_code = main(args.grf_name)
