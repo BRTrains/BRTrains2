@@ -507,10 +507,10 @@ spriteset(spriteset_BR170_front_NXScotRail, "gfx/DMU/170.png") {
 	template_train32px(0, 1040)
 }
 spriteset(spriteset_BR170_rear_NXScotRail, "gfx/DMU/170.png") {
-	template_train32px(0, 1092)
+	template_train32px(0, 1066)
 }
 spriteset(spriteset_BR170_middle_NXScotRail, "gfx/DMU/170.png") {
-	template_train32px(0, 1066)
+	template_train32px(0, 1092)
 }
 switch(FEAT_TRAINS, SELF, sw_BR170_NXScotRail_sw2, position_in_articulated_veh)
 {
