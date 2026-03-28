@@ -291,7 +291,7 @@ if __name__ == "__main__":
 
     # Parser arguments
     parser = ArgumentParser(description="Compile pnml files into one nml file")
-    parser.add_argument("grf_name")
+    parser.add_argument("--grf_name", default="brtrainsv2", help="The name of the grf file to be generated (without extension), default = brtrainsv2")
     args = parser.parse_args()
 
     # Reports any errors in the nml file compilation process
