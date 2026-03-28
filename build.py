@@ -294,8 +294,6 @@ if __name__ == "__main__":
     parser.add_argument("grf_name")
     args = parser.parse_args()
 
-    copy_to_openttd_newgrf(f"build/{args.grf_name}.grf")
-
     # Reports any errors in the nml file compilation process
     error_code = main(args.grf_name)
     if error_code == -1:
@@ -307,3 +305,12 @@ if __name__ == "__main__":
         print("The grf file was compiled successfully in ", round((time.time() - startTime),2), " seconds")
     else:         
         print("Unknown outcome. Error code <%s>" % str(error_code))
+
+    try:
+        copy_to_openttd_newgrf(f"build/{args.grf_name}.grf")
+    except FileNotFoundError as e:
+        if os.getenv('GITHUB_ACTIONS') == 'true':
+            print("Running on Github, skip copying file to Documents")
+        else:
+            print(f"Failed to copy file to OpenTTD newGRF folder, either the file or destination (Documents/OpenTTD/newgrf) does not exist")
+            print("fError returned was {e}")
