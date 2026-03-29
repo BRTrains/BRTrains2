@@ -5,7 +5,7 @@
 This is quite a large release, and specifically is a **SAVEGAME BREAKING RELEASE**.
 This release is VERY likely to break if you try to upgrade a running game using a previous version, please don't even attempt it.
 
-Major changes this release include a sound overhaul, using new (more realistic) sounds for most units and adding sounds for many units that previously didn't have them, along with a badly needed rework of the Turbostar family
+Major changes this release include a complete sound overhaul, using new (more realistic) sounds for most units and adding sounds for many units that previously didn't have them, along with a badly needed rework of the Turbostar family
 
 New units: 
 - GWR 5700/6700 Class
