@@ -24,7 +24,7 @@ switch(FEAT_TRAINS,SELF, sw_BR170_2car, cargo_subtype){
 }
 
 switch(FEAT_TRAINS,SELF,sw_BR170_2car_cargo_subtype_text,cargo_subtype){
-	0:	return string(str_comp_MidlandMainLine);
+	0:	return string(STR_LIVERY_SHORT, string(str_comp_MidlandMainLine));
 	1:  return string(STR_LIVERY, string(str_comp_Central), string(str_col_Green));
 	2:  return string(STR_LIVERY, string(str_comp_Central), string(str_special_RobinHood));	
 	3:	return string(str_Southern);
