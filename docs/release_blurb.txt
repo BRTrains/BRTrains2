@@ -33,6 +33,6 @@ Redrawn units
 - Class 323
 - Class 332
 - Class 333
-- Mk1 Coach
+- Mk1 Coach family
 
-Along with 35 additional liveries for 15 existing units, and a pile of bugfixed/minor improvements
+Along with 35 additional liveries for 15 existing units (see full changelog for details), and a pile of bugfixes/minor improvements
