@@ -18,6 +18,7 @@ item (FEAT_TRAINS, item_RMTPO, 483) {
 	property {
 		name: 							string(STR_NAME_RMTPO);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1963,4,21);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes: 		bitmask(CC_MAIL, CC_EXPRESS, CC_ARMOURED);

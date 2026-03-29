@@ -32,6 +32,7 @@ item(FEAT_TRAINS, item_LNER_Coronation_set_OTKT, 714) {
         variant_group:                  item_LNER_Cornation_Set;
         name:                           string(STR_NAME_LNER_CorSet_OT_KT);
         climates_available:             ALL_CLIMATES;
+        track_type:						RAIL;
         introduction_date:              date(1937, 7, 5);
         model_life:                     30;
         cargo_allow_refit:              [PASS];

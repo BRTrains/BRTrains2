@@ -19,6 +19,7 @@ item (FEAT_TRAINS, item_GCR_Robinson_50_CLSO, 704) {
 	property {
 		name: 							string(STR_NAME_GCR_Robinson_50_CLSO);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1903,1,1);
 		model_life:						10;
 		vehicle_life:					50;

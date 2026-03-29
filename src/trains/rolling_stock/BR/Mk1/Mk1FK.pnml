@@ -3,6 +3,7 @@ item (FEAT_TRAINS, item_BRMk1FK, 139) {
 		variant_group:					header_BRMk1;
 		name: 							string(STR_NAME_BRMk1FK);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1951,4,21);
 		model_life:						100;
 		cargo_allow_refit:				[PASS, TOUR];

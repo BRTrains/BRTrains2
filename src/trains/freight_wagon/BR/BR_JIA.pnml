@@ -36,6 +36,7 @@ item(FEAT_TRAINS, item_BRJIA, 709) {
     property {
 		name: 							string(STR_NAME_BRJIA_Polybulk);
 		climates_available: 			ALL_CLIMATES;
+        track_type:						RAIL;
 		introduction_date:				date(1974,1,1);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes:		bitmask(CC_BULK, CC_COVERED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);		

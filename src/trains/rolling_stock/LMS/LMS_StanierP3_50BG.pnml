@@ -19,6 +19,7 @@ item (FEAT_TRAINS, item_LMS_StanierP3_50BG, 668) {
 	property {
 		name: 							string(STR_NAME_LMS_StanierP3_50BG);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1933,4,1);
 		model_life:						30;
 		cargo_allow_refit:				[PASS];

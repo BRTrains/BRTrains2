@@ -4,6 +4,7 @@ item (FEAT_TRAINS, item_BRMk2_Late_SO, 626) {
 		variant_group:					header_BRMk2;
 		name: 							string(STR_NAME_BRMk2_Late_SO);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1964,4,21);
 		model_life:						100;
 		cargo_allow_refit:				[PASS, TOUR];

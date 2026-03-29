@@ -48,6 +48,7 @@ item(FEAT_TRAINS, item_BRTCovHop, 708) {
     property {
 		name: 							string(STR_NAME_BRT_CovHop);
 		climates_available: 			ALL_CLIMATES;
+        track_type:						RAIL;
 		introduction_date:				date(1965,1,1);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes:		bitmask(CC_BULK, CC_COVERED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);		

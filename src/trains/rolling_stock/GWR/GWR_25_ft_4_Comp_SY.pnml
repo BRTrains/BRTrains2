@@ -19,6 +19,7 @@ item (FEAT_TRAINS, item_GWR_254_Comp_SY, 735) {
 	property {
 		name: 							string(STR_NAME_GWR_254_Comp_SY);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1871,1,1);
 		model_life:						25;
 		cargo_allow_refit:				[PASS];

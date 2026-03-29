@@ -33,6 +33,7 @@ item (FEAT_TRAINS, item_BRVGA, 700) {
 		variant_group:					header_CoveredVan;
 		name: 							string(STR_NAME_BRVGA);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1981,1,1);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED, CC_ARMOURED);		

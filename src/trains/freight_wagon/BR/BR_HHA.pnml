@@ -163,6 +163,7 @@ item (FEAT_TRAINS, item_BRHHA, 324) {
 	property {
 		name: 							string(STR_NAME_BRHHA);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(2000,4,21);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes:		bitmask(CC_BULK, CC_COVERED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);	

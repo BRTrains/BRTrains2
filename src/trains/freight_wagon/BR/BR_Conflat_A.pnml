@@ -2,10 +2,12 @@ item (FEAT_TRAINS, item_BRConflatA, 732) {
 	property {
 		name: 							string(STR_NAME_BRConflatA);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1950,1,1);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED);		
 		default_cargo_type:				GOOD;
+		
 		loading_speed:					25;
 		cost_factor:					28;
 		running_cost_factor:			8;

@@ -25,6 +25,7 @@ item (FEAT_TRAINS, item_FurnessLumberWagon, 582) {
 	property {
 		name: 							string(STR_NAME_FurnessLumberWagon);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1840,1,1);
 		model_life:						50;
 		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS);

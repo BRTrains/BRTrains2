@@ -38,6 +38,7 @@ item (FEAT_TRAINS, item_LNER_Gresley_616BCK, 702) {
 	property {
 		name: 							string(STR_NAME_LNER_Gresley_616BCK);
 		climates_available: 			ALL_CLIMATES;
+		track_type:						RAIL;
 		introduction_date:				date(1926,1,1);
 		model_life:						25;
 		cargo_allow_refit:				[PASS];
