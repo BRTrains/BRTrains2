@@ -58,6 +58,7 @@ SAVEGAME BREAKING VERSION
 - Added a bunch of liveries for Class 20
 - Added some former NXEA/GA/FCC liveries for Class 321 Parcels variant
 - Added Hull Trains (grey stripe) livery variant for Class 802
+- Added CrossCountry red livery for class 220/221
 - Amended Class 99 power, service speed, weight, TE for real world values
 - Improved WMR liveries for 196, 730
 - Fixed Class 150 BR blue diagonals having green instead of white
