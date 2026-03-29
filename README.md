@@ -9,21 +9,26 @@ Grab the latest release from the in-game content downloader.
 Alternatively get it from the releases page and copy it into your `OpenTTD/newGRF` folder (usually in your Documents folder)
 
 ### Building from Source
-Easy version: Just push the source to Github and it will build automatically. Otherwise:
 
-Building from the source should be mostly automated using the `build.py` script, but it has a few requirements:
-  - Python3.8 (may work on earlier versions but untested)
-  - `nml` Python package (available through `pip`)
+#### Prerequisites
+- Python 3 (3.14 or later is recommended, earlier versions should work but aren't tested)
+- `nml` Python package, available via `pip` or from the OpenTTD Github
   
-To build the grf completely, just run the following command in your terminal:
+To build the grf, run build.py:
 ```bash
-python build.py brtrainsv2
+python build.py
 ```
-This should first compile the `.nml` file, then compile that through to a `.grf` file using `nml`.  Install in the same manner
-as previously described, copying the generated `.grf` file into `OpenTTD/newGRF`.
 
+Or optionally
 
-Note, this method still requires the `nml` python package to be installed.
+```bash
+python build.py --grf-name brtrainsv2
+```
+
+The build script collates `.pnml` files into a single `.nml` file as required by the nmlc nml compiler. It then compiles the `.nml` file into a `.grf`. By default these files will be `brtrainsv2.nml` and `brtrainsv2.grf`, but an alternate filename can be passed in as above
+
+The script will attempt to automatically copy the resulting `.grf` file into the user's Documents folder on Windows (including OneDrive/Documents if required) or MacOS
+
 
 ### Credits and Contributions
 BRTrains V2 largely Authored/Drawn/Curated by Audigex, built on the work of many others including predecessor projects
@@ -41,5 +46,5 @@ If you want to add to the pack, just pull request it and it might make it in, or
 - Release information (dates, version numbers etc) can be found on [this forum thread](https://www.tt-forums.net/viewtopic.php?t=90160&start=20)
 
 ### License
-This project is licensed under the GPLv2 license
+This project is licensed under the GPLv2 license. All pull requests are assumed to be offered under the same license
 See [LICENSE](./LICENSE) for license details
