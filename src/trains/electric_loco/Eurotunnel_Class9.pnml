@@ -1,0 +1,70 @@
+spriteset(spriteset_ET_Class9_Purchase, "gfx/Electric/8X.png") {
+	template_purchase(264, 26)
+}
+
+spriteset(spriteset_ET_Class9_RailfreightDistribution, "gfx/Electric/8X.png") {
+	template_train32px(0, 117)
+}
+
+spriteset(spriteset_ET_Class9_BRBlue, "gfx/Electric/8X.png") {
+	template_train32px(0, 65)
+}
+
+switch(FEAT_TRAINS,SELF, sw_ET_Class9, cargo_subtype){
+    0:	spriteset_ET_Class9_BRBlue;
+	1:	spriteset_ET_Class9_RailfreightDistribution;
+
+        return CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS,SELF,sw_ET_Class9_cargo_subtype_text,cargo_subtype){
+    0:	return string(str_ET_BlueGrey);
+       return CB_RESULT_NO_TEXT;
+}
+
+item (FEAT_TRAINS, item_ET_Class9, 565) {
+	property {
+		variant_group:					header_AL1to7;
+		name: 							string(STR_NAME_ET_Class9);
+		climates_available: 			ALL_CLIMATES;
+		introduction_date:				date(1961,1,1);
+		model_life:						30;
+		retire_early:					1;
+		vehicle_life:					70;
+		reliability_decay:				7;
+		refittable_cargo_classes:		0;
+		cargo_allow_refit:				[GOOD, FOOD];
+		loading_speed:					3;
+		cost_factor:					38;
+		running_cost_factor:			38;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		speed:							99 mph;
+		refit_cost:						0;
+		track_type:						ELRL;	
+		ai_special_flag:				AI_FLAG_CARGO;
+		power:							9400 hp;
+		running_cost_base:				RUNNING_COST_ELECTRIC;
+		dual_headed:					0;
+		default_cargo_type:				GOOD;
+		cargo_capacity:					1;
+		weight:							132 ton;
+		engine_class:					ENGINE_CLASS_ELECTRIC;
+		tractive_effort_coefficient:	0.309;
+		air_drag_coefficient:			0.05;
+		length:							8;
+		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_ELECTRIC;
+		extra_weight_per_wagon:			0;
+		bitmask_vehicle_info:			0;
+	}
+	graphics {
+	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_electric),string(str_ET_Class9_usage),string(str_ET_Class9_eos),string(str_ET_Class9_liveries)));
+	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+	cargo_capacity:						return 0;
+	cargo_subtype_text:					sw_ET_Class9_cargo_subtype_text;
+	default: 							sw_ET_Class9;
+	purchase:							spriteset_ET_Class9_Purchase;
+	colour_mapping: 					return PALETTE_CC_FIRST;
+	cost_factor:	return(GetAdjustedCost(82));
+	running_cost_factor: return(GetAdjustedCost(82));
+}
+}
