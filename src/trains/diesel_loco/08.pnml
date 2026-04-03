@@ -102,7 +102,7 @@ switch(FEAT_TRAINS,SELF,sw_BR08_cargo_subtype_text,cargo_subtype){
 	12: return string(str_FreightlinerGreen);
 	13: return string(str_FreightlinerOrange);
 	14: return string(str_NSE);
-	15: return string(str_comp_ProgressRail);
+	15: return string(STR_LIVERY_SHORT, string(str_comp_ProgressRail));
        return CB_RESULT_NO_TEXT;
 }
 
