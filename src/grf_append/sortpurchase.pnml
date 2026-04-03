@@ -82,6 +82,7 @@ sort(FEAT_TRAINS, [
  item_BR92,
  item_BR93,
  item_BR99,
+ item_ET_Class9, 
  item_BR121,
  item_BR128,
  item_BR139,

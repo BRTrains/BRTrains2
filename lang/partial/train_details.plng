@@ -546,6 +546,11 @@ str_BR99_usage					:Mixed Traffic
 str_BR99_eos					:---
 str_BR99_liveries				:GBRf Blue, GBRf Black
 
+STR_NAME_ET_Class9              :Eurotunnel Class 9
+str_ET_Class9_usage				:Eurotunnel Shuttle and Freight
+str_ET_Class9_eos				:---
+str_ET_Class9_liveries			:Eurotunnel Blue and Grey
+
 STR_NAME_BR121					:BR Class 121 "Bubble Car" (1-car)
 str_BR121_usage					:Passenger
 str_BR121_eos					:---
