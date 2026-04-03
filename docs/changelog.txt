@@ -7,10 +7,10 @@
 - Class 101
 - Mk1 sleeper (SLC)
 - Pretendolino 90 + Mk3
-- Eurostar Class 9
 - Standard Class 2T
 
 # v2.16
+- Added Eurotunnel Class 9
 
 # v2.15 (2026-03-29)
 SAVEGAME BREAKING VERSION
