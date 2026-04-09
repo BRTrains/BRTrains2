@@ -42,6 +42,8 @@ item (FEAT_TRAINS, item_LNER_Gresley_616TPO, 705) {
 		introduction_date:				date(1926,1,1);
 		model_life:						25;
 		refittable_cargo_classes: 		bitmask(CC_MAIL);
+		misc_flags:						bitmask(TRAIN_FLAG_AUTOREFIT);
+		refit_cost:						0;
 		loading_speed:					10;
 		cost_factor:					49;
 		running_cost_factor:			17;

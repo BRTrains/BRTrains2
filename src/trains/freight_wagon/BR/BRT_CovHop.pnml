@@ -51,7 +51,9 @@ item(FEAT_TRAINS, item_BRTCovHop, 708) {
         track_type:						RAIL;
 		introduction_date:				date(1965,1,1);
 		model_life:						VEHICLE_NEVER_EXPIRES;
-		refittable_cargo_classes:		bitmask(CC_BULK, CC_COVERED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);		
+		refittable_cargo_classes:		bitmask(CC_BULK, CC_COVERED, CC_POWDERIZED, CC_NON_POURABLE, CC_NEO_BULK);
+        misc_flags:						bitmask(TRAIN_FLAG_AUTOREFIT);
+		refit_cost:						0;	
 		loading_speed:					25;
 		cost_factor:					1;
 		running_cost_factor:			1;

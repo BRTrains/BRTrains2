@@ -6,6 +6,8 @@ item (FEAT_TRAINS, item_BRConflatA, 732) {
 		introduction_date:				date(1950,1,1);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED);		
+		misc_flags:						bitmask(TRAIN_FLAG_AUTOREFIT);
+		refit_cost:						0;
 		default_cargo_type:				GOOD;
 		
 		loading_speed:					25;

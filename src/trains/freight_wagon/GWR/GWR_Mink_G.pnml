@@ -28,6 +28,8 @@ item(FEAT_TRAINS, item_GWRMinkG, 710) {
 		introduction_date:				date(1930,1,1);
 		model_life:						VEHICLE_NEVER_EXPIRES;
 		refittable_cargo_classes:		bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_HAZARDOUS, CC_REFRIGERATED, CC_NON_POURABLE, CC_NEO_BULK, CC_OVERSIZED, CC_ARMOURED);	
+        misc_flags:						bitmask(TRAIN_FLAG_AUTOREFIT);
+		refit_cost:						0;
 		loading_speed:					25;
 		cost_factor:					1;
 		running_cost_factor:			1;
