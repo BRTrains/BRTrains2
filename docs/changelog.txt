@@ -12,6 +12,7 @@
 # v2.16
 - Added Eurotunnel Class 9
 - Allow autorefit for cargo wagons
+- Fixed Class 458 livery string
 
 # v2.15 (2026-03-29)
 SAVEGAME BREAKING VERSION
