@@ -13,6 +13,7 @@
 - Added Eurotunnel Class 9
 - Allow autorefit for cargo wagons
 - Fixed Class 458 livery string
+- Fixed Class 390 9 car using 11 car articulated vehicles
 
 # v2.15 (2026-03-29)
 SAVEGAME BREAKING VERSION
