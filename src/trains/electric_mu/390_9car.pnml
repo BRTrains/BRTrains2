@@ -14,7 +14,7 @@ switch(FEAT_TRAINS,SELF,sw_BR390_9car_cargo_subtype_text,cargo_subtype){
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR390_9car, extra_callback_info1) {
-	1..8: return item_BR390_11car;
+	1..8: return item_BR390_9car;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
 }
 
