@@ -2,6 +2,7 @@ item (FEAT_TRAINS, item_BRMk3DVT, 586) {
 	property {
 		variant_group:					header_BRMk3;
 		name: 							string(STR_NAME_BRMk3DVT);
+		extra_flags:					bitmask(VEHICLE_FLAG_TRAIN_HAS_CAB);
 		climates_available: 			ALL_CLIMATES;
 		refittable_cargo_classes:		CC_PASSENGERS;
 		introduction_date:				date(1989,1,1);
@@ -29,7 +30,7 @@ item (FEAT_TRAINS, item_BRMk3DVT, 586) {
 	}
 	graphics {
 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
- 	default: 							sw_BRMk3DVT_Sprites;
+ 	default: 							sw_BRMk3DVT;
 	colour_mapping: 					return PALETTE_CC_FIRST;
 	cargo_subtype_text:					sw_BRMk3DVT_cargo_subtype_text;
 	purchase:							spriteset_BRMk3DVT_purchase;

@@ -84,6 +84,19 @@ grf {
 				};
 			}
 	}
+	// param 5 {		
+	// 		param_push_pull{
+	// 			name: string(STR_PARAM_PUSH_PULL);
+	// 			desc: string(STR_PARAM_PUSH_PULL_DESC);
+	// 			min_value: 0;
+	// 			max_value: 1;
+	// 			def_value: 0;
+	// 			names: {
+	// 				0: string(STR_PARAM_PUSH_PULL_STRICT);
+	// 				1: string(STR_PARAM_PUSH_PULL_PERMISSIVE);				
+	// 			};
+	// 		}
+	// }
 }
 
 if(param_default_vehs == 1)

@@ -51,6 +51,11 @@ STR_PARAM_HIDE_VEHS_DESC:Should we hide default vehicles? (Note, this will not o
 STR_PARAM_HIDE_DEFAULT          :Hide
 STR_PARAM_SHOW_DEFAULT          :Show
 
+STR_PARAM_PUSH_PULL             :Push Pull compatibility
+STR_PARAM_PUSH_PULL_DESC        :How strict should BRTrains be when allowing DVTs and other driving trailers to couple to locomtives
+STR_PARAM_PUSH_PULL_STRICT      :Strict: DVTs can only couple to locomotives they are push-pull compatible with in the real world
+STR_PARAM_PUSH_PULL_PERMISSIVE  :Permissive: DVTs can couple to (and operate as push-pull with) any locomotive
+
 # Warning: these are used for multiple parameters, if you need to modify them, maybe add different strings?
 STR_PARAM_1X                    :1x (Default)
 STR_PARAM_2X                    :2x
