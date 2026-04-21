@@ -1,0 +1,64 @@
+// These switches should be used for eye candy, debug, developmental etc unit
+// They make vehicles less attractive to the AI while keeping them useful for the player
+// The most common callbacks are:
+
+
+/*
+	start_stop:		sw_EyeCandy_AllowMove;
+	cost_factor:	sw_EyeCandy_PurchaseCost;
+	running_cost_factor: sw_EyeCandy_RunningCost;
+	purchase_running_cost_factor: sw_EyeCandy_RunningCost;
+	power: sw_EyeCandy_Power;
+	speed: sw_EyeCandy_Speed;
+	weight: sw_EyeCandy_Weight;
+	tractive_effort_coefficient: sw_EyeCandy_TE;
+*/
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_AllowMove, company_type)
+{
+	PLAYERTYPE_AI: return(string(STR_EyeCandy_AI));
+	CB_RESULT_NO_TEXT;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_RunningCost_Movement, vehicle_is_stopped)
+{
+	0: 255;
+	1: 0;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_RunningCost, company_type)
+{
+	PLAYERTYPE_AI: 255;
+	sw_EyeCandy_RunningCost_Movement;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_PurchaseCost, company_type)
+{
+	PLAYERTYPE_AI: 255;
+	PLAYERTYPE_HUMAN: 0;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_Power, company_type)
+{
+	PLAYERTYPE_AI: 0;
+	PLAYERTYPE_HUMAN: 10000;
+}
+
+// km/h
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_Speed, company_type)
+{
+	PLAYERTYPE_AI: 1;
+	PLAYERTYPE_HUMAN: 80;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_Weight, company_type)
+{
+	PLAYERTYPE_AI: 10000;
+	PLAYERTYPE_HUMAN: 30;
+}
+
+switch(FEAT_TRAINS, SELF, sw_EyeCandy_TE, company_type)
+{
+	PLAYERTYPE_AI: 0;
+	PLAYERTYPE_HUMAN: 255;
+}
