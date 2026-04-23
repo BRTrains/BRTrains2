@@ -136,6 +136,7 @@ sort(FEAT_TRAINS, [
    item_BR222,
    item_BR222_5,
    item_BR222_1,
+   item_BR222_6,
   header_DTrain,
     item_BR230_2CAR,
     item_BR230_3CAR,

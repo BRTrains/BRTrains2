@@ -5,7 +5,7 @@ STR_LIVERY_BR800_LNER                  : LNER "Azuma"
 STR_LIVERY_BR800_TPE                   : Transpennine Express "Nova 1"
 STR_LIVERY_BR800_HullTrains            : Hull Trains "Paragon"
 STR_LIVERY_BR800_VTEC                  : Virgin Trains East Coast
-STR_LIVERY_BR800_Lumo                  : Lumo
+
 
 STR_LIVERY_BR_745_REGULAR               : Greater Anglia "InterCity"
 STR_LIVERY_BR_745_STANSTED              : Greater Anglia "Stansted Express"
@@ -264,6 +264,7 @@ str_LU_Unpainted                : (London Underground - Unpainted)
 str_LU_86Green                  : (London Underground - Green (Experimental))
 str_LU_86Blue                   : (London Underground - Blue (Experimental))
 str_LU_86Red                    : (London Underground - Red (Experimental))
+str_Lumo                        : Lumo
 str_MainlineFreight				: (Mainline Freight)
 str_MaritimeIntermodal          : (Maritime Intermodal)
 str_MerseyRail					: (MerseyRail)

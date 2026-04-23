@@ -12,6 +12,7 @@
 
 # v2.16
 - Added Eurotunnel Class 9
+- Added Lumo livery for Class 222
 - Allow autorefit for cargo wagons
 - Fixed Class 458 livery string
 - Fixed Class 390 9 car using 11 car articulated vehicles

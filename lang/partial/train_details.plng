@@ -724,6 +724,11 @@ str_BR222_5_usage				:Express Passenger
 str_BR222_5_eos					:---
 str_BR222_5_liveries			:Midland Mainline, East Midlands Trains
 
+STR_NAME_BR222_6				:BR Class 222/6 "Meridian" (6-Car)
+str_BR222_6_usage				:Express Passenger
+str_BR222_6_eos					:---
+str_BR222_6_liveries			:Lumo Blue
+
 STR_NAME_BR222_1				:BR Class 222/1 "Pioneer" (4-Car)
 str_BR222_1_usage				:Express Passenger
 str_BR222_1_eos					:---
