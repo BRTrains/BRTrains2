@@ -1,168 +1,168 @@
-spriteset(spriteset_LNER_A4_Purchase, "gfx/Steam/LNER_A4.png") {
-	template_purchase_anim(0, 0)
-}
+// spriteset(spriteset_LNER_A4_Purchase, "gfx/Steam/LNER_A4.png") {
+// 	template_purchase_anim(0, 0)
+// }
 
-spriteset(spriteset_LNER_A4_LNER, "gfx/Steam/LNER_A4.png") {
-	template_train32px(0, 13)
-}
+// spriteset(spriteset_LNER_A4_LNER, "gfx/Steam/LNER_A4.png") {
+// 	template_train32px(0, 13)
+// }
 
-spriteset(spriteset_LNER_A4_LNERC, "gfx/Steam/LNER_A4.png") {
-	template_train32px(0, 13)
-}
+// spriteset(spriteset_LNER_A4_LNERC, "gfx/Steam/LNER_A4.png") {
+// 	template_train32px(0, 13)
+// }
 
-spriteset(spriteset_LNER_A4_WARTIME, "gfx/Steam/LNER_A4.png") {
-	template_train32px(0, 13)
-}
+// spriteset(spriteset_LNER_A4_WARTIME, "gfx/Steam/LNER_A4.png") {
+// 	template_train32px(0, 13)
+// }
 
-spriteset(spriteset_LNER_A4_APPLE, "gfx/Steam/LNER_A4.png") {
-	template_train32px(0, 38)
-}
+// spriteset(spriteset_LNER_A4_APPLE, "gfx/Steam/LNER_A4.png") {
+// 	template_train32px(0, 38)
+// }
 
-spriteset(spriteset_LNER_A4_BRBLUE, "gfx/Steam/LNER_A4.png") {
-	template_train32px(0, 63)
-}
+// spriteset(spriteset_LNER_A4_BRBLUE, "gfx/Steam/LNER_A4.png") {
+// 	template_train32px(0, 63)
+// }
 
-spriteset(spriteset_LNER_A4_BRUNSWICK, "gfx/Steam/LNER_A4.png") {
-	template_train32px(0, 88)
-}
+// spriteset(spriteset_LNER_A4_BRUNSWICK, "gfx/Steam/LNER_A4.png") {
+// 	template_train32px(0, 88)
+// }
 
-spriteset(spriteset_LNER_A4T_LNER, "gfx/Steam/LNER_A4_Tender.png") {
-	template_train20px(0, 13)
-}
+// spriteset(spriteset_LNER_A4T_LNER, "gfx/Steam/LNER_A4_Tender.png") {
+// 	template_train20px(0, 13)
+// }
 
-spriteset(spriteset_LNER_A4T_LNERC, "gfx/Steam/LNER_A4_Tender.png") {
-	template_train20px(0, 33)
-}
+// spriteset(spriteset_LNER_A4T_LNERC, "gfx/Steam/LNER_A4_Tender.png") {
+// 	template_train20px(0, 33)
+// }
 
-spriteset(spriteset_LNER_A4T_WARTIME, "gfx/Steam/LNER_A4_Tender.png") {
-	template_train20px(0, 53)
-}
+// spriteset(spriteset_LNER_A4T_WARTIME, "gfx/Steam/LNER_A4_Tender.png") {
+// 	template_train20px(0, 53)
+// }
 
-spriteset(spriteset_LNER_A4T_APPLE, "gfx/Steam/LNER_A4_Tender.png") {
-	template_train20px(0, 73)
-}
+// spriteset(spriteset_LNER_A4T_APPLE, "gfx/Steam/LNER_A4_Tender.png") {
+// 	template_train20px(0, 73)
+// }
 
-spriteset(spriteset_LNER_A4T_BRBLUE, "gfx/Steam/LNER_A4_Tender.png") {
-	template_train20px(0, 93)
-}
+// spriteset(spriteset_LNER_A4T_BRBLUE, "gfx/Steam/LNER_A4_Tender.png") {
+// 	template_train20px(0, 93)
+// }
 
-spriteset(spriteset_LNER_A4T_BRUNSWICK, "gfx/Steam/LNER_A4_Tender.png") {
-	template_train20px(0, 113)
-}
+// spriteset(spriteset_LNER_A4T_BRUNSWICK, "gfx/Steam/LNER_A4_Tender.png") {
+// 	template_train20px(0, 113)
+// }
 
-switch(FEAT_TRAINS,SELF, sw_LNER_A4T,cargo_subtype){
-    0:	spriteset_LNER_A4T_LNER;
-	1: 	spriteset_LNER_A4T_LNERC;
-	2: 	spriteset_LNER_A4T_WARTIME;
-	3: 	spriteset_LNER_A4T_APPLE;
-	4: 	spriteset_LNER_A4T_BRBLUE;
-	5: 	spriteset_LNER_A4T_BRUNSWICK;
-}
+// switch(FEAT_TRAINS,SELF, sw_LNER_A4T,cargo_subtype){
+//     0:	spriteset_LNER_A4T_LNER;
+// 	1: 	spriteset_LNER_A4T_LNERC;
+// 	2: 	spriteset_LNER_A4T_WARTIME;
+// 	3: 	spriteset_LNER_A4T_APPLE;
+// 	4: 	spriteset_LNER_A4T_BRBLUE;
+// 	5: 	spriteset_LNER_A4T_BRUNSWICK;
+// }
 
-switch(FEAT_TRAINS,SELF, sw_LNER_A4,cargo_subtype){
-    0:	spriteset_LNER_A4_LNER;
-	1: 	spriteset_LNER_A4_LNERC;
-	2: 	spriteset_LNER_A4_WARTIME;
-	3: 	spriteset_LNER_A4_APPLE;
-	4: 	spriteset_LNER_A4_BRBLUE;
-	5: 	spriteset_LNER_A4_BRUNSWICK;
-}
+// switch(FEAT_TRAINS,SELF, sw_LNER_A4,cargo_subtype){
+//     0:	spriteset_LNER_A4_LNER;
+// 	1: 	spriteset_LNER_A4_LNERC;
+// 	2: 	spriteset_LNER_A4_WARTIME;
+// 	3: 	spriteset_LNER_A4_APPLE;
+// 	4: 	spriteset_LNER_A4_BRBLUE;
+// 	5: 	spriteset_LNER_A4_BRUNSWICK;
+// }
 
-switch (FEAT_TRAINS, SELF, switch_articulated_LNER_A4, extra_callback_info1) {
-	1: return item_LNER_A4T;
-    return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
-}
+// switch (FEAT_TRAINS, SELF, switch_articulated_LNER_A4, extra_callback_info1) {
+// 	1: return item_LNER_A4T;
+//     return CB_RESULT_NO_MORE_ARTICULATED_PARTS; //stop adding vehicle parts
+// }
 
-switch(FEAT_TRAINS,SELF,sw_LNER_A4_cargo_subtype_text,cargo_subtype){
-    0: return string(str_LNERGreen);
-    1: return string(str_Apple);
-	2: return string(str_LNERBlue);
-	2: return string(str_Wartime);
-	3: return string(str_Apple);
-	4: return string(str_BRBlue);
-	5: return string(str_Brunswick);
-       return CB_RESULT_NO_TEXT;
-}
+// switch(FEAT_TRAINS,SELF,sw_LNER_A4_cargo_subtype_text,cargo_subtype){
+//     0: return string(str_LNERGreen);
+//     1: return string(str_Apple);
+// 	2: return string(str_LNERBlue);
+// 	3: return string(str_Wartime);
+// 	3: return string(str_Apple);
+// 	4: return string(str_BRBlue);
+// 	5: return string(str_Brunswick);
+//        return CB_RESULT_NO_TEXT;
+// }
 
-item (FEAT_TRAINS, item_LNER_A4, 6) {
-	property {
-		name: 							string(STR_NAME_LNER_A4);
-		climates_available: 			ALL_CLIMATES;
-		introduction_date:				date(1928,4,21);
-		model_life:						35;
-		retire_early:					1;
-		vehicle_life:					35;
-		reliability_decay:				7;
-		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD, FOOD];
-		loading_speed:					3;
-		cost_factor:					27;
-		running_cost_factor:			32;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		speed:							100 mph;
-		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
-		refit_cost:						0;
-		track_type:						RAIL;
-		ai_special_flag:				AI_FLAG_CARGO;
-		power:							1750 hp;
-		running_cost_base:				RUNNING_COST_STEAM;
-		dual_headed:					0;
-		default_cargo_type:				GOOD;
-		cargo_capacity:					1;
-		weight:							170 ton;
-		engine_class:					ENGINE_CLASS_STEAM;
-		tractive_effort_coefficient:	0.095;
-		air_drag_coefficient:			0.1;
-		length:							8;
-		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
-		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-	}
-	graphics {
-	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_LNER_A4_usage),string(str_LNER_A4_eos),string(str_LNER_A4_liveries)));
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_capacity:						return 0;
-	cargo_subtype_text:					sw_LNER_A4_cargo_subtype_text;
-	articulated_part:        			switch_articulated_LNER_A4;
-	default: 							sw_LNER_A4;
-	purchase:							spriteset_LNER_A4_Purchase;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-	create_effect:						steam_create_visual_effect;
-	sound_effect:						sw_sound_steam_generic;
-	cost_factor:	return(GetAdjustedCost(26));
-	running_cost_factor: return(GetAdjustedCost(30));
-}
-}
+// item (FEAT_TRAINS, item_LNER_A4, 6) {
+// 	property {
+// 		name: 							string(STR_NAME_LNER_A4);
+// 		climates_available: 			ALL_CLIMATES;
+// 		introduction_date:				date(1928,4,21);
+// 		model_life:						35;
+// 		retire_early:					1;
+// 		vehicle_life:					35;
+// 		reliability_decay:				7;
+// 		refittable_cargo_classes:		0;
+// 		cargo_allow_refit:				[GOOD, FOOD];
+// 		loading_speed:					3;
+// 		cost_factor:					27;
+// 		running_cost_factor:			32;
+// 		sprite_id:						SPRITE_ID_NEW_TRAIN;
+// 		speed:							100 mph;
+// 		misc_flags:						TRAIN_FLAG_NO_BREAKDOWN_SMOKE;
+// 		refit_cost:						0;
+// 		track_type:						RAIL;
+// 		ai_special_flag:				AI_FLAG_CARGO;
+// 		power:							1750 hp;
+// 		running_cost_base:				RUNNING_COST_STEAM;
+// 		dual_headed:					0;
+// 		default_cargo_type:				GOOD;
+// 		cargo_capacity:					1;
+// 		weight:							170 ton;
+// 		engine_class:					ENGINE_CLASS_STEAM;
+// 		tractive_effort_coefficient:	0.095;
+// 		air_drag_coefficient:			0.1;
+// 		length:							8;
+// 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_STEAM;
+// 		extra_weight_per_wagon:			0;
+// 		bitmask_vehicle_info:			0;
+// 	}
+// 	graphics {
+// 	additional_text:					return(string(str_purchase_loco_with_liveries,string(str_purchase_type_steam),string(str_LNER_A4_usage),string(str_LNER_A4_eos),string(str_LNER_A4_liveries)));
+// 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+// 	cargo_capacity:						return 0;
+// 	cargo_subtype_text:					sw_LNER_A4_cargo_subtype_text;
+// 	articulated_part:        			switch_articulated_LNER_A4;
+// 	default: 							sw_LNER_A4;
+// 	purchase:							spriteset_LNER_A4_Purchase;
+// 	colour_mapping: 					return PALETTE_CC_FIRST;
+// 	create_effect:						steam_create_visual_effect;
+// 	sound_effect:						sw_sound_steam_generic;
+// 	cost_factor:	return(GetAdjustedCost(26));
+// 	running_cost_factor: return(GetAdjustedCost(30));
+// }
+// }
 
-item (FEAT_TRAINS, item_LNER_A4T, 7) {
-	property {
-		name: 							string(STR_NAME_LNER_A4);
-		climates_available: 			NO_CLIMATE;
-		refittable_cargo_classes:		0;
-		cargo_allow_refit:				[GOOD, FOOD];
-		loading_speed:					3;
-		cost_factor:					0;
-		running_cost_factor:			0;
-		sprite_id:						SPRITE_ID_NEW_TRAIN;
-		refit_cost:						0;
-		track_type:						RAIL;
-		power:							0;
-		running_cost_base:				RUNNING_COST_NONE;
-		dual_headed:					0;
-		default_cargo_type:				GOOD;
-		cargo_capacity:					1;
-		weight:							0;
-		tractive_effort_coefficient:	0;
-		air_drag_coefficient:			0;
-		length:							5;
-		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
-		extra_weight_per_wagon:			0;
-		bitmask_vehicle_info:			0;
-	}
-	graphics {
-	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
-	cargo_capacity:						return 0;
-	default: 							sw_LNER_A4T;
-	colour_mapping: 					return PALETTE_CC_FIRST;
-}
-}
+// item (FEAT_TRAINS, item_LNER_A4T, 7) {
+// 	property {
+// 		name: 							string(STR_NAME_LNER_A4);
+// 		climates_available: 			NO_CLIMATE;
+// 		refittable_cargo_classes:		0;
+// 		cargo_allow_refit:				[GOOD, FOOD];
+// 		loading_speed:					3;
+// 		cost_factor:					0;
+// 		running_cost_factor:			0;
+// 		sprite_id:						SPRITE_ID_NEW_TRAIN;
+// 		refit_cost:						0;
+// 		track_type:						RAIL;
+// 		power:							0;
+// 		running_cost_base:				RUNNING_COST_NONE;
+// 		dual_headed:					0;
+// 		default_cargo_type:				GOOD;
+// 		cargo_capacity:					1;
+// 		weight:							0;
+// 		tractive_effort_coefficient:	0;
+// 		air_drag_coefficient:			0;
+// 		length:							5;
+// 		effect_spawn_model_and_powered:	EFFECT_SPAWN_MODEL_NONE;
+// 		extra_weight_per_wagon:			0;
+// 		bitmask_vehicle_info:			0;
+// 	}
+// 	graphics {
+// 	can_attach_wagon:					CB_RESULT_ATTACH_ALLOW;
+// 	cargo_capacity:						return 0;
+// 	default: 							sw_LNER_A4T;
+// 	colour_mapping: 					return PALETTE_CC_FIRST;
+// }
+// }
