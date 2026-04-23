@@ -8,6 +8,7 @@
 - Mk1 sleeper (SLC)
 - Pretendolino 90 + Mk3
 - Standard Class 2T
+- LNER A4
 
 # v2.16
 - Added Eurotunnel Class 9
