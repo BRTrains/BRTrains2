@@ -172,7 +172,7 @@ def main(grf_name):
     # Variant Headers
     variantheader_directory = Path()
 
-    train_directories = {
+    train_directories = [
         "multimode_mu",
         "electric_mu",
         "diesel_mu",
@@ -188,7 +188,7 @@ def main(grf_name):
         "departmental",
         "utility_and_debug",
         "deprecated"
-    }
+    ]
 
     nml_file = ""
 
