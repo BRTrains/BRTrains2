@@ -1,8 +1,8 @@
-spriteset(spriteset_GWR_254_Comp_SY_Purchase, "gfx/Rolling Stock/LNER/GWR_25_ft_4_Comp_SY.png") {
+spriteset(spriteset_GWR_254_Comp_SY_Purchase, "gfx/Rolling Stock/GWR/GWR_25_ft_4_Comp_SY.png") {
 	template_purchase(0, 0)
 }
 
-spriteset(spriteset_GWR_254_Comp_SY, "gfx/Rolling Stock/LNER/GWR_25_ft_4_Comp_SY.png") {
+spriteset(spriteset_GWR_254_Comp_SY, "gfx/Rolling Stock/GWR/GWR_25_ft_4_Comp_SY.png") {
 	template_train12px(0, 13)
 }
 
