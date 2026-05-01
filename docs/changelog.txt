@@ -9,7 +9,7 @@
 - Pretendolino 90 + Mk3
 - Standard Class 2T
 - LNER A4
-- GWR Autocoach
+- GWR Autocoach (Code, roof)
 
 # v2.16
 - Added Eurotunnel Class 9
