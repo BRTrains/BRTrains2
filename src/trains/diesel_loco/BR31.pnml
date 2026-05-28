@@ -66,6 +66,10 @@ spriteset(spriteset_BR31_RFConstruction, "gfx/BR31.png") {
 	template_train32px_old(0, 388)
 }
 
+spriteset(spriteset_BR31_Dutch, "gfx/BR31.png") {
+	template_train32px_old(0, 413)
+}
+
 switch(FEAT_TRAINS,SELF, sw_BR31,cargo_subtype){    
     0:	spriteset_BR31_BRGreen;
 	1:	spriteset_BR31_BRBlue;
@@ -83,6 +87,7 @@ switch(FEAT_TRAINS,SELF, sw_BR31,cargo_subtype){
 	13: spriteset_BR31_Railtrack;
 	14: spriteset_BR31_RFDistribution;
 	15: spriteset_BR31_RFConstruction;
+	16: spriteset_BR31_Dutch;
        return CB_RESULT_NO_TEXT;
 }
 
@@ -103,6 +108,7 @@ switch(FEAT_TRAINS,SELF,sw_BR31_cargo_subtype_text,cargo_subtype){
 	13: return string(str_Railtrack);
 	14: return string(str_Railfreight3GreyDistribution);
 	15: return string(str_Railfreight3GreyConstruction);
+	16: return string(str_CivilDutch);
        return CB_RESULT_NO_TEXT;
 }
 

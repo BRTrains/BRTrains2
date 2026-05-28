@@ -15,7 +15,7 @@
 - Removed custom push-pull implementation, preferring new OpenTTD native functionality
 - Added Eurotunnel Class 9
 - Added Lumo livery for Class 222
-- Added Railfreight Construction and Distribution liveries for Class 31
+- Added Dutch (Engineers), Railfreight Construction and Distribution liveries for Class 31
 - Allow autorefit for cargo wagons
 - Fixed Class 458 livery string
 - Fixed Class 390 9 car using 11 car articulated vehicles
