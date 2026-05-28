@@ -12,8 +12,9 @@
 - GWR Autocoach (Code, roof)
 
 # v2.16
-- Removed custom push-pull implementation, preferring new OpenTTD native functionality
 - Added Eurotunnel Class 9
+- Added Class 769/5
+- Removed custom push-pull implementation, preferring new OpenTTD native functionality
 - Added Lumo livery for Class 222
 - Added Dutch (Engineers), Railfreight Construction and Distribution liveries for Class 31
 - Allow autorefit for cargo wagons
