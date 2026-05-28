@@ -67,6 +67,7 @@ STR_BR_756_3CAR                         :BR Class 756/3 (3-Car with Power Pack)
 STR_BR_756_4CAR                         :BR Class 756/4 (4-Car with Power Pack)
 
 STR_BR_769                              :BR Class 769/0/3/4 "Flex" (4-Car)
+STR_BR_769_5                            :BR Class 769/5 "Flex" (4-Car)
 STR_BR_769_9                            :BR Class 769/9 "Flex" (4-Car)
 
 STR_br777                              :BR Class 777 "METRO" (4-Car)
@@ -1567,6 +1568,7 @@ STR_DSC_BR_745                         :Type: {BLUE}Electric Multiple Unit{}{BLA
 STR_DSC_BR_755                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Greater Anglia
 STR_DSC_BR_756                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Regional Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for Wales
 STR_DSC_BR_769                         :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Transport for London, Northen, Rail Operations Group
+STR_DSC_BR_769_5                       :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Express Parcels/Mail{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}GBRf
 STR_DSC_BR_769_9                       :Type: {RED}Diesel{BLACK}-{BLUE}Electric {PURPLE}Multiple Unit{}{BLACK}Usage: {GOLD}Suburban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Great Western Railway
 STR_DSC_br777                         :Type: {BLUE}Electric Multiple Unit{}{BLACK}Usage: {GOLD}Urban Passenger{}{BLACK}Withdrawal: {GOLD}--{}{BLACK}Liveries: {GOLD}Merseyrail
 
