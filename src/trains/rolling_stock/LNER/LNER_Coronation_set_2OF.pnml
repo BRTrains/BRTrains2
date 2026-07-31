@@ -13,7 +13,7 @@ switch(FEAT_TRAINS, SELF, sw_Coronation_2OF_BnC, position_in_articulated_veh ) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_Coronation_2OF_Capacity, position_in_articulated_veh ) {
-    0..1: 24;
+    0..1: 24  * param_pax;
 }
 
 switch(FEAT_TRAINS, SELF, sw_Coronation_2OF_liveries, cargo_subtype) {

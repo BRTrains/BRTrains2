@@ -13,8 +13,8 @@ switch(FEAT_TRAINS, SELF, sw_Coronation_OTKT_BnC, position_in_articulated_veh ) 
 }
 
 switch(FEAT_TRAINS, SELF, sw_Coronation_OTKT_Capacity, position_in_articulated_veh ) {
-    0: 30;  // OT
-    1: 6;   // KT
+    0: 30 * param_pax;  // OT
+    1: 6 * param_pax;   // KT
 }
 
 switch(FEAT_TRAINS, SELF, sw_Coronation_OTKT_liveries, cargo_subtype) {
