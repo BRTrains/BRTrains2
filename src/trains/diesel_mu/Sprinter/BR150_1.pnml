@@ -14,6 +14,7 @@ switch(FEAT_TRAINS,SELF, sw_BR150_1,cargo_subtype){
 	12: sw_BR150_01_RailTrack;
 	13: sw_BR150_01_NRTest;
 	14: sw_BR150_01_LNWR;
+	15: sw_BR150_01_Northern;
 }
 
 switch (FEAT_TRAINS, SELF, switch_articulated_BR150_1, extra_callback_info1) {
@@ -37,6 +38,7 @@ switch(FEAT_TRAINS,SELF,sw_BR150_1_cargo_subtype_text,cargo_subtype){
 	12: return string(str_Railtrack);
 	13: return string(str_NRTest);
 	14: return string(str_LNWR);
+	15: return string(str_Northern);
 }
 
 item (FEAT_TRAINS, item_BR150_1, 44) {
