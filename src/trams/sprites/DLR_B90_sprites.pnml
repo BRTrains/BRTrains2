@@ -77,29 +77,17 @@ spriteset (spriteset_B90_front_LondonOlympicsYellow, "gfx/Tram/DLR_B90.png") {
 spriteset (spriteset_B90_rear_LondonOlympicsYellow, "gfx/Tram/DLR_B90.png") {
 	template_tram20px(0, 273)
 }
-switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_LondonOlympics_forward, position_in_articulated_veh % 4){
-	0:spriteset_B90_front_LondonOlympicsBlue;
-	1:spriteset_B90_rear_LondonOlympicsBlue;
-	2:spriteset_B90_front_LondonOlympicsYellow;
-	3:spriteset_B90_rear_LondonOlympicsYellow;
+random_switch(FEAT_ROADVEHS, SELF, sw_TRAM_B90_LO_lead){
+	1: spriteset_B90_front_LondonOlympicsBlue;
+	1: spriteset_B90_front_LondonOlympicsYellow;
 }
-switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_LondonOlympics_reversed, position_in_articulated_veh % 4){
-	0:spriteset_B90_front_LondonOlympicsYellow;
-	1:spriteset_B90_rear_LondonOlympicsYellow;
-	2:spriteset_B90_front_LondonOlympicsBlue;
-	3:spriteset_B90_rear_LondonOlympicsBlue;
+random_switch(FEAT_ROADVEHS, FORWARD_SELF(1), sw_TRAM_B90_LO_trail){
+	1: spriteset_B90_rear_LondonOlympicsYellow;
+	1: spriteset_B90_rear_LondonOlympicsBlue;
 }
-switch(FEAT_ROADVEHS,SELF, sw_TRAM_B90_LondonOlympics_double, vehicle_is_reversed){
-	0: sw_TRAM_B90_LondonOlympics_forward;
-	1: sw_TRAM_B90_LondonOlympics_reversed;
-}
-random_switch(FEAT_ROADVEHS, SELF, sw_TRAM_B90_LondonOlympics_random){
-	1: sw_TRAM_B90_LondonOlympics_forward;
-	1: sw_TRAM_B90_LondonOlympics_reversed;
-}
-switch(FEAT_ROADVEHS, SELF, sw_TRAM_B90_LondonOlympics, num_vehs_in_consist){	 
-	4: sw_TRAM_B90_LondonOlympics_double; // Pushpull, baby
-	sw_TRAM_B90_LondonOlympics_random; // Singles and triples will randomise
+switch(FEAT_ROADVEHS, SELF, sw_TRAM_B90_LondonOlympics, position_in_articulated_veh % 2){
+	0: sw_TRAM_B90_LO_lead;
+	1: sw_TRAM_B90_LO_trail;
 }
 
 spriteset (spriteset_B90_front_DLRPride, "gfx/Tram/DLR_B90.png") {
