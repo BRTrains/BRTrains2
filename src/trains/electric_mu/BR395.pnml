@@ -37,9 +37,9 @@ switch(FEAT_TRAINS,SELF,sw_BR395_cargo_subtype_text,cargo_subtype){
        return CB_RESULT_NO_TEXT;
 }
 
-switch (FEAT_TRAINS, SELF,sw_BR395_speed, tile_powers_railtype("THIRD")) {                    
-    1: return 160;            
-    return 225;
+switch (FEAT_TRAINS, SELF,sw_BR395_speed, tile_powers_railtype("ELRL")) {                    
+    1: return 225;
+	return 160;
 }
 
 item (FEAT_TRAINS, item_BR395, 77) {
