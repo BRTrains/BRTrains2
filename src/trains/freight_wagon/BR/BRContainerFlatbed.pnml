@@ -83,6 +83,7 @@ switch(FEAT_TRAINS,SELF, sw_BRContainer_Cargo, cargo_count){
 // Called first
 // Skips the "loading stage" switch above if using an eyecandy livery
 switch(FEAT_TRAINS, SELF, sw_BRContainer_EyeCandyLiveries, cargo_subtype){	
+	1: sw_BRContainer_Random;
 	3: spriteset_BRContainer_Maersk;
 	5: spriteset_BRContainer_Tesco;
 	sw_BRContainer_Cargo;
